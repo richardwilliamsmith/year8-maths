@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "section_id": "7_2",
+    "section_code": "7B",
+    "chapter_number": 7,
+    "chapter_title": "Length, Area, Volume and Time",
+    "title": "Circumference and Area of Circles and Sectors",
+    "vcaa_code": "VC2M8M02",
+    "vcaa_description": "Demonstrate how the formulas for the circumference and area of a circle are established, and use them to solve practical problems.",
+    "strand": "Measurement",
+    "target_mastery": "Calculate exact (in terms of $\\pi$) and rounded values for the circumference and area of circles, semicircles, quadrants, and sectors, and remember to include straight radii in sector perimeters.",
+    "prerequisites": [
+      "Irrational number $\\pi$ (Section 2C)",
+      "Squaring numbers and rounding decimals"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Circumference ($C$)",
+        "definition": "The total distance (perimeter) around the curved boundary of a circle, given by $C = \\pi d = 2\\pi r$."
+      },
+      {
+        "term": "Sector",
+        "definition": "A 'pizza-slice' region of a circle bounded by two radii and the arc between them, subtending a central angle $\\theta$ at the centre."
+      },
+      {
+        "term": "Annulus",
+        "definition": "A flat ring-shaped region bounded by two concentric circles of outer radius $R$ and inner radius $r$, with area $A = \\pi R^2 - \\pi r^2 = \\pi(R^2 - r^2)$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_7_2_1",
+      "title": "Establishing Circumference ($C = 2\\pi r$) and Area ($A = \\pi r^2$) of a Circle",
+      "explanation": "For every circle, the ratio of its circumference $C$ to its diameter $d = 2r$ is the constant $\\pi \\approx 3.14159\\dots$, giving $C = \\pi d = 2\\pi r$. If a circle of radius $r$ is sliced into many narrow sectors and rearranged into an approximate parallelogram, the base length is half the circumference ($\\frac{1}{2} \\times 2\\pi r = \\pi r$) and the height is the radius $r$, giving the exact area formula $A = (\\pi r) \\times r = \\pi r^2$.",
+      "formula_latex": "C = \\pi d = 2\\pi r, \\qquad A = \\pi r^2",
+      "callout_title": "Area Has $r^2$ (Square Units); Circumference Has $2r$ (Linear Units)",
+      "callout_rule": "Never confuse $2\\pi r$ with $\\pi r^2$: Area is measured in square units, so it must contain $r^2$."
+    },
+    {
+      "id": "theory_7_2_2",
+      "title": "Arc Length, Perimeter, and Area of Sectors",
+      "explanation": "A sector with central angle $\\theta^\\circ$ is the fraction $\\frac{\\theta}{360}$ of a full circle. A semicircle ($\\theta = 180^\\circ$) is $\\frac{1}{2}$ of a circle, and a quadrant ($\\theta = 90^\\circ$) is $\\frac{1}{4}$ of a circle. While the curved arc length is $l = \\frac{\\theta}{360} \\times 2\\pi r$, the total perimeter of a sector also includes the two straight radius edges ($+ 2r$, or $+ d$ for a semicircle).",
+      "formula_latex": "A_{\\text{sector}} = \\frac{\\theta}{360}\\pi r^2, \\qquad P_{\\text{sector}} = \\frac{\\theta}{360} \\times 2\\pi r + 2r",
+      "callout_title": "Don't Forget the Straight Edges in Sector Perimeter",
+      "callout_rule": "The perimeter of a sector or semicircle is a closed boundary: add the curved arc length AND the two straight radii ($+ 2r$)."
+    },
+    {
+      "id": "theory_7_2_3",
+      "title": "Exact Values in Terms of $\\pi$ vs Rounded Approximations",
+      "explanation": "When a question asks for an exact answer, leave $\\pi$ as a symbol (e.g., a circle of radius $6\\text{ cm}$ has exact circumference $12\\pi\\text{ cm}$ and exact area $36\\pi\\text{ cm}^2$). Only convert to a decimal at the very final step when rounding is requested.",
+      "formula_latex": "r = 6\\text{ cm} \\implies A_{\\text{exact}} = 36\\pi\\text{ cm}^2 \\approx 113.10\\text{ cm}^2 \\text{ (2 d.p.)}",
+      "callout_title": "Halve the Diameter Before Using $A = \\pi r^2$",
+      "callout_rule": "Always check whether the diagram gives the diameter $d$ or the radius $r$. If given $d$, halve it first: $r = \\frac{d}{2}$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE7_2_1",
+      "title": "Exact and Rounded Circumference and Area of a Circle",
+      "difficulty": "Fluency",
+      "problem": "A circular centre-bounce circle on an AFL ground has a diameter of $10\\text{ m}$. Find its circumference and area: (a) as exact values in terms of $\\pi$, and (b) rounded to $2$ decimal places.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "First halve the diameter $d = 10\\text{ m}$ to get the radius $r = 5\\text{ m}$. Substitute $r = 5$ into $C = 2\\pi r$ and $A = \\pi r^2$ for exact values.",
+          "working": "$$r = \\frac{10}{2} = 5\\text{ m}$$\n$$C = 2\\pi(5) = 10\\pi\\text{ m}, \\qquad A = \\pi(5)^2 = 25\\pi\\text{ m}^2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply by $\\pi \\approx 3.14159\\dots$ and round each result to $2$ decimal places.",
+          "working": "$$C = 10\\pi \\approx 31.42\\text{ m}, \\qquad A = 25\\pi \\approx 78.54\\text{ m}^2$$"
+        }
+      ],
+      "final_answer": "(a) $C = 10\\pi\\text{ m}$, $A = 25\\pi\\text{ m}^2$; (b) $C \\approx 31.42\\text{ m}$, $A \\approx 78.54\\text{ m}^2$",
+      "now_you_try": {
+        "problem": "A circle has diameter $16\\text{ cm}$. Find its exact circumference and exact area in terms of $\\pi$, and round both to $2$ decimal places.",
+        "hint": "Radius $r = 8\\text{ cm}$, so $C = 2\\pi(8)$ and $A = \\pi(8)^2$.",
+        "working_summary": "$C = 16\\pi \\approx 50.27\\text{ cm}$; $A = 64\\pi \\approx 201.06\\text{ cm}^2$.",
+        "answer": "$C = 16\\pi \\approx 50.27\\text{ cm}$, $A = 64\\pi \\approx 201.06\\text{ cm}^2$"
+      }
+    },
+    {
+      "id": "WE7_2_2",
+      "title": "Perimeter and Area of a Sector",
+      "difficulty": "Understanding",
+      "problem": "A sector of a circle has radius $r = 12\\text{ cm}$ and central angle $\\theta = 60^\\circ$. Find (a) its exact area in terms of $\\pi$, and (b) its exact perimeter in terms of $\\pi$, plus its perimeter rounded to $2$ decimal places.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Simplify the sector fraction $\\frac{60}{360} = \\frac{1}{6}$ and multiply by $\\pi r^2 = \\pi(12)^2 = 144\\pi$.",
+          "working": "$$A = \\frac{60}{360} \\times \\pi(12)^2 = \\frac{1}{6} \\times 144\\pi = 24\\pi\\text{ cm}^2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Find the curved arc length $\\frac{1}{6} \\times 2\\pi(12) = 4\\pi\\text{ cm}$, then add the two straight radius edges $2r = 24\\text{ cm}$.",
+          "working": "$$P = \\frac{1}{6} \\times 2\\pi(12) + 2(12) = (4\\pi + 24)\\text{ cm} \\approx 36.57\\text{ cm}$$"
+        }
+      ],
+      "final_answer": "(a) $24\\pi\\text{ cm}^2$, (b) $(4\\pi + 24)\\text{ cm} \\approx 36.57\\text{ cm}$",
+      "now_you_try": {
+        "problem": "A quadrant ($\\theta = 90^\\circ$) has radius $r = 8\\text{ cm}$. Find (a) its exact area and (b) its exact perimeter.",
+        "hint": "Fraction is $\\frac{90}{360} = \\frac{1}{4}$. Don't forget $+ 2(8) = 16\\text{ cm}$ in the perimeter.",
+        "working_summary": "(a) $\\frac{1}{4}\\pi(8)^2 = 16\\pi\\text{ cm}^2$; (b) $\\frac{1}{4}(2\\pi \\times 8) + 16 = (4\\pi + 16)\\text{ cm}$.",
+        "answer": "(a) $16\\pi\\text{ cm}^2$, (b) $(4\\pi + 16)\\text{ cm}$"
+      }
+    },
+    {
+      "id": "WE7_2_3",
+      "title": "Perimeter and Area of an Athletics Track (Stadium Shape)",
+      "difficulty": "Problem-Solving",
+      "problem": "A community running track consists of a rectangle $80\\text{ m}$ long and $40\\text{ m}$ wide with a semicircle of diameter $40\\text{ m}$ attached to each of the two $40\\text{ m}$ ends. Find (a) the exact and rounded perimeter of the track, and (b) the exact and rounded total area enclosed by the track ($2$ d.p.).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The two semicircular ends together form one complete circle of diameter $d = 40\\text{ m}$ (radius $r = 20\\text{ m}$). The outer boundary consists of the two straight $80\\text{ m}$ sides plus the circumference of one full circle ($\\pi d = 40\\pi$).",
+          "working": "$$P = 2(80) + 40\\pi = (160 + 40\\pi)\\text{ m} \\approx 285.66\\text{ m}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "The total area equals the $80\\text{ m} \\times 40\\text{ m}$ rectangle plus one complete circle of radius $r = 20\\text{ m}$.",
+          "working": "$$A = (80 \\times 40) + \\pi(20)^2 = (3200 + 400\\pi)\\text{ m}^2 \\approx 4456.64\\text{ m}^2$$"
+        }
+      ],
+      "final_answer": "(a) $(160 + 40\\pi)\\text{ m} \\approx 285.66\\text{ m}$, (b) $(3200 + 400\\pi)\\text{ m}^2 \\approx 4456.64\\text{ m}^2$",
+      "now_you_try": {
+        "problem": "An arched window consists of a rectangle of width $2\\text{ m}$ and height $3\\text{ m}$ topped by a semicircle of diameter $2\\text{ m}$ (radius $1\\text{ m}$). Find the exact area of the window.",
+        "hint": "Add the rectangle area ($2 \\times 3$) and the semicircle area ($\\frac{1}{2}\\pi(1)^2$).",
+        "working_summary": "$A = 6 + \\frac{1}{2}\\pi(1)^2 = (6 + 0.5\\pi)\\text{ m}^2 \\approx 7.57\\text{ m}^2$.",
+        "answer": "$(6 + 0.5\\pi)\\text{ m}^2 \\approx 7.57\\text{ m}^2$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_7_2_1",
+      "title": "Substituting the Diameter Instead of the Radius into $A = \\pi r^2$",
+      "misconception": "Using $d$ directly in $A = \\pi r^2$, making the calculated area $4$ times too large.",
+      "correct_concept": "Because $(2r)^2 = 4r^2$, substituting the diameter instead of the radius multiplies the true area by $4$. Always halve the diameter first.",
+      "incorrect_working": "$$d = 10\\text{ cm} \\implies A = \\pi(10)^2 = 100\\pi\\text{ cm}^2 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$r = \\frac{10}{2} = 5\\text{ cm} \\implies A = \\pi(5)^2 = 25\\pi\\text{ cm}^2$$",
+      "counter_example": "A circle of diameter $10\\text{ cm}$ fits inside a $10\\text{ cm} \\times 10\\text{ cm}$ square of area $100\\text{ cm}^2$, so its area cannot possibly be $100\\pi \\approx 314.16\\text{ cm}^2$."
+    },
+    {
+      "id": "misc_7_2_2",
+      "title": "Omitting the Straight Diameter When Finding the Perimeter of a Semicircle",
+      "misconception": "Calculating the perimeter of a semicircle of radius $r$ as just the curved arc $\\pi r$.",
+      "correct_concept": "A semicircle is a closed shape bounded by a curved arc of length $\\pi r$ AND a straight diameter of length $2r$.",
+      "incorrect_working": "$$P_{\\text{semicircle}} = \\frac{1}{2}(2\\pi r) = \\pi r \\quad \\text{(Incorrect — arc length only)}$$",
+      "correct_working": "$$P_{\\text{semicircle}} = \\pi r + 2r = \\pi r + d$$",
+      "counter_example": "For $r = 7\\text{ cm}$, walking all the way around the semicircle edge and back to the start requires walking the curved arc ($7\\pi\\text{ cm}$) plus the straight base ($14\\text{ cm}$)."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "7_2_Q1",
+        "question": "Find the exact circumference and exact area of a circle of radius $9\\text{ cm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$C = 18\\pi\\text{ cm}$, $A = 81\\pi\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Substitute $r = 9$ into $C = 2\\pi r$: $C = 2\\pi(9) = 18\\pi\\text{ cm}$.",
+          "Substitute $r = 9$ into $A = \\pi r^2$: $A = \\pi(9)^2 = 81\\pi\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "7_2_Q2",
+        "question": "Using the approximation $\\pi \\approx \\dfrac{22}{7}$, find the circumference and area of a circle of radius $14\\text{ cm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$C = 88\\text{ cm}$, $A = 616\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Circumference: $C = 2 \\times \\frac{22}{7} \\times 14 = 2 \\times 22 \\times 2 = 88\\text{ cm}$.",
+          "Area: $A = \\frac{22}{7} \\times 14^2 = \\frac{22}{7} \\times 196 = 22 \\times 28 = 616\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "7_2_Q3",
+        "question": "Find the exact perimeter and exact area of a semicircle with diameter $12\\text{ m}$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$P = (6\\pi + 12)\\text{ m}$, $A = 18\\pi\\text{ m}^2$",
+        "step_by_step_solution": [
+          "The radius is $r = \\frac{12}{2} = 6\\text{ m}$. The curved arc is $\\pi r = 6\\pi\\text{ m}$, so total perimeter $P = (6\\pi + 12)\\text{ m}$.",
+          "The area is half a full circle: $A = \\frac{1}{2}\\pi(6)^2 = 18\\pi\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "7_2_Q4",
+        "question": "Calculate the exact area and exact arc length of a sector with radius $15\\text{ cm}$ and central angle $120^\\circ$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "Area $= 75\\pi\\text{ cm}^2$, arc length $= 10\\pi\\text{ cm}$",
+        "step_by_step_solution": [
+          "The sector fraction is $\\frac{120}{360} = \\frac{1}{3}$. Area $= \\frac{1}{3} \\times \\pi(15)^2 = \\frac{225\\pi}{3} = 75\\pi\\text{ cm}^2$.",
+          "Arc length $= \\frac{1}{3} \\times 2\\pi(15) = \\frac{30\\pi}{3} = 10\\pi\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "7_2_Q5",
+        "question": "A circle has an exact area of $196\\pi\\text{ cm}^2$. Find (a) its radius $r$ and (b) its exact circumference.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "(a) $r = 14\\text{ cm}$, (b) $C = 28\\pi\\text{ cm}$",
+        "step_by_step_solution": [
+          "Equate $\\pi r^2 = 196\\pi \\implies r^2 = 196 \\implies r = \\sqrt{196} = 14\\text{ cm}$.",
+          "Substitute $r = 14$ into $C = 2\\pi r$: $C = 28\\pi\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "7_2_Q6",
+        "question": "An annulus (flat washer) is formed by removing an inner circle of radius $5\\text{ cm}$ from a concentric outer circle of radius $13\\text{ cm}$. Find the exact area of the annulus in terms of $\\pi$.",
+        "difficulty": "Challenging",
+        "context": "Understanding",
+        "final_answer": "$144\\pi\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Use the annulus area formula $A = \\pi R^2 - \\pi r^2 = \\pi(13^2 - 5^2)$.",
+          "Evaluate: $A = \\pi(169 - 25) = 144\\pi\\text{ cm}^2$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "7_2_Q7",
+        "question": "A mountain bike wheel has a diameter of $70\\text{ cm}$ ($0.7\\text{ m}$). Using $\\pi \\approx \\dfrac{22}{7}$, find (a) the distance travelled in one complete wheel revolution, and (b) how many revolutions the wheel makes during a $4.4\\text{ km}$ trail ride in the You Yangs.",
+        "difficulty": "Medium",
+        "context": "Cycling & Distance",
+        "final_answer": "(a) $2.2\\text{ m}$, (b) $2000\\text{ revolutions}$",
+        "step_by_step_solution": [
+          "One revolution equals the circumference: $C = \\pi d = \\frac{22}{7} \\times 0.7 = 2.2\\text{ m}$.",
+          "Convert $4.4\\text{ km}$ to $4400\\text{ m}$ and divide by $2.2\\text{ m}$: $\\frac{4400}{2.2} = 2000\\text{ revolutions}$."
+        ]
+      },
+      {
+        "id": "7_2_Q8",
+        "question": "A centre-pivot irrigation boom on a Murray River lucerne farm rotates in a full circle of radius $200\\text{ m}$ inside a square paddock of side length $400\\text{ m}$. Find the exact area (and the area rounded to the nearest whole $\\text{m}^2$, using $\\pi \\approx 3.1416$) of the four dry corners of the square paddock that the sprinkler does not reach.",
+        "difficulty": "Challenging",
+        "context": "Australian Irrigation Farming",
+        "final_answer": "$(160\\,000 - 40\\,000\\pi)\\text{ m}^2 \\approx 34\\,336\\text{ m}^2$",
+        "step_by_step_solution": [
+          "Area of the square paddock $= 400 \\times 400 = 160\\,000\\text{ m}^2$, and area of the irrigated circle $= \\pi(200)^2 = 40\\,000\\pi\\text{ m}^2$.",
+          "Subtract the circle from the square: $A_{\\text{dry}} = 160\\,000 - 40\\,000\\pi \\approx 160\\,000 - 40\\,000(3.1416) = 34\\,336\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "7_2_Q9",
+        "question": "A circular roundabout in Canberra has a radius of $10\\text{ m}$ and is surrounded by a $2\\text{ m}$ wide asphalt lane (forming an outer radius of $12\\text{ m}$). Find the exact area of the asphalt lane in terms of $\\pi$.",
+        "difficulty": "Medium",
+        "context": "Civil Engineering",
+        "final_answer": "$44\\pi\\text{ m}^2$",
+        "step_by_step_solution": [
+          "The asphalt lane is an annulus with outer radius $R = 10 + 2 = 12\\text{ m}$ and inner radius $r = 10\\text{ m}$.",
+          "Calculate the difference of areas: $A = \\pi(12^2 - 10^2) = \\pi(144 - 100) = 44\\pi\\text{ m}^2$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "7_2_Q10",
+        "question": "Prove algebraically that if the radius of a circle is doubled (from $r$ to $2r$), its circumference doubles ($2 \\times$), whereas its area quadruples ($4 \\times$).",
+        "difficulty": "Medium",
+        "context": "Scaling Proof",
+        "final_answer": "$C_{\\text{new}} = 2\\pi(2r) = 2(2\\pi r) = 2C$; $A_{\\text{new}} = \\pi(2r)^2 = 4\\pi r^2 = 4A$",
+        "step_by_step_solution": [
+          "Original circumference is $C = 2\\pi r$ and original area is $A = \\pi r^2$.",
+          "Replacing $r$ with $2r$ gives $C_{\\text{new}} = 2\\pi(2r) = 2(2\\pi r) = 2C$ and $A_{\\text{new}} = \\pi(2r)^2 = 4\\pi r^2 = 4A$."
+        ]
+      },
+      {
+        "id": "7_2_Q11",
+        "question": "A pizzeria sells one large pizza of diameter $40\\text{ cm}$ ($r = 20\\text{ cm}$) for the same price as two medium pizzas of diameter $28\\text{ cm}$ ($r = 14\\text{ cm}$). Compare the exact total areas in terms of $\\pi$ to determine which option gives more pizza.",
+        "difficulty": "Challenging",
+        "context": "Consumer Reasoning",
+        "final_answer": "One large pizza gives more ($400\\pi\\text{ cm}^2$ vs $2 \\times 196\\pi = 392\\pi\\text{ cm}^2$)",
+        "step_by_step_solution": [
+          "Area of one large pizza ($r = 20\\text{ cm}$): $A_{\\text{large}} = \\pi(20)^2 = 400\\pi\\text{ cm}^2$.",
+          "Combined area of two medium pizzas ($r = 14\\text{ cm}$): $2 \\times \\pi(14)^2 = 2 \\times 196\\pi = 392\\pi\\text{ cm}^2$. Since $400\\pi > 392\\pi$, the single large pizza gives $8\\pi\\text{ cm}^2$ more pizza."
+        ]
+      },
+      {
+        "id": "7_2_Q12",
+        "question": "Find the unique positive value of the radius $r$ for which the numerical value of a circle's area ($\\pi r^2$) equals the numerical value of its circumference ($2\\pi r$). Explain why the two quantities are still physically different even at this value of $r$.",
+        "difficulty": "Extension",
+        "context": "Dimensional Analysis",
+        "final_answer": "$r = 2$ (numerical values both equal $4\\pi$, but circumference is a 1D length in $\\text{units}$ while area is a 2D surface in $\\text{units}^2$)",
+        "step_by_step_solution": [
+          "Equate the two formulas for $r > 0$: $\\pi r^2 = 2\\pi r \\implies r = 2$ (where both equal $4\\pi$).",
+          "Even when $r = 2$, circumference measures 1D boundary length (e.g., $4\\pi\\text{ cm}$) and area measures 2D surface coverage (e.g., $4\\pi\\text{ cm}^2$), so their units are different."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE7_2_1_C",
+      "description": "Worked Example 7.2.1 exact C / pi",
+      "expression": "(2 * pi * 5) / pi",
+      "expected": 10
+    },
+    {
+      "id": "WE7_2_1_A",
+      "description": "Worked Example 7.2.1 exact A / pi",
+      "expression": "(pi * 5**2) / pi",
+      "expected": 25
+    },
+    {
+      "id": "WE7_2_2a",
+      "description": "Worked Example 7.2.2(a) sector area / pi",
+      "expression": "(Rational(60, 360) * pi * 12**2) / pi",
+      "expected": 24
+    },
+    {
+      "id": "WE7_2_2b",
+      "description": "Worked Example 7.2.2(b) sector arc / pi",
+      "expression": "(Rational(60, 360) * 2 * pi * 12) / pi",
+      "expected": 4
+    },
+    {
+      "id": "EX7_2_Q1_A",
+      "description": "Exercise 7.2 Q1 area / pi",
+      "expression": "(pi * 9**2) / pi",
+      "expected": 81
+    },
+    {
+      "id": "EX7_2_Q2_C",
+      "description": "Exercise 7.2 Q2 circumference with 22/7",
+      "expression": "2 * Rational(22, 7) * 14",
+      "expected": 88
+    },
+    {
+      "id": "EX7_2_Q2_A",
+      "description": "Exercise 7.2 Q2 area with 22/7",
+      "expression": "Rational(22, 7) * 14**2",
+      "expected": 616
+    },
+    {
+      "id": "EX7_2_Q3_A",
+      "description": "Exercise 7.2 Q3 semicircle area / pi",
+      "expression": "(Rational(1, 2) * pi * 6**2) / pi",
+      "expected": 18
+    },
+    {
+      "id": "EX7_2_Q4_A",
+      "description": "Exercise 7.2 Q4 sector area / pi",
+      "expression": "(Rational(120, 360) * pi * 15**2) / pi",
+      "expected": 75
+    },
+    {
+      "id": "EX7_2_Q4_arc",
+      "description": "Exercise 7.2 Q4 arc length / pi",
+      "expression": "(Rational(120, 360) * 2 * pi * 15) / pi",
+      "expected": 10
+    },
+    {
+      "id": "EX7_2_Q5_r",
+      "description": "Exercise 7.2 Q5 radius",
+      "expression": "sqrt(196)",
+      "expected": 14
+    },
+    {
+      "id": "EX7_2_Q6",
+      "description": "Exercise 7.2 Q6 annulus area / pi",
+      "expression": "13**2 - 5**2",
+      "expected": 144
+    },
+    {
+      "id": "EX7_2_Q7a",
+      "description": "Exercise 7.2 Q7(a) wheel circumference",
+      "expression": "Rational(22, 7) * 0.7",
+      "expected": 2.2
+    },
+    {
+      "id": "EX7_2_Q7b",
+      "description": "Exercise 7.2 Q7(b) wheel revolutions",
+      "expression": "4400 / 2.2",
+      "expected": 2000
+    },
+    {
+      "id": "EX7_2_Q9",
+      "description": "Exercise 7.2 Q9 roundabout lane / pi",
+      "expression": "12**2 - 10**2",
+      "expected": 44
+    },
+    {
+      "id": "EX7_2_Q11",
+      "description": "Exercise 7.2 Q11 pizza area difference / pi",
+      "expression": "20**2 - 2 * 14**2",
+      "expected": 8
+    }
+  ]
+}

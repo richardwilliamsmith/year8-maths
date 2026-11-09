@@ -1,0 +1,415 @@
+{
+  "metadata": {
+    "section_id": "2_4",
+    "section_code": "2D",
+    "chapter_number": 2,
+    "chapter_title": "Fractions, Decimals, Irrational Numbers and Index Laws",
+    "title": "Index Laws and the Zero Exponent",
+    "vcaa_code": "VC2M8N02",
+    "vcaa_description": "Establish and apply the exponent laws with positive integer exponents and the zero-exponent, using exponent notation with numbers.",
+    "strand": "Number",
+    "target_mastery": "Simplify numerical and algebraic expressions using the multiplication, division, power-of-a-power, and zero-exponent laws.",
+    "prerequisites": [
+      "Base and exponent notation ($a^n$)",
+      "Prime factorisation in index form (Section 1D)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Base",
+        "definition": "The number or pronumeral that is repeatedly multiplied in an exponential expression $a^n$."
+      },
+      {
+        "term": "Exponent (Index / Power)",
+        "definition": "The superscript $n$ in $a^n$ indicating how many factors of the base $a$ are multiplied together."
+      },
+      {
+        "term": "Zero Exponent Law",
+        "definition": "Any non-zero base raised to the power of $0$ equals $1$: $a^0 = 1$ for $a \\neq 0$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_2_4_1",
+      "title": "First Index Law: Multiplying Powers with the Same Base",
+      "explanation": "When multiplying two powers that have the exact same base, count the total number of repeated factors by adding their exponents while keeping the base unchanged. For example, $2^3 \\times 2^4 = (2 \\times 2 \\times 2) \\times (2 \\times 2 \\times 2 \\times 2) = 2^{3+4} = 2^7$.",
+      "formula_latex": "a^m \\times a^n = a^{m + n}",
+      "callout_title": "Keep the Base, Add the Indices",
+      "callout_rule": "When multiplying powers with the same base $a$, NEVER multiply the bases together: $3^2 \\times 3^4 = 3^{2+4} = 3^6$, NOT $9^6$."
+    },
+    {
+      "id": "theory_2_4_2",
+      "title": "Second Index Law: Dividing Powers with the Same Base",
+      "explanation": "When dividing two powers with the same non-zero base, common factors cancel between the numerator and denominator, leaving the base raised to the difference of the exponents.",
+      "formula_latex": "\\frac{a^m}{a^n} = a^m \\div a^n = a^{m - n} \\quad (a \\neq 0)",
+      "callout_title": "Keep the Base, Subtract the Indices",
+      "callout_rule": "In $a^m \\div a^n$, always subtract the bottom (divisor) index from the top (dividend) index: $5^7 \\div 5^3 = 5^{7-3} = 5^4$."
+    },
+    {
+      "id": "theory_2_4_3",
+      "title": "Third Index Law (Power of a Power) and Products/Quotients",
+      "explanation": "When a power $a^m$ is raised to another exponent $n$, there are $n$ groups of $m$ factors, so we multiply the exponents: $(a^m)^n = a^{mn}$. Similarly, an exponent outside brackets applies to every factor inside a product or quotient: $(ab)^n = a^n b^n$ and $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$.",
+      "formula_latex": "(a^m)^n = a^{m \\times n}, \\quad (ab)^n = a^n b^n, \\quad \\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}",
+      "callout_title": "Power of a Power: Multiply the Indices",
+      "callout_rule": "Distinguish carefully between $a^m \\times a^n = a^{m+n}$ (add indices) and $(a^m)^n = a^{m \\times n}$ (multiply indices)."
+    },
+    {
+      "id": "theory_2_4_4",
+      "title": "The Zero Exponent Law",
+      "explanation": "Dividing any non-zero power $a^m$ by itself gives $\\frac{a^m}{a^m} = 1$. Applying the Second Index Law to the same expression gives $\\frac{a^m}{a^m} = a^{m-m} = a^0$. Therefore, any non-zero number raised to the power of $0$ is equal to $1$.",
+      "formula_latex": "a^0 = 1 \\quad (a \\neq 0)",
+      "callout_title": "Scope of the Zero Exponent",
+      "callout_rule": "Check whether coefficients are inside or outside the brackets! $(5a)^0 = 1$, whereas $5a^0 = 5 \\times 1 = 5$, and $-7^0 = -(7^0) = -1$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE2_4_1",
+      "title": "Applying the Multiplication and Division Index Laws",
+      "difficulty": "Fluency",
+      "problem": "Simplify the following in index form and then evaluate as a whole number: $\\dfrac{3^5 \\times 3^4}{3^6}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Apply the First Index Law to the numerator by adding the exponents: $5 + 4 = 9$.",
+          "working": "$$\\frac{3^5 \\times 3^4}{3^6} = \\frac{3^{5+4}}{3^6} = \\frac{3^9}{3^6}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Apply the Second Index Law by subtracting the denominator's exponent from the numerator's exponent: $9 - 6 = 3$.",
+          "working": "$$= 3^{9-6} = 3^3 = 27$$"
+        }
+      ],
+      "final_answer": "$3^3 = 27$",
+      "now_you_try": {
+        "problem": "Simplify in index form and evaluate: $\\dfrac{2^7 \\times 2^3}{2^6}$.",
+        "hint": "Add the exponents in the numerator ($7 + 3 = 10$), then subtract $6$.",
+        "working_summary": "$\\frac{2^{10}}{2^6} = 2^{10-6} = 2^4 = 16$.",
+        "answer": "$2^4 = 16$"
+      }
+    },
+    {
+      "id": "WE2_4_2",
+      "title": "Power of a Power and Combining Multiple Laws",
+      "difficulty": "Understanding",
+      "problem": "Express $\\dfrac{(5^3)^4 \\times 5^2}{(5^5)^2}$ as a single power of $5$ and evaluate.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Apply the Power of a Power Law $(a^m)^n = a^{mn}$ to both bracketed powers: $(5^3)^4 = 5^{12}$ and $(5^5)^2 = 5^{10}$.",
+          "working": "$$\\frac{(5^3)^4 \\times 5^2}{(5^5)^2} = \\frac{5^{12} \\times 5^2}{5^{10}}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Add the exponents in the numerator ($12 + 2 = 14$) and subtract the denominator's exponent ($14 - 10 = 4$).",
+          "working": "$$= \\frac{5^{14}}{5^{10}} = 5^{14-10} = 5^4 = 625$$"
+        }
+      ],
+      "final_answer": "$5^4 = 625$",
+      "now_you_try": {
+        "problem": "Express $\\dfrac{(2^4)^3 \\times 2^3}{(2^6)^2}$ as a single power of $2$ and evaluate.",
+        "hint": "Simplify $(2^4)^3 = 2^{12}$ and $(2^6)^2 = 2^{12}$ first.",
+        "working_summary": "$\\frac{2^{12} \\times 2^3}{2^{12}} = 2^{15-12} = 2^3 = 8$.",
+        "answer": "$2^3 = 8$"
+      }
+    },
+    {
+      "id": "WE2_4_3",
+      "title": "Evaluating Expressions with the Zero Exponent",
+      "difficulty": "Understanding",
+      "problem": "Evaluate: (a) $8^0 + (4 \\times 9)^0$ and (b) $6 \\times 11^0 - (-9)^0 - 3^0$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), any non-zero number raised to the power $0$ equals $1$: both $8^0 = 1$ and $(4 \\times 9)^0 = 36^0 = 1$.",
+          "working": "$$8^0 + (4 \\times 9)^0 = 1 + 1 = 2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), $11^0 = 1$, $(-9)^0 = 1$, and $3^0 = 1$. Multiply $6 \\times 1$ before subtracting.",
+          "working": "$$6 \\times 11^0 - (-9)^0 - 3^0 = 6 \\times 1 - 1 - 1 = 4$$"
+        }
+      ],
+      "final_answer": "(a) $2$, (b) $4$",
+      "now_you_try": {
+        "problem": "Evaluate: $9 \\times 5^0 + (7 \\times 3)^0 - 12^0$.",
+        "hint": "Replace each zero power ($5^0$, $(21)^0$, $12^0$) with $1$.",
+        "working_summary": "$9 \\times 1 + 1 - 1 = 9$.",
+        "answer": "$9$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_2_4_1",
+      "title": "Multiplying the Bases When Applying the First Index Law",
+      "misconception": "Writing $2^3 \\times 2^4 = 4^7$ by multiplying the bases $2 \\times 2 = 4$ as well as adding the exponents.",
+      "correct_concept": "The base $2$ simply identifies the repeated factor. Only the exponents are added while the base stays $2$: $2^3 \\times 2^4 = 2^{3+4} = 2^7 = 128$.",
+      "incorrect_working": "$$2^3 \\times 2^4 = 4^{3+4} = 4^7 = 16384 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$2^3 \\times 2^4 = 2^{3+4} = 2^7 = 128 \\quad (\\text{Correct})$$",
+      "counter_example": "$2^3 \\times 2^4 = 8 \\times 16 = 128 = 2^7$, whereas $4^7 = 16384$."
+    },
+    {
+      "id": "MISC_2_4_2",
+      "title": "Assuming $a^0 = 0$ Instead of $a^0 = 1$",
+      "misconception": "Evaluating $7^0 = 0$ by confusing $7^0$ with $7 \\times 0$.",
+      "correct_concept": "Every time you decrease the exponent on base $a$ by $1$, you divide by $a$: $7^2 = 49$, $7^1 = 7$, and $7^0 = 7 \\div 7 = 1$.",
+      "incorrect_working": "$$7^0 = 0 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$7^0 = \\frac{7^1}{7^1} = 1 \\quad (\\text{Correct})$$",
+      "counter_example": "If $7^0$ were $0$, then $7^3 \\times 7^0$ would be $0$, contradicting the First Index Law $7^3 \\times 7^0 = 7^{3+0} = 7^3$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "2_4_Q1",
+        "question": "Evaluate $\\dfrac{6^5 \\times 6^3}{6^6}$.",
+        "difficulty": "Easy",
+        "context": "First & Second Index Laws",
+        "final_answer": "$36$",
+        "step_by_step_solution": [
+          "Add exponents in the numerator: $6^{5+3} = 6^8$.",
+          "Subtract the denominator exponent: $6^{8-6} = 6^2 = 36$."
+        ]
+      },
+      {
+        "id": "2_4_Q2",
+        "question": "Evaluate $\\dfrac{(3^2)^4}{3^5}$.",
+        "difficulty": "Easy",
+        "context": "Power of a Power",
+        "final_answer": "$27$",
+        "step_by_step_solution": [
+          "Multiply exponents in the numerator: $(3^2)^4 = 3^{2 \\times 4} = 3^8$.",
+          "Divide by $3^5$: $3^{8-5} = 3^3 = 27$."
+        ]
+      },
+      {
+        "id": "2_4_Q3",
+        "question": "Evaluate $4 \\times 7^0 + (4 \\times 7)^0 - 9^0$.",
+        "difficulty": "Easy",
+        "context": "Zero Exponent Law",
+        "final_answer": "$4$",
+        "step_by_step_solution": [
+          "Substitute $7^0 = 1$, $(28)^0 = 1$, and $9^0 = 1$.",
+          "Evaluate: $4 \\times 1 + 1 - 1 = 4$."
+        ]
+      },
+      {
+        "id": "2_4_Q4",
+        "question": "Evaluate $\\dfrac{2^5 \\times 3^4}{2^3 \\times 3^2}$.",
+        "difficulty": "Medium",
+        "context": "Multiple Prime Bases",
+        "final_answer": "$36$",
+        "step_by_step_solution": [
+          "Apply the Second Index Law separately to base $2$ and base $3$.",
+          "$2^{5-3} \\times 3^{4-2} = 2^2 \\times 3^2 = 4 \\times 9 = 36$."
+        ]
+      },
+      {
+        "id": "2_4_Q5",
+        "question": "By writing $4$, $8$, and $16$ as powers of $2$, simplify $\\dfrac{8^3 \\times 4^2}{16^2}$ and evaluate.",
+        "difficulty": "Challenging",
+        "context": "Changing to a Common Prime Base",
+        "final_answer": "$2^5 = 32$",
+        "step_by_step_solution": [
+          "Substitute $8 = 2^3$, $4 = 2^2$, and $16 = 2^4$: $\\frac{(2^3)^3 \\times (2^2)^2}{(2^4)^2}$.",
+          "Apply the Power of a Power Law: $\\frac{2^9 \\times 2^4}{2^8} = \\frac{2^{13}}{2^8} = 2^{13-8} = 2^5 = 32$."
+        ]
+      },
+      {
+        "id": "2_4_Q6",
+        "question": "Find the positive integer $n$ such that $\\dfrac{5^{2n} \\times 5^3}{5^4} = 5^9$.",
+        "difficulty": "Challenging",
+        "context": "Exponential Equations",
+        "final_answer": "$n = 5$",
+        "step_by_step_solution": [
+          "Simplify the left-hand side using index laws: $5^{2n + 3 - 4} = 5^{2n - 1}$.",
+          "Equate exponents of base $5$: $2n - 1 = 9 \\implies 2n = 10 \\implies n = 5$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "2_4_Q7",
+        "question": "In binary computing at the Pawsey Supercomputing Research Centre in Perth, $1\\text{ kibibyte} = 2^{10}\\text{ bytes}$, $1\\text{ mebibyte} = 2^{20}\\text{ bytes}$, and $1\\text{ gibibyte} = 2^{30}\\text{ bytes}$. How many $2^6$-byte data packets are needed to transmit a $2^{20}$-byte file? Express your answer as a power of $2$ and as an integer.",
+        "difficulty": "Medium",
+        "context": "Australian Supercomputing (Pawsey Perth)",
+        "final_answer": "$2^{14} = 16384\\text{ packets}$",
+        "step_by_step_solution": [
+          "Divide the total file size by the packet size: $2^{20} \\div 2^6$.",
+          "Apply the Second Index Law: $2^{20 - 6} = 2^{14} = 16384\\text{ packets}$."
+        ]
+      },
+      {
+        "id": "2_4_Q8",
+        "question": "A culture of bacteria in a CSIRO laboratory starts with $3^2$ cells and triples every hour, so after $t$ hours there are $3^2 \\times 3^t$ cells. (a) Verify that at $t = 0$ hours the formula gives the correct initial number of cells. (b) How many times larger is the population at $t = 6$ hours compared to $t = 2$ hours?",
+        "difficulty": "Medium",
+        "context": "Australian Science (CSIRO)",
+        "final_answer": "(a) $3^2 \\times 3^0 = 9 \\times 1 = 9\\text{ cells}$; (b) $3^4 = 81\\text{ times larger}$",
+        "step_by_step_solution": [
+          "At $t = 0$, $3^2 \\times 3^0 = 9 \\times 1 = 9 = 3^2$ cells.",
+          "Divide the population at $t = 6$ ($3^{2+6} = 3^8$) by the population at $t = 2$ ($3^{2+2} = 3^4$): $\\frac{3^8}{3^4} = 3^{8-4} = 3^4 = 81$."
+        ]
+      },
+      {
+        "id": "2_4_Q9",
+        "question": "Find the exact number of trailing zeros at the end of the number $N = 2^8 \\times 3^2 \\times 5^6$ when written out in full.",
+        "difficulty": "Challenging",
+        "context": "Powers of 10 & Prime Factors",
+        "final_answer": "$6\\text{ trailing zeros}$ ($N = 36\\,000\\,000$)",
+        "step_by_step_solution": [
+          "Each trailing zero comes from a factor of $10 = 2 \\times 5$.",
+          "Group $2^6 \\times 5^6 = (2 \\times 5)^6 = 10^6$, leaving $2^2 \\times 3^2 = 4 \\times 9 = 36$.",
+          "Thus $N = 36 \\times 10^6 = 36\\,000\\,000$, which has $6$ trailing zeros."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "2_4_Q10",
+        "question": "Without calculating the full values, determine which number is larger: $2^{30}$ or $3^{20}$. Justify your reasoning using the Power of a Power Law.",
+        "difficulty": "Challenging",
+        "context": "Comparing Large Exponentials",
+        "final_answer": "$3^{20} > 2^{30}$",
+        "step_by_step_solution": [
+          "Rewrite both powers with a common outer exponent of $10$ using $(a^m)^n = a^{mn}$.",
+          "$2^{30} = (2^3)^{10} = 8^{10}$ and $3^{20} = (3^2)^{10} = 9^{10}$.",
+          "Since $9 > 8$, we have $9^{10} > 8^{10}$, so $3^{20} > 2^{30}$."
+        ]
+      },
+      {
+        "id": "2_4_Q11",
+        "question": "Explain why $2^n + 2^n = 2^{n+1}$ for every positive integer $n$.",
+        "difficulty": "Challenging",
+        "context": "Algebraic Index Proof",
+        "final_answer": "$2^n + 2^n = 2 \\times 2^n = 2^1 \\times 2^n = 2^{n+1}$",
+        "step_by_step_solution": [
+          "Adding a quantity to itself is equivalent to multiplying by $2$: $2^n + 2^n = 2 \\times 2^n$.",
+          "Write $2 = 2^1$ and apply the First Index Law: $2^1 \\times 2^n = 2^{1+n} = 2^{n+1}$."
+        ]
+      },
+      {
+        "id": "2_4_Q12",
+        "question": "Determine the units (ones) digit of $7^{100}$ by investigating the repeating cycle of the units digits of $7^1, 7^2, 7^3, 7^4, \\dots$.",
+        "difficulty": "Extension",
+        "context": "Modular Cyclicity of Powers",
+        "final_answer": "$1$",
+        "step_by_step_solution": [
+          "List the units digits of the first few powers of $7$: $7^1 \\to 7$, $7^2 = 49 \\to 9$, $7^3 = 343 \\to 3$, $7^4 = 2401 \\to 1$, $7^5 \\to 7$.",
+          "The units digits repeat in a cycle of length $4$: $(7, 9, 3, 1)$.",
+          "Since $100$ is an exact multiple of $4$ ($100 = 4 \\times 25$), $7^{100}$ has the same units digit as $7^4$, which is $1$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE2_4_1",
+      "description": "Worked Example 2.4.1",
+      "expression": "(3**5 * 3**4) / 3**6",
+      "expected": 27
+    },
+    {
+      "id": "NYT2_4_1",
+      "description": "Now You Try 2.4.1",
+      "expression": "(2**7 * 2**3) / 2**6",
+      "expected": 16
+    },
+    {
+      "id": "WE2_4_2",
+      "description": "Worked Example 2.4.2",
+      "expression": "((5**3)**4 * 5**2) / (5**5)**2",
+      "expected": 625
+    },
+    {
+      "id": "NYT2_4_2",
+      "description": "Now You Try 2.4.2",
+      "expression": "((2**4)**3 * 2**3) / (2**6)**2",
+      "expected": 8
+    },
+    {
+      "id": "WE2_4_3a",
+      "description": "Worked Example 2.4.3(a)",
+      "expression": "8**0 + (4 * 9)**0",
+      "expected": 2
+    },
+    {
+      "id": "WE2_4_3b",
+      "description": "Worked Example 2.4.3(b)",
+      "expression": "6 * 11**0 - (-9)**0 - 3**0",
+      "expected": 4
+    },
+    {
+      "id": "NYT2_4_3",
+      "description": "Now You Try 2.4.3",
+      "expression": "9 * 5**0 + (7 * 3)**0 - 12**0",
+      "expected": 9
+    },
+    {
+      "id": "EX2_4_Q1",
+      "description": "Exercise 2.4 Q1",
+      "expression": "(6**5 * 6**3) / 6**6",
+      "expected": 36
+    },
+    {
+      "id": "EX2_4_Q2",
+      "description": "Exercise 2.4 Q2",
+      "expression": "(3**2)**4 / 3**5",
+      "expected": 27
+    },
+    {
+      "id": "EX2_4_Q3",
+      "description": "Exercise 2.4 Q3",
+      "expression": "4 * 7**0 + (4 * 7)**0 - 9**0",
+      "expected": 4
+    },
+    {
+      "id": "EX2_4_Q4",
+      "description": "Exercise 2.4 Q4",
+      "expression": "(2**5 * 3**4) / (2**3 * 3**2)",
+      "expected": 36
+    },
+    {
+      "id": "EX2_4_Q5",
+      "description": "Exercise 2.4 Q5",
+      "expression": "(8**3 * 4**2) / 16**2",
+      "expected": 32
+    },
+    {
+      "id": "EX2_4_Q6",
+      "description": "Exercise 2.4 Q6 check n=5",
+      "expression": "(5**(2*5) * 5**3) / 5**4 - 5**9",
+      "expected": 0
+    },
+    {
+      "id": "EX2_4_Q7",
+      "description": "Exercise 2.4 Q7 2**20 / 2**6",
+      "expression": "2**20 / 2**6",
+      "expected": 16384
+    },
+    {
+      "id": "EX2_4_Q8b",
+      "description": "Exercise 2.4 Q8(b)",
+      "expression": "3**8 / 3**4",
+      "expected": 81
+    },
+    {
+      "id": "EX2_4_Q9",
+      "description": "Exercise 2.4 Q9 N value",
+      "expression": "2**8 * 3**2 * 5**6",
+      "expected": 36000000
+    },
+    {
+      "id": "EX2_4_Q10",
+      "description": "Exercise 2.4 Q10 3**20 > 2**30",
+      "expression": "3**20 > 2**30",
+      "expected": true
+    },
+    {
+      "id": "EX2_4_Q12",
+      "description": "Exercise 2.4 Q12 units digit of 7**100",
+      "expression": "Mod(7**100, 10)",
+      "expected": 1
+    }
+  ]
+}

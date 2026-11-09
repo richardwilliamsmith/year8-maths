@@ -1,0 +1,392 @@
+{
+  "metadata": {
+    "section_id": "7_3",
+    "section_code": "7C",
+    "chapter_number": 7,
+    "chapter_title": "Length, Area, Volume and Time",
+    "title": "Volume, Capacity of Prisms and Time Zones",
+    "vcaa_code": "VC2M8M03",
+    "vcaa_description": "Solve problems involving the volume and capacity of right prisms using appropriate units; solve problems involving duration and time zones.",
+    "strand": "Measurement",
+    "target_mastery": "Calculate the volume of right prisms using $V = Ah$, convert between volume ($\\text{cm}^3, \\text{m}^3$) and liquid capacity ($\\text{mL}, \\text{L}, \\text{kL}$), and solve duration and Australian/global time zone problems.",
+    "prerequisites": [
+      "Area of rectangles, triangles, and trapeziums (Section 7A)",
+      "24-hour time and elapsed time"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Right prism and uniform cross-section",
+        "definition": "A 3D solid with two identical, parallel polygon bases (its uniform cross-section of area $A$) joined by rectangular side faces perpendicular to the base."
+      },
+      {
+        "term": "Volume vs Capacity",
+        "definition": "Volume is the amount of 3D space an object occupies (measured in $\\text{mm}^3, \\text{cm}^3, \\text{m}^3$). Capacity is the amount of fluid a container can hold (measured in $\\text{mL}, \\text{L}, \\text{kL}, \\text{ML}$)."
+      },
+      {
+        "term": "Australian Time Zones",
+        "definition": "Standard time zones across Australia relative to Coordinated Universal Time (UTC): AWST (UTC$+8$), ACST (UTC$+9.5$), and AEST (UTC$+10$), plus Daylight Saving AEDT (UTC$+11$) and ACDT (UTC$+10.5$)."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_7_3_1",
+      "title": "Volume of Any Right Prism ($V = Ah$)",
+      "explanation": "Every right prism has a uniform cross-section (the shape you see if you slice the prism parallel to its base anywhere along its length). The volume $V$ of any right prism equals the area $A$ of its uniform cross-section multiplied by the perpendicular length or height $h$ connecting the two identical bases.",
+      "formula_latex": "V = Ah \\quad \\left(V_{\\text{rect prism}} = lwh, \\quad V_{\\text{triangular prism}} = \\frac{1}{2}bh \\times L\\right)",
+      "callout_title": "Identify the Uniform Cross-Section First",
+      "callout_rule": "The base $A$ of a prism is NOT always the face resting on the ground — it is the two-dimensional face that stays identical when sliced parallel to the ends."
+    },
+    {
+      "id": "theory_7_3_2",
+      "title": "Converting Volume Units and Linking Volume to Capacity",
+      "explanation": "Because volume is three-dimensional, linear conversion factors are cubed: $1\\text{ cm}^3 = 10^3\\text{ mm}^3 = 1000\\text{ mm}^3$ and $1\\text{ m}^3 = 100^3\\text{ cm}^3 = 1\\,000\\,000\\text{ cm}^3$. By metric definition, $1\\text{ cm}^3$ holds exactly $1\\text{ mL}$ of liquid, a $10\\text{ cm} \\times 10\\text{ cm} \\times 10\\text{ cm}$ cube ($1000\\text{ cm}^3$) holds $1\\text{ L}$, and $1\\text{ m}^3$ holds $1000\\text{ L} = 1\\text{ kilolitre (kL)}$.",
+      "formula_latex": "1\\text{ cm}^3 = 1\\text{ mL}, \\qquad 1000\\text{ cm}^3 = 1\\text{ L}, \\qquad 1\\text{ m}^3 = 1000\\text{ L} = 1\\text{ kL}",
+      "callout_title": "Three Key Bridges Between Volume and Capacity",
+      "callout_rule": "Memorise: $1\\text{ cm}^3 = 1\\text{ mL}$ and $1\\text{ m}^3 = 1000\\text{ L} = 1\\text{ kL}$."
+    },
+    {
+      "id": "theory_7_3_3",
+      "title": "24-Hour Time, Duration, and Australian Time Zones",
+      "explanation": "In standard winter time, Australia has three main time zones: Australian Western Standard Time (AWST, UTC$+8$: WA), Australian Central Standard Time (ACST, UTC$+9.5$: SA, NT), and Australian Eastern Standard Time (AEST, UTC$+10$: VIC, NSW, QLD, TAS, ACT). During Daylight Saving (October–April), VIC, NSW, TAS, and ACT move $1$ hour forward to AEDT (UTC$+11$), and SA moves to ACDT (UTC$+10.5$), while WA, NT, and QLD do not observe Daylight Saving.",
+      "formula_latex": "\\text{Standard: AWST (UTC}+8\\text{)} \\xrightarrow{+1.5\\text{ h}} \\text{ACST (UTC}+9.5\\text{)} \\xrightarrow{+0.5\\text{ h}} \\text{AEST (UTC}+10\\text{)}",
+      "callout_title": "East is Ahead; West is Behind",
+      "callout_rule": "When converting from a western city (e.g., Perth) to an eastern city (e.g., Melbourne), ADD the time difference. Always convert flight departure and arrival to the SAME time zone before finding flight duration."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE7_3_1",
+      "title": "Calculating the Volume of a Triangular Prism",
+      "difficulty": "Fluency",
+      "problem": "A right triangular prism has a triangular cross-section with base $b = 12\\text{ cm}$ and perpendicular triangle height $h_t = 9\\text{ cm}$, and a prism length of $L = 20\\text{ cm}$. Find (a) the cross-sectional area $A$, and (b) the volume $V$ of the prism in $\\text{cm}^3$ and in litres ($\\text{L}$).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the area $A$ of the triangular cross-section using $A = \\frac{1}{2}bh_t$.",
+          "working": "$$A = \\frac{1}{2} \\times 12 \\times 9 = 54\\text{ cm}^2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply $A$ by the prism length $L = 20\\text{ cm}$ to find the volume in $\\text{cm}^3$, then divide by $1000$ to convert $\\text{cm}^3$ to litres.",
+          "working": "$$V = Ah = 54 \\times 20 = 1080\\text{ cm}^3 = \\frac{1080}{1000}\\text{ L} = 1.08\\text{ L}$$"
+        }
+      ],
+      "final_answer": "(a) $A = 54\\text{ cm}^2$, (b) $V = 1080\\text{ cm}^3 = 1.08\\text{ L}$",
+      "now_you_try": {
+        "problem": "A triangular prism has a triangular cross-section of base $8\\text{ cm}$ and height $5\\text{ cm}$, and a prism length of $15\\text{ cm}$. Find its volume in $\\text{cm}^3$ and in $\\text{mL}$.",
+        "hint": "Find $A = \\frac{1}{2}(8)(5) = 20\\text{ cm}^2$, multiply by $15$, and use $1\\text{ cm}^3 = 1\\text{ mL}$.",
+        "working_summary": "$A = 20\\text{ cm}^2$; $V = 20 \\times 15 = 300\\text{ cm}^3 = 300\\text{ mL}$.",
+        "answer": "$300\\text{ cm}^3$ ($300\\text{ mL}$)"
+      }
+    },
+    {
+      "id": "WE7_3_2",
+      "title": "Volume and Capacity of a Trapezoidal Swimming Pool",
+      "difficulty": "Understanding",
+      "problem": "A rectangular swimming pool is $25\\text{ m}$ long and $10\\text{ m}$ wide. Its depth slopes uniformly from $1.2\\text{ m}$ at the shallow end to $2.4\\text{ m}$ at the deep end, so its side profile is a trapezium. Find (a) the volume of the pool in $\\text{m}^3$ and (b) its capacity in litres ($\\text{L}$).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The uniform cross-section is the trapezoidal side wall with parallel vertical depths $a = 1.2\\text{ m}$ and $b = 2.4\\text{ m}$ separated by the $25\\text{ m}$ length.",
+          "working": "$$A = \\frac{1}{2}(1.2 + 2.4) \\times 25 = 1.8 \\times 25 = 45\\text{ m}^2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply the cross-sectional area $A = 45\\text{ m}^2$ by the pool width $h = 10\\text{ m}$, then multiply by $1000$ since $1\\text{ m}^3 = 1000\\text{ L}$.",
+          "working": "$$V = 45 \\times 10 = 450\\text{ m}^3 = 450 \\times 1000\\text{ L} = 450\\,000\\text{ L}$$"
+        }
+      ],
+      "final_answer": "(a) $450\\text{ m}^3$, (b) $450\\,000\\text{ L}$ ($450\\text{ kL}$)",
+      "now_you_try": {
+        "problem": "A water trough has a trapezoidal cross-section with parallel top and bottom widths $60\\text{ cm}$ and $40\\text{ cm}$, perpendicular depth $30\\text{ cm}$, and length $200\\text{ cm}$. Find its capacity in litres.",
+        "hint": "Find $A = \\frac{1}{2}(60 + 40) \\times 30\\text{ cm}^2$, multiply by $200\\text{ cm}$, and divide by $1000$.",
+        "working_summary": "$A = 1500\\text{ cm}^2$; $V = 1500 \\times 200 = 300\\,000\\text{ cm}^3 = 300\\text{ L}$.",
+        "answer": "$300\\text{ L}$"
+      }
+    },
+    {
+      "id": "WE7_3_3",
+      "title": "Calculating Flight Arrivals Across Australian Time Zones",
+      "difficulty": "Problem-Solving",
+      "problem": "In January (during Daylight Saving), Melbourne is on AEDT (UTC$+11$) and Perth is on AWST (UTC$+8$). A Qantas flight departs Melbourne at $10{:}45\\text{ am}$ AEDT and takes $4\\text{ hours } 20\\text{ minutes}$. At what local time (AWST) does the flight land in Perth?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "First find the arrival time in Melbourne time (AEDT) by adding the flight duration of $4\\text{ h } 20\\text{ min}$ to $10{:}45\\text{ am}$.",
+          "working": "$$10{:}45 + 4\\text{ h } 20\\text{ min} = 15{:}05\\text{ (}3{:}05\\text{ pm AEDT)}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Perth (UTC$+8$) is $11 - 8 = 3$ hours behind Melbourne (UTC$+11$). Subtract $3$ hours from $15{:}05$.",
+          "working": "$$15{:}05 - 3\\text{ hours} = 12{:}05\\text{ pm AWST}$$"
+        }
+      ],
+      "final_answer": "$12{:}05\\text{ pm}$ AWST",
+      "now_you_try": {
+        "problem": "On the same January day, a return flight departs Perth at $1{:}30\\text{ pm}$ AWST (UTC$+8$) and flies for $3\\text{ hours } 45\\text{ minutes}$ to Melbourne (AEDT, UTC$+11$). What is the local arrival time in Melbourne?",
+        "hint": "Add $3\\text{ h } 45\\text{ min}$ to $13{:}30$, then add $3\\text{ hours}$ for the time zone change.",
+        "working_summary": "$13{:}30 + 3\\text{ h } 45\\text{ min} = 17{:}15\\text{ AWST}$; $+ 3\\text{ h} = 20{:}15 = 8{:}15\\text{ pm AEDT}$.",
+        "answer": "$8{:}15\\text{ pm}$ AEDT ($20{:}15$)"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_7_3_1",
+      "title": "Equating $1\\text{ m}^3$ to $100\\text{ L}$ Instead of $1000\\text{ L}$",
+      "misconception": "Thinking $1\\text{ m}^3 = 100\\text{ L}$ because $1\\text{ m} = 100\\text{ cm}$.",
+      "correct_concept": "A $1\\text{ m} \\times 1\\text{ m} \\times 1\\text{ m}$ cube holds $10 \\times 10 \\times 10 = 1000$ one-litre cubes (each $10\\text{ cm} \\times 10\\text{ cm} \\times 10\\text{ cm}$), so $1\\text{ m}^3 = 1000\\text{ L} = 1\\text{ kL}$.",
+      "incorrect_working": "$$2.5\\text{ m}^3 = 2.5 \\times 100 = 250\\text{ L} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$2.5\\text{ m}^3 = 2.5 \\times 1000 = 2500\\text{ L}$$",
+      "counter_example": "$1\\text{ m}^3 = 1\\,000\\,000\\text{ cm}^3 = 1\\,000\\,000\\text{ mL} = 1000\\text{ L}$."
+    },
+    {
+      "id": "misc_7_3_2",
+      "title": "Treating Minutes as Base-100 Decimals ($1.5\\text{ hours} \\neq 1\\text{ h } 50\\text{ min}$)",
+      "misconception": "Interpreting $2.5\\text{ hours}$ as $2\\text{ hours } 50\\text{ minutes}$ or subtracting times as standard base-$10$ numbers.",
+      "correct_concept": "There are $60$ minutes in $1$ hour, so $0.5\\text{ hours} = 0.5 \\times 60 = 30\\text{ minutes}$, and $0.25\\text{ hours} = 15\\text{ minutes}$.",
+      "incorrect_working": "$$3.5\\text{ hours} = 3\\text{ hours } 50\\text{ minutes} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$3.5\\text{ hours} = 3\\text{ hours } + (0.5 \\times 60)\\text{ minutes} = 3\\text{ hours } 30\\text{ minutes}$$",
+      "counter_example": "Half an hour is $30$ minutes, not $50$ minutes."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "7_3_Q1",
+        "question": "Calculate the volume in $\\text{cm}^3$ and capacity in litres ($\\text{L}$) of a rectangular fish tank measuring $60\\text{ cm}$ long, $30\\text{ cm}$ wide, and $40\\text{ cm}$ high.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$72\\,000\\text{ cm}^3 = 72\\text{ L}$",
+        "step_by_step_solution": [
+          "Multiply the three dimensions: $V = lwh = 60 \\times 30 \\times 40 = 72\\,000\\text{ cm}^3$.",
+          "Divide by $1000$ to convert $\\text{cm}^3$ to litres: $72\\,000 \\div 1000 = 72\\text{ L}$."
+        ]
+      },
+      {
+        "id": "7_3_Q2",
+        "question": "Convert: (a) $4.2\\text{ m}^3$ to litres ($\\text{L}$), and (b) $8500\\text{ cm}^3$ to litres ($\\text{L}$).",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $4200\\text{ L}$, (b) $8.5\\text{ L}$",
+        "step_by_step_solution": [
+          "Since $1\\text{ m}^3 = 1000\\text{ L}$, $4.2\\text{ m}^3 = 4.2 \\times 1000 = 4200\\text{ L}$.",
+          "Since $1000\\text{ cm}^3 = 1\\text{ L}$, $8500\\text{ cm}^3 = 8500 \\div 1000 = 8.5\\text{ L}$."
+        ]
+      },
+      {
+        "id": "7_3_Q3",
+        "question": "A right prism has an L-shaped cross-sectional area of $42\\text{ cm}^2$ and a length of $15\\text{ cm}$. Calculate its volume.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$630\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "Use the prism volume formula $V = Ah$ with $A = 42\\text{ cm}^2$ and $h = 15\\text{ cm}$.",
+          "Multiply: $V = 42 \\times 15 = 630\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "7_3_Q4",
+        "question": "A right triangular prism has a volume of $540\\text{ cm}^3$ and a length of $18\\text{ cm}$. If the base of its triangular cross-section is $10\\text{ cm}$, find the perpendicular height $h_t$ of the triangle.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$6\\text{ cm}$",
+        "step_by_step_solution": [
+          "First find the cross-sectional area $A = \\frac{V}{L} = \\frac{540}{18} = 30\\text{ cm}^2$.",
+          "Substitute into the triangle area formula $30 = \\frac{1}{2}(10)h_t = 5h_t \\implies h_t = 6\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "7_3_Q5",
+        "question": "In June (standard time), Adelaide is on ACST (UTC$+9.5$) and Brisbane is on AEST (UTC$+10$). When a live AFL match kicks off in Adelaide at $7{:}10\\text{ pm}$ ACST, what is the local time in (a) Brisbane (AEST) and (b) Perth (AWST, UTC$+8$)?",
+        "difficulty": "Medium",
+        "context": "Australian Time Zones",
+        "final_answer": "(a) $7{:}40\\text{ pm}$ AEST, (b) $5{:}40\\text{ pm}$ AWST",
+        "step_by_step_solution": [
+          "Brisbane (UTC$+10$) is $0.5$ hours ($30$ minutes) ahead of Adelaide (UTC$+9.5$), giving $7{:}10\\text{ pm} + 30\\text{ min} = 7{:}40\\text{ pm}$ AEST.",
+          "Perth (UTC$+8$) is $1.5$ hours ($1\\text{ h } 30\\text{ min}$) behind Adelaide (UTC$+9.5$), giving $7{:}10\\text{ pm} - 1\\text{ h } 30\\text{ min} = 5{:}40\\text{ pm}$ AWST."
+        ]
+      },
+      {
+        "id": "7_3_Q6",
+        "question": "A V/Line train departs Southern Cross Station at $08{:}48$ and arrives in Warrnambool at $12{:}23$ on the same day. How long is the journey in hours and minutes?",
+        "difficulty": "Easy",
+        "context": "Victorian Rail Travel",
+        "final_answer": "$3\\text{ hours } 35\\text{ minutes}$",
+        "step_by_step_solution": [
+          "Count forward from $08{:}48$ to $09{:}00$ ($12\\text{ minutes}$), then from $09{:}00$ to $12{:}00$ ($3\\text{ hours}$), plus $23\\text{ minutes}$ to $12{:}23$.",
+          "Add the parts: $3\\text{ hours} + (12 + 23)\\text{ minutes} = 3\\text{ hours } 35\\text{ minutes}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "7_3_Q7",
+        "question": "A rectangular house roof in Ballarat has a horizontal footprint area of $180\\text{ m}^2$. During a storm, $25\\text{ mm}$ ($0.025\\text{ m}$) of rain falls uniformly across the roof and drains into a rainwater tank with no loss. How many litres of water enter the tank?",
+        "difficulty": "Medium",
+        "context": "Australian Rainwater Harvesting",
+        "final_answer": "$4500\\text{ L}$",
+        "step_by_step_solution": [
+          "Calculate the volume of water in cubic metres: $V = Ah = 180\\text{ m}^2 \\times 0.025\\text{ m} = 4.5\\text{ m}^3$.",
+          "Convert $\\text{m}^3$ to litres by multiplying by $1000$: $4.5 \\times 1000 = 4500\\text{ L}$."
+        ]
+      },
+      {
+        "id": "7_3_Q8",
+        "question": "A concrete driveway slab is $12\\text{ m}$ long, $3.5\\text{ m}$ wide, and $15\\text{ cm}$ ($0.15\\text{ m}$) thick. Ready-mix concrete costs $\\$280$ per cubic metre. Calculate (a) the volume of concrete required in $\\text{m}^3$ and (b) the total cost of the concrete.",
+        "difficulty": "Medium",
+        "context": "Construction Modelling",
+        "final_answer": "(a) $6.3\\text{ m}^3$, (b) $\\$1764$",
+        "step_by_step_solution": [
+          "Convert all dimensions to metres and multiply: $V = 12 \\times 3.5 \\times 0.15 = 6.3\\text{ m}^3$.",
+          "Multiply volume by $\\$280/\\text{m}^3$: $6.3 \\times 280 = \\$1764$."
+        ]
+      },
+      {
+        "id": "7_3_Q9",
+        "question": "An international flight departs Melbourne (AEDT, UTC$+11$) at $11{:}30\\text{ pm}$ on Tuesday and arrives in Singapore (SGT, UTC$+8$) at $4{:}15\\text{ am}$ SGT on Wednesday. Find the flight duration in hours and minutes.",
+        "difficulty": "Challenging",
+        "context": "International Aviation",
+        "final_answer": "$7\\text{ hours } 45\\text{ minutes}$",
+        "step_by_step_solution": [
+          "Convert the departure time to Singapore time (UTC$+8$ is $3$ hours behind UTC$+11$): $11{:}30\\text{ pm} - 3\\text{ hours} = 8{:}30\\text{ pm}$ SGT on Tuesday.",
+          "Find the elapsed time from $8{:}30\\text{ pm}$ Tuesday to $4{:}15\\text{ am}$ Wednesday: $3\\text{ h } 30\\text{ min}$ to midnight plus $4\\text{ h } 15\\text{ min}$ after midnight $= 7\\text{ hours } 45\\text{ minutes}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "7_3_Q10",
+        "question": "A triangular tent is $2.4\\text{ m}$ long, with a triangular front opening of base $1.8\\text{ m}$ and height $1.5\\text{ m}$. A student says the 'base' of the tent is the $2.4\\text{ m} \\times 1.8\\text{ m}$ rectangular floor and multiplies that area by $1.5\\text{ m}$. Explain why this is wrong and calculate the correct volume.",
+        "difficulty": "Medium",
+        "context": "Identifying Cross-Sections",
+        "final_answer": "The rectangular floor is not a uniform cross-section because the tent narrows to a ridge at the top; correct volume is $V = \\left(\\frac{1}{2} \\times 1.8 \\times 1.5\\right) \\times 2.4 = 3.24\\text{ m}^3$",
+        "step_by_step_solution": [
+          "Slices parallel to the rectangular floor shrink as you move upwards towards the top ridge, whereas slices parallel to the triangular front stay identical along the $2.4\\text{ m}$ length.",
+          "Using the triangular cross-section $A = \\frac{1}{2}(1.8)(1.5) = 1.35\\text{ m}^2$ gives the true volume $V = 1.35 \\times 2.4 = 3.24\\text{ m}^3$ (half the student's answer of $6.48\\text{ m}^3$)."
+        ]
+      },
+      {
+        "id": "7_3_Q11",
+        "question": "During Daylight Saving in January, why is Brisbane (QLD) $1$ hour behind Sydney (NSW) even though both cities lie at nearly the same longitude on Australia's east coast?",
+        "difficulty": "Easy",
+        "context": "Australian Geography & Time",
+        "final_answer": "New South Wales advances its clocks by $1$ hour to AEDT (UTC$+11$) in summer, whereas Queensland remains on standard time AEST (UTC$+10$) all year round",
+        "step_by_step_solution": [
+          "Time zones follow state/territory legislation as well as longitude.",
+          "In summer, NSW observes Daylight Saving Time (AEDT, UTC$+11$) while Queensland stays on Australian Eastern Standard Time (AEST, UTC$+10$), creating a $1$-hour difference."
+        ]
+      },
+      {
+        "id": "7_3_Q12",
+        "question": "If every linear dimension (length, width, and height) of a rectangular prism is multiplied by a scale factor of $k = 3$, by what factor does (a) its surface area increase and (b) its volume increase? Prove your answer algebraically.",
+        "difficulty": "Extension",
+        "context": "3D Scaling Proof",
+        "final_answer": "(a) Surface area increases by a factor of $3^2 = 9$; (b) volume increases by a factor of $3^3 = 27$",
+        "step_by_step_solution": [
+          "Replacing $l, w, h$ with $3l, 3w, 3h$ in each rectangular face area multiplies every face area by $3 \\times 3 = 9$.",
+          "In the volume formula, $V_{\\text{new}} = (3l)(3w)(3h) = 27lwh = 27V$, so the volume increases by $3^3 = 27$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE7_3_1a",
+      "description": "Worked Example 7.3.1(a) triangle area",
+      "expression": "Rational(1, 2) * 12 * 9",
+      "expected": 54
+    },
+    {
+      "id": "WE7_3_1b_cm3",
+      "description": "Worked Example 7.3.1(b) volume cm3",
+      "expression": "54 * 20",
+      "expected": 1080
+    },
+    {
+      "id": "WE7_3_1b_L",
+      "description": "Worked Example 7.3.1(b) capacity L",
+      "expression": "1080 / 1000",
+      "expected": 1.08
+    },
+    {
+      "id": "NYT7_3_1",
+      "description": "Now You Try 7.3.1 volume",
+      "expression": "Rational(1, 2) * 8 * 5 * 15",
+      "expected": 300
+    },
+    {
+      "id": "WE7_3_2a",
+      "description": "Worked Example 7.3.2(a) pool volume m3",
+      "expression": "Rational(1, 2) * (Rational(6, 5) + Rational(12, 5)) * 25 * 10",
+      "expected": 450
+    },
+    {
+      "id": "WE7_3_2b",
+      "description": "Worked Example 7.3.2(b) pool capacity L",
+      "expression": "450 * 1000",
+      "expected": 450000
+    },
+    {
+      "id": "NYT7_3_2",
+      "description": "Now You Try 7.3.2 trough capacity L",
+      "expression": "(Rational(1, 2) * (60 + 40) * 30 * 200) / 1000",
+      "expected": 300
+    },
+    {
+      "id": "EX7_3_Q1",
+      "description": "Exercise 7.3 Q1 tank capacity L",
+      "expression": "(60 * 30 * 40) / 1000",
+      "expected": 72
+    },
+    {
+      "id": "EX7_3_Q2a",
+      "description": "Exercise 7.3 Q2(a) L",
+      "expression": "4.2 * 1000",
+      "expected": 4200
+    },
+    {
+      "id": "EX7_3_Q2b",
+      "description": "Exercise 7.3 Q2(b) L",
+      "expression": "8500 / 1000",
+      "expected": 8.5
+    },
+    {
+      "id": "EX7_3_Q3",
+      "description": "Exercise 7.3 Q3 prism volume",
+      "expression": "42 * 15",
+      "expected": 630
+    },
+    {
+      "id": "EX7_3_Q4",
+      "description": "Exercise 7.3 Q4 triangle height",
+      "expression": "(540 / 18) / (Rational(1, 2) * 10)",
+      "expected": 6
+    },
+    {
+      "id": "EX7_3_Q7",
+      "description": "Exercise 7.3 Q7 rainwater harvested L",
+      "expression": "180 * 0.025 * 1000",
+      "expected": 4500
+    },
+    {
+      "id": "EX7_3_Q8a",
+      "description": "Exercise 7.3 Q8(a) concrete m3",
+      "expression": "12 * 3.5 * 0.15",
+      "expected": 6.3
+    },
+    {
+      "id": "EX7_3_Q8b",
+      "description": "Exercise 7.3 Q8(b) concrete cost",
+      "expression": "6.3 * 280",
+      "expected": 1764
+    },
+    {
+      "id": "EX7_3_Q10",
+      "description": "Exercise 7.3 Q10 tent volume",
+      "expression": "Rational(1, 2) * 1.8 * 1.5 * 2.4",
+      "expected": 3.24
+    }
+  ]
+}

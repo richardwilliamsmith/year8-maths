@@ -1,0 +1,401 @@
+{
+  "metadata": {
+    "section_id": "7_1",
+    "section_code": "7A",
+    "chapter_number": 7,
+    "chapter_title": "Length, Area, Volume and Time",
+    "title": "Perimeter and Area of Quadrilaterals and Composite Shapes",
+    "vcaa_code": "VC2M8M01",
+    "vcaa_description": "Solve problems involving the area and perimeter of irregular and composite shapes using appropriate units, including choosing between metric units of area.",
+    "strand": "Measurement",
+    "target_mastery": "Convert between metric area units ($\\text{mm}^2, \\text{cm}^2, \\text{m}^2, \\text{ha}, \\text{km}^2$) and calculate the perimeter and area of parallelograms, trapeziums, rhombuses, kites, and composite shapes.",
+    "prerequisites": [
+      "Metric length conversions ($\\text{mm}, \\text{cm}, \\text{m}, \\text{km}$)",
+      "Area of rectangles ($A = lw$) and triangles ($A = \\frac{1}{2}bh$)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Hectare ($\\text{ha}$)",
+        "definition": "A metric unit of land area equal to a square of side length $100\\text{ m}$, so $1\\text{ ha} = 100\\text{ m} \\times 100\\text{ m} = 10\\,000\\text{ m}^2$."
+      },
+      {
+        "term": "Perpendicular height ($h$)",
+        "definition": "The shortest distance between the base of a shape and its opposite vertex or parallel side, measured at right angles ($90^\\circ$) to the base."
+      },
+      {
+        "term": "Composite shape",
+        "definition": "A geometric figure that can be partitioned into (or formed by subtracting) two or more standard shapes such as rectangles, triangles, and trapeziums."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_7_1_1",
+      "title": "Converting Metric Units of Area and Hectares",
+      "explanation": "Because area is two-dimensional ($\\text{length} \\times \\text{width}$), the conversion factor between square units is the square of the linear conversion factor. Since $1\\text{ cm} = 10\\text{ mm}$, $1\\text{ cm}^2 = 10^2\\text{ mm}^2 = 100\\text{ mm}^2$. Similarly, $1\\text{ m}^2 = 100^2\\text{ cm}^2 = 10\\,000\\text{ cm}^2$, $1\\text{ ha} = 10\\,000\\text{ m}^2$, and $1\\text{ km}^2 = 1000^2\\text{ m}^2 = 1\\,000\\,000\\text{ m}^2 = 100\\text{ ha}$.",
+      "formula_latex": "1\\text{ cm}^2 = 100\\text{ mm}^2, \\quad 1\\text{ m}^2 = 10\\,000\\text{ cm}^2, \\quad 1\\text{ ha} = 10\\,000\\text{ m}^2, \\quad 1\\text{ km}^2 = 100\\text{ ha}",
+      "callout_title": "Square the Linear Conversion Factor",
+      "callout_rule": "To convert between square units, multiply or divide by the linear factor squared ($10^2 = 100$, $100^2 = 10\\,000$, $1000^2 = 1\\,000\\,000$)."
+    },
+    {
+      "id": "theory_7_1_2",
+      "title": "Area of Parallelograms, Rhombuses, and Kites",
+      "explanation": "A parallelogram with base $b$ and perpendicular height $h$ can be rearranged into a rectangle of the same base and height, giving $A = bh$. A kite or a rhombus has diagonals of lengths $x$ and $y$ that intersect at right angles ($90^\\circ$), enclosing exactly half the area of a surrounding $x \\times y$ rectangle, giving $A = \\frac{1}{2}xy$.",
+      "formula_latex": "A_{\\text{parallelogram}} = bh, \\qquad A_{\\text{rhombus/kite}} = \\frac{1}{2}xy",
+      "callout_title": "Never Use Slant Edge as Height",
+      "callout_rule": "In $A = bh$, $h$ must be the perpendicular height at $90^\\circ$ to the base $b$, never the slanted side length."
+    },
+    {
+      "id": "theory_7_1_3",
+      "title": "Area of a Trapezium and Composite Shapes",
+      "explanation": "A trapezium has one pair of parallel sides of lengths $a$ and $b$ separated by a perpendicular height $h$. Its area equals the average of the two parallel sides multiplied by the perpendicular height: $A = \\frac{1}{2}(a + b)h$. For composite shapes, split the figure into non-overlapping standard shapes (addition method) or subtract cut-out regions from an enclosing rectangle (subtraction method).",
+      "formula_latex": "A_{\\text{trapezium}} = \\frac{1}{2}(a + b)h = \\left(\\frac{a + b}{2}\\right)h",
+      "callout_title": "Average of Parallel Sides Times Height",
+      "callout_rule": "Add the two parallel sides $a$ and $b$ in brackets first, divide by $2$, and multiply by the perpendicular distance $h$ between them."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE7_1_1",
+      "title": "Converting Metric Units of Area",
+      "difficulty": "Fluency",
+      "problem": "Convert: (a) $4.5\\text{ m}^2$ to $\\text{cm}^2$, and (b) $36\\,000\\text{ m}^2$ to hectares ($\\text{ha}$).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), since $1\\text{ m} = 100\\text{ cm}$, $1\\text{ m}^2 = 100^2\\text{ cm}^2 = 10\\,000\\text{ cm}^2$. Multiply $4.5$ by $10\\,000$.",
+          "working": "$$4.5\\text{ m}^2 = 4.5 \\times 10\\,000\\text{ cm}^2 = 45\\,000\\text{ cm}^2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), since $1\\text{ ha} = 10\\,000\\text{ m}^2$, divide $36\\,000$ by $10\\,000$.",
+          "working": "$$36\\,000\\text{ m}^2 = \\frac{36\\,000}{10\\,000}\\text{ ha} = 3.6\\text{ ha}$$"
+        }
+      ],
+      "final_answer": "(a) $45\\,000\\text{ cm}^2$, (b) $3.6\\text{ ha}$",
+      "now_you_try": {
+        "problem": "Convert: (a) $850\\text{ mm}^2$ to $\\text{cm}^2$, and (b) $2.4\\text{ ha}$ to $\\text{m}^2$.",
+        "hint": "Divide by $10^2 = 100$ for (a), and multiply by $10\\,000$ for (b).",
+        "working_summary": "(a) $850 \\div 100 = 8.5\\text{ cm}^2$; (b) $2.4 \\times 10\\,000 = 24\\,000\\text{ m}^2$.",
+        "answer": "(a) $8.5\\text{ cm}^2$, (b) $24\\,000\\text{ m}^2$"
+      }
+    },
+    {
+      "id": "WE7_1_2",
+      "title": "Calculating the Area of a Trapezium and a Kite",
+      "difficulty": "Fluency",
+      "problem": "Calculate the area of: (a) a trapezium with parallel sides $a = 11\\text{ cm}$ and $b = 17\\text{ cm}$ and perpendicular height $h = 8\\text{ cm}$, and (b) a kite with diagonals of lengths $x = 14\\text{ cm}$ and $y = 9\\text{ cm}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), substitute $a = 11$, $b = 17$, and $h = 8$ into $A = \\frac{1}{2}(a + b)h$.",
+          "working": "$$A = \\frac{1}{2}(11 + 17) \\times 8 = \\frac{1}{2}(28) \\times 8 = 14 \\times 8 = 112\\text{ cm}^2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), substitute $x = 14$ and $y = 9$ into $A = \\frac{1}{2}xy$.",
+          "working": "$$A = \\frac{1}{2} \\times 14 \\times 9 = 7 \\times 9 = 63\\text{ cm}^2$$"
+        }
+      ],
+      "final_answer": "(a) $112\\text{ cm}^2$, (b) $63\\text{ cm}^2$",
+      "now_you_try": {
+        "problem": "Calculate the area of: (a) a trapezium with parallel sides $9\\text{ m}$ and $15\\text{ m}$ and height $6\\text{ m}$, and (b) a rhombus with diagonals $12\\text{ m}$ and $16\\text{ m}$.",
+        "hint": "Use $A = \\frac{1}{2}(a + b)h$ and $A = \\frac{1}{2}xy$.",
+        "working_summary": "(a) $\\frac{1}{2}(24)(6) = 72\\text{ m}^2$; (b) $\\frac{1}{2}(12)(16) = 96\\text{ m}^2$.",
+        "answer": "(a) $72\\text{ m}^2$, (b) $96\\text{ m}^2$"
+      }
+    },
+    {
+      "id": "WE7_1_3",
+      "title": "Perimeter and Area of an L-Shaped Composite Deck",
+      "difficulty": "Problem-Solving",
+      "problem": "An L-shaped timber deck has outer length $10\\text{ m}$ and outer width $8\\text{ m}$, with a rectangular corner of $4\\text{ m}$ by $3\\text{ m}$ cut out. Find (a) the perimeter of the deck and (b) the area of the deck.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The two inner step edges of an L-shape have the same total horizontal and vertical lengths as the corner removed from the $10\\text{ m} \\times 8\\text{ m}$ bounding rectangle, or we can sum all $6$ sides: $10 + 8 + (10 - 4) + 3 + 4 + (8 - 3)$.",
+          "working": "$$\\text{Perimeter} = 10 + 8 + 6 + 3 + 4 + 5 = 36\\text{ m}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Use the subtraction method for the area: subtract the $4\\text{ m} \\times 3\\text{ m}$ cut-out rectangle from the full $10\\text{ m} \\times 8\\text{ m}$ rectangle.",
+          "working": "$$\\text{Area} = (10 \\times 8) - (4 \\times 3) = 80 - 12 = 68\\text{ m}^2$$"
+        }
+      ],
+      "final_answer": "(a) $36\\text{ m}$, (b) $68\\text{ m}^2$",
+      "now_you_try": {
+        "problem": "A rectangular lawn measuring $15\\text{ m}$ by $12\\text{ m}$ has a square garden bed of side $3\\text{ m}$ dug out of its centre. Find the area of the remaining lawn.",
+        "hint": "Subtract the area of the square ($3 \\times 3$) from the area of the rectangle ($15 \\times 12$).",
+        "working_summary": "$15 \\times 12 - 3^2 = 180 - 9 = 171\\text{ m}^2$.",
+        "answer": "$171\\text{ m}^2$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_7_1_1",
+      "title": "Using Linear Conversion Factors for Square Units ($1\\text{ m}^2 \\neq 100\\text{ cm}^2$)",
+      "misconception": "Multiplying by $100$ instead of $10\\,000$ when converting $\\text{m}^2$ to $\\text{cm}^2$.",
+      "correct_concept": "A square metre is $100\\text{ cm}$ long AND $100\\text{ cm}$ wide, so it contains $100 \\times 100 = 10\\,000$ square centimetres.",
+      "incorrect_working": "$$3\\text{ m}^2 = 3 \\times 100 = 300\\text{ cm}^2 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$3\\text{ m}^2 = 3 \\times 100^2 = 30\\,000\\text{ cm}^2$$",
+      "counter_example": "A small $30\\text{ cm} \\times 10\\text{ cm}$ ruler has area $300\\text{ cm}^2$, which is clearly tiny compared to $3\\text{ m}^2$."
+    },
+    {
+      "id": "misc_7_1_2",
+      "title": "Multiplying Base by Slanted Side in a Parallelogram",
+      "misconception": "Using the slanted side length instead of the perpendicular height to find the area of a parallelogram.",
+      "correct_concept": "The slant side is only used for perimeter; area always requires the perpendicular height $h$ measured at $90^\\circ$ to the base $b$.",
+      "incorrect_working": "$$\\text{Base } 12\\text{ cm}, \\text{ slant side } 7\\text{ cm}, \\text{ height } 5\\text{ cm}: \\quad A = 12 \\times 7 = 84\\text{ cm}^2 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$A = bh = 12 \\times 5 = 60\\text{ cm}^2$$",
+      "counter_example": "If you shear a parallelogram until it is nearly flat, its slant side stays $7\\text{ cm}$ while its area approaches $0$ as its perpendicular height $h$ approaches $0$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "7_1_Q1",
+        "question": "Calculate the perimeter and area of a parallelogram with base $14\\text{ cm}$, slanted side $9\\text{ cm}$, and perpendicular height $7\\text{ cm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "Perimeter $= 46\\text{ cm}$, Area $= 98\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "The perimeter is the sum of the four outer edges: $P = 2(14 + 9) = 46\\text{ cm}$.",
+          "The area uses the base and perpendicular height: $A = bh = 14 \\times 7 = 98\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "7_1_Q2",
+        "question": "Convert $6.8\\text{ ha}$ into (a) $\\text{m}^2$ and (b) $\\text{km}^2$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $68\\,000\\text{ m}^2$, (b) $0.068\\text{ km}^2$",
+        "step_by_step_solution": [
+          "Since $1\\text{ ha} = 10\\,000\\text{ m}^2$, multiply by $10\\,000$: $6.8 \\times 10\\,000 = 68\\,000\\text{ m}^2$.",
+          "Since $1\\text{ km}^2 = 100\\text{ ha}$, divide by $100$: $6.8 \\div 100 = 0.068\\text{ km}^2$."
+        ]
+      },
+      {
+        "id": "7_1_Q3",
+        "question": "Find the area of a trapezium with parallel sides of $13\\text{ m}$ and $21\\text{ m}$ and perpendicular height $9\\text{ m}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$153\\text{ m}^2$",
+        "step_by_step_solution": [
+          "Substitute $a = 13$, $b = 21$, and $h = 9$ into $A = \\frac{1}{2}(a + b)h$.",
+          "Calculate: $A = \\frac{1}{2}(34) \\times 9 = 17 \\times 9 = 153\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "7_1_Q4",
+        "question": "A rhombus has an area of $120\\text{ cm}^2$ and one diagonal of length $15\\text{ cm}$. Find the length of its other diagonal.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$16\\text{ cm}$",
+        "step_by_step_solution": [
+          "Substitute $A = 120$ and $x = 15$ into $A = \\frac{1}{2}xy$: $120 = \\frac{1}{2}(15)y = 7.5y$.",
+          "Solve for $y$: $y = \\frac{120}{7.5} = 16\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "7_1_Q5",
+        "question": "A trapezium has an area of $108\\text{ cm}^2$, a perpendicular height of $8\\text{ cm}$, and one parallel side of length $11\\text{ cm}$. Find the length of the other parallel side $b$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$16\\text{ cm}$",
+        "step_by_step_solution": [
+          "Substitute into $A = \\frac{1}{2}(a + b)h$: $108 = \\frac{1}{2}(11 + b) \\times 8 = 4(11 + b)$.",
+          "Divide both sides by $4$ and subtract $11$: $27 = 11 + b \\implies b = 16\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "7_1_Q6",
+        "question": "A gable wall is a composite shape consisting of a rectangle $12\\text{ m}$ wide by $4\\text{ m}$ high topped by an isosceles triangle of base $12\\text{ m}$ and perpendicular height $2.5\\text{ m}$. Find the total area of the wall.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$63\\text{ m}^2$",
+        "step_by_step_solution": [
+          "Calculate the area of the rectangular section: $A_{\\text{rect}} = 12 \\times 4 = 48\\text{ m}^2$.",
+          "Calculate the area of the triangular roof gable: $A_{\\text{tri}} = \\frac{1}{2} \\times 12 \\times 2.5 = 15\\text{ m}^2$.",
+          "Add the two areas: $48 + 15 = 63\\text{ m}^2$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "7_1_Q7",
+        "question": "A rectangular swimming pool in Mildura measures $10\\text{ m}$ by $5\\text{ m}$ and is surrounded on all four sides by a uniform paved path of width $1.5\\text{ m}$. Find the area of the paved path.",
+        "difficulty": "Medium",
+        "context": "Australian Backyard Design",
+        "final_answer": "$54\\text{ m}^2$",
+        "step_by_step_solution": [
+          "Adding a $1.5\\text{ m}$ border on both ends increases each dimension by $2 \\times 1.5 = 3\\text{ m}$, giving outer dimensions $13\\text{ m}$ by $8\\text{ m}$.",
+          "Subtract the pool area from the outer rectangle area: $A_{\\text{path}} = (13 \\times 8) - (10 \\times 5) = 104 - 50 = 54\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "7_1_Q8",
+        "question": "A Gippsland dairy paddock is shaped like a trapezium with parallel fences of lengths $450\\text{ m}$ and $750\\text{ m}$ separated by a perpendicular width of $500\\text{ m}$. (a) Find the area of the paddock in hectares ($\\text{ha}$). (b) If fertiliser is applied at $120\\text{ kg}$ per hectare, how many tonnes of fertiliser are required?",
+        "difficulty": "Challenging",
+        "context": "Victorian Agriculture",
+        "final_answer": "(a) $30\\text{ ha}$, (b) $3.6\\text{ tonnes}$",
+        "step_by_step_solution": [
+          "Calculate the area in square metres: $A = \\frac{1}{2}(450 + 750) \\times 500 = 600 \\times 500 = 300\\,000\\text{ m}^2$.",
+          "Convert to hectares by dividing by $10\\,000$: $300\\,000 \\div 10\\,000 = 30\\text{ ha}$.",
+          "Multiply by $120\\text{ kg/ha}$ and convert to tonnes: $30 \\times 120 = 3600\\text{ kg} = 3.6\\text{ tonnes}$."
+        ]
+      },
+      {
+        "id": "7_1_Q9",
+        "question": "A bathroom floor measuring $3.6\\text{ m}$ by $2.4\\text{ m}$ is to be tiled with square ceramic tiles of side length $30\\text{ cm}$. Allowing an extra $10\\%$ of tiles for cutting and wastage, how many tiles should be purchased?",
+        "difficulty": "Challenging",
+        "context": "Renovation Modelling",
+        "final_answer": "$106\\text{ tiles}$ ($96$ exact tiles $+ 10\\% = 105.6$, rounded up to $106$)",
+        "step_by_step_solution": [
+          "Convert floor dimensions to centimetres: $360\\text{ cm}$ by $240\\text{ cm}$. Area of floor $= 360 \\times 240 = 86\\,400\\text{ cm}^2$, and area of one tile $= 30 \\times 30 = 900\\text{ cm}^2$.",
+          "Exact number of tiles $= 86\\,400 \\div 900 = 96$ tiles.",
+          "Include $10\\%$ wastage: $96 \\times 1.10 = 105.6$, which rounds up to $106$ whole tiles."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "7_1_Q10",
+        "question": "Explain geometrically why the area of a rhombus or kite with perpendicular diagonals $x$ and $y$ is $A = \\frac{1}{2}xy$.",
+        "difficulty": "Medium",
+        "context": "Geometric Proof",
+        "final_answer": "A bounding rectangle drawn through the four vertices has dimensions $x$ by $y$ (area $xy$), and the four right-angled triangles inside the kite/rhombus are congruent to the four outer corner triangles",
+        "step_by_step_solution": [
+          "Draw a rectangle around the kite or rhombus with sides parallel to the two perpendicular diagonals $x$ and $y$; this bounding rectangle has area $xy$.",
+          "The diagonals divide the kite/rhombus into four right-angled triangles that are congruent to the four right-angled triangles outside it, so the kite/rhombus occupies exactly half of the rectangle's area: $A = \\frac{1}{2}xy$."
+        ]
+      },
+      {
+        "id": "7_1_Q11",
+        "question": "A square has diagonals of length $10\\text{ cm}$. Since a square is a special rhombus whose diagonals meet at right angles, use the rhombus formula $A = \\frac{1}{2}xy$ to find the area of the square, and deduce its side length as an exact surd.",
+        "difficulty": "Challenging",
+        "context": "Connecting Quadrilaterals",
+        "final_answer": "$\\text{Area} = 50\\text{ cm}^2$, side length $= \\sqrt{50}\\text{ cm}$",
+        "step_by_step_solution": [
+          "Both diagonals of the square have length $10\\text{ cm}$ and intersect at $90^\\circ$, so $A = \\frac{1}{2} \\times 10 \\times 10 = 50\\text{ cm}^2$.",
+          "Since the area of a square of side $s$ is $s^2 = 50$, its exact side length is $s = \\sqrt{50}\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "7_1_Q12",
+        "question": "Show how the trapezium area formula $A = \\frac{1}{2}(a + b)h$ reduces to (a) the parallelogram/rectangle formula when $a = b$, and (b) the triangle formula when $a = 0$.",
+        "difficulty": "Extension",
+        "context": "Unifying Area Formulas",
+        "final_answer": "(a) When $a = b$, $A = \\frac{1}{2}(b + b)h = bh$; (b) when $a = 0$, $A = \\frac{1}{2}(0 + b)h = \\frac{1}{2}bh$",
+        "step_by_step_solution": [
+          "In a parallelogram or rectangle, both parallel sides are equal ($a = b$); substituting $a = b$ gives $A = \\frac{1}{2}(2b)h = bh$.",
+          "In a triangle, the top parallel side shrinks to a single vertex ($a = 0$); substituting $a = 0$ gives $A = \\frac{1}{2}(0 + b)h = \\frac{1}{2}bh$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE7_1_1a",
+      "description": "Worked Example 7.1.1(a)",
+      "expression": "4.5 * 10000",
+      "expected": 45000
+    },
+    {
+      "id": "WE7_1_1b",
+      "description": "Worked Example 7.1.1(b)",
+      "expression": "36000 / 10000",
+      "expected": 3.6
+    },
+    {
+      "id": "NYT7_1_1a",
+      "description": "Now You Try 7.1.1(a)",
+      "expression": "850 / 100",
+      "expected": 8.5
+    },
+    {
+      "id": "NYT7_1_1b",
+      "description": "Now You Try 7.1.1(b)",
+      "expression": "2.4 * 10000",
+      "expected": 24000
+    },
+    {
+      "id": "WE7_1_2a",
+      "description": "Worked Example 7.1.2(a) trapezium",
+      "expression": "Rational(1, 2) * (11 + 17) * 8",
+      "expected": 112
+    },
+    {
+      "id": "WE7_1_2b",
+      "description": "Worked Example 7.1.2(b) kite",
+      "expression": "Rational(1, 2) * 14 * 9",
+      "expected": 63
+    },
+    {
+      "id": "WE7_1_3a",
+      "description": "Worked Example 7.1.3(a) perimeter",
+      "expression": "10 + 8 + 6 + 3 + 4 + 5",
+      "expected": 36
+    },
+    {
+      "id": "WE7_1_3b",
+      "description": "Worked Example 7.1.3(b) area",
+      "expression": "10 * 8 - 4 * 3",
+      "expected": 68
+    },
+    {
+      "id": "EX7_1_Q1_A",
+      "description": "Exercise 7.1 Q1 area",
+      "expression": "14 * 7",
+      "expected": 98
+    },
+    {
+      "id": "EX7_1_Q3",
+      "description": "Exercise 7.1 Q3 trapezium area",
+      "expression": "Rational(1, 2) * (13 + 21) * 9",
+      "expected": 153
+    },
+    {
+      "id": "EX7_1_Q4",
+      "description": "Exercise 7.1 Q4 rhombus diagonal",
+      "expression": "120 / (Rational(1, 2) * 15)",
+      "expected": 16
+    },
+    {
+      "id": "EX7_1_Q5",
+      "description": "Exercise 7.1 Q5 trapezium unknown side",
+      "expression": "108 / 4 - 11",
+      "expected": 16
+    },
+    {
+      "id": "EX7_1_Q6",
+      "description": "Exercise 7.1 Q6 gable wall area",
+      "expression": "12 * 4 + Rational(1, 2) * 12 * 2.5",
+      "expected": 63
+    },
+    {
+      "id": "EX7_1_Q7",
+      "description": "Exercise 7.1 Q7 pool path area",
+      "expression": "13 * 8 - 10 * 5",
+      "expected": 54
+    },
+    {
+      "id": "EX7_1_Q8a",
+      "description": "Exercise 7.1 Q8(a) paddock hectares",
+      "expression": "(Rational(1, 2) * (450 + 750) * 500) / 10000",
+      "expected": 30
+    },
+    {
+      "id": "EX7_1_Q8b",
+      "description": "Exercise 7.1 Q8(b) fertiliser tonnes",
+      "expression": "(30 * 120) / 1000",
+      "expected": 3.6
+    },
+    {
+      "id": "EX7_1_Q11",
+      "description": "Exercise 7.1 Q11 square area from diagonal",
+      "expression": "Rational(1, 2) * 10 * 10",
+      "expected": 50
+    }
+  ]
+}

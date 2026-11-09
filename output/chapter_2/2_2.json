@@ -1,0 +1,405 @@
+{
+  "metadata": {
+    "section_id": "2_2",
+    "section_code": "2B",
+    "chapter_number": 2,
+    "chapter_title": "Fractions, Decimals, Irrational Numbers and Index Laws",
+    "title": "Terminating and Recurring Decimals",
+    "vcaa_code": "VC2M8N03",
+    "vcaa_description": "Recognise terminating and recurring decimals, using digital tools as appropriate.",
+    "strand": "Number",
+    "target_mastery": "Classify fractions as terminating or recurring decimals using denominator prime factorisation, convert between fractions and decimals, and write recurring decimals using dot and vinculum notation.",
+    "prerequisites": [
+      "Short division and decimal place value",
+      "Prime factorisation of integers (Section 1D)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Terminating decimal",
+        "definition": "A decimal expansion that ends after a finite number of digits after the decimal point (e.g., $\\frac{3}{8} = 0.375$)."
+      },
+      {
+        "term": "Recurring (repeating) decimal",
+        "definition": "A decimal expansion in which a digit or block of digits repeats infinitely in a regular cycle (e.g., $\\frac{2}{11} = 0.181818\\dots = 0.\\overline{18}$)."
+      },
+      {
+        "term": "Vinculum / Dot notation",
+        "definition": "Notation used to mark the repeating cycle of a recurring decimal: a bar over the repeating block ($0.\\overline{142857}$) or dots over the first and last repeating digits ($0.\\dot{1}4285\\dot{7}$)."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_2_2_1",
+      "title": "Predicting Terminating vs Recurring Decimals",
+      "explanation": "Because our decimal system is based on powers of $10$, and the prime factorisation of $10$ is $2 \\times 5$, a fraction $\\frac{a}{b}$ written in simplest form produces a terminating decimal if and only if the prime factorisation of the denominator $b$ contains only the primes $2$ and/or $5$. If the simplified denominator has any other prime factor (such as $3, 7, 11, 13$), its decimal expansion is guaranteed to be a recurring decimal.",
+      "formula_latex": "\\frac{a}{b} \\text{ (in simplest form) terminates} \\iff b = 2^m \\times 5^n \\text{ for non-negative integers } m, n",
+      "callout_title": "Simplify Before Testing the Denominator",
+      "callout_rule": "Always simplify the fraction first! For example, $\\frac{6}{15}$ looks like it has a factor of $3$ in the denominator, but it simplifies to $\\frac{2}{5} = 0.4$, which terminates."
+    },
+    {
+      "id": "theory_2_2_2",
+      "title": "Converting Fractions to Terminating or Recurring Decimals",
+      "explanation": "To convert any fraction $\\frac{a}{b}$ to a decimal, either scale the denominator to a power of $10$ ($10, 100, 1000, \\dots$) or divide the numerator $a$ by the denominator $b$ using short division ($a \\div b$). Once a non-zero remainder repeats during short division, the quotient digits will repeat in the exact same cycle forever.",
+      "formula_latex": "\\frac{5}{12} = 5 \\div 12 = 0.41666\\dots = 0.41\\dot{6}",
+      "callout_title": "Dot vs Bar (Vinculum) Notation",
+      "callout_rule": "For a single repeating digit, place one dot over that digit ($0.41\\dot{6}$). For a block of two or more repeating digits, place a bar over the entire repeating block ($0.\\overline{27}$) or dots on the first and last digits of the repeating block ($0.\\dot{2}\\dot{7}$)."
+    },
+    {
+      "id": "theory_2_2_3",
+      "title": "Converting Terminating and Simple Recurring Decimals to Fractions",
+      "explanation": "A terminating decimal with $k$ decimal places can be written directly over $10^k$ and simplified. Furthermore, since $\\frac{1}{9} = 0.\\dot{1}$, $\\frac{1}{99} = 0.\\overline{01}$, and $\\frac{1}{999} = 0.\\overline{001}$, any pure recurring decimal with a $k$-digit repeating block starting immediately after the decimal point equals that $k$-digit integer divided by $\\underbrace{99\\dots 9}_{k\\text{ nines}}$.",
+      "formula_latex": "0.\\dot{a} = \\frac{a}{9}, \\quad 0.\\overline{ab} = \\frac{ab}{99}, \\quad 0.\\overline{abc} = \\frac{abc}{999}",
+      "callout_title": "The Nines Denominator Pattern",
+      "callout_rule": "Count how many digits are in the repeating cycle immediately after the decimal point and place the repeating block over that many $9$s, then simplify (e.g., $0.\\overline{45} = \\frac{45}{99} = \\frac{5}{11}$)."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE2_2_1",
+      "title": "Classifying Fractions as Terminating or Recurring",
+      "difficulty": "Fluency",
+      "problem": "Without performing division, determine whether each fraction produces a terminating or recurring decimal: (a) $\\dfrac{13}{40}$ and (b) $\\dfrac{21}{28}$ and (c) $\\dfrac{7}{18}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), $\\frac{13}{40}$ is already in simplest form. Factorise the denominator $40 = 2^3 \\times 5^1$. Since the only prime factors are $2$ and $5$, it terminates.",
+          "working": "$$40 = 2^3 \\times 5 \\implies \\frac{13}{40} = \\frac{13 \\times 25}{1000} = 0.325 \\text{ (Terminating)}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), simplify $\\frac{21}{28}$ first by dividing by $7$: $\\frac{21}{28} = \\frac{3}{4}$. Since $4 = 2^2$, the decimal terminates.",
+          "working": "$$\\frac{21}{28} = \\frac{3}{4} = 0.75 \\text{ (Terminating)}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "In part (c), $\\frac{7}{18}$ is in simplest form and $18 = 2 \\times 3^2$. Because of the prime factor $3^2$, the decimal is recurring.",
+          "working": "$$18 = 2 \\times 3^2 \\implies \\frac{7}{18} = 0.3\\dot{8} \\text{ (Recurring)}$$"
+        }
+      ],
+      "final_answer": "(a) Terminating ($0.325$), (b) Terminating ($0.75$), (c) Recurring ($0.3\\dot{8}$)",
+      "now_you_try": {
+        "problem": "Determine whether (a) $\\dfrac{9}{24}$ and (b) $\\dfrac{11}{30}$ are terminating or recurring decimals, and find their decimal forms.",
+        "hint": "Simplify $\\frac{9}{24}$ by dividing numerator and denominator by $3$ first.",
+        "working_summary": "(a) $\\frac{9}{24} = \\frac{3}{8} = 0.375$ (Terminating); (b) $30 = 2 \\times 3 \\times 5$, so $\\frac{11}{30} = 0.3\\dot{6}$ (Recurring).",
+        "answer": "(a) Terminating ($0.375$), (b) Recurring ($0.3\\dot{6}$)"
+      }
+    },
+    {
+      "id": "WE2_2_2",
+      "title": "Converting Fractions to Recurring Decimals by Division",
+      "difficulty": "Understanding",
+      "problem": "Convert $\\dfrac{5}{11}$ and $-\\dfrac{7}{12}$ to recurring decimals using correct recurring notation.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For $\\frac{5}{11}$, divide $5.0000\\dots$ by $11$ or scale the denominator to $99$ by multiplying top and bottom by $9$.",
+          "working": "$$\\frac{5}{11} = \\frac{45}{99} = 0.454545\\dots = 0.\\overline{45} \\text{ (or } 0.\\dot{4}\\dot{5}\\text{)}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For $-\\frac{7}{12}$, divide $7.000\\dots$ by $12$: $70 \\div 12 = 5$ rem $10$; $100 \\div 12 = 8$ rem $4$; $40 \\div 12 = 3$ rem $4$. Only the digit $3$ repeats.",
+          "working": "$$-\\frac{7}{12} = -0.58333\\dots = -0.58\\dot{3}$$"
+        }
+      ],
+      "final_answer": "$0.\\overline{45}$ and $-0.58\\dot{3}$",
+      "now_you_try": {
+        "problem": "Convert $\\dfrac{8}{11}$ and $-\\dfrac{5}{6}$ to recurring decimals.",
+        "hint": "Write $\\frac{8}{11} = \\frac{72}{99}$, and divide $5 \\div 6$ for the second fraction.",
+        "working_summary": "$\\frac{8}{11} = \\frac{72}{99} = 0.\\overline{72}$; $-\\frac{5}{6} = -0.8333\\dots = -0.8\\dot{3}$.",
+        "answer": "$0.\\overline{72}$ and $-0.8\\dot{3}$"
+      }
+    },
+    {
+      "id": "WE2_2_3",
+      "title": "Converting Pure Recurring Decimals to Simplest Fractions",
+      "difficulty": "Understanding",
+      "problem": "Express (a) $0.\\dot{7}$ and (b) $0.\\overline{36}$ as fractions in simplest form.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), a single digit ($7$) repeats immediately after the decimal point, so place $7$ over a single $9$.",
+          "working": "$$0.\\dot{7} = \\frac{7}{9}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), two digits ($36$) repeat immediately after the decimal point, so place $36$ over $99$ and simplify by dividing by $\\text{HCF}(36, 99) = 9$.",
+          "working": "$$0.\\overline{36} = \\frac{36}{99} = \\frac{36 \\div 9}{99 \\div 9} = \\frac{4}{11}$$"
+        }
+      ],
+      "final_answer": "(a) $\\dfrac{7}{9}$, (b) $\\dfrac{4}{11}$",
+      "now_you_try": {
+        "problem": "Express (a) $0.\\dot{6}$ and (b) $0.\\overline{81}$ as fractions in simplest form.",
+        "hint": "Write over $9$ and $99$ respectively, then divide by the HCF.",
+        "working_summary": "(a) $0.\\dot{6} = \\frac{6}{9} = \\frac{2}{3}$; (b) $0.\\overline{81} = \\frac{81}{99} = \\frac{9}{11}$.",
+        "answer": "(a) $\\dfrac{2}{3}$, (b) $\\dfrac{9}{11}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_2_2_1",
+      "title": "Placing the Repeating Bar Over Non-Repeating Digits",
+      "misconception": "Writing $0.58333\\dots$ as $0.\\overline{583}$ instead of $0.58\\dot{3}$.",
+      "correct_concept": "The recurring dot or bar must cover ONLY the digits that actually repeat. In $0.58333\\dots$, the digits $5$ and $8$ appear only once, while only $3$ repeats.",
+      "incorrect_working": "$$\\frac{7}{12} = 0.58333\\dots = 0.\\overline{583} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\frac{7}{12} = 0.58333\\dots = 0.58\\dot{3} \\quad (\\text{Correct})$$",
+      "counter_example": "$0.\\overline{583}$ means $0.583583583\\dots = \\frac{583}{999}$, which differs from $\\frac{7}{12} = 0.583333\\dots$ in the fourth decimal place."
+    },
+    {
+      "id": "MISC_2_2_2",
+      "title": "Treating a Rounded Calculator Display as an Exact Terminating Decimal",
+      "misconception": "Concluding that $\\frac{2}{3} = 0.666666667$ is a terminating decimal because a 9-digit calculator rounds the final digit to $7$.",
+      "correct_concept": "Calculators have a finite screen width and round the last displayed digit. Because $3$ is a prime factor of the denominator, $\\frac{2}{3} = 0.\\dot{6}$ continues infinitely.",
+      "incorrect_working": "$$\\frac{2}{3} = 0.666666667 = \\frac{666666667}{10^9} \\quad (\\text{Rounding approximation only})$$",
+      "correct_working": "$$\\frac{2}{3} = 0.666\\dots = 0.\\dot{6} \\quad (\\text{Exact recurring decimal})$$",
+      "counter_example": "Multiplying $0.666666667 \\times 3$ gives $2.000000001 \\neq 2$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "2_2_Q1",
+        "question": "Write $\\dfrac{17}{25}$ as a terminating decimal.",
+        "difficulty": "Easy",
+        "context": "Terminating Decimals",
+        "final_answer": "$0.68$",
+        "step_by_step_solution": [
+          "Multiply numerator and denominator by $4$ to obtain a denominator of $100$.",
+          "$\\frac{17 \\times 4}{25 \\times 4} = \\frac{68}{100} = 0.68$."
+        ]
+      },
+      {
+        "id": "2_2_Q2",
+        "question": "Write $-\\dfrac{11}{16}$ as a terminating decimal.",
+        "difficulty": "Medium",
+        "context": "Signed Terminating Decimals",
+        "final_answer": "$-0.6875$",
+        "step_by_step_solution": [
+          "Divide $11.0000$ by $16$: $11 \\div 16 = 0.6875$.",
+          "Attach the negative sign: $-0.6875$."
+        ]
+      },
+      {
+        "id": "2_2_Q3",
+        "question": "Express $\\dfrac{5}{9}$ and $\\dfrac{7}{11}$ as recurring decimals.",
+        "difficulty": "Easy",
+        "context": "Recurring Decimals",
+        "final_answer": "$0.\\dot{5}$ and $0.\\overline{63}$",
+        "step_by_step_solution": [
+          "$\\frac{5}{9} = 0.555\\dots = 0.\\dot{5}$.",
+          "$\\frac{7}{11} = \\frac{63}{99} = 0.6363\\dots = 0.\\overline{63}$."
+        ]
+      },
+      {
+        "id": "2_2_Q4",
+        "question": "Convert $0.\\overline{54}$ to a fraction in simplest form.",
+        "difficulty": "Medium",
+        "context": "Recurring Decimal to Fraction",
+        "final_answer": "$\\dfrac{6}{11}$",
+        "step_by_step_solution": [
+          "Write the two-digit repeating block over $99$: $0.\\overline{54} = \\frac{54}{99}$.",
+          "Divide numerator and denominator by $\\text{HCF}(54, 99) = 9$: $\\frac{54 \\div 9}{99 \\div 9} = \\frac{6}{11}$."
+        ]
+      },
+      {
+        "id": "2_2_Q5",
+        "question": "Arrange the following numbers in ascending order: $0.45$, $0.\\overline{45}$, $0.4\\dot{5}$, and $\\dfrac{4}{9}$.",
+        "difficulty": "Medium",
+        "context": "Ordering Decimals",
+        "final_answer": "$\\dfrac{4}{9} < 0.45 < 0.\\overline{45} < 0.4\\dot{5}$",
+        "step_by_step_solution": [
+          "Write each number to $4$ decimal places:",
+          "$\\frac{4}{9} = 0.4444\\dots$, $0.45 = 0.4500$, $0.\\overline{45} = 0.4545\\dots$, and $0.4\\dot{5} = 0.4555\\dots$.",
+          "Comparing digit by digit from left to right gives $\\frac{4}{9} < 0.45 < 0.\\overline{45} < 0.4\\dot{5}$."
+        ]
+      },
+      {
+        "id": "2_2_Q6",
+        "question": "Use algebra to convert $x = 0.2\\dot{7}$ ($0.2777\\dots$) into a fraction in simplest form.",
+        "difficulty": "Challenging",
+        "context": "Algebraic Conversion",
+        "final_answer": "$\\dfrac{5}{18}$",
+        "step_by_step_solution": [
+          "Let $x = 0.2777\\dots$. Then $10x = 2.777\\dots$ and $100x = 27.777\\dots$.",
+          "Subtract the two equations so the repeating tail cancels: $100x - 10x = 27.777\\dots - 2.777\\dots \\implies 90x = 25$.",
+          "Solve for $x$ and simplify: $x = \\frac{25}{90} = \\frac{5}{18}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "2_2_Q7",
+        "question": "In a Sheffield Shield cricket innings at the MCG, a Victorian batter hits $9$ boundaries ($4$ runs each) out of a total score of $66$ runs. What fraction of the batter's runs came from boundaries, and how is this written as a recurring decimal?",
+        "difficulty": "Medium",
+        "context": "Australian Sport (MCG Cricket)",
+        "final_answer": "$\\dfrac{6}{11} = 0.\\overline{54}$",
+        "step_by_step_solution": [
+          "Runs scored from boundaries: $9 \\times 4 = 36$ runs.",
+          "Fraction of total runs: $\\frac{36}{66} = \\frac{6}{11}$.",
+          "Convert to a recurring decimal: $\\frac{6}{11} = \\frac{54}{99} = 0.\\overline{54}$."
+        ]
+      },
+      {
+        "id": "2_2_Q8",
+        "question": "Three friends in Hobart split a restaurant bill of $\\$100$ equally. (a) Write each person's exact share as an improper fraction and as a recurring decimal. (b) If two friends pay $\\$33.33$ and the third pays $\\$33.34$, how much more does the third friend pay than the exact mathematical share?",
+        "difficulty": "Medium",
+        "context": "Australian Currency Rounding",
+        "final_answer": "(a) $\\$\\dfrac{100}{3} = \\$33.\\dot{3}$, (b) $\\$\\dfrac{1}{150}$ (or $\\dfrac{2}{3}$ of a cent)",
+        "step_by_step_solution": [
+          "Each person's exact share is $\\frac{100}{3} = 33.\\dot{3}$ dollars.",
+          "Write $\\$33.34 = \\frac{3334}{100} = \\frac{1667}{50}$ dollars.",
+          "Subtract the exact share: $\\frac{1667}{50} - \\frac{100}{3} = \\frac{5001 - 5000}{150} = \\frac{1}{150}$ dollars ($\\frac{2}{3}$ of a cent)."
+        ]
+      },
+      {
+        "id": "2_2_Q9",
+        "question": "Convert the decimal $\\dfrac{1}{7}$ to a recurring decimal and use the length of its repeating cycle to find the $50\\text{th}$ digit after the decimal point.",
+        "difficulty": "Challenging",
+        "context": "Cyclic Pattern Modelling",
+        "final_answer": "$\\dfrac{1}{7} = 0.\\overline{142857}$; the $50\\text{th}$ digit is $4$",
+        "step_by_step_solution": [
+          "By division, $\\frac{1}{7} = 0.\\overline{142857}$, which has a repeating cycle of length $6$.",
+          "Divide $50$ by the cycle length $6$: $50 = 6 \\times 8 + 2$ (remainder $2$).",
+          "The $50\\text{th}$ digit is the $2\\text{nd}$ digit in the cycle $142857$, which is $4$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "2_2_Q10",
+        "question": "Explain why the recurring decimal expansion of any rational number $\\dfrac{a}{b}$ (where $b > 1$) can have a repeating cycle of length at most $b - 1$ digits.",
+        "difficulty": "Challenging",
+        "context": "Pigeonhole Principle & Division",
+        "final_answer": "There are only $b - 1$ possible non-zero remainders ($1, 2, \\dots, b - 1$), so a remainder must repeat within at most $b$ steps",
+        "step_by_step_solution": [
+          "When dividing by $b$ in long division, if the decimal does not terminate (remainder $0$), the only possible remainders at each step are $1, 2, 3, \\dots, b - 1$.",
+          "Since there are only $b - 1$ distinct non-zero remainders, after at most $b - 1$ steps a remainder must repeat.",
+          "Once a remainder repeats, the subsequent division steps and quotient digits repeat identically, so the cycle length cannot exceed $b - 1$."
+        ]
+      },
+      {
+        "id": "2_2_Q11",
+        "question": "Show using two different methods that $0.\\dot{9} = 1$.",
+        "difficulty": "Challenging",
+        "context": "Mathematical Proof",
+        "final_answer": "$0.\\dot{9} = 3 \\times 0.\\dot{3} = 3 \\times \\frac{1}{3} = 1$",
+        "step_by_step_solution": [
+          "Method 1 (Fractions): Since $\\frac{1}{3} = 0.\\dot{3}$, multiplying both sides by $3$ gives $1 = 3 \\times \\frac{1}{3} = 3 \\times 0.\\dot{3} = 0.\\dot{9}$.",
+          "Method 2 (Algebra): Let $x = 0.999\\dots$. Then $10x = 9.999\\dots$. Subtracting gives $9x = 9$, so $x = 1$."
+        ]
+      },
+      {
+        "id": "2_2_Q12",
+        "question": "Find all integers $n$ between $1$ and $20$ inclusive for which $\\dfrac{1}{n}$ is a terminating decimal. Justify your list using prime factorisation.",
+        "difficulty": "Extension",
+        "context": "Prime Factorisation Classification",
+        "final_answer": "$n \\in \\{1, 2, 4, 5, 8, 10, 16, 20\\}$",
+        "step_by_step_solution": [
+          "$\\frac{1}{n}$ terminates if and only if $n = 2^a \\times 5^b$ for integers $a, b \\ge 0$.",
+          "Powers of $2$ up to $20$: $1, 2, 4, 8, 16$.",
+          "Multiples of $5$ formed with powers of $2$ up to $20$: $5, 10, 20$.",
+          "Combining these gives the complete list: $1, 2, 4, 5, 8, 10, 16, 20$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE2_2_1a",
+      "description": "Worked Example 2.2.1(a)",
+      "expression": "Rational(13, 40) - Float('0.325')",
+      "expected": 0
+    },
+    {
+      "id": "WE2_2_1b",
+      "description": "Worked Example 2.2.1(b)",
+      "expression": "Rational(21, 28) - Rational(3, 4)",
+      "expected": 0
+    },
+    {
+      "id": "NYT2_2_1a",
+      "description": "Now You Try 2.2.1(a)",
+      "expression": "Rational(9, 24) - Rational(3, 8)",
+      "expected": 0
+    },
+    {
+      "id": "WE2_2_2a",
+      "description": "Worked Example 2.2.2 5/11 = 45/99",
+      "expression": "Rational(5, 11) - Rational(45, 99)",
+      "expected": 0
+    },
+    {
+      "id": "NYT2_2_2a",
+      "description": "Now You Try 2.2.2 8/11 = 72/99",
+      "expression": "Rational(8, 11) - Rational(72, 99)",
+      "expected": 0
+    },
+    {
+      "id": "WE2_2_3b",
+      "description": "Worked Example 2.2.3(b) 36/99",
+      "expression": "Rational(36, 99)",
+      "expected": "4/11"
+    },
+    {
+      "id": "NYT2_2_3a",
+      "description": "Now You Try 2.2.3(a) 6/9",
+      "expression": "Rational(6, 9)",
+      "expected": "2/3"
+    },
+    {
+      "id": "NYT2_2_3b",
+      "description": "Now You Try 2.2.3(b) 81/99",
+      "expression": "Rational(81, 99)",
+      "expected": "9/11"
+    },
+    {
+      "id": "EX2_2_Q1",
+      "description": "Exercise 2.2 Q1 17/25",
+      "expression": "Rational(17, 25) - Rational(68, 100)",
+      "expected": 0
+    },
+    {
+      "id": "EX2_2_Q2",
+      "description": "Exercise 2.2 Q2 -11/16",
+      "expression": "-Rational(11, 16) - (-Rational(6875, 10000))",
+      "expected": 0
+    },
+    {
+      "id": "EX2_2_Q4",
+      "description": "Exercise 2.2 Q4 54/99",
+      "expression": "Rational(54, 99)",
+      "expected": "6/11"
+    },
+    {
+      "id": "EX2_2_Q5_order",
+      "description": "Exercise 2.2 Q5 ordering check",
+      "expression": "Rational(4, 9) < Rational(45, 100)",
+      "expected": true
+    },
+    {
+      "id": "EX2_2_Q6",
+      "description": "Exercise 2.2 Q6 0.2777... = 25/90 = 5/18",
+      "expression": "Rational(25, 90)",
+      "expected": "5/18"
+    },
+    {
+      "id": "EX2_2_Q7",
+      "description": "Exercise 2.2 Q7 cricket boundary fraction",
+      "expression": "Rational(9 * 4, 66)",
+      "expected": "6/11"
+    },
+    {
+      "id": "EX2_2_Q8",
+      "description": "Exercise 2.2 Q8 rounding difference",
+      "expression": "Rational(3334, 100) - Rational(100, 3)",
+      "expected": "1/150"
+    },
+    {
+      "id": "EX2_2_Q9",
+      "description": "Exercise 2.2 Q9 remainder of 50 mod 6",
+      "expression": "Mod(50, 6)",
+      "expected": 2
+    }
+  ]
+}

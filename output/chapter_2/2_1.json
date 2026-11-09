@@ -1,0 +1,419 @@
+{
+  "metadata": {
+    "section_id": "2_1",
+    "section_code": "2A",
+    "chapter_number": 2,
+    "chapter_title": "Fractions, Decimals, Irrational Numbers and Index Laws",
+    "title": "Operations with Positive and Negative Fractions",
+    "vcaa_code": "VC2M8N04",
+    "vcaa_description": "Use the 4 operations with integers and with rational numbers, choosing efficient strategies, including using the properties of operations and mental, written and digital strategies, and make estimates to check reasonableness.",
+    "strand": "Number",
+    "target_mastery": "Add, subtract, multiply, and divide positive and negative proper fractions, improper fractions, and mixed numerals.",
+    "prerequisites": [
+      "Equivalent fractions and lowest common denominator (LCD)",
+      "Sign rules for adding, subtracting, multiplying, and dividing integers (Chapter 1)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Rational number",
+        "definition": "Any number that can be written in the form $\\frac{a}{b}$, where $a$ and $b$ are integers and $b \\neq 0$. Denoted by $\\mathbb{Q}$."
+      },
+      {
+        "term": "Lowest Common Denominator (LCD)",
+        "definition": "The Lowest Common Multiple (LCM) of the denominators of two or more fractions."
+      },
+      {
+        "term": "Reciprocal (multiplicative inverse)",
+        "definition": "For any non-zero fraction $\\frac{a}{b}$, its reciprocal is $\\frac{b}{a}$ such that $\\frac{a}{b} \\times \\frac{b}{a} = 1$. A number and its reciprocal always share the same sign."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_2_1_1",
+      "title": "Negative Signs in Fractions and Mixed Numerals",
+      "explanation": "A negative rational number can be written with the negative sign in front of the fraction, in the numerator, or in the denominator: $-\\frac{a}{b} = \\frac{-a}{b} = \\frac{a}{-b}$. Standard mathematical convention places the negative sign either in front of the fraction or in the numerator. For a negative mixed numeral such as $-2\\frac{3}{5}$, the negative sign applies to the entire quantity: $-2\\frac{3}{5} = -\\left(2 + \\frac{3}{5}\\right) = -\\frac{13}{5}$.",
+      "formula_latex": "-a\\frac{b}{c} = -\\left(a + \\frac{b}{c}\\right) = -\\frac{ac + b}{c}",
+      "callout_title": "Converting Negative Mixed Numerals",
+      "callout_rule": "When converting $-2\\frac{3}{5}$ to an improper fraction, ignore the negative sign first ($2 \\times 5 + 3 = 13$), write $\\frac{13}{5}$, and then place the negative sign in front: $-\\frac{13}{5}$."
+    },
+    {
+      "id": "theory_2_1_2",
+      "title": "Adding and Subtracting Signed Fractions",
+      "explanation": "To add or subtract positive and negative fractions, first convert any mixed numerals into improper fractions and simplify adjacent signs. Next, find the Lowest Common Denominator (LCD) using $\\text{LCM}(b, d)$, rewrite each fraction as an equivalent fraction over the LCD, and combine the signed numerators using integer addition and subtraction rules.",
+      "formula_latex": "\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}",
+      "callout_title": "Put Negative Signs in the Numerator",
+      "callout_rule": "Once both fractions share a positive common denominator, attach each fraction's sign to its numerator so you simply add or subtract integers across the top."
+    },
+    {
+      "id": "theory_2_1_3",
+      "title": "Multiplying Signed Fractions",
+      "explanation": "To multiply signed fractions, convert any mixed numerals to improper fractions first. Determine the sign of the product using the integer sign rules (same signs give $+$, different signs give $-$), cancel any common factors between numerators and denominators, and multiply the remaining numerators and denominators.",
+      "formula_latex": "\\left(-\\frac{a}{b}\\right) \\times \\left(-\\frac{c}{d}\\right) = +\\frac{ac}{bd}, \\quad \\left(-\\frac{a}{b}\\right) \\times \\frac{c}{d} = -\\frac{ac}{bd}",
+      "callout_title": "Cross-Cancel Before Multiplying",
+      "callout_rule": "Divide out common factors diagonally or vertically before multiplying numerators and denominators to keep the numbers small and avoid simplifying large fractions at the end."
+    },
+    {
+      "id": "theory_2_1_4",
+      "title": "Dividing Signed Fractions Using the Reciprocal",
+      "explanation": "Dividing by a non-zero fraction is equivalent to multiplying by its reciprocal. Keep the first fraction unchanged, change the division sign ($\\div$) to multiplication ($\\times$), and invert the second fraction (keeping its negative sign if it is negative).",
+      "formula_latex": "\\frac{a}{b} \\div \\left(-\\frac{c}{d}\\right) = \\frac{a}{b} \\times \\left(-\\frac{d}{c}\\right) = -\\frac{ad}{bc}",
+      "callout_title": "Keep, Change, Flip (Preserve the Sign)",
+      "callout_rule": "The reciprocal of $-\\frac{3}{4}$ is $-\\frac{4}{3}$, NOT $+\\frac{4}{3}$. Taking a reciprocal flips the numerator and denominator but never changes the sign."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE2_1_1",
+      "title": "Adding and Subtracting Signed Fractions",
+      "difficulty": "Fluency",
+      "problem": "Evaluate $-\\dfrac{5}{6} + \\dfrac{3}{8}$ in simplest form.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Find the Lowest Common Denominator of $6$ and $8$: $\\text{LCM}(6, 8) = 24$.",
+          "working": "$$\\text{LCD} = \\text{LCM}(6, 8) = 24$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Convert both fractions to equivalent fractions with denominator $24$, placing the negative sign in the numerator of the first fraction.",
+          "working": "$$-\\frac{5}{6} + \\frac{3}{8} = \\frac{-5 \\times 4}{24} + \\frac{3 \\times 3}{24} = \\frac{-20}{24} + \\frac{9}{24}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Add the signed numerators $-20 + 9 = -11$ over the common denominator $24$.",
+          "working": "$$= \\frac{-20 + 9}{24} = -\\frac{11}{24}$$"
+        }
+      ],
+      "final_answer": "$-\\dfrac{11}{24}$",
+      "now_you_try": {
+        "problem": "Evaluate $-\\dfrac{7}{10} + \\dfrac{3}{4}$ in simplest form.",
+        "hint": "Use $\\text{LCD} = \\text{LCM}(10, 4) = 20$.",
+        "working_summary": "$\\frac{-14}{20} + \\frac{15}{20} = \\frac{-14 + 15}{20} = \\frac{1}{20}$.",
+        "answer": "$\\dfrac{1}{20}$"
+      }
+    },
+    {
+      "id": "WE2_1_2",
+      "title": "Subtracting Negative Mixed Numerals",
+      "difficulty": "Understanding",
+      "problem": "Evaluate $-1\\dfrac{3}{4} - \\left(-2\\dfrac{5}{6}\\right)$ as a mixed numeral in simplest form.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Simplify the two adjacent minus signs $-(-2\\frac{5}{6})$ into $+2\\frac{5}{6}$, and convert both mixed numerals to improper fractions.",
+          "working": "$$-1\\frac{3}{4} + 2\\frac{5}{6} = -\\frac{7}{4} + \\frac{17}{6}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Rewrite both fractions over the lowest common denominator $\\text{LCM}(4, 6) = 12$.",
+          "working": "$$= \\frac{-21}{12} + \\frac{34}{12} = \\frac{-21 + 34}{12}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Evaluate the numerator $-21 + 34 = 13$ and convert $\\frac{13}{12}$ back to a mixed numeral.",
+          "working": "$$= \\frac{13}{12} = 1\\frac{1}{12}$$"
+        }
+      ],
+      "final_answer": "$1\\dfrac{1}{12}$",
+      "now_you_try": {
+        "problem": "Evaluate $-2\\dfrac{2}{3} - \\left(-1\\dfrac{1}{2}\\right)$ as a mixed numeral in simplest form.",
+        "hint": "Convert to improper fractions: $-\\frac{8}{3} + \\frac{3}{2}$.",
+        "working_summary": "$-\\frac{8}{3} + \\frac{3}{2} = \\frac{-16 + 9}{6} = -\\frac{7}{6} = -1\\frac{1}{6}$.",
+        "answer": "$-1\\dfrac{1}{6}$"
+      }
+    },
+    {
+      "id": "WE2_1_3",
+      "title": "Multiplying and Dividing Signed Mixed Numerals",
+      "difficulty": "Understanding",
+      "problem": "Evaluate $-2\\dfrac{1}{4} \\div \\left(-1\\dfrac{7}{8}\\right)$ in simplest form.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Convert both mixed numerals into improper fractions: $-2\\frac{1}{4} = -\\frac{9}{4}$ and $-1\\frac{7}{8} = -\\frac{15}{8}$.",
+          "working": "$$-2\\frac{1}{4} \\div \\left(-1\\frac{7}{8}\\right) = -\\frac{9}{4} \\div \\left(-\\frac{15}{8}\\right)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Since both fractions are negative, the quotient is positive. Multiply by the reciprocal of the divisor.",
+          "working": "$$= +\\left(\\frac{9}{4} \\times \\frac{8}{15}\\right)$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Cross-cancel common factors: divide $9$ and $15$ by $3$, and divide $8$ and $4$ by $4$.",
+          "working": "$$= \\frac{3}{1} \\times \\frac{2}{5} = \\frac{6}{5} = 1\\frac{1}{5}$$"
+        }
+      ],
+      "final_answer": "$\\dfrac{6}{5}$ (or $1\\dfrac{1}{5}$)",
+      "now_you_try": {
+        "problem": "Evaluate $-3\\dfrac{1}{3} \\div 2\\dfrac{1}{2}$ in simplest form.",
+        "hint": "Write as $-\\frac{10}{3} \\div \\frac{5}{2} = -\\frac{10}{3} \\times \\frac{2}{5}$.",
+        "working_summary": "$-\\frac{10}{3} \\times \\frac{2}{5} = -\\frac{2 \\times 2}{3 \\times 1} = -\\frac{4}{3} = -1\\frac{1}{3}$.",
+        "answer": "$-\\dfrac{4}{3}$ (or $-1\\dfrac{1}{3}$)"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_2_1_1",
+      "title": "Misinterpreting a Negative Mixed Numeral $-a\\frac{b}{c}$ as $-a + \\frac{b}{c}$",
+      "misconception": "When converting $-3\\frac{1}{4}$ to an improper fraction, students sometimes compute $(-3) \\times 4 + 1 = -11$, writing $-\\frac{11}{4}$ instead of $-\\frac{13}{4}$.",
+      "correct_concept": "In $-3\\frac{1}{4}$, both the whole number part and the fractional part are negative: $-3\\frac{1}{4} = -3 - \\frac{1}{4} = -\\frac{12}{4} - \\frac{1}{4} = -\\frac{13}{4}$.",
+      "incorrect_working": "$$-3\\frac{1}{4} = \\frac{-3 \\times 4 + 1}{4} = -\\frac{11}{4} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$-3\\frac{1}{4} = -\\frac{3 \\times 4 + 1}{4} = -\\frac{13}{4} \\quad (\\text{Correct})$$",
+      "counter_example": "On a number line, $-3\\frac{1}{4}$ lies between $-3$ and $-4$, whereas $-\\frac{11}{4} = -2\\frac{3}{4}$ lies between $-2$ and $-3$."
+    },
+    {
+      "id": "MISC_2_1_2",
+      "title": "Making Both Numerator and Denominator Negative for a Single Negative Fraction",
+      "misconception": "Rewriting $-\\frac{3}{5}$ as $\\frac{-3}{-5}$, believing the negative sign distributes to both top and bottom.",
+      "correct_concept": "A fraction represents division: $\\frac{-3}{-5} = (-3) \\div (-5) = +\\frac{3}{5}$. A single negative sign belongs to EITHER the numerator OR the denominator, never both.",
+      "incorrect_working": "$$-\\frac{3}{5} = \\frac{-3}{-5} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$-\\frac{3}{5} = \\frac{-3}{5} = \\frac{3}{-5} \\quad (\\text{Correct})$$",
+      "counter_example": "Dividing $-3$ by $-5$ gives $+0.6$, whereas $-\\frac{3}{5} = -0.6$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "2_1_Q1",
+        "question": "Evaluate $-\\dfrac{3}{4} - \\dfrac{5}{6}$ in simplest form.",
+        "difficulty": "Easy",
+        "context": "Signed Fraction Subtraction",
+        "final_answer": "$-\\dfrac{19}{12}$ (or $-1\\dfrac{7}{12}$)",
+        "step_by_step_solution": [
+          "Find $\\text{LCD} = \\text{LCM}(4, 6) = 12$.",
+          "Rewrite over $12$: $\\frac{-9}{12} - \\frac{10}{12} = \\frac{-9 - 10}{12} = -\\frac{19}{12} = -1\\frac{7}{12}$."
+        ]
+      },
+      {
+        "id": "2_1_Q2",
+        "question": "Evaluate $-\\dfrac{7}{12} - \\left(-\\dfrac{5}{8}\\right)$ in simplest form.",
+        "difficulty": "Easy",
+        "context": "Adjacent Signs with Fractions",
+        "final_answer": "$\\dfrac{1}{24}$",
+        "step_by_step_solution": [
+          "Simplify adjacent minus signs: $-\\frac{7}{12} + \\frac{5}{8}$.",
+          "Use $\\text{LCD} = 24$: $\\frac{-14}{24} + \\frac{15}{24} = \\frac{1}{24}$."
+        ]
+      },
+      {
+        "id": "2_1_Q3",
+        "question": "Evaluate $-\\dfrac{9}{14} \\times \\left(-\\dfrac{7}{12}\\right)$ in simplest form.",
+        "difficulty": "Medium",
+        "context": "Multiplying Signed Fractions",
+        "final_answer": "$\\dfrac{3}{8}$",
+        "step_by_step_solution": [
+          "Two negatives multiply to give a positive result: $+\\left(\\frac{9}{14} \\times \\frac{7}{12}\\right)$.",
+          "Cross-cancel $9$ and $12$ by $3$, and $7$ and $14$ by $7$: $\\frac{3}{2} \\times \\frac{1}{4} = \\frac{3}{8}$."
+        ]
+      },
+      {
+        "id": "2_1_Q4",
+        "question": "Evaluate $-\\dfrac{15}{16} \\div \\dfrac{9}{20}$ in simplest form.",
+        "difficulty": "Medium",
+        "context": "Dividing Signed Fractions",
+        "final_answer": "$-\\dfrac{25}{12}$ (or $-2\\dfrac{1}{12}$)",
+        "step_by_step_solution": [
+          "Multiply by the reciprocal of $\\frac{9}{20}$: $-\\frac{15}{16} \\times \\frac{20}{9}$.",
+          "Cancel $15$ and $9$ by $3$, and $20$ and $16$ by $4$: $-\\frac{5}{4} \\times \\frac{5}{3} = -\\frac{25}{12}$."
+        ]
+      },
+      {
+        "id": "2_1_Q5",
+        "question": "Evaluate $-3\\dfrac{1}{5} + 1\\dfrac{3}{4}$ as an improper fraction and as a mixed numeral.",
+        "difficulty": "Medium",
+        "context": "Mixed Numerals",
+        "final_answer": "$-\\dfrac{29}{20} = -1\\dfrac{9}{20}$",
+        "step_by_step_solution": [
+          "Convert to improper fractions: $-\\frac{16}{5} + \\frac{7}{4}$.",
+          "Rewrite over $\\text{LCD} = 20$: $\\frac{-64 + 35}{20} = -\\frac{29}{20} = -1\\frac{9}{20}$."
+        ]
+      },
+      {
+        "id": "2_1_Q6",
+        "question": "Evaluate $\\left(-\\dfrac{2}{3}\\right)^3 + \\left(-\\dfrac{1}{2}\\right)^2$ in simplest form.",
+        "difficulty": "Challenging",
+        "context": "Powers of Signed Fractions",
+        "final_answer": "$-\\dfrac{5}{108}$",
+        "step_by_step_solution": [
+          "Evaluate each power: $\\left(-\\frac{2}{3}\\right)^3 = -\\frac{8}{27}$ and $\\left(-\\frac{1}{2}\\right)^2 = +\\frac{1}{4}$.",
+          "Add over $\\text{LCD} = 108$: $\\frac{-32 + 27}{108} = -\\frac{5}{108}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "2_1_Q7",
+        "question": "The water level in a Goulburn Valley irrigation channel changes by $-\\dfrac{3}{8}\\text{ m}$ per day during a dry week. After $4$ days, farmers release water from Goulburn Weir, raising the level by $1\\dfrac{1}{6}\\text{ m}$. What is the net change in the channel's water level after these events?",
+        "difficulty": "Medium",
+        "context": "Victorian Agriculture (Goulburn Valley)",
+        "final_answer": "$-\\dfrac{1}{3}\\text{ m}$",
+        "step_by_step_solution": [
+          "Calculate the change over $4$ dry days: $4 \\times \\left(-\\frac{3}{8}\\right) = -\\frac{12}{8} = -\\frac{3}{2}\\text{ m}$.",
+          "Add the release of $1\\frac{1}{6} = \\frac{7}{6}\\text{ m}$: $-\\frac{3}{2} + \\frac{7}{6} = \\frac{-9 + 7}{6} = -\\frac{2}{6} = -\\frac{1}{3}\\text{ m}$."
+        ]
+      },
+      {
+        "id": "2_1_Q8",
+        "question": "A scuba diver exploring Port Phillip Bay is at a depth of $-4\\dfrac{1}{2}\\text{ m}$ and descends to a reef at $-15\\dfrac{3}{4}\\text{ m}$ in $3\\dfrac{3}{4}\\text{ minutes}$. Find the diver's average rate of change of elevation in metres per minute.",
+        "difficulty": "Challenging",
+        "context": "Port Phillip Bay Marine Science",
+        "final_answer": "$-3\\text{ m/min}$",
+        "step_by_step_solution": [
+          "Calculate the change in elevation: $-15\\frac{3}{4} - \\left(-4\\frac{1}{2}\\right) = -\\frac{63}{4} + \\frac{9}{2} = \\frac{-63 + 18}{4} = -\\frac{45}{4}\\text{ m}$.",
+          "Divide by the time $3\\frac{3}{4} = \\frac{15}{4}\\text{ minutes}$: $-\\frac{45}{4} \\div \\frac{15}{4} = -\\frac{45}{4} \\times \\frac{4}{15} = -3\\text{ m/min}$."
+        ]
+      },
+      {
+        "id": "2_1_Q9",
+        "question": "In a school sibling survey in Bendigo, $\\dfrac{2}{5}$ of the students walk to school, $\\dfrac{1}{3}$ catch a bus, $\\dfrac{1}{6}$ are driven by car, and the remaining $18$ students ride bicycles. How many students are in the survey in total?",
+        "difficulty": "Challenging",
+        "context": "Australian School Transport",
+        "final_answer": "$180\\text{ students}$",
+        "step_by_step_solution": [
+          "Add the known fractions over $\\text{LCD}(5, 3, 6) = 30$: $\\frac{12}{30} + \\frac{10}{30} + \\frac{5}{30} = \\frac{27}{30} = \\frac{9}{10}$.",
+          "The remaining fraction who ride bicycles is $1 - \\frac{9}{10} = \\frac{1}{10}$.",
+          "Since $\\frac{1}{10}$ of the students equals $18$, the total number of students is $18 \\div \\frac{1}{10} = 18 \\times 10 = 180$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "2_1_Q10",
+        "question": "If $-1 < x < 0$, arrange $x$, $x^2$, and $\\dfrac{1}{x}$ in ascending order (from smallest to largest). Justify your ordering by testing $x = -\\dfrac{1}{2}$.",
+        "difficulty": "Challenging",
+        "context": "Number Sense & Inequalities",
+        "final_answer": "$\\dfrac{1}{x} < x < x^2$",
+        "step_by_step_solution": [
+          "Let $x = -\\frac{1}{2}$. Then $x^2 = \\left(-\\frac{1}{2}\\right)^2 = +\\frac{1}{4}$, which is positive.",
+          "The reciprocal is $\\frac{1}{x} = -2$, which is less than $-1$.",
+          "Comparing the three values gives $-2 < -\\frac{1}{2} < \\frac{1}{4}$, so $\\frac{1}{x} < x < x^2$ for all $-1 < x < 0$."
+        ]
+      },
+      {
+        "id": "2_1_Q11",
+        "question": "Explain why dividing any number by $-\\dfrac{1}{4}$ produces the exact same result as multiplying that number by $-4$.",
+        "difficulty": "Medium",
+        "context": "Reciprocal Justification",
+        "final_answer": "The reciprocal of $-\\frac{1}{4}$ is $-\\frac{4}{1} = -4$, and division by a fraction is multiplication by its reciprocal",
+        "step_by_step_solution": [
+          "By definition of fraction division, $a \\div \\left(-\\frac{1}{4}\\right) = a \\times \\left(\\text{reciprocal of } -\\frac{1}{4}\\right)$.",
+          "Since $\\left(-\\frac{1}{4}\\right) \\times (-4) = 1$, the reciprocal of $-\\frac{1}{4}$ is $-4$.",
+          "Therefore, $a \\div \\left(-\\frac{1}{4}\\right) = a \\times (-4)$ for every real number $a$."
+        ]
+      },
+      {
+        "id": "2_1_Q12",
+        "question": "Prove that for any positive integer $n$, $\\dfrac{1}{n(n+1)} = \\dfrac{1}{n} - \\dfrac{1}{n+1}$, and use this identity ('telescoping sum') to evaluate $\\dfrac{1}{1 \\times 2} + \\dfrac{1}{2 \\times 3} + \\dfrac{1}{3 \\times 4} + \\dfrac{1}{4 \\times 5}$.",
+        "difficulty": "Extension",
+        "context": "Algebraic Fraction Proof",
+        "final_answer": "$\\dfrac{4}{5}$",
+        "step_by_step_solution": [
+          "Express the right-hand side over the common denominator $n(n+1)$: $\\frac{1}{n} - \\frac{1}{n+1} = \\frac{(n+1) - n}{n(n+1)} = \\frac{1}{n(n+1)}$.",
+          "Rewrite each term in the sum: $\\left(1 - \\frac{1}{2}\\right) + \\left(\\frac{1}{2} - \\frac{1}{3}\\right) + \\left(\\frac{1}{3} - \\frac{1}{4}\\right) + \\left(\\frac{1}{4} - \\frac{1}{5}\\right)$.",
+          "All intermediate fractions cancel in pairs, leaving $1 - \\frac{1}{5} = \\frac{4}{5}$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE2_1_1",
+      "description": "Worked Example 2.1.1",
+      "expression": "-Rational(5, 6) + Rational(3, 8)",
+      "expected": "-11/24"
+    },
+    {
+      "id": "NYT2_1_1",
+      "description": "Now You Try 2.1.1",
+      "expression": "-Rational(7, 10) + Rational(3, 4)",
+      "expected": "1/20"
+    },
+    {
+      "id": "WE2_1_2",
+      "description": "Worked Example 2.1.2",
+      "expression": "-Rational(7, 4) - (-Rational(17, 6))",
+      "expected": "13/12"
+    },
+    {
+      "id": "NYT2_1_2",
+      "description": "Now You Try 2.1.2",
+      "expression": "-Rational(8, 3) - (-Rational(3, 2))",
+      "expected": "-7/6"
+    },
+    {
+      "id": "WE2_1_3",
+      "description": "Worked Example 2.1.3",
+      "expression": "(-Rational(9, 4)) / (-Rational(15, 8))",
+      "expected": "6/5"
+    },
+    {
+      "id": "NYT2_1_3",
+      "description": "Now You Try 2.1.3",
+      "expression": "(-Rational(10, 3)) / Rational(5, 2)",
+      "expected": "-4/3"
+    },
+    {
+      "id": "EX2_1_Q1",
+      "description": "Exercise 2.1 Q1",
+      "expression": "-Rational(3, 4) - Rational(5, 6)",
+      "expected": "-19/12"
+    },
+    {
+      "id": "EX2_1_Q2",
+      "description": "Exercise 2.1 Q2",
+      "expression": "-Rational(7, 12) - (-Rational(5, 8))",
+      "expected": "1/24"
+    },
+    {
+      "id": "EX2_1_Q3",
+      "description": "Exercise 2.1 Q3",
+      "expression": "(-Rational(9, 14)) * (-Rational(7, 12))",
+      "expected": "3/8"
+    },
+    {
+      "id": "EX2_1_Q4",
+      "description": "Exercise 2.1 Q4",
+      "expression": "(-Rational(15, 16)) / Rational(9, 20)",
+      "expected": "-25/12"
+    },
+    {
+      "id": "EX2_1_Q5",
+      "description": "Exercise 2.1 Q5",
+      "expression": "-Rational(16, 5) + Rational(7, 4)",
+      "expected": "-29/20"
+    },
+    {
+      "id": "EX2_1_Q6",
+      "description": "Exercise 2.1 Q6",
+      "expression": "(-Rational(2, 3))**3 + (-Rational(1, 2))**2",
+      "expected": "-5/108"
+    },
+    {
+      "id": "EX2_1_Q7",
+      "description": "Exercise 2.1 Q7 Goulburn Valley channel",
+      "expression": "4 * (-Rational(3, 8)) + Rational(7, 6)",
+      "expected": "-1/3"
+    },
+    {
+      "id": "EX2_1_Q8",
+      "description": "Exercise 2.1 Q8 Port Phillip diver rate",
+      "expression": "(-Rational(63, 4) - (-Rational(9, 2))) / Rational(15, 4)",
+      "expected": -3
+    },
+    {
+      "id": "EX2_1_Q9",
+      "description": "Exercise 2.1 Q9 Bendigo survey total",
+      "expression": "18 / (1 - (Rational(2, 5) + Rational(1, 3) + Rational(1, 6)))",
+      "expected": 180
+    },
+    {
+      "id": "EX2_1_Q12",
+      "description": "Exercise 2.1 Q12 telescoping sum",
+      "expression": "Rational(1, 2) + Rational(1, 6) + Rational(1, 12) + Rational(1, 20)",
+      "expected": "4/5"
+    }
+  ]
+}

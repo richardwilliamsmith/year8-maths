@@ -1,0 +1,415 @@
+{
+  "metadata": {
+    "section_id": "3_1",
+    "section_code": "3A",
+    "chapter_number": 3,
+    "chapter_title": "Percentages and Financial Mathematics",
+    "title": "Percentages, Percentage Change and GST",
+    "vcaa_code": "VC2M8N05",
+    "vcaa_description": "Use mathematical modelling to solve practical problems involving rational numbers and percentages, including financial contexts.",
+    "strand": "Number",
+    "target_mastery": "Calculate percentages of quantities, apply the multiplier method for percentage increases and decreases, and solve Australian 10% Goods and Services Tax (GST) problems including finding pre-GST prices.",
+    "prerequisites": [
+      "Converting between fractions, decimals, and percentages",
+      "Multiplying and dividing decimals and fractions (Chapter 2)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Percentage (%)",
+        "definition": "A rate or proportion 'per hundred': $p\\% = \\frac{p}{100}$."
+      },
+      {
+        "term": "Multiplier (scale factor)",
+        "definition": "The single decimal or fraction by which an original amount is multiplied to apply a percentage increase ($1 + \\frac{r}{100}$) or decrease ($1 - \\frac{r}{100}$)."
+      },
+      {
+        "term": "Goods and Services Tax (GST)",
+        "definition": "Australia's federal tax of $10\\%$ added to the pre-tax price of most goods and services, making the GST-inclusive price $110\\%$ ($1.1$ times) the pre-GST price."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_3_1_1",
+      "title": "Expressing One Quantity as a Percentage of Another and Finding a Percentage",
+      "explanation": "To express quantity $A$ as a percentage of quantity $B$ (ensuring both are in the same units), form the fraction $\\frac{A}{B}$ and multiply by $100\\%$. Conversely, to find $p\\%$ of a quantity $Q$, multiply $\\frac{p}{100} \\times Q$.",
+      "formula_latex": "A \\text{ as a \\% of } B = \\frac{A}{B} \\times 100\\%, \\quad p\\% \\text{ of } Q = \\frac{p}{100} \\times Q",
+      "callout_title": "Match the Units First",
+      "callout_rule": "Before forming the fraction $\\frac{A}{B}$, always convert $A$ and $B$ to the exact same unit (e.g., convert $\\$2.50$ to $250\\text{ cents}$ when comparing with $50\\text{ cents}$)."
+    },
+    {
+      "id": "theory_3_1_2",
+      "title": "The Multiplier Method for Percentage Increase and Decrease",
+      "explanation": "The original amount represents $100\\%$. Increasing a quantity by $r\\%$ gives $(100 + r)\\%$ of the original amount, corresponding to a decimal multiplier of $1 + \\frac{r}{100}$. Decreasing a quantity by $r\\%$ gives $(100 - r)\\%$ of the original amount, corresponding to a decimal multiplier of $1 - \\frac{r}{100}$.",
+      "formula_latex": "\\text{New Value (Increase)} = \\text{Original} \\times \\left(1 + \\frac{r}{100}\\right), \\quad \\text{New Value (Decrease)} = \\text{Original} \\times \\left(1 - \\frac{r}{100}\\right)",
+      "callout_title": "One-Step Multiplier Rule",
+      "callout_rule": "To increase by $15\\%$, multiply by $1.15$. To decrease by $15\\%$, multiply by $0.85$. To reverse a percentage change and find the original amount, DIVIDE by the multiplier."
+    },
+    {
+      "id": "theory_3_1_3",
+      "title": "Percentage Change (Percentage Increase or Decrease)",
+      "explanation": "To find the percentage change when a quantity changes from an original value to a new value, divide the actual change ($\\text{New} - \\text{Original}$) by the original value and multiply by $100\\%$.",
+      "formula_latex": "\\text{Percentage Change} = \\frac{\\text{New Value} - \\text{Original Value}}{\\text{Original Value}} \\times 100\\%",
+      "callout_title": "Always Divide by the Original Value",
+      "callout_rule": "The denominator of a percentage change calculation is ALWAYS the starting (original) value, never the final value."
+    },
+    {
+      "id": "theory_3_1_4",
+      "title": "Australian 10% Goods and Services Tax (GST)",
+      "explanation": "In Australia, GST is $10\\%$ of the pre-tax price. Therefore, the GST-inclusive price equals $110\\%$ ($1.1$ or $\\frac{11}{10}$) of the pre-GST price. Given the GST-inclusive price, you find the pre-GST price by dividing by $1.1$ (or multiplying by $\\frac{10}{11}$), and you find the GST component by dividing the GST-inclusive price by $11$.",
+      "formula_latex": "\\text{Price}_{\\text{inc GST}} = 1.1 \\times \\text{Price}_{\\text{ex GST}}, \\quad \\text{Price}_{\\text{ex GST}} = \\frac{\\text{Price}_{\\text{inc GST}}}{1.1}, \\quad \\text{GST} = \\frac{\\text{Price}_{\\text{inc GST}}}{11}",
+      "callout_title": "The Divide-by-11 Rule for Australian GST",
+      "callout_rule": "A GST-inclusive receipt total consists of $10$ parts pre-tax price plus $1$ part GST ($11$ parts in total). So the GST included in a final receipt price is $\\frac{1}{11}$ of the final price, NOT $10\\%$ of the final price!"
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE3_1_1",
+      "title": "Applying Multipliers for Percentage Increase and Decrease",
+      "difficulty": "Fluency",
+      "problem": "(a) Increase $\\$240$ by $15\\%$. (b) Decrease $450\\text{ L}$ by $24\\%$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For part (a), a $15\\%$ increase gives $100\\% + 15\\% = 115\\% = 1.15$. Multiply $\\$240$ by $1.15$.",
+          "working": "$$\\$240 \\times 1.15 = \\$276$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For part (b), a $24\\%$ decrease leaves $100\\% - 24\\% = 76\\% = 0.76$. Multiply $450\\text{ L}$ by $0.76$.",
+          "working": "$$450 \\times 0.76 = 342\\text{ L}$$"
+        }
+      ],
+      "final_answer": "(a) $\\$276$, (b) $342\\text{ L}$",
+      "now_you_try": {
+        "problem": "(a) Increase $\\$320$ by $25\\%$. (b) Decrease $600\\text{ kg}$ by $18\\%$.",
+        "hint": "Use multipliers $1.25$ and $0.82$ respectively.",
+        "working_summary": "(a) $320 \\times 1.25 = \\$400$; (b) $600 \\times 0.82 = 492\\text{ kg}$.",
+        "answer": "(a) $\\$400$, (b) $492\\text{ kg}$"
+      }
+    },
+    {
+      "id": "WE3_1_2",
+      "title": "Australian 10% GST Calculations",
+      "difficulty": "Understanding",
+      "problem": "An electrician in Melbourne quotes $\\$440$ (including $10\\%$ GST) to install a ceiling fan. Find (a) the pre-GST price of the job and (b) the exact amount of GST included in the bill.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The GST-inclusive price ($\\$440$) is $110\\% = 1.1$ times the pre-GST price. Divide $\\$440$ by $1.1$ to find the pre-GST price.",
+          "working": "$$\\text{Pre-GST price} = \\frac{440}{1.1} = \\$400$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Find the GST component either by subtracting $\\$440 - \\$400$ or by dividing the GST-inclusive price by $11$.",
+          "working": "$$\\text{GST} = \\frac{440}{11} = \\$40$$"
+        }
+      ],
+      "final_answer": "(a) $\\$400$, (b) $\\$40$",
+      "now_you_try": {
+        "problem": "A laptop at a store in Chadstone is priced at $\\$1320$ including $10\\%$ GST. Find (a) the pre-GST price and (b) the GST included.",
+        "hint": "Divide $\\$1320$ by $1.1$ for the pre-GST price and by $11$ for the GST.",
+        "working_summary": "(a) $1320 \\div 1.1 = \\$1200$; (b) $1320 \\div 11 = \\$120$.",
+        "answer": "(a) $\\$1200$, (b) $\\$120$"
+      }
+    },
+    {
+      "id": "WE3_1_3",
+      "title": "Finding the Original Amount After a Percentage Change",
+      "difficulty": "Problem-Solving",
+      "problem": "After a $20\\%$ winter clearance discount at a Geelong surf shop, a wetsuit sells for $\\$224$. What was the original marked price of the wetsuit before the discount?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "A $20\\%$ discount means the sale price is $100\\% - 20\\% = 80\\% = 0.8$ of the original price.",
+          "working": "$$0.8 \\times \\text{Original Price} = 224$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide both sides by the multiplier $0.8$ (or $\\frac{4}{5}$) to recover the original price.",
+          "working": "$$\\text{Original Price} = \\frac{224}{0.8} = 224 \\times \\frac{5}{4} = \\$280$$"
+        }
+      ],
+      "final_answer": "$\\$280$",
+      "now_you_try": {
+        "problem": "After an $8\\%$ annual pay rise, a nurse in Ballarat earns $\\$1890$ per fortnight. What was her fortnightly pay before the pay rise?",
+        "hint": "Divide $\\$1890$ by the multiplier $1.08$.",
+        "working_summary": "$1890 \\div 1.08 = \\$1750$.",
+        "answer": "$\\$1750$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_3_1_1",
+      "title": "Calculating 10% of the GST-Inclusive Price to Find the GST",
+      "misconception": "When an item costs $\\$110$ including GST, students often take $10\\%$ of $\\$110$ ($\\$11$) and claim the pre-GST price is $\\$110 - \\$11 = \\$99$.",
+      "correct_concept": "The $10\\%$ GST was calculated on the pre-GST price ($\\$100$), not on the final $\\$110$ price. Always divide the GST-inclusive price by $11$ to find the GST ($\\$110 \\div 11 = \\$10$).",
+      "incorrect_working": "$$\\text{GST} = 0.10 \\times 110 = \\$11, \\quad \\text{Pre-GST} = \\$99 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\text{GST} = \\frac{110}{11} = \\$10, \\quad \\text{Pre-GST} = \\frac{110}{1.1} = \\$100 \\quad (\\text{Correct})$$",
+      "counter_example": "If the pre-GST price were $\\$99$, adding $10\\%$ GST would give $\\$99 \\times 1.1 = \\$108.90$, not $\\$110$."
+    },
+    {
+      "id": "MISC_3_1_2",
+      "title": "Assuming Equal Percentage Increase and Decrease Cancel Out",
+      "misconception": "Believing that increasing a price by $20\\%$ and then decreasing the new price by $20\\%$ returns the price to its original value.",
+      "correct_concept": "The $20\\%$ decrease applies to the larger increased price ($120\\%$), not the original $100\\%$. Multiplying the multipliers gives $1.20 \\times 0.80 = 0.96 = 96\\%$, a net $4\\%$ decrease.",
+      "incorrect_working": "$$+20\\% \\text{ then } -20\\% = 0\\% \\text{ net change} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$1.20 \\times 0.80 = 0.96 = 96\\% \\implies 4\\% \\text{ net decrease} \\quad (\\text{Correct})$$",
+      "counter_example": "Starting with $\\$100$: $+20\\%$ gives $\\$120$; then $-20\\%$ of $\\$120$ subtracts $\\$24$, leaving $\\$96 \\neq \\$100$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "3_1_Q1",
+        "question": "Express $45\\text{ minutes}$ as a percentage of $3\\text{ hours}$.",
+        "difficulty": "Easy",
+        "context": "Percentage of a Quantity",
+        "final_answer": "$25\\%$",
+        "step_by_step_solution": [
+          "Convert $3\\text{ hours}$ to minutes: $3 \\times 60 = 180\\text{ minutes}$.",
+          "Calculate $\\frac{45}{180} \\times 100\\% = \\frac{1}{4} \\times 100\\% = 25\\%$."
+        ]
+      },
+      {
+        "id": "3_1_Q2",
+        "question": "Increase $\\$650$ by $12\\%$.",
+        "difficulty": "Easy",
+        "context": "Percentage Increase",
+        "final_answer": "$\\$728$",
+        "step_by_step_solution": [
+          "Use the multiplier $1 + 0.12 = 1.12$.",
+          "$650 \\times 1.12 = \\$728$."
+        ]
+      },
+      {
+        "id": "3_1_Q3",
+        "question": "Decrease $\\$480$ by $35\\%$.",
+        "difficulty": "Easy",
+        "context": "Percentage Decrease",
+        "final_answer": "$\\$312$",
+        "step_by_step_solution": [
+          "Use the multiplier $1 - 0.35 = 0.65$.",
+          "$480 \\times 0.65 = \\$312$."
+        ]
+      },
+      {
+        "id": "3_1_Q4",
+        "question": "A bicycle's price changes from $\\$500$ to $\\$415$. Calculate the percentage decrease.",
+        "difficulty": "Medium",
+        "context": "Percentage Change",
+        "final_answer": "$17\\%$",
+        "step_by_step_solution": [
+          "Find the decrease: $500 - 415 = \\$85$.",
+          "Divide by the original price ($\\$500$) and multiply by $100\\%$: $\\frac{85}{500} \\times 100\\% = 17\\%$."
+        ]
+      },
+      {
+        "id": "3_1_Q5",
+        "question": "A plumber in Bendigo charges $\\$385$ including $10\\%$ GST. Find the pre-GST price and the GST amount.",
+        "difficulty": "Medium",
+        "context": "Australian 10% GST",
+        "final_answer": "Pre-GST $= \\$350$, GST $= \\$35$",
+        "step_by_step_solution": [
+          "Divide the GST-inclusive total by $1.1$: $385 \\div 1.1 = \\$350$.",
+          "The GST is $385 - 350 = \\$35$ (or $385 \\div 11 = \\$35$)."
+        ]
+      },
+      {
+        "id": "3_1_Q6",
+        "question": "After a $15\\%$ discount, a pair of running shoes costs $\\$153$. Find the original price before the discount.",
+        "difficulty": "Challenging",
+        "context": "Reverse Percentage",
+        "final_answer": "$\\$180$",
+        "step_by_step_solution": [
+          "The discounted price is $100\\% - 15\\% = 85\\% = 0.85$ of the original price.",
+          "Divide by the multiplier: $153 \\div 0.85 = \\$180$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "3_1_Q7",
+        "question": "Thomson River Dam in Victoria held $640\\text{ GL}$ (gigalitres) of water at the start of winter and $800\\text{ GL}$ at the end of spring. Calculate the percentage increase in water storage.",
+        "difficulty": "Medium",
+        "context": "Melbourne Water Storage",
+        "final_answer": "$25\\%$",
+        "step_by_step_solution": [
+          "Find the increase in volume: $800 - 640 = 160\\text{ GL}$.",
+          "Divide by the initial volume ($640\\text{ GL}$) and multiply by $100\\%$: $\\frac{160}{640} \\times 100\\% = \\frac{1}{4} \\times 100\\% = 25\\%$."
+        ]
+      },
+      {
+        "id": "3_1_Q8",
+        "question": "A Melbourne furniture store advertises a sofa with a pre-GST wholesale price of $\\$1500$. The store first applies a $20\\%$ retail mark-up, and then adds $10\\%$ Australian GST to the marked-up price. What is the final GST-inclusive price paid by the customer?",
+        "difficulty": "Medium",
+        "context": "Retail Mark-up & GST",
+        "final_answer": "$\\$1980$",
+        "step_by_step_solution": [
+          "Apply the $20\\%$ mark-up multiplier ($1.20$): $1500 \\times 1.20 = \\$1800$.",
+          "Apply the $10\\%$ GST multiplier ($1.10$): $1800 \\times 1.10 = \\$1980$."
+        ]
+      },
+      {
+        "id": "3_1_Q9",
+        "question": "An electronics retailer increases the price of a $\\$500$ monitor by $20\\%$, and later offers a 'Boxing Day Sale' discount of $25\\%$ off the increased price. Find the final Boxing Day price and the overall percentage change from the original $\\$500$ price.",
+        "difficulty": "Challenging",
+        "context": "Australian Boxing Day Sales",
+        "final_answer": "$\\$450$ (a net decrease of $10\\%$)",
+        "step_by_step_solution": [
+          "Multiply the original price by both multipliers: $500 \\times 1.20 \\times 0.75 = \\$450$.",
+          "Since $1.20 \\times 0.75 = 0.90 = 90\\%$, this represents an overall decrease of $100\\% - 90\\% = 10\\%$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "3_1_Q10",
+        "question": "If the price of an item is increased by $25\\%$, by what percentage must the new price be decreased to return it to its original price? Justify your answer using fractions.",
+        "difficulty": "Challenging",
+        "context": "Inverse Percentage Multipliers",
+        "final_answer": "$20\\%$",
+        "step_by_step_solution": [
+          "Increasing by $25\\%$ multiplies the original price by $1 + \\frac{1}{4} = \\frac{5}{4}$.",
+          "To return to the original price, we must multiply the new price by the reciprocal $\\frac{4}{5} = 0.80 = 80\\%$.",
+          "Reducing a quantity to $80\\%$ of its value is a decrease of $100\\% - 80\\% = 20\\%$."
+        ]
+      },
+      {
+        "id": "3_1_Q11",
+        "question": "Show that applying a $10\\%$ discount first and then adding $10\\%$ GST gives the exact same final price as adding $10\\%$ GST first and then applying a $10\\%$ discount.",
+        "difficulty": "Medium",
+        "context": "Commutativity of Multipliers",
+        "final_answer": "Both orders multiply the original price by $0.90 \\times 1.10 = 0.99$",
+        "step_by_step_solution": [
+          "Let $P$ be the initial pre-GST price.",
+          "Discount first, then GST: $(P \\times 0.90) \\times 1.10 = 0.99P$.",
+          "GST first, then discount: $(P \\times 1.10) \\times 0.90 = 0.99P$.",
+          "By the commutative law of multiplication, $0.90 \\times 1.10 = 1.10 \\times 0.90 = 0.99$, so the final price is identical."
+        ]
+      },
+      {
+        "id": "3_1_Q12",
+        "question": "Prove that for any positive percentage $r\\%$, increasing a positive price $P$ by $r\\%$ and then decreasing the result by $r\\%$ always results in a net loss of $\\left(\\dfrac{r}{10}\\right)^2\\%$.",
+        "difficulty": "Extension",
+        "context": "Algebraic Percentage Proof",
+        "final_answer": "Combined multiplier is $\\left(1 + \\frac{r}{100}\\right)\\left(1 - \\frac{r}{100}\\right) = 1 - \\frac{r^2}{10000}$",
+        "step_by_step_solution": [
+          "The combined multiplier is $\\left(1 + \\frac{r}{100}\\right)\\left(1 - \\frac{r}{100}\\right) = 1 - \\left(\\frac{r}{100}\\right)^2$.",
+          "Since $\\left(\\frac{r}{100}\\right)^2 = \\frac{r^2 / 100}{100} = \\frac{(r/10)^2}{100}$, the new value is $\\left(\\frac{r}{10}\\right)^2\\%$ less than $100\\%$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE3_1_1a",
+      "description": "Worked Example 3.1.1(a)",
+      "expression": "240 * Rational(115, 100)",
+      "expected": 276
+    },
+    {
+      "id": "WE3_1_1b",
+      "description": "Worked Example 3.1.1(b)",
+      "expression": "450 * Rational(76, 100)",
+      "expected": 342
+    },
+    {
+      "id": "NYT3_1_1a",
+      "description": "Now You Try 3.1.1(a)",
+      "expression": "320 * Rational(125, 100)",
+      "expected": 400
+    },
+    {
+      "id": "NYT3_1_1b",
+      "description": "Now You Try 3.1.1(b)",
+      "expression": "600 * Rational(82, 100)",
+      "expected": 492
+    },
+    {
+      "id": "WE3_1_2a",
+      "description": "Worked Example 3.1.2(a) pre-GST",
+      "expression": "440 / Rational(11, 10)",
+      "expected": 400
+    },
+    {
+      "id": "WE3_1_2b",
+      "description": "Worked Example 3.1.2(b) GST",
+      "expression": "440 / 11",
+      "expected": 40
+    },
+    {
+      "id": "NYT3_1_2a",
+      "description": "Now You Try 3.1.2(a)",
+      "expression": "1320 / Rational(11, 10)",
+      "expected": 1200
+    },
+    {
+      "id": "WE3_1_3",
+      "description": "Worked Example 3.1.3 reverse percentage",
+      "expression": "224 / Rational(80, 100)",
+      "expected": 280
+    },
+    {
+      "id": "NYT3_1_3",
+      "description": "Now You Try 3.1.3 reverse percentage",
+      "expression": "1890 / Rational(108, 100)",
+      "expected": 1750
+    },
+    {
+      "id": "EX3_1_Q1",
+      "description": "Exercise 3.1 Q1",
+      "expression": "Rational(45, 180) * 100",
+      "expected": 25
+    },
+    {
+      "id": "EX3_1_Q2",
+      "description": "Exercise 3.1 Q2",
+      "expression": "650 * Rational(112, 100)",
+      "expected": 728
+    },
+    {
+      "id": "EX3_1_Q3",
+      "description": "Exercise 3.1 Q3",
+      "expression": "480 * Rational(65, 100)",
+      "expected": 312
+    },
+    {
+      "id": "EX3_1_Q4",
+      "description": "Exercise 3.1 Q4",
+      "expression": "Rational(500 - 415, 500) * 100",
+      "expected": 17
+    },
+    {
+      "id": "EX3_1_Q5",
+      "description": "Exercise 3.1 Q5 pre-GST",
+      "expression": "385 / Rational(11, 10)",
+      "expected": 350
+    },
+    {
+      "id": "EX3_1_Q6",
+      "description": "Exercise 3.1 Q6",
+      "expression": "153 / Rational(85, 100)",
+      "expected": 180
+    },
+    {
+      "id": "EX3_1_Q7",
+      "description": "Exercise 3.1 Q7 Thomson Dam",
+      "expression": "Rational(800 - 640, 640) * 100",
+      "expected": 25
+    },
+    {
+      "id": "EX3_1_Q8",
+      "description": "Exercise 3.1 Q8 sofa markup + GST",
+      "expression": "1500 * Rational(120, 100) * Rational(110, 100)",
+      "expected": 1980
+    },
+    {
+      "id": "EX3_1_Q9",
+      "description": "Exercise 3.1 Q9 Boxing Day monitor",
+      "expression": "500 * Rational(120, 100) * Rational(75, 100)",
+      "expected": 450
+    }
+  ]
+}

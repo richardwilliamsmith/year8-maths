@@ -1,0 +1,430 @@
+{
+  "metadata": {
+    "section_id": "4_2",
+    "section_code": "4B",
+    "chapter_number": 4,
+    "chapter_title": "Ratios, Rates and Best Buys",
+    "title": "Rates, Speed and Best Buys",
+    "vcaa_code": "VC2M8M05",
+    "vcaa_description": "Recognise and use rates to solve problems involving the comparison of 2 related quantities of different units of measure.",
+    "strand": "Measurement",
+    "target_mastery": "Calculate and convert unit rates, compare Australian supermarket products using unit pricing ($/100 g or $/L), and solve distance-speed-time and fuel consumption problems.",
+    "prerequisites": [
+      "Simplifying ratios (Section 4A)",
+      "Dividing decimals and converting metric units"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Rate",
+        "definition": "A comparison of two related quantities measured in different units, written with 'per' or a slash `/` (e.g., $\\text{km/h}$, $\\text{\\$/kg}$, $\\text{L/min}$)."
+      },
+      {
+        "term": "Unit rate",
+        "definition": "A simplified rate in which the second quantity is $1\\text{ unit}$ (e.g., $95\\text{ km}$ per $1\\text{ hour}$)."
+      },
+      {
+        "term": "Unit pricing (Best Buy)",
+        "definition": "Comparing the cost of different package sizes by calculating the price per standard unit (such as per $100\\text{ g}$, per $\\text{kg}$, or per $\\text{L}$)."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_4_2_1",
+      "title": "Simplifying Rates and Supermarket Unit Pricing (Best Buys)",
+      "explanation": "Unlike ratios, rates always retain their units because they compare two different types of measurement (such as dollars and grams). To simplify a rate $A\\text{ units}_1 \\text{ per } B\\text{ units}_2$, divide $A$ by $B$ to get the amount per $1\\text{ unit}_2$. Australian supermarkets display unit prices (typically per $100\\text{ g}$ or per $1\\text{ L}$) so shoppers can identify the 'best buy' (lowest unit cost).",
+      "formula_latex": "\\text{Unit Rate} = \\frac{\\text{First Quantity}}{\\text{Second Quantity}} \\text{ (in units}_1\\text{/unit}_2\\text{)}",
+      "callout_title": "Order of Division matches the Slash",
+      "callout_rule": "The word 'per' (or `/`) means DIVIDE! Dollars per kilogram ($\\text{\\$/kg}$) means $\\text{Dollars} \\div \\text{Kilograms}$."
+    },
+    {
+      "id": "theory_4_2_2",
+      "title": "Average Speed, Distance, and Time",
+      "explanation": "Average speed is the rate of distance travelled per unit of time. The three quantities Distance ($D$), Average Speed ($S$), and Time ($T$) are linked by three equivalent formulas.",
+      "formula_latex": "S = \\frac{D}{T}, \\quad D = S \\times T, \\quad T = \\frac{D}{S}",
+      "callout_title": "Converting Between $\\text{m/s}$ and $\\text{km/h}$",
+      "callout_rule": "Since $1\\text{ km} = 1000\\text{ m}$ and $1\\text{ h} = 3600\\text{ s}$, $1\\text{ m/s} = \\frac{3600}{1000}\\text{ km/h} = 3.6\\text{ km/h}$. Multiply $\\text{m/s}$ by $3.6$ to get $\\text{km/h}$; divide $\\text{km/h}$ by $3.6$ to get $\\text{m/s}$."
+    },
+    {
+      "id": "theory_4_2_3",
+      "title": "Fuel Consumption Rate ($\\text{L/100 km}$)",
+      "explanation": "In Australia, motor vehicle fuel efficiency is rated in litres of fuel consumed per $100\\text{ km}$ driven ($\\text{L/100 km}$).",
+      "formula_latex": "\\text{Fuel Rate (L/100 km)} = \\frac{\\text{Litres Used}}{\\text{Distance in km}} \\times 100",
+      "callout_title": "Hundreds of Kilometres Method",
+      "callout_rule": "If a car uses $7.5\\text{ L/100 km}$, then for a $400\\text{ km}$ trip ($4$ lots of $100\\text{ km}$), it uses $4 \\times 7.5 = 30\\text{ L}$ of fuel."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE4_2_1",
+      "title": "Supermarket Best Buy Comparison",
+      "difficulty": "Fluency",
+      "problem": "At a supermarket in Box Hill, Australian rolled oats are sold in two sizes: a $750\\text{ g}$ box for $\\$4.50$, or a $1.2\\text{ kg}$ bag for $\\$6.60$. Calculate the cost per $100\\text{ g}$ for each option and state which is the better buy.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For the $750\\text{ g}$ box ($7.5$ lots of $100\\text{ g}$), divide $\\$4.50$ by $7.5$.",
+          "working": "$$\\text{Option A} = \\frac{4.50}{7.5} = \\$0.60\\text{ per } 100\\text{ g}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Convert $1.2\\text{ kg}$ to $1200\\text{ g}$ ($12$ lots of $100\\text{ g}$) and divide $\\$6.60$ by $12$.",
+          "working": "$$\\text{Option B} = \\frac{6.60}{12} = \\$0.55\\text{ per } 100\\text{ g}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Compare the unit prices: $\\$0.55 < \\$0.60$, so the $1.2\\text{ kg}$ bag is cheaper per $100\\text{ g}$.",
+          "working": "$$\\$0.55/100\\text{ g} < \\$0.60/100\\text{ g} \\implies 1.2\\text{ kg bag is the best buy}$$"
+        }
+      ],
+      "final_answer": "Option A: $\\$0.60/100\\text{ g}$; Option B: $\\$0.55/100\\text{ g}$. The $1.2\\text{ kg}$ bag is the better buy.",
+      "now_you_try": {
+        "problem": "Olive oil is sold in a $500\\text{ mL}$ bottle for $\\$7.50$ or a $750\\text{ mL}$ bottle for $\\$10.50$. Find the cost per $100\\text{ mL}$ for each and identify the best buy.",
+        "hint": "Divide $\\$7.50$ by $5$ and $\\$10.50$ by $7.5$.",
+        "working_summary": "$500\\text{ mL}$: $7.50 \\div 5 = \\$1.50/100\\text{ mL}$; $750\\text{ mL}$: $10.50 \\div 7.5 = \\$1.40/100\\text{ mL}$.",
+        "answer": "The $750\\text{ mL}$ bottle ($\\$1.40/100\\text{ mL}$) is the better buy."
+      }
+    },
+    {
+      "id": "WE4_2_2",
+      "title": "Speed, Distance, Time and $\\text{m/s} \\leftrightarrow \\text{km/h}$ Conversion",
+      "difficulty": "Understanding",
+      "problem": "(a) Convert a sprinter's speed of $10\\text{ m/s}$ into $\\text{km/h}$. (b) A V/Line train travels $180\\text{ km}$ from Melbourne to Shepparton in $2\\text{ hours } 15\\text{ minutes}$. Find its average speed in $\\text{km/h}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "To convert $\\text{m/s}$ to $\\text{km/h}$, multiply by $3.6$.",
+          "working": "$$10\\text{ m/s} = 10 \\times 3.6 = 36\\text{ km/h}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Convert $2\\text{ hours } 15\\text{ minutes}$ to hours: $15\\text{ minutes} = \\frac{15}{60} = 0.25\\text{ hours}$, so $T = 2.25\\text{ hours}$. Divide $D = 180\\text{ km}$ by $T = 2.25\\text{ h}$.",
+          "working": "$$S = \\frac{D}{T} = \\frac{180}{2.25} = 80\\text{ km/h}$$"
+        }
+      ],
+      "final_answer": "(a) $36\\text{ km/h}$, (b) $80\\text{ km/h}$",
+      "now_you_try": {
+        "problem": "(a) Convert $90\\text{ km/h}$ into $\\text{m/s}$. (b) How far does a car travelling at an average speed of $96\\text{ km/h}$ travel in $1\\text{ hour } 45\\text{ minutes}$?",
+        "hint": "Divide $90$ by $3.6$ for (a), and write $1\\text{ h } 45\\text{ min} = 1.75\\text{ h}$ for (b).",
+        "working_summary": "(a) $90 \\div 3.6 = 25\\text{ m/s}$; (b) $D = 96 \\times 1.75 = 168\\text{ km}$.",
+        "answer": "(a) $25\\text{ m/s}$, (b) $168\\text{ km}$"
+      }
+    },
+    {
+      "id": "WE4_2_3",
+      "title": "Australian Highway Fuel Consumption Modelling",
+      "difficulty": "Problem-Solving",
+      "problem": "A family drives $650\\text{ km}$ along the Hume Highway from Melbourne to Canberra. Their car has an average fuel consumption of $6.8\\text{ L/100 km}$, and unleaded petrol costs $\\$2.00\\text{ per litre}$. Find (a) the total volume of fuel used and (b) the total fuel cost for the trip.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Express $650\\text{ km}$ as $6.5$ lots of $100\\text{ km}$ and multiply by $6.8\\text{ L/100 km}$.",
+          "working": "$$\\text{Fuel used} = \\frac{650}{100} \\times 6.8 = 6.5 \\times 6.8 = 44.2\\text{ L}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply the $44.2\\text{ L}$ of fuel by $\\$2.00\\text{/L}$.",
+          "working": "$$\\text{Cost} = 44.2 \\times 2.00 = \\$88.40$$"
+        }
+      ],
+      "final_answer": "(a) $44.2\\text{ L}$, (b) $\\$88.40$",
+      "now_you_try": {
+        "problem": "A ute uses $49.5\\text{ L}$ of diesel to travel $550\\text{ km}$ across outback Victoria. Calculate its fuel consumption rate in $\\text{L/100 km}$.",
+        "hint": "Divide $49.5\\text{ L}$ by $5.5$ (the number of hundreds of kilometres).",
+        "working_summary": "$49.5 \\div 5.5 = 9\\text{ L/100 km}$.",
+        "answer": "$9\\text{ L/100 km}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_4_2_1",
+      "title": "Writing Hours and Minutes Directly as a Base-10 Decimal",
+      "misconception": "Writing $2\\text{ hours } 30\\text{ minutes}$ as $2.3\\text{ hours}$, or $1\\text{ hour } 15\\text{ minutes}$ as $1.15\\text{ hours}$, when calculating $D = S \\times T$.",
+      "correct_concept": "There are $60\\text{ minutes}$ in $1\\text{ hour}$, not $100$. Always divide the minutes by $60$: $30\\text{ min} = \\frac{30}{60} = 0.5\\text{ h}$ (so $2.5\\text{ h}$), and $15\\text{ min} = \\frac{15}{60} = 0.25\\text{ h}$ (so $1.25\\text{ h}$).",
+      "incorrect_working": "$$2\\text{ h } 30\\text{ min} = 2.3\\text{ h} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$2\\text{ h } 30\\text{ min} = 2 + \\frac{30}{60} = 2.5\\text{ h} \\quad (\\text{Correct})$$",
+      "counter_example": "At $100\\text{ km/h}$ for $2\\text{ hours } 30\\text{ minutes}$, you travel $250\\text{ km}$ ($100 \\times 2.5$), not $230\\text{ km}$."
+    },
+    {
+      "id": "MISC_4_2_2",
+      "title": "Averaging Two Speeds Instead of Dividing Total Distance by Total Time",
+      "misconception": "If a cyclist rides $30\\text{ km}$ uphill at $15\\text{ km/h}$ and $30\\text{ km}$ back downhill at $30\\text{ km/h}$, assuming the average speed for the whole trip is $\\frac{15 + 30}{2} = 22.5\\text{ km/h}$.",
+      "correct_concept": "Because the cyclist spends more time travelling at the slower uphill speed ($2\\text{ h}$ uphill vs $1\\text{ h}$ downhill), average speed is always $\\frac{\\text{Total Distance}}{\\text{Total Time}} = \\frac{60\\text{ km}}{3\\text{ h}} = 20\\text{ km/h}$.",
+      "incorrect_working": "$$\\text{Average Speed} = \\frac{15 + 30}{2} = 22.5\\text{ km/h} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\text{Average Speed} = \\frac{30 + 30}{2 + 1} = \\frac{60}{3} = 20\\text{ km/h} \\quad (\\text{Correct})$$",
+      "counter_example": "The total trip of $60\\text{ km}$ took $3\\text{ hours}$ in total, which is exactly $20\\text{ km}$ per hour."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "4_2_Q1",
+        "question": "Express $\\$136$ earned in $8\\text{ hours}$ as a unit rate in $\\text{\\$/h}$.",
+        "difficulty": "Easy",
+        "context": "Hourly Wage Rate",
+        "final_answer": "$\\$17\\text{/h}$",
+        "step_by_step_solution": [
+          "Write the rate as a fraction: $\\frac{\\$136}{8\\text{ hours}}$.",
+          "Divide the dollars earned by the number of hours: $136 \\div 8 = \\$17\\text{/h}$."
+        ]
+      },
+      {
+        "id": "4_2_Q2",
+        "question": "Convert $108\\text{ km/h}$ into $\\text{m/s}$.",
+        "difficulty": "Easy",
+        "context": "Speed Unit Conversion",
+        "final_answer": "$30\\text{ m/s}$",
+        "step_by_step_solution": [
+          "Recall that converting from $\\text{km/h}$ to $\\text{m/s}$ requires dividing by $3.6$.",
+          "Evaluate $108 \\div 3.6 = 30\\text{ m/s}$."
+        ]
+      },
+      {
+        "id": "4_2_Q3",
+        "question": "Convert $15\\text{ m/s}$ into $\\text{km/h}$.",
+        "difficulty": "Easy",
+        "context": "Speed Unit Conversion",
+        "final_answer": "$54\\text{ km/h}$",
+        "step_by_step_solution": [
+          "Recall that converting from $\\text{m/s}$ to $\\text{km/h}$ requires multiplying by $3.6$.",
+          "Evaluate $15 \\times 3.6 = 54\\text{ km/h}$."
+        ]
+      },
+      {
+        "id": "4_2_Q4",
+        "question": "A water pump fills a $3600\\text{ L}$ rainwater tank in $45\\text{ minutes}$. Express this flow rate in (a) $\\text{L/min}$ and (b) $\\text{L/h}$.",
+        "difficulty": "Medium",
+        "context": "Water Flow Rate",
+        "final_answer": "(a) $80\\text{ L/min}$, (b) $4800\\text{ L/h}$",
+        "step_by_step_solution": [
+          "Divide $3600\\text{ L}$ by $45\\text{ minutes}$: $3600 \\div 45 = 80\\text{ L/min}$.",
+          "Multiply by $60\\text{ minutes/hour}$: $80 \\times 60 = 4800\\text{ L/h}$."
+        ]
+      },
+      {
+        "id": "4_2_Q5",
+        "question": "How many minutes does it take a runner moving at a constant speed of $4\\text{ m/s}$ to complete a $3.6\\text{ km}$ cross-country course?",
+        "difficulty": "Medium",
+        "context": "Distance-Speed-Time",
+        "final_answer": "$15\\text{ minutes}$",
+        "step_by_step_solution": [
+          "Convert $3.6\\text{ km}$ to metres: $3600\\text{ m}$.",
+          "Calculate time in seconds: $T = 3600 \\div 4 = 900\\text{ seconds}$.",
+          "Convert seconds to minutes: $900 \\div 60 = 15\\text{ minutes}$."
+        ]
+      },
+      {
+        "id": "4_2_Q6",
+        "question": "Australian honey is sold in three jar sizes: $250\\text{ g}$ for $\\$4.25$, $400\\text{ g}$ for $\\$6.40$, and $750\\text{ g}$ for $\\$12.30$. Find the price per $100\\text{ g}$ for each jar and state the best buy.",
+        "difficulty": "Medium",
+        "context": "Unit Pricing",
+        "final_answer": "$400\\text{ g}$ jar ($\\$1.60/100\\text{ g}$) is the best buy",
+        "step_by_step_solution": [
+          "$250\\text{ g}$ jar: $4.25 \\div 2.5 = \\$1.70/100\\text{ g}$.",
+          "$400\\text{ g}$ jar: $6.40 \\div 4 = \\$1.60/100\\text{ g}$.",
+          "$750\\text{ g}$ jar: $12.30 \\div 7.5 = \\$1.64/100\\text{ g}$.",
+          "The $400\\text{ g}$ jar has the lowest unit price ($\\$1.60/100\\text{ g}$)."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "4_2_Q7",
+        "question": "A motorist drives from Melbourne to Warrnambool: the first $180\\text{ km}$ takes $2\\text{ hours}$, and the remaining $80\\text{ km}$ takes $1\\text{ hour } 15\\text{ minutes}$. Find the motorist's overall average speed for the entire journey in $\\text{km/h}$.",
+        "difficulty": "Medium",
+        "context": "Victorian Regional Driving",
+        "final_answer": "$80\\text{ km/h}$",
+        "step_by_step_solution": [
+          "Total distance $= 180 + 80 = 260\\text{ km}$.",
+          "Total time $= 2 + 1.25 = 3.25\\text{ hours}$.",
+          "Overall average speed $= 260 \\div 3.25 = 80\\text{ km/h}$."
+        ]
+      },
+      {
+        "id": "4_2_Q8",
+        "question": "Two taps are used together to fill an $1800\\text{ L}$ spa pool. Tap A flows at $18\\text{ L/min}$ and Tap B flows at $12\\text{ L/min}$. How many minutes will it take to fill the pool when both taps are turned on simultaneously?",
+        "difficulty": "Medium",
+        "context": "Combined Flow Rates",
+        "final_answer": "$60\\text{ minutes}$ ($1\\text{ hour}$)",
+        "step_by_step_solution": [
+          "Add the two flow rates to find the combined rate: $18 + 12 = 30\\text{ L/min}$.",
+          "Divide the total volume by the combined rate: $1800 \\div 30 = 60\\text{ minutes}$."
+        ]
+      },
+      {
+        "id": "4_2_Q9",
+        "question": "A hybrid SUV uses $5.2\\text{ L/100 km}$ while a conventional petrol SUV uses $8.7\\text{ L/100 km}$. If a Melbourne driver travels $15\\,000\\text{ km}$ per year and petrol costs $\\$2.00\\text{/L}$, how much money in fuel costs does the hybrid SUV save per year?",
+        "difficulty": "Challenging",
+        "context": "Fuel Efficiency Savings",
+        "final_answer": "$\\$1050$",
+        "step_by_step_solution": [
+          "Fuel saved per $100\\text{ km}$: $8.7 - 5.2 = 3.5\\text{ L/100 km}$.",
+          "Over $15\\,000\\text{ km}$ ($150$ lots of $100\\text{ km}$), fuel saved $= 150 \\times 3.5 = 525\\text{ L}$.",
+          "Dollar savings at $\\$2.00\\text{/L}$: $525 \\times 2.00 = \\$1050$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "4_2_Q10",
+        "question": "Prove from first principles (using $1\\text{ km} = 1000\\text{ m}$ and $1\\text{ h} = 3600\\text{ s}$) why converting from $\\text{m/s}$ to $\\text{km/h}$ requires multiplying by $3.6$.",
+        "difficulty": "Medium",
+        "context": "Dimensional Analysis Proof",
+        "final_answer": "$1\\text{ m/s} = 3600\\text{ m/h} = \\frac{3600}{1000}\\text{ km/h} = 3.6\\text{ km/h}$",
+        "step_by_step_solution": [
+          "An object moving at $v\\text{ m/s}$ travels $v\\text{ metres}$ in $1\\text{ second}$.",
+          "In $1\\text{ hour}$ ($3600\\text{ seconds}$), it travels $3600v\\text{ metres}$.",
+          "Dividing by $1000$ to convert metres to kilometres gives $\\frac{3600v}{1000} = 3.6v\\text{ km/h}$."
+        ]
+      },
+      {
+        "id": "4_2_Q11",
+        "question": "Train A leaves Southern Cross Station at $9\\text{:00 am}$ travelling west at $80\\text{ km/h}$. Train B leaves the same station at $9\\text{:30 am}$ on a parallel track travelling west at $100\\text{ km/h}$. At what time does Train B catch up to Train A, and how far from the station are they?",
+        "difficulty": "Challenging",
+        "context": "Relative Speed & Pursuit",
+        "final_answer": "$11\\text{:30 am}$ at $200\\text{ km}$ from the station",
+        "step_by_step_solution": [
+          "By $9\\text{:30 am}$ ($0.5\\text{ h}$), Train A has a head start of $80 \\times 0.5 = 40\\text{ km}$.",
+          "Train B closes the gap at a relative speed of $100 - 80 = 20\\text{ km/h}$.",
+          "Time to close the $40\\text{ km}$ gap: $40 \\div 20 = 2\\text{ hours}$ after $9\\text{:30 am}$, which is $11\\text{:30 am}$.",
+          "Distance from station: $2 \\times 100 = 200\\text{ km}$."
+        ]
+      },
+      {
+        "id": "4_2_Q12",
+        "question": "Painter A can paint a fence in $6\\text{ hours}$ alone, and Painter B can paint the same fence in $4\\text{ hours}$ alone. By expressing their work rates in 'fences per hour', find how many hours and minutes it takes them to paint $1$ fence working together.",
+        "difficulty": "Extension",
+        "context": "Harmonic Work Rates",
+        "final_answer": "$2\\dfrac{2}{5}\\text{ hours}$ ($2\\text{ hours } 24\\text{ minutes}$)",
+        "step_by_step_solution": [
+          "Painter A's rate is $\\frac{1}{6}$ fence/hour and Painter B's rate is $\\frac{1}{4}$ fence/hour.",
+          "Combined rate $= \\frac{1}{6} + \\frac{1}{4} = \\frac{2 + 3}{12} = \\frac{5}{12}$ fences/hour.",
+          "Time to paint $1$ fence $= 1 \\div \\frac{5}{12} = \\frac{12}{5} = 2\\frac{2}{5}\\text{ hours} = 2\\text{ hours } 24\\text{ minutes}$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE4_2_1a",
+      "description": "Worked Example 4.2.1 Option A",
+      "expression": "Rational(450, 100) / Rational(75, 10)",
+      "expected": "3/5"
+    },
+    {
+      "id": "WE4_2_1b",
+      "description": "Worked Example 4.2.1 Option B",
+      "expression": "Rational(660, 100) / 12",
+      "expected": "11/20"
+    },
+    {
+      "id": "NYT4_2_1",
+      "description": "Now You Try 4.2.1 750mL olive oil",
+      "expression": "Rational(105, 10) / Rational(75, 10)",
+      "expected": "7/5"
+    },
+    {
+      "id": "WE4_2_2a",
+      "description": "Worked Example 4.2.2(a)",
+      "expression": "10 * Rational(36, 10)",
+      "expected": 36
+    },
+    {
+      "id": "WE4_2_2b",
+      "description": "Worked Example 4.2.2(b)",
+      "expression": "180 / Rational(9, 4)",
+      "expected": 80
+    },
+    {
+      "id": "NYT4_2_2a",
+      "description": "Now You Try 4.2.2(a)",
+      "expression": "90 / Rational(36, 10)",
+      "expected": 25
+    },
+    {
+      "id": "NYT4_2_2b",
+      "description": "Now You Try 4.2.2(b)",
+      "expression": "96 * Rational(7, 4)",
+      "expected": 168
+    },
+    {
+      "id": "WE4_2_3a",
+      "description": "Worked Example 4.2.3(a) fuel volume",
+      "expression": "Rational(65, 10) * Rational(68, 10)",
+      "expected": "221/5"
+    },
+    {
+      "id": "WE4_2_3b",
+      "description": "Worked Example 4.2.3(b) fuel cost",
+      "expression": "Rational(221, 5) * 2",
+      "expected": "442/5"
+    },
+    {
+      "id": "NYT4_2_3",
+      "description": "Now You Try 4.2.3 fuel rate",
+      "expression": "Rational(495, 10) / Rational(55, 10)",
+      "expected": 9
+    },
+    {
+      "id": "EX4_2_Q1",
+      "description": "Exercise 4.2 Q1",
+      "expression": "136 / 8",
+      "expected": 17
+    },
+    {
+      "id": "EX4_2_Q2",
+      "description": "Exercise 4.2 Q2",
+      "expression": "108 / Rational(36, 10)",
+      "expected": 30
+    },
+    {
+      "id": "EX4_2_Q3",
+      "description": "Exercise 4.2 Q3",
+      "expression": "15 * Rational(36, 10)",
+      "expected": 54
+    },
+    {
+      "id": "EX4_2_Q4a",
+      "description": "Exercise 4.2 Q4(a)",
+      "expression": "3600 / 45",
+      "expected": 80
+    },
+    {
+      "id": "EX4_2_Q5",
+      "description": "Exercise 4.2 Q5",
+      "expression": "(3600 / 4) / 60",
+      "expected": 15
+    },
+    {
+      "id": "EX4_2_Q7",
+      "description": "Exercise 4.2 Q7 average speed",
+      "expression": "(180 + 80) / Rational(13, 4)",
+      "expected": 80
+    },
+    {
+      "id": "EX4_2_Q8",
+      "description": "Exercise 4.2 Q8 combined taps",
+      "expression": "1800 / (18 + 12)",
+      "expected": 60
+    },
+    {
+      "id": "EX4_2_Q9",
+      "description": "Exercise 4.2 Q9 hybrid fuel savings",
+      "expression": "150 * Rational(35, 10) * 2",
+      "expected": 1050
+    },
+    {
+      "id": "EX4_2_Q11",
+      "description": "Exercise 4.2 Q11 train catchup distance",
+      "expression": "100 * (40 / (100 - 80))",
+      "expected": 200
+    },
+    {
+      "id": "EX4_2_Q12",
+      "description": "Exercise 4.2 Q12 combined painters",
+      "expression": "1 / (Rational(1, 6) + Rational(1, 4))",
+      "expected": "12/5"
+    }
+  ]
+}

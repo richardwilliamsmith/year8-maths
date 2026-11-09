@@ -1,0 +1,424 @@
+{
+  "metadata": {
+    "section_id": "3_2",
+    "section_code": "3B",
+    "chapter_number": 3,
+    "chapter_title": "Percentages and Financial Mathematics",
+    "title": "Profit, Loss, Discounts and Simple Interest",
+    "vcaa_code": "VC2M8N05",
+    "vcaa_description": "Use mathematical modelling to solve practical problems involving rational numbers and percentages, including financial contexts.",
+    "strand": "Number",
+    "target_mastery": "Calculate profit, loss, and percentage profit/loss relative to cost price, evaluate successive discounts, and solve simple interest problems using I = Prt.",
+    "prerequisites": [
+      "Percentages and multipliers (Section 3A)",
+      "Substituting values into formulas"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Cost Price (CP) and Selling Price (SP)",
+        "definition": "The Cost Price is what a business pays to acquire or produce an item; the Selling Price is what the customer pays to buy it."
+      },
+      {
+        "term": "Profit and Loss",
+        "definition": "If $\\text{SP} > \\text{CP}$, the business makes a $\\text{Profit} = \\text{SP} - \\text{CP}$. If $\\text{SP} < \\text{CP}$, it incurs a $\\text{Loss} = \\text{CP} - \\text{SP}$."
+      },
+      {
+        "term": "Simple Interest ($I = Prt$)",
+        "definition": "Interest calculated as a fixed percentage $r$ of the initial principal $P$ for each time period $t$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_3_2_1",
+      "title": "Profit, Loss, and Percentage Profit/Loss on Cost Price",
+      "explanation": "Unless stated otherwise, percentage profit and percentage loss are always calculated as a percentage of the original Cost Price ($\\text{CP}$).",
+      "formula_latex": "\\%\\text{ Profit} = \\frac{\\text{SP} - \\text{CP}}{\\text{CP}} \\times 100\\%, \\quad \\%\\text{ Loss} = \\frac{\\text{CP} - \\text{SP}}{\\text{CP}} \\times 100\\%",
+      "callout_title": "Cost Price in the Denominator",
+      "callout_rule": "Whether calculating percentage profit or percentage loss, always divide the dollar profit or loss by the COST PRICE ($\\text{CP}$), not the selling price."
+    },
+    {
+      "id": "theory_3_2_2",
+      "title": "Successive Discounts",
+      "explanation": "When a store offers a second discount on an already discounted sale price (e.g., 'take a further $10\\%$ off sale items'), the second percentage is applied to the intermediate sale price, not added to the first percentage. Multiply the individual discount multipliers together.",
+      "formula_latex": "\\text{Final Price} = \\text{Original} \\times \\left(1 - \\frac{d_1}{100}\\right) \\times \\left(1 - \\frac{d_2}{100}\\right)",
+      "callout_title": "Never Add Successive Discount Percentages",
+      "callout_rule": "A $20\\%$ discount followed by a further $10\\%$ discount is $0.80 \\times 0.90 = 0.72$ ($28\\%$ off in total), NOT $30\\%$ off!"
+    },
+    {
+      "id": "theory_3_2_3",
+      "title": "Simple Interest and Total Amount ($I = Prt$ and $A = P + I$)",
+      "explanation": "When money is invested or borrowed at a simple interest rate of $r$ per annum (p.a.) for $t$ years on an initial principal $P$, the interest earned or charged is $I = Prt$ (where $r = \\frac{R}{100}$ is written as a decimal or fraction). The total amount at the end of the term is $A = P + I$.",
+      "formula_latex": "I = P \\times r \\times t = \\frac{P \\times R \\times t}{100}, \\quad A = P + I",
+      "callout_title": "Match Time Units to the Interest Rate",
+      "callout_rule": "If the interest rate is given 'per annum' (per year) and the time is given in months, divide the number of months by $12$ to convert $t$ into years (e.g., $18\\text{ months} = \\frac{18}{12} = 1.5\\text{ years}$)."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE3_2_1",
+      "title": "Calculating Percentage Profit on Cost Price",
+      "difficulty": "Fluency",
+      "problem": "A Melbourne bicycle shop buys helmets for a cost price of $\\$48$ each and sells them for $\\$66$ each. Find (a) the profit per helmet and (b) the percentage profit on the cost price.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Subtract the cost price ($\\$48$) from the selling price ($\\$66$) to find the dollar profit.",
+          "working": "$$\\text{Profit} = 66 - 48 = \\$18$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide the profit ($\\$18$) by the cost price ($\\$48$) and multiply by $100\\%$.",
+          "working": "$$\\text{Percentage Profit} = \\frac{18}{48} \\times 100\\% = \\frac{3}{8} \\times 100\\% = 37.5\\%$$"
+        }
+      ],
+      "final_answer": "(a) $\\$18$, (b) $37.5\\%$",
+      "now_you_try": {
+        "problem": "A bookshop in Carlton buys a textbook for $\\$40$ and sells it for $\\$54$. Find (a) the profit and (b) the percentage profit.",
+        "hint": "Divide the profit by $\\$40$ and multiply by $100\\%$.",
+        "working_summary": "(a) $\\text{Profit} = 54 - 40 = \\$14$; (b) $\\frac{14}{40} \\times 100\\% = 35\\%$.",
+        "answer": "(a) $\\$14$, (b) $35\\%$"
+      }
+    },
+    {
+      "id": "WE3_2_2",
+      "title": "Simple Interest with Time in Months",
+      "difficulty": "Understanding",
+      "problem": "Noah invests $\\$4000$ in an Australian term deposit paying $4.5\\%$ per annum simple interest for $18\\text{ months}$. Calculate (a) the simple interest earned and (b) the total value of the investment at the end of the $18\\text{ months}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Identify $P = 4000$, $r = \\frac{4.5}{100} = 0.045$, and convert $18\\text{ months}$ to years: $t = \\frac{18}{12} = 1.5\\text{ years}$.",
+          "working": "$$I = P \\times r \\times t = 4000 \\times 0.045 \\times 1.5 = \\$270$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Add the interest $I = \\$270$ to the principal $P = \\$4000$ to find the total final amount $A$.",
+          "working": "$$A = P + I = 4000 + 270 = \\$4270$$"
+        }
+      ],
+      "final_answer": "(a) $\\$270$, (b) $\\$4270$",
+      "now_you_try": {
+        "problem": "Chloe invests $\\$6000$ at $5\\%$ p.a. simple interest for $30\\text{ months}$. Find (a) the interest earned and (b) the total final amount.",
+        "hint": "Convert $30\\text{ months}$ into $t = \\frac{30}{12} = 2.5\\text{ years}$.",
+        "working_summary": "(a) $I = 6000 \\times 0.05 \\times 2.5 = \\$750$; (b) $A = 6000 + 750 = \\$6750$.",
+        "answer": "(a) $\\$750$, (b) $\\$6750$"
+      }
+    },
+    {
+      "id": "WE3_2_3",
+      "title": "Rearranging the Simple Interest Formula to Find Principal or Time",
+      "difficulty": "Problem-Solving",
+      "problem": "A small business in Dandenong borrows $\\$12\\,000$ at a simple interest rate of $6\\%$ p.a. How many years did the loan run if the total simple interest paid was $\\$2160$?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Substitute $I = 2160$, $P = 12000$, and $r = 0.06$ into $I = Prt$.",
+          "working": "$$2160 = 12000 \\times 0.06 \\times t \\implies 2160 = 720t$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide both sides by $720$ (the annual interest charge) to find $t$.",
+          "working": "$$t = \\frac{2160}{720} = 3\\text{ years}$$"
+        }
+      ],
+      "final_answer": "$3\\text{ years}$",
+      "now_you_try": {
+        "problem": "An investor earns $\\$960$ in simple interest over $4\\text{ years}$ at a rate of $3\\%$ p.a. What was the initial principal $P$ invested?",
+        "hint": "Solve $960 = P \\times 0.03 \\times 4$.",
+        "working_summary": "$960 = 0.12P \\implies P = 960 \\div 0.12 = \\$8000$.",
+        "answer": "$\\$8000$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_3_2_1",
+      "title": "Forgetting to Convert Months into Years in $I = Prt$",
+      "misconception": "Substituting $t = 9$ directly into $I = Prt$ for a $9$-month investment when $r$ is an annual ('per annum') interest rate.",
+      "correct_concept": "Because 'per annum' means per year, $t$ must be expressed in years: $9\\text{ months} = \\frac{9}{12} = 0.75\\text{ years}$. Substituting $t = 9$ overstates the interest by a factor of $12$.",
+      "incorrect_working": "$$I = 2000 \\times 0.04 \\times 9 = \\$720 \\quad (\\text{Incorrect: treats } 9\\text{ months as } 9\\text{ years})$$",
+      "correct_working": "$$I = 2000 \\times 0.04 \\times \\frac{9}{12} = \\$60 \\quad (\\text{Correct})$$",
+      "counter_example": "$9\\text{ months}$ is less than $1\\text{ year}$ ($\\$80$ interest), so the interest must be less than $\\$80$."
+    },
+    {
+      "id": "MISC_3_2_2",
+      "title": "Adding Successive Discount Percentages Directly",
+      "misconception": "Claiming that a $30\\%$ discount followed by an extra $20\\%$ off equals a $50\\%$ discount.",
+      "correct_concept": "The second discount of $20\\%$ applies only to the remaining $70\\%$ of the price ($0.20 \\times 70\\% = 14\\%$), so the combined discount is $30\\% + 14\\% = 44\\%$ (multiplier $0.70 \\times 0.80 = 0.56$).",
+      "incorrect_working": "$$30\\% + 20\\% = 50\\% \\text{ total discount} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$1 - (0.70 \\times 0.80) = 1 - 0.56 = 0.44 = 44\\% \\text{ total discount} \\quad (\\text{Correct})$$",
+      "counter_example": "If two successive $50\\%$ discounts added to $100\\%$, the item would be free instead of costing $0.5 \\times 0.5 = 25\\%$ of the original price!"
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "3_2_Q1",
+        "question": "A retailer buys a jacket for $\\$80$ and sells it for $\\$116$. Calculate the percentage profit.",
+        "difficulty": "Easy",
+        "context": "Percentage Profit",
+        "final_answer": "$45\\%$",
+        "step_by_step_solution": [
+          "Profit $= 116 - 80 = \\$36$.",
+          "Percentage profit $= \\frac{36}{80} \\times 100\\% = 45\\%$."
+        ]
+      },
+      {
+        "id": "3_2_Q2",
+        "question": "A second-hand car bought for $\\$15\\,000$ is sold a year later for $\\$12\\,300$. Calculate the percentage loss.",
+        "difficulty": "Easy",
+        "context": "Percentage Loss",
+        "final_answer": "$18\\%$",
+        "step_by_step_solution": [
+          "Loss $= 15000 - 12300 = \\$2700$.",
+          "Percentage loss $= \\frac{2700}{15000} \\times 100\\% = 18\\%$."
+        ]
+      },
+      {
+        "id": "3_2_Q3",
+        "question": "Calculate the simple interest earned on $\\$5000$ invested at $4\\%$ p.a. for $3\\text{ years}$.",
+        "difficulty": "Easy",
+        "context": "Simple Interest",
+        "final_answer": "$\\$600$",
+        "step_by_step_solution": [
+          "Substitute $P = 5000$, $r = 0.04$, and $t = 3$ into $I = Prt$.",
+          "$I = 5000 \\times 0.04 \\times 3 = \\$600$."
+        ]
+      },
+      {
+        "id": "3_2_Q4",
+        "question": "Calculate the simple interest on a loan of $\\$8400$ at $5.5\\%$ p.a. for $8\\text{ months}$.",
+        "difficulty": "Medium",
+        "context": "Fractional Years in Simple Interest",
+        "final_answer": "$\\$308$",
+        "step_by_step_solution": [
+          "Convert $8\\text{ months}$ to years: $t = \\frac{8}{12} = \\frac{2}{3}\\text{ years}$.",
+          "$I = 8400 \\times 0.055 \\times \\frac{2}{3} = 462 \\times \\frac{2}{3} = \\$308$."
+        ]
+      },
+      {
+        "id": "3_2_Q5",
+        "question": "A coat originally priced at $\\$250$ is discounted by $20\\%$, and then discounted by a further $15\\%$ for VIP members. Find the final VIP price.",
+        "difficulty": "Medium",
+        "context": "Successive Discounts",
+        "final_answer": "$\\$170$",
+        "step_by_step_solution": [
+          "Apply both discount multipliers ($0.80$ and $0.85$): $250 \\times 0.80 \\times 0.85$.",
+          "$200 \\times 0.85 = \\$170$."
+        ]
+      },
+      {
+        "id": "3_2_Q6",
+        "question": "An investment of $\\$7500$ grows to a total amount of $\\$8850$ after $4\\text{ years}$ of simple interest. Find the annual simple interest rate $R\\%$.",
+        "difficulty": "Challenging",
+        "context": "Finding Interest Rate",
+        "final_answer": "$4.5\\%\\text{ p.a.}$",
+        "step_by_step_solution": [
+          "Find the total interest earned: $I = 8850 - 7500 = \\$1350$.",
+          "Substitute into $1350 = 7500 \\times \\frac{R}{100} \\times 4 \\implies 1350 = 300R$.",
+          "Divide by $300$: $R = \\frac{1350}{300} = 4.5\\%\\text{ p.a.}$"
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "3_2_Q7",
+        "question": "A fruit vendor at the Queen Victoria Market buys $12$ crates of mangoes ($20$ mangoes per crate) for a total cost of $\\$480$. Unfortunately, $15$ mangoes are bruised and cannot be sold. She sells the remaining mangoes for $\\$3.00$ each. Calculate her overall percentage profit on the batch.",
+        "difficulty": "Medium",
+        "context": "Queen Victoria Market Commerce",
+        "final_answer": "$40.625\\%$",
+        "step_by_step_solution": [
+          "Total mangoes purchased: $12 \\times 20 = 240$. Saleable mangoes: $240 - 15 = 225$.",
+          "Total revenue (Selling Price): $225 \\times 3 = \\$675$.",
+          "Profit: $675 - 480 = \\$195$.",
+          "Percentage profit: $\\frac{195}{480} \\times 100\\% = 40.625\\%$."
+        ]
+      },
+      {
+        "id": "3_2_Q8",
+        "question": "Two Melbourne department stores sell the same $\\$400$ espresso machine. Store A offers a single flat discount of $35\\%$. Store B offers '$25\\%$ off, plus a further $12\\%$ off the discounted price'. Which store offers the lower final price, and by how much?",
+        "difficulty": "Medium",
+        "context": "Australian Retail Comparison",
+        "final_answer": "Store A is cheaper by $\\$4$",
+        "step_by_step_solution": [
+          "Store A price: $400 \\times (1 - 0.35) = 400 \\times 0.65 = \\$260$.",
+          "Store B price: $400 \\times 0.75 \\times 0.88 = 300 \\times 0.88 = \\$264$.",
+          "Store A is cheaper by $264 - 260 = \\$4$."
+        ]
+      },
+      {
+        "id": "3_2_Q9",
+        "question": "Liam takes out a simple interest car loan of $\\$18\\,000$ at $6.5\\%$ p.a. over $5\\text{ years}$, to be repaid in $60$ equal monthly instalments covering both principal and interest. Calculate (a) the total amount to be repaid and (b) the monthly repayment.",
+        "difficulty": "Challenging",
+        "context": "Car Loan Repayment Modelling",
+        "final_answer": "(a) $\\$23\\,850$, (b) $\\$397.50$",
+        "step_by_step_solution": [
+          "Calculate total simple interest: $I = 18000 \\times 0.065 \\times 5 = \\$5850$.",
+          "Total amount to repay: $A = 18000 + 5850 = \\$23\\,850$.",
+          "Monthly repayment over $60$ months: $23850 \\div 60 = \\$397.50$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "3_2_Q10",
+        "question": "Find the single percentage discount that is equivalent to two successive discounts of $20\\%$ and $25\\%$. Show why the order in which the two discounts are applied does not matter.",
+        "difficulty": "Medium",
+        "context": "Equivalent Single Discount",
+        "final_answer": "$40\\%$",
+        "step_by_step_solution": [
+          "The combined multiplier is $0.80 \\times 0.75 = 0.60 = 60\\%$.",
+          "By the commutative property of multiplication, $0.80 \\times 0.75 = 0.75 \\times 0.80 = 0.60$.",
+          "Since $60\\%$ of the original price remains, the equivalent single discount is $100\\% - 60\\% = 40\\%$."
+        ]
+      },
+      {
+        "id": "3_2_Q11",
+        "question": "How many years does it take for any positive principal $P$ to double in value under simple interest at $8\\%$ per annum? Explain why the answer does not depend on the starting amount $P$.",
+        "difficulty": "Challenging",
+        "context": "Doubling Time Independence",
+        "final_answer": "$12.5\\text{ years}$",
+        "step_by_step_solution": [
+          "For the investment to double ($A = 2P$), the simple interest earned must equal the principal ($I = P$).",
+          "Substitute $I = P$ into $I = Prt$: $P = P \\times 0.08 \\times t$.",
+          "Dividing both sides by $P > 0$ cancels $P$ completely: $1 = 0.08t \\implies t = \\frac{1}{0.08} = 12.5\\text{ years}$."
+        ]
+      },
+      {
+        "id": "3_2_Q12",
+        "question": "A shopkeeper marks up the cost price of an item by $40\\%$, and then offers customers a $25\\%$ discount off the marked price. Does the shopkeeper make a profit or a loss, and of what percentage on the cost price? Prove your answer algebraically.",
+        "difficulty": "Extension",
+        "context": "Mark-up & Discount Proof",
+        "final_answer": "$5\\%$ profit on cost price",
+        "step_by_step_solution": [
+          "Let $C$ be the cost price. After a $40\\%$ mark-up, the marked price is $1.40C$.",
+          "After a $25\\%$ discount, the selling price is $0.75 \\times 1.40C = 1.05C$.",
+          "Since $1.05C = C + 0.05C$, the shopkeeper makes a $5\\%$ profit on the cost price."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE3_2_1a",
+      "description": "Worked Example 3.2.1(a)",
+      "expression": "66 - 48",
+      "expected": 18
+    },
+    {
+      "id": "WE3_2_1b",
+      "description": "Worked Example 3.2.1(b)",
+      "expression": "Rational(18, 48) * 100",
+      "expected": "75/2"
+    },
+    {
+      "id": "NYT3_2_1b",
+      "description": "Now You Try 3.2.1(b)",
+      "expression": "Rational(54 - 40, 40) * 100",
+      "expected": 35
+    },
+    {
+      "id": "WE3_2_2a",
+      "description": "Worked Example 3.2.2(a) interest",
+      "expression": "4000 * Rational(45, 1000) * Rational(18, 12)",
+      "expected": 270
+    },
+    {
+      "id": "WE3_2_2b",
+      "description": "Worked Example 3.2.2(b) amount",
+      "expression": "4000 + 270",
+      "expected": 4270
+    },
+    {
+      "id": "NYT3_2_2a",
+      "description": "Now You Try 3.2.2(a)",
+      "expression": "6000 * Rational(5, 100) * Rational(30, 12)",
+      "expected": 750
+    },
+    {
+      "id": "WE3_2_3",
+      "description": "Worked Example 3.2.3 loan time",
+      "expression": "2160 / (12000 * Rational(6, 100))",
+      "expected": 3
+    },
+    {
+      "id": "NYT3_2_3",
+      "description": "Now You Try 3.2.3 principal",
+      "expression": "960 / (Rational(3, 100) * 4)",
+      "expected": 8000
+    },
+    {
+      "id": "EX3_2_Q1",
+      "description": "Exercise 3.2 Q1",
+      "expression": "Rational(116 - 80, 80) * 100",
+      "expected": 45
+    },
+    {
+      "id": "EX3_2_Q2",
+      "description": "Exercise 3.2 Q2",
+      "expression": "Rational(15000 - 12300, 15000) * 100",
+      "expected": 18
+    },
+    {
+      "id": "EX3_2_Q3",
+      "description": "Exercise 3.2 Q3",
+      "expression": "5000 * Rational(4, 100) * 3",
+      "expected": 600
+    },
+    {
+      "id": "EX3_2_Q4",
+      "description": "Exercise 3.2 Q4",
+      "expression": "8400 * Rational(55, 1000) * Rational(8, 12)",
+      "expected": 308
+    },
+    {
+      "id": "EX3_2_Q5",
+      "description": "Exercise 3.2 Q5",
+      "expression": "250 * Rational(80, 100) * Rational(85, 100)",
+      "expected": 170
+    },
+    {
+      "id": "EX3_2_Q6",
+      "description": "Exercise 3.2 Q6",
+      "expression": "Rational(8850 - 7500, 7500 * 4) * 100",
+      "expected": "9/2"
+    },
+    {
+      "id": "EX3_2_Q7",
+      "description": "Exercise 3.2 Q7 mangoes profit %",
+      "expression": "Rational((240 - 15) * 3 - 480, 480) * 100",
+      "expected": "325/8"
+    },
+    {
+      "id": "EX3_2_Q8",
+      "description": "Exercise 3.2 Q8 store difference",
+      "expression": "400 * Rational(75, 100) * Rational(88, 100) - 400 * Rational(65, 100)",
+      "expected": 4
+    },
+    {
+      "id": "EX3_2_Q9b",
+      "description": "Exercise 3.2 Q9(b) monthly repayment",
+      "expression": "(18000 + 18000 * Rational(65, 1000) * 5) / 60",
+      "expected": "795/2"
+    },
+    {
+      "id": "EX3_2_Q10",
+      "description": "Exercise 3.2 Q10 equivalent discount",
+      "expression": "(1 - Rational(80, 100) * Rational(75, 100)) * 100",
+      "expected": 40
+    },
+    {
+      "id": "EX3_2_Q11",
+      "description": "Exercise 3.2 Q11 doubling time",
+      "expression": "1 / Rational(8, 100)",
+      "expected": "25/2"
+    },
+    {
+      "id": "EX3_2_Q12",
+      "description": "Exercise 3.2 Q12 markup then discount",
+      "expression": "(Rational(140, 100) * Rational(75, 100) - 1) * 100",
+      "expected": 5
+    }
+  ]
+}

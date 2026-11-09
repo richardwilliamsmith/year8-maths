@@ -1,0 +1,398 @@
+{
+  "metadata": {
+    "section_id": "5_1",
+    "section_code": "5A",
+    "chapter_number": 5,
+    "chapter_title": "Algebraic Techniques",
+    "title": "Language of Algebra, Substitution and Like Terms",
+    "vcaa_code": "VC2M8A01",
+    "vcaa_description": "Create, expand, factorise, rearrange and simplify linear expressions, applying the associative, commutative, identity, distributive and inverse properties.",
+    "strand": "Algebra",
+    "target_mastery": "Identify terms, coefficients, and constants, evaluate algebraic expressions by substituting directed numbers, collect like terms, and multiply and divide algebraic terms.",
+    "prerequisites": [
+      "Directed number operations and order of operations (Chapter 1)",
+      "Index laws for multiplying and dividing powers (Section 2D)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Pronumeral (Variable)",
+        "definition": "A letter or symbol (such as $x, y, n$) used to represent an unknown or varying number."
+      },
+      {
+        "term": "Coefficient and Constant term",
+        "definition": "The coefficient is the signed numerical factor multiplying a pronumeral (e.g., in $-5x$, the coefficient is $-5$). A constant term contains no pronumerals."
+      },
+      {
+        "term": "Like terms",
+        "definition": "Terms that have the exact same pronumeral factors raised to the exact same powers (e.g., $4a^2b$ and $-7ba^2$)."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_5_1_1",
+      "title": "Algebraic Notation, Coefficients, and Substitution with Negative Values",
+      "explanation": "In algebra, multiplication signs are omitted ($3 \\times a \\times b = 3ab$) and division is written as a fraction ($a \\div b = \\frac{a}{b}$). The sign in front of a term belongs to its coefficient. When substituting a negative number for a pronumeral, always enclose the negative number in brackets so that powers and multiplications apply to the negative sign correctly.",
+      "formula_latex": "\\text{If } x = -4, \\quad x^2 - 3x = (-4)^2 - 3(-4) = 16 + 12 = 28",
+      "callout_title": "Use Brackets When Substituting Negative Numbers",
+      "callout_rule": "Whenever you replace a pronumeral with a negative number, wrap it in brackets: $(-4)^2 = +16$, not $-16$."
+    },
+    {
+      "id": "theory_5_1_2",
+      "title": "Collecting Like Terms",
+      "explanation": "Like terms contain the exact same pronumerals raised to the exact same powers (regardless of the order in which the pronumerals are written, since $ab = ba$). By the distributive law, you add or subtract like terms by adding or subtracting their signed coefficients while keeping the pronumeral part unchanged.",
+      "formula_latex": "ma + na = (m + n)a, \\quad 5xy - 8yx = (5 - 8)xy = -3xy",
+      "callout_title": "Pronumeral Exponents Never Change When Adding",
+      "callout_rule": "When collecting like terms, $3x + 4x = 7x$, NOT $7x^2$. Terms with different powers such as $x$ and $x^2$ are UNLIKE terms and cannot be combined by addition."
+    },
+    {
+      "id": "theory_5_1_3",
+      "title": "Multiplying and Dividing Algebraic Terms",
+      "explanation": "Unlike addition, any two algebraic terms can be multiplied or divided. Multiply or divide the numerical coefficients using directed number rules, and combine identical pronumerals using the First and Second Index Laws ($x \\times x = x^2$ and $\\frac{x^2}{x} = x$).",
+      "formula_latex": "(-4a^2b) \\times (3ab) = -12a^3b^2, \\quad \\frac{-18x^2y}{6xy} = -3x",
+      "callout_title": "Coefficients First, Then Each Pronumeral Alphabetically",
+      "callout_rule": "Write the simplified product with the signed coefficient at the front, followed by pronumerals in alphabetical order."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE5_1_1",
+      "title": "Substituting Directed Numbers into Algebraic Expressions",
+      "difficulty": "Fluency",
+      "problem": "Given $a = -3$ and $b = 4$, evaluate (a) $2a^2 - 5b$ and (b) $\\dfrac{b + 2 - a^3}{11}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), substitute $a = (-3)$ in brackets and $b = 4$: evaluate $(-3)^2 = 9$ first.",
+          "working": "$$2a^2 - 5b = 2(-3)^2 - 5(4) = 2(9) - 20 = 18 - 20 = -2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), substitute $b = 4$ and $a = (-3)$: since $(-3)^3 = -27$, subtracting $(-27)$ adds $27$.",
+          "working": "$$\\frac{b + 2 - a^3}{11} = \\frac{4 + 2 - (-3)^3}{11} = \\frac{6 - (-27)}{11} = \\frac{33}{11} = 3$$"
+        }
+      ],
+      "final_answer": "(a) $-2$, (b) $3$",
+      "now_you_try": {
+        "problem": "Given $x = -4$ and $y = 5$, evaluate (a) $3x^2 - 4y$ and (b) $\\dfrac{2y - x}{7}$.",
+        "hint": "Remember $(-4)^2 = +16$ and $2(5) - (-4) = 10 + 4 = 14$.",
+        "working_summary": "(a) $3(16) - 20 = 48 - 20 = 28$; (b) $\\frac{10 - (-4)}{7} = \\frac{14}{7} = 2$.",
+        "answer": "(a) $28$, (b) $2$"
+      }
+    },
+    {
+      "id": "WE5_1_2",
+      "title": "Simplifying by Collecting Like Terms",
+      "difficulty": "Fluency",
+      "problem": "Simplify $7x^2 - 4xy + 3y - 10x^2 + 9yx - 8y$ by collecting like terms.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Recognise that $-4xy$ and $+9yx$ are like terms because $yx = xy$. Group the like terms together with their attached signs.",
+          "working": "$$(7x^2 - 10x^2) + (-4xy + 9xy) + (3y - 8y)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Combine the coefficients of each group.",
+          "working": "$$= -3x^2 + 5xy - 5y$$"
+        }
+      ],
+      "final_answer": "$-3x^2 + 5xy - 5y$",
+      "now_you_try": {
+        "problem": "Simplify $5a^2 - 6ab - 2a^2 + 10ba - 7$.",
+        "hint": "Group $(5a^2 - 2a^2)$ and $(-6ab + 10ab)$.",
+        "working_summary": "$(5 - 2)a^2 + (-6 + 10)ab - 7 = 3a^2 + 4ab - 7$.",
+        "answer": "$3a^2 + 4ab - 7$"
+      }
+    },
+    {
+      "id": "WE5_1_3",
+      "title": "Multiplying and Dividing Algebraic Terms",
+      "difficulty": "Understanding",
+      "problem": "Simplify: (a) $-6m^2n \\times (-4mn^3)$ and (b) $\\dfrac{-24a^3b^2}{16ab^3}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), multiply the coefficients $(-6) \\times (-4) = +24$, then add exponents of like pronumerals: $m^{2+1} = m^3$ and $n^{1+3} = n^4$.",
+          "working": "$$-6m^2n \\times (-4mn^3) = 24m^3n^4$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), divide $-24$ and $16$ by $\\text{HCF}(24, 16) = 8$ to get $-\\frac{3}{2}$. Cancel $a$ to leave $a^2$ in the numerator, and cancel $b^2$ to leave $b$ in the denominator.",
+          "working": "$$\\frac{-24a^3b^2}{16ab^3} = -\\frac{3a^2}{2b}$$"
+        }
+      ],
+      "final_answer": "(a) $24m^3n^4$, (b) $-\\dfrac{3a^2}{2b}$",
+      "now_you_try": {
+        "problem": "Simplify: (a) $-5pq^2 \\times 7p^3q$ and (b) $\\dfrac{-30x^4y}{-18x^2y^2}$.",
+        "hint": "In (b), two negatives divide to give a positive, and $\\text{HCF}(30, 18) = 6$.",
+        "working_summary": "(a) $-35p^4q^3$; (b) $\\frac{5x^2}{3y}$.",
+        "answer": "(a) $-35p^4q^3$, (b) $\\dfrac{5x^2}{3y}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_5_1_1",
+      "title": "Adding Exponents When Collecting Like Terms ($x + x \\neq x^2$)",
+      "misconception": "Writing $3x + 4x = 7x^2$ by confusing addition of like terms with multiplication ($3x \\times 4x = 12x^2$).",
+      "correct_concept": "Adding like terms counts how many of that unit you have: $3$ lots of $x$ plus $4$ lots of $x$ equals $7$ lots of $x$ ($7x$). Exponents only change when multiplying or dividing.",
+      "incorrect_working": "$$3x + 4x = 7x^2 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$3x + 4x = 7x \\quad \\text{and} \\quad 3x \\times 4x = 12x^2 \\quad (\\text{Correct})$$",
+      "counter_example": "If $x = 10$, then $3(10) + 4(10) = 30 + 40 = 70 = 7(10)$, whereas $7(10)^2 = 700$."
+    },
+    {
+      "id": "MISC_5_1_2",
+      "title": "Combining Unlike Powers Such as $x$ and $x^2$",
+      "misconception": "Simplifying $2x + 5x^2$ into $7x^3$ or $7x^2$.",
+      "correct_concept": "Because $x$ and $x^2$ have different exponents, they are unlike terms and cannot be simplified further under addition.",
+      "incorrect_working": "$$2x + 5x^2 = 7x^3 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$2x + 5x^2 \\text{ cannot be simplified further} \\quad (\\text{Correct})$$",
+      "counter_example": "Geometrically, $2x$ is a length whereas $5x^2$ is an area; you cannot add lengths and areas into a single term."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "5_1_Q1",
+        "question": "For the algebraic expression $4x^2 - 7xy + x - 9$, state (a) the number of terms, (b) the coefficient of $xy$, (c) the coefficient of $x$, and (d) the constant term.",
+        "difficulty": "Easy",
+        "context": "Algebraic Vocabulary",
+        "final_answer": "(a) $4$, (b) $-7$, (c) $1$, (d) $-9$",
+        "step_by_step_solution": [
+          "The expression has $4$ terms: $4x^2$, $-7xy$, $+1x$, and $-9$.",
+          "The coefficient of $xy$ is $-7$, the coefficient of $x$ is $1$, and the constant term is $-9$."
+        ]
+      },
+      {
+        "id": "5_1_Q2",
+        "question": "Evaluate $3p^2 - 2pq$ when $p = -4$ and $q = 5$.",
+        "difficulty": "Easy",
+        "context": "Algebraic Substitution",
+        "final_answer": "$88$",
+        "step_by_step_solution": [
+          "Substitute $p = -4$ and $q = 5$: $3(-4)^2 - 2(-4)(5)$.",
+          "Evaluate: $3(16) - (-40) = 48 + 40 = 88$."
+        ]
+      },
+      {
+        "id": "5_1_Q3",
+        "question": "Simplify $9a - 4b - 12a + 7b - 3$.",
+        "difficulty": "Easy",
+        "context": "Collecting Like Terms",
+        "final_answer": "$-3a + 3b - 3$",
+        "step_by_step_solution": [
+          "Group like terms: $(9a - 12a) + (-4b + 7b) - 3$.",
+          "Combine coefficients: $-3a + 3b - 3$."
+        ]
+      },
+      {
+        "id": "5_1_Q4",
+        "question": "Simplify $8m^2n - 5mn^2 - 3nm^2 + 2n^2m$.",
+        "difficulty": "Medium",
+        "context": "Collecting Like Terms",
+        "final_answer": "$5m^2n - 3mn^2$",
+        "step_by_step_solution": [
+          "Identify like terms: $8m^2n$ and $-3nm^2$ both have $m^2n$; $-5mn^2$ and $+2n^2m$ both have $mn^2$.",
+          "Combine each pair: $(8 - 3)m^2n + (-5 + 2)mn^2 = 5m^2n - 3mn^2$."
+        ]
+      },
+      {
+        "id": "5_1_Q5",
+        "question": "Simplify $-4x^2y \\times 5xy^3 \\div (-2xy^2)$.",
+        "difficulty": "Medium",
+        "context": "Multiplying & Dividing Terms",
+        "final_answer": "$10x^2y^2$",
+        "step_by_step_solution": [
+          "Multiply the first two terms: $-4x^2y \\times 5xy^3 = -20x^3y^4$.",
+          "Divide by $-2xy^2$: $\\frac{-20x^3y^4}{-2xy^2} = 10x^{3-1}y^{4-2} = 10x^2y^2$."
+        ]
+      },
+      {
+        "id": "5_1_Q6",
+        "question": "Evaluate $\\dfrac{x^2 - y^2}{x - y}$ when $x = -3$ and $y = -7$.",
+        "difficulty": "Challenging",
+        "context": "Fractional Substitution",
+        "final_answer": "$-10$",
+        "step_by_step_solution": [
+          "Evaluate the numerator: $(-3)^2 - (-7)^2 = 9 - 49 = -40$.",
+          "Evaluate the denominator: $-3 - (-7) = -3 + 7 = 4$.",
+          "Divide: $-40 \\div 4 = -10$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "5_1_Q7",
+        "question": "In Australian Rules Football (AFL), a team scores $g$ goals ($6$ points each) and $b$ behinds ($1$ point each). (a) Write an algebraic expression for the team's total score $S$. (b) In the 2023 AFL Grand Final at the MCG, Collingwood scored $12$ goals and $18$ behinds, while Brisbane scored $13$ goals and $8$ behinds. Use your formula to find each team's score and the winning margin.",
+        "difficulty": "Medium",
+        "context": "Australian Sport (AFL Grand Final)",
+        "final_answer": "(a) $S = 6g + b$; (b) Collingwood $90$, Brisbane $86$ (Collingwood by $4$ points)",
+        "step_by_step_solution": [
+          "Each goal is worth $6$ points and each behind is worth $1$ point, so $S = 6g + b$.",
+          "Collingwood: $S = 6(12) + 18 = 72 + 18 = 90$ points.",
+          "Brisbane: $S = 6(13) + 8 = 78 + 8 = 86$ points.",
+          "Winning margin: $90 - 86 = 4$ points."
+        ]
+      },
+      {
+        "id": "5_1_Q8",
+        "question": "An L-shaped garden bed has exterior sides of length $5x$ and $4y$, with an inner cutout leaving perimeter segments of $2x$, $y$, $3x$, and $3y$. Write and simplify an expression for (a) the total perimeter of the rectangle of width $3x + 2y$ and length $5x - y$, and (b) evaluate the perimeter when $x = 4\\text{ m}$ and $y = 3\\text{ m}$.",
+        "difficulty": "Medium",
+        "context": "Geometric Perimeter Expression",
+        "final_answer": "(a) $16x + 2y$, (b) $70\\text{ m}$",
+        "step_by_step_solution": [
+          "Add twice the width and twice the length: $P = 2(3x + 2y) + 2(5x - y) = 6x + 4y + 10x - 2y = 16x + 2y$.",
+          "Substitute $x = 4$ and $y = 3$: $P = 16(4) + 2(3) = 64 + 6 = 70\\text{ m}$."
+        ]
+      },
+      {
+        "id": "5_1_Q9",
+        "question": "A rectangular prism has length $4a$, width $3a$, and height $2b$. Find simplified algebraic expressions for (a) the volume $V$ of the prism and (b) the total surface area $SA$ of all $6$ faces.",
+        "difficulty": "Challenging",
+        "context": "3D Mensuration in Algebra",
+        "final_answer": "(a) $V = 24a^2b$, (b) $SA = 24a^2 + 28ab$",
+        "step_by_step_solution": [
+          "Volume $V = l \\times w \\times h = 4a \\times 3a \\times 2b = 24a^2b$.",
+          "Surface area $SA = 2(4a \\times 3a) + 2(4a \\times 2b) + 2(3a \\times 2b) = 24a^2 + 16ab + 12ab = 24a^2 + 28ab$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "5_1_Q10",
+        "question": "Show by substitution with $x = 6$ and $y = 3$ that $\\dfrac{6x + 3y}{3} \\neq 2x + 3y$, and state the correct simplified form of $\\dfrac{6x + 3y}{3}$.",
+        "difficulty": "Medium",
+        "context": "Fraction Cancellation Error Analysis",
+        "final_answer": "Correct simplified form is $2x + y$",
+        "step_by_step_solution": [
+          "When $x = 6, y = 3$, $\\frac{6(6) + 3(3)}{3} = \\frac{36 + 9}{3} = \\frac{45}{3} = 15$.",
+          "Meanwhile, $2x + 3y = 2(6) + 3(3) = 12 + 9 = 21 \\neq 15$, because the $3y$ term was not divided by $3$.",
+          "Dividing BOTH terms in the numerator by $3$ gives $\\frac{6x}{3} + \\frac{3y}{3} = 2x + y$ (which evaluates to $2(6) + 3 = 15$)."
+        ]
+      },
+      {
+        "id": "5_1_Q11",
+        "question": "Prove that the sum of any three consecutive integers $n, n+1, n+2$ is always divisible by $3$.",
+        "difficulty": "Challenging",
+        "context": "Algebraic Divisibility Proof",
+        "final_answer": "$n + (n + 1) + (n + 2) = 3n + 3 = 3(n + 1)$, which is a multiple of $3$",
+        "step_by_step_solution": [
+          "Let the three consecutive integers be $n$, $n + 1$, and $n + 2$.",
+          "Add them and collect like terms: $n + (n + 1) + (n + 2) = 3n + 3$.",
+          "Since $3n + 3 = 3(n + 1)$ and $n + 1$ is an integer, the sum is always an exact multiple of $3$."
+        ]
+      },
+      {
+        "id": "5_1_Q12",
+        "question": "A two-digit number has tens digit $a$ and units digit $b$, so its value is $10a + b$. Prove that if you reverse its digits to form $10b + a$, the sum of the original number and the reversed number is always a multiple of $11$.",
+        "difficulty": "Extension",
+        "context": "Place Value & Number Theory Proof",
+        "final_answer": "$(10a + b) + (10b + a) = 11a + 11b = 11(a + b)$",
+        "step_by_step_solution": [
+          "Write the sum of the two numbers: $(10a + b) + (10b + a)$.",
+          "Collect like terms in $a$ and $b$: $(10a + a) + (b + 10b) = 11a + 11b$.",
+          "Factor out $11$: $11(a + b)$, which is always divisible by $11$ for any digits $a$ and $b$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE5_1_1a",
+      "description": "Worked Example 5.1.1(a)",
+      "expression": "2 * (-3)**2 - 5 * 4",
+      "expected": -2
+    },
+    {
+      "id": "WE5_1_1b",
+      "description": "Worked Example 5.1.1(b)",
+      "expression": "(6 - (-3)**3) / 11",
+      "expected": 3
+    },
+    {
+      "id": "NYT5_1_1a",
+      "description": "Now You Try 5.1.1(a)",
+      "expression": "3 * (-4)**2 - 4 * 5",
+      "expected": 28
+    },
+    {
+      "id": "NYT5_1_1b",
+      "description": "Now You Try 5.1.1(b)",
+      "expression": "(2 * 5 - (-4)) / 7",
+      "expected": 2
+    },
+    {
+      "id": "WE5_1_2",
+      "description": "Worked Example 5.1.2 like terms",
+      "expression": "simplify(7*x**2 - 4*x*y + 3*y - 10*x**2 + 9*y*x - 8*y - (-3*x**2 + 5*x*y - 5*y))",
+      "expected": 0
+    },
+    {
+      "id": "NYT5_1_2",
+      "description": "Now You Try 5.1.2",
+      "expression": "simplify(5*a**2 - 6*a*b - 2*a**2 + 10*b*a - 7 - (3*a**2 + 4*a*b - 7))",
+      "expected": 0
+    },
+    {
+      "id": "WE5_1_3a",
+      "description": "Worked Example 5.1.3(a)",
+      "expression": "simplify((-6*m**2*n) * (-4*m*n**3) - 24*m**3*n**4)",
+      "expected": 0
+    },
+    {
+      "id": "WE5_1_3b",
+      "description": "Worked Example 5.1.3(b)",
+      "expression": "simplify((-24*a**3*b**2) / (16*a*b**3) - (-3*a**2 / (2*b)))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_1_Q2",
+      "description": "Exercise 5.1 Q2",
+      "expression": "3 * (-4)**2 - 2 * (-4) * 5",
+      "expected": 88
+    },
+    {
+      "id": "EX5_1_Q3",
+      "description": "Exercise 5.1 Q3",
+      "expression": "simplify(9*a - 4*b - 12*a + 7*b - 3 - (-3*a + 3*b - 3))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_1_Q4",
+      "description": "Exercise 5.1 Q4",
+      "expression": "simplify(8*m**2*n - 5*m*n**2 - 3*n*m**2 + 2*n**2*m - (5*m**2*n - 3*m*n**2))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_1_Q5",
+      "description": "Exercise 5.1 Q5",
+      "expression": "simplify((-4*x**2*y * 5*x*y**3) / (-2*x*y**2) - 10*x**2*y**2)",
+      "expected": 0
+    },
+    {
+      "id": "EX5_1_Q6",
+      "description": "Exercise 5.1 Q6",
+      "expression": "((-3)**2 - (-7)**2) / (-3 - (-7))",
+      "expected": -10
+    },
+    {
+      "id": "EX5_1_Q7_margin",
+      "description": "Exercise 5.1 Q7 AFL Grand Final margin",
+      "expression": "(6 * 12 + 18) - (6 * 13 + 8)",
+      "expected": 4
+    },
+    {
+      "id": "EX5_1_Q8",
+      "description": "Exercise 5.1 Q8 perimeter at x=4, y=3",
+      "expression": "16 * 4 + 2 * 3",
+      "expected": 70
+    },
+    {
+      "id": "EX5_1_Q12",
+      "description": "Exercise 5.1 Q12 digit reversal sum",
+      "expression": "simplify((10*a + b) + (10*b + a) - 11*(a + b))",
+      "expected": 0
+    }
+  ]
+}

@@ -1,0 +1,398 @@
+{
+  "metadata": {
+    "section_id": "9_1",
+    "section_code": "9A",
+    "chapter_number": 9,
+    "chapter_title": "Probability and Venn Diagrams",
+    "title": "Complementary Events, Venn Diagrams and Two-Way Tables",
+    "vcaa_code": "VC2M8P02",
+    "vcaa_description": "Determine all possible combinations for 2 events, using two-way tables, tree diagrams and Venn diagrams, and use these to calculate probabilities.",
+    "strand": "Probability",
+    "target_mastery": "Use the complementary event rule $\\Pr(A') = 1 - \\Pr(A)$, construct and interpret Venn diagrams, two-way tables, and tree diagrams, and calculate compound probabilities involving 'and' ($A \\cap B$), 'or' ($A \\cup B$), and 'not' ($A'$).",
+    "prerequisites": [
+      "Theoretical probability of equally likely outcomes: $\\Pr(E) = \\frac{n(E)}{n(\\xi)}$",
+      "Operations with fractions, decimals, and percentages (Chapters 2 & 3)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Complementary event ($A'$ or $\\text{not } A$)",
+        "definition": "The set of all outcomes in the sample space $\\xi$ where event $A$ does NOT occur, satisfying $\\Pr(A) + \\Pr(A') = 1$."
+      },
+      {
+        "term": "Intersection ($A \\cap B$, 'both $A$ and $B$') and Union ($A \\cup B$, '$A$ or $B$ or both')",
+        "definition": "$A \\cap B$ contains outcomes belonging to BOTH $A$ and $B$. $A \\cup B$ contains outcomes belonging to AT LEAST ONE of $A$ or $B$."
+      },
+      {
+        "term": "Mutually exclusive events",
+        "definition": "Two events $A$ and $B$ that cannot occur at the same time ($A \\cap B = \\varnothing$), so $\\Pr(A \\cap B) = 0$ and $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B)$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_1_1",
+      "title": "Sample Space and Complementary Events ($\\Pr(A') = 1 - \\Pr(A)$)",
+      "explanation": "Every probability satisfies $0 \\le \\Pr(A) \\le 1$, and the sum of probabilities of all mutually exclusive outcomes in the sample space $\\xi$ is $1$. Event $A$ and its complement $A'$ ('not $A$') partition the sample space with no overlap, so $\\Pr(A') = 1 - \\Pr(A)$. Finding the complement is especially helpful for 'at least one' problems: $\\Pr(\\text{at least one}) = 1 - \\Pr(\\text{none})$.",
+      "formula_latex": "\\Pr(A') = 1 - \\Pr(A), \\qquad \\Pr(\\text{at least one}) = 1 - \\Pr(\\text{none})",
+      "callout_title": "Use the Complement for 'At Least One'",
+      "callout_rule": "Instead of adding many separate cases for 'at least one', calculate $\\Pr(\\text{none})$ and subtract it from $1$."
+    },
+    {
+      "id": "theory_9_1_2",
+      "title": "Venn Diagrams, Two-Way Tables, and the Addition Rule",
+      "explanation": "A two-circle Venn diagram or a $2 \\times 2$ two-way table partitions a group of $N$ individuals into four non-overlapping regions: only $A$ ($A \\cap B'$), both $A$ and $B$ ($A \\cap B$), only $B$ ($A' \\cap B$), and neither ($A' \\cap B'$). When filling a Venn diagram, ALWAYS start with the central overlap $n(A \\cap B)$ and subtract it from each circle's total to avoid double-counting.",
+      "formula_latex": "n(A \\cup B) = n(A) + n(B) - n(A \\cap B) \\implies \\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)",
+      "callout_title": "Always Fill the Overlap $n(A \\cap B)$ First",
+      "callout_rule": "If $n(A) = 18$ and $n(A \\cap B) = 7$, then the 'only $A$' crescent contains $18 - 7 = 11$, NOT $18$."
+    },
+    {
+      "id": "theory_9_1_3",
+      "title": "Tree Diagrams and Multi-Stage Experiments",
+      "explanation": "Tree diagrams list all possible ordered sequences of outcomes across $2$ or more stages (such as tossing coins, drawing marbles with or without replacement, or playing a two-game finals series). If each stage has $m_1$ and $m_2$ equally likely branches, there are $m_1 \\times m_2$ equally likely compound outcomes in the sample space.",
+      "formula_latex": "\\text{Total outcomes} = m_1 \\times m_2, \\qquad \\Pr(A \\text{ then } B) = \\Pr(A) \\times \\Pr(B)",
+      "callout_title": "Multiply Along Branches; Add Between Branches",
+      "callout_rule": "To find the probability of a single path along a tree diagram, multiply the probabilities along its branches. To combine several favourable paths, add their path probabilities."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_1_1",
+      "title": "Constructing a Venn Diagram from Survey Data",
+      "difficulty": "Fluency",
+      "problem": "In a survey of $40$ Year 8 students in Geelong, $23$ play Australian Rules Football ($F$), $18$ play Cricket ($C$), and $9$ play both sports. (a) Find the number of students in each of the four Venn diagram regions: both ($F \\cap C$), Football only ($F \\cap C'$), Cricket only ($C \\cap F'$), and neither ($F' \\cap C'$). (b) If a student is chosen at random, find $\\Pr(F \\cup C)$, the probability that the student plays Football or Cricket (or both).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Start with the overlap $n(F \\cap C) = 9$. Subtract $9$ from each total to find 'Football only' and 'Cricket only', then subtract the union from $40$ to find 'neither'.",
+          "working": "$$n(F \\cap C) = 9$$\n$$n(\\text{Football only}) = 23 - 9 = 14, \\qquad n(\\text{Cricket only}) = 18 - 9 = 9$$\n$$n(F \\cup C) = 14 + 9 + 9 = 32 \\implies n(\\text{neither}) = 40 - 32 = 8$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide $n(F \\cup C) = 32$ by the total number of students ($40$) and simplify the fraction.",
+          "working": "$$\\Pr(F \\cup C) = \\frac{32}{40} = \\frac{4}{5} = 0.8$$"
+        }
+      ],
+      "final_answer": "(a) Both $= 9$, Football only $= 14$, Cricket only $= 9$, Neither $= 8$; (b) $\\Pr(F \\cup C) = \\dfrac{4}{5} = 0.8$",
+      "now_you_try": {
+        "problem": "In a class of $30$ students, $17$ study Japanese ($J$), $14$ study Music ($M$), and $6$ study both. Find (a) how many study neither subject, and (b) $\\Pr(\\text{Japanese only})$.",
+        "hint": "Japanese only $= 17 - 6 = 11$; Music only $= 14 - 6 = 8$; Both $= 6$.",
+        "working_summary": "$n(J \\cup M) = 11 + 6 + 8 = 25 \\implies n(\\text{neither}) = 30 - 25 = 5$; $\\Pr(J \\text{ only}) = \\frac{11}{30}$.",
+        "answer": "(a) $5$, (b) $\\dfrac{11}{30}$"
+      }
+    },
+    {
+      "id": "WE9_1_2",
+      "title": "Completing a Two-Way Table and Finding Probabilities",
+      "difficulty": "Understanding",
+      "problem": "Out of $100$ commuters surveyed at Flinders Street Station, $60$ travel by Train ($T$) and the rest travel by Tram ($T'$). In total, $45$ commuters carry an umbrella ($U$), including $28$ of the Train passengers. (a) Find the four interior cell counts ($T \\cap U$, $T \\cap U'$, $T' \\cap U$, $T' \\cap U'$). (b) Find the probability that a randomly chosen commuter travels by Tram and does NOT carry an umbrella, $\\Pr(T' \\cap U')$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Use row and column totals: $n(T) = 60 \\implies n(T') = 100 - 60 = 40$; $n(U) = 45 \\implies n(U') = 100 - 45 = 55$. Subtract $n(T \\cap U) = 28$ from row/column totals.",
+          "working": "$$n(T \\cap U) = 28 \\implies n(T \\cap U') = 60 - 28 = 32$$\n$$n(T' \\cap U) = 45 - 28 = 17 \\implies n(T' \\cap U') = 40 - 17 = 23$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide $n(T' \\cap U') = 23$ by $100$.",
+          "working": "$$\\Pr(T' \\cap U') = \\frac{23}{100} = 0.23$$"
+        }
+      ],
+      "final_answer": "(a) $n(T \\cap U) = 28, n(T \\cap U') = 32, n(T' \\cap U) = 17, n(T' \\cap U') = 23$; (b) $\\dfrac{23}{100} = 0.23$",
+      "now_you_try": {
+        "problem": "From the same table of $100$ commuters, find the probability that a randomly selected commuter carries an umbrella OR travels by Train, $\\Pr(T \\cup U)$.",
+        "hint": "Use $\\Pr(T \\cup U) = 1 - \\Pr(T' \\cap U')$ or add $\\frac{28 + 32 + 17}{100}$.",
+        "working_summary": "$\\Pr(T \\cup U) = 1 - 0.23 = 0.77 = \\frac{77}{100}$.",
+        "answer": "$\\dfrac{77}{100} = 0.77$"
+      }
+    },
+    {
+      "id": "WE9_1_3",
+      "title": "Using a Tree Diagram for a Two-Stage Experiment",
+      "difficulty": "Problem-Solving",
+      "problem": "A fair coin is tossed and a fair $6$-sided die ($1$ to $6$) is rolled. (a) How many equally likely outcomes are in the sample space? (b) Find the probability of obtaining a Head and a prime number. (c) Find the probability of NOT obtaining (Tails and $6$).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The coin has $2$ outcomes ($\\text{H, T}$) and the die has $6$ outcomes ($1, 2, 3, 4, 5, 6$), giving $2 \\times 6 = 12$ outcomes. The prime numbers on a die are $\\{2, 3, 5\\}$ ($3$ outcomes).",
+          "working": "$$n(\\xi) = 2 \\times 6 = 12$$\n$$\\text{Favourable to (H and prime)} = \\{(\\text{H}, 2), (\\text{H}, 3), (\\text{H}, 5)\\} \\implies \\Pr(\\text{H and prime}) = \\frac{3}{12} = \\frac{1}{4}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Use the complementary event rule for part (c): $(\\text{T}, 6)$ is $1$ outcome out of $12$, so its complement has probability $1 - \\frac{1}{12}$.",
+          "working": "$$\\Pr(\\text{not (T and 6)}) = 1 - \\frac{1}{12} = \\frac{11}{12}$$"
+        }
+      ],
+      "final_answer": "(a) $12$ outcomes, (b) $\\dfrac{1}{4}$, (c) $\\dfrac{11}{12}$",
+      "now_you_try": {
+        "problem": "A fair coin is tossed $3$ times ($2^3 = 8$ equally likely outcomes). Find (a) $\\Pr(\\text{three Tails})$ and (b) $\\Pr(\\text{at least one Head})$.",
+        "hint": "'At least one Head' is the complement of 'three Tails' ($\\text{TTT}$).",
+        "working_summary": "(a) $\\Pr(\\text{TTT}) = \\frac{1}{8}$; (b) $\\Pr(\\text{at least one H}) = 1 - \\frac{1}{8} = \\frac{7}{8}$.",
+        "answer": "(a) $\\dfrac{1}{8}$, (b) $\\dfrac{7}{8}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_1_1",
+      "title": "Double-Counting the Overlap in a Venn Diagram",
+      "misconception": "Writing the full set totals $n(A)$ and $n(B)$ in the crescent regions of a Venn diagram without subtracting the overlap $n(A \\cap B)$.",
+      "correct_concept": "The total for circle $A$ includes both the 'only $A$' region and the central overlap $A \\cap B$. You must subtract $n(A \\cap B)$ to find $n(\\text{only } A) = n(A) - n(A \\cap B)$.",
+      "incorrect_working": "$$n(A) = 20, \\; n(B) = 15, \\; n(A \\cap B) = 5 \\implies n(A \\cup B) = 20 + 15 + 5 = 40 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$n(\\text{only } A) = 15, \\; n(\\text{only } B) = 10, \\; n(A \\cap B) = 5 \\implies n(A \\cup B) = 15 + 5 + 10 = 30$$",
+      "counter_example": "If there are only $32$ students in the entire class, $n(A \\cup B)$ cannot be $40$."
+    },
+    {
+      "id": "misc_9_1_2",
+      "title": "Confusing 'And' ($\\cap$) with 'Or' ($\\cup$) in Everyday Language",
+      "misconception": "Adding $\\Pr(A) + \\Pr(B)$ when asked for $\\Pr(A \\text{ and } B)$, or confusing 'neither $A$ nor $B$' with 'not both'.",
+      "correct_concept": "In probability, '$A$ and $B$' ($A \\cap B$) is the single overlap region (both occur together), whereas '$A$ or $B$' ($A \\cup B$) includes all three regions inside the two circles (only $A$, only $B$, and both).",
+      "incorrect_working": "$$\\Pr(A \\cap B) = \\Pr(A) + \\Pr(B) \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$$",
+      "counter_example": "Requiring BOTH conditions ($A \\cap B$) is stricter than requiring just one, so $\\Pr(A \\cap B)$ is always less than or equal to $\\Pr(A)$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_1_Q1",
+        "question": "The probability that it rains in Melbourne tomorrow is $\\Pr(R) = 0.38$. What is the probability that it does NOT rain tomorrow, $\\Pr(R')$?",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$0.62$",
+        "step_by_step_solution": [
+          "Use the complementary event rule $\\Pr(R') = 1 - \\Pr(R)$.",
+          "Calculate: $\\Pr(R') = 1 - 0.38 = 0.62$."
+        ]
+      },
+      {
+        "id": "9_1_Q2",
+        "question": "A bag contains red, blue, green, and yellow counters. Given $\\Pr(\\text{Red}) = \\dfrac{1}{4}$, $\\Pr(\\text{Blue}) = \\dfrac{3}{10}$, and $\\Pr(\\text{Green}) = \\dfrac{1}{5}$, find $\\Pr(\\text{Yellow})$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$\\dfrac{1}{4}$ ($0.25$)",
+        "step_by_step_solution": [
+          "The probabilities of all mutually exclusive outcomes sum to $1$: $\\Pr(\\text{Yellow}) = 1 - \\left(\\frac{1}{4} + \\frac{3}{10} + \\frac{1}{5}\\right)$.",
+          "Convert to a common denominator of $20$: $1 - \\frac{5 + 6 + 4}{20} = 1 - \\frac{15}{20} = \\frac{5}{20} = \\frac{1}{4}$."
+        ]
+      },
+      {
+        "id": "9_1_Q3",
+        "question": "For two events $A$ and $B$, $\\Pr(A) = 0.55$, $\\Pr(B) = 0.40$, and $\\Pr(A \\cap B) = 0.20$. Find (a) $\\Pr(A \\cup B)$ and (b) $\\Pr(A' \\cap B')$ (neither $A$ nor $B$).",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "(a) $0.75$, (b) $0.25$",
+        "step_by_step_solution": [
+          "Use the addition rule: $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B) = 0.55 + 0.40 - 0.20 = 0.75$.",
+          "The event 'neither $A$ nor $B$' is the complement of $A \\cup B$: $\\Pr(A' \\cap B') = 1 - 0.75 = 0.25$."
+        ]
+      },
+      {
+        "id": "9_1_Q4",
+        "question": "Events $M$ and $N$ are mutually exclusive with $\\Pr(M) = 0.32$ and $\\Pr(N) = 0.45$. State $\\Pr(M \\cap N)$ and calculate $\\Pr(M \\cup N)$.",
+        "difficulty": "Easy",
+        "context": "Understanding",
+        "final_answer": "$\\Pr(M \\cap N) = 0$, $\\Pr(M \\cup N) = 0.77$",
+        "step_by_step_solution": [
+          "Because $M$ and $N$ are mutually exclusive, they cannot occur together, so $\\Pr(M \\cap N) = 0$.",
+          "Therefore $\\Pr(M \\cup N) = \\Pr(M) + \\Pr(N) = 0.32 + 0.45 = 0.77$."
+        ]
+      },
+      {
+        "id": "9_1_Q5",
+        "question": "The integers from $1$ to $20$ inclusive ($\\xi = \\{1, 2, \\dots, 20\\}$) are placed in a Venn diagram with set $A = \\{\\text{multiples of } 3\\}$ and set $B = \\{\\text{multiples of } 4\\}$. Find (a) $n(A)$, (b) $n(B)$, (c) $n(A \\cap B)$, and (d) $\\Pr(A \\cup B)$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "(a) $6$, (b) $5$, (c) $1$, (d) $\\dfrac{1}{2}$ ($0.5$)",
+        "step_by_step_solution": [
+          "List the sets: $A = \\{3, 6, 9, 12, 15, 18\\}$ ($n(A) = 6$), $B = \\{4, 8, 12, 16, 20\\}$ ($n(B) = 5$), and $A \\cap B = \\{12\\}$ ($n(A \\cap B) = 1$).",
+          "By the addition rule, $n(A \\cup B) = 6 + 5 - 1 = 10$, so $\\Pr(A \\cup B) = \\frac{10}{20} = \\frac{1}{2}$."
+        ]
+      },
+      {
+        "id": "9_1_Q6",
+        "question": "Two fair $6$-sided dice are rolled ($36$ equally likely ordered pairs). Find the probability that (a) the sum of the two dice is $8$, and (b) the two dice show a 'double' (the same number on both dice).",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "(a) $\\dfrac{5}{36}$, (b) $\\dfrac{1}{6}$",
+        "step_by_step_solution": [
+          "The ordered pairs summing to $8$ are $(2, 6), (3, 5), (4, 4), (5, 3), (6, 2)$ ($5$ outcomes), giving $\\Pr(\\text{sum} = 8) = \\frac{5}{36}$.",
+          "The doubles are $(1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6)$ ($6$ outcomes), giving $\\Pr(\\text{double}) = \\frac{6}{36} = \\frac{1}{6}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_1_Q7",
+        "question": "At a St Kilda café, $80$ morning customers are recorded: $52$ order a flat white ($F$), $36$ order a croissant ($C$), and $12$ order neither. Find (a) how many customers ordered BOTH a flat white and a croissant, and (b) the probability that a randomly selected customer ordered a flat white ONLY.",
+        "difficulty": "Challenging",
+        "context": "Melbourne Café Survey",
+        "final_answer": "(a) $20$, (b) $\\dfrac{2}{5}$ ($0.4$)",
+        "step_by_step_solution": [
+          "Since $12$ ordered neither out of $80$, $n(F \\cup C) = 80 - 12 = 68$. Using $n(F \\cup C) = n(F) + n(C) - n(F \\cap C)$: $68 = 52 + 36 - n(F \\cap C) \\implies n(F \\cap C) = 88 - 68 = 20$.",
+          "Customers ordering a flat white only $= 52 - 20 = 32$, so $\\Pr(F \\text{ only}) = \\frac{32}{80} = \\frac{2}{5} = 0.4$."
+        ]
+      },
+      {
+        "id": "9_1_Q8",
+        "question": "A drawer contains $5$ navy socks and $3$ white socks ($8$ socks in total). One sock is drawn at random and NOT replaced, and then a second sock is drawn. Using a tree diagram, find the probability that (a) both socks are navy, and (b) both socks are the same colour.",
+        "difficulty": "Challenging",
+        "context": "Sampling Without Replacement",
+        "final_answer": "(a) $\\dfrac{5}{14}$, (b) $\\dfrac{13}{28}$",
+        "step_by_step_solution": [
+          "For two navy socks without replacement: $\\Pr(\\text{N, N}) = \\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{5}{14}$.",
+          "For two white socks: $\\Pr(\\text{W, W}) = \\frac{3}{8} \\times \\frac{2}{7} = \\frac{6}{56}$. Add the two cases: $\\Pr(\\text{same colour}) = \\frac{20 + 6}{56} = \\frac{26}{56} = \\frac{13}{28}$."
+        ]
+      },
+      {
+        "id": "9_1_Q9",
+        "question": "A bushfire alert system has two independent smoke sensors. Sensor A detects smoke with probability $0.90$ (so fails with probability $0.10$) and Sensor B detects smoke with probability $0.85$ (so fails with probability $0.15$). Find the probability that (a) both sensors fail simultaneously, and (b) at least one sensor detects the smoke.",
+        "difficulty": "Challenging",
+        "context": "Safety System Reliability",
+        "final_answer": "(a) $0.015$, (b) $0.985$",
+        "step_by_step_solution": [
+          "Multiply the failure probabilities of the two independent sensors: $\\Pr(\\text{both fail}) = 0.10 \\times 0.15 = 0.015$.",
+          "Use the complement for 'at least one detects': $\\Pr(\\text{at least one}) = 1 - 0.015 = 0.985$ ($98.5\\%$)."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_1_Q10",
+        "question": "Explain using a Venn diagram why the simple sum $\\Pr(A) + \\Pr(B)$ overcounts $\\Pr(A \\cup B)$ whenever $A$ and $B$ are not mutually exclusive, and explain why subtracting $\\Pr(A \\cap B)$ once fixes the count.",
+        "difficulty": "Medium",
+        "context": "Inclusion–Exclusion Principle",
+        "final_answer": "$\\Pr(A)$ includes the overlap $A \\cap B$ once and $\\Pr(B)$ includes $A \\cap B$ a second time; subtracting $\\Pr(A \\cap B)$ once leaves each of the three union regions counted exactly once",
+        "step_by_step_solution": [
+          "In a Venn diagram, $\\Pr(A) = \\Pr(A \\cap B') + \\Pr(A \\cap B)$ and $\\Pr(B) = \\Pr(A' \\cap B) + \\Pr(A \\cap B)$.",
+          "Adding $\\Pr(A) + \\Pr(B)$ counts the intersection $\\Pr(A \\cap B)$ twice; subtracting $\\Pr(A \\cap B)$ once leaves $\\Pr(A \\cap B') + \\Pr(A \\cap B) + \\Pr(A' \\cap B) = \\Pr(A \\cup B)$."
+        ]
+      },
+      {
+        "id": "9_1_Q11",
+        "question": "A sports journalist claims that for an upcoming AFL match, there is a $60\\%$ chance that Collingwood wins ($C$), a $55\\%$ chance that the match is played in dry weather ($D$), and a $10\\%$ chance that BOTH Collingwood wins and the match is played in dry weather. Prove using the addition rule that these three probabilities are mathematically impossible.",
+        "difficulty": "Challenging",
+        "context": "Detecting Inconsistent Probabilities",
+        "final_answer": "They imply $\\Pr(C \\cup D) = 0.60 + 0.55 - 0.10 = 1.05 > 1$, which is impossible since no probability can exceed $1$",
+        "step_by_step_solution": [
+          "Substitute the claimed probabilities into the addition rule: $\\Pr(C \\cup D) = \\Pr(C) + \\Pr(D) - \\Pr(C \\cap D) = 0.60 + 0.55 - 0.10 = 1.05$.",
+          "Because the probability of any event cannot exceed $1$ ($100\\%$), the journalist's figures are inconsistent (the overlap $\\Pr(C \\cap D)$ must be at least $0.15$)."
+        ]
+      },
+      {
+        "id": "9_1_Q12",
+        "question": "Verify De Morgan's Law for probability, $(A \\cup B)' = A' \\cap B'$, by explaining in words why 'NOT ($A$ or $B$)' describes the exact same region of a Venn diagram as '(NOT $A$) and (NOT $B$)'.",
+        "difficulty": "Extension",
+        "context": "Set Logic & De Morgan's Laws",
+        "final_answer": "Both expressions describe the outer region of the Venn diagram outside both circles ('neither $A$ nor $B$')",
+        "step_by_step_solution": [
+          "The union $A \\cup B$ consists of everything inside circle $A$, circle $B$, or both; its complement $(A \\cup B)'$ is the region strictly outside both circles.",
+          "An outcome is outside both circles if and only if it is NOT in $A$ ($A'$) AND simultaneously NOT in $B$ ($B'$), which is the intersection $A' \\cap B'$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_1_1_neither",
+      "description": "Worked Example 9.1.1(a) neither",
+      "expression": "40 - ((23 - 9) + 9 + (18 - 9))",
+      "expected": 8
+    },
+    {
+      "id": "WE9_1_1b",
+      "description": "Worked Example 9.1.1(b) Pr(F u C)",
+      "expression": "Rational(32, 40)",
+      "expected": "4/5"
+    },
+    {
+      "id": "NYT9_1_1a",
+      "description": "Now You Try 9.1.1(a) neither",
+      "expression": "30 - (17 + 14 - 6)",
+      "expected": 5
+    },
+    {
+      "id": "WE9_1_2b",
+      "description": "Worked Example 9.1.2(b) Pr(T' n U')",
+      "expression": "Rational((100 - 60) - (45 - 28), 100)",
+      "expected": 0.23
+    },
+    {
+      "id": "NYT9_1_2",
+      "description": "Now You Try 9.1.2 Pr(T u U)",
+      "expression": "1 - Rational(23, 100)",
+      "expected": 0.77
+    },
+    {
+      "id": "WE9_1_3b",
+      "description": "Worked Example 9.1.3(b)",
+      "expression": "Rational(3, 12)",
+      "expected": "1/4"
+    },
+    {
+      "id": "WE9_1_3c",
+      "description": "Worked Example 9.1.3(c)",
+      "expression": "1 - Rational(1, 12)",
+      "expected": "11/12"
+    },
+    {
+      "id": "EX9_1_Q1",
+      "description": "Exercise 9.1 Q1 complement",
+      "expression": "1 - Rational(38, 100)",
+      "expected": 0.62
+    },
+    {
+      "id": "EX9_1_Q2",
+      "description": "Exercise 9.1 Q2 Pr(Yellow)",
+      "expression": "1 - (Rational(1, 4) + Rational(3, 10) + Rational(1, 5))",
+      "expected": "1/4"
+    },
+    {
+      "id": "EX9_1_Q3a",
+      "description": "Exercise 9.1 Q3(a) union",
+      "expression": "Rational(55, 100) + Rational(40, 100) - Rational(20, 100)",
+      "expected": 0.75
+    },
+    {
+      "id": "EX9_1_Q3b",
+      "description": "Exercise 9.1 Q3(b) neither",
+      "expression": "1 - Rational(75, 100)",
+      "expected": 0.25
+    },
+    {
+      "id": "EX9_1_Q4",
+      "description": "Exercise 9.1 Q4 mutually exclusive union",
+      "expression": "Rational(32, 100) + Rational(45, 100)",
+      "expected": 0.77
+    },
+    {
+      "id": "EX9_1_Q5d",
+      "description": "Exercise 9.1 Q5(d) Pr(A u B)",
+      "expression": "Rational(6 + 5 - 1, 20)",
+      "expected": "1/2"
+    },
+    {
+      "id": "EX9_1_Q7a",
+      "description": "Exercise 9.1 Q7(a) both flat white and croissant",
+      "expression": "52 + 36 - (80 - 12)",
+      "expected": 20
+    },
+    {
+      "id": "EX9_1_Q7b",
+      "description": "Exercise 9.1 Q7(b) Pr(flat white only)",
+      "expression": "Rational(52 - 20, 80)",
+      "expected": "2/5"
+    },
+    {
+      "id": "EX9_1_Q8b",
+      "description": "Exercise 9.1 Q8(b) Pr(same colour socks)",
+      "expression": "Rational(5, 8)*Rational(4, 7) + Rational(3, 8)*Rational(2, 7)",
+      "expected": "13/28"
+    },
+    {
+      "id": "EX9_1_Q9b",
+      "description": "Exercise 9.1 Q9(b) Pr(at least one sensor)",
+      "expression": "1 - Rational(10, 100) * Rational(15, 100)",
+      "expected": 0.985
+    }
+  ]
+}

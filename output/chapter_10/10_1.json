@@ -1,0 +1,404 @@
+{
+  "metadata": {
+    "section_id": "10_1",
+    "section_code": "10A",
+    "chapter_number": 10,
+    "chapter_title": "Statistics and Data Analysis",
+    "title": "Data Collection, Summary Statistics and Outliers",
+    "vcaa_code": "VC2M8ST02",
+    "vcaa_description": "Analyse and report on the distribution of data from primary and secondary sources using summary statistics and displays, describing the effect of outliers.",
+    "strand": "Statistics",
+    "target_mastery": "Distinguish between a census and a sample, identify sources of sampling bias, calculate the mean, median, mode, and range from raw data and frequency tables, and explain how outliers affect measures of centre and spread.",
+    "prerequisites": [
+      "Calculating the mean, median, mode, and range of small data sets",
+      "Ordering rational numbers and reading frequency tables"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Population, Census, and Sample",
+        "definition": "A population is the entire group being studied. A census collects data from every member of the population (such as the 5-yearly ABS Australian Census). A sample is a subset selected to represent the population."
+      },
+      {
+        "term": "Measures of centre (Mean, Median, Mode) and Range",
+        "definition": "The mean ($\\bar{x}$) is the arithmetic average $\\frac{\\sum x}{n}$; the median is the middle score when ordered (at position $\\frac{n+1}{2}$); the mode is the most frequent score; the range is $\\text{maximum} - \\text{minimum}$."
+      },
+      {
+        "term": "Outlier",
+        "definition": "An extreme data value that lies far outside the main cluster of the rest of the distribution."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_1_1",
+      "title": "Primary vs Secondary Data, Census vs Sample, and Sampling Bias",
+      "explanation": "Primary data is collected first-hand by the researcher (e.g., conducting a survey or experiment); secondary data is collected by someone else (e.g., Bureau of Meteorology or Australian Bureau of Statistics reports). To represent a population without bias, a sample must be chosen randomly and be sufficiently large. Biased sampling occurs when certain groups are systematically over- or under-represented (e.g., surveying only people at a gym about Australians' weekly exercise).",
+      "formula_latex": "\\text{Representative Random Sample} \\implies \\text{Every member of the population has an equal chance of selection}",
+      "callout_title": "Bigger Biased Samples Are Still Biased",
+      "callout_rule": "A convenience or self-selected sample (like an online poll of one website's readers) cannot be fixed simply by collecting more responses — selection must be random."
+    },
+    {
+      "id": "theory_10_1_2",
+      "title": "Calculating Mean, Median, Mode, and Range from Frequency Tables",
+      "explanation": "In a frequency table where each score $x$ occurs $f$ times, the total number of scores is $n = \\sum f$, and the sum of all scores is $\\sum (f \\times x)$. Therefore, the mean is $\\bar{x} = \\frac{\\sum(fx)}{\\sum f}$. The median is the score at position $\\frac{n + 1}{2}$ when counted through the cumulative frequencies (if $n$ is even, average the two middle scores at positions $\\frac{n}{2}$ and $\\frac{n}{2} + 1$).",
+      "formula_latex": "\\bar{x} = \\frac{\\sum (f \\times x)}{\\sum f}, \\qquad \\text{Median position} = \\frac{n + 1}{2}",
+      "callout_title": "Multiply Each Score by Its Frequency ($f \\times x$)",
+      "callout_rule": "In a frequency table, never divide by the number of rows! Always divide the weighted total $\\sum(fx)$ by the total frequency $\\sum f$."
+    },
+    {
+      "id": "theory_10_1_3",
+      "title": "Shape of a Distribution and the Effect of Outliers",
+      "explanation": "Because the mean $\\bar{x}$ uses the numerical value of every score, a single high outlier pulls the mean strongly upwards (and a low outlier pulls it downwards), and an outlier also inflates the range. By contrast, the median depends only on the order of the middle score(s), so the median is resistant (robust) to outliers and is the preferred measure of centre for skewed data such as house prices or incomes.",
+      "formula_latex": "\\text{Skewed data or outliers present} \\implies \\text{Use the Median (resistant) instead of the Mean}",
+      "callout_title": "Why News Reports Quote 'Median House Price'",
+      "callout_rule": "A single $\\$15\\text{ million}$ mansion sold on a street in Toorak or Brighton dramatically inflates the mean house price, whereas the median house price barely moves."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_1_1",
+      "title": "Summary Statistics and the Effect of an Outlier",
+      "difficulty": "Fluency",
+      "problem": "Daily maximum temperatures ($^\\circ\\text{C}$) in Mildura over $7$ days were recorded as: $24, 21, 25, 22, 24, 23, 43$ (where $43^\\circ\\text{C}$ was an extreme hot-spell outlier). (a) Find the mode, range, median, and mean of all $7$ temperatures. (b) If the outlier $43^\\circ\\text{C}$ is removed (leaving $6$ days), find the new median and new mean, and compare how much each changed.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Order all $7$ scores from smallest to largest: $21, 22, 23, 24, 24, 25, 43$. With $n = 7$, the median is at position $\\frac{7 + 1}{2} = 4$ (the $4$th score).",
+          "working": "$$\\text{Ordered: } 21, 22, 23, \\mathbf{24}, 24, 25, 43$$\n$$\\text{Mode} = 24^\\circ\\text{C}, \\quad \\text{Range} = 43 - 21 = 22^\\circ\\text{C}, \\quad \\text{Median} = 24^\\circ\\text{C}$$\n$$\\text{Mean } \\bar{x} = \\frac{21 + 22 + 23 + 24 + 24 + 25 + 43}{7} = \\frac{182}{7} = 26^\\circ\\text{C}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Remove $43$ to leave the $6$ ordered scores $21, 22, 23, 24, 24, 25$. Average the $3$rd and $4$th scores for the new median, and divide the sum $182 - 43 = 139$ by $6$ for the new mean.",
+          "working": "$$\\text{New Median} = \\frac{23 + 24}{2} = 23.5^\\circ\\text{C} \\quad (\\text{changed by only } 0.5^\\circ\\text{C})$$\n$$\\text{New Mean} = \\frac{139}{6} = 23\\frac{1}{6}^\\circ\\text{C} \\approx 23.17^\\circ\\text{C} \\quad (\\text{changed by } 2.83^\\circ\\text{C})$$"
+        }
+      ],
+      "final_answer": "(a) Mode $= 24^\\circ\\text{C}$, Range $= 22^\\circ\\text{C}$, Median $= 24^\\circ\\text{C}$, Mean $= 26^\\circ\\text{C}$; (b) Without the outlier, New Median $= 23.5^\\circ\\text{C}$ and New Mean $\\approx 23.17^\\circ\\text{C}$ (the mean was pulled up much more strongly by the outlier than the median)",
+      "now_you_try": {
+        "problem": "Six Melbourne property auction prices (in thousands of dollars) on a Saturday are: $720, 750, 750, 780, 800, 2200$. Find (a) the median price and (b) the mean price.",
+        "hint": "The data is already ordered! Average the $3$rd and $4$th values for the median.",
+        "working_summary": "(a) $\\text{Median} = \\frac{750 + 780}{2} = \\$765\\text{k}$; (b) $\\text{Mean} = \\frac{6000}{6} = \\$1000\\text{k}$ ($\\$1\\text{ million}$).",
+        "answer": "(a) $\\$765\\,000$, (b) $\\$1\\,000\\,000$"
+      }
+    },
+    {
+      "id": "WE10_1_2",
+      "title": "Calculating Mean, Median, Mode, and Range from a Frequency Table",
+      "difficulty": "Understanding",
+      "problem": "The number of goals kicked per match by an AFL forward over $20$ games is given in the frequency table: $(x = 0, f = 2)$, $(x = 1, f = 5)$, $(x = 2, f = 7)$, $(x = 3, f = 4)$, $(x = 4, f = 2)$. Find the mode, range, median, and mean number of goals per game.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The mode is the score $x$ with the highest frequency ($f = 7$ at $x = 2$). The range is $x_{\\max} - x_{\\min} = 4 - 0 = 4$. With $n = 20$ games, the median is the average of the $10$th and $11$th scores: cumulative frequencies are $2$ (up to $x = 0$), $2 + 5 = 7$ (up to $x = 1$), and $7 + 7 = 14$ (up to $x = 2$), so both the $10$th and $11$th scores equal $2$.",
+          "working": "$$\\text{Mode} = 2\\text{ goals}, \\qquad \\text{Range} = 4 - 0 = 4\\text{ goals}, \\qquad \\text{Median} = 2\\text{ goals}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Calculate $\\sum(fx)$ and divide by $\\sum f = 20$ to find the mean.",
+          "working": "$$\\sum(fx) = (0 \\times 2) + (1 \\times 5) + (2 \\times 7) + (3 \\times 4) + (4 \\times 2) = 0 + 5 + 14 + 12 + 8 = 39$$\n$$\\bar{x} = \\frac{39}{20} = 1.95\\text{ goals per game}$$"
+        }
+      ],
+      "final_answer": "Mode $= 2$, Range $= 4$, Median $= 2$, Mean $= 1.95$ goals per game",
+      "now_you_try": {
+        "problem": "In $10$ quizzes (marked out of $5$), a student's scores are: $(x = 3, f = 3)$, $(x = 4, f = 5)$, $(x = 5, f = 2)$. Find the mode, median, and mean.",
+        "hint": "Find $\\sum(fx) = 3(3) + 4(5) + 5(2)$ and divide by $10$.",
+        "working_summary": "Mode $= 4$; $5$th and $6$th scores are both $4$ so Median $= 4$; $\\sum(fx) = 9 + 20 + 10 = 39 \\implies \\bar{x} = 3.9$.",
+        "answer": "Mode $= 4$, Median $= 4$, Mean $= 3.9$"
+      }
+    },
+    {
+      "id": "WE10_1_3",
+      "title": "Finding a Missing Score from a Target Mean",
+      "difficulty": "Problem-Solving",
+      "problem": "Maya has scored $74, 81, 68$, and $85$ on her first four Year 8 Maths tests. What score $x$ must she achieve on her fifth test so that her mean score across all $5$ tests is $80$?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "If the mean of $5$ tests is $80$, then the total sum of all $5$ test scores must equal $5 \\times 80 = 400$.",
+          "working": "$$\\text{Required total} = 5 \\times 80 = 400$$\n$$\\text{Sum of first 4 tests} = 74 + 81 + 68 + 85 = 308$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Subtract the sum of the first $4$ tests from the required total of $400$.",
+          "working": "$$x = 400 - 308 = 92$$"
+        }
+      ],
+      "final_answer": "$92$",
+      "now_you_try": {
+        "problem": "The mean mass of $4$ kelpie puppies is $6.5\\text{ kg}$. When a $5$th puppy joins the group, the mean mass of all $5$ puppies becomes $6.8\\text{ kg}$. What is the mass of the $5$th puppy?",
+        "hint": "Compare the total mass of $5$ puppies ($5 \\times 6.8$) with the total mass of $4$ puppies ($4 \\times 6.5$).",
+        "working_summary": "$5 \\times 6.8 - 4 \\times 6.5 = 34 - 26 = 8\\text{ kg}$.",
+        "answer": "$8\\text{ kg}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_10_1_1",
+      "title": "Forgetting to Order the Data Before Finding the Median",
+      "misconception": "Picking the middle number in the raw, unsorted list as the median.",
+      "correct_concept": "The median is a positional measure of centre, so the scores MUST be sorted in ascending (or descending) order before locating the middle position $\\frac{n+1}{2}$.",
+      "incorrect_working": "$$\\text{Data: } 18, 12, 30, 14, 15 \\implies \\text{Middle number written is } 30 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{Ordered: } 12, 14, \\mathbf{15}, 18, 30 \\implies \\text{Median} = 15$$",
+      "counter_example": "$30$ is actually the maximum score of the set, not the middle score!"
+    },
+    {
+      "id": "misc_10_1_2",
+      "title": "Confusing the Highest Frequency With the Mode in a Frequency Table",
+      "misconception": "Stating the highest frequency $f_{\\max}$ as the mode instead of the score $x$ that has that highest frequency.",
+      "correct_concept": "The mode is a data value (from the $x$ column), whereas the frequency $f$ only tells you how many times that score occurred.",
+      "incorrect_working": "$$\\text{Score } x = 2 \\text{ goals occurs } f = 9 \\text{ times} \\implies \\text{Mode} = 9 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{Highest frequency is } f = 9, \\text{ which corresponds to } x = 2 \\implies \\text{Mode} = 2\\text{ goals}$$",
+      "counter_example": "If no player ever kicked more than $4$ goals in a match, the modal number of goals cannot be $9$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_1_Q1",
+        "question": "Find the mean, median, mode, and range of the following $9$ scores: $14, 9, 12, 17, 12, 8, 15, 12, 18$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "Mean $= 13$, Median $= 12$, Mode $= 12$, Range $= 10$",
+        "step_by_step_solution": [
+          "Order the $9$ scores: $8, 9, 12, 12, \\mathbf{12}, 14, 15, 17, 18$. The $5$th score is Median $= 12$, the most frequent score is Mode $= 12$, and Range $= 18 - 8 = 10$.",
+          "Sum the scores: $8 + 9 + 12 + 12 + 12 + 14 + 15 + 17 + 18 = 117$. Mean $= \\frac{117}{9} = 13$."
+        ]
+      },
+      {
+        "id": "10_1_Q2",
+        "question": "Find the mean, median, and range of the following $8$ even-numbered scores: $11, 19, 14, 22, 16, 10, 25, 19$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "Mean $= 17$, Median $= 17.5$, Range $= 15$",
+        "step_by_step_solution": [
+          "Order the $8$ scores: $10, 11, 14, \\mathbf{16, 19}, 19, 22, 25$. Average the $4$th and $5$th scores: $\\text{Median} = \\frac{16 + 19}{2} = 17.5$, and $\\text{Range} = 25 - 10 = 15$.",
+          "Sum the scores: $10 + 11 + 14 + 16 + 19 + 19 + 22 + 25 = 136$. Mean $= \\frac{136}{8} = 17$."
+        ]
+      },
+      {
+        "id": "10_1_Q3",
+        "question": "The number of siblings of $25$ Year 8 students is recorded in a frequency table: $(x = 0, f = 4)$, $(x = 1, f = 11)$, $(x = 2, f = 6)$, $(x = 3, f = 3)$, $(x = 4, f = 1)$. Find (a) the mode, (b) the median, and (c) the mean number of siblings.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "(a) Mode $= 1$, (b) Median $= 1$, (c) Mean $= 1.44$",
+        "step_by_step_solution": [
+          "The highest frequency is $f = 11$ at $x = 1$ (Mode $= 1$). With $n = 25$, the median is at position $\\frac{25 + 1}{2} = 13$; cumulative frequencies are $4$ (at $x = 0$) and $4 + 11 = 15$ (at $x = 1$), so the $13$th score is $1$.",
+          "Calculate $\\sum(fx) = 0(4) + 1(11) + 2(6) + 3(3) + 4(1) = 36$, so $\\bar{x} = \\frac{36}{25} = 1.44$."
+        ]
+      },
+      {
+        "id": "10_1_Q4",
+        "question": "State whether each investigation is a **census** or a **sample**, and whether the data is **primary** or **secondary**: (a) A school principal surveys every Year 8 student at the school about uniform preferences. (b) A student downloads $20$ years of Melbourne rainfall records from the Bureau of Meteorology website.",
+        "difficulty": "Easy",
+        "context": "Data Collection Concepts",
+        "final_answer": "(a) Census, primary data; (b) Sample (of historical weather), secondary data",
+        "step_by_step_solution": [
+          "In (a), surveying every member of the target population (all Year 8 students at the school) first-hand is a census using primary data.",
+          "In (b), using 20 years of records collected by another organisation (the Bureau of Meteorology) is a sample of secondary data."
+        ]
+      },
+      {
+        "id": "10_1_Q5",
+        "question": "Five parcels have a mean mass of $4.6\\text{ kg}$. Four of the parcels have masses $3.8\\text{ kg}, 5.1\\text{ kg}, 4.2\\text{ kg}$, and $4.0\\text{ kg}$. Find the mass of the fifth parcel.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$5.9\\text{ kg}$",
+        "step_by_step_solution": [
+          "Total mass of all $5$ parcels $= 5 \\times 4.6 = 23.0\\text{ kg}$.",
+          "Sum of the $4$ known parcels $= 3.8 + 5.1 + 4.2 + 4.0 = 17.1\\text{ kg}$, so the fifth parcel is $23.0 - 17.1 = 5.9\\text{ kg}$."
+        ]
+      },
+      {
+        "id": "10_1_Q6",
+        "question": "A stem-and-leaf plot (where $3 \\mid 4$ means $34$) displays the ages of $11$ bowls club members: $2 \\mid 8$; $5 \\mid 2, 4, 5, 8$; $6 \\mid 0, 1, 3, 3, 7$; $7 \\mid 1$. Identify the outlier, and calculate the range both with and without the outlier.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "Outlier $= 28$; Range with outlier $= 43$, Range without outlier $= 19$",
+        "step_by_step_solution": [
+          "The score $28$ lies far below the main cluster ($52$ to $71$), so $28$ is an outlier.",
+          "Range with outlier $= 71 - 28 = 43$; Range without outlier $= 71 - 52 = 19$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_1_Q7",
+        "question": "In a Sheffield Shield cricket innings, $8$ batters scored: $32, 45, 28, 38, 41, 36, 40$, and $180$ (an unbeaten century). (a) Calculate the mean and median of all $8$ scores. (b) Which measure of centre better represents the typical score of the majority of batters in this innings, and why?",
+        "difficulty": "Medium",
+        "context": "Australian Cricket Statistics",
+        "final_answer": "(a) Mean $= 55$, Median $= 39$; (b) The median ($39$) is much more representative because $7$ of the $8$ batters scored between $28$ and $45$, whereas the outlier ($180$) inflates the mean to $55$ (higher than $7$ out of $8$ batters!)",
+        "step_by_step_solution": [
+          "Order the $8$ scores: $28, 32, 36, \\mathbf{38, 40}, 41, 45, 180$. Median $= \\frac{38 + 40}{2} = 39$, and Mean $= \\frac{440}{8} = 55$.",
+          "Because the high outlier ($180$) pulls the mean ($55$) above $7$ of the $8$ individual scores, the median ($39$) is a much fairer summary of the typical batter's score."
+        ]
+      },
+      {
+        "id": "10_1_Q8",
+        "question": "In a school basketball tournament, Team A has $10$ players with a mean height of $172\\text{ cm}$, and Team B has $15$ players with a mean height of $167\\text{ cm}$. Find the combined mean height of all $25$ players.",
+        "difficulty": "Challenging",
+        "context": "Weighted Means",
+        "final_answer": "$169\\text{ cm}$",
+        "step_by_step_solution": [
+          "Find the total height of each team: Team A sum $= 10 \\times 172 = 1720\\text{ cm}$, and Team B sum $= 15 \\times 167 = 2505\\text{ cm}$.",
+          "Divide the combined sum by all $25$ players: $\\bar{x}_{\\text{combined}} = \\frac{1720 + 2505}{25} = \\frac{4225}{25} = 169\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "10_1_Q9",
+        "question": "A frequency table of the number of coffees bought per day by $20$ office workers has a missing frequency $k$ for $x = 3$ coffees: $(x = 0, f = 2)$, $(x = 1, f = 6)$, $(x = 2, f = 7)$, $(x = 3, f = k)$, $(x = 4, f = 1)$. Find the value of $k$ and calculate the mean number of coffees per day.",
+        "difficulty": "Medium",
+        "context": "Workplace Survey",
+        "final_answer": "$k = 4$, Mean $= 1.8$ coffees per day",
+        "step_by_step_solution": [
+          "Since the total frequency is $20$: $2 + 6 + 7 + k + 1 = 20 \\implies 16 + k = 20 \\implies k = 4$.",
+          "Calculate $\\sum(fx) = 0(2) + 1(6) + 2(7) + 3(4) + 4(1) = 36$, giving $\\bar{x} = \\frac{36}{20} = 1.8$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_1_Q10",
+        "question": "A local council wants to estimate what proportion of residents support building a new skate park. They survey $150$ teenagers at the existing skate park on Saturday afternoon. Identify two distinct sources of sampling bias in this method and suggest a better sampling design.",
+        "difficulty": "Medium",
+        "context": "Evaluating Sampling Bias",
+        "final_answer": "Bias 1: Location bias (surveying at a skate park selects people who already skate). Bias 2: Age/time bias (surveying teenagers on Saturday afternoon excludes older ratepayers, families, and weekend workers). Better: a random sample of households drawn from the municipal electoral/rates roll.",
+        "step_by_step_solution": [
+          "Surveying teenagers at an existing skate park introduces severe selection bias because skate park users and teenagers are overwhelmingly more likely to favour a new skate park than the general council population.",
+          "A representative design would select a random sample of residents across all age groups and suburbs from the council's residential database."
+        ]
+      },
+      {
+        "id": "10_1_Q11",
+        "question": "Construct a data set of $5$ positive integers that satisfies all three conditions simultaneously: Mode $= 4$, Median $= 6$, and Mean $= 7$. Show your reasoning.",
+        "difficulty": "Challenging",
+        "context": "Constructing Data Sets with Constraints",
+        "final_answer": "$4, 4, 6, 9, 12$ (or $4, 4, 6, 10, 11$ or $4, 4, 6, 8, 13$)",
+        "step_by_step_solution": [
+          "For $5$ ordered scores $a \\le b \\le c \\le d \\le e$: Median $= 6$ means the $3$rd score is $c = 6$. Mode $= 4$ means $4$ must appear at least twice, forcing $a = 4$ and $b = 4$.",
+          "Mean $= 7$ means the sum of all $5$ scores is $5 \\times 7 = 35$. Since $4 + 4 + 6 = 14$, we need $d + e = 21$ with $6 < d < e$ (so $4$ remains the unique mode), e.g., $d = 9$ and $e = 12$, giving $4, 4, 6, 9, 12$."
+        ]
+      },
+      {
+        "id": "10_1_Q12",
+        "question": "Suppose every score in a data set $x_1, x_2, \\dots, x_n$ is increased by a constant $c = 10$. Prove algebraically (or explain clearly) that the mean, median, and mode all increase by $10$, whereas the range remains completely unchanged.",
+        "difficulty": "Extension",
+        "context": "Properties of Summary Statistics under Translation",
+        "final_answer": "Every score shifts up by $10$, so the middle score (median), most frequent score (mode), and average $\\frac{\\sum(x_i + 10)}{n} = \\bar{x} + 10$ all increase by $10$; the range $(x_{\\max} + 10) - (x_{\\min} + 10) = x_{\\max} - x_{\\min}$ is unchanged",
+        "step_by_step_solution": [
+          "Adding $10$ to each of the $n$ scores adds $10n$ to the total sum, so the new mean is $\\frac{\\sum x_i + 10n}{n} = \\bar{x} + 10$; the middle and most frequent values also shift up by $10$.",
+          "In the range, both the maximum and minimum increase by $10$, so the $+10$ cancels out in subtraction: $(x_{\\max} + 10) - (x_{\\min} + 10) = x_{\\max} - x_{\\min}$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_1_1a_range",
+      "description": "Worked Example 10.1.1(a) range",
+      "expression": "43 - 21",
+      "expected": 22
+    },
+    {
+      "id": "WE10_1_1a_mean",
+      "description": "Worked Example 10.1.1(a) mean",
+      "expression": "(21 + 22 + 23 + 24 + 24 + 25 + 43) / 7",
+      "expected": 26
+    },
+    {
+      "id": "WE10_1_1b_median",
+      "description": "Worked Example 10.1.1(b) new median",
+      "expression": "(23 + 24) / 2",
+      "expected": 23.5
+    },
+    {
+      "id": "NYT10_1_1a",
+      "description": "Now You Try 10.1.1(a) median",
+      "expression": "(750 + 780) / 2",
+      "expected": 765
+    },
+    {
+      "id": "NYT10_1_1b",
+      "description": "Now You Try 10.1.1(b) mean",
+      "expression": "(720 + 750 + 750 + 780 + 800 + 2200) / 6",
+      "expected": 1000
+    },
+    {
+      "id": "WE10_1_2_mean",
+      "description": "Worked Example 10.1.2 mean from frequency table",
+      "expression": "(0*2 + 1*5 + 2*7 + 3*4 + 4*2) / 20",
+      "expected": 1.95
+    },
+    {
+      "id": "NYT10_1_2_mean",
+      "description": "Now You Try 10.1.2 mean",
+      "expression": "(3*3 + 4*5 + 5*2) / 10",
+      "expected": 3.9
+    },
+    {
+      "id": "WE10_1_3",
+      "description": "Worked Example 10.1.3 5th test score",
+      "expression": "5 * 80 - (74 + 81 + 68 + 85)",
+      "expected": 92
+    },
+    {
+      "id": "NYT10_1_3",
+      "description": "Now You Try 10.1.3 5th puppy mass",
+      "expression": "5 * Rational(68, 10) - 4 * Rational(65, 10)",
+      "expected": 8
+    },
+    {
+      "id": "EX10_1_Q1_mean",
+      "description": "Exercise 10.1 Q1 mean",
+      "expression": "(8 + 9 + 12 + 12 + 12 + 14 + 15 + 17 + 18) / 9",
+      "expected": 13
+    },
+    {
+      "id": "EX10_1_Q2_mean",
+      "description": "Exercise 10.1 Q2 mean",
+      "expression": "(10 + 11 + 14 + 16 + 19 + 19 + 22 + 25) / 8",
+      "expected": 17
+    },
+    {
+      "id": "EX10_1_Q2_median",
+      "description": "Exercise 10.1 Q2 median",
+      "expression": "(16 + 19) / 2",
+      "expected": 17.5
+    },
+    {
+      "id": "EX10_1_Q3c",
+      "description": "Exercise 10.1 Q3(c) mean siblings",
+      "expression": "(0*4 + 1*11 + 2*6 + 3*3 + 4*1) / 25",
+      "expected": 1.44
+    },
+    {
+      "id": "EX10_1_Q5",
+      "description": "Exercise 10.1 Q5 fifth parcel",
+      "expression": "5 * Rational(46, 10) - (Rational(38, 10) + Rational(51, 10) + Rational(42, 10) + 4)",
+      "expected": 5.9
+    },
+    {
+      "id": "EX10_1_Q7_mean",
+      "description": "Exercise 10.1 Q7 cricket mean",
+      "expression": "(28 + 32 + 36 + 38 + 40 + 41 + 45 + 180) / 8",
+      "expected": 55
+    },
+    {
+      "id": "EX10_1_Q8",
+      "description": "Exercise 10.1 Q8 combined mean height",
+      "expression": "(10 * 172 + 15 * 167) / 25",
+      "expected": 169
+    },
+    {
+      "id": "EX10_1_Q9_mean",
+      "description": "Exercise 10.1 Q9 mean coffees",
+      "expression": "(0*2 + 1*6 + 2*7 + 3*4 + 4*1) / 20",
+      "expected": 1.8
+    },
+    {
+      "id": "EX10_1_Q11",
+      "description": "Exercise 10.1 Q11 constructed set mean",
+      "expression": "(4 + 4 + 6 + 9 + 12) / 5",
+      "expected": 7
+    }
+  ]
+}

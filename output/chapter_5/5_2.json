@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "section_id": "5_2",
+    "section_code": "5B",
+    "chapter_number": 5,
+    "chapter_title": "Algebraic Techniques",
+    "title": "Expanding Brackets and Factorising Linear Expressions",
+    "vcaa_code": "VC2M8A01",
+    "vcaa_description": "Create, expand, factorise, rearrange and simplify linear expressions, applying the associative, commutative, identity, distributive and inverse properties.",
+    "strand": "Algebra",
+    "target_mastery": "Apply the distributive law to expand single and multiple bracketed terms (including negative multipliers) and factorise algebraic expressions by extracting the Highest Common Factor (HCF).",
+    "prerequisites": [
+      "Collecting like terms and multiplying algebraic terms (Section 5A)",
+      "Highest Common Factor of integers (Section 1D)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Distributive law",
+        "definition": "Multiplying a sum or difference inside brackets by an outside factor multiplies every term inside the brackets by that factor: $a(b + c) = ab + ac$."
+      },
+      {
+        "term": "Expanding",
+        "definition": "Rewriting a bracketed algebraic expression as a sum or difference of terms without brackets."
+      },
+      {
+        "term": "Factorising",
+        "definition": "The inverse of expanding: rewriting a sum of terms as a product by extracting the Highest Common Factor (HCF) outside brackets."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_5_2_1",
+      "title": "The Distributive Law and Expanding Brackets",
+      "explanation": "Geometrically, a rectangle of height $a$ and split width $(b + c)$ has total area $a(b + c)$, which equals the sum of the two smaller rectangular areas $ab + ac$. When the term outside the brackets is negative, multiplying each inside term by that negative factor reverses the sign of every term inside the brackets.",
+      "formula_latex": "a(b + c) = ab + ac, \\quad -a(b - c) = -ab + ac",
+      "callout_title": "Negative Outside Flips Every Sign Inside",
+      "callout_rule": "When expanding $-3(2x - 5)$, multiply $-3$ by BOTH $+2x$ and $-5$: $-3(2x) + (-3)(-5) = -6x + 15$. A standalone minus sign in front of brackets means $-1$: $-(x - 4) = -x + 4$."
+    },
+    {
+      "id": "theory_5_2_2",
+      "title": "Expanding and Collecting Like Terms",
+      "explanation": "When an expression contains two or more bracketed groups, expand each bracket separately (keeping careful track of the sign attached to each outside multiplier) and then simplify by collecting like terms.",
+      "formula_latex": "4(2x - 1) - 3(x - 5) = 8x - 4 - 3x + 15 = 5x + 11",
+      "callout_title": "Treat the Sign in Front of the Multiplier as Part of It",
+      "callout_rule": "In $4(2x - 1) - 3(x - 5)$, the second multiplier is $(-3)$, not $+3$."
+    },
+    {
+      "id": "theory_5_2_3",
+      "title": "Factorising Linear and Quadratic-Term Expressions Using the HCF",
+      "explanation": "Factorising is the reverse process of expanding. First find the Highest Common Factor (HCF) of both the numerical coefficients and the pronumeral parts across all terms. Place the HCF in front of a pair of brackets, and divide each original term by the HCF to obtain the terms inside the brackets. If the leading term is negative, factor out a negative HCF.",
+      "formula_latex": "12x^2 - 18x = 6x(2x - 3), \\quad -8a - 20 = -4(2a + 5)",
+      "callout_title": "Expand Mentally to Check Every Factorisation",
+      "callout_rule": "You can always verify a factorisation immediately by expanding your brackets mentally to check that it reproduces the original expression!"
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE5_2_1",
+      "title": "Expanding Brackets with Positive and Negative Multipliers",
+      "difficulty": "Fluency",
+      "problem": "Expand: (a) $5(3x - 4)$ and (b) $-4a(2a - 7)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), multiply both $3x$ and $-4$ inside the brackets by $5$.",
+          "working": "$$5(3x - 4) = 5(3x) + 5(-4) = 15x - 20$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), multiply both $2a$ and $-7$ by $-4a$. Note that $(-4a) \\times (-7) = +28a$.",
+          "working": "$$-4a(2a - 7) = (-4a)(2a) + (-4a)(-7) = -8a^2 + 28a$$"
+        }
+      ],
+      "final_answer": "(a) $15x - 20$, (b) $-8a^2 + 28a$",
+      "now_you_try": {
+        "problem": "Expand: (a) $6(4m - 5)$ and (b) $-3x(5x - 2)$.",
+        "hint": "Be careful with $(-3x) \\times (-2) = +6x$ in part (b).",
+        "working_summary": "(a) $24m - 30$; (b) $-15x^2 + 6x$.",
+        "answer": "(a) $24m - 30$, (b) $-15x^2 + 6x$"
+      }
+    },
+    {
+      "id": "WE5_2_2",
+      "title": "Expanding Two Brackets and Simplifying",
+      "difficulty": "Understanding",
+      "problem": "Expand and simplify $3(4x - 3) - 2(5x - 6)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Expand the first bracket by multiplying by $+3$, and the second bracket by multiplying by $-2$ (note that $-2 \\times (-6) = +12$).",
+          "working": "$$3(4x - 3) - 2(5x - 6) = 12x - 9 - 10x + 12$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Collect the like terms in $x$ ($12x - 10x$) and the constant terms ($-9 + 12$).",
+          "working": "$$= (12x - 10x) + (-9 + 12) = 2x + 3$$"
+        }
+      ],
+      "final_answer": "$2x + 3$",
+      "now_you_try": {
+        "problem": "Expand and simplify $5(2y + 3) - 4(3y - 2)$.",
+        "hint": "Multiplying $-4 \\times (-2)$ gives $+8$.",
+        "working_summary": "$10y + 15 - 12y + 8 = -2y + 23$.",
+        "answer": "$-2y + 23$"
+      }
+    },
+    {
+      "id": "WE5_2_3",
+      "title": "Factorising by Extracting Positive and Negative HCFs",
+      "difficulty": "Understanding",
+      "problem": "Factorise completely: (a) $18m^2 - 24mn$ and (b) $-15x - 25$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), $\\text{HCF}(18, 24) = 6$ and the common pronumeral factor is $m$, so the algebraic HCF is $6m$. Divide each term by $6m$.",
+          "working": "$$18m^2 - 24mn = 6m(3m - 4n)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), both terms are negative, so extract the negative HCF $-5$. Dividing $-25$ by $-5$ gives $+5$ inside the brackets.",
+          "working": "$$-15x - 25 = -5(3x + 5)$$"
+        }
+      ],
+      "final_answer": "(a) $6m(3m - 4n)$, (b) $-5(3x + 5)$",
+      "now_you_try": {
+        "problem": "Factorise completely: (a) $20a^2 + 12ab$ and (b) $-14y - 21$.",
+        "hint": "Extract $4a$ in (a) and $-7$ in (b).",
+        "working_summary": "(a) $4a(5a + 3b)$; (b) $-7(2y + 3)$.",
+        "answer": "(a) $4a(5a + 3b)$, (b) $-7(2y + 3)$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_5_2_1",
+      "title": "Forgetting to Multiply the Second Term Inside the Brackets",
+      "misconception": "Expanding $4(x + 5)$ as $4x + 5$, multiplying only the first term by $4$.",
+      "correct_concept": "The outside factor $4$ multiplies the ENTIRE bracketed sum $(x + 5)$, so both $x$ and $5$ must be multiplied by $4$: $4(x + 5) = 4x + 20$.",
+      "incorrect_working": "$$4(x + 5) = 4x + 5 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$4(x + 5) = 4x + 20 \\quad (\\text{Correct})$$",
+      "counter_example": "If $x = 2$, $4(2 + 5) = 4 \\times 7 = 28$, whereas $4(2) + 5 = 13 \\neq 28$."
+    },
+    {
+      "id": "MISC_5_2_2",
+      "title": "Failing to Flip the Second Sign When Expanding a Negative Multiplier",
+      "misconception": "Writing $-3(x - 4) = -3x - 12$, forgetting that $(-3) \\times (-4) = +12$.",
+      "correct_concept": "A negative multiplier changes the sign of every term inside the brackets: $-3(x - 4) = -3x + 12$.",
+      "incorrect_working": "$$-3(x - 4) = -3x - 12 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$-3(x - 4) = (-3)(x) + (-3)(-4) = -3x + 12 \\quad (\\text{Correct})$$",
+      "counter_example": "If $x = 4$, then $-3(4 - 4) = -3(0) = 0$. Using $-3x + 12$ gives $-12 + 12 = 0$, whereas $-3x - 12$ gives $-24$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "5_2_Q1",
+        "question": "Expand $7(2x - 5)$.",
+        "difficulty": "Easy",
+        "context": "Expanding Brackets",
+        "final_answer": "$14x - 35$",
+        "step_by_step_solution": [
+          "Multiply each term inside the brackets by $7$.",
+          "$7(2x) - 7(5) = 14x - 35$."
+        ]
+      },
+      {
+        "id": "5_2_Q2",
+        "question": "Expand $-5(3a - 4b)$.",
+        "difficulty": "Easy",
+        "context": "Negative Multiplier",
+        "final_answer": "$-15a + 20b$",
+        "step_by_step_solution": [
+          "Multiply $3a$ and $-4b$ by $-5$.",
+          "$(-5)(3a) + (-5)(-4b) = -15a + 20b$."
+        ]
+      },
+      {
+        "id": "5_2_Q3",
+        "question": "Expand and simplify $4(3m + 2) - 5(2m - 3)$.",
+        "difficulty": "Medium",
+        "context": "Expanding Two Brackets",
+        "final_answer": "$2m + 23$",
+        "step_by_step_solution": [
+          "Expand both brackets: $12m + 8 - 10m + 15$.",
+          "Collect like terms: $(12m - 10m) + (8 + 15) = 2m + 23$."
+        ]
+      },
+      {
+        "id": "5_2_Q4",
+        "question": "Factorise completely $24x - 36$.",
+        "difficulty": "Easy",
+        "context": "Linear Factorisation",
+        "final_answer": "$12(2x - 3)$",
+        "step_by_step_solution": [
+          "Find $\\text{HCF}(24, 36) = 12$.",
+          "Extract $12$ outside the brackets: $12(2x - 3)$."
+        ]
+      },
+      {
+        "id": "5_2_Q5",
+        "question": "Factorise completely $-18p^2 - 27pq$.",
+        "difficulty": "Medium",
+        "context": "Negative Algebraic HCF",
+        "final_answer": "$-9p(2p + 3q)$",
+        "step_by_step_solution": [
+          "Both terms are negative with $\\text{HCF}(18, 27) = 9$ and shared pronumeral $p$, so extract $-9p$.",
+          "Divide each term by $-9p$: $-9p(2p + 3q)$."
+        ]
+      },
+      {
+        "id": "5_2_Q6",
+        "question": "Expand and simplify $2x(3x - 4) - 3x(x - 5)$.",
+        "difficulty": "Challenging",
+        "context": "Pronumeral Multipliers",
+        "final_answer": "$3x^2 + 7x$",
+        "step_by_step_solution": [
+          "Expand both brackets: $6x^2 - 8x - 3x^2 + 15x$.",
+          "Collect like terms: $(6x^2 - 3x^2) + (-8x + 15x) = 3x^2 + 7x$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "5_2_Q7",
+        "question": "A rectangular swimming pool in Mildura has width $4\\text{ m}$ and length $(2x + 3)\\text{ m}$. A paved deck along the side has width $3\\text{ m}$ and length $(x + 5)\\text{ m}$. Write an expanded and simplified algebraic expression for the combined area of the pool and deck, and evaluate it when $x = 5\\text{ m}$.",
+        "difficulty": "Medium",
+        "context": "Area Modelling with Brackets",
+        "final_answer": "$11x + 27\\text{ m}^2$; $82\\text{ m}^2$ when $x = 5$",
+        "step_by_step_solution": [
+          "Write the sum of the two rectangular areas: $A = 4(2x + 3) + 3(x + 5)$.",
+          "Expand and collect like terms: $A = 8x + 12 + 3x + 15 = 11x + 27\\text{ m}^2$.",
+          "Substitute $x = 5$: $A = 11(5) + 27 = 55 + 27 = 82\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "5_2_Q8",
+        "question": "A Melbourne school hires $4$ buses for a Year 8 camp. Each bus carries $(3n - 2)$ students and $3$ teachers. Write an expanded expression for the total number of people on the $4$ buses.",
+        "difficulty": "Medium",
+        "context": "School Camp Transport",
+        "final_answer": "$12n + 4$",
+        "step_by_step_solution": [
+          "The number of people on each bus is $(3n - 2) + 3 = 3n + 1$.",
+          "Multiply by $4$ buses and expand: $4(3n + 1) = 12n + 4$."
+        ]
+      },
+      {
+        "id": "5_2_Q9",
+        "question": "A large rectangle of width $5x$ and length $(3x + 4)$ has a smaller rectangular cutout of width $2x$ and length $(x - 3)$ removed from its interior. Find an expanded and simplified expression for the remaining shaded area.",
+        "difficulty": "Challenging",
+        "context": "Composite Area by Subtraction",
+        "final_answer": "$13x^2 + 26x$",
+        "step_by_step_solution": [
+          "Write the difference of the two areas: $A = 5x(3x + 4) - 2x(x - 3)$.",
+          "Expand both products (noting $-2x \\times (-3) = +6x$): $A = 15x^2 + 20x - 2x^2 + 6x$.",
+          "Collect like terms: $A = 13x^2 + 26x$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "5_2_Q10",
+        "question": "A student factorised $12x - 18$ as $3(4x - 6)$. Explain why this factorisation is incomplete and state the fully factorised form.",
+        "difficulty": "Medium",
+        "context": "Complete Factorisation",
+        "final_answer": "$4x$ and $6$ still share a factor of $2$; complete factorisation is $6(2x - 3)$",
+        "step_by_step_solution": [
+          "In $3(4x - 6)$, the terms inside the brackets ($4x$ and $-6$) still share a common factor of $2$, because $3$ is not the Highest Common Factor of $12$ and $18$.",
+          "Extracting $\\text{HCF}(12, 18) = 6$ gives the complete factorisation $6(2x - 3)$."
+        ]
+      },
+      {
+        "id": "5_2_Q11",
+        "question": "Use the distributive law to explain how you can mentally calculate $7 \\times 98$ by writing $98 = 100 - 2$.",
+        "difficulty": "Medium",
+        "context": "Mental Arithmetic via Distributive Law",
+        "final_answer": "$7(100 - 2) = 700 - 14 = 686$",
+        "step_by_step_solution": [
+          "Rewrite $7 \\times 98 = 7 \\times (100 - 2)$.",
+          "Apply the distributive law: $7 \\times 100 - 7 \\times 2 = 700 - 14 = 686$."
+        ]
+      },
+      {
+        "id": "5_2_Q12",
+        "question": "Prove that for any integer $n$, the expression $5(2n + 3) - 2(n - 1) - 1$ is always a multiple of $8$.",
+        "difficulty": "Extension",
+        "context": "Divisibility Proof via Factorisation",
+        "final_answer": "Simplifies to $8n + 16 = 8(n + 2)$, which is a multiple of $8$",
+        "step_by_step_solution": [
+          "Expand the brackets: $5(2n + 3) - 2(n - 1) - 1 = 10n + 15 - 2n + 2 - 1$.",
+          "Collect like terms: $8n + 16$.",
+          "Factor out the HCF of $8$: $8(n + 2)$. Since $n + 2$ is an integer, $8(n + 2)$ is always a multiple of $8$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE5_2_1a",
+      "description": "Worked Example 5.2.1(a)",
+      "expression": "simplify(expand(5*(3*x - 4)) - (15*x - 20))",
+      "expected": 0
+    },
+    {
+      "id": "WE5_2_1b",
+      "description": "Worked Example 5.2.1(b)",
+      "expression": "simplify(expand(-4*a*(2*a - 7)) - (-8*a**2 + 28*a))",
+      "expected": 0
+    },
+    {
+      "id": "NYT5_2_1a",
+      "description": "Now You Try 5.2.1(a)",
+      "expression": "simplify(expand(6*(4*m - 5)) - (24*m - 30))",
+      "expected": 0
+    },
+    {
+      "id": "NYT5_2_1b",
+      "description": "Now You Try 5.2.1(b)",
+      "expression": "simplify(expand(-3*x*(5*x - 2)) - (-15*x**2 + 6*x))",
+      "expected": 0
+    },
+    {
+      "id": "WE5_2_2",
+      "description": "Worked Example 5.2.2",
+      "expression": "simplify(3*(4*x - 3) - 2*(5*x - 6) - (2*x + 3))",
+      "expected": 0
+    },
+    {
+      "id": "NYT5_2_2",
+      "description": "Now You Try 5.2.2",
+      "expression": "simplify(5*(2*y + 3) - 4*(3*y - 2) - (-2*y + 23))",
+      "expected": 0
+    },
+    {
+      "id": "WE5_2_3a",
+      "description": "Worked Example 5.2.3(a)",
+      "expression": "simplify(6*m*(3*m - 4*n) - (18*m**2 - 24*m*n))",
+      "expected": 0
+    },
+    {
+      "id": "WE5_2_3b",
+      "description": "Worked Example 5.2.3(b)",
+      "expression": "simplify(-5*(3*x + 5) - (-15*x - 25))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_2_Q1",
+      "description": "Exercise 5.2 Q1",
+      "expression": "simplify(7*(2*x - 5) - (14*x - 35))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_2_Q2",
+      "description": "Exercise 5.2 Q2",
+      "expression": "simplify(-5*(3*a - 4*b) - (-15*a + 20*b))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_2_Q3",
+      "description": "Exercise 5.2 Q3",
+      "expression": "simplify(4*(3*m + 2) - 5*(2*m - 3) - (2*m + 23))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_2_Q4",
+      "description": "Exercise 5.2 Q4",
+      "expression": "simplify(12*(2*x - 3) - (24*x - 36))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_2_Q5",
+      "description": "Exercise 5.2 Q5",
+      "expression": "simplify(-9*p*(2*p + 3*q) - (-18*p**2 - 27*p*q))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_2_Q6",
+      "description": "Exercise 5.2 Q6",
+      "expression": "simplify(2*x*(3*x - 4) - 3*x*(x - 5) - (3*x**2 + 7*x))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_2_Q7",
+      "description": "Exercise 5.2 Q7 area at x=5",
+      "expression": "4*(2*5 + 3) + 3*(5 + 5)",
+      "expected": 82
+    },
+    {
+      "id": "EX5_2_Q9",
+      "description": "Exercise 5.2 Q9 shaded area",
+      "expression": "simplify(5*x*(3*x + 4) - 2*x*(x - 3) - (13*x**2 + 26*x))",
+      "expected": 0
+    },
+    {
+      "id": "EX5_2_Q11",
+      "description": "Exercise 5.2 Q11 7*98",
+      "expression": "7 * (100 - 2)",
+      "expected": 686
+    },
+    {
+      "id": "EX5_2_Q12",
+      "description": "Exercise 5.2 Q12 multiple of 8",
+      "expression": "simplify(5*(2*n + 3) - 2*(n - 1) - 1 - 8*(n + 2))",
+      "expected": 0
+    }
+  ]
+}

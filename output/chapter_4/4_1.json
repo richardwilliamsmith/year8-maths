@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "section_id": "4_1",
+    "section_code": "4A",
+    "chapter_number": 4,
+    "chapter_title": "Ratios, Rates and Best Buys",
+    "title": "Simplifying Ratios and Dividing in a Ratio",
+    "vcaa_code": "VC2M8M07",
+    "vcaa_description": "Use mathematical modelling to solve practical problems involving ratios, rates and scale, including map scales and unit conversions.",
+    "strand": "Measurement",
+    "target_mastery": "Simplify ratios involving whole numbers, fractions, decimals, and mixed metric units, divide a quantity in a given ratio, and use map scales.",
+    "prerequisites": [
+      "Highest Common Factor (Section 1D) and Lowest Common Multiple",
+      "Metric conversions for length, mass, capacity, and time"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Ratio ($a : b$)",
+        "definition": "A comparison of two or more quantities measured in the same units, written in a specific order using a colon."
+      },
+      {
+        "term": "Simplest form of a ratio",
+        "definition": "A ratio $a : b$ where $a$ and $b$ are whole numbers with no common factor greater than $1$ ($\\text{HCF}(a, b) = 1$)."
+      },
+      {
+        "term": "Scale factor / Map scale",
+        "definition": "A ratio $1 : n$ comparing a drawing or map length to the corresponding real-world length in the same units."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_4_1_1",
+      "title": "Simplifying Ratios (Whole Numbers, Decimals, Fractions, and Mixed Units)",
+      "explanation": "A ratio compares quantities of the same kind and has no units in its simplified form. If the quantities have different units (such as centimetres and metres), first convert both to the smaller unit. To simplify a whole-number ratio $a : b$, divide both parts by $\\text{HCF}(a, b)$. For decimal ratios, multiply by a power of $10$ first; for fraction ratios, multiply both parts by the Lowest Common Denominator.",
+      "formula_latex": "a : b = \\frac{a}{\\text{HCF}(a,b)} : \\frac{b}{\\text{HCF}(a,b)}, \\quad \\frac{a}{b} : \\frac{c}{d} = ad : bc",
+      "callout_title": "Convert to the Smaller Unit First",
+      "callout_rule": "When simplifying $45\\text{ minutes} : 2\\text{ hours}$, convert $2\\text{ hours}$ into $120\\text{ minutes}$ first ($45 : 120 = 3 : 8$) so you work entirely with whole numbers."
+    },
+    {
+      "id": "theory_4_1_2",
+      "title": "Dividing a Quantity in a Given Ratio (Unitary / Total-Parts Method)",
+      "explanation": "To divide a total quantity $Q$ in the ratio $a : b$, first add the parts to find the total number of parts ($a + b$). One part equals $\\frac{Q}{a+b}$, so the two shares are $\\frac{a}{a+b} \\times Q$ and $\\frac{b}{a+b} \\times Q$.",
+      "formula_latex": "\\text{Share}_1 = \\frac{a}{a + b} \\times Q, \\quad \\text{Share}_2 = \\frac{b}{a + b} \\times Q",
+      "callout_title": "Sum of Shares Check",
+      "callout_rule": "Always check that your calculated shares add up to the original total quantity $Q$!"
+    },
+    {
+      "id": "theory_4_1_3",
+      "title": "Map Scales and Scale Drawings",
+      "explanation": "A map scale written as $1 : k$ means $1\\text{ unit}$ on the map represents $k$ of the exact same units in real life. To find the real-world distance, multiply the map distance by $k$ and convert to larger practical units (such as metres or kilometres). To find the map distance, divide the real-world distance by $k$.",
+      "formula_latex": "\\text{Actual Length} = k \\times \\text{Map Length}, \\quad 1\\text{ km} = 1000\\text{ m} = 100\\,000\\text{ cm}",
+      "callout_title": "Centimetres to Kilometres Shortcut",
+      "callout_rule": "Since $1\\text{ m} = 100\\text{ cm}$ and $1\\text{ km} = 1000\\text{ m}$, there are $100 \\times 1000 = 100\\,000\\text{ cm}$ in $1\\text{ km}$ (five zeros)."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE4_1_1",
+      "title": "Simplifying Ratios with Mixed Units and Fractions",
+      "difficulty": "Fluency",
+      "problem": "Simplify the following ratios to simplest whole-number form: (a) $600\\text{ m} : 2.4\\text{ km}$ and (b) $\\dfrac{3}{4} : \\dfrac{5}{6}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), convert $2.4\\text{ km}$ to metres ($2.4 \\times 1000 = 2400\\text{ m}$) so both parts have the same unit, then divide by $\\text{HCF}(600, 2400) = 600$.",
+          "working": "$$600\\text{ m} : 2400\\text{ m} = 600 : 2400 = 1 : 4$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), multiply both fractions by $\\text{LCD}(4, 6) = 12$ to clear the denominators.",
+          "working": "$$\\frac{3}{4} \\times 12 : \\frac{5}{6} \\times 12 = 9 : 10$$"
+        }
+      ],
+      "final_answer": "(a) $1 : 4$, (b) $9 : 10$",
+      "now_you_try": {
+        "problem": "Simplify: (a) $45\\text{ minutes} : 2\\text{ hours}$ and (b) $\\dfrac{2}{3} : \\dfrac{4}{5}$.",
+        "hint": "Convert $2\\text{ hours}$ to $120\\text{ minutes}$ in (a), and multiply by $\\text{LCD}(3, 5) = 15$ in (b).",
+        "working_summary": "(a) $45 : 120 = 3 : 8$; (b) $\\frac{2}{3} \\times 15 : \\frac{4}{5} \\times 15 = 10 : 12 = 5 : 6$.",
+        "answer": "(a) $3 : 8$, (b) $5 : 6$"
+      }
+    },
+    {
+      "id": "WE4_1_2",
+      "title": "Dividing a Quantity in a Three-Part Ratio",
+      "difficulty": "Understanding",
+      "problem": "Concrete for a driveway in Werribee is mixed using cement, sand, and gravel in the ratio $1 : 2 : 5$ by mass. How many kilograms of each material are required to make $400\\text{ kg}$ of dry concrete mix?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Add the ratio parts to find the total number of parts: $1 + 2 + 5 = 8$ parts.",
+          "working": "$$\\text{Total parts} = 1 + 2 + 5 = 8, \\quad \\text{Mass of } 1\\text{ part} = \\frac{400}{8} = 50\\text{ kg}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply each ratio part by $50\\text{ kg}$ and check that the three masses sum to $400\\text{ kg}$.",
+          "working": "$$\\text{Cement} = 1 \\times 50 = 50\\text{ kg}, \\quad \\text{Sand} = 2 \\times 50 = 100\\text{ kg}, \\quad \\text{Gravel} = 5 \\times 50 = 250\\text{ kg}$$"
+        }
+      ],
+      "final_answer": "$50\\text{ kg}$ cement, $100\\text{ kg}$ sand, and $250\\text{ kg}$ gravel",
+      "now_you_try": {
+        "problem": "Three business partners in Bendigo share a profit of $\\$18\\,000$ in the ratio $2 : 3 : 4$. Find the largest share.",
+        "hint": "Total parts $= 2 + 3 + 4 = 9$. The largest share is $4$ parts.",
+        "working_summary": "$1\\text{ part} = 18000 \\div 9 = \\$2000$; largest share $= 4 \\times 2000 = \\$8000$.",
+        "answer": "$\\$8000$"
+      }
+    },
+    {
+      "id": "WE4_1_3",
+      "title": "Using Map Scales in Victorian National Parks",
+      "difficulty": "Problem-Solving",
+      "problem": "A bushwalking map of Wilsons Promontory National Park has a scale of $1 : 50\\,000$. Two campsites are $7.2\\text{ cm}$ apart on the map. Find the actual ground distance between the campsites in kilometres.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Multiply the map distance ($7.2\\text{ cm}$) by the scale factor $50\\,000$ to find the actual distance in centimetres.",
+          "working": "$$\\text{Actual distance} = 7.2 \\times 50\\,000 = 360\\,000\\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Convert centimetres to kilometres by dividing by $100\\,000$ ($100\\text{ cm/m} \\times 1000\\text{ m/km}$).",
+          "working": "$$360\\,000 \\div 100\\,000 = 3.6\\text{ km}$$"
+        }
+      ],
+      "final_answer": "$3.6\\text{ km}$",
+      "now_you_try": {
+        "problem": "On a Grampians walking map with a scale of $1 : 25\\,000$, a trail measures $14\\text{ cm}$. What is the actual length of the trail in kilometres?",
+        "hint": "Multiply $14 \\times 25\\,000$ and divide by $100\\,000$.",
+        "working_summary": "$14 \\times 25\\,000 = 350\\,000\\text{ cm} = 3.5\\text{ km}$.",
+        "answer": "$3.5\\text{ km}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_4_1_1",
+      "title": "Simplifying a Ratio Without Converting to the Same Unit First",
+      "misconception": "Simplifying $20\\text{ cm} : 2\\text{ m}$ as $10 : 1$ by dividing $20$ and $2$ without converting metres to centimetres.",
+      "correct_concept": "Both quantities must be expressed in the same unit before comparing. Since $2\\text{ m} = 200\\text{ cm}$, the ratio is $20\\text{ cm} : 200\\text{ cm} = 1 : 10$.",
+      "incorrect_working": "$$20\\text{ cm} : 2\\text{ m} = 20 : 2 = 10 : 1 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$20\\text{ cm} : 200\\text{ cm} = 20 : 200 = 1 : 10 \\quad (\\text{Correct})$$",
+      "counter_example": "$20\\text{ cm}$ is one-tenth of $2\\text{ m}$, not ten times longer than $2\\text{ m}$!"
+    },
+    {
+      "id": "MISC_4_1_2",
+      "title": "Dividing the Total Quantity by One Ratio Part Instead of the Sum of Parts",
+      "misconception": "When dividing $\\$60$ in the ratio $2 : 3$, dividing $60 \\div 2 = 30$ and $60 \\div 3 = 20$.",
+      "correct_concept": "A ratio $2 : 3$ has $2 + 3 = 5$ equal parts in total, so $1$ part is $60 \\div 5 = \\$12$. The shares are $2 \\times 12 = \\$24$ and $3 \\times 12 = \\$36$.",
+      "incorrect_working": "$$\\frac{60}{2} = 30 \\text{ and } \\frac{60}{3} = 20 \\quad (\\text{Incorrect: } 30 + 20 \\neq 60)$$",
+      "correct_working": "$$\\frac{2}{5} \\times 60 = \\$24 \\text{ and } \\frac{3}{5} \\times 60 = \\$36 \\quad (\\text{Correct: } 24 + 36 = 60)$$",
+      "counter_example": "In $2 : 3$, the second share must be larger than the first share, whereas $60 \\div 3 = 20$ is smaller than $30$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "4_1_Q1",
+        "question": "Simplify the ratio $56 : 84$.",
+        "difficulty": "Easy",
+        "context": "Simplifying Ratios",
+        "final_answer": "$2 : 3$",
+        "step_by_step_solution": [
+          "Find $\\text{HCF}(56, 84) = 28$.",
+          "Divide both parts by $28$: $56 \\div 28 : 84 \\div 28 = 2 : 3$."
+        ]
+      },
+      {
+        "id": "4_1_Q2",
+        "question": "Simplify $1.8 : 0.45$ to simplest whole-number form.",
+        "difficulty": "Easy",
+        "context": "Decimal Ratios",
+        "final_answer": "$4 : 1$",
+        "step_by_step_solution": [
+          "Multiply both parts by $100$ to clear decimals: $180 : 45$.",
+          "Divide by $\\text{HCF}(180, 45) = 45$: $4 : 1$."
+        ]
+      },
+      {
+        "id": "4_1_Q3",
+        "question": "Simplify $750\\text{ g} : 3\\text{ kg}$.",
+        "difficulty": "Easy",
+        "context": "Mixed Unit Ratios",
+        "final_answer": "$1 : 4$",
+        "step_by_step_solution": [
+          "Convert $3\\text{ kg}$ to grams: $3000\\text{ g}$.",
+          "Simplify $750 : 3000$ by dividing by $750$: $1 : 4$."
+        ]
+      },
+      {
+        "id": "4_1_Q4",
+        "question": "Divide $\\$540$ in the ratio $4 : 5$.",
+        "difficulty": "Medium",
+        "context": "Dividing in a Ratio",
+        "final_answer": "$\\$240$ and $\\$300$",
+        "step_by_step_solution": [
+          "Total parts $= 4 + 5 = 9$. One part $= 540 \\div 9 = \\$60$.",
+          "Shares are $4 \\times 60 = \\$240$ and $5 \\times 60 = \\$300$."
+        ]
+      },
+      {
+        "id": "4_1_Q5",
+        "question": "Find $x$ if $5 : 8 = 35 : x$.",
+        "difficulty": "Medium",
+        "context": "Equivalent Ratios",
+        "final_answer": "$x = 56$",
+        "step_by_step_solution": [
+          "The first term is multiplied by $35 \\div 5 = 7$.",
+          "Multiply the second term by $7$: $x = 8 \\times 7 = 56$."
+        ]
+      },
+      {
+        "id": "4_1_Q6",
+        "question": "In a cordial mix of syrup and water in the ratio $2 : 7$, there is $630\\text{ mL}$ of water. How much syrup is in the mix, and what is the total volume of cordial?",
+        "difficulty": "Medium",
+        "context": "Unitary Ratio Method",
+        "final_answer": "$180\\text{ mL}$ syrup; $810\\text{ mL}$ total cordial",
+        "step_by_step_solution": [
+          "$7$ parts of water $= 630\\text{ mL}$, so $1$ part $= 630 \\div 7 = 90\\text{ mL}$.",
+          "Syrup ($2$ parts) $= 2 \\times 90 = 180\\text{ mL}$.",
+          "Total cordial ($9$ parts) $= 9 \\times 90 = 810\\text{ mL}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "4_1_Q7",
+        "question": "The interior angles of a triangle are in the ratio $3 : 4 : 5$. Find the size of each angle in degrees.",
+        "difficulty": "Medium",
+        "context": "Geometric Ratio Modelling",
+        "final_answer": "$45^\\circ, 60^\\circ, \\text{ and } 75^\\circ$",
+        "step_by_step_solution": [
+          "The angle sum of a triangle is $180^\\circ$, and total parts $= 3 + 4 + 5 = 12$.",
+          "One part $= 180^\\circ \\div 12 = 15^\\circ$.",
+          "The three angles are $3 \\times 15^\\circ = 45^\\circ$, $4 \\times 15^\\circ = 60^\\circ$, and $5 \\times 15^\\circ = 75^\\circ$."
+        ]
+      },
+      {
+        "id": "4_1_Q8",
+        "question": "An architectural blueprint for a new community library in Geelong uses a scale of $1 : 200$. The main reading hall is $28\\text{ m}$ long and $16\\text{ m}$ wide in real life. Find the length and width of the reading hall on the blueprint in centimetres.",
+        "difficulty": "Medium",
+        "context": "Architectural Scale Drawing",
+        "final_answer": "$14\\text{ cm}$ by $8\\text{ cm}$",
+        "step_by_step_solution": [
+          "Convert real-life dimensions to centimetres: $28\\text{ m} = 2800\\text{ cm}$ and $16\\text{ m} = 1600\\text{ cm}$.",
+          "Divide each by the scale factor $200$: Length $= 2800 \\div 200 = 14\\text{ cm}$ and Width $= 1600 \\div 200 = 8\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "4_1_Q9",
+        "question": "Two Stroke Engine fuel for a lawnmower requires petrol and oil mixed in the ratio $25 : 1$. How many millilitres of oil must be added to $6.5\\text{ L}$ of petrol?",
+        "difficulty": "Challenging",
+        "context": "Fuel Mixture Modelling",
+        "final_answer": "$260\\text{ mL}$",
+        "step_by_step_solution": [
+          "Convert $6.5\\text{ L}$ of petrol to millilitres: $6.5 \\times 1000 = 6500\\text{ mL}$.",
+          "Since $25$ parts $= 6500\\text{ mL}$, $1$ part of oil $= 6500 \\div 25 = 260\\text{ mL}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "4_1_Q10",
+        "question": "If $a : b = 2 : 3$ and $b : c = 4 : 5$, find the combined three-term ratio $a : b : c$ in simplest whole-number form. Explain your method.",
+        "difficulty": "Challenging",
+        "context": "Linking Two Ratios",
+        "final_answer": "$8 : 12 : 15$",
+        "step_by_step_solution": [
+          "The common term $b$ has value $3$ in the first ratio and $4$ in the second ratio.",
+          "Scale both ratios so that $b$ equals $\\text{LCM}(3, 4) = 12$: multiply $2 : 3$ by $4$ to get $8 : 12$, and multiply $4 : 5$ by $3$ to get $12 : 15$.",
+          "Combine the two linked ratios into $a : b : c = 8 : 12 : 15$."
+        ]
+      },
+      {
+        "id": "4_1_Q11",
+        "question": "A map has a linear scale of $1 : 10\\,000$. Explain why $1\\text{ cm}^2$ on this map represents an actual area of $10\\,000\\text{ m}^2$ ($1\\text{ hectare}$) rather than $10\\,000\\text{ cm}^2$.",
+        "difficulty": "Challenging",
+        "context": "Linear vs Area Scale Factor",
+        "final_answer": "$1\\text{ cm}$ on the map represents $10\\,000\\text{ cm} = 100\\text{ m}$, so a $1\\text{ cm} \\times 1\\text{ cm}$ square represents $100\\text{ m} \\times 100\\text{ m} = 10\\,000\\text{ m}^2$",
+        "step_by_step_solution": [
+          "A $1\\text{ cm}$ side on the map corresponds to $10\\,000\\text{ cm} = 100\\text{ m}$ in real life.",
+          "Therefore, a square of $1\\text{ cm} \\times 1\\text{ cm}$ on the map corresponds to a real square of $100\\text{ m} \\times 100\\text{ m} = 10\\,000\\text{ m}^2$ (which equals $10^8\\text{ cm}^2$, the square of the linear scale factor)."
+        ]
+      },
+      {
+        "id": "4_1_Q12",
+        "question": "In a bag of red and blue marbles, the ratio of red to blue marbles is $3 : 5$. When $12$ more red marbles are added to the bag, the new ratio of red to blue marbles becomes $7 : 5$. Find the original number of red and blue marbles in the bag.",
+        "difficulty": "Extension",
+        "context": "Algebraic Ratio Reasoning",
+        "final_answer": "$9\\text{ red}$ and $15\\text{ blue}$",
+        "step_by_step_solution": [
+          "Notice that the number of blue marbles ($5$ parts) did not change, while the red marbles increased from $3$ parts to $7$ parts.",
+          "The increase of $7 - 3 = 4$ parts equals the $12$ added red marbles, so $1$ part $= 12 \\div 4 = 3$ marbles.",
+          "Originally there were $3 \\times 3 = 9$ red marbles and $5 \\times 3 = 15$ blue marbles."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE4_1_1a",
+      "description": "Worked Example 4.1.1(a)",
+      "expression": "Rational(600, 2400)",
+      "expected": "1/4"
+    },
+    {
+      "id": "WE4_1_1b",
+      "description": "Worked Example 4.1.1(b)",
+      "expression": "Rational(3, 4) / Rational(5, 6)",
+      "expected": "9/10"
+    },
+    {
+      "id": "NYT4_1_1a",
+      "description": "Now You Try 4.1.1(a)",
+      "expression": "Rational(45, 120)",
+      "expected": "3/8"
+    },
+    {
+      "id": "NYT4_1_1b",
+      "description": "Now You Try 4.1.1(b)",
+      "expression": "Rational(2, 3) / Rational(4, 5)",
+      "expected": "5/6"
+    },
+    {
+      "id": "WE4_1_2",
+      "description": "Worked Example 4.1.2 gravel share",
+      "expression": "Rational(5, 1 + 2 + 5) * 400",
+      "expected": 250
+    },
+    {
+      "id": "NYT4_1_2",
+      "description": "Now You Try 4.1.2 largest share",
+      "expression": "Rational(4, 2 + 3 + 4) * 18000",
+      "expected": 8000
+    },
+    {
+      "id": "WE4_1_3",
+      "description": "Worked Example 4.1.3 Wilsons Prom map",
+      "expression": "(Rational(72, 10) * 50000) / 100000",
+      "expected": "18/5"
+    },
+    {
+      "id": "NYT4_1_3",
+      "description": "Now You Try 4.1.3 Grampians map",
+      "expression": "(14 * 25000) / 100000",
+      "expected": "7/2"
+    },
+    {
+      "id": "EX4_1_Q1",
+      "description": "Exercise 4.1 Q1",
+      "expression": "Rational(56, 84)",
+      "expected": "2/3"
+    },
+    {
+      "id": "EX4_1_Q2",
+      "description": "Exercise 4.1 Q2",
+      "expression": "Rational(180, 45)",
+      "expected": 4
+    },
+    {
+      "id": "EX4_1_Q3",
+      "description": "Exercise 4.1 Q3",
+      "expression": "Rational(750, 3000)",
+      "expected": "1/4"
+    },
+    {
+      "id": "EX4_1_Q4",
+      "description": "Exercise 4.1 Q4",
+      "expression": "Rational(5, 9) * 540",
+      "expected": 300
+    },
+    {
+      "id": "EX4_1_Q5",
+      "description": "Exercise 4.1 Q5",
+      "expression": "(35 / 5) * 8",
+      "expected": 56
+    },
+    {
+      "id": "EX4_1_Q6",
+      "description": "Exercise 4.1 Q6 total cordial",
+      "expression": "(630 / 7) * 9",
+      "expected": 810
+    },
+    {
+      "id": "EX4_1_Q7",
+      "description": "Exercise 4.1 Q7 largest triangle angle",
+      "expression": "Rational(5, 12) * 180",
+      "expected": 75
+    },
+    {
+      "id": "EX4_1_Q8",
+      "description": "Exercise 4.1 Q8 blueprint length",
+      "expression": "(28 * 100) / 200",
+      "expected": 14
+    },
+    {
+      "id": "EX4_1_Q9",
+      "description": "Exercise 4.1 Q9 oil volume",
+      "expression": "6500 / 25",
+      "expected": 260
+    },
+    {
+      "id": "EX4_1_Q12",
+      "description": "Exercise 4.1 Q12 original red marbles",
+      "expression": "3 * (12 / (7 - 3))",
+      "expected": 9
+    }
+  ]
+}

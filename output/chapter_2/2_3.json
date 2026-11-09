@@ -1,0 +1,418 @@
+{
+  "metadata": {
+    "section_id": "2_3",
+    "section_code": "2C",
+    "chapter_number": 2,
+    "chapter_title": "Fractions, Decimals, Irrational Numbers and Index Laws",
+    "title": "Irrational Numbers and the Real Number System",
+    "vcaa_code": "VC2M8N01",
+    "vcaa_description": "Recognise irrational numbers in applied contexts, including square roots and pi, and recognise that real numbers comprise rational and irrational numbers.",
+    "strand": "Number",
+    "target_mastery": "Classify real numbers as rational or irrational, estimate non-perfect square roots by bounding between consecutive integers, and work with exact values involving surds and pi.",
+    "prerequisites": [
+      "Perfect squares ($1, 4, 9, 16, \\dots, 144$) and perfect cubes ($1, 8, 27, 64, 125$)",
+      "Terminating and recurring decimals (Section 2B)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Irrational number",
+        "definition": "A real number that cannot be expressed as a fraction $\\frac{a}{b}$ of two integers; its decimal expansion is infinite and non-recurring (e.g., $\\sqrt{2}, \\sqrt{5}, \\pi$)."
+      },
+      {
+        "term": "Surd",
+        "definition": "An irrational root of a rational number, such as $\\sqrt{3}$ or $\\sqrt[3]{10}$, left in exact radical form."
+      },
+      {
+        "term": "Real numbers ($\\mathbb{R}$)",
+        "definition": "The complete set of all rational numbers and all irrational numbers, corresponding to every point on the continuous number line."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_2_3_1",
+      "title": "Rational vs Irrational Numbers and the Real Number System",
+      "explanation": "Every real number ($\\mathbb{R}$) is either rational ($\\mathbb{Q}$) or irrational. A number is rational if and only if it can be written as a fraction $\\frac{a}{b}$ (where $a, b \\in \\mathbb{Z}, b \\neq 0$), which corresponds to a terminating or recurring decimal. Numbers whose decimal expansions continue forever without any repeating cycle cannot be written as fractions of integers and are called irrational numbers.",
+      "formula_latex": "\\mathbb{R} = \\mathbb{Q} \\cup \\text{Irrationals}, \\quad \\mathbb{Q} \\cap \\text{Irrationals} = \\varnothing",
+      "callout_title": "Decimal Test for Rational vs Irrational",
+      "callout_rule": "Terminates or repeats in a cycle $\\implies$ Rational ($\\frac{a}{b}$). Never terminates and never repeats $\\implies$ Irrational (such as $\\pi = 3.14159265\\dots$ or $\\sqrt{2} = 1.41421356\\dots$)."
+    },
+    {
+      "id": "theory_2_3_2",
+      "title": "Square Roots, Cube Roots, and Surds",
+      "explanation": "If a positive integer $n$ is a perfect square ($1, 4, 9, 16, 25, \\dots$), then $\\sqrt{n}$ is an integer and therefore rational. If $n$ is not a perfect square, then $\\sqrt{n}$ is an irrational number called a surd. Note that the radical symbol $\\sqrt{n}$ always denotes the non-negative (principal) square root, while cube roots of negative numbers are real and negative: $\\sqrt[3]{-8} = -2$.",
+      "formula_latex": "\\sqrt{a^2} = a \\text{ for } a \\ge 0, \\quad \\sqrt[3]{-a^3} = -a",
+      "callout_title": "Not All Square Roots Are Irrational",
+      "callout_rule": "Always evaluate the root first before classifying! $\\sqrt{49} = 7$ and $\\sqrt{\\frac{9}{16}} = \\frac{3}{4}$ are RATIONAL, whereas $\\sqrt{50}$ is IRRATIONAL."
+    },
+    {
+      "id": "theory_2_3_3",
+      "title": "Bounding and Estimating Surds on a Number Line",
+      "explanation": "Because $f(x) = \\sqrt{x}$ increases as $x$ increases, you can locate any surd $\\sqrt{n}$ between two consecutive integers by finding the largest perfect square $a^2 < n$ and the smallest perfect square $b^2 > n$.",
+      "formula_latex": "a^2 < n < b^2 \\implies a < \\sqrt{n} < b \\quad (a, b > 0)",
+      "callout_title": "Sandwiching a Surd Between Consecutive Integers",
+      "callout_rule": "To estimate $\\sqrt{40}$, sandwich $40$ between the nearest perfect squares $36$ and $49$: since $36 < 40 < 49$, taking square roots gives $6 < \\sqrt{40} < 7$ (and since $40$ is closer to $36$, $\\sqrt{40} \\approx 6.3$)."
+    },
+    {
+      "id": "theory_2_3_4",
+      "title": "The Irrational Number $\\pi$ vs Rational Approximations",
+      "explanation": "The number $\\pi$ (pi) is defined as the ratio of a circle's circumference to its diameter: $\\pi = \\frac{C}{d}$. In the 18th century, Johann Lambert proved that $\\pi$ is irrational. Common values such as $3.14$ or $\\frac{22}{7} = 3.\\overline{142857}$ are convenient rational approximations, not the exact value of $\\pi$.",
+      "formula_latex": "\\pi = 3.14159265358979\\dots \\neq \\frac{22}{7} = 3.142857142857\\dots",
+      "callout_title": "Exact Value vs Rounded Value",
+      "callout_rule": "When a question asks for an 'exact answer', leave $\\pi$ or the surd symbol (e.g., $12\\pi\\text{ cm}$ or $\\sqrt{29}\\text{ m}$) in your final answer rather than rounding a decimal."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE2_3_1",
+      "title": "Classifying Real Numbers as Rational or Irrational",
+      "difficulty": "Fluency",
+      "problem": "Classify each of the following numbers as rational or irrational: (a) $\\sqrt{81}$, (b) $\\sqrt{20}$, (c) $-0.\\overline{42}$, and (d) $2\\pi$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For (a), $81 = 9^2$ is a perfect square, so $\\sqrt{81} = 9 = \\frac{9}{1}$, which is a ratio of integers.",
+          "working": "$$\\sqrt{81} = 9 \\implies \\text{Rational}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For (b), $20$ lies strictly between the consecutive perfect squares $16$ and $25$, so $\\sqrt{20}$ is a surd.",
+          "working": "$$16 < 20 < 25 \\implies \\sqrt{20} \\text{ is Irrational}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "For (c), $-0.\\overline{42} = -\\frac{42}{99} = -\\frac{14}{33}$ is a recurring decimal, so it is rational. For (d), multiplying the irrational number $\\pi$ by $2$ produces a non-terminating, non-recurring decimal.",
+          "working": "$$-0.\\overline{42} = -\\frac{14}{33} \\text{ (Rational)}, \\quad 2\\pi \\text{ (Irrational)}$$"
+        }
+      ],
+      "final_answer": "(a) Rational, (b) Irrational, (c) Rational, (d) Irrational",
+      "now_you_try": {
+        "problem": "Classify each of the following numbers as rational or irrational: (a) $\\sqrt{30}$, (b) $\\sqrt{\\dfrac{25}{64}}$, (c) $\\dfrac{22}{7}$, and (d) $\\sqrt[3]{-27}$.",
+        "hint": "Remember that $\\frac{22}{7}$ is already written as a fraction of two integers.",
+        "working_summary": "(a) $30$ is not a square $\\implies$ Irrational; (b) $\\sqrt{25/64} = 5/8 \\implies$ Rational; (c) $22/7 \\implies$ Rational; (d) $\\sqrt[3]{-27} = -3 \\implies$ Rational.",
+        "answer": "(a) Irrational, (b) Rational, (c) Rational, (d) Rational"
+      }
+    },
+    {
+      "id": "WE2_3_2",
+      "title": "Bounding a Surd Between Consecutive Integers",
+      "difficulty": "Understanding",
+      "problem": "Without using a calculator, find the two consecutive integers between which (a) $\\sqrt{75}$ and (b) $-\\sqrt{42}$ lie.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For part (a), identify the perfect squares immediately below and above $75$: $8^2 = 64$ and $9^2 = 81$.",
+          "working": "$$64 < 75 < 81 \\implies \\sqrt{64} < \\sqrt{75} < \\sqrt{81} \\implies 8 < \\sqrt{75} < 9$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For part (b), first bound $\\sqrt{42}$ between $\\sqrt{36} = 6$ and $\\sqrt{49} = 7$, then negate the inequality (reversing the order on the negative number line).",
+          "working": "$$36 < 42 < 49 \\implies 6 < \\sqrt{42} < 7 \\implies -7 < -\\sqrt{42} < -6$$"
+        }
+      ],
+      "final_answer": "(a) Between $8$ and $9$; (b) Between $-7$ and $-6$",
+      "now_you_try": {
+        "problem": "Without using a calculator, find the two consecutive integers between which (a) $\\sqrt{110}$ and (b) $-\\sqrt{55}$ lie.",
+        "hint": "Compare $110$ with $10^2 = 100$ and $11^2 = 121$; compare $55$ with $7^2 = 49$ and $8^2 = 64$.",
+        "working_summary": "(a) $100 < 110 < 121 \\implies 10 < \\sqrt{110} < 11$; (b) $49 < 55 < 64 \\implies -8 < -\\sqrt{55} < -7$.",
+        "answer": "(a) Between $10$ and $11$; (b) Between $-8$ and $-7$"
+      }
+    },
+    {
+      "id": "WE2_3_3",
+      "title": "Exact vs Approximated Values in Applied Geometry",
+      "difficulty": "Problem-Solving",
+      "problem": "A square solar panel on a rooftop in Mildura has an area of $3\\text{ m}^2$, and a circular water tank lid has a diameter of $2\\text{ m}$. (a) State the exact side length of the solar panel and the exact circumference of the lid ($C = \\pi d$). (b) Calculate the positive difference between $\\dfrac{22}{7}$ and $\\pi$ correct to $4$ decimal places, given $\\pi \\approx 3.14159$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The side length of a square of area $A = 3\\text{ m}^2$ is $\\sqrt{3}\\text{ m}$ (an irrational surd). The circumference of a circle with $d = 2\\text{ m}$ is $C = 2\\pi\\text{ m}$.",
+          "working": "$$s = \\sqrt{3}\\text{ m}, \\quad C = 2\\pi\\text{ m}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Evaluate $\\frac{22}{7} \\approx 3.14286$ and subtract $\\pi \\approx 3.14159$.",
+          "working": "$$\\frac{22}{7} - \\pi \\approx 3.142857 - 3.141593 = 0.001264 \\approx 0.0013$$"
+        }
+      ],
+      "final_answer": "(a) Side length $= \\sqrt{3}\\text{ m}$, circumference $= 2\\pi\\text{ m}$; (b) $0.0013$",
+      "now_you_try": {
+        "problem": "A square courtyard in Adelaide has an area of $18\\text{ m}^2$. State its exact perimeter in surd form, and determine which two consecutive integers the perimeter lies between.",
+        "hint": "One side has length $\\sqrt{18}\\text{ m}$, so the perimeter is $4\\sqrt{18} = \\sqrt{16 \\times 18} = \\sqrt{288}\\text{ m}$.",
+        "working_summary": "Exact perimeter $= 4\\sqrt{18}\\text{ m}$. Since $16^2 = 256 < 288 < 17^2 = 289$, the perimeter lies between $16\\text{ m}$ and $17\\text{ m}$.",
+        "answer": "Exact perimeter $= 4\\sqrt{18}\\text{ m}$ (between $16\\text{ m}$ and $17\\text{ m}$)"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_2_3_1",
+      "title": "Assuming $\\pi$ Equals $\\frac{22}{7}$ or $3.14$ Exactly",
+      "misconception": "Classifying $\\pi$ as a rational number because students have used $\\pi = \\frac{22}{7}$ in primary school.",
+      "correct_concept": "$\\frac{22}{7} = 3.\\overline{142857}$ is a rational number that approximates $\\pi$ to $2$ decimal places, whereas $\\pi = 3.14159265\\dots$ is strictly irrational.",
+      "incorrect_working": "$$\\pi = \\frac{22}{7} \\in \\mathbb{Q} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\pi \\approx \\frac{22}{7}, \\quad \\text{where } \\pi \\text{ is irrational and } \\frac{22}{7} \\text{ is rational}$$",
+      "counter_example": "At the third decimal place, $\\frac{22}{7} = 3.1428\\dots$ while $\\pi = 3.1415\\dots$, so $\\frac{22}{7} > \\pi$."
+    },
+    {
+      "id": "MISC_2_3_2",
+      "title": "Adding Under Square Roots: $\\sqrt{a} + \\sqrt{b} \\neq \\sqrt{a + b}$",
+      "misconception": "Simplifying $\\sqrt{9} + \\sqrt{16}$ as $\\sqrt{9 + 16} = \\sqrt{25} = 5$.",
+      "correct_concept": "Square roots do NOT distribute over addition or subtraction. You must evaluate each square root separately before adding: $\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$.",
+      "incorrect_working": "$$\\sqrt{9} + \\sqrt{16} = \\sqrt{25} = 5 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7 \\quad (\\text{Correct})$$",
+      "counter_example": "$\\sqrt{9} + \\sqrt{16} = 7$, which is strictly greater than $\\sqrt{9 + 16} = 5$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "2_3_Q1",
+        "question": "Evaluate $\\sqrt{121} - \\sqrt[3]{64}$.",
+        "difficulty": "Easy",
+        "context": "Roots of Perfect Powers",
+        "final_answer": "$7$",
+        "step_by_step_solution": [
+          "Since $11^2 = 121$, $\\sqrt{121} = 11$.",
+          "Since $4^3 = 64$, $\\sqrt[3]{64} = 4$.",
+          "Subtract: $11 - 4 = 7$."
+        ]
+      },
+      {
+        "id": "2_3_Q2",
+        "question": "Evaluate $\\sqrt[3]{-125} + \\sqrt{144}$.",
+        "difficulty": "Easy",
+        "context": "Cube Roots of Negative Integers",
+        "final_answer": "$7$",
+        "step_by_step_solution": [
+          "Since $(-5)^3 = -125$, $\\sqrt[3]{-125} = -5$.",
+          "Since $12^2 = 144$, $\\sqrt{144} = 12$.",
+          "Add: $-5 + 12 = 7$."
+        ]
+      },
+      {
+        "id": "2_3_Q3",
+        "question": "Evaluate $\\sqrt{\\dfrac{49}{100}} - \\sqrt{\\dfrac{9}{25}}$ as a fraction in simplest form.",
+        "difficulty": "Medium",
+        "context": "Square Roots of Rational Numbers",
+        "final_answer": "$\\dfrac{1}{10}$",
+        "step_by_step_solution": [
+          "Evaluate each square root: $\\sqrt{\\frac{49}{100}} = \\frac{7}{10}$ and $\\sqrt{\\frac{9}{25}} = \\frac{3}{5} = \\frac{6}{10}$.",
+          "Subtract: $\\frac{7}{10} - \\frac{6}{10} = \\frac{1}{10}$."
+        ]
+      },
+      {
+        "id": "2_3_Q4",
+        "question": "Find the two consecutive integers between which $\\sqrt{90}$ lies.",
+        "difficulty": "Easy",
+        "context": "Bounding Surds",
+        "final_answer": "$9$ and $10$",
+        "step_by_step_solution": [
+          "Identify the consecutive perfect squares around $90$: $9^2 = 81$ and $10^2 = 100$.",
+          "Since $81 < 90 < 100$, taking square roots gives $9 < \\sqrt{90} < 10$."
+        ]
+      },
+      {
+        "id": "2_3_Q5",
+        "question": "Find the two consecutive integers between which $\\sqrt[3]{50}$ lies.",
+        "difficulty": "Medium",
+        "context": "Bounding Cube Roots",
+        "final_answer": "$3$ and $4$",
+        "step_by_step_solution": [
+          "Identify the consecutive perfect cubes around $50$: $3^3 = 27$ and $4^3 = 64$.",
+          "Since $27 < 50 < 64$, taking cube roots gives $3 < \\sqrt[3]{50} < 4$."
+        ]
+      },
+      {
+        "id": "2_3_Q6",
+        "question": "Arrange the following real numbers in ascending order without a calculator: $\\pi$, $\\sqrt{10}$, $3.14$, and $\\dfrac{22}{7}$.",
+        "difficulty": "Challenging",
+        "context": "Ordering Real Numbers",
+        "final_answer": "$3.14 < \\pi < \\dfrac{22}{7} < \\sqrt{10}$",
+        "step_by_step_solution": [
+          "Compare the first three values to $4$ decimal places: $3.14 = 3.1400$, $\\pi \\approx 3.1416$, and $\\frac{22}{7} \\approx 3.1429$.",
+          "For $\\sqrt{10}$, note that $3.16^2 = 9.9856 < 10$, so $\\sqrt{10} \\approx 3.1623 > \\frac{22}{7}$.",
+          "Thus $3.14 < \\pi < \\frac{22}{7} < \\sqrt{10}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "2_3_Q7",
+        "question": "A square paddock in Gippsland has an area of $150\\text{ m}^2$. Farmers want to fence all $4$ sides using wire sold only in whole-metre rolls. What is the minimum whole number of metres of wire they must buy to enclose the entire perimeter?",
+        "difficulty": "Medium",
+        "context": "Victorian Farming (Gippsland)",
+        "final_answer": "$49\\text{ m}$",
+        "step_by_step_solution": [
+          "The side length of the square paddock is $s = \\sqrt{150}\\text{ m}$, so the total perimeter is $P = 4\\sqrt{150} = \\sqrt{16 \\times 150} = \\sqrt{2400}\\text{ m}$.",
+          "Compare $2400$ with nearby squares: $48^2 = 2304$ and $49^2 = 2401$.",
+          "Since $48 < \\sqrt{2400} < 49$, they must round up to $49\\text{ m}$ of wire to have enough."
+        ]
+      },
+      {
+        "id": "2_3_Q8",
+        "question": "According to marine physics, the maximum hull speed $v$ (in knots) of a displacement yacht in the Sydney to Hobart Yacht Race is modelled by $v = \\dfrac{4}{3}\\sqrt{L}$, where $L$ is the waterline length in feet. Calculate the exact hull speed when $L = 36\\text{ feet}$.",
+        "difficulty": "Medium",
+        "context": "Sydney to Hobart Yacht Race",
+        "final_answer": "$8\\text{ knots}$",
+        "step_by_step_solution": [
+          "Substitute $L = 36$ into the formula: $v = \\frac{4}{3}\\sqrt{36}$.",
+          "Evaluate $\\sqrt{36} = 6$: $v = \\frac{4}{3} \\times 6 = 8\\text{ knots}$."
+        ]
+      },
+      {
+        "id": "2_3_Q9",
+        "question": "How many integers $n$ satisfy the inequality $\\sqrt{20} < n < \\sqrt{130}$?",
+        "difficulty": "Challenging",
+        "context": "Inequalities with Surds",
+        "final_answer": "$7\\text{ integers}$ ($5, 6, 7, 8, 9, 10, 11$)",
+        "step_by_step_solution": [
+          "Since $4^2 = 16 < 20 < 25 = 5^2$, we have $4 < \\sqrt{20} < 5$, so the smallest integer $n > \\sqrt{20}$ is $5$.",
+          "Since $11^2 = 121 < 130 < 144 = 12^2$, we have $11 < \\sqrt{130} < 12$, so the largest integer $n < \\sqrt{130}$ is $11$.",
+          "The integers from $5$ to $11$ inclusive are $5, 6, 7, 8, 9, 10, 11$, which is $11 - 5 + 1 = 7$ integers."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "2_3_Q10",
+        "question": "Disprove the statement: 'The sum of two irrational numbers is always irrational' by providing a counter-example.",
+        "difficulty": "Medium",
+        "context": "Counter-Example Proof",
+        "final_answer": "Counter-example: $\\sqrt{2} + (-\\sqrt{2}) = 0$, which is rational",
+        "step_by_step_solution": [
+          "Let $a = \\sqrt{2}$ and $b = -\\sqrt{2}$ (or $b = 5 - \\sqrt{2}$). Both $a$ and $b$ are irrational numbers.",
+          "Their sum is $a + b = \\sqrt{2} + (-\\sqrt{2}) = 0$ (or $\\sqrt{2} + (5 - \\sqrt{2}) = 5$), which is an integer and therefore rational.",
+          "Hence the statement is false."
+        ]
+      },
+      {
+        "id": "2_3_Q11",
+        "question": "Disprove the statement: 'The product of two irrational numbers is always irrational' by giving two examples: one using equal surds and one using two different surds.",
+        "difficulty": "Challenging",
+        "context": "Counter-Example Proof",
+        "final_answer": "$\\sqrt{3} \\times \\sqrt{3} = 3$ and $\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4$",
+        "step_by_step_solution": [
+          "Using equal surds: $\\sqrt{3}$ is irrational, and $\\sqrt{3} \\times \\sqrt{3} = 3$, which is rational.",
+          "Using distinct surds: $\\sqrt{2}$ and $\\sqrt{8}$ are both irrational, and their product is $\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4$, which is rational."
+        ]
+      },
+      {
+        "id": "2_3_Q12",
+        "question": "Explain using prime factorisation why the square of any integer has an even number of prime factors (counted with multiplicity), and use this to explain why $2b^2 = a^2$ has no solution for positive integers $a$ and $b$ (proving $\\sqrt{2}$ is irrational).",
+        "difficulty": "Extension",
+        "context": "Irrationality of sqrt(2)",
+        "final_answer": "$a^2$ has an even power of $2$, whereas $2b^2$ has an odd power of $2$, contradicting unique prime factorisation",
+        "step_by_step_solution": [
+          "When any positive integer is squared, every exponent in its prime factorisation is doubled, so the prime $2$ appears an even number of times in $a^2$ and an even number of times in $b^2$.",
+          "Multiplying $b^2$ by one extra factor of $2$ means $2b^2$ contains the prime factor $2$ an ODD number of times.",
+          "By the Fundamental Theorem of Arithmetic, a number with an odd number of factors of $2$ ($2b^2$) can never equal a number with an even number of factors of $2$ ($a^2$). Thus $\\sqrt{2} \\neq \\frac{a}{b}$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE2_3_1a",
+      "description": "Worked Example 2.3.1(a)",
+      "expression": "sqrt(81)",
+      "expected": 9
+    },
+    {
+      "id": "NYT2_3_1b",
+      "description": "Now You Try 2.3.1(b)",
+      "expression": "sqrt(Rational(25, 64))",
+      "expected": "5/8"
+    },
+    {
+      "id": "NYT2_3_1d",
+      "description": "Now You Try 2.3.1(d)",
+      "expression": "cbrt(-27)",
+      "expected": -3
+    },
+    {
+      "id": "WE2_3_2a_low",
+      "description": "Worked Example 2.3.2(a) lower bound",
+      "expression": "8 < sqrt(75)",
+      "expected": true
+    },
+    {
+      "id": "WE2_3_2a_high",
+      "description": "Worked Example 2.3.2(a) upper bound",
+      "expression": "sqrt(75) < 9",
+      "expected": true
+    },
+    {
+      "id": "NYT2_3_2a",
+      "description": "Now You Try 2.3.2(a)",
+      "expression": "floor(sqrt(110))",
+      "expected": 10
+    },
+    {
+      "id": "NYT2_3_3",
+      "description": "Now You Try 2.3.3 floor(4*sqrt(18))",
+      "expression": "floor(4 * sqrt(18))",
+      "expected": 16
+    },
+    {
+      "id": "EX2_3_Q1",
+      "description": "Exercise 2.3 Q1",
+      "expression": "sqrt(121) - cbrt(64)",
+      "expected": 7
+    },
+    {
+      "id": "EX2_3_Q2",
+      "description": "Exercise 2.3 Q2",
+      "expression": "cbrt(-125) + sqrt(144)",
+      "expected": 7
+    },
+    {
+      "id": "EX2_3_Q3",
+      "description": "Exercise 2.3 Q3",
+      "expression": "sqrt(Rational(49, 100)) - sqrt(Rational(9, 25))",
+      "expected": "1/10"
+    },
+    {
+      "id": "EX2_3_Q4",
+      "description": "Exercise 2.3 Q4 floor(sqrt(90))",
+      "expression": "floor(sqrt(90))",
+      "expected": 9
+    },
+    {
+      "id": "EX2_3_Q5",
+      "description": "Exercise 2.3 Q5 floor(cbrt(50))",
+      "expression": "floor(cbrt(50))",
+      "expected": 3
+    },
+    {
+      "id": "EX2_3_Q6",
+      "description": "Exercise 2.3 Q6 ordering check",
+      "expression": "Rational(22, 7) < sqrt(10)",
+      "expected": true
+    },
+    {
+      "id": "EX2_3_Q7",
+      "description": "Exercise 2.3 Q7 ceiling of 4*sqrt(150)",
+      "expression": "ceiling(4 * sqrt(150))",
+      "expected": 49
+    },
+    {
+      "id": "EX2_3_Q8",
+      "description": "Exercise 2.3 Q8 hull speed",
+      "expression": "Rational(4, 3) * sqrt(36)",
+      "expected": 8
+    },
+    {
+      "id": "EX2_3_Q9",
+      "description": "Exercise 2.3 Q9 count of integers between sqrt(20) and sqrt(130)",
+      "expression": "floor(sqrt(130)) - ceiling(sqrt(20)) + 1",
+      "expected": 7
+    },
+    {
+      "id": "EX2_3_Q11",
+      "description": "Exercise 2.3 Q11 sqrt(2)*sqrt(8)",
+      "expression": "sqrt(2) * sqrt(8)",
+      "expected": 4
+    }
+  ]
+}
