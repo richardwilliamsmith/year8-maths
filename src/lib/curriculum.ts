@@ -119,6 +119,35 @@ export interface TextbookSectionData {
   assertions: MathAssertion[];
 }
 
+export interface WorksheetPartAnswer {
+  label: string;
+  answer: string;
+}
+
+export interface WorksheetFluencyAnswer {
+  number: number;
+  parts: WorksheetPartAnswer[];
+}
+
+export interface WorksheetItemAnswer {
+  number: number;
+  answer: string;
+}
+
+export interface SectionWorksheetAnswerKey {
+  section_id: string;
+  section_code: string;
+  chapter_number: number;
+  chapter_title: string;
+  title: string;
+  vcaa_code: string;
+  tier: string;
+  pdf_url: string;
+  fluency_answers: WorksheetFluencyAnswer[];
+  application_answers: WorksheetItemAnswer[];
+  reasoning_answers: WorksheetItemAnswer[];
+}
+
 export function loadCurriculumManifest(): CurriculumManifest {
   const manifestPath = path.join(process.cwd(), "curriculum_manifest_year8.json");
   const raw = fs.readFileSync(manifestPath, "utf-8");
@@ -145,4 +174,50 @@ export function loadAllGeneratedSections(): Record<string, TextbookSectionData> 
   }
 
   return sections;
+}
+
+export function loadWorksheetAnswerKeys(): Record<string, SectionWorksheetAnswerKey> {
+  const keys: Record<string, SectionWorksheetAnswerKey> = {};
+
+  for (let c = 1; c <= 10; c++) {
+    const filePath = path.join(process.cwd(), "worksheets", `chapter_${c}.json`);
+    if (fs.existsSync(filePath)) {
+      const raw = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+      for (const ws of raw.worksheets || []) {
+        keys[ws.section_id] = {
+          section_id: ws.section_id,
+          section_code: ws.section_code,
+          chapter_number: raw.chapter_number,
+          chapter_title: raw.chapter_title,
+          title: ws.title,
+          vcaa_code: ws.vcaa_code,
+          tier: ws.tier || "Standard",
+          pdf_url: `/worksheets/worksheet_${ws.section_id}_standard.pdf`,
+          fluency_answers: (ws.fluency_questions || []).map(
+            (fq: { number: number; parts: { label: string; answer: string }[] }) => ({
+              number: fq.number,
+              parts: fq.parts.map((pt) => ({
+                label: pt.label,
+                answer: pt.answer,
+              })),
+            })
+          ),
+          application_answers: (ws.application_questions || []).map(
+            (aq: { number: number; answer: string }) => ({
+              number: aq.number,
+              answer: aq.answer,
+            })
+          ),
+          reasoning_answers: (ws.reasoning_questions || []).map(
+            (rq: { number: number; answer: string }) => ({
+              number: rq.number,
+              answer: rq.answer,
+            })
+          ),
+        };
+      }
+    }
+  }
+
+  return keys;
 }

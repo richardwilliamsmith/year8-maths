@@ -1,0 +1,390 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Real Numbers, Fractions, Decimals and Index Laws",
+  "worksheets": [
+    {
+      "section_id": "2_1",
+      "section_code": "2A",
+      "title": "Operations with Positive and Negative Fractions",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each fraction addition or subtraction in simplest form:",
+          "parts": [
+            { "label": "a", "question": "$-\\dfrac{5}{8} + \\dfrac{3}{4}$", "answer": "$\\dfrac{1}{8}$" },
+            { "label": "b", "question": "$-\\dfrac{2}{3} - \\dfrac{4}{5}$", "answer": "$-\\dfrac{22}{15} = -1\\dfrac{7}{15}$" },
+            { "label": "c", "question": "$\\dfrac{5}{6} - \\left(-\\dfrac{7}{9}\\right)$", "answer": "$\\dfrac{29}{18} = 1\\dfrac{11}{18}$" },
+            { "label": "d", "question": "$-2\\dfrac{1}{4} + 1\\dfrac{2}{3}$", "answer": "$-\\dfrac{7}{12}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each fraction multiplication in simplest form:",
+          "parts": [
+            { "label": "a", "question": "$-\\dfrac{4}{9} \\times \\dfrac{3}{8}$", "answer": "$-\\dfrac{1}{6}$" },
+            { "label": "b", "question": "$-\\dfrac{5}{12} \\times \\left(-\\dfrac{9}{10}\\right)$", "answer": "$\\dfrac{3}{8}$" },
+            { "label": "c", "question": "$-1\\dfrac{3}{5} \\times \\dfrac{15}{16}$", "answer": "$-\\dfrac{3}{2} = -1\\dfrac{1}{2}$" },
+            { "label": "d", "question": "$-2\\dfrac{1}{3} \\times \\left(-1\\dfrac{2}{7}\\right)$", "answer": "$3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Evaluate each fraction division in simplest form:",
+          "parts": [
+            { "label": "a", "question": "$-\\dfrac{7}{10} \\div \\dfrac{14}{15}$", "answer": "$-\\dfrac{3}{4}$" },
+            { "label": "b", "question": "$-\\dfrac{8}{9} \\div \\left(-\\dfrac{4}{15}\\right)$", "answer": "$\\dfrac{10}{3} = 3\\dfrac{1}{3}$" },
+            { "label": "c", "question": "$1\\dfrac{4}{5} \\div \\left(-\\dfrac{9}{10}\\right)$", "answer": "$-2$" },
+            { "label": "d", "question": "$-3\\dfrac{1}{2} \\div \\left(-2\\dfrac{1}{3}\\right)$", "answer": "$\\dfrac{3}{2} = 1\\dfrac{1}{2}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each multi-step fraction expression:",
+          "parts": [
+            { "label": "a", "question": "$-\\dfrac{1}{2} + \\dfrac{3}{4} \\times \\left(-\\dfrac{8}{9}\\right)$", "answer": "$-\\dfrac{7}{6} = -1\\dfrac{1}{6}$" },
+            { "label": "b", "question": "$\\left(-\\dfrac{2}{3}\\right)^2 - \\dfrac{7}{9}$", "answer": "$-\\dfrac{1}{3}$" },
+            { "label": "c", "question": "$\\left(\\dfrac{1}{4} - \\dfrac{5}{6}\\right) \\div \\left(-\\dfrac{7}{12}\\right)$", "answer": "$1$" },
+            { "label": "d", "question": "$\\left(-\\dfrac{3}{2}\\right)^3 + \\dfrac{5}{8}$", "answer": "$-\\dfrac{11}{4} = -2\\dfrac{3}{4}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A bushwalking track in the Grampians is $14\\dfrac{2}{5}\\text{ km}$ long. After walking $\\dfrac{5}{8}$ of the total distance, how many kilometres of the track remain?",
+          "answer": "$5\\dfrac{2}{5}\\text{ km}$ ($\\dfrac{27}{5}\\text{ km}$)"
+        },
+        {
+          "number": 6,
+          "question": "A rainwater storage tank in Gippsland is $\\dfrac{4}{5}$ full. After $\\dfrac{1}{3}$ of the total tank capacity is used for garden irrigation and $\\dfrac{3}{10}$ of the total capacity is added by weekend rain, what fraction of the tank is now full?",
+          "answer": "$\\dfrac{23}{30}$"
+        },
+        {
+          "number": 7,
+          "question": "A carpenter has a length of Tasmanian oak timber measuring $6\\dfrac{3}{4}\\text{ m}$. How many shelf brackets each requiring $\\dfrac{3}{8}\\text{ m}$ of timber can be cut from this length?",
+          "answer": "$18\\text{ brackets}$"
+        },
+        {
+          "number": 8,
+          "question": "During a science experiment, the temperature of a chemical solution changes by $-1\\dfrac{3}{4}^\\circ\\text{C}$ every minute for $6$ minutes. If its initial temperature was $8\\dfrac{1}{2}^\\circ\\text{C}$, what is its final temperature?",
+          "answer": "$-2^\\circ\\text{C}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Find the rational number that lies exactly halfway (the mean) between $-\\dfrac{5}{6}$ and $-\\dfrac{1}{4}$. Show your working clearly.",
+          "answer": "$-\\dfrac{13}{24}$, since $\\dfrac{-\\frac{10}{12} + (-\\frac{3}{12})}{2} = -\\dfrac{13}{24}$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why dividing by a negative proper fraction between $-1$ and $0$ (such as $-\\dfrac{2}{5}$) always produces a result with a larger magnitude than the original number, and give a numerical example.",
+          "answer": "Dividing by $-\\dfrac{2}{5}$ multiplies by the reciprocal $-\\dfrac{5}{2}$, whose absolute value is $2.5 > 1$ (e.g. $6 \\div (-\\frac{2}{5}) = -15$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS2_1_1a", "expression": "-Rational(5, 8) + Rational(3, 4)", "expected": "1/8" },
+        { "id": "WS2_1_1c", "expression": "Rational(5, 6) - (-Rational(7, 9))", "expected": "29/18" },
+        { "id": "WS2_1_2b", "expression": "-Rational(5, 12) * (-Rational(9, 10))", "expected": "3/8" },
+        { "id": "WS2_1_2d", "expression": "-Rational(7, 3) * (-Rational(9, 7))", "expected": 3 },
+        { "id": "WS2_1_3a", "expression": "-Rational(7, 10) / Rational(14, 15)", "expected": "-3/4" },
+        { "id": "WS2_1_4a", "expression": "-Rational(1, 2) + Rational(3, 4) * (-Rational(8, 9))", "expected": "-7/6" },
+        { "id": "WS2_1_4c", "expression": "(Rational(1, 4) - Rational(5, 6)) / (-Rational(7, 12))", "expected": 1 },
+        { "id": "WS2_1_5", "expression": "Rational(72, 5) * (1 - Rational(5, 8))", "expected": "27/5" },
+        { "id": "WS2_1_6", "expression": "Rational(4, 5) - Rational(1, 3) + Rational(3, 10)", "expected": "23/30" },
+        { "id": "WS2_1_7", "expression": "Rational(27, 4) / Rational(3, 8)", "expected": 18 }
+      ]
+    },
+    {
+      "section_id": "2_2",
+      "section_code": "2B",
+      "title": "Terminating and Recurring Decimals",
+      "vcaa_code": "VC2M8N03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Without dividing, state whether each simplified fraction converts to a terminating (T) or recurring (R) decimal:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{13}{40}$", "answer": "Terminating ($40 = 2^3 \\times 5$)" },
+            { "label": "b", "question": "$\\dfrac{7}{12}$", "answer": "Recurring ($12 = 2^2 \\times 3$)" },
+            { "label": "c", "question": "$\\dfrac{21}{56}$", "answer": "Terminating ($\\frac{3}{8} = \\frac{3}{2^3}$)" },
+            { "label": "d", "question": "$\\dfrac{11}{30}$", "answer": "Recurring ($30 = 2 \\times 3 \\times 5$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Convert each fraction to an exact decimal (using dot or bar notation for recurring decimals):",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{11}{16}$", "answer": "$0.6875$" },
+            { "label": "b", "question": "$-\\dfrac{5}{6}$", "answer": "$-0.8\\dot{3}$" },
+            { "label": "c", "question": "$\\dfrac{7}{11}$", "answer": "$0.\\dot{6}\\dot{3}$ ($0.\\overline{63}$)" },
+            { "label": "d", "question": "$\\dfrac{5}{7}$", "answer": "$0.\\dot{7}1428\\dot{5}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Convert each terminating decimal to a fraction in simplest form:",
+          "parts": [
+            { "label": "a", "question": "$0.45$", "answer": "$\\dfrac{9}{20}$" },
+            { "label": "b", "question": "$-0.375$", "answer": "$-\\dfrac{3}{8}$" },
+            { "label": "c", "question": "$1.64$", "answer": "$\\dfrac{41}{25} = 1\\dfrac{16}{25}$" },
+            { "label": "d", "question": "$0.0625$", "answer": "$\\dfrac{1}{16}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use algebra to convert each recurring decimal to a fraction in simplest form:",
+          "parts": [
+            { "label": "a", "question": "$0.\\dot{7}$", "answer": "$\\dfrac{7}{9}$" },
+            { "label": "b", "question": "$0.\\dot{4}\\dot{5}$", "answer": "$\\dfrac{5}{11}$" },
+            { "label": "c", "question": "$0.\\dot{1}3\\dot{5}$", "answer": "$\\dfrac{5}{37}$" },
+            { "label": "d", "question": "$0.2\\dot{7}$", "answer": "$\\dfrac{5}{18}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "In a Sheffield Shield cricket series, a bowler takes $15$ wickets across $36$ overs bowled. Express the wickets per over as (a) a simplified fraction and (b) a recurring decimal.",
+          "answer": "(a) $\\dfrac{5}{12}$, (b) $0.41\\dot{6}$"
+        },
+        {
+          "number": 6,
+          "question": "A laboratory balance in Parkville measures three chemical samples of masses $0.\\dot{4}\\text{ g}$, $0.\\dot{2}\\dot{7}\\text{ g}$, and $0.\\dot{1}\\text{ g}$. By converting each to a fraction with denominator $99$, find the exact total mass as a simplified fraction.",
+          "answer": "$\\dfrac{82}{99}\\text{ g}$ ($\\dfrac{44 + 27 + 11}{99} = \\dfrac{82}{99}\\text{ g}$)"
+        },
+        {
+          "number": 7,
+          "question": "Arrange the following four rational numbers in ascending order (from smallest to largest): $0.6, \\; 0.\\dot{6}, \\; 0.\\dot{6}\\dot{0}, \\; 0.66$.",
+          "answer": "$0.6 < 0.\\dot{6}\\dot{0} < 0.66 < 0.\\dot{6}$"
+        },
+        {
+          "number": 8,
+          "question": "A steel bolt has a diameter of $\\dfrac{11}{32}\\text{ inches}$. Since $32 = 2^5$, explain why this fraction terminates and write its exact decimal value.",
+          "answer": "$0.34375\\text{ inches}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A student claims that $\\dfrac{18}{150}$ is a recurring decimal because $150$ is divisible by $3$. Explain the flaw in the student's reasoning and find the exact decimal.",
+          "answer": "You must simplify the fraction BEFORE testing the denominator: $\\dfrac{18}{150} = \\dfrac{3}{25} = \\dfrac{3}{5^2} = 0.12$, which terminates."
+        },
+        {
+          "number": 10,
+          "question": "Use the algebraic method ($x = 0.\\dot{9}, \\; 10x = 9.\\dot{9}$) to prove that $0.\\dot{9} = 1$, and verify this result by adding $\\dfrac{1}{3} = 0.\\dot{3}$ and $\\dfrac{2}{3} = 0.\\dot{6}$.",
+          "answer": "$10x - x = 9.\\dot{9} - 0.\\dot{9} \\implies 9x = 9 \\implies x = 1$; also $0.\\dot{3} + 0.\\dot{6} = 0.\\dot{9} = \\frac{1}{3} + \\frac{2}{3} = 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS2_2_2a", "expression": "Rational(11, 16)", "expected": 0.6875 },
+        { "id": "WS2_2_3a", "expression": "Rational(45, 100)", "expected": "9/20" },
+        { "id": "WS2_2_3b", "expression": "-Rational(375, 1000)", "expected": "-3/8" },
+        { "id": "WS2_2_3d", "expression": "Rational(625, 10000)", "expected": "1/16" },
+        { "id": "WS2_2_4b", "expression": "Rational(45, 99)", "expected": "5/11" },
+        { "id": "WS2_2_4c", "expression": "Rational(135, 999)", "expected": "5/37" },
+        { "id": "WS2_2_4d", "expression": "Rational(27 - 2, 90)", "expected": "5/18" },
+        { "id": "WS2_2_5", "expression": "Rational(15, 36)", "expected": "5/12" },
+        { "id": "WS2_2_6", "expression": "Rational(4, 9) + Rational(27, 99) + Rational(1, 9)", "expected": "82/99" },
+        { "id": "WS2_2_8", "expression": "Rational(11, 32)", "expected": 0.34375 }
+      ]
+    },
+    {
+      "section_id": "2_3",
+      "section_code": "2C",
+      "title": "Irrational Numbers and the Real Number System",
+      "vcaa_code": "VC2M8N01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Classify each real number as Rational ($\\mathbb{Q}$) or Irrational ($\\mathbb{I}$):",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{121}$", "answer": "Rational ($= 11$)" },
+            { "label": "b", "question": "$\\sqrt{40}$", "answer": "Irrational ($40$ is not a perfect square)" },
+            { "label": "c", "question": "$-0.\\dot{8}\\dot{1}$", "answer": "Rational ($= -\\frac{9}{11}$)" },
+            { "label": "d", "question": "$3\\pi$", "answer": "Irrational (non-zero rational multiple of $\\pi$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each exact root:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{169}$", "answer": "$13$" },
+            { "label": "b", "question": "$\\sqrt{\\dfrac{49}{144}}$", "answer": "$\\dfrac{7}{12}$" },
+            { "label": "c", "question": "$\\sqrt[3]{-125}$", "answer": "$-5$" },
+            { "label": "d", "question": "$\\sqrt{0.36}$", "answer": "$0.6$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the two consecutive integers between which each irrational root lies:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{31}$", "answer": "Between $5$ and $6$ ($25 < 31 < 36$)" },
+            { "label": "b", "question": "$\\sqrt{88}$", "answer": "Between $9$ and $10$ ($81 < 88 < 100$)" },
+            { "label": "c", "question": "$-\\sqrt{55}$", "answer": "Between $-8$ and $-7$" },
+            { "label": "d", "question": "$\\sqrt[3]{50}$", "answer": "Between $3$ and $4$ ($27 < 50 < 64$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each expression involving exact square and cube roots:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{144} - \\sqrt[3]{-64}$", "answer": "$16$" },
+            { "label": "b", "question": "$(\\sqrt{19})^2 + \\sqrt{81}$", "answer": "$28$" },
+            { "label": "c", "question": "$\\sqrt{9^2 + 12^2}$", "answer": "$15$" },
+            { "label": "d", "question": "$2\\sqrt{225} \\div \\sqrt[3]{27}$", "answer": "$10$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A square courtyard in Fitzroy has an area of $75\\text{ m}^2$. (a) Write the exact side length of the courtyard as a surd. (b) Between which two consecutive whole metres does the side length lie?",
+          "answer": "(a) $\\sqrt{75}\\text{ m}$, (b) between $8\\text{ m}$ and $9\\text{ m}$ ($64 < 75 < 81$)"
+        },
+        {
+          "number": 6,
+          "question": "A circular picnic lawn at the Royal Botanic Gardens Victoria has radius $r = 11\\text{ m}$. Write its exact circumference $C = 2\\pi r$ and exact area $A = \\pi r^2$ in terms of $\\pi$, and state whether these exact values are rational or irrational.",
+          "answer": "$C = 22\\pi\\text{ m}$, $A = 121\\pi\\text{ m}^2$; both are irrational."
+        },
+        {
+          "number": 7,
+          "question": "Compare the common rational approximation $\\dfrac{22}{7}$ with $\\pi \\approx 3.14159265\\dots$ to $4$ decimal places. Which is larger, $\\dfrac{22}{7}$ or $\\pi$?",
+          "answer": "$\\dfrac{22}{7} \\approx 3.1429 > \\pi \\approx 3.1416$, so $\\dfrac{22}{7}$ is slightly larger."
+        },
+        {
+          "number": 8,
+          "question": "A cubic shipping crate has a volume of $343\\text{ L}$ ($0.343\\text{ m}^3$). Find the exact internal side length of the crate in centimetres ($1\\text{ L} = 1000\\text{ cm}^3$).",
+          "answer": "$70\\text{ cm}$ ($\\sqrt[3]{343\\,000} = 70\\text{ cm}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Give an example of two irrational numbers whose product is a rational number, and an example of two irrational numbers whose sum is a rational number.",
+          "answer": "Product: $\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4$ (or $\\sqrt{3} \\times \\sqrt{3} = 3$). Sum: $\\pi + (4 - \\pi) = 4$ (or $\\sqrt{5} + (-\\sqrt{5}) = 0$)."
+        },
+        {
+          "number": 10,
+          "question": "Explain why $\\sqrt{-36}$ is not a real number, whereas $\\sqrt[3]{-64} = -4$ IS a real number.",
+          "answer": "The square of any real number is non-negative ($x^2 \\ge 0$), so no real number squares to $-36$; however, an odd power of a negative number is negative, so $(-4)^3 = -64$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS2_3_1a", "expression": "sqrt(121)", "expected": 11 },
+        { "id": "WS2_3_2a", "expression": "sqrt(169)", "expected": 13 },
+        { "id": "WS2_3_2b", "expression": "sqrt(Rational(49, 144))", "expected": "7/12" },
+        { "id": "WS2_3_2c", "expression": "cbrt(-125)", "expected": -5 },
+        { "id": "WS2_3_2d", "expression": "sqrt(Rational(36, 100))", "expected": "3/5" },
+        { "id": "WS2_3_4a", "expression": "sqrt(144) - cbrt(-64)", "expected": 16 },
+        { "id": "WS2_3_4b", "expression": "(sqrt(19))**2 + sqrt(81)", "expected": 28 },
+        { "id": "WS2_3_4c", "expression": "sqrt(9**2 + 12**2)", "expected": 15 },
+        { "id": "WS2_3_4d", "expression": "(2 * sqrt(225)) / cbrt(27)", "expected": 10 },
+        { "id": "WS2_3_8", "expression": "cbrt(343000)", "expected": 70 }
+      ]
+    },
+    {
+      "section_id": "2_4",
+      "section_code": "2D",
+      "title": "Index Laws and the Zero Exponent",
+      "vcaa_code": "VC2M8N02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each product using the First Index Law, leaving your answer in index form:",
+          "parts": [
+            { "label": "a", "question": "$3^5 \\times 3^4$", "answer": "$3^9$" },
+            { "label": "b", "question": "$7 \\times 7^6 \\times 7^2$", "answer": "$7^9$" },
+            { "label": "c", "question": "$x^4 \\times x^7$", "answer": "$x^{11}$" },
+            { "label": "d", "question": "$4a^3 \\times 5a^5$", "answer": "$20a^8$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Simplify each quotient using the Second Index Law:",
+          "parts": [
+            { "label": "a", "question": "$5^{11} \\div 5^7$", "answer": "$5^4$" },
+            { "label": "b", "question": "$\\dfrac{2^{15}}{2^9}$", "answer": "$2^6$" },
+            { "label": "c", "question": "$\\dfrac{m^{10}}{m^4}$", "answer": "$m^6$" },
+            { "label": "d", "question": "$\\dfrac{24x^8}{6x^3}$", "answer": "$4x^5$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Simplify using the Power of a Power Law and the Zero Index Law:",
+          "parts": [
+            { "label": "a", "question": "$(2^4)^3$", "answer": "$2^{12}$" },
+            { "label": "b", "question": "$(m^5)^4 \\div m^{12}$", "answer": "$m^8$" },
+            { "label": "c", "question": "$9x^0 - (9x)^0$", "answer": "$8$" },
+            { "label": "d", "question": "$5^0 + (-7)^0 - 2(4^0)$", "answer": "$0$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Simplify completely and evaluate each numerical result:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{3^4 \\times 3^5}{3^6}$", "answer": "$3^3 = 27$" },
+            { "label": "b", "question": "$\\dfrac{(2^3)^4}{2^7}$", "answer": "$2^5 = 32$" },
+            { "label": "c", "question": "$\\dfrac{5^3 \\times (5^2)^3}{5^7}$", "answer": "$5^2 = 25$" },
+            { "label": "d", "question": "$\\dfrac{4^5 \\times 2^3}{2^{10}}$", "answer": "$2^3 = 8$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A cloud storage server in Sydney holds $2^{14}\\text{ gigabytes}$ of video files. If each video file is $2^3\\text{ gigabytes}$ in size, express the total number of video files as a power of $2$ and as a whole number.",
+          "answer": "$2^{11} = 2048\\text{ files}$"
+        },
+        {
+          "number": 6,
+          "question": "A yeast culture in a food science laboratory triples in cell count every hour. Starting from $3^2$ cells, how many cells are present after $5$ hours? Write your answer in index form and as a whole number.",
+          "answer": "$3^2 \\times 3^5 = 3^7 = 2187\\text{ cells}$"
+        },
+        {
+          "number": 7,
+          "question": "A cube has side length $2^3\\text{ cm}$. Express (a) the area of one square face and (b) the volume of the cube as powers of $2$, then evaluate both.",
+          "answer": "(a) $(2^3)^2 = 2^6 = 64\\text{ cm}^2$, (b) $(2^3)^3 = 2^9 = 512\\text{ cm}^3$"
+        },
+        {
+          "number": 8,
+          "question": "Find the positive integer $n$ that satisfies the index equation $\\dfrac{3^{2n} \\times 3^4}{3^5} = 3^9$.",
+          "answer": "$n = 5$ ($2n + 4 - 5 = 9 \\implies 2n = 10 \\implies n = 5$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $4^3 \\times 2^5$ cannot be simplified as $8^8$, and show how to rewrite $4^3$ with base $2$ to simplify $4^3 \\times 2^5$ as a single power of $2$.",
+          "answer": "Index laws require the SAME base. Since $4 = 2^2$, $4^3 = (2^2)^3 = 2^6$, so $4^3 \\times 2^5 = 2^6 \\times 2^5 = 2^{11} = 2048$."
+        },
+        {
+          "number": 10,
+          "question": "Without using a calculator, determine which number is larger: $2^{30}$ or $3^{20}$. (Hint: rewrite both using the Power of a Power Law as $(2^3)^{10}$ and $(3^2)^{10}$.)",
+          "answer": "$3^{20}$ is larger, because $2^{30} = (2^3)^{10} = 8^{10}$ whereas $3^{20} = (3^2)^{10} = 9^{10}$, and $9^{10} > 8^{10}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS2_4_3c", "expression": "9 * 1 - 1", "expected": 8 },
+        { "id": "WS2_4_3d", "expression": "1 + 1 - 2 * 1", "expected": 0 },
+        { "id": "WS2_4_4a", "expression": "(3**4 * 3**5) / 3**6", "expected": 27 },
+        { "id": "WS2_4_4b", "expression": "(2**3)**4 / 2**7", "expected": 32 },
+        { "id": "WS2_4_4c", "expression": "(5**3 * (5**2)**3) / 5**7", "expected": 25 },
+        { "id": "WS2_4_4d", "expression": "(4**5 * 2**3) / 2**10", "expected": 8 },
+        { "id": "WS2_4_5", "expression": "2**14 / 2**3", "expected": 2048 },
+        { "id": "WS2_4_6", "expression": "3**2 * 3**5", "expected": 2187 },
+        { "id": "WS2_4_7b", "expression": "(2**3)**3", "expected": 512 },
+        { "id": "WS2_4_9", "expression": "4**3 * 2**5", "expected": 2048 }
+      ]
+    }
+  ]
+}

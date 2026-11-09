@@ -1,0 +1,198 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Percentages and Financial Mathematics",
+  "worksheets": [
+    {
+      "section_id": "3_1",
+      "section_code": "3A",
+      "title": "Percentages, Percentage Change and GST",
+      "vcaa_code": "VC2M8N05",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Calculate each percentage of a quantity:",
+          "parts": [
+            { "label": "a", "question": "$15\\%$ of $\\$240$", "answer": "$\\$36$" },
+            { "label": "b", "question": "$35\\%$ of $180\\text{ kg}$", "answer": "$63\\text{ kg}$" },
+            { "label": "c", "question": "$4.5\\%$ of $\\$600$", "answer": "$\\$27$" },
+            { "label": "d", "question": "$125\\%$ of $64\\text{ L}$", "answer": "$80\\text{ L}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Increase or decrease each quantity by the given percentage using a decimal multiplier:",
+          "parts": [
+            { "label": "a", "question": "Increase $\\$80$ by $15\\%$", "answer": "$\\$92$" },
+            { "label": "b", "question": "Decrease $\\$150$ by $24\\%$", "answer": "$\\$114$" },
+            { "label": "c", "question": "Increase $450\\text{ m}$ by $8\\%$", "answer": "$486\\text{ m}$" },
+            { "label": "d", "question": "Decrease $\\$320$ by $12.5\\%$", "answer": "$\\$280$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the percentage increase or decrease for each change:",
+          "parts": [
+            { "label": "a", "question": "From $\\$50$ to $\\$62$", "answer": "$24\\%$ increase" },
+            { "label": "b", "question": "From $80\\text{ L}$ to $68\\text{ L}$", "answer": "$15\\%$ decrease" },
+            { "label": "c", "question": "From $\\$125$ to $\\$160$", "answer": "$28\\%$ increase" },
+            { "label": "d", "question": "From $250\\text{ g}$ to $195\\text{ g}$", "answer": "$22\\%$ decrease" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each Australian $10\\%$ GST problem:",
+          "parts": [
+            { "label": "a", "question": "Pre-GST price is $\\$140$; find the $10\\%$ GST", "answer": "$\\$14$" },
+            { "label": "b", "question": "Pre-GST price is $\\$260$; find the GST-inclusive price", "answer": "$\\$286$" },
+            { "label": "c", "question": "GST-inclusive price is $\\$198$; find the pre-GST price", "answer": "$\\$180$" },
+            { "label": "d", "question": "GST-inclusive price is $\\$462$; find the GST component", "answer": "$\\$42$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A plumber in Ballarat quotes $\\$480$ (excluding GST) for replacing a hot-water valve. Calculate (a) the $10\\%$ GST added to the invoice and (b) the total GST-inclusive invoice amount.",
+          "answer": "(a) $\\$48$, (b) $\\$528$"
+        },
+        {
+          "number": 6,
+          "question": "A receipt from a Melbourne hardware store shows a total GST-inclusive price of $\\$319$ for a cordless drill kit. Find (a) the pre-GST price of the drill kit and (b) the exact amount of GST included in the receipt.",
+          "answer": "(a) $\\$290$, (b) $\\$29$"
+        },
+        {
+          "number": 7,
+          "question": "Water storage in Lake Eildon rose from $1250\\text{ GL}$ at the start of winter to $1475\\text{ GL}$ by the end of spring. Calculate the percentage increase in water storage.",
+          "answer": "$18\\%$ increase"
+        },
+        {
+          "number": 8,
+          "question": "After a $20\\%$ member discount, a winter jacket at an outdoor store in Hobart costs $\\$192$. What was the original full price of the jacket before the discount?",
+          "answer": "$\\$240$ ($192 \\div 0.80 = 240$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A bicycle's price is increased by $25\\%$ from $\\$400$ to $\\$500$, and later decreased by $20\\%$. Show by calculation that the final price returns to $\\$400$, and explain using multipliers ($1.25 \\times 0.80 = 1$) why a $25\\%$ increase is undone by a $20\\%$ decrease.",
+          "answer": "$\\$400 \\times 1.25 = \\$500$, and $\\$500 \\times 0.80 = \\$400$. Since $\\frac{5}{4} \\times \\frac{4}{5} = 1$, a $20\\%$ reduction of the larger amount equals $25\\%$ of the original amount."
+        },
+        {
+          "number": 10,
+          "question": "Explain why subtracting $10\\%$ from a GST-inclusive price of $\\$220$ gives $\\$198$ instead of the true pre-GST price of $\\$200$.",
+          "answer": "The $10\\%$ GST was calculated on the pre-GST price ($10\\%$ of $\\$200 = \\$20$), whereas $10\\%$ of $\\$220$ is $\\$22$. To undo $\\times 1.1$, you must divide by $1.1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS3_1_1a", "expression": "Rational(15, 100) * 240", "expected": 36 },
+        { "id": "WS3_1_1c", "expression": "Rational(45, 1000) * 600", "expected": 27 },
+        { "id": "WS3_1_2a", "expression": "80 * Rational(115, 100)", "expected": 92 },
+        { "id": "WS3_1_2b", "expression": "150 * Rational(76, 100)", "expected": 114 },
+        { "id": "WS3_1_3a", "expression": "((62 - 50) / 50) * 100", "expected": 24 },
+        { "id": "WS3_1_3c", "expression": "((160 - 125) / 125) * 100", "expected": 28 },
+        { "id": "WS3_1_4c", "expression": "198 / Rational(11, 10)", "expected": 180 },
+        { "id": "WS3_1_4d", "expression": "462 / 11", "expected": 42 },
+        { "id": "WS3_1_7", "expression": "((1475 - 1250) / 1250) * 100", "expected": 18 },
+        { "id": "WS3_1_8", "expression": "192 / Rational(80, 100)", "expected": 240 }
+      ]
+    },
+    {
+      "section_id": "3_2",
+      "section_code": "3B",
+      "title": "Profit, Loss, Discounts and Simple Interest",
+      "vcaa_code": "VC2M8N05",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Calculate the profit or loss and the percentage profit or loss on cost price:",
+          "parts": [
+            { "label": "a", "question": "Cost $\\$60$, Sold for $\\$75$", "answer": "$\\$15$ profit ($25\\%$ profit)" },
+            { "label": "b", "question": "Cost $\\$120$, Sold for $\\$96$", "answer": "$\\$24$ loss ($20\\%$ loss)" },
+            { "label": "c", "question": "Cost $\\$80$, Sold for $\\$116$", "answer": "$\\$36$ profit ($45\\%$ profit)" },
+            { "label": "d", "question": "Cost $\\$250$, Sold for $\\$215$", "answer": "$\\$35$ loss ($14\\%$ loss)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the selling price after each mark-up or discount:",
+          "parts": [
+            { "label": "a", "question": "$\\$90$ marked up by $30\\%$", "answer": "$\\$117$" },
+            { "label": "b", "question": "$\\$160$ discounted by $15\\%$", "answer": "$\\$136$" },
+            { "label": "c", "question": "$\\$240$ marked up by $35\\%$", "answer": "$\\$324$" },
+            { "label": "d", "question": "$\\$350$ discounted by $28\\%$", "answer": "$\\$252$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the simple interest $I = Prt$ earned on each investment:",
+          "parts": [
+            { "label": "a", "question": "$P = \\$2000, r = 5\\%\\text{ p.a.}, t = 3\\text{ years}$", "answer": "$\\$300$" },
+            { "label": "b", "question": "$P = \\$4500, r = 4\\%\\text{ p.a.}, t = 5\\text{ years}$", "answer": "$\\$900$" },
+            { "label": "c", "question": "$P = \\$8000, r = 4.5\\%\\text{ p.a.}, t = 2\\text{ years}$", "answer": "$\\$720$" },
+            { "label": "d", "question": "$P = \\$3600, r = 6\\%\\text{ p.a.}, t = 6\\text{ months}$ ($0.5\\text{ yr}$)", "answer": "$\\$108$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use the simple interest formula $I = Prt$ and $A = P + I$ to find the required value:",
+          "parts": [
+            { "label": "a", "question": "Total amount $A$ when $P = \\$5000, r = 4.8\\%\\text{ p.a.}, t = 3\\text{ yr}$", "answer": "$\\$5720$" },
+            { "label": "b", "question": "Time $t$ (years) when $P = \\$3000, r = 5\\%\\text{ p.a.}, I = \\$600$", "answer": "$4\\text{ years}$" },
+            { "label": "c", "question": "Rate $r$ ($\\%\\text{ p.a.}$) when $P = \\$4000, t = 3\\text{ yr}, I = \\$540$", "answer": "$4.5\\%\\text{ p.a.}$" },
+            { "label": "d", "question": "Principal $P$ when $r = 6\\%\\text{ p.a.}, t = 4\\text{ yr}, I = \\$600$", "answer": "$\\$2500$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A surf shop in Torquay buys wetsuits at a wholesale cost of $\\$150$ each and marks them up by $60\\%$ to set the retail price. During an end-of-summer sale, the shop offers $25\\%$ off the retail price. Find (a) the retail price, (b) the sale price, and (c) the percentage profit still made on the $\\$150$ wholesale cost.",
+          "answer": "(a) $\\$240$, (b) $\\$180$, (c) $20\\%$ profit ($\\$30$ profit on $\\$150$)"
+        },
+        {
+          "number": 6,
+          "question": "Chloe invests $\\$6500$ in a Bendigo Bank term deposit paying simple interest of $5.2\\%\\text{ p.a.}$ for $3$ years. Find (a) the total simple interest earned and (b) the total value of her investment at maturity.",
+          "answer": "(a) $\\$1014$, (b) $\\$7514$"
+        },
+        {
+          "number": 7,
+          "question": "A real estate agent in Geelong charges a commission of $2.2\\%$ on the selling price of a house. If a house sells for $\\$750\\,000$, how much commission does the agent earn, and how much does the vendor receive after commission?",
+          "answer": "Commission $= \\$16\\,500$; vendor receives $\\$733\\,500$"
+        },
+        {
+          "number": 8,
+          "question": "An electronics retailer advertises a $\\$1200$ laptop with a $20\\%$ Boxing Day discount, plus an extra $10\\%$ off the discounted price for students. Find the final price paid by a student and the single equivalent percentage discount.",
+          "answer": "$\\$864$; equivalent to a $28\\%$ discount"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "At a simple interest rate of $r = 8\\%\\text{ p.a.}$, how many years $t$ does it take for any principal $P$ to double in value (so that the simple interest earned equals the original principal, $I = P$)? Show why the answer does not depend on $P$.",
+          "answer": "$12.5\\text{ years}$, since $I = Prt = P \\implies rt = 1 \\implies 0.08t = 1 \\implies t = \\frac{1}{0.08} = 12.5\\text{ years}$."
+        },
+        {
+          "number": 10,
+          "question": "Store A applies a $30\\%$ discount followed by a $10\\%$ discount. Store B applies a $10\\%$ discount followed by a $30\\%$ discount. Prove using decimal multipliers that both stores charge the exact same final price.",
+          "answer": "Store A multiplies by $0.70 \\times 0.90 = 0.63$; Store B multiplies by $0.90 \\times 0.70 = 0.63$ (commutative property of multiplication), so both give a $37\\%$ total discount."
+        }
+      ],
+      "assertions": [
+        { "id": "WS3_2_1a", "expression": "((75 - 60) / 60) * 100", "expected": 25 },
+        { "id": "WS3_2_2a", "expression": "90 * Rational(130, 100)", "expected": 117 },
+        { "id": "WS3_2_2d", "expression": "350 * Rational(72, 100)", "expected": 252 },
+        { "id": "WS3_2_3c", "expression": "8000 * Rational(45, 1000) * 2", "expected": 720 },
+        { "id": "WS3_2_3d", "expression": "3600 * Rational(6, 100) * Rational(1, 2)", "expected": 108 },
+        { "id": "WS3_2_4a", "expression": "5000 + 5000 * Rational(48, 1000) * 3", "expected": 5720 },
+        { "id": "WS3_2_4d", "expression": "600 / (Rational(6, 100) * 4)", "expected": 2500 },
+        { "id": "WS3_2_5b", "expression": "150 * Rational(160, 100) * Rational(75, 100)", "expected": 180 },
+        { "id": "WS3_2_6a", "expression": "6500 * Rational(52, 1000) * 3", "expected": 1014 },
+        { "id": "WS3_2_8", "expression": "1200 * Rational(80, 100) * Rational(90, 100)", "expected": 864 }
+      ]
+    }
+  ]
+}

@@ -5,12 +5,14 @@ import type {
   CurriculumManifest,
   TextbookSectionData,
   ExerciseQuestion,
+  SectionWorksheetAnswerKey,
 } from "@/lib/curriculum";
 import { MathText, FormulaBlock } from "./MathText";
 
 interface TextbookViewerProps {
   manifest: CurriculumManifest;
   generatedSections: Record<string, TextbookSectionData>;
+  worksheetAnswerKeys: Record<string, SectionWorksheetAnswerKey>;
 }
 
 type ActiveTab =
@@ -27,9 +29,12 @@ type ExerciseTierFilter =
   | "problem_solving_and_modelling"
   | "reasoning_and_communication";
 
+const APPENDIX_ID = "appendix_teacher_resources";
+
 export function TextbookViewer({
   manifest,
   generatedSections,
+  worksheetAnswerKeys,
 }: TextbookViewerProps) {
   const [selectedSectionId, setSelectedSectionId] = useState<string>("1_1");
   const [activeTab, setActiveTab] = useState<ActiveTab>("all");
@@ -42,8 +47,17 @@ export function TextbookViewer({
   const [expandedChapters, setExpandedChapters] = useState<
     Record<number, boolean>
   >({ 1: true });
+  const [appendixChapterFilter, setAppendixChapterFilter] = useState<
+    number | "all"
+  >("all");
 
-  const activeSection = generatedSections[selectedSectionId];
+  const isAppendixSelected = selectedSectionId === APPENDIX_ID;
+  const activeSection = !isAppendixSelected
+    ? generatedSections[selectedSectionId]
+    : undefined;
+  const activeWorksheetKey = !isAppendixSelected
+    ? worksheetAnswerKeys[selectedSectionId]
+    : undefined;
 
   let selectedManifestChapter = manifest.chapters[0];
   let selectedManifestSection = manifest.chapters[0].sections[0];
@@ -65,6 +79,7 @@ export function TextbookViewer({
     (acc, sec) => acc + sec.assertions.length,
     0
   );
+  const totalWorksheetsCount = Object.keys(worksheetAnswerKeys).length;
 
   const toggleChapter = (chNum: number) => {
     setExpandedChapters((prev) => ({ ...prev, [chNum]: !prev[chNum] }));
@@ -80,6 +95,11 @@ export function TextbookViewer({
 
   const toggleSolution = (id: string) => {
     setOpenSolutions((prev) => ({ ...prev, [id]: !prev[id] }));
+  };
+
+  const openAppendixForSection = (chNum: number) => {
+    setAppendixChapterFilter(chNum);
+    setSelectedSectionId(APPENDIX_ID);
   };
 
   const renderExerciseGroup = (
@@ -152,10 +172,12 @@ export function TextbookViewer({
           <h1 className="brand-title">Year 8 Mathematics</h1>
           <div className="brand-stats">
             <span>
-              {totalGeneratedCount} of {totalManifestSections} sections
+              {totalGeneratedCount}/{totalManifestSections} sections
             </span>
             <span>·</span>
-            <span>{totalVerifiedAssertions} SymPy checks</span>
+            <span>{totalWorksheetsCount} PDFs</span>
+            <span>·</span>
+            <span>{totalVerifiedAssertions} checks</span>
           </div>
         </div>
 
@@ -171,6 +193,7 @@ export function TextbookViewer({
                 <button
                   type="button"
                   className={`chapter-header-btn ${
+                    !isAppendixSelected &&
                     selectedManifestChapter.chapter_number === ch.chapter_number
                       ? "current-chapter"
                       : ""
@@ -192,7 +215,9 @@ export function TextbookViewer({
                   <ul className="section-list">
                     {ch.sections.map((sec) => {
                       const isReady = !!generatedSections[sec.section_id];
-                      const isSelected = sec.section_id === selectedSectionId;
+                      const isSelected =
+                        !isAppendixSelected &&
+                        sec.section_id === selectedSectionId;
                       return (
                         <li key={sec.section_id}>
                           <button
@@ -221,12 +246,266 @@ export function TextbookViewer({
               </div>
             );
           })}
+
+          {/* Appendices & Teacher Resources */}
+          <div className="appendix-sidebar-group">
+            <div className="appendix-sidebar-label">Appendices &amp; Resources</div>
+            <button
+              type="button"
+              onClick={() => {
+                setAppendixChapterFilter("all");
+                setSelectedSectionId(APPENDIX_ID);
+              }}
+              className={`section-nav-item ready ${
+                isAppendixSelected ? "selected" : ""
+              }`}
+            >
+              <span className="sec-code-pill">App A</span>
+              <span className="sec-nav-title">
+                Teacher Resources &amp; Answer Key
+              </span>
+              <span className="sec-status-dot dot-ready" title="Complete" />
+            </button>
+          </div>
         </nav>
       </aside>
 
       {/* Main Content */}
       <main className="textbook-main">
-        {activeSection ? (
+        {isAppendixSelected ? (
+          <div className="appendix-container">
+            <header className="section-hero">
+              <div className="hero-meta-row">
+                <span>Appendix A · Teacher Resources</span>
+                <span>·</span>
+                <span>Victorian Curriculum F–10 v2.0</span>
+                <span>·</span>
+                <span>23 Standard Worksheets · 230 SymPy-Verified Problems</span>
+              </div>
+
+              <h2 className="section-main-title">
+                <span className="section-code-highlight">Appendix A</span>
+                <span>Teacher Resources &amp; Worksheet Answer Key</span>
+              </h2>
+
+              <p className="vcaa-official-desc">
+                Centralised teacher resource hub containing the compiled Master
+                Answer Key for all 23 single-sided A4 section worksheets, direct
+                printable PDF downloads, and the framework for upcoming
+                differentiated support and extension resources.
+              </p>
+
+              <div className="teacher-master-download-bar">
+                <div className="teacher-master-info">
+                  <div className="teacher-master-title">
+                    Master Worksheet Answer Key (Complete Book · Sections 1A–10A)
+                  </div>
+                  <div className="teacher-master-sub">
+                    Typeset 11-page A4 PDF containing all fluency, application,
+                    and reasoning answers for every section worksheet.
+                  </div>
+                </div>
+                <a
+                  href="/worksheets/year8_maths_worksheets_answer_key.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="pdf-download-btn primary"
+                >
+                  Download Master Answer Key (PDF)
+                </a>
+              </div>
+
+              <div className="resource-roadmap-grid">
+                <div className="roadmap-card active">
+                  <div className="roadmap-status">Available Now · 23 PDFs</div>
+                  <div className="roadmap-title">Standard Section Worksheets</div>
+                  <p>
+                    Single-sided A4 printable question sheets for every section
+                    (1A–10A), covering Fluency, Applications, and Reasoning.
+                  </p>
+                </div>
+                <div className="roadmap-card planned">
+                  <div className="roadmap-status">Planned Expansion</div>
+                  <div className="roadmap-title">
+                    Foundation &amp; Support Worksheets
+                  </div>
+                  <p>
+                    Scaffolded A4 worksheets with partially worked prompts and
+                    visual number/geometry models for targeted intervention.
+                  </p>
+                </div>
+                <div className="roadmap-card planned">
+                  <div className="roadmap-status">Planned Expansion</div>
+                  <div className="roadmap-title">
+                    Extension &amp; Enrichment Sheets
+                  </div>
+                  <p>
+                    Non-routine problem-solving, algorithmic investigations, and
+                    competition-style proofs for high-ability learners.
+                  </p>
+                </div>
+              </div>
+
+              <div className="section-tabs" role="tablist">
+                <button
+                  type="button"
+                  onClick={() => setAppendixChapterFilter("all")}
+                  className={`tab-btn ${
+                    appendixChapterFilter === "all" ? "active" : ""
+                  }`}
+                >
+                  All Chapters (1–10)
+                </button>
+                {manifest.chapters.map((ch) => (
+                  <button
+                    key={ch.chapter_number}
+                    type="button"
+                    onClick={() => setAppendixChapterFilter(ch.chapter_number)}
+                    className={`tab-btn ${
+                      appendixChapterFilter === ch.chapter_number ? "active" : ""
+                    }`}
+                  >
+                    Ch {ch.chapter_number}
+                  </button>
+                ))}
+              </div>
+            </header>
+
+            <div className="section-content-body">
+              {manifest.chapters
+                .filter(
+                  (ch) =>
+                    appendixChapterFilter === "all" ||
+                    ch.chapter_number === appendixChapterFilter
+                )
+                .map((ch) => (
+                  <section key={ch.id} className="pedagogy-section">
+                    <div className="section-heading-bar">
+                      <h3>
+                        Chapter {ch.chapter_number}: {ch.title}
+                      </h3>
+                      <span className="section-subtitle">{ch.strand}</span>
+                    </div>
+
+                    <div className="ak-cards-stack">
+                      {ch.sections.map((sec) => {
+                        const wk = worksheetAnswerKeys[sec.section_id];
+                        if (!wk) return null;
+
+                        return (
+                          <article key={sec.section_id} className="ak-section-card">
+                            <div className="ak-card-header">
+                              <div>
+                                <div className="ak-card-title-row">
+                                  <span className="we-badge">
+                                    Worksheet {wk.section_code}
+                                  </span>
+                                  <h4 className="we-title">{wk.title}</h4>
+                                  <span className="meta-tag">{wk.vcaa_code}</span>
+                                </div>
+                              </div>
+                              <div className="ak-card-actions">
+                                <button
+                                  type="button"
+                                  onClick={() =>
+                                    setSelectedSectionId(sec.section_id)
+                                  }
+                                  className="minimal-btn"
+                                >
+                                  Go to Section {wk.section_code}
+                                </button>
+                                <a
+                                  href={wk.pdf_url}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="pdf-download-btn"
+                                >
+                                  Student Worksheet (PDF)
+                                </a>
+                              </div>
+                            </div>
+
+                            <div className="ak-card-body">
+                              <div className="ak-part-block">
+                                <div className="ak-part-label">
+                                  Part A · Fluency &amp; Skill Practice Answers
+                                </div>
+                                <div className="ak-fluency-table">
+                                  {wk.fluency_answers.map((fa) => (
+                                    <div key={fa.number} className="ak-fluency-line">
+                                      <span className="ak-q-badge">
+                                        Q{fa.number}.
+                                      </span>
+                                      <div className="ak-parts-row">
+                                        {fa.parts.map((pt) => (
+                                          <div
+                                            key={pt.label}
+                                            className="ak-part-cell"
+                                          >
+                                            <span className="ak-sub-label">
+                                              ({pt.label})
+                                            </span>{" "}
+                                            <MathText text={pt.answer} />
+                                          </div>
+                                        ))}
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+
+                              <div className="ak-part-block">
+                                <div className="ak-part-label">
+                                  Part B · Problem-Solving &amp; Applications
+                                  Answers
+                                </div>
+                                <div className="ak-word-answers-grid">
+                                  {wk.application_answers.map((aa) => (
+                                    <div
+                                      key={aa.number}
+                                      className="ak-word-answer-item"
+                                    >
+                                      <span className="ak-q-badge">
+                                        Q{aa.number}.
+                                      </span>
+                                      <div>
+                                        <MathText text={aa.answer} />
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+
+                              <div className="ak-part-block">
+                                <div className="ak-part-label">
+                                  Part C · Reasoning &amp; Challenge Answers
+                                </div>
+                                <div className="ak-reasoning-stack">
+                                  {wk.reasoning_answers.map((ra) => (
+                                    <div
+                                      key={ra.number}
+                                      className="ak-word-answer-item"
+                                    >
+                                      <span className="ak-q-badge">
+                                        Q{ra.number}.
+                                      </span>
+                                      <div>
+                                        <MathText text={ra.answer} />
+                                      </div>
+                                    </div>
+                                  ))}
+                                </div>
+                              </div>
+                            </div>
+                          </article>
+                        );
+                      })}
+                    </div>
+                  </section>
+                ))}
+            </div>
+          </div>
+        ) : activeSection ? (
           <>
             <header className="section-hero">
               <div className="hero-meta-row">
@@ -272,6 +551,55 @@ export function TextbookViewer({
                 </div>
               </div>
 
+              {/* Printable Worksheet & Differentiated Resource Strip */}
+              {activeWorksheetKey && (
+                <div className="worksheet-resource-banner">
+                  <div className="ws-banner-left">
+                    <div className="ws-banner-kicker">
+                      Printable Classroom Resources · Section{" "}
+                      {activeSection.metadata.section_code}
+                    </div>
+                    <div className="ws-banner-desc">
+                      Complementary single-sided A4 problem set (Fluency,
+                      Applications &amp; Reasoning) for written workbook practice.
+                    </div>
+                  </div>
+                  <div className="ws-banner-actions">
+                    <a
+                      href={activeWorksheetKey.pdf_url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="pdf-download-btn primary"
+                    >
+                      Standard Worksheet (A4 PDF)
+                    </a>
+                    <span
+                      className="tier-pill-disabled"
+                      title="Differentiated tier planned"
+                    >
+                      Foundation PDF (Soon)
+                    </span>
+                    <span
+                      className="tier-pill-disabled"
+                      title="Differentiated tier planned"
+                    >
+                      Extension PDF (Soon)
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() =>
+                        openAppendixForSection(
+                          activeSection.metadata.chapter_number
+                        )
+                      }
+                      className="minimal-btn"
+                    >
+                      Teacher Answer Key →
+                    </button>
+                  </div>
+                </div>
+              )}
+
               <div className="section-tabs" role="tablist">
                 {(
                   [
@@ -312,7 +640,9 @@ export function TextbookViewer({
                         <div className="vocab-grid">
                           {activeSection.metadata.key_vocabulary.map((kv, i) => (
                             <div key={i} className="vocab-item">
-                              <span className="vocab-term">{kv.term}</span>
+                              <span className="vocab-term">
+                                <MathText text={kv.term} />
+                              </span>
                               <span className="vocab-def">
                                 <MathText text={kv.definition} />
                               </span>
@@ -326,7 +656,9 @@ export function TextbookViewer({
                     {activeSection.theory.map((t, idx) => (
                       <article key={t.id} className="theory-card">
                         <div className="theory-card-index">0{idx + 1}</div>
-                        <h4 className="theory-card-title">{t.title}</h4>
+                        <h4 className="theory-card-title">
+                          <MathText text={t.title} />
+                        </h4>
                         <p className="theory-explanation">
                           <MathText text={t.explanation} />
                         </p>
@@ -335,7 +667,7 @@ export function TextbookViewer({
                         )}
                         <div className="memory-aid-callout">
                           <div className="callout-header">
-                            {t.callout_title || "Key Rule"}
+                            <MathText text={t.callout_title || "Key Rule"} />
                           </div>
                           <div className="callout-body">
                             <MathText text={t.callout_rule} />
@@ -363,7 +695,9 @@ export function TextbookViewer({
                         <article key={we.id} className="worked-example-card">
                           <div className="we-header">
                             <span className="we-badge">Example {idx + 1}</span>
-                            <h4 className="we-title">{we.title}</h4>
+                            <h4 className="we-title">
+                              <MathText text={we.title} />
+                            </h4>
                           </div>
 
                           <div className="we-problem-box">
@@ -462,7 +796,9 @@ export function TextbookViewer({
                   <div className="misconceptions-grid">
                     {activeSection.common_misconceptions.map((m) => (
                       <article key={m.id} className="misconception-card">
-                        <h4 className="misc-title">{m.title}</h4>
+                        <h4 className="misc-title">
+                          <MathText text={m.title} />
+                        </h4>
                         <div className="misc-comparison">
                           <div className="misc-wrong-box">
                             <div className="misc-box-label">Misconception</div>
@@ -507,6 +843,16 @@ export function TextbookViewer({
                   <div className="section-heading-bar">
                     <h3>Exercises</h3>
                     <div className="tier-filter-bar">
+                      {activeWorksheetKey && (
+                        <a
+                          href={activeWorksheetKey.pdf_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="pdf-download-btn"
+                        >
+                          Printable Worksheet {activeSection.metadata.section_code} (PDF)
+                        </a>
+                      )}
                       {(
                         [
                           ["all", "All"],

@@ -1,0 +1,390 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Integers and Number Properties",
+  "worksheets": [
+    {
+      "section_id": "1_1",
+      "section_code": "1A",
+      "title": "Adding and Subtracting Integers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each integer addition:",
+          "parts": [
+            { "label": "a", "question": "$-14 + 9$", "answer": "$-5$" },
+            { "label": "b", "question": "$18 + (-25)$", "answer": "$-7$" },
+            { "label": "c", "question": "$-23 + (-19)$", "answer": "$-42$" },
+            { "label": "d", "question": "$-37 + 52$", "answer": "$15$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each integer subtraction by rewriting adjacent signs:",
+          "parts": [
+            { "label": "a", "question": "$11 - 28$", "answer": "$-17$" },
+            { "label": "b", "question": "$-16 - 15$", "answer": "$-31$" },
+            { "label": "c", "question": "$24 - (-18)$", "answer": "$42$" },
+            { "label": "d", "question": "$-33 - (-41)$", "answer": "$8$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Evaluate the following multi-step directed number expressions:",
+          "parts": [
+            { "label": "a", "question": "$-12 + 19 - (-8) - 21$", "answer": "$-6$" },
+            { "label": "b", "question": "$35 - (-14) + (-29) - 26$", "answer": "$-6$" },
+            { "label": "c", "question": "$-48 - (-15) - 17 + 34$", "answer": "$-16$" },
+            { "label": "d", "question": "$-105 + 68 - (-47) + (-22)$", "answer": "$-12$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the missing integer $\\square$ that makes each statement true:",
+          "parts": [
+            { "label": "a", "question": "$-15 + \\square = 8$", "answer": "$23$" },
+            { "label": "b", "question": "$12 - \\square = 29$", "answer": "$-17$" },
+            { "label": "c", "question": "$\\square - (-14) = -5$", "answer": "$-19$" },
+            { "label": "d", "question": "$-27 - \\square = -11$", "answer": "$-16$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "At Perisher Valley in the Snowy Mountains, the temperature at $9{:}00\\text{ pm}$ was $-3^\\circ\\text{C}$. Overnight it fell by $6^\\circ\\text{C}$ to its minimum at $5{:}00\\text{ am}$, then rose by $14^\\circ\\text{C}$ by $1{:}00\\text{ pm}$. Find (a) the $5{:}00\\text{ am}$ minimum temperature and (b) the $1{:}00\\text{ pm}$ temperature.",
+          "answer": "(a) $-9^\\circ\\text{C}$, (b) $5^\\circ\\text{C}$"
+        },
+        {
+          "number": 6,
+          "question": "A small business overdraft account in Geelong has a balance of $-\\$340$. During the week, a client EFT transfer of $\\$520$ is deposited, an electricity bill of $\\$265$ is debited, and a GST refund of $\\$110$ is credited. What is the final account balance?",
+          "answer": "$\\$25$"
+        },
+        {
+          "number": 7,
+          "question": "An autonomous underwater research drone in Bass Strait begins at an elevation of $-45\\text{ m}$ relative to sea level. It descends $28\\text{ m}$, rises $19\\text{ m}$ to photograph a reef, and then descends another $34\\text{ m}$. What is the drone's final elevation relative to sea level?",
+          "answer": "$-88\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "Lake Eyre (Kati Thanda) has a lowest point at $-15\\text{ m}$ relative to sea level, while Mount Bogong in Victoria has a summit at $1986\\text{ m}$ above sea level. Write a directed number subtraction to find the vertical height difference between the two landmarks.",
+          "answer": "$1986 - (-15) = 2001\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Let $p$ and $q$ be two negative integers with $p < q$ (for example, $p = -10$ and $q = -3$). State whether $(p - q)$ is always positive or always negative, and justify your answer using a number line argument.",
+          "answer": "Always negative, because $p$ lies to the left of $q$ on the number line ($p < q \\implies p - q < 0$; e.g. $-10 - (-3) = -7 < 0$)."
+        },
+        {
+          "number": 10,
+          "question": "Each row, column, and main diagonal of a $3 \\times 3$ magic square has the same magic sum $S = -6$. The top row is $(-7, 4, -3)$ and the middle row is $(2, -2, -6)$. Find the three integers in the bottom row from left to right.",
+          "answer": "$(-1, -8, 3)$"
+        }
+      ],
+      "assertions": [
+        { "id": "WS1_1_1a", "expression": "-14 + 9", "expected": -5 },
+        { "id": "WS1_1_1c", "expression": "-23 + (-19)", "expected": -42 },
+        { "id": "WS1_1_2c", "expression": "24 - (-18)", "expected": 42 },
+        { "id": "WS1_1_2d", "expression": "-33 - (-41)", "expected": 8 },
+        { "id": "WS1_1_3a", "expression": "-12 + 19 - (-8) - 21", "expected": -6 },
+        { "id": "WS1_1_3d", "expression": "-105 + 68 - (-47) + (-22)", "expected": -12 },
+        { "id": "WS1_1_5b", "expression": "-3 - 6 + 14", "expected": 5 },
+        { "id": "WS1_1_6", "expression": "-340 + 520 - 265 + 110", "expected": 25 },
+        { "id": "WS1_1_7", "expression": "-45 - 28 + 19 - 34", "expected": -88 },
+        { "id": "WS1_1_8", "expression": "1986 - (-15)", "expected": 2001 }
+      ]
+    },
+    {
+      "section_id": "1_2",
+      "section_code": "1B",
+      "title": "Multiplying and Dividing Integers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each integer product:",
+          "parts": [
+            { "label": "a", "question": "$-7 \\times 8$", "answer": "$-56$" },
+            { "label": "b", "question": "$-9 \\times (-12)$", "answer": "$108$" },
+            { "label": "c", "question": "$15 \\times (-6)$", "answer": "$-90$" },
+            { "label": "d", "question": "$-4 \\times (-5) \\times (-6)$", "answer": "$-120$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each integer quotient:",
+          "parts": [
+            { "label": "a", "question": "$-72 \\div 9$", "answer": "$-8$" },
+            { "label": "b", "question": "$-96 \\div (-12)$", "answer": "$8$" },
+            { "label": "c", "question": "$108 \\div (-9)$", "answer": "$-12$" },
+            { "label": "d", "question": "$\\dfrac{-144}{16}$", "answer": "$-9$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Evaluate each power, paying careful attention to brackets:",
+          "parts": [
+            { "label": "a", "question": "$(-6)^2$", "answer": "$36$" },
+            { "label": "b", "question": "$-6^2$", "answer": "$-36$" },
+            { "label": "c", "question": "$(-4)^3$", "answer": "$-64$" },
+            { "label": "d", "question": "$(-2)^4 \\times (-3)^2$", "answer": "$144$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each combined multiplication and division expression:",
+          "parts": [
+            { "label": "a", "question": "$-48 \\div (-6) \\times (-3)$", "answer": "$-24$" },
+            { "label": "b", "question": "$\\dfrac{-15 \\times (-8)}{-10}$", "answer": "$-12$" },
+            { "label": "c", "question": "$(-3)^3 \\div 9 \\times (-5)$", "answer": "$15$" },
+            { "label": "d", "question": "$\\dfrac{(-12) \\times 14}{-21}$", "answer": "$8$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A hot-air balloon descending over the Yarra Valley loses altitude at a constant rate of $-18\\text{ m}$ per minute. (a) What is its change in altitude over $7$ minutes? (b) How many minutes does it take for its altitude to change by $-234\\text{ m}$?",
+          "answer": "(a) $-126\\text{ m}$, (b) $13\\text{ minutes}$"
+        },
+        {
+          "number": 6,
+          "question": "During a dry summer week in Mildura, an irrigation dam's water volume changed by $-420\\text{ kL}$ over $6$ equal days. What was the mean daily change in volume?",
+          "answer": "$-70\\text{ kL/day}$"
+        },
+        {
+          "number": 7,
+          "question": "In a Year 8 scholarship quiz of $25$ questions, a correct answer scores $+5$ points, an incorrect answer scores $-3$ points, and an unanswered question scores $-1$ point. Liam answers $17$ correctly, gets $5$ incorrect, and leaves $3$ unanswered. Calculate his total score.",
+          "answer": "$67\\text{ points}$"
+        },
+        {
+          "number": 8,
+          "question": "The minimum overnight temperatures in Ballarat over $5$ consecutive winter nights were $-3^\\circ\\text{C}, -5^\\circ\\text{C}, -1^\\circ\\text{C}, -4^\\circ\\text{C}$, and $-2^\\circ\\text{C}$. Calculate the mean minimum temperature across the $5$ nights.",
+          "answer": "$-3^\\circ\\text{C}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Find all pairs of integers $(x, y)$ with $x < y$ such that $x \\times y = -24$ and $x + y = -5$. Show how you tested the factor pairs of $-24$.",
+          "answer": "$(x, y) = (-8, 3)$, since $(-8) \\times 3 = -24$ and $-8 + 3 = -5$."
+        },
+        {
+          "number": 10,
+          "question": "Without calculating the full numerical value, determine whether the product $(-1)^1 \\times (-2)^2 \\times (-3)^3 \\times (-4)^4 \\times (-5)^5$ is positive or negative. Explain your reasoning by counting negative factors.",
+          "answer": "Negative, because the total number of negative factors is $1 + 2 + 3 + 4 + 5 = 15$ (an odd number)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS1_2_1b", "expression": "-9 * (-12)", "expected": 108 },
+        { "id": "WS1_2_1d", "expression": "-4 * (-5) * (-6)", "expected": -120 },
+        { "id": "WS1_2_3d", "expression": "(-2)**4 * (-3)**2", "expected": 144 },
+        { "id": "WS1_2_4a", "expression": "(-48 / (-6)) * (-3)", "expected": -24 },
+        { "id": "WS1_2_4b", "expression": "(-15 * (-8)) / (-10)", "expected": -12 },
+        { "id": "WS1_2_4c", "expression": "((-3)**3 / 9) * (-5)", "expected": 15 },
+        { "id": "WS1_2_5a", "expression": "-18 * 7", "expected": -126 },
+        { "id": "WS1_2_5b", "expression": "-234 / (-18)", "expected": 13 },
+        { "id": "WS1_2_7", "expression": "17*5 + 5*(-3) + 3*(-1)", "expected": 67 },
+        { "id": "WS1_2_8", "expression": "(-3 - 5 - 1 - 4 - 2) / 5", "expected": -3 }
+      ]
+    },
+    {
+      "section_id": "1_3",
+      "section_code": "1C",
+      "title": "Order of Operations and Directed Numbers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each expression using the correct order of operations:",
+          "parts": [
+            { "label": "a", "question": "$-15 + 6 \\times (-4)$", "answer": "$-39$" },
+            { "label": "b", "question": "$24 - (-36) \\div (-9)$", "answer": "$20$" },
+            { "label": "c", "question": "$-8 \\times (-5) + (-28) \\div 7$", "answer": "$36$" },
+            { "label": "d", "question": "$50 - 3 \\times (-4)^2$", "answer": "$2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each expression containing brackets and powers:",
+          "parts": [
+            { "label": "a", "question": "$(-18 + 6) \\div (-3) - 7$", "answer": "$-3$" },
+            { "label": "b", "question": "$(-3)^3 + 5 \\times (4 - 9)$", "answer": "$-52$" },
+            { "label": "c", "question": "$40 \\div (3 - 11) - (-2)^3$", "answer": "$3$" },
+            { "label": "d", "question": "$-2 \\times [14 - 3 \\times (-2)^2]$", "answer": "$-4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Evaluate each fractional expression by simplifying the numerator and denominator first:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{-24 - 12}{-9}$", "answer": "$4$" },
+            { "label": "b", "question": "$\\dfrac{(-5)^2 - 49}{3 - (-5)}$", "answer": "$-3$" },
+            { "label": "c", "question": "$\\dfrac{-6 \\times (-8) - 18}{2 - 17}$", "answer": "$-2$" },
+            { "label": "d", "question": "$\\dfrac{(-4)^3 + 20}{(-3)^2 + 2}$", "answer": "$-4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Given $p = -4$, $q = 3$, and $r = -5$, evaluate:",
+          "parts": [
+            { "label": "a", "question": "$p^2 - 2qr$", "answer": "$46$" },
+            { "label": "b", "question": "$3p - q^2 + r$", "answer": "$-26$" },
+            { "label": "c", "question": "$(p - r)^3 - q^2$", "answer": "$-8$" },
+            { "label": "d", "question": "$\\dfrac{p^2 + r^2 - 1}{p - q - 1}$", "answer": "$-5$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "At Mount Hotham, the temperature was $-4^\\circ\\text{C}$ for $3$ hours, $-2^\\circ\\text{C}$ for $5$ hours, and $+3^\\circ\\text{C}$ for $2$ hours. Write a single expression and calculate the mean temperature across this $10$-hour period.",
+          "answer": "$\\dfrac{3(-4) + 5(-2) + 2(3)}{10} = -1.6^\\circ\\text{C}$"
+        },
+        {
+          "number": 6,
+          "question": "A Melbourne share trader holds $400$ shares in a mining company that drop by $\\$3$ per share, and $250$ shares in a tech company that rise by $\\$6$ per share. She also pays $\\$40$ in brokerage fees. Find her net financial gain or loss.",
+          "answer": "$+\\$260$ gain ($400(-3) + 250(6) - 40 = 260$)"
+        },
+        {
+          "number": 7,
+          "question": "When converting a temperature of $F = 14^\\circ\\text{F}$ to degrees Celsius using $C = \\dfrac{5(F - 32)}{9}$, evaluate the formula step by step to find $C$.",
+          "answer": "$-10^\\circ\\text{C}$"
+        },
+        {
+          "number": 8,
+          "question": "A diver starts at $-12\\text{ m}$, descends at $4\\text{ m/min}$ for $6$ minutes, pauses, and then ascends at $3\\text{ m/min}$ for $9$ minutes. Evaluate $-12 + 6(-4) + 9(3)$ to find the diver's final position.",
+          "answer": "$-9\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Insert one pair of brackets into the expression $-18 \\div 3 - 9 + (-2)^3$ so that the expression evaluates to $-5$. Show your full working.",
+          "answer": "$-18 \\div (3 - 9) + (-2)^3 = -18 \\div (-6) + (-8) = 3 - 8 = -5$."
+        },
+        {
+          "number": 10,
+          "question": "Sam evaluates $16 - 4 \\times (-3)^2$ as $12 \\times 9 = 108$, while Priya evaluates it as $16 - (-12)^2 = 16 - 144 = -128$. Explain the specific order-of-operations error each student made and find the correct value.",
+          "answer": "Sam subtracted $16 - 4$ before multiplying; Priya multiplied $4 \\times (-3)$ before squaring. Correct: $16 - 4(9) = 16 - 36 = -20$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS1_3_1a", "expression": "-15 + 6 * (-4)", "expected": -39 },
+        { "id": "WS1_3_1d", "expression": "50 - 3 * (-4)**2", "expected": 2 },
+        { "id": "WS1_3_2b", "expression": "(-3)**3 + 5 * (4 - 9)", "expected": -52 },
+        { "id": "WS1_3_2d", "expression": "-2 * (14 - 3 * (-2)**2)", "expected": -4 },
+        { "id": "WS1_3_3b", "expression": "((-5)**2 - 49) / (3 - (-5))", "expected": -3 },
+        { "id": "WS1_3_3d", "expression": "((-4)**3 + 20) / ((-3)**2 + 2)", "expected": -4 },
+        { "id": "WS1_3_4a", "expression": "(-4)**2 - 2 * 3 * (-5)", "expected": 46 },
+        { "id": "WS1_3_4d", "expression": "((-4)**2 + (-5)**2 - 1) / (-4 - 3 - 1)", "expected": -5 },
+        { "id": "WS1_3_6", "expression": "400*(-3) + 250*6 - 40", "expected": 260 },
+        { "id": "WS1_3_7", "expression": "5 * (14 - 32) / 9", "expected": -10 }
+      ]
+    },
+    {
+      "section_id": "1_4",
+      "section_code": "1D",
+      "title": "LCM, HCF, and Prime Factorisation",
+      "vcaa_code": "VC2M8N02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Write the prime factorisation of each number in index form:",
+          "parts": [
+            { "label": "a", "question": "$90$", "answer": "$2 \\times 3^2 \\times 5$" },
+            { "label": "b", "question": "$144$", "answer": "$2^4 \\times 3^2$" },
+            { "label": "c", "question": "$252$", "answer": "$2^2 \\times 3^2 \\times 7$" },
+            { "label": "d", "question": "$540$", "answer": "$2^2 \\times 3^3 \\times 5$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the Highest Common Factor ($\\text{HCF}$) of each pair or group of numbers:",
+          "parts": [
+            { "label": "a", "question": "$48$ and $80$", "answer": "$16$" },
+            { "label": "b", "question": "$63$ and $105$", "answer": "$21$" },
+            { "label": "c", "question": "$72$ and $120$", "answer": "$24$" },
+            { "label": "d", "question": "$36, 60$, and $84$", "answer": "$12$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the Lowest Common Multiple ($\\text{LCM}$) of each pair or group of numbers:",
+          "parts": [
+            { "label": "a", "question": "$12$ and $15$", "answer": "$60$" },
+            { "label": "b", "question": "$18$ and $24$", "answer": "$72$" },
+            { "label": "c", "question": "$16$ and $28$", "answer": "$112$" },
+            { "label": "d", "question": "$8, 10$, and $12$", "answer": "$120$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Given $A = 2^3 \\times 3^2 \\times 5$ ($360$) and $B = 2^2 \\times 3^3 \\times 7$ ($756$), find:",
+          "parts": [
+            { "label": "a", "question": "$\\text{HCF}(A, B)$ in index form", "answer": "$2^2 \\times 3^2$" },
+            { "label": "b", "question": "$\\text{HCF}(A, B)$ as a whole number", "answer": "$36$" },
+            { "label": "c", "question": "$\\text{LCM}(A, B)$ in index form", "answer": "$2^3 \\times 3^3 \\times 5 \\times 7$" },
+            { "label": "d", "question": "$\\text{LCM}(A, B)$ as a whole number", "answer": "$7560$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "At Box Hill bus interchange, Route A departs every $15\\text{ minutes}$ and Route B departs every $24\\text{ minutes}$. If both buses depart together at $7{:}00\\text{ am}$, how many minutes pass before they next depart together, and at what time does this occur?",
+          "answer": "$120\\text{ minutes}$ ($2\\text{ hours}$), at $9{:}00\\text{ am}$"
+        },
+        {
+          "number": 6,
+          "question": "A landscape gardener in Bendigo has $84$ native grasses and $126$ kangaroo paw plants. She wants to plant them into the largest possible number of identical garden beds with no plants left over. Find (a) the greatest number of beds and (b) how many of each plant go into every bed.",
+          "answer": "(a) $42\\text{ beds}$, (b) $2$ native grasses and $3$ kangaroo paws per bed"
+        },
+        {
+          "number": 7,
+          "question": "Two interlocking spur gears have $32$ teeth and $40$ teeth respectively. After how many minimum rotations of the $32$-tooth gear will the exact same pair of marked teeth meet again?",
+          "answer": "$5\\text{ rotations}$ ($\\text{LCM}(32, 40) = 160$ teeth; $160 \\div 32 = 5$)"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular sheet of plywood measuring $168\\text{ cm}$ by $120\\text{ cm}$ is to be sawn into identical, largest-possible square boards with no waste. Find the side length of each square and the total number of squares produced.",
+          "answer": "Side length $= 24\\text{ cm}$; $35\\text{ squares}$ ($7 \\times 5 = 35$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Using the prime factorisation $252 = 2^2 \\times 3^2 \\times 7$, find the smallest positive integer $k$ such that $252k$ is a perfect square, and find $\\sqrt{252k}$.",
+          "answer": "$k = 7$ (so all prime exponents are even: $2^2 \\times 3^2 \\times 7^2 = 1764$), giving $\\sqrt{1764} = 42$."
+        },
+        {
+          "number": 10,
+          "question": "Two positive integers have $\\text{HCF} = 14$ and $\\text{LCM} = 210$. Given that one of the integers is $42$, use the identity $a \\times b = \\text{HCF}(a, b) \\times \\text{LCM}(a, b)$ to find the other integer.",
+          "answer": "$70$, since $\\dfrac{14 \\times 210}{42} = 70$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS1_4_1d", "expression": "2**2 * 3**3 * 5", "expected": 540 },
+        { "id": "WS1_4_2a", "expression": "igcd(48, 80)", "expected": 16 },
+        { "id": "WS1_4_2c", "expression": "igcd(72, 120)", "expected": 24 },
+        { "id": "WS1_4_3b", "expression": "ilcm(18, 24)", "expected": 72 },
+        { "id": "WS1_4_3c", "expression": "ilcm(16, 28)", "expected": 112 },
+        { "id": "WS1_4_4b", "expression": "igcd(360, 756)", "expected": 36 },
+        { "id": "WS1_4_4d", "expression": "ilcm(360, 756)", "expected": 7560 },
+        { "id": "WS1_4_5", "expression": "ilcm(15, 24)", "expected": 120 },
+        { "id": "WS1_4_6", "expression": "igcd(84, 126)", "expected": 42 },
+        { "id": "WS1_4_10", "expression": "(14 * 210) / 42", "expected": 70 }
+      ]
+    }
+  ]
+}

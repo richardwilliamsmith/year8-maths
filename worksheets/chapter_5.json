@@ -1,0 +1,198 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Algebraic Techniques",
+  "worksheets": [
+    {
+      "section_id": "5_1",
+      "section_code": "5A",
+      "title": "Language of Algebra, Substitution and Like Terms",
+      "vcaa_code": "VC2M8A01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Given $x = -3$, $y = 5$, and $z = -2$, evaluate each expression:",
+          "parts": [
+            { "label": "a", "question": "$4y - 3x$", "answer": "$29$" },
+            { "label": "b", "question": "$x^2 - 4z$", "answer": "$17$" },
+            { "label": "c", "question": "$2x^2y - z^3$", "answer": "$98$" },
+            { "label": "d", "question": "$\\dfrac{y^2 - x^2}{z}$", "answer": "$-8$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Simplify each expression by collecting like terms:",
+          "parts": [
+            { "label": "a", "question": "$8a - 3b - 11a + 7b$", "answer": "$-3a + 4b$" },
+            { "label": "b", "question": "$6x^2 - 5x + 9 - 2x^2 - 4x - 12$", "answer": "$4x^2 - 9x - 3$" },
+            { "label": "c", "question": "$7mn - 4m^2n + 2nm - 5m^2n$", "answer": "$9mn - 9m^2n$" },
+            { "label": "d", "question": "$9pq^2 - 6p^2q - 12q^2p + 4qp^2$", "answer": "$-3pq^2 - 2p^2q$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Simplify each algebraic product:",
+          "parts": [
+            { "label": "a", "question": "$-5a \\times 6b$", "answer": "$-30ab$" },
+            { "label": "b", "question": "$-4x^2 \\times (-7x^3)$", "answer": "$28x^5$" },
+            { "label": "c", "question": "$3m^2n \\times (-8mn^2)$", "answer": "$-24m^3n^3$" },
+            { "label": "d", "question": "$(-2ab^2) \\times (-3a^2b) \\times (-4ab)$", "answer": "$-24a^4b^4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Simplify each algebraic quotient:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{-36x^4}{9x}$", "answer": "$-4x^3$" },
+            { "label": "b", "question": "$\\dfrac{-45a^3b^2}{-15ab}$", "answer": "$3a^2b$" },
+            { "label": "c", "question": "$\\dfrac{18m^2n^3}{-27mn^4}$", "answer": "$-\\dfrac{2m}{3n}$" },
+            { "label": "d", "question": "$\\dfrac{-6x^2y \\times 4xy^3}{8x^3y^2}$", "answer": "$-3y^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular vegetable bed has length $(5x - 2)\\text{ m}$ and width $(2x + 3)\\text{ m}$. (a) Write a simplified algebraic expression for its perimeter $P$. (b) Evaluate the perimeter when $x = 3$.",
+          "answer": "(a) $P = (14x + 2)\\text{ m}$, (b) $44\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "An AFL team kicks $g$ goals ($6$ points each) and $b$ behinds ($1$ point each) in the first half, and $(g + 3)$ goals and $(2b - 1)$ behinds in the second half. Write a simplified expression for the team's full-match score in points.",
+          "answer": "$12g + 3b + 17\\text{ points}$"
+        },
+        {
+          "number": 7,
+          "question": "A rectangular sheet of metal has length $6a\\text{ cm}$ and width $4b\\text{ cm}$. Four identical squares, each of side $a\\text{ cm}$, are cut from the corners. Write a simplified expression for the remaining area.",
+          "answer": "$(24ab - 4a^2)\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "A plumber charges a call-out fee of $\\$85$, plus $\\$70$ per hour for $h$ hours and $\\$15$ per valve for $v$ valves. Write an algebraic expression for the total charge and evaluate it when $h = 3$ and $v = 4$.",
+          "answer": "$70h + 15v + 85$; $\\$355$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $5x^2y$ and $-8yx^2$ are like terms, whereas $5x^2y$ and $5xy^2$ are unlike terms. Verify your explanation by substituting $x = 2$ and $y = 3$ into $x^2y$ and $xy^2$.",
+          "answer": "By the commutative law, $yx^2 = x^2y$, so both have $x^2$ and $y^1$; in $xy^2$, $x$ has power $1$ and $y$ has power $2$ ($2^2(3) = 12 \\neq 2(3^2) = 18$)."
+        },
+        {
+          "number": 10,
+          "question": "Write an algebraic expression for the sum of four consecutive integers where the smallest integer is $n$. Simplify the expression and explain why the sum of four consecutive integers is never divisible by $4$, but is always an even number.",
+          "answer": "$n + (n+1) + (n+2) + (n+3) = 4n + 6 = 2(2n + 3)$, which is always even and leaves a remainder of $2$ when divided by $4$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS5_1_1a", "expression": "4 * 5 - 3 * (-3)", "expected": 29 },
+        { "id": "WS5_1_1b", "expression": "(-3)**2 - 4 * (-2)", "expected": 17 },
+        { "id": "WS5_1_1c", "expression": "2 * (-3)**2 * 5 - (-2)**3", "expected": 98 },
+        { "id": "WS5_1_1d", "expression": "(5**2 - (-3)**2) / (-2)", "expected": -8 },
+        { "id": "WS5_1_2a", "expression": "simplify(8*a - 3*b - 11*a + 7*b - (-3*a + 4*b))", "expected": 0 },
+        { "id": "WS5_1_2c", "expression": "simplify(7*m*n - 4*m**2*n + 2*n*m - 5*m**2*n - (9*m*n - 9*m**2*n))", "expected": 0 },
+        { "id": "WS5_1_3d", "expression": "simplify((-2*a*b**2)*(-3*a**2*b)*(-4*a*b) - (-24*a**4*b**4))", "expected": 0 },
+        { "id": "WS5_1_4d", "expression": "simplify((-6*x**2*y * 4*x*y**3) / (8*x**3*y**2) - (-3*y**2))", "expected": 0 },
+        { "id": "WS5_1_5b", "expression": "14 * 3 + 2", "expected": 44 },
+        { "id": "WS5_1_8", "expression": "70 * 3 + 15 * 4 + 85", "expected": 355 }
+      ]
+    },
+    {
+      "section_id": "5_2",
+      "section_code": "5B",
+      "title": "Expanding Brackets and Factorising Linear Expressions",
+      "vcaa_code": "VC2M8A01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Expand each bracket using the distributive law:",
+          "parts": [
+            { "label": "a", "question": "$5(2x - 7)$", "answer": "$10x - 35$" },
+            { "label": "b", "question": "$-4(3a + 5)$", "answer": "$-12a - 20$" },
+            { "label": "c", "question": "$-6(4 - 3m)$", "answer": "$-24 + 18m = 18m - 24$" },
+            { "label": "d", "question": "$3x(4x - 5y)$", "answer": "$12x^2 - 15xy$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Expand and simplify by collecting like terms:",
+          "parts": [
+            { "label": "a", "question": "$4(3x + 2) + 5(2x - 3)$", "answer": "$22x - 7$" },
+            { "label": "b", "question": "$6(2a - 1) - 3(3a + 4)$", "answer": "$3a - 18$" },
+            { "label": "c", "question": "$5(4m - 3) - 2(6m - 5)$", "answer": "$8m - 5$" },
+            { "label": "d", "question": "$2x(3x - 4) - x(5x - 7)$", "answer": "$x^2 - x$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factorise each expression completely by extracting the Highest Common Factor:",
+          "parts": [
+            { "label": "a", "question": "$15x + 25$", "answer": "$5(3x + 5)$" },
+            { "label": "b", "question": "$18a - 24b$", "answer": "$6(3a - 4b)$" },
+            { "label": "c", "question": "$14m^2 - 21m$", "answer": "$7m(2m - 3)$" },
+            { "label": "d", "question": "$16x^2y + 24xy^2$", "answer": "$8xy(2x + 3y)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise each expression by extracting a negative common factor:",
+          "parts": [
+            { "label": "a", "question": "$-8x - 20$", "answer": "$-4(2x + 5)$" },
+            { "label": "b", "question": "$-18a + 12$", "answer": "$-6(3a - 2)$" },
+            { "label": "c", "question": "$-15m^2 - 25m$", "answer": "$-5m(3m + 5)$" },
+            { "label": "d", "question": "$-21p^2q + 14pq$", "answer": "$-7pq(3p - 2)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular swimming pool has width $8\\text{ m}$ and length $(3x + 5)\\text{ m}$. Write the area of the pool in (a) factorised form and (b) expanded form.",
+          "answer": "(a) $8(3x + 5)\\text{ m}^2$, (b) $(24x + 40)\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A school orders $6$ sets of robotics kits, each containing $2x$ sensors and $5$ motors, and returns $2$ damaged kits that each contained $(x - 3)$ sensors. Expand and simplify $6(2x + 5) - 2(x - 3)$.",
+          "answer": "$10x + 36$"
+        },
+        {
+          "number": 7,
+          "question": "The area of a rectangular banner is $(28x^2 - 35x)\\text{ cm}^2$. If the width of the banner is the Highest Common Factor of the two terms, find the width and the length of the banner.",
+          "answer": "Width $= 7x\\text{ cm}$, length $= (4x - 5)\\text{ cm}$"
+        },
+        {
+          "number": 8,
+          "question": "Three sides of a scalene triangle have lengths $3(2x + 1)\\text{ cm}$, $4(x + 3)\\text{ cm}$, and $2(3x - 5)\\text{ cm}$. Expand and simplify to find the perimeter of the triangle in expanded form and then in factorised form.",
+          "answer": "Expanded: $(16x + 5)\\text{ cm}$ (cannot be factorised further over integers)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When expanding $14 - 3(2x - 5)$, Toby first subtracts $14 - 3 = 11$ and writes $11(2x - 5) = 22x - 55$. Explain why Toby's first step violates the order of operations and find the correct simplified expression.",
+          "answer": "Multiplication $-3(2x - 5)$ must be performed before subtracting from $14$. Correct: $14 - 6x + 15 = 29 - 6x$."
+        },
+        {
+          "number": 10,
+          "question": "Prove algebraically that for any integer $n$, the expression $5(2n + 3) - 3(2n - 1) + 2(n - 3)$ is always a multiple of $6$ by expanding, collecting like terms, and factorising out $6$.",
+          "answer": "$10n + 15 - 6n + 3 + 2n - 6 = 6n + 12 = 6(n + 2)$, which has a factor of $6$ for every integer $n$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS5_2_1b", "expression": "simplify(-4*(3*a + 5) - (-12*a - 20))", "expected": 0 },
+        { "id": "WS5_2_1c", "expression": "simplify(-6*(4 - 3*m) - (18*m - 24))", "expected": 0 },
+        { "id": "WS5_2_2a", "expression": "simplify(4*(3*x + 2) + 5*(2*x - 3) - (22*x - 7))", "expected": 0 },
+        { "id": "WS5_2_2b", "expression": "simplify(6*(2*a - 1) - 3*(3*a + 4) - (3*a - 18))", "expected": 0 },
+        { "id": "WS5_2_2c", "expression": "simplify(5*(4*m - 3) - 2*(6*m - 5) - (8*m - 5))", "expected": 0 },
+        { "id": "WS5_2_2d", "expression": "simplify(2*x*(3*x - 4) - x*(5*x - 7) - (x**2 - x))", "expected": 0 },
+        { "id": "WS5_2_3d", "expression": "simplify(8*x*y*(2*x + 3*y) - (16*x**2*y + 24*x*y**2))", "expected": 0 },
+        { "id": "WS5_2_4b", "expression": "simplify(-6*(3*a - 2) - (-18*a + 12))", "expected": 0 },
+        { "id": "WS5_2_6", "expression": "simplify(6*(2*x + 5) - 2*(x - 3) - (10*x + 36))", "expected": 0 },
+        { "id": "WS5_2_10", "expression": "simplify(5*(2*n + 3) - 3*(2*n - 1) + 2*(n - 3) - 6*(n + 2))", "expected": 0 }
+      ]
+    }
+  ]
+}

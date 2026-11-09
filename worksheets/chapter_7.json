@@ -1,0 +1,294 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Length, Area, Volume and Time",
+  "worksheets": [
+    {
+      "section_id": "7_1",
+      "section_code": "7A",
+      "title": "Perimeter and Area of Quadrilaterals and Composite Shapes",
+      "vcaa_code": "VC2M8M01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each area measurement to the specified unit:",
+          "parts": [
+            { "label": "a", "question": "$7.2\\text{ cm}^2$ to $\\text{mm}^2$", "answer": "$720\\text{ mm}^2$" },
+            { "label": "b", "question": "$3.5\\text{ m}^2$ to $\\text{cm}^2$", "answer": "$35\\,000\\text{ cm}^2$" },
+            { "label": "c", "question": "$48\\,000\\text{ m}^2$ to hectares ($\\text{ha}$)", "answer": "$4.8\\text{ ha}$" },
+            { "label": "d", "question": "$1.6\\text{ km}^2$ to hectares ($\\text{ha}$)", "answer": "$160\\text{ ha}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the area of each parallelogram, rhombus, or kite:",
+          "parts": [
+            { "label": "a", "question": "Parallelogram: base $16\\text{ cm}$, perpendicular height $9\\text{ cm}$", "answer": "$144\\text{ cm}^2$" },
+            { "label": "b", "question": "Parallelogram: base $12.5\\text{ m}$, perpendicular height $8\\text{ m}$", "answer": "$100\\text{ m}^2$" },
+            { "label": "c", "question": "Rhombus: diagonals $14\\text{ cm}$ and $18\\text{ cm}$", "answer": "$126\\text{ cm}^2$" },
+            { "label": "d", "question": "Kite: diagonals $15\\text{ m}$ and $8\\text{ m}$", "answer": "$60\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the area of each trapezium with parallel sides $a, b$ and perpendicular height $h$:",
+          "parts": [
+            { "label": "a", "question": "$a = 8\\text{ cm}, b = 14\\text{ cm}, h = 6\\text{ cm}$", "answer": "$66\\text{ cm}^2$" },
+            { "label": "b", "question": "$a = 15\\text{ m}, b = 25\\text{ m}, h = 9\\text{ m}$", "answer": "$180\\text{ m}^2$" },
+            { "label": "c", "question": "$a = 7.5\\text{ cm}, b = 12.5\\text{ cm}, h = 8\\text{ cm}$", "answer": "$80\\text{ cm}^2$" },
+            { "label": "d", "question": "$a = 19\\text{ m}, b = 11\\text{ m}, h = 12\\text{ m}$", "answer": "$180\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the unknown dimension in each shape:",
+          "parts": [
+            { "label": "a", "question": "Parallelogram: Area $= 135\\text{ cm}^2$, base $= 15\\text{ cm}$, find height $h$", "answer": "$9\\text{ cm}$" },
+            { "label": "b", "question": "Kite: Area $= 84\\text{ cm}^2$, one diagonal $= 12\\text{ cm}$, find the other diagonal", "answer": "$14\\text{ cm}$" },
+            { "label": "c", "question": "Trapezium: Area $= 90\\text{ m}^2, a = 7\\text{ m}, b = 11\\text{ m}$, find height $h$", "answer": "$10\\text{ m}$" },
+            { "label": "d", "question": "Trapezium: Area $= 140\\text{ cm}^2, h = 10\\text{ cm}, a = 12\\text{ cm}$, find parallel side $b$", "answer": "$16\\text{ cm}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An L-shaped courtyard has outer dimensions $14\\text{ m}$ by $10\\text{ m}$, with a rectangular corner measuring $6\\text{ m}$ by $4\\text{ m}$ removed. Find (a) the perimeter of the courtyard and (b) the area of the courtyard.",
+          "answer": "(a) $48\\text{ m}$, (b) $116\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A rectangular picture measuring $40\\text{ cm}$ by $30\\text{ cm}$ is surrounded by a timber frame of uniform width $5\\text{ cm}$ on all sides. Find the outer dimensions of the frame and the area of the timber frame itself.",
+          "answer": "Outer dimensions $50\\text{ cm} \\times 40\\text{ cm}$; frame area $= 800\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A wheat farm in the Wimmera consists of a rectangular paddock of $600\\text{ m}$ by $400\\text{ m}$ joined to a triangular paddock of base $400\\text{ m}$ and perpendicular height $300\\text{ m}$. Find the total area of the farm in square metres and in hectares.",
+          "answer": "$300\\,000\\text{ m}^2 = 30\\text{ ha}$"
+        },
+        {
+          "number": 8,
+          "question": "A kite-shaped stunt sail has diagonals of lengths $2.4\\text{ m}$ and $1.5\\text{ m}$. If ripstop nylon fabric costs $\\$35$ per square metre, what is the cost of the fabric needed to make the sail?",
+          "answer": "$\\$63$ (Area $= 1.8\\text{ m}^2$; $1.8 \\times 35 = 63$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A parallelogram and a triangle have the exact same base length $b$ and the exact same area $A$. How does the perpendicular height of the triangle compare to the perpendicular height of the parallelogram? Justify your answer algebraically.",
+          "answer": "The triangle's height must be twice the parallelogram's height ($h_{\\text{tri}} = 2h_{\\text{para}}$), since $\\frac{1}{2}bh_{\\text{tri}} = bh_{\\text{para}} \\implies h_{\\text{tri}} = 2h_{\\text{para}}$."
+        },
+        {
+          "number": 10,
+          "question": "Every staircase L-shape cut from the corner of a $W \\times H$ rectangle has the same perimeter $2(W + H)$ as the original rectangle. Explain why removing a rectangular corner decreases the area but leaves the perimeter unchanged.",
+          "answer": "The horizontal and vertical inner step edges equal the removed top and side edges in length, so the total boundary length stays $2(W + H)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS7_1_1b", "expression": "3.5 * 10000", "expected": 35000 },
+        { "id": "WS7_1_1c", "expression": "48000 / 10000", "expected": 4.8 },
+        { "id": "WS7_1_2c", "expression": "Rational(1, 2) * 14 * 18", "expected": 126 },
+        { "id": "WS7_1_3a", "expression": "Rational(1, 2) * (8 + 14) * 6", "expected": 66 },
+        { "id": "WS7_1_3b", "expression": "Rational(1, 2) * (15 + 25) * 9", "expected": 180 },
+        { "id": "WS7_1_4d", "expression": "(140 * 2) / 10 - 12", "expected": 16 },
+        { "id": "WS7_1_5b", "expression": "14 * 10 - 6 * 4", "expected": 116 },
+        { "id": "WS7_1_6", "expression": "50 * 40 - 40 * 30", "expected": 800 },
+        { "id": "WS7_1_7", "expression": "(600 * 400 + Rational(1, 2) * 400 * 300) / 10000", "expected": 30 },
+        { "id": "WS7_1_8", "expression": "Rational(1, 2) * Rational(24, 10) * Rational(15, 10) * 35", "expected": 63 }
+      ]
+    },
+    {
+      "section_id": "7_2",
+      "section_code": "7B",
+      "title": "Circumference and Area of Circles and Sectors",
+      "vcaa_code": "VC2M8M02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the exact circumference $C$ (in terms of $\\pi$) of each circle:",
+          "parts": [
+            { "label": "a", "question": "Radius $r = 7\\text{ cm}$", "answer": "$14\\pi\\text{ cm}$" },
+            { "label": "b", "question": "Diameter $d = 18\\text{ m}$", "answer": "$18\\pi\\text{ m}$" },
+            { "label": "c", "question": "Radius $r = 4.5\\text{ cm}$", "answer": "$9\\pi\\text{ cm}$" },
+            { "label": "d", "question": "Diameter $d = 25\\text{ mm}$", "answer": "$25\\pi\\text{ mm}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the exact area $A$ (in terms of $\\pi$) of each circle:",
+          "parts": [
+            { "label": "a", "question": "Radius $r = 6\\text{ cm}$", "answer": "$36\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Radius $r = 11\\text{ m}$", "answer": "$121\\pi\\text{ m}^2$" },
+            { "label": "c", "question": "Diameter $d = 16\\text{ cm}$", "answer": "$64\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "Diameter $d = 30\\text{ m}$", "answer": "$225\\pi\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the exact area and exact total perimeter (including straight edges) of each sector:",
+          "parts": [
+            { "label": "a", "question": "Semicircle of radius $r = 10\\text{ cm}$", "answer": "$A = 50\\pi\\text{ cm}^2, P = (10\\pi + 20)\\text{ cm}$" },
+            { "label": "b", "question": "Quadrant of radius $r = 6\\text{ m}$", "answer": "$A = 9\\pi\\text{ m}^2, P = (3\\pi + 12)\\text{ m}$" },
+            { "label": "c", "question": "Sector with $\\theta = 60^\\circ, r = 9\\text{ cm}$", "answer": "$A = \\dfrac{27\\pi}{2}\\text{ cm}^2, P = (3\\pi + 18)\\text{ cm}$" },
+            { "label": "d", "question": "Sector with $\\theta = 120^\\circ, r = 12\\text{ cm}$", "answer": "$A = 48\\pi\\text{ cm}^2, P = (8\\pi + 24)\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Using $\\pi \\approx \\dfrac{22}{7}$, evaluate each circular measurement:",
+          "parts": [
+            { "label": "a", "question": "Circumference of a circle with $r = 21\\text{ cm}$", "answer": "$132\\text{ cm}$" },
+            { "label": "b", "question": "Area of a circle with $r = 7\\text{ m}$", "answer": "$154\\text{ m}^2$" },
+            { "label": "c", "question": "Perimeter of a semicircle with $d = 14\\text{ cm}$", "answer": "$36\\text{ cm}$" },
+            { "label": "d", "question": "Area of a quadrant with $r = 14\\text{ cm}$", "answer": "$154\\text{ cm}^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A circular cricket oval in Melbourne has a boundary radius of $70\\text{ m}$. Using $\\pi \\approx \\dfrac{22}{7}$, find (a) the length of the boundary fence around the oval and (b) the turf area of the oval in square metres and in hectares.",
+          "answer": "(a) $440\\text{ m}$, (b) $15\\,400\\text{ m}^2 = 1.54\\text{ ha}$"
+        },
+        {
+          "number": 6,
+          "question": "A circular pond of radius $4\\text{ m}$ is surrounded by a gravel path of width $2\\text{ m}$ (forming an outer radius of $6\\text{ m}$). Find the exact area of the gravel path in terms of $\\pi$, and round your answer to $2$ decimal places.",
+          "answer": "$20\\pi\\text{ m}^2 \\approx 62.83\\text{ m}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A windscreen wiper blade of length $45\\text{ cm}$ sweeps through an angle of $120^\\circ$ from its pivot. Find the exact area of glass cleaned in a single sweep in terms of $\\pi$.",
+          "answer": "$675\\pi\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular sheet of steel measuring $20\\text{ cm}$ by $10\\text{ cm}$ has two identical largest-possible circles of diameter $10\\text{ cm}$ ($r = 5\\text{ cm}$) stamped out of it. Find the exact area of steel remaining.",
+          "answer": "$(200 - 50\\pi)\\text{ cm}^2 \\approx 42.92\\text{ cm}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A piece of wire of length $44\\text{ cm}$ is bent into a square, and an identical $44\\text{ cm}$ wire is bent into a circle. Using $\\pi \\approx \\dfrac{22}{7}$, find the area of both shapes and determine which shape encloses the larger area.",
+          "answer": "Square side $= 11\\text{ cm} \\implies A_{\\text{square}} = 121\\text{ cm}^2$; Circle radius $= 7\\text{ cm} \\implies A_{\\text{circle}} = 154\\text{ cm}^2$. The circle encloses $33\\text{ cm}^2$ more area."
+        },
+        {
+          "number": 10,
+          "question": "If the circumference of a circle is $16\\pi\\text{ cm}$, show how to work backwards to find its radius $r$ and then its exact area $A$.",
+          "answer": "$2\\pi r = 16\\pi \\implies r = 8\\text{ cm}$, so $A = \\pi(8)^2 = 64\\pi\\text{ cm}^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS7_2_2c", "expression": "8**2", "expected": 64 },
+        { "id": "WS7_2_2d", "expression": "15**2", "expected": 225 },
+        { "id": "WS7_2_3d_A", "expression": "Rational(120, 360) * 12**2", "expected": 48 },
+        { "id": "WS7_2_4a", "expression": "2 * Rational(22, 7) * 21", "expected": 132 },
+        { "id": "WS7_2_4b", "expression": "Rational(22, 7) * 7**2", "expected": 154 },
+        { "id": "WS7_2_4c", "expression": "Rational(1, 2) * Rational(22, 7) * 14 + 14", "expected": 36 },
+        { "id": "WS7_2_5a", "expression": "2 * Rational(22, 7) * 70", "expected": 440 },
+        { "id": "WS7_2_5b", "expression": "Rational(22, 7) * 70**2", "expected": 15400 },
+        { "id": "WS7_2_6", "expression": "6**2 - 4**2", "expected": 20 },
+        { "id": "WS7_2_7", "expression": "Rational(120, 360) * 45**2", "expected": 675 }
+      ]
+    },
+    {
+      "section_id": "7_3",
+      "section_code": "7C",
+      "title": "Volume, Capacity of Prisms and Time Zones",
+      "vcaa_code": "VC2M8M03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each volume or capacity measurement to the specified unit:",
+          "parts": [
+            { "label": "a", "question": "$650\\text{ cm}^3$ to $\\text{mL}$", "answer": "$650\\text{ mL}$" },
+            { "label": "b", "question": "$14\\,500\\text{ cm}^3$ to litres ($\\text{L}$)", "answer": "$14.5\\text{ L}$" },
+            { "label": "c", "question": "$3.8\\text{ m}^3$ to litres ($\\text{L}$)", "answer": "$3800\\text{ L}$" },
+            { "label": "d", "question": "$25\\,000\\text{ L}$ to cubic metres ($\\text{m}^3$)", "answer": "$25\\text{ m}^3$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the volume $V = Ah$ of each right prism:",
+          "parts": [
+            { "label": "a", "question": "Rectangular prism: $12\\text{ cm} \\times 8\\text{ cm} \\times 5\\text{ cm}$", "answer": "$480\\text{ cm}^3$" },
+            { "label": "b", "question": "Prism with cross-sectional area $A = 35\\text{ cm}^2$, length $h = 14\\text{ cm}$", "answer": "$490\\text{ cm}^3$" },
+            { "label": "c", "question": "Triangular prism: triangle base $10\\text{ cm}$, height $7\\text{ cm}$, prism length $16\\text{ cm}$", "answer": "$560\\text{ cm}^3$" },
+            { "label": "d", "question": "Trapezoidal prism: $a = 4\\text{ m}, b = 8\\text{ m}, h_t = 3\\text{ m}$, length $10\\text{ m}$", "answer": "$180\\text{ m}^3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Convert between 12-hour and 24-hour time and calculate elapsed durations:",
+          "parts": [
+            { "label": "a", "question": "Write $3{:}45\\text{ pm}$ in 24-hour time", "answer": "$15{:}45$" },
+            { "label": "b", "question": "Write $00{:}25$ in 12-hour am/pm time", "answer": "$12{:}25\\text{ am}$" },
+            { "label": "c", "question": "Duration from $09{:}35$ to $14{:}15$", "answer": "$4\\text{ h } 40\\text{ min}$" },
+            { "label": "d", "question": "Time $2\\text{ h } 50\\text{ min}$ after $11{:}25\\text{ am}$", "answer": "$2{:}15\\text{ pm}$ ($14{:}15$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "When it is $2{:}00\\text{ pm}$ AEST (UTC$+10$) in Melbourne in July (standard winter time), find the local time in:",
+          "parts": [
+            { "label": "a", "question": "Brisbane (AEST, UTC$+10$)", "answer": "$2{:}00\\text{ pm}$" },
+            { "label": "b", "question": "Adelaide and Darwin (ACST, UTC$+9.5$)", "answer": "$1{:}30\\text{ pm}$" },
+            { "label": "c", "question": "Perth (AWST, UTC$+8$)", "answer": "$12{:}00\\text{ pm}$ (noon)" },
+            { "label": "d", "question": "Auckland, NZ (NZST, UTC$+12$)", "answer": "$4{:}00\\text{ pm}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular garden Lap Pool in Echuca is $15\\text{ m}$ long, $3\\text{ m}$ wide, and has a uniform depth of $1.4\\text{ m}$. Calculate (a) its volume in $\\text{m}^3$ and (b) its capacity in litres ($\\text{L}$).",
+          "answer": "(a) $63\\text{ m}^3$, (b) $63\\,000\\text{ L}$"
+        },
+        {
+          "number": 6,
+          "question": "A wedge of Gippsland cheddar cheese is shaped like a right triangular prism with a right-angled triangle base of legs $9\\text{ cm}$ and $12\\text{ cm}$ and a thickness of $6\\text{ cm}$. Find the volume of the cheese wedge in $\\text{cm}^3$.",
+          "answer": "$324\\text{ cm}^3$"
+        },
+        {
+          "number": 7,
+          "question": "During January (Daylight Saving), Sydney is on AEDT (UTC$+11$) and Brisbane is on AEST (UTC$+10$). A flight departs Sydney at $8{:}20\\text{ am}$ AEDT and takes $1\\text{ hour } 35\\text{ minutes}$ to reach Brisbane. What is the local arrival time in Brisbane (AEST)?",
+          "answer": "$8{:}55\\text{ am}$ AEST ($9{:}55\\text{ am}$ AEDT minus $1\\text{ hour}$)"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular rainwater tank has a base measuring $2.5\\text{ m}$ by $1.6\\text{ m}$. When $6000\\text{ L}$ ($6\\text{ m}^3$) of water is pumped into the empty tank, to what depth $h$ (in metres) does the water rise?",
+          "answer": "$1.5\\text{ m}$ ($4.0h = 6 \\implies h = 1.5\\text{ m}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A solid metal cube of side length $10\\text{ cm}$ is submerged completely inside a rectangular tank of base area $250\\text{ cm}^2$ partially filled with water. By how many centimetres does the water level rise? Show your reasoning.",
+          "answer": "$4\\text{ cm}$, since the cube displaces $10^3 = 1000\\text{ cm}^3$ of water, and $\\Delta h = \\dfrac{1000}{250} = 4\\text{ cm}$."
+        },
+        {
+          "number": 10,
+          "question": "A live cricket test match in Perth starts at $10{:}30\\text{ am}$ AWST (UTC$+8$). Explain why viewers in Melbourne watching in December (AEDT, UTC$+11$) see the first ball bowled at $1{:}30\\text{ pm}$, whereas if it were played in winter (AEST, UTC$+10$) they would see it at $12{:}30\\text{ pm}$.",
+          "answer": "In winter Melbourne is $2$ hours ahead of Perth ($10 - 8 = 2$), whereas in December Melbourne observes Daylight Saving (UTC$+11$) while WA does not, making the difference $11 - 8 = 3$ hours."
+        }
+      ],
+      "assertions": [
+        { "id": "WS7_3_1b", "expression": "14500 / 1000", "expected": 14.5 },
+        { "id": "WS7_3_1c", "expression": "3.8 * 1000", "expected": 3800 },
+        { "id": "WS7_3_2a", "expression": "12 * 8 * 5", "expected": 480 },
+        { "id": "WS7_3_2b", "expression": "35 * 14", "expected": 490 },
+        { "id": "WS7_3_2c", "expression": "Rational(1, 2) * 10 * 7 * 16", "expected": 560 },
+        { "id": "WS7_3_2d", "expression": "Rational(1, 2) * (4 + 8) * 3 * 10", "expected": 180 },
+        { "id": "WS7_3_5a", "expression": "15 * 3 * Rational(14, 10)", "expected": 63 },
+        { "id": "WS7_3_6", "expression": "Rational(1, 2) * 9 * 12 * 6", "expected": 324 },
+        { "id": "WS7_3_8", "expression": "6 / (2.5 * 1.6)", "expected": 1.5 },
+        { "id": "WS7_3_9", "expression": "10**3 / 250", "expected": 4 }
+      ]
+    }
+  ]
+}

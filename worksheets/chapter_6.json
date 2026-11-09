@@ -1,0 +1,198 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Linear Equations and Coordinate Graphs",
+  "worksheets": [
+    {
+      "section_id": "6_1",
+      "section_code": "6A",
+      "title": "Solving Linear Equations",
+      "vcaa_code": "VC2M8A02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each two-step linear equation:",
+          "parts": [
+            { "label": "a", "question": "$5x - 9 = 26$", "answer": "$x = 7$" },
+            { "label": "b", "question": "$4x + 17 = 5$", "answer": "$x = -3$" },
+            { "label": "c", "question": "$19 - 3x = 34$", "answer": "$x = -5$" },
+            { "label": "d", "question": "$\\dfrac{x}{6} - 4 = 3$", "answer": "$x = 42$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each linear equation involving fractions or brackets:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{3x - 5}{4} = 7$", "answer": "$x = 11$" },
+            { "label": "b", "question": "$\\dfrac{2x + 9}{5} = -3$", "answer": "$x = -12$" },
+            { "label": "c", "question": "$4(2x - 3) = 28$", "answer": "$x = 5$" },
+            { "label": "d", "question": "$-3(x - 6) = 27$", "answer": "$x = -3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each equation with pronumerals on both sides:",
+          "parts": [
+            { "label": "a", "question": "$8x - 5 = 3x + 30$", "answer": "$x = 7$" },
+            { "label": "b", "question": "$6x + 11 = 2x - 13$", "answer": "$x = -6$" },
+            { "label": "c", "question": "$14 - 2x = 5x - 28$", "answer": "$x = 6$" },
+            { "label": "d", "question": "$9x - 16 = 4x + 9$", "answer": "$x = 5$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each multi-step linear equation:",
+          "parts": [
+            { "label": "a", "question": "$3(2x + 5) = 2(x + 11) + 9$", "answer": "$x = 4$" },
+            { "label": "b", "question": "$5(x - 2) - 2(x - 4) = 16$", "answer": "$x = 6$" },
+            { "label": "c", "question": "$\\dfrac{3x - 2}{4} = \\dfrac{x + 3}{2}$", "answer": "$x = 8$" },
+            { "label": "d", "question": "$\\dfrac{4x + 1}{3} = \\dfrac{2x + 5}{2}$", "answer": "$x = 6.5$ ($\\dfrac{13}{2}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular tennis court has a perimeter of $72\\text{ m}$. Its length is $3\\text{ m}$ more than twice its width $w$. Form and solve a linear equation to find the width $w$ and length $l$.",
+          "answer": "Width $w = 11\\text{ m}$, length $l = 25\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "Two kayak hire companies on the Yarra River charge different rates. RiverGlide charges a $\\$30$ safety briefing fee plus $\\$22$ per hour. PaddleMelb charges a $\\$12$ briefing fee plus $\\$28$ per hour. For how many hours $h$ of hire are their total charges equal, and what is that charge?",
+          "answer": "$3\\text{ hours}$ (at $\\$96$)"
+        },
+        {
+          "number": 7,
+          "question": "The sum of four consecutive integers is $138$. Let the smallest integer be $n$. Form a linear equation and find all four integers.",
+          "answer": "$33, 34, 35, 36$"
+        },
+        {
+          "number": 8,
+          "question": "An adult ticket to Healesville Sanctuary costs $\\$14$ more than a child ticket $c$. A family of $2$ adults and $3$ children pays a total of $\\$158$. Form an equation in terms of $c$ and find the price of a child ticket and an adult ticket.",
+          "answer": "Child ticket $= \\$26$, adult ticket $= \\$40$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Find the value of the constant $m$ so that $x = 4$ is the solution to $3(2x - m) = 4x + 2$. Show your substitution and working.",
+          "answer": "$m = 2$, since $3(8 - m) = 18 \\implies 8 - m = 6 \\implies m = 2$."
+        },
+        {
+          "number": 10,
+          "question": "Explain how you can tell without graphing whether the linear equation $4(x - 3) = 2(2x - 6)$ has one solution, no solution, or infinitely many solutions.",
+          "answer": "Infinitely many solutions, because expanding both sides gives the identity $4x - 12 = 4x - 12$, which is true for every real number $x$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS6_1_1a", "expression": "5 * 7 - 9", "expected": 26 },
+        { "id": "WS6_1_1c", "expression": "19 - 3 * (-5)", "expected": 34 },
+        { "id": "WS6_1_2a", "expression": "(3 * 11 - 5) / 4", "expected": 7 },
+        { "id": "WS6_1_2b", "expression": "(2 * (-12) + 9) / 5", "expected": -3 },
+        { "id": "WS6_1_3a", "expression": "(8*7 - 5) - (3*7 + 30)", "expected": 0 },
+        { "id": "WS6_1_4a", "expression": "3*(2*4 + 5) - (2*(4 + 11) + 9)", "expected": 0 },
+        { "id": "WS6_1_4c", "expression": "(3*8 - 2)/4 - (8 + 3)/2", "expected": 0 },
+        { "id": "WS6_1_5", "expression": "2 * (11 + 25)", "expected": 72 },
+        { "id": "WS6_1_6", "expression": "22 * 3 + 30", "expected": 96 },
+        { "id": "WS6_1_8", "expression": "2 * 40 + 3 * 26", "expected": 158 }
+      ]
+    },
+    {
+      "section_id": "6_2",
+      "section_code": "6B",
+      "title": "Graphing Linear Relations and Modelling",
+      "vcaa_code": "VC2M8A03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State the gradient $m$ and $y$-intercept $c$ of each linear relation:",
+          "parts": [
+            { "label": "a", "question": "$y = 5x - 8$", "answer": "$m = 5, c = -8$" },
+            { "label": "b", "question": "$y = -3x + 11$", "answer": "$m = -3, c = 11$" },
+            { "label": "c", "question": "$y = 9 - 2x$", "answer": "$m = -2, c = 9$" },
+            { "label": "d", "question": "$y = \\dfrac{3}{4}x$", "answer": "$m = \\dfrac{3}{4}, c = 0$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the gradient $m$ of the line passing through each pair of points:",
+          "parts": [
+            { "label": "a", "question": "$(1, 4)$ and $(5, 16)$", "answer": "$m = 3$" },
+            { "label": "b", "question": "$(0, 10)$ and $(4, -2)$", "answer": "$m = -3$" },
+            { "label": "c", "question": "$(-3, -5)$ and $(2, 15)$", "answer": "$m = 4$" },
+            { "label": "d", "question": "$(-4, 9)$ and $(6, 4)$", "answer": "$m = -0.5$ ($-\\dfrac{1}{2}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the coordinates of the $y$-intercept and the $x$-intercept for each line:",
+          "parts": [
+            { "label": "a", "question": "$y = 3x - 12$", "answer": "$(0, -12)$ and $(4, 0)$" },
+            { "label": "b", "question": "$y = -2x + 10$", "answer": "$(0, 10)$ and $(5, 0)$" },
+            { "label": "c", "question": "$4x + 5y = 20$", "answer": "$(0, 4)$ and $(5, 0)$" },
+            { "label": "d", "question": "$3x - 2y = 18$", "answer": "$(0, -9)$ and $(6, 0)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Write the equation of each straight line in gradient-intercept form $y = mx + c$:",
+          "parts": [
+            { "label": "a", "question": "Gradient $4$, $y$-intercept $-7$", "answer": "$y = 4x - 7$" },
+            { "label": "b", "question": "Passes through $(0, 5)$ and $(3, 17)$", "answer": "$y = 4x + 5$" },
+            { "label": "c", "question": "Passes through $(0, -3)$ and $(4, -11)$", "answer": "$y = -2x - 3$" },
+            { "label": "d", "question": "Passes through $(2, 7)$ and $(5, 16)$", "answer": "$y = 3x + 1$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A hot-water urn at a community footy club starts at $20^\\circ\\text{C}$ and heats up at a constant rate of $8^\\circ\\text{C}$ per minute. (a) Write a linear rule for the temperature $T\\text{ ($^\\circ$C)}$ after $t$ minutes. (b) How many minutes does it take to reach boiling point ($100^\\circ\\text{C}$)?",
+          "answer": "(a) $T = 8t + 20$, (b) $10\\text{ minutes}$"
+        },
+        {
+          "number": 6,
+          "question": "A prepaid mobile data pack starts with $45\\text{ GB}$ of data and uses $1.5\\text{ GB}$ per day. (a) Write a rule for the remaining data $D\\text{ (GB)}$ after $t$ days. (b) How much data remains after $18$ days? (c) After how many days is the data completely used up?",
+          "answer": "(a) $D = -1.5t + 45$, (b) $18\\text{ GB}$, (c) $30\\text{ days}$"
+        },
+        {
+          "number": 7,
+          "question": "A delivery van leaves Bendigo ($150\\text{ km}$ from Melbourne) and drives towards Melbourne at a constant speed of $75\\text{ km/h}$. Write a linear rule for its distance $d\\text{ (km)}$ from Melbourne after $t$ hours, and state the $d$-intercept and $t$-intercept with their physical meanings.",
+          "answer": "$d = -75t + 150$; $d$-intercept $(0, 150)$ is starting distance ($150\\text{ km}$); $t$-intercept $(2, 0)$ is arrival time ($2\\text{ hours}$)."
+        },
+        {
+          "number": 8,
+          "question": "A straight line has equation $2x + 3y = 18$. Find its $x$- and $y$-intercepts and calculate the area of the right-angled triangle enclosed by the line and the two coordinate axes.",
+          "answer": "Intercepts $(9, 0)$ and $(0, 6)$; $\\text{Area} = \\dfrac{1}{2} \\times 9 \\times 6 = 27\\text{ square units}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Two lines have equations $y = 3x - 4$ and $y = 3x + 5$. Explain using their gradients and $y$-intercepts why these two lines are parallel and never intersect.",
+          "answer": "Both lines have the exact same gradient ($m = 3$), so they rise at the same rate, but they have different $y$-intercepts ($-4 \\neq 5$), so they stay $9$ vertical units apart everywhere."
+        },
+        {
+          "number": 10,
+          "question": "Determine whether the three points $P(-1, -5)$, $Q(2, 4)$, and $R(6, 16)$ lie on the same straight line (are collinear) by comparing the gradient of $PQ$ with the gradient of $QR$.",
+          "answer": "Yes, they are collinear because $m_{PQ} = \\dfrac{4 - (-5)}{2 - (-1)} = 3$ and $m_{QR} = \\dfrac{16 - 4}{6 - 2} = 3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS6_2_2a", "expression": "(16 - 4) / (5 - 1)", "expected": 3 },
+        { "id": "WS6_2_2c", "expression": "(15 - (-5)) / (2 - (-3))", "expected": 4 },
+        { "id": "WS6_2_2d", "expression": "(4 - 9) / (6 - (-4))", "expected": -0.5 },
+        { "id": "WS6_2_3d_x", "expression": "18 / 3", "expected": 6 },
+        { "id": "WS6_2_4d_m", "expression": "(16 - 7) / (5 - 2)", "expected": 3 },
+        { "id": "WS6_2_5b", "expression": "(100 - 20) / 8", "expected": 10 },
+        { "id": "WS6_2_6b", "expression": "-1.5 * 18 + 45", "expected": 18 },
+        { "id": "WS6_2_6c", "expression": "45 / 1.5", "expected": 30 },
+        { "id": "WS6_2_8", "expression": "Rational(1, 2) * (18 / 2) * (18 / 3)", "expected": 27 },
+        { "id": "WS6_2_10", "expression": "(4 - (-5))/(2 - (-1)) - (16 - 4)/(6 - 2)", "expected": 0 }
+      ]
+    }
+  ]
+}

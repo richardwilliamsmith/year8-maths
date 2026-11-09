@@ -1,0 +1,102 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Statistics and Data Analysis",
+  "worksheets": [
+    {
+      "section_id": "10_1",
+      "section_code": "10A",
+      "title": "Data Collection, Summary Statistics and Outliers",
+      "vcaa_code": "VC2M8ST02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For the $7$ ordered data scores $11, 14, 14, 16, 19, 21, 24$, find:",
+          "parts": [
+            { "label": "a", "question": "The mode", "answer": "$14$" },
+            { "label": "b", "question": "The range", "answer": "$13$" },
+            { "label": "c", "question": "The median", "answer": "$16$" },
+            { "label": "d", "question": "The mean", "answer": "$17$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "For the $8$ unsorted data scores $22, 15, 28, 18, 15, 25, 13, 24$, find:",
+          "parts": [
+            { "label": "a", "question": "The mode", "answer": "$15$" },
+            { "label": "b", "question": "The range", "answer": "$15$" },
+            { "label": "c", "question": "The median", "answer": "$20$" },
+            { "label": "d", "question": "The mean", "answer": "$20$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A frequency table of books read in a month by $20$ students shows: $(x = 1, f = 3)$, $(x = 2, f = 8)$, $(x = 3, f = 5)$, $(x = 4, f = 3)$, $(x = 5, f = 1)$. Find:",
+          "parts": [
+            { "label": "a", "question": "The modal number of books", "answer": "$2$" },
+            { "label": "b", "question": "The range", "answer": "$4$" },
+            { "label": "c", "question": "The median number of books", "answer": "$2$" },
+            { "label": "d", "question": "The mean number of books ($\\bar{x} = \\frac{\\sum fx}{\\sum f}$)", "answer": "$2.55$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Classify each data collection scenario:",
+          "parts": [
+            { "label": "a", "question": "Testing every battery on a factory assembly line (Census or Sample?)", "answer": "Census" },
+            { "label": "b", "question": "Polling $500$ randomly chosen Victorian voters (Census or Sample?)", "answer": "Sample" },
+            { "label": "c", "question": "Counting cars passing your school gate yourself (Primary or Secondary?)", "answer": "Primary data" },
+            { "label": "d", "question": "Using ABS census tables for a geography report (Primary or Secondary?)", "answer": "Secondary data" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Seven properties sold in a Ballarat suburb in one week for (in thousands of dollars): $510, 530, 540, 540, 560, 580, 1400$ (where $\\$1\\,400\\,000$ was a heritage acreage estate). Find (a) the median and mean of all $7$ prices, and (b) the new median and new mean when the $\\$1\\,400\\,000$ outlier is removed.",
+          "answer": "(a) Median $= \\$540\\text{k}$, Mean $= \\$665.71\\text{k}$; (b) New Median $= \\$540\\text{k}$ (unchanged!), New Mean $= \\$543.33\\text{k}$"
+        },
+        {
+          "number": 6,
+          "question": "Over his first $5$ netball matches, Noah's team scored $42, 38, 45, 51$, and $39$ goals. How many goals must the team score in the $6$th match to achieve a mean of $44$ goals per match across all $6$ matches?",
+          "answer": "$49\\text{ goals}$"
+        },
+        {
+          "number": 7,
+          "question": "In a Year 8 science cohort, Class 8A ($20$ students) has a mean test score of $76$, and Class 8B ($30$ students) has a mean test score of $81$. Calculate the combined mean score for all $50$ students.",
+          "answer": "$79$"
+        },
+        {
+          "number": 8,
+          "question": "A stem-and-leaf plot of daily commuter cycling times (in minutes, where $2 \\mid 5 = 25$) for $9$ trips is: $1 \\mid 8, 9$; $2 \\mid 1, 2, 4, 5, 7, 8$; $6 \\mid 5$. Find the median, mean, and range of the $9$ trips, and identify the outlier.",
+          "answer": "Outlier $= 65\\text{ min}$; Median $= 24\\text{ min}$, Mean $= 26.56\\text{ min}$ ($\\frac{239}{9}$), Range $= 47\\text{ min}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "The mean of $6$ numbers is $15$. When one number is removed, the mean of the remaining $5$ numbers drops to $13$. Find the value of the number that was removed.",
+          "answer": "$25$, since $6 \\times 15 - 5 \\times 13 = 90 - 65 = 25$."
+        },
+        {
+          "number": 10,
+          "question": "Find a set of $4$ positive integers written in ascending order $a \\le b \\le c \\le d$ such that the mode is $5$, the median is $7$, and the mean is $8$. Show each step of your deduction.",
+          "answer": "$5, 5, 9, 13$ ($a = b = 5$ for mode $5$; $\\frac{5 + c}{2} = 7 \\implies c = 9$; $5 + 5 + 9 + d = 32 \\implies d = 13$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS10_1_1b", "expression": "24 - 11", "expected": 13 },
+        { "id": "WS10_1_1d", "expression": "(11 + 14 + 14 + 16 + 19 + 21 + 24) / 7", "expected": 17 },
+        { "id": "WS10_1_2c", "expression": "(18 + 22) / 2", "expected": 20 },
+        { "id": "WS10_1_2d", "expression": "(22 + 15 + 28 + 18 + 15 + 25 + 13 + 24) / 8", "expected": 20 },
+        { "id": "WS10_1_3d", "expression": "(1*3 + 2*8 + 3*5 + 4*3 + 5*1) / 20", "expected": 2.55 },
+        { "id": "WS10_1_6", "expression": "6 * 44 - (42 + 38 + 45 + 51 + 39)", "expected": 49 },
+        { "id": "WS10_1_7", "expression": "(20 * 76 + 30 * 81) / 50", "expected": 79 },
+        { "id": "WS10_1_8_range", "expression": "65 - 18", "expected": 47 },
+        { "id": "WS10_1_9", "expression": "6 * 15 - 5 * 13", "expected": 25 },
+        { "id": "WS10_1_10", "expression": "(5 + 5 + 9 + 13) / 4", "expected": 8 }
+      ]
+    }
+  ]
+}

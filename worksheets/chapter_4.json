@@ -1,0 +1,198 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Ratios, Rates and Best Buys",
+  "worksheets": [
+    {
+      "section_id": "4_1",
+      "section_code": "4A",
+      "title": "Simplifying Ratios and Dividing in a Ratio",
+      "vcaa_code": "VC2M8M07",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each whole-number ratio to its simplest form:",
+          "parts": [
+            { "label": "a", "question": "$36 : 54$", "answer": "$2 : 3$" },
+            { "label": "b", "question": "$56 : 24$", "answer": "$7 : 3$" },
+            { "label": "c", "question": "$75 : 120$", "answer": "$5 : 8$" },
+            { "label": "d", "question": "$24 : 36 : 60$", "answer": "$2 : 3 : 5$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Simplify each ratio involving decimals, fractions, or mixed units:",
+          "parts": [
+            { "label": "a", "question": "$1.8 : 2.4$", "answer": "$3 : 4$" },
+            { "label": "b", "question": "$\\dfrac{3}{4} : \\dfrac{5}{6}$", "answer": "$9 : 10$" },
+            { "label": "c", "question": "$800\\text{ g} : 2.4\\text{ kg}$", "answer": "$1 : 3$" },
+            { "label": "d", "question": "$45\\text{ min} : 2\\text{ hours}$", "answer": "$3 : 8$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Divide each quantity in the given ratio:",
+          "parts": [
+            { "label": "a", "question": "$\\$140$ in the ratio $3 : 4$", "answer": "$\\$60$ and $\\$80$" },
+            { "label": "b", "question": "$96\\text{ kg}$ in the ratio $5 : 3$", "answer": "$60\\text{ kg}$ and $36\\text{ kg}$" },
+            { "label": "c", "question": "$250\\text{ mL}$ in the ratio $2 : 3$", "answer": "$100\\text{ mL}$ and $150\\text{ mL}$" },
+            { "label": "d", "question": "$\\$360$ in the ratio $2 : 3 : 4$", "answer": "$\\$80, \\$120$, and $\\$160$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the unknown value $x$ in each equivalent ratio or scale:",
+          "parts": [
+            { "label": "a", "question": "$4 : 7 = 28 : x$", "answer": "$x = 49$" },
+            { "label": "b", "question": "$5 : 9 = x : 63$", "answer": "$x = 35$" },
+            { "label": "c", "question": "Scale $1 : 500$; drawing length $6\\text{ cm}$, real length $x\\text{ m}$", "answer": "$30\\text{ m}$" },
+            { "label": "d", "question": "Scale $1 : 200\\,000$; map distance $4.5\\text{ cm}$, real distance $x\\text{ km}$", "answer": "$9\\text{ km}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A concrete footing mix uses cement, sand, and gravel in the ratio $1 : 2 : 4$ by mass. If $420\\text{ kg}$ of dry concrete mix is prepared, find the mass of (a) cement, (b) sand, and (c) gravel required.",
+          "answer": "(a) $60\\text{ kg}$, (b) $120\\text{ kg}$, (c) $240\\text{ kg}$"
+        },
+        {
+          "number": 6,
+          "question": "Two business partners, Noah and Zara, invest in a Melbourne coffee roastery in the ratio $5 : 7$. If Noah invested $\\$45\\,000$, how much did Zara invest, and what was their combined investment?",
+          "answer": "Zara invested $\\$63\\,000$; combined investment $= \\$108\\,000$"
+        },
+        {
+          "number": 7,
+          "question": "On a Vicmap topographic map with a scale of $1 : 50\\,000$, the straight-line distance between two huts in the Alpine National Park is $7.6\\text{ cm}$. Calculate the actual ground distance in kilometres.",
+          "answer": "$3.8\\text{ km}$ ($380\\,000\\text{ cm} = 3800\\text{ m} = 3.8\\text{ km}$)"
+        },
+        {
+          "number": 8,
+          "question": "The three interior angles of a triangle are in the ratio $2 : 3 : 4$. Find the size of each angle and classify the triangle by its angles.",
+          "answer": "$40^\\circ, 60^\\circ, 80^\\circ$; acute-angled triangle"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In a fruit punch, the ratio of orange juice to pineapple juice is $3 : 2$, and the ratio of pineapple juice to sparkling water is $4 : 5$. Combine these into a single three-part ratio $\\text{orange} : \\text{pineapple} : \\text{water}$ in simplest form.",
+          "answer": "$6 : 4 : 5$ (multiply $3 : 2$ by $2$ to match pineapple $= 4$ parts)."
+        },
+        {
+          "number": 10,
+          "question": "Currently, the ratio of red marbles to blue marbles in a jar is $3 : 5$, and there are $64$ marbles in total. How many red marbles must be ADDED to the jar so that the new ratio of red to blue becomes $1 : 1$?",
+          "answer": "$16$ red marbles (currently $24$ red and $40$ blue; $40 - 24 = 16$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS4_1_1a", "expression": "Rational(36, 54)", "expected": "2/3" },
+        { "id": "WS4_1_2b", "expression": "Rational(3, 4) / Rational(5, 6)", "expected": "9/10" },
+        { "id": "WS4_1_3a", "expression": "(140 / 7) * 4", "expected": 80 },
+        { "id": "WS4_1_3d", "expression": "(360 / 9) * 4", "expected": 160 },
+        { "id": "WS4_1_4a", "expression": "(28 / 4) * 7", "expected": 49 },
+        { "id": "WS4_1_4d", "expression": "(4.5 * 200000) / 100000", "expected": 9 },
+        { "id": "WS4_1_5c", "expression": "(420 / 7) * 4", "expected": 240 },
+        { "id": "WS4_1_6", "expression": "(45000 / 5) * 12", "expected": 108000 },
+        { "id": "WS4_1_7", "expression": "(7.6 * 50000) / 100000", "expected": 3.8 },
+        { "id": "WS4_1_10", "expression": "(64 / 8) * 5 - (64 / 8) * 3", "expected": 16 }
+      ]
+    },
+    {
+      "section_id": "4_2",
+      "section_code": "4B",
+      "title": "Rates, Speed and Best Buys",
+      "vcaa_code": "VC2M8M05",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Express each relationship as a simplified unit rate:",
+          "parts": [
+            { "label": "a", "question": "$360\\text{ km}$ in $4.5\\text{ hours}$ ($\\text{km/h}$)", "answer": "$80\\text{ km/h}$" },
+            { "label": "b", "question": "$\\$138$ for $6\\text{ hours}$ of work ($\\$/\\text{h}$)", "answer": "$\\$23/\\text{h}$" },
+            { "label": "c", "question": "$42\\text{ L}$ of petrol for $525\\text{ km}$ ($\\text{km/L}$)", "answer": "$12.5\\text{ km/L}$" },
+            { "label": "d", "question": "$750\\text{ words}$ typed in $12\\text{ minutes}$ ($\\text{words/min}$)", "answer": "$62.5\\text{ words/min}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the distance, average speed, or time required:",
+          "parts": [
+            { "label": "a", "question": "Distance travelled at $96\\text{ km/h}$ for $2.5\\text{ hours}$", "answer": "$240\\text{ km}$" },
+            { "label": "b", "question": "Time taken to travel $315\\text{ km}$ at $90\\text{ km/h}$", "answer": "$3.5\\text{ hours}$ ($3\\text{ h } 30\\text{ min}$)" },
+            { "label": "c", "question": "Average speed for $200\\text{ m}$ in $25\\text{ seconds}$ ($\\text{m/s}$)", "answer": "$8\\text{ m/s}$" },
+            { "label": "d", "question": "Distance run at $6.5\\text{ m/s}$ in $40\\text{ seconds}$", "answer": "$260\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Convert each speed or rate to the specified unit:",
+          "parts": [
+            { "label": "a", "question": "$15\\text{ m/s}$ to $\\text{km/h}$", "answer": "$54\\text{ km/h}$" },
+            { "label": "b", "question": "$108\\text{ km/h}$ to $\\text{m/s}$", "answer": "$30\\text{ m/s}$" },
+            { "label": "c", "question": "$25\\text{ m/s}$ to $\\text{km/h}$", "answer": "$90\\text{ km/h}$" },
+            { "label": "d", "question": "$30\\text{ L/min}$ to $\\text{L/s}$", "answer": "$0.5\\text{ L/s}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Calculate the unit price per $100\\text{ g}$ or per $1\\text{ L}$ for each grocery item:",
+          "parts": [
+            { "label": "a", "question": "$250\\text{ g}$ of cheese for $\\$4.50$ ($\\text{per } 100\\text{ g}$)", "answer": "$\\$1.80\\text{ per } 100\\text{ g}$" },
+            { "label": "b", "question": "$400\\text{ g}$ of oats for $\\$2.60$ ($\\text{per } 100\\text{ g}$)", "answer": "$\\$0.65\\text{ per } 100\\text{ g}$" },
+            { "label": "c", "question": "$1.5\\text{ L}$ of olive oil for $\\$18.90$ ($\\text{per } 1\\text{ L}$)", "answer": "$\\$12.60/\\text{L}$" },
+            { "label": "d", "question": "$600\\text{ g}$ of honey for $\\$9.30$ ($\\text{per } 100\\text{ g}$)", "answer": "$\\$1.55\\text{ per } 100\\text{ g}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A supermarket sells Australian almonds in three pack sizes: Pack A ($200\\text{ g}$ for $\\$5.20$), Pack B ($500\\text{ g}$ for $\\$11.50$), and Pack C ($800\\text{ g}$ for $\\$19.20$). Calculate the cost per $100\\text{ g}$ for each pack and determine the best buy.",
+          "answer": "Pack A $= \\$2.60/100\\text{ g}$, Pack B $= \\$2.30/100\\text{ g}$, Pack C $= \\$2.40/100\\text{ g}$; Pack B is the best buy."
+        },
+        {
+          "number": 6,
+          "question": "A family car consumes $6.8\\text{ L}$ of petrol per $100\\text{ km}$ on the Hume Freeway. (a) How many litres of petrol are needed for a $450\\text{ km}$ drive? (b) At $\\$1.95\\text{ per litre}$, what is the fuel cost for the trip?",
+          "answer": "(a) $30.6\\text{ L}$, (b) $\\$59.67$"
+        },
+        {
+          "number": 7,
+          "question": "A V/Line train travels $75\\text{ km}$ from Melbourne to Geelong in $50\\text{ minutes}$ ($\frac{5}{6}\\text{ hour}$). Calculate the train's average speed in $\\text{km/h}$ and in $\\text{m/s}$.",
+          "answer": "$90\\text{ km/h} = 25\\text{ m/s}$"
+        },
+        {
+          "number": 8,
+          "question": "Tap A fills a $600\\text{ L}$ trough at $12\\text{ L/min}$, and Tap B fills the same trough at $8\\text{ L/min}$. If both taps are turned on together, how many minutes does it take to fill the $600\\text{ L}$ trough?",
+          "answer": "$30\\text{ minutes}$ (combined rate $= 20\\text{ L/min}$; $600 \\div 20 = 30$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A cyclist rides $30\\text{ km}$ uphill at $15\\text{ km/h}$ ($2\\text{ hours}$) and returns $30\\text{ km}$ downhill along the same road at $30\\text{ km/h}$ ($1\\text{ hour}$). Show that her overall average speed for the $60\\text{ km}$ round trip is $20\\text{ km/h}$, NOT $\\dfrac{15 + 30}{2} = 22.5\\text{ km/h}$.",
+          "answer": "Total distance $= 60\\text{ km}$ and total time $= 2 + 1 = 3\\text{ hours}$, so $\\text{Average speed} = \\dfrac{60}{3} = 20\\text{ km/h}$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why converting $1\\text{ m/s}$ to $\\text{km/h}$ multiplies by $3.6$: show where the $3600$ and $1000$ come from in the unit conversion.",
+          "answer": "In $1\\text{ hour}$ ($3600\\text{ s}$), an object moving at $1\\text{ m/s}$ travels $3600\\text{ m} = \\dfrac{3600}{1000}\\text{ km} = 3.6\\text{ km}$, so $1\\text{ m/s} = 3.6\\text{ km/h}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS4_2_1a", "expression": "360 / 4.5", "expected": 80 },
+        { "id": "WS4_2_2a", "expression": "96 * 2.5", "expected": 240 },
+        { "id": "WS4_2_3a", "expression": "15 * 3.6", "expected": 54 },
+        { "id": "WS4_2_3b", "expression": "108 / 3.6", "expected": 30 },
+        { "id": "WS4_2_4a", "expression": "4.50 / 2.5", "expected": 1.8 },
+        { "id": "WS4_2_4c", "expression": "18.90 / 1.5", "expected": 12.6 },
+        { "id": "WS4_2_5B", "expression": "11.50 / 5", "expected": 2.3 },
+        { "id": "WS4_2_6b", "expression": "(450 / 100) * Rational(68, 10) * Rational(195, 100)", "expected": 59.67 },
+        { "id": "WS4_2_7", "expression": "75 / Rational(5, 6)", "expected": 90 },
+        { "id": "WS4_2_9", "expression": "60 / (30/15 + 30/30)", "expected": 20 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Pythagoras' Theorem and Geometry",
+  "worksheets": [
+    {
+      "section_id": "8_1",
+      "section_code": "8A",
+      "title": "Pythagoras' Theorem",
+      "vcaa_code": "VC2M8M06",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the exact length of the hypotenuse $c$ in each right-angled triangle with shorter sides $a$ and $b$:",
+          "parts": [
+            { "label": "a", "question": "$a = 6\\text{ cm}, b = 8\\text{ cm}$", "answer": "$10\\text{ cm}$" },
+            { "label": "b", "question": "$a = 5\\text{ m}, b = 12\\text{ m}$", "answer": "$13\\text{ m}$" },
+            { "label": "c", "question": "$a = 15\\text{ cm}, b = 20\\text{ cm}$", "answer": "$25\\text{ cm}$" },
+            { "label": "d", "question": "$a = 9\\text{ m}, b = 40\\text{ m}$", "answer": "$41\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the unknown shorter side $a$ in each right-angled triangle with hypotenuse $c$ and shorter side $b$:",
+          "parts": [
+            { "label": "a", "question": "$c = 10\\text{ cm}, b = 8\\text{ cm}$", "answer": "$6\\text{ cm}$" },
+            { "label": "b", "question": "$c = 25\\text{ m}, b = 7\\text{ m}$", "answer": "$24\\text{ m}$" },
+            { "label": "c", "question": "$c = 34\\text{ cm}, b = 30\\text{ cm}$", "answer": "$16\\text{ cm}$" },
+            { "label": "d", "question": "$c = 29\\text{ m}, b = 21\\text{ m}$", "answer": "$20\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the unknown side as an exact surd AND rounded to $2$ decimal places:",
+          "parts": [
+            { "label": "a", "question": "Hypotenuse $c$ when $a = 4\\text{ cm}, b = 7\\text{ cm}$", "answer": "$\\sqrt{65}\\text{ cm} \\approx 8.06\\text{ cm}$" },
+            { "label": "b", "question": "Hypotenuse $c$ when $a = 6\\text{ m}, b = 9\\text{ m}$", "answer": "$\\sqrt{117}\\text{ m} \\approx 10.82\\text{ m}$" },
+            { "label": "c", "question": "Shorter side $a$ when $c = 11\\text{ cm}, b = 6\\text{ cm}$", "answer": "$\\sqrt{85}\\text{ cm} \\approx 9.22\\text{ cm}$" },
+            { "label": "d", "question": "Shorter side $a$ when $c = 14\\text{ m}, b = 9\\text{ m}$", "answer": "$\\sqrt{115}\\text{ m} \\approx 10.72\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Test whether each set of three side lengths forms a right-angled triangle (Yes or No):",
+          "parts": [
+            { "label": "a", "question": "$9\\text{ cm}, 12\\text{ cm}, 15\\text{ cm}$", "answer": "Yes ($81 + 144 = 225 = 15^2$)" },
+            { "label": "b", "question": "$7\\text{ cm}, 10\\text{ cm}, 12\\text{ cm}$", "answer": "No ($49 + 100 = 149 \\neq 144$)" },
+            { "label": "c", "question": "$12\\text{ m}, 16\\text{ m}, 20\\text{ m}$", "answer": "Yes ($144 + 256 = 400 = 20^2$)" },
+            { "label": "d", "question": "$1.5\\text{ m}, 2.0\\text{ m}, 2.5\\text{ m}$", "answer": "Yes ($2.25 + 4.0 = 6.25 = 2.5^2$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular soccer pitch at Darebin International Sports Centre measures $105\\text{ m}$ long by $68\\text{ m}$ wide. Find the exact surd length and decimal length ($2$ d.p.) of a diagonal run from one corner flag to the opposite corner flag.",
+          "answer": "$\\sqrt{15\\,649}\\text{ m} \\approx 125.10\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A $5.0\\text{ m}$ painter's ladder leans against a vertical house wall with its foot $1.4\\text{ m}$ out from the base of the wall on level ground. How high up the wall does the top of the ladder reach?",
+          "answer": "$4.8\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A yacht sails $16\\text{ km}$ due north from Queenscliff into Port Phillip Bay, then turns and sails $12\\text{ km}$ due west. How far is the yacht in a direct straight line from Queenscliff?",
+          "answer": "$20\\text{ km}$"
+        },
+        {
+          "number": 8,
+          "question": "An equilateral triangle has side lengths of $10\\text{ cm}$. By drawing its perpendicular altitude $h$ (which bisects the base into two $5\\text{ cm}$ segments), find the exact surd height $h$ and the height rounded to $2$ decimal places.",
+          "answer": "$h = \\sqrt{75}\\text{ cm} \\approx 8.66\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A square has a diagonal of length $12\\text{ cm}$. Let the side length of the square be $s$. Using Pythagoras' theorem $s^2 + s^2 = 12^2$, find the exact value of $s^2$ and explain why $s^2$ immediately gives you the area of the square without needing to approximate $s$.",
+          "answer": "$2s^2 = 144 \\implies s^2 = 72$. Since the area of a square of side $s$ is $s^2$, the exact area is immediately $72\\text{ cm}^2$."
+        },
+        {
+          "number": 10,
+          "question": "Show that if $(a, b, c)$ is any Pythagorean triad (so $a^2 + b^2 = c^2$), then $(ka, kb, kc)$ is also a Pythagorean triad for any positive integer $k$.",
+          "answer": "$(ka)^2 + (kb)^2 = k^2a^2 + k^2b^2 = k^2(a^2 + b^2) = k^2c^2 = (kc)^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS8_1_1a", "expression": "sqrt(6**2 + 8**2)", "expected": 10 },
+        { "id": "WS8_1_1d", "expression": "sqrt(9**2 + 40**2)", "expected": 41 },
+        { "id": "WS8_1_2b", "expression": "sqrt(25**2 - 7**2)", "expected": 24 },
+        { "id": "WS8_1_2c", "expression": "sqrt(34**2 - 30**2)", "expected": 16 },
+        { "id": "WS8_1_2d", "expression": "sqrt(29**2 - 21**2)", "expected": 20 },
+        { "id": "WS8_1_5", "expression": "105**2 + 68**2", "expected": 15649 },
+        { "id": "WS8_1_6", "expression": "sqrt(5**2 - Rational(14, 10)**2)", "expected": 4.8 },
+        { "id": "WS8_1_7", "expression": "sqrt(16**2 + 12**2)", "expected": 20 },
+        { "id": "WS8_1_8", "expression": "10**2 - 5**2", "expected": 75 },
+        { "id": "WS8_1_9", "expression": "12**2 / 2", "expected": 72 }
+      ]
+    },
+    {
+      "section_id": "8_2",
+      "section_code": "8B",
+      "title": "Congruence, Similarity and Quadrilateral Properties",
+      "vcaa_code": "VC2M8SP01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State which congruence test ($\\text{SSS, SAS, ASA, RHS}$) proves each pair of triangles is congruent:",
+          "parts": [
+            { "label": "a", "question": "Sides $5\\text{ cm}, 7\\text{ cm}, 9\\text{ cm}$ in both triangles", "answer": "$\\text{SSS}$" },
+            { "label": "b", "question": "Sides $6\\text{ cm}, 8\\text{ cm}$ and included angle $55^\\circ$ in both", "answer": "$\\text{SAS}$" },
+            { "label": "c", "question": "Angles $40^\\circ, 75^\\circ$ and included side $10\\text{ cm}$ in both", "answer": "$\\text{ASA}$" },
+            { "label": "d", "question": "Right angle $90^\\circ$, hypotenuse $15\\text{ cm}$, leg $9\\text{ cm}$ in both", "answer": "$\\text{RHS}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the unknown angle $x^\\circ$ in each quadrilateral:",
+          "parts": [
+            { "label": "a", "question": "General quadrilateral with angles $82^\\circ, 96^\\circ, 115^\\circ, x^\\circ$", "answer": "$x = 67$" },
+            { "label": "b", "question": "Parallelogram with acute angle $64^\\circ$ and obtuse angle $x^\\circ$", "answer": "$x = 116$" },
+            { "label": "c", "question": "Kite with non-equal angles $92^\\circ$ and $54^\\circ$, and two equal angles $x^\\circ$", "answer": "$x = 107$" },
+            { "label": "d", "question": "Trapezium with co-interior angles $71^\\circ$ and $x^\\circ$ between parallel sides", "answer": "$x = 109$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given $\\triangle ABC \\sim \\triangle DEF$ with $AB = 4\\text{ cm}, BC = 6\\text{ cm}, AC = 7\\text{ cm}$, and $DE = 10\\text{ cm}$, find:",
+          "parts": [
+            { "label": "a", "question": "The scale factor $k$ from $\\triangle ABC$ to $\\triangle DEF$", "answer": "$k = 2.5$" },
+            { "label": "b", "question": "The length of side $EF$", "answer": "$15\\text{ cm}$" },
+            { "label": "c", "question": "The length of side $DF$", "answer": "$17.5\\text{ cm}$" },
+            { "label": "d", "question": "The ratio of their perimeters $\\text{Perimeter}(\\triangle DEF) : \\text{Perimeter}(\\triangle ABC)$", "answer": "$5 : 2$ ($42.5 : 17 = 2.5 : 1$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Identify the special quadrilateral described by each set of properties:",
+          "parts": [
+            { "label": "a", "question": "All $4$ sides equal; diagonals bisect each other at $90^\\circ$ (angles not necessarily $90^\\circ$)", "answer": "Rhombus" },
+            { "label": "b", "question": "Opposite sides equal; all $4$ interior angles $90^\\circ$; diagonals equal in length", "answer": "Rectangle" },
+            { "label": "c", "question": "Two distinct pairs of adjacent sides equal; one pair of opposite angles equal", "answer": "Kite" },
+            { "label": "d", "question": "Exactly one pair of parallel sides", "answer": "Trapezium" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A vertical $2.0\\text{ m}$ street sign in Bendigo casts a horizontal shadow of length $1.6\\text{ m}$. At the same time, a nearby heritage clock tower casts a shadow of length $18.4\\text{ m}$. Using similar triangles, find the height of the clock tower.",
+          "answer": "$23\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "In a rectangle $ABCD$, the diagonals $AC$ and $BD$ intersect at $M$. Given that $AM = 8.5\\text{ cm}$ and side $AB = 8\\text{ cm}$, find (a) the full length of diagonal $BD$ and (b) the length of side $BC$.",
+          "answer": "(a) $BD = 17\\text{ cm}$, (b) $BC = 15\\text{ cm}$ ($\\sqrt{17^2 - 8^2} = 15$)"
+        },
+        {
+          "number": 7,
+          "question": "An A-frame roof truss is an isosceles triangle $ABC$ with $AB = AC = 6.5\\text{ m}$ and horizontal span $BC = 12.0\\text{ m}$. A vertical king-post $AM$ connects the apex $A$ to the midpoint $M$ of $BC$. State the congruence test that proves $\\triangle ABM \\cong \\triangle ACM$ and calculate the height $AM$.",
+          "answer": "$\\text{SSS}$ (or $\\text{RHS}$ since $AM \\perp BC$); $AM = 2.5\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "The four interior angles of a convex quadrilateral are $(x + 15)^\\circ, (2x - 5)^\\circ, (2x + 10)^\\circ$, and $(3x - 20)^\\circ$. Solve for $x$ and find the four angles.",
+          "answer": "$x = 45$; angles are $60^\\circ, 85^\\circ, 100^\\circ, 115^\\circ$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why the condition $\\text{AAA}$ (three pairs of equal angles) guarantees that two triangles are **similar**, but does NOT guarantee that they are **congruent**.",
+          "answer": "Equal angles fix the shape and side ratios of a triangle, but one triangle can be an enlargement of the other with side lengths multiplied by any scale factor $k \\neq 1$."
+        },
+        {
+          "number": 10,
+          "question": "In rectangle $ABCD$, prove that the two diagonals $AC$ and $BD$ have equal length by showing that $\\triangle ABC \\cong \\triangle BAD$ using the $\\text{SAS}$ congruence test.",
+          "answer": "In $\\triangle ABC$ and $\\triangle BAD$: $BC = AD$ (opposite sides of rectangle), $\\angle ABC = \\angle BAD = 90^\\circ$, and $AB = BA$ (common side). Hence $\\triangle ABC \\cong \\triangle BAD$ ($\\text{SAS}$), so hypotenuse $AC = BD$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS8_2_2a", "expression": "360 - (82 + 96 + 115)", "expected": 67 },
+        { "id": "WS8_2_2b", "expression": "180 - 64", "expected": 116 },
+        { "id": "WS8_2_2c", "expression": "(360 - (92 + 54)) / 2", "expected": 107 },
+        { "id": "WS8_2_2d", "expression": "180 - 71", "expected": 109 },
+        { "id": "WS8_2_3a", "expression": "10 / 4", "expected": 2.5 },
+        { "id": "WS8_2_3b", "expression": "2.5 * 6", "expected": 15 },
+        { "id": "WS8_2_5", "expression": "(2.0 / 1.6) * 18.4", "expected": 23 },
+        { "id": "WS8_2_6b", "expression": "sqrt(17**2 - 8**2)", "expected": 15 },
+        { "id": "WS8_2_7", "expression": "sqrt(Rational(65, 10)**2 - 6**2)", "expected": 2.5 },
+        { "id": "WS8_2_8", "expression": "360 / 8", "expected": 45 }
+      ]
+    }
+  ]
+}
