@@ -1,0 +1,371 @@
+{
+  "curriculum": "Victorian Curriculum F-10 Version 2.0 (VCAA)",
+  "year_level": 8,
+  "title": "Open-Source Essential Mathematics for the Victorian Curriculum Year 8",
+  "version": "2.0.0",
+  "locale": "en-AU",
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "id": "chapter_1",
+      "title": "Integers and the Number System",
+      "strand": "Number",
+      "vcaa_codes": ["VC2M8N04"],
+      "description": "Operations with directed numbers, order of operations, powers and roots of integers, and mathematical modelling with integers in Australian contexts.",
+      "sections": [
+        {
+          "section_id": "1_1",
+          "section_code": "1A",
+          "title": "Adding and Subtracting Integers",
+          "vcaa_code": "VC2M8N04",
+          "vcaa_description": "Use the 4 operations with integers and with rational numbers, choosing efficient strategies, including using the properties of operations and mental, written and digital strategies, and make estimates to check reasonableness.",
+          "target_mastery": "Accurately add and subtract positive and negative integers using number lines, directed number rules, and associative/commutative properties.",
+          "prerequisites": [
+            "Locating positive and negative integers on a horizontal or vertical number line (Year 7 VC2M7N05)",
+            "Adding and subtracting whole numbers fluently"
+          ],
+          "sub_concepts": [
+            "Opposite integers and additive inverses",
+            "Adding and subtracting a positive integer on a number line",
+            "Adding and subtracting a negative integer (equivalent sign rules)",
+            "Multi-step integer sums and Australian temperature/elevation contexts"
+          ]
+        },
+        {
+          "section_id": "1_2",
+          "section_code": "1B",
+          "title": "Multiplying and Dividing Integers",
+          "vcaa_code": "VC2M8N04",
+          "vcaa_description": "Use the 4 operations with integers and with rational numbers, choosing efficient strategies, including using the properties of operations and mental, written and digital strategies, and make estimates to check reasonableness.",
+          "target_mastery": "Multiply and divide positive and negative integers fluently, including powers with negative integer bases.",
+          "prerequisites": [
+            "Adding and subtracting directed numbers (Section 1A)",
+            "Multiplication tables up to 12 x 12 and short division"
+          ],
+          "sub_concepts": [
+            "Sign rules for multiplying two integers",
+            "Sign rules for dividing two integers and undefined division by zero",
+            "Products of three or more directed numbers",
+            "Integer powers of negative bases: (-a)^n versus -a^n"
+          ]
+        },
+        {
+          "section_id": "1_3",
+          "section_code": "1C",
+          "title": "Order of Operations and Directed Numbers",
+          "vcaa_code": "VC2M8N04",
+          "vcaa_description": "Use the 4 operations with integers and with rational numbers, choosing efficient strategies, including using the properties of operations and mental, written and digital strategies, and make estimates to check reasonableness.",
+          "target_mastery": "Evaluate multi-step arithmetic expressions involving brackets, indices, multiplication, division, addition, and subtraction with integers.",
+          "prerequisites": [
+            "Adding, subtracting, multiplying, and dividing integers (Sections 1A-1B)",
+            "Order of operations with positive whole numbers"
+          ],
+          "sub_concepts": [
+            "Brackets and nested grouping symbols (parentheses, square brackets, fraction bars)",
+            "Indices (exponents) and roots in expressions",
+            "Left-to-right precedence for multiplication/division and addition/subtraction",
+            "Estimation and checking reasonableness in applied problems"
+          ]
+        },
+        {
+          "section_id": "1_4",
+          "section_code": "1D",
+          "title": "Lowest Common Multiple, Highest Common Factor, and Prime Factorisation",
+          "vcaa_code": "VC2M8N02",
+          "vcaa_description": "Establish and apply the exponent laws with positive integer exponents and the zero-exponent, using exponent notation with numbers.",
+          "target_mastery": "Express composite numbers in prime factor form using exponent notation and use prime factorisation to determine HCF and LCM.",
+          "prerequisites": [
+            "Prime and composite numbers (Year 7 VC2M7N02)",
+            "Divisibility tests for 2, 3, 5, 9, and 10"
+          ],
+          "sub_concepts": [
+            "Factor trees and prime factorisation in index form",
+            "Determining the Highest Common Factor (HCF) via prime factors",
+            "Determining the Lowest Common Multiple (LCM) via prime factors",
+            "Applications of HCF and LCM to scheduling and packaging problems"
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "id": "chapter_2",
+      "title": "Fractions, Decimals, Irrational Numbers and Index Laws",
+      "strand": "Number",
+      "vcaa_codes": ["VC2M8N01", "VC2M8N02", "VC2M8N03", "VC2M8N04"],
+      "description": "Rational and irrational numbers, terminating and recurring decimals, operations with positive and negative fractions/decimals, and index laws.",
+      "sections": [
+        {
+          "section_id": "2_1",
+          "section_code": "2A",
+          "title": "Operations with Positive and Negative Fractions",
+          "vcaa_code": "VC2M8N04",
+          "vcaa_description": "Use the 4 operations with integers and with rational numbers, choosing efficient strategies.",
+          "target_mastery": "Add, subtract, multiply, and divide positive and negative fractions and mixed numerals.",
+          "prerequisites": ["Equivalent fractions and lowest common denominator", "Directed number rules"],
+          "sub_concepts": ["Adding and subtracting signed fractions", "Multiplying signed fractions and cross-cancelling", "Reciprocals and dividing signed fractions"]
+        },
+        {
+          "section_id": "2_2",
+          "section_code": "2B",
+          "title": "Terminating and Recurring Decimals",
+          "vcaa_code": "VC2M8N03",
+          "vcaa_description": "Recognise terminating and recurring decimals, using digital tools as appropriate.",
+          "target_mastery": "Convert between fractions and terminating or recurring decimals using dot and bar notation.",
+          "prerequisites": ["Short division", "Place value"],
+          "sub_concepts": ["Terminating decimals and prime factors of denominators (2 and 5)", "Recurring decimal notation (dots and vinculum)", "Ordering rational numbers"]
+        },
+        {
+          "section_id": "2_3",
+          "section_code": "2C",
+          "title": "Irrational Numbers and the Real Number System",
+          "vcaa_code": "VC2M8N01",
+          "vcaa_description": "Recognise irrational numbers in applied contexts, including square roots and pi, and recognise that real numbers comprise rational and irrational numbers.",
+          "target_mastery": "Classify numbers as rational or irrational, evaluate or estimate square and cube roots, and work with exact values involving pi and surds.",
+          "prerequisites": ["Square numbers and square roots", "Rational numbers as fractions a/b"],
+          "sub_concepts": ["Rational vs irrational numbers", "Estimating non-perfect square roots between consecutive integers", "Pi as an irrational ratio in geometry"]
+        },
+        {
+          "section_id": "2_4",
+          "section_code": "2D",
+          "title": "Index Laws and the Zero Exponent",
+          "vcaa_code": "VC2M8N02",
+          "vcaa_description": "Establish and apply the exponent laws with positive integer exponents and the zero-exponent, using exponent notation with numbers.",
+          "target_mastery": "Simplify numerical expressions with exponents using multiplication, division, power of a power, and zero-index laws.",
+          "prerequisites": ["Index notation (base and exponent)", "Prime factorisation"],
+          "sub_concepts": ["First Index Law (multiplying same base)", "Second Index Law (dividing same base)", "Power of a power law", "The Zero Index Law (a^0 = 1)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "id": "chapter_3",
+      "title": "Percentages and Financial Mathematics",
+      "strand": "Number",
+      "vcaa_codes": ["VC2M8N05"],
+      "description": "Percentage conversions, percentage increase/decrease, Goods and Services Tax (GST), discounts, profit and loss, and simple interest.",
+      "sections": [
+        {
+          "section_id": "3_1",
+          "section_code": "3A",
+          "title": "Percentages, Percentage Change and GST",
+          "vcaa_code": "VC2M8N05",
+          "vcaa_description": "Use mathematical modelling to solve practical problems involving rational numbers and percentages, including financial contexts.",
+          "target_mastery": "Calculate percentage increases, decreases, and 10% Australian GST inclusive and exclusive prices.",
+          "prerequisites": ["Converting between fractions, decimals, and percentages"],
+          "sub_concepts": ["Percentage of a quantity", "Multiplier method for percentage increase and decrease", "Australian 10% GST calculations (finding pre-GST price by dividing by 1.1)"]
+        },
+        {
+          "section_id": "3_2",
+          "section_code": "3B",
+          "title": "Profit, Loss, Discounts and Simple Interest",
+          "vcaa_code": "VC2M8N05",
+          "vcaa_description": "Use mathematical modelling to solve practical problems involving rational numbers and percentages, including financial contexts.",
+          "target_mastery": "Solve financial modelling problems involving mark-ups, discounts, percentage profit/loss on cost price, and simple interest I = Prt.",
+          "prerequisites": ["Percentage change (Section 3A)"],
+          "sub_concepts": ["Profit and loss as a percentage of cost price", "Successive discounts", "Simple interest formula I = Prt"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "id": "chapter_4",
+      "title": "Ratios, Rates and Best Buys",
+      "strand": "Measurement",
+      "vcaa_codes": ["VC2M8M05", "VC2M8M07"],
+      "description": "Simplifying ratios, dividing quantities in a given ratio, scale drawings, unit rates, speed, and unit pricing.",
+      "sections": [
+        {
+          "section_id": "4_1",
+          "section_code": "4A",
+          "title": "Simplifying Ratios and Dividing in a Ratio",
+          "vcaa_code": "VC2M8M07",
+          "vcaa_description": "Use mathematical modelling to solve practical problems involving ratios, rates and scale.",
+          "target_mastery": "Simplify ratios involving whole numbers, fractions, decimals, and different units, and divide quantities into a given ratio.",
+          "prerequisites": ["Highest Common Factor (Section 1D)", "Metric unit conversions"],
+          "sub_concepts": ["Simplifying ratios to simplest whole-number form", "Unitary method and total-parts method", "Map scales and scale factors"]
+        },
+        {
+          "section_id": "4_2",
+          "section_code": "4B",
+          "title": "Rates, Speed and Best Buys",
+          "vcaa_code": "VC2M8M05",
+          "vcaa_description": "Recognise and use rates to solve problems involving the comparison of 2 related quantities of different units of measure.",
+          "target_mastery": "Calculate and convert rates including average speed, fuel consumption (L/100 km), and supermarket unit pricing ($/100g).",
+          "prerequisites": ["Simplifying ratios", "Decimal division"],
+          "sub_concepts": ["Unit rates and comparison shopping", "Average speed, distance, and time", "Converting between m/s and km/h"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "id": "chapter_5",
+      "title": "Algebraic Techniques",
+      "strand": "Algebra",
+      "vcaa_codes": ["VC2M8A01"],
+      "description": "Algebraic substitution, collecting like terms, multiplying/dividing algebraic terms, expanding brackets, and factorising linear expressions.",
+      "sections": [
+        {
+          "section_id": "5_1",
+          "section_code": "5A",
+          "title": "Language of Algebra, Substitution and Like Terms",
+          "vcaa_code": "VC2M8A01",
+          "vcaa_description": "Create, expand, factorise, rearrange and simplify linear expressions, applying the associative, commutative, identity, distributive and inverse properties.",
+          "target_mastery": "Substitute directed numbers into algebraic expressions and simplify expressions by collecting like terms and multiplying/dividing pronumerals.",
+          "prerequisites": ["Directed number operations", "Basic pronumeral notation"],
+          "sub_concepts": ["Terms, coefficients, and constants", "Substitution with negative values", "Collecting like terms", "Multiplying and dividing algebraic terms"]
+        },
+        {
+          "section_id": "5_2",
+          "section_code": "5B",
+          "title": "Expanding Brackets and Factorising Linear Expressions",
+          "vcaa_code": "VC2M8A01",
+          "vcaa_description": "Create, expand, factorise, rearrange and simplify linear expressions, applying the associative, commutative, identity, distributive and inverse properties.",
+          "target_mastery": "Apply the distributive law to expand brackets and factorise linear expressions by extracting the Highest Common Factor (including negative factors).",
+          "prerequisites": ["HCF of numbers (Section 1D)", "Multiplying algebraic terms"],
+          "sub_concepts": ["The distributive law a(b + c) = ab + ac", "Expanding and simplifying with negative multipliers", "Factorising by extracting the algebraic HCF"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "id": "chapter_6",
+      "title": "Linear Equations and Coordinate Graphs",
+      "strand": "Algebra",
+      "vcaa_codes": ["VC2M8A02", "VC2M8A03", "VC2M8A04"],
+      "description": "Solving multi-step linear equations, equations with brackets and pronumerals on both sides, plotting linear graphs, gradient, and y-intercept.",
+      "sections": [
+        {
+          "section_id": "6_1",
+          "section_code": "6A",
+          "title": "Solving Linear Equations",
+          "vcaa_code": "VC2M8A02",
+          "vcaa_description": "Solve linear equations and verify solutions by substitution.",
+          "target_mastery": "Solve two-step and multi-step linear equations, including equations with brackets, fractions, and pronumerals on both sides.",
+          "prerequisites": ["Inverse operations", "Expanding brackets (Section 5B)"],
+          "sub_concepts": ["Inverse operations and maintaining balance", "Equations with brackets and algebraic fractions", "Equations with pronumerals on both sides", "Checking solutions by substitution"]
+        },
+        {
+          "section_id": "6_2",
+          "section_code": "6B",
+          "title": "Graphing Linear Relations and Modelling",
+          "vcaa_code": "VC2M8A03",
+          "vcaa_description": "Graph linear relations on the Cartesian plane; use mathematical modelling to solve applied problems involving linear relations.",
+          "target_mastery": "Plot linear relations on the Cartesian plane, determine gradient and y-intercept from y = mx + c, and model real-world linear relationships.",
+          "prerequisites": ["Plotting points on the 4-quadrant Cartesian plane", "Substitution"],
+          "sub_concepts": ["Tables of values and plotting straight lines", "Gradient (rise over run) and y-intercept", "Finding the rule y = mx + c", "Linear modelling in real-world contexts"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "id": "chapter_7",
+      "title": "Length, Area, Volume and Time",
+      "strand": "Measurement",
+      "vcaa_codes": ["VC2M8M01", "VC2M8M02", "VC2M8M03", "VC2M8M04"],
+      "description": "Circumference and area of circles and sectors, area of special quadrilaterals and composite figures, volume and capacity of prisms, and Australian time zones.",
+      "sections": [
+        {
+          "section_id": "7_1",
+          "section_code": "7A",
+          "title": "Perimeter and Area of Quadrilaterals and Composite Shapes",
+          "vcaa_code": "VC2M8M01",
+          "vcaa_description": "Solve problems involving the area and perimeter of irregular and composite shapes using appropriate units, including choosing between metric units of area.",
+          "target_mastery": "Convert between metric area units (mm^2, cm^2, m^2, ha, km^2) and calculate the area of parallelograms, trapeziums, rhombuses, kites, and composite shapes.",
+          "prerequisites": ["Area of rectangles and triangles"],
+          "sub_concepts": ["Metric area unit conversions (including hectares)", "Area formulas for parallelogram, trapezium, rhombus, and kite", "Composite areas by addition and subtraction"]
+        },
+        {
+          "section_id": "7_2",
+          "section_code": "7B",
+          "title": "Circumference and Area of Circles and Sectors",
+          "vcaa_code": "VC2M8M02",
+          "vcaa_description": "Demonstrate how the formulas for the circumference and area of a circle are established, and use them to solve practical problems.",
+          "target_mastery": "Calculate exact and rounded values for the circumference and area of circles, quadrants, semicircles, and sectors.",
+          "prerequisites": ["Irrational number pi (Section 2C)", "Radius and diameter"],
+          "sub_concepts": ["Circumference C = 2*pi*r = pi*d", "Area of a circle A = pi*r^2", "Perimeter and area of sectors and composite circular shapes"]
+        },
+        {
+          "section_id": "7_3",
+          "section_code": "7C",
+          "title": "Volume, Capacity of Prisms and Time Zones",
+          "vcaa_code": "VC2M8M03",
+          "vcaa_description": "Solve problems involving the volume and capacity of right prisms using appropriate units; solve problems involving duration and time zones.",
+          "target_mastery": "Calculate the volume of right prisms using V = Ah, convert between volume (cm^3, m^3) and capacity (mL, L, kL), and solve Australian/global time zone problems.",
+          "prerequisites": ["Area of cross-sections", "24-hour time"],
+          "sub_concepts": ["Volume of right prisms V = Ah", "Volume and capacity equivalence (1 cm^3 = 1 mL, 1 m^3 = 1000 L)", "Australian time zones (AEST, ACST, AWST and Daylight Saving AEDT/ACDT)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "id": "chapter_8",
+      "title": "Pythagoras' Theorem and Geometry",
+      "strand": "Measurement & Space",
+      "vcaa_codes": ["VC2M8M06", "VC2M8SP01", "VC2M8SP02", "VC2M8SP03", "VC2M8SP04"],
+      "description": "Pythagoras' theorem, congruent and similar triangles, properties of quadrilaterals, 3D coordinates, and geometric algorithms.",
+      "sections": [
+        {
+          "section_id": "8_1",
+          "section_code": "8A",
+          "title": "Pythagoras' Theorem",
+          "vcaa_code": "VC2M8M06",
+          "vcaa_description": "Use Pythagoras' theorem to solve problems involving the side lengths of right-angled triangles.",
+          "target_mastery": "Apply a^2 + b^2 = c^2 to find the hypotenuse or a shorter side in right-angled triangles, identify Pythagorean triads, and solve practical problems.",
+          "prerequisites": ["Squares and square roots (Section 2C)", "Right-angled triangles"],
+          "sub_concepts": ["Identifying the hypotenuse and stating a^2 + b^2 = c^2", "Finding the hypotenuse vs finding a shorter side", "Pythagorean triads and converse test for right angles"]
+        },
+        {
+          "section_id": "8_2",
+          "section_code": "8B",
+          "title": "Congruence, Similarity and Quadrilateral Properties",
+          "vcaa_code": "VC2M8SP01",
+          "vcaa_description": "Identify the conditions for congruence and similarity of triangles and establish properties of quadrilaterals.",
+          "target_mastery": "Use the four congruence tests (SSS, SAS, ASA, RHS) to prove triangles are congruent and deduce angle and side properties of special quadrilaterals.",
+          "prerequisites": ["Angle relationships on parallel lines", "Angle sum of triangles and quadrilaterals"],
+          "sub_concepts": ["Triangle congruence tests (SSS, SAS, ASA, RHS)", "Similar figures and scale factors", "Deductive proofs of quadrilateral properties and decision algorithms"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 9,
+      "id": "chapter_9",
+      "title": "Probability and Venn Diagrams",
+      "strand": "Probability",
+      "vcaa_codes": ["VC2M8P01", "VC2M8P02", "VC2M8P03"],
+      "description": "Complementary events, two-way tables, Venn diagrams, tree diagrams, and experimental probability simulations.",
+      "sections": [
+        {
+          "section_id": "9_1",
+          "section_code": "9A",
+          "title": "Complementary Events, Venn Diagrams and Two-Way Tables",
+          "vcaa_code": "VC2M8P02",
+          "vcaa_description": "Determine all possible combinations for 2 events, using two-way tables, tree diagrams and Venn diagrams, and use these to calculate probabilities.",
+          "target_mastery": "Use complementary events Pr(A') = 1 - Pr(A), construct and interpret Venn diagrams and two-way tables, and calculate compound probabilities (AND, OR, NOT).",
+          "prerequisites": ["Theoretical probability of single events", "Fractions, decimals, and percentages"],
+          "sub_concepts": ["Complementary events and sum of probabilities", "Venn diagrams (intersection, union, mutually exclusive events)", "Two-way tables and tree diagrams"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "id": "chapter_10",
+      "title": "Statistics and Data Analysis",
+      "strand": "Statistics",
+      "vcaa_codes": ["VC2M8ST01", "VC2M8ST02", "VC2M8ST03"],
+      "description": "Census vs sampling, bias, frequency tables and histograms, mean, median, mode, range, and the effect of outliers.",
+      "sections": [
+        {
+          "section_id": "10_1",
+          "section_code": "10A",
+          "title": "Data Collection, Summary Statistics and Outliers",
+          "vcaa_code": "VC2M8ST02",
+          "vcaa_description": "Analyse and report on the distribution of data from primary and secondary sources using summary statistics and displays, describing the effect of outliers.",
+          "target_mastery": "Distinguish between census and sample, calculate mean, median, mode, and range from raw data and frequency tables, and explain how outliers affect measures of centre.",
+          "prerequisites": ["Mean, median, mode, and range of small data sets", "Dot plots and stem-and-leaf plots"],
+          "sub_concepts": ["Census vs sample and sources of sampling bias", "Calculating mean, median, mode, and range from frequency tables", "Effect of outliers on the mean versus the median"]
+        }
+      ]
+    }
+  ]
+}

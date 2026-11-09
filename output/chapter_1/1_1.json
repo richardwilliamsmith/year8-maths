@@ -1,0 +1,529 @@
+{
+  "metadata": {
+    "section_id": "1_1",
+    "section_code": "1A",
+    "chapter_number": 1,
+    "chapter_title": "Integers and the Number System",
+    "title": "Adding and Subtracting Integers",
+    "vcaa_code": "VC2M8N04",
+    "vcaa_description": "Use the 4 operations with integers and with rational numbers, choosing efficient strategies, including using the properties of operations and mental, written and digital strategies, and make estimates to check reasonableness.",
+    "strand": "Number",
+    "target_mastery": "Accurately add and subtract positive and negative integers using number lines, adjacent sign rules, and associative and commutative properties.",
+    "prerequisites": [
+      "Locating positive and negative integers on a horizontal or vertical number line (Year 7 VC2M7N05)",
+      "Adding and subtracting positive whole numbers fluently"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Integers",
+        "definition": "The set of whole numbers and their negatives: $\\{\\dots, -3, -2, -1, 0, 1, 2, 3, \\dots\\}$, denoted by the symbol $\\mathbb{Z}$."
+      },
+      {
+        "term": "Directed numbers",
+        "definition": "Numbers that have both a size (magnitude) and a direction (positive $+$ or negative $-$)."
+      },
+      {
+        "term": "Additive inverse (opposite)",
+        "definition": "Two numbers that add to give $0$, such as $7$ and $-7$. In general, $a + (-a) = 0$."
+      },
+      {
+        "term": "Magnitude (absolute value)",
+        "definition": "The distance of a number from $0$ on a number line, always non-negative, written as $|a|$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_1_1_1",
+      "title": "Integers, Opposites, and Movement on a Number Line",
+      "explanation": "The set of integers consists of negative whole numbers, zero, and positive whole numbers. Zero ($0$) is neither positive nor negative. On a horizontal number line, numbers increase in value as you move to the right and decrease in value as you move to the left. Adding a positive integer ($+b$) moves $b$ units to the right, whereas subtracting a positive integer ($-b$) moves $b$ units to the left.",
+      "formula_latex": "a + (-a) = 0 \\quad \\text{and} \\quad -a < b \\iff -a \\text{ lies to the left of } b",
+      "callout_title": "Number Line Direction Rule",
+      "callout_rule": "Start at the first number on the number line. Moving RIGHT increases the value (adding a positive); moving LEFT decreases the value (subtracting a positive). If you start at $-8$ and add $5$, you move $5$ units right towards zero, landing at $-3$."
+    },
+    {
+      "id": "theory_1_1_2",
+      "title": "Adding a Negative Integer",
+      "explanation": "Adding a negative number has the same effect as subtracting its positive opposite. For example, adding a debt of $\\$15$ reduces your bank balance by $\\$15$. Whenever a plus sign and a minus sign appear directly next to each other (separated only by a bracket), they combine into a single subtraction operation.",
+      "formula_latex": "a + (-b) = a - b",
+      "callout_title": "Adjacent Mixed Signs Rule",
+      "callout_rule": "When a plus sign and a minus sign sit side by side, replace them with a single minus sign: $+ (-b)$ becomes $- b$, and $- (+b)$ becomes $- b$. Different adjacent signs always simplify to a subtraction."
+    },
+    {
+      "id": "theory_1_1_3",
+      "title": "Subtracting a Negative Integer",
+      "explanation": "Subtracting a negative integer is the inverse of adding a negative integer—removing a debt increases your net balance. Therefore, subtracting $-b$ is equivalent to adding $+b$ and moves $b$ units to the right on the number line.",
+      "formula_latex": "a - (-b) = a + b",
+      "callout_title": "Adjacent Same Signs Rule",
+      "callout_rule": "When two minus signs sit directly next to each other, replace them with a single plus sign: $- (-b)$ becomes $+ b$. Removing a negative is always the same as adding a positive."
+    },
+    {
+      "id": "theory_1_1_4",
+      "title": "Multi-Step Integer Sums and Grouping Strategies",
+      "explanation": "Once all adjacent sign pairs are simplified into single $+$ or $-$ operations, you can evaluate the expression from left to right, or apply the commutative and associative laws to group all positive terms together and all negative terms together before finding the difference.",
+      "formula_latex": "-a + b - c + d = (b + d) - (a + c)",
+      "callout_title": "Keep the Sign Attached to the Term",
+      "callout_rule": "When rearranging terms in a sum, always carry the sign directly in front of each number with that number. For example, in $-12 + 7 - 8$, the terms are $(-12)$, $(+7)$, and $(-8)$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE1_1_1",
+      "title": "Adding and Subtracting Positive Integers Beyond Zero",
+      "difficulty": "Fluency",
+      "problem": "Evaluate the following without a calculator: (a) $-9 + 14$ and (b) $6 - 15$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For part (a), start at $-9$ on the number line and move $14$ units to the right. Moving $9$ units right reaches $0$, leaving $14 - 9 = 5$ units past zero.",
+          "working": "$$-9 + 14 = 14 - 9 = 5$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For part (b), start at $6$ on the number line and move $15$ units to the left. Since $15$ is larger than $6$, the result is negative with magnitude $15 - 6 = 9$.",
+          "working": "$$6 - 15 = -(15 - 6) = -9$$"
+        }
+      ],
+      "final_answer": "(a) $5$, (b) $-9$",
+      "now_you_try": {
+        "problem": "Evaluate the following without a calculator: (a) $-13 + 8$ and (b) $11 - 19$.",
+        "hint": "Determine whether your movement on the number line crosses zero or stays on the negative side.",
+        "working_summary": "(a) $-13 + 8 = -(13 - 8) = -5$; (b) $11 - 19 = -(19 - 11) = -8$.",
+        "answer": "(a) $-5$, (b) $-8$"
+      }
+    },
+    {
+      "id": "WE1_1_2",
+      "title": "Adding and Subtracting Negative Integers",
+      "difficulty": "Fluency",
+      "problem": "Simplify the adjacent signs and evaluate: (a) $-7 + (-11)$ and (b) $-14 - (-20)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), the adjacent signs $+ (-11)$ are different, so replace them with a single minus sign $(-11)$.",
+          "working": "$$-7 + (-11) = -7 - 11$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Starting at $-7$ and moving $11$ units further left increases the negative magnitude: $7 + 11 = 18$ units below zero.",
+          "working": "$$-7 - 11 = -18$$"
+        },
+        {
+          "step": 3,
+          "thinking": "In part (b), the adjacent signs $- (-20)$ are both negative, so replace them with a single plus sign $(+20)$.",
+          "working": "$$-14 - (-20) = -14 + 20$$"
+        },
+        {
+          "step": 4,
+          "thinking": "Start at $-14$ and move $20$ units to the right: $20 - 14 = 6$.",
+          "working": "$$-14 + 20 = 6$$"
+        }
+      ],
+      "final_answer": "(a) $-18$, (b) $6$",
+      "now_you_try": {
+        "problem": "Simplify the adjacent signs and evaluate: (a) $-12 + (-9)$ and (b) $-18 - (-25)$.",
+        "hint": "Rewrite $+(-9)$ as $-9$ and $-(-25)$ as $+25$ before calculating.",
+        "working_summary": "(a) $-12 + (-9) = -12 - 9 = -21$; (b) $-18 - (-25) = -18 + 25 = 7$.",
+        "answer": "(a) $-21$, (b) $7$"
+      }
+    },
+    {
+      "id": "WE1_1_3",
+      "title": "Evaluating Multi-Step Integer Expressions",
+      "difficulty": "Understanding",
+      "problem": "Evaluate $-16 - (-9) + (-12) + 23$ by first simplifying adjacent signs.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Replace every pair of adjacent signs: $-(-9)$ becomes $+9$ and $+(-12)$ becomes $-12$.",
+          "working": "$$-16 - (-9) + (-12) + 23 = -16 + 9 - 12 + 23$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Group the positive terms $(+9 + 23)$ and the negative terms $(-16 - 12)$ using the commutative and associative laws.",
+          "working": "$$= (9 + 23) + (-16 - 12)$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Sum each group separately, then find the final result.",
+          "working": "$$= 32 - 28 = 4$$"
+        }
+      ],
+      "final_answer": "$4$",
+      "now_you_try": {
+        "problem": "Evaluate $-24 + (-8) - (-15) + 19$.",
+        "hint": "Rewrite with single signs first: $-24 - 8 + 15 + 19$.",
+        "working_summary": "$-24 - 8 + 15 + 19 = -32 + 34 = 2$.",
+        "answer": "$2$"
+      }
+    },
+    {
+      "id": "WE1_1_4",
+      "title": "Australian Alpine Temperature Modelling",
+      "difficulty": "Problem-Solving",
+      "problem": "At $6\\text{:00 am}$ in winter at Mount Hotham in the Victorian Alps, the temperature was $-7^\\circ\\text{C}$. By $2\\text{:00 pm}$, the temperature had risen by $11^\\circ\\text{C}$, before dropping by $9^\\circ\\text{C}$ by $10\\text{:00 pm}$. (a) Find the temperature at $10\\text{:00 pm}$. (b) What was the overall change in temperature from $6\\text{:00 am}$ to $10\\text{:00 pm}$?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Write a directed number expression starting at $-7^\\circ\\text{C}$, adding $11^\\circ\\text{C}$ for the daytime rise, and subtracting $9^\\circ\\text{C}$ for the evening drop.",
+          "working": "$$\\text{Temp at } 10\\text{:00 pm} = -7 + 11 - 9$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Evaluate from left to right: $-7 + 11 = 4^\\circ\\text{C}$ at $2\\text{:00 pm}$, then $4 - 9 = -5^\\circ\\text{C}$ at $10\\text{:00 pm}$.",
+          "working": "$$= 4 - 9 = -5^\\circ\\text{C}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "For part (b), calculate the overall temperature change by subtracting the initial temperature from the final temperature: $\\text{Final} - \\text{Initial}$.",
+          "working": "$$\\text{Change} = -5 - (-7) = -5 + 7 = +2^\\circ\\text{C}$$"
+        }
+      ],
+      "final_answer": "(a) $-5^\\circ\\text{C}$, (b) $+2^\\circ\\text{C}$ (a net rise of $2^\\circ\\text{C}$)",
+      "now_you_try": {
+        "problem": "Overnight at Falls Creek, Victoria, the temperature was $-6^\\circ\\text{C}$. It dropped a further $4^\\circ\\text{C}$ before dawn, then rose by $13^\\circ\\text{C}$ by midday. Find the midday temperature.",
+        "hint": "Form the expression $-6 - 4 + 13$.",
+        "working_summary": "$-6 - 4 + 13 = -10 + 13 = 3^\\circ\\text{C}$.",
+        "answer": "$3^\\circ\\text{C}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_1_1_1",
+      "title": "Overgeneralising 'Two Negatives Make a Positive' to Addition/Subtraction",
+      "misconception": "Students often believe that $-8 - 5 = +13$ because there are two minus signs in the expression and they recall the phrase 'two negatives make a positive'.",
+      "correct_concept": "Two minus signs only become a plus sign when they are directly adjacent, as in $a - (-b) = a + b$. In $-8 - 5$, you start at $-8$ and move $5$ more units to the left, becoming more negative.",
+      "incorrect_working": "$$-8 - 5 = +13 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$-8 - 5 = -(8 + 5) = -13 \\quad (\\text{Correct})$$",
+      "counter_example": "If the temperature at Perisher is $-8^\\circ\\text{C}$ and drops by another $5^\\circ\\text{C}$, it does not become a warm $+13^\\circ\\text{C}$; it reaches $-13^\\circ\\text{C}$."
+    },
+    {
+      "id": "MISC_1_1_2",
+      "title": "Detaching the Sign from a Term When Rearranging",
+      "misconception": "When calculating $15 - 9 + 4$, students sometimes calculate $9 + 4 = 13$ first and then subtract from $15$ to get $2$, treating the minus sign as applying to $(9 + 4)$.",
+      "correct_concept": "The minus sign belongs solely to the $9$, whereas the $4$ has a plus sign $(+4)$. Addition and subtraction have equal priority and must be evaluated left to right, or grouped with their attached signs: $15 + (-9) + (+4)$.",
+      "incorrect_working": "$$15 - 9 + 4 = 15 - (9 + 4) = 15 - 13 = 2 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$15 - 9 + 4 = (15 - 9) + 4 = 6 + 4 = 10 \\quad (\\text{Correct})$$",
+      "counter_example": "Spending $\\$9$ from $\\$15$ leaves $\\$6$; receiving $\\$4$ afterward gives $\\$10$, not $\\$2$."
+    },
+    {
+      "id": "MISC_1_1_3",
+      "title": "Confusing Magnitude Comparison with Value Comparison on the Negative Side",
+      "misconception": "Assuming that $-19$ is greater than $-12$ because $19 > 12$, or miscalculating $-19 + 12$ as $+7$.",
+      "correct_concept": "On the negative side of the number line, numbers with a larger magnitude lie further to the left and are therefore smaller: $-19 < -12$. When adding $-19 + 12$, the negative term has the larger magnitude ($|-19| > |12|$), so the sum remains negative.",
+      "incorrect_working": "$$-19 + 12 = +7 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$-19 + 12 = -(19 - 12) = -7 \\quad (\\text{Correct})$$",
+      "counter_example": "A diver $19\\text{ m}$ below sea level ($-19\\text{ m}$) who ascends $12\\text{ m}$ is still $7\\text{ m}$ below sea level ($-7\\text{ m}$), not $7\\text{ m}$ above the water."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "1_1_Q1",
+        "question": "Evaluate $-14 + 21$.",
+        "difficulty": "Easy",
+        "context": "Mental Computation",
+        "final_answer": "$7$",
+        "step_by_step_solution": [
+          "Start at $-14$ on the number line and move $21$ units to the right.",
+          "Since $21 > 14$, the result is positive: $21 - 14 = 7$."
+        ]
+      },
+      {
+        "id": "1_1_Q2",
+        "question": "Evaluate $-17 - 15$.",
+        "difficulty": "Easy",
+        "context": "Mental Computation",
+        "final_answer": "$-32$",
+        "step_by_step_solution": [
+          "Start at $-17$ and move $15$ units further to the left.",
+          "Both terms are negative, so add their magnitudes and keep the negative sign: $-(17 + 15) = -32$."
+        ]
+      },
+      {
+        "id": "1_1_Q3",
+        "question": "Evaluate $28 + (-43)$.",
+        "difficulty": "Easy",
+        "context": "Adjacent Signs",
+        "final_answer": "$-15$",
+        "step_by_step_solution": [
+          "Replace the adjacent mixed signs $+ (-43)$ with a single subtraction: $28 - 43$.",
+          "Since $43 > 28$, the result is negative: $-(43 - 28) = -15$."
+        ]
+      },
+      {
+        "id": "1_1_Q4",
+        "question": "Evaluate $-31 - (-19)$.",
+        "difficulty": "Medium",
+        "context": "Adjacent Signs",
+        "final_answer": "$-12$",
+        "step_by_step_solution": [
+          "Replace the two adjacent minus signs $- (-19)$ with a single plus sign: $-31 + 19$.",
+          "Since $|-31| > |19|$, subtract the magnitudes and keep the negative sign: $-(31 - 19) = -12$."
+        ]
+      },
+      {
+        "id": "1_1_Q5",
+        "question": "Evaluate $-25 - (-42) + (-18)$.",
+        "difficulty": "Medium",
+        "context": "Multi-step Expression",
+        "final_answer": "$-1$",
+        "step_by_step_solution": [
+          "Simplify all adjacent signs: $-25 + 42 - 18$.",
+          "Evaluate $-25 + 42 = 17$.",
+          "Subtract $18$: $17 - 18 = -1$."
+        ]
+      },
+      {
+        "id": "1_1_Q6",
+        "question": "Find the missing integer $x$ that makes the statement true: $-18 - x = 7$.",
+        "difficulty": "Challenging",
+        "context": "Missing Integer",
+        "final_answer": "$-25$",
+        "step_by_step_solution": [
+          "To move from $-18$ up to $+7$ on a number line, we must add $18 + 7 = 25$.",
+          "Since $-18 + 25 = 7$, and subtracting a negative is equivalent to adding a positive ($-18 - (-25) = 7$), we have $x = -25$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "1_1_Q7",
+        "question": "Kati Thanda–Lake Eyre in South Australia has a lake bed elevation of $-15\\text{ m}$ (meaning $15\\text{ m}$ below sea level), while the peak of Mount Kosciuszko in New South Wales has an elevation of $2228\\text{ m}$ above sea level. What is the vertical difference in elevation between Mount Kosciuszko and the bed of Kati Thanda–Lake Eyre?",
+        "difficulty": "Medium",
+        "context": "Australian Geography",
+        "final_answer": "$2243\\text{ m}$",
+        "step_by_step_solution": [
+          "Represent Mount Kosciuszko's elevation as $+2228\\text{ m}$ and Lake Eyre's bed as $-15\\text{ m}$.",
+          "Calculate the difference by subtracting the lower elevation from the higher elevation: $2228 - (-15)$.",
+          "Simplify the adjacent minus signs: $2228 + 15 = 2243\\text{ m}$."
+        ]
+      },
+      {
+        "id": "1_1_Q8",
+        "question": "A Melbourne commuter starts the week with a Myki card balance of $\\$6$. On Monday, they touch on and off for two tram journeys costing $\\$5$ each (Myki allows a negative balance on the final trip). On Tuesday morning, they top up the card by $\\$20$, and then take a daily fare costing $\\$11$. What is the final balance on the Myki card?",
+        "difficulty": "Medium",
+        "context": "Australian Financial Context (Myki)",
+        "final_answer": "$\\$5$",
+        "step_by_step_solution": [
+          "Start with $+6$ dollars and subtract two $\\$5$ fares on Monday: $6 - 5 - 5 = -4$ dollars.",
+          "Add the $\\$20$ top-up on Tuesday morning: $-4 + 20 = 16$ dollars.",
+          "Subtract Tuesday's $\\$11$ daily fare: $16 - 11 = \\$5$."
+        ]
+      },
+      {
+        "id": "1_1_Q9",
+        "question": "After Round $8$ of the AFL season, a Victorian football club has a points differential ('points for' minus 'points against') of $-34$. In Round $9$, they score $98$ points and concede $72$ points. In Round $10$, they score $64$ points and concede $85$ points. What is the club's points differential at the end of Round $10$?",
+        "difficulty": "Challenging",
+        "context": "Australian Sport (AFL)",
+        "final_answer": "$-29$",
+        "step_by_step_solution": [
+          "Calculate the Round $9$ margin: $98 - 72 = +26$.",
+          "Calculate the Round $10$ margin: $64 - 85 = -21$.",
+          "Combine the starting differential with both round margins: $-34 + 26 + (-21)$.",
+          "Evaluate: $-34 + 26 = -8$, and $-8 - 21 = -29$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "1_1_Q10",
+        "question": "Let $a$ and $b$ be two negative integers such that $a < b < 0$. Determine whether $(a - b)$ is always positive, always negative, or could be either. Justify your answer using a number line argument and a numerical example.",
+        "difficulty": "Challenging",
+        "context": "Deductive Reasoning",
+        "final_answer": "Always negative ($a - b < 0$)",
+        "step_by_step_solution": [
+          "Since $a < b$, $a$ lies strictly to the left of $b$ on the number line.",
+          "Subtracting $b$ from both sides of the inequality $a < b$ gives $a - b < 0$, so $a - b$ is always negative.",
+          "Alternatively, because $b$ is negative, $-b$ is positive, and $|a| > |b|$ since $a$ is further left from zero than $b$. Moving $|b|$ units right from $a$ cannot reach zero, so $a + |b|$ remains negative.",
+          "Example: Let $a = -10$ and $b = -4$ (so $-10 < -4 < 0$). Then $a - b = -10 - (-4) = -10 + 4 = -6 < 0$."
+        ]
+      },
+      {
+        "id": "1_1_Q11",
+        "question": "Lachlan evaluated the expression $-15 - (-8) + (-5)$ as follows:\nLine 1: $= -15 - 8 - 5$\nLine 2: $= -28$\nIdentify the line in which Lachlan made an error, explain the misconception, and state the correct answer.",
+        "difficulty": "Medium",
+        "context": "Error Analysis",
+        "final_answer": "Error in Line 1; correct answer is $-12$",
+        "step_by_step_solution": [
+          "Lachlan made an error in Line 1 when simplifying $-(-8)$ as $-8$ instead of $+8$.",
+          "Subtracting a negative integer is equivalent to adding its positive opposite: $-(-8) = +8$.",
+          "Correct Line 1: $-15 + 8 - 5$.",
+          "Correct Line 2: $-7 - 5 = -12$."
+        ]
+      },
+      {
+        "id": "1_1_Q12",
+        "question": "In a $3 \\times 3$ magic square, every row, column, and main diagonal adds to the same 'magic sum'. The top row of a magic square contains the integers $-7$, $4$, and $-3$. Find the magic sum, and find the integer that must go in the bottom-right corner if the first two entries of the bottom row are $1$ and $-8$.",
+        "difficulty": "Extension",
+        "context": "Mathematical Proof & Puzzles",
+        "final_answer": "Magic sum is $-6$; bottom-right integer is $1$",
+        "step_by_step_solution": [
+          "Calculate the magic sum from the top row: $-7 + 4 + (-3) = -3 - 3 = -6$.",
+          "Let $x$ be the integer in the bottom-right corner. The bottom row must also sum to $-6$: $1 + (-8) + x = -6$.",
+          "Simplify the known terms in the bottom row: $-7 + x = -6$.",
+          "Add $7$ to both sides: $x = -6 + 7 = 1$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE1_1_1a",
+      "description": "Worked Example 1.1.1 part (a)",
+      "expression": "-9 + 14",
+      "expected": 5
+    },
+    {
+      "id": "WE1_1_1b",
+      "description": "Worked Example 1.1.1 part (b)",
+      "expression": "6 - 15",
+      "expected": -9
+    },
+    {
+      "id": "NYT1_1_1a",
+      "description": "Now You Try 1.1.1 part (a)",
+      "expression": "-13 + 8",
+      "expected": -5
+    },
+    {
+      "id": "NYT1_1_1b",
+      "description": "Now You Try 1.1.1 part (b)",
+      "expression": "11 - 19",
+      "expected": -8
+    },
+    {
+      "id": "WE1_1_2a",
+      "description": "Worked Example 1.1.2 part (a)",
+      "expression": "-7 + (-11)",
+      "expected": -18
+    },
+    {
+      "id": "WE1_1_2b",
+      "description": "Worked Example 1.1.2 part (b)",
+      "expression": "-14 - (-20)",
+      "expected": 6
+    },
+    {
+      "id": "NYT1_1_2a",
+      "description": "Now You Try 1.1.2 part (a)",
+      "expression": "-12 + (-9)",
+      "expected": -21
+    },
+    {
+      "id": "NYT1_1_2b",
+      "description": "Now You Try 1.1.2 part (b)",
+      "expression": "-18 - (-25)",
+      "expected": 7
+    },
+    {
+      "id": "WE1_1_3",
+      "description": "Worked Example 1.1.3",
+      "expression": "-16 - (-9) + (-12) + 23",
+      "expected": 4
+    },
+    {
+      "id": "NYT1_1_3",
+      "description": "Now You Try 1.1.3",
+      "expression": "-24 + (-8) - (-15) + 19",
+      "expected": 2
+    },
+    {
+      "id": "WE1_1_4a",
+      "description": "Worked Example 1.1.4 part (a)",
+      "expression": "-7 + 11 - 9",
+      "expected": -5
+    },
+    {
+      "id": "WE1_1_4b",
+      "description": "Worked Example 1.1.4 part (b)",
+      "expression": "-5 - (-7)",
+      "expected": 2
+    },
+    {
+      "id": "NYT1_1_4",
+      "description": "Now You Try 1.1.4",
+      "expression": "-6 - 4 + 13",
+      "expected": 3
+    },
+    {
+      "id": "EX1_1_Q1",
+      "description": "Exercise 1.1 Q1",
+      "expression": "-14 + 21",
+      "expected": 7
+    },
+    {
+      "id": "EX1_1_Q2",
+      "description": "Exercise 1.1 Q2",
+      "expression": "-17 - 15",
+      "expected": -32
+    },
+    {
+      "id": "EX1_1_Q3",
+      "description": "Exercise 1.1 Q3",
+      "expression": "28 + (-43)",
+      "expected": -15
+    },
+    {
+      "id": "EX1_1_Q4",
+      "description": "Exercise 1.1 Q4",
+      "expression": "-31 - (-19)",
+      "expected": -12
+    },
+    {
+      "id": "EX1_1_Q5",
+      "description": "Exercise 1.1 Q5",
+      "expression": "-25 - (-42) + (-18)",
+      "expected": -1
+    },
+    {
+      "id": "EX1_1_Q6",
+      "description": "Exercise 1.1 Q6",
+      "expression": "-18 - (-25)",
+      "expected": 7
+    },
+    {
+      "id": "EX1_1_Q7",
+      "description": "Exercise 1.1 Q7 Lake Eyre to Mt Kosciuszko",
+      "expression": "2228 - (-15)",
+      "expected": 2243
+    },
+    {
+      "id": "EX1_1_Q8",
+      "description": "Exercise 1.1 Q8 Myki balance",
+      "expression": "6 - 5 - 5 + 20 - 11",
+      "expected": 5
+    },
+    {
+      "id": "EX1_1_Q9",
+      "description": "Exercise 1.1 Q9 AFL points differential",
+      "expression": "-34 + (98 - 72) + (64 - 85)",
+      "expected": -29
+    },
+    {
+      "id": "EX1_1_Q10",
+      "description": "Exercise 1.1 Q10 example check",
+      "expression": "-10 - (-4)",
+      "expected": -6
+    },
+    {
+      "id": "EX1_1_Q11",
+      "description": "Exercise 1.1 Q11 error analysis",
+      "expression": "-15 - (-8) + (-5)",
+      "expected": -12
+    },
+    {
+      "id": "EX1_1_Q12_sum",
+      "description": "Exercise 1.1 Q12 magic sum",
+      "expression": "-7 + 4 + (-3)",
+      "expected": -6
+    },
+    {
+      "id": "EX1_1_Q12_corner",
+      "description": "Exercise 1.1 Q12 bottom right corner",
+      "expression": "-6 - (1 + (-8))",
+      "expected": 1
+    }
+  ]
+}

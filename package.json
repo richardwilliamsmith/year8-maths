@@ -1,0 +1,25 @@
+{
+  "name": "year8-vic-maths-textbook",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open-Source Year 8 Mathematics Textbook for the Victorian Curriculum F-10 Version 2.0 (VCAA)",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "verify:math": "python verify_math.py --all"
+  },
+  "dependencies": {
+    "katex": "^0.16.11",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/katex": "^0.16.7",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "typescript": "^5.7.0"
+  }
+}

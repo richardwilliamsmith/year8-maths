@@ -1,0 +1,437 @@
+{
+  "metadata": {
+    "section_id": "1_3",
+    "section_code": "1C",
+    "chapter_number": 1,
+    "chapter_title": "Integers and the Number System",
+    "title": "Order of Operations and Directed Numbers",
+    "vcaa_code": "VC2M8N04",
+    "vcaa_description": "Use the 4 operations with integers and with rational numbers, choosing efficient strategies, including using the properties of operations and mental, written and digital strategies, and make estimates to check reasonableness.",
+    "strand": "Number",
+    "target_mastery": "Evaluate multi-step arithmetic expressions involving brackets, indices, multiplication, division, addition, and subtraction with positive and negative integers.",
+    "prerequisites": [
+      "Adding, subtracting, multiplying, and dividing integers (Sections 1A-1B)",
+      "Order of operations with positive whole numbers"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Order of Operations (BIDMAS / BODMAS)",
+        "definition": "The standard hierarchy of mathematical operations: Brackets, Indices (Orders), Division and Multiplication (left to right), Addition and Subtraction (left to right)."
+      },
+      {
+        "term": "Vinculum (fraction bar)",
+        "definition": "The horizontal line in a fraction $\\frac{A}{B}$ or radical $\\sqrt{A}$, which acts as an invisible pair of brackets grouping the numerator $A$ and the denominator $B$ separately."
+      },
+      {
+        "term": "Nested brackets",
+        "definition": "One pair of grouping symbols placed inside another, such as $[10 - 2 \\times (3 - 7)]$, which are always evaluated from the innermost pair outwards."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_1_3_1",
+      "title": "The BIDMAS Hierarchy with Directed Numbers",
+      "explanation": "When an expression contains more than one operation, mathematicians follow a universal convention so that every expression has a single unambiguous value. First evaluate operations inside Brackets, then Indices (powers and roots), then Division and Multiplication working from left to right, and finally Addition and Subtraction working from left to right.",
+      "formula_latex": "\\text{1. Brackets } (\\;) [\\;] \\longrightarrow \\text{2. Indices } a^n, \\sqrt{a} \\longrightarrow \\text{3. } \\times \\text{ and } \\div \\text{ (L to R)} \\longrightarrow \\text{4. } + \\text{ and } - \\text{ (L to R)}",
+      "callout_title": "Equal Priority Left-to-Right Rule",
+      "callout_rule": "Division and Multiplication have EQUAL priority—do whichever comes first from left to right. Likewise, Addition and Subtraction have EQUAL priority—evaluate them from left to right."
+    },
+    {
+      "id": "theory_1_3_2",
+      "title": "Nested Grouping Symbols",
+      "explanation": "Complex expressions often use parentheses $(\\;)$ inside square brackets $[\\;]$ or braces $\\{\\;\\}$ for visual clarity. Always simplify the innermost brackets first, working step by step outwards until all grouping symbols are resolved.",
+      "formula_latex": "a \\times [b - (c + d)] = a \\times [b - s] \\quad \\text{where } s = c + d",
+      "callout_title": "Innermost Brackets First",
+      "callout_rule": "Copy down the unchanged outer parts of the expression on each line of working and replace only the innermost bracketed expression with its simplified value."
+    },
+    {
+      "id": "theory_1_3_3",
+      "title": "Implicit Brackets in Fractions and Radicals",
+      "explanation": "A horizontal fraction bar (vinculum) groups the entire numerator and the entire denominator as if each were enclosed in brackets. You must completely evaluate the numerator and the denominator separately before performing the final division.",
+      "formula_latex": "\\frac{A + B}{C - D} = (A + B) \\div (C - D)",
+      "callout_title": "Invisible Brackets on a Fraction Bar",
+      "callout_rule": "Never cancel terms across a $+$ or $-$ sign in a fraction! Always treat $\\frac{\\text{top}}{\\text{bottom}}$ as $(\\text{top}) \\div (\\text{bottom})$."
+    },
+    {
+      "id": "theory_1_3_4",
+      "title": "Estimation to Check Reasonableness",
+      "explanation": "In applied problems involving larger integers, rounding each number to one significant figure (or a nearby multiple of $10$) allows you to mentally estimate the expected sign and approximate size of the answer, catching sign errors or calculator entry mistakes.",
+      "formula_latex": "-48 \\times 19 + 310 \\approx -50 \\times 20 + 300 = -1000 + 300 = -700",
+      "callout_title": "Sign & Magnitude Sanity Check",
+      "callout_rule": "Before trusting a multi-step calculation, check two things: (1) Does the sign make sense? (2) Is the magnitude close to a quick rounded mental estimate?"
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE1_3_1",
+      "title": "Combining Multiplication, Division, Addition and Subtraction",
+      "difficulty": "Fluency",
+      "problem": "Evaluate $-18 + 24 \\div (-6) \\times 3 - (-5)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "There are no brackets with operations inside and no indices. Perform division and multiplication from left to right first: start with $24 \\div (-6) = -4$.",
+          "working": "$$-18 + 24 \\div (-6) \\times 3 - (-5) = -18 + (-4) \\times 3 - (-5)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Complete the multiplication: $(-4) \\times 3 = -12$.",
+          "working": "$$= -18 + (-12) - (-5)$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Simplify adjacent signs and evaluate addition and subtraction from left to right.",
+          "working": "$$= -18 - 12 + 5 = -30 + 5 = -25$$"
+        }
+      ],
+      "final_answer": "$-25$",
+      "now_you_try": {
+        "problem": "Evaluate $-14 - 36 \\div (-9) \\times 2 + (-7)$.",
+        "hint": "Evaluate $36 \\div (-9)$ first, then multiply that result by $2$ before doing any addition or subtraction.",
+        "working_summary": "$-14 - (-4) \\times 2 - 7 = -14 - (-8) - 7 = -14 + 8 - 7 = -13$.",
+        "answer": "$-13$"
+      }
+    },
+    {
+      "id": "WE1_3_2",
+      "title": "Expressions with Indices and Nested Brackets",
+      "difficulty": "Understanding",
+      "problem": "Evaluate $-3 \\times [14 - (-2)^3 \\times (5 - 8)]$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Evaluate the innermost round brackets $(5 - 8) = -3$ and the index $(-2)^3 = -8$ inside the square brackets.",
+          "working": "$$-3 \\times [14 - (-2)^3 \\times (5 - 8)] = -3 \\times [14 - (-8) \\times (-3)]$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Inside the square brackets, perform the multiplication $(-8) \\times (-3) = +24$ before the subtraction.",
+          "working": "$$= -3 \\times [14 - 24]$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Complete the subtraction inside the square brackets: $14 - 24 = -10$, then multiply by $-3$.",
+          "working": "$$= -3 \\times (-10) = 30$$"
+        }
+      ],
+      "final_answer": "$30$",
+      "now_you_try": {
+        "problem": "Evaluate $-4 \\times [10 + (-3)^2 \\times (2 - 6)]$.",
+        "hint": "Inside the square brackets, evaluate $(-3)^2 = 9$ and $(2 - 6) = -4$, multiply them, and then add to $10$.",
+        "working_summary": "$-4 \\times [10 + 9 \\times (-4)] = -4 \\times [10 - 36] = -4 \\times (-26) = 104$.",
+        "answer": "$104$"
+      }
+    },
+    {
+      "id": "WE1_3_3",
+      "title": "Evaluating Fractional Expressions with Directed Numbers",
+      "difficulty": "Understanding",
+      "problem": "Evaluate $\\dfrac{(-6)^2 - 4 \\times (-3)}{-5 - (-1)^3}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Treat the numerator and denominator as separately bracketed expressions. First evaluate the numerator: $(-6)^2 = 36$ and $-4 \\times (-3) = +12$.",
+          "working": "$$\\text{Numerator} = (-6)^2 - 4 \\times (-3) = 36 + 12 = 48$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Next evaluate the denominator: $(-1)^3 = -1$, so $-5 - (-1) = -5 + 1 = -4$.",
+          "working": "$$\\text{Denominator} = -5 - (-1)^3 = -5 - (-1) = -4$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Divide the simplified numerator by the simplified denominator.",
+          "working": "$$\\frac{48}{-4} = -12$$"
+        }
+      ],
+      "final_answer": "$-12$",
+      "now_you_try": {
+        "problem": "Evaluate $\\dfrac{(-4)^2 + 5 \\times (-8)}{-2 - (-2)^2}$.",
+        "hint": "Find the value of the numerator $16 + (-40)$ and the denominator $-2 - 4$ separately.",
+        "working_summary": "Numerator $= 16 - 40 = -24$; Denominator $= -2 - 4 = -6$; Quotient $= -24 \\div (-6) = 4$.",
+        "answer": "$4$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_1_3_1",
+      "title": "Performing Addition/Subtraction Before Multiplication",
+      "misconception": "In $-10 + 4 \\times (-3)$, students often calculate $-10 + 4 = -6$ first and then multiply by $-3$ to get $+18$.",
+      "correct_concept": "Multiplication always takes precedence over addition and subtraction unless brackets force the addition to occur first. Multiply $4 \\times (-3) = -12$ first, then add to $-10$.",
+      "incorrect_working": "$$-10 + 4 \\times (-3) = (-10 + 4) \\times (-3) = -6 \\times (-3) = 18 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$-10 + 4 \\times (-3) = -10 + (-12) = -22 \\quad (\\text{Correct})$$",
+      "counter_example": "Starting with a debt of $\\$10$ and adding $4$ bills of $\\$3$ each results in a total debt of $\\$22$ ($-22$), not a credit of $\\$18$."
+    },
+    {
+      "id": "MISC_1_3_2",
+      "title": "Multiplying Before Dividing When Division Comes First on the Left",
+      "misconception": "Believing that 'M before D' in BODMAS/BIDMAS means multiplication must always be done before division, leading to $24 \\div (-4) \\times 2 = 24 \\div (-8) = -3$.",
+      "correct_concept": "Division and multiplication have equal priority and must be evaluated strictly from left to right: first $24 \\div (-4) = -6$, then $(-6) \\times 2 = -12$.",
+      "incorrect_working": "$$24 \\div (-4) \\times 2 = 24 \\div (-8) = -3 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$24 \\div (-4) \\times 2 = (-6) \\times 2 = -12 \\quad (\\text{Correct})$$",
+      "counter_example": "Dividing $24$ by $-4$ is equivalent to multiplying by $-\\frac{1}{4}$: $24 \\times \\left(-\\frac{1}{4}\\right) \\times 2 = -12$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "1_3_Q1",
+        "question": "Evaluate $-15 + 6 \\times (-4)$.",
+        "difficulty": "Easy",
+        "context": "Order of Operations",
+        "final_answer": "$-39$",
+        "step_by_step_solution": [
+          "Perform the multiplication first: $6 \\times (-4) = -24$.",
+          "Add to $-15$: $-15 + (-24) = -15 - 24 = -39$."
+        ]
+      },
+      {
+        "id": "1_3_Q2",
+        "question": "Evaluate $(-28 - 8) \\div (-9) - 7$.",
+        "difficulty": "Easy",
+        "context": "Brackets and Division",
+        "final_answer": "$-3$",
+        "step_by_step_solution": [
+          "Evaluate the brackets first: $-28 - 8 = -36$.",
+          "Perform the division: $-36 \\div (-9) = 4$.",
+          "Subtract $7$: $4 - 7 = -3$."
+        ]
+      },
+      {
+        "id": "1_3_Q3",
+        "question": "Evaluate $-48 \\div (-8) \\times (-3)$.",
+        "difficulty": "Medium",
+        "context": "Left-to-Right Division & Multiplication",
+        "final_answer": "$-18$",
+        "step_by_step_solution": [
+          "Evaluate division and multiplication from left to right.",
+          "First divide: $-48 \\div (-8) = 6$.",
+          "Then multiply: $6 \\times (-3) = -18$."
+        ]
+      },
+      {
+        "id": "1_3_Q4",
+        "question": "Evaluate $-5^2 + (-3)^3 \\div 9$.",
+        "difficulty": "Medium",
+        "context": "Indices and Division",
+        "final_answer": "$-28$",
+        "step_by_step_solution": [
+          "Evaluate the indices carefully: $-5^2 = -(5 \\times 5) = -25$ and $(-3)^3 = -27$.",
+          "Perform the division: $-27 \\div 9 = -3$.",
+          "Add the two results: $-25 + (-3) = -28$."
+        ]
+      },
+      {
+        "id": "1_3_Q5",
+        "question": "Evaluate $\\dfrac{-30 + 6 \\times (-3)}{(-4)^2 - 20}$.",
+        "difficulty": "Medium",
+        "context": "Fractional Grouping",
+        "final_answer": "$12$",
+        "step_by_step_solution": [
+          "Evaluate the numerator: $-30 + 6 \\times (-3) = -30 - 18 = -48$.",
+          "Evaluate the denominator: $(-4)^2 - 20 = 16 - 20 = -4$.",
+          "Divide the numerator by the denominator: $-48 \\div (-4) = 12$."
+        ]
+      },
+      {
+        "id": "1_3_Q6",
+        "question": "Evaluate $-2 \\times [18 - 3 \\times ((-4)^2 - 11)]$.",
+        "difficulty": "Challenging",
+        "context": "Nested Brackets",
+        "final_answer": "$-6$",
+        "step_by_step_solution": [
+          "Inside the innermost brackets, evaluate $(-4)^2 - 11 = 16 - 11 = 5$.",
+          "Inside the square brackets, multiply before subtracting: $18 - 3 \\times 5 = 18 - 15 = 3$.",
+          "Multiply by the outside factor: $-2 \\times 3 = -6$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "1_3_Q7",
+        "question": "A refrigerated logistics warehouse in Laverton, Victoria, has three cold-storage rooms. Room A is kept at $-18^\\circ\\text{C}$, Room B is kept at $-24^\\circ\\text{C}$, and Room C is kept at $+6^\\circ\\text{C}$. Write a single fractional expression for the mean (average) temperature of the three rooms and evaluate it.",
+        "difficulty": "Medium",
+        "context": "Australian Cold-Chain Logistics",
+        "final_answer": "$-12^\\circ\\text{C}$",
+        "step_by_step_solution": [
+          "Write the sum of the three temperatures in the numerator and divide by $3$: $\\dfrac{-18 + (-24) + 6}{3}$.",
+          "Evaluate the numerator first: $-18 - 24 + 6 = -42 + 6 = -36$.",
+          "Divide by $3$: $-36 \\div 3 = -12^\\circ\\text{C}$."
+        ]
+      },
+      {
+        "id": "1_3_Q8",
+        "question": "In a 4-round golf tournament at Royal Melbourne Golf Club, scores relative to par ($72$ strokes per round) are recorded as integers. An Australian golfer scores $-4$ in Round 1, two rounds of $+3$ in Rounds 2 and 3, and $-5$ in Round 4. Write a single expression for the golfer's total strokes across all 4 rounds and evaluate it.",
+        "difficulty": "Medium",
+        "context": "Australian Sport (Royal Melbourne Golf)",
+        "final_answer": "$285\\text{ strokes}$",
+        "step_by_step_solution": [
+          "The par total for $4$ rounds is $4 \\times 72$, and the score relative to par is $-4 + 2 \\times 3 + (-5)$.",
+          "Combine into a single expression: $4 \\times 72 + (-4) + 2 \\times 3 + (-5)$.",
+          "Evaluate multiplications first: $288 - 4 + 6 - 5 = 285\\text{ strokes}$."
+        ]
+      },
+      {
+        "id": "1_3_Q9",
+        "question": "A small café in Fitzroy tracks its daily net cash flow over a 7-day week. On Monday and Tuesday (quiet days), the café records a net loss of $\\$140$ per day ($-\\$140$). On Wednesday, Thursday, and Friday, it makes a net profit of $\\$260$ per day. On Saturday and Sunday, it makes a net profit of $\\$490$ per day, but pays a weekly Sunday refrigeration maintenance fee of $\\$180$. Calculate the café's net cash flow for the week.",
+        "difficulty": "Challenging",
+        "context": "Australian Small Business Modelling",
+        "final_answer": "$\\$1300$",
+        "step_by_step_solution": [
+          "Write the weekly cash flow expression: $2 \\times (-140) + 3 \\times 260 + 2 \\times 490 - 180$.",
+          "Evaluate each product: $-280 + 780 + 980 - 180$.",
+          "Sum from left to right: $500 + 980 - 180 = \\$1300$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "1_3_Q10",
+        "question": "Insert a single pair of brackets into the expression $-12 + 18 \\div (-3) - 3$ so that the resulting value is (a) $-15$ and (b) $-5$. Show full working for both cases.",
+        "difficulty": "Challenging",
+        "context": "Structural Reasoning with Brackets",
+        "final_answer": "(a) $-12 + 18 \\div (-3 - 3) = -15$; (b) $(-12 + 18) \\div (-3) - 3 = -5$",
+        "step_by_step_solution": [
+          "For part (a), place brackets around $(-3 - 3)$: $-12 + 18 \\div (-3 - 3) = -12 + 18 \\div (-6) = -12 + (-3) = -15$.",
+          "For part (b), place brackets around $(-12 + 18)$: $(-12 + 18) \\div (-3) - 3 = 6 \\div (-3) - 3 = -2 - 3 = -5$."
+        ]
+      },
+      {
+        "id": "1_3_Q11",
+        "question": "Explain why the expressions $-a^2$ and $(-a)^2$ never give the same value for any non-zero integer $a$, whereas $-a^3$ and $(-a)^3$ always give the same value for every integer $a$.",
+        "difficulty": "Challenging",
+        "context": "Algebraic & Sign Justification",
+        "final_answer": "Even powers of negatives are positive so $(-a)^2 = a^2 \\neq -a^2$, whereas odd powers preserve the negative sign so $(-a)^3 = -a^3$",
+        "step_by_step_solution": [
+          "For any non-zero integer $a$, $a^2 > 0$. Thus $(-a)^2 = (-a)(-a) = +a^2 > 0$, while $-a^2 = -(a^2) < 0$. Since a positive number cannot equal a negative number, $(-a)^2 \\neq -a^2$ for all $a \\neq 0$.",
+          "For cubing, $(-a)^3 = (-1)^3 \\times a^3 = -1 \\times a^3 = -a^3$, so both expressions always evaluate to the exact same integer for every integer $a$."
+        ]
+      },
+      {
+        "id": "1_3_Q12",
+        "question": "Using each of the integers $-6$, $-4$, $2$, and $5$ exactly once, together with any operations ($+, -, \\times, \\div$) and brackets, construct an expression that equals $-46$. Show the step-by-step evaluation of your expression.",
+        "difficulty": "Extension",
+        "context": "Target Number Construction",
+        "final_answer": "$-6 \\times (5 + 2) + (-4) = -46$",
+        "step_by_step_solution": [
+          "Consider the expression $-6 \\times (5 + 2) + (-4)$.",
+          "Evaluate the brackets first: $5 + 2 = 7$.",
+          "Multiply by $-6$: $-6 \\times 7 = -42$.",
+          "Add $-4$: $-42 + (-4) = -46$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE1_3_1",
+      "description": "Worked Example 1.3.1",
+      "expression": "-18 + (24 / (-6)) * 3 - (-5)",
+      "expected": -25
+    },
+    {
+      "id": "NYT1_3_1",
+      "description": "Now You Try 1.3.1",
+      "expression": "-14 - (36 / (-9)) * 2 + (-7)",
+      "expected": -13
+    },
+    {
+      "id": "WE1_3_2",
+      "description": "Worked Example 1.3.2",
+      "expression": "-3 * (14 - (-2)**3 * (5 - 8))",
+      "expected": 30
+    },
+    {
+      "id": "NYT1_3_2",
+      "description": "Now You Try 1.3.2",
+      "expression": "-4 * (10 + (-3)**2 * (2 - 6))",
+      "expected": 104
+    },
+    {
+      "id": "WE1_3_3",
+      "description": "Worked Example 1.3.3",
+      "expression": "((-6)**2 - 4 * (-3)) / (-5 - (-1)**3)",
+      "expected": -12
+    },
+    {
+      "id": "NYT1_3_3",
+      "description": "Now You Try 1.3.3",
+      "expression": "((-4)**2 + 5 * (-8)) / (-2 - (-2)**2)",
+      "expected": 4
+    },
+    {
+      "id": "EX1_3_Q1",
+      "description": "Exercise 1.3 Q1",
+      "expression": "-15 + 6 * (-4)",
+      "expected": -39
+    },
+    {
+      "id": "EX1_3_Q2",
+      "description": "Exercise 1.3 Q2",
+      "expression": "(-28 - 8) / (-9) - 7",
+      "expected": -3
+    },
+    {
+      "id": "EX1_3_Q3",
+      "description": "Exercise 1.3 Q3",
+      "expression": "(-48 / (-8)) * (-3)",
+      "expected": -18
+    },
+    {
+      "id": "EX1_3_Q4",
+      "description": "Exercise 1.3 Q4",
+      "expression": "-5**2 + (-3)**3 / 9",
+      "expected": -28
+    },
+    {
+      "id": "EX1_3_Q5",
+      "description": "Exercise 1.3 Q5",
+      "expression": "(-30 + 6 * (-3)) / ((-4)**2 - 20)",
+      "expected": 12
+    },
+    {
+      "id": "EX1_3_Q6",
+      "description": "Exercise 1.3 Q6",
+      "expression": "-2 * (18 - 3 * ((-4)**2 - 11))",
+      "expected": -6
+    },
+    {
+      "id": "EX1_3_Q7",
+      "description": "Exercise 1.3 Q7 Laverton cold storage mean",
+      "expression": "(-18 + (-24) + 6) / 3",
+      "expected": -12
+    },
+    {
+      "id": "EX1_3_Q8",
+      "description": "Exercise 1.3 Q8 Royal Melbourne golf strokes",
+      "expression": "4 * 72 + (-4) + 2 * 3 + (-5)",
+      "expected": 285
+    },
+    {
+      "id": "EX1_3_Q9",
+      "description": "Exercise 1.3 Q9 Fitzroy cafe net cash flow",
+      "expression": "2 * (-140) + 3 * 260 + 2 * 490 - 180",
+      "expected": 1300
+    },
+    {
+      "id": "EX1_3_Q10a",
+      "description": "Exercise 1.3 Q10(a)",
+      "expression": "-12 + 18 / (-3 - 3)",
+      "expected": -15
+    },
+    {
+      "id": "EX1_3_Q10b",
+      "description": "Exercise 1.3 Q10(b)",
+      "expression": "(-12 + 18) / (-3) - 3",
+      "expected": -5
+    },
+    {
+      "id": "EX1_3_Q12",
+      "description": "Exercise 1.3 Q12 target -46",
+      "expression": "-6 * (5 + 2) + (-4)",
+      "expected": -46
+    }
+  ]
+}

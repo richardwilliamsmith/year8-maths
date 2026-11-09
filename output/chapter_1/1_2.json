@@ -1,0 +1,539 @@
+{
+  "metadata": {
+    "section_id": "1_2",
+    "section_code": "1B",
+    "chapter_number": 1,
+    "chapter_title": "Integers and the Number System",
+    "title": "Multiplying and Dividing Integers",
+    "vcaa_code": "VC2M8N04",
+    "vcaa_description": "Use the 4 operations with integers and with rational numbers, choosing efficient strategies, including using the properties of operations and mental, written and digital strategies, and make estimates to check reasonableness.",
+    "strand": "Number",
+    "target_mastery": "Multiply and divide positive and negative integers fluently, including multi-factor products and integer powers with negative bases.",
+    "prerequisites": [
+      "Adding and subtracting directed numbers (Section 1A)",
+      "Multiplication tables up to 12 x 12 and short division"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Product",
+        "definition": "The result of multiplying two or more numbers together."
+      },
+      {
+        "term": "Quotient",
+        "definition": "The result of dividing one number (the dividend) by another non-zero number (the divisor)."
+      },
+      {
+        "term": "Base and Exponent (Index)",
+        "definition": "In the expression $a^n$, the base $a$ is the repeated factor and the exponent (or index) $n$ counts how many times $a$ is multiplied by itself."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_1_2_1",
+      "title": "Sign Rules for Multiplying Two Integers",
+      "explanation": "Multiplication can be understood as repeated addition. For instance, $3 \\times (-4) = (-4) + (-4) + (-4) = -12$. Taking the opposite of that product shows that $(-3) \\times (-4) = +12$. In general, when multiplying two non-zero integers, if both integers have the same sign, their product is positive; if they have different signs, their product is negative.",
+      "formula_latex": "(+a) \\times (+b) = +ab, \\quad (-a) \\times (-b) = +ab, \\quad (+a) \\times (-b) = -ab, \\quad (-a) \\times (+b) = -ab",
+      "callout_title": "Multiplication Sign Rule",
+      "callout_rule": "When multiplying two numbers: SAME signs give a POSITIVE result; DIFFERENT signs give a NEGATIVE result. Multiplying any integer by $0$ always gives $0$."
+    },
+    {
+      "id": "theory_1_2_2",
+      "title": "Sign Rules for Dividing Two Integers",
+      "explanation": "Because division is the inverse operation of multiplication, the exact same sign rules apply to quotients. If the dividend and divisor have the same sign, the quotient is positive; if they have opposite signs, the quotient is negative. Division by zero ($a \\div 0$) is always undefined.",
+      "formula_latex": "\\frac{-a}{-b} = +\\frac{a}{b}, \\quad \\frac{-a}{+b} = \\frac{+a}{-b} = -\\frac{a}{b} \\quad (b \\neq 0)",
+      "callout_title": "Fraction Sign Placement Rule",
+      "callout_rule": "For any fraction, a single negative sign can be written in the numerator, in the denominator, or in front of the fraction bar: $\\frac{-a}{b} = \\frac{a}{-b} = -\\frac{a}{b}$. Two negative signs in a fraction cancel to give a positive: $\\frac{-a}{-b} = \\frac{a}{b}$."
+    },
+    {
+      "id": "theory_1_2_3",
+      "title": "Products of Three or More Integers",
+      "explanation": "By the associative and commutative laws of multiplication, factors can be multiplied in any order. When multiplying a chain of non-zero integers, every pair of negative factors multiplies to produce a positive value.",
+      "formula_latex": "(-1)^{2k} = +1 \\quad \\text{and} \\quad (-1)^{2k+1} = -1",
+      "callout_title": "Counting Negative Factors Rule",
+      "callout_rule": "In a product or quotient of non-zero numbers: an EVEN number of negative factors produces a POSITIVE answer; an ODD number of negative factors produces a NEGATIVE answer."
+    },
+    {
+      "id": "theory_1_2_4",
+      "title": "Powers of Negative Integers: $(-a)^n$ versus $-a^n$",
+      "explanation": "Brackets determine whether the negative sign is part of the base being raised to the power. In $(-a)^n$, the base is $(-a)$, so the negative sign is repeated $n$ times. In $-a^n$, the exponent applies only to $a$, meaning the opposite of $a^n$, which is always negative for $a > 0$.",
+      "formula_latex": "(-a)^2 = (-a) \\times (-a) = +a^2 \\quad \\text{whereas} \\quad -a^2 = -(a \\times a) = -a^2",
+      "callout_title": "Bracket Base Warning",
+      "callout_rule": "Watch the brackets carefully! $(-5)^2 = (-5) \\times (-5) = +25$, because the negative is inside the brackets. Without brackets, $-5^2 = -(5 \\times 5) = -25$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE1_2_1",
+      "title": "Multiplying and Dividing Directed Numbers",
+      "difficulty": "Fluency",
+      "problem": "Evaluate: (a) $-8 \\times 7$, (b) $-9 \\times (-12)$, and (c) $-84 \\div (-7)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), $-8$ and $7$ have different signs, so the product is negative. Multiply the magnitudes $8 \\times 7 = 56$.",
+          "working": "$$-8 \\times 7 = -56$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), $-9$ and $-12$ have the same sign (both negative), so the product is positive. Multiply $9 \\times 12 = 108$.",
+          "working": "$$-9 \\times (-12) = +108 = 108$$"
+        },
+        {
+          "step": 3,
+          "thinking": "In part (c), $-84$ and $-7$ have the same sign, so the quotient is positive. Divide $84 \\div 7 = 12$.",
+          "working": "$$-84 \\div (-7) = +12 = 12$$"
+        }
+      ],
+      "final_answer": "(a) $-56$, (b) $108$, (c) $12$",
+      "now_you_try": {
+        "problem": "Evaluate: (a) $11 \\times (-6)$, (b) $-8 \\times (-13)$, and (c) $96 \\div (-8)$.",
+        "hint": "Determine the sign of the answer first (same signs = positive, different signs = negative), then calculate the magnitude.",
+        "working_summary": "(a) $11 \\times (-6) = -66$; (b) $-8 \\times (-13) = 104$; (c) $96 \\div (-8) = -12$.",
+        "answer": "(a) $-66$, (b) $104$, (c) $-12$"
+      }
+    },
+    {
+      "id": "WE1_2_2",
+      "title": "Multi-Factor Products of Integers",
+      "difficulty": "Understanding",
+      "problem": "Evaluate $-4 \\times (-3) \\times (-5) \\times 2$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Count the number of negative factors: there are $3$ negative factors ($-4$, $-3$, and $-5$). Since $3$ is odd, the overall product must be negative.",
+          "working": "$$\\text{Sign of product} = (-)\\times(-)\\times(-)\\times(+) = -$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply the magnitudes in a convenient order using the associative law: $(4 \\times 3) \\times (5 \\times 2) = 12 \\times 10 = 120$, and attach the negative sign.",
+          "working": "$$-4 \\times (-3) \\times (-5) \\times 2 = -(4 \\times 3 \\times 5 \\times 2) = -120$$"
+        }
+      ],
+      "final_answer": "$-120$",
+      "now_you_try": {
+        "problem": "Evaluate $-2 \\times (-6) \\times 5 \\times (-3)$.",
+        "hint": "Count the negative factors first, then pair $2 \\times 5 = 10$ to make mental multiplication easier.",
+        "working_summary": "Three negative factors give a negative result: $-(2 \\times 5 \\times 6 \\times 3) = -(10 \\times 18) = -180$.",
+        "answer": "$-180$"
+      }
+    },
+    {
+      "id": "WE1_2_3",
+      "title": "Evaluating Powers of Negative Integers",
+      "difficulty": "Understanding",
+      "problem": "Evaluate: (a) $(-6)^2$, (b) $-6^2$, and (c) $(-4)^3$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), the negative sign is inside the brackets, so the base is $-6$. Multiply $-6$ by itself.",
+          "working": "$$(-6)^2 = (-6) \\times (-6) = 36$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), there are no brackets around $-6$, so only the $6$ is squared and the negative sign remains in front.",
+          "working": "$$-6^2 = -(6 \\times 6) = -36$$"
+        },
+        {
+          "step": 3,
+          "thinking": "In part (c), the base is $-4$ raised to an odd exponent ($3$). Multiply three factors of $-4$.",
+          "working": "$$(-4)^3 = (-4) \\times (-4) \\times (-4) = 16 \\times (-4) = -64$$"
+        }
+      ],
+      "final_answer": "(a) $36$, (b) $-36$, (c) $-64$",
+      "now_you_try": {
+        "problem": "Evaluate: (a) $(-9)^2$, (b) $-9^2$, and (c) $(-3)^3$.",
+        "hint": "Check whether the negative sign is inside the brackets and whether the exponent is even or odd.",
+        "working_summary": "(a) $(-9)^2 = (-9) \\times (-9) = 81$; (b) $-9^2 = -(9 \\times 9) = -81$; (c) $(-3)^3 = (-3) \\times (-3) \\times (-3) = -27$.",
+        "answer": "(a) $81$, (b) $-81$, (c) $-27$"
+      }
+    },
+    {
+      "id": "WE1_2_4",
+      "title": "Submersible Descent Rate in the Bass Strait",
+      "difficulty": "Problem-Solving",
+      "problem": "A marine research ROV (remotely operated vehicle) in the Bass Strait starts at the ocean surface ($0\\text{ m}$) and descends at a constant rate of $-14\\text{ m}$ per minute for $8\\text{ minutes}$. It then ascends at $+9\\text{ m}$ per minute for $6\\text{ minutes}$. Find the ROV's final depth relative to sea level.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the change in elevation during the $8$-minute descent by multiplying the rate ($-14\\text{ m/min}$) by the time ($8\\text{ min}$).",
+          "working": "$$\\text{Descent change} = 8 \\times (-14) = -112\\text{ m}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Calculate the change in elevation during the $6$-minute ascent by multiplying the rate ($+9\\text{ m/min}$) by the time ($6\\text{ min}$).",
+          "working": "$$\\text{Ascent change} = 6 \\times 9 = +54\\text{ m}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Add the two elevation changes to find the final position relative to sea level.",
+          "working": "$$\\text{Final position} = -112 + 54 = -58\\text{ m}$$"
+        }
+      ],
+      "final_answer": "$-58\\text{ m}$ ($58\\text{ m}$ below sea level)",
+      "now_you_try": {
+        "problem": "A hot-air balloon over the Yarra Valley changes altitude at $-18\\text{ m}$ per minute for $5\\text{ minutes}$, then rises at $+12\\text{ m}$ per minute for $4\\text{ minutes}$. What is the net change in the balloon's altitude?",
+        "hint": "Compute $5 \\times (-18) + 4 \\times 12$.",
+        "working_summary": "$5 \\times (-18) + 4 \\times 12 = -90 + 48 = -42\\text{ m}$.",
+        "answer": "$-42\\text{ m}$ (a net drop of $42\\text{ m}$)"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_1_2_1",
+      "title": "Treating $-a^2$ as Equivalent to $(-a)^2$",
+      "misconception": "Students frequently write $-4^2 = 16$, assuming the minus sign is squared along with the $4$.",
+      "correct_concept": "By the order of operations, indices bind more tightly than negation (which is multiplication by $-1$). Thus $-4^2 = -1 \\times 4^2 = -16$, whereas $(-4)^2 = (-4) \\times (-4) = +16$.",
+      "incorrect_working": "$$-4^2 = (-4) \\times (-4) = 16 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$-4^2 = -(4 \\times 4) = -16 \\quad (\\text{Correct})$$",
+      "counter_example": "Consider $20 - 4^2$. We know $4^2 = 16$, so $20 - 4^2 = 20 - 16 = 4$. If $-4^2$ were $+16$, then $20 - 4^2$ would absurdly equal $36$."
+    },
+    {
+      "id": "MISC_1_2_2",
+      "title": "Multiplying Base and Exponent Instead of Repeated Multiplication",
+      "misconception": "Calculating $(-2)^3$ as $(-2) \\times 3 = -6$ instead of multiplying three factors of $(-2)$.",
+      "correct_concept": "An exponent of $3$ means multiplying the base by itself three times: $(-2)^3 = (-2) \\times (-2) \\times (-2) = -8$.",
+      "incorrect_working": "$$(-2)^3 = -2 \\times 3 = -6 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$(-2)^3 = (-2) \\times (-2) \\times (-2) = 4 \\times (-2) = -8 \\quad (\\text{Correct})$$",
+      "counter_example": "A cube of side length $2\\text{ cm}$ has volume $2^3 = 2 \\times 2 \\times 2 = 8\\text{ cm}^3$, not $6\\text{ cm}^3$."
+    },
+    {
+      "id": "MISC_1_2_3",
+      "title": "Assuming Three Negative Factors Multiply to a Positive",
+      "misconception": "Thinking that because all factors in $(-2) \\times (-3) \\times (-4)$ have the same negative sign, the answer must be positive ($+24$).",
+      "correct_concept": "The 'same signs give a positive' rule applies strictly to a pair of factors at a time. The first two negatives multiply to give a positive: $(-2) \\times (-3) = +6$. Multiplying $+6$ by the third negative factor $(-4)$ gives $-24$.",
+      "incorrect_working": "$$(-2) \\times (-3) \\times (-4) = +24 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$((-2) \\times (-3)) \\times (-4) = (+6) \\times (-4) = -24 \\quad (\\text{Correct})$$",
+      "counter_example": "Any odd number of negative factors leaves one negative factor unpaired after pairing off negatives into positives."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "1_2_Q1",
+        "question": "Evaluate $-12 \\times 8$.",
+        "difficulty": "Easy",
+        "context": "Integer Multiplication",
+        "final_answer": "$-96$",
+        "step_by_step_solution": [
+          "The two integers have different signs, so the product is negative.",
+          "Multiply the magnitudes: $12 \\times 8 = 96$, giving $-96$."
+        ]
+      },
+      {
+        "id": "1_2_Q2",
+        "question": "Evaluate $-15 \\times (-6)$.",
+        "difficulty": "Easy",
+        "context": "Integer Multiplication",
+        "final_answer": "$90$",
+        "step_by_step_solution": [
+          "Both integers are negative (same sign), so the product is positive.",
+          "Multiply the magnitudes: $15 \\times 6 = 90$."
+        ]
+      },
+      {
+        "id": "1_2_Q3",
+        "question": "Evaluate $-132 \\div 11$.",
+        "difficulty": "Easy",
+        "context": "Integer Division",
+        "final_answer": "$-12$",
+        "step_by_step_solution": [
+          "The dividend is negative and the divisor is positive (different signs), so the quotient is negative.",
+          "Divide the magnitudes: $132 \\div 11 = 12$, giving $-12$."
+        ]
+      },
+      {
+        "id": "1_2_Q4",
+        "question": "Evaluate $-5 \\times (-3) \\times (-2) \\times (-4)$.",
+        "difficulty": "Medium",
+        "context": "Multi-Factor Product",
+        "final_answer": "$120$",
+        "step_by_step_solution": [
+          "There are $4$ negative factors. Since $4$ is an even number, the product is positive.",
+          "Multiply the magnitudes: $(5 \\times 2) \\times (3 \\times 4) = 10 \\times 12 = 120$."
+        ]
+      },
+      {
+        "id": "1_2_Q5",
+        "question": "Evaluate $(-5)^3 - (-4)^2$.",
+        "difficulty": "Medium",
+        "context": "Powers of Negative Integers",
+        "final_answer": "$-141$",
+        "step_by_step_solution": [
+          "Evaluate $(-5)^3 = (-5) \\times (-5) \\times (-5) = -125$.",
+          "Evaluate $(-4)^2 = (-4) \\times (-4) = 16$.",
+          "Subtract the two results: $-125 - 16 = -141$."
+        ]
+      },
+      {
+        "id": "1_2_Q6",
+        "question": "Find the integer $n$ such that $(-96) \\div n = 16$.",
+        "difficulty": "Challenging",
+        "context": "Missing Divisor",
+        "final_answer": "$-6$",
+        "step_by_step_solution": [
+          "Since the dividend $(-96)$ is negative and the quotient $(+16)$ is positive, the divisor $n$ must be negative.",
+          "Divide the magnitudes: $96 \\div 16 = 6$, so $n = -6$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "1_2_Q7",
+        "question": "An investor in Sydney holds $450$ shares in an Australian mining company listed on the ASX. Over five consecutive trading days, the share price changes by $-12\\text{ cents}$ per share each day. Express the total change in the value of the investor's holding in dollars.",
+        "difficulty": "Medium",
+        "context": "Australian Financial Context (ASX)",
+        "final_answer": "$-\\$270$",
+        "step_by_step_solution": [
+          "Calculate the change per share over the $5$ days: $5 \\times (-12) = -60\\text{ cents}$ per share.",
+          "Multiply by the $450$ shares: $450 \\times (-60) = -27000\\text{ cents}$.",
+          "Convert cents to Australian dollars by dividing by $100$: $-27000 \\div 100 = -\\$270$ (a decrease of $\\$270$)."
+        ]
+      },
+      {
+        "id": "1_2_Q8",
+        "question": "In a Year 8 Australian Mathematics Competition practice quiz with $25$ questions, a student receives $+4$ marks for each correct answer, $-2$ marks for each incorrect answer, and $-1$ mark for each unanswered question. Priya answers $17$ questions correctly, gets $5$ questions wrong, and leaves the remaining questions unanswered. Calculate Priya's total score.",
+        "difficulty": "Medium",
+        "context": "Competition Scoring",
+        "final_answer": "$55$",
+        "step_by_step_solution": [
+          "Find the number of unanswered questions: $25 - 17 - 5 = 3$.",
+          "Calculate marks from correct answers: $17 \\times 4 = 68$.",
+          "Calculate marks from incorrect answers: $5 \\times (-2) = -10$.",
+          "Calculate marks from unanswered questions: $3 \\times (-1) = -3$.",
+          "Sum the parts: $68 + (-10) + (-3) = 68 - 13 = 55$."
+        ]
+      },
+      {
+        "id": "1_2_Q9",
+        "question": "Over a $6$-hour overnight period in Canberra during July, the temperature fell steadily from $+4^\\circ\\text{C}$ at $11\\text{:00 pm}$ to $-8^\\circ\\text{C}$ at $5\\text{:00 am}$. (a) Find the average rate of temperature change in degrees Celsius per hour. (b) Assuming this constant rate began at $11\\text{:00 pm}$, what was the temperature at $3\\text{:00 am}$?",
+        "difficulty": "Challenging",
+        "context": "Australian Weather Modelling",
+        "final_answer": "(a) $-2^\\circ\\text{C/h}$, (b) $-4^\\circ\\text{C}$",
+        "step_by_step_solution": [
+          "Find the total temperature change over the $6$ hours: $-8 - 4 = -12^\\circ\\text{C}$.",
+          "Divide the total change by $6$ hours to find the hourly rate: $-12 \\div 6 = -2^\\circ\\text{C}$ per hour.",
+          "From $11\\text{:00 pm}$ to $3\\text{:00 am}$ is $4$ hours, so the change is $4 \\times (-2) = -8^\\circ\\text{C}$.",
+          "Add this change to the initial temperature: $4 + (-8) = -4^\\circ\\text{C}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "1_2_Q10",
+        "question": "Explain why $(-1)^{99} + (-1)^{100} = 0$ without performing $99$ or $100$ multiplications.",
+        "difficulty": "Medium",
+        "context": "Pattern & Index Reasoning",
+        "final_answer": "$(-1)^{99} = -1$ and $(-1)^{100} = +1$, so $-1 + 1 = 0$",
+        "step_by_step_solution": [
+          "When $-1$ is raised to an odd positive integer exponent ($99$), pairs of $(-1) \\times (-1) = +1$ leave one factor of $-1$, so $(-1)^{99} = -1$.",
+          "When $-1$ is raised to an even positive integer exponent ($100$), all factors pair up into positives, so $(-1)^{100} = +1$.",
+          "Adding the two results gives $-1 + 1 = 0$."
+        ]
+      },
+      {
+        "id": "1_2_Q11",
+        "question": "Three non-zero integers $p$, $q$, and $r$ satisfy $p \\times q \\times r > 0$ and $p + q + r < 0$. Explain how many of the three integers must be negative, and provide a concrete example of values for $p$, $q$, and $r$.",
+        "difficulty": "Challenging",
+        "context": "Sign Analysis & Proof",
+        "final_answer": "Exactly two of the integers must be negative (e.g., $p = -5, q = -4, r = 2$)",
+        "step_by_step_solution": [
+          "Since the product $p \\times q \\times r > 0$ is positive, the number of negative integers among $p, q, r$ must be even: either $0$ negatives or $2$ negatives.",
+          "If there were $0$ negatives, all three integers would be positive, which would make $p + q + r > 0$, contradicting $p + q + r < 0$.",
+          "Therefore, exactly $2$ of the integers must be negative and $1$ must be positive, with the sum of the two negative integers having a larger magnitude than the positive integer.",
+          "Example: Let $p = -5$, $q = -4$, and $r = 2$. Then $p \\times q \\times r = (-5)(-4)(2) = 40 > 0$ and $p + q + r = -5 - 4 + 2 = -7 < 0$."
+        ]
+      },
+      {
+        "id": "1_2_Q12",
+        "question": "Find all pairs of integers $(a, b)$ with $a \\le b$ such that $a \\times b = -18$ and $a + b = -3$. Show how you systematically test or deduce the solution.",
+        "difficulty": "Extension",
+        "context": "Number Theory & Factor Pairs",
+        "final_answer": "$(a, b) = (-6, 3)$",
+        "step_by_step_solution": [
+          "Since $a \\times b = -18 < 0$, one integer is negative and the other is positive. Because $a \\le b$, $a$ is negative and $b$ is positive.",
+          "Since $a + b = -3 < 0$, the negative integer $a$ has a larger magnitude than $b$.",
+          "List the factor pairs $(a, b)$ of $-18$ where $|a| > |b|$: $(-18, 1)$, $(-9, 2)$, and $(-6, 3)$.",
+          "Check the sums: $-18 + 1 = -17$, $-9 + 2 = -7$, and $-6 + 3 = -3$. Thus $(a, b) = (-6, 3)$ is the unique solution."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE1_2_1a",
+      "description": "Worked Example 1.2.1(a)",
+      "expression": "-8 * 7",
+      "expected": -56
+    },
+    {
+      "id": "WE1_2_1b",
+      "description": "Worked Example 1.2.1(b)",
+      "expression": "-9 * (-12)",
+      "expected": 108
+    },
+    {
+      "id": "WE1_2_1c",
+      "description": "Worked Example 1.2.1(c)",
+      "expression": "-84 / (-7)",
+      "expected": 12
+    },
+    {
+      "id": "NYT1_2_1a",
+      "description": "Now You Try 1.2.1(a)",
+      "expression": "11 * (-6)",
+      "expected": -66
+    },
+    {
+      "id": "NYT1_2_1b",
+      "description": "Now You Try 1.2.1(b)",
+      "expression": "-8 * (-13)",
+      "expected": 104
+    },
+    {
+      "id": "NYT1_2_1c",
+      "description": "Now You Try 1.2.1(c)",
+      "expression": "96 / (-8)",
+      "expected": -12
+    },
+    {
+      "id": "WE1_2_2",
+      "description": "Worked Example 1.2.2",
+      "expression": "-4 * (-3) * (-5) * 2",
+      "expected": -120
+    },
+    {
+      "id": "NYT1_2_2",
+      "description": "Now You Try 1.2.2",
+      "expression": "-2 * (-6) * 5 * (-3)",
+      "expected": -180
+    },
+    {
+      "id": "WE1_2_3a",
+      "description": "Worked Example 1.2.3(a)",
+      "expression": "(-6)**2",
+      "expected": 36
+    },
+    {
+      "id": "WE1_2_3b",
+      "description": "Worked Example 1.2.3(b)",
+      "expression": "-6**2",
+      "expected": -36
+    },
+    {
+      "id": "WE1_2_3c",
+      "description": "Worked Example 1.2.3(c)",
+      "expression": "(-4)**3",
+      "expected": -64
+    },
+    {
+      "id": "NYT1_2_3a",
+      "description": "Now You Try 1.2.3(a)",
+      "expression": "(-9)**2",
+      "expected": 81
+    },
+    {
+      "id": "NYT1_2_3b",
+      "description": "Now You Try 1.2.3(b)",
+      "expression": "-9**2",
+      "expected": -81
+    },
+    {
+      "id": "NYT1_2_3c",
+      "description": "Now You Try 1.2.3(c)",
+      "expression": "(-3)**3",
+      "expected": -27
+    },
+    {
+      "id": "WE1_2_4",
+      "description": "Worked Example 1.2.4 ROV depth",
+      "expression": "8 * (-14) + 6 * 9",
+      "expected": -58
+    },
+    {
+      "id": "NYT1_2_4",
+      "description": "Now You Try 1.2.4 balloon altitude",
+      "expression": "5 * (-18) + 4 * 12",
+      "expected": -42
+    },
+    {
+      "id": "EX1_2_Q1",
+      "description": "Exercise 1.2 Q1",
+      "expression": "-12 * 8",
+      "expected": -96
+    },
+    {
+      "id": "EX1_2_Q2",
+      "description": "Exercise 1.2 Q2",
+      "expression": "-15 * (-6)",
+      "expected": 90
+    },
+    {
+      "id": "EX1_2_Q3",
+      "description": "Exercise 1.2 Q3",
+      "expression": "-132 / 11",
+      "expected": -12
+    },
+    {
+      "id": "EX1_2_Q4",
+      "description": "Exercise 1.2 Q4",
+      "expression": "-5 * (-3) * (-2) * (-4)",
+      "expected": 120
+    },
+    {
+      "id": "EX1_2_Q5",
+      "description": "Exercise 1.2 Q5",
+      "expression": "(-5)**3 - (-4)**2",
+      "expected": -141
+    },
+    {
+      "id": "EX1_2_Q6",
+      "description": "Exercise 1.2 Q6",
+      "expression": "-96 / (-6)",
+      "expected": 16
+    },
+    {
+      "id": "EX1_2_Q7",
+      "description": "Exercise 1.2 Q7 ASX shares",
+      "expression": "(450 * 5 * (-12)) / 100",
+      "expected": -270
+    },
+    {
+      "id": "EX1_2_Q8",
+      "description": "Exercise 1.2 Q8 AMC quiz score",
+      "expression": "17 * 4 + 5 * (-2) + (25 - 17 - 5) * (-1)",
+      "expected": 55
+    },
+    {
+      "id": "EX1_2_Q9a",
+      "description": "Exercise 1.2 Q9(a) hourly rate",
+      "expression": "(-8 - 4) / 6",
+      "expected": -2
+    },
+    {
+      "id": "EX1_2_Q9b",
+      "description": "Exercise 1.2 Q9(b) temp at 3am",
+      "expression": "4 + 4 * (-2)",
+      "expected": -4
+    },
+    {
+      "id": "EX1_2_Q10",
+      "description": "Exercise 1.2 Q10 powers of -1",
+      "expression": "(-1)**99 + (-1)**100",
+      "expected": 0
+    },
+    {
+      "id": "EX1_2_Q12_prod",
+      "description": "Exercise 1.2 Q12 product check",
+      "expression": "-6 * 3",
+      "expected": -18
+    },
+    {
+      "id": "EX1_2_Q12_sum",
+      "description": "Exercise 1.2 Q12 sum check",
+      "expression": "-6 + 3",
+      "expected": -3
+    }
+  ]
+}

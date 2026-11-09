@@ -1,0 +1,463 @@
+{
+  "metadata": {
+    "section_id": "1_4",
+    "section_code": "1D",
+    "chapter_number": 1,
+    "chapter_title": "Integers and the Number System",
+    "title": "Lowest Common Multiple, Highest Common Factor, and Prime Factorisation",
+    "vcaa_code": "VC2M8N02",
+    "vcaa_description": "Establish and apply the exponent laws with positive integer exponents and the zero-exponent, using exponent notation with numbers.",
+    "strand": "Number",
+    "target_mastery": "Express composite numbers in prime factor form using exponent notation and use prime factorisation to determine the Highest Common Factor (HCF) and Lowest Common Multiple (LCM).",
+    "prerequisites": [
+      "Prime and composite numbers (Year 7 VC2M7N02)",
+      "Divisibility tests for 2, 3, 5, 9, and 10"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Prime number",
+        "definition": "A whole number greater than $1$ that has exactly two positive factors: $1$ and itself (e.g., $2, 3, 5, 7, 11, 13, \\dots$)."
+      },
+      {
+        "term": "Prime factorisation",
+        "definition": "Expressing a composite number as a product of prime numbers only, usually written in ascending order with exponent (index) notation."
+      },
+      {
+        "term": "Highest Common Factor (HCF)",
+        "definition": "The largest positive integer that divides evenly into two or more given integers without remainder."
+      },
+      {
+        "term": "Lowest Common Multiple (LCM)",
+        "definition": "The smallest positive integer that is a multiple of two or more given integers."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_1_4_1",
+      "title": "The Fundamental Theorem of Arithmetic and Index Form",
+      "explanation": "Every integer greater than $1$ is either prime itself or can be factorised uniquely as a product of prime numbers (up to the order of the factors). Using a factor tree or repeated division by primes, we collect repeated prime factors using exponent (index) notation in ascending order of prime bases.",
+      "formula_latex": "360 = 2 \\times 2 \\times 2 \\times 3 \\times 3 \\times 5 = 2^3 \\times 3^2 \\times 5",
+      "callout_title": "Factor Tree Rule",
+      "callout_rule": "Keep splitting composite branches until every branch ends at a prime number ($2, 3, 5, 7, 11, \\dots$). Never include $1$ in a prime factorisation, as $1$ is neither prime nor composite."
+    },
+    {
+      "id": "theory_1_4_2",
+      "title": "Finding the Highest Common Factor (HCF) Using Prime Factors",
+      "explanation": "To find the Highest Common Factor (HCF) of two or more large numbers, write each number in prime factor exponent form. Identify only the prime bases that are common to every number, and take the lowest power (minimum exponent) of each shared prime factor.",
+      "formula_latex": "\\text{HCF}(2^3 \\times 3^2 \\times 5,\\; 2^2 \\times 3^3 \\times 7) = 2^{\\min(3,2)} \\times 3^{\\min(2,3)} = 2^2 \\times 3^2 = 36",
+      "callout_title": "HCF = Shared Primes, Lowest Powers",
+      "callout_rule": "Even though 'Highest' is in the name HCF, you select the LOWEST exponent of each prime factor that appears in ALL of the numbers so that the factor can divide into each of them."
+    },
+    {
+      "id": "theory_1_4_3",
+      "title": "Finding the Lowest Common Multiple (LCM) Using Prime Factors",
+      "explanation": "To find the Lowest Common Multiple (LCM) of two or more numbers from their prime factorisations, include every prime base that appears in at least one of the numbers, raised to the highest power (maximum exponent) with which it appears in any single number.",
+      "formula_latex": "\\text{LCM}(2^3 \\times 3^2 \\times 5,\\; 2^2 \\times 3^3 \\times 7) = 2^3 \\times 3^3 \\times 5 \\times 7 = 7560",
+      "callout_title": "LCM = All Primes, Highest Powers",
+      "callout_rule": "Even though 'Lowest' is in the name LCM, you select the HIGHEST exponent of every prime factor across the numbers so that every original number divides evenly into the multiple."
+    },
+    {
+      "id": "theory_1_4_4",
+      "title": "The Product Identity for Two Positive Integers",
+      "explanation": "For any two positive integers $a$ and $b$, the product of their Highest Common Factor and their Lowest Common Multiple is always equal to the product of the two integers themselves.",
+      "formula_latex": "\\text{HCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b",
+      "callout_title": "HCF-LCM Product Check",
+      "callout_rule": "Once you know $\\text{HCF}(a, b)$, you can quickly find $\\text{LCM}(a, b)$ using $\\text{LCM}(a, b) = \\frac{a \\times b}{\\text{HCF}(a, b)}$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE1_4_1",
+      "title": "Expressing a Composite Number in Prime Factor Index Form",
+      "difficulty": "Fluency",
+      "problem": "Express $504$ as a product of prime factors in exponent (index) form.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Repeatedly divide by the smallest prime factor $2$ until the quotient is odd: $504 \\div 2 = 252$, $252 \\div 2 = 126$, $126 \\div 2 = 63$.",
+          "working": "$$504 = 2^3 \\times 63$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Factorise $63$ by dividing by the prime $3$: $63 = 9 \\times 7 = 3^2 \\times 7$.",
+          "working": "$$63 = 3^2 \\times 7$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Combine all prime factors in ascending order of base using exponent notation.",
+          "working": "$$504 = 2^3 \\times 3^2 \\times 7$$"
+        }
+      ],
+      "final_answer": "$2^3 \\times 3^2 \\times 7$",
+      "now_you_try": {
+        "problem": "Express $396$ as a product of prime factors in exponent form.",
+        "hint": "Divide by $2$ twice first ($396 = 4 \\times 99$), then factorise $99$.",
+        "working_summary": "$396 = 4 \\times 99 = 2^2 \\times 9 \\times 11 = 2^2 \\times 3^2 \\times 11$.",
+        "answer": "$2^2 \\times 3^2 \\times 11$"
+      }
+    },
+    {
+      "id": "WE1_4_2",
+      "title": "Finding HCF and LCM via Prime Factorisation",
+      "difficulty": "Understanding",
+      "problem": "Use prime factorisation to find (a) the Highest Common Factor (HCF) and (b) the Lowest Common Multiple (LCM) of $72$ and $120$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Write both $72$ and $120$ as products of prime factors in index form.",
+          "working": "$$72 = 8 \\times 9 = 2^3 \\times 3^2 \\quad \\text{and} \\quad 120 = 8 \\times 3 \\times 5 = 2^3 \\times 3^1 \\times 5^1$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For the HCF, take the shared prime bases ($2$ and $3$) raised to their lowest exponents: $\\min(3,3) = 3$ for base $2$, and $\\min(2,1) = 1$ for base $3$.",
+          "working": "$$\\text{HCF}(72, 120) = 2^3 \\times 3^1 = 8 \\times 3 = 24$$"
+        },
+        {
+          "step": 3,
+          "thinking": "For the LCM, take all prime bases ($2$, $3$, and $5$) raised to their highest exponents: $2^3$, $3^2$, and $5^1$.",
+          "working": "$$\\text{LCM}(72, 120) = 2^3 \\times 3^2 \\times 5^1 = 8 \\times 9 \\times 5 = 360$$"
+        }
+      ],
+      "final_answer": "(a) $\\text{HCF} = 24$, (b) $\\text{LCM} = 360$",
+      "now_you_try": {
+        "problem": "Use prime factorisation to find (a) the HCF and (b) the LCM of $84$ and $140$.",
+        "hint": "First show that $84 = 2^2 \\times 3 \\times 7$ and $140 = 2^2 \\times 5 \\times 7$.",
+        "working_summary": "$84 = 2^2 \\times 3 \\times 7$ and $140 = 2^2 \\times 5 \\times 7$. $\\text{HCF} = 2^2 \\times 7 = 28$; $\\text{LCM} = 2^2 \\times 3 \\times 5 \\times 7 = 420$.",
+        "answer": "(a) $\\text{HCF} = 28$, (b) $\\text{LCM} = 420$"
+      }
+    },
+    {
+      "id": "WE1_4_3",
+      "title": "Melbourne Tram Synchronisation (Applied LCM)",
+      "difficulty": "Problem-Solving",
+      "problem": "At Flinders Street Station in Melbourne, a Route 70 tram departs every $12\\text{ minutes}$ and a Route 75 tram departs every $15\\text{ minutes}$. If both trams depart together at $8\\text{:00 am}$, at what time will they next depart together from Flinders Street Station?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The number of minutes until both trams depart together again is the Lowest Common Multiple (LCM) of $12$ and $15$.",
+          "working": "$$12 = 2^2 \\times 3 \\quad \\text{and} \\quad 15 = 3 \\times 5$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Compute the LCM by taking the highest power of each prime factor ($2^2$, $3$, and $5$).",
+          "working": "$$\\text{LCM}(12, 15) = 2^2 \\times 3 \\times 5 = 4 \\times 15 = 60\\text{ minutes}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Convert $60\\text{ minutes}$ to $1\\text{ hour}$ and add to $8\\text{:00 am}$.",
+          "working": "$$8\\text{:00 am} + 60\\text{ minutes} = 9\\text{:00 am}$$"
+        }
+      ],
+      "final_answer": "$9\\text{:00 am}$ (after $60\\text{ minutes}$)",
+      "now_you_try": {
+        "problem": "At Southern Cross Station, three regional V/Line trains depart for Geelong, Ballarat, and Bendigo every $20\\text{ minutes}$, $24\\text{ minutes}$, and $30\\text{ minutes}$ respectively. If all three depart simultaneously at $9\\text{:00 am}$, how many minutes pass before all three depart together again, and at what time does this occur?",
+        "hint": "Find $\\text{LCM}(20, 24, 30)$.",
+        "working_summary": "$20 = 2^2 \\times 5$, $24 = 2^3 \\times 3$, $30 = 2 \\times 3 \\times 5$. $\\text{LCM} = 2^3 \\times 3 \\times 5 = 120\\text{ minutes}$ ($2\\text{ hours}$), so $11\\text{:00 am}$.",
+        "answer": "$120\\text{ minutes}$ ($11\\text{:00 am}$)"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_1_4_1",
+      "title": "Stopping a Factor Tree at a Composite Factor or Including 1",
+      "misconception": "Writing the prime factorisation of $72$ as $2^3 \\times 9$ (leaving $9$ unfactorised) or writing $1 \\times 2^3 \\times 3^2$.",
+      "correct_concept": "Every base in a prime factorisation must be a prime number. Since $9 = 3^2$ is composite and $1$ is not prime, the unique prime factorisation of $72$ is $2^3 \\times 3^2$.",
+      "incorrect_working": "$$72 = 2^3 \\times 9 \\quad (\\text{Incorrect: } 9 \\text{ is composite})$$",
+      "correct_working": "$$72 = 2^3 \\times 3^2 \\quad (\\text{Correct: } 2 \\text{ and } 3 \\text{ are prime})$$",
+      "counter_example": "If composite factors were allowed, factorisations would not be unique (e.g., $72 = 8 \\times 9 = 6 \\times 12$)."
+    },
+    {
+      "id": "MISC_1_4_2",
+      "title": "Confusing HCF and LCM in Word Problems",
+      "misconception": "Using LCM when asked to cut lengths of timber into the largest possible equal pieces, or using HCF when asked when two repeating events will next coincide.",
+      "correct_concept": "Splitting/dividing items into smaller equal groups or lengths requires a factor (HCF $\\le$ the given numbers). Repeating cycles meeting in the future requires a multiple (LCM $\\ge$ the given numbers).",
+      "incorrect_working": "$$\\text{Equal cut length of } 18\\text{ m and } 24\\text{ m} = \\text{LCM}(18, 24) = 72\\text{ m} \\quad (\\text{Impossible!})$$",
+      "correct_working": "$$\\text{Equal cut length of } 18\\text{ m and } 24\\text{ m} = \\text{HCF}(18, 24) = 6\\text{ m} \\quad (\\text{Correct})$$",
+      "counter_example": "You cannot cut $72\\text{ m}$ pieces out of an $18\\text{ m}$ plank of timber; each piece must be at most $18\\text{ m}$ long."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "1_4_Q1",
+        "question": "Write $180$ as a product of prime factors in exponent (index) form, and verify its value.",
+        "difficulty": "Easy",
+        "context": "Prime Factorisation",
+        "final_answer": "$2^2 \\times 3^2 \\times 5$",
+        "step_by_step_solution": [
+          "Split $180 = 18 \\times 10$.",
+          "Factorise $18 = 2 \\times 3^2$ and $10 = 2 \\times 5$.",
+          "Collect like prime bases: $180 = 2^2 \\times 3^2 \\times 5$."
+        ]
+      },
+      {
+        "id": "1_4_Q2",
+        "question": "Find the Highest Common Factor (HCF) of $96$ and $144$.",
+        "difficulty": "Easy",
+        "context": "Highest Common Factor",
+        "final_answer": "$48$",
+        "step_by_step_solution": [
+          "Write each number in prime factor form: $96 = 2^5 \\times 3$ and $144 = 2^4 \\times 3^2$.",
+          "Take the lowest power of each common prime factor: $\\text{HCF}(96, 144) = 2^4 \\times 3^1 = 16 \\times 3 = 48$."
+        ]
+      },
+      {
+        "id": "1_4_Q3",
+        "question": "Find the Lowest Common Multiple (LCM) of $18$ and $30$.",
+        "difficulty": "Easy",
+        "context": "Lowest Common Multiple",
+        "final_answer": "$90$",
+        "step_by_step_solution": [
+          "Write each number in prime factor form: $18 = 2 \\times 3^2$ and $30 = 2 \\times 3 \\times 5$.",
+          "Take the highest power of each prime factor: $\\text{LCM}(18, 30) = 2^1 \\times 3^2 \\times 5^1 = 2 \\times 9 \\times 5 = 90$."
+        ]
+      },
+      {
+        "id": "1_4_Q4",
+        "question": "Find both the HCF and the LCM of $45$, $60$, and $150$.",
+        "difficulty": "Medium",
+        "context": "Three-Integer HCF & LCM",
+        "final_answer": "$\\text{HCF} = 15$, $\\text{LCM} = 900$",
+        "step_by_step_solution": [
+          "Prime factorise all three numbers: $45 = 3^2 \\times 5$, $60 = 2^2 \\times 3 \\times 5$, and $150 = 2 \\times 3 \\times 5^2$.",
+          "Shared primes across all three numbers are $3$ and $5$, with lowest powers $3^1$ and $5^1$: $\\text{HCF} = 3 \\times 5 = 15$.",
+          "Highest powers of all primes ($2, 3, 5$) are $2^2, 3^2, 5^2$: $\\text{LCM} = 4 \\times 9 \\times 25 = 900$."
+        ]
+      },
+      {
+        "id": "1_4_Q5",
+        "question": "Two numbers have a Highest Common Factor of $14$ and a Lowest Common Multiple of $210$. If one of the numbers is $42$, find the other number.",
+        "difficulty": "Medium",
+        "context": "HCF-LCM Product Identity",
+        "final_answer": "$70$",
+        "step_by_step_solution": [
+          "Use the identity $a \\times b = \\text{HCF}(a, b) \\times \\text{LCM}(a, b)$.",
+          "Substitute $42 \\times b = 14 \\times 210 = 2940$.",
+          "Divide by $42$: $b = 2940 \\div 42 = 70$."
+        ]
+      },
+      {
+        "id": "1_4_Q6",
+        "question": "Find the smallest positive integer $k$ by which $252$ must be multiplied so that $252k$ is a perfect square.",
+        "difficulty": "Challenging",
+        "context": "Prime Factorisation & Perfect Squares",
+        "final_answer": "$7$",
+        "step_by_step_solution": [
+          "Find the prime factorisation of $252$: $252 = 4 \\times 63 = 2^2 \\times 3^2 \\times 7^1$.",
+          "A positive integer is a perfect square if and only if every exponent in its prime factorisation is even.",
+          "The prime factors $2$ and $3$ already have even exponents ($2$), while $7$ has exponent $1$. Multiplying by $k = 7$ makes the factorisation $2^2 \\times 3^2 \\times 7^2 = (2 \\times 3 \\times 7)^2 = 42^2 = 1764$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "1_4_Q7",
+        "question": "A builder in Geelong buys two lengths of Merbau decking timber from Bunnings measuring $240\\text{ cm}$ and $336\\text{ cm}$. She wants to cut both planks into shorter pieces of equal length with no timber wasted. (a) What is the greatest possible length of each piece? (b) How many pieces of this length will she obtain in total?",
+        "difficulty": "Medium",
+        "context": "Australian Construction (Bunnings Timber)",
+        "final_answer": "(a) $48\\text{ cm}$, (b) $12\\text{ pieces}$",
+        "step_by_step_solution": [
+          "Find the HCF of $240$ and $336$: $240 = 2^4 \\times 3 \\times 5$ and $336 = 2^4 \\times 3 \\times 7$.",
+          "The shared prime factors are $2^4 \\times 3 = 16 \\times 3 = 48\\text{ cm}$.",
+          "Number of pieces from the $240\\text{ cm}$ plank: $240 \\div 48 = 5$.",
+          "Number of pieces from the $336\\text{ cm}$ plank: $336 \\div 48 = 7$.",
+          "Total number of pieces: $5 + 7 = 12\\text{ pieces}$."
+        ]
+      },
+      {
+        "id": "1_4_Q8",
+        "question": "A school Fundraising Committee in Ballarat is preparing sausage sizzle packs. Sausages are sold in packs of $24$ and bread rolls are sold in packs of $16$. What is the minimum number of packs of sausages and packs of bread rolls the committee must buy so that there is an equal number of sausages and bread rolls with none left over?",
+        "difficulty": "Medium",
+        "context": "Australian Community Sausage Sizzle",
+        "final_answer": "$2\\text{ packs of sausages}$ and $3\\text{ packs of bread rolls}$ ($48$ of each)",
+        "step_by_step_solution": [
+          "Find the Lowest Common Multiple of $24$ and $16$: $24 = 2^3 \\times 3$ and $16 = 2^4$, so $\\text{LCM}(24, 16) = 2^4 \\times 3 = 48$.",
+          "Number of sausage packs needed: $48 \\div 24 = 2\\text{ packs}$.",
+          "Number of bread roll packs needed: $48 \\div 16 = 3\\text{ packs}$."
+        ]
+      },
+      {
+        "id": "1_4_Q9",
+        "question": "Two lighthouses on the Victorian coast near Cape Otway flash at regular intervals. Lighthouse A flashes every $18\\text{ seconds}$ and Lighthouse B flashes every $28\\text{ seconds}$. Both lighthouses flash together at exactly $9\\text{:00 pm}$. How many additional times will they flash simultaneously between $9\\text{:00 pm}$ and $10\\text{:00 pm}$ (inclusive)?",
+        "difficulty": "Challenging",
+        "context": "Victorian Maritime Navigation",
+        "final_answer": "$14\\text{ times}$",
+        "step_by_step_solution": [
+          "Find $\\text{LCM}(18, 28)$: $18 = 2 \\times 3^2$ and $28 = 2^2 \\times 7$, so $\\text{LCM}(18, 28) = 2^2 \\times 3^2 \\times 7 = 252\\text{ seconds}$.",
+          "Convert $1\\text{ hour}$ ($9\\text{:00 pm}$ to $10\\text{:00 pm}$) into seconds: $60 \\times 60 = 3600\\text{ seconds}$.",
+          "Divide $3600$ by $252$ and take the integer floor: $\\lfloor 3600 \\div 252 \\rfloor = \\lfloor 14.2857\\dots \\rfloor = 14$ additional simultaneous flashes."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "1_4_Q10",
+        "question": "Explain why any number whose prime factorisation has only even exponents (such as $2^4 \\times 3^2$) must have an odd number of positive factors in total.",
+        "difficulty": "Challenging",
+        "context": "Divisor Pairing & Square Numbers",
+        "final_answer": "All factors pair up as $(d, n/d)$ except the square root $\\sqrt{n}$, which pairs with itself, yielding an odd total count",
+        "step_by_step_solution": [
+          "A number $n$ whose prime factorisation has only even exponents is a perfect square, say $n = m^2$.",
+          "Every positive factor $d$ of $n$ with $d < m$ pairs uniquely with a distinct factor $n/d > m$.",
+          "The factor $d = m = \\sqrt{n}$ pairs with itself ($m \\times m = n$), adding $1$ unpaired factor to the paired factors, making the total number of factors odd.",
+          "For $2^4 \\times 3^2 = 144$, the total number of factors is $(4 + 1)(2 + 1) = 5 \\times 3 = 15$, which is odd."
+        ]
+      },
+      {
+        "id": "1_4_Q11",
+        "question": "Two positive integers $a$ and $b$ are called coprime (or relatively prime) if $\\text{HCF}(a, b) = 1$. State a simplified formula for $\\text{LCM}(a, b)$ when $a$ and $b$ are coprime, and explain using prime factorisation why this formula always holds.",
+        "difficulty": "Medium",
+        "context": "Coprime Integers Proof",
+        "final_answer": "$\\text{LCM}(a, b) = a \\times b$",
+        "step_by_step_solution": [
+          "Since $\\text{HCF}(a, b) = 1$, $a$ and $b$ share no common prime factors.",
+          "Taking the highest power of every prime factor across $a$ and $b$ simply multiplies all prime factors of $a$ with all prime factors of $b$.",
+          "Equivalently, from $\\text{HCF}(a, b) \\times \\text{LCM}(a, b) = a \\times b$, substituting $\\text{HCF}(a, b) = 1$ gives $\\text{LCM}(a, b) = a \\times b$."
+        ]
+      },
+      {
+        "id": "1_4_Q12",
+        "question": "Find the smallest positive integer $n > 2$ that leaves a remainder of $2$ when divided by $6$, $8$, and $9$. Justify each step of your reasoning.",
+        "difficulty": "Extension",
+        "context": "Remainder & LCM Reasoning",
+        "final_answer": "$74$",
+        "step_by_step_solution": [
+          "If $n$ leaves a remainder of $2$ when divided by $6$, $8$, and $9$, then $(n - 2)$ must be exactly divisible by $6$, $8$, and $9$.",
+          "Therefore, the smallest positive value of $(n - 2)$ is $\\text{LCM}(6, 8, 9)$.",
+          "Using prime factorisation, $6 = 2 \\times 3$, $8 = 2^3$, and $9 = 3^2$, so $\\text{LCM}(6, 8, 9) = 2^3 \\times 3^2 = 72$.",
+          "Since $n - 2 = 72$, we obtain $n = 72 + 2 = 74$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE1_4_1",
+      "description": "Worked Example 1.4.1 prime factorisation of 504",
+      "expression": "2**3 * 3**2 * 7",
+      "expected": 504
+    },
+    {
+      "id": "NYT1_4_1",
+      "description": "Now You Try 1.4.1 prime factorisation of 396",
+      "expression": "2**2 * 3**2 * 11",
+      "expected": 396
+    },
+    {
+      "id": "WE1_4_2a",
+      "description": "Worked Example 1.4.2(a) HCF(72, 120)",
+      "expression": "igcd(72, 120)",
+      "expected": 24
+    },
+    {
+      "id": "WE1_4_2b",
+      "description": "Worked Example 1.4.2(b) LCM(72, 120)",
+      "expression": "ilcm(72, 120)",
+      "expected": 360
+    },
+    {
+      "id": "NYT1_4_2a",
+      "description": "Now You Try 1.4.2(a) HCF(84, 140)",
+      "expression": "igcd(84, 140)",
+      "expected": 28
+    },
+    {
+      "id": "NYT1_4_2b",
+      "description": "Now You Try 1.4.2(b) LCM(84, 140)",
+      "expression": "ilcm(84, 140)",
+      "expected": 420
+    },
+    {
+      "id": "WE1_4_3",
+      "description": "Worked Example 1.4.3 Melbourne trams LCM(12, 15)",
+      "expression": "ilcm(12, 15)",
+      "expected": 60
+    },
+    {
+      "id": "NYT1_4_3",
+      "description": "Now You Try 1.4.3 V/Line trains LCM(20, 24, 30)",
+      "expression": "ilcm(20, 24, 30)",
+      "expected": 120
+    },
+    {
+      "id": "EX1_4_Q1",
+      "description": "Exercise 1.4 Q1 180 prime factorisation",
+      "expression": "2**2 * 3**2 * 5",
+      "expected": 180
+    },
+    {
+      "id": "EX1_4_Q2",
+      "description": "Exercise 1.4 Q2 HCF(96, 144)",
+      "expression": "igcd(96, 144)",
+      "expected": 48
+    },
+    {
+      "id": "EX1_4_Q3",
+      "description": "Exercise 1.4 Q3 LCM(18, 30)",
+      "expression": "ilcm(18, 30)",
+      "expected": 90
+    },
+    {
+      "id": "EX1_4_Q4_hcf",
+      "description": "Exercise 1.4 Q4 HCF(45, 60, 150)",
+      "expression": "igcd(45, 60, 150)",
+      "expected": 15
+    },
+    {
+      "id": "EX1_4_Q4_lcm",
+      "description": "Exercise 1.4 Q4 LCM(45, 60, 150)",
+      "expression": "ilcm(45, 60, 150)",
+      "expected": 900
+    },
+    {
+      "id": "EX1_4_Q5",
+      "description": "Exercise 1.4 Q5 missing number",
+      "expression": "(14 * 210) / 42",
+      "expected": 70
+    },
+    {
+      "id": "EX1_4_Q6",
+      "description": "Exercise 1.4 Q6 square root of 252 * 7",
+      "expression": "sqrt(252 * 7)",
+      "expected": 42
+    },
+    {
+      "id": "EX1_4_Q7a",
+      "description": "Exercise 1.4 Q7(a) HCF(240, 336)",
+      "expression": "igcd(240, 336)",
+      "expected": 48
+    },
+    {
+      "id": "EX1_4_Q7b",
+      "description": "Exercise 1.4 Q7(b) total timber pieces",
+      "expression": "240 / 48 + 336 / 48",
+      "expected": 12
+    },
+    {
+      "id": "EX1_4_Q8",
+      "description": "Exercise 1.4 Q8 LCM(24, 16)",
+      "expression": "ilcm(24, 16)",
+      "expected": 48
+    },
+    {
+      "id": "EX1_4_Q9_lcm",
+      "description": "Exercise 1.4 Q9 LCM(18, 28)",
+      "expression": "ilcm(18, 28)",
+      "expected": 252
+    },
+    {
+      "id": "EX1_4_Q9_count",
+      "description": "Exercise 1.4 Q9 flashes in 3600s",
+      "expression": "floor(3600 / 252)",
+      "expected": 14
+    },
+    {
+      "id": "EX1_4_Q12",
+      "description": "Exercise 1.4 Q12 LCM(6, 8, 9) + 2",
+      "expression": "ilcm(6, 8, 9) + 2",
+      "expected": 74
+    }
+  ]
+}
