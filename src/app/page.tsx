@@ -1,20 +1,23 @@
 import {
-  loadCurriculumManifest,
+  loadAllYearManifests,
   loadAllGeneratedSections,
-  loadWorksheetAnswerKeys,
+  loadAllTierWorksheetAnswerKeys,
+  loadVcaaStandardsRegistry,
 } from "@/lib/curriculum";
 import { TextbookViewer } from "@/components/TextbookViewer";
 
 export default function HomePage() {
-  const manifest = loadCurriculumManifest();
+  const yearManifests = loadAllYearManifests();
   const generatedSections = loadAllGeneratedSections();
-  const worksheetAnswerKeys = loadWorksheetAnswerKeys();
+  const tieredAnswerKeys = loadAllTierWorksheetAnswerKeys();
+  const vcaaStandards = loadVcaaStandardsRegistry();
 
   return (
     <TextbookViewer
-      manifest={manifest}
+      yearManifests={yearManifests}
       generatedSections={generatedSections}
-      worksheetAnswerKeys={worksheetAnswerKeys}
+      tieredAnswerKeys={tieredAnswerKeys}
+      vcaaStandards={vcaaStandards}
     />
   );
 }

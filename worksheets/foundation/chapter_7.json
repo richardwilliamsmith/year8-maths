@@ -1,0 +1,391 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Length, Area, Volume and Time",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "7_1",
+      "section_code": "7A",
+      "title": "Perimeter and Area of Quadrilaterals and Composite Shapes",
+      "vcaa_code": "VC2M8M01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the perimeter and area ($A = l \\times w$) of each rectangle or square:",
+          "parts": [
+            { "label": "a", "question": "Rectangle: $l = 8\\text{ cm}, w = 5\\text{ cm}$", "answer": "$P = 26\\text{ cm}, A = 40\\text{ cm}^2$" },
+            { "label": "b", "question": "Square of side length $s = 7\\text{ m}$", "answer": "$P = 28\\text{ m}, A = 49\\text{ m}^2$" },
+            { "label": "c", "question": "Rectangle: $l = 12\\text{ m}, w = 4\\text{ m}$", "answer": "$P = 32\\text{ m}, A = 48\\text{ m}^2$" },
+            { "label": "d", "question": "Square of side length $s = 10\\text{ cm}$", "answer": "$P = 40\\text{ cm}, A = 100\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use $A = b \\times h$ to calculate the area of each parallelogram:",
+          "parts": [
+            { "label": "a", "question": "Base $b = 9\\text{ cm}$, perpendicular height $h = 4\\text{ cm}$", "answer": "$36\\text{ cm}^2$" },
+            { "label": "b", "question": "Base $b = 11\\text{ m}$, perpendicular height $h = 6\\text{ m}$", "answer": "$66\\text{ m}^2$" },
+            { "label": "c", "question": "Base $b = 15\\text{ cm}$, perpendicular height $h = 5\\text{ cm}$", "answer": "$75\\text{ cm}^2$" },
+            { "label": "d", "question": "Base $b = 20\\text{ m}$, perpendicular height $h = 8\\text{ m}$", "answer": "$160\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use $A = \\dfrac{1}{2} \\times x \\times y$ to find the area of each rhombus or kite with diagonals $x$ and $y$:",
+          "parts": [
+            { "label": "a", "question": "$x = 6\\text{ cm}, y = 8\\text{ cm}$", "answer": "$24\\text{ cm}^2$" },
+            { "label": "b", "question": "$x = 10\\text{ m}, y = 7\\text{ m}$", "answer": "$35\\text{ m}^2$" },
+            { "label": "c", "question": "$x = 12\\text{ cm}, y = 9\\text{ cm}$", "answer": "$54\\text{ cm}^2$" },
+            { "label": "d", "question": "$x = 14\\text{ m}, y = 10\\text{ m}$", "answer": "$70\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use $A = \\dfrac{a + b}{2} \\times h$ to calculate the area of each trapezium:",
+          "parts": [
+            { "label": "a", "question": "$a = 4\\text{ cm}, b = 6\\text{ cm}, h = 5\\text{ cm}$", "answer": "$25\\text{ cm}^2$" },
+            { "label": "b", "question": "$a = 5\\text{ m}, b = 9\\text{ m}, h = 4\\text{ m}$", "answer": "$28\\text{ m}^2$" },
+            { "label": "c", "question": "$a = 7\\text{ cm}, b = 13\\text{ cm}, h = 6\\text{ cm}$", "answer": "$60\\text{ cm}^2$" },
+            { "label": "d", "question": "$a = 8\\text{ m}, b = 12\\text{ m}, h = 9\\text{ m}$", "answer": "$90\\text{ m}^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A parallelogram-shaped street sign has base $b = 60\\text{ cm}$ and perpendicular height $h = 25\\text{ cm}$. Multiply $60 \\times 25$ to find its area in $\\text{cm}^2$.",
+          "answer": "$1500\\text{ cm}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A kite made for a festival in St Kilda has diagonals of $80\\text{ cm}$ and $50\\text{ cm}$. Use $A = \\dfrac{1}{2} \\times 80 \\times 50$ to find the area of paper needed.",
+          "answer": "$2000\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A garden bed is made of two rectangles joined together: one is $6\\text{ m} \\times 4\\text{ m}$ and the other is $3\\text{ m} \\times 2\\text{ m}$. Add their areas $(6 \\times 4) + (3 \\times 2)$ to find the total area.",
+          "answer": "$30\\text{ m}^2$"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular nature reserve measures $300\\text{ m}$ by $200\\text{ m}$ ($60\\,000\\text{ m}^2$). Divide the area by $10\\,000$ ($1\\text{ ha} = 10\\,000\\text{ m}^2$) to convert this area into hectares ($\\text{ha}$).",
+          "answer": "$6\\text{ ha}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A parallelogram has a base of $10\\text{ cm}$, a slanted side of $7\\text{ cm}$, and a perpendicular height of $5\\text{ cm}$. Explain why the area is $10 \\times 5 = 50\\text{ cm}^2$ and NOT $10 \\times 7 = 70\\text{ cm}^2$.",
+          "answer": "Area of a parallelogram uses the perpendicular height ($5\\text{ cm}$) at right angles to the base, not the slanted side length ($7\\text{ cm}$)."
+        },
+        {
+          "number": 10,
+          "question": "Explain why $1\\text{ m}^2$ equals $10\\,000\\text{ cm}^2$ (and not $100\\text{ cm}^2$) by considering a square of side length $100\\text{ cm}$ by $100\\text{ cm}$.",
+          "answer": "A $1\\text{ m}$ by $1\\text{ m}$ square is $100\\text{ cm}$ long and $100\\text{ cm}$ wide, so its area is $100 \\times 100 = 10\\,000\\text{ cm}^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF7_1_1a_A", "expression": "8 * 5", "expected": 40 },
+        { "id": "WSF7_1_2b", "expression": "11 * 6", "expected": 66 },
+        { "id": "WSF7_1_3a", "expression": "Rational(1, 2) * 6 * 8", "expected": 24 },
+        { "id": "WSF7_1_3c", "expression": "Rational(1, 2) * 12 * 9", "expected": 54 },
+        { "id": "WSF7_1_4a", "expression": "Rational(4 + 6, 2) * 5", "expected": 25 },
+        { "id": "WSF7_1_4c", "expression": "Rational(7 + 13, 2) * 6", "expected": 60 },
+        { "id": "WSF7_1_5", "expression": "60 * 25", "expected": 1500 },
+        { "id": "WSF7_1_6", "expression": "Rational(1, 2) * 80 * 50", "expected": 2000 },
+        { "id": "WSF7_1_7", "expression": "6 * 4 + 3 * 2", "expected": 30 },
+        { "id": "WSF7_1_8", "expression": "(300 * 200) / 10000", "expected": 6 }
+      ]
+    },
+    {
+      "section_id": "7_2",
+      "section_code": "7B",
+      "title": "Circumference and Area of Circles and Sectors",
+      "vcaa_code": "VC2M8M02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the missing radius $r$ or diameter $d$ of each circle ($d = 2r$):",
+          "parts": [
+            { "label": "a", "question": "Radius $r = 5\\text{ cm}$, find diameter $d$", "answer": "$10\\text{ cm}$" },
+            { "label": "b", "question": "Radius $r = 9\\text{ m}$, find diameter $d$", "answer": "$18\\text{ m}$" },
+            { "label": "c", "question": "Diameter $d = 12\\text{ cm}$, find radius $r$", "answer": "$6\\text{ cm}$" },
+            { "label": "d", "question": "Diameter $d = 20\\text{ m}$, find radius $r$", "answer": "$10\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use $C = 2\\pi r$ (or $C = \\pi d$) to write the exact circumference in terms of $\\pi$:",
+          "parts": [
+            { "label": "a", "question": "Radius $r = 4\\text{ cm}$", "answer": "$8\\pi\\text{ cm}$" },
+            { "label": "b", "question": "Radius $r = 10\\text{ m}$", "answer": "$20\\pi\\text{ m}$" },
+            { "label": "c", "question": "Diameter $d = 9\\text{ cm}$", "answer": "$9\\pi\\text{ cm}$" },
+            { "label": "d", "question": "Diameter $d = 15\\text{ m}$", "answer": "$15\\pi\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use $A = \\pi r^2$ to write the exact area of each circle in terms of $\\pi$:",
+          "parts": [
+            { "label": "a", "question": "Radius $r = 3\\text{ cm}$", "answer": "$9\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Radius $r = 5\\text{ m}$", "answer": "$25\\pi\\text{ m}^2$" },
+            { "label": "c", "question": "Radius $r = 8\\text{ cm}$", "answer": "$64\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "Diameter $d = 10\\text{ m}$ (first find $r = 5\\text{ m}$)", "answer": "$25\\pi\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Using $\\pi \\approx \\dfrac{22}{7}$, calculate each circular measurement:",
+          "parts": [
+            { "label": "a", "question": "Circumference when $d = 7\\text{ cm}$ ($C = \\frac{22}{7} \\times 7$)", "answer": "$22\\text{ cm}$" },
+            { "label": "b", "question": "Circumference when $r = 7\\text{ m}$ ($C = 2 \\times \\frac{22}{7} \\times 7$)", "answer": "$44\\text{ m}$" },
+            { "label": "c", "question": "Area when $r = 7\\text{ cm}$ ($A = \\frac{22}{7} \\times 7 \\times 7$)", "answer": "$154\\text{ cm}^2$" },
+            { "label": "d", "question": "Area of a semicircle with $r = 7\\text{ cm}$ (half of part c)", "answer": "$77\\text{ cm}^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A circular trampoline has a diameter of $d = 3\\text{ m}$. Using $\\pi \\approx 3.14$, calculate $C = 3.14 \\times 3$ to find the distance around the edge.",
+          "answer": "$9.42\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A circular garden sprinkler waters a circle of radius $r = 6\\text{ m}$. Use $A = \\pi r^2$ to find the exact area watered in terms of $\\pi$.",
+          "answer": "$36\\pi\\text{ m}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A semicircular window has a radius of $r = 4\\text{ m}$. Calculate $A = \\dfrac{1}{2} \\times \\pi \\times 4^2$ to find its exact area in terms of $\\pi$.",
+          "answer": "$8\\pi\\text{ m}^2$"
+        },
+        {
+          "number": 8,
+          "question": "An Australian $\\$2$ coin has a radius of approximately $10\\text{ mm}$. Using $\\pi \\approx 3.14$, calculate $A = 3.14 \\times 10^2$ to find the area of one face of the coin.",
+          "answer": "$314\\text{ mm}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A circle has diameter $d = 8\\text{ cm}$. Mia calculates its area as $A = \\pi \\times 8^2 = 64\\pi\\text{ cm}^2$. Explain Mia's mistake and find the correct exact area.",
+          "answer": "Mia used the diameter ($8\\text{ cm}$) instead of the radius ($r = 4\\text{ cm}$). The correct area is $A = \\pi \\times 4^2 = 16\\pi\\text{ cm}^2$."
+        },
+        {
+          "number": 10,
+          "question": "What fraction of a full circle ($360^\\circ$) is a quadrant with a $90^\\circ$ corner angle? Use this fraction to find the exact area of a quadrant of radius $6\\text{ cm}$.",
+          "answer": "$\\dfrac{90}{360} = \\dfrac{1}{4}$ of a circle; Area $= \\dfrac{1}{4} \\times \\pi \\times 6^2 = 9\\pi\\text{ cm}^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF7_2_1c", "expression": "12 / 2", "expected": 6 },
+        { "id": "WSF7_2_2a", "expression": "2 * 4", "expected": 8 },
+        { "id": "WSF7_2_3c", "expression": "8**2", "expected": 64 },
+        { "id": "WSF7_2_4a", "expression": "Rational(22, 7) * 7", "expected": 22 },
+        { "id": "WSF7_2_4c", "expression": "Rational(22, 7) * 7**2", "expected": 154 },
+        { "id": "WSF7_2_4d", "expression": "Rational(1, 2) * Rational(22, 7) * 7**2", "expected": 77 },
+        { "id": "WSF7_2_5", "expression": "Rational(314, 100) * 3", "expected": 9.42 },
+        { "id": "WSF7_2_7", "expression": "Rational(1, 2) * 4**2", "expected": 8 },
+        { "id": "WSF7_2_8", "expression": "Rational(314, 100) * 10**2", "expected": 314 },
+        { "id": "WSF7_2_10", "expression": "Rational(1, 4) * 6**2", "expected": 9 }
+      ]
+    },
+    {
+      "section_id": "7_3",
+      "section_code": "7C",
+      "title": "Volume, Capacity of Prisms and Time Zones",
+      "vcaa_code": "VC2M8M03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use $1\\text{ cm}^3 = 1\\text{ mL}$, $1000\\text{ mL} = 1\\text{ L}$, and $1\\text{ m}^3 = 1000\\text{ L}$ to convert each capacity:",
+          "parts": [
+            { "label": "a", "question": "$300\\text{ cm}^3$ to $\\text{mL}$", "answer": "$300\\text{ mL}$" },
+            { "label": "b", "question": "$4000\\text{ mL}$ to litres ($\\text{L}$)", "answer": "$4\\text{ L}$" },
+            { "label": "c", "question": "$2000\\text{ cm}^3$ to litres ($\\text{L}$)", "answer": "$2\\text{ L}$" },
+            { "label": "d", "question": "$5\\text{ m}^3$ to litres ($\\text{L}$)", "answer": "$5000\\text{ L}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use $V = l \\times w \\times h$ (or $V = A \\times h$) to find the volume of each prism:",
+          "parts": [
+            { "label": "a", "question": "Rectangular prism: $5\\text{ cm} \\times 4\\text{ cm} \\times 3\\text{ cm}$", "answer": "$60\\text{ cm}^3$" },
+            { "label": "b", "question": "Cube of side length $4\\text{ cm}$ ($4 \\times 4 \\times 4$)", "answer": "$64\\text{ cm}^3$" },
+            { "label": "c", "question": "Prism with base area $A = 20\\text{ cm}^2$ and height $h = 6\\text{ cm}$", "answer": "$120\\text{ cm}^3$" },
+            { "label": "d", "question": "Triangular prism with triangle area $A = 15\\text{ m}^2$ and length $h = 8\\text{ m}$", "answer": "$120\\text{ m}^3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Convert between 12-hour and 24-hour time and find each time duration:",
+          "parts": [
+            { "label": "a", "question": "Write $2{:}30\\text{ pm}$ in 24-hour time (add $12$ to the hours)", "answer": "$14{:}30$" },
+            { "label": "b", "question": "Write $19{:}15$ in 12-hour am/pm time", "answer": "$7{:}15\\text{ pm}$" },
+            { "label": "c", "question": "Time elapsed from $9{:}00\\text{ am}$ to $1{:}30\\text{ pm}$", "answer": "$4\\text{ h } 30\\text{ min}$" },
+            { "label": "d", "question": "Time $2\\text{ hours } 20\\text{ minutes}$ after $10{:}15\\text{ am}$", "answer": "$12{:}35\\text{ pm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "In winter, Melbourne is on AEST (UTC$+10$) and Perth is $2$ hours behind on AWST (UTC$+8$). Find the time:",
+          "parts": [
+            { "label": "a", "question": "In Perth when it is $11{:}00\\text{ am}$ in Melbourne", "answer": "$9{:}00\\text{ am}$" },
+            { "label": "b", "question": "In Perth when it is $4{:}30\\text{ pm}$ in Melbourne", "answer": "$2{:}30\\text{ pm}$" },
+            { "label": "c", "question": "In Melbourne when it is $8{:}00\\text{ am}$ in Perth", "answer": "$10{:}00\\text{ am}$" },
+            { "label": "d", "question": "In Adelaide ($30\\text{ min}$ behind Melbourne) when it is $3{:}00\\text{ pm}$ in Melbourne", "answer": "$2{:}30\\text{ pm}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A glass fish tank is $40\\text{ cm}$ long, $20\\text{ cm}$ wide, and $30\\text{ cm}$ high. Calculate $V = 40 \\times 20 \\times 30$ to find its volume in $\\text{cm}^3$, then divide by $1000$ to find its capacity in litres.",
+          "answer": "$24\\,000\\text{ cm}^3 = 24\\text{ L}$"
+        },
+        {
+          "number": 6,
+          "question": "A triangular camping tent has a front triangle of base $3\\text{ m}$ and height $2\\text{ m}$ ($A = \\frac{1}{2} \\times 3 \\times 2 = 3\\text{ m}^2$) and is $4\\text{ m}$ long. Multiply $A \\times 4$ to find the volume inside the tent.",
+          "answer": "$12\\text{ m}^3$"
+        },
+        {
+          "number": 7,
+          "question": "A V/Line train leaves Southern Cross Station at $10{:}10\\text{ am}$ and arrives in Ballarat at $11{:}35\\text{ am}$. How many hours and minutes does the journey take?",
+          "answer": "$1\\text{ hour } 25\\text{ minutes}$"
+        },
+        {
+          "number": 8,
+          "question": "Chloe in Sydney (AEST) calls her grandmother in Perth ($2$ hours behind Sydney) at $6{:}15\\text{ pm}$ Sydney time. What is the local time in Perth when the phone rings?",
+          "answer": "$4{:}15\\text{ pm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A 1-litre milk carton holds $1000\\text{ cm}^3$ of milk. If the square base of the carton is $10\\text{ cm}$ by $10\\text{ cm}$ (area $= 100\\text{ cm}^2$), what height $h$ must the milk reach?",
+          "answer": "$10\\text{ cm}$, because $V = A \\times h \\implies 1000 = 100 \\times h \\implies h = 10\\text{ cm}$."
+        },
+        {
+          "number": 10,
+          "question": "Tom calculates the time from $11{:}40\\text{ am}$ to $1{:}10\\text{ pm}$ by subtracting $140 - 1140$ and gets confused. Show how counting forward to $12{:}00\\text{ noon}$ first makes it easy to find the total minutes.",
+          "answer": "From $11{:}40\\text{ am}$ to $12{:}00\\text{ noon}$ is $20\\text{ minutes}$, and from $12{:}00\\text{ noon}$ to $1{:}10\\text{ pm}$ is $1\\text{ hour } 10\\text{ minutes}$, giving $1\\text{ hour } 30\\text{ minutes}$ ($90\\text{ minutes}$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF7_3_1b", "expression": "4000 / 1000", "expected": 4 },
+        { "id": "WSF7_3_1d", "expression": "5 * 1000", "expected": 5000 },
+        { "id": "WSF7_3_2a", "expression": "5 * 4 * 3", "expected": 60 },
+        { "id": "WSF7_3_2b", "expression": "4**3", "expected": 64 },
+        { "id": "WSF7_3_2c", "expression": "20 * 6", "expected": 120 },
+        { "id": "WSF7_3_2d", "expression": "15 * 8", "expected": 120 },
+        { "id": "WSF7_3_5_V", "expression": "40 * 20 * 30", "expected": 24000 },
+        { "id": "WSF7_3_5_L", "expression": "(40 * 20 * 30) / 1000", "expected": 24 },
+        { "id": "WSF7_3_6", "expression": "Rational(1, 2) * 3 * 2 * 4", "expected": 12 },
+        { "id": "WSF7_3_9", "expression": "1000 / (10 * 10)", "expected": 10 }
+      ]
+    },
+    {
+      "section_id": "7_4",
+      "section_code": "7D",
+      "title": "Time Zones, 24-Hour Time, and Duration",
+      "vcaa_code": "VC2M8M04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each 12-hour time to 24-hour time (for $\\text{pm}$ times from $1{:}00\\text{ pm}$ to $11{:}59\\text{ pm}$, add $12$ to the hours):",
+          "parts": [
+            { "label": "a", "question": "$8{:}20\\text{ am}$", "answer": "$08{:}20$" },
+            { "label": "b", "question": "$1{:}45\\text{ pm}$ ($1 + 12$ hours)", "answer": "$13{:}45$" },
+            { "label": "c", "question": "$6{:}10\\text{ pm}$ ($6 + 12$ hours)", "answer": "$18{:}10$" },
+            { "label": "d", "question": "$10{:}30\\text{ pm}$ ($10 + 12$ hours)", "answer": "$22{:}30$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Convert each 24-hour time to 12-hour $\\text{am/pm}$ time (if hours $> 12$, subtract $12$ and write $\\text{pm}$):",
+          "parts": [
+            { "label": "a", "question": "$07{:}15$", "answer": "$7{:}15\\text{ am}$" },
+            { "label": "b", "question": "$14{:}00$ ($14 - 12$)", "answer": "$2{:}00\\text{ pm}$" },
+            { "label": "c", "question": "$17{:}50$ ($17 - 12$)", "answer": "$5{:}50\\text{ pm}$" },
+            { "label": "d", "question": "$21{:}25$ ($21 - 12$)", "answer": "$9{:}25\\text{ pm}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the elapsed time (duration) between each start time and finish time:",
+          "parts": [
+            { "label": "a", "question": "From $10{:}00\\text{ am}$ to $2{:}00\\text{ pm}$", "answer": "$4\\text{ hours}$" },
+            { "label": "b", "question": "From $09{:}15$ to $11{:}45$", "answer": "$2\\text{ h } 30\\text{ min}$" },
+            { "label": "c", "question": "From $13{:}20$ to $16{:}55$", "answer": "$3\\text{ h } 35\\text{ min}$" },
+            { "label": "d", "question": "From $11{:}30\\text{ am}$ to $1{:}15\\text{ pm}$ (count to $12{:}00$ first)", "answer": "$1\\text{ h } 45\\text{ min}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "When it is $12{:}00\\text{ noon}$ AEST (UTC$+10$) in Brisbane, use the time difference to find the local time in:",
+          "parts": [
+            { "label": "a", "question": "Sydney in winter (AEST, $0$ hours difference)", "answer": "$12{:}00\\text{ noon}$" },
+            { "label": "b", "question": "Perth (AWST, $2$ hours behind Brisbane)", "answer": "$10{:}00\\text{ am}$" },
+            { "label": "c", "question": "Auckland, NZ ($2$ hours ahead of Brisbane)", "answer": "$2{:}00\\text{ pm}$" },
+            { "label": "d", "question": "Darwin (ACST, $30$ minutes behind Brisbane)", "answer": "$11{:}30\\text{ am}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A movie at a cinema in Parramatta starts at $14{:}10$ and runs for $2\\text{ hours } 15\\text{ minutes}$. Add $2\\text{ hours } 15\\text{ minutes}$ to $14{:}10$ to find the finishing time in 24-hour time.",
+          "answer": "$16{:}25$"
+        },
+        {
+          "number": 6,
+          "question": "During summer Daylight Saving, Melbourne (AEDT) is $1$ hour ahead of Brisbane (AEST). If a live tennis match starts in Melbourne at $7{:}30\\text{ pm}$ AEDT, subtract $1$ hour to find the start time in Brisbane.",
+          "answer": "$6{:}30\\text{ pm}$ AEST"
+        },
+        {
+          "number": 7,
+          "question": "A flight leaves Adelaide at $09{:}20$ and lands in Alice Springs (same time zone) at $11{:}35$. Subtract the minutes and hours to find the flight duration.",
+          "answer": "$2\\text{ hours } 15\\text{ minutes}$"
+        },
+        {
+          "number": 8,
+          "question": "Tokyo is $1$ hour behind Melbourne in winter (AEST). When a student in Melbourne starts school at $9{:}00\\text{ am}$, what time is it in Tokyo?",
+          "answer": "$8{:}00\\text{ am}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why do airlines, hospitals, and train timetables use 24-hour time (such as $06{:}30$ and $18{:}30$) instead of 12-hour time?",
+          "answer": "24-hour time avoids confusion between morning ($\\text{am}$) and evening ($\\text{pm}$), since every minute of the day has its own unique 4-digit number."
+        },
+        {
+          "number": 10,
+          "question": "A student subtracts $09{:}40$ from $11{:}10$ like normal decimals ($11.10 - 9.40 = 1.70$) and writes $1\\text{ hour } 70\\text{ minutes}$. Explain why this is wrong and find the correct duration.",
+          "answer": "There are $60$ minutes in $1$ hour, not $100$. From $09{:}40$ to $10{:}00$ is $20\\text{ min}$, plus $1\\text{ h } 10\\text{ min}$ to $11{:}10$ gives $1\\text{ hour } 30\\text{ minutes}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF7_4_1b", "expression": "1 + 12", "expected": 13 },
+        { "id": "WSF7_4_1c", "expression": "6 + 12", "expected": 18 },
+        { "id": "WSF7_4_1d", "expression": "10 + 12", "expected": 22 },
+        { "id": "WSF7_4_2c", "expression": "17 - 12", "expected": 5 },
+        { "id": "WSF7_4_2d", "expression": "21 - 12", "expected": 9 },
+        { "id": "WSF7_4_3b", "expression": "(11 * 60 + 45) - (9 * 60 + 15)", "expected": 150 },
+        { "id": "WSF7_4_3c", "expression": "(16 * 60 + 55) - (13 * 60 + 20)", "expected": 215 },
+        { "id": "WSF7_4_3d", "expression": "(13 * 60 + 15) - (11 * 60 + 30)", "expected": 105 },
+        { "id": "WSF7_4_4b", "expression": "12 - 2", "expected": 10 },
+        { "id": "WSF7_4_7", "expression": "(11 * 60 + 35) - (9 * 60 + 20)", "expected": 135 }
+      ]
+    }
+  ]
+}

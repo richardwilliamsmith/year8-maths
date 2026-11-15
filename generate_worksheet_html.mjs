@@ -39,7 +39,6 @@ function renderMathText(str) {
           return `<code>${tex}</code>`;
         }
       }
-      // Escape basic HTML characters in plain text
       return part
         .replaceAll(ESCAPED_DOLLAR, "$")
         .replaceAll("&", "&amp;")
@@ -50,7 +49,54 @@ function renderMathText(str) {
     .join("");
 }
 
-function buildStudentWorksheetHtml(ch, ws) {
+const TIER_CONFIG = {
+  foundation: {
+    key: "foundation",
+    label: "Foundation",
+    badge: "Foundation Worksheet · Support",
+    footerLabel: "Foundation Printable Worksheet (Support Tier)",
+    akTitle: "Year 8 Mathematics — Foundation Worksheets Master Answer Key",
+    akSubtitle:
+      "Complete compiled answers for all Foundation (Support Tier) printable worksheets, SymPy verified.",
+    partANote: "Follow the step-by-step prompts and show working in your workbook",
+    partBNote: "Use the guided hints to write clear mathematical statements with units",
+    partCNote: "Explain your thinking clearly using numbers, words, or a diagram",
+    accentBg: "#eef5f0",
+    accentBorder: "#1e5631",
+  },
+  standard: {
+    key: "standard",
+    label: "Standard",
+    badge: "Standard Worksheet · Core",
+    footerLabel: "Standard Printable Worksheet (Core Tier)",
+    akTitle: "Year 8 Mathematics — Standard Worksheets Master Answer Key",
+    akSubtitle:
+      "Complete compiled answers for all Standard (Core Tier) printable worksheets, SymPy verified.",
+    partANote: "Show complete step-by-step working in your workbook",
+    partBNote: "Write clear mathematical statements with units",
+    partCNote: "Justify your conclusions using algebraic or geometric reasoning",
+    accentBg: "#f3f2ee",
+    accentBorder: "#111111",
+  },
+  extension: {
+    key: "extension",
+    label: "Extension",
+    badge: "Extension Worksheet · Challenge",
+    footerLabel: "Extension Printable Worksheet (Challenge Tier)",
+    akTitle: "Year 8 Mathematics — Extension Worksheets Master Answer Key",
+    akSubtitle:
+      "Complete compiled answers for all Extension (Challenge Tier) printable worksheets, SymPy verified.",
+    partANote: "Show rigorous algebraic and numerical working for each part",
+    partBNote: "Formulate equations and state exact or appropriately rounded answers",
+    partCNote: "Provide formal mathematical proofs, generalisations, or justifications",
+    accentBg: "#f0eef6",
+    accentBorder: "#3b2366",
+  },
+};
+
+function buildStudentWorksheetHtml(ch, ws, tierKey = "standard") {
+  const cfg = TIER_CONFIG[tierKey] || TIER_CONFIG.standard;
+
   const fluencyHtml = ws.fluency_questions
     .map((fq) => {
       const partsHtml = fq.parts
@@ -100,7 +146,7 @@ function buildStudentWorksheetHtml(ch, ws) {
 <html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
-  <title>Worksheet ${ws.section_code} — ${ws.title}</title>
+  <title>Worksheet ${ws.section_code} (${cfg.label}) — ${ws.title}</title>
   <link rel="stylesheet" href="file:///${KATEX_CSS_PATH}" />
   <style>
     @page {
@@ -118,8 +164,8 @@ function buildStudentWorksheetHtml(ch, ws) {
       font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
       color: #111111;
       background: #ffffff;
-      font-size: 9.7pt;
-      line-height: 1.42;
+      font-size: 9.5pt;
+      line-height: 1.38;
       -webkit-print-color-adjust: exact;
       print-color-adjust: exact;
     }
@@ -134,18 +180,18 @@ function buildStudentWorksheetHtml(ch, ws) {
     .top-content {
       display: flex;
       flex-direction: column;
-      gap: 2.8mm;
+      gap: 2.5mm;
     }
     /* Header Banner */
     .ws-header {
-      border-bottom: 1.5pt solid #111111;
-      padding-bottom: 2.2mm;
+      border-bottom: 1.5pt solid ${cfg.accentBorder};
+      padding-bottom: 2mm;
     }
     .ws-meta-bar {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 7.5pt;
+      font-size: 7.4pt;
       font-weight: 600;
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -159,38 +205,42 @@ function buildStudentWorksheetHtml(ch, ws) {
       gap: 4mm;
     }
     .ws-main-title {
-      font-size: 14pt;
+      font-size: 13.5pt;
       font-weight: 700;
       letter-spacing: -0.01em;
       color: #111111;
     }
     .ws-code-pill {
       display: inline-block;
-      background: #111111;
+      background: ${cfg.accentBorder};
       color: #ffffff;
-      font-size: 10pt;
+      font-size: 9.8pt;
       font-weight: 700;
-      padding: 0.5mm 2.2mm;
+      padding: 0.4mm 2.1mm;
       border-radius: 1mm;
       margin-right: 2mm;
       vertical-align: baseline;
     }
     .ws-tier-badge {
-      font-size: 8pt;
-      font-weight: 600;
-      border: 0.8pt solid #111111;
-      padding: 0.4mm 2mm;
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: ${cfg.accentBorder};
+      background: ${cfg.accentBg};
+      border: 0.9pt solid ${cfg.accentBorder};
+      padding: 0.4mm 2.2mm;
       border-radius: 0.8mm;
       white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
     }
     .student-info-row {
       display: grid;
       grid-template-columns: 1.8fr 1fr 1fr;
       gap: 4mm;
-      margin-top: 2.2mm;
-      padding-top: 1.8mm;
+      margin-top: 2mm;
+      padding-top: 1.6mm;
       border-top: 0.5pt solid #cccccc;
-      font-size: 8.5pt;
+      font-size: 8.4pt;
       color: #333333;
     }
     .info-field {
@@ -201,32 +251,32 @@ function buildStudentWorksheetHtml(ch, ws) {
     .info-line {
       flex: 1;
       border-bottom: 0.6pt solid #666666;
-      height: 3.5mm;
+      height: 3.3mm;
     }
     /* Section Headings */
     .ws-section {
       display: flex;
       flex-direction: column;
-      gap: 2mm;
+      gap: 1.8mm;
     }
     .ws-section-header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #f3f2ee;
-      border-left: 2.5pt solid #111111;
-      padding: 1mm 2.5mm;
-      margin-top: 0.5mm;
+      background: ${cfg.accentBg};
+      border-left: 2.5pt solid ${cfg.accentBorder};
+      padding: 0.9mm 2.5mm;
+      margin-top: 0.4mm;
     }
     .ws-section-title {
-      font-size: 8.8pt;
+      font-size: 8.6pt;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
       color: #111111;
     }
     .ws-section-note {
-      font-size: 7.5pt;
+      font-size: 7.4pt;
       color: #555555;
       font-style: italic;
     }
@@ -234,23 +284,23 @@ function buildStudentWorksheetHtml(ch, ws) {
     .fluency-list {
       display: flex;
       flex-direction: column;
-      gap: 2.3mm;
+      gap: 2mm;
       padding: 0 1mm;
     }
     .fluency-q {
       border-bottom: 0.4pt dashed #dad8d0;
-      padding-bottom: 2mm;
+      padding-bottom: 1.8mm;
     }
     .fluency-q:last-child {
       border-bottom: none;
-      padding-bottom: 0.5mm;
+      padding-bottom: 0.4mm;
     }
     .q-stem {
       display: flex;
       gap: 1.8mm;
-      margin-bottom: 1.4mm;
+      margin-bottom: 1.2mm;
       font-weight: 600;
-      font-size: 9.4pt;
+      font-size: 9.2pt;
     }
     .q-num {
       font-weight: 700;
@@ -260,59 +310,59 @@ function buildStudentWorksheetHtml(ch, ws) {
     .fluency-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.5mm 3mm;
+      gap: 1.3mm 2.8mm;
       padding-left: 6.5mm;
     }
     .fluency-part {
       display: flex;
       align-items: baseline;
-      gap: 1.3mm;
-      font-size: 9.3pt;
+      gap: 1.2mm;
+      font-size: 9.1pt;
     }
     .part-label {
       font-weight: 600;
       color: #444444;
-      font-size: 8.6pt;
+      font-size: 8.4pt;
     }
     /* Word Problems (Applications & Reasoning) */
     .word-list {
       display: flex;
       flex-direction: column;
-      gap: 2.5mm;
+      gap: 2.1mm;
       padding: 0 1mm;
     }
     .word-q {
       display: grid;
       grid-template-columns: 7.5mm 1fr;
       align-items: baseline;
-      padding-bottom: 2mm;
+      padding-bottom: 1.8mm;
       border-bottom: 0.4pt dashed #dad8d0;
     }
     .word-q:last-child {
       border-bottom: none;
-      padding-bottom: 0.5mm;
+      padding-bottom: 0.4mm;
     }
     .q-num-col {
       font-weight: 700;
-      font-size: 9.4pt;
+      font-size: 9.2pt;
       color: #111111;
     }
     .q-text-col {
-      font-size: 9.4pt;
+      font-size: 9.2pt;
       text-align: justify;
     }
     /* Footer */
     .ws-footer {
-      border-top: 0.8pt solid #111111;
-      padding-top: 1.5mm;
+      border-top: 0.8pt solid ${cfg.accentBorder};
+      padding-top: 1.4mm;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      font-size: 7.5pt;
+      font-size: 7.4pt;
       color: #555555;
     }
     .katex {
-      font-size: 1.02em !important;
+      font-size: 1.01em !important;
     }
   </style>
 </head>
@@ -328,7 +378,7 @@ function buildStudentWorksheetHtml(ch, ws) {
           <h1 class="ws-main-title">
             <span class="ws-code-pill">${ws.section_code}</span>${ws.title}
           </h1>
-          <span class="ws-tier-badge">Standard Worksheet</span>
+          <span class="ws-tier-badge">${cfg.badge}</span>
         </div>
         <div class="student-info-row">
           <div class="info-field"><span>Name:</span><span class="info-line"></span></div>
@@ -340,7 +390,7 @@ function buildStudentWorksheetHtml(ch, ws) {
       <section class="ws-section">
         <div class="ws-section-header">
           <span class="ws-section-title">Part A · Fluency &amp; Skill Practice</span>
-          <span class="ws-section-note">Show complete step-by-step working in your workbook</span>
+          <span class="ws-section-note">${cfg.partANote}</span>
         </div>
         <div class="fluency-list">
           ${fluencyHtml}
@@ -350,7 +400,7 @@ function buildStudentWorksheetHtml(ch, ws) {
       <section class="ws-section">
         <div class="ws-section-header">
           <span class="ws-section-title">Part B · Problem-Solving &amp; Applications</span>
-          <span class="ws-section-note">Write clear mathematical statements with units</span>
+          <span class="ws-section-note">${cfg.partBNote}</span>
         </div>
         <div class="word-list">
           ${appHtml}
@@ -360,7 +410,7 @@ function buildStudentWorksheetHtml(ch, ws) {
       <section class="ws-section">
         <div class="ws-section-header">
           <span class="ws-section-title">Part C · Reasoning &amp; Challenge</span>
-          <span class="ws-section-note">Justify your conclusions using algebraic or geometric reasoning</span>
+          <span class="ws-section-note">${cfg.partCNote}</span>
         </div>
         <div class="word-list">
           ${reasoningHtml}
@@ -370,7 +420,7 @@ function buildStudentWorksheetHtml(ch, ws) {
 
     <footer class="ws-footer">
       <span>Open-Source Year 8 Mathematics · Victorian Curriculum F–10 v2.0</span>
-      <span>Section ${ws.section_code} (${ws.vcaa_code}) · Standard Printable Worksheet</span>
+      <span>Section ${ws.section_code} (${ws.vcaa_code}) · ${cfg.footerLabel}</span>
       <span>Page 1 of 1</span>
     </footer>
   </div>
@@ -378,7 +428,9 @@ function buildStudentWorksheetHtml(ch, ws) {
 </html>`;
 }
 
-function buildMasterAnswerKeyHtml(chaptersData) {
+function buildMasterAnswerKeyHtml(chaptersData, tierKey = "standard") {
+  const cfg = TIER_CONFIG[tierKey] || TIER_CONFIG.standard;
+
   const sectionsHtml = chaptersData
     .map((ch) => {
       const wsBlocks = ch.worksheets
@@ -419,7 +471,7 @@ function buildMasterAnswerKeyHtml(chaptersData) {
             <div class="ak-ws-card">
               <div class="ak-ws-header">
                 <span class="ak-ws-title"><strong>${ws.section_code}</strong> · ${ws.title}</span>
-                <span class="ak-ws-meta">${ws.vcaa_code} · Standard Worksheet Answer Key</span>
+                <span class="ak-ws-meta">${ws.vcaa_code} · ${cfg.label} Worksheet Answer Key</span>
               </div>
               <div class="ak-ws-body">
                 <div class="ak-subhead">Part A · Fluency &amp; Skills</div>
@@ -435,7 +487,7 @@ function buildMasterAnswerKeyHtml(chaptersData) {
 
       return `
         <section class="ak-chapter-block">
-          <h2 class="ak-chapter-heading">Chapter ${ch.chapter_number}: ${ch.chapter_title}</h2>
+          <h2 class="ak-chapter-heading">Chapter ${ch.chapter_number}: ${ch.chapter_title} (${cfg.label} Tier)</h2>
           ${wsBlocks}
         </section>`;
     })
@@ -445,7 +497,7 @@ function buildMasterAnswerKeyHtml(chaptersData) {
 <html lang="en-AU">
 <head>
   <meta charset="UTF-8" />
-  <title>Appendix A: Teacher Resources — Standard Worksheets Answer Key</title>
+  <title>Appendix A: Teacher Resources — ${cfg.label} Worksheets Answer Key</title>
   <link rel="stylesheet" href="file:///${KATEX_CSS_PATH}" />
   <style>
     @page {
@@ -467,7 +519,7 @@ function buildMasterAnswerKeyHtml(chaptersData) {
       print-color-adjust: exact;
     }
     .doc-header {
-      border-bottom: 2pt solid #111111;
+      border-bottom: 2pt solid ${cfg.accentBorder};
       padding-bottom: 3mm;
       margin-bottom: 4mm;
     }
@@ -493,7 +545,7 @@ function buildMasterAnswerKeyHtml(chaptersData) {
     .ak-chapter-heading {
       font-size: 11.5pt;
       font-weight: 700;
-      background: #111111;
+      background: ${cfg.accentBorder};
       color: #ffffff;
       padding: 1.5mm 3mm;
       margin-bottom: 2.5mm;
@@ -510,7 +562,7 @@ function buildMasterAnswerKeyHtml(chaptersData) {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #f3f2ee;
+      background: ${cfg.accentBg};
       padding: 1.5mm 3mm;
       border-bottom: 0.6pt solid #cccccc;
       font-size: 9.5pt;
@@ -572,57 +624,78 @@ function buildMasterAnswerKeyHtml(chaptersData) {
 <body>
   <header class="doc-header">
     <div class="doc-kicker">Appendix A · Teacher Resources · Victorian Curriculum F–10 v2.0</div>
-    <h1 class="doc-title">Year 8 Mathematics — Standard Worksheets Master Answer Key</h1>
-    <p class="doc-subtitle">Complete compiled answers for all 23 section printable worksheets (Sections 1A–10A · 230 questions / 506 parts, SymPy verified).</p>
+    <h1 class="doc-title">${cfg.akTitle}</h1>
+    <p class="doc-subtitle">${cfg.akSubtitle}</p>
   </header>
   ${sectionsHtml}
 </body>
 </html>`;
 }
 
-function buildAppendixMarkdown(chaptersData) {
+function buildAppendixMarkdown(tiersByChapter) {
   const lines = [
-    "# Appendix A: Teacher Resources — Standard Worksheets Answer Key",
+    "# Appendix A: Teacher Resources — Differentiated Worksheets Master Answer Key",
     "",
     "**Curriculum Alignment:** Victorian Curriculum F–10 Version 2.0 (Year 8 Mathematics)",
-    "**Resource Scope:** Complete Answer Key for all 23 Section Standard Printable Worksheets (`1A` to `10A`).",
+    "**Resource Scope:** Complete Answer Keys for Foundation (Support), Standard (Core), and Extension (Challenge) Printable A4 Worksheets.",
     "",
     "---",
     "",
   ];
 
-  for (const ch of chaptersData) {
-    lines.push(`## Chapter ${ch.chapter_number}: ${ch.chapter_title}`);
+  for (const tierKey of ["foundation", "standard", "extension"]) {
+    const chaptersData = tiersByChapter[tierKey];
+    if (!chaptersData || chaptersData.length === 0) continue;
+    const cfg = TIER_CONFIG[tierKey];
+    lines.push(`# ${cfg.label} Tier Worksheets Answer Key`);
     lines.push("");
-    for (const ws of ch.worksheets) {
-      lines.push(
-        `### Worksheet ${ws.section_code}: ${ws.title} (\`${ws.vcaa_code}\`)`
-      );
-      lines.push(
-        `- **Student Printable PDF:** \`/worksheets/worksheet_${ws.section_id}_standard.pdf\``
-      );
+
+    for (const ch of chaptersData) {
+      lines.push(`## Chapter ${ch.chapter_number}: ${ch.chapter_title} (${cfg.label})`);
       lines.push("");
-      lines.push("#### Part A — Fluency & Skill Practice");
-      for (const fq of ws.fluency_questions) {
-        const partsStr = fq.parts
-          .map((pt) => `**(${pt.label})** ${pt.answer}`)
-          .join(" &nbsp;|&nbsp; ");
-        lines.push(`- **Q${fq.number}.** ${partsStr}`);
+      for (const ws of ch.worksheets) {
+        lines.push(
+          `### Worksheet ${ws.section_code} (${cfg.label}): ${ws.title} (\`${ws.vcaa_code}\`)`
+        );
+        lines.push(
+          `- **Student Printable PDF:** \`/worksheets/worksheet_${ws.section_id}_${tierKey}.pdf\``
+        );
+        lines.push("");
+        lines.push("#### Part A — Fluency & Skill Practice");
+        for (const fq of ws.fluency_questions) {
+          const partsStr = fq.parts
+            .map((pt) => `**(${pt.label})** ${pt.answer}`)
+            .join(" &nbsp;|&nbsp; ");
+          lines.push(`- **Q${fq.number}.** ${partsStr}`);
+        }
+        lines.push("");
+        lines.push("#### Part B — Problem-Solving & Applications");
+        for (const aq of ws.application_questions) {
+          lines.push(`- **Q${aq.number}.** ${aq.answer}`);
+        }
+        lines.push("");
+        lines.push("#### Part C — Reasoning & Challenge");
+        for (const rq of ws.reasoning_questions) {
+          lines.push(`- **Q${rq.number}.** ${rq.answer}`);
+        }
+        lines.push("");
       }
-      lines.push("");
-      lines.push("#### Part B — Problem-Solving & Applications");
-      for (const aq of ws.application_questions) {
-        lines.push(`- **Q${aq.number}.** ${aq.answer}`);
-      }
-      lines.push("");
-      lines.push("#### Part C — Reasoning & Challenge");
-      for (const rq of ws.reasoning_questions) {
-        lines.push(`- **Q${rq.number}.** ${rq.answer}`);
-      }
-      lines.push("");
     }
   }
   return lines.join("\n");
+}
+
+function loadTierChapters(subDir) {
+  const chaptersData = [];
+  for (let c = 1; c <= 10; c++) {
+    const p = subDir
+      ? path.join(ROOT, "worksheets", subDir, `chapter_${c}.json`)
+      : path.join(ROOT, "worksheets", `chapter_${c}.json`);
+    if (fs.existsSync(p)) {
+      chaptersData.push(JSON.parse(fs.readFileSync(p, "utf-8")));
+    }
+  }
+  return chaptersData;
 }
 
 function main() {
@@ -631,34 +704,39 @@ function main() {
   fs.mkdirSync(outHtmlDir, { recursive: true });
   fs.mkdirSync(publicWsDir, { recursive: true });
 
-  const chaptersData = [];
-  for (let c = 1; c <= 10; c++) {
-    const p = path.join(ROOT, "worksheets", `chapter_${c}.json`);
-    const raw = JSON.parse(fs.readFileSync(p, "utf-8"));
-    chaptersData.push(raw);
-  }
+  const tiersByChapter = {
+    foundation: loadTierChapters("foundation"),
+    standard: loadTierChapters(""),
+    extension: loadTierChapters("extension"),
+  };
 
-  let count = 0;
-  for (const ch of chaptersData) {
-    for (const ws of ch.worksheets) {
-      const html = buildStudentWorksheetHtml(ch, ws);
-      const htmlPath = path.join(
-        outHtmlDir,
-        `worksheet_${ws.section_id}_standard.html`
-      );
-      fs.writeFileSync(htmlPath, html, "utf-8");
-      count++;
+  let totalWorksheets = 0;
+  let totalAnswerKeys = 0;
+
+  for (const [tierKey, chaptersData] of Object.entries(tiersByChapter)) {
+    if (!chaptersData.length) continue;
+    for (const ch of chaptersData) {
+      for (const ws of ch.worksheets) {
+        const html = buildStudentWorksheetHtml(ch, ws, tierKey);
+        const htmlPath = path.join(
+          outHtmlDir,
+          `worksheet_${ws.section_id}_${tierKey}.html`
+        );
+        fs.writeFileSync(htmlPath, html, "utf-8");
+        totalWorksheets++;
+      }
     }
+
+    const akFilename =
+      tierKey === "standard"
+        ? "year8_maths_worksheets_answer_key.html"
+        : `year8_maths_worksheets_${tierKey}_answer_key.html`;
+    const akHtml = buildMasterAnswerKeyHtml(chaptersData, tierKey);
+    fs.writeFileSync(path.join(outHtmlDir, akFilename), akHtml, "utf-8");
+    totalAnswerKeys++;
   }
 
-  const akHtml = buildMasterAnswerKeyHtml(chaptersData);
-  fs.writeFileSync(
-    path.join(outHtmlDir, "year8_maths_worksheets_answer_key.html"),
-    akHtml,
-    "utf-8"
-  );
-
-  const akMd = buildAppendixMarkdown(chaptersData);
+  const akMd = buildAppendixMarkdown(tiersByChapter);
   fs.writeFileSync(
     path.join(ROOT, "output", "appendix_teacher_resources_answer_key.md"),
     akMd,
@@ -666,7 +744,7 @@ function main() {
   );
 
   console.log(
-    `Generated ${count} student worksheet HTML files + 1 master Answer Key HTML + 1 Appendix Markdown.`
+    `Generated ${totalWorksheets} student worksheet HTML files + ${totalAnswerKeys} master Answer Key HTML files + 1 Appendix Markdown.`
   );
 }
 

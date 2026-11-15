@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "section_id": "10_2",
+    "section_code": "10B",
+    "chapter_number": 10,
+    "chapter_title": "Statistics and Data Analysis",
+    "title": "Sampling Methods, Data Displays, and Comparing Distributions",
+    "vcaa_code": "VC2M8ST01",
+    "vcaa_description": "Investigate techniques for data collection including census, sampling, and observation, and compare variations in distributions across multiple random samples",
+    "strand": "Statistics",
+    "target_mastery": "Compare random, systematic, stratified, and biased sampling methods, scale sample proportions to estimate population totals (including capture-recapture and stratified quota calculations), describe the shape of data distributions (symmetric, positively skewed, negatively skewed, bimodal), and compare two distributions using measures of centre (mean, median) and spread (range, interquartile range).",
+    "prerequisites": [
+      "Calculating mean, median, mode, and range, and identifying outliers (Section 10A)",
+      "Proportional reasoning, fractions, and percentages (Section 2B, Section 2C)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Simple Random, Systematic, and Stratified Sampling",
+        "definition": "In simple random sampling, every member has an equal chance of selection (e.g. random number generator). In systematic sampling, every $k$th member is chosen from a list. In stratified sampling, the population is divided into subgroups (strata, such as Year levels) and each group is sampled in exact proportion to its size."
+      },
+      {
+        "term": "Sampling Variability",
+        "definition": "The natural variation in summary statistics (such as sample means, medians, or proportions) observed when different random samples are drawn from the exact same population."
+      },
+      {
+        "term": "Distribution Shape (Symmetric, Skewed, Bimodal)",
+        "definition": "A distribution is **symmetric** if its left and right halves mirror each other; **positively skewed** (right-skewed) if its long tail stretches towards high values; **negatively skewed** (left-skewed) if its long tail stretches towards low values; and **bimodal** if it has two distinct peaks."
+      },
+      {
+        "term": "Quartiles ($Q_1, Q_3$) and Interquartile Range ($\\text{IQR}$)",
+        "definition": "The lower quartile $Q_1$ is the median of the lower half of an ordered data set ($25$th percentile) and the upper quartile $Q_3$ is the median of the upper half ($75$th percentile). The interquartile range $\\text{IQR} = Q_3 - Q_1$ measures the spread of the middle $50\\%$ of scores."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_2_1",
+      "title": "Random, Systematic, and Stratified Sampling vs Biased Sampling",
+      "explanation": "When a census of an entire population $N$ is too expensive or time-consuming, we select a **sample** of size $n$. To ensure every subgroup of the population is fairly represented, **stratified random sampling** divides the population into strata (such as year levels or age brackets) and selects a random sample from each stratum proportional to its share of the population. By contrast, **convenience sampling** (asking people nearby) and **self-selected/voluntary sampling** (online phone-in polls) introduce systematic bias.",
+      "formula_latex": "\\text{Stratum sample size } n_k = \\frac{\\text{Stratum population } N_k}{\\text{Total population } N} \\times n_{\\text{total}}",
+      "callout_title": "Match Each Subgroup's Percentage in a Stratified Sample",
+      "callout_rule": "If Year 8 students make up $25\\%$ of a secondary school's population, then Year 8 students must also make up $25\\%$ of a stratified school survey."
+    },
+    {
+      "id": "theory_10_2_2",
+      "title": "Estimating Population Totals and Capture-Recapture Sampling",
+      "explanation": "If a representative random sample of size $n$ has sample proportion $\\hat{p} = \\frac{x}{n}$ with a certain trait, we estimate the number of individuals with that trait in the entire population of size $N$ as $\\hat{N}_{\\text{trait}} = \\hat{p} \\times N$. Ecologists also estimate an unknown wildlife population $N$ using **capture-recapture**: catch, tag, and release $M$ animals; later catch a second random sample of $n$ animals and count how many are tagged ($m$). Equating the sample tagged proportion $\\frac{m}{n}$ to the population tagged proportion $\\frac{M}{N}$ gives $N \\approx \\frac{M \\times n}{m}$.",
+      "formula_latex": "\\frac{m}{n} \\approx \\frac{M}{N} \\implies \\text{Estimated Population } N \\approx \\frac{M \\times n}{m}",
+      "callout_title": "Different Random Samples Give Slightly Different Estimates",
+      "callout_rule": "Because of **sampling variability**, two random samples of size $n = 40$ from the same school will rarely give the exact same sample mean or proportion — averaging across multiple random samples or increasing $n$ gives a more reliable estimate."
+    },
+    {
+      "id": "theory_10_2_3",
+      "title": "Describing the Shape of a Data Distribution",
+      "explanation": "On a histogram, dot plot, or stem-and-leaf plot, the **shape** of a distribution is classified by its symmetry and peaks:\n- **Symmetric**: the data is balanced evenly around the centre, so $\\text{Mean} \\approx \\text{Median}$.\n- **Positively skewed (skewed to the right)**: most scores cluster on the left with a long tail stretching towards high positive values; the high tail pulls the mean above the median ($\\text{Mean} > \\text{Median}$).\n- **Negatively skewed (skewed to the left)**: most scores cluster on the right with a long tail stretching towards low values; the low tail pulls the mean below the median ($\\text{Mean} < \\text{Median}$).\n- **Bimodal**: the display has two distinct peaks (modes), often indicating two different groups mixed together.",
+      "formula_latex": "\\text{Positively skewed: } \\text{Mean} > \\text{Median}; \\qquad \\text{Symmetric: } \\text{Mean} \\approx \\text{Median}; \\qquad \\text{Negatively skewed: } \\text{Mean} < \\text{Median}",
+      "callout_title": "The Direction of Skew Is the Direction of the Long Tail!",
+      "callout_rule": "Don't look at where the tall peak is — look at where the **long stretched-out tail** points. A tail stretching to the right (high numbers) is **positively skewed**; a tail stretching to the left (low numbers) is **negatively skewed**."
+    },
+    {
+      "id": "theory_10_2_4",
+      "title": "Comparing Two Distributions Using Centre and Spread (Range and IQR)",
+      "explanation": "When comparing two data distributions (such as back-to-back stem-and-leaf plots or parallel dot plots), always write a two-part conclusion in context:\n1. **Compare Centre** (using the **median** or **mean**) to state which group is higher/faster/larger on average.\n2. **Compare Spread** (using the **range** $= x_{\\max} - x_{\\min}$ or the **interquartile range** $\\text{IQR} = Q_3 - Q_1$) to state which group is more consistent (smaller spread) or more variable (larger spread). When data is skewed or contains outliers, always pair the **median** with the **IQR**.",
+      "formula_latex": "\\text{IQR} = Q_3 - Q_1 \\quad (\\text{spread of the middle } 50\\% \\text{ of ordered scores})",
+      "callout_title": "Smaller Spread Means Greater Consistency",
+      "callout_rule": "In sport, manufacturing, or weather, a **smaller** range or IQR means the performance is **more consistent** (less variable)."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_2_1",
+      "title": "Designing a Stratified Sample and Scaling Sample Proportions",
+      "difficulty": "Fluency",
+      "problem": "A secondary college in Ballarat has $800$ students in total: $240$ in Year 7, $200$ in Year 8, $180$ in Year 9, and $180$ in Year 10. The Student Representative Council (SRC) selects a **stratified random sample** of $80$ students to survey about canteen menu changes.\n(a) How many students should be randomly selected from each year level?\n(b) In the sample of $80$ students, $52$ support adding a sushi bar. Estimate how many students across the entire school of $800$ support adding a sushi bar.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Use the stratified sampling formula $n_k = \\frac{N_k}{N} \\times n_{\\text{total}}$. Notice that the sample of $80$ is exactly $\\frac{80}{800} = \\frac{1}{10}$ ($10\\%$) of the total school population.",
+          "working": "$$\\text{Year 7: } \\frac{240}{800} \\times 80 = 24, \\qquad \\text{Year 8: } \\frac{200}{800} \\times 80 = 20$$\n$$\\text{Year 9: } \\frac{180}{800} \\times 80 = 18, \\qquad \\text{Year 10: } \\frac{180}{800} \\times 80 = 18 \\quad (\\text{Check: } 24+20+18+18=80)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply the sample proportion $\\hat{p} = \\frac{52}{80}$ by the total school population $N = 800$.",
+          "working": "$$\\text{Estimated school total} = \\frac{52}{80} \\times 800 = 52 \\times 10 = 520\\text{ students}$$"
+        }
+      ],
+      "final_answer": "(a) Year 7: $24$, Year 8: $20$, Year 9: $18$, Year 10: $18$; (b) $520$ students",
+      "now_you_try": {
+        "problem": "A sports club has $300$ junior members and $200$ senior members ($500$ members in total). (a) How many juniors and seniors should be chosen in a stratified sample of $50$ members? (b) If $31$ of the $50$ sampled members vote for new club hoodies, estimate how many of the $500$ club members support new hoodies.",
+        "hint": "The sample of $50$ is $\\frac{1}{10}$ of the $500$ members.",
+        "working_summary": "(a) Juniors $= \\frac{300}{500} \\times 50 = 30$, Seniors $= \\frac{200}{500} \\times 50 = 20$; (b) $\\frac{31}{50} \\times 500 = 310$ members.",
+        "answer": "(a) $30$ juniors and $20$ seniors, (b) $310$ members"
+      }
+    },
+    {
+      "id": "WE10_2_2",
+      "title": "Comparing Variation Across Multiple Random Samples and Capture-Recapture",
+      "difficulty": "Understanding",
+      "problem": "Park rangers in Phillip Island want to estimate the population $N$ of eastern barred bandicoots in a reserve. They capture, microchip-tag, and release $M = 45$ bandicoots. One month later, three independent teams each capture a random sample of $n = 40$ bandicoots and count how many carry a tag ($m$):\n- Sample A: $m = 5$ tagged out of $40$\n- Sample B: $m = 8$ tagged out of $40$\n- Sample C: $m = 5$ tagged out of $40$\n(a) Calculate the individual population estimate $N \\approx \\frac{M \\times n}{m}$ from Sample A and from Sample B to illustrate sampling variability. (b) Combine all three samples ($120$ captures in total) to find the pooled estimate of the bandicoot population $N$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Apply $N \\approx \\frac{45 \\times 40}{m} = \\frac{1800}{m}$ for Sample A ($m = 5$) and Sample B ($m = 8$).",
+          "working": "$$\\text{(a) Sample A estimate: } N_A = \\frac{45 \\times 40}{5} = \\frac{1800}{5} = 360\\text{ bandicoots}$$\n$$\\text{Sample B estimate: } N_B = \\frac{45 \\times 40}{8} = \\frac{1800}{8} = 225\\text{ bandicoots}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Across all three samples combined, $n_{\\text{total}} = 40 + 40 + 40 = 120$ bandicoots were captured, of which $m_{\\text{total}} = 5 + 8 + 5 = 18$ were tagged. Substitute into $N \\approx \\frac{M \\times n_{\\text{total}}}{m_{\\text{total}}}$.",
+          "working": "$$\\text{(b) Pooled estimate: } N = \\frac{45 \\times 120}{18} = \\frac{5400}{18} = 300\\text{ bandicoots}$$"
+        }
+      ],
+      "final_answer": "(a) Sample A estimates $360$ bandicoots and Sample B estimates $225$ bandicoots; (b) Pooled estimate across all $120$ captures is $300$ bandicoots",
+      "now_you_try": {
+        "problem": "Biologists tag and release $M = 60$ Murray cod in a billabong. Later they catch a random sample of $n = 50$ fish and find $m = 12$ have tags. Estimate the total population $N$ of Murray cod in the billabong.",
+        "hint": "Use $N \\approx \\frac{M \\times n}{m} = \\frac{60 \\times 50}{12}$.",
+        "working_summary": "$N \\approx \\frac{60 \\times 50}{12} = \\frac{3000}{12} = 250$ Murray cod.",
+        "answer": "$250$ Murray cod"
+      }
+    },
+    {
+      "id": "WE10_2_3",
+      "title": "Comparing Two Distributions Using Median, Range, and Interquartile Range (IQR)",
+      "difficulty": "Problem-Solving",
+      "problem": "The test scores (out of $50$) of two Year 8 classes (each with $9$ students) are ordered below:\n- **Class 8A**: $28, 30, 31, 34, 35, 36, 39, 40, 42$\n- **Class 8B**: $19, 22, 31, 35, 38, 41, 44, 46, 48$\n(a) For each class, find the median, the lower quartile $Q_1$, the upper quartile $Q_3$, the range, and the interquartile range ($\\text{IQR} = Q_3 - Q_1$).\n(b) Compare the performance of Class 8A and Class 8B in terms of both centre and spread.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "With $n = 9$ ordered scores, the median is the $5$th score. The lower half consists of the first $4$ scores (so $Q_1$ is the average of the $2$nd and $3$rd scores), and the upper half consists of the last $4$ scores (so $Q_3$ is the average of the $7$th and $8$th scores).",
+          "working": "$$\\textbf{Class 8A: } \\text{Median} = 35, \\quad Q_1 = \\frac{30+31}{2} = 30.5, \\quad Q_3 = \\frac{39+40}{2} = 39.5$$\n$$\\text{Range}_{8A} = 42 - 28 = 14, \\qquad \\text{IQR}_{8A} = 39.5 - 30.5 = 9$$\n$$\\textbf{Class 8B: } \\text{Median} = 38, \\quad Q_1 = \\frac{22+31}{2} = 26.5, \\quad Q_3 = \\frac{44+46}{2} = 45$$\n$$\\text{Range}_{8B} = 48 - 19 = 29, \\qquad \\text{IQR}_{8B} = 45 - 26.5 = 18.5$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Write a structured statistical comparison referencing the medians for centre and the ranges/IQRs for spread.",
+          "working": "$$\\text{Centre: Class 8B has a higher median score } (38 > 35).$$\n$$\\text{Spread: Class 8A has a much smaller IQR } (9 < 18.5) \\text{ and range } (14 < 29), \\text{ so 8A is much more consistent.}$$"
+        }
+      ],
+      "final_answer": "(a) Class 8A: Median $= 35$, $Q_1 = 30.5$, $Q_3 = 39.5$, Range $= 14$, $\\text{IQR} = 9$; Class 8B: Median $= 38$, $Q_1 = 26.5$, $Q_3 = 45$, Range $= 29$, $\\text{IQR} = 18.5$. (b) Class 8B achieved a higher average score (median $38$ vs $35$), but Class 8A's scores were far more consistent (smaller spread, with $\\text{IQR} = 9$ vs $18.5$ and range $14$ vs $29$).",
+      "now_you_try": {
+        "problem": "Find the median, $Q_1$, $Q_3$, range, and $\\text{IQR}$ of the $7$ ordered scores: $12, 15, 18, 20, 24, 29, 32$.",
+        "hint": "With $n = 7$, the median is the $4$th score ($20$), $Q_1$ is the middle ($2$nd) of the lower $3$ scores, and $Q_3$ is the middle ($6$th) of the upper $3$ scores.",
+        "working_summary": "Median $= 20$, $Q_1 = 15$, $Q_3 = 29$, Range $= 32 - 12 = 20$, $\\text{IQR} = 29 - 15 = 14$.",
+        "answer": "Median $= 20$, $Q_1 = 15$, $Q_3 = 29$, Range $= 20$, $\\text{IQR} = 14$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_10_2_1",
+      "title": "Naming Skewness After the Tall Peak Instead of the Long Tail",
+      "misconception": "Calling a distribution with a tall peak on the left and a long tail stretching to the right 'negatively/left skewed'.",
+      "correct_concept": "Skewness is named after the direction of the **long tail** (where the extreme scores pull the mean), NOT the location of the peak. A tail stretching to the right (towards higher positive numbers) is **positively skewed** (right-skewed).",
+      "incorrect_working": "$$\\text{Peak on left, long tail to the right (high values)} \\implies \\text{Left/negatively skewed} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{Long tail stretches to the right (high positive values)} \\implies \\text{Positively skewed (right-skewed), with Mean} > \\text{Median}$$",
+      "counter_example": "Australian household incomes have most earners clustered on the left and a long tail of multi-millionaires to the right — this is the classic example of a **positively skewed** distribution."
+    },
+    {
+      "id": "misc_10_2_2",
+      "title": "Interpreting a Larger Range or IQR as 'Better' or 'More Consistent'",
+      "misconception": "Claiming that a player or machine with a larger IQR or range is 'more consistent' because the number is bigger.",
+      "correct_concept": "Range and IQR measure **variability** (how spread out the scores are). A **smaller** range or IQR means the scores are tightly clustered together, which indicates **greater consistency** (reliability).",
+      "incorrect_working": "$$\\text{Batter A has IQR } = 35 \\text{ and Batter B has IQR } = 8 \\implies \\text{Batter A is more consistent} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{Batter B has the smaller spread } (\\text{IQR} = 8 < 35) \\implies \\text{Batter B is much more consistent}$$",
+      "counter_example": "A batter who scores $40, 42, 41, 39, 43$ has a tiny range of $4$ (extremely consistent), whereas a batter scoring $0, 95, 2, 88, 5$ has a huge range of $95$ (highly inconsistent)."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_2_Q1",
+        "question": "A town council has $12\\,000$ adult residents partitioned into three age strata: $18$–$34$ years ($3600$ residents), $35$–$59$ years ($5400$ residents), and $60+$ years ($3000$ residents). How many residents from each age group must be chosen to form a proportional **stratified sample** of $200$ residents?",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$18$–$34$: $60$ residents; $35$–$59$: $90$ residents; $60+$: $50$ residents",
+        "step_by_step_solution": [
+          "Multiply each stratum's fraction of the $12\\,000$ population by $200$: $n_{18\\text{–}34} = \\frac{3600}{12000} \\times 200 = 0.30 \\times 200 = 60$.",
+          "$n_{35\\text{–}59} = \\frac{5400}{12000} \\times 200 = 0.45 \\times 200 = 90$, and $n_{60+} = \\frac{3000}{12000} \\times 200 = 0.25 \\times 200 = 50$ (check: $60 + 90 + 50 = 200$)."
+        ]
+      },
+      {
+        "id": "10_2_Q2",
+        "question": "Find the median, lower quartile ($Q_1$), upper quartile ($Q_3$), range, and interquartile range ($\\text{IQR}$) for the following $8$ ordered scores: $14, 18, 20, 23, 27, 30, 34, 42$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "Median $= 25$, $Q_1 = 19$, $Q_3 = 32$, Range $= 28$, $\\text{IQR} = 13$",
+        "step_by_step_solution": [
+          "Split the $8$ ordered scores into the lower $4$ ($14, 18, 20, 23$) and upper $4$ ($27, 30, 34, 42$). The median is $\\frac{23 + 27}{2} = 25$.",
+          "$Q_1 = \\frac{18 + 20}{2} = 19$ and $Q_3 = \\frac{30 + 34}{2} = 32$. Thus $\\text{Range} = 42 - 14 = 28$ and $\\text{IQR} = 32 - 19 = 13$."
+        ]
+      },
+      {
+        "id": "10_2_Q3",
+        "question": "Classify the shape of each distribution below as **symmetric**, **positively skewed**, **negatively skewed**, or **bimodal**, and state whether the mean is greater than, less than, or approximately equal to the median in (a) and (b):\n(a) Marks on an easy Year 8 spelling test where most students score $18$–$20$ out of $20$, with a few low scores trailing down to $4$.\n(b) Waiting times at a hospital emergency department where most patients wait $20$–$45$ minutes, with a long tail of non-urgent cases waiting up to $6$ hours.\n(c) Heights of a combined group of Year 2 children and Year 12 adults.",
+        "difficulty": "Easy",
+        "context": "Distribution Shapes",
+        "final_answer": "(a) Negatively skewed ($\\text{Mean} < \\text{Median}$); (b) Positively skewed ($\\text{Mean} > \\text{Median}$); (c) Bimodal",
+        "step_by_step_solution": [
+          "In (a), the long tail trails towards low scores on the left, so it is **negatively skewed** and the low outliers pull the mean below the median ($\\text{Mean} < \\text{Median}$).",
+          "In (b), the long tail stretches towards high waiting times on the right, so it is **positively skewed** ($\\text{Mean} > \\text{Median}$). In (c), two distinct age groups create two separate peaks (**bimodal**)."
+        ]
+      },
+      {
+        "id": "10_2_Q4",
+        "question": "To investigate sampling variability, four students each take a separate random sample of $n = 25$ wombats in a national park and record the sample mean mass ($\\text{kg}$): Sample 1 ($25.4\\text{ kg}$), Sample 2 ($26.8\\text{ kg}$), Sample 3 ($24.6\\text{ kg}$), Sample 4 ($27.2\\text{ kg}$). Find (a) the range of these sample means and (b) the overall pooled mean across all $100$ sampled wombats.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "(a) Range of sample means $= 2.6\\text{ kg}$, (b) Pooled mean $= 26.0\\text{ kg}$",
+        "step_by_step_solution": [
+          "The highest sample mean is $27.2\\text{ kg}$ and the lowest is $24.6\\text{ kg}$, giving a range of $27.2 - 24.6 = 2.6\\text{ kg}$.",
+          "Because all four samples have equal size ($n = 25$), the pooled mean across all $100$ wombats is the average of the four sample means: $\\frac{25.4 + 26.8 + 24.6 + 27.2}{4} = \\frac{104.0}{4} = 26.0\\text{ kg}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_2_Q5",
+        "question": "Ecologists studying mountain pygmy-possums at Mount Hotham capture, tag, and release $M = 36$ possums. Two weeks later, they capture a random sample of $n = 45$ possums and find that $m = 9$ of them are tagged. Use the capture-recapture method to estimate the total population $N$ of mountain pygmy-possums at the site.",
+        "difficulty": "Easy",
+        "context": "Victorian Wildlife Conservation",
+        "final_answer": "$180$ mountain pygmy-possums",
+        "step_by_step_solution": [
+          "Set up the proportion $\\frac{m}{n} \\approx \\frac{M}{N}$, which gives $\\frac{9}{45} = \\frac{36}{N}$.",
+          "Solve for $N$: $N = \\frac{36 \\times 45}{9} = 4 \\times 45 = 180$ possums."
+        ]
+      },
+      {
+        "id": "10_2_Q6",
+        "question": "A back-to-back stem-and-leaf plot compares the daily maximum temperatures ($^\\circ\\text{C}$) over $11$ days in April for two cities:\n- **Melbourne** ($11$ days, ordered): $15, 16, 17, 18, 19, 20, 21, 23, 25, 28, 31$\n- **Darwin** ($11$ days, ordered): $30, 31, 31, 32, 32, 32, 33, 33, 33, 34, 35$\nCalculate the median and interquartile range ($\\text{IQR}$) for both cities, and contrast their April temperature patterns.",
+        "difficulty": "Medium",
+        "context": "Australian Climate Comparison",
+        "final_answer": "Melbourne: Median $= 20^\\circ\\text{C}$, $Q_1 = 17^\\circ\\text{C}$, $Q_3 = 25^\\circ\\text{C}$, $\\text{IQR} = 8^\\circ\\text{C}$; Darwin: Median $= 32^\\circ\\text{C}$, $Q_1 = 31^\\circ\\text{C}$, $Q_3 = 33^\\circ\\text{C}$, $\\text{IQR} = 2^\\circ\\text{C}$. Darwin is much warmer on average ($32^\\circ\\text{C}$ vs $20^\\circ\\text{C}$) and has far more consistent daily temperatures ($\\text{IQR} = 2^\\circ\\text{C}$ vs $8^\\circ\\text{C}$).",
+        "step_by_step_solution": [
+          "With $n = 11$, the median is the $6$th score, $Q_1$ is the $3$rd score, and $Q_3$ is the $9$th score. For Melbourne: Median $= 20^\\circ\\text{C}$, $Q_1 = 17^\\circ\\text{C}$, $Q_3 = 25^\\circ\\text{C} \\implies \\text{IQR} = 25 - 17 = 8^\\circ\\text{C}$.",
+          "For Darwin: Median $= 32^\\circ\\text{C}$, $Q_1 = 31^\\circ\\text{C}$, $Q_3 = 33^\\circ\\text{C} \\implies \\text{IQR} = 33 - 31 = 2^\\circ\\text{C}$. Darwin is $12^\\circ\\text{C}$ warmer in median temperature and four times more consistent in spread."
+        ]
+      },
+      {
+        "id": "10_2_Q7",
+        "question": "An orchardist in Shepparton harvests $2400$ crates of Pink Lady apples. To estimate the total number of bruised apples without inspecting every crate, she selects $3$ random samples of $10$ crates each and counts the bruised apples per sample: Sample 1 has $18$ bruised apples, Sample 2 has $24$ bruised apples, and Sample 3 has $15$ bruised apples. (a) Calculate the mean number of bruised apples per crate across all $30$ sampled crates. (b) Estimate the total number of bruised apples in the entire harvest of $2400$ crates.",
+        "difficulty": "Medium",
+        "context": "Agricultural Quality Sampling",
+        "final_answer": "(a) $1.9$ bruised apples per crate, (b) $4560$ bruised apples",
+        "step_by_step_solution": [
+          "Total bruised apples across the $30$ sampled crates $= 18 + 24 + 15 = 57$. Mean per crate $= \\frac{57}{30} = 1.9$ bruised apples/crate.",
+          "Scale up to all $2400$ crates: $2400 \\times 1.9 = 4560$ bruised apples."
+        ]
+      },
+      {
+        "id": "10_2_Q8",
+        "question": "Two AFL midfielders' disposal counts over $7$ matches are:\n- **Player X**: $24, 25, 26, 27, 28, 29, 30$\n- **Player Y**: $12, 18, 26, 27, 28, 36, 42$\nShow that both players have the exact same **mean** and the exact same **median**, but use the **range** and **IQR** to distinguish their consistency.",
+        "difficulty": "Challenging",
+        "context": "Sports Analytics",
+        "final_answer": "Both players have Mean $= 27$ and Median $= 27$. However, Player X has Range $= 6$ and $\\text{IQR} = 29 - 25 = 4$, whereas Player Y has Range $= 30$ and $\\text{IQR} = 36 - 18 = 18$, showing Player X is far more consistent.",
+        "step_by_step_solution": [
+          "For Player X: Median $= 27$ ($4$th score), Mean $= \\frac{189}{7} = 27$, Range $= 30 - 24 = 6$, and $\\text{IQR} = 29 - 25 = 4$.",
+          "For Player Y: Median $= 27$ ($4$th score), Mean $= \\frac{189}{7} = 27$, Range $= 42 - 12 = 30$, and $\\text{IQR} = 36 - 18 = 18$. Despite identical centres, Player X's spread is less than a quarter of Player Y's."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_2_Q9",
+        "question": "Explain why the **Interquartile Range ($\\text{IQR} = Q_3 - Q_1$)** is a much more reliable measure of spread than the **Range ($x_{\\max} - x_{\\min}$)** when comparing two skewed distributions or data sets that contain outliers. Illustrate your explanation by finding how much the Range and the IQR of the $7$ scores $10, 12, 14, 15, 16, 18, 20$ change if the maximum score $20$ is replaced by an outlier of $95$.",
+        "difficulty": "Challenging",
+        "context": "Robustness of IQR vs Range",
+        "final_answer": "For $10, 12, 14, 15, 16, 18, 20$, Range $= 10$ and $\\text{IQR} = 18 - 12 = 6$. Replacing $20$ with $95$ inflates the Range from $10$ to $85$, while the $\\text{IQR}$ remains $18 - 12 = 6$ (completely unchanged) because $\\text{IQR}$ depends only on the middle $50\\%$ of scores.",
+        "step_by_step_solution": [
+          "In the original set $10, 12, 14, 15, 16, 18, 20$, $Q_1 = 12$ and $Q_3 = 18$, so $\\text{IQR} = 18 - 12 = 6$ and $\\text{Range} = 20 - 10 = 10$.",
+          "When $20$ is replaced by $95$, the new Range jumps to $95 - 10 = 85$, whereas $Q_1 = 12$ and $Q_3 = 18$ are unaffected, keeping $\\text{IQR} = 6$. Because $\\text{IQR}$ trims off the top $25\\%$ and bottom $25\\%$ of scores, it is resistant to extreme outliers."
+        ]
+      },
+      {
+        "id": "10_2_Q10",
+        "question": "State two practical scenarios where conducting a **sample** is strictly necessary (not merely cheaper) because a **census** is impossible or destructive.",
+        "difficulty": "Medium",
+        "context": "Census vs Sample Limitations",
+        "final_answer": "Scenario 1: Destructive testing (e.g. crash-testing cars, testing the lifespan of matches or fireworks, or blood testing, where testing every item destroys the entire product/population). Scenario 2: Inaccessible or infinite populations (e.g. counting wild fish in the Southern Ocean).",
+        "step_by_step_solution": [
+          "When testing is **destructive** (such as testing the breaking strength of steel cables or the burn time of flares), a census would destroy $100\\%$ of the items produced, leaving nothing to sell or use.",
+          "When a population is **mobile, hidden, or practically infinite** (such as wild kangaroos or bacteria in a lake), it is physically impossible to locate and measure every single member."
+        ]
+      },
+      {
+        "id": "10_2_Q11",
+        "question": "A radio host asks listeners to phone in and vote 'Yes' or 'No' on whether public transport should be free. Out of $2000$ callers, $82\\%$ vote 'Yes'. A statistician conducts a random telephone survey of $200$ Victorian voters and finds $54\\%$ vote 'Yes'. Which survey is more trustworthy, and why doesn't the radio poll's $10$-times-larger sample size make it more accurate?",
+        "difficulty": "Challenging",
+        "context": "Self-Selection Bias vs Sample Size",
+        "final_answer": "The statistician's random sample of $200$ is far more trustworthy. The radio phone-in is a **self-selected (voluntary response) sample** attracting listeners with strong opinions from one station's audience; increasing the size of a biased sample does not remove selection bias.",
+        "step_by_step_solution": [
+          "The radio poll suffers from both **audience bias** (only listeners of that programme hear the question) and **voluntary response bias** (only people passionate enough to call in participate).",
+          "A smaller **random sample** ($n = 200$) where every voter has an equal chance of selection provides an unbiased estimate, whereas a large biased sample simply repeats the same systematic error $2000$ times."
+        ]
+      },
+      {
+        "id": "10_2_Q12",
+        "question": "State two mathematical assumptions that must hold in the field for the **capture-recapture** formula $N \\approx \\frac{M \\times n}{m}$ to give an accurate estimate of an animal population, and explain how the estimate $N$ is affected if tagged animals become 'trap-shy' (avoiding traps during the second capture).",
+        "difficulty": "Extension",
+        "context": "Critiquing Ecological Mathematical Models",
+        "final_answer": "Assumptions: (1) Closed population (no births, deaths, or migration between captures) and (2) Tags do not fall off or alter the probability of recapture (complete mixing). If tagged animals become trap-shy, fewer tagged animals $m$ are recaptured; since $m$ is in the denominator of $\\frac{M \\times n}{m}$, a smaller $m$ causes $N$ to be **overestimated**.",
+        "step_by_step_solution": [
+          "The model assumes the population is closed, tags remain attached, and tagged individuals mix randomly and have the exact same probability of being caught as untagged individuals.",
+          "If tagged animals become trap-shy, the recaptured count $m$ is artificially small. Dividing $M \\times n$ by a smaller denominator $m$ produces an artificially **large** (overestimated) value for $N$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_2_1a_yr7",
+      "description": "Worked Example 10.2.1(a) Year 7 stratum sample size",
+      "expression": "Rational(240, 800) * 80",
+      "expected": 24
+    },
+    {
+      "id": "WE10_2_1b_est",
+      "description": "Worked Example 10.2.1(b) estimated school support",
+      "expression": "Rational(52, 80) * 800",
+      "expected": 520
+    },
+    {
+      "id": "NYT10_2_1b_est",
+      "description": "Now You Try 10.2.1(b) estimated club support",
+      "expression": "Rational(31, 50) * 500",
+      "expected": 310
+    },
+    {
+      "id": "WE10_2_2a_A",
+      "description": "Worked Example 10.2.2(a) Sample A capture-recapture estimate",
+      "expression": "(45 * 40) / 5",
+      "expected": 360
+    },
+    {
+      "id": "WE10_2_2a_B",
+      "description": "Worked Example 10.2.2(a) Sample B capture-recapture estimate",
+      "expression": "(45 * 40) / 8",
+      "expected": 225
+    },
+    {
+      "id": "WE10_2_2b_pooled",
+      "description": "Worked Example 10.2.2(b) pooled capture-recapture estimate",
+      "expression": "(45 * 120) / (5 + 8 + 5)",
+      "expected": 300
+    },
+    {
+      "id": "NYT10_2_2_cod",
+      "description": "Now You Try 10.2.2 Murray cod population estimate",
+      "expression": "(60 * 50) / 12",
+      "expected": 250
+    },
+    {
+      "id": "WE10_2_3_8A_iqr",
+      "description": "Worked Example 10.2.3 Class 8A IQR",
+      "expression": "Rational(39 + 40, 2) - Rational(30 + 31, 2)",
+      "expected": 9
+    },
+    {
+      "id": "WE10_2_3_8B_iqr",
+      "description": "Worked Example 10.2.3 Class 8B IQR",
+      "expression": "Rational(44 + 46, 2) - Rational(22 + 31, 2)",
+      "expected": "37/2"
+    },
+    {
+      "id": "NYT10_2_3_iqr",
+      "description": "Now You Try 10.2.3 IQR",
+      "expression": "29 - 15",
+      "expected": 14
+    },
+    {
+      "id": "EX10_2_Q1_35_59",
+      "description": "Exercise 10.2 Q1 stratum size for 35-59 group",
+      "expression": "Rational(5400, 12000) * 200",
+      "expected": 90
+    },
+    {
+      "id": "EX10_2_Q2_iqr",
+      "description": "Exercise 10.2 Q2 IQR",
+      "expression": "(30 + 34)/2 - (18 + 20)/2",
+      "expected": 13
+    },
+    {
+      "id": "EX10_2_Q4b_mean",
+      "description": "Exercise 10.2 Q4(b) pooled mean mass",
+      "expression": "(Rational(254, 10) + Rational(268, 10) + Rational(246, 10) + Rational(272, 10)) / 4",
+      "expected": 26
+    },
+    {
+      "id": "EX10_2_Q5_possums",
+      "description": "Exercise 10.2 Q5 possum capture-recapture estimate",
+      "expression": "(36 * 45) / 9",
+      "expected": 180
+    },
+    {
+      "id": "EX10_2_Q6_melb_iqr",
+      "description": "Exercise 10.2 Q6 Melbourne April temperature IQR",
+      "expression": "25 - 17",
+      "expected": 8
+    },
+    {
+      "id": "EX10_2_Q7b_apples",
+      "description": "Exercise 10.2 Q7(b) estimated bruised apples in 2400 crates",
+      "expression": "2400 * Rational(18 + 24 + 15, 30)",
+      "expected": 4560
+    },
+    {
+      "id": "EX10_2_Q8_meanY",
+      "description": "Exercise 10.2 Q8 Player Y mean disposals",
+      "expression": "(12 + 18 + 26 + 27 + 28 + 36 + 42) / 7",
+      "expected": 27
+    },
+    {
+      "id": "EX10_2_Q9_range_outlier",
+      "description": "Exercise 10.2 Q9 new range with outlier 95",
+      "expression": "95 - 10",
+      "expected": 85
+    }
+  ]
+}

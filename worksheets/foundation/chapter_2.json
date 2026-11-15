@@ -1,0 +1,391 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Real Numbers, Fractions, Decimals and Index Laws",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "2_1",
+      "section_code": "2A",
+      "title": "Operations with Positive and Negative Fractions",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Add or subtract the numerators (keep the common denominator the same) and simplify:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2}{7} + \\dfrac{3}{7}$", "answer": "$\\dfrac{5}{7}$" },
+            { "label": "b", "question": "$-\\dfrac{4}{9} + \\dfrac{7}{9}$", "answer": "$\\dfrac{3}{9} = \\dfrac{1}{3}$" },
+            { "label": "c", "question": "$\\dfrac{1}{5} - \\dfrac{4}{5}$", "answer": "$-\\dfrac{3}{5}$" },
+            { "label": "d", "question": "$-\\dfrac{3}{8} - \\dfrac{3}{8}$", "answer": "$-\\dfrac{6}{8} = -\\dfrac{3}{4}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Rewrite the first fraction with the common denominator shown, then add or subtract:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{1}{2} + \\dfrac{1}{4} = \\dfrac{2}{4} + \\dfrac{1}{4}$", "answer": "$\\dfrac{3}{4}$" },
+            { "label": "b", "question": "$-\\dfrac{1}{3} + \\dfrac{5}{6} = -\\dfrac{2}{6} + \\dfrac{5}{6}$", "answer": "$\\dfrac{3}{6} = \\dfrac{1}{2}$" },
+            { "label": "c", "question": "$\\dfrac{2}{5} - \\dfrac{7}{10} = \\dfrac{4}{10} - \\dfrac{7}{10}$", "answer": "$-\\dfrac{3}{10}$" },
+            { "label": "d", "question": "$-\\dfrac{3}{4} + \\dfrac{5}{8} = -\\dfrac{6}{8} + \\dfrac{5}{8}$", "answer": "$-\\dfrac{1}{8}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Multiply the numerators and multiply the denominators, then simplify:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2}{3} \\times \\dfrac{4}{5}$", "answer": "$\\dfrac{8}{15}$" },
+            { "label": "b", "question": "$-\\dfrac{1}{4} \\times \\dfrac{3}{5}$", "answer": "$-\\dfrac{3}{20}$" },
+            { "label": "c", "question": "$-\\dfrac{2}{3} \\times \\left(-\\dfrac{3}{7}\\right)$", "answer": "$\\dfrac{2}{7}$" },
+            { "label": "d", "question": "$\\dfrac{3}{4} \\times \\left(-\\dfrac{2}{9}\\right)$", "answer": "$-\\dfrac{1}{6}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Flip the second fraction (find its reciprocal) and multiply:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2}{5} \\div \\dfrac{3}{5} = \\dfrac{2}{5} \\times \\dfrac{5}{3}$", "answer": "$\\dfrac{2}{3}$" },
+            { "label": "b", "question": "$-\\dfrac{3}{4} \\div \\dfrac{1}{2} = -\\dfrac{3}{4} \\times \\dfrac{2}{1}$", "answer": "$-\\dfrac{3}{2} = -1\\dfrac{1}{2}$" },
+            { "label": "c", "question": "$\\dfrac{4}{7} \\div \\left(-\\dfrac{2}{7}\\right)$", "answer": "$-2$" },
+            { "label": "d", "question": "$-\\dfrac{3}{8} \\div \\left(-\\dfrac{3}{4}\\right)$", "answer": "$\\dfrac{1}{2}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A water bottle is $\\dfrac{7}{8}$ full. Mia drinks $\\dfrac{3}{8}$ of the bottle on a bushwalk. Calculate $\\dfrac{7}{8} - \\dfrac{3}{8}$ and simplify to find the fraction remaining.",
+          "answer": "$\\dfrac{4}{8} = \\dfrac{1}{2}$"
+        },
+        {
+          "number": 6,
+          "question": "A scone recipe needs $\\dfrac{2}{3}\\text{ cup}$ of milk per batch. Multiply $4 \\times \\dfrac{2}{3}$ to find the milk needed for $4$ batches.",
+          "answer": "$\\dfrac{8}{3} = 2\\dfrac{2}{3}\\text{ cups}$"
+        },
+        {
+          "number": 7,
+          "question": "A $3\\text{ m}$ timber plank is cut into pieces each $\\dfrac{3}{4}\\text{ m}$ long. Calculate $3 \\div \\dfrac{3}{4}$ ($= 3 \\times \\dfrac{4}{3}$) to find the number of pieces.",
+          "answer": "$4\\text{ pieces}$"
+        },
+        {
+          "number": 8,
+          "question": "A freezer temperature drops by $-\\dfrac{1}{2}^\\circ\\text{C}$ each hour for $5$ hours. Multiply $5 \\times \\left(-\\dfrac{1}{2}\\right)$ to find the total temperature change.",
+          "answer": "$-\\dfrac{5}{2}^\\circ\\text{C} = -2\\dfrac{1}{2}^\\circ\\text{C}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Liam writes $\\dfrac{1}{5} + \\dfrac{2}{5} = \\dfrac{3}{10}$. Explain why adding the denominators is incorrect and write the correct answer.",
+          "answer": "When adding fifths, the size of the parts stays fifths (keep the denominator $5$); only add the numerators: $\\dfrac{1+2}{5} = \\dfrac{3}{5}$."
+        },
+        {
+          "number": 10,
+          "question": "Without calculating the numbers, explain how you know that $-\\dfrac{2}{5} \\times \\left(-\\dfrac{3}{7}\\right)$ has a positive answer.",
+          "answer": "Multiplying two negative numbers always produces a positive answer ($- \\times - = +$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF2_1_1a", "expression": "Rational(2, 7) + Rational(3, 7)", "expected": "5/7" },
+        { "id": "WSF2_1_1b", "expression": "-Rational(4, 9) + Rational(7, 9)", "expected": "1/3" },
+        { "id": "WSF2_1_2a", "expression": "Rational(1, 2) + Rational(1, 4)", "expected": "3/4" },
+        { "id": "WSF2_1_2c", "expression": "Rational(2, 5) - Rational(7, 10)", "expected": "-3/10" },
+        { "id": "WSF2_1_3a", "expression": "Rational(2, 3) * Rational(4, 5)", "expected": "8/15" },
+        { "id": "WSF2_1_3c", "expression": "-Rational(2, 3) * (-Rational(3, 7))", "expected": "2/7" },
+        { "id": "WSF2_1_4a", "expression": "Rational(2, 5) / Rational(3, 5)", "expected": "2/3" },
+        { "id": "WSF2_1_4d", "expression": "-Rational(3, 8) / (-Rational(3, 4))", "expected": "1/2" },
+        { "id": "WSF2_1_5", "expression": "Rational(7, 8) - Rational(3, 8)", "expected": "1/2" },
+        { "id": "WSF2_1_7", "expression": "3 / Rational(3, 4)", "expected": 4 }
+      ]
+    },
+    {
+      "section_id": "2_2",
+      "section_code": "2B",
+      "title": "Terminating and Recurring Decimals",
+      "vcaa_code": "VC2M8N03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each fraction with a denominator of $10$ or $100$ directly to a terminating decimal:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{7}{10}$", "answer": "$0.7$" },
+            { "label": "b", "question": "$\\dfrac{23}{100}$", "answer": "$0.23$" },
+            { "label": "c", "question": "$\\dfrac{9}{100}$", "answer": "$0.09$" },
+            { "label": "d", "question": "$-\\dfrac{4}{10}$", "answer": "$-0.4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Rewrite each fraction with denominator $10$ or $100$ first, then write it as a decimal:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{3}{5} = \\dfrac{6}{10}$", "answer": "$0.6$" },
+            { "label": "b", "question": "$\\dfrac{1}{4} = \\dfrac{25}{100}$", "answer": "$0.25$" },
+            { "label": "c", "question": "$\\dfrac{3}{20} = \\dfrac{15}{100}$", "answer": "$0.15$" },
+            { "label": "d", "question": "$\\dfrac{9}{25} = \\dfrac{36}{100}$", "answer": "$0.36$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Write each repeating decimal using recurring dot notation:",
+          "parts": [
+            { "label": "a", "question": "$0.3333\\dots$", "answer": "$0.\\dot{3}$" },
+            { "label": "b", "question": "$0.7777\\dots$", "answer": "$0.\\dot{7}$" },
+            { "label": "c", "question": "$0.1666\\dots$", "answer": "$0.1\\dot{6}$" },
+            { "label": "d", "question": "$0.454545\\dots$", "answer": "$0.\\dot{4}\\dot{5}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Write each terminating decimal as a fraction over $10$ or $100$, then simplify:",
+          "parts": [
+            { "label": "a", "question": "$0.8 = \\dfrac{8}{10}$", "answer": "$\\dfrac{4}{5}$" },
+            { "label": "b", "question": "$0.35 = \\dfrac{35}{100}$", "answer": "$\\dfrac{7}{20}$" },
+            { "label": "c", "question": "$0.75 = \\dfrac{75}{100}$", "answer": "$\\dfrac{3}{4}$" },
+            { "label": "d", "question": "$0.05 = \\dfrac{5}{100}$", "answer": "$\\dfrac{1}{20}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A netballer in Adelaide scores $17$ goals from $20$ shots. Multiply top and bottom of $\\dfrac{17}{20}$ by $5$ to write her accuracy as a decimal.",
+          "answer": "$\\dfrac{85}{100} = 0.85$"
+        },
+        {
+          "number": 6,
+          "question": "Three friends share $2$ pizzas equally, getting $\\dfrac{2}{3}$ of a pizza each. Divide $2 \\div 3$ and write the answer using recurring dot notation.",
+          "answer": "$0.\\dot{6}$ of a pizza"
+        },
+        {
+          "number": 7,
+          "question": "A packet of Australian cashews has a mass of $0.4\\text{ kg}$. Write $0.4$ as $\\dfrac{4}{10}$ and simplify it to a fraction in lowest terms.",
+          "answer": "$\\dfrac{2}{5}\\text{ kg}$"
+        },
+        {
+          "number": 8,
+          "question": "Compare $0.6$ ($= 0.600\\dots$) and $0.\\dot{6}$ ($= 0.666\\dots$). Which number is larger?",
+          "answer": "$0.\\dot{6}$ is larger (since $6$ hundredths $> 0$ hundredths)."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In the decimal $0.2\\dot{8}$, only the $8$ has a dot above it. Write out the first five decimal places of $0.2\\dot{8}$.",
+          "answer": "$0.28888\\dots$ (the $2$ does not repeat; only the $8$ repeats)."
+        },
+        {
+          "number": 10,
+          "question": "Since $\\dfrac{1}{9} = 0.\\dot{1}$ and $\\dfrac{2}{9} = 0.\\dot{2}$, use this pattern to write $0.\\dot{5}$ as a fraction and $0.\\dot{3}$ as a simplified fraction.",
+          "answer": "$0.\\dot{5} = \\dfrac{5}{9}$, and $0.\\dot{3} = \\dfrac{3}{9} = \\dfrac{1}{3}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF2_2_1a", "expression": "Rational(7, 10)", "expected": 0.7 },
+        { "id": "WSF2_2_1b", "expression": "Rational(23, 100)", "expected": 0.23 },
+        { "id": "WSF2_2_2a", "expression": "Rational(3, 5)", "expected": 0.6 },
+        { "id": "WSF2_2_2b", "expression": "Rational(1, 4)", "expected": 0.25 },
+        { "id": "WSF2_2_2d", "expression": "Rational(9, 25)", "expected": 0.36 },
+        { "id": "WSF2_2_4a", "expression": "Rational(8, 10)", "expected": "4/5" },
+        { "id": "WSF2_2_4b", "expression": "Rational(35, 100)", "expected": "7/20" },
+        { "id": "WSF2_2_4c", "expression": "Rational(75, 100)", "expected": "3/4" },
+        { "id": "WSF2_2_5", "expression": "Rational(17, 20)", "expected": 0.85 },
+        { "id": "WSF2_2_7", "expression": "Rational(4, 10)", "expected": "2/5" }
+      ]
+    },
+    {
+      "section_id": "2_3",
+      "section_code": "2C",
+      "title": "Irrational Numbers and the Real Number System",
+      "vcaa_code": "VC2M8N01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate the exact square root of each perfect square:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{16}$", "answer": "$4$" },
+            { "label": "b", "question": "$\\sqrt{49}$", "answer": "$7$" },
+            { "label": "c", "question": "$\\sqrt{81}$", "answer": "$9$" },
+            { "label": "d", "question": "$\\sqrt{100}$", "answer": "$10$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate the exact cube root of each perfect cube:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt[3]{8}$ (since $2^3 = 8$)", "answer": "$2$" },
+            { "label": "b", "question": "$\\sqrt[3]{27}$ (since $3^3 = 27$)", "answer": "$3$" },
+            { "label": "c", "question": "$\\sqrt[3]{64}$", "answer": "$4$" },
+            { "label": "d", "question": "$\\sqrt[3]{-8}$", "answer": "$-2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Classify each number as Rational (can be written as a fraction) or Irrational:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{25} = 5$", "answer": "Rational" },
+            { "label": "b", "question": "$\\sqrt{7}$ ($7$ is not a square number)", "answer": "Irrational" },
+            { "label": "c", "question": "$\\dfrac{3}{4}$", "answer": "Rational" },
+            { "label": "d", "question": "$\\pi$", "answer": "Irrational" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use the perfect squares given in brackets to state the two whole numbers each surd lies between:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{11}$ (between $\\sqrt{9} = 3$ and $\\sqrt{16} = 4$)", "answer": "Between $3$ and $4$" },
+            { "label": "b", "question": "$\\sqrt{20}$ (between $\\sqrt{16} = 4$ and $\\sqrt{25} = 5$)", "answer": "Between $4$ and $5$" },
+            { "label": "c", "question": "$\\sqrt{40}$ (between $\\sqrt{36} = 6$ and $\\sqrt{49} = 7$)", "answer": "Between $6$ and $7$" },
+            { "label": "d", "question": "$\\sqrt{70}$ (between $\\sqrt{64} = 8$ and $\\sqrt{81} = 9$)", "answer": "Between $8$ and $9$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A square garden bed in Bendigo has an area of $36\\text{ m}^2$. Calculate $\\sqrt{36}$ to find its side length.",
+          "answer": "$6\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A square bedroom floor has an area of $18\\text{ m}^2$, so its side length is $\\sqrt{18}\\text{ m}$. Since $16 < 18 < 25$, between which two whole metres is the side length?",
+          "answer": "Between $4\\text{ m}$ and $5\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A cubic storage box has a volume of $125\\text{ cm}^3$. Calculate $\\sqrt[3]{125}$ to find the length of each edge.",
+          "answer": "$5\\text{ cm}$"
+        },
+        {
+          "number": 8,
+          "question": "A circular pond has diameter $d = 4\\text{ m}$ and circumference $C = 4\\pi\\text{ m}$. Using $\\pi \\approx 3.14$, calculate $4 \\times 3.14$ to find the approximate circumference.",
+          "answer": "$12.56\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $\\sqrt{9}$ is a rational number, whereas $\\sqrt{10}$ is an irrational number.",
+          "answer": "$9$ is a perfect square so $\\sqrt{9} = 3 = \\dfrac{3}{1}$ (a fraction), whereas $10$ is not a perfect square so $\\sqrt{10}$ is a non-terminating, non-recurring decimal."
+        },
+        {
+          "number": 10,
+          "question": "Is $\\sqrt{14}$ closer to $3$ or closer to $4$? Compare the distance from $14$ to $9$ ($3^2$) and to $16$ ($4^2$).",
+          "answer": "Closer to $4$, because $14$ is only $2$ away from $16$ ($4^2$) but $5$ away from $9$ ($3^2$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF2_3_1a", "expression": "sqrt(16)", "expected": 4 },
+        { "id": "WSF2_3_1b", "expression": "sqrt(49)", "expected": 7 },
+        { "id": "WSF2_3_1c", "expression": "sqrt(81)", "expected": 9 },
+        { "id": "WSF2_3_1d", "expression": "sqrt(100)", "expected": 10 },
+        { "id": "WSF2_3_2a", "expression": "cbrt(8)", "expected": 2 },
+        { "id": "WSF2_3_2b", "expression": "cbrt(27)", "expected": 3 },
+        { "id": "WSF2_3_2c", "expression": "cbrt(64)", "expected": 4 },
+        { "id": "WSF2_3_2d", "expression": "cbrt(-8)", "expected": -2 },
+        { "id": "WSF2_3_5", "expression": "sqrt(36)", "expected": 6 },
+        { "id": "WSF2_3_7", "expression": "cbrt(125)", "expected": 5 }
+      ]
+    },
+    {
+      "section_id": "2_4",
+      "section_code": "2D",
+      "title": "Index Laws and the Zero Exponent",
+      "vcaa_code": "VC2M8N02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Multiply powers with the same base by ADDING the indices ($a^m \\times a^n = a^{m+n}$):",
+          "parts": [
+            { "label": "a", "question": "$2^3 \\times 2^4 = 2^{3+4}$", "answer": "$2^7$" },
+            { "label": "b", "question": "$5^2 \\times 5^6$", "answer": "$5^8$" },
+            { "label": "c", "question": "$x^4 \\times x^3$", "answer": "$x^7$" },
+            { "label": "d", "question": "$a^5 \\times a^2$", "answer": "$a^7$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Divide powers with the same base by SUBTRACTING the indices ($a^m \\div a^n = a^{m-n}$):",
+          "parts": [
+            { "label": "a", "question": "$3^7 \\div 3^2 = 3^{7-2}$", "answer": "$3^5$" },
+            { "label": "b", "question": "$10^8 \\div 10^5$", "answer": "$10^3$" },
+            { "label": "c", "question": "$x^9 \\div x^4$", "answer": "$x^5$" },
+            { "label": "d", "question": "$\\dfrac{m^6}{m^2}$", "answer": "$m^4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Simplify each power of a power by MULTIPLYING the indices ($(a^m)^n = a^{m \\times n}$):",
+          "parts": [
+            { "label": "a", "question": "$(2^3)^2 = 2^{3 \\times 2}$", "answer": "$2^6$" },
+            { "label": "b", "question": "$(5^2)^4$", "answer": "$5^8$" },
+            { "label": "c", "question": "$(x^3)^3$", "answer": "$x^9$" },
+            { "label": "d", "question": "$(a^4)^5$", "answer": "$a^{20}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate using the Zero Index Law (any non-zero number to the power of $0$ equals $1$):",
+          "parts": [
+            { "label": "a", "question": "$6^0$", "answer": "$1$" },
+            { "label": "b", "question": "$25^0$", "answer": "$1$" },
+            { "label": "c", "question": "$4^0 + 9^0$", "answer": "$2$" },
+            { "label": "d", "question": "$5 \\times 3^0$", "answer": "$5$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A computer folder contains $2^4$ subfolders, and each subfolder holds $2^3$ photos. Add the indices in $2^4 \\times 2^3$ to write the total number of photos as a power of $2$.",
+          "answer": "$2^7 = 128\\text{ photos}$"
+        },
+        {
+          "number": 6,
+          "question": "A water tank holds $10^6\\text{ mL}$ of water, which is poured equally into $10^3\\text{ mL}$ bottles. Subtract the indices in $10^6 \\div 10^3$ to find the number of bottles filled.",
+          "answer": "$10^3 = 1000\\text{ bottles}$"
+        },
+        {
+          "number": 7,
+          "question": "A square tile has side length $3^2\\text{ cm}$. Use $(3^2)^2$ to write the area of the tile as a power of $3$, then evaluate it.",
+          "answer": "$3^4 = 81\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "A bacteria colony starts with $5^0$ cell at hour $0$. How many cells is $5^0$?",
+          "answer": "$1\\text{ cell}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Ben simplifies $2^3 \\times 2^2$ and writes $4^5$. Explain why multiplying the bases is wrong and write the correct power of $2$.",
+          "answer": "When multiplying powers with the same base, keep the base $2$ unchanged and add the indices: $2^{3+2} = 2^5$ ($= 32$)."
+        },
+        {
+          "number": 10,
+          "question": "Use the division law $\\dfrac{5^3}{5^3} = 5^{3-3} = 5^0$ and the fact that any number divided by itself equals $1$ to explain why $5^0 = 1$.",
+          "answer": "Since $\\dfrac{125}{125} = 1$ and $\\dfrac{5^3}{5^3} = 5^0$, both expressions represent the same value, so $5^0 = 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF2_4_1a", "expression": "2**3 * 2**4 - 2**7", "expected": 0 },
+        { "id": "WSF2_4_2a", "expression": "3**7 / 3**2 - 3**5", "expected": 0 },
+        { "id": "WSF2_4_2b", "expression": "10**8 / 10**5", "expected": 1000 },
+        { "id": "WSF2_4_3a", "expression": "(2**3)**2", "expected": 64 },
+        { "id": "WSF2_4_4a", "expression": "6**0", "expected": 1 },
+        { "id": "WSF2_4_4c", "expression": "4**0 + 9**0", "expected": 2 },
+        { "id": "WSF2_4_4d", "expression": "5 * 3**0", "expected": 5 },
+        { "id": "WSF2_4_5", "expression": "2**4 * 2**3", "expected": 128 },
+        { "id": "WSF2_4_6", "expression": "10**6 / 10**3", "expected": 1000 },
+        { "id": "WSF2_4_7", "expression": "(3**2)**2", "expected": 81 }
+      ]
+    }
+  ]
+}

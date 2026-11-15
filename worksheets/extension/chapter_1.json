@@ -1,0 +1,391 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Integers and Number Properties",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "1_1",
+      "section_code": "1A",
+      "title": "Adding and Subtracting Integers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each nested directed-number expression:",
+          "parts": [
+            { "label": "a", "question": "$-28 - [-15 - (-32 + 9)]$", "answer": "$-36$" },
+            { "label": "b", "question": "$45 - [18 - (-27 - 14)]$", "answer": "$-14$" },
+            { "label": "c", "question": "$-63 + [-19 - (24 - 51)]$", "answer": "$-55$" },
+            { "label": "d", "question": "$-112 - [-48 + (-35 - (-61))]$", "answer": "$-90$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each absolute value and directed-number expression:",
+          "parts": [
+            { "label": "a", "question": "$|-18 - 14| - |12 - 29|$", "answer": "$15$" },
+            { "label": "b", "question": "$-|-23 + 8| + |-19 - (-7)|$", "answer": "$-3$" },
+            { "label": "c", "question": "$|16 - (-25)| - |-31 - 14|$", "answer": "$-4$" },
+            { "label": "d", "question": "$-|-42 - (-18)| - |27 - 45|$", "answer": "$-42$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve for the integer $x$ in each equation:",
+          "parts": [
+            { "label": "a", "question": "$-34 - (x - 19) = 12$", "answer": "$x = -27$" },
+            { "label": "b", "question": "$25 - (-18 - x) = -7$", "answer": "$x = -50$" },
+            { "label": "c", "question": "$-41 + (23 - x) - (-15) = 9$", "answer": "$x = -12$" },
+            { "label": "d", "question": "$(x - 28) - (2x + 15) = -19$", "answer": "$x = -24$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each alternating integer series:",
+          "parts": [
+            { "label": "a", "question": "$1 - 2 + 3 - 4 + \\dots + 19 - 20$", "answer": "$-10$" },
+            { "label": "b", "question": "$-1 + 2 - 3 + 4 - \\dots - 29 + 30$", "answer": "$15$" },
+            { "label": "c", "question": "$1 - 2 + 3 - 4 + \\dots - 50 + 51$", "answer": "$26$" },
+            { "label": "d", "question": "$(-10) + (-8) + (-6) + \\dots + 12$", "answer": "$12$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An automated weather probe at Charlotte Pass in New South Wales records $-7^\\circ\\text{C}$ at midnight. Over four consecutive $6$-hour intervals, the temperature changes by $-5^\\circ\\text{C}$, $+14^\\circ\\text{C}$, $+3^\\circ\\text{C}$, and $-11^\\circ\\text{C}$. Find the difference between the highest and lowest temperatures reached at the end of any interval.",
+          "answer": "$17^\\circ\\text{C}$ (highest $+5^\\circ\\text{C}$, lowest $-12^\\circ\\text{C}$; $5 - (-12) = 17^\\circ\\text{C}$)"
+        },
+        {
+          "number": 6,
+          "question": "A remanufacturing firm in Adelaide starts the quarter with an overdraft of $-\\$1850$. Across three months, its monthly revenues are $\\$4200, \\$3850, \\$5100$ and its monthly expenses are $\\$3950, \\$4600, \\$3400$. Find the final account balance and the net change over the quarter.",
+          "answer": "Final balance $-\\$650$; net change $+\\$1200$"
+        },
+        {
+          "number": 7,
+          "question": "Submarine A is at $-145\\text{ m}$ and Submarine B is $68\\text{ m}$ above Submarine A in the Timor Sea. Submarine A ascends $39\\text{ m}$ while Submarine B descends $54\\text{ m}$; find the new vertical separation ($\\text{depth of A} - \\text{depth of B}$).",
+          "answer": "$25\\text{ m}$ ($\\text{A at } -106\\text{ m}, \\text{B at } -131\\text{ m}$; $-106 - (-131) = 25\\text{ m}$)"
+        },
+        {
+          "number": 8,
+          "question": "On a number line, point $P$ is at $-47$ and point $Q$ is at $85$. Point $M$ lies one-third of the way from $P$ to $Q$, and point $N$ is the reflection of $M$ across $-10$. Find the coordinates of $M$ and $N$.",
+          "answer": "$M = -3$, $N = -17$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove algebraically that for any five consecutive integers with middle integer $n$, if the smallest three are subtracted from the sum of the largest two, the result is always $-n + 6$. Hence find the five integers when this result equals $21$.",
+          "answer": "$(n+1) + (n+2) - [(n-2) + (n-1) + n] = (2n + 3) - (3n - 3) = -n + 6$. Setting $-n + 6 = 21$ gives $n = -15$, so the five integers are $-17, -16, -15, -14, -13$."
+        },
+        {
+          "number": 10,
+          "question": "Find all integers $x$ satisfying $|x - (-6)| + |x - 4| = 10$, and explain using distance on a number line why no integer outside the interval $[-6, 4]$ can satisfy this equation.",
+          "answer": "Every integer $x$ with $-6 \\le x \\le 4$ ($11$ integers in total), because $|x+6| + |x-4|$ is the sum of distances from $x$ to $-6$ and $4$, which equals $4 - (-6) = 10$ if and only if $-6 \\le x \\le 4$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE1_1_1a", "expression": "-28 - (-15 - (-32 + 9))", "expected": -36 },
+        { "id": "WSE1_1_1b", "expression": "45 - (18 - (-27 - 14))", "expected": -14 },
+        { "id": "WSE1_1_1d", "expression": "-112 - (-48 + (-35 - (-61)))", "expected": -90 },
+        { "id": "WSE1_1_2a", "expression": "Abs(-18 - 14) - Abs(12 - 29)", "expected": 15 },
+        { "id": "WSE1_1_2d", "expression": "-Abs(-42 - (-18)) - Abs(27 - 45)", "expected": -42 },
+        { "id": "WSE1_1_3a", "expression": "-34 - (-27 - 19)", "expected": 12 },
+        { "id": "WSE1_1_3d", "expression": "(-24 - 28) - (2*(-24) + 15)", "expected": -19 },
+        { "id": "WSE1_1_5", "expression": "(-7 - 5 + 14 + 3) - (-7 - 5)", "expected": 17 },
+        { "id": "WSE1_1_6", "expression": "-1850 + (4200 + 3850 + 5100) - (3950 + 4600 + 3400)", "expected": -650 },
+        { "id": "WSE1_1_8", "expression": "-47 + (85 - (-47)) / 3", "expected": -3 }
+      ]
+    },
+    {
+      "section_id": "1_2",
+      "section_code": "1B",
+      "title": "Multiplying and Dividing Integers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each multi-factor integer product or quotient:",
+          "parts": [
+            { "label": "a", "question": "$(-3) \\times (-4) \\times (-5) \\times (-2)$", "answer": "$120$" },
+            { "label": "b", "question": "$\\dfrac{(-18) \\times 14 \\times (-5)}{-21 \\times (-6)}$", "answer": "$10$" },
+            { "label": "c", "question": "$\\dfrac{(-24) \\times (-15) \\times (-8)}{16 \\times (-9)}$", "answer": "$20$" },
+            { "label": "d", "question": "$-144 \\div (-12) \\div (-3) \\times (-7)$", "answer": "$28$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each expression involving higher powers of negative integers:",
+          "parts": [
+            { "label": "a", "question": "$(-2)^5 \\times (-3)^2$", "answer": "$-288$" },
+            { "label": "b", "question": "$-(-3)^4 \\div (-9)$", "answer": "$9$" },
+            { "label": "c", "question": "$\\dfrac{(-4)^3 \\times (-3)^3}{(-6)^2}$", "answer": "$48$" },
+            { "label": "d", "question": "$(-1)^{99} \\times (-2)^6 \\div (-4)^2$", "answer": "$-4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given $a = -3$, $b = -4$, and $c = 6$, evaluate each algebraic product or quotient:",
+          "parts": [
+            { "label": "a", "question": "$a^2 b^2 c \\div (-12)$", "answer": "$-72$" },
+            { "label": "b", "question": "$\\dfrac{-2a^3 b}{c^2}$", "answer": "$-6$" },
+            { "label": "c", "question": "$\\dfrac{(ab)^2}{a c}$", "answer": "$-8$" },
+            { "label": "d", "question": "$\\dfrac{b^3 c}{a^2}$", "answer": "$-\\dfrac{128}{3}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve for the integer $k$ in each equation:",
+          "parts": [
+            { "label": "a", "question": "$k^3 = -216$", "answer": "$k = -6$" },
+            { "label": "b", "question": "$-4k^2 = -196$ ($k < 0$)", "answer": "$k = -7$" },
+            { "label": "c", "question": "$\\dfrac{-180}{k} = -15$", "answer": "$k = 12$" },
+            { "label": "d", "question": "$(-3)^3 \\times k = -243$", "answer": "$k = 9$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "In the Australian Mathematics Competition (AMC), a $30$-question paper awards $+4$ marks for Questions $1$–$20$, $+6$ marks for Questions $21$–$30$, and deducts $-2$ marks for each wrong answer (unanswered questions score $0$). Sasha answers $16$ of the first $20$ correctly ($3$ wrong, $1$ blank) and $6$ of the last $10$ correctly ($3$ wrong, $1$ blank). Find her final score.",
+          "answer": "$88\\text{ marks}$ ($16(4) + 6(6) + 6(-2) = 88$)"
+        },
+        {
+          "number": 6,
+          "question": "A deep-core drill in the Pilbara region of Western Australia penetrates rock at $-14\\text{ m/h}$ through shale for $6$ hours and $-9\\text{ m/h}$ through granite for $8$ hours. What is the drill bit's final elevation relative to the surface and its mean vertical velocity over the $14$ hours?",
+          "answer": "$-156\\text{ m}$; mean velocity $-\\dfrac{78}{7}\\text{ m/h}$ ($-11\\dfrac{1}{7}\\text{ m/h}$)"
+        },
+        {
+          "number": 7,
+          "question": "An architectural cooling chamber in Darwin changes temperature by $(-2)^3\\,^\\circ\\text{C}$ in stage 1, $3 \\times (-4)\\,^\\circ\\text{C}$ in stage 2, and $-(-3)^2\\,^\\circ\\text{C}$ in stage 3 from an initial $24^\\circ\\text{C}$. Find the final temperature.",
+          "answer": "$-5^\\circ\\text{C}$ ($24 - 8 - 12 - 9 = -5^\\circ\\text{C}$)"
+        },
+        {
+          "number": 8,
+          "question": "The mean of six integers is $-9$. When two extra integers whose product is $-48$ and whose difference is $16$ are included, find the two extra integers and the new mean of all eight integers.",
+          "answer": "Integers are $-12$ and $4$; new mean $= -\\dfrac{31}{4} = -7.75$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Three distinct integers $x < y < z$ satisfy $xyz = -36$ and $x + y + z = -4$, with $x < -5$. Deduce the unique values of $x, y, z$ and justify why no other factor triple works.",
+          "answer": "Since $xyz = -36 < 0$ and $x < -5$, the possible integer factors of $-36$ less than $-5$ are $x \\in \\{-36, -18, -12, -9, -6\\}$. Testing $x = -9$ gives $yz = 4$ and $y + z = 5$, which yields $y = 1, z = 4$. Thus $(x, y, z) = (-9, 1, 4)$ is the unique solution."
+        },
+        {
+          "number": 10,
+          "question": "Determine whether the product $P = \\prod_{k=1}^{20} (-k)^k = (-1)^1 \\times (-2)^2 \\times (-3)^3 \\times \\dots \\times (-20)^{20}$ is positive or negative. Prove your answer by finding the parity of the sum of exponents $1 + 2 + \\dots + 20$.",
+          "answer": "Positive, because the total number of negative factors is $\\sum_{k=1}^{20} k = \\dfrac{20 \\times 21}{2} = 210$, which is even, and $(-1)^{210} = +1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE1_2_1a", "expression": "(-3) * (-4) * (-5) * (-2)", "expected": 120 },
+        { "id": "WSE1_2_1b", "expression": "((-18) * 14 * (-5)) / (-21 * (-6))", "expected": 10 },
+        { "id": "WSE1_2_1c", "expression": "((-24) * (-15) * (-8)) / (16 * (-9))", "expected": 20 },
+        { "id": "WSE1_2_2a", "expression": "(-2)**5 * (-3)**2", "expected": -288 },
+        { "id": "WSE1_2_2c", "expression": "((-4)**3 * (-3)**3) / ((-6)**2)", "expected": 48 },
+        { "id": "WSE1_2_3a", "expression": "((-3)**2 * (-4)**2 * 6) / (-12)", "expected": -72 },
+        { "id": "WSE1_2_3b", "expression": "(-2 * (-3)**3 * (-4)) / (6**2)", "expected": -6 },
+        { "id": "WSE1_2_5", "expression": "16*4 + 6*6 + 6*(-2)", "expected": 88 },
+        { "id": "WSE1_2_6", "expression": "-14*6 + (-9)*8", "expected": -156 },
+        { "id": "WSE1_2_7", "expression": "24 + (-2)**3 + 3*(-4) - (-3)**2", "expected": -5 }
+      ]
+    },
+    {
+      "section_id": "1_3",
+      "section_code": "1C",
+      "title": "Order of Operations and Directed Numbers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each multi-step directed-number expression:",
+          "parts": [
+            { "label": "a", "question": "$-36 \\div (-2)^2 - 4 \\times (-3 - 2)$", "answer": "$11$" },
+            { "label": "b", "question": "$(-3)^3 - 2 \\times [15 - (-4)^2 \\times 2]$", "answer": "$7$" },
+            { "label": "c", "question": "$-4^2 + (-5)^2 - 3 \\times (-2)^3$", "answer": "$33$" },
+            { "label": "d", "question": "$72 \\div [-3 \\times (2 - (-2)^2)] - (-5)^2$", "answer": "$-13$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each complex fractional expression:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{(-3)^3 - 5 \\times (-3)}{-2^2 - (-6)}$", "answer": "$-6$" },
+            { "label": "b", "question": "$\\dfrac{-4^2 - (-2)^5}{(-3)^2 - 17}$", "answer": "$-2$" },
+            { "label": "c", "question": "$\\dfrac{3 \\times (-4)^2 - 60}{(-2)^3 - (-5)}$", "answer": "$4$" },
+            { "label": "d", "question": "$\\dfrac{(-6)^2 - 4 \\times (-3)(-5)}{-18 \\div (-3) - 10}$", "answer": "$6$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given $x = -3$, $y = -2$, and $z = 4$, evaluate:",
+          "parts": [
+            { "label": "a", "question": "$x^3 - 3x^2 y + 3xy^2 - y^3$", "answer": "$-1$" },
+            { "label": "b", "question": "$\\dfrac{x^2 z - y^3}{x - y - z}$", "answer": "$-\\dfrac{44}{5}$" },
+            { "label": "c", "question": "$(x - z)^2 - (2x + y)^2$", "answer": "$-15$" },
+            { "label": "d", "question": "$\\dfrac{z^2 - x^2 y^2}{x^2 + y^3}$", "answer": "$-20$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the value of the integer $m$ in each equation:",
+          "parts": [
+            { "label": "a", "question": "$18 - 3(m - 4) = -6$", "answer": "$m = 12$" },
+            { "label": "b", "question": "$\\dfrac{(-4)^2 + 2m}{-5} = -2$", "answer": "$m = -3$" },
+            { "label": "c", "question": "$-2(m + 5)^2 = -50$ ($m < 0$)", "answer": "$m = -10$" },
+            { "label": "d", "question": "$(-3)^2 - 4m = (-2)^5 + 1$", "answer": "$m = 10$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A refrigerated transport container travelling from Mildura to Melbourne holds $-18^\\circ\\text{C}$ for $4$ hours, rises to $-12^\\circ\\text{C}$ for $3$ hours during a loading stop, and runs at $-21^\\circ\\text{C}$ for $5$ hours. Find the time-weighted mean temperature across the $12$-hour journey.",
+          "answer": "$-17.75^\\circ\\text{C}$ ($\\dfrac{4(-18) + 3(-12) + 5(-21)}{12} = -\\dfrac{71}{4}^\\circ\\text{C}$)"
+        },
+        {
+          "number": 6,
+          "question": "A portfolio manager in Sydney buys $300$ shares that change by $-\\$4$ each, $500$ shares that change by $+\\$3$ each, and $200$ shares that change by $-\\$2$ each, plus $\\$35$ brokerage on each of the $3$ trades. Write a single expression and find the net profit or loss.",
+          "answer": "$-\\$205$ loss ($300(-4) + 500(3) + 200(-2) - 3(35) = -205$)"
+        },
+        {
+          "number": 7,
+          "question": "The vertical displacement $s\\text{ (m)}$ of a stone dropped into a mine shaft at Kalgoorlie is modelled by $s = ut - 5t^2$, where $u = -4\\text{ m/s}$ and $t = 6\\text{ s}$. Evaluate $s$ and interpret its sign.",
+          "answer": "$-204\\text{ m}$ ($204\\text{ m}$ below the top of the mine shaft)"
+        },
+        {
+          "number": 8,
+          "question": "Find the unique temperature where the Fahrenheit and Celsius scales read the exact same numerical value by solving $C = \\dfrac{5(C - 32)}{9}$ and verifying in the formula.",
+          "answer": "$-40^\\circ\\text{C} = -40^\\circ\\text{F}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Consider the expression $E = 24 \\div (-6) - 2 \\times (-3)^2 + 4$. Find (a) the value of $E$ without extra brackets, and (b) where to insert one pair of square brackets $[\\;]$ so that the expression evaluates to $-50$.",
+          "answer": "(a) $-4 - 18 + 4 = -18$; (b) $[24 \\div (-6) - 2] \\times (-3)^2 + 4 = (-4 - 2) \\times 9 + 4 = -54 + 4 = -50$."
+        },
+        {
+          "number": 10,
+          "question": "Prove that for any integer $a$ and any positive integer $n$, $(-a)^{2n} = a^{2n}$ whereas $(-a)^{2n-1} = -a^{2n-1}$. Use this to simplify $(-x)^{10} \\div (-x)^7$ for $x \\ne 0$.",
+          "answer": "Since $2n$ is even, $(-1)^{2n} = 1$, so $(-a)^{2n} = (-1)^{2n}a^{2n} = a^{2n}$; since $2n-1$ is odd, $(-1)^{2n-1} = -1$, so $(-a)^{2n-1} = -a^{2n-1}$. Thus $\\dfrac{(-x)^{10}}{(-x)^7} = \\dfrac{x^{10}}{-x^7} = -x^3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE1_3_1a", "expression": "-36 / (-2)**2 - 4 * (-3 - 2)", "expected": 11 },
+        { "id": "WSE1_3_1b", "expression": "(-3)**3 - 2 * (15 - (-4)**2 * 2)", "expected": 7 },
+        { "id": "WSE1_3_1c", "expression": "-4**2 + (-5)**2 - 3 * (-2)**3", "expected": 33 },
+        { "id": "WSE1_3_2a", "expression": "((-3)**3 - 5 * (-3)) / (-2**2 - (-6))", "expected": -6 },
+        { "id": "WSE1_3_2d", "expression": "((-6)**2 - 4 * (-3) * (-5)) / (-18 / (-3) - 10)", "expected": 6 },
+        { "id": "WSE1_3_3a", "expression": "(-3)**3 - 3*(-3)**2*(-2) + 3*(-3)*(-2)**2 - (-2)**3", "expected": -1 },
+        { "id": "WSE1_3_3d", "expression": "(4**2 - (-3)**2 * (-2)**2) / ((-3)**2 + (-2)**3)", "expected": -20 },
+        { "id": "WSE1_3_5", "expression": "Rational(4*(-18) + 3*(-12) + 5*(-21), 12)", "expected": "-71/4" },
+        { "id": "WSE1_3_6", "expression": "300*(-4) + 500*3 + 200*(-2) - 3*35", "expected": -205 },
+        { "id": "WSE1_3_7", "expression": "(-4)*6 - 5 * 6**2", "expected": -204 }
+      ]
+    },
+    {
+      "section_id": "1_4",
+      "section_code": "1D",
+      "title": "LCM, HCF, and Prime Factorisation",
+      "vcaa_code": "VC2M8N02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Express the prime factorisation of each large integer in index form:",
+          "parts": [
+            { "label": "a", "question": "$1512$", "answer": "$2^3 \\times 3^3 \\times 7$" },
+            { "label": "b", "question": "$2940$", "answer": "$2^2 \\times 3 \\times 5 \\times 7^2$" },
+            { "label": "c", "question": "$3960$", "answer": "$2^3 \\times 3^2 \\times 5 \\times 11$" },
+            { "label": "d", "question": "$4620$", "answer": "$2^2 \\times 3 \\times 5 \\times 7 \\times 11$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the $\\text{HCF}$ and $\\text{LCM}$ of each triple of integers:",
+          "parts": [
+            { "label": "a", "question": "$72, 108, 180$", "answer": "$\\text{HCF} = 36, \\; \\text{LCM} = 1080$" },
+            { "label": "b", "question": "$84, 140, 210$", "answer": "$\\text{HCF} = 14, \\; \\text{LCM} = 420$" },
+            { "label": "c", "question": "$48, 80, 112$", "answer": "$\\text{HCF} = 16, \\; \\text{LCM} = 1680$" },
+            { "label": "d", "question": "$90, 150, 225$", "answer": "$\\text{HCF} = 15, \\; \\text{LCM} = 450$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the $\\text{HCF}$ and $\\text{LCM}$ of each group of algebraic terms:",
+          "parts": [
+            { "label": "a", "question": "$24a^3 b^2$ and $36a^2 b^4$", "answer": "$\\text{HCF} = 12a^2 b^2, \\; \\text{LCM} = 72a^3 b^4$" },
+            { "label": "b", "question": "$45x^4 y z^2$ and $75x^2 y^3 z$", "answer": "$\\text{HCF} = 15x^2 y z, \\; \\text{LCM} = 225x^4 y^3 z^2$" },
+            { "label": "c", "question": "$18m^3 n^2, 30m^2 n^5, 42m^4 n$", "answer": "$\\text{HCF} = 6m^2 n, \\; \\text{LCM} = 630m^4 n^5$" },
+            { "label": "d", "question": "$56p^5 q^2, 84p^3 q^4, 140p^2 q^3$", "answer": "$\\text{HCF} = 28p^2 q^2, \\; \\text{LCM} = 840p^5 q^4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use prime factorisation to solve each number-property problem:",
+          "parts": [
+            { "label": "a", "question": "Smallest positive integer $k$ so $720k$ is a perfect square", "answer": "$k = 5$" },
+            { "label": "b", "question": "Smallest positive integer $m$ so $1080m$ is a perfect cube", "answer": "$m = 25$" },
+            { "label": "c", "question": "Total number of positive factors of $360 = 2^3 \\times 3^2 \\times 5^1$", "answer": "$24\\text{ factors}$" },
+            { "label": "d", "question": "Total number of positive factors of $1260 = 2^2 \\times 3^2 \\times 5 \\times 7$", "answer": "$36\\text{ factors}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Three navigation beacons off Fremantle flash every $18\\text{ s}$, $24\\text{ s}$, and $30\\text{ s}$ respectively. If all three flash simultaneously at $8{:}00{:}00\\text{ pm}$, how many times (including the initial flash) will all three flash together between $8{:}00{:}00\\text{ pm}$ and $9{:}00{:}00\\text{ pm}$ inclusive?",
+          "answer": "$11\\text{ times}$ ($\\text{LCM} = 360\\text{ s} = 6\\text{ min}$; $\\frac{60}{6} + 1 = 11$)"
+        },
+        {
+          "number": 6,
+          "question": "A solid block of jarrah timber measuring $126\\text{ cm} \\times 90\\text{ cm} \\times 54\\text{ cm}$ is sawn completely into identical largest-possible cubes with no waste. Find the side length of each cube and the total number of cubes cut.",
+          "answer": "Side length $18\\text{ cm}$; $105\\text{ cubes}$ ($7 \\times 5 \\times 3 = 105$)"
+        },
+        {
+          "number": 7,
+          "question": "Find the smallest positive integer $N > 5$ that leaves a remainder of $5$ when divided by $12$, $16$, or $20$.",
+          "answer": "$245$ ($\\text{LCM}(12, 16, 20) + 5 = 240 + 5 = 245$)"
+        },
+        {
+          "number": 8,
+          "question": "Three meshing gears in a Newcastle conveyor drive have $28$, $42$, and $63$ teeth. What is the minimum number of full revolutions the $28$-tooth gear must make before all three gears return simultaneously to their starting alignment?",
+          "answer": "$9\\text{ revolutions}$ ($\\text{LCM}(28, 42, 63) = 252$ teeth; $252 \\div 28 = 9$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Two positive integers $a < b$ have $\\text{HCF}(a, b) = 18$ and $\\text{LCM}(a, b) = 630$. By writing $a = 18x$ and $b = 18y$ where $\\text{HCF}(x, y) = 1$, find all possible pairs $(a, b)$.",
+          "answer": "$xy = \\dfrac{630}{18} = 35 = 1 \\times 35 = 5 \\times 7$, giving two coprime pairs: $(a, b) = (18, 630)$ or $(90, 126)$."
+        },
+        {
+          "number": 10,
+          "question": "Given $M = 2^a \\times 3^4 \\times 5^2$ and $N = 2^3 \\times 3^b \\times 7^c$ have $\\text{HCF}(M, N) = 72$ and $\\text{LCM}(M, N) = 226\\,800$, determine the exponents $a, b, c$.",
+          "answer": "$\\text{HCF} = 72 = 2^3 \\times 3^2 \\implies \\min(a, 3) = 3$ and $\\min(4, b) = 2 \\implies b = 2$. Since $\\text{LCM} = 226\\,800 = 2^4 \\times 3^4 \\times 5^2 \\times 7^1$, we have $\\max(a, 3) = 4 \\implies a = 4$ and $c = 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE1_4_1a", "expression": "2**3 * 3**3 * 7", "expected": 1512 },
+        { "id": "WSE1_4_1b", "expression": "2**2 * 3 * 5 * 7**2", "expected": 2940 },
+        { "id": "WSE1_4_1c", "expression": "2**3 * 3**2 * 5 * 11", "expected": 3960 },
+        { "id": "WSE1_4_1d", "expression": "2**2 * 3 * 5 * 7 * 11", "expected": 4620 },
+        { "id": "WSE1_4_2a_hcf", "expression": "igcd(72, 108, 180)", "expected": 36 },
+        { "id": "WSE1_4_2a_lcm", "expression": "ilcm(72, 108, 180)", "expected": 1080 },
+        { "id": "WSE1_4_2c_lcm", "expression": "ilcm(48, 80, 112)", "expected": 1680 },
+        { "id": "WSE1_4_6", "expression": "(126 / igcd(126, 90, 54)) * (90 / igcd(126, 90, 54)) * (54 / igcd(126, 90, 54))", "expected": 105 },
+        { "id": "WSE1_4_7", "expression": "ilcm(12, 16, 20) + 5", "expected": 245 },
+        { "id": "WSE1_4_8", "expression": "ilcm(28, 42, 63) / 28", "expected": 9 }
+      ]
+    }
+  ]
+}

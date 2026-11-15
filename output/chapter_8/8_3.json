@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "section_id": "8_3",
+    "section_code": "8C",
+    "chapter_number": 8,
+    "chapter_title": "Pythagoras' Theorem and Geometry",
+    "title": "3D Coordinates, Transformations, and Geometric Algorithms",
+    "vcaa_code": "VC2M8SP03",
+    "vcaa_description": "Locate and describe position in three-dimensional space using a coordinate system; design and test algorithms to classify and transform shapes",
+    "strand": "Space",
+    "target_mastery": "Locate and describe points $(x, y, z)$ in 3D Cartesian space, determine missing vertices, midpoints, and space diagonals of axis-aligned rectangular prisms, apply 3D coordinate translations $(x + a, y + b, z + c)$, and design or trace geometric algorithms to classify triangles/quadrilaterals and verify regular polygon tessellations.",
+    "prerequisites": [
+      "Plotting points $(x, y)$ on the 2D Cartesian plane and applying Pythagoras' theorem (Section 8A)",
+      "Congruence and quadrilateral properties (Section 8B)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "3D Cartesian Coordinates $(x, y, z)$",
+        "definition": "An ordered triple specifying the position of a point in three-dimensional space using three mutually perpendicular axes meeting at the origin $O(0, 0, 0)$: the $x$-axis (length/east-west), the $y$-axis (width/north-south), and the $z$-axis (vertical height/up-down)."
+      },
+      {
+        "term": "3D Translation Vector $[a, b, c]$",
+        "definition": "A rigid transformation that shifts every point $(x, y, z)$ of a 3D object to its image $(x', y', z') = (x + a, y + b, z + c)$ without rotating or resizing the object."
+      },
+      {
+        "term": "3D Midpoint and Space Diagonal",
+        "definition": "Between $A(x_1, y_1, z_1)$ and $B(x_2, y_2, z_2)$, the midpoint is $M\\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2}\\right)$ and the straight-line distance is $d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}$."
+      },
+      {
+        "term": "Tessellation Algorithm",
+        "definition": "A decision procedure that tests whether polygons can tile a flat plane without gaps or overlaps by checking whether the interior angles meeting at every vertex sum to exactly $360^\\circ$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_8_3_1",
+      "title": "Locating Points $(x, y, z)$ and Vertices of Prisms in 3D Space",
+      "explanation": "To extend the 2D Cartesian plane into three-dimensional space, we add a vertical $z$-axis perpendicular to both the $x$-axis and $y$-axis at the origin $O(0, 0, 0)$. Every point is uniquely described by an ordered triple $(x, y, z)$. On the $xy$-floor plane, $z = 0$; on the $xz$-wall plane, $y = 0$; and on the $yz$-wall plane, $x = 0$. For an axis-aligned rectangular prism with one corner at $(0, 0, 0)$ and opposite corner at $(L, W, H)$, all $8$ vertices are formed by choosing either $0$ or $L$ for $x$, $0$ or $W$ for $y$, and $0$ or $H$ for $z$.",
+      "formula_latex": "M = \\left(\\frac{x_1 + x_2}{2}, \\; \\frac{y_1 + y_2}{2}, \\; \\frac{z_1 + z_2}{2}\\right), \\qquad d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2 + (z_2 - z_1)^2}",
+      "callout_title": "Follow the Axes in Alphabetical Order: $x$, then $y$, then $z$",
+      "callout_rule": "To plot $(4, -3, 5)$ from the origin $(0, 0, 0)$: move $4$ units along the $+x$-axis, then $3$ units in the $-y$ direction on the horizontal floor, and finally $5$ units straight up parallel to the $+z$-axis."
+    },
+    {
+      "id": "theory_8_3_2",
+      "title": "3D Coordinate Transformations: Translations and Reflections",
+      "explanation": "A **translation** in 3D space shifts a point $P(x, y, z)$ by adding constants $(a, b, c)$ to each coordinate: $P'(x + a, y + b, z + c)$. Reflections across the coordinate planes reverse the sign of the perpendicular coordinate: reflecting across the horizontal $xy$-plane ($z = 0$) maps $(x, y, z) \\to (x, y, -z)$; reflecting across the $yz$-plane ($x = 0$) maps $(x, y, z) \\to (-x, y, z)$; and reflecting across the $xz$-plane ($y = 0$) maps $(x, y, z) \\to (x, -y, z)$.",
+      "formula_latex": "\\text{Translation by } [a, b, c]: \\quad (x, y, z) \\longrightarrow (x + a, \\; y + b, \\; z + c)",
+      "callout_title": "Image Minus Object Gives the Translation Vector",
+      "callout_rule": "To find the translation that moves $A(x_1, y_1, z_1)$ to its image $A'(x_2, y_2, z_2)$, subtract the starting coordinates from the image coordinates: $[a, b, c] = [x_2 - x_1, \\; y_2 - y_1, \\; z_2 - z_1]$."
+    },
+    {
+      "id": "theory_8_3_3",
+      "title": "Geometric Classification Algorithms for Triangles and Quadrilaterals",
+      "explanation": "Decision trees and flowcharts can classify geometric figures systematically from their side lengths and angles. For a triangle with ordered side lengths $a \\le b \\le c$: first check the **Triangle Inequality** ($a + b > c$). If valid, classify **by sides** ($a = b = c \\implies$ equilateral; $a = b$ or $b = c \\implies$ isosceles; $a < b < c \\implies$ scalene) and **by angles** using the converse of Pythagoras' theorem ($a^2 + b^2 = c^2 \\implies$ right-angled; $a^2 + b^2 > c^2 \\implies$ acute-angled; $a^2 + b^2 < c^2 \\implies$ obtuse-angled).",
+      "formula_latex": "a^2 + b^2 = c^2 \\;(\\text{Right}), \\qquad a^2 + b^2 > c^2 \\;(\\text{Acute}), \\qquad a^2 + b^2 < c^2 \\;(\\text{Obtuse})",
+      "callout_title": "Always Check the Triangle Inequality First!",
+      "callout_rule": "Before classifying a triangle with side lengths $a \\le b \\le c$, an algorithm must test whether $a + b > c$. For example, $(3, 4, 8)$ cannot form a triangle at all because $3 + 4 = 7 \\le 8$."
+    },
+    {
+      "id": "theory_8_3_4",
+      "title": "Algorithms for Regular Polygon Interior Angles and Tessellations",
+      "explanation": "A regular $n$-gon has interior angle sum $(n - 2) \\times 180^\\circ$ and each interior angle equals $\\theta = \\frac{(n - 2) \\times 180^\\circ}{n} = 180^\\circ - \\frac{360^\\circ}{n}$. An algorithm to test whether a single regular $n$-gon can tessellate (tile the plane edge-to-edge) checks whether $\\theta$ divides $360^\\circ$ exactly, so that an integer number of polygons $k = \\frac{360^\\circ}{\\theta} = \\frac{2n}{n - 2}$ can meet around each vertex without gaps or overlaps.",
+      "formula_latex": "\\theta = \\frac{(n - 2) \\times 180^\\circ}{n}, \\qquad \\text{Regular tessellation condition: } k = \\frac{360^\\circ}{\\theta} \\text{ is an integer}",
+      "callout_title": "Only Three Regular Polygons Tessellate Alone",
+      "callout_rule": "Only $n = 3$ (equilateral triangles, $\\theta = 60^\\circ$, $k = 6$), $n = 4$ (squares, $\\theta = 90^\\circ$, $k = 4$), and $n = 6$ (regular hexagons, $\\theta = 120^\\circ$, $k = 3$) divide $360^\\circ$ exactly."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE8_3_1",
+      "title": "Finding Missing Vertices, Midpoints, and Space Diagonals of a 3D Prism",
+      "difficulty": "Fluency",
+      "problem": "An axis-aligned rectangular prism has one vertex at the origin $O(0, 0, 0)$ and its opposite top vertex at $G(6, 8, 24)$. (a) State the coordinates of the vertex $A$ on the $x$-axis, the vertex $C$ on the $xy$-floor directly below $G$, and the midpoint $M$ of the space diagonal $OG$. (b) Calculate the exact length of the space diagonal $OG$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The prism has length $L = 6$ (along $x$), width $W = 8$ (along $y$), and height $H = 24$ (along $z$). On the $x$-axis, $y = 0$ and $z = 0$, so $A = (6, 0, 0)$. Directly below $G(6, 8, 24)$ on the floor ($z = 0$) is $C(6, 8, 0)$. Average the coordinates of $O(0, 0, 0)$ and $G(6, 8, 24)$ to find the midpoint $M$.",
+          "working": "$$A = (6, 0, 0), \\qquad C = (6, 8, 0), \\qquad M = \\left(\\frac{0+6}{2}, \\frac{0+8}{2}, \\frac{0+24}{2}\\right) = (3, 4, 12)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Apply 3D Pythagoras' theorem $OG = \\sqrt{x^2 + y^2 + z^2}$ with $(x, y, z) = (6, 8, 24)$.",
+          "working": "$$OG = \\sqrt{6^2 + 8^2 + 24^2} = \\sqrt{36 + 64 + 576} = \\sqrt{676} = 26\\text{ units}$$"
+        }
+      ],
+      "final_answer": "(a) $A(6, 0, 0)$, $C(6, 8, 0)$, Midpoint $M(3, 4, 12)$; (b) $OG = 26\\text{ units}$",
+      "now_you_try": {
+        "problem": "A rectangular prism has opposite vertices at $O(0, 0, 0)$ and $P(4, 12, 6)$. Find (a) the midpoint of $OP$ and (b) the exact length of the space diagonal $OP$.",
+        "hint": "Average $(0,0,0)$ and $(4,12,6)$ for the midpoint, and evaluate $\\sqrt{4^2 + 12^2 + 6^2}$.",
+        "working_summary": "(a) $M = (2, 6, 3)$; (b) $OP = \\sqrt{16 + 144 + 36} = \\sqrt{196} = 14\\text{ units}$.",
+        "answer": "(a) $(2, 6, 3)$, (b) $14\\text{ units}$"
+      }
+    },
+    {
+      "id": "WE8_3_2",
+      "title": "Applying a 3D Translation Algorithm to a Drone's Flight Path",
+      "difficulty": "Understanding",
+      "problem": "A surveying drone in a 3D coordinate grid ($1\\text{ unit} = 1\\text{ metre}$, where $z$ is altitude) starts at $P_0(2, -5, 10)$. An autopilot algorithm executes two sequential translation commands:\n- Command 1: Translate by vector $[4, 8, 15]$ to reach $P_1$.\n- Command 2: Translate by vector $[-3, 2, -6]$ to reach $P_2$.\n(a) Find the coordinates of $P_1$ and $P_2$. (b) State the single combined translation vector $[a, b, c]$ that maps $P_0$ directly to $P_2$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Add the components of Command 1 $[4, 8, 15]$ to $P_0(2, -5, 10)$ to find $P_1$, then add Command 2 $[-3, 2, -6]$ to $P_1$ to find $P_2$.",
+          "working": "$$P_1 = (2 + 4, \\; -5 + 8, \\; 10 + 15) = (6, 3, 25)$$\n$$P_2 = (6 + (-3), \\; 3 + 2, \\; 25 + (-6)) = (3, 5, 19)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Add the two translation vectors (or subtract $P_2 - P_0$) to obtain the single net translation vector.",
+          "working": "$$\\text{Net vector} = [4 + (-3), \\; 8 + 2, \\; 15 + (-6)] = [1, 10, 9]$$"
+        }
+      ],
+      "final_answer": "(a) $P_1(6, 3, 25)$ and $P_2(3, 5, 19)$; (b) Net translation vector $[1, 10, 9]$",
+      "now_you_try": {
+        "problem": "A vertex of a 3D CAD model at $A(-4, 7, 3)$ is translated to its image $A'(5, 1, 11)$. (a) Find the translation vector $[a, b, c]$. (b) Where does this same translation send the point $B(2, 8, -3)$?",
+        "hint": "Calculate $[a, b, c] = [5 - (-4), 1 - 7, 11 - 3]$, then add $[a, b, c]$ to $B(2, 8, -3)$.",
+        "working_summary": "(a) $[9, -6, 8]$; (b) $B' = (2 + 9, 8 - 6, -3 + 8) = (11, 2, 5)$.",
+        "answer": "(a) $[9, -6, 8]$, (b) $B'(11, 2, 5)$"
+      }
+    },
+    {
+      "id": "WE8_3_3",
+      "title": "Tracing a Geometric Classification and Tessellation Algorithm",
+      "difficulty": "Problem-Solving",
+      "problem": "A geometric classification algorithm accepts three side lengths $a \\le b \\le c$:\n1. **If** $a + b \\le c$, output `'Invalid triangle'` and Stop.\n2. **Else if** $a^2 + b^2 = c^2$, output `'Right-angled'`.\n3. **Else if** $a^2 + b^2 > c^2$, output `'Acute-angled'`.\n4. **Else**, output `'Obtuse-angled'`.\nTrace this algorithm for the three inputs: (a) $(5, 12, 13)$, (b) $(6, 8, 11)$, and (c) $(4, 7, 12)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Test $(5, 12, 13)$: check $5 + 12 > 13$ ($17 > 13$, valid), then compare $a^2 + b^2$ with $c^2$.",
+          "working": "$$\\text{(a) } 5 + 12 = 17 > 13 \\text{ (Valid)}; \\quad 5^2 + 12^2 = 25 + 144 = 169 = 13^2 \\implies \\text{'Right-angled'}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Test $(6, 8, 11)$ and $(4, 7, 12)$ through Step 1 and the subsequent branches.",
+          "working": "$$\\text{(b) } 6 + 8 = 14 > 11 \\text{ (Valid)}; \\quad 6^2 + 8^2 = 36 + 64 = 100 < 11^2 \\;(121) \\implies \\text{'Obtuse-angled'}$$\n$$\\text{(c) } 4 + 7 = 11 \\le 12 \\implies \\text{Step 1 is True} \\implies \\text{'Invalid triangle'}$$"
+        }
+      ],
+      "final_answer": "(a) `'Right-angled'`, (b) `'Obtuse-angled'`, (c) `'Invalid triangle'`",
+      "now_you_try": {
+        "problem": "Use the same algorithm to classify a triangle with side lengths $(7, 8, 10)$.",
+        "hint": "Check $7 + 8 > 10$, then compare $7^2 + 8^2$ with $10^2$.",
+        "working_summary": "$7 + 8 = 15 > 10$ (valid); $7^2 + 8^2 = 49 + 64 = 113 > 100$ ($10^2$), so Step 3 outputs `'Acute-angled'`.",
+        "answer": "`'Acute-angled'`"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_8_3_1",
+      "title": "Swapping the $y$- and $z$-Coordinates When Reading 3D Points",
+      "misconception": "Assuming the second coordinate in $(x, y, z)$ is vertical height because $y$ is vertical on a 2D wall graph.",
+      "correct_concept": "In standard 3D architectural, engineering, and mathematical coordinate systems, $(x, y)$ forms the horizontal floor plane and the third coordinate $z$ represents vertical height (altitude). Always read $(x, y, z)$ in strict alphabetical order.",
+      "incorrect_working": "$$\\text{Point }5\\text{ units east } (x), 0\\text{ units north } (y), 9\\text{ units up } (z) \\to (5, 9, 0) \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{East } x = 5, \\text{ North } y = 0, \\text{ Up } z = 9 \\implies (5, 0, 9)$$",
+      "counter_example": "$(5, 9, 0)$ lies flat on the horizontal floor ($z = 0$), whereas $(5, 0, 9)$ is $9$ units above the floor."
+    },
+    {
+      "id": "misc_8_3_2",
+      "title": "Assuming Every Regular Polygon Can Tessellate on Its Own",
+      "misconception": "Believing that regular pentagons ($n = 5$) or regular octagons ($n = 8$) can tile a flat floor without gaps using only one shape.",
+      "correct_concept": "For a regular $n$-gon to tessellate by itself, its interior angle $\\theta = \\frac{(n-2)\\times 180^\\circ}{n}$ must divide $360^\\circ$ with zero remainder. A regular pentagon has $\\theta = 108^\\circ$ ($360 \\div 108 = 3.\\overline{3}$, not an integer) and a regular octagon has $\\theta = 135^\\circ$ ($360 \\div 135 = 2.\\overline{6}$, not an integer).",
+      "incorrect_working": "$$\\text{Regular octagon } (n = 8): \\theta = 135^\\circ \\implies \\text{tiles bathroom floors alone} \\quad \\text{(Incorrect — requires small squares!)}$$",
+      "correct_working": "$$\\text{At a vertex of two octagons: } 2 \\times 135^\\circ = 270^\\circ, \\text{ leaving a } 360^\\circ - 270^\\circ = 90^\\circ \\text{ square gap}$$",
+      "counter_example": "Three pentagons at a vertex sum to $3 \\times 108^\\circ = 324^\\circ$ (leaving a $36^\\circ$ gap), while four pentagons sum to $432^\\circ > 360^\\circ$ (overlapping)."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "8_3_Q1",
+        "question": "Calculate the coordinates of the midpoint $M$ of the 3D line segment joining $A(2, -6, 10)$ and $B(8, 4, -2)$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$M(5, -1, 4)$",
+        "step_by_step_solution": [
+          "Average the $x$-, $y$-, and $z$-coordinates separately using $M = \\left(\\frac{x_1+x_2}{2}, \\frac{y_1+y_2}{2}, \\frac{z_1+z_2}{2}\\right)$.",
+          "Evaluate: $M = \\left(\\frac{2+8}{2}, \\frac{-6+4}{2}, \\frac{10+(-2)}{2}\\right) = (5, -1, 4)$."
+        ]
+      },
+      {
+        "id": "8_3_Q2",
+        "question": "A point $P(7, -3, 5)$ is translated by the vector $[-4, 9, -8]$ to $P'$, and then $P'$ is reflected across the horizontal $xy$-plane ($z = 0$) to reach $P''$. Find the coordinates of $P'$ and $P''$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$P'(3, 6, -3)$ and $P''(3, 6, 3)$",
+        "step_by_step_solution": [
+          "Add the translation vector $[-4, 9, -8]$ to $P(7, -3, 5)$: $P' = (7 - 4, -3 + 9, 5 - 8) = (3, 6, -3)$.",
+          "Reflecting across the $xy$-plane reverses the sign of the $z$-coordinate: $P'' = (3, 6, -(-3)) = (3, 6, 3)$."
+        ]
+      },
+      {
+        "id": "8_3_Q3",
+        "question": "Find the exact straight-line distance in 3D space between the points $A(1, 2, 3)$ and $B(4, 6, 15)$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$13\\text{ units}$",
+        "step_by_step_solution": [
+          "Find the coordinate differences: $\\Delta x = 4 - 1 = 3$, $\\Delta y = 6 - 2 = 4$, and $\\Delta z = 15 - 3 = 12$.",
+          "Apply 3D Pythagoras' theorem: $AB = \\sqrt{3^2 + 4^2 + 12^2} = \\sqrt{9 + 16 + 144} = \\sqrt{169} = 13\\text{ units}$."
+        ]
+      },
+      {
+        "id": "8_3_Q4",
+        "question": "Use the interior angle formula $\\theta = \\frac{(n - 2) \\times 180^\\circ}{n}$ to calculate one interior angle of a regular decagon ($n = 10$), and test whether a regular decagon can tessellate the plane by itself.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$\\theta = 144^\\circ$; No, because $\\frac{360^\\circ}{144^\\circ} = 2.5$ is not an integer",
+        "step_by_step_solution": [
+          "Substitute $n = 10$: $\\theta = \\frac{(10 - 2) \\times 180^\\circ}{10} = \\frac{8 \\times 180^\\circ}{10} = 144^\\circ$.",
+          "Divide $360^\\circ$ by $144^\\circ$: $\\frac{360}{144} = 2.5$. Since $2.5$ is not a whole number, regular decagons cannot meet around a vertex without leaving a gap or overlapping."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "8_3_Q5",
+        "question": "An axis-aligned shipping container is modelled in 3D space with one bottom corner at $A(2, 3, 0)$ and the diagonally opposite top corner at $G(14, 7, 3)$ (where units are metres). Calculate (a) the dimensions (length, width, height) and volume of the container, and (b) the length of the internal space diagonal $AG$.",
+        "difficulty": "Medium",
+        "context": "3D CAD Engineering",
+        "final_answer": "(a) Dimensions $12\\text{ m} \\times 4\\text{ m} \\times 3\\text{ m}$, Volume $= 144\\text{ m}^3$; (b) Space diagonal $AG = 13\\text{ m}$",
+        "step_by_step_solution": [
+          "Subtract the coordinates of $A(2, 3, 0)$ from $G(14, 7, 3)$: $\\text{Length} = 14 - 2 = 12\\text{ m}$, $\\text{Width} = 7 - 3 = 4\\text{ m}$, $\\text{Height} = 3 - 0 = 3\\text{ m}$. Volume $= 12 \\times 4 \\times 3 = 144\\text{ m}^3$.",
+          "Calculate the space diagonal: $AG = \\sqrt{12^2 + 4^2 + 3^2} = \\sqrt{144 + 16 + 9} = \\sqrt{169} = 13\\text{ m}$."
+        ]
+      },
+      {
+        "id": "8_3_Q6",
+        "question": "In a 3D video game engine, a triangular shield has vertices $A(0, 0, 2)$, $B(6, 0, 2)$, and $C(3, 4, 2)$. The shield is translated by the vector $[5, -2, 8]$ to a new position $A'B'C'$. (a) Find the coordinates of $A', B', C'$. (b) Calculate the perimeter of the translated triangle $A'B'C'$.",
+        "difficulty": "Challenging",
+        "context": "3D Game Graphics",
+        "final_answer": "(a) $A'(5, -2, 10), B'(11, -2, 10), C'(8, 2, 10)$; (b) Perimeter $= 16\\text{ units}$",
+        "step_by_step_solution": [
+          "Add $[5, -2, 8]$ to each vertex: $A'(5, -2, 10)$, $B'(11, -2, 10)$, $C'(8, 2, 10)$.",
+          "Since translation is a rigid transformation (isometry), the side lengths of $A'B'C'$ equal those of $ABC$ in the horizontal plane $z = 2$: $AB = 6$, $AC = \\sqrt{3^2 + 4^2} = 5$, and $BC = \\sqrt{(-3)^2 + 4^2} = 5$. Perimeter $= 6 + 5 + 5 = 16\\text{ units}$."
+        ]
+      },
+      {
+        "id": "8_3_Q7",
+        "question": "A bathroom tiler creates a **semi-regular tessellation** by placing two regular octagons ($n = 8$) and one regular polygon $P$ around every vertex so that their interior angles sum to $360^\\circ$ with no gaps. Use an angle-sum algorithm to find the required interior angle of polygon $P$ and identify what regular polygon $P$ is.",
+        "difficulty": "Medium",
+        "context": "Tiling & Architecture",
+        "final_answer": "Interior angle of $P = 90^\\circ$, so $P$ is a square ($n = 4$)",
+        "step_by_step_solution": [
+          "Each interior angle of a regular octagon ($n = 8$) is $\\theta_8 = \\frac{(8 - 2) \\times 180^\\circ}{8} = 135^\\circ$.",
+          "Two octagons meeting at a vertex occupy $2 \\times 135^\\circ = 270^\\circ$. The remaining angle needed to complete $360^\\circ$ is $360^\\circ - 270^\\circ = 90^\\circ$, which is the interior angle of a square ($n = 4$)."
+        ]
+      },
+      {
+        "id": "8_3_Q8",
+        "question": "A robot arm in an automated warehouse moves in 3D space from $(1, 3, 2)$ to $(10, 15, 2)$ across the horizontal plane $z = 2$, and then lifts straight up to $(10, 15, 10)$. (a) Find the distance travelled along this two-stage path. (b) If an algorithm reprograms the arm to move in a single straight 3D line from $(1, 3, 2)$ directly to $(10, 15, 10)$, how many metres of travel distance are saved?",
+        "difficulty": "Challenging",
+        "context": "Warehouse Robotics Optimisation",
+        "final_answer": "(a) $23\\text{ m}$, (b) Direct distance $= 17\\text{ m}$, saving $6\\text{ m}$",
+        "step_by_step_solution": [
+          "Stage 1 horizontal distance $= \\sqrt{(10 - 1)^2 + (15 - 3)^2} = \\sqrt{9^2 + 12^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15\\text{ m}$. Stage 2 vertical lift $= 10 - 2 = 8\\text{ m}$. Two-stage total $= 15 + 8 = 23\\text{ m}$.",
+          "Direct 3D distance $= \\sqrt{9^2 + 12^2 + 8^2} = \\sqrt{225 + 64} = \\sqrt{289} = 17\\text{ m}$. Distance saved $= 23 - 17 = 6\\text{ m}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "8_3_Q9",
+        "question": "A student writes a quadrilateral classification flowchart with the decision rule: **If** all four sides are equal ($s_1 = s_2 = s_3 = s_4$), **Then** output `'Square'`. Explain why this algorithm is logically flawed, state which geometric shape will be misclassified, and write an additional condition needed to distinguish a square from that shape.",
+        "difficulty": "Medium",
+        "context": "Debugging Geometric Classification Algorithms",
+        "final_answer": "A non-square rhombus also has $4$ equal sides and would be misclassified as a square. The algorithm must also check that at least one interior angle is $90^\\circ$ (or that the two diagonals are equal in length).",
+        "step_by_step_solution": [
+          "Having four equal sides is the defining property of a **rhombus**. Every square is a rhombus, but a rhombus with angles other than $90^\\circ$ is not a square.",
+          "To fix the algorithm, add a nested decision: after confirming $s_1 = s_2 = s_3 = s_4$, check **If** one interior angle $= 90^\\circ$ (or diagonal $d_1 = d_2$), output `'Square'`; **Else**, output `'Rhombus'`."
+        ]
+      },
+      {
+        "id": "8_3_Q10",
+        "question": "Suppose $M(4, -1, 7)$ is the midpoint of the 3D line segment $AB$, where $A$ has coordinates $(1, 5, 2)$. Design a reverse-midpoint calculation to find the coordinates of endpoint $B(x_2, y_2, z_2)$.",
+        "difficulty": "Medium",
+        "context": "Algebraic Reasoning in 3D",
+        "final_answer": "$B(7, -7, 12)$",
+        "step_by_step_solution": [
+          "Since $x_M = \\frac{x_1 + x_2}{2}$, rearranging for $x_2$ gives $x_2 = 2x_M - x_1$ (and similarly for $y_2$ and $z_2$).",
+          "Calculate each coordinate: $x_2 = 2(4) - 1 = 7$, $y_2 = 2(-1) - 5 = -7$, and $z_2 = 2(7) - 2 = 12$, giving $B(7, -7, 12)$."
+        ]
+      },
+      {
+        "id": "8_3_Q11",
+        "question": "Prove algebraically why no regular polygon with more than $6$ sides ($n > 6$) can ever tessellate the plane by itself.",
+        "difficulty": "Challenging",
+        "context": "Proof in Geometric Algorithms",
+        "final_answer": "For $n > 6$, the interior angle $\\theta = 180^\\circ - \\frac{360^\\circ}{n}$ is strictly between $120^\\circ$ and $180^\\circ$, so $\\frac{360^\\circ}{\\theta}$ lies strictly between $2$ and $3$, where no integer exists.",
+        "step_by_step_solution": [
+          "At $n = 6$ (a regular hexagon), the interior angle is $\\theta = 120^\\circ$, so exactly $k = \\frac{360^\\circ}{120^\\circ} = 3$ hexagons meet at a vertex.",
+          "For any regular polygon with $n > 6$, the interior angle satisfies $120^\\circ < \\theta < 180^\\circ$. Dividing $360^\\circ$ by $\\theta$ gives $2 < k < 3$. Since there is no whole number between $2$ and $3$, $k$ can never be an integer for $n > 6$."
+        ]
+      },
+      {
+        "id": "8_3_Q12",
+        "question": "Four points in 3D space are $A(1, 2, 3)$, $B(5, 4, 7)$, $C(6, 9, 10)$, and $D(2, 7, 6)$. Use 3D translation vectors (or midpoints of the diagonals $AC$ and $BD$) to prove that $ABCD$ is a parallelogram in 3D space.",
+        "difficulty": "Extension",
+        "context": "3D Vector & Midpoint Proofs",
+        "final_answer": "Both $\\overrightarrow{AB}$ and $\\overrightarrow{DC}$ have the same translation vector $[4, 2, 4]$, and diagonals $AC$ and $BD$ share the exact same midpoint $\\left(3.5, 5.5, 6.5\\right)$, proving $ABCD$ is a parallelogram.",
+        "step_by_step_solution": [
+          "The translation vector from $A(1, 2, 3)$ to $B(5, 4, 7)$ is $[5 - 1, 4 - 2, 7 - 3] = [4, 2, 4]$. The translation vector from $D(2, 7, 6)$ to $C(6, 9, 10)$ is $[6 - 2, 9 - 7, 10 - 6] = [4, 2, 4]$.",
+          "Because opposite sides $AB$ and $DC$ are parallel and equal in length (and the midpoint of both $AC$ and $BD$ is $(3.5, 5.5, 6.5)$), $ABCD$ is a parallelogram."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE8_3_1_OG",
+      "description": "Worked Example 8.3.1 space diagonal length OG",
+      "expression": "sqrt(6**2 + 8**2 + 24**2)",
+      "expected": 26
+    },
+    {
+      "id": "NYT8_3_1_OP",
+      "description": "Now You Try 8.3.1 space diagonal length OP",
+      "expression": "sqrt(4**2 + 12**2 + 6**2)",
+      "expected": 14
+    },
+    {
+      "id": "WE8_3_2_P2",
+      "description": "Worked Example 8.3.2 final coordinates P2",
+      "expression": "[2 + 4 - 3, -5 + 8 + 2, 10 + 15 - 6]",
+      "expected": [3, 5, 19]
+    },
+    {
+      "id": "NYT8_3_2_Bprime",
+      "description": "Now You Try 8.3.2 translated point B'",
+      "expression": "[2 + 9, 8 - 6, -3 + 8]",
+      "expected": [11, 2, 5]
+    },
+    {
+      "id": "WE8_3_3a",
+      "description": "Worked Example 8.3.3(a) Pythagoras check 5^2 + 12^2 - 13^2",
+      "expression": "5**2 + 12**2 - 13**2",
+      "expected": 0
+    },
+    {
+      "id": "NYT8_3_3",
+      "description": "Now You Try 8.3.3 acute check 7^2 + 8^2 - 10^2",
+      "expression": "7**2 + 8**2 - 10**2",
+      "expected": 13
+    },
+    {
+      "id": "EX8_3_Q1",
+      "description": "Exercise 8.3 Q1 3D midpoint M",
+      "expression": "[(2 + 8)/2, (-6 + 4)/2, (10 - 2)/2]",
+      "expected": [5, -1, 4]
+    },
+    {
+      "id": "EX8_3_Q2",
+      "description": "Exercise 8.3 Q2 coordinates of P''",
+      "expression": "[7 - 4, -3 + 9, -(5 - 8)]",
+      "expected": [3, 6, 3]
+    },
+    {
+      "id": "EX8_3_Q3",
+      "description": "Exercise 8.3 Q3 3D distance AB",
+      "expression": "sqrt((4 - 1)**2 + (6 - 2)**2 + (15 - 3)**2)",
+      "expected": 13
+    },
+    {
+      "id": "EX8_3_Q4_angle",
+      "description": "Exercise 8.3 Q4 regular decagon interior angle",
+      "expression": "(10 - 2) * 180 / 10",
+      "expected": 144
+    },
+    {
+      "id": "EX8_3_Q5a_vol",
+      "description": "Exercise 8.3 Q5(a) volume of shipping container",
+      "expression": "(14 - 2) * (7 - 3) * (3 - 0)",
+      "expected": 144
+    },
+    {
+      "id": "EX8_3_Q5b_diag",
+      "description": "Exercise 8.3 Q5(b) space diagonal of container",
+      "expression": "sqrt(12**2 + 4**2 + 3**2)",
+      "expected": 13
+    },
+    {
+      "id": "EX8_3_Q6b_perim",
+      "description": "Exercise 8.3 Q6(b) perimeter of triangle",
+      "expression": "6 + sqrt(3**2 + 4**2) + sqrt((-3)**2 + 4**2)",
+      "expected": 16
+    },
+    {
+      "id": "EX8_3_Q7_angle",
+      "description": "Exercise 8.3 Q7 remaining vertex angle with two octagons",
+      "expression": "360 - 2 * ((8 - 2) * 180 / 8)",
+      "expected": 90
+    },
+    {
+      "id": "EX8_3_Q8a",
+      "description": "Exercise 8.3 Q8(a) two-stage robot path length",
+      "expression": "sqrt(9**2 + 12**2) + 8",
+      "expected": 23
+    },
+    {
+      "id": "EX8_3_Q8b_direct",
+      "description": "Exercise 8.3 Q8(b) direct 3D path length",
+      "expression": "sqrt(9**2 + 12**2 + 8**2)",
+      "expected": 17
+    },
+    {
+      "id": "EX8_3_Q10",
+      "description": "Exercise 8.3 Q10 reverse midpoint for B",
+      "expression": "[2*4 - 1, 2*(-1) - 5, 2*7 - 2]",
+      "expected": [7, -7, 12]
+    },
+    {
+      "id": "EX8_3_Q12",
+      "description": "Exercise 8.3 Q12 midpoint of diagonal AC",
+      "expression": "[Rational(1 + 6, 2), Rational(2 + 9, 2), Rational(3 + 10, 2)]",
+      "expected": ["7/2", "11/2", "13/2"]
+    }
+  ]
+}

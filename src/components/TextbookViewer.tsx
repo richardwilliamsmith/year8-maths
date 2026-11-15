@@ -5,14 +5,17 @@ import type {
   CurriculumManifest,
   TextbookSectionData,
   ExerciseQuestion,
-  SectionWorksheetAnswerKey,
+  TieredWorksheetAnswerKeys,
+  WorksheetTierKey,
+  VcaaStandardsRegistry,
 } from "@/lib/curriculum";
 import { MathText, FormulaBlock } from "./MathText";
 
 interface TextbookViewerProps {
-  manifest: CurriculumManifest;
+  yearManifests: Record<string, CurriculumManifest>;
   generatedSections: Record<string, TextbookSectionData>;
-  worksheetAnswerKeys: Record<string, SectionWorksheetAnswerKey>;
+  tieredAnswerKeys: TieredWorksheetAnswerKeys;
+  vcaaStandards: VcaaStandardsRegistry;
 }
 
 type ActiveTab =
@@ -29,16 +32,60 @@ type ExerciseTierFilter =
   | "problem_solving_and_modelling"
   | "reasoning_and_communication";
 
-const APPENDIX_ID = "appendix_teacher_resources";
+const APPENDIX_TEACHER_ID = "appendix_teacher_resources";
+const APPENDIX_STANDARDS_ID = "appendix_vcaa_standards";
+
+const TIER_META: Record<
+  WorksheetTierKey,
+  {
+    label: string;
+    shortLabel: string;
+    subtitle: string;
+    masterPdfUrl: string;
+    badgeClass: string;
+  }
+> = {
+  foundation: {
+    label: "Foundation Tier (Support)",
+    shortLabel: "Foundation",
+    subtitle:
+      "Scaffolded A4 worksheets with step-by-step prompts, friendly integers, and formula reminders for targeted support.",
+    masterPdfUrl: "/worksheets/year8_maths_worksheets_foundation_answer_key.pdf",
+    badgeClass: "tier-badge-foundation",
+  },
+  standard: {
+    label: "Standard Tier (Core)",
+    shortLabel: "Standard",
+    subtitle:
+      "Core Year 8 Victorian Curriculum v2.0 A4 worksheets balancing Fluency, Applications, and Reasoning.",
+    masterPdfUrl: "/worksheets/year8_maths_worksheets_answer_key.pdf",
+    badgeClass: "tier-badge-standard",
+  },
+  extension: {
+    label: "Extension Tier (Challenge)",
+    shortLabel: "Extension",
+    subtitle:
+      "Enrichment A4 worksheets featuring multi-step synthesis, algebraic parameters, and competition-style proofs.",
+    masterPdfUrl: "/worksheets/year8_maths_worksheets_extension_answer_key.pdf",
+    badgeClass: "tier-badge-extension",
+  },
+};
 
 export function TextbookViewer({
-  manifest,
+  yearManifests,
   generatedSections,
-  worksheetAnswerKeys,
+  tieredAnswerKeys,
+  vcaaStandards,
 }: TextbookViewerProps) {
+  const [selectedYear, setSelectedYear] = useState<"8" | "9" | "10">("8");
   const [selectedSectionId, setSelectedSectionId] = useState<string>("1_1");
   const [activeTab, setActiveTab] = useState<ActiveTab>("all");
   const [exerciseTier, setExerciseTier] = useState<ExerciseTierFilter>("all");
+  const [appendixWorksheetTier, setAppendixWorksheetTier] =
+    useState<WorksheetTierKey>("standard");
+  const [standardsYearFilter, setStandardsYearFilter] = useState<
+    "all" | "8" | "9" | "10"
+  >("all");
   const [revealedHints, setRevealedHints] = useState<Record<string, boolean>>({});
   const [revealedTryAnswers, setRevealedTryAnswers] = useState<
     Record<string, boolean>
@@ -51,12 +98,23 @@ export function TextbookViewer({
     number | "all"
   >("all");
 
-  const isAppendixSelected = selectedSectionId === APPENDIX_ID;
-  const activeSection = !isAppendixSelected
+  const manifest = yearManifests[selectedYear] || yearManifests["8"];
+  const isAppendixSelected = selectedSectionId === APPENDIX_TEACHER_ID;
+  const isStandardsSelected = selectedSectionId === APPENDIX_STANDARDS_ID;
+  const isSpecialPage = isAppendixSelected || isStandardsSelected;
+
+  const activeSection = !isSpecialPage
     ? generatedSections[selectedSectionId]
     : undefined;
-  const activeWorksheetKey = !isAppendixSelected
-    ? worksheetAnswerKeys[selectedSectionId]
+
+  const foundationKey = !isSpecialPage
+    ? tieredAnswerKeys.foundation[selectedSectionId]
+    : undefined;
+  const standardKey = !isSpecialPage
+    ? tieredAnswerKeys.standard[selectedSectionId]
+    : undefined;
+  const extensionKey = !isSpecialPage
+    ? tieredAnswerKeys.extension[selectedSectionId]
     : undefined;
 
   let selectedManifestChapter = manifest.chapters[0];
@@ -71,7 +129,7 @@ export function TextbookViewer({
   }
 
   const totalGeneratedCount = Object.keys(generatedSections).length;
-  const totalManifestSections = manifest.chapters.reduce(
+  const totalYear8Sections = yearManifests["8"].chapters.reduce(
     (acc, ch) => acc + ch.sections.length,
     0
   );
@@ -79,7 +137,19 @@ export function TextbookViewer({
     (acc, sec) => acc + sec.assertions.length,
     0
   );
-  const totalWorksheetsCount = Object.keys(worksheetAnswerKeys).length;
+  const totalWorksheetsCount =
+    Object.keys(tieredAnswerKeys.foundation).length +
+    Object.keys(tieredAnswerKeys.standard).length +
+    Object.keys(tieredAnswerKeys.extension).length;
+
+  const handleYearSwitch = (yr: "8" | "9" | "10") => {
+    setSelectedYear(yr);
+    const targetManifest = yearManifests[yr];
+    if (targetManifest && targetManifest.chapters.length > 0) {
+      setExpandedChapters({ 1: true });
+      setSelectedSectionId(targetManifest.chapters[0].sections[0].section_id);
+    }
+  };
 
   const toggleChapter = (chNum: number) => {
     setExpandedChapters((prev) => ({ ...prev, [chNum]: !prev[chNum] }));
@@ -97,9 +167,13 @@ export function TextbookViewer({
     setOpenSolutions((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const openAppendixForSection = (chNum: number) => {
+  const openAppendixForSection = (
+    chNum: number,
+    tier: WorksheetTierKey = "standard"
+  ) => {
     setAppendixChapterFilter(chNum);
-    setSelectedSectionId(APPENDIX_ID);
+    setAppendixWorksheetTier(tier);
+    setSelectedSectionId(APPENDIX_TEACHER_ID);
   };
 
   const renderExerciseGroup = (
@@ -163,21 +237,76 @@ export function TextbookViewer({
     </div>
   );
 
+  // Helper to find mapped sections for a VCAA code across manifests
+  const findMappedSectionsForCode = (yr: string, code: string) => {
+    const m = yearManifests[yr];
+    if (!m) return [];
+    const matches: {
+      year: string;
+      chapter_number: number;
+      section_id: string;
+      section_code: string;
+      title: string;
+      isGenerated: boolean;
+    }[] = [];
+
+    for (const ch of m.chapters) {
+      const chMatches = ch.vcaa_codes.includes(code);
+      for (const sec of ch.sections) {
+        if (sec.vcaa_code === code || chMatches) {
+          matches.push({
+            year: yr,
+            chapter_number: ch.chapter_number,
+            section_id: sec.section_id,
+            section_code: sec.section_code,
+            title: sec.title,
+            isGenerated: !!generatedSections[sec.section_id],
+          });
+        }
+      }
+    }
+    return matches;
+  };
+
+  const activeTierMap = tieredAnswerKeys[appendixWorksheetTier];
+  const activeTierMeta = TIER_META[appendixWorksheetTier];
+
   return (
     <div className="textbook-shell">
       {/* Minimal Left Sidebar */}
       <aside className="curriculum-sidebar">
         <div className="brand-header">
-          <div className="brand-kicker">Victorian Curriculum v2.0</div>
-          <h1 className="brand-title">Year 8 Mathematics</h1>
+          <div className="brand-kicker">Victorian Curriculum F–10 v2.0</div>
+          <h1 className="brand-title">Secondary Mathematics (8–10A)</h1>
           <div className="brand-stats">
             <span>
-              {totalGeneratedCount}/{totalManifestSections} sections
+              {totalGeneratedCount}/{totalYear8Sections} Y8 sections
             </span>
             <span>·</span>
             <span>{totalWorksheetsCount} PDFs</span>
             <span>·</span>
             <span>{totalVerifiedAssertions} checks</span>
+          </div>
+
+          <div className="year-switcher-bar" role="tablist" aria-label="Year Level">
+            {(
+              [
+                ["8", "Year 8"],
+                ["9", "Year 9"],
+                ["10", "Year 10 / 10A"],
+              ] as const
+            ).map(([yrKey, yrLabel]) => (
+              <button
+                key={yrKey}
+                type="button"
+                onClick={() => handleYearSwitch(yrKey)}
+                className={`year-switch-btn ${
+                  selectedYear === yrKey ? "active" : ""
+                }`}
+              >
+                {yrLabel}
+              </button>
+            ))}
           </div>
         </div>
 
@@ -193,7 +322,7 @@ export function TextbookViewer({
                 <button
                   type="button"
                   className={`chapter-header-btn ${
-                    !isAppendixSelected &&
+                    !isSpecialPage &&
                     selectedManifestChapter.chapter_number === ch.chapter_number
                       ? "current-chapter"
                       : ""
@@ -216,8 +345,7 @@ export function TextbookViewer({
                     {ch.sections.map((sec) => {
                       const isReady = !!generatedSections[sec.section_id];
                       const isSelected =
-                        !isAppendixSelected &&
-                        sec.section_id === selectedSectionId;
+                        !isSpecialPage && sec.section_id === selectedSectionId;
                       return (
                         <li key={sec.section_id}>
                           <button
@@ -235,7 +363,7 @@ export function TextbookViewer({
                               className={`sec-status-dot ${
                                 isReady ? "dot-ready" : "dot-pending"
                               }`}
-                              title={isReady ? "Verified" : "Planned"}
+                              title={isReady ? "Verified & Live" : "Mapped in Scope & Sequence"}
                             />
                           </button>
                         </li>
@@ -249,12 +377,14 @@ export function TextbookViewer({
 
           {/* Appendices & Teacher Resources */}
           <div className="appendix-sidebar-group">
-            <div className="appendix-sidebar-label">Appendices &amp; Resources</div>
+            <div className="appendix-sidebar-label">
+              Teacher Hub &amp; VCAA Alignment
+            </div>
             <button
               type="button"
               onClick={() => {
                 setAppendixChapterFilter("all");
-                setSelectedSectionId(APPENDIX_ID);
+                setSelectedSectionId(APPENDIX_TEACHER_ID);
               }}
               className={`section-nav-item ready ${
                 isAppendixSelected ? "selected" : ""
@@ -262,9 +392,24 @@ export function TextbookViewer({
             >
               <span className="sec-code-pill">App A</span>
               <span className="sec-nav-title">
-                Teacher Resources &amp; Answer Key
+                Teacher Resources &amp; Answer Keys
               </span>
               <span className="sec-status-dot dot-ready" title="Complete" />
+            </button>
+            <button
+              type="button"
+              onClick={() => {
+                setSelectedSectionId(APPENDIX_STANDARDS_ID);
+              }}
+              className={`section-nav-item ready ${
+                isStandardsSelected ? "selected" : ""
+              }`}
+            >
+              <span className="sec-code-pill">App B</span>
+              <span className="sec-nav-title">
+                VCAA v2.0 Standards Matrix (8–10A)
+              </span>
+              <span className="sec-status-dot dot-ready" title="83/83 Mapped" />
             </button>
           </div>
         </nav>
@@ -280,70 +425,89 @@ export function TextbookViewer({
                 <span>·</span>
                 <span>Victorian Curriculum F–10 v2.0</span>
                 <span>·</span>
-                <span>23 Standard Worksheets · 230 SymPy-Verified Problems</span>
+                <span>
+                  {totalWorksheetsCount} Differentiated A4 Worksheets (Foundation,
+                  Standard &amp; Extension)
+                </span>
               </div>
 
               <h2 className="section-main-title">
                 <span className="section-code-highlight">Appendix A</span>
-                <span>Teacher Resources &amp; Worksheet Answer Key</span>
+                <span>Teacher Resources &amp; Differentiated Answer Keys</span>
               </h2>
 
               <p className="vcaa-official-desc">
                 Centralised teacher resource hub containing the compiled Master
-                Answer Key for all 23 single-sided A4 section worksheets, direct
-                printable PDF downloads, and the framework for upcoming
-                differentiated support and extension resources.
+                Answer Keys and single-sided A4 student PDF downloads across all
+                three differentiated classroom tiers:{" "}
+                <strong>Foundation (Support)</strong>,{" "}
+                <strong>Standard (Core)</strong>, and{" "}
+                <strong>Extension (Challenge)</strong>.
               </p>
+
+              {/* 3-Tier Master Answer Key Cards */}
+              <div className="resource-roadmap-grid">
+                {(["foundation", "standard", "extension"] as const).map(
+                  (tKey) => {
+                    const meta = TIER_META[tKey];
+                    const count = Object.keys(tieredAnswerKeys[tKey]).length;
+                    const isSelectedTier = appendixWorksheetTier === tKey;
+                    return (
+                      <div
+                        key={tKey}
+                        className={`roadmap-card ${
+                          isSelectedTier ? "active" : ""
+                        }`}
+                      >
+                        <div className="roadmap-status">
+                          Available Now · {count} Section PDFs
+                        </div>
+                        <div className="roadmap-title">{meta.label}</div>
+                        <p>{meta.subtitle}</p>
+                        <div className="roadmap-card-actions">
+                          <button
+                            type="button"
+                            onClick={() => setAppendixWorksheetTier(tKey)}
+                            className={`minimal-btn ${
+                              isSelectedTier ? "active" : ""
+                            }`}
+                          >
+                            {isSelectedTier
+                              ? `Viewing ${meta.shortLabel} Answers`
+                              : `View ${meta.shortLabel} Answers`}
+                          </button>
+                          <a
+                            href={meta.masterPdfUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="pdf-download-btn"
+                          >
+                            Master Answer Key (PDF)
+                          </a>
+                        </div>
+                      </div>
+                    );
+                  }
+                )}
+              </div>
 
               <div className="teacher-master-download-bar">
                 <div className="teacher-master-info">
                   <div className="teacher-master-title">
-                    Master Worksheet Answer Key (Complete Book · Sections 1A–10A)
+                    Currently Viewing: {activeTierMeta.label} — Master Answer Key
                   </div>
                   <div className="teacher-master-sub">
-                    Typeset 11-page A4 PDF containing all fluency, application,
-                    and reasoning answers for every section worksheet.
+                    {activeTierMeta.subtitle}
                   </div>
                 </div>
                 <a
-                  href="/worksheets/year8_maths_worksheets_answer_key.pdf"
+                  href={activeTierMeta.masterPdfUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="pdf-download-btn primary"
                 >
-                  Download Master Answer Key (PDF)
+                  Download {activeTierMeta.shortLabel} Master Answer Key (PDF)
                 </a>
-              </div>
-
-              <div className="resource-roadmap-grid">
-                <div className="roadmap-card active">
-                  <div className="roadmap-status">Available Now · 23 PDFs</div>
-                  <div className="roadmap-title">Standard Section Worksheets</div>
-                  <p>
-                    Single-sided A4 printable question sheets for every section
-                    (1A–10A), covering Fluency, Applications, and Reasoning.
-                  </p>
-                </div>
-                <div className="roadmap-card planned">
-                  <div className="roadmap-status">Planned Expansion</div>
-                  <div className="roadmap-title">
-                    Foundation &amp; Support Worksheets
-                  </div>
-                  <p>
-                    Scaffolded A4 worksheets with partially worked prompts and
-                    visual number/geometry models for targeted intervention.
-                  </p>
-                </div>
-                <div className="roadmap-card planned">
-                  <div className="roadmap-status">Planned Expansion</div>
-                  <div className="roadmap-title">
-                    Extension &amp; Enrichment Sheets
-                  </div>
-                  <p>
-                    Non-routine problem-solving, algorithmic investigations, and
-                    competition-style proofs for high-ability learners.
-                  </p>
-                </div>
               </div>
 
               <div className="section-tabs" role="tablist">
@@ -356,7 +520,7 @@ export function TextbookViewer({
                 >
                   All Chapters (1–10)
                 </button>
-                {manifest.chapters.map((ch) => (
+                {yearManifests["8"].chapters.map((ch) => (
                   <button
                     key={ch.chapter_number}
                     type="button"
@@ -372,7 +536,7 @@ export function TextbookViewer({
             </header>
 
             <div className="section-content-body">
-              {manifest.chapters
+              {yearManifests["8"].chapters
                 .filter(
                   (ch) =>
                     appendixChapterFilter === "all" ||
@@ -382,14 +546,15 @@ export function TextbookViewer({
                   <section key={ch.id} className="pedagogy-section">
                     <div className="section-heading-bar">
                       <h3>
-                        Chapter {ch.chapter_number}: {ch.title}
+                        Chapter {ch.chapter_number}: {ch.title} (
+                        {activeTierMeta.shortLabel} Tier)
                       </h3>
                       <span className="section-subtitle">{ch.strand}</span>
                     </div>
 
                     <div className="ak-cards-stack">
                       {ch.sections.map((sec) => {
-                        const wk = worksheetAnswerKeys[sec.section_id];
+                        const wk = activeTierMap[sec.section_id];
                         if (!wk) return null;
 
                         return (
@@ -398,7 +563,8 @@ export function TextbookViewer({
                               <div>
                                 <div className="ak-card-title-row">
                                   <span className="we-badge">
-                                    Worksheet {wk.section_code}
+                                    Worksheet {wk.section_code} (
+                                    {activeTierMeta.shortLabel})
                                   </span>
                                   <h4 className="we-title">{wk.title}</h4>
                                   <span className="meta-tag">{wk.vcaa_code}</span>
@@ -407,21 +573,36 @@ export function TextbookViewer({
                               <div className="ak-card-actions">
                                 <button
                                   type="button"
-                                  onClick={() =>
-                                    setSelectedSectionId(sec.section_id)
-                                  }
+                                  onClick={() => {
+                                    setSelectedYear("8");
+                                    setSelectedSectionId(sec.section_id);
+                                  }}
                                   className="minimal-btn"
                                 >
-                                  Go to Section {wk.section_code}
+                                  Section {wk.section_code}
                                 </button>
-                                <a
-                                  href={wk.pdf_url}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="pdf-download-btn"
-                                >
-                                  Student Worksheet (PDF)
-                                </a>
+                                {(
+                                  ["foundation", "standard", "extension"] as const
+                                ).map((tKey) => {
+                                  const tItem =
+                                    tieredAnswerKeys[tKey][sec.section_id];
+                                  if (!tItem) return null;
+                                  return (
+                                    <a
+                                      key={tKey}
+                                      href={tItem.pdf_url}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className={`pdf-download-btn ${
+                                        tKey === appendixWorksheetTier
+                                          ? "primary"
+                                          : ""
+                                      }`}
+                                    >
+                                      {TIER_META[tKey].shortLabel} PDF
+                                    </a>
+                                  );
+                                })}
                               </div>
                             </div>
 
@@ -505,6 +686,134 @@ export function TextbookViewer({
                 ))}
             </div>
           </div>
+        ) : isStandardsSelected ? (
+          <div className="appendix-container">
+            <header className="section-hero">
+              <div className="hero-meta-row">
+                <span>Appendix B · Curriculum Alignment &amp; Traceability</span>
+                <span>·</span>
+                <span>Victorian Curriculum F–10 Version 2.0 (VCAA)</span>
+                <span>·</span>
+                <span>83/83 Official Content Descriptions Mapped (Years 8–10A)</span>
+              </div>
+
+              <h2 className="section-main-title">
+                <span className="section-code-highlight">Appendix B</span>
+                <span>VCAA Version 2.0 Standards Traceability Matrix</span>
+              </h2>
+
+              <p className="vcaa-official-desc">
+                Complete audit and mapping of every official Victorian Curriculum
+                F–10 Version 2.0 Mathematics content description across{" "}
+                <strong>Level 8 (26 codes)</strong>,{" "}
+                <strong>Level 9 (24 codes)</strong>, and{" "}
+                <strong>Level 10 &amp; 10A (33 codes)</strong> to our chapters,
+                sections, and differentiated classroom worksheets.
+              </p>
+
+              <div className="section-tabs" role="tablist">
+                {(
+                  [
+                    ["all", "All Levels (Years 8–10A · 83 Codes)"],
+                    ["8", "Level 8 (Year 8 · 26 Codes)"],
+                    ["9", "Level 9 (Year 9 · 24 Codes)"],
+                    ["10", "Level 10 & 10A (33 Codes)"],
+                  ] as const
+                ).map(([lvlKey, lvlLabel]) => (
+                  <button
+                    key={lvlKey}
+                    type="button"
+                    onClick={() => setStandardsYearFilter(lvlKey)}
+                    className={`tab-btn ${
+                      standardsYearFilter === lvlKey ? "active" : ""
+                    }`}
+                  >
+                    {lvlLabel}
+                  </button>
+                ))}
+              </div>
+            </header>
+
+            <div className="section-content-body">
+              {(["8", "9", "10"] as const)
+                .filter(
+                  (lvl) =>
+                    standardsYearFilter === "all" || standardsYearFilter === lvl
+                )
+                .map((lvl) => {
+                  const levelData = vcaaStandards.levels[lvl];
+                  if (!levelData) return null;
+
+                  return (
+                    <section key={lvl} className="pedagogy-section">
+                      <div className="section-heading-bar">
+                        <h3>{levelData.title}</h3>
+                        <span className="section-subtitle">
+                          {levelData.codes.length} Official VCAA v2.0 Content
+                          Descriptions · 100% Mapped
+                        </span>
+                      </div>
+
+                      <div className="assertions-table-wrap">
+                        <table className="assertions-table">
+                          <thead>
+                            <tr>
+                              <th>VCAA Code</th>
+                              <th>Strand</th>
+                              <th>Official Content Description</th>
+                              <th>Mapped Sections &amp; Resources</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            {levelData.codes.map((item) => {
+                              const mapped = findMappedSectionsForCode(
+                                lvl,
+                                item.code
+                              );
+                              return (
+                                <tr key={item.code}>
+                                  <td>
+                                    <code>{item.code}</code>
+                                  </td>
+                                  <td>{item.strand}</td>
+                                  <td>{item.description}</td>
+                                  <td>
+                                    <div className="mapped-pills-wrap">
+                                      {mapped.map((m) => (
+                                        <button
+                                          key={m.section_id}
+                                          type="button"
+                                          onClick={() => {
+                                            setSelectedYear(
+                                              m.year as "8" | "9" | "10"
+                                            );
+                                            setExpandedChapters((prev) => ({
+                                              ...prev,
+                                              [m.chapter_number]: true,
+                                            }));
+                                            setSelectedSectionId(m.section_id);
+                                          }}
+                                          className={`minimal-btn ${
+                                            m.isGenerated ? "active" : ""
+                                          }`}
+                                          title={m.title}
+                                        >
+                                          Y{m.year} · {m.section_code}
+                                        </button>
+                                      ))}
+                                    </div>
+                                  </td>
+                                </tr>
+                              );
+                            })}
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  );
+                })}
+            </div>
+          </div>
         ) : activeSection ? (
           <>
             <header className="section-hero">
@@ -552,49 +861,63 @@ export function TextbookViewer({
               </div>
 
               {/* Printable Worksheet & Differentiated Resource Strip */}
-              {activeWorksheetKey && (
+              {(foundationKey || standardKey || extensionKey) && (
                 <div className="worksheet-resource-banner">
                   <div className="ws-banner-left">
                     <div className="ws-banner-kicker">
-                      Printable Classroom Resources · Section{" "}
+                      Differentiated Printable A4 Worksheets · Section{" "}
                       {activeSection.metadata.section_code}
                     </div>
                     <div className="ws-banner-desc">
-                      Complementary single-sided A4 problem set (Fluency,
-                      Applications &amp; Reasoning) for written workbook practice.
+                      Three complementary single-sided A4 problem sets (Support,
+                      Core, and Challenge) for written workbook practice.
                     </div>
                   </div>
                   <div className="ws-banner-actions">
-                    <a
-                      href={activeWorksheetKey.pdf_url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="pdf-download-btn primary"
-                    >
-                      Standard Worksheet (A4 PDF)
-                    </a>
-                    <span
-                      className="tier-pill-disabled"
-                      title="Differentiated tier planned"
-                    >
-                      Foundation PDF (Soon)
-                    </span>
-                    <span
-                      className="tier-pill-disabled"
-                      title="Differentiated tier planned"
-                    >
-                      Extension PDF (Soon)
-                    </span>
+                    {foundationKey && (
+                      <a
+                        href={foundationKey.pdf_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="pdf-download-btn"
+                        title="Support tier worksheet with guided prompts"
+                      >
+                        Foundation PDF (Support)
+                      </a>
+                    )}
+                    {standardKey && (
+                      <a
+                        href={standardKey.pdf_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="pdf-download-btn primary"
+                        title="Core Year 8 standard worksheet"
+                      >
+                        Standard PDF (Core)
+                      </a>
+                    )}
+                    {extensionKey && (
+                      <a
+                        href={extensionKey.pdf_url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="pdf-download-btn"
+                        title="Challenge tier worksheet for high-ability students"
+                      >
+                        Extension PDF (Challenge)
+                      </a>
+                    )}
                     <button
                       type="button"
                       onClick={() =>
                         openAppendixForSection(
-                          activeSection.metadata.chapter_number
+                          activeSection.metadata.chapter_number,
+                          "standard"
                         )
                       }
                       className="minimal-btn"
                     >
-                      Teacher Answer Key →
+                      Teacher Answer Keys →
                     </button>
                   </div>
                 </div>
@@ -843,14 +1166,34 @@ export function TextbookViewer({
                   <div className="section-heading-bar">
                     <h3>Exercises</h3>
                     <div className="tier-filter-bar">
-                      {activeWorksheetKey && (
+                      {foundationKey && (
                         <a
-                          href={activeWorksheetKey.pdf_url}
+                          href={foundationKey.pdf_url}
                           target="_blank"
                           rel="noopener noreferrer"
                           className="pdf-download-btn"
                         >
-                          Printable Worksheet {activeSection.metadata.section_code} (PDF)
+                          Foundation PDF
+                        </a>
+                      )}
+                      {standardKey && (
+                        <a
+                          href={standardKey.pdf_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="pdf-download-btn"
+                        >
+                          Standard PDF
+                        </a>
+                      )}
+                      {extensionKey && (
+                        <a
+                          href={extensionKey.pdf_url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="pdf-download-btn"
+                        >
+                          Extension PDF
                         </a>
                       )}
                       {(
@@ -952,9 +1295,13 @@ export function TextbookViewer({
           </>
         ) : (
           <div className="pending-section-card">
-            <div className="pending-badge">Planned Section</div>
+            <div className="pending-badge">
+              Year {selectedYear} Curriculum Blueprint · Chapter{" "}
+              {selectedManifestChapter.chapter_number} (
+              {selectedManifestChapter.strand})
+            </div>
             <h2>
-              {selectedManifestSection.section_code}{" "}
+              {selectedManifestSection.section_code}:{" "}
               {selectedManifestSection.title}
             </h2>
             <p className="pending-vcaa">
@@ -965,7 +1312,14 @@ export function TextbookViewer({
               <h4>Target Mastery</h4>
               <p>{selectedManifestSection.target_mastery}</p>
 
-              <h4>Sub-Concepts</h4>
+              <h4>Prerequisites</h4>
+              <ul>
+                {selectedManifestSection.prerequisites.map((pre, idx) => (
+                  <li key={idx}>{pre}</li>
+                ))}
+              </ul>
+
+              <h4>Key Sub-Concepts Mapped</h4>
               <ul>
                 {selectedManifestSection.sub_concepts.map((sc, idx) => (
                   <li key={idx}>{sc}</li>

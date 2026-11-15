@@ -1,0 +1,199 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Ratios, Rates and Best Buys",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "4_1",
+      "section_code": "4A",
+      "title": "Simplifying Ratios and Dividing in a Ratio",
+      "vcaa_code": "VC2M8M07",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each three-part fractional, decimal, or mixed-unit ratio:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2}{3} : \\dfrac{5}{6} : \\dfrac{7}{9}$", "answer": "$12 : 15 : 14$" },
+            { "label": "b", "question": "$1\\dfrac{1}{4} : 2\\dfrac{1}{2} : 1\\dfrac{7}{8}$", "answer": "$2 : 4 : 3$" },
+            { "label": "c", "question": "$0.45\\text{ kg} : 750\\text{ g} : 1.2\\text{ kg}$", "answer": "$3 : 5 : 8$" },
+            { "label": "d", "question": "$24\\text{ min} : 1.2\\text{ h} : 5400\\text{ s}$", "answer": "$2 : 6 : 7.5 = 4 : 12 : 15$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Combine the linked two-part ratios into a single simplified ratio $A : B : C$:",
+          "parts": [
+            { "label": "a", "question": "$A : B = 3 : 4$ and $B : C = 6 : 7$", "answer": "$9 : 12 : 14$" },
+            { "label": "b", "question": "$A : B = 5 : 8$ and $B : C = 12 : 5$", "answer": "$15 : 24 : 10$" },
+            { "label": "c", "question": "$A : C = 2 : 5$ and $B : C = 3 : 4$", "answer": "$8 : 15 : 20$" },
+            { "label": "d", "question": "$\\dfrac{A}{3} = \\dfrac{B}{5} = \\dfrac{2C}{7}$", "answer": "$6 : 10 : 7$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each algebraic ratio equation for $x$:",
+          "parts": [
+            { "label": "a", "question": "$(2x + 3) : (3x - 2) = 3 : 4$", "answer": "$x = 18$" },
+            { "label": "b", "question": "$(3x + 2) : (2x - 1) = 7 : 4$", "answer": "$x = 15$" },
+            { "label": "c", "question": "If $x : y = 4 : 3$, evaluate $\\dfrac{3x + 2y}{2x - y}$", "answer": "$\\dfrac{18}{5} = 3.6$" },
+            { "label": "d", "question": "Divide $\\$620$ among $P, Q, R$ in the ratio $\\dfrac{1}{2} : \\dfrac{1}{3} : \\dfrac{1}{5}$", "answer": "$\\$300, \\$200, \\$120$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each map-scale and area-ratio problem:",
+          "parts": [
+            { "label": "a", "question": "Map scale $1 : 25\\,000$; a $12\\text{ cm}^2$ park on the map has real area ($\\text{hectares}$)", "answer": "$75\\text{ ha}$" },
+            { "label": "b", "question": "Two similar triangles have side ratio $3 : 5$; find the ratio of their areas", "answer": "$9 : 25$" },
+            { "label": "c", "question": "Two similar water tanks have height ratio $2 : 3$; if the smaller holds $160\\text{ L}$, the larger holds", "answer": "$540\\text{ L}$" },
+            { "label": "d", "question": "Real lake area is $4.5\\text{ km}^2$ and map area is $18\\text{ cm}^2$; find the linear map scale $1 : n$", "answer": "$1 : 50\\,000$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "In a Geelong laboratory, Flask A ($300\\text{ mL}$) contains acid and water in the ratio $2 : 3$, and Flask B ($420\\text{ mL}$) contains acid and water in the ratio $5 : 9$. If both flasks are poured into one beaker, find the simplified ratio of acid to water in the combined mixture.",
+          "answer": "$3 : 5$ ($120 + 150 = 270\\text{ mL}$ acid and $180 + 270 = 450\\text{ mL}$ water)"
+        },
+        {
+          "number": 6,
+          "question": "The ratio of Year 8 students to Year 9 students in a Victorian school choir is $4 : 5$. When $6$ more Year 8 students and $6$ more Year 9 students join the choir, the ratio becomes $5 : 6$. How many students were originally in the choir?",
+          "answer": "$54\\text{ students}$ ($24$ Year 8 and $30$ Year 9)"
+        },
+        {
+          "number": 7,
+          "question": "Three partners invest in a solar farm in Mildura: Priya invests $\\$40\\,000$ for $12$ months, Liam invests $\\$60\\,000$ for $9$ months, and Chen invests $\\$75\\,000$ for $8$ months. If they share the $\\$81\\,000$ annual profit in proportion to their dollar-months invested, find each partner's share.",
+          "answer": "Ratio $8 : 9 : 10$; Priya $\\$24\\,000$, Liam $\\$27\\,000$, Chen $\\$30\\,000$"
+        },
+        {
+          "number": 8,
+          "question": "An $80\\text{ L}$ radiator tank contains antifreeze and water in the ratio $3 : 5$. How many litres of pure antifreeze must be added so that the new ratio of antifreeze to water becomes $3 : 4$?",
+          "answer": "$7.5\\text{ L}$ (initially $30\\text{ L}$ antifreeze and $50\\text{ L}$ water; $\\dfrac{30 + x}{50} = \\dfrac{3}{4} \\implies x = 7.5\\text{ L}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Given that $\\dfrac{a}{b} = \\dfrac{c}{d} = k$ (with $b + d \\ne 0$), prove algebraically the componendo-dividendo property $\\dfrac{a + c}{b + d} = \\dfrac{a}{b}$ and show that $\\dfrac{3a - 4b}{3c - 4d} = \\dfrac{a}{c}$.",
+          "answer": "Since $a = kb$ and $c = kd$, $\\dfrac{a + c}{b + d} = \\dfrac{kb + kd}{b + d} = \\dfrac{k(b + d)}{b + d} = k = \\dfrac{a}{b}$. Similarly, $\\dfrac{3a - 4b}{3c - 4d} = \\dfrac{b(3k - 4)}{d(3k - 4)} = \\dfrac{b}{d} = \\dfrac{a}{c}$."
+        },
+        {
+          "number": 10,
+          "question": "Gold is $19$ times as heavy as water and copper is $9$ times as heavy as water. In what ratio by volume should gold and copper be alloyed so that the resulting crown is $15$ times as heavy as an equal volume of water?",
+          "answer": "Let volumes be $V_g$ and $V_c$: $\\dfrac{19V_g + 9V_c}{V_g + V_c} = 15 \\implies 19V_g + 9V_c = 15V_g + 15V_c \\implies 4V_g = 6V_c \\implies V_g : V_c = 3 : 2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE4_1_1a", "expression": "Rational(2, 3) / Rational(5, 6)", "expected": "12/15" },
+        { "id": "WSE4_1_3a", "expression": "(2*18 + 3) / (3*18 - 2)", "expected": "3/4" },
+        { "id": "WSE4_1_3c", "expression": "(3*4 + 2*3) / (2*4 - 3)", "expected": "18/5" },
+        { "id": "WSE4_1_3d", "expression": "(620 / 31) * 15", "expected": 300 },
+        { "id": "WSE4_1_4a", "expression": "(12 * 25000**2) / (10000 * 10000)", "expected": 75 },
+        { "id": "WSE4_1_4c", "expression": "160 * (Rational(3, 2))**3", "expected": 540 },
+        { "id": "WSE4_1_5", "expression": "Rational(300*2/5 + 420*5/14, 300*3/5 + 420*9/14)", "expected": "3/5" },
+        { "id": "WSE4_1_6", "expression": "9 * 6", "expected": 54 },
+        { "id": "WSE4_1_7", "expression": "(81000 / (8 + 9 + 10)) * 10", "expected": 30000 },
+        { "id": "WSE4_1_8", "expression": "50 * Rational(3, 4) - 30", "expected": "15/2" }
+      ]
+    },
+    {
+      "section_id": "4_2",
+      "section_code": "4B",
+      "title": "Rates, Speed and Best Buys",
+      "vcaa_code": "VC2M8M05",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each compound rate to the specified units:",
+          "parts": [
+            { "label": "a", "question": "$32.4\\text{ m/s}$ to $\\text{km/h}$", "answer": "$116.64\\text{ km/h}$" },
+            { "label": "b", "question": "$126\\text{ km/h}$ to $\\text{m/s}$", "answer": "$35\\text{ m/s}$" },
+            { "label": "c", "question": "$1.8\\text{ m}^3/\\text{h}$ to $\\text{L/min}$ ($1\\text{ m}^3 = 1000\\text{ L}$)", "answer": "$30\\text{ L/min}$" },
+            { "label": "d", "question": "$\\$4.50/\\text{kg}$ to $\\text{cents per } 100\\text{ g}$", "answer": "$45\\text{ c}/100\\text{ g}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each multi-stage speed or relative-speed problem:",
+          "parts": [
+            { "label": "a", "question": "Average speed for $120\\text{ km}$ at $80\\text{ km/h}$ followed by $180\\text{ km}$ at $72\\text{ km/h}$", "answer": "$75\\text{ km/h}$" },
+            { "label": "b", "question": "Two trains $330\\text{ km}$ apart travel towards each other at $62\\text{ km/h}$ and $48\\text{ km/h}$; time to meet", "answer": "$3\\text{ hours}$" },
+            { "label": "c", "question": "A $180\\text{ m}$ train travelling at $25\\text{ m/s}$ crosses a $320\\text{ m}$ bridge; time for the whole train to clear", "answer": "$20\\text{ seconds}$" },
+            { "label": "d", "question": "Car B ($100\\text{ km/h}$) chases Car A ($80\\text{ km/h}$) which has a $35\\text{ km}$ head start; time to catch up", "answer": "$1.75\\text{ hours}$ ($1\\text{ h } 45\\text{ min}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each combined work-rate problem:",
+          "parts": [
+            { "label": "a", "question": "Pump A fills a dam in $12\\text{ h}$ and Pump B in $15\\text{ h}$; time working together", "answer": "$\\dfrac{20}{3} = 6\\dfrac{2}{3}\\text{ h}$ ($6\\text{ h } 40\\text{ min}$)" },
+            { "label": "b", "question": "A and B together take $4\\text{ h}$; if A alone takes $6\\text{ h}$, how long does B alone take?", "answer": "$12\\text{ hours}$" },
+            { "label": "c", "question": "$6$ shearers shear $450$ sheep in $5\\text{ hours}$; how many sheep do $8$ shearers shear in $7\\text{ hours}$?", "answer": "$840\\text{ sheep}$" },
+            { "label": "d", "question": "Fuel consumption of $8\\text{ L}/100\\text{ km}$ is equivalent to how many $\\text{km/L}$?", "answer": "$12.5\\text{ km/L}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Compare each promotional offer to find the lowest effective price per $100\\text{ g}$ or per $1\\text{ L}$:",
+          "parts": [
+            { "label": "a", "question": "Coffee: $500\\text{ g}$ for $\\$18.50$ with $20\\%$ off", "answer": "$\\$2.96/100\\text{ g}$" },
+            { "label": "b", "question": "Coffee: $400\\text{ g}$ for $\\$15.60$ on a 'Buy $2$, get $1$ free' offer", "answer": "$\\$2.60/100\\text{ g}$" },
+            { "label": "c", "question": "Coffee: $1\\text{ kg}$ bulk bag for $\\$31.00$ less a $\\$3.50$ cashback voucher", "answer": "$\\$2.75/100\\text{ g}$" },
+            { "label": "d", "question": "Rank offers (a), (b), and (c) from best buy to worst buy", "answer": "(b) best, then (c), then (a)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Sydney-to-Melbourne freight truck must average $80\\text{ km/h}$ over an $880\\text{ km}$ journey. Due to roadworks, it averages only $66\\text{ km/h}$ for the first $330\\text{ km}$; what average speed must it maintain over the remaining $550\\text{ km}$ to arrive on schedule?",
+          "answer": "$91\\dfrac{2}{3}\\text{ km/h}$ ($\\dfrac{275}{3}\\text{ km/h}$; total time $11\\text{ h}$, first leg $5\\text{ h}$, remaining $6\\text{ h}$)"
+        },
+        {
+          "number": 6,
+          "question": "A river ferry in Brisbane has a still-water speed of $18\\text{ km/h}$, and the river current flows at $3\\text{ km/h}$. How long does it take the ferry to complete a round trip of $31.5\\text{ km}$ upstream and $31.5\\text{ km}$ downstream, and what is its overall average speed?",
+          "answer": "$3.6\\text{ hours}$ ($2.1\\text{ h}$ upstream at $15\\text{ km/h}$ + $1.5\\text{ h}$ downstream at $21\\text{ km/h}$); average speed $17.5\\text{ km/h}$"
+        },
+        {
+          "number": 7,
+          "question": "A hybrid SUV costs $\\$46\\,500$ and uses $4.5\\text{ L}/100\\text{ km}$, while the petrol model costs $\\$41\\,100$ and uses $8.1\\text{ L}/100\\text{ km}$. If unleaded petrol costs $\\$2.00/\\text{L}$, how many kilometres must a driver travel before the fuel savings exactly offset the higher purchase price?",
+          "answer": "$75\\,000\\text{ km}$ (saves $3.6\\text{ L} = \\$7.20$ per $100\\text{ km}$; $\\$5400 \\div \\$0.072/\\text{km} = 75\\,000\\text{ km}$)"
+        },
+        {
+          "number": 8,
+          "question": "Three harvesting machines in the Riverina can harvest a wheat paddock alone in $10\\text{ h}$, $12\\text{ h}$, and $15\\text{ h}$ respectively. All three work together for $2\\text{ hours}$ before the $10\\text{ h}$ machine breaks down; how many additional hours do the remaining two machines need to finish the paddock?",
+          "answer": "$\\dfrac{10}{3} = 3\\dfrac{1}{3}\\text{ hours}$ ($3\\text{ h } 20\\text{ min}$; in $2\\text{ h}$ they complete $2(\\frac{1}{10}+\\frac{1}{12}+\\frac{1}{15}) = \\frac{1}{2}$ of the paddock)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that if a vehicle travels a distance $d$ at speed $v_1$ and returns the same distance $d$ at speed $v_2$, its overall average speed is the harmonic mean $v_{\\text{avg}} = \\dfrac{2v_1 v_2}{v_1 + v_2}$, which is independent of $d$. Hence find $v_2$ if $v_1 = 60\\text{ km/h}$ and $v_{\\text{avg}} = 72\\text{ km/h}$.",
+          "answer": "Total distance $= 2d$ and total time $= \\dfrac{d}{v_1} + \\dfrac{d}{v_2} = d\\left(\\dfrac{v_1 + v_2}{v_1 v_2}\\right)$, so $v_{\\text{avg}} = \\dfrac{2d}{d(v_1 + v_2)/(v_1 v_2)} = \\dfrac{2v_1 v_2}{v_1 + v_2}$. Solving $\\dfrac{120v_2}{60 + v_2} = 72 \\implies 120v_2 = 4320 + 72v_2 \\implies 48v_2 = 4320 \\implies v_2 = 90\\text{ km/h}$."
+        },
+        {
+          "number": 10,
+          "question": "Suppose a driver covers the first half of a journey's distance at $40\\text{ km/h}$. Explain why it is IMPOSSIBLE for the driver to achieve an overall average speed of $80\\text{ km/h}$ for the entire journey, no matter how fast they drive the second half.",
+          "answer": "Let total distance be $2d$. To average $80\\text{ km/h}$ over distance $2d$, the total time allowed is $\\dfrac{2d}{80} = \\dfrac{d}{40}$. However, driving the first half ($d$) at $40\\text{ km/h}$ already uses $\\dfrac{d}{40}$ hours, leaving $0$ hours to cover the remaining distance $d$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE4_2_1a", "expression": "Rational(324, 10) * Rational(36, 10)", "expected": "116.64" },
+        { "id": "WSE4_2_1b", "expression": "126 / Rational(36, 10)", "expected": 35 },
+        { "id": "WSE4_2_2a", "expression": "(120 + 180) / (Rational(120, 80) + Rational(180, 72))", "expected": 75 },
+        { "id": "WSE4_2_2c", "expression": "(180 + 320) / 25", "expected": 20 },
+        { "id": "WSE4_2_3a", "expression": "1 / (Rational(1, 12) + Rational(1, 15))", "expected": "20/3" },
+        { "id": "WSE4_2_3c", "expression": "(450 / (6 * 5)) * 8 * 7", "expected": 840 },
+        { "id": "WSE4_2_4b", "expression": "(2 * Rational(1560, 100)) / 12", "expected": "2.6" },
+        { "id": "WSE4_2_6", "expression": "63 / (Rational(315, 150) + Rational(315, 210))", "expected": "17.5" },
+        { "id": "WSE4_2_7", "expression": "((46500 - 41100) / ((Rational(81, 10) - Rational(45, 10)) * 2)) * 100", "expected": 75000 },
+        { "id": "WSE4_2_8", "expression": "(1 - 2 * (Rational(1, 10) + Rational(1, 12) + Rational(1, 15))) / (Rational(1, 12) + Rational(1, 15))", "expected": "10/3" }
+      ]
+    }
+  ]
+}

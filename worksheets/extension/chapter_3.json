@@ -1,0 +1,199 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Percentages and Financial Mathematics",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "3_1",
+      "section_code": "3A",
+      "title": "Percentages, Percentage Change and GST",
+      "vcaa_code": "VC2M8N05",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the original quantity before the given percentage change:",
+          "parts": [
+            { "label": "a", "question": "After a $15\\%$ increase, the price is $\\$299$", "answer": "$\\$260$" },
+            { "label": "b", "question": "After a $28\\%$ decrease, the mass is $198\\text{ kg}$", "answer": "$275\\text{ kg}$" },
+            { "label": "c", "question": "After a $12.5\\%$ increase, the volume is $432\\text{ L}$", "answer": "$384\\text{ L}$" },
+            { "label": "d", "question": "After a $3.5\\%$ decrease, the balance is $\\$772$", "answer": "$\\$800$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the final value and the single net percentage change:",
+          "parts": [
+            { "label": "a", "question": "$\\$500$ increased by $20\\%$, then increased by $15\\%$", "answer": "$\\$690$ ($+38\\%$)" },
+            { "label": "b", "question": "$\\$800$ increased by $25\\%$, then decreased by $25\\%$", "answer": "$\\$750$ ($-6.25\\%$)" },
+            { "label": "c", "question": "$\\$400$ decreased by $30\\%$, then increased by $40\\%$", "answer": "$\\$392$ ($-2\\%$)" },
+            { "label": "d", "question": "$\\$1000$ decreased by $20\\%$, then decreased by $15\\%$", "answer": "$\\$680$ ($-32\\%$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each multi-step Australian $10\\%$ GST problem:",
+          "parts": [
+            { "label": "a", "question": "GST-inclusive price is $\\$715$; find the GST component", "answer": "$\\$65$" },
+            { "label": "b", "question": "GST-inclusive price after a $20\\%$ discount is $\\$352$; find the original pre-GST price", "answer": "$\\$400$" },
+            { "label": "c", "question": "GST component on a discounted item is $\\$27$; if the discount was $25\\%$, find the original GST-inclusive price", "answer": "$\\$396$" },
+            { "label": "d", "question": "A bill consists of $\\$180$ GST-free food and GST-taxable goods; if total GST is $\\$24$, find the total bill", "answer": "$\\$444$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each algebraic percentage relationship:",
+          "parts": [
+            { "label": "a", "question": "If $A$ is $25\\%$ more than $B$, by what percentage is $B$ less than $A$?", "answer": "$20\\%$" },
+            { "label": "b", "question": "If $P$ is $20\\%$ less than $Q$, by what percentage is $Q$ more than $P$?", "answer": "$25\\%$" },
+            { "label": "c", "question": "If $35\\%$ of $x$ equals $14\\%$ of $y$, find the ratio $x : y$ in simplest form", "answer": "$2 : 5$" },
+            { "label": "d", "question": "Rectangle length increases by $20\\%$ and width decreases by $15\\%$; find the percentage change in area", "answer": "$+2\\%$ increase" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An electrical contractor in Brisbane quotes a commercial job where labour ($60\\%$ of the pre-GST cost) rises by $15\\%$ and materials ($40\\%$ of the pre-GST cost) drop by $5\\%$. If the new GST-inclusive quote is $\\$5885$, find the original pre-GST quote.",
+          "answer": "$\\$5000$ (weighted multiplier $0.6(1.15) + 0.4(0.95) = 1.07$; $5885 \\div 1.1 \\div 1.07 = 5000$)"
+        },
+        {
+          "number": 6,
+          "question": "Freshly harvested wine grapes in the Margaret River region contain $80\\%$ water by mass. After partial sun-drying on racks, the grapes contain $60\\%$ water by mass; what mass of partially dried grapes is obtained from $500\\text{ kg}$ of fresh grapes?",
+          "answer": "$250\\text{ kg}$ (non-water dry mass $= 20\\%$ of $500\\text{ kg} = 100\\text{ kg} = 40\\%$ of final mass)"
+        },
+        {
+          "number": 7,
+          "question": "In an Australian federal electorate, $64\\%$ of voters live in urban suburbs and $36\\%$ live in regional towns. If $55\\%$ of urban voters and $40\\%$ of regional voters support Proposal X, what overall percentage of voters support Proposal X, and what fraction of Proposal X's supporters live in regional towns?",
+          "answer": "$49.6\\%$ overall; $\\dfrac{18}{62} = \\dfrac{9}{31}$ of supporters live in regional towns"
+        },
+        {
+          "number": 8,
+          "question": "A Melbourne tram commuter's annual fare expenditure increased by $10\\%$ in Year 1, increased by $20\\%$ in Year 2, and fell by $25\\%$ in Year 3 to $\\$1188$. Find the commuter's initial annual fare expenditure before Year 1.",
+          "answer": "$\\$1200$ ($1.10 \\times 1.20 \\times 0.75 = 0.99$; $1188 \\div 0.99 = 1200$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A quantity is increased by $p\\%$ and then decreased by $p\\%$ ($p > 0$). Prove algebraically that the net result is ALWAYS a decrease of $\\dfrac{p^2}{100}\\%$, and find $p$ if the final value is $91\\%$ of the original value.",
+          "answer": "Multiplier is $\\left(1 + \\dfrac{p}{100}\\right)\\left(1 - \\dfrac{p}{100}\\right) = 1 - \\dfrac{p^2}{10\\,000} = 1 - \\dfrac{p^2/100}{100}$, which is a decrease of $\\dfrac{p^2}{100}\\%$. Setting $1 - \\dfrac{p^2}{10\\,000} = 0.91$ gives $\\dfrac{p^2}{100} = 9 \\implies p = 30\\%$."
+        },
+        {
+          "number": 10,
+          "question": "Prove that applying the $10\\%$ GST before applying a $d\\%$ store discount produces the exact same customer price as applying the $d\\%$ discount first and then adding $10\\%$ GST. Does the government receive the same GST dollar amount as it would on the undiscounted item?",
+          "answer": "By commutativity of multiplication, $(P \\times 1.1) \\times \\left(1 - \\frac{d}{100}\\right) = P \\times \\left(1 - \\frac{d}{100}\\right) \\times 1.1$. However, the GST dollar amount is $0.10 P\\left(1 - \\frac{d}{100}\\right)$, which is $d\\%$ less than the undiscounted GST of $0.10P$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE3_1_1a", "expression": "299 / Rational(115, 100)", "expected": 260 },
+        { "id": "WSE3_1_1b", "expression": "198 / Rational(72, 100)", "expected": 275 },
+        { "id": "WSE3_1_1c", "expression": "432 / Rational(1125, 1000)", "expected": 384 },
+        { "id": "WSE3_1_2a", "expression": "500 * Rational(120, 100) * Rational(115, 100)", "expected": 690 },
+        { "id": "WSE3_1_2b", "expression": "800 * Rational(125, 100) * Rational(75, 100)", "expected": 750 },
+        { "id": "WSE3_1_3b", "expression": "352 / (Rational(80, 100) * Rational(110, 100))", "expected": 400 },
+        { "id": "WSE3_1_3d", "expression": "180 + 24 * 11", "expected": 444 },
+        { "id": "WSE3_1_5", "expression": "5885 / (Rational(11, 10) * (Rational(6, 10)*Rational(115, 100) + Rational(4, 10)*Rational(95, 100)))", "expected": 5000 },
+        { "id": "WSE3_1_6", "expression": "(500 * Rational(20, 100)) / Rational(40, 100)", "expected": 250 },
+        { "id": "WSE3_1_8", "expression": "1188 / (Rational(110, 100) * Rational(120, 100) * Rational(75, 100))", "expected": 1200 }
+      ]
+    },
+    {
+      "section_id": "3_2",
+      "section_code": "3B",
+      "title": "Profit, Loss, Discounts and Simple Interest",
+      "vcaa_code": "VC2M8N05",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each reverse profit, loss, or mark-up problem:",
+          "parts": [
+            { "label": "a", "question": "Sold for $\\$336$ at a $40\\%$ profit on cost; find the cost price", "answer": "$\\$240$" },
+            { "label": "b", "question": "Sold for $\\$221$ at a $15\\%$ loss on cost; find the cost price", "answer": "$\\$260$" },
+            { "label": "c", "question": "Marked up by $50\\%$ then discounted by $20\\%$; find the percentage profit on cost", "answer": "$20\\%$ profit" },
+            { "label": "d", "question": "What percentage mark-up on cost is needed so a $25\\%$ discount still yields a $20\\%$ profit?", "answer": "$60\\%$ mark-up" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the single equivalent discount for each successive discount chain:",
+          "parts": [
+            { "label": "a", "question": "$20\\%$ off followed by $15\\%$ off", "answer": "$32\\%$" },
+            { "label": "b", "question": "$25\\%$ off followed by $20\\%$ off followed by $10\\%$ off", "answer": "$46\\%$" },
+            { "label": "c", "question": "$40\\%$ off followed by $d\\%$ off gives a net $52\\%$ discount; find $d$", "answer": "$d = 20\\%$" },
+            { "label": "d", "question": "Buy $3$ get $1$ free, plus $10\\%$ VIP discount on the total", "answer": "$32.5\\%$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each simple interest problem ($I = Prt$, $A = P(1 + rt)$):",
+          "parts": [
+            { "label": "a", "question": "Find $I$ for $P = \\$7200, r = 5.5\\%\\text{ p.a.}, t = 9\\text{ months}$", "answer": "$\\$297$" },
+            { "label": "b", "question": "Find $P$ if maturity value $A = \\$6050$ after $3.5\\text{ years}$ at $6\\%\\text{ p.a.}$", "answer": "$\\$5000$" },
+            { "label": "c", "question": "Find rate $r$ ($\\%\\text{ p.a.}$) if $\\$4800$ grows to $\\$5736$ in $3\\text{ years } 3\\text{ months}$", "answer": "$6\\%\\text{ p.a.}$" },
+            { "label": "d", "question": "Find time $t$ (months) for $\\$9000$ at $6.4\\%\\text{ p.a.}$ to earn $\\$384$ interest", "answer": "$8\\text{ months}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each tiered commission or marginal income tax problem:",
+          "parts": [
+            { "label": "a", "question": "Commission: $3\\%$ on first $\\$200\\,000$ plus $1.5\\%$ on remainder for a $\\$540\\,000$ sale", "answer": "$\\$11\\,100$" },
+            { "label": "b", "question": "Total sales if commission ($4\\%$ on first $\\$50\\,000$, $2.5\\%$ above $\\$50\\,000$) is $\\$4250$", "answer": "$\\$140\\,000$" },
+            { "label": "c", "question": "Income tax: $\\$0$ on first $\\$18\\,200$, $16\\%$ on $\\$18\\,200$–$\\$45\\,000$, $30\\%$ above $\\$45\\,000$ for income $\\$65\\,000$", "answer": "$\\$10\\,288$" },
+            { "label": "d", "question": "Profit margin on selling price ($\\frac{\\text{Profit}}{\\text{Sale Price}}$) when mark-up on cost is $25\\%$", "answer": "$20\\%$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Perth investor splits $\\$20\\,000$ between Bond A paying $4.5\\%\\text{ p.a.}$ simple interest and Bond B paying $6\\%\\text{ p.a.}$ simple interest. If the combined interest earned after $2$ years is $\\$2160$, how much was invested in each bond?",
+          "answer": "$\\$8000$ in Bond A and $\\$12\\,000$ in Bond B"
+        },
+        {
+          "number": 6,
+          "question": "A bicycle importer in Adelaide buys $50$ carbon road frames at $\\$600$ each. It sells $35$ frames at a $40\\%$ mark-up, $10$ frames at a $15\\%$ discount off the marked-up price, and clears the final $5$ frames at $20\\%$ below cost price. Find the overall percentage profit across the entire shipment.",
+          "answer": "$29.8\\%$ profit (total revenue $\\$29\\,400 + \\$7140 + \\$2400 = \\$38\\,940$ on $\\$30\\,000$ cost)"
+        },
+        {
+          "number": 7,
+          "question": "A Melbourne real estate agency charges $2.5\\%$ commission on the first $\\$600\\,000$ of a property's sale price and $1.8\\%$ on the portion above $\\$600\\,000$, plus $10\\%$ GST on the total commission. If the vendor pays $\\$26\\,400$ in GST-inclusive commission, find the property's sale price.",
+          "answer": "$\\$1\\,100\\,000$ (pre-GST commission $= \\$24\\,000$; $15\\,000 + 0.018(S - 600\\,000) = 24\\,000 \\implies S = \\$1\\,100\\,000$)"
+        },
+        {
+          "number": 8,
+          "question": "An antique dealer sells two paintings for $\\$990$ each; on the first painting she makes a $10\\%$ profit on its cost price, and on the second she makes a $10\\%$ loss on its cost price. Find the combined cost price of the two paintings and her net dollar profit or loss.",
+          "answer": "Combined cost $\\$2000$ ($\\$900 + \\$1100$); net loss of $\\$20$ ($1\\%$ loss)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A sum of money invested at simple interest amounts to $\\$5900$ after $3$ years and $\\$6500$ after $5$ years. Deduce the annual interest earned, the original principal $P$, and the annual simple interest rate $r$.",
+          "answer": "In $2$ years ($5 - 3$), the interest earned is $\\$6500 - \\$5900 = \\$600$, so annual interest is $\\$300/\\text{year}$. Thus $P = \\$5900 - 3(\\$300) = \\$5000$, and $r = \\dfrac{300}{5000} = 6\\%\\text{ p.a.}$"
+        },
+        {
+          "number": 10,
+          "question": "Retailers define mark-up on cost as $m = \\dfrac{S - C}{C}$ and gross margin on selling price as $g = \\dfrac{S - C}{S}$. Prove algebraically that $g = \\dfrac{m}{1 + m}$ and $m = \\dfrac{g}{1 - g}$, and find the mark-up $m$ required to achieve a $37.5\\%$ ($\\frac{3}{8}$) gross margin.",
+          "answer": "Since $S = C(1 + m)$, $g = \\dfrac{C m}{C(1 + m)} = \\dfrac{m}{1 + m}$, and rearranging gives $m = \\dfrac{g}{1 - g}$. For $g = \\dfrac{3}{8}$, $m = \\dfrac{3/8}{5/8} = \\dfrac{3}{5} = 60\\%$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE3_2_1a", "expression": "336 / Rational(140, 100)", "expected": 240 },
+        { "id": "WSE3_2_1b", "expression": "221 / Rational(85, 100)", "expected": 260 },
+        { "id": "WSE3_2_1d", "expression": "(Rational(120, 100) / Rational(75, 100) - 1) * 100", "expected": 60 },
+        { "id": "WSE3_2_2b", "expression": "(1 - Rational(75, 100) * Rational(80, 100) * Rational(90, 100)) * 100", "expected": 46 },
+        { "id": "WSE3_2_3a", "expression": "7200 * Rational(55, 1000) * Rational(9, 12)", "expected": 297 },
+        { "id": "WSE3_2_3b", "expression": "6050 / (1 + Rational(6, 100) * Rational(7, 2))", "expected": 5000 },
+        { "id": "WSE3_2_4a", "expression": "200000 * Rational(3, 100) + 340000 * Rational(15, 1000)", "expected": 11100 },
+        { "id": "WSE3_2_4c", "expression": "(45000 - 18200) * Rational(16, 100) + (65000 - 45000) * Rational(30, 100)", "expected": 10288 },
+        { "id": "WSE3_2_6", "expression": "((35*600*Rational(140,100) + 10*600*Rational(140,100)*Rational(85,100) + 5*600*Rational(80,100) - 30000) / 30000) * 100", "expected": "29.8" },
+        { "id": "WSE3_2_8", "expression": "990 / Rational(110, 100) + 990 / Rational(90, 100)", "expected": 2000 }
+      ]
+    }
+  ]
+}

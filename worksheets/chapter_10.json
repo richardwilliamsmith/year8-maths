@@ -97,6 +97,102 @@
         { "id": "WS10_1_9", "expression": "6 * 15 - 5 * 13", "expected": 25 },
         { "id": "WS10_1_10", "expression": "(5 + 5 + 9 + 13) / 4", "expected": 8 }
       ]
+    },
+    {
+      "section_id": "10_2",
+      "section_code": "10B",
+      "title": "Sampling Methods, Data Displays, and Comparing Distributions",
+      "vcaa_code": "VC2M8ST01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Identify the sampling method (Simple Random, Systematic, Stratified, or Convenience/Self-Selected) in each scenario:",
+          "parts": [
+            { "label": "a", "question": "Using a random number generator to pick $60$ student IDs from a list of all $900$ students", "answer": "Simple random sampling" },
+            { "label": "b", "question": "Selecting every $15$th passenger passing through a Flinders Street Station gate", "answer": "Systematic sampling" },
+            { "label": "c", "question": "Choosing $10\\%$ of students randomly from each Year level (Years 7–12) in proportion to cohort size", "answer": "Stratified sampling" },
+            { "label": "d", "question": "Asking people who walk past your table outside the school canteen at lunchtime", "answer": "Convenience sampling" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A school of $800$ students has $240$ in Year 7, $200$ in Year 8, $180$ in Year 9, and $180$ in Year 10. For a stratified sample of $n = 80$ students, calculate how many should be selected from:",
+          "parts": [
+            { "label": "a", "question": "Year 7", "answer": "$24$" },
+            { "label": "b", "question": "Year 8", "answer": "$20$" },
+            { "label": "c", "question": "Year 9", "answer": "$18$" },
+            { "label": "d", "question": "Year 10", "answer": "$18$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Describe the shape of each distribution (Symmetric, Positively skewed, Negatively skewed, or Bimodal) and state how the mean and median compare:",
+          "parts": [
+            { "label": "a", "question": "Most scores are clustered on the left (low values) with a long tail stretching to the right (high values)", "answer": "Positively skewed ($\\text{mean} > \\text{median}$)" },
+            { "label": "b", "question": "Most scores are clustered on the right (high values) with a long tail stretching to the left (low values)", "answer": "Negatively skewed ($\\text{mean} < \\text{median}$)" },
+            { "label": "c", "question": "A bell-shaped histogram balanced evenly around its centre", "answer": "Symmetric ($\\text{mean} \\approx \\text{median}$)" },
+            { "label": "d", "question": "A histogram of cafe customer arrivals with distinct peaks at $8{:}30\\text{ am}$ and $12{:}30\\text{ pm}$", "answer": "Bimodal (two distinct peaks)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A back-to-back stem-and-leaf plot compares battery life (hours) of Brand A ($5$ phones: $18, 21, 24, 25, 27$) and Brand B ($5$ phones: $12, 19, 25, 31, 38$). Find:",
+          "parts": [
+            { "label": "a", "question": "The median and range of Brand A", "answer": "Median $= 24\\text{ h}$, Range $= 9\\text{ h}$" },
+            { "label": "b", "question": "The median and range of Brand B", "answer": "Median $= 25\\text{ h}$, Range $= 26\\text{ h}$" },
+            { "label": "c", "question": "The mean of Brand A and the mean of Brand B", "answer": "Brand A mean $= 23\\text{ h}$, Brand B mean $= 25\\text{ h}$" },
+            { "label": "d", "question": "Which brand is more consistent (less variable), and why?", "answer": "Brand A, because its range ($9\\text{ h}$) is much smaller than Brand B's ($26\\text{ h}$)." }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A local council in Geelong wants to know whether residents support building a new skate park. Survey Method 1 posts an online poll on a skateboarding club page; Survey Method 2 mails a survey to $400$ households chosen by random lot-number generator across all suburbs. Identify the sampling bias in Method 1 and state why Method 2 is more representative.",
+          "answer": "Method 1 suffers from self-selection and undercoverage bias (only skateboard enthusiasts respond, overestimating support). Method 2 uses random sampling across all suburbs, giving every household an equal chance."
+        },
+        {
+          "number": 6,
+          "question": "A regional sports club has $450$ members: $180$ Juniors, $150$ Seniors, and $120$ Masters. The committee selects a stratified random sample of $60$ members to survey about training times. How many Juniors, Seniors, and Masters should be included in the sample?",
+          "answer": "Juniors $= 24$, Seniors $= 20$, Masters $= 16$"
+        },
+        {
+          "number": 7,
+          "question": "Daily January maximum temperatures ($^\\circ\\text{C}$) over $7$ days in Mildura ($32, 35, 36, 38, 39, 41, 45$) and Hobart ($19, 21, 22, 22, 24, 25, 28$) are recorded. Calculate the median and range for both cities and write a two-sentence comparison of their centre and spread.",
+          "answer": "Mildura: Median $= 38^\\circ\\text{C}$, Range $= 13^\\circ\\text{C}$. Hobart: Median $= 22^\\circ\\text{C}$, Range $= 9^\\circ\\text{C}$. Mildura is substantially hotter on average ($16^\\circ\\text{C}$ higher median) and also has slightly greater temperature variability ($13^\\circ\\text{C}$ vs $9^\\circ\\text{C}$ range)."
+        },
+        {
+          "number": 8,
+          "question": "A histogram of $200$ suburban house prices in Melbourne is strongly positively skewed with a median of $\\$920\\,000$ and a mean of $\\$1\\,180\\,000$. Explain why news reports quote the median house price rather than the mean, and state what causes the positive skew.",
+          "answer": "A small number of multi-million-dollar luxury properties create a long upper tail (positive skew) that inflates the mean to $\\$1\\,180\\,000$, whereas the median ($\\$920\\,000$) accurately reflects the middle property."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "To select a systematic sample of $40$ items from a factory production run of $1200$ items, an inspector calculates the step size $k = \\dfrac{1200}{40} = 30$, picks a random starting number $r$ between $1$ and $30$ (say $r = 12$), and selects items $12, 42, 72, \\dots$. Explain why the starting number $r$ MUST be chosen at random rather than always starting at item $1$, and what could go wrong if the factory machinery has a periodic cycle every $30$ items.",
+          "answer": "A random start ensures every item has an equal $\\frac{1}{30}$ chance of selection. If the machine has a defect cycle every $30$ items, sampling every $30$th item could hit the exact same point in the cycle every time (either all defective or none defective), biasing the sample."
+        },
+        {
+          "number": 10,
+          "question": "Two classes sit the same $100$-mark maths exam. Both classes have a mean of $70$ and a median of $70$, but Class X has a range of $18$ while Class Y has a range of $64$. Sketch or describe how their dot plots differ, and explain why quoting only a measure of centre (mean or median) is insufficient when comparing two datasets.",
+          "answer": "Class X's scores are tightly clustered around $70$ (e.g. $61$ to $79$), whereas Class Y's scores are widely spread from very low to very high (e.g. $36$ to $100$). Without a measure of spread (range), two very different distributions look identical from their centre alone."
+        }
+      ],
+      "assertions": [
+        { "id": "WS10_2_2a", "expression": "Rational(240, 800) * 80", "expected": 24 },
+        { "id": "WS10_2_2b", "expression": "Rational(200, 800) * 80", "expected": 20 },
+        { "id": "WS10_2_2c", "expression": "Rational(180, 800) * 80", "expected": 18 },
+        { "id": "WS10_2_4a_range", "expression": "27 - 18", "expected": 9 },
+        { "id": "WS10_2_4b_range", "expression": "38 - 12", "expected": 26 },
+        { "id": "WS10_2_4c_A", "expression": "(18 + 21 + 24 + 25 + 27) / 5", "expected": 23 },
+        { "id": "WS10_2_4c_B", "expression": "(12 + 19 + 25 + 31 + 38) / 5", "expected": 25 },
+        { "id": "WS10_2_6_jun", "expression": "Rational(180, 450) * 60", "expected": 24 },
+        { "id": "WS10_2_6_mas", "expression": "Rational(120, 450) * 60", "expected": 16 },
+        { "id": "WS10_2_9_step", "expression": "1200 / 40", "expected": 30 }
+      ]
     }
   ]
 }

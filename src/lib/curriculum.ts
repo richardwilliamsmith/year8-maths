@@ -31,6 +31,23 @@ export interface CurriculumManifest {
   chapters: ManifestChapter[];
 }
 
+export interface VcaaStandardCode {
+  code: string;
+  strand: string;
+  description: string;
+}
+
+export interface VcaaStandardsRegistry {
+  curriculum: string;
+  levels: Record<
+    string,
+    {
+      title: string;
+      codes: VcaaStandardCode[];
+    }
+  >;
+}
+
 export interface KeyVocabularyItem {
   term: string;
   definition: string;
@@ -134,6 +151,8 @@ export interface WorksheetItemAnswer {
   answer: string;
 }
 
+export type WorksheetTierKey = "foundation" | "standard" | "extension";
+
 export interface SectionWorksheetAnswerKey {
   section_id: string;
   section_code: string;
@@ -142,16 +161,44 @@ export interface SectionWorksheetAnswerKey {
   title: string;
   vcaa_code: string;
   tier: string;
+  tier_key: WorksheetTierKey;
   pdf_url: string;
   fluency_answers: WorksheetFluencyAnswer[];
   application_answers: WorksheetItemAnswer[];
   reasoning_answers: WorksheetItemAnswer[];
 }
 
+export type TieredWorksheetAnswerKeys = Record<
+  WorksheetTierKey,
+  Record<string, SectionWorksheetAnswerKey>
+>;
+
 export function loadCurriculumManifest(): CurriculumManifest {
   const manifestPath = path.join(process.cwd(), "curriculum_manifest_year8.json");
   const raw = fs.readFileSync(manifestPath, "utf-8");
   return JSON.parse(raw) as CurriculumManifest;
+}
+
+export function loadAllYearManifests(): Record<string, CurriculumManifest> {
+  const y8 = loadCurriculumManifest();
+  const y9Path = path.join(process.cwd(), "curriculum", "year9", "manifest.json");
+  const y10Path = path.join(process.cwd(), "curriculum", "year10", "manifest.json");
+
+  const manifests: Record<string, CurriculumManifest> = {
+    "8": y8,
+  };
+  if (fs.existsSync(y9Path)) {
+    manifests["9"] = JSON.parse(fs.readFileSync(y9Path, "utf-8")) as CurriculumManifest;
+  }
+  if (fs.existsSync(y10Path)) {
+    manifests["10"] = JSON.parse(fs.readFileSync(y10Path, "utf-8")) as CurriculumManifest;
+  }
+  return manifests;
+}
+
+export function loadVcaaStandardsRegistry(): VcaaStandardsRegistry {
+  const p = path.join(process.cwd(), "vcaa_v2_standards.json");
+  return JSON.parse(fs.readFileSync(p, "utf-8")) as VcaaStandardsRegistry;
 }
 
 export function loadAllGeneratedSections(): Record<string, TextbookSectionData> {
@@ -176,11 +223,18 @@ export function loadAllGeneratedSections(): Record<string, TextbookSectionData> 
   return sections;
 }
 
-export function loadWorksheetAnswerKeys(): Record<string, SectionWorksheetAnswerKey> {
+function loadSingleTierKeys(
+  tierKey: WorksheetTierKey,
+  subDir: string,
+  tierLabel: string
+): Record<string, SectionWorksheetAnswerKey> {
   const keys: Record<string, SectionWorksheetAnswerKey> = {};
 
   for (let c = 1; c <= 10; c++) {
-    const filePath = path.join(process.cwd(), "worksheets", `chapter_${c}.json`);
+    const filePath = subDir
+      ? path.join(process.cwd(), "worksheets", subDir, `chapter_${c}.json`)
+      : path.join(process.cwd(), "worksheets", `chapter_${c}.json`);
+
     if (fs.existsSync(filePath)) {
       const raw = JSON.parse(fs.readFileSync(filePath, "utf-8"));
       for (const ws of raw.worksheets || []) {
@@ -191,8 +245,9 @@ export function loadWorksheetAnswerKeys(): Record<string, SectionWorksheetAnswer
           chapter_title: raw.chapter_title,
           title: ws.title,
           vcaa_code: ws.vcaa_code,
-          tier: ws.tier || "Standard",
-          pdf_url: `/worksheets/worksheet_${ws.section_id}_standard.pdf`,
+          tier: ws.tier || tierLabel,
+          tier_key: tierKey,
+          pdf_url: `/worksheets/worksheet_${ws.section_id}_${tierKey}.pdf`,
           fluency_answers: (ws.fluency_questions || []).map(
             (fq: { number: number; parts: { label: string; answer: string }[] }) => ({
               number: fq.number,
@@ -220,4 +275,12 @@ export function loadWorksheetAnswerKeys(): Record<string, SectionWorksheetAnswer
   }
 
   return keys;
+}
+
+export function loadAllTierWorksheetAnswerKeys(): TieredWorksheetAnswerKeys {
+  return {
+    foundation: loadSingleTierKeys("foundation", "foundation", "Foundation"),
+    standard: loadSingleTierKeys("standard", "", "Standard"),
+    extension: loadSingleTierKeys("extension", "extension", "Extension"),
+  };
 }

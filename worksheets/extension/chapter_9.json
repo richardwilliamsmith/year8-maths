@@ -1,0 +1,199 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Probability and Venn Diagrams",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_1",
+      "section_code": "9A",
+      "title": "Complementary Events, Venn Diagrams and Two-Way Tables",
+      "vcaa_code": "VC2M8P02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Given $\\Pr(A) = \\dfrac{3}{5}$, $\\Pr(B') = \\dfrac{11}{20}$, and $\\Pr(A \\cup B) = \\dfrac{4}{5}$, find each exact probability:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(B)$", "answer": "$\\dfrac{9}{20}$ ($0.45$)" },
+            { "label": "b", "question": "$\\Pr(A \\cap B)$", "answer": "$\\dfrac{1}{4}$ ($0.25$)" },
+            { "label": "c", "question": "$\\Pr(A \\cap B')$ ($A$ only)", "answer": "$\\dfrac{7}{20}$ ($0.35$)" },
+            { "label": "d", "question": "$\\Pr(A' \\cap B')$ (neither $A$ nor $B$)", "answer": "$\\dfrac{1}{5}$ ($0.20$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "In a Venn diagram of $\\xi = 80$ students, $n(A \\text{ only}) = 2x + 4$, $n(A \\cap B) = x$, $n(B \\text{ only}) = 3x - 2$, and $n(A' \\cap B') = x + 8$. Find:",
+          "parts": [
+            { "label": "a", "question": "The value of $x$", "answer": "$x = 10$" },
+            { "label": "b", "question": "$n(A)$ and $n(B)$", "answer": "$n(A) = 34, n(B) = 38$" },
+            { "label": "c", "question": "$\\Pr(\\text{exactly one of } A \\text{ or } B)$", "answer": "$\\dfrac{13}{20}$ ($\\dfrac{52}{80}$)" },
+            { "label": "d", "question": "$\\Pr(A \\mid B)$ (probability a student in $B$ is also in $A$)", "answer": "$\\dfrac{5}{19}$ ($\\dfrac{10}{38}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "In a 3-set survey of $100$ students on sports Cricket ($C$), Swimming ($S$), and Tennis ($T$): $n(C)=48, n(S)=42, n(T)=35, n(C \\cap S)=18, n(S \\cap T)=14, n(C \\cap T)=13$, and $n(C \\cap S \\cap T)=8$. Find:",
+          "parts": [
+            { "label": "a", "question": "$n(C \\text{ only})$", "answer": "$25$" },
+            { "label": "b", "question": "$n(\\text{exactly two sports})$", "answer": "$21$ ($10 + 6 + 5$)" },
+            { "label": "c", "question": "$n(C \\cup S \\cup T)$", "answer": "$88$" },
+            { "label": "d", "question": "$\\Pr(\\text{none of the three sports})$", "answer": "$\\dfrac{3}{25} = 0.12$ ($\\dfrac{12}{100}$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Two standard 6-sided dice are rolled simultaneously ($36$ equally likely outcomes). Find the exact probability that:",
+          "parts": [
+            { "label": "a", "question": "The sum of the two numbers is at least $9$", "answer": "$\\dfrac{5}{18}$ ($10$ outcomes)" },
+            { "label": "b", "question": "The product of the two numbers is a multiple of $6$", "answer": "$\\dfrac{5}{12}$ ($15$ outcomes)" },
+            { "label": "c", "question": "The absolute difference between the two numbers is $2$", "answer": "$\\dfrac{2}{9}$ ($8$ outcomes)" },
+            { "label": "d", "question": "Neither die shows a $6$", "answer": "$\\dfrac{25}{36}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "In a cohort of $150$ VCE students in Melbourne, $85$ study Mathematical Methods ($M$), $62$ study Chemistry ($C$), and the number who study neither subject is twice the number who study both subjects. Let $n(M \\cap C) = x$; form an equation to find $x$ and determine $\\Pr(M \\text{ only})$.",
+          "answer": "$x = 3$ ($85 + 62 - x + 2x = 150 \\implies x = 3$); $\\Pr(M \\text{ only}) = \\dfrac{82}{150} = \\dfrac{41}{75}$"
+        },
+        {
+          "number": 6,
+          "question": "A bag contains $5$ red, $4$ blue, and $3$ green marbles ($12$ in total). Two marbles are drawn at random without replacement; find the exact probability that (a) both marbles are the same colour and (b) the two marbles are different colours.",
+          "answer": "(a) $\\dfrac{19}{66}$ ($\\dfrac{5 \\times 4 + 4 \\times 3 + 3 \\times 2}{12 \\times 11} = \\dfrac{38}{132}$), (b) $\\dfrac{47}{66}$ ($1 - \\dfrac{19}{66}$)"
+        },
+        {
+          "number": 7,
+          "question": "A rapid antigen diagnostic test is administered to $1000$ patients at a Sydney clinic, of whom $8\\%$ truly have the virus ($V$). The test correctly gives a positive result ($+$) for $95\\%$ of infected patients, and correctly gives a negative result ($-$) for $90\\%$ of uninfected patients. Construct a two-way table of counts and find the probability that a patient who tests positive actually has the virus.",
+          "answer": "$\\dfrac{76}{168} = \\dfrac{19}{42} \\approx 0.452$ ($76$ true positives and $0.10 \\times 920 = 92$ false positives, total $168$ positives)"
+        },
+        {
+          "number": 8,
+          "question": "An archer hits the bullseye on any single arrow with probability $0.7$ independently of other shots. Using the complementary event rule, find the probability that in $3$ shots she hits the bullseye at least once.",
+          "answer": "$0.973$ ($1 - 0.3^3 = 1 - 0.027 = 0.973$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Use a 3-set Venn diagram to explain why the inclusion-exclusion principle for three events $A, B, C$ is $n(A \\cup B \\cup C) = n(A) + n(B) + n(C) - n(A \\cap B) - n(B \\cap C) - n(A \\cap C) + n(A \\cap B \\cap C)$, paying particular attention to why $+n(A \\cap B \\cap C)$ must be added back at the end.",
+          "answer": "The central region $A \\cap B \\cap C$ is counted $3$ times in $n(A) + n(B) + n(C)$ and then subtracted $3$ times in $-n(A \\cap B) - n(B \\cap C) - n(A \\cap C)$ ($3 - 3 = 0$), so $+n(A \\cap B \\cap C)$ must be added back once so it is counted exactly once."
+        },
+        {
+          "number": 10,
+          "question": "For two events $A$ and $B$ in a sample space, $\\Pr(A) = 0.65$ and $\\Pr(B) = 0.75$. Prove using $\\Pr(A \\cup B) \\le 1$ (Boole's / Bonferroni's inequality) that $\\Pr(A \\cap B)$ must lie in the interval $0.40 \\le \\Pr(A \\cap B) \\le 0.65$, and hence explain why $A$ and $B$ cannot be mutually exclusive.",
+          "answer": "Since $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B) \\le 1$, we have $1.40 - \\Pr(A \\cap B) \\le 1 \\implies \\Pr(A \\cap B) \\ge 0.40 > 0$ (so they cannot be mutually exclusive). Also $A \\cap B \\subseteq A \\implies \\Pr(A \\cap B) \\le \\Pr(A) = 0.65$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_1_1a", "expression": "1 - Rational(11, 20)", "expected": "9/20" },
+        { "id": "WSE9_1_1b", "expression": "Rational(3, 5) + Rational(9, 20) - Rational(4, 5)", "expected": "1/4" },
+        { "id": "WSE9_1_2a", "expression": "(80 - (4 - 2 + 8)) / 7", "expected": 10 },
+        { "id": "WSE9_1_2c", "expression": "Rational((2*10 + 4) + (3*10 - 2), 80)", "expected": "13/20" },
+        { "id": "WSE9_1_3a", "expression": "48 - (18 + 13 - 8)", "expected": 25 },
+        { "id": "WSE9_1_3c", "expression": "48 + 42 + 35 - 18 - 14 - 13 + 8", "expected": 88 },
+        { "id": "WSE9_1_5", "expression": "150 - (85 + 62)", "expected": 3 },
+        { "id": "WSE9_1_6a", "expression": "Rational(5*4 + 4*3 + 3*2, 12*11)", "expected": "19/66" },
+        { "id": "WSE9_1_7", "expression": "Rational(76, 76 + 92)", "expected": "19/42" },
+        { "id": "WSE9_1_8", "expression": "1 - Rational(3, 10)**3", "expected": "973/1000" }
+      ]
+    },
+    {
+      "section_id": "9_2",
+      "section_code": "9B",
+      "title": "Experimental Probability, Relative Frequency, and Simulations",
+      "vcaa_code": "VC2M8P03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A biased spinner has sectors Red, Blue, Green, and Yellow with probabilities $0.35, 2k, 3k - 0.05$, and $k + 0.10$ respectively:",
+          "parts": [
+            { "label": "a", "question": "Find the value of the constant $k$", "answer": "$k = 0.10$" },
+            { "label": "b", "question": "Calculate $\\Pr(\\text{Green or Yellow})$", "answer": "$0.45$" },
+            { "label": "c", "question": "In $600$ independent spins, find the expected number of Green outcomes", "answer": "$150$" },
+            { "label": "d", "question": "If Red occurs $96$ times in $250$ spins, find the absolute difference between its relative frequency and theoretical probability", "answer": "$0.034$ ($0.384 - 0.35 = 0.034$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "After $120$ trials of an experiment, Event $A$ has occurred $42$ times (relative frequency $0.35$). An additional $n$ trials are conducted:",
+          "parts": [
+            { "label": "a", "question": "If $A$ occurs $18$ times in the next $n = 80$ trials, find the new combined relative frequency", "answer": "$0.30$ ($\\dfrac{60}{200}$)" },
+            { "label": "b", "question": "If $A$ occurs on EVERY one of the next $n$ trials and the combined relative frequency reaches $0.50$, find $n$", "answer": "$n = 36$" },
+            { "label": "c", "question": "If $A$ occurs in $25\\%$ of the next $n$ trials and the overall relative frequency becomes $0.29$, find $n$", "answer": "$n = 180$" },
+            { "label": "d", "question": "How many successes out of $300$ total trials are required for a relative frequency of $0.38$?", "answer": "$114$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A Monte Carlo simulation uses random 2-digit numbers $00$–$99$ ($100$ equally likely integers) to model an event with success probability $p = 0.32$ (digits $00$–$31$ represent success):",
+          "parts": [
+            { "label": "a", "question": "What range of 2-digit numbers represents failure?", "answer": "$32$–$99$ ($68$ numbers)" },
+            { "label": "b", "question": "In the trial sequence $18, 74, 05, 32, 29, 91, 31, 40, 12, 63$, find the simulated relative frequency of success", "answer": "$0.50$ ($5$ out of $10$: $18, 05, 29, 31, 12$)" },
+            { "label": "c", "question": "Find the theoretical probability of getting $2$ successes in $2$ independent trials", "answer": "$0.1024$ ($\\dfrac{64}{625}$)" },
+            { "label": "d", "question": "Find the theoretical probability of getting at least $1$ success in $2$ independent trials", "answer": "$0.5376$ ($1 - 0.68^2 = \\dfrac{336}{625}$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "In a capture-recapture wildlife study, $M = 80$ brush-tailed rock-wallabies are tagged and released. Later, a second sample of $n = 60$ wallabies is captured, of which $m$ are found to have tags:",
+          "parts": [
+            { "label": "a", "question": "Using the Lincoln-Petersen estimator $\\dfrac{m}{n} = \\dfrac{M}{N}$, estimate the total population $N$ when $m = 12$", "answer": "$N = 400$" },
+            { "label": "b", "question": "Estimate the total population $N$ if $m = 15$ tagged wallabies are recaptured", "answer": "$N = 320$" },
+            { "label": "c", "question": "If the true population is $N = 480$, how many tagged wallabies $m$ are expected in the sample of $60$?", "answer": "$m = 10$" },
+            { "label": "d", "question": "By how much does the population estimate $N$ decrease if $m$ changes from $10$ to $12$?", "answer": "$80$ ($480 - 400 = 80$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Fisheries biologists at Lake Eildon capture, tag, and release $140$ Murray cod. One month later, they catch a random sample of $90$ Murray cod and find that $18$ of them are tagged. Estimate the total Murray cod population $N$ in the lake, and state one key assumption required for this estimate to be valid.",
+          "answer": "$N = 700$ ($\\dfrac{18}{90} = \\dfrac{140}{N} \\implies N = 700$); assumes tagged fish mix randomly and there are no births, deaths, or tag losses between samples."
+        },
+        {
+          "number": 6,
+          "question": "A cereal promotion places $1$ of $3$ different Matildas collector cards into each box with equal probability ($\\frac{1}{3}$ each). In a simulation of $50$ trials to see how many boxes are needed to collect all $3$ cards, the outcomes (number of boxes $B$) have frequencies: $(B=3, f=11)$, $(B=4, f=14)$, $(B=5, f=10)$, $(B=6, f=7)$, $(B=7, f=5)$, $(B=8, f=3)$. Calculate the experimental mean number of boxes required.",
+          "answer": "$4.8\\text{ boxes}$ ($\\dfrac{3(11)+4(14)+5(10)+6(7)+7(5)+8(3)}{50} = \\dfrac{240}{50} = 4.8$)"
+        },
+        {
+          "number": 7,
+          "question": "A geometric dartboard consists of a square board of side length $40\\text{ cm}$ with a circular bullseye of radius $10\\text{ cm}$ painted in the centre. In a computer simulation, $2000$ random points are generated uniformly on the square board and $393$ land inside the circle; use this relative frequency to estimate $\\pi$ to $3$ decimal places.",
+          "answer": "$\\pi \\approx 3.144$ (since $\\dfrac{\\pi(10)^2}{40^2} = \\dfrac{\\pi}{16} \\approx \\dfrac{393}{2000} \\implies \\pi \\approx \\dfrac{16 \\times 393}{2000} = 3.144$)"
+        },
+        {
+          "number": 8,
+          "question": "A basketball player has made $63$ out of $90$ free throws so far this season (a relative frequency of $0.70$). She then goes on a streak where she makes $85\\%$ of her next $x$ free throws, raising her season relative frequency to $0.75$. Form and solve a linear equation to find $x$.",
+          "answer": "$x = 45\\text{ free throws}$ ($63 + 0.85x = 0.75(90 + x) \\implies 0.10x = 4.5 \\implies x = 45$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A fair coin ($p = 0.5$) is tossed $20$ times and lands Heads $14$ times (relative frequency $0.70$, excess of $4$ Heads). The student then tosses the coin $980$ more times, getting exactly $50\\%$ Heads ($490$ Heads). Calculate the overall relative frequency after all $1000$ tosses, and explain how this illustrates the Law of Large Numbers without requiring 'tails to catch up' (the Gambler's Fallacy).",
+          "answer": "After $1000$ tosses, total Heads $= 14 + 490 = 504$, so relative frequency $= \\dfrac{504}{1000} = 0.504 \\approx 0.50$. The initial excess of $4$ Heads is diluted by dividing by a large $N = 1000$ ($\\frac{4}{1000} = 0.004$), not cancelled out by excess Tails."
+        },
+        {
+          "number": 10,
+          "question": "In the cereal-card problem (3 cards, equally likely), explain why the theoretical probability of getting a new card on the 1st box is $\\frac{3}{3} = 1$, on a subsequent box when holding $1$ card is $\\frac{2}{3}$, and when holding $2$ cards is $\\frac{1}{3}$, so the theoretical expected number of boxes is $1 + \\frac{3}{2} + \\frac{3}{1} = 5.5$.",
+          "answer": "When holding $k$ distinct cards, $(3 - k)$ of the $3$ equally likely cards are new, giving success probability $p = \\frac{3-k}{3}$ and expected waiting time $\\frac{1}{p} = \\frac{3}{3-k}$ boxes for each stage: $1 + 1.5 + 3 = 5.5$ boxes."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_2_1a", "expression": "(1 - (Rational(35, 100) - Rational(5, 100) + Rational(10, 100))) / 6", "expected": "1/10" },
+        { "id": "WSE9_2_1c", "expression": "600 * (3 * Rational(1, 10) - Rational(5, 100))", "expected": 150 },
+        { "id": "WSE9_2_1d", "expression": "Rational(96, 250) - Rational(35, 100)", "expected": "17/500" },
+        { "id": "WSE9_2_2b", "expression": "(120 * Rational(1, 2) - 42) / (1 - Rational(1, 2))", "expected": 36 },
+        { "id": "WSE9_2_2c", "expression": "(42 - 120 * Rational(29, 100)) / (Rational(29, 100) - Rational(25, 100))", "expected": 180 },
+        { "id": "WSE9_2_3d", "expression": "1 - Rational(68, 100)**2", "expected": "336/625" },
+        { "id": "WSE9_2_4a", "expression": "80 * 60 / 12", "expected": 400 },
+        { "id": "WSE9_2_5", "expression": "140 * 90 / 18", "expected": 700 },
+        { "id": "WSE9_2_6", "expression": "(3*11 + 4*14 + 5*10 + 6*7 + 7*5 + 8*3) / 50", "expected": "24/5" },
+        { "id": "WSE9_2_8", "expression": "(90 * Rational(75, 100) - 63) / (Rational(85, 100) - Rational(75, 100))", "expected": 45 }
+      ]
+    }
+  ]
+}

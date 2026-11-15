@@ -1,0 +1,199 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Percentages and Financial Mathematics",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "3_1",
+      "section_code": "3A",
+      "title": "Percentages, Percentage Change and GST",
+      "vcaa_code": "VC2M8N05",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find each benchmark percentage using the fraction hint in brackets:",
+          "parts": [
+            { "label": "a", "question": "$10\\%$ of $\\$80$ ($\\div 10$)", "answer": "$\\$8$" },
+            { "label": "b", "question": "$50\\%$ of $\\$64$ ($\\div 2$)", "answer": "$\\$32$" },
+            { "label": "c", "question": "$25\\%$ of $40\\text{ kg}$ ($\\div 4$)", "answer": "$10\\text{ kg}$" },
+            { "label": "d", "question": "$20\\%$ of $\\$90$ (double $10\\%$)", "answer": "$\\$18$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the percentage amount first, then add (for increase) or subtract (for decrease):",
+          "parts": [
+            { "label": "a", "question": "Increase $\\$50$ by $10\\%$ ($+\\$5$)", "answer": "$\\$55$" },
+            { "label": "b", "question": "Decrease $\\$40$ by $25\\%$ ($-\\$10$)", "answer": "$\\$30$" },
+            { "label": "c", "question": "Increase $100\\text{ m}$ by $15\\%$ ($+15\\text{ m}$)", "answer": "$115\\text{ m}$" },
+            { "label": "d", "question": "Decrease $\\$70$ by $10\\%$ ($-\\$7$)", "answer": "$\\$63$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use $\\dfrac{\\text{change}}{\\text{original}} \\times 100\\%$ to calculate each percentage change:",
+          "parts": [
+            { "label": "a", "question": "From $\\$10$ to $\\$13$ (change $= \\$3$)", "answer": "$30\\%$ increase" },
+            { "label": "b", "question": "From $\\$20$ to $\\$25$ (change $= \\$5$)", "answer": "$25\\%$ increase" },
+            { "label": "c", "question": "From $50\\text{ L}$ to $40\\text{ L}$ (change $= 10\\text{ L}$)", "answer": "$20\\%$ decrease" },
+            { "label": "d", "question": "From $\\$100$ to $\\$85$ (change $= \\$15$)", "answer": "$15\\%$ decrease" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each $10\\%$ Australian GST problem using the rule in brackets:",
+          "parts": [
+            { "label": "a", "question": "Pre-GST price $\\$60$; find the $10\\%$ GST ($\\div 10$)", "answer": "$\\$6$" },
+            { "label": "b", "question": "Pre-GST price $\\$120$; find the price including $10\\%$ GST ($+\\$12$)", "answer": "$\\$132$" },
+            { "label": "c", "question": "GST-inclusive price $\\$88$; find the GST component ($\\div 11$)", "answer": "$\\$8$" },
+            { "label": "d", "question": "GST-inclusive price $\\$110$; find the pre-GST price ($\\div 1.1$)", "answer": "$\\$100$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A hairdresser in Geelong charges $\\$50$ before GST. Add $10\\%$ GST ($\\$5$) to find the total bill including GST.",
+          "answer": "$\\$55$"
+        },
+        {
+          "number": 6,
+          "question": "A pair of football boots is $\\$80$, and a sports store takes $25\\%$ off. Calculate $25\\%$ of $\\$80$ ($80 \\div 4$), then subtract it from $\\$80$ to find the sale price.",
+          "answer": "$\\$60$ ($\\$20$ discount)"
+        },
+        {
+          "number": 7,
+          "question": "The price of a cinema ticket rose from $\\$20$ to $\\$22$ (an increase of $\\$2$). Calculate $\\dfrac{2}{20} \\times 100\\%$ to find the percentage increase.",
+          "answer": "$10\\%$ increase"
+        },
+        {
+          "number": 8,
+          "question": "A cafe receipt in Sydney shows a GST-inclusive total of $\\$33$. Divide $\\$33$ by $11$ to find the GST amount included in the bill.",
+          "answer": "$\\$3$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain how you can use $10\\%$ of $\\$60$ ($= \\$6$) to quickly work out $5\\%$ of $\\$60$ and $15\\%$ of $\\$60$ in your head.",
+          "answer": "$5\\%$ is half of $10\\%$ ($\\$6 \\div 2 = \\$3$), and $15\\%$ is $10\\% + 5\\%$ ($\\$6 + \\$3 = \\$9$)."
+        },
+        {
+          "number": 10,
+          "question": "A shirt costs $\\$100$. Its price increases by $10\\%$ to $\\$110$, and then $10\\%$ is taken off $\\$110$. Calculate $10\\%$ of $\\$110$ to show the final price is $\\$99$, not $\\$100$.",
+          "answer": "$10\\%$ of $\\$110$ is $\\$11$, so $\\$110 - \\$11 = \\$99$ (the $10\\%$ discount is taken from the larger $\\$110$ amount)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF3_1_1a", "expression": "80 / 10", "expected": 8 },
+        { "id": "WSF3_1_1c", "expression": "40 / 4", "expected": 10 },
+        { "id": "WSF3_1_2a", "expression": "50 + 5", "expected": 55 },
+        { "id": "WSF3_1_2b", "expression": "40 - 10", "expected": 30 },
+        { "id": "WSF3_1_3a", "expression": "(3 / 10) * 100", "expected": 30 },
+        { "id": "WSF3_1_3c", "expression": "(10 / 50) * 100", "expected": 20 },
+        { "id": "WSF3_1_4b", "expression": "120 + 12", "expected": 132 },
+        { "id": "WSF3_1_4c", "expression": "88 / 11", "expected": 8 },
+        { "id": "WSF3_1_6", "expression": "80 - 80 / 4", "expected": 60 },
+        { "id": "WSF3_1_7", "expression": "(2 / 20) * 100", "expected": 10 }
+      ]
+    },
+    {
+      "section_id": "3_2",
+      "section_code": "3B",
+      "title": "Profit, Loss, Discounts and Simple Interest",
+      "vcaa_code": "VC2M8N05",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State whether each sale results in a profit or a loss, and find the dollar amount:",
+          "parts": [
+            { "label": "a", "question": "Cost price $\\$30$, Selling price $\\$45$", "answer": "$\\$15$ profit" },
+            { "label": "b", "question": "Cost price $\\$80$, Selling price $\\$65$", "answer": "$\\$15$ loss" },
+            { "label": "c", "question": "Cost price $\\$50$, Selling price $\\$70$", "answer": "$\\$20$ profit" },
+            { "label": "d", "question": "Cost price $\\$120$, Selling price $\\$95$", "answer": "$\\$25$ loss" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the discount amount, then subtract it from the marked price to find the sale price:",
+          "parts": [
+            { "label": "a", "question": "$10\\%$ off $\\$40$ (discount $= \\$4$)", "answer": "$\\$36$" },
+            { "label": "b", "question": "$50\\%$ off $\\$90$ (discount $= \\$45$)", "answer": "$\\$45$" },
+            { "label": "c", "question": "$20\\%$ off $\\$50$ (discount $= \\$10$)", "answer": "$\\$40$" },
+            { "label": "d", "question": "$25\\%$ off $\\$120$ (discount $= \\$30$)", "answer": "$\\$90$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the simple interest $I = P \\times r \\times t$ for each investment:",
+          "parts": [
+            { "label": "a", "question": "$P = \\$100, r = 5\\% = 0.05, t = 2\\text{ years}$", "answer": "$\\$10$" },
+            { "label": "b", "question": "$P = \\$500, r = 10\\% = 0.10, t = 3\\text{ years}$", "answer": "$\\$150$" },
+            { "label": "c", "question": "$P = \\$1000, r = 4\\% = 0.04, t = 2\\text{ years}$", "answer": "$\\$80$" },
+            { "label": "d", "question": "$P = \\$2000, r = 5\\% = 0.05, t = 4\\text{ years}$", "answer": "$\\$400$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the total amount $A = P + I$ by adding the principal $P$ and interest $I$:",
+          "parts": [
+            { "label": "a", "question": "$P = \\$400$ and $I = \\$40$", "answer": "$\\$440$" },
+            { "label": "b", "question": "$P = \\$1500$ and $I = \\$200$", "answer": "$\\$1700$" },
+            { "label": "c", "question": "$P = \\$800$ and $I = \\$120$", "answer": "$\\$920$" },
+            { "label": "d", "question": "$P = \\$3000$ and $I = \\$450$", "answer": "$\\$3450$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A bakery in Hobart makes a birthday cake for $\\$20$ and sells it for $\\$35$. Find (a) the dollar profit ($35 - 20$) and (b) the percentage profit $\\dfrac{15}{20} \\times 100\\%$.",
+          "answer": "(a) $\\$15$ profit, (b) $75\\%$ profit"
+        },
+        {
+          "number": 6,
+          "question": "A skateboard priced at $\\$60$ has a $20\\%$ discount. Calculate $20\\%$ of $\\$60$ ($\\$12$) and subtract it from $\\$60$ to find the sale price.",
+          "answer": "$\\$48$"
+        },
+        {
+          "number": 7,
+          "question": "Jack deposits $P = \\$1000$ into a savings account at $r = 3\\%\\text{ p.a.}$ ($0.03$) for $t = 5\\text{ years}$. Multiply $1000 \\times 0.03 \\times 5$ to find the simple interest earned.",
+          "answer": "$\\$150$"
+        },
+        {
+          "number": 8,
+          "question": "Using Jack's investment from Question 7 ($P = \\$1000, I = \\$150$), calculate $A = P + I$ to find his total account balance after $5$ years.",
+          "answer": "$\\$1150$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "To use $I = Prt$ when the interest rate is $r = 6\\%\\text{ p.a.}$, a student substitutes $r = 6$ instead of $r = 0.06$. Explain why this makes their answer $100$ times too large.",
+          "answer": "$6\\%$ means $\\dfrac{6}{100} = 0.06$; using $6$ instead of $0.06$ multiplies the principal by $6$ ($600\\%$) instead of $6\\%$."
+        },
+        {
+          "number": 10,
+          "question": "If you invest $\\$500$ at $10\\%\\text{ p.a.}$ simple interest, you earn $\\$50$ interest each year. How many years will it take to earn $\\$200$ in interest?",
+          "answer": "$4\\text{ years}$ (since $\\$200 \\div \\$50 = 4$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF3_2_1a", "expression": "45 - 30", "expected": 15 },
+        { "id": "WSF3_2_2a", "expression": "40 - 4", "expected": 36 },
+        { "id": "WSF3_2_2d", "expression": "120 - 30", "expected": 90 },
+        { "id": "WSF3_2_3a", "expression": "100 * Rational(5, 100) * 2", "expected": 10 },
+        { "id": "WSF3_2_3b", "expression": "500 * Rational(10, 100) * 3", "expected": 150 },
+        { "id": "WSF3_2_3d", "expression": "2000 * Rational(5, 100) * 4", "expected": 400 },
+        { "id": "WSF3_2_4d", "expression": "3000 + 450", "expected": 3450 },
+        { "id": "WSF3_2_5b", "expression": "(15 / 20) * 100", "expected": 75 },
+        { "id": "WSF3_2_6", "expression": "60 - 12", "expected": 48 },
+        { "id": "WSF3_2_7", "expression": "1000 * Rational(3, 100) * 5", "expected": 150 }
+      ]
+    }
+  ]
+}

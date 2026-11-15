@@ -1,0 +1,427 @@
+{
+  "metadata": {
+    "section_id": "6_3",
+    "section_code": "6C",
+    "chapter_number": 6,
+    "chapter_title": "Linear Graphs and Coordinate Geometry",
+    "title": "Algebraic Algorithms, Flowcharts, and Error-Testing",
+    "vcaa_code": "VC2M8A04",
+    "vcaa_description": "Use algorithms and related testing procedures to identify and correct errors",
+    "strand": "Algebra",
+    "target_mastery": "Construct and interpret algebraic algorithms and flowcharts, perform desk-checks using trace tables to track variable states across iterations, generate linear tables of values algorithmically, and debug order-of-operations and boundary-condition errors in algebraic formulas.",
+    "prerequisites": [
+      "Substituting values into algebraic expressions and linear rules (Section 5A, Section 6B)",
+      "Solving linear equations and checking solutions (Section 6A)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Algorithm",
+        "definition": "A precise, finite sequence of step-by-step instructions designed to solve a mathematical problem or perform a calculation."
+      },
+      {
+        "term": "Trace Table (Desk-Checking)",
+        "definition": "A structured table used to manually test an algorithm step by step, recording the value of each variable after every instruction or loop iteration to verify correctness or locate errors."
+      },
+      {
+        "term": "Logic Error (Bug)",
+        "definition": "A flaw in the design of an algorithm or formula (such as missing brackets, an incorrect inequality sign, or an off-by-one loop condition) that causes the algorithm to produce an incorrect output."
+      },
+      {
+        "term": "Iteration",
+        "definition": "The repetition of a block of instructions in an algorithm (a loop) until a specified stopping condition is met."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_6_3_1",
+      "title": "Representing Algebraic Algorithms: Pseudocode and Flowcharts",
+      "explanation": "An algorithm takes one or more **inputs**, applies a sequence of well-defined mathematical operations (**sequence**, **selection/branching**, and **iteration/loops**), and produces an **output**. In flowcharts, ovals represent Start/End terminals, parallelograms represent Input/Output, rectangles represent Processes (assignments such as $y \\leftarrow 3x - 2$), and diamonds represent Decisions (yes/no conditions such as $x \\le 5$).",
+      "formula_latex": "\\text{Input } x \\longrightarrow \\text{Process: } y \\leftarrow mx + c \\longrightarrow \\text{Decision / Loop} \\longrightarrow \\text{Output } y",
+      "callout_title": "Assignment Updates the Variable",
+      "callout_rule": "The instruction $x \\leftarrow x + 2$ (or `x = x + 2` in code) is not an algebraic equation to solve — it means 'take the current value of $x$, add $2$, and store the result back into $x$'."
+    },
+    {
+      "id": "theory_6_3_2",
+      "title": "Desk-Checking with Trace Tables",
+      "explanation": "To verify whether an algorithm works as intended, mathematicians and programmers perform a **desk-check** by constructing a **trace table**. Each column represents a variable or condition check, and each row records the updated state of those variables as you step through the algorithm line by line with known test inputs.",
+      "formula_latex": "\\text{Iteration } k: \\quad x_k = x_{k-1} + \\Delta x, \\qquad y_k = m x_k + c",
+      "callout_title": "Test Boundary and Extreme Cases",
+      "callout_rule": "Always desk-check an algorithm using at least three types of test data: a standard positive value, zero or a negative value, and the exact boundary value where a decision condition changes."
+    },
+    {
+      "id": "theory_6_3_3",
+      "title": "Linear Rule-Generation Algorithms and Iterative Routines",
+      "explanation": "A loop can generate a table of values for a linear relation $y = mx + c$ either by substituting $x$ at each step or by starting at $y_0 = c$ and repeatedly adding the constant first difference $m$ each time $x$ increases by $1$. Iterative algorithms can also search for solutions (such as finding when a linear cost model first exceeds a budget) by incrementing $x$ until a target condition is satisfied.",
+      "formula_latex": "\\text{Start } (x, y) = (0, c); \\quad \\text{Repeat: } x \\leftarrow x + 1, \\; y \\leftarrow y + m",
+      "callout_title": "Order of Updates Inside a Loop Matters",
+      "callout_rule": "In a loop, updating $x \\leftarrow x + 1$ before calculating $y \\leftarrow mx + c$ produces a different pair of values than calculating $y$ first and incrementing $x$ afterwards."
+    },
+    {
+      "id": "theory_6_3_4",
+      "title": "Debugging Order-of-Operations and Boundary Bugs",
+      "explanation": "Two of the most frequent bugs in algebraic algorithms are: (1) **Order-of-operations bugs**, where a multi-term numerator or denominator is written inline without brackets (e.g. writing `y = 2*x + 6 / 2` instead of `y = (2*x + 6) / 2`), and (2) **Off-by-one boundary bugs**, where a strict inequality ($<$) is used instead of a non-strict inequality ($\\le$), causing a loop to stop one step too early or too late.",
+      "formula_latex": "\\frac{a + b}{c} \\;\\text{must be coded as}\\; (a + b) / c, \\quad \\text{never}\\; a + b / c = a + \\frac{b}{c}",
+      "callout_title": "Compare Trace Output Against Known Mathematical Truth",
+      "callout_rule": "To isolate a bug, calculate the true mathematical result by hand for a simple input (such as $x = 2$), compare it with each step of the trace table, and pinpoint the exact line where the two diverge."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE6_3_1",
+      "title": "Desk-Checking an Iterative Algorithm with a Trace Table",
+      "difficulty": "Fluency",
+      "problem": "Consider the following algorithm:\n1. Set $n \\leftarrow 1$ and $T \\leftarrow 5$.\n2. While $n \\le 4$, repeat:\n   (a) $T \\leftarrow T + 3n$\n   (b) $n \\leftarrow n + 1$\n3. Output $T$.\nComplete a trace table to track $(n, T)$ at the end of each pass through the loop, and state the final output $T$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Record the initial values before the loop begins: $n = 1$ and $T = 5$. Check the condition $n \\le 4$: since $1 \\le 4$ is True, enter the loop.",
+          "working": "$$\\text{Initial: } n = 1, \\; T = 5$$\n$$\\text{Pass 1 }(n=1): \\quad T \\leftarrow 5 + 3(1) = 8, \\quad n \\leftarrow 1 + 1 = 2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Continue tracing Passes 2, 3, and 4 while $n \\le 4$ remains True.",
+          "working": "$$\\text{Pass 2 }(n=2): \\quad T \\leftarrow 8 + 3(2) = 14, \\quad n \\leftarrow 2 + 1 = 3$$\n$$\\text{Pass 3 }(n=3): \\quad T \\leftarrow 14 + 3(3) = 23, \\quad n \\leftarrow 3 + 1 = 4$$\n$$\\text{Pass 4 }(n=4): \\quad T \\leftarrow 23 + 3(4) = 35, \\quad n \\leftarrow 4 + 1 = 5$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Now $n = 5$. Check the condition $n \\le 4$: False. Exit the loop and output $T$.",
+          "working": "$$\\text{Condition } 5 \\le 4 \\text{ is False} \\implies \\text{Output } T = 35$$"
+        }
+      ],
+      "final_answer": "Final output $T = 35$ (with $n = 5$ at loop termination)",
+      "now_you_try": {
+        "problem": "Trace the algorithm: Set $k \\leftarrow 1$ and $S \\leftarrow 2$. While $k \\le 3$, repeat: $S \\leftarrow 2S + k$, then $k \\leftarrow k + 1$. Output $S$. What is the final output $S$?",
+        "hint": "Track $S$ across three passes for $k = 1, 2, 3$: in Pass 1, $S \\leftarrow 2(2) + 1 = 5$.",
+        "working_summary": "Pass 1 ($k=1$): $S = 2(2) + 1 = 5, k = 2$. Pass 2 ($k=2$): $S = 2(5) + 2 = 12, k = 3$. Pass 3 ($k=3$): $S = 2(12) + 3 = 27, k = 4$. Loop ends.",
+        "answer": "$S = 27$"
+      }
+    },
+    {
+      "id": "WE6_3_2",
+      "title": "Identifying and Correcting an Order-of-Operations Bug in a Formula Algorithm",
+      "difficulty": "Understanding",
+      "problem": "A student writes an algorithm to convert a temperature from degrees Fahrenheit ($F$) to degrees Celsius ($C$), where the true mathematical formula is $C = \\frac{5(F - 32)}{9}$. The student's algorithm is:\n- Step 1: Input $F$\n- Step 2: Calculate `C = 5 * F - 32 / 9`\n- Step 3: Output $C$\n(a) Desk-check the student's algorithm using the test input $F = 68$ and compare it with the true Celsius temperature. (b) Identify the two errors in Step 2 and write the corrected instruction.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Evaluate the student's Step 2 at $F = 68$ using standard order of operations (multiplication and division before subtraction), and evaluate the true formula at $F = 68$.",
+          "working": "$$\\text{Student's code: } C = 5 \\times 68 - \\frac{32}{9} = 340 - 3\\frac{5}{9} = 336\\frac{4}{9}^\\circ\\text{C} \\approx 336.44^\\circ\\text{C}$$\n$$\\text{True formula: } C = \\frac{5(68 - 32)}{9} = \\frac{5 \\times 36}{9} = \\frac{180}{9} = 20^\\circ\\text{C}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Because multiplication and division have higher precedence than subtraction, `5 * F - 32 / 9` multiplies $5$ by $F$ alone and divides only $32$ by $9$. Brackets are needed around $(F - 32)$. State the corrected line.",
+          "working": "$$\\text{Corrected Step 2: } \\texttt{C = 5 * (F - 32) / 9}$$"
+        }
+      ],
+      "final_answer": "(a) Student's algorithm outputs $336\\frac{4}{9}^\\circ\\text{C}$ instead of the true value $20^\\circ\\text{C}$; (b) Missing brackets around $F - 32$ caused $5$ to multiply $F$ only and $32$ to be divided by $9$ before subtraction. Corrected instruction: `C = 5 * (F - 32) / 9`.",
+      "now_you_try": {
+        "problem": "An algorithm to find the gradient $m$ between $(x_1, y_1) = (2, 4)$ and $(x_2, y_2) = (6, 16)$ is written as `m = y2 - y1 / x2 - x1`. (a) What value does this buggy expression produce? (b) What is the true gradient, and how should the code be corrected?",
+        "hint": "In `y2 - y1 / x2 - x1`, only `y1 / x2` is divided first.",
+        "working_summary": "(a) $16 - \\frac{4}{6} - 2 = 14 - \\frac{2}{3} = 13\\frac{1}{3}$ ($\\frac{40}{3}$). (b) True gradient $m = \\frac{16 - 4}{6 - 2} = 3$. Correct code: `m = (y2 - y1) / (x2 - x1)`.",
+        "answer": "(a) $\\frac{40}{3}$ ($13\\frac{1}{3}$), (b) True $m = 3$; corrected code: `m = (y2 - y1) / (x2 - x1)`"
+      }
+    },
+    {
+      "id": "WE6_3_3",
+      "title": "Debugging a Linear Rule-Generation Algorithm",
+      "difficulty": "Problem-Solving",
+      "problem": "An algorithm is intended to generate and print the $(x, y)$ coordinates of the linear relation $y = -4x + 15$ for $x = 0, 1, 2, 3$. The draft algorithm is:\n1. Set $x \\leftarrow 0$ and $y \\leftarrow 15$.\n2. While $x < 3$, repeat:\n   (a) $x \\leftarrow x + 1$\n   (b) $y \\leftarrow y + 4$\n   (c) Print $(x, y)$\n(a) Trace the first pair printed by the draft algorithm and identify all three bugs. (b) Write the corrected algorithm and list the four coordinate pairs it prints.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Trace Pass 1 of the draft algorithm and compare with the required table for $y = -4x + 15$ at $x = 0, 1, 2, 3$.",
+          "working": "$$\\text{Draft Pass 1: } x \\leftarrow 1, \\; y \\leftarrow 15 + 4 = 19, \\; \\text{prints } (1, 19)$$\n$$\\text{Bugs: (1) Print occurs after updating } x, y, \\text{ skipping } x = 0;$$\n$$\\text{(2) } y \\text{ adds } 4 \\text{ instead of subtracting } 4 \\text{ (since } m = -4\\text{)};$$\n$$\\text{(3) Condition } x < 3 \\text{ stops after } 3 \\text{ passes instead of } 4 \\text{ pairs } (x = 0, 1, 2, 3).$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Correct the loop condition to $x \\le 3$, print $(x, y)$ before updating, and update $y \\leftarrow y - 4$.",
+          "working": "$$\\text{Corrected loop (while } x \\le 3\\text{): Print } (x, y); \\; x \\leftarrow x + 1; \\; y \\leftarrow y - 4$$\n$$\\text{Outputs: } (0, 15), \\; (1, 11), \\; (2, 7), \\; (3, 3)$$"
+        }
+      ],
+      "final_answer": "(a) The draft prints $(1, 19)$ first; the 3 bugs are printing after updating (skipping $x = 0$), adding $4$ instead of subtracting $4$, and using $x < 3$ instead of $x \\le 3$. (b) Corrected outputs: $(0, 15), (1, 11), (2, 7), (3, 3)$.",
+      "now_you_try": {
+        "problem": "A loop starts with $x = 0, y = -5$ and repeats while $x \\le 3$: Print $(x, y)$, then $x \\leftarrow x + 1$, then $y \\leftarrow y + 6$. List the four $(x, y)$ pairs printed and state the linear equation they satisfy.",
+        "hint": "The initial point is $(0, -5)$ so $c = -5$, and $y$ increases by $6$ each time $x$ increases by $1$ so $m = 6$.",
+        "working_summary": "Pairs: $(0, -5), (1, 1), (2, 7), (3, 13)$. Linear rule: $y = 6x - 5$.",
+        "answer": "$(0, -5), (1, 1), (2, 7), (3, 13)$; linear equation $y = 6x - 5$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_6_3_1",
+      "title": "Omitting Brackets Around Numerators and Denominators in Code",
+      "misconception": "Writing a fraction $\\frac{x + 8}{4}$ in an algorithm or spreadsheet as `x + 8 / 4`, assuming the horizontal fraction bar is automatically implied.",
+      "correct_concept": "On a single line of code or spreadsheet formula, division (`/`) has higher precedence than addition (`+`), so `x + 8 / 4` is evaluated as $x + \\frac{8}{4} = x + 2$. Parentheses must enclose any multi-term numerator or denominator: `(x + 8) / 4`.",
+      "incorrect_working": "$$\\text{For } x = 12: \\quad \\texttt{12 + 8 / 4} = 12 + 2 = 14 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{For } x = 12: \\quad \\texttt{(12 + 8) / 4} = \\frac{20}{4} = 5$$",
+      "counter_example": "At $x = 12$, $\\frac{12 + 8}{4} = 5$, whereas `12 + 8 / 4` gives $14$."
+    },
+    {
+      "id": "misc_6_3_2",
+      "title": "Treating Assignment Statements as Symmetric Algebraic Equations",
+      "misconception": "Thinking that the sequence of instructions $a \\leftarrow b$ followed by $b \\leftarrow a$ swaps the values of $a$ and $b$.",
+      "correct_concept": "Each assignment overwrites the target variable immediately. Once $a \\leftarrow b$ executes, the original value of $a$ is lost and both variables hold the old value of $b$. Swapping two variables requires a third temporary variable (`temp`).",
+      "incorrect_working": "$$\\text{Start } a = 7, b = 10: \\quad a \\leftarrow b \\implies a = 10; \\quad b \\leftarrow a \\implies b = 10 \\quad (\\text{Both equal } 10!)$$",
+      "correct_working": "$$\\text{Start } a = 7, b = 10: \\quad \\text{temp} \\leftarrow a \\;(7); \\quad a \\leftarrow b \\;(10); \\quad b \\leftarrow \\text{temp} \\;(7)$$",
+      "counter_example": "Without a temporary variable, $a$ and $b$ end up with identical values ($10$ and $10$) instead of being swapped to $(10, 7)$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "6_3_Q1",
+        "question": "An algorithm follows the steps: Step 1: Input $x$. Step 2: Set $a \\leftarrow 3x - 4$. Step 3: Set $y \\leftarrow 2a + 5$. Step 4: Output $y$. (a) Find the output $y$ when the input is $x = 6$. (b) Write a single simplified linear formula for $y$ in terms of $x$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $y = 33$, (b) $y = 6x - 3$",
+        "step_by_step_solution": [
+          "Substitute $x = 6$ into Step 2: $a = 3(6) - 4 = 14$. Then Step 3 gives $y = 2(14) + 5 = 33$.",
+          "Substitute $a = 3x - 4$ into $y = 2a + 5$: $y = 2(3x - 4) + 5 = 6x - 8 + 5 = 6x - 3$. (Check at $x = 6$: $6(6) - 3 = 33$.)"
+        ]
+      },
+      {
+        "id": "6_3_Q2",
+        "question": "A branching algorithm takes an input $x$ and applies the rule: **If** $x < 5$, set $y \\leftarrow 4x + 2$; **Else**, set $y \\leftarrow 2x + 12$. Calculate the output $y$ for the test inputs: (a) $x = 3$, (b) $x = 5$, and (c) $x = 8$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $y = 14$, (b) $y = 22$, (c) $y = 28$",
+        "step_by_step_solution": [
+          "For $x = 3$: since $3 < 5$ is True, $y = 4(3) + 2 = 14$.",
+          "For $x = 5$: since $5 < 5$ is False, use the Else branch: $y = 2(5) + 12 = 22$. For $x = 8$: $8 < 5$ is False, so $y = 2(8) + 12 = 28$."
+        ]
+      },
+      {
+        "id": "6_3_Q3",
+        "question": "Perform a desk-check on the following loop: Set $x \\leftarrow 2$ and $P \\leftarrow 1$. While $x \\le 8$, repeat: $P \\leftarrow P + x$, then $x \\leftarrow x + 2$. Output $P$. State the value of $P$ and $x$ when the algorithm terminates.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$P = 21$, $x = 10$",
+        "step_by_step_solution": [
+          "Pass 1 ($x=2$): $P = 1 + 2 = 3, x = 4$. Pass 2 ($x=4$): $P = 3 + 4 = 7, x = 6$.",
+          "Pass 3 ($x=6$): $P = 7 + 6 = 13, x = 8$. Pass 4 ($x=8$): $P = 13 + 8 = 21, x = 10$. Since $10 \\le 8$ is False, the loop stops with $P = 21$ and $x = 10$."
+        ]
+      },
+      {
+        "id": "6_3_Q4",
+        "question": "A student codes the formula for the area of a trapezium $A = \\frac{(a + b)h}{2}$ as `A = a + b * h / 2`. (a) If $a = 6, b = 10$, and $h = 4$, what number does the student's code output? (b) What is the true area of the trapezium, and how should the code be corrected?",
+        "difficulty": "Medium",
+        "context": "Error-Testing",
+        "final_answer": "(a) $26$, (b) True area $= 32$; corrected code: `A = (a + b) * h / 2`",
+        "step_by_step_solution": [
+          "In the student's code, `b * h / 2` is evaluated before addition: $A = 6 + \\frac{10 \\times 4}{2} = 6 + 20 = 26$.",
+          "The true area is $A = \\frac{(6 + 10) \\times 4}{2} = \\frac{16 \\times 4}{2} = 32$. Add brackets around $a + b$: `A = (a + b) * h / 2`."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "6_3_Q5",
+        "question": "A Melbourne cinema kiosk algorithm calculates the total price $C\\text{ (\\$)}$ for $n$ tickets at $\\$16$ each plus a flat booking fee of $\\$4$. If a group buys $5$ or more tickets ($n \\ge 5$), a discount of $\\$10$ is subtracted from the total bill. (a) Write the algebraic rule for $C$ when $n < 5$ and when $n \\ge 5$. (b) Calculate the total cost for $n = 4$ tickets and for $n = 5$ tickets.",
+        "difficulty": "Medium",
+        "context": "Cinema Ticketing Algorithm",
+        "final_answer": "(a) If $n < 5$: $C = 16n + 4$; if $n \\ge 5$: $C = 16n - 6$. (b) For $n = 4$: $\\$68$; for $n = 5$: $\\$74$",
+        "step_by_step_solution": [
+          "When $n < 5$, $C = 16n + 4$. When $n \\ge 5$, $C = (16n + 4) - 10 = 16n - 6$.",
+          "For $n = 4$: $C = 16(4) + 4 = \\$68$. For $n = 5$: $C = 16(5) - 6 = 80 - 6 = \\$74$."
+        ]
+      },
+      {
+        "id": "6_3_Q6",
+        "question": "A solar battery at a Bendigo home starts at $18\\%$ charge at $8\\text{:00 am}$. An automated charging algorithm checks the battery every hour: while the charge $B$ is strictly less than $90\\%$, it adds $16\\%$ charge per hour and increments the hour counter $h$ by $1$ (starting from $h = 0$). (a) Trace $B$ after each hour until the loop terminates. (b) How many hours $h$ does the loop run, and what is the final charge $B$?",
+        "difficulty": "Medium",
+        "context": "Solar Battery Controller",
+        "final_answer": "(a) $18\\% \\to 34\\% \\to 50\\% \\to 66\\% \\to 82\\% \\to 98\\%$; (b) $h = 5\\text{ hours}$, final charge $B = 98\\%$",
+        "step_by_step_solution": [
+          "Track $(h, B)$ from $(0, 18)$: after $1\\text{ h}: (1, 34)$; after $2\\text{ h}: (2, 50)$; after $3\\text{ h}: (3, 66)$; after $4\\text{ h}: (4, 82)$.",
+          "Since $82 < 90$ is still True, the loop runs a $5$th hour: $B = 82 + 16 = 98\\%$ and $h = 5$. Now $98 < 90$ is False, so the loop stops at $h = 5\\text{ hours}$ and $B = 98\\%$."
+        ]
+      },
+      {
+        "id": "6_3_Q7",
+        "question": "Two phone plans are compared by an algorithm to find the smallest whole number of gigabytes $g$ of extra data for which Plan A becomes cheaper than Plan B. Plan A costs $C_A = 3g + 45$ dollars and Plan B costs $C_B = 7g + 20$ dollars. The algorithm starts at $g = 1$ and increments $g$ by $1$ while $C_A \\ge C_B$. What value of $g$ does the algorithm output, and what are $C_A$ and $C_B$ at that value?",
+        "difficulty": "Challenging",
+        "context": "Plan Comparison Search Algorithm",
+        "final_answer": "$g = 7\\text{ GB}$ (where $C_A = \\$66$ and $C_B = \\$69$)",
+        "step_by_step_solution": [
+          "Solve $C_A < C_B$: $3g + 45 < 7g + 20 \\implies 25 < 4g \\implies g > 6.25$.",
+          "At $g = 6$: $C_A = 3(6) + 45 = 63$ and $C_B = 7(6) + 20 = 62$ ($C_A \\ge C_B$ is True, so increment $g$ to $7$). At $g = 7$: $C_A = 3(7) + 45 = \\$66$ and $C_B = 7(7) + 20 = \\$69$ ($C_A < C_B$), so the loop terminates and outputs $g = 7$."
+        ]
+      },
+      {
+        "id": "6_3_Q8",
+        "question": "Heron's iterative algorithm for approximating $\\sqrt{N}$ updates an initial guess $x_0$ using the rule $x_{1} = \\frac{1}{2}\\left(x_0 + \\frac{N}{x_0}\\right)$. If $N = 30$ and the initial guess is $x_0 = 5$, calculate the first improved rational estimate $x_1$ as both an exact fraction and a decimal.",
+        "difficulty": "Challenging",
+        "context": "Numerical Approximation Algorithms",
+        "final_answer": "$x_1 = \\frac{11}{2} = 5.5$",
+        "step_by_step_solution": [
+          "Substitute $N = 30$ and $x_0 = 5$ into $x_1 = \\frac{1}{2}\\left(x_0 + \\frac{N}{x_0}\\right)$.",
+          "Evaluate: $x_1 = \\frac{1}{2}\\left(5 + \\frac{30}{5}\\right) = \\frac{1}{2}(5 + 6) = \\frac{11}{2} = 5.5$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "6_3_Q9",
+        "question": "An algorithm is designed to find the $x$-intercept of the linear relation $y = mx + c$ (where $m \\ne 0$). A student writes the steps: Step 1: Input $m$ and $c$. Step 2: Set `x_int = c / m`. Step 3: Output `x_int`. Test this algorithm on the line $y = 4x - 20$ and explain the mathematical sign error in Step 2.",
+        "difficulty": "Medium",
+        "context": "Debugging Algebraic Formulas",
+        "final_answer": "For $y = 4x - 20$ ($m = 4, c = -20$), the student's code gives $\\frac{-20}{4} = -5$, whereas the true $x$-intercept is $x = 5$. Setting $0 = mx + c$ gives $mx = -c \\implies x = -\\frac{c}{m}$, so Step 2 is missing a negative sign (`x_int = -c / m`).",
+        "step_by_step_solution": [
+          "At the $x$-intercept, $y = 0$, so $0 = 4x - 20 \\implies 4x = 20 \\implies x = 5$. However, with $m = 4$ and $c = -20$, `c / m` outputs $\\frac{-20}{4} = -5$.",
+          "Solving $0 = mx + c$ algebraically yields $x = -\\frac{c}{m}$. The student forgot to negate $c$ when transposing it across the equals sign."
+        ]
+      },
+      {
+        "id": "6_3_Q10",
+        "question": "Compare the following two loop bodies, both starting with $x = 1$ and $y = 10$:\n- **Algorithm A**: (1) $x \\leftarrow x + 2$, (2) $y \\leftarrow 3x$\n- **Algorithm B**: (1) $y \\leftarrow 3x$, (2) $x \\leftarrow x + 2$\nAfter **one** pass through each algorithm, what are the values of $(x, y)$ in Algorithm A and in Algorithm B? Explain why they differ.",
+        "difficulty": "Medium",
+        "context": "Sequence Sensitivity in Algorithms",
+        "final_answer": "Algorithm A produces $(3, 9)$; Algorithm B produces $(3, 3)$. In Algorithm A, $x$ is updated to $3$ before $y = 3x$ is evaluated; in Algorithm B, $y = 3x$ uses the old value $x = 1$ before $x$ is incremented.",
+        "step_by_step_solution": [
+          "In Algorithm A: first $x \\leftarrow 1 + 2 = 3$, then $y \\leftarrow 3(3) = 9$, giving $(3, 9)$.",
+          "In Algorithm B: first $y \\leftarrow 3(1) = 3$, then $x \\leftarrow 1 + 2 = 3$, giving $(3, 3)$. The order of sequential assignments changes which value of $x$ is substituted into $3x$."
+        ]
+      },
+      {
+        "id": "6_3_Q11",
+        "question": "A programmer writes a loop to sum all multiples of $5$ from $5$ to $50$ inclusive:\n1. Set $n \\leftarrow 5$ and $\\text{sum} \\leftarrow 0$.\n2. While $n < 50$, repeat:\n   (a) $\\text{sum} \\leftarrow \\text{sum} + n$\n   (b) $n \\leftarrow n + 1$\nIdentify **two** distinct bugs in this algorithm, determine what the true sum of the multiples of $5$ from $5$ to $50$ should be, and state the two fixes required.",
+        "difficulty": "Challenging",
+        "context": "Debugging Loop Conditions and Step Sizes",
+        "final_answer": "True sum $= 275$. Bug 1: $n < 50$ excludes $50$ (should be $n \\le 50$). Bug 2: $n \\leftarrow n + 1$ adds every integer instead of stepping by multiples of $5$ (should be $n \\leftarrow n + 5$).",
+        "step_by_step_solution": [
+          "The multiples of $5$ from $5$ to $50$ are $5 + 10 + 15 + 20 + 25 + 30 + 35 + 40 + 45 + 50 = 275$.",
+          "Bug 1 is the boundary condition $n < 50$, which stops before adding $50$ (change to $n \\le 50$). Bug 2 is the increment $n \\leftarrow n + 1$, which steps by $1$ instead of $5$ (change to $n \\leftarrow n + 5$)."
+        ]
+      },
+      {
+        "id": "6_3_Q12",
+        "question": "Consider the Collatz-style step rule applied to a positive integer $n$: **If** $n$ is even, $n \\leftarrow \\frac{n}{2}$; **Else** ($n$ is odd), $n \\leftarrow 3n + 1$. Starting from $n = 7$, trace the sequence of values until $n$ first reaches $16$, and state how many steps it takes to reach $1$ from $n = 7$.",
+        "difficulty": "Extension",
+        "context": "Iterative Number Theory Algorithms",
+        "final_answer": "Path to $16$: $7 \\to 22 \\to 11 \\to 34 \\to 17 \\to 52 \\to 26 \\to 13 \\to 40 \\to 20 \\to 10 \\to 5 \\to 16$ ($12$ steps to reach $16$), then $16 \\to 8 \\to 4 \\to 2 \\to 1$ ($16$ steps in total to reach $1$)",
+        "step_by_step_solution": [
+          "Trace from $7$: $7 \\to 22 \\to 11 \\to 34 \\to 17 \\to 52 \\to 26 \\to 13 \\to 40 \\to 20 \\to 10 \\to 5 \\to 16$ ($12$ steps).",
+          "From $16$, four halving steps reach $1$: $16 \\to 8 \\to 4 \\to 2 \\to 1$, giving $12 + 4 = 16$ steps in total."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE6_3_1_total",
+      "description": "Worked Example 6.3.1 final output T",
+      "expression": "5 + 3*1 + 3*2 + 3*3 + 3*4",
+      "expected": 35
+    },
+    {
+      "id": "NYT6_3_1_total",
+      "description": "Now You Try 6.3.1 final output S",
+      "expression": "2*(2*(2*2 + 1) + 2) + 3",
+      "expected": 27
+    },
+    {
+      "id": "WE6_3_2_buggy",
+      "description": "Worked Example 6.3.2 buggy Fahrenheit calculation at F=68",
+      "expression": "5 * 68 - Rational(32, 9)",
+      "expected": "3028/9"
+    },
+    {
+      "id": "WE6_3_2_true",
+      "description": "Worked Example 6.3.2 true Celsius value at F=68",
+      "expression": "Rational(5 * (68 - 32), 9)",
+      "expected": 20
+    },
+    {
+      "id": "NYT6_3_2_buggy",
+      "description": "Now You Try 6.3.2 buggy gradient expression",
+      "expression": "16 - Rational(4, 6) - 2",
+      "expected": "40/3"
+    },
+    {
+      "id": "NYT6_3_2_true",
+      "description": "Now You Try 6.3.2 true gradient",
+      "expression": "(16 - 4) / (6 - 2)",
+      "expected": 3
+    },
+    {
+      "id": "WE6_3_3_x3",
+      "description": "Worked Example 6.3.3 y at x=3",
+      "expression": "-4 * 3 + 15",
+      "expected": 3
+    },
+    {
+      "id": "NYT6_3_3_x3",
+      "description": "Now You Try 6.3.3 y at x=3",
+      "expression": "6 * 3 - 5",
+      "expected": 13
+    },
+    {
+      "id": "EX6_3_Q1a",
+      "description": "Exercise 6.3 Q1(a) output y at x=6",
+      "expression": "2 * (3 * 6 - 4) + 5",
+      "expected": 33
+    },
+    {
+      "id": "EX6_3_Q1b",
+      "description": "Exercise 6.3 Q1(b) simplified linear rule",
+      "expression": "expand(2 * (3*x - 4) + 5)",
+      "expected": "6*x - 3"
+    },
+    {
+      "id": "EX6_3_Q2b",
+      "description": "Exercise 6.3 Q2(b) output at boundary x=5",
+      "expression": "2 * 5 + 12",
+      "expected": 22
+    },
+    {
+      "id": "EX6_3_Q3",
+      "description": "Exercise 6.3 Q3 final value of P",
+      "expression": "1 + 2 + 4 + 6 + 8",
+      "expected": 21
+    },
+    {
+      "id": "EX6_3_Q4a",
+      "description": "Exercise 6.3 Q4(a) buggy trapezium area",
+      "expression": "6 + 10 * 4 / 2",
+      "expected": 26
+    },
+    {
+      "id": "EX6_3_Q4b",
+      "description": "Exercise 6.3 Q4(b) true trapezium area",
+      "expression": "(6 + 10) * 4 / 2",
+      "expected": 32
+    },
+    {
+      "id": "EX6_3_Q5b",
+      "description": "Exercise 6.3 Q5(b) cost for 5 tickets",
+      "expression": "16 * 5 - 6",
+      "expected": 74
+    },
+    {
+      "id": "EX6_3_Q6b",
+      "description": "Exercise 6.3 Q6(b) battery charge after 5 hours",
+      "expression": "18 + 5 * 16",
+      "expected": 98
+    },
+    {
+      "id": "EX6_3_Q7_CA",
+      "description": "Exercise 6.3 Q7 Plan A cost at g=7",
+      "expression": "3 * 7 + 45",
+      "expected": 66
+    },
+    {
+      "id": "EX6_3_Q8",
+      "description": "Exercise 6.3 Q8 Heron iteration 1 for sqrt(30)",
+      "expression": "Rational(1, 2) * (5 + Rational(30, 5))",
+      "expected": "11/2"
+    },
+    {
+      "id": "EX6_3_Q11",
+      "description": "Exercise 6.3 Q11 sum of multiples of 5 from 5 to 50",
+      "expression": "5 + 10 + 15 + 20 + 25 + 30 + 35 + 40 + 45 + 50",
+      "expected": 275
+    }
+  ]
+}

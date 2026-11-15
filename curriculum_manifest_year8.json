@@ -254,6 +254,16 @@
           "target_mastery": "Plot linear relations on the Cartesian plane, determine gradient and y-intercept from y = mx + c, and model real-world linear relationships.",
           "prerequisites": ["Plotting points on the 4-quadrant Cartesian plane", "Substitution"],
           "sub_concepts": ["Tables of values and plotting straight lines", "Gradient (rise over run) and y-intercept", "Finding the rule y = mx + c", "Linear modelling in real-world contexts"]
+        },
+        {
+          "section_id": "6_3",
+          "section_code": "6C",
+          "title": "Algebraic Algorithms, Flowcharts, and Error-Testing",
+          "vcaa_code": "VC2M8A04",
+          "vcaa_description": "Use algorithms and related testing procedures to identify and correct errors.",
+          "target_mastery": "Trace step-by-step algebraic algorithms using desk-check tables, design flowcharts for linear rules, and identify and debug arithmetic or logic errors.",
+          "prerequisites": ["Order of operations and substitution (Section 5A)", "Linear equations and rules (Sections 6A-6B)"],
+          "sub_concepts": ["Trace tables (desk-checking) for iterative and branching algorithms", "Designing algorithms to generate linear sequences", "Identifying boundary, sign, and order-of-operations bugs in formulas"]
         }
       ]
     },
@@ -262,7 +272,7 @@
       "id": "chapter_7",
       "title": "Length, Area, Volume and Time",
       "strand": "Measurement",
-      "vcaa_codes": ["VC2M8M01", "VC2M8M02", "VC2M8M03", "VC2M8M04"],
+      "vcaa_codes": ["VC2M8M01", "VC2M8M02", "VC2M8M03", "VC2M8M04", "VC2M8M05"],
       "description": "Circumference and area of circles and sectors, area of special quadrilaterals and composite figures, volume and capacity of prisms, and Australian time zones.",
       "sections": [
         {
@@ -279,8 +289,8 @@
           "section_id": "7_2",
           "section_code": "7B",
           "title": "Circumference and Area of Circles and Sectors",
-          "vcaa_code": "VC2M8M02",
-          "vcaa_description": "Demonstrate how the formulas for the circumference and area of a circle are established, and use them to solve practical problems.",
+          "vcaa_code": "VC2M8M03",
+          "vcaa_description": "Establish and apply formulas for the circumference and area of circles and sectors to solve practical problems.",
           "target_mastery": "Calculate exact and rounded values for the circumference and area of circles, quadrants, semicircles, and sectors.",
           "prerequisites": ["Irrational number pi (Section 2C)", "Radius and diameter"],
           "sub_concepts": ["Circumference C = 2*pi*r = pi*d", "Area of a circle A = pi*r^2", "Perimeter and area of sectors and composite circular shapes"]
@@ -288,12 +298,22 @@
         {
           "section_id": "7_3",
           "section_code": "7C",
-          "title": "Volume, Capacity of Prisms and Time Zones",
-          "vcaa_code": "VC2M8M03",
-          "vcaa_description": "Solve problems involving the volume and capacity of right prisms using appropriate units; solve problems involving duration and time zones.",
-          "target_mastery": "Calculate the volume of right prisms using V = Ah, convert between volume (cm^3, m^3) and capacity (mL, L, kL), and solve Australian/global time zone problems.",
-          "prerequisites": ["Area of cross-sections", "24-hour time"],
-          "sub_concepts": ["Volume of right prisms V = Ah", "Volume and capacity equivalence (1 cm^3 = 1 mL, 1 m^3 = 1000 L)", "Australian time zones (AEST, ACST, AWST and Daylight Saving AEDT/ACDT)"]
+          "title": "Volume and Capacity of Right Prisms",
+          "vcaa_code": "VC2M8M02",
+          "vcaa_description": "Solve problems involving the volume and capacity of right prisms using appropriate metric units.",
+          "target_mastery": "Calculate the volume of right prisms using V = Ah and convert between metric volume (mm^3, cm^3, m^3) and capacity (mL, L, kL, ML).",
+          "prerequisites": ["Area of cross-sections (Section 7A)"],
+          "sub_concepts": ["Volume of rectangular, triangular, and trapezoidal prisms V = Ah", "Metric volume unit conversions", "Volume and capacity equivalence (1 cm^3 = 1 mL, 1 m^3 = 1000 L = 1 kL)"]
+        },
+        {
+          "section_id": "7_4",
+          "section_code": "7D",
+          "title": "Time Zones, 24-Hour Time, and Duration",
+          "vcaa_code": "VC2M8M04",
+          "vcaa_description": "Solve problems involving duration, using 12-hour and 24-hour time across multiple time zones.",
+          "target_mastery": "Convert between 12-hour and 24-hour time, calculate elapsed duration across midnight, and solve Australian (AWST, ACST, AEST, ACDT, AEDT) and UTC time-zone problems.",
+          "prerequisites": ["Units of time (hours, minutes, seconds)", "Directed numbers (Section 1A)"],
+          "sub_concepts": ["12-hour and 24-hour time conversions", "Calculating duration across midnight", "Australian standard and daylight saving time zones", "International flight departure and arrival times"]
         }
       ]
     },
@@ -324,6 +344,16 @@
           "target_mastery": "Use the four congruence tests (SSS, SAS, ASA, RHS) to prove triangles are congruent and deduce angle and side properties of special quadrilaterals.",
           "prerequisites": ["Angle relationships on parallel lines", "Angle sum of triangles and quadrilaterals"],
           "sub_concepts": ["Triangle congruence tests (SSS, SAS, ASA, RHS)", "Similar figures and scale factors", "Deductive proofs of quadrilateral properties and decision algorithms"]
+        },
+        {
+          "section_id": "8_3",
+          "section_code": "8C",
+          "title": "3D Coordinates, Transformations, and Geometric Algorithms",
+          "vcaa_code": "VC2M8SP03",
+          "vcaa_description": "Locate and describe position in three-dimensional space using a coordinate system; design and test algorithms to classify and transform shapes.",
+          "target_mastery": "Locate points and prism vertices using 3D coordinates (x, y, z), calculate midpoints and translations in 3D space, and apply geometric classification algorithms.",
+          "prerequisites": ["Cartesian plane coordinates (Section 6B)", "Properties of 2D shapes and 3D prisms (Sections 7C, 8B)"],
+          "sub_concepts": ["3D Cartesian coordinates (x, y, z) and rectangular prism vertices", "Midpoints and translations in 3D space", "Decision-tree algorithms for classifying triangles and quadrilaterals (VC2M8SP02, VC2M8SP04)"]
         }
       ]
     },
@@ -344,6 +374,16 @@
           "target_mastery": "Use complementary events Pr(A') = 1 - Pr(A), construct and interpret Venn diagrams and two-way tables, and calculate compound probabilities (AND, OR, NOT).",
           "prerequisites": ["Theoretical probability of single events", "Fractions, decimals, and percentages"],
           "sub_concepts": ["Complementary events and sum of probabilities", "Venn diagrams (intersection, union, mutually exclusive events)", "Two-way tables and tree diagrams"]
+        },
+        {
+          "section_id": "9_2",
+          "section_code": "9B",
+          "title": "Experimental Probability, Relative Frequency, and Simulations",
+          "vcaa_code": "VC2M8P03",
+          "vcaa_description": "Conduct repeated chance experiments and simulations, using digital tools to determine relative frequencies and compare them with theoretical probabilities.",
+          "target_mastery": "Calculate relative frequency RF = f/n and expected number of occurrences E = n * Pr(A), compare experimental and theoretical probabilities, and design chance simulations.",
+          "prerequisites": ["Theoretical probability and complementary events (Section 9A)", "Fractions, decimals, and percentages"],
+          "sub_concepts": ["Relative frequency and expected frequency", "Law of Large Numbers (long-run convergence)", "Designing simulations with random number generators (VC2M8P01, VC2M8P03)"]
         }
       ]
     },
@@ -364,6 +404,16 @@
           "target_mastery": "Distinguish between census and sample, calculate mean, median, mode, and range from raw data and frequency tables, and explain how outliers affect measures of centre.",
           "prerequisites": ["Mean, median, mode, and range of small data sets", "Dot plots and stem-and-leaf plots"],
           "sub_concepts": ["Census vs sample and sources of sampling bias", "Calculating mean, median, mode, and range from frequency tables", "Effect of outliers on the mean versus the median"]
+        },
+        {
+          "section_id": "10_2",
+          "section_code": "10B",
+          "title": "Sampling Methods, Data Displays, and Comparing Distributions",
+          "vcaa_code": "VC2M8ST01",
+          "vcaa_description": "Investigate techniques for data collection including census, sampling, and observation, and compare variations in distributions across multiple random samples.",
+          "target_mastery": "Evaluate random, stratified, and biased sampling methods, estimate population totals from sample proportions, describe distribution shape (symmetric vs skewed), and compare multiple samples.",
+          "prerequisites": ["Summary statistics and frequency tables (Section 10A)", "Ratios and proportions (Section 4A)"],
+          "sub_concepts": ["Random vs biased sampling and ethical data collection", "Estimating population size from sample proportions", "Distribution shape (symmetric, positively/negatively skewed, bimodal) and comparing two distributions (VC2M8ST03)"]
         }
       ]
     }

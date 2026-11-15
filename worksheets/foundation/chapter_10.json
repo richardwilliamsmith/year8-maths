@@ -1,0 +1,199 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Statistics and Data Analysis",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "10_1",
+      "section_code": "10A",
+      "title": "Data Collection, Summary Statistics and Outliers",
+      "vcaa_code": "VC2M8ST02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For the $5$ ordered data scores $4, 6, 6, 8, 11$, find:",
+          "parts": [
+            { "label": "a", "question": "The mode (most common score)", "answer": "$6$" },
+            { "label": "b", "question": "The range ($\\text{highest} - \\text{lowest} = 11 - 4$)", "answer": "$7$" },
+            { "label": "c", "question": "The median (the middle score)", "answer": "$6$" },
+            { "label": "d", "question": "The mean ($\\text{sum} \\div 5 = 35 \\div 5$)", "answer": "$7$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "First organise the $5$ scores $10, 3, 7, 3, 12$ into ascending order ($3, 3, 7, 10, 12$), then find:",
+          "parts": [
+            { "label": "a", "question": "The mode", "answer": "$3$" },
+            { "label": "b", "question": "The range ($12 - 3$)", "answer": "$9$" },
+            { "label": "c", "question": "The median (middle score)", "answer": "$7$" },
+            { "label": "d", "question": "The mean ($35 \\div 5$)", "answer": "$7$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "For the $6$ ordered scores $2, 4, 6, 8, 10, 12$, find:",
+          "parts": [
+            { "label": "a", "question": "The range ($12 - 2$)", "answer": "$10$" },
+            { "label": "b", "question": "The two middle scores", "answer": "$6$ and $8$" },
+            { "label": "c", "question": "The median (halfway between $6$ and $8$: $\\frac{6 + 8}{2}$)", "answer": "$7$" },
+            { "label": "d", "question": "The mean ($42 \\div 6$)", "answer": "$7$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "State whether each survey is a **Census** (whole population) or a **Sample** (part of the population):",
+          "parts": [
+            { "label": "a", "question": "Surveying every student in your Year 8 homeroom about homeroom seating", "answer": "Census" },
+            { "label": "b", "question": "Surveying $50$ shoppers at Chadstone about Victorian shopping habits", "answer": "Sample" },
+            { "label": "c", "question": "The Australian Government counting every household in Australia", "answer": "Census" },
+            { "label": "d", "question": "Testing $10$ apples from an orchard of $5000$ trees for sweetness", "answer": "Sample" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Over $5$ autumn days in Hobart, the maximum temperatures were $14^\\circ\\text{C}, 16^\\circ\\text{C}, 16^\\circ\\text{C}, 18^\\circ\\text{C}$, and $21^\\circ\\text{C}$. Add the $5$ temperatures and divide by $5$ to find the mean temperature.",
+          "answer": "$17^\\circ\\text{C}$ ($85 \\div 5 = 17$)"
+        },
+        {
+          "number": 6,
+          "question": "Five players in an AFLW match kicked $1, 2, 2, 3$, and $12$ behinds. Identify the **outlier** (the extreme score far from the others) and find the median of the $5$ scores.",
+          "answer": "Outlier $= 12$; Median $= 2$"
+        },
+        {
+          "number": 7,
+          "question": "Aria scored $7, 8$, and $9$ on three spelling quizzes (mean $= 8$). If she scores $12$ on the fourth quiz, calculate $\\dfrac{7 + 8 + 9 + 12}{4}$ to find her new mean.",
+          "answer": "$9$"
+        },
+        {
+          "number": 8,
+          "question": "A stem-and-leaf plot of $5$ test marks (where $2 \\mid 3 = 23$) has ordered scores $18, 21, 23, 25, 43$. Find the median (middle score) and the range ($43 - 18$).",
+          "answer": "Median $= 23$, Range $= 25$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "To find the median of $8, 2, 10, 4, 5$, Ben picks the middle number in the list and says the median is $10$. Explain what Ben forgot to do first and find the correct median.",
+          "answer": "Ben forgot to put the scores in ascending order first ($2, 4, 5, 8, 10$). The middle score of the ordered list is $5$."
+        },
+        {
+          "number": 10,
+          "question": "In the house prices $\\$500\\text{k}, \\$520\\text{k}, \\$530\\text{k}, \\$550\\text{k}, \\$2\\,900\\text{k}$, explain why the **median** ($\\$530\\text{k}$) describes a typical house better than the **mean** ($\\$1\\,000\\text{k}$).",
+          "answer": "The extreme outlier ($\\$2\\,900\\text{k}$) pulls the mean up to $\\$1\\,000\\text{k}$ (higher than $4$ of the $5$ houses), whereas the median is not affected by the outlier."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_1_1b", "expression": "11 - 4", "expected": 7 },
+        { "id": "WSF10_1_1d", "expression": "(4 + 6 + 6 + 8 + 11) / 5", "expected": 7 },
+        { "id": "WSF10_1_2b", "expression": "12 - 3", "expected": 9 },
+        { "id": "WSF10_1_2d", "expression": "(3 + 3 + 7 + 10 + 12) / 5", "expected": 7 },
+        { "id": "WSF10_1_3a", "expression": "12 - 2", "expected": 10 },
+        { "id": "WSF10_1_3c", "expression": "(6 + 8) / 2", "expected": 7 },
+        { "id": "WSF10_1_3d", "expression": "(2 + 4 + 6 + 8 + 10 + 12) / 6", "expected": 7 },
+        { "id": "WSF10_1_5", "expression": "(14 + 16 + 16 + 18 + 21) / 5", "expected": 17 },
+        { "id": "WSF10_1_7", "expression": "(7 + 8 + 9 + 12) / 4", "expected": 9 },
+        { "id": "WSF10_1_8", "expression": "43 - 18", "expected": 25 }
+      ]
+    },
+    {
+      "section_id": "10_2",
+      "section_code": "10B",
+      "title": "Sampling Methods, Data Displays, and Comparing Distributions",
+      "vcaa_code": "VC2M8ST01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Match each survey description to **Random sample** (fair) or **Biased sample** (unfair):",
+          "parts": [
+            { "label": "a", "question": "Drawing $30$ student names out of a hat containing all Year 8 students", "answer": "Random sample (fair)" },
+            { "label": "b", "question": "Asking only the students on the soccer team what their favourite sport is", "answer": "Biased sample (unfair)" },
+            { "label": "c", "question": "Using a computer random number generator to pick $50$ electoral roll voters", "answer": "Random sample (fair)" },
+            { "label": "d", "question": "Surveying only your $4$ best friends about school uniform rules", "answer": "Biased sample (unfair)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A stem-and-leaf plot of $7$ test scores (where $3 \\mid 2 = 32$) shows: $2 \\mid 5, 8$; $3 \\mid 0, 2, 6$; $4 \\mid 1, 5$. Find:",
+          "parts": [
+            { "label": "a", "question": "The lowest score ($2 \\mid 5$)", "answer": "$25$" },
+            { "label": "b", "question": "The highest score ($4 \\mid 5$)", "answer": "$45$" },
+            { "label": "c", "question": "The range ($45 - 25$)", "answer": "$20$" },
+            { "label": "d", "question": "The median (the $4$th score in order)", "answer": "$32$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Identify the shape of each graph from the list: **Symmetric**, **Positively skewed** (tail to the right), **Negatively skewed** (tail to the left):",
+          "parts": [
+            { "label": "a", "question": "Left side and right side are mirror images around the middle peak", "answer": "Symmetric" },
+            { "label": "b", "question": "Tall bars on the left with a long tail stretching to the right", "answer": "Positively skewed" },
+            { "label": "c", "question": "Tall bars on the right with a long tail stretching to the left", "answer": "Negatively skewed" },
+            { "label": "d", "question": "In a symmetric distribution, are the mean and median approximately equal?", "answer": "Yes" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Compare the $5$ ordered scores of Team A ($10, 12, 14, 16, 18$) and Team B ($6, 10, 14, 18, 22$):",
+          "parts": [
+            { "label": "a", "question": "Find the median (middle score) of Team A and Team B", "answer": "Both medians are $14$" },
+            { "label": "b", "question": "Find the range of Team A ($18 - 10$)", "answer": "$8$" },
+            { "label": "c", "question": "Find the range of Team B ($22 - 6$)", "answer": "$16$" },
+            { "label": "d", "question": "Which team has more consistent (less spread out) scores?", "answer": "Team A (smaller range of $8$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A school has $200$ Year 7 students and $300$ Year 8 students ($500$ in total). If $10\\%$ of each year level is chosen for a survey, calculate $10\\%$ of $200$ and $10\\%$ of $300$ to find how many students are chosen from each year.",
+          "answer": "$20$ from Year 7 and $30$ from Year 8"
+        },
+        {
+          "number": 6,
+          "question": "Over $5$ games, Mia's basketball scores have median $18$ and range $6$, while Zoe's scores have median $15$ and range $14$. Who has the higher typical score (median), and who is more consistent (smaller range)?",
+          "answer": "Mia has both the higher typical score ($18 > 15$) and is more consistent (range $6 < 14$)."
+        },
+        {
+          "number": 7,
+          "question": "A dot plot of the number of pets owned by $15$ families in Ballarat has most dots at $0, 1, 2$ pets and one dot at $9$ pets (a hobby farm). Is this distribution positively skewed (tail to the right) or negatively skewed?",
+          "answer": "Positively skewed (the tail stretches to the high value $9$ on the right)."
+        },
+        {
+          "number": 8,
+          "question": "A radio station asks listeners to phone in and pay $\\$1$ to vote on a new road toll. Explain in one sentence why this sample is biased.",
+          "answer": "Only listeners who feel strongly enough to phone in and pay $\\$1$ will vote (self-selection bias), leaving out everyone else."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why is it much faster and cheaper to survey a random **sample** of $1000$ Australians about television habits rather than conducting a **census** of all $27\\text{ million}$ Australians?",
+          "answer": "Contacting all $27\\text{ million}$ people takes huge time and cost, whereas a well-chosen random sample of $1000$ people gives an accurate estimate quickly and cheaply."
+        },
+        {
+          "number": 10,
+          "question": "In Question 4, Team A and Team B both have a median of $14$ and a mean of $14$. Explain why we also need to calculate the **range** to tell the two teams apart.",
+          "answer": "The median and mean only tell us the middle/average score; the range shows that Team B's scores are twice as spread out ($16$ vs $8$) as Team A's."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_2_2c", "expression": "45 - 25", "expected": 20 },
+        { "id": "WSF10_2_4b", "expression": "18 - 10", "expected": 8 },
+        { "id": "WSF10_2_4c", "expression": "22 - 6", "expected": 16 },
+        { "id": "WSF10_2_4_meanA", "expression": "(10 + 12 + 14 + 16 + 18) / 5", "expected": 14 },
+        { "id": "WSF10_2_4_meanB", "expression": "(6 + 10 + 14 + 18 + 22) / 5", "expected": 14 },
+        { "id": "WSF10_2_5_y7", "expression": "Rational(10, 100) * 200", "expected": 20 },
+        { "id": "WSF10_2_5_y8", "expression": "Rational(10, 100) * 300", "expected": 30 },
+        { "id": "WSF10_2_5_tot", "expression": "20 + 30", "expected": 50 },
+        { "id": "WSF10_2_6_diff", "expression": "18 - 15", "expected": 3 },
+        { "id": "WSF10_2_6_rng", "expression": "14 - 6", "expected": 8 }
+      ]
+    }
+  ]
+}

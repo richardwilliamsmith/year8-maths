@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "section_id": "7_4",
+    "section_code": "7D",
+    "chapter_number": 7,
+    "chapter_title": "Measurement, Circles, and Volume",
+    "title": "Time Zones, 24-Hour Time, and Duration",
+    "vcaa_code": "VC2M8M05",
+    "vcaa_description": "Solve problems involving duration, using 12-hour and 24-hour time across multiple time zones",
+    "strand": "Measurement",
+    "target_mastery": "Convert fluently between 12-hour (am/pm) and 24-hour time, calculate elapsed duration within a day and across midnight, convert times across Australian standard and daylight saving time zones (AWST, ACST, AEST, ACDT, AEDT), and solve international travel duration problems using UTC offsets.",
+    "prerequisites": [
+      "Converting between hours, minutes, and seconds ($1\\text{ hour} = 60\\text{ minutes}$)",
+      "Adding and subtracting directed numbers and fractions of an hour"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "24-Hour Time",
+        "definition": "A four-digit time notation (`HHMM` or `HH:MM`) running from `0000` (midnight) to `2359` ($11\\text{:59 pm}$), eliminating the need for am and pm labels."
+      },
+      {
+        "term": "Coordinated Universal Time (UTC)",
+        "definition": "The primary global time standard (formerly Greenwich Mean Time, GMT) from which all world time zones are measured as positive (ahead/east) or negative (behind/west) offsets."
+      },
+      {
+        "term": "Australian Standard Time Zones",
+        "definition": "Australia has three main standard time zones: Australian Western Standard Time (AWST, $\\text{UTC}+8$), Australian Central Standard Time (ACST, $\\text{UTC}+9.5$), and Australian Eastern Standard Time (AEST, $\\text{UTC}+10$)."
+      },
+      {
+        "term": "Daylight Saving Time (ACDT and AEDT)",
+        "definition": "Between the first Sunday in October and the first Sunday in April, clocks in SA create ACDT ($\\text{UTC}+10.5$) and clocks in VIC, NSW, TAS, and ACT move $1\\text{ hour}$ forward to AEDT ($\\text{UTC}+11$), while WA, QLD, and NT stay on standard time."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_7_4_1",
+      "title": "Converting Between 12-Hour and 24-Hour Time",
+      "explanation": "In 12-hour time, the day is split into two $12$-hour periods: **am** (*ante meridiem*, before noon) and **pm** (*post meridiem*, after noon). In 24-hour time, hours are numbered continuously from $00$ to $23$. For morning times from $1\\text{:00 am}$ to $11\\text{:59 am}$, write a leading zero (`0100` to `1159`). For afternoon/evening times from $1\\text{:00 pm}$ to $11\\text{:59 pm}$, add $12$ to the hours (`1300` to `2359`). Special cases: $12\\text{:00 am}$ (midnight) is `0000` and $12\\text{:00 pm}$ (noon) is `1200`.",
+      "formula_latex": "\\text{pm hour } (1\\text{ to }11) + 12 = 24\\text{-hour value}; \\qquad 12\\text{:XX am} \\to \\texttt{00XX}, \\quad 12\\text{:XX pm} \\to \\texttt{12XX}",
+      "callout_title": "Watch Out for the 12s: Midnight vs Noon",
+      "callout_rule": "$12\\text{:30 am}$ is $30$ minutes after midnight, so it is `0030` (NOT `1230`). $12\\text{:30 pm}$ is $30$ minutes after noon, so it stays `1230` (do NOT add $12$ to $12\\text{ pm}$)."
+    },
+    {
+      "id": "theory_7_4_2",
+      "title": "Calculating Elapsed Duration and Crossing Midnight",
+      "explanation": "Because time uses base $60$ ($1\\text{ hour} = 60\\text{ minutes}$), never subtract times as ordinary base-$10$ decimals! The safest strategy to find the duration between a start time and an end time is **bridging (chunking) to the next whole hour**, then counting whole hours, or borrowing $1\\text{ hour} = 60\\text{ minutes}$ when subtracting in 24-hour time. When an event crosses midnight (`24:00` / `00:00`), find the time from start to midnight first, then add the time after midnight.",
+      "formula_latex": "\\text{Duration across midnight} = (24\\text{:00} - t_{\\text{start}}) + t_{\\text{end}}",
+      "callout_title": "Borrow 60 Minutes, Never 100",
+      "callout_rule": "When subtracting `16:20 - 13:45`, rewrite `16:20` as $15\\text{ hours } 80\\text{ minutes}$ ($60 + 20 = 80$), then subtract: $(15 - 13)\\text{ h } (80 - 45)\\text{ min} = 2\\text{ h } 35\\text{ min}$."
+    },
+    {
+      "id": "theory_7_4_3",
+      "title": "Australian Time Zones: Standard Time and Daylight Saving Time",
+      "explanation": "During winter (Standard Time), Australia uses three zones: **AWST** (WA, $\\text{UTC}+8$), **ACST** (SA and NT, $\\text{UTC}+9.5$, which is $1.5\\text{ h}$ ahead of WA and $0.5\\text{ h}$ behind the east), and **AEST** (QLD, NSW, VIC, TAS, ACT, $\\text{UTC}+10$, which is $2\\text{ h}$ ahead of WA). During summer (Daylight Saving), VIC, NSW, TAS, and ACT advance to **AEDT** ($\\text{UTC}+11$) and SA advances to **ACDT** ($\\text{UTC}+10.5$), while WA ($\\text{UTC}+8$), NT ($\\text{UTC}+9.5$), and QLD ($\\text{UTC}+10$) do not change their clocks.",
+      "formula_latex": "\\text{Time Difference } \\Delta t = \\text{Offset}_{\\text{destination}} - \\text{Offset}_{\\text{origin}}",
+      "callout_title": "East is Ahead (+), West is Behind (-)",
+      "callout_rule": "Moving east towards a larger UTC offset means local clock time is later (add the offset difference); moving west towards a smaller UTC offset means local clock time is earlier (subtract the offset difference)."
+    },
+    {
+      "id": "theory_7_4_4",
+      "title": "International Flights and Multi-Zone Travel Problems",
+      "explanation": "To solve flight arrival or duration problems across different time zones, always convert the departure and arrival times into the **same time zone** (either the departure city's local time, the arrival city's local time, or UTC) before adding or subtracting flight duration.",
+      "formula_latex": "\\text{Arrival (Local Dest)} = \\text{Departure (converted to Dest Time)} + \\text{Flight Duration}",
+      "callout_title": "Convert to One Common Time Zone First",
+      "callout_rule": "Never subtract local departure time from local arrival time directly! Convert the departure time into the destination's time zone first, and then add or subtract the flight time."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE7_4_1",
+      "title": "Converting 12-Hour and 24-Hour Times and Finding Duration Across Midnight",
+      "difficulty": "Fluency",
+      "problem": "An overnight V/Line coach departs Southern Cross Station in Melbourne at $9\\text{:45 pm}$ on Friday and arrives in Mildura at $4\\text{:20 am}$ on Saturday. (a) Write both the departure and arrival times in 24-hour time. (b) Calculate the total duration of the journey in hours and minutes.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For $9\\text{:45 pm}$, add $12$ to the hours ($9 + 12 = 21$) to get `2145` (or `21:45`). For $4\\text{:20 am}$, include a leading zero to get `0420` (or `04:20`).",
+          "working": "$$9\\text{:45 pm} \\to \\texttt{2145} \\; (21\\text{:45}), \\qquad 4\\text{:20 am} \\to \\texttt{0420} \\; (04\\text{:20})$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Bridge across midnight (`24:00`): find the duration from $9\\text{:45 pm}$ to midnight, then add the duration from midnight to $4\\text{:20 am}$.",
+          "working": "$$9\\text{:45 pm to } 10\\text{:00 pm} = 15\\text{ min}; \\quad 10\\text{:00 pm to midnight} = 2\\text{ h} \\implies 2\\text{ h } 15\\text{ min before midnight}$$\n$$\\text{Total duration} = 2\\text{ h } 15\\text{ min} + 4\\text{ h } 20\\text{ min} = 6\\text{ hours } 35\\text{ minutes}$$"
+        }
+      ],
+      "final_answer": "(a) Departure `2145`, Arrival `0420`; (b) $6\\text{ hours } 35\\text{ minutes}$",
+      "now_you_try": {
+        "problem": "A baker starts her shift at $11\\text{:35 pm}$ (`2335`) and finishes at $6\\text{:15 am}$ (`0615`) the next morning. How long is her shift in hours and minutes?",
+        "hint": "Find the time from $11\\text{:35 pm}$ to midnight ($25\\text{ minutes}$) and add $6\\text{ hours } 15\\text{ minutes}$.",
+        "working_summary": "Before midnight: $25\\text{ min}$. After midnight: $6\\text{ h } 15\\text{ min}$. Total $= 6\\text{ h } 40\\text{ min}$.",
+        "answer": "$6\\text{ hours } 40\\text{ minutes}$"
+      }
+    },
+    {
+      "id": "WE7_4_2",
+      "title": "Converting Times Across Australian Standard and Daylight Saving Zones",
+      "difficulty": "Understanding",
+      "problem": "An AFL night match kicks off in Melbourne at $7\\text{:30 pm}$ (`1930`). Find the local kick-off time in Perth and in Adelaide: (a) in July, when Melbourne is on AEST ($\\text{UTC}+10$), Adelaide is on ACST ($\\text{UTC}+9.5$), and Perth is on AWST ($\\text{UTC}+8$); (b) in October during Daylight Saving, when Melbourne is on AEDT ($\\text{UTC}+11$), Adelaide is on ACDT ($\\text{UTC}+10.5$), and Perth remains on AWST ($\\text{UTC}+8$).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In July (Standard Time), Perth ($\\text{UTC}+8$) is $10 - 8 = 2\\text{ hours}$ behind Melbourne ($\\text{UTC}+10$), and Adelaide ($\\text{UTC}+9.5$) is $10 - 9.5 = 0.5\\text{ hours}$ ($30\\text{ minutes}$) behind Melbourne.",
+          "working": "$$\\text{(a) July: Perth} = 7\\text{:30 pm} - 2\\text{ h} = 5\\text{:30 pm (1730)}; \\quad \\text{Adelaide} = 7\\text{:30 pm} - 30\\text{ min} = 7\\text{:00 pm (1900)}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In October (Daylight Saving), Melbourne is at $\\text{UTC}+11$, so Perth ($\\text{UTC}+8$) is now $11 - 8 = 3\\text{ hours}$ behind Melbourne, while Adelaide ($\\text{UTC}+10.5$) is still $11 - 10.5 = 30\\text{ minutes}$ behind Melbourne.",
+          "working": "$$\\text{(b) October: Perth} = 7\\text{:30 pm} - 3\\text{ h} = 4\\text{:30 pm (1630)}; \\quad \\text{Adelaide} = 7\\text{:30 pm} - 30\\text{ min} = 7\\text{:00 pm (1900)}$$"
+        }
+      ],
+      "final_answer": "(a) July: Perth $5\\text{:30 pm}$ (`1730`), Adelaide $7\\text{:00 pm}$ (`1900`); (b) October: Perth $4\\text{:30 pm}$ (`1630`), Adelaide $7\\text{:00 pm}$ (`1900`)",
+      "now_you_try": {
+        "problem": "During summer (January), Sydney is on AEDT ($\\text{UTC}+11$), Brisbane is on AEST ($\\text{UTC}+10$), and Darwin is on ACST ($\\text{UTC}+9.5$). When it is $2\\text{:15 pm}$ (`1415`) in Sydney, what is the local time in Brisbane and in Darwin?",
+        "hint": "Brisbane is $1\\text{ hour}$ behind AEDT, and Darwin is $1.5\\text{ hours}$ ($1\\text{ h } 30\\text{ min}$) behind AEDT.",
+        "working_summary": "Brisbane: $2\\text{:15 pm} - 1\\text{ h} = 1\\text{:15 pm}$ (`1315`). Darwin: $2\\text{:15 pm} - 1\\text{ h } 30\\text{ min} = 12\\text{:45 pm}$ (`1245`).",
+        "answer": "Brisbane: $1\\text{:15 pm}$ (`1315`); Darwin: $12\\text{:45 pm}$ (`1245`)"
+      }
+    },
+    {
+      "id": "WE7_4_3",
+      "title": "Calculating International Flight Arrival Time and Duration",
+      "difficulty": "Problem-Solving",
+      "problem": "A Qantas flight departs Melbourne (AEST, $\\text{UTC}+10$) at $11\\text{:20 am}$ on Tuesday and flies to Singapore ($\\text{UTC}+8$). The flight duration is $7\\text{ hours } 50\\text{ minutes}$. What is the local time in Singapore when the aircraft lands?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Convert the departure time into Singapore local time first. Since Singapore ($\\text{UTC}+8$) is $10 - 8 = 2\\text{ hours}$ behind Melbourne ($\\text{UTC}+10$), subtract $2\\text{ hours}$ from $11\\text{:20 am}$.",
+          "working": "$$\\text{Departure in Singapore time} = 11\\text{:20 am} - 2\\text{ hours} = 9\\text{:20 am (0920) on Tuesday}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Add the flight duration of $7\\text{ hours } 50\\text{ minutes}$ to the Singapore departure time `09:20`.",
+          "working": "$$09\\text{:20} + 7\\text{ h } 50\\text{ min} = 16\\text{ h } 70\\text{ min} = 17\\text{:10 (5:10 pm on Tuesday)}$$"
+        }
+      ],
+      "final_answer": "$5\\text{:10 pm}$ (`1710`) on Tuesday (Singapore time)",
+      "now_you_try": {
+        "problem": "A flight departs Perth (AWST, $\\text{UTC}+8$) at $1\\text{:40 pm}$ (`1340`) and lands in Auckland ($\\text{UTC}+12$) after a flight of $6\\text{ hours } 30\\text{ minutes}$. Find the local arrival time in Auckland.",
+        "hint": "Auckland ($\\text{UTC}+12$) is $12 - 8 = 4\\text{ hours}$ ahead of Perth. Convert departure to Auckland time first, then add $6\\text{ h } 30\\text{ min}$.",
+        "working_summary": "Departure in Auckland time $= 13\\text{:40} + 4\\text{ h} = 17\\text{:40}$ ($5\\text{:40 pm}$). Add $6\\text{ h } 30\\text{ min}$: $17\\text{:40} + 6\\text{:30} = 24\\text{:10} = 00\\text{:10}$ ($12\\text{:10 am}$ the next day).",
+        "answer": "$12\\text{:10 am}$ (`0010`) the next day"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_7_4_1",
+      "title": "Subtracting Times as Base-10 Decimals Instead of Base-60 Hours and Minutes",
+      "misconception": "Treating `15:20 - 12:45` as ordinary decimal subtraction $15.20 - 12.45 = 2.75$ and claiming the duration is $2\\text{ hours } 75\\text{ minutes}$ (or $2\\text{ hours } 45\\text{ minutes}$).",
+      "correct_concept": "There are $60\\text{ minutes}$ in $1\\text{ hour}$, not $100$. When borrowing $1\\text{ hour}$ from the hours column, add $60\\text{ minutes}$ to the minutes column ($20 + 60 = 80\\text{ minutes}$).",
+      "incorrect_working": "$$15.20 - 12.45 = 2.75 \\implies 2\\text{ h } 75\\text{ min} \\quad \\text{(Incorrect — borrowed 100 instead of 60)}$$",
+      "correct_working": "$$15\\text{ h } 20\\text{ min} = 14\\text{ h } 80\\text{ min}; \\quad (14 - 12)\\text{ h } (80 - 45)\\text{ min} = 2\\text{ h } 35\\text{ min}$$",
+      "counter_example": "From $12\\text{:45 pm}$ to $1\\text{:00 pm}$ is $15\\text{ min}$, and from $1\\text{:00 pm}$ to $3\\text{:20 pm}$ is $2\\text{ h } 20\\text{ min}$, giving $2\\text{ h } 35\\text{ min}$."
+    },
+    {
+      "id": "misc_7_4_2",
+      "title": "Confusing 12:00 am (Midnight) and 12:00 pm (Noon) in 24-Hour Time",
+      "misconception": "Writing $12\\text{:15 am}$ as `1215` or adding $12$ to $12\\text{:15 pm}$ to get `2415`.",
+      "correct_concept": "The new day begins at $12\\text{:00 am}$ (midnight), which has $00$ hours (`0000`), so $12\\text{:15 am}$ is `0015`. Midday ($12\\text{:00 pm}$) is already $12$ hours into the day, so $12\\text{:15 pm}$ is `1215`.",
+      "incorrect_working": "$$12\\text{:15 am} \\to \\texttt{1215} \\quad \\text{and} \\quad 12\\text{:15 pm} \\to \\texttt{2415} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$12\\text{:15 am} \\to \\texttt{0015} \\quad \\text{and} \\quad 12\\text{:15 pm} \\to \\texttt{1215}$$",
+      "counter_example": "One minute after $11\\text{:59 am}$ (`1159`) is $12\\text{:00 pm}$ (`1200`), and one minute after $11\\text{:59 pm}$ (`2359`) is $12\\text{:00 am}$ (`0000`)."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "7_4_Q1",
+        "question": "Convert the following 12-hour times into four-digit 24-hour time: (a) $7\\text{:08 am}$, (b) $3\\text{:45 pm}$, (c) $12\\text{:25 am}$, (d) $12\\text{:50 pm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) `0708`, (b) `1545`, (c) `0025`, (d) `1250`",
+        "step_by_step_solution": [
+          "For $7\\text{:08 am}$, place a leading zero: `0708`. For $3\\text{:45 pm}$, add $12$ to the hour ($3 + 12 = 15$): `1545`.",
+          "For $12\\text{:25 am}$ (after midnight), the hour is $00$: `0025`. For $12\\text{:50 pm}$ (after noon), the hour stays $12$: `1250`."
+        ]
+      },
+      {
+        "id": "7_4_Q2",
+        "question": "Calculate the elapsed time (in hours and minutes) from $8\\text{:38 am}$ to $4\\text{:15 pm}$ on the same day.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$7\\text{ hours } 37\\text{ minutes}$",
+        "step_by_step_solution": [
+          "Convert $4\\text{:15 pm}$ to 24-hour time: `16:15`. Rewrite `16:15` by borrowing $1\\text{ hour} = 60\\text{ minutes}$: $15\\text{ h } 75\\text{ min}$.",
+          "Subtract `08:38`: $(15 - 8)\\text{ h } (75 - 38)\\text{ min} = 7\\text{ hours } 37\\text{ minutes}$."
+        ]
+      },
+      {
+        "id": "7_4_Q3",
+        "question": "A documentary starts at `19:45` ($7\\text{:45 pm}$) and runs for $2\\text{ hours } 35\\text{ minutes}$. At what time does it finish (give your answer in both 24-hour and 12-hour time)?",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "`2220` ($10\\text{:20 pm}$)",
+        "step_by_step_solution": [
+          "Add hours and minutes: $19\\text{ h } 45\\text{ min} + 2\\text{ h } 35\\text{ min} = 21\\text{ h } 80\\text{ min}$.",
+          "Since $80\\text{ min} = 1\\text{ h } 20\\text{ min}$, the finish time is $22\\text{:20}$ (`2220`), which is $10\\text{:20 pm}$."
+        ]
+      },
+      {
+        "id": "7_4_Q4",
+        "question": "During winter (Standard Time), Hobart is on AEST ($\\text{UTC}+10$), Darwin is on ACST ($\\text{UTC}+9.5$), and Broome is on AWST ($\\text{UTC}+8$). If a live webinar starts in Broome at $10\\text{:45 am}$ (`1045`), what is the local start time in (a) Darwin and (b) Hobart?",
+        "difficulty": "Medium",
+        "context": "Australian Time Zones",
+        "final_answer": "(a) Darwin: $12\\text{:15 pm}$ (`1215`), (b) Hobart: $12\\text{:45 pm}$ (`1245`)",
+        "step_by_step_solution": [
+          "Darwin ($\\text{UTC}+9.5$) is $9.5 - 8 = 1.5\\text{ hours}$ ($1\\text{ h } 30\\text{ min}$) ahead of Broome ($\\text{UTC}+8$): $10\\text{:45 am} + 1\\text{ h } 30\\text{ min} = 12\\text{:15 pm}$ (`1215`).",
+          "Hobart ($\\text{UTC}+10$) is $10 - 8 = 2\\text{ hours}$ ahead of Broome: $10\\text{:45 am} + 2\\text{ h} = 12\\text{:45 pm}$ (`1245`)."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "7_4_Q5",
+        "question": "In January (summer), a business executive in Melbourne (AEDT, $\\text{UTC}+11$) wants to schedule a $45$-minute video call with a colleague in Perth (AWST, $\\text{UTC}+8$) and a colleague in Brisbane (AEST, $\\text{UTC}+10$). If the call begins at $9\\text{:00 am}$ Perth time, at what local time does the call **end** in Melbourne and in Brisbane?",
+        "difficulty": "Medium",
+        "context": "National Scheduling Across Daylight Saving",
+        "final_answer": "Melbourne: ends at $12\\text{:45 pm}$ (`1245`); Brisbane: ends at $11\\text{:45 am}$ (`1145`)",
+        "step_by_step_solution": [
+          "At $9\\text{:00 am}$ in Perth ($\\text{UTC}+8$), the call starts at $9\\text{:00 am} + 3\\text{ h} = 12\\text{:00 pm}$ (noon) in Melbourne ($\\text{UTC}+11$) and $9\\text{:00 am} + 2\\text{ h} = 11\\text{:00 am}$ in Brisbane ($\\text{UTC}+10$).",
+          "Adding the $45$-minute duration gives an end time of $12\\text{:45 pm}$ (`1245`) in Melbourne and $11\\text{:45 am}$ (`1145`) in Brisbane."
+        ]
+      },
+      {
+        "id": "7_4_Q6",
+        "question": "A non-stop flight from Perth (AWST, $\\text{UTC}+8$) to London ($\text{UTC}+0$) departs Perth at $6\\text{:50 pm}$ (`1850`) on Wednesday and takes $17\\text{ hours } 20\\text{ minutes}$. Find the local time and day in London when the flight lands.",
+        "difficulty": "Medium",
+        "context": "Long-Haul Aviation",
+        "final_answer": "$4\\text{:10 am}$ (`0410`) on Thursday (London time)",
+        "step_by_step_solution": [
+          "Convert the departure time to London time ($\\text{UTC}+0$, which is $8\\text{ hours}$ behind Perth): $18\\text{:50} - 8\\text{ h} = 10\\text{:50 am}$ (`1050`) on Wednesday.",
+          "Add the $17\\text{ h } 20\\text{ min}$ flight time: $10\\text{:50} + 17\\text{:20} = 27\\text{ h } 70\\text{ min} = 28\\text{:10}$. Subtracting $24\\text{ hours}$ gives $04\\text{:10}$ ($4\\text{:10 am}$) on Thursday."
+        ]
+      },
+      {
+        "id": "7_4_Q7",
+        "question": "A flight departs Sydney (AEST, $\\text{UTC}+10$) at $9\\text{:30 am}$ on Monday and lands in Tokyo ($\\text{UTC}+9$) at $6\\text{:15 pm}$ (`1815`) on Monday (Tokyo local time). How long was the flight in hours and minutes?",
+        "difficulty": "Challenging",
+        "context": "Finding Flight Duration Across Time Zones",
+        "final_answer": "$9\\text{ hours } 45\\text{ minutes}$",
+        "step_by_step_solution": [
+          "Convert the Sydney departure time into Tokyo local time ($\\text{UTC}+9$ is $1\\text{ hour}$ behind $\\text{UTC}+10$): $9\\text{:30 am} - 1\\text{ h} = 8\\text{:30 am}$ (`08:30`) Tokyo time.",
+          "Find the duration from `08:30` to `18:15` in Tokyo time: $18\\text{ h } 15\\text{ min} - 8\\text{ h } 30\\text{ min} = 17\\text{ h } 75\\text{ min} - 8\\text{ h } 30\\text{ min} = 9\\text{ hours } 45\\text{ minutes}$."
+        ]
+      },
+      {
+        "id": "7_4_Q8",
+        "question": "An Adelaide hospital nurse works a night shift starting at $10\\text{:45 pm}$ (`2245`) on Tuesday and finishing at $7\\text{:15 am}$ (`0715`) on Wednesday, with an unpaid $30$-minute meal break during the shift. If she is paid $\\$44$ per hour for her paid working time, calculate (a) her paid working duration in hours and (b) her total pay for the shift.",
+        "difficulty": "Challenging",
+        "context": "Shift Work & Payroll Modelling",
+        "final_answer": "(a) $8\\text{ hours}$, (b) $\\$352$",
+        "step_by_step_solution": [
+          "From $10\\text{:45 pm}$ to midnight is $1\\text{ h } 15\\text{ min}$, plus $7\\text{ h } 15\\text{ min}$ after midnight gives $8\\text{ h } 30\\text{ min}$ total time on site.",
+          "Subtract the $30$-minute unpaid break to get $8\\text{ hours}$ of paid work. Total pay $= 8 \\times \\$44 = \\$352$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "7_4_Q9",
+        "question": "A flight leaves Auckland ($\\text{UTC}+12$) at $7\\text{:00 am}$ on Friday and flies east across the International Date Line to Honolulu ($\\text{UTC}-10$). The flight takes $8\\text{ hours } 30\\text{ minutes}$. Show that the plane lands in Honolulu on **Thursday** (the day before it took off!), and find its exact local arrival time.",
+        "difficulty": "Challenging",
+        "context": "Crossing the International Date Line",
+        "final_answer": "$5\\text{:30 pm}$ (`1730`) on Thursday",
+        "step_by_step_solution": [
+          "Find the time offset from Auckland ($\\text{UTC}+12$) to Honolulu ($\\text{UTC}-10$): $-10 - 12 = -22\\text{ hours}$ (Honolulu is $22\\text{ hours}$ behind Auckland).",
+          "At departure ($7\\text{:00 am}$ Friday in Auckland), add the $8\\text{ h } 30\\text{ min}$ flight in Auckland time to get $3\\text{:30 pm}$ (`15:30`) Friday, then subtract $22\\text{ hours}$ (which is equivalent to adding $2\\text{ hours}$ and going back $1$ full day): $15\\text{:30} + 2\\text{ h} = 17\\text{:30}$ ($5\\text{:30 pm}$) on Thursday."
+        ]
+      },
+      {
+        "id": "7_4_Q10",
+        "question": "In summer, Broken Hill (NSW) uses Central Daylight Time (ACDT, $\\text{UTC}+10.5$), whereas Coolangatta (QLD) uses Eastern Standard Time (AEST, $\\text{UTC}+10$), even though Coolangatta lies further east geographically than Broken Hill. Explain which town has a later clock time in January and by how many minutes.",
+        "difficulty": "Medium",
+        "context": "Daylight Saving Anomalies",
+        "final_answer": "Broken Hill (ACDT, $\\text{UTC}+10.5$) is $30\\text{ minutes}$ ahead of Coolangatta (AEST, $\\text{UTC}+10$) in January",
+        "step_by_step_solution": [
+          "Compare the UTC offsets in January: Broken Hill is at $\\text{UTC}+10.5$ because it observes daylight saving, while Queensland stays on standard time at $\\text{UTC}+10$.",
+          "Since $10.5 - 10 = +0.5\\text{ hours} = 30\\text{ minutes}$, Broken Hill's clocks are $30\\text{ minutes}$ ahead of Coolangatta's in summer."
+        ]
+      },
+      {
+        "id": "7_4_Q11",
+        "question": "Liam calculates the number of minutes between `09:50` and `12:10` by computing $1210 - 950 = 260\\text{ minutes}$. Explain mathematically why subtracting four-digit 24-hour integers always overestimates the duration by $40\\text{ minutes}$ for every hour boundary crossed, and use this rule to correct Liam's answer.",
+        "difficulty": "Challenging",
+        "context": "Base-10 vs Base-60 Reasoning",
+        "final_answer": "Each hour boundary jumps by $100 - 60 = 40$ in four-digit notation (e.g. `0959` to `1000` jumps by $41$ instead of $1$). Since `09:50` to `12:10` crosses $3$ hour boundaries ($10\\text{:00}, 11\\text{:00}, 12\\text{:00}$), the true duration is $260 - 3 \\times 40 = 140\\text{ minutes}$ ($2\\text{ h } 20\\text{ min}$).",
+        "step_by_step_solution": [
+          "In four-digit 24-hour notation, $1\\text{ hour}$ increases the number by $100$, whereas $1\\text{ hour}$ is actually $60\\text{ minutes}$ — an excess of $100 - 60 = 40$ per hour boundary.",
+          "From `09:50` to `12:10` crosses $12 - 9 = 3$ hour boundaries, so subtracting $3 \\times 40 = 120$ from $260$ gives the true duration: $260 - 120 = 140\\text{ minutes}$ ($2\\text{ hours } 20\\text{ minutes}$)."
+        ]
+      },
+      {
+        "id": "7_4_Q12",
+        "question": "Earth rotates through $360^\\circ$ of longitude every $24\\text{ hours}$. (a) Through how many degrees of longitude does Earth rotate in $1\\text{ hour}$, and how many minutes of time correspond to $1^\\circ$ of longitude? (b) Melbourne lies near longitude $145^\\circ\\text{ E}$ and Perth lies near $116^\\circ\\text{ E}$. Based purely on solar longitude, what is the true solar time difference (in hours and minutes) between Melbourne and Perth?",
+        "difficulty": "Extension",
+        "context": "Astronomy & Solar Time Zones",
+        "final_answer": "(a) $15^\\circ$ per hour ($4\\text{ minutes}$ per degree of longitude); (b) $1\\text{ hour } 56\\text{ minutes}$ ($116\\text{ minutes}$)",
+        "step_by_step_solution": [
+          "In $1\\text{ hour}$, Earth rotates $\\frac{360^\\circ}{24} = 15^\\circ$. Each $1^\\circ$ of longitude corresponds to $\\frac{60\\text{ min}}{15} = 4\\text{ minutes}$ of solar time.",
+          "The longitude difference is $145^\\circ - 116^\\circ = 29^\\circ$. Multiplying by $4\\text{ minutes/degree}$ gives $29 \\times 4 = 116\\text{ minutes} = 1\\text{ hour } 56\\text{ minutes}$ (which is why WA and the eastern states have a $2$-hour standard time difference)."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE7_4_1_dur_min",
+      "description": "Worked Example 7.4.1 total duration in minutes (6h 35m = 395 min)",
+      "expression": "(24*60 - (21*60 + 45)) + (4*60 + 20)",
+      "expected": 395
+    },
+    {
+      "id": "NYT7_4_1_dur_min",
+      "description": "Now You Try 7.4.1 shift duration in minutes (6h 40m = 400 min)",
+      "expression": "(24*60 - (23*60 + 35)) + (6*60 + 15)",
+      "expected": 400
+    },
+    {
+      "id": "WE7_4_2a_perth",
+      "description": "Worked Example 7.4.2(a) Perth July offset difference",
+      "expression": "10 - 8",
+      "expected": 2
+    },
+    {
+      "id": "WE7_4_2b_perth",
+      "description": "Worked Example 7.4.2(b) Perth October offset difference",
+      "expression": "11 - 8",
+      "expected": 3
+    },
+    {
+      "id": "WE7_4_2_adelaide",
+      "description": "Worked Example 7.4.2 Adelaide offset difference in hours",
+      "expression": "Rational(10, 1) - Rational(19, 2)",
+      "expected": "1/2"
+    },
+    {
+      "id": "WE7_4_3_arr_min",
+      "description": "Worked Example 7.4.3 arrival time in minutes from midnight (17:10 = 1030)",
+      "expression": "(11*60 + 20) - 2*60 + (7*60 + 50)",
+      "expected": 1030
+    },
+    {
+      "id": "NYT7_4_3_arr_min",
+      "description": "Now You Try 7.4.3 arrival minutes past midnight next day",
+      "expression": "(13*60 + 40) + 4*60 + (6*60 + 30) - 24*60",
+      "expected": 10
+    },
+    {
+      "id": "EX7_4_Q2_min",
+      "description": "Exercise 7.4 Q2 duration in minutes (7h 37m = 457 min)",
+      "expression": "(16*60 + 15) - (8*60 + 38)",
+      "expected": 457
+    },
+    {
+      "id": "EX7_4_Q3_min",
+      "description": "Exercise 7.4 Q3 finish time in minutes (22:20 = 1340 min)",
+      "expression": "(19*60 + 45) + (2*60 + 35)",
+      "expected": 1340
+    },
+    {
+      "id": "EX7_4_Q4a_min",
+      "description": "Exercise 7.4 Q4(a) Darwin time in minutes (12:15 = 735 min)",
+      "expression": "(10*60 + 45) + 90",
+      "expected": 735
+    },
+    {
+      "id": "EX7_4_Q5_melb",
+      "description": "Exercise 7.4 Q5 Melbourne end time in minutes (12:45 = 765 min)",
+      "expression": "(9*60) + 3*60 + 45",
+      "expected": 765
+    },
+    {
+      "id": "EX7_4_Q6_london",
+      "description": "Exercise 7.4 Q6 London arrival minutes past midnight Thursday (04:10 = 250 min)",
+      "expression": "(18*60 + 50) - 8*60 + (17*60 + 20) - 24*60",
+      "expected": 250
+    },
+    {
+      "id": "EX7_4_Q7_dur",
+      "description": "Exercise 7.4 Q7 flight duration in minutes (9h 45m = 585 min)",
+      "expression": "(18*60 + 15) - ((9*60 + 30) - 60)",
+      "expected": 585
+    },
+    {
+      "id": "EX7_4_Q8_pay",
+      "description": "Exercise 7.4 Q8 total shift pay",
+      "expression": "8 * 44",
+      "expected": 352
+    },
+    {
+      "id": "EX7_4_Q9_honolulu",
+      "description": "Exercise 7.4 Q9 Honolulu arrival minutes on Thursday (17:30 = 1050 min)",
+      "expression": "(7*60) + (8*60 + 30) - 22*60 + 24*60",
+      "expected": 1050
+    },
+    {
+      "id": "EX7_4_Q11_true",
+      "description": "Exercise 7.4 Q11 corrected duration in minutes",
+      "expression": "(1210 - 950) - 3 * 40",
+      "expected": 140
+    },
+    {
+      "id": "EX7_4_Q12a",
+      "description": "Exercise 7.4 Q12(a) degrees per hour",
+      "expression": "360 / 24",
+      "expected": 15
+    },
+    {
+      "id": "EX7_4_Q12b",
+      "description": "Exercise 7.4 Q12(b) solar time difference in minutes",
+      "expression": "(145 - 116) * 4",
+      "expected": 116
+    }
+  ]
+}

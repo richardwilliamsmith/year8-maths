@@ -1,0 +1,299 @@
+{
+  "curriculum": "Victorian Curriculum F-10 Version 2.0 (VCAA)",
+  "year_level": 10,
+  "title": "Open-Source Essential Mathematics for the Victorian Curriculum Year 10 & 10A",
+  "version": "2.0.0",
+  "locale": "en-AU",
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "id": "y10_chapter_1",
+      "title": "Financial Mathematics, Surds, and Logarithms (10 & 10A)",
+      "strand": "Number",
+      "vcaa_codes": ["VC2M10N01", "VC2M10AN01", "VC2M10AN02"],
+      "description": "Compound interest, depreciation, inflation, operations with surds and rationalising denominators (10A), fractional indices and logarithms (10A).",
+      "sections": [
+        {
+          "section_id": "10_1_1",
+          "section_code": "1A",
+          "title": "Compound Interest, Depreciation, and Financial Modelling",
+          "vcaa_code": "VC2M10N01",
+          "vcaa_description": "Recognise the effect of using approximations of real numbers in repeated calculations and compare the results when using exact representations; use mathematical modelling to solve financial problems involving compound interest (VC2M10A04).",
+          "target_mastery": "Apply the compound interest formula A = P(1 + r)^n across annual, quarterly, and monthly compounding periods, and model reducing-balance depreciation.",
+          "prerequisites": ["Simple interest and index laws (Year 9 VC2M9N02, VC2M9A01)"],
+          "sub_concepts": ["Compound interest formula A = P(1 + r)^n", "Non-annual compounding periods (monthly, quarterly)", "Reducing-balance depreciation A = P(1 - r)^n and rounding error accumulation"]
+        },
+        {
+          "section_id": "10_1_2",
+          "section_code": "1B",
+          "title": "[10A] Operations with Surds and Rationalising the Denominator",
+          "vcaa_code": "VC2M10AN01",
+          "vcaa_description": "Define rational and irrational numbers and perform operations with surds and fractional exponents.",
+          "target_mastery": "Add, subtract, multiply, and divide surds, expand binomial surd products, and rationalise monomial and conjugate binomial denominators.",
+          "prerequisites": ["Simplifying surds and DOTS (Year 9 VC2M9N01, VC2M9A02)"],
+          "sub_concepts": ["Adding and subtracting like surds", "Expanding binomials involving surds", "Rationalising denominators including conjugate pairs"]
+        },
+        {
+          "section_id": "10_1_3",
+          "section_code": "1C",
+          "title": "[10A] Fractional Indices and Logarithms",
+          "vcaa_code": "VC2M10AN02",
+          "vcaa_description": "Use the definition of a logarithm to establish and apply the laws of logarithms and investigate logarithmic scales in applied contexts.",
+          "target_mastery": "Evaluate fractional exponents a^(m/n) = (n-th root of a)^m, convert between index and logarithmic form log_a(y) = x, and simplify using logarithm laws.",
+          "prerequisites": ["Index laws with integer exponents (Year 9 VC2M9A01)"],
+          "sub_concepts": ["Fractional exponents and n-th roots", "Definition of a logarithm and log laws", "Solving exponential equations and Richter/decibel logarithmic scales"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "id": "y10_chapter_2",
+      "title": "Linear Inequalities, Simultaneous Equations, and Coordinate Geometry",
+      "strand": "Algebra",
+      "vcaa_codes": ["VC2M10A02", "VC2M10A03", "VC2M10A04"],
+      "description": "Linear inequalities on the number line and Cartesian plane, simultaneous linear equations (substitution and elimination), and parallel and perpendicular lines.",
+      "sections": [
+        {
+          "section_id": "10_2_1",
+          "section_code": "2A",
+          "title": "Solving Linear Inequalities and Half-Planes",
+          "vcaa_code": "VC2M10A02",
+          "vcaa_description": "Solve linear inequalities and simultaneous linear equations in 2 variables; interpret solutions graphically and apply to real-world contexts.",
+          "target_mastery": "Solve linear inequalities (reversing the inequality sign when multiplying/dividing by a negative), graph solution sets on a number line, and shade half-planes.",
+          "prerequisites": ["Linear equations and graphs (Year 9 VC2M9A04)"],
+          "sub_concepts": ["Inequality properties and reversing the sign", "Compound inequalities and number line intervals", "Graphing linear inequalities in two variables"]
+        },
+        {
+          "section_id": "10_2_2",
+          "section_code": "2B",
+          "title": "Simultaneous Linear Equations: Substitution and Elimination",
+          "vcaa_code": "VC2M10A02",
+          "vcaa_description": "Solve linear inequalities and simultaneous linear equations in 2 variables; interpret solutions graphically and apply to real-world contexts.",
+          "target_mastery": "Solve pairs of simultaneous linear equations graphically, by substitution, and by elimination, and model break-even and mixture problems.",
+          "prerequisites": ["Graphing linear relations (Year 9 Section 4C)"],
+          "sub_concepts": ["Graphical intersection of two lines", "Algebraic solution by substitution", "Algebraic solution by elimination", "Break-even analysis and applied linear systems"]
+        },
+        {
+          "section_id": "10_2_3",
+          "section_code": "2C",
+          "title": "Parallel and Perpendicular Lines",
+          "vcaa_code": "VC2M10A03",
+          "vcaa_description": "Recognise the connection between algebraic and graphical representations of relations including parallel and perpendicular lines.",
+          "target_mastery": "Use m1 = m2 for parallel lines and m1 * m2 = -1 for perpendicular lines to find equations of straight lines and perpendicular bisectors.",
+          "prerequisites": ["Gradient, midpoint, and distance formulas (Year 9 VC2M9A03)"],
+          "sub_concepts": ["Parallel lines have equal gradients (m1 = m2)", "Perpendicular lines have negative reciprocal gradients (m1 * m2 = -1)", "Finding the equation of a perpendicular bisector"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "id": "y10_chapter_3",
+      "title": "Quadratic Algebra and Equations (10 & 10A)",
+      "strand": "Algebra",
+      "vcaa_codes": ["VC2M10A01", "VC2M10A05", "VC2M10AA02"],
+      "description": "Factorising monic and non-monic quadratics, completing the square, the Quadratic Formula, discriminant, and algebraic fractions.",
+      "sections": [
+        {
+          "section_id": "10_3_1",
+          "section_code": "3A",
+          "title": "Factorising Quadratics and Completing the Square",
+          "vcaa_code": "VC2M10A01",
+          "vcaa_description": "Expand, factorise and simplify expressions and solve equations algebraically, applying exponent laws and algebraic fractions.",
+          "target_mastery": "Factorise monic and non-monic quadratic trinomials (grouping method) and complete the square to factorise over the real numbers.",
+          "prerequisites": ["Monic quadratic factorisation (Year 9 VC2M9A02)"],
+          "sub_concepts": ["Completing the square x^2 + bx + c = (x + b/2)^2 - (b/2)^2 + c", "Factorising non-monic quadratics ax^2 + bx + c by splitting the middle term", "Simplifying algebraic fractions by factorising"]
+        },
+        {
+          "section_id": "10_3_2",
+          "section_code": "3B",
+          "title": "The Quadratic Formula and the Discriminant",
+          "vcaa_code": "VC2M10A05",
+          "vcaa_description": "Solve quadratic equations algebraically and graphically, and use mathematical modelling to solve applied problems involving quadratic functions (and 10A VC2M10AA02).",
+          "target_mastery": "Solve general quadratic equations ax^2 + bx + c = 0 using the Quadratic Formula and use the discriminant Delta = b^2 - 4ac to determine the nature of roots.",
+          "prerequisites": ["Completing the square (Section 3A)", "Null Factor Law (Year 9 VC2M9A05)"],
+          "sub_concepts": ["Derivation and application of the Quadratic Formula", "The discriminant Delta = b^2 - 4ac and number/nature of real roots", "Quadratic modelling in geometry and kinematics"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "id": "y10_chapter_4",
+      "title": "Parabolas, Exponentials, Polynomials, and Functions (10 & 10A)",
+      "strand": "Algebra",
+      "vcaa_codes": ["VC2M10A05", "VC2M10A06", "VC2M10AA01", "VC2M10AA03"],
+      "description": "Sketching parabolas in all forms, exponential functions, circles and hyperbolas, polynomials (Remainder and Factor Theorems, 10A), and function notation (10A).",
+      "sections": [
+        {
+          "section_id": "10_4_1",
+          "section_code": "4A",
+          "title": "Sketching Parabolas, Exponential Graphs, and Circles",
+          "vcaa_code": "VC2M10A06",
+          "vcaa_description": "Graph and investigate exponential, quadratic, circle and other non-linear relations, using digital tools and algorithms.",
+          "target_mastery": "Sketch parabolas in general, turning-point, and intercept forms, graph exponential relations y = a * b^x + k with asymptotes, and graph circles x^2 + y^2 = r^2.",
+          "prerequisites": ["Parabola features (Year 9 VC2M9A05)"],
+          "sub_concepts": ["Finding turning points by completing the square or x = -b/(2a)", "Exponential growth/decay graphs and horizontal asymptotes", "Circles (x - h)^2 + (y - k)^2 = r^2 and rectangular hyperbolas"]
+        },
+        {
+          "section_id": "10_4_2",
+          "section_code": "4B",
+          "title": "[10A] Polynomials, Remainder and Factor Theorems, and Functions",
+          "vcaa_code": "VC2M10AA01",
+          "vcaa_description": "Investigate the concept of a polynomial and apply the factor and remainder theorems to solve problems; use function notation and inverse functions (VC2M10AA03).",
+          "target_mastery": "Divide polynomials, apply the Remainder and Factor Theorems to factorise and sketch cubic polynomials, and use function notation f(x) and domain/range.",
+          "prerequisites": ["Factorising quadratics (Chapter 3)"],
+          "sub_concepts": ["Polynomial long division and Remainder Theorem P(a)", "Factor Theorem and solving cubic equations", "Function notation f(x), domain, range, and inverse functions (VC2M10AA03)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "id": "y10_chapter_5",
+      "title": "Surface Area and Volume of Pyramids, Cones, and Spheres (10 & 10A)",
+      "strand": "Measurement",
+      "vcaa_codes": ["VC2M10M01", "VC2M10M02", "VC2M10AM01"],
+      "description": "Surface area and volume of pyramids, cones, spheres, frustums, and composite 3D solids, plus logarithmic measurement scales.",
+      "sections": [
+        {
+          "section_id": "10_5_1",
+          "section_code": "5A",
+          "title": "Surface Area and Volume of Pyramids, Cones, and Spheres",
+          "vcaa_code": "VC2M10M01",
+          "vcaa_description": "Solve problems involving the surface area and volume of composite objects using appropriate units (and 10A pyramids, cones, spheres VC2M10AM01).",
+          "target_mastery": "Calculate the total surface area and volume of right pyramids (V = 1/3 Ah), cones (TSA = pi*r^2 + pi*r*s, V = 1/3 pi*r^2*h), spheres (TSA = 4*pi*r^2, V = 4/3 pi*r^3), and composite solids.",
+          "prerequisites": ["Surface area and volume of prisms and cylinders (Year 9 VC2M9M02)", "Pythagoras' theorem for slant height"],
+          "sub_concepts": ["Slant height vs perpendicular height in pyramids and cones", "Surface area and volume of spheres and hemispheres", "Composite 3D solids and logarithmic measurement scales (VC2M10M02)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "id": "y10_chapter_6",
+      "title": "Trigonometry, Bearings, and Non-Right-Angled Triangles (10 & 10A)",
+      "strand": "Measurement",
+      "vcaa_codes": ["VC2M10M03", "VC2M10AM02", "VC2M10AM03"],
+      "description": "3D trigonometry and true bearings, the Sine Rule, Cosine Rule, area of a triangle A = 1/2 ab sin C (10A), and the Unit Circle and trigonometric graphs (10A).",
+      "sections": [
+        {
+          "section_id": "10_6_1",
+          "section_code": "6A",
+          "title": "Right-Angled Trigonometry in 2D/3D and True Bearings",
+          "vcaa_code": "VC2M10M03",
+          "vcaa_description": "Use Pythagoras' theorem and trigonometry to solve spatial problems involving right-angled triangles in 2 and 3 dimensions.",
+          "target_mastery": "Solve multi-step navigation problems using three-figure true bearings (000 degrees T to 360 degrees T) and calculate angles and lengths in 3D space.",
+          "prerequisites": ["Right-angled trigonometry (Year 9 VC2M9M04)"],
+          "sub_concepts": ["Three-figure true bearings and back-bearings", "Angles of elevation and depression in 3D solids", "Multi-triangle trigonometric modelling"]
+        },
+        {
+          "section_id": "10_6_2",
+          "section_code": "6B",
+          "title": "[10A] The Sine Rule, Cosine Rule, and Triangle Area Formula",
+          "vcaa_code": "VC2M10AM02",
+          "vcaa_description": "Establish and apply the sine, cosine and area rules for any triangle and solve related problems in 2 and 3 dimensions.",
+          "target_mastery": "Apply the Sine Rule (including the ambiguous case), the Cosine Rule, and A = 1/2 ab sin C to solve non-right-angled triangles.",
+          "prerequisites": ["Right-angled trigonometry (Section 6A)"],
+          "sub_concepts": ["The Sine Rule a/sin A = b/sin B and the ambiguous case", "The Cosine Rule c^2 = a^2 + b^2 - 2ab cos C", "Area of any triangle A = 1/2 ab sin C"]
+        },
+        {
+          "section_id": "10_6_3",
+          "section_code": "6C",
+          "title": "[10A] The Unit Circle, Exact Values, and Trigonometric Graphs",
+          "vcaa_code": "VC2M10AM03",
+          "vcaa_description": "Use the unit circle to define trigonometric functions as functions of a real variable, and graph them with and without digital tools.",
+          "target_mastery": "Determine exact values of sin, cos, and tan for angles in all four quadrants using reference angles (30, 45, 60 degrees), and sketch y = a sin(bx) and y = a cos(bx).",
+          "prerequisites": ["Surds (Section 1B)", "Trigonometric ratios"],
+          "sub_concepts": ["Exact values for 30, 45, and 60 degrees", "Unit circle definitions and CAST quadrant symmetry", "Graphs, amplitude, and period of sine and cosine functions"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "id": "y10_chapter_7",
+      "title": "Geometric Proofs, Circle Geometry, and Networks (10 & 10A)",
+      "strand": "Space",
+      "vcaa_codes": ["VC2M10SP01", "VC2M10SP02", "VC2M10ASP01", "VC2M10ASP02"],
+      "description": "Deductive congruence and similarity proofs, planar graphs and network algorithms, and circle angle/chord/tangent theorems (10A).",
+      "sections": [
+        {
+          "section_id": "10_7_1",
+          "section_code": "7A",
+          "title": "Deductive Geometric Proofs and Network Algorithms",
+          "vcaa_code": "VC2M10SP01",
+          "vcaa_description": "Apply deductive reasoning to proofs involving shapes in the plane and use networks and network algorithms to solve spatial problems (VC2M10SP02).",
+          "target_mastery": "Write formal deductive proofs for triangle and quadrilateral properties and model spatial connectivity using weighted networks and shortest-path algorithms.",
+          "prerequisites": ["Similarity and congruence (Year 9 VC2M9SP02)"],
+          "sub_concepts": ["Formal deductive proofs with geometric reasons", "Vertices, edges, degree, and Eulerian/Hamiltonian paths in networks (VC2M10SP02)", "Shortest-path and minimum spanning tree algorithms"]
+        },
+        {
+          "section_id": "10_7_2",
+          "section_code": "7B",
+          "title": "[10A] Circle Geometry: Angle, Chord, and Tangent Theorems",
+          "vcaa_code": "VC2M10ASP01",
+          "vcaa_description": "Prove and apply angle and chord properties of circles, and tangent and secant properties of circles (VC2M10ASP02).",
+          "target_mastery": "Prove and apply circle theorems including angle at the centre, angle in a semicircle, cyclic quadrilaterals, alternate segment theorem, and intersecting chords/secants.",
+          "prerequisites": ["Deductive proofs (Section 7A)"],
+          "sub_concepts": ["Angle at the centre is twice the angle at the circumference", "Angles in the same segment and cyclic quadrilaterals", "Tangent-radius perpendicularity, alternate segment theorem, and secant power theorems"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "id": "y10_chapter_8",
+      "title": "Conditional Probability and Independence (10 & 10A)",
+      "strand": "Probability",
+      "vcaa_codes": ["VC2M10P01", "VC2M10P02", "VC2M10AP01", "VC2M10AP02"],
+      "description": "Conditional probability Pr(A|B), independent vs mutually exclusive events, two- and three-stage experiments, and counting principles (10A).",
+      "sections": [
+        {
+          "section_id": "10_8_1",
+          "section_code": "8A",
+          "title": "Conditional Probability and Independent Events",
+          "vcaa_code": "VC2M10P01",
+          "vcaa_description": "Use the language of 'if ... then', 'given', 'of', 'knowing that' to investigate conditional statements and identify common mistakes in interpreting such language (and VC2M10P02, VC2M10AP01).",
+          "target_mastery": "Calculate conditional probabilities Pr(A|B) = Pr(A intersect B)/Pr(B) from Venn diagrams, Karnaugh maps, and tree diagrams, and test for independence Pr(A intersect B) = Pr(A)Pr(B).",
+          "prerequisites": ["Multi-stage probability (Year 9 VC2M9P01, VC2M9P02)"],
+          "sub_concepts": ["Conditional probability formula Pr(A|B) = Pr(A intersect B)/Pr(B)", "Testing whether two events are independent vs mutually exclusive", "Counting principles, factorials, and sampling with/without replacement (10A VC2M10AP02)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 9,
+      "id": "y10_chapter_9",
+      "title": "Univariate Data: Box Plots, Quartiles, and Standard Deviation (10 & 10A)",
+      "strand": "Statistics",
+      "vcaa_codes": ["VC2M10ST01", "VC2M10ST02", "VC2M10AST01"],
+      "description": "Five-number summaries, parallel box plots with outlier fences, cumulative frequency, and sample standard deviation (10A).",
+      "sections": [
+        {
+          "section_id": "10_9_1",
+          "section_code": "9A",
+          "title": "Box Plots, Outlier Fences, and Comparing Distributions",
+          "vcaa_code": "VC2M10ST02",
+          "vcaa_description": "Compare data distributions for continuous numerical variables using appropriate data displays including boxplots; discuss the shapes of these distributions in terms of symmetry, skewness and outliers (and VC2M10ST01).",
+          "target_mastery": "Construct parallel box plots, identify outliers using the lower fence Q1 - 1.5*IQR and upper fence Q3 + 1.5*IQR, and compare distributions.",
+          "prerequisites": ["Quartiles and IQR (Year 9 VC2M9ST03)"],
+          "sub_concepts": ["Five-number summary and box-and-whisker plots", "Formal outlier fences: Q1 - 1.5*IQR and Q3 + 1.5*IQR", "Calculating and interpreting mean and standard deviation s (10A VC2M10AST01)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "id": "y10_chapter_10",
+      "title": "Bivariate Data, Time Series, and Linear Regression (10 & 10A)",
+      "strand": "Statistics",
+      "vcaa_codes": ["VC2M10ST03", "VC2M10ST04", "VC2M10ST05", "VC2M10AST02"],
+      "description": "Scatterplots, lines of best fit, interpolation vs extrapolation, time-series trends, and least-squares regression and Pearson's r (10A).",
+      "sections": [
+        {
+          "section_id": "10_10_1",
+          "section_code": "10A",
+          "title": "Scatterplots, Lines of Best Fit, and Time-Series Data",
+          "vcaa_code": "VC2M10ST03",
+          "vcaa_description": "Construct scatterplots and comment on the association between the 2 numerical variables; fit a line of best fit and make predictions (including time series VC2M10ST04, VC2M10ST05, and 10A least-squares VC2M10AST02).",
+          "target_mastery": "Fit a linear model y = mx + c to bivariate data, distinguish between reliable interpolation and risky extrapolation, analyse time-series trends, and interpret Pearson's correlation coefficient r (10A).",
+          "prerequisites": ["Bivariate scatterplots (Year 9 VC2M9ST02)", "Linear equations (Year 9 VC2M9A04)"],
+          "sub_concepts": ["Fitting a line of best fit and interpreting gradient and y-intercept in context", "Interpolation vs extrapolation", "Time-series plots (secular trend, seasonality, cycles)", "Least-squares regression line and correlation coefficient r (10A VC2M10AST02)"]
+        }
+      ]
+    }
+  ]
+}

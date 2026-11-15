@@ -1,0 +1,391 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Length, Area, Volume and Time",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "7_1",
+      "section_code": "7A",
+      "title": "Perimeter and Area of Quadrilaterals and Composite Shapes",
+      "vcaa_code": "VC2M8M01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each measurement and evaluate:",
+          "parts": [
+            { "label": "a", "question": "$0.045\\text{ km}^2 + 12.5\\text{ ha}$ in $\\text{m}^2$", "answer": "$170\\,000\\text{ m}^2$" },
+            { "label": "b", "question": "$2.4\\text{ m}^2 - 8500\\text{ cm}^2$ in $\\text{cm}^2$", "answer": "$15\\,500\\text{ cm}^2$" },
+            { "label": "c", "question": "$360\\,000\\text{ mm}^2$ to $\\text{m}^2$", "answer": "$0.36\\text{ m}^2$" },
+            { "label": "d", "question": "$75\\text{ ha}$ as a fraction of $1\\text{ km}^2$", "answer": "$\\dfrac{3}{4}$ ($0.75$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the unknown dimension or expression for each quadrilateral:",
+          "parts": [
+            { "label": "a", "question": "Rhombus with area $108\\text{ cm}^2$ and diagonals in ratio $2 : 3$: find the diagonals", "answer": "$12\\text{ cm}$ and $18\\text{ cm}$" },
+            { "label": "b", "question": "Trapezium: Area $= 156\\text{ cm}^2, h = 12\\text{ cm}, a = (x + 2)\\text{ cm}, b = (3x)\\text{ cm}$: find $x$", "answer": "$x = 6$" },
+            { "label": "c", "question": "Parallelogram with sides $15\\text{ cm}$ and $10\\text{ cm}$, and height $8\\text{ cm}$ to the $15\\text{ cm}$ base: find the height to the $10\\text{ cm}$ base", "answer": "$12\\text{ cm}$" },
+            { "label": "d", "question": "Kite with diagonals $(2x + 4)\\text{ cm}$ and $6\\text{ cm}$ and area $48\\text{ cm}^2$: find $x$", "answer": "$x = 6$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Write a simplified algebraic expression for the area $A$ of each shape:",
+          "parts": [
+            { "label": "a", "question": "Trapezium with parallel sides $(2x + 3)$ and $(4x - 1)$ and height $(2x)$", "answer": "$6x^2 + 2x$" },
+            { "label": "b", "question": "Square of side $(3x)\\text{ cm}$ with a rhombus of diagonals $(2x)\\text{ cm}$ and $(4x)\\text{ cm}$ cut out", "answer": "$5x^2\\text{ cm}^2$" },
+            { "label": "c", "question": "Rectangle $(5x + 2)\\text{ m}$ by $4\\text{ m}$ joined to a triangle of base $4\\text{ m}$ and height $(3x - 1)\\text{ m}$", "answer": "$(26x + 6)\\text{ m}^2$" },
+            { "label": "d", "question": "Frame of uniform width $w$ around a rectangular photo of length $L$ and width $B$", "answer": "$4w^2 + 2w(L + B)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Calculate the shaded area of each composite figure:",
+          "parts": [
+            { "label": "a", "question": "A $20\\text{ m} \\times 16\\text{ m}$ lawn crossed at right angles by two $2\\text{ m}$-wide paths (area of lawn only)", "answer": "$252\\text{ m}^2$" },
+            { "label": "b", "question": "Regular octagon formed by cutting four right-angled isosceles triangles of leg $3\\text{ cm}$ from the corners of a $10\\text{ cm}$ square", "answer": "$82\\text{ cm}^2$" },
+            { "label": "c", "question": "Isosceles trapezium with parallel sides $10\\text{ cm}$ and $22\\text{ cm}$ and perpendicular height $8\\text{ cm}$", "answer": "$128\\text{ cm}^2$" },
+            { "label": "d", "question": "Hollow square tube cross-section with outer side $17\\text{ cm}$ and inner side $13\\text{ cm}$", "answer": "$120\\text{ cm}^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular botanic garden in Toowoomba measures $50\\text{ m}$ by $34\\text{ m}$ and is surrounded on the outside by a paved promenade of uniform width $x\\text{ m}$. Given that the area of the promenade alone is $540\\text{ m}^2$, verify that $(50 + 2x)(34 + 2x) - 1700 = 540$ and find the width $x = 3\\text{ m}$.",
+          "answer": "$x = 3\\text{ m}$ (since $56 \\times 40 - 1700 = 2240 - 1700 = 540\\text{ m}^2$)"
+        },
+        {
+          "number": 6,
+          "question": "A gable wall of a warehouse in Albury is shaped like a rectangle of width $16\\text{ m}$ and height $5\\text{ m}$ topped by an isosceles triangle of base $16\\text{ m}$ and total ridge height $8.5\\text{ m}$ above the ground. Two roller doors, each $4\\text{ m}$ wide by $3.5\\text{ m}$ high, are set into the wall; how many litres of paint are needed for two coats if $1\\text{ L}$ covers $10\\text{ m}^2$?",
+          "answer": "$16\\text{ L}$ (Net wall area $= 16 \\times 5 + \\frac{1}{2}(16)(3.5) - 2(14) = 80 + 28 - 28 = 80\\text{ m}^2$; two coats $= 160\\text{ m}^2 \\implies 16\\text{ L}$)"
+        },
+        {
+          "number": 7,
+          "question": "A hobby farm in the Macedon Ranges is shaped like a trapezium with parallel boundary fences of lengths $450\\text{ m}$ and $750\\text{ m}$ separated by a perpendicular distance of $500\\text{ m}$. If $15\\%$ of the farm is reserved for native bushland regeneration and the rest is sown with pasture at $\\$240$ per hectare, find the total cost of sowing the pasture.",
+          "answer": "$\\$6120$ (Total area $= 300\\,000\\text{ m}^2 = 30\\text{ ha}$; pasture $= 0.85 \\times 30 = 25.5\\text{ ha}$; cost $= 25.5 \\times 240 = \\$6120$)"
+        },
+        {
+          "number": 8,
+          "question": "The midpoints of the four sides of a rectangle of length $18\\text{ cm}$ and width $12\\text{ cm}$ are joined in order to form an inscribed rhombus. Find the lengths of the diagonals of the rhombus, its area, and what fraction of the rectangle's area the rhombus occupies.",
+          "answer": "Diagonals are $18\\text{ cm}$ and $12\\text{ cm}$; $\\text{Area} = \\frac{1}{2}(18)(12) = 108\\text{ cm}^2$, which is exactly $\\dfrac{1}{2}$ of the rectangle's area ($216\\text{ cm}^2$)."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A rectangular park of length $L$ and width $W$ has two straight paths of uniform width $d$, one parallel to the length and one parallel to the width, crossing each other. Prove that the remaining grass area is always equal to $(L - d)(W - d)$ by shifting the four grass quadrants together.",
+          "answer": "Expanding $(L - d)(W - d) = LW - dL - dW + d^2$, which equals the total park area $LW$ minus the two path strips $(dL + dW)$ plus the $d^2$ central intersection square that was subtracted twice."
+        },
+        {
+          "number": 10,
+          "question": "In a trapezium with parallel sides $a$ and $b$ and perpendicular height $h$, a horizontal line is drawn halfway up the height (at distance $\\frac{h}{2}$ from both bases), having length $m = \\frac{a + b}{2}$. Prove that the ratio of the area of the top half-height trapezium to the bottom half-height trapezium is $(3a + b) : (a + 3b)$.",
+          "answer": "$A_{\\text{top}} = \\frac{1}{2}\\left(a + \\frac{a+b}{2}\\right)\\frac{h}{2} = \\frac{(3a + b)h}{8}$ and $A_{\\text{bot}} = \\frac{1}{2}\\left(\\frac{a+b}{2} + b\\right)\\frac{h}{2} = \\frac{(a + 3b)h}{8}$, giving the ratio $(3a + b) : (a + 3b)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE7_1_1a", "expression": "Rational(45, 1000) * 1000000 + Rational(125, 10) * 10000", "expected": 170000 },
+        { "id": "WSE7_1_2b", "expression": "((156 * 2 / 12) - 2) / 4", "expected": 6 },
+        { "id": "WSE7_1_2c", "expression": "(15 * 8) / 10", "expected": 12 },
+        { "id": "WSE7_1_3a", "expression": "simplify(Rational(1, 2) * ((2*x + 3) + (4*x - 1)) * 2*x - (6*x**2 + 2*x))", "expected": 0 },
+        { "id": "WSE7_1_4a", "expression": "(20 - 2) * (16 - 2)", "expected": 252 },
+        { "id": "WSE7_1_4b", "expression": "10**2 - 4 * Rational(1, 2) * 3 * 3", "expected": 82 },
+        { "id": "WSE7_1_4d", "expression": "17**2 - 13**2", "expected": 120 },
+        { "id": "WSE7_1_5", "expression": "(50 + 2*3) * (34 + 2*3) - 50 * 34", "expected": 540 },
+        { "id": "WSE7_1_6", "expression": "2 * (16 * 5 + Rational(1, 2) * 16 * Rational(35, 10) - 2 * 4 * Rational(35, 10)) / 10", "expected": 16 },
+        { "id": "WSE7_1_7", "expression": "Rational(85, 100) * (Rational(1, 2) * (450 + 750) * 500 / 10000) * 240", "expected": 6120 }
+      ]
+    },
+    {
+      "section_id": "7_2",
+      "section_code": "7B",
+      "title": "Circumference and Area of Circles and Sectors",
+      "vcaa_code": "VC2M8M02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the exact perimeter $P$ and exact area $A$ (in terms of $\\pi$) of each sector or annulus:",
+          "parts": [
+            { "label": "a", "question": "Sector with radius $r = 15\\text{ cm}$ and central angle $\\theta = 72^\\circ$", "answer": "$P = (6\\pi + 30)\\text{ cm}, A = 45\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Three-quarter circle ($\\theta = 270^\\circ$) of radius $r = 8\\text{ cm}$", "answer": "$P = (12\\pi + 16)\\text{ cm}, A = 48\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "Annulus (flat ring) with outer radius $R = 13\\text{ cm}$ and inner radius $r = 5\\text{ cm}$", "answer": "$P = 36\\pi\\text{ cm}, A = 144\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "Curved sector strip between $r = 6\\text{ cm}$ and $R = 10\\text{ cm}$ with angle $\\theta = 90^\\circ$", "answer": "$P = (8\\pi + 8)\\text{ cm}, A = 16\\pi\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Work backwards from each given exact circular measurement to find the unknown:",
+          "parts": [
+            { "label": "a", "question": "Circle has area $A = 196\\pi\\text{ cm}^2$: find its exact circumference $C$", "answer": "$28\\pi\\text{ cm}$ ($r = 14\\text{ cm}$)" },
+            { "label": "b", "question": "Sector of radius $r = 12\\text{ cm}$ has arc length $l = 5\\pi\\text{ cm}$: find angle $\\theta$", "answer": "$\\theta = 75^\\circ$" },
+            { "label": "c", "question": "Sector with central angle $\\theta = 45^\\circ$ has area $18\\pi\\text{ cm}^2$: find radius $r$", "answer": "$r = 12\\text{ cm}$" },
+            { "label": "d", "question": "Annulus with inner radius $r = 9\\text{ cm}$ has area $63\\pi\\text{ cm}^2$: find outer radius $R$", "answer": "$R = 12\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the exact shaded area (in terms of $\\pi$) for each composite circular shape:",
+          "parts": [
+            { "label": "a", "question": "Square of side $12\\text{ cm}$ with a largest-possible circle ($d = 12\\text{ cm}$) inscribed inside", "answer": "$(144 - 36\\pi)\\text{ cm}^2$" },
+            { "label": "b", "question": "Rectangle $16\\text{ cm} \\times 10\\text{ cm}$ capped with a semicircle of diameter $10\\text{ cm}$ on one end", "answer": "$\\left(160 + \\dfrac{25\\pi}{2}\\right)\\text{ cm}^2$" },
+            { "label": "c", "question": "Four quadrants of radius $5\\text{ cm}$ cut from the four corners of a $10\\text{ cm}$ square", "answer": "$(100 - 25\\pi)\\text{ cm}^2$" },
+            { "label": "d", "question": "Semicircle of radius $10\\text{ cm}$ with two smaller semicircles of radius $5\\text{ cm}$ removed", "answer": "$25\\pi\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Using $\\pi \\approx \\dfrac{22}{7}$, calculate the exact rational value of:",
+          "parts": [
+            { "label": "a", "question": "Total perimeter of a stadium track: two $90\\text{ m}$ straights and two semicircular ends of diameter $70\\text{ m}$", "answer": "$400\\text{ m}$" },
+            { "label": "b", "question": "Total area enclosed by the stadium track in part (a)", "answer": "$10\\,150\\text{ m}^2$" },
+            { "label": "c", "question": "Perimeter of a sector with $r = 21\\text{ cm}$ and $\\theta = 120^\\circ$", "answer": "$86\\text{ cm}$ ($44 + 42$)" },
+            { "label": "d", "question": "Area of an annulus with outer radius $R = 14\\text{ cm}$ and inner radius $r = 7\\text{ cm}$", "answer": "$462\\text{ cm}^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Norman window in a heritage sandstone church in Hobart consists of a rectangle of width $1.4\\text{ m}$ and height $2.0\\text{ m}$ surmounted by a semicircle of diameter $1.4\\text{ m}$. Using $\\pi \\approx \\dfrac{22}{7}$, find (a) the total perimeter of the window frame and (b) the total area of glass.",
+          "answer": "(a) $7.6\\text{ m}$ ($2.0 + 1.4 + 2.0 + 2.2$), (b) $3.57\\text{ m}^2$ ($2.8 + 0.77$)"
+        },
+        {
+          "number": 6,
+          "question": "A mountain bike wheel has an outer tyre diameter of $70\\text{ cm}$. Using $\\pi \\approx \\dfrac{22}{7}$, how many complete revolutions does the wheel make during a $6.6\\text{ km}$ trail ride in Derby, Tasmania?",
+          "answer": "$3000\\text{ revolutions}$ ($C = 220\\text{ cm} = 2.2\\text{ m}$; $6600 \\div 2.2 = 3000$)"
+        },
+        {
+          "number": 7,
+          "question": "A goat is tethered by a $12\\text{ m}$ rope to the outside corner of a rectangular shed measuring $15\\text{ m}$ by $10\\text{ m}$ in a large open paddock. As the goat walks around the corner, the rope catches on the $10\\text{ m}$ wall so the remaining $2\\text{ m}$ of rope sweeps a further quadrant of radius $2\\text{ m}$. Find the exact total grazing area in terms of $\\pi$.",
+          "answer": "$109\\pi\\text{ m}^2$ ($\\dfrac{3}{4}\\pi(12)^2 + \\dfrac{1}{4}\\pi(2)^2 = 108\\pi + \\pi = 109\\pi\\text{ m}^2$)"
+        },
+        {
+          "number": 8,
+          "question": "An athletics running track has inner semicircular bends of radius $r = 35\\text{ m}$ and $8$ lanes, each of width $1.25\\text{ m}$, giving an outer bend radius of $R = 45\\text{ m}$. Find the exact area of synthetic track surface required for the two semicircular bends combined in terms of $\\pi$.",
+          "answer": "$800\\pi\\text{ m}^2$ ($\\pi(45^2 - 35^2) = \\pi(2025 - 1225) = 800\\pi\\text{ m}^2$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "For any circular sector with radius $r$, arc length $l = \\dfrac{\\theta}{360^\\circ} \\times 2\\pi r$, and area $A = \\dfrac{\\theta}{360^\\circ} \\times \\pi r^2$, prove the algebraic identity $A = \\dfrac{1}{2}lr$ (analogous to $A = \\dfrac{1}{2}bh$ for a triangle).",
+          "answer": "$\\dfrac{1}{2}lr = \\dfrac{1}{2}\\left(\\dfrac{\\theta}{360^\\circ} \\times 2\\pi r\\right)r = \\dfrac{\\theta}{360^\\circ} \\times \\pi r^2 = A$."
+        },
+        {
+          "number": 10,
+          "question": "A steel cable is wrapped tightly around the Earth's equator (modelled as a circle of radius $R$). If the cable is lengthened by just $2\\pi\\text{ metres}$ and raised to a uniform height $h$ above the equator all the way around, prove that $h = 1\\text{ m}$ regardless of the radius $R$ of the planet.",
+          "answer": "The new circumference is $2\\pi(R + h) = 2\\pi R + 2\\pi$. Dividing both sides by $2\\pi$ gives $R + h = R + 1 \\implies h = 1\\text{ m}$, which is independent of $R$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE7_2_1a_A", "expression": "Rational(72, 360) * 15**2", "expected": 45 },
+        { "id": "WSE7_2_1c_A", "expression": "13**2 - 5**2", "expected": 144 },
+        { "id": "WSE7_2_2b", "expression": "5 * 360 / (2 * 12)", "expected": 75 },
+        { "id": "WSE7_2_2d", "expression": "sqrt(9**2 + 63)", "expected": 12 },
+        { "id": "WSE7_2_4a", "expression": "2 * 90 + Rational(22, 7) * 70", "expected": 400 },
+        { "id": "WSE7_2_4b", "expression": "90 * 70 + Rational(22, 7) * 35**2", "expected": 10150 },
+        { "id": "WSE7_2_4c", "expression": "Rational(120, 360) * 2 * Rational(22, 7) * 21 + 2 * 21", "expected": 86 },
+        { "id": "WSE7_2_4d", "expression": "Rational(22, 7) * (14**2 - 7**2)", "expected": 462 },
+        { "id": "WSE7_2_6", "expression": "6600 / (Rational(22, 7) * Rational(7, 10))", "expected": 3000 },
+        { "id": "WSE7_2_7", "expression": "Rational(3, 4) * 12**2 + Rational(1, 4) * 2**2", "expected": 109 }
+      ]
+    },
+    {
+      "section_id": "7_3",
+      "section_code": "7C",
+      "title": "Volume, Capacity of Prisms and Time Zones",
+      "vcaa_code": "VC2M8M03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each volume, capacity, or flow rate to the specified unit:",
+          "parts": [
+            { "label": "a", "question": "$0.085\\text{ m}^3 + 45\\text{ L}$ in litres ($\\text{L}$)", "answer": "$130\\text{ L}$" },
+            { "label": "b", "question": "$2.4\\text{ ML}$ (megalitres, $1\\text{ ML} = 10^6\\text{ L}$) to cubic metres ($\\text{m}^3$)", "answer": "$2400\\text{ m}^3$" },
+            { "label": "c", "question": "$150\\text{ mL/s}$ to litres per minute ($\\text{L/min}$)", "answer": "$9\\text{ L/min}$" },
+            { "label": "d", "question": "$36\\,000\\text{ mm}^3$ to millilitres ($\\text{mL}$)", "answer": "$36\\text{ mL}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the volume of each composite or hollow right prism:",
+          "parts": [
+            { "label": "a", "question": "L-shaped prism: cross-section is a $10\\text{ cm} \\times 8\\text{ cm}$ rectangle minus a $6\\text{ cm} \\times 5\\text{ cm}$ corner, length $12\\text{ cm}$", "answer": "$600\\text{ cm}^3$" },
+            { "label": "b", "question": "Hollow square concrete pipe of length $200\\text{ cm}$ with outer side $25\\text{ cm}$ and inner side $15\\text{ cm}$", "answer": "$80\\,000\\text{ cm}^3$ ($80\\text{ L}$)" },
+            { "label": "c", "question": "Trapezoidal trough: $a = 40\\text{ cm}, b = 80\\text{ cm}, h_t = 50\\text{ cm}$, length $150\\text{ cm}$ (in litres)", "answer": "$450\\text{ L}$ ($450\\,000\\text{ cm}^3$)" },
+            { "label": "d", "question": "Pentagonal barn prism: $8\\text{ m} \\times 4\\text{ m}$ rectangular base topped by a triangle of height $3\\text{ m}$, length $15\\text{ m}$", "answer": "$660\\text{ m}^3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the unknown dimension in each prism or capacity problem:",
+          "parts": [
+            { "label": "a", "question": "Triangular prism of length $18\\text{ cm}$ and triangle base $12\\text{ cm}$ has volume $756\\text{ cm}^3$: find triangle height $h$", "answer": "$7\\text{ cm}$" },
+            { "label": "b", "question": "Trapezoidal prism of length $10\\text{ m}$, height $4\\text{ m}$, and top width $9\\text{ m}$ has volume $280\\text{ m}^3$: find bottom width $a$", "answer": "$5\\text{ m}$" },
+            { "label": "c", "question": "Cube whose total surface area is $294\\text{ cm}^2$: find its volume $V$", "answer": "$343\\text{ cm}^3$ (side $= 7\\text{ cm}$)" },
+            { "label": "d", "question": "Rectangular tank of base $1.5\\text{ m} \\times 0.8\\text{ m}$ filled at $30\\text{ L/min}$ for $24\\text{ minutes}$: find water depth in $\\text{cm}$", "answer": "$60\\text{ cm}$ ($0.6\\text{ m}$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each Australian and international time-zone problem:",
+          "parts": [
+            { "label": "a", "question": "Flight leaves Melbourne at $22{:}40$ AEDT (UTC$+11$) on Tuesday and flies $14\\text{ h } 35\\text{ min}$ to Dubai (UTC$+4$): find local arrival time", "answer": "$06{:}15$ Wednesday" },
+            { "label": "b", "question": "Flight leaves Perth at $15{:}20$ AWST (UTC$+8$) and arrives in Adelaide (ACDT, UTC$+10.5$) at $20{:}35$ local time: find flight duration", "answer": "$2\\text{ h } 45\\text{ min}$" },
+            { "label": "c", "question": "Live webinar starts in London at $14{:}00$ UTC on Thursday: find local time in Darwin (ACST, UTC$+9.5$)", "answer": "$23{:}30$ Thursday" },
+            { "label": "d", "question": "Flight leaves Sydney at $10{:}15$ AEST (UTC$+10$) on Friday and flies $13\\text{ h } 20\\text{ min}$ to Los Angeles (PDT, UTC$-7$): find local arrival time", "answer": "$06{:}35$ Friday" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A $25\\text{ m}$ swimming pool in Geelong is $12\\text{ m}$ wide and has a uniform slope from a shallow end depth of $1.2\\text{ m}$ to a deep end depth of $2.8\\text{ m}$ (forming a trapezoidal cross-section). Calculate the capacity of the pool in kilolitres ($\\text{kL}$) and find how many hours it takes to fill at $250\\text{ L}$ per minute.",
+          "answer": "$600\\text{ kL}$ ($600\\text{ m}^3$); $40\\text{ hours}$ ($600\\,000 \\div 15\\,000 = 40$)"
+        },
+        {
+          "number": 6,
+          "question": "When $32\\text{ mm}$ of rain falls uniformly on a flat rectangular factory roof in Dandenong measuring $40\\text{ m}$ by $25\\text{ m}$, all the runoff is channelled into an empty cylindrical/prismatic tank of base area $16\\text{ m}^2$. Find the volume of rainwater collected in litres and the depth of water in the tank.",
+          "answer": "$32\\,000\\text{ L}$ ($32\\text{ m}^3$); depth $= 2.0\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A Qantas flight departs Melbourne at $11{:}30\\text{ am}$ AEDT (UTC$+11$) on Saturday and arrives in Santiago, Chile (UTC$-3$) after a non-stop flight of $13\\text{ hours } 45\\text{ minutes}$. Find the local day and time of arrival in Santiago.",
+          "answer": "Saturday $11{:}15\\text{ am}$ ($14$ hours behind AEDT)"
+        },
+        {
+          "number": 8,
+          "question": "Four heavy granite cubes, each of edge length $15\\text{ cm}$, are completely submerged in a rectangular aquarium of length $75\\text{ cm}$ and width $30\\text{ cm}$. If the initial water depth was $24\\text{ cm}$, find the new water depth after all four cubes are submerged.",
+          "answer": "$30\\text{ cm}$ (Volume displaced $= 4 \\times 15^3 = 13\\,500\\text{ cm}^3$; rise $= \\dfrac{13\\,500}{75 \\times 30} = 6\\text{ cm}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "If every linear dimension (length, width, and height) of any right prism is multiplied by a scale factor $k$, prove algebraically that its cross-sectional area is multiplied by $k^2$ and its volume is multiplied by $k^3$.",
+          "answer": "Scaling base dimensions by $k$ multiplies cross-sectional area $A$ by $k^2$ ($A' = k^2 A$), and scaling the prism length $h$ by $k$ gives $h' = kh$, so $V' = A'h' = (k^2 A)(kh) = k^3 Ah = k^3 V$."
+        },
+        {
+          "number": 10,
+          "question": "A rectangular prism has three adjacent face areas of $A_1 = lw = 24\\text{ cm}^2$, $A_2 = wh = 32\\text{ cm}^2$, and $A_3 = lh = 48\\text{ cm}^2$. Prove that the volume $V = lwh$ satisfies $V = \\sqrt{A_1 A_2 A_3}$, and hence calculate the volume without finding $l, w, h$ individually first.",
+          "answer": "$A_1 A_2 A_3 = (lw)(wh)(lh) = l^2 w^2 h^2 = (lwh)^2 = V^2$, so $V = \\sqrt{24 \\times 32 \\times 48} = \\sqrt{36\\,864} = 192\\text{ cm}^3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE7_3_1a", "expression": "Rational(85, 1000) * 1000 + 45", "expected": 130 },
+        { "id": "WSE7_3_1c", "expression": "150 * 60 / 1000", "expected": 9 },
+        { "id": "WSE7_3_2a", "expression": "(10 * 8 - 6 * 5) * 12", "expected": 600 },
+        { "id": "WSE7_3_2b", "expression": "(25**2 - 15**2) * 200", "expected": 80000 },
+        { "id": "WSE7_3_2d", "expression": "(8 * 4 + Rational(1, 2) * 8 * 3) * 15", "expected": 660 },
+        { "id": "WSE7_3_3c", "expression": "sqrt(294 / 6)**3", "expected": 343 },
+        { "id": "WSE7_3_5", "expression": "Rational(1, 2) * (Rational(12, 10) + Rational(28, 10)) * 25 * 12", "expected": 600 },
+        { "id": "WSE7_3_6", "expression": "(40 * 25 * Rational(32, 1000)) / 16", "expected": 2 },
+        { "id": "WSE7_3_8", "expression": "24 + (4 * 15**3) / (75 * 30)", "expected": 30 },
+        { "id": "WSE7_3_10", "expression": "sqrt(24 * 32 * 48)", "expected": 192 }
+      ]
+    },
+    {
+      "section_id": "7_4",
+      "section_code": "7D",
+      "title": "Time Zones, 24-Hour Time, and Duration",
+      "vcaa_code": "VC2M8M04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each time duration or fractional hour exactly:",
+          "parts": [
+            { "label": "a", "question": "$4.65\\text{ hours}$ into hours, minutes, and seconds", "answer": "$4\\text{ h } 39\\text{ min } 0\\text{ s}$" },
+            { "label": "b", "question": "$3\\text{ h } 45\\text{ min } 36\\text{ s}$ as a decimal number of hours", "answer": "$3.76\\text{ hours}$" },
+            { "label": "c", "question": "Duration from $19{:}42{:}15$ on Monday to $04{:}18{:}50$ on Tuesday", "answer": "$8\\text{ h } 36\\text{ min } 35\\text{ s}$" },
+            { "label": "d", "question": "24-hour time $16\\text{ h } 48\\text{ min}$ before $07{:}20$ on Thursday", "answer": "$14{:}32$ Wednesday" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "During Australian summer, Melbourne is on AEDT (UTC$+11$), Adelaide is on ACDT (UTC$+10.5$), Brisbane is on AEST (UTC$+10$), Darwin is on ACST (UTC$+9.5$), and Perth is on AWST (UTC$+8$). When it is $00{:}15$ Wednesday in Melbourne, find the local day and 24-hour time in:",
+          "parts": [
+            { "label": "a", "question": "Adelaide (ACDT, UTC$+10.5$)", "answer": "$23{:}45$ Tuesday" },
+            { "label": "b", "question": "Brisbane (AEST, UTC$+10$)", "answer": "$23{:}15$ Tuesday" },
+            { "label": "c", "question": "Darwin (ACST, UTC$+9.5$)", "answer": "$22{:}45$ Tuesday" },
+            { "label": "d", "question": "Perth (AWST, UTC$+8$)", "answer": "$21{:}15$ Tuesday" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the unknown flight duration or UTC offset:",
+          "parts": [
+            { "label": "a", "question": "Departs Sydney $16{:}50$ AEDT (UTC$+11$), arrives Singapore (UTC$+8$) at $22{:}05$ same day: find flight duration", "answer": "$8\\text{ h } 15\\text{ min}$" },
+            { "label": "b", "question": "Departs Perth $23{:}30$ AWST (UTC$+8$) Friday, flies $11\\text{ h } 15\\text{ min}$ to Johannesburg (UTC$+2$): find arrival time", "answer": "$04{:}45$ Saturday" },
+            { "label": "c", "question": "Departs Auckland (UTC$+13$) at $09{:}00$ Tuesday, flies $12\\text{ h } 30\\text{ min}$ to Honolulu (UTC$-10$): find arrival day and time", "answer": "$22{:}30$ Monday" },
+            { "label": "d", "question": "Departs Brisbane (UTC$+10$) at $10{:}00$, flies $9\\text{ h } 30\\text{ min}$ and lands at $15{:}30$ local time same day: find destination UTC offset", "answer": "UTC$+6$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use the longitude rule ($15^\\circ$ of longitude $= 1\\text{ hour}$ of solar time, $1^\\circ = 4\\text{ minutes}$) to calculate:",
+          "parts": [
+            { "label": "a", "question": "Solar time difference between $150^\\circ\\text{E}$ (Sydney) and $115^\\circ\\text{E}$ (Perth)", "answer": "$2\\text{ h } 20\\text{ min}$" },
+            { "label": "b", "question": "Solar time difference between $145^\\circ\\text{E}$ (Melbourne) and $75^\\circ\\text{W}$ (New York)", "answer": "$14\\text{ h } 40\\text{ min}$" },
+            { "label": "c", "question": "Longitude of a ship whose local solar noon occurs $3\\text{ h } 40\\text{ min}$ ahead of UTC ($0^\\circ$)", "answer": "$55^\\circ\\text{E}$" },
+            { "label": "d", "question": "Standard UTC offset of Broken Hill, NSW, which uses Australian Central Time (UTC$+9.5$ in winter) in minutes ahead of UTC", "answer": "$570\\text{ minutes}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A non-stop Qantas flight departs Perth at $18{:}45$ AWST (UTC$+8$) on Saturday and flies for $17\\text{ hours } 20\\text{ minutes}$ to London (BST, UTC$+1$). After a $3\\text{ hour } 15\\text{ minute}$ transit in London, a connecting flight takes $8\\text{ hours } 10\\text{ minutes}$ to New York (EDT, UTC$-4$). Find the local day and 24-hour arrival time in New York.",
+          "answer": "$11{:}30$ Sunday (Total elapsed time $= 28\\text{ h } 45\\text{ min}$; $18{:}45$ Sat $+ 28\\text{ h } 45\\text{ min} = 23{:}30$ Sun AWST, minus $12\\text{ h}$ time difference $= 11{:}30$ Sunday EDT)"
+        },
+        {
+          "number": 6,
+          "question": "The Indian Pacific train departs Sydney Central at $14{:}40$ AEDT (UTC$+11$) on Wednesday and arrives in East Perth at $13{:}00$ AWST (UTC$+8$) on Saturday. Calculate the total elapsed journey time in hours and minutes.",
+          "answer": "$73\\text{ hours } 20\\text{ minutes}$ ($13{:}00$ AWST $= 16{:}00$ AEDT Saturday, which is $3\\text{ days } 1\\text{ h } 20\\text{ min} = 73\\text{ h } 20\\text{ min}$)"
+        },
+        {
+          "number": 7,
+          "question": "A global software engineering team has members in Melbourne (AEDT, UTC$+11$), Bangalore (IST, UTC$+5.5$), and Berlin (CET, UTC$+1$). They require a $1$-hour video meeting at a time when every member's local time (from start to finish of the meeting) falls between $08{:}00$ and $20{:}00$. Find the earliest and latest valid meeting start times in Melbourne local time (AEDT).",
+          "answer": "Earliest start: $18{:}00$ AEDT (when Berlin is $08{:}00$ CET and Bangalore is $12{:}30$ IST); Latest start: $19{:}00$ AEDT (finishing at $20{:}00$ AEDT)"
+        },
+        {
+          "number": 8,
+          "question": "A precision maritime chronometer loses $18\\text{ seconds}$ every $24\\text{ hours}$. If it is set accurately to $12{:}00{:}00$ UTC when a yacht departs Fremantle and the voyage to Mauritius takes $16\\text{ days } 8\\text{ hours}$, by how many minutes and seconds is the chronometer slow upon arrival?",
+          "answer": "$4\\text{ minutes } 54\\text{ seconds}$ ($16\\frac{1}{3} \\times 18 = \\dfrac{49}{3} \\times 18 = 294\\text{ seconds} = 4\\text{ min } 54\\text{ s}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A charter flight departs Auckland (NZDT, UTC$+13$) at $08{:}30$ on Tuesday 10 March and flies east across the International Date Line for $11\\text{ hours } 45\\text{ minutes}$ to San Francisco (PDT, UTC$-7$). Explain why the passengers land on Monday 9 March (the calendar day before they took off) and calculate their exact local arrival time.",
+          "answer": "San Francisco is $13 - (-7) = 20$ hours behind Auckland. Since the flight duration ($11\\text{ h } 45\\text{ min}$) is less than the $20$-hour backward offset, local time moves back by $20\\text{ h} - 11\\text{ h } 45\\text{ min} = 8\\text{ h } 15\\text{ min}$, landing at $00{:}15$ on Monday 9 March."
+        },
+        {
+          "number": 10,
+          "question": "An aircraft flies from City A (UTC$+a$) to City B (UTC$+b$) with flight duration $d_1\\text{ hours}$, and returns from B to A with flight duration $d_2\\text{ hours}$. If the local departure and arrival times are recorded, prove that the time-zone difference $(b - a)$ cancels out when you add the apparent local time changes, so $d_1 + d_2 = \\Delta t_{\\text{local, out}} + \\Delta t_{\\text{local, back}}$.",
+          "answer": "On the outbound leg, $\\Delta t_{\\text{local, out}} = d_1 + (b - a)$; on the return leg, $\\Delta t_{\\text{local, back}} = d_2 + (a - b)$. Adding the two equations cancels $(b - a) + (a - b) = 0$, giving $\\Delta t_{\\text{local, out}} + \\Delta t_{\\text{local, back}} = d_1 + d_2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE7_4_1a", "expression": "Rational(65, 100) * 60", "expected": 39 },
+        { "id": "WSE7_4_1b", "expression": "3 + Rational(45, 60) + Rational(36, 3600)", "expected": "94/25" },
+        { "id": "WSE7_4_3a", "expression": "(22 * 60 + 5) - ((16 - 3) * 60 + 50)", "expected": 495 },
+        { "id": "WSE7_4_3d", "expression": "10 + Rational(155, 10) - Rational(195, 10)", "expected": 6 },
+        { "id": "WSE7_4_4a", "expression": "(150 - 115) * 4", "expected": 140 },
+        { "id": "WSE7_4_4b", "expression": "(145 - (-75)) * 4", "expected": 880 },
+        { "id": "WSE7_4_4c", "expression": "220 / 4", "expected": 55 },
+        { "id": "WSE7_4_4d", "expression": "Rational(19, 2) * 60", "expected": 570 },
+        { "id": "WSE7_4_6", "expression": "3 * 24 + (16 * 60 - (14 * 60 + 40)) / 60", "expected": "220/3" },
+        { "id": "WSE7_4_8", "expression": "(16 + Rational(8, 24)) * 18", "expected": 294 }
+      ]
+    }
+  ]
+}

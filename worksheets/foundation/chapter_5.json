@@ -1,0 +1,199 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Algebraic Techniques",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "5_1",
+      "section_code": "5A",
+      "title": "Language of Algebra, Substitution and Like Terms",
+      "vcaa_code": "VC2M8A01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Substitute $x = 4$ and $y = 3$ into each expression and evaluate:",
+          "parts": [
+            { "label": "a", "question": "$x + 7$", "answer": "$11$" },
+            { "label": "b", "question": "$5y$ ($= 5 \\times 3$)", "answer": "$15$" },
+            { "label": "c", "question": "$2x + y$ ($= 2 \\times 4 + 3$)", "answer": "$11$" },
+            { "label": "d", "question": "$3x - 2y$ ($= 3 \\times 4 - 2 \\times 3$)", "answer": "$6$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Simplify each expression by adding or subtracting the coefficients of the like terms:",
+          "parts": [
+            { "label": "a", "question": "$3a + 5a$", "answer": "$8a$" },
+            { "label": "b", "question": "$9x - 4x$", "answer": "$5x$" },
+            { "label": "c", "question": "$4m + 2n + 3m + 5n$", "answer": "$7m + 7n$" },
+            { "label": "d", "question": "$8p + 6 - 3p - 2$", "answer": "$5p + 4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Multiply the numbers first, then write the pronumerals in alphabetical order:",
+          "parts": [
+            { "label": "a", "question": "$4 \\times 3x$", "answer": "$12x$" },
+            { "label": "b", "question": "$2a \\times 5b$", "answer": "$10ab$" },
+            { "label": "c", "question": "$-3m \\times 4n$", "answer": "$-12mn$" },
+            { "label": "d", "question": "$5x \\times 3x$", "answer": "$15x^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Divide the coefficients and cancel common pronumerals to simplify:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{15x}{3}$", "answer": "$5x$" },
+            { "label": "b", "question": "$\\dfrac{20ab}{4b}$", "answer": "$5a$" },
+            { "label": "c", "question": "$\\dfrac{18m}{6m}$", "answer": "$3$" },
+            { "label": "d", "question": "$\\dfrac{-24xy}{8x}$", "answer": "$-3y$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An equilateral triangle has $3$ equal sides each of length $2x\\text{ cm}$. Add $2x + 2x + 2x$ to find a simplified expression for its perimeter.",
+          "answer": "$6x\\text{ cm}$"
+        },
+        {
+          "number": 6,
+          "question": "In Australian Rules football, a goal is worth $6$ points and a behind is worth $1$ point, giving total score $6g + b$. Substitute $g = 8$ and $b = 5$ to find the team's score.",
+          "answer": "$53\\text{ points}$ ($6 \\times 8 + 5 = 53$)"
+        },
+        {
+          "number": 7,
+          "question": "A rectangle has length $5a\\text{ cm}$ and width $3b\\text{ cm}$. Multiply $5a \\times 3b$ to write a simplified expression for its area.",
+          "answer": "$15ab\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "An electrician in Perth charges a $\\$60$ call-out fee plus $\\$50$ per hour ($50h + 60$). Substitute $h = 3$ to find the total charge for $3$ hours.",
+          "answer": "$\\$210$ ($50 \\times 3 + 60 = 210$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $4a + 3b$ cannot be simplified to $7ab$. Check by substituting $a = 2$ and $b = 1$ into both expressions.",
+          "answer": "$4a$ and $3b$ are unlike terms (different pronumerals). When $a = 2, b = 1$: $4(2) + 3(1) = 11$, whereas $7(2)(1) = 14 \\neq 11$."
+        },
+        {
+          "number": 10,
+          "question": "Are $6xy$ and $2yx$ like terms? Explain how the order of multiplication helps you decide, and simplify $6xy + 2yx$.",
+          "answer": "Yes; multiplication can be done in any order ($yx = xy$), so $6xy + 2yx = 8xy$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF5_1_1a", "expression": "4 + 7", "expected": 11 },
+        { "id": "WSF5_1_1c", "expression": "2 * 4 + 3", "expected": 11 },
+        { "id": "WSF5_1_1d", "expression": "3 * 4 - 2 * 3", "expected": 6 },
+        { "id": "WSF5_1_2c", "expression": "simplify(4*m + 2*n + 3*m + 5*n - (7*m + 7*n))", "expected": 0 },
+        { "id": "WSF5_1_2d", "expression": "simplify(8*p + 6 - 3*p - 2 - (5*p + 4))", "expected": 0 },
+        { "id": "WSF5_1_3b", "expression": "simplify(2*a * 5*b - 10*a*b)", "expected": 0 },
+        { "id": "WSF5_1_3d", "expression": "simplify(5*x * 3*x - 15*x**2)", "expected": 0 },
+        { "id": "WSF5_1_4b", "expression": "simplify((20*a*b) / (4*b) - 5*a)", "expected": 0 },
+        { "id": "WSF5_1_6", "expression": "6 * 8 + 5", "expected": 53 },
+        { "id": "WSF5_1_8", "expression": "50 * 3 + 60", "expected": 210 }
+      ]
+    },
+    {
+      "section_id": "5_2",
+      "section_code": "5B",
+      "title": "Expanding Brackets and Factorising Linear Expressions",
+      "vcaa_code": "VC2M8A01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Expand each bracket by multiplying the number outside by BOTH terms inside:",
+          "parts": [
+            { "label": "a", "question": "$3(x + 4) = 3 \\times x + 3 \\times 4$", "answer": "$3x + 12$" },
+            { "label": "b", "question": "$5(a - 2) = 5 \\times a - 5 \\times 2$", "answer": "$5a - 10$" },
+            { "label": "c", "question": "$4(2m + 3)$", "answer": "$8m + 12$" },
+            { "label": "d", "question": "$-2(x + 5)$", "answer": "$-2x - 10$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Expand the bracket first, then collect the like terms:",
+          "parts": [
+            { "label": "a", "question": "$2(x + 3) + 4x = 2x + 6 + 4x$", "answer": "$6x + 6$" },
+            { "label": "b", "question": "$3(a + 5) - 7 = 3a + 15 - 7$", "answer": "$3a + 8$" },
+            { "label": "c", "question": "$4(m - 2) + 10$", "answer": "$4m + 2$" },
+            { "label": "d", "question": "$5(y + 1) + 2(y + 3)$", "answer": "$7y + 11$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Fill in the missing inside terms to complete each factorisation:",
+          "parts": [
+            { "label": "a", "question": "$4x + 8 = 4(\\_\\_\\_ + \\_\\_\\_)$", "answer": "$4(x + 2)$" },
+            { "label": "b", "question": "$6a - 15 = 3(\\_\\_\\_ - \\_\\_\\_)$", "answer": "$3(2a - 5)$" },
+            { "label": "c", "question": "$10m + 25 = 5(\\_\\_\\_ + \\_\\_\\_)$", "answer": "$5(2m + 5)$" },
+            { "label": "d", "question": "$12y - 18 = 6(\\_\\_\\_ - \\_\\_\\_)$", "answer": "$6(2y - 3)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise each expression by taking out the Highest Common Factor ($\\text{HCF}$):",
+          "parts": [
+            { "label": "a", "question": "$7x + 14$ ($\\text{HCF} = 7$)", "answer": "$7(x + 2)$" },
+            { "label": "b", "question": "$9a - 12$ ($\\text{HCF} = 3$)", "answer": "$3(3a - 4)$" },
+            { "label": "c", "question": "$x^2 + 5x$ ($\\text{HCF} = x$)", "answer": "$x(x + 5)$" },
+            { "label": "d", "question": "$6m^2 - 8m$ ($\\text{HCF} = 2m$)", "answer": "$2m(3m - 4)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular garden bed has width $4\\text{ m}$ and length $(x + 5)\\text{ m}$. Expand $4(x + 5)$ to write an expression for its area without brackets.",
+          "answer": "$(4x + 20)\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "Four friends each buy a burger costing $\\$b$ and a drink costing $\\$3$. Expand $4(b + 3)$ to write an expression for the total cost.",
+          "answer": "$\\$(4b + 12)$"
+        },
+        {
+          "number": 7,
+          "question": "The area of a rectangular lawn is $(5x + 15)\\text{ m}^2$ and its width is $5\\text{ m}$. Factorise $5x + 15$ by taking out $5$ to find an expression for its length.",
+          "answer": "$5(x + 3)$, so the length is $(x + 3)\\text{ m}$."
+        },
+        {
+          "number": 8,
+          "question": "A square has $4$ equal sides each of length $(2x + 1)\\text{ cm}$. Expand $4(2x + 1)$ to find its perimeter.",
+          "answer": "$(8x + 4)\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When Chloe expands $3(x + 5)$, she writes $3x + 5$. Explain what mistake Chloe made and write the correct expanded expression.",
+          "answer": "She forgot to multiply the second term ($+5$) by $3$. Multiplying both terms inside the brackets by $3$ gives $3x + 15$."
+        },
+        {
+          "number": 10,
+          "question": "A student factorises $8x + 12$ as $2(4x + 6)$. Explain why this is not completely factorised and write the fully factorised answer.",
+          "answer": "$4x$ and $6$ still share a common factor of $2$; the Highest Common Factor of $8x$ and $12$ is $4$, giving $4(2x + 3)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF5_2_1a", "expression": "simplify(3*(x + 4) - (3*x + 12))", "expected": 0 },
+        { "id": "WSF5_2_1c", "expression": "simplify(4*(2*m + 3) - (8*m + 12))", "expected": 0 },
+        { "id": "WSF5_2_1d", "expression": "simplify(-2*(x + 5) - (-2*x - 10))", "expected": 0 },
+        { "id": "WSF5_2_2a", "expression": "simplify(2*(x + 3) + 4*x - (6*x + 6))", "expected": 0 },
+        { "id": "WSF5_2_2d", "expression": "simplify(5*(y + 1) + 2*(y + 3) - (7*y + 11))", "expected": 0 },
+        { "id": "WSF5_2_3b", "expression": "simplify(3*(2*a - 5) - (6*a - 15))", "expected": 0 },
+        { "id": "WSF5_2_4c", "expression": "simplify(x*(x + 5) - (x**2 + 5*x))", "expected": 0 },
+        { "id": "WSF5_2_4d", "expression": "simplify(2*m*(3*m - 4) - (6*m**2 - 8*m))", "expected": 0 },
+        { "id": "WSF5_2_5", "expression": "simplify(4*(x + 5) - (4*x + 20))", "expected": 0 },
+        { "id": "WSF5_2_8", "expression": "simplify(4*(2*x + 1) - (8*x + 4))", "expected": 0 }
+      ]
+    }
+  ]
+}

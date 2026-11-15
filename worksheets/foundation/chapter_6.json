@@ -1,0 +1,295 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Linear Equations and Coordinate Graphs",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "6_1",
+      "section_code": "6A",
+      "title": "Solving Linear Equations",
+      "vcaa_code": "VC2M8A02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each one-step equation using the inverse operation:",
+          "parts": [
+            { "label": "a", "question": "$x + 9 = 15$", "answer": "$x = 6$" },
+            { "label": "b", "question": "$x - 7 = 11$", "answer": "$x = 18$" },
+            { "label": "c", "question": "$4x = 28$", "answer": "$x = 7$" },
+            { "label": "d", "question": "$\\dfrac{x}{5} = 6$", "answer": "$x = 30$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Undo the $+ / -$ term first, then divide by the coefficient of $x$:",
+          "parts": [
+            { "label": "a", "question": "$2x + 5 = 17$", "answer": "$x = 6$" },
+            { "label": "b", "question": "$3x - 4 = 14$", "answer": "$x = 6$" },
+            { "label": "c", "question": "$5x + 8 = 33$", "answer": "$x = 5$" },
+            { "label": "d", "question": "$4x - 9 = 19$", "answer": "$x = 7$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each two-step equation involving a fraction:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x}{3} + 2 = 7$", "answer": "$x = 15$" },
+            { "label": "b", "question": "$\\dfrac{x}{4} - 3 = 2$", "answer": "$x = 20$" },
+            { "label": "c", "question": "$\\dfrac{x + 5}{2} = 6$", "answer": "$x = 7$" },
+            { "label": "d", "question": "$\\dfrac{x - 4}{3} = 5$", "answer": "$x = 19$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Divide both sides by the number outside the brackets first (or expand), then solve:",
+          "parts": [
+            { "label": "a", "question": "$2(x + 3) = 14$", "answer": "$x = 4$" },
+            { "label": "b", "question": "$3(x - 2) = 15$", "answer": "$x = 7$" },
+            { "label": "c", "question": "$5(x + 1) = 30$", "answer": "$x = 5$" },
+            { "label": "d", "question": "$4(x - 5) = 12$", "answer": "$x = 8$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A plumber in Geelong charges a $\\$40$ call-out fee plus $\\$60$ per hour for $h$ hours. Solve $60h + 40 = 220$ to find the number of hours worked.",
+          "answer": "$h = 3\\text{ hours}$"
+        },
+        {
+          "number": 6,
+          "question": "Three identical movie tickets plus a $\\$9$ bucket of popcorn cost $\\$54$ in total. Solve $3t + 9 = 54$ to find the cost $t$ of one ticket.",
+          "answer": "$t = \\$15$"
+        },
+        {
+          "number": 7,
+          "question": "When a mystery number $n$ is doubled and $7$ is subtracted, the result is $21$. Solve $2n - 7 = 21$ to find the number $n$.",
+          "answer": "$n = 14$"
+        },
+        {
+          "number": 8,
+          "question": "Four friends share a pizza bill equally, and each person also pays $\\$4$ for a drink, spending $\\$16$ each. Solve $\\dfrac{p}{4} + 4 = 16$ to find the pizza bill $p$.",
+          "answer": "$p = \\$48$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "To solve $3x + 6 = 21$, Liam divides by $3$ first and writes $x + 6 = 7$. Explain what operation Liam should do first instead and find the correct value of $x$.",
+          "answer": "Subtract $6$ from both sides first to get $3x = 15$, then divide by $3$ to get $x = 5$."
+        },
+        {
+          "number": 10,
+          "question": "Show by substituting $x = 4$ into the left-hand side of $5x - 3 = 17$ how you can check that $x = 4$ is the correct solution.",
+          "answer": "$\\text{LHS} = 5(4) - 3 = 20 - 3 = 17 = \\text{RHS}$, so $x = 4$ is correct."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF6_1_1a", "expression": "6 + 9", "expected": 15 },
+        { "id": "WSF6_1_1d", "expression": "30 / 5", "expected": 6 },
+        { "id": "WSF6_1_2a", "expression": "2 * 6 + 5", "expected": 17 },
+        { "id": "WSF6_1_2d", "expression": "4 * 7 - 9", "expected": 19 },
+        { "id": "WSF6_1_3c", "expression": "(7 + 5) / 2", "expected": 6 },
+        { "id": "WSF6_1_4b", "expression": "3 * (7 - 2)", "expected": 15 },
+        { "id": "WSF6_1_5", "expression": "60 * 3 + 40", "expected": 220 },
+        { "id": "WSF6_1_6", "expression": "3 * 15 + 9", "expected": 54 },
+        { "id": "WSF6_1_7", "expression": "2 * 14 - 7", "expected": 21 },
+        { "id": "WSF6_1_8", "expression": "48 / 4 + 4", "expected": 16 }
+      ]
+    },
+    {
+      "section_id": "6_2",
+      "section_code": "6B",
+      "title": "Graphing Linear Relations and Modelling",
+      "vcaa_code": "VC2M8A03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Substitute each $x$-value into the rule $y = 2x + 3$ to find $y$:",
+          "parts": [
+            { "label": "a", "question": "$x = 0$", "answer": "$y = 3$" },
+            { "label": "b", "question": "$x = 1$", "answer": "$y = 5$" },
+            { "label": "c", "question": "$x = 3$", "answer": "$y = 9$" },
+            { "label": "d", "question": "$x = 5$", "answer": "$y = 13$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "For each line in the form $y = mx + c$, state the gradient $m$ and $y$-intercept $c$:",
+          "parts": [
+            { "label": "a", "question": "$y = 3x + 4$", "answer": "$m = 3, c = 4$" },
+            { "label": "b", "question": "$y = 2x - 5$", "answer": "$m = 2, c = -5$" },
+            { "label": "c", "question": "$y = -4x + 7$", "answer": "$m = -4, c = 7$" },
+            { "label": "d", "question": "$y = x + 9$", "answer": "$m = 1, c = 9$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use $m = \\dfrac{\\text{rise}}{\\text{run}} = \\dfrac{y_2 - y_1}{x_2 - x_1}$ to find the gradient between each pair of points:",
+          "parts": [
+            { "label": "a", "question": "$(0, 2)$ and $(3, 8)$", "answer": "$m = 2$" },
+            { "label": "b", "question": "$(1, 3)$ and $(5, 15)$", "answer": "$m = 3$" },
+            { "label": "c", "question": "$(0, 10)$ and $(2, 4)$", "answer": "$m = -3$" },
+            { "label": "d", "question": "$(2, 5)$ and $(6, 9)$", "answer": "$m = 1$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Write the linear equation $y = mx + c$ given the gradient $m$ and $y$-intercept $c$:",
+          "parts": [
+            { "label": "a", "question": "$m = 5, c = 2$", "answer": "$y = 5x + 2$" },
+            { "label": "b", "question": "$m = 3, c = -4$", "answer": "$y = 3x - 4$" },
+            { "label": "c", "question": "$m = -2, c = 6$", "answer": "$y = -2x + 6$" },
+            { "label": "d", "question": "$m = 4, c = 0$", "answer": "$y = 4x$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A seedling is $6\\text{ cm}$ tall when planted and grows $3\\text{ cm}$ per week ($w$), modelled by $H = 3w + 6$. Substitute $w = 5$ to find its height after $5$ weeks.",
+          "answer": "$21\\text{ cm}$"
+        },
+        {
+          "number": 6,
+          "question": "Hiring a bicycle in Canberra costs a $\\$10$ deposit plus $\\$8$ per hour ($t$), modelled by $C = 8t + 10$. Substitute $t = 4$ to find the cost for $4$ hours.",
+          "answer": "$\\$42$"
+        },
+        {
+          "number": 7,
+          "question": "A $50\\text{ L}$ camping water drum leaks $5\\text{ L}$ per hour ($t$), so the volume left is $V = 50 - 5t$. Substitute $t = 6$ to find how many litres remain after $6$ hours.",
+          "answer": "$20\\text{ L}$"
+        },
+        {
+          "number": 8,
+          "question": "A bushwalker is travelling at a steady speed along a trail so her distance from camp is $d = 4t + 2\\text{ km}$ after $t$ hours. State her starting distance ($t = 0$) and her walking speed (gradient).",
+          "answer": "Starting distance $= 2\\text{ km}$, speed $= 4\\text{ km/h}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Does the point $(3, 11)$ lie on the line $y = 4x - 1$? Substitute $x = 3$ into the equation to check and explain your answer.",
+          "answer": "Yes, because substituting $x = 3$ gives $y = 4(3) - 1 = 11$, which matches the $y$-coordinate."
+        },
+        {
+          "number": 10,
+          "question": "Line A has equation $y = 2x + 5$ and Line B has equation $y = -2x + 5$. Which line slopes upwards from left to right, and what point do both lines share on the $y$-axis?",
+          "answer": "Line A slopes upwards (positive gradient $m = 2$). Both lines cross the $y$-axis at $(0, 5)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF6_2_1c", "expression": "2 * 3 + 3", "expected": 9 },
+        { "id": "WSF6_2_1d", "expression": "2 * 5 + 3", "expected": 13 },
+        { "id": "WSF6_2_3a", "expression": "(8 - 2) / (3 - 0)", "expected": 2 },
+        { "id": "WSF6_2_3b", "expression": "(15 - 3) / (5 - 1)", "expected": 3 },
+        { "id": "WSF6_2_3c", "expression": "(4 - 10) / (2 - 0)", "expected": -3 },
+        { "id": "WSF6_2_3d", "expression": "(9 - 5) / (6 - 2)", "expected": 1 },
+        { "id": "WSF6_2_5", "expression": "3 * 5 + 6", "expected": 21 },
+        { "id": "WSF6_2_6", "expression": "8 * 4 + 10", "expected": 42 },
+        { "id": "WSF6_2_7", "expression": "50 - 5 * 6", "expected": 20 },
+        { "id": "WSF6_2_9", "expression": "4 * 3 - 1", "expected": 11 }
+      ]
+    },
+    {
+      "section_id": "6_3",
+      "section_code": "6C",
+      "title": "Algebraic Algorithms, Flowcharts, and Error-Testing",
+      "vcaa_code": "VC2M8A04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Follow the number machine: $\\text{Input } x \\to \\text{Multiply by } 3 \\to \\text{Add } 2 \\to \\text{Output } y$. Find:",
+          "parts": [
+            { "label": "a", "question": "Output $y$ when $x = 4$ ($3 \\times 4 + 2$)", "answer": "$14$" },
+            { "label": "b", "question": "Output $y$ when $x = 7$ ($3 \\times 7 + 2$)", "answer": "$23$" },
+            { "label": "c", "question": "Output $y$ when $x = 0$ ($3 \\times 0 + 2$)", "answer": "$2$" },
+            { "label": "d", "question": "The algebraic rule for $y$ in terms of $x$", "answer": "$y = 3x + 2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Work backwards (undo $+ 5$ with $- 5$, then undo $\\times 2$ with $\\div 2$) to find the input $x$ for $y = 2x + 5$:",
+          "parts": [
+            { "label": "a", "question": "Output $y = 13$", "answer": "$x = 4$" },
+            { "label": "b", "question": "Output $y = 19$", "answer": "$x = 7$" },
+            { "label": "c", "question": "Output $y = 25$", "answer": "$x = 10$" },
+            { "label": "d", "question": "Output $y = 9$", "answer": "$x = 2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Follow the decision rule: If $x \\ge 10$, output $x + 5$; if $x < 10$, output $2x$. Find the output for:",
+          "parts": [
+            { "label": "a", "question": "$x = 12$ (since $12 \\ge 10$, calculate $12 + 5$)", "answer": "$17$" },
+            { "label": "b", "question": "$x = 6$ (since $6 < 10$, calculate $2 \\times 6$)", "answer": "$12$" },
+            { "label": "c", "question": "$x = 10$ (since $10 \\ge 10$, calculate $10 + 5$)", "answer": "$15$" },
+            { "label": "d", "question": "$x = 4$ (since $4 < 10$, calculate $2 \\times 4$)", "answer": "$8$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Substitute the given value of $x$ into the Left-Hand Side ($\\text{LHS}$) to test if the solution is correct (Yes or No):",
+          "parts": [
+            { "label": "a", "question": "Test $x = 3$ in $2x + 4 = 10$ ($\\text{LHS} = 2(3) + 4$)", "answer": "Yes ($10 = 10$)" },
+            { "label": "b", "question": "Test $x = 5$ in $3x - 2 = 11$ ($\\text{LHS} = 3(5) - 2$)", "answer": "No ($\\text{LHS} = 13 \\neq 11$)" },
+            { "label": "c", "question": "Test $x = 4$ in $5x - 6 = 14$ ($\\text{LHS} = 5(4) - 6$)", "answer": "Yes ($14 = 14$)" },
+            { "label": "d", "question": "Test $x = 6$ in $4x + 1 = 21$ ($\\text{LHS} = 4(6) + 1$)", "answer": "No ($\\text{LHS} = 25 \\neq 21$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A ticket machine at Taronga Zoo uses the rule: if age $a < 16$, price is $\\$20$; if $a \\ge 16$, price is $\\$38$. Find the ticket price for (a) a $13$-year-old student and (b) a $42$-year-old parent.",
+          "answer": "(a) $\\$20$, (b) $\\$38$"
+        },
+        {
+          "number": 6,
+          "question": "A savings algorithm starts with $\\$10$ and adds $\\$6$ each week: $\\text{Week } 0 = \\$10$. Add $\\$6$ each step to list the balance after Week $1$, Week $2$, and Week $3$.",
+          "answer": "Week $1$: $\\$16$, Week $2$: $\\$22$, Week $3$: $\\$28$"
+        },
+        {
+          "number": 7,
+          "question": "An oven pre-heats using the loop: Start at $T = 50^\\circ\\text{C}$, and add $50^\\circ\\text{C}$ each minute until $T = 200^\\circ\\text{C}$. How many minutes does it take to reach $200^\\circ\\text{C}$?",
+          "answer": "$3\\text{ minutes}$ ($50 \\to 100 \\to 150 \\to 200$)"
+        },
+        {
+          "number": 8,
+          "question": "Noah solves $2x + 6 = 16$ and gets $x = 8$. Substitute $x = 8$ into $2x + 6$ to show why his answer is wrong, then state the correct value of $x$.",
+          "answer": "$2(8) + 6 = 22 \\neq 16$, so $x = 8$ is wrong; the correct solution is $x = 5$."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why the flowchart $\\text{Input } x \\to \\text{Add } 4 \\to \\text{Multiply by } 2$ gives a different rule ($2(x + 4) = 2x + 8$) from $\\text{Input } x \\to \\text{Multiply by } 2 \\to \\text{Add } 4$ ($2x + 4$). Test both with $x = 3$.",
+          "answer": "In the first flowchart, the $+ 4$ is also multiplied by $2$: for $x = 3$, $(3 + 4) \\times 2 = 14$, whereas $3 \\times 2 + 4 = 10$."
+        },
+        {
+          "number": 10,
+          "question": "When reversing a two-step flowchart ($\\times 5$ then $- 3$), why must we undo the last operation first ($+ 3$ then $\\div 5$)?",
+          "answer": "Backtracking works in reverse order (like taking off shoes before socks): you must undo the last step ($- 3$) using $+ 3$ before undoing $\\times 5$ using $\\div 5$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF6_3_1a", "expression": "3 * 4 + 2", "expected": 14 },
+        { "id": "WSF6_3_1b", "expression": "3 * 7 + 2", "expected": 23 },
+        { "id": "WSF6_3_2a", "expression": "(13 - 5) / 2", "expected": 4 },
+        { "id": "WSF6_3_2b", "expression": "(19 - 5) / 2", "expected": 7 },
+        { "id": "WSF6_3_3a", "expression": "12 + 5", "expected": 17 },
+        { "id": "WSF6_3_3b", "expression": "2 * 6", "expected": 12 },
+        { "id": "WSF6_3_4a", "expression": "2 * 3 + 4", "expected": 10 },
+        { "id": "WSF6_3_6", "expression": "10 + 3 * 6", "expected": 28 },
+        { "id": "WSF6_3_7", "expression": "(200 - 50) / 50", "expected": 3 },
+        { "id": "WSF6_3_8", "expression": "(16 - 6) / 2", "expected": 5 }
+      ]
+    }
+  ]
+}

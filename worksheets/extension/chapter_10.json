@@ -1,0 +1,199 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Statistics and Data Analysis",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_1",
+      "section_code": "10A",
+      "title": "Data Collection, Summary Statistics and Outliers",
+      "vcaa_code": "VC2M8ST02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For the $9$ ordered scores $6, 9, 11, x, 17, 20, 23, 26, y$, given that the median is $17$ and the range is $25$:",
+          "parts": [
+            { "label": "a", "question": "Find the value of $y$", "answer": "$y = 31$" },
+            { "label": "b", "question": "Given the mean of all $9$ scores is $17.5$, find $x$", "answer": "$x = 14.5$" },
+            { "label": "c", "question": "Find the lower quartile $Q_1$ and upper quartile $Q_3$", "answer": "$Q_1 = 10, Q_3 = 24.5$" },
+            { "label": "d", "question": "Find the interquartile range ($\\text{IQR} = Q_3 - Q_1$)", "answer": "$\\text{IQR} = 14.5$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A frequency table of scores $x \\in \\{10, 20, 30, 40, 50\\}$ has frequencies $f = 4, 7, k, 5, 2$ respectively. Given the mean is $\\bar{x} = 27.5$:",
+          "parts": [
+            { "label": "a", "question": "Write an expression for $\\sum f$ and $\\sum fx$ in terms of $k$", "answer": "$\\sum f = k + 18, \\sum fx = 30k + 480$" },
+            { "label": "b", "question": "Solve $\\dfrac{30k + 480}{k + 18} = 27.5$ to find the missing frequency $k$", "answer": "$k = 6$" },
+            { "label": "c", "question": "State the modal score and the total number of scores $n$", "answer": "Mode $= 20$, $n = 24$" },
+            { "label": "d", "question": "Find the median score of the $24$ scores", "answer": "$25$ (average of $12$th score $20$ and $13$th score $30$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A dataset of $n = 15$ scores has mean $\\bar{x} = 24$, median $M = 22$, range $R = 30$, and $\\text{IQR} = 12$. Find the new mean, median, range, and $\\text{IQR}$ after each linear transformation:",
+          "parts": [
+            { "label": "a", "question": "Every score is increased by $7$ ($y = x + 7$)", "answer": "$\\bar{y} = 31, M = 29, R = 30, \\text{IQR} = 12$" },
+            { "label": "b", "question": "Every score is multiplied by $3$ ($y = 3x$)", "answer": "$\\bar{y} = 72, M = 66, R = 90, \\text{IQR} = 36$" },
+            { "label": "c", "question": "Every score is transformed by $y = 2x - 5$", "answer": "$\\bar{y} = 43, M = 39, R = 60, \\text{IQR} = 24$" },
+            { "label": "d", "question": "A $16$th score equal to $40$ is appended to the original $15$ scores (find new mean)", "answer": "$\\bar{x}_{\\text{new}} = 25$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "For a dataset with five-number summary $\\text{Min} = 4, Q_1 = 18, \\text{Median} = 23, Q_3 = 26, \\text{Max} = 41$, use the $1.5 \\times \\text{IQR}$ outlier fences:",
+          "parts": [
+            { "label": "a", "question": "Calculate the $\\text{IQR}$", "answer": "$8$" },
+            { "label": "b", "question": "Find the lower fence $Q_1 - 1.5 \\times \\text{IQR}$", "answer": "$6$" },
+            { "label": "c", "question": "Find the upper fence $Q_3 + 1.5 \\times \\text{IQR}$", "answer": "$38$" },
+            { "label": "d", "question": "Determine whether the minimum ($4$) and maximum ($41$) are formal outliers", "answer": "Both $4 < 6$ and $41 > 38$ are outliers" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A logistics company in Brisbane operates three fleets of delivery vans: Fleet A ($12$ vans, mean daily distance $185\\text{ km}$), Fleet B ($18$ vans, mean $210\\text{ km}$), and Fleet C ($10$ vans). If the combined mean daily distance across all $40$ vans is $205\\text{ km}$, find the mean daily distance of Fleet C.",
+          "answer": "$220\\text{ km}$ ($\\dfrac{40 \\times 205 - 12 \\times 185 - 18 \\times 210}{10} = \\dfrac{8200 - 2220 - 3780}{10} = 220\\text{ km}$)"
+        },
+        {
+          "number": 6,
+          "question": "Nine houses on a street in Fremantle have a mean value of $\\$920\\,000$ and a median value of $\\$880\\,000$. When the most expensive house (valued at $\\$1\\,480\\,000$) is rezoned and removed from the residential list, find the new mean value of the remaining $8$ houses and explain why the new median must be less than or equal to $\\$880\\,000$.",
+          "answer": "New mean $= \\$850\\,000$ ($\\dfrac{9 \\times 920 - 1480}{8} = 850\\text{k}$); the new median is the average of the $4$th and $5$th ordered prices, and since $x_4 \\le x_5 = \\$880\\text{k}$, their average is $\\le \\$880\\,000$."
+        },
+        {
+          "number": 7,
+          "question": "Five positive integers in strict ascending order $a < b < c < d < e$ have a median of $14$, a lower quartile $Q_1 = \\frac{a+b}{2} = 8$, an upper quartile $Q_3 = \\frac{d+e}{2} = 18$, a range of $14$, and a mean of $13.2$. Find all five integers.",
+          "answer": "$6, 10, 14, 16, 20$"
+        },
+        {
+          "number": 8,
+          "question": "When a data entry clerk accidentally records a student's exam score as $38$ instead of $83$, the calculated class mean is $68.2$, whereas the true class mean is $70.0$. Form an equation to find the number of students $n$ in the class.",
+          "answer": "$n = 25\\text{ students}$ ($\\dfrac{83 - 38}{n} = 70.0 - 68.2 \\implies \\dfrac{45}{n} = 1.8 \\implies n = 25$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove algebraically that for any dataset $x_1, x_2, \\dots, x_n$ with arithmetic mean $\\bar{x} = \\dfrac{1}{n}\\sum_{i=1}^n x_i$, the sum of the signed deviations from the mean is always zero: $\\sum_{i=1}^n (x_i - \\bar{x}) = 0$.",
+          "answer": "$\\sum_{i=1}^n (x_i - \\bar{x}) = \\sum_{i=1}^n x_i - \\sum_{i=1}^n \\bar{x} = n\\bar{x} - n\\bar{x} = 0$."
+        },
+        {
+          "number": 10,
+          "question": "Five positive integers written in ascending order $x_1 \\le x_2 \\le x_3 \\le x_4 \\le x_5$ have a unique mode of $12$, a median of $9$, and a mean of $8$. Find the maximum and minimum possible values of the smallest integer $x_1$.",
+          "answer": "Since the median is $x_3 = 9$ and the unique mode is $12 > 9$, we must have $x_4 = x_5 = 12$ and $x_1 < x_2 < 9$ (so $12$ is the unique mode). Their sum is $5 \\times 8 = 40$, so $x_1 + x_2 = 40 - (9 + 12 + 12) = 7$. Since $1 \\le x_1 < x_2 \\le 8$ and $x_2 \\le 8 \\implies x_1 = 7 - x_2$: the pairs $(x_1, x_2)$ are $(1, 6), (2, 5), (3, 4)$, so $\\min(x_1) = 1$ and $\\max(x_1) = 3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_1_1a", "expression": "6 + 25", "expected": 31 },
+        { "id": "WSE10_1_1b", "expression": "9 * Rational(35, 2) - (6 + 9 + 11 + 17 + 20 + 23 + 26 + 31)", "expected": 14.5 },
+        { "id": "WSE10_1_2b", "expression": "(480 - 27.5 * 18) / (27.5 - 30)", "expected": 6 },
+        { "id": "WSE10_1_3c_mean", "expression": "2 * 24 - 5", "expected": 43 },
+        { "id": "WSE10_1_3d", "expression": "(15 * 24 + 40) / 16", "expected": 25 },
+        { "id": "WSE10_1_4b", "expression": "18 - Rational(3, 2) * (26 - 18)", "expected": 6 },
+        { "id": "WSE10_1_4c", "expression": "26 + Rational(3, 2) * (26 - 18)", "expected": 38 },
+        { "id": "WSE10_1_5", "expression": "(40 * 205 - 12 * 185 - 18 * 210) / 10", "expected": 220 },
+        { "id": "WSE10_1_6", "expression": "(9 * 920 - 1480) / 8", "expected": 850 },
+        { "id": "WSE10_1_8", "expression": "(83 - 38) / (70 - Rational(682, 10))", "expected": 25 }
+      ]
+    },
+    {
+      "section_id": "10_2",
+      "section_code": "10B",
+      "title": "Sampling Methods, Data Displays, and Comparing Distributions",
+      "vcaa_code": "VC2M8ST01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A school of $1200$ students has year-level cohorts: Year 7 ($240$), Year 8 ($210$), Year 9 ($200$), Year 10 ($190$), Year 11 ($180$), and Year 12 ($180$). For a stratified random sample of size $n = 80$:",
+          "parts": [
+            { "label": "a", "question": "Find the sampling fraction $\\dfrac{n}{N}$ as a simplified fraction", "answer": "$\\dfrac{1}{15}$" },
+            { "label": "b", "question": "Calculate the number of Year 7 and Year 8 students to include in the sample", "answer": "Year 7: $16$, Year 8: $14$" },
+            { "label": "c", "question": "Calculate the combined number of Senior students (Years 11 and 12) in the sample", "answer": "$24$ ($12 + 12$)" },
+            { "label": "d", "question": "If a systematic sample of $80$ students is selected from an alphabetical list of $1200$, what is the step interval $k$?", "answer": "$k = 15$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A grouped frequency table of daily commuter travel times $t$ (minutes) has class intervals $0$–$<10$ (midpoint $5, f=6$), $10$–$<20$ (midpoint $15, f=14$), $20$–$<30$ (midpoint $25, f=18$), $30$–$<40$ (midpoint $35, f=8$), and $40$–$<50$ (midpoint $45, f=4$):",
+          "parts": [
+            { "label": "a", "question": "Find the total sample size $n = \\sum f$ and modal class", "answer": "$n = 50$, modal class $20$–$<30$" },
+            { "label": "b", "question": "Identify the class interval containing the median ($25.5$th score)", "answer": "$20$–$<30$" },
+            { "label": "c", "question": "Estimate the sample mean $\\bar{t} = \\dfrac{\\sum f \\cdot m}{n}$ using class midpoints $m$", "answer": "$23\\text{ minutes}$ ($\\dfrac{1150}{50}$)" },
+            { "label": "d", "question": "Find the percentage of commuters whose travel time is at least $30\\text{ minutes}$", "answer": "$24\\%$ ($\\dfrac{12}{50}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A back-to-back stem-and-leaf plot (key $3 \\mid 2 = 32$) compares battery life (hours) of Brand A ($18, 21, 24, 25, 27, 30, 32, 35, 38$) and Brand B ($12, 15, 19, 22, 23, 26, 28, 31, 64$):",
+          "parts": [
+            { "label": "a", "question": "Find the median and $\\text{IQR}$ of Brand A", "answer": "Median $= 27$, $\\text{IQR} = 33.5 - 22.5 = 11$" },
+            { "label": "b", "question": "Find the median and $\\text{IQR}$ of Brand B", "answer": "Median $= 23$, $\\text{IQR} = 29.5 - 17 = 12.5$" },
+            { "label": "c", "question": "Calculate the mean of Brand A and the mean of Brand B", "answer": "Brand A: $\\dfrac{250}{9} \\approx 27.78$, Brand B: $\\dfrac{240}{9} \\approx 26.67$" },
+            { "label": "d", "question": "Describe the shape of Brand A's distribution vs Brand B's distribution", "answer": "Brand A is roughly symmetric; Brand B is positively skewed with a high outlier ($64$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Identify the primary type of sampling bias in each survey design and state how it affects the sample estimate:",
+          "parts": [
+            { "label": "a", "question": "An online newspaper asks readers to pay $\\$1$ to vote in a poll on council rates", "answer": "Voluntary response / self-selection bias (over-represents strongly opinionated readers)" },
+            { "label": "b", "question": "Estimating average household income in Victoria by surveying shoppers in Toorak Village", "answer": "Undercoverage / location bias (overestimates true statewide mean income)" },
+            { "label": "c", "question": "Surveying gym members at $6{:}00\\text{ am}$ on a Monday about weekly exercise hours", "answer": "Selection / time-sampling bias (overestimates population exercise hours)" },
+            { "label": "d", "question": "Asking employees face-to-face in front of their manager if they are satisfied with management", "answer": "Response / social desirability bias (inflates reported satisfaction)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A regional council in Gippsland surveys $150$ residents selected proportionally from three towns: Town A ($4500$ residents), Town B ($3000$ residents), and Town C ($1500$ residents). How many residents are sampled from each town, and if the sample means for weekly water usage are $1100\\text{ L}$ (A), $950\\text{ L}$ (B), and $800\\text{ L}$ (C), what is the overall stratified sample mean?",
+          "answer": "Town A: $75$, Town B: $50$, Town C: $25$; overall stratified mean $= 1000\\text{ L}$ ($\\dfrac{75(1100) + 50(950) + 25(800)}{150} = 1000\\text{ L}$)"
+        },
+        {
+          "number": 6,
+          "question": "Two tomato cultivars are tested at an agricultural research station in Shepparton ($40$ plants each). Cultivar X has five-number summary $(1.2, 2.4, 2.8, 3.2, 4.1)\\text{ kg}$ per plant, and Cultivar Y has $(0.8, 1.9, 3.1, 4.3, 6.5)\\text{ kg}$ per plant. Compare their central tendency and consistency using medians and interquartile ranges, and recommend which cultivar suits a commercial canning factory requiring uniform yield.",
+          "answer": "Cultivar Y has a higher median ($3.1\\text{ kg}$ vs $2.8\\text{ kg}$), but Cultivar X has a much smaller $\\text{IQR}$ ($0.8\\text{ kg}$ vs $2.4\\text{ kg}$), making Cultivar X far more consistent and predictable for commercial canning."
+        },
+        {
+          "number": 7,
+          "question": "A grouped frequency distribution of $40$ house rental prices (in $\\$\\text{/week}$) has intervals $400$–$<500$ ($f = 8$), $500$–$<600$ ($f = 15$), $600$–$<700$ ($f = 12$), and $700$–$<800$ ($f = 5$). Calculate the midpoint estimate of the mean rental price, and find the minimum and maximum possible values of the true mean of the $40$ ungrouped prices.",
+          "answer": "Midpoint mean estimate $= \\$585$; Minimum possible mean $= \\$535$ (all scores at lower class boundaries), Maximum possible mean (approaching upper boundaries) $< \\$635$"
+        },
+        {
+          "number": 8,
+          "question": "In a wildlife reserve, $60\\%$ of wombats live in eucalypt forest (mean mass $28\\text{ kg}$) and $40\\%$ live in coastal heath (mean mass $23\\text{ kg}$). A convenience sample of $50$ wombats caught near the ranger station consists of $15$ forest wombats and $35$ heath wombats; calculate the convenience sample mean and find the sampling bias (difference from the true population mean).",
+          "answer": "Convenience sample mean $= 24.5\\text{ kg}$, true population mean $= 26.0\\text{ kg}$; the convenience sample underestimates the true mean by $1.5\\text{ kg}$ ($24.5 - 26.0 = -1.5\\text{ kg}$)."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why for any strongly positively skewed distribution (such as Australian household wealth or house prices), the arithmetic mean $\\bar{x}$ is pulled higher than the median $M$ ($\\bar{x} > M$), and state why the ABS reports median and $\\text{IQR}$ rather than mean and range for household income.",
+          "answer": "Extreme high values in the long upper tail increase the total sum $\\sum x_i$ proportionally to their magnitude (pulling $\\bar{x}$ and the range up), whereas the median and $\\text{IQR}$ depend only on the middle $50\\%$ of ordered ranks and are resistant to extreme upper-tail values."
+        },
+        {
+          "number": 10,
+          "question": "A population of $N$ items is divided into two strata of sizes $N_1$ and $N_2$ ($N_1 + N_2 = N$) with true stratum means $\\mu_1$ and $\\mu_2$. Prove algebraically that if a stratified sample of size $n$ is chosen proportionally so $\\dfrac{n_1}{n} = \\dfrac{N_1}{N}$ and $\\dfrac{n_2}{n} = \\dfrac{N_2}{N}$, then the unweighted average of all $n$ sampled items automatically weights the two strata in the exact population proportions.",
+          "answer": "The sample mean is $\\bar{x} = \\dfrac{n_1 \\bar{x}_1 + n_2 \\bar{x}_2}{n} = \\left(\\dfrac{n_1}{n}\\right)\\bar{x}_1 + \\left(\\dfrac{n_2}{n}\\right)\\bar{x}_2 = \\left(\\dfrac{N_1}{N}\\right)\\bar{x}_1 + \\left(\\dfrac{N_2}{N}\\right)\\bar{x}_2$, which matches the population mean formula $\\mu = \\left(\\dfrac{N_1}{N}\\right)\\mu_1 + \\left(\\dfrac{N_2}{N}\\right)\\mu_2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_2_1b_y7", "expression": "80 * Rational(240, 1200)", "expected": 16 },
+        { "id": "WSE10_2_1b_y8", "expression": "80 * Rational(210, 1200)", "expected": 14 },
+        { "id": "WSE10_2_2c", "expression": "(5*6 + 15*14 + 25*18 + 35*8 + 45*4) / 50", "expected": 23 },
+        { "id": "WSE10_2_3a_iqr", "expression": "Rational(32 + 35, 2) - Rational(21 + 24, 2)", "expected": 11 },
+        { "id": "WSE10_2_3b_iqr", "expression": "Rational(28 + 31, 2) - Rational(15 + 19, 2)", "expected": "25/2" },
+        { "id": "WSE10_2_5", "expression": "(75 * 1100 + 50 * 950 + 25 * 800) / 150", "expected": 1000 },
+        { "id": "WSE10_2_6_iqrX", "expression": "Rational(32, 10) - Rational(24, 10)", "expected": "4/5" },
+        { "id": "WSE10_2_7_mid", "expression": "(450*8 + 550*15 + 650*12 + 750*5) / 40", "expected": 585 },
+        { "id": "WSE10_2_8_sample", "expression": "(15 * 28 + 35 * 23) / 50", "expected": "49/2" },
+        { "id": "WSE10_2_8_pop", "expression": "Rational(60, 100) * 28 + Rational(40, 100) * 23", "expected": 26 }
+      ]
+    }
+  ]
+}

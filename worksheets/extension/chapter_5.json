@@ -1,0 +1,199 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Algebraic Techniques",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "5_1",
+      "section_code": "5A",
+      "title": "Language of Algebra, Substitution and Like Terms",
+      "vcaa_code": "VC2M8A01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Given $a = -3$, $b = \\dfrac{1}{2}$, and $c = -4$, evaluate each expression:",
+          "parts": [
+            { "label": "a", "question": "$2a^2b - c^2$", "answer": "$-7$" },
+            { "label": "b", "question": "$\\dfrac{a^3 - c^2}{4b + 5}$", "answer": "$-\\dfrac{43}{7}$" },
+            { "label": "c", "question": "$8b^3 - 3ac$", "answer": "$-35$" },
+            { "label": "d", "question": "$\\dfrac{c^2 - a^2}{2b - a}$", "answer": "$\\dfrac{7}{4}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Simplify each expression by collecting like terms over a common denominator:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{3x}{4} - \\dfrac{2x}{3} + \\dfrac{5x}{6}$", "answer": "$\\dfrac{11x}{12}$" },
+            { "label": "b", "question": "$\\dfrac{2a - b}{3} - \\dfrac{a - 2b}{4}$", "answer": "$\\dfrac{5a + 2b}{12}$" },
+            { "label": "c", "question": "$\\dfrac{3m + 2}{5} - \\dfrac{2m - 3}{2}$", "answer": "$\\dfrac{19 - 4m}{10}$" },
+            { "label": "d", "question": "$\\dfrac{4x^2 - x}{6} - \\dfrac{x^2 - 2x}{4}$", "answer": "$\\dfrac{5x^2 + 4x}{12}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Simplify each multi-variable algebraic product or power:",
+          "parts": [
+            { "label": "a", "question": "$(-3a^2b)^2 \\times (-2ab^3)$", "answer": "$-18a^5b^5$" },
+            { "label": "b", "question": "$(-2x^3y^2)^3 \\times 3xy^4$", "answer": "$-24x^{10}y^{10}$" },
+            { "label": "c", "question": "$\\dfrac{3}{4}m^2n^3 \\times (-8mn^2)^2$", "answer": "$48m^4n^7$" },
+            { "label": "d", "question": "$(-5p^2q) \\times (-2pq^3)^2 \\times (-p^3q)$", "answer": "$20p^7q^8$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Simplify each compound algebraic fraction:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{-24a^4b^3 \\times 3ab^2}{18a^3b^4}$", "answer": "$-4a^2b$" },
+            { "label": "b", "question": "$\\dfrac{(-4x^2y)^3}{16x^4y^5}$", "answer": "$-\\dfrac{4x^2}{y^2}$" },
+            { "label": "c", "question": "$\\dfrac{9m^3n}{4p^2} \\div \\dfrac{15mn^3}{8p^3}$", "answer": "$\\dfrac{6m^2p}{5n^2}$" },
+            { "label": "d", "question": "$\\dfrac{12x^3y^2}{5z} \\times \\dfrac{15z^3}{8xy^4}$", "answer": "$\\dfrac{9x^2z^2}{2y^2}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular solar farm in Mildura has length $\\dfrac{5x + 6}{2}\\text{ m}$ and width $\\dfrac{3x - 4}{3}\\text{ m}$. Write a single simplified algebraic fraction for the perimeter $P$ of the solar farm, and evaluate $P$ when $x = 6$.",
+          "answer": "$P = \\dfrac{21x + 10}{3}\\text{ m}$; when $x = 6$, $P = 45\\frac{1}{3}\\text{ m}$ ($\\dfrac{136}{3}\\text{ m}$)"
+        },
+        {
+          "number": 6,
+          "question": "A solid L-shaped steel bracket is formed by removing a rectangle of dimensions $2a\\text{ cm}$ by $3b\\text{ cm}$ from a larger rectangle of dimensions $5a\\text{ cm}$ by $4b\\text{ cm}$. If the bracket has uniform thickness $3a\\text{ cm}$, write a simplified expression for its volume and evaluate it when $a = 2, b = 5$.",
+          "answer": "$42a^2b\\text{ cm}^3$; $840\\text{ cm}^3$"
+        },
+        {
+          "number": 7,
+          "question": "A cyclist rides for $\\dfrac{2t}{3}$ hours at $(6v + 9)\\text{ km/h}$ and then for $\\dfrac{t}{2}$ hours at $(4v - 6)\\text{ km/h}$. Write a simplified algebraic expression for the total distance travelled in terms of $t$ and $v$.",
+          "answer": "$(6tv + 3t)\\text{ km}$"
+        },
+        {
+          "number": 8,
+          "question": "The harmonic mean of two positive numbers $x$ and $y$ is defined as $H = \\dfrac{2xy}{x + y}$. Evaluate $H$ as an exact simplified fraction when $x = \\dfrac{3}{4}$ and $y = \\dfrac{6}{5}$, and compare it with their arithmetic mean $A = \\dfrac{x + y}{2}$.",
+          "answer": "$H = \\dfrac{12}{13}$, $A = \\dfrac{39}{40}$ ($H < A$ since $\\dfrac{480}{520} < \\dfrac{507}{520}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Given that $\\dfrac{A}{3} + \\dfrac{B}{4} = \\dfrac{11x - 5}{12}$ for all values of $x$, where $A = 2x + k$ and $B = mx - 1$, find the values of the constants $k$ and $m$.",
+          "answer": "$4(2x + k) + 3(mx - 1) = (8 + 3m)x + (4k - 3) = 11x - 5 \\implies m = 1$ and $k = -\\dfrac{1}{2}$."
+        },
+        {
+          "number": 10,
+          "question": "Prove algebraically that the sum of the squares of any two consecutive odd integers, $(2n - 1)^2 + (2n + 1)^2$, is always $2$ more than a multiple of $8$.",
+          "answer": "$(4n^2 - 4n + 1) + (4n^2 + 4n + 1) = 8n^2 + 2$, which leaves a remainder of $2$ when divided by $8$ for every integer $n$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE5_1_1a", "expression": "2 * (-3)**2 * Rational(1, 2) - (-4)**2", "expected": -7 },
+        { "id": "WSE5_1_1b", "expression": "((-3)**3 - (-4)**2) / (4 * Rational(1, 2) + 5)", "expected": "-43/7" },
+        { "id": "WSE5_1_1d", "expression": "((-4)**2 - (-3)**2) / (2 * Rational(1, 2) - (-3))", "expected": "7/4" },
+        { "id": "WSE5_1_2a", "expression": "simplify(3*x/4 - 2*x/3 + 5*x/6 - 11*x/12)", "expected": 0 },
+        { "id": "WSE5_1_2b", "expression": "simplify((2*a - b)/3 - (a - 2*b)/4 - (5*a + 2*b)/12)", "expected": 0 },
+        { "id": "WSE5_1_2c", "expression": "simplify((3*m + 2)/5 - (2*m - 3)/2 - (19 - 4*m)/10)", "expected": 0 },
+        { "id": "WSE5_1_3a", "expression": "simplify((-3*a**2*b)**2 * (-2*a*b**3) - (-18*a**5*b**5))", "expected": 0 },
+        { "id": "WSE5_1_4c", "expression": "simplify((9*m**3*n / (4*p**2)) / (15*m*n**3 / (8*p**3)) - (6*m**2*p / (5*n**2)))", "expected": 0 },
+        { "id": "WSE5_1_5", "expression": "simplify(2*((5*x + 6)/2 + (3*x - 4)/3) - (21*x + 10)/3)", "expected": 0 },
+        { "id": "WSE5_1_8", "expression": "2 * Rational(3, 4) * Rational(6, 5) / (Rational(3, 4) + Rational(6, 5))", "expected": "12/13" }
+      ]
+    },
+    {
+      "section_id": "5_2",
+      "section_code": "5B",
+      "title": "Expanding Brackets and Factorising Linear Expressions",
+      "vcaa_code": "VC2M8A01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Expand and simplify each multi-bracket algebraic expression:",
+          "parts": [
+            { "label": "a", "question": "$3x(2x - 5) - 4x(x - 3)$", "answer": "$2x^2 - 3x$" },
+            { "label": "b", "question": "$2a(3a - 4b) - 3b(2a - 5b)$", "answer": "$6a^2 - 14ab + 15b^2$" },
+            { "label": "c", "question": "$-4m(2m - 3n) - 2n(3m - 4n)$", "answer": "$-8m^2 + 6mn + 8n^2$" },
+            { "label": "d", "question": "$5x^2(2x - 3) - 3x(3x^2 - 4x + 2)$", "answer": "$x^3 - 3x^2 - 6x$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise completely by extracting the Highest Common Factor:",
+          "parts": [
+            { "label": "a", "question": "$24a^3b^2 - 36a^2b^3 + 18a^2b$", "answer": "$6a^2b(4ab - 6b^2 + 3)$" },
+            { "label": "b", "question": "$-28x^4y^2 - 42x^3y^3 + 14x^2y^2$", "answer": "$-14x^2y^2(2x^2 + 3xy - 1)$" },
+            { "label": "c", "question": "$15m^3n^2 - 25m^2n^3 - 35mn^4$", "answer": "$5mn^2(3m^2 - 5mn - 7n^2)$" },
+            { "label": "d", "question": "$-16p^3q^4 + 24p^2q^3 - 32pq^2$", "answer": "$-8pq^2(2p^2q^2 - 3pq + 4)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factorise each expression by extracting a common binomial factor:",
+          "parts": [
+            { "label": "a", "question": "$3x(x - 4) + 5(x - 4)$", "answer": "$(x - 4)(3x + 5)$" },
+            { "label": "b", "question": "$4a(2a + 3) - 7(2a + 3)$", "answer": "$(2a + 3)(4a - 7)$" },
+            { "label": "c", "question": "$2m(m - 5) + 3(5 - m)$", "answer": "$(m - 5)(2m - 3)$" },
+            { "label": "d", "question": "$xy + 4x - 3y - 12$", "answer": "$(x - 3)(y + 4)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise the numerator and simplify each algebraic fraction ($x \\neq y, a \\neq 2b$):",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{12x^2 - 18xy}{6x}$", "answer": "$2x - 3y$" },
+            { "label": "b", "question": "$\\dfrac{15a^2b - 25ab^2}{5ab}$", "answer": "$3a - 5b$" },
+            { "label": "c", "question": "$\\dfrac{8x^2 - 8xy}{4x - 4y}$", "answer": "$2x$" },
+            { "label": "d", "question": "$\\dfrac{6a^2 - 12ab}{9a - 18b}$", "answer": "$\\dfrac{2a}{3}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular courtyard of length $(6x + 4)\\text{ m}$ and width $5x\\text{ m}$ has a rectangular pond of length $(4x - 2)\\text{ m}$ and width $3x\\text{ m}$ built inside it. Write a fully factorised expression for the paved area surrounding the pond.",
+          "answer": "$2x(9x + 13)\\text{ m}^2$ (since $30x^2 + 20x - (12x^2 - 6x) = 18x^2 + 26x$)"
+        },
+        {
+          "number": 6,
+          "question": "The total surface area of a closed cylinder of radius $r$ and height $h$ is $S = 2\\pi r^2 + 2\\pi rh$. Factorise this formula completely, and hence evaluate the exact surface area in terms of $\\pi$ when $r = 7\\text{ cm}$ and $h = 13\\text{ cm}$.",
+          "answer": "$S = 2\\pi r(r + h)$; $S = 280\\pi\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A laser cutter cuts a trapezium with parallel sides $(3x + 2)\\text{ cm}$ and $(5x - 6)\\text{ cm}$ and perpendicular height $6x\\text{ cm}$. Write the area of the trapezium in expanded form and in completely factorised form.",
+          "answer": "Expanded: $(24x^2 - 12x)\\text{ cm}^2$; Factorised: $12x(2x - 1)\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "An artisan Chocolatier in the Yarra Valley packs $4n(3n + 2)$ dark truffles and $8n(n + 5)$ milk truffles into gift boxes that each hold $(5n + 12)$ truffles. Factorise the total number of truffles to find how many gift boxes are filled.",
+          "answer": "$4n\\text{ gift boxes}$ (since $12n^2 + 8n + 8n^2 + 40n = 20n^2 + 48n = 4n(5n + 12)$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Show how to factorise $6x^2 - 9xy - 4xz + 6yz$ completely by grouping the terms in pairs and extracting a common binomial factor.",
+          "answer": "$3x(2x - 3y) - 2z(2x - 3y) = (2x - 3y)(3x - 2z)$."
+        },
+        {
+          "number": 10,
+          "question": "Prove algebraically that for any integer $n$, the expression $3n(2n + 5) - 2n(3n - 1) + 17(2n - 3)$ is always divisible by $17$.",
+          "answer": "$6n^2 + 15n - 6n^2 + 2n + 34n - 51 = 51n - 51 = 17(3n - 3) = 51(n - 1)$, which is a multiple of $17$ for all integers $n$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE5_2_1a", "expression": "simplify(3*x*(2*x - 5) - 4*x*(x - 3) - (2*x**2 - 3*x))", "expected": 0 },
+        { "id": "WSE5_2_1b", "expression": "simplify(2*a*(3*a - 4*b) - 3*b*(2*a - 5*b) - (6*a**2 - 14*a*b + 15*b**2))", "expected": 0 },
+        { "id": "WSE5_2_1d", "expression": "simplify(5*x**2*(2*x - 3) - 3*x*(3*x**2 - 4*x + 2) - (x**3 - 3*x**2 - 6*x))", "expected": 0 },
+        { "id": "WSE5_2_2a", "expression": "simplify(6*a**2*b*(4*a*b - 6*b**2 + 3) - (24*a**3*b**2 - 36*a**2*b**3 + 18*a**2*b))", "expected": 0 },
+        { "id": "WSE5_2_3c", "expression": "simplify(2*m*(m - 5) + 3*(5 - m) - (m - 5)*(2*m - 3))", "expected": 0 },
+        { "id": "WSE5_2_3d", "expression": "simplify(x*y + 4*x - 3*y - 12 - (x - 3)*(y + 4))", "expected": 0 },
+        { "id": "WSE5_2_4d", "expression": "simplify((6*a**2 - 12*a*b)/(9*a - 18*b) - 2*a/3)", "expected": 0 },
+        { "id": "WSE5_2_5", "expression": "simplify(5*x*(6*x + 4) - 3*x*(4*x - 2) - 2*x*(9*x + 13))", "expected": 0 },
+        { "id": "WSE5_2_6", "expression": "2 * 7 * (7 + 13)", "expected": 280 },
+        { "id": "WSE5_2_7", "expression": "simplify(Rational(1, 2) * ((3*x + 2) + (5*x - 6)) * 6*x - 12*x*(2*x - 1))", "expected": 0 }
+      ]
+    }
+  ]
+}

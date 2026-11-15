@@ -121,9 +121,16 @@ def verify_worksheet_file(path: str) -> tuple[int, int, list[str]]:
 
 
 def main():
-    files = sorted(glob.glob("worksheets/chapter_*.json"))
+    if len(sys.argv) > 1:
+        files = sys.argv[1:]
+    else:
+        files = (
+            sorted(glob.glob("worksheets/chapter_*.json"))
+            + sorted(glob.glob("worksheets/foundation/chapter_*.json"))
+            + sorted(glob.glob("worksheets/extension/chapter_*.json"))
+        )
     if not files:
-        print("No worksheet files found in worksheets/chapter_*.json", file=sys.stderr)
+        print("No worksheet files found", file=sys.stderr)
         sys.exit(1)
 
     grand_ws = 0

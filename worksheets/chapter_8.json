@@ -193,6 +193,102 @@
         { "id": "WS8_2_7", "expression": "sqrt(Rational(65, 10)**2 - 6**2)", "expected": 2.5 },
         { "id": "WS8_2_8", "expression": "360 / 8", "expected": 45 }
       ]
+    },
+    {
+      "section_id": "8_3",
+      "section_code": "8C",
+      "title": "3D Coordinates, Transformations, and Geometric Algorithms",
+      "vcaa_code": "VC2M8SP03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the image coordinates of the point $P(3, -5)$ after each 2D transformation:",
+          "parts": [
+            { "label": "a", "question": "Translation by $4$ units left and $7$ units up: $(x - 4, y + 7)$", "answer": "$(-1, 2)$" },
+            { "label": "b", "question": "Reflection in the $x$-axis: $(x, -y)$", "answer": "$(3, 5)$" },
+            { "label": "c", "question": "Reflection in the $y$-axis: $(-x, y)$", "answer": "$(-3, -5)$" },
+            { "label": "d", "question": "Rotation of $180^\\circ$ about the origin $(0, 0)$: $(-x, -y)$", "answer": "$(-3, 5)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the image of the point $A(4, -2)$ after each rotation about the origin $(0, 0)$:",
+          "parts": [
+            { "label": "a", "question": "$90^\\circ$ anticlockwise: $(x, y) \\to (-y, x)$", "answer": "$(2, 4)$" },
+            { "label": "b", "question": "$90^\\circ$ clockwise: $(x, y) \\to (y, -x)$", "answer": "$(-2, -4)$" },
+            { "label": "c", "question": "$180^\\circ$ rotation followed by translation $(x + 3, y - 1)$", "answer": "$(-1, 1)$" },
+            { "label": "d", "question": "Reflection in $x$-axis followed by reflection in $y$-axis", "answer": "$(-4, 2)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A rectangular prism has one vertex at the 3D origin $O(0, 0, 0)$ and its opposite vertex at $G(6, 8, 24)$ along the positive $x, y, z$ axes. Find:",
+          "parts": [
+            { "label": "a", "question": "The 3D coordinates of the vertex directly below $G$ on the $xy$-plane ($z = 0$)", "answer": "$(6, 8, 0)$" },
+            { "label": "b", "question": "The 3D midpoint $M$ of the space diagonal $OG$", "answer": "$(3, 4, 12)$" },
+            { "label": "c", "question": "The length of the base diagonal on the $xy$-plane from $(0,0,0)$ to $(6,8,0)$", "answer": "$10$" },
+            { "label": "d", "question": "The exact 3D distance $OG = \\sqrt{x^2 + y^2 + z^2}$", "answer": "$26$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A turtle-graphics geometric algorithm repeats the step [Move forward $6\\text{ cm}$, Turn left $\\theta^\\circ$] until it returns to its starting vertex to form a regular $n$-gon:",
+          "parts": [
+            { "label": "a", "question": "Find the number of sides $n = \\dfrac{360^\\circ}{\\theta}$ when exterior turn angle $\\theta = 60^\\circ$", "answer": "$n = 6$ (regular hexagon)" },
+            { "label": "b", "question": "Find the exterior turn angle $\\theta = \\dfrac{360^\\circ}{n}$ needed to draw a regular octagon ($n = 8$)", "answer": "$\\theta = 45^\\circ$" },
+            { "label": "c", "question": "Find the perimeter of the polygon drawn when $\\theta = 40^\\circ$ and step length is $6\\text{ cm}$", "answer": "$54\\text{ cm}$ ($n = 9$ sides)" },
+            { "label": "d", "question": "Find each interior angle $(180^\\circ - \\theta)$ of the regular polygon when $\\theta = 36^\\circ$", "answer": "$144^\\circ$ (regular decagon)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A delivery drone in a Melbourne warehouse takes off from $A(1, 2, 0)$ (in metres) and flies in a straight line to a high shelf at $B(4, 6, 12)$. Find the displacement components $(\\Delta x, \\Delta y, \\Delta z)$ and the straight-line 3D distance $AB = \\sqrt{\\Delta x^2 + \\Delta y^2 + \\Delta z^2}$.",
+          "answer": "$(\\Delta x, \\Delta y, \\Delta z) = (3, 4, 12)$; distance $AB = 13\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "Triangle $PQR$ has vertices $P(1, 2)$, $Q(5, 2)$, and $R(1, 5)$. An algorithm reflects $\\triangle PQR$ across the $y$-axis and then translates the image by $(0, -3)$. Find the final coordinates of $P', Q', R'$ and the area of $\\triangle P'Q'R'$.",
+          "answer": "$P'(-1, -1), Q'(-5, -1), R'(-1, 2)$; Area $= 6\\text{ square units}$"
+        },
+        {
+          "number": 7,
+          "question": "A robotic lawnmower follows a coordinate loop starting at $(0, 0)$: each step $k$ ($k = 1, 2, 3, 4$) adds $(2, -1)$ to its position and then reflects the $y$-coordinate across the $x$-axis ($y \\to -y$). Trace the position after Step $1$ and Step $2$.",
+          "answer": "After Step 1: $(2, 1)$; after Step 2: $(4, 0)$"
+        },
+        {
+          "number": 8,
+          "question": "A surveyor maps two mine-shaft points in Broken Hill at 3D coordinates $C(-2, 3, -15)$ and $D(4, 11, -15)$ (in metres, where negative $z$ is depth underground). Explain why the segment $CD$ is horizontal and calculate the distance $CD$.",
+          "answer": "Both points have the same depth $z = -15\\text{ m}$ ($\\Delta z = 0$); distance $CD = \\sqrt{6^2 + 8^2} = 10\\text{ m}$."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Show using coordinate rules why reflecting any point $(x, y)$ in the $x$-axis and then in the $y$-axis gives the exact same result as rotating $(x, y)$ by $180^\\circ$ about the origin.",
+          "answer": "Reflecting $(x, y)$ in the $x$-axis gives $(x, -y)$, and reflecting that in the $y$-axis gives $(-x, -y)$, which is identical to the $180^\\circ$ rotation rule $(x, y) \\to (-x, -y)$."
+        },
+        {
+          "number": 10,
+          "question": "In a turtle-graphics loop `Repeat n times: [Forward s, Turn Left theta]`, explain why the path closes into a simple regular $n$-gon if and only if $n \\times \\theta = 360^\\circ$, and explain what goes wrong if a student enters the interior angle $120^\\circ$ instead of the exterior angle $60^\\circ$ when trying to draw a hexagon.",
+          "answer": "The turtle must turn through one full revolution ($360^\\circ$) of exterior angles to face its starting direction. Entering $\\theta = 120^\\circ$ makes $n = 360^\\circ \\div 120^\\circ = 3$ turns, drawing an equilateral triangle instead of a hexagon."
+        }
+      ],
+      "assertions": [
+        { "id": "WS8_3_1a_x", "expression": "3 - 4", "expected": -1 },
+        { "id": "WS8_3_1a_y", "expression": "-5 + 7", "expected": 2 },
+        { "id": "WS8_3_3c", "expression": "sqrt(6**2 + 8**2)", "expected": 10 },
+        { "id": "WS8_3_3d", "expression": "sqrt(6**2 + 8**2 + 24**2)", "expected": 26 },
+        { "id": "WS8_3_4b", "expression": "360 / 8", "expected": 45 },
+        { "id": "WS8_3_4c", "expression": "(360 / 40) * 6", "expected": 54 },
+        { "id": "WS8_3_4d", "expression": "180 - 36", "expected": 144 },
+        { "id": "WS8_3_5", "expression": "sqrt((4 - 1)**2 + (6 - 2)**2 + (12 - 0)**2)", "expected": 13 },
+        { "id": "WS8_3_6_area", "expression": "Rational(1, 2) * (5 - 1) * (5 - 2)", "expected": 6 },
+        { "id": "WS8_3_8", "expression": "sqrt((4 - (-2))**2 + (11 - 3)**2)", "expected": 10 }
+      ]
     }
   ]
 }

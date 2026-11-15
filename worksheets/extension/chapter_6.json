@@ -1,0 +1,295 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Linear Equations and Coordinate Graphs",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "6_1",
+      "section_code": "6A",
+      "title": "Solving Linear Equations",
+      "vcaa_code": "VC2M8A02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each linear equation with brackets on both sides:",
+          "parts": [
+            { "label": "a", "question": "$4(3x - 2) - 3(2x - 5) = 2(x + 9) + 1$", "answer": "$x = 3$" },
+            { "label": "b", "question": "$5(2x - 3) - 2(3x + 1) = 3(x - 4) - 9$", "answer": "$x = -4$" },
+            { "label": "c", "question": "$6 - 2(4x - 3) = 3(5 - 2x) - 11$", "answer": "$x = 4$" },
+            { "label": "d", "question": "$3(4x - 1) - 5(2x + 3) = 4(3x - 2) - 15$", "answer": "$x = \\dfrac{1}{2}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each fractional linear equation by clearing denominators:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2x + 1}{3} - \\dfrac{x - 4}{4} = 3$", "answer": "$x = 4$" },
+            { "label": "b", "question": "$\\dfrac{3x + 2}{5} - \\dfrac{2x - 1}{3} = 1$", "answer": "$x = -4$" },
+            { "label": "c", "question": "$\\dfrac{4x - 3}{6} + \\dfrac{x + 2}{4} = \\dfrac{11}{3}$", "answer": "$x = 4$" },
+            { "label": "d", "question": "$\\dfrac{5x - 2}{4} - \\dfrac{3x + 1}{6} = \\dfrac{2x - 3}{3}$", "answer": "$x = -4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each equation reducible to a linear equation ($x$ not equal to excluded values):",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{5}{2x - 3} = \\dfrac{3}{x + 1}$", "answer": "$x = 14$" },
+            { "label": "b", "question": "$\\dfrac{4}{3x + 1} = \\dfrac{2}{x - 2}$", "answer": "$x = -5$" },
+            { "label": "c", "question": "$\\dfrac{2x - 5}{x + 3} = \\dfrac{2}{3}$", "answer": "$x = \\dfrac{21}{4} = 5.25$" },
+            { "label": "d", "question": "$(x + 4)(x - 2) = x^2 + 6$", "answer": "$x = 7$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Rearrange each literal equation to make $x$ the subject:",
+          "parts": [
+            { "label": "a", "question": "$ax - b = cx + d \\quad (a \\neq c)$", "answer": "$x = \\dfrac{b + d}{a - c}$" },
+            { "label": "b", "question": "$\\dfrac{x - a}{b} = \\dfrac{x + b}{a} \\quad (a \\neq b)$", "answer": "$x = \\dfrac{a^2 + b^2}{a - b}$" },
+            { "label": "c", "question": "$m(x - n) = n(x + m) \\quad (m \\neq n)$", "answer": "$x = \\dfrac{2mn}{m - n}$" },
+            { "label": "d", "question": "$\\dfrac{1}{x} + \\dfrac{1}{a} = \\dfrac{1}{b}$", "answer": "$x = \\dfrac{ab}{a - b}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A pilot flies a light aircraft from Essendon to a regional airstrip against a headwind at $180\\text{ km/h}$, and returns along the same route with a tailwind at $240\\text{ km/h}$. If the total flying time is $3.5\\text{ hours}$, form and solve a fractional equation for the one-way distance $d\\text{ km}$.",
+          "answer": "$d = 360\\text{ km}$ ($\\dfrac{d}{180} + \\dfrac{d}{240} = \\dfrac{7}{2} \\implies \\dfrac{7d}{720} = \\dfrac{7}{2} \\implies d = 360$)"
+        },
+        {
+          "number": 6,
+          "question": "A chemist in Geelong mixes $x\\text{ mL}$ of a $15\\%$ saline solution with $(600 - x)\\text{ mL}$ of a $40\\%$ saline solution to obtain $600\\text{ mL}$ of a $25\\%$ saline solution. Form a linear equation and find the volume $x\\text{ mL}$ of the $15\\%$ solution required.",
+          "answer": "$x = 360\\text{ mL}$ ($0.15x + 0.40(600 - x) = 0.25(600) \\implies 0.25x = 90$)"
+        },
+        {
+          "number": 7,
+          "question": "Pipe A can fill a farm irrigation dam in $12\\text{ hours}$ and Pipe B can fill the same dam in $15\\text{ hours}$, while an outlet valve C drains a full dam in $20\\text{ hours}$. If all three are opened simultaneously when the dam is empty, solve $\\dfrac{t}{12} + \\dfrac{t}{15} - \\dfrac{t}{20} = 1$ to find how many hours $t$ it takes to fill the dam.",
+          "answer": "$t = 10\\text{ hours}$ ($\\dfrac{5t + 4t - 3t}{60} = 1 \\implies \\dfrac{6t}{60} = 1$)"
+        },
+        {
+          "number": 8,
+          "question": "In a state mathematics competition with $30$ questions, $+5$ marks are awarded for each correct answer, $-2$ marks for each incorrect answer, and $0$ marks for each unanswered question. Zara leaves $4$ questions unanswered and scores a total of $88$ marks; how many questions did she answer correctly?",
+          "answer": "$20\\text{ correct answers}$ ($5c - 2(26 - c) = 88 \\implies 7c = 140 \\implies c = 20$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Consider the parametric linear equation $(k - 2)x + 6 = 3x + 2k - 4$. Find (a) the value of $k$ for which the equation has infinitely many solutions, and (b) the value of $k$ for which $(k - 2)x + 6 = 3x + 12$ has no solution.",
+          "answer": "(a) Rearranging gives $(k - 5)x = 2(k - 5)$, so $k = 5$ gives $0x = 0$ (infinitely many solutions). (b) $(k - 5)x = 6$, so $k = 5$ gives $0x = 6$ (no solution)."
+        },
+        {
+          "number": 10,
+          "question": "When solving $\\dfrac{3x}{x - 2} - 4 = \\dfrac{6}{x - 2}$, a student multiplies through by $(x - 2)$ to get $3x - 4(x - 2) = 6$, which simplifies to $x = 2$. Explain why $x = 2$ is an extraneous solution and state the true solution set of the equation.",
+          "answer": "Substituting $x = 2$ makes the denominator $x - 2 = 0$, which is undefined (division by zero). Therefore the equation has no solution."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE6_1_1a", "expression": "(4*(3*3 - 2) - 3*(2*3 - 5)) - (2*(3 + 9) + 1)", "expected": 0 },
+        { "id": "WSE6_1_1b", "expression": "(5*(2*(-4) - 3) - 2*(3*(-4) + 1)) - (3*((-4) - 4) - 9)", "expected": 0 },
+        { "id": "WSE6_1_1d", "expression": "(3*(4*Rational(1, 2) - 1) - 5*(2*Rational(1, 2) + 3)) - (4*(3*Rational(1, 2) - 2) - 15)", "expected": 0 },
+        { "id": "WSE6_1_2a", "expression": "(2*4 + 1)/3 - (4 - 4)/4", "expected": 3 },
+        { "id": "WSE6_1_2b", "expression": "(3*(-4) + 2)/5 - (2*(-4) - 1)/3", "expected": 1 },
+        { "id": "WSE6_1_2d", "expression": "(5*(-4) - 2)/4 - (3*(-4) + 1)/6 - (2*(-4) - 3)/3", "expected": 0 },
+        { "id": "WSE6_1_3a", "expression": "Rational(5, 2*14 - 3) - Rational(3, 14 + 1)", "expected": 0 },
+        { "id": "WSE6_1_5", "expression": "Rational(360, 180) + Rational(360, 240)", "expected": "7/2" },
+        { "id": "WSE6_1_6", "expression": "Rational(15, 100)*360 + Rational(40, 100)*(600 - 360) - Rational(25, 100)*600", "expected": 0 },
+        { "id": "WSE6_1_8", "expression": "5 * 20 - 2 * (26 - 20)", "expected": 88 }
+      ]
+    },
+    {
+      "section_id": "6_2",
+      "section_code": "6B",
+      "title": "Graphing Linear Relations and Modelling",
+      "vcaa_code": "VC2M8A03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Rearrange each general linear equation into $y = mx + c$ to state the gradient $m$ and $y$-intercept $c$:",
+          "parts": [
+            { "label": "a", "question": "$3x + 4y = 20$", "answer": "$m = -\\dfrac{3}{4}, c = 5$" },
+            { "label": "b", "question": "$5x - 2y = 14$", "answer": "$m = \\dfrac{5}{2}, c = -7$" },
+            { "label": "c", "question": "$2x - 6y + 9 = 0$", "answer": "$m = \\dfrac{1}{3}, c = \\dfrac{3}{2}$" },
+            { "label": "d", "question": "$\\dfrac{x}{3} - \\dfrac{y}{4} = 1$", "answer": "$m = \\dfrac{4}{3}, c = -4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the equation of each line in gradient-intercept form $y = mx + c$:",
+          "parts": [
+            { "label": "a", "question": "Passes through $(-3, 11)$ and $(5, -5)$", "answer": "$y = -2x + 5$" },
+            { "label": "b", "question": "Parallel to $y = 3x - 7$ and passes through $(4, 5)$", "answer": "$y = 3x - 7$" },
+            { "label": "c", "question": "Parallel to $2x + 3y = 12$ and passes through $(6, -1)$", "answer": "$y = -\\dfrac{2}{3}x + 3$" },
+            { "label": "d", "question": "Perpendicular to $y = 2x + 1$ ($m_1 m_2 = -1$) through $(4, 3)$", "answer": "$y = -\\dfrac{1}{2}x + 5$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the value of the unknown coordinate $k$ in each geometric condition:",
+          "parts": [
+            { "label": "a", "question": "Line through $(2, k)$ and $(6, 15)$ has gradient $m = 3$", "answer": "$k = 3$" },
+            { "label": "b", "question": "Point $(k, -7)$ lies on the line $3x - 4y = 16$", "answer": "$k = -4$" },
+            { "label": "c", "question": "Points $(-1, 2)$, $(3, 10)$, and $(k, 18)$ are collinear", "answer": "$k = 7$" },
+            { "label": "d", "question": "Line $kx + 3y = 12$ is parallel to $y = -4x + 1$", "answer": "$k = 12$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the exact point of intersection $(x, y)$ of each pair of lines by equating $y$-values:",
+          "parts": [
+            { "label": "a", "question": "$y = 4x - 5$ and $y = x + 7$", "answer": "$(4, 11)$" },
+            { "label": "b", "question": "$y = -2x + 9$ and $y = 3x - 6$", "answer": "$(3, 3)$" },
+            { "label": "c", "question": "$y = \\dfrac{3}{2}x + 1$ and $y = -\\dfrac{1}{2}x + 9$", "answer": "$(4, 7)$" },
+            { "label": "d", "question": "$2x + y = 13$ and $x - y = 2$", "answer": "$(5, 3)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Train A leaves Southern Cross Station at $t = 0$ and travels along a track so its distance from Melbourne is $d_A = 80t\\text{ km}$. Train B starts $210\\text{ km}$ away at $t = 0$ and travels towards Melbourne according to $d_B = 210 - 60t\\text{ km}$. Find the time $t$ (in hours) and distance from Melbourne where the two trains pass each other.",
+          "answer": "$t = 1.5\\text{ hours}$, $d = 120\\text{ km}$ from Melbourne"
+        },
+        {
+          "number": 6,
+          "question": "A straight line with positive gradient $m$ passes through $(0, -6)$ and cuts the positive $x$-axis at $A$. If the right-angled triangle formed by the line and the two coordinate axes has an area of $24\\text{ square units}$, find the coordinates of $A$ and the gradient $m$.",
+          "answer": "$A(8, 0)$ and $m = \\dfrac{3}{4}$ ($\\frac{1}{2} \\times x_A \\times 6 = 24 \\implies x_A = 8$, so $m = \\frac{0 - (-6)}{8 - 0} = \\frac{3}{4}$)"
+        },
+        {
+          "number": 7,
+          "question": "An atmospheric weather balloon launched in Darwin records a linear temperature drop: at altitude $h = 1\\text{ km}$ the temperature is $T = 21.5^\\circ\\text{C}$, and at $h = 5\\text{ km}$ the temperature is $T = -4.5^\\circ\\text{C}$. Find the linear rule connecting $T$ and $h$, and find the altitude at which the temperature reaches $-37^\\circ\\text{C}$.",
+          "answer": "$T = -6.5h + 28$; $h = 10\\text{ km}$"
+        },
+        {
+          "number": 8,
+          "question": "Two lines $y = 2x + 6$ and $y = -x + 6$ share the same $y$-intercept $C(0, 6)$ and meet the $x$-axis at points $A$ and $B$ respectively. Find the coordinates of $A$ and $B$, and calculate the area of $\\triangle ABC$.",
+          "answer": "$A(-3, 0), B(6, 0)$; base $AB = 9$, height $= 6$, so $\\text{Area}(\\triangle ABC) = \\dfrac{1}{2} \\times 9 \\times 6 = 27\\text{ square units}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Show that for every real value of the parameter $k$, the family of straight lines $y = k(x - 3) + 5$ always passes through a single fixed point $P$, and state the coordinates of $P$.",
+          "answer": "When $x = 3$, $y = k(3 - 3) + 5 = 5$ regardless of the value of $k$. Thus every line in the family passes through the fixed point $P(3, 5)$."
+        },
+        {
+          "number": 10,
+          "question": "The points $A(1, 2)$, $B(4, 8)$, $C(10, 5)$, and $D(7, -1)$ form a quadrilateral in the Cartesian plane. By calculating the gradients of all four sides ($AB, BC, CD, DA$) and verifying that adjacent gradients multiply to $-1$, prove that $ABCD$ is a rectangle.",
+          "answer": "$m_{AB} = \\frac{8-2}{4-1} = 2$, $m_{CD} = \\frac{-1-5}{7-10} = 2$, $m_{BC} = \\frac{5-8}{10-4} = -\\frac{1}{2}$, $m_{DA} = \\frac{2-(-1)}{1-7} = -\\frac{1}{2}$. Opposite sides are parallel and $m_{AB} \\times m_{BC} = 2 \\times (-\\frac{1}{2}) = -1$, so all interior angles are $90^\\circ$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE6_2_1b", "expression": "Rational(5, 2) * 4 - 7", "expected": 3 },
+        { "id": "WSE6_2_2a_m", "expression": "(-5 - 11) / (5 - (-3))", "expected": -2 },
+        { "id": "WSE6_2_2c_c", "expression": "-1 - (-Rational(2, 3) * 6)", "expected": 3 },
+        { "id": "WSE6_2_3b", "expression": "(16 + 4 * (-7)) / 3", "expected": -4 },
+        { "id": "WSE6_2_3c", "expression": "3 + (18 - 10) / ((10 - 2) / (3 - (-1)))", "expected": 7 },
+        { "id": "WSE6_2_4a", "expression": "4 * 4 - 5 - (4 + 7)", "expected": 0 },
+        { "id": "WSE6_2_4b", "expression": "-2 * 3 + 9 - (3 * 3 - 6)", "expected": 0 },
+        { "id": "WSE6_2_5", "expression": "210 / (80 + 60)", "expected": "3/2" },
+        { "id": "WSE6_2_7_m", "expression": "(Rational(-45, 10) - Rational(215, 10)) / (5 - 1)", "expected": "-13/2" },
+        { "id": "WSE6_2_8", "expression": "Rational(1, 2) * (6 - (-3)) * 6", "expected": 27 }
+      ]
+    },
+    {
+      "section_id": "6_3",
+      "section_code": "6C",
+      "title": "Algebraic Algorithms, Flowcharts, and Error-Testing",
+      "vcaa_code": "VC2M8A04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "An algorithm takes an input $x$, subtracts $4$, multiplies by $3$, adds $x$, and divides by $2$ to produce output $y$:",
+          "parts": [
+            { "label": "a", "question": "Write a simplified algebraic formula for $y$ in terms of $x$", "answer": "$y = 2x - 6$" },
+            { "label": "b", "question": "Calculate the output $y$ when the input is $x = -2.5$", "answer": "$y = -11$" },
+            { "label": "c", "question": "Find the input $x$ that produces an output of $y = 19$", "answer": "$x = 12.5$ ($\\dfrac{25}{2}$)" },
+            { "label": "d", "question": "Find the fixed point $x$ where the output equals the input ($y = x$)", "answer": "$x = 6$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Trace the iterative loop: Start with $n$, and while $n < 50$, replace $n$ with $2n + 3$. Find the final output and number of loop iterations for each starting value:",
+          "parts": [
+            { "label": "a", "question": "Start with $n = 4$", "answer": "$n = 53$ ($3$ iterations: $4 \\to 11 \\to 25 \\to 53$)" },
+            { "label": "b", "question": "Start with $n = 1$", "answer": "$n = 61$ ($4$ iterations: $1 \\to 5 \\to 13 \\to 29 \\to 61$)" },
+            { "label": "c", "question": "Start with $n = -1$", "answer": "$n = 61$ ($5$ iterations: $-1 \\to 1 \\to 5 \\to 13 \\to 29 \\to 61$)" },
+            { "label": "d", "question": "Find the starting integer $n$ that exits after exactly $2$ iterations with final output $57$", "answer": "$n = 12$ ($12 \\to 27 \\to 57$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A piecewise branching algorithm sets $y = 3x - 4$ if $x \\ge 2$, and $y = 8 - 2x$ if $x < 2$. Evaluate:",
+          "parts": [
+            { "label": "a", "question": "The output $y$ when $x = 5$", "answer": "$y = 11$" },
+            { "label": "b", "question": "The output $y$ when $x = -3$", "answer": "$y = 14$" },
+            { "label": "c", "question": "The difference in outputs between $x = 2$ and $x = 1$", "answer": "$-4$ ($y(2) = 2, y(1) = 6$)" },
+            { "label": "d", "question": "All input values $x$ that produce an output of $y = 14$", "answer": "$x = 6$ and $x = -3$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Identify the first step where an algebraic error occurs in solving $\\dfrac{3(2x - 4)}{5} - 2 = x$, and find the correct solution:",
+          "parts": [
+            { "label": "a", "question": "Step 1 written as $3(2x - 4) - 2 = 5x$: what error was made?", "answer": "Failed to multiply the $-2$ term by $5$ (should be $-10$)" },
+            { "label": "b", "question": "Write the correct equation after multiplying all terms by $5$", "answer": "$3(2x - 4) - 10 = 5x$" },
+            { "label": "c", "question": "Expand and simplify the left-hand side of the correct equation", "answer": "$6x - 22 = 5x$" },
+            { "label": "d", "question": "State the true solution $x$ and verify it in the original equation", "answer": "$x = 22$ ($\\dfrac{3(40)}{5} - 2 = 24 - 2 = 22$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A progressive electricity tariff algorithm in Adelaide charges a supply fee of $\\$90$ per quarter, plus $\\$0.25$ per $\\text{kWh}$ for the first $1000\\text{ kWh}$, and $\\$0.35$ per $\\text{kWh}$ for all usage above $1000\\text{ kWh}$. Write a simplified algebraic formula for the quarterly bill $B$ when usage is $u > 1000\\text{ kWh}$, and find $u$ when $B = \\$550$.",
+          "answer": "$B = 0.35u - 10$ (since $90 + 250 + 0.35(u - 1000) = 0.35u - 10$); when $B = 550$, $u = 1600\\text{ kWh}$"
+        },
+        {
+          "number": 6,
+          "question": "The Collatz step algorithm takes a positive integer $n$: if $n$ is even, divide by $2$; if $n$ is odd, compute $3n + 1$. Starting with $n = 13$, trace the sequence of values and state how many steps it takes to reach $1$.",
+          "answer": "$9\\text{ steps}$ ($13 \\to 40 \\to 20 \\to 10 \\to 5 \\to 16 \\to 8 \\to 4 \\to 2 \\to 1$)"
+        },
+        {
+          "number": 7,
+          "question": "Hero's square-root algorithm approximates $\\sqrt{S}$ by iterating $x_{\\text{next}} = \\dfrac{1}{2}\\left(x + \\dfrac{S}{x}\\right)$. Starting with $x_0 = 4$ to approximate $\\sqrt{18}$ ($S = 18$), calculate the exact rational values of $x_1$ and $x_2$.",
+          "answer": "$x_1 = \\dfrac{17}{4} = 4.25$, $x_2 = \\dfrac{577}{136} \\approx 4.24265$"
+        },
+        {
+          "number": 8,
+          "question": "A checksum algorithm validates a 4-digit parcel code $d_1 d_2 d_3 d_4$ in Melbourne if $4d_1 + 3d_2 + 2d_3 + d_4$ is a multiple of $10$. If a valid parcel code has digits $7, k, 5, 3$, form and solve a modular/linear condition to find the single digit $k \\in \\{0, 1, \\dots, 9\\}$.",
+          "answer": "$k = 3$ ($4(7) + 3k + 2(5) + 3 = 41 + 3k$, and $41 + 3(3) = 50$, which is a multiple of $10$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In the iterative algorithm $n \\leftarrow 2n + 3$ (while $n < 50$), explain why starting with $n = -3$ causes an infinite loop that never terminates, and find all starting values $n$ for which the algorithm fails to terminate.",
+          "answer": "When $n = -3$, $2(-3) + 3 = -3$, so $n$ is a fixed point ($n_{\\text{next}} = n < 50$). For any $n \\le -3$, $2n + 3 \\le n < 50$, so the sequence decreases or stays constant and never reaches $50$."
+        },
+        {
+          "number": 10,
+          "question": "Two students design algebraic flowcharts intended to compute $f(x) = 4(x - 3)^2 - 10$. Student A's flowchart computes $((x - 3)^2 \\times 4) - 10$, while Student B's flowchart computes $(4x - 12)^2 - 10$. Prove algebraically using test cases and expansion why Student B's algorithm is incorrect.",
+          "answer": "Student B multiplies by $4$ before squaring, yielding $(4(x - 3))^2 - 10 = 16(x - 3)^2 - 10 \\neq 4(x - 3)^2 - 10$ (e.g. at $x = 4$, A gives $-6$ while B gives $+6$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE6_3_1a", "expression": "simplify((3*(x - 4) + x)/2 - (2*x - 6))", "expected": 0 },
+        { "id": "WSE6_3_1b", "expression": "2 * Rational(-5, 2) - 6", "expected": -11 },
+        { "id": "WSE6_3_1c", "expression": "(19 + 6) / 2", "expected": "25/2" },
+        { "id": "WSE6_3_2a", "expression": "2 * (2 * (2 * 4 + 3) + 3) + 3", "expected": 53 },
+        { "id": "WSE6_3_2d", "expression": "((57 - 3) / 2 - 3) / 2", "expected": 12 },
+        { "id": "WSE6_3_3a", "expression": "3 * 5 - 4", "expected": 11 },
+        { "id": "WSE6_3_4d", "expression": "3 * (2 * 22 - 4) / 5 - 2", "expected": 22 },
+        { "id": "WSE6_3_5", "expression": "(550 + 10) / Rational(35, 100)", "expected": 1600 },
+        { "id": "WSE6_3_7_x1", "expression": "Rational(1, 2) * (4 + Rational(18, 4))", "expected": "17/4" },
+        { "id": "WSE6_3_7_x2", "expression": "Rational(1, 2) * (Rational(17, 4) + 18 / Rational(17, 4))", "expected": "577/136" }
+      ]
+    }
+  ]
+}

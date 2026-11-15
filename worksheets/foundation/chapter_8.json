@@ -1,0 +1,295 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Pythagoras' Theorem and Geometry",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "8_1",
+      "section_code": "8A",
+      "title": "Pythagoras' Theorem",
+      "vcaa_code": "VC2M8M06",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each expression involving squares and square roots:",
+          "parts": [
+            { "label": "a", "question": "$3^2 + 4^2$", "answer": "$25$" },
+            { "label": "b", "question": "$6^2 + 8^2$", "answer": "$100$" },
+            { "label": "c", "question": "$\\sqrt{25}$", "answer": "$5$" },
+            { "label": "d", "question": "$\\sqrt{144}$", "answer": "$12$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use $c^2 = a^2 + b^2$ (then take the square root) to find the hypotenuse $c$:",
+          "parts": [
+            { "label": "a", "question": "$a = 3\\text{ cm}, b = 4\\text{ cm}$", "answer": "$c = 5\\text{ cm}$" },
+            { "label": "b", "question": "$a = 6\\text{ m}, b = 8\\text{ m}$", "answer": "$c = 10\\text{ m}$" },
+            { "label": "c", "question": "$a = 5\\text{ cm}, b = 12\\text{ cm}$", "answer": "$c = 13\\text{ cm}$" },
+            { "label": "d", "question": "$a = 8\\text{ m}, b = 15\\text{ m}$", "answer": "$c = 17\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use $a^2 = c^2 - b^2$ to find the unknown shorter side $a$:",
+          "parts": [
+            { "label": "a", "question": "$c = 5\\text{ cm}, b = 4\\text{ cm}$", "answer": "$a = 3\\text{ cm}$" },
+            { "label": "b", "question": "$c = 10\\text{ m}, b = 6\\text{ m}$", "answer": "$a = 8\\text{ m}$" },
+            { "label": "c", "question": "$c = 13\\text{ cm}, b = 5\\text{ cm}$", "answer": "$a = 12\\text{ cm}$" },
+            { "label": "d", "question": "$c = 15\\text{ m}, b = 12\\text{ m}$", "answer": "$a = 9\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Check if $a^2 + b^2 = c^2$ holds to decide if each triangle is right-angled (Yes or No):",
+          "parts": [
+            { "label": "a", "question": "$3\\text{ cm}, 4\\text{ cm}, 5\\text{ cm}$ ($9 + 16 = 25$?)", "answer": "Yes" },
+            { "label": "b", "question": "$4\\text{ cm}, 5\\text{ cm}, 6\\text{ cm}$ ($16 + 25 = 36$?)", "answer": "No ($41 \\neq 36$)" },
+            { "label": "c", "question": "$5\\text{ m}, 12\\text{ m}, 13\\text{ m}$ ($25 + 144 = 169$?)", "answer": "Yes" },
+            { "label": "d", "question": "$6\\text{ m}, 8\\text{ m}, 10\\text{ m}$ ($36 + 64 = 100$?)", "answer": "Yes" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular backyard lawn in Adelaide is $8\\text{ m}$ long and $6\\text{ m}$ wide. Calculate $c = \\sqrt{8^2 + 6^2}$ to find the diagonal length across the lawn.",
+          "answer": "$10\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A $5\\text{ m}$ ladder leans against a wall with its base $3\\text{ m}$ from the wall. Calculate $h = \\sqrt{5^2 - 3^2}$ to find how high up the wall the ladder reaches.",
+          "answer": "$4\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A bushwalker walks $3\\text{ km}$ north and then $4\\text{ km}$ east from her campsite. Calculate $d = \\sqrt{3^2 + 4^2}$ to find her direct distance back to camp.",
+          "answer": "$5\\text{ km}$"
+        },
+        {
+          "number": 8,
+          "question": "A vertical tent pole of height $12\\text{ m}$ is supported by a guy rope pegged $5\\text{ m}$ from the base of the pole. Calculate $c = \\sqrt{12^2 + 5^2}$ to find the length of the rope.",
+          "answer": "$13\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "How can you always identify which side is the hypotenuse $c$ in a right-angled triangle? Is the hypotenuse the shortest side or the longest side?",
+          "answer": "The hypotenuse is always opposite the $90^\\circ$ right angle, and it is always the longest side of the triangle."
+        },
+        {
+          "number": 10,
+          "question": "Noah finds $c^2 = 3^2 + 4^2 = 25$ and writes that the hypotenuse is $c = 25\\text{ cm}$. What final step did Noah forget to do?",
+          "answer": "Noah forgot to take the square root of $25$; the hypotenuse is $c = \\sqrt{25} = 5\\text{ cm}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF8_1_1a", "expression": "3**2 + 4**2", "expected": 25 },
+        { "id": "WSF8_1_1b", "expression": "6**2 + 8**2", "expected": 100 },
+        { "id": "WSF8_1_2a", "expression": "sqrt(3**2 + 4**2)", "expected": 5 },
+        { "id": "WSF8_1_2c", "expression": "sqrt(5**2 + 12**2)", "expected": 13 },
+        { "id": "WSF8_1_2d", "expression": "sqrt(8**2 + 15**2)", "expected": 17 },
+        { "id": "WSF8_1_3b", "expression": "sqrt(10**2 - 6**2)", "expected": 8 },
+        { "id": "WSF8_1_3c", "expression": "sqrt(13**2 - 5**2)", "expected": 12 },
+        { "id": "WSF8_1_3d", "expression": "sqrt(15**2 - 12**2)", "expected": 9 },
+        { "id": "WSF8_1_5", "expression": "sqrt(8**2 + 6**2)", "expected": 10 },
+        { "id": "WSF8_1_6", "expression": "sqrt(5**2 - 3**2)", "expected": 4 }
+      ]
+    },
+    {
+      "section_id": "8_2",
+      "section_code": "8B",
+      "title": "Congruence, Similarity and Quadrilateral Properties",
+      "vcaa_code": "VC2M8SP01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Match each pair of identical triangles to its congruence test ($\\text{SSS, SAS, ASA, RHS}$):",
+          "parts": [
+            { "label": "a", "question": "Three pairs of equal sides ($4\\text{ cm}, 5\\text{ cm}, 6\\text{ cm}$)", "answer": "$\\text{SSS}$" },
+            { "label": "b", "question": "Two sides ($5\\text{ cm}, 7\\text{ cm}$) and the angle between them ($60^\\circ$)", "answer": "$\\text{SAS}$" },
+            { "label": "c", "question": "Two angles ($50^\\circ, 70^\\circ$) and the side between them ($8\\text{ cm}$)", "answer": "$\\text{ASA}$" },
+            { "label": "d", "question": "A right angle ($90^\\circ$), hypotenuse ($10\\text{ cm}$), and one shorter side ($6\\text{ cm}$)", "answer": "$\\text{RHS}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "The four interior angles of any quadrilateral add to $360^\\circ$. Find the missing angle $x^\\circ$:",
+          "parts": [
+            { "label": "a", "question": "Angles are $90^\\circ, 90^\\circ, 100^\\circ, x^\\circ$", "answer": "$x = 80$" },
+            { "label": "b", "question": "Angles are $80^\\circ, 110^\\circ, 70^\\circ, x^\\circ$", "answer": "$x = 100$" },
+            { "label": "c", "question": "Angles are $60^\\circ, 120^\\circ, 60^\\circ, x^\\circ$ (a parallelogram)", "answer": "$x = 120$" },
+            { "label": "d", "question": "Angles are $85^\\circ, 95^\\circ, 105^\\circ, x^\\circ$", "answer": "$x = 75$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Triangle $B$ is an enlargement of Triangle $A$ (sides $3\\text{ cm}, 4\\text{ cm}, 5\\text{ cm}$) with scale factor $k = 2$. Find:",
+          "parts": [
+            { "label": "a", "question": "The side corresponding to $3\\text{ cm}$ ($3 \\times 2$)", "answer": "$6\\text{ cm}$" },
+            { "label": "b", "question": "The side corresponding to $4\\text{ cm}$ ($4 \\times 2$)", "answer": "$8\\text{ cm}$" },
+            { "label": "c", "question": "The side corresponding to $5\\text{ cm}$ ($5 \\times 2$)", "answer": "$10\\text{ cm}$" },
+            { "label": "d", "question": "The perimeter of Triangle $B$", "answer": "$24\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Name each quadrilateral from the list: Square, Rectangle, Rhombus, Trapezium:",
+          "parts": [
+            { "label": "a", "question": "4 equal sides and 4 right angles ($90^\\circ$)", "answer": "Square" },
+            { "label": "b", "question": "Opposite sides equal and 4 right angles ($90^\\circ$)", "answer": "Rectangle" },
+            { "label": "c", "question": "4 equal sides, opposite angles equal (diamond shape)", "answer": "Rhombus" },
+            { "label": "d", "question": "Only one pair of parallel sides", "answer": "Trapezium" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A $2\\text{ m}$ fence post casts a $1\\text{ m}$ shadow while a nearby gum tree casts a $6\\text{ m}$ shadow (scale factor $k = 6$). Multiply $2 \\times 6$ to find the height of the gum tree.",
+          "answer": "$12\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A rectangular photo measures $6\\text{ cm}$ wide by $4\\text{ cm}$ high and is enlarged by a scale factor of $k = 3$. Multiply both dimensions by $3$ to find the width and height of the enlarged photo.",
+          "answer": "$18\\text{ cm}$ wide by $12\\text{ cm}$ high"
+        },
+        {
+          "number": 7,
+          "question": "A home plate on a softball diamond has three right angles ($90^\\circ, 90^\\circ, 90^\\circ$) and two other equal angles, but a 4-sided kite shield has angles $100^\\circ, 110^\\circ$, and $110^\\circ$. Subtract their sum from $360^\\circ$ to find the fourth angle of the kite.",
+          "answer": "$40^\\circ$"
+        },
+        {
+          "number": 8,
+          "question": "In a parallelogram, opposite sides have equal length. If the top side is $14\\text{ cm}$ and the left side is $9\\text{ cm}$, find the lengths of the bottom side and the right side, and the total perimeter.",
+          "answer": "Bottom $= 14\\text{ cm}$, right $= 9\\text{ cm}$; Perimeter $= 46\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "State the difference between **congruent** shapes and **similar** shapes in terms of their size and shape.",
+          "answer": "Congruent shapes have the exact same shape AND the same size; similar shapes have the exact same shape (equal angles) but can be different sizes."
+        },
+        {
+          "number": 10,
+          "question": "Explain why every square is also a rectangle, but not every rectangle is a square.",
+          "answer": "A rectangle requires 4 right angles and opposite sides equal, which every square has; however, a square also requires all 4 sides to be equal, which most rectangles do not have."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF8_2_2a", "expression": "360 - (90 + 90 + 100)", "expected": 80 },
+        { "id": "WSF8_2_2b", "expression": "360 - (80 + 110 + 70)", "expected": 100 },
+        { "id": "WSF8_2_2c", "expression": "360 - (60 + 120 + 60)", "expected": 120 },
+        { "id": "WSF8_2_2d", "expression": "360 - (85 + 95 + 105)", "expected": 75 },
+        { "id": "WSF8_2_3c", "expression": "5 * 2", "expected": 10 },
+        { "id": "WSF8_2_3d", "expression": "6 + 8 + 10", "expected": 24 },
+        { "id": "WSF8_2_5", "expression": "2 * 6", "expected": 12 },
+        { "id": "WSF8_2_6_w", "expression": "6 * 3", "expected": 18 },
+        { "id": "WSF8_2_7", "expression": "360 - (100 + 110 + 110)", "expected": 40 },
+        { "id": "WSF8_2_8", "expression": "2 * (14 + 9)", "expected": 46 }
+      ]
+    },
+    {
+      "section_id": "8_3",
+      "section_code": "8C",
+      "title": "3D Coordinates, Transformations, and Geometric Algorithms",
+      "vcaa_code": "VC2M8SP03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Translate (slide) the point $A(2, 3)$ by applying each rule:",
+          "parts": [
+            { "label": "a", "question": "Move $4$ units right: $(2 + 4, 3)$", "answer": "$(6, 3)$" },
+            { "label": "b", "question": "Move $5$ units up: $(2, 3 + 5)$", "answer": "$(2, 8)$" },
+            { "label": "c", "question": "Move $1$ unit left and $2$ units down: $(2 - 1, 3 - 2)$", "answer": "$(1, 1)$" },
+            { "label": "d", "question": "Move $3$ units right and $4$ units up: $(2 + 3, 3 + 4)$", "answer": "$(5, 7)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Reflect or rotate the point $P(4, 2)$ using the given coordinate rule:",
+          "parts": [
+            { "label": "a", "question": "Reflect in the $x$-axis $(x, -y)$", "answer": "$(4, -2)$" },
+            { "label": "b", "question": "Reflect in the $y$-axis $(-x, y)$", "answer": "$(-4, 2)$" },
+            { "label": "c", "question": "Rotate $180^\\circ$ about the origin $(-x, -y)$", "answer": "$(-4, -2)$" },
+            { "label": "d", "question": "Rotate $90^\\circ$ anticlockwise about the origin $(-y, x)$", "answer": "$(-2, 4)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A 3D point $(x, y, z)$ gives $(x\\text{ right}, y\\text{ forward}, z\\text{ up})$ from $(0, 0, 0)$. For the point $B(3, 4, 5)$, state:",
+          "parts": [
+            { "label": "a", "question": "Its height $z$ above the ground ($xy$-plane)", "answer": "$5$" },
+            { "label": "b", "question": "The point directly below $B$ on the ground (set $z = 0$)", "answer": "$(3, 4, 0)$" },
+            { "label": "c", "question": "The new 3D coordinates if $B(3, 4, 5)$ moves $2$ units straight up ($z + 2$)", "answer": "$(3, 4, 7)$" },
+            { "label": "d", "question": "The distance on the ground from $(0, 0, 0)$ to $(3, 4, 0)$ using $\\sqrt{3^2 + 4^2}$", "answer": "$5$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A robot turtle repeats [Move forward, Turn left $\\theta^\\circ$] $n$ times to draw a regular shape ($n \\times \\theta = 360^\\circ$). Find:",
+          "parts": [
+            { "label": "a", "question": "Number of sides $n = 360 \\div 90$ when turn angle $\\theta = 90^\\circ$", "answer": "$4$ (a square)" },
+            { "label": "b", "question": "Number of sides $n = 360 \\div 120$ when turn angle $\\theta = 120^\\circ$", "answer": "$3$ (an equilateral triangle)" },
+            { "label": "c", "question": "Turn angle $\\theta = 360 \\div 5$ needed for a regular pentagon ($n = 5$)", "answer": "$72^\\circ$" },
+            { "label": "d", "question": "Turn angle $\\theta = 360 \\div 6$ needed for a regular hexagon ($n = 6$)", "answer": "$60^\\circ$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A counter on a board game starts at $(1, 4)$ and is translated $5$ units right and $2$ units down. Calculate $(1 + 5, 4 - 2)$ to find its new position.",
+          "answer": "$(6, 2)$"
+        },
+        {
+          "number": 6,
+          "question": "A drone in a park hovers at 3D coordinates $(2, 5, 10)$ (where $z = 10\\text{ m}$ is its height). It climbs $6\\text{ m}$ higher. Add $6$ to the $z$-coordinate to find its new 3D position.",
+          "answer": "$(2, 5, 16)$"
+        },
+        {
+          "number": 7,
+          "question": "A floor-cleaning robot repeats [Forward $3\\text{ m}$, Turn left $90^\\circ$] $4$ times to trace a square. Multiply $4 \\times 3$ to find the total distance it travels around the square.",
+          "answer": "$12\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "A logo has a corner at $(3, 5)$ and is reflected across the $y$-axis (rule: change the sign of $x$). What are the coordinates of the reflected corner?",
+          "answer": "$(-3, 5)$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "If you reflect a point $(3, 7)$ across the $x$-axis to get $(3, -7)$, and then reflect it across the $x$-axis a second time, where does it end up? Explain why.",
+          "answer": "Back at $(3, 7)$, because reflecting across the same mirror line twice flips the sign of $y$ back to $+7$."
+        },
+        {
+          "number": 10,
+          "question": "Why does a robot walking around the outside of any closed polygon always turn through a total of $360^\\circ$ by the time it returns to its starting direction?",
+          "answer": "To end up facing the exact same direction it started, the robot must complete one full turn, which is $360^\\circ$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF8_3_1a_x", "expression": "2 + 4", "expected": 6 },
+        { "id": "WSF8_3_1b_y", "expression": "3 + 5", "expected": 8 },
+        { "id": "WSF8_3_3c_z", "expression": "5 + 2", "expected": 7 },
+        { "id": "WSF8_3_3d", "expression": "sqrt(3**2 + 4**2)", "expected": 5 },
+        { "id": "WSF8_3_4a", "expression": "360 / 90", "expected": 4 },
+        { "id": "WSF8_3_4b", "expression": "360 / 120", "expected": 3 },
+        { "id": "WSF8_3_4c", "expression": "360 / 5", "expected": 72 },
+        { "id": "WSF8_3_4d", "expression": "360 / 6", "expected": 60 },
+        { "id": "WSF8_3_6_z", "expression": "10 + 6", "expected": 16 },
+        { "id": "WSF8_3_7", "expression": "4 * 3", "expected": 12 }
+      ]
+    }
+  ]
+}

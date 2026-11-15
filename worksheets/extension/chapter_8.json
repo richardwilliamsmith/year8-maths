@@ -1,0 +1,295 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Pythagoras' Theorem and Geometry",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "8_1",
+      "section_code": "8A",
+      "title": "Pythagoras' Theorem",
+      "vcaa_code": "VC2M8M06",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the unknown value $x$ in each right-angled triangle:",
+          "parts": [
+            { "label": "a", "question": "Legs $x$ and $(x + 7)$, hypotenuse $13$", "answer": "$x = 5$" },
+            { "label": "b", "question": "Legs $8$ and $x$, hypotenuse $(x + 2)$", "answer": "$x = 15$" },
+            { "label": "c", "question": "Legs $12$ and $(x - 3)$, hypotenuse $(x + 3)$", "answer": "$x = 12$" },
+            { "label": "d", "question": "Isosceles right-angled triangle with legs $x$ and hypotenuse $14$", "answer": "$x = \\sqrt{98} = 7\\sqrt{2}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the exact distance between each pair of points in the Cartesian plane:",
+          "parts": [
+            { "label": "a", "question": "$(-2, 1)$ and $(6, 16)$", "answer": "$17$" },
+            { "label": "b", "question": "$(-5, 4)$ and $(7, -1)$", "answer": "$13$" },
+            { "label": "c", "question": "$(-3, -4)$ and $(9, 12)$", "answer": "$20$" },
+            { "label": "d", "question": "$(1, -2)$ and $(7, 4)$ (exact surd)", "answer": "$\\sqrt{72} = 6\\sqrt{2}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the exact 3D space diagonal $d = \\sqrt{l^2 + w^2 + h^2}$ of each rectangular prism:",
+          "parts": [
+            { "label": "a", "question": "$3\\text{ cm} \\times 4\\text{ cm} \\times 12\\text{ cm}$", "answer": "$13\\text{ cm}$" },
+            { "label": "b", "question": "$8\\text{ cm} \\times 9\\text{ cm} \\times 12\\text{ cm}$", "answer": "$17\\text{ cm}$" },
+            { "label": "c", "question": "$6\\text{ m} \\times 8\\text{ m} \\times 24\\text{ m}$", "answer": "$26\\text{ m}$" },
+            { "label": "d", "question": "Cube of side length $6\\text{ cm}$ (exact surd)", "answer": "$\\sqrt{108} = 6\\sqrt{3}\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use Pythagoras' theorem to find the exact area of each shape:",
+          "parts": [
+            { "label": "a", "question": "Isosceles triangle with equal sides $17\\text{ cm}$ and base $16\\text{ cm}$", "answer": "$120\\text{ cm}^2$ ($h = 15\\text{ cm}$)" },
+            { "label": "b", "question": "Rhombus with side length $13\\text{ cm}$ and one diagonal of length $10\\text{ cm}$", "answer": "$120\\text{ cm}^2$ (other diagonal $= 24\\text{ cm}$)" },
+            { "label": "c", "question": "Isosceles trapezium with parallel sides $10\\text{ cm}$ and $22\\text{ cm}$ and slant sides $10\\text{ cm}$", "answer": "$128\\text{ cm}^2$ ($h = 8\\text{ cm}$)" },
+            { "label": "d", "question": "Right-angled triangle with hypotenuse $29\\text{ cm}$ and one leg $20\\text{ cm}$", "answer": "$210\\text{ cm}^2$ (other leg $= 21\\text{ cm}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A shipping container at the Port of Melbourne has internal dimensions $12.0\\text{ m}$ long, $2.4\\text{ m}$ wide, and $2.6\\text{ m}$ high. Find the maximum length of a straight steel rod that can fit diagonally inside the container from a bottom corner to the opposite top corner, rounded to $2$ decimal places.",
+          "answer": "$\\sqrt{156.52}\\text{ m} \\approx 12.51\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "Two vertical communications masts of heights $18\\text{ m}$ and $28\\text{ m}$ stand on level ground in the Pilbara with their bases $24\\text{ m}$ apart. Calculate the exact length of a taut wire cable stretched directly from the top of the shorter mast to the top of the taller mast.",
+          "answer": "$26\\text{ m}$ ($\\sqrt{24^2 + (28 - 18)^2} = \\sqrt{576 + 100} = 26\\text{ m}$)"
+        },
+        {
+          "number": 7,
+          "question": "A chord $AB$ of length $16\\text{ cm}$ is drawn inside a circle of radius $10\\text{ cm}$ with centre $O$. Given that the perpendicular from $O$ to $AB$ bisects the chord at $M$, find the perpendicular distance $OM$ from the centre of the circle to the chord.",
+          "answer": "$6\\text{ cm}$ ($\\sqrt{10^2 - 8^2} = 6\\text{ cm}$)"
+        },
+        {
+          "number": 8,
+          "question": "A square-based pyramid has a square base of side length $16\\text{ cm}$ and four slant edges (from the apex to each base corner) of length $17\\text{ cm}$. Find (a) the perpendicular slant height $s$ of each triangular face and (b) the total surface area of the pyramid.",
+          "answer": "(a) $s = 15\\text{ cm}$ ($\\sqrt{17^2 - 8^2} = 15$), (b) $\\text{TSA} = 16^2 + 4 \\times \\frac{1}{2}(16)(15) = 256 + 480 = 736\\text{ cm}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In $\\triangle ABC$, the altitude $CD$ of length $h$ is drawn perpendicular to side $AB$, splitting $AB = 21\\text{ cm}$ into $AD = x\\text{ cm}$ and $BD = (21 - x)\\text{ cm}$. Given $AC = 13\\text{ cm}$ and $BC = 20\\text{ cm}$, equate the two expressions for $h^2$ from $\\triangle ACD$ and $\\triangle BCD$ to find $x$ and $h$.",
+          "answer": "$h^2 = 13^2 - x^2 = 20^2 - (21 - x)^2 \\implies 169 - x^2 = 400 - 441 + 42x - x^2 \\implies 42x = 210 \\implies x = 5\\text{ cm}$, and $h = \\sqrt{13^2 - 5^2} = 12\\text{ cm}$."
+        },
+        {
+          "number": 10,
+          "question": "Prove Euclid's formula for Pythagorean triads: for any integers $m > n > 0$, show algebraically that $a = m^2 - n^2$, $b = 2mn$, and $c = m^2 + n^2$ satisfy $a^2 + b^2 = c^2$.",
+          "answer": "$a^2 + b^2 = (m^2 - n^2)^2 + (2mn)^2 = m^4 - 2m^2n^2 + n^4 + 4m^2n^2 = m^4 + 2m^2n^2 + n^4 = (m^2 + n^2)^2 = c^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE8_1_1b", "expression": "(15 + 2)**2 - (8**2 + 15**2)", "expected": 0 },
+        { "id": "WSE8_1_1c", "expression": "(12 + 3)**2 - (12**2 + (12 - 3)**2)", "expected": 0 },
+        { "id": "WSE8_1_2a", "expression": "sqrt((6 - (-2))**2 + (16 - 1)**2)", "expected": 17 },
+        { "id": "WSE8_1_2b", "expression": "sqrt((7 - (-5))**2 + (-1 - 4)**2)", "expected": 13 },
+        { "id": "WSE8_1_3a", "expression": "sqrt(3**2 + 4**2 + 12**2)", "expected": 13 },
+        { "id": "WSE8_1_3b", "expression": "sqrt(8**2 + 9**2 + 12**2)", "expected": 17 },
+        { "id": "WSE8_1_4c", "expression": "Rational(1, 2) * (10 + 22) * sqrt(10**2 - ((22 - 10)/2)**2)", "expected": 128 },
+        { "id": "WSE8_1_6", "expression": "sqrt(24**2 + (28 - 18)**2)", "expected": 26 },
+        { "id": "WSE8_1_8b", "expression": "16**2 + 4 * Rational(1, 2) * 16 * sqrt(17**2 - 8**2)", "expected": 736 },
+        { "id": "WSE8_1_9", "expression": "(13**2 - 20**2 + 21**2) / (2 * 21)", "expected": 5 }
+      ]
+    },
+    {
+      "section_id": "8_2",
+      "section_code": "8B",
+      "title": "Congruence, Similarity and Quadrilateral Properties",
+      "vcaa_code": "VC2M8SP01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the value of the pronumeral in each geometric configuration:",
+          "parts": [
+            { "label": "a", "question": "Parallelogram with opposite angles $(5x - 18)^\\circ$ and $(3x + 26)^\\circ$", "answer": "$x = 22$ (angles are $92^\\circ$)" },
+            { "label": "b", "question": "Rhombus with adjacent angles $(2x + 15)^\\circ$ and $(3x - 10)^\\circ$", "answer": "$x = 35$ (angles $85^\\circ, 95^\\circ$)" },
+            { "label": "c", "question": "Rectangle with diagonals of lengths $(4x - 7)\\text{ cm}$ and $(2x + 11)\\text{ cm}$", "answer": "$x = 9$ (diagonals $= 29\\text{ cm}$)" },
+            { "label": "d", "question": "Isosceles trapezium with base angles $(4x - 12)^\\circ$ and $(2x + 24)^\\circ$", "answer": "$x = 18$ (base angles $= 60^\\circ$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "In $\\triangle ABC$, a line $DE$ parallel to $BC$ meets $AB$ at $D$ and $AC$ at $E$ (so $\\triangle ADE \\sim \\triangle ABC$). Given $AD = 6\\text{ cm}$, $DB = 9\\text{ cm}$, and $DE = 8\\text{ cm}$, find:",
+          "parts": [
+            { "label": "a", "question": "The full side length $AB$", "answer": "$15\\text{ cm}$" },
+            { "label": "b", "question": "The scale factor $k = \\dfrac{AB}{AD}$ from $\\triangle ADE$ to $\\triangle ABC$", "answer": "$k = \\dfrac{5}{2} = 2.5$" },
+            { "label": "c", "question": "The length of base $BC$", "answer": "$20\\text{ cm}$" },
+            { "label": "d", "question": "The length of $EC$ if $AE = 5\\text{ cm}$", "answer": "$7.5\\text{ cm}$ ($AC = 12.5\\text{ cm}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Two similar triangles have side length scale factor $k = \\dfrac{3}{5}$. Find:",
+          "parts": [
+            { "label": "a", "question": "The perimeter of the larger triangle if the smaller has perimeter $36\\text{ cm}$", "answer": "$60\\text{ cm}$" },
+            { "label": "b", "question": "The ratio of their areas $\\text{Area}_{\\text{small}} : \\text{Area}_{\\text{large}}$ ($k^2$)", "answer": "$9 : 25$" },
+            { "label": "c", "question": "The area of the larger triangle if the smaller has area $54\\text{ cm}^2$", "answer": "$150\\text{ cm}^2$" },
+            { "label": "d", "question": "The altitude of the smaller triangle if the corresponding larger altitude is $25\\text{ cm}$", "answer": "$15\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Determine whether each pair of triangles is necessarily congruent; if so, state the test ($\\text{SSS, SAS, ASA, RHS}$):",
+          "parts": [
+            { "label": "a", "question": "In $\\triangle ABC$ and $\\triangle ADC$: $AB = AD$, $BC = DC$, and $AC$ is common", "answer": "Yes, $\\text{SSS}$" },
+            { "label": "b", "question": "Two triangles with $AB = DE = 8\\text{ cm}$, $BC = EF = 6\\text{ cm}$, and $\\angle A = \\angle D = 40^\\circ$ (non-included angle)", "answer": "No ($\\text{SSA}$ is ambiguous)" },
+            { "label": "c", "question": "Right-angled $\\triangle PQR$ and $\\triangle XYZ$ with hypotenuse $13\\text{ cm}$ and one leg $5\\text{ cm}$ in both", "answer": "Yes, $\\text{RHS}$" },
+            { "label": "d", "question": "Vertically opposite $\\triangle AOB$ and $\\triangle COD$ where $O$ bisects both $AC$ and $BD$", "answer": "Yes, $\\text{SAS}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "To measure the width $AB$ of the Murray River without crossing it, a surveyor marks $B$ on the far bank directly opposite $A$, walks $40\\text{ m}$ along the bank perpendicular to $AB$ to a stake $P$, and continues a further $16\\text{ m}$ to $C$. From $C$, she walks perpendicular to $AC$ until stake $P$ lines up with $B$, stopping at $D$ where $CD = 28\\text{ m}$. Using $\\triangle ABP \\sim \\triangle CDP$, find the river width $AB$.",
+          "answer": "$70\\text{ m}$ ($\\dfrac{AB}{28} = \\dfrac{40}{16} \\implies AB = 2.5 \\times 28 = 70\\text{ m}$)"
+        },
+        {
+          "number": 6,
+          "question": "A person of eye height $1.65\\text{ m}$ places a small flat mirror horizontally on the ground $2.2\\text{ m}$ away from their feet and $15.4\\text{ m}$ away from the base of a giant karri tree in Western Australia. Given that the angle of incidence equals the angle of reflection (forming similar right-angled triangles), find the height of the karri tree.",
+          "answer": "$11.55\\text{ m}$ ($\\dfrac{H}{1.65} = \\dfrac{15.4}{2.2} = 7 \\implies H = 7 \\times 1.65 = 11.55\\text{ m}$)"
+        },
+        {
+          "number": 7,
+          "question": "A rhombus has a perimeter of $68\\text{ cm}$ and one diagonal of length $16\\text{ cm}$. Using the property that the diagonals of a rhombus bisect each other at right angles, calculate the length of the second diagonal and the area of the rhombus.",
+          "answer": "Second diagonal $= 30\\text{ cm}$ (side $= 17\\text{ cm}$, half-diagonal $= \\sqrt{17^2 - 8^2} = 15\\text{ cm}$); $\\text{Area} = \\frac{1}{2}(16)(30) = 240\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "A $4.5\\text{ m}$ street lamp post casts a shadow of a $1.8\\text{ m}$ pedestrian who is standing $6.0\\text{ m}$ away from the base of the lamp post. Using nested similar triangles, find the length $s$ of the pedestrian's shadow on the ground.",
+          "answer": "$s = 4.0\\text{ m}$ ($\\dfrac{s}{s + 6} = \\dfrac{1.8}{4.5} = \\dfrac{2}{5} \\implies 5s = 2s + 12 \\implies s = 4.0\\text{ m}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In an isosceles triangle $ABC$ with $AB = AC$, the angle bisector of $\\angle BAC$ meets the base $BC$ at $M$. Write a formal congruence proof showing that $\\triangle ABM \\cong \\triangle ACM$, and hence deduce that the angle bisector of the apex angle also bisects the base $BC$ at right angles.",
+          "answer": "In $\\triangle ABM$ and $\\triangle ACM$: $AB = AC$ (given), $\\angle BAM = \\angle CAM$ ($AM$ bisects $\\angle BAC$), and $AM = AM$ (common). Thus $\\triangle ABM \\cong \\triangle ACM$ ($\\text{SAS}$). Hence $BM = CM$ and $\\angle AMB = \\angle AMC = 90^\\circ$ (supplementary equal angles)."
+        },
+        {
+          "number": 10,
+          "question": "In any quadrilateral $ABCD$ whose diagonals $AC$ and $BD$ bisect each other at $M$ (so $AM = CM$ and $BM = DM$), prove using congruent triangles and alternate angles that opposite sides $AB$ and $CD$ are both equal in length and parallel.",
+          "answer": "In $\\triangle AMB$ and $\\triangle CMD$: $AM = CM$ (given), $\\angle AMB = \\angle CMD$ (vertically opposite), and $BM = DM$ (given). Hence $\\triangle AMB \\cong \\triangle CMD$ ($\\text{SAS}$), so $AB = CD$ and alternate angles $\\angle MAB = \\angle MCD$, proving $AB \\parallel CD$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE8_2_1a", "expression": "(26 + 18) / (5 - 3)", "expected": 22 },
+        { "id": "WSE8_2_1b", "expression": "(180 - 15 + 10) / (2 + 3)", "expected": 35 },
+        { "id": "WSE8_2_2c", "expression": "8 * (6 + 9) / 6", "expected": 20 },
+        { "id": "WSE8_2_2d", "expression": "5 * Rational(9, 6)", "expected": 7.5 },
+        { "id": "WSE8_2_3a", "expression": "36 * Rational(5, 3)", "expected": 60 },
+        { "id": "WSE8_2_3c", "expression": "54 * Rational(25, 9)", "expected": 150 },
+        { "id": "WSE8_2_5", "expression": "28 * Rational(40, 16)", "expected": 70 },
+        { "id": "WSE8_2_6", "expression": "Rational(165, 100) * Rational(154, 22)", "expected": 11.55 },
+        { "id": "WSE8_2_7", "expression": "Rational(1, 2) * 16 * (2 * sqrt((68/4)**2 - 8**2))", "expected": 240 },
+        { "id": "WSE8_2_8", "expression": "6 * Rational(18, 45 - 18)", "expected": 4 }
+      ]
+    },
+    {
+      "section_id": "8_3",
+      "section_code": "8C",
+      "title": "3D Coordinates, Transformations, and Geometric Algorithms",
+      "vcaa_code": "VC2M8SP03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For the 3D points $A(2, -3, 4)$ and $B(-4, 9, 10)$ in $(x, y, z)$ space, find:",
+          "parts": [
+            { "label": "a", "question": "The displacement vector components $(\\Delta x, \\Delta y, \\Delta z)$ from $A$ to $B$", "answer": "$(-6, 12, 6)$" },
+            { "label": "b", "question": "The exact 3D distance $AB = \\sqrt{(\\Delta x)^2 + (\\Delta y)^2 + (\\Delta z)^2}$", "answer": "$\\sqrt{216} = 6\\sqrt{6}$" },
+            { "label": "c", "question": "The coordinates of the midpoint $M$ of segment $AB$", "answer": "$M(-1, 3, 7)$" },
+            { "label": "d", "question": "The coordinates of $C$ if $B$ is the midpoint of $AC$", "answer": "$C(-10, 21, 16)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the final image coordinates of point $P(-5, 3)$ after each composite 2D transformation:",
+          "parts": [
+            { "label": "a", "question": "Reflection in the $x$-axis followed by translation by vector $(4, -2)$", "answer": "$(-1, -5)$" },
+            { "label": "b", "question": "Rotation of $90^\\circ$ anticlockwise about $(0, 0)$ ($(x,y) \\to (-y,x)$), then reflection in the $y$-axis", "answer": "$(3, -5)$" },
+            { "label": "c", "question": "Reflection in the line $y = x$ ($(x,y) \\to (y,x)$), then rotation of $180^\\circ$ about $(0, 0)$", "answer": "$(-3, 5)$" },
+            { "label": "d", "question": "Dilation by factor $k = 3$ from $(0, 0)$, then translation by $(-2, 5)$", "answer": "$(-17, 14)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the image of the point $Q(4, -3, 6)$ in 3D space after each transformation:",
+          "parts": [
+            { "label": "a", "question": "Translation by vector $(-7, 5, -9)$", "answer": "$(-3, 2, -3)$" },
+            { "label": "b", "question": "Reflection across the $xy$-plane ($z = 0$)", "answer": "$(4, -3, -6)$" },
+            { "label": "c", "question": "Point inversion through the origin $(0, 0, 0)$", "answer": "$(-4, 3, -6)$" },
+            { "label": "d", "question": "Rotation of $90^\\circ$ anticlockwise about the $z$-axis ($(x, y, z) \\to (-y, x, z)$)", "answer": "$(3, 4, 6)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A turtle-graphics algorithm executes the loop: Repeat $n$ times: [Move forward $10\\text{ cm}$, turn left by exterior angle $\\theta$]:",
+          "parts": [
+            { "label": "a", "question": "If $\\theta = 45^\\circ$, find the minimum number of steps $n$ to close a regular polygon", "answer": "$n = 8$ (regular octagon)" },
+            { "label": "b", "question": "Find the interior angle of the regular polygon drawn when $\\theta = 24^\\circ$", "answer": "$156^\\circ$ ($15$-gon)" },
+            { "label": "c", "question": "If $\\theta = 144^\\circ$, find the minimum number of steps $n$ to return to the starting heading ($n\\theta = 360^\\circ k$)", "answer": "$n = 5$ (regular $5$-pointed star, $5 \\times 144^\\circ = 720^\\circ$)" },
+            { "label": "d", "question": "For $\\theta = 60^\\circ$, find the perimeter of the closed regular polygon drawn", "answer": "$60\\text{ cm}$ (regular hexagon)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An autonomous agricultural drone takes off from a charging pad at $O(0, 0, 0)$ (in metres), ascends and flies to waypoint $A(30, 40, 120)$, and then flies directly to waypoint $B(45, 60, 180)$. Calculate the exact 3D distance $OA$ and show using vectors that $O, A, B$ are collinear in 3D space.",
+          "answer": "$OA = \\sqrt{30^2 + 40^2 + 120^2} = \\sqrt{16\\,900} = 130\\text{ m}$; since $\\vec{OB} = 1.5\\,\\vec{OA}$, the points $O, A, B$ are collinear with $OB = 1.5 \\times 130 = 195\\text{ m}$."
+        },
+        {
+          "number": 6,
+          "question": "In a 3D mine-surveying model in Kalgoorlie (coordinates in metres), a drill shaft runs straight from $P(10, -20, -15)$ to $Q(16, -8, -33)$. Find (a) the exact length of the drill shaft $PQ$ and (b) the coordinates of the sensor placed one-third of the way from $P$ to $Q$.",
+          "answer": "(a) $PQ = \\sqrt{6^2 + 12^2 + (-18)^2} = \\sqrt{504} = 6\\sqrt{14}\\text{ m}$, (b) $(12, -16, -21)$"
+        },
+        {
+          "number": 7,
+          "question": "Triangle $ABC$ has vertices $A(2, 1)$, $B(6, 1)$, and $C(2, 4)$. The triangle is dilated by scale factor $k = 2$ from the origin $(0, 0)$ and then rotated $90^\\circ$ clockwise about $(0, 0)$ ($(x, y) \\to (y, -x)$) to form $\\triangle A'B'C'$. Find the coordinates of $A', B', C'$ and the area of $\\triangle A'B'C'$.",
+          "answer": "$A'(2, -4), B'(2, -12), C'(8, -4)$; $\\text{Area} = k^2 \\times \\frac{1}{2}(4)(3) = 4 \\times 6 = 24\\text{ square units}$"
+        },
+        {
+          "number": 8,
+          "question": "A robotic laser cutter starts at $(0, 0)$ and executes $15$ iterations of the step: move $(+3, +4)$ on odd-numbered steps ($1, 3, 5, \\dots, 15$) and move $(-1, +2)$ on even-numbered steps ($2, 4, \\dots, 14$). Find the final coordinates of the laser head after all $15$ steps.",
+          "answer": "$(17, 46)$ ($8$ odd steps give $8(3, 4) = (24, 32)$ and $7$ even steps give $7(-1, 2) = (-7, 14)$; sum $= (17, 46)$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove using coordinate rules that reflecting any point $P(x, y)$ across the $x$-axis ($(x, y) \\to (x, -y)$) and then reflecting the result across the line $y = x$ ($(x, y) \\to (y, x)$) is equivalent to a single $90^\\circ$ anticlockwise rotation about the origin. Does performing the two reflections in the reverse order give the same result?",
+          "answer": "$(x, y) \\xrightarrow{R_x} (x, -y) \\xrightarrow{R_{y=x}} (-y, x)$, which is the exact rule for a $90^\\circ$ anticlockwise rotation. Reversing the order gives $(x, y) \\xrightarrow{R_{y=x}} (y, x) \\xrightarrow{R_x} (y, -x)$ ($90^\\circ$ clockwise), so reflections do not commute."
+        },
+        {
+          "number": 10,
+          "question": "A 3D rectangular prism has one vertex at the origin $(0, 0, 0)$ and the opposite vertex at $(a, b, c)$. Prove that the four space diagonals of the prism all intersect at the same single point $M\\left(\\frac{a}{2}, \\frac{b}{2}, \\frac{c}{2}\\right)$ and all have equal length $\\sqrt{a^2 + b^2 + c^2}$.",
+          "answer": "The four pairs of opposite vertices are $\\{(0,0,0),(a,b,c)\\}$, $\\{(a,0,0),(0,b,c)\\}$, $\\{(0,b,0),(a,0,c)\\}$, and $\\{(0,0,c),(a,b,0)\\}$. Every pair has midpoint $\\left(\\frac{a}{2}, \\frac{b}{2}, \\frac{c}{2}\\right)$ and squared distance $(\\pm a)^2 + (\\pm b)^2 + (\\pm c)^2 = a^2 + b^2 + c^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE8_3_1b", "expression": "((-4) - 2)**2 + (9 - (-3))**2 + (10 - 4)**2", "expected": 216 },
+        { "id": "WSE8_3_1c_x", "expression": "(2 + (-4)) / 2", "expected": -1 },
+        { "id": "WSE8_3_1d_x", "expression": "2 * (-4) - 2", "expected": -10 },
+        { "id": "WSE8_3_2d_x", "expression": "3 * (-5) - 2", "expected": -17 },
+        { "id": "WSE8_3_2d_y", "expression": "3 * 3 + 5", "expected": 14 },
+        { "id": "WSE8_3_4a", "expression": "360 / 45", "expected": 8 },
+        { "id": "WSE8_3_4b", "expression": "180 - 24", "expected": 156 },
+        { "id": "WSE8_3_6b_z", "expression": "-15 + Rational(1, 3) * (-33 - (-15))", "expected": -21 },
+        { "id": "WSE8_3_7_area", "expression": "2**2 * Rational(1, 2) * (6 - 2) * (4 - 1)", "expected": 24 },
+        { "id": "WSE8_3_8_x", "expression": "8 * 3 + 7 * (-1)", "expected": 17 }
+      ]
+    }
+  ]
+}

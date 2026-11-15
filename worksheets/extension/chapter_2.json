@@ -1,0 +1,391 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Real Numbers, Fractions, Decimals and Index Laws",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "2_1",
+      "section_code": "2A",
+      "title": "Operations with Positive and Negative Fractions",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each multi-step directed fraction expression in simplest form:",
+          "parts": [
+            { "label": "a", "question": "$-2\\dfrac{3}{4} + 1\\dfrac{5}{6} - \\left(-3\\dfrac{1}{8}\\right)$", "answer": "$\\dfrac{53}{24} = 2\\dfrac{5}{24}$" },
+            { "label": "b", "question": "$\\left(-\\dfrac{5}{6} + \\dfrac{3}{8}\\right) \\div \\left(-1\\dfrac{5}{12}\\right)$", "answer": "$\\dfrac{11}{34}$" },
+            { "label": "c", "question": "$-1\\dfrac{3}{5} \\times \\left(\\dfrac{3}{4} - 2\\dfrac{1}{8}\\right)$", "answer": "$\\dfrac{11}{5} = 2\\dfrac{1}{5}$" },
+            { "label": "d", "question": "$\\left(-\\dfrac{3}{4}\\right)^3 \\div \\left(-\\dfrac{9}{16}\\right) - \\dfrac{7}{12}$", "answer": "$\\dfrac{1}{6}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Simplify each complex (nested) fraction:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{\\frac{2}{3} - \\frac{5}{4}}{\\frac{1}{2} + \\frac{1}{6}}$", "answer": "$-\\dfrac{7}{8}$" },
+            { "label": "b", "question": "$\\dfrac{-1 - \\frac{3}{5}}{2 - \\frac{4}{15}}$", "answer": "$-\\dfrac{12}{13}$" },
+            { "label": "c", "question": "$1 - \\dfrac{1}{1 - \\frac{3}{7}}$", "answer": "$-\\dfrac{3}{4}$" },
+            { "label": "d", "question": "$\\dfrac{\\left(-\\frac{2}{3}\\right)^2 - 1}{\\frac{1}{3} - \\frac{5}{6}}$", "answer": "$\\dfrac{10}{9} = 1\\dfrac{1}{9}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given $x = -\\dfrac{2}{3}$, $y = \\dfrac{3}{4}$, and $z = -\\dfrac{1}{2}$, evaluate:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 2yz$", "answer": "$\\dfrac{11}{9} = 1\\dfrac{2}{9}$" },
+            { "label": "b", "question": "$\\dfrac{x - y}{y + z}$", "answer": "$-\\dfrac{17}{3} = -5\\dfrac{2}{3}$" },
+            { "label": "c", "question": "$\\dfrac{1}{x} + \\dfrac{1}{y} - \\dfrac{1}{z}$", "answer": "$\\dfrac{11}{6} = 1\\dfrac{5}{6}$" },
+            { "label": "d", "question": "$\\dfrac{x^2 + z^2}{xyz}$", "answer": "$\\dfrac{25}{9} = 2\\dfrac{7}{9}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve for the rational number $w$ in each equation:",
+          "parts": [
+            { "label": "a", "question": "$-\\dfrac{3}{4}w + \\dfrac{2}{3} = -\\dfrac{5}{6}$", "answer": "$w = 2$" },
+            { "label": "b", "question": "$\\dfrac{w}{3} - \\dfrac{w}{4} = -\\dfrac{5}{6}$", "answer": "$w = -10$" },
+            { "label": "c", "question": "$-\\dfrac{4}{5}\\left(w - \\dfrac{3}{8}\\right) = \\dfrac{7}{10}$", "answer": "$w = -\\dfrac{1}{2}$" },
+            { "label": "d", "question": "$\\dfrac{2w - 1}{3} - \\dfrac{w + 2}{4} = -\\dfrac{7}{6}$", "answer": "$w = -\\dfrac{4}{5}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An estate in the Barossa Valley leaves $\\dfrac{2}{5}$ of its land to the eldest child, $\\dfrac{3}{8}$ of the REMAINING land to the second child, and the final $45\\text{ hectares}$ to a conservation trust. Find the total area of the estate.",
+          "answer": "$120\\text{ hectares}$ (remaining fraction $\\frac{3}{5} \\times \\frac{5}{8} = \\frac{3}{8}$; $45 \\div \\frac{3}{8} = 120$)"
+        },
+        {
+          "number": 6,
+          "question": "A water reservoir in Bendigo is $\\dfrac{5}{9}$ full. After $140\\text{ ML}$ is pumped out during summer, it is $\\dfrac{1}{3}$ full; then winter inflow adds $\\dfrac{3}{7}$ of the remaining empty space. Find the total capacity of the reservoir and the final volume of water.",
+          "answer": "Capacity $630\\text{ ML}$; final volume $390\\text{ ML}$"
+        },
+        {
+          "number": 7,
+          "question": "Pipe A can fill a desalination storage tank in Perth in $6$ hours, Pipe B can fill it in $8$ hours, and Drain C can empty a full tank in $12$ hours. If all three are opened together when the tank is empty, how many hours will it take to fill the tank?",
+          "answer": "$\\dfrac{24}{5} = 4\\dfrac{4}{5}\\text{ hours}$ ($4\\text{ h } 48\\text{ min}$)"
+        },
+        {
+          "number": 8,
+          "question": "A hiker walks the first $\\dfrac{1}{3}$ of an Overland Track stage in Tasmania at $4\\text{ km/h}$ and the remaining $\\dfrac{2}{3}$ of the distance at $3\\text{ km/h}$. If the total walking time is $3\\dfrac{1}{3}\\text{ hours}$, find the total length of the stage.",
+          "answer": "$10.8\\text{ km}$ ($\\dfrac{54}{5}\\text{ km}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "By writing $\\dfrac{1}{k(k+1)} = \\dfrac{1}{k} - \\dfrac{1}{k+1}$, evaluate the telescoping sum $S = \\dfrac{1}{1 \\times 2} + \\dfrac{1}{2 \\times 3} + \\dfrac{1}{3 \\times 4} + \\dots + \\dfrac{1}{19 \\times 20}$ in simplest form.",
+          "answer": "$\\dfrac{19}{20}$, since $\\left(1 - \\frac{1}{2}\\right) + \\left(\\frac{1}{2} - \\frac{1}{3}\\right) + \\dots + \\left(\\frac{1}{19} - \\frac{1}{20}\\right) = 1 - \\dfrac{1}{20} = \\dfrac{19}{20}$."
+        },
+        {
+          "number": 10,
+          "question": "Evaluate the telescoping product $P = \\left(1 - \\dfrac{1}{2^2}\\right)\\left(1 - \\dfrac{1}{3^2}\\right)\\left(1 - \\dfrac{1}{4^2}\\right)\\cdots\\left(1 - \\dfrac{1}{10^2}\\right)$ by rewriting each factor as $\\dfrac{k-1}{k} \\times \\dfrac{k+1}{k}$.",
+          "answer": "$\\dfrac{11}{20}$, since $P = \\left(\\frac{1}{2} \\cdot \\frac{3}{2}\\right)\\left(\\frac{2}{3} \\cdot \\frac{4}{3}\\right)\\left(\\frac{3}{4} \\cdot \\frac{5}{4}\\right)\\cdots\\left(\\frac{9}{10} \\cdot \\frac{11}{10}\\right) = \\dfrac{1}{2} \\times \\dfrac{11}{10} = \\dfrac{11}{20}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE2_1_1a", "expression": "-Rational(11, 4) + Rational(11, 6) - (-Rational(25, 8))", "expected": "53/24" },
+        { "id": "WSE2_1_1b", "expression": "(-Rational(5, 6) + Rational(3, 8)) / (-Rational(17, 12))", "expected": "11/34" },
+        { "id": "WSE2_1_1d", "expression": "(-Rational(3, 4))**3 / (-Rational(9, 16)) - Rational(7, 12)", "expected": "1/6" },
+        { "id": "WSE2_1_2a", "expression": "(Rational(2, 3) - Rational(5, 4)) / (Rational(1, 2) + Rational(1, 6))", "expected": "-7/8" },
+        { "id": "WSE2_1_2c", "expression": "1 - 1 / (1 - Rational(3, 7))", "expected": "-3/4" },
+        { "id": "WSE2_1_2d", "expression": "((-Rational(2, 3))**2 - 1) / (Rational(1, 3) - Rational(5, 6))", "expected": "10/9" },
+        { "id": "WSE2_1_3d", "expression": "((-Rational(2, 3))**2 + (-Rational(1, 2))**2) / (-Rational(2, 3) * Rational(3, 4) * (-Rational(1, 2)))", "expected": "25/9" },
+        { "id": "WSE2_1_5", "expression": "45 / ((1 - Rational(2, 5)) * (1 - Rational(3, 8)))", "expected": 120 },
+        { "id": "WSE2_1_6", "expression": "140 / (Rational(5, 9) - Rational(1, 3))", "expected": 630 },
+        { "id": "WSE2_1_7", "expression": "1 / (Rational(1, 6) + Rational(1, 8) - Rational(1, 12))", "expected": "24/5" }
+      ]
+    },
+    {
+      "section_id": "2_2",
+      "section_code": "2B",
+      "title": "Terminating and Recurring Decimals",
+      "vcaa_code": "VC2M8N03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each fraction, determine if it terminates, and state the number of decimal places:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{63}{560}$", "answer": "$\\dfrac{9}{80} = \\dfrac{9}{2^4 \\times 5}$: terminates ($4\\text{ d.p.}, 0.1125$)" },
+            { "label": "b", "question": "$\\dfrac{51}{1200}$", "answer": "$\\dfrac{17}{400} = \\dfrac{17}{2^4 \\times 5^2}$: terminates ($4\\text{ d.p.}, 0.0425$)" },
+            { "label": "c", "question": "$\\dfrac{39}{3125}$", "answer": "$\\dfrac{39}{5^5}$: terminates ($5\\text{ d.p.}, 0.01248$)" },
+            { "label": "d", "question": "$\\dfrac{91}{840}$", "answer": "$\\dfrac{13}{120} = \\dfrac{13}{2^3 \\times 3 \\times 5}$: recurring" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use algebra to convert each mixed recurring decimal to a simplified fraction:",
+          "parts": [
+            { "label": "a", "question": "$0.4\\dot{6}$", "answer": "$\\dfrac{7}{15}$" },
+            { "label": "b", "question": "$0.1\\dot{3}\\dot{6}$", "answer": "$\\dfrac{3}{22}$" },
+            { "label": "c", "question": "$0.25\\dot{4}$", "answer": "$\\dfrac{23}{90}$" },
+            { "label": "d", "question": "$-1.3\\dot{1}\\dot{8}$", "answer": "$-\\dfrac{29}{22} = -1\\dfrac{7}{22}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Evaluate each expression by converting the recurring decimals to exact fractions:",
+          "parts": [
+            { "label": "a", "question": "$0.\\dot{5} + 0.\\dot{3}\\dot{6} - 0.1\\dot{6}$", "answer": "$\\dfrac{149}{198}$" },
+            { "label": "b", "question": "$0.\\dot{4}\\dot{5} \\times 1.1\\dot{6}$", "answer": "$\\dfrac{35}{66}$" },
+            { "label": "c", "question": "$0.\\dot{7}\\dot{2} \\div 0.2\\dot{6}$", "answer": "$\\dfrac{30}{11} = 2\\dfrac{8}{11}$" },
+            { "label": "d", "question": "$\\sqrt{2.\\dot{7}}$", "answer": "$\\dfrac{5}{3} = 1.\\dot{6}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use the cyclic recurring block of $\\dfrac{1}{7} = 0.\\dot{1}4285\\dot{7}$ ($6$-digit period) to find:",
+          "parts": [
+            { "label": "a", "question": "Exact recurring decimal for $\\dfrac{4}{7}$", "answer": "$0.\\dot{5}7142\\dot{8}$" },
+            { "label": "b", "question": "The $50\\text{th}$ digit after the decimal point of $\\dfrac{1}{7}$", "answer": "$4$ ($50 = 6 \\times 8 + 2$)" },
+            { "label": "c", "question": "The $100\\text{th}$ digit after the decimal point of $\\dfrac{3}{7} = 0.\\dot{4}2857\\dot{1}$", "answer": "$5$ ($100 = 6 \\times 16 + 4$)" },
+            { "label": "d", "question": "Simplified fraction for $0.\\dot{1}8\\dot{5}$ (given $999 = 27 \\times 37$)", "answer": "$\\dfrac{5}{27}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A precision CNC lathe in Geelong machines a shaft of diameter $2.3\\dot{7}\\text{ cm}$, which is then ground down by $0.1\\dot{4}\\dot{8}\\text{ cm}$. Express the final diameter as an exact simplified improper fraction.",
+          "answer": "$\\dfrac{602}{270} = \\dfrac{301}{135}\\text{ cm}$ ($2\\dfrac{31}{135}\\text{ cm}$)"
+        },
+        {
+          "number": 6,
+          "question": "A solar battery bank in Alice Springs discharges at a constant rate of $0.\\dot{6}\\dot{3}\\text{ kWh}$ per hour. How many kilowatt-hours are discharged over $5\\dfrac{1}{2}\\text{ hours}$, and how many hours does it take to discharge $14\\text{ kWh}$?",
+          "answer": "$\\dfrac{7}{2} = 3.5\\text{ kWh}$; $22\\text{ hours}$"
+        },
+        {
+          "number": 7,
+          "question": "Find the sum of the first $100$ decimal digits after the decimal point in the expansion of $\\dfrac{5}{13} = 0.\\dot{3}8461\\dot{5}$.",
+          "answer": "$447$ ($16$ full $6$-digit blocks of sum $27$ plus $3 + 8 + 4 + 6 = 432 + 15 = 447$)"
+        },
+        {
+          "number": 8,
+          "question": "Three alloys have fractional copper contents of $\\dfrac{7}{18}$, $0.3\\dot{8}\\dot{9}$, and $0.\\dot{3}\\dot{8}$. Arrange these three proportions in strictly ascending order by comparing their decimal or fractional forms.",
+          "answer": "$0.\\dot{3}\\dot{8} < \\dfrac{7}{18} < 0.3\\dot{8}\\dot{9}$ (in decimals: $0.3838\\dots < 0.3888\\dots < 0.38989\\dots$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that a simplified fraction $\\dfrac{p}{q}$ with $q = 2^a \\times 5^b$ ($a, b \\ge 0$) terminates after exactly $N = \\max(a, b)$ decimal places, and hence find the exact number of decimal places of $\\dfrac{27}{2^7 \\times 5^3}$ without performing long division.",
+          "answer": "Multiplying numerator and denominator by $2^{N-a}5^{N-b}$ produces $\\dfrac{p \\cdot 2^{N-a}5^{N-b}}{10^N}$ where the numerator is not divisible by $10$, giving $N = \\max(a,b)$ decimal places. For $\\dfrac{27}{2^7 \\times 5^3}$, $\\text{HCF}(27, 2^7 \\cdot 5^3) = 1$, so it terminates after $\\max(7, 3) = 7$ decimal places."
+        },
+        {
+          "number": 10,
+          "question": "Find the unique single digits $a$ and $b$ ($0 \\le a, b \\le 9$) such that $0.\\dot{a} + 0.\\dot{a}\\dot{b} = \\dfrac{131}{99}$, where $0.\\dot{a}\\dot{b}$ denotes the two-digit recurring decimal $\\dfrac{10a + b}{99}$.",
+          "answer": "$\\dfrac{11a + (10a + b)}{99} = \\dfrac{131}{99} \\implies 21a + b = 131$. Since $0 \\le b \\le 9$, we must have $a = 6$ ($21 \\times 6 = 126$) and $b = 131 - 126 = 5$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE2_2_1a", "expression": "Rational(63, 560)", "expected": 0.1125 },
+        { "id": "WSE2_2_1b", "expression": "Rational(51, 1200)", "expected": 0.0425 },
+        { "id": "WSE2_2_1c", "expression": "Rational(39, 3125)", "expected": 0.01248 },
+        { "id": "WSE2_2_2a", "expression": "Rational(46 - 4, 90)", "expected": "7/15" },
+        { "id": "WSE2_2_2b", "expression": "Rational(136 - 1, 990)", "expected": "3/22" },
+        { "id": "WSE2_2_2d", "expression": "-(1 + Rational(318 - 3, 990))", "expected": "-29/22" },
+        { "id": "WSE2_2_3b", "expression": "Rational(45, 99) * (1 + Rational(16 - 1, 90))", "expected": "35/66" },
+        { "id": "WSE2_2_3c", "expression": "Rational(72, 99) / Rational(26 - 2, 90)", "expected": "30/11" },
+        { "id": "WSE2_2_3d", "expression": "sqrt(2 + Rational(7, 9))", "expected": "5/3" },
+        { "id": "WSE2_2_6", "expression": "Rational(63, 99) * Rational(11, 2)", "expected": "7/2" }
+      ]
+    },
+    {
+      "section_id": "2_3",
+      "section_code": "2C",
+      "title": "Irrational Numbers and the Real Number System",
+      "vcaa_code": "VC2M8N01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each expression and classify the final result as Rational ($\\mathbb{Q}$) or Irrational ($\\mathbb{I}$):",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{18} \\times \\sqrt{8}$", "answer": "$12$ (Rational)" },
+            { "label": "b", "question": "$\\dfrac{\\sqrt{75}}{\\sqrt{3}}$", "answer": "$5$ (Rational)" },
+            { "label": "c", "question": "$(\\sqrt{5} - 2)(\\sqrt{5} + 2)$", "answer": "$1$ (Rational)" },
+            { "label": "d", "question": "$(\\sqrt{3} + 1)^2$", "answer": "$4 + 2\\sqrt{3}$ (Irrational)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each exact root expression:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{1\\dfrac{9}{16}} + \\sqrt[3]{-\\dfrac{27}{64}}$", "answer": "$\\dfrac{1}{2}$" },
+            { "label": "b", "question": "$\\sqrt{0.0289} - \\sqrt[3]{-0.008}$", "answer": "$0.37$" },
+            { "label": "c", "question": "$\\sqrt{15^2 - 12^2} \\times \\sqrt[3]{-512}$", "answer": "$-72$" },
+            { "label": "d", "question": "$\\sqrt{16 + 9} - (\\sqrt{16} + \\sqrt{9})$", "answer": "$-2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Compare each pair of real numbers without a calculator by squaring both sides:",
+          "parts": [
+            { "label": "a", "question": "Which is larger: $3\\sqrt{5}$ or $2\\sqrt{11}$?", "answer": "$3\\sqrt{5}$ ($45 > 44$)" },
+            { "label": "b", "question": "Which is larger: $4\\sqrt{3}$ or $7$?", "answer": "$7$ ($49 > 48$)" },
+            { "label": "c", "question": "How many integers $n$ satisfy $\\sqrt{19} < n < \\sqrt{115}$?", "answer": "$6$ integers ($5, 6, 7, 8, 9, 10$)" },
+            { "label": "d", "question": "How many integers $n$ satisfy $-\\sqrt{40} < n < \\sqrt[3]{90}$?", "answer": "$11$ integers ($-6$ to $4$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each nested root expression:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{21 + \\sqrt{13 + \\sqrt{9}}}$", "answer": "$5$" },
+            { "label": "b", "question": "$\\sqrt[3]{-20 - \\sqrt{36 + 13}}$", "answer": "$-3$" },
+            { "label": "c", "question": "$\\sqrt{50\\frac{1}{16} - \\frac{1}{16} + 14}$", "answer": "$8$" },
+            { "label": "d", "question": "$\\dfrac{\\sqrt{200} - \\sqrt{72}}{\\sqrt{2}}$", "answer": "$4$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A circular amphitheatre in Canberra has an area of $196\\pi\\text{ m}^2$, and it is inscribed inside a square plaza whose sides touch the circle. Find the exact radius of the amphitheatre and the exact area of the paved corners outside the circle in terms of $\\pi$.",
+          "answer": "Radius $14\\text{ m}$; corner area $784 - 196\\pi\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "The historic Chinese rational approximation to $\\pi$ is Milü, $\\dfrac{355}{113}$. Given $\\pi \\approx 3.14159265$, calculate $\\dfrac{355}{113}$ to $7$ decimal places and state how many decimal places match $\\pi$.",
+          "answer": "$\\dfrac{355}{113} \\approx 3.1415929$; matches $\\pi$ to $6$ decimal places"
+        },
+        {
+          "number": 7,
+          "question": "Three solid lead cubes with side lengths $6\\text{ cm}$, $8\\text{ cm}$, and $10\\text{ cm}$ are melted down and recast into a single large cube with no loss of metal. Find the exact side length and surface area of the new cube.",
+          "answer": "Side length $12\\text{ cm}$ ($\\sqrt[3]{6^3 + 8^3 + 10^3} = \\sqrt[3]{1728} = 12\\text{ cm}$); surface area $864\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "A surveyor in the Blue Mountains uses the Babylonian square-root iteration $x_1 = \\dfrac{1}{2}\\left(x_0 + \\dfrac{N}{x_0}\\right)$ with starting guess $x_0 = 6$ to approximate $\\sqrt{39}$. Find $x_1$ as an exact fraction and as a decimal.",
+          "answer": "$x_1 = \\dfrac{25}{4} = 6.25$ (note $6.25^2 = 39.0625$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove by contradiction that if $\\alpha$ is an irrational number and $r \\ne 0$ is a rational number, then the product $r\\alpha$ must be irrational.",
+          "answer": "Suppose $r\\alpha = q$ were rational ($q \\in \\mathbb{Q}$). Since $r \\in \\mathbb{Q}$ and $r \\ne 0$, dividing by $r$ gives $\\alpha = \\dfrac{q}{r}$. Because the quotient of two rational numbers is rational, $\\alpha$ would be rational, contradicting that $\\alpha$ is irrational."
+        },
+        {
+          "number": 10,
+          "question": "Without a calculator, prove that $\\sqrt{6} + \\sqrt{10} < \\sqrt{7} + \\sqrt{9}$ by squaring both sides and comparing the resulting expressions.",
+          "answer": "$(\\sqrt{6} + \\sqrt{10})^2 = 16 + 2\\sqrt{60}$ and $(\\sqrt{7} + \\sqrt{9})^2 = 16 + 2\\sqrt{63}$. Since $60 < 63$, $\\sqrt{60} < \\sqrt{63}$, so $16 + 2\\sqrt{60} < 16 + 2\\sqrt{63}$, and taking positive square roots gives $\\sqrt{6} + \\sqrt{10} < \\sqrt{7} + 3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE2_3_1a", "expression": "sqrt(18) * sqrt(8)", "expected": 12 },
+        { "id": "WSE2_3_1b", "expression": "sqrt(75) / sqrt(3)", "expected": 5 },
+        { "id": "WSE2_3_1c", "expression": "expand((sqrt(5) - 2) * (sqrt(5) + 2))", "expected": 1 },
+        { "id": "WSE2_3_2a", "expression": "sqrt(Rational(25, 16)) + cbrt(-Rational(27, 64))", "expected": "1/2" },
+        { "id": "WSE2_3_2b", "expression": "sqrt(Rational(289, 10000)) - cbrt(-Rational(8, 1000))", "expected": "37/100" },
+        { "id": "WSE2_3_2c", "expression": "sqrt(15**2 - 12**2) * cbrt(-512)", "expected": -72 },
+        { "id": "WSE2_3_4a", "expression": "sqrt(21 + sqrt(13 + sqrt(9)))", "expected": 5 },
+        { "id": "WSE2_3_4b", "expression": "cbrt(-20 - sqrt(36 + 13))", "expected": -3 },
+        { "id": "WSE2_3_4d", "expression": "(sqrt(200) - sqrt(72)) / sqrt(2)", "expected": 4 },
+        { "id": "WSE2_3_7", "expression": "cbrt(6**3 + 8**3 + 10**3)", "expected": 12 }
+      ]
+    },
+    {
+      "section_id": "2_4",
+      "section_code": "2D",
+      "title": "Index Laws and the Zero Exponent",
+      "vcaa_code": "VC2M8N02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each multi-variable index expression completely:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{(3x^2 y^3)^3 \\times 2x^4 y}{9x^5 y^6}$", "answer": "$6x^5 y^4$" },
+            { "label": "b", "question": "$\\dfrac{(-2a^3 b)^4 \\times (3a b^2)^2}{12a^8 b^5}$", "answer": "$12a^6 b^3$" },
+            { "label": "c", "question": "$\\left(\\dfrac{2m^4 n^0}{3m n^2}\\right)^3 \\times \\dfrac{9n^7}{4m^5}$", "answer": "$\\dfrac{2m^4 n}{3}$" },
+            { "label": "d", "question": "$5(2x^3)^0 - (5x^3)^0 + (-3x)^2 x^0$", "answer": "$9x^2 + 4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Rewrite with prime bases ($2, 3, 5$) to simplify and evaluate:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{8^4 \\times 4^3}{16^4}$", "answer": "$2^2 = 4$" },
+            { "label": "b", "question": "$\\dfrac{27^3 \\times 9^4}{81^4}$", "answer": "$3^1 = 3$" },
+            { "label": "c", "question": "$\\dfrac{12^4 \\times 18^2}{24^3 \\times 3^3}$", "answer": "$2^1 \\times 3^2 = 18$" },
+            { "label": "d", "question": "$\\dfrac{25^{n+1} \\times 5^{2n-1}}{125^n \\times 5^{n-2}}$", "answer": "$5^3 = 125$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factor out the common power to simplify and evaluate:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2^{10} + 2^{10} + 2^{10} + 2^{10}}{2^8}$", "answer": "$2^4 = 16$" },
+            { "label": "b", "question": "$\\dfrac{3^{15} - 3^{13}}{3^{12}}$", "answer": "$24$" },
+            { "label": "c", "question": "$\\dfrac{5^{n+2} - 5^n}{24 \\times 5^{n-1}}$", "answer": "$5$" },
+            { "label": "d", "question": "$\\dfrac{2^{n+4} + 2^{n+1}}{9 \\times 2^n}$", "answer": "$2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each exponential equation for $x$:",
+          "parts": [
+            { "label": "a", "question": "$4^{2x - 1} = 8^{x + 1}$", "answer": "$x = 5$" },
+            { "label": "b", "question": "$9^{x + 2} \\div 3^{x - 1} = 81$", "answer": "$x = -1$" },
+            { "label": "c", "question": "$2^{x + 3} + 2^{x + 1} = 160$", "answer": "$x = 4$" },
+            { "label": "d", "question": "$5^{3x - 2} \\times 25^x = 1$", "answer": "$x = \\dfrac{2}{5}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A supercomputer at the Pawsey Supercomputing Research Centre in Perth performs $2^{48}$ floating-point operations per second. How many seconds does it take to complete $8^{18}$ operations? Express your answer as a power of $2$ and in seconds.",
+          "answer": "$2^6 = 64\\text{ seconds}$ ($8^{18} = (2^3)^{18} = 2^{54}$; $2^{54} \\div 2^{48} = 2^6$)"
+        },
+        {
+          "number": 6,
+          "question": "The number of bacteria in two laboratory flasks at the CSIRO in Clayton after $t$ hours are $A(t) = 4^{t+2}$ and $B(t) = 8^{t-1}$. Find the time $t$ (in hours) when Flask B contains exactly $16$ times as many bacteria as Flask A.",
+          "answer": "$t = 11\\text{ hours}$ ($2^{3t-3} = 2^4 \\times 2^{2t+4} \\implies 3t - 3 = 2t + 8 \\implies t = 11$)"
+        },
+        {
+          "number": 7,
+          "question": "An astronomer calculates the number of decimal digits in the huge number $N = 2^{24} \\times 5^{19}$ without a calculator by rewriting $N$ in the form $k \\times 10^{19}$. Find $k$, write $N$ in scientific notation, and state the exact number of digits in $N$.",
+          "answer": "$k = 2^5 = 32$; $N = 32 \\times 10^{19} = 3.2 \\times 10^{20}$, which has $21$ digits"
+        },
+        {
+          "number": 8,
+          "question": "A hypercube in $4$-dimensional geometry of edge length $3^2\\text{ cm}$ has hypervolume $V = s^4$, and a cube of edge length $27\\text{ cm}$ has volume $W = s^3$. Find the exact ratio $V : W$ in simplest form.",
+          "answer": "$1 : 3$ ($V = (3^2)^4 = 3^8$, $W = (3^3)^3 = 3^9$; $3^8 : 3^9 = 1 : 3$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Without a calculator, arrange $A = 2^{100}$, $B = 3^{75}$, and $C = 5^{50}$ in ascending order by expressing each as a $25\\text{th}$ power.",
+          "answer": "$A = (2^4)^{25} = 16^{25}$, $B = (3^3)^{25} = 27^{25}$, and $C = (5^2)^{25} = 25^{25}$. Since $16 < 25 < 27$, the ascending order is $2^{100} < 5^{50} < 3^{75}$."
+        },
+        {
+          "number": 10,
+          "question": "Prove that $7^{2026} - 7^{2024}$ is divisible by $48$, and find the last (units) digit of $7^{2026}$ using the $4$-cycle of powers of $7$ ($7, 9, 3, 1$).",
+          "answer": "$7^{2026} - 7^{2024} = 7^{2024}(7^2 - 1) = 48 \\times 7^{2024}$, which is an integer multiple of $48$. Since $2026 = 4 \\times 506 + 2$, the units digit of $7^{2026}$ matches $7^2$, which is $9$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE2_4_1a", "expression": "((3*x**2*y**3)**3 * 2*x**4*y) / (9*x**5*y**6)", "expected": "6*x**5*y**4" },
+        { "id": "WSE2_4_1b", "expression": "((-2*a**3*b)**4 * (3*a*b**2)**2) / (12*a**8*b**5)", "expected": "12*a**6*b**3" },
+        { "id": "WSE2_4_2a", "expression": "(8**4 * 4**3) / 16**4", "expected": 4 },
+        { "id": "WSE2_4_2b", "expression": "(27**3 * 9**4) / 81**4", "expected": 3 },
+        { "id": "WSE2_4_2c", "expression": "(12**4 * 18**2) / (24**3 * 3**3)", "expected": 18 },
+        { "id": "WSE2_4_3a", "expression": "(2**10 * 4) / 2**8", "expected": 16 },
+        { "id": "WSE2_4_3b", "expression": "(3**15 - 3**13) / 3**12", "expected": 24 },
+        { "id": "WSE2_4_4c", "expression": "2**(4 + 3) + 2**(4 + 1)", "expected": 160 },
+        { "id": "WSE2_4_5", "expression": "8**18 / 2**48", "expected": 64 },
+        { "id": "WSE2_4_8", "expression": "(3**2)**4 / 27**3", "expected": "1/3" }
+      ]
+    }
+  ]
+}

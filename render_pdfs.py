@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """
-Renders all 23 student worksheet HTML files and the Master Answer Key HTML file
-into typeset A4 PDFs in public/worksheets/ using headless Chrome, and verifies
-that every student worksheet PDF is strictly 1 single-sided A4 page.
+Renders all student worksheet HTML files (Foundation, Standard, Extension)
+and Master Answer Key HTML files into typeset A4 PDFs in public/worksheets/
+using headless Chrome, and verifies that every student worksheet PDF is
+strictly 1 single-sided A4 page.
 """
 
 import glob
@@ -20,7 +21,6 @@ PDF_DIR = os.path.join(ROOT, "public", "worksheets")
 def count_pdf_pages(pdf_path: str) -> int:
     with open(pdf_path, "rb") as f:
         data = f.read()
-    # Count /Type /Page (excluding /Type /Pages)
     return len(re.findall(rb"/Type\s*/Page\b", data))
 
 
@@ -39,9 +39,10 @@ def render_html_to_pdf(html_path: str, pdf_path: str) -> None:
 
 def main():
     os.makedirs(PDF_DIR, exist_ok=True)
-    html_files = sorted(glob.glob(os.path.join(HTML_DIR, "worksheet_*_standard.html")))
+    pattern = sys.argv[1] if len(sys.argv) > 1 else "worksheet_*.html"
+    html_files = sorted(glob.glob(os.path.join(HTML_DIR, pattern)))
     if not html_files:
-        print("No worksheet HTML files found!", file=sys.stderr)
+        print(f"No worksheet HTML files found matching {pattern}!", file=sys.stderr)
         sys.exit(1)
 
     multi_page = []
@@ -55,13 +56,15 @@ def main():
         if pages != 1:
             multi_page.append((base, pages))
 
-    # Render Master Answer Key PDF
-    ak_html = os.path.join(HTML_DIR, "year8_maths_worksheets_answer_key.html")
-    ak_pdf = os.path.join(PDF_DIR, "year8_maths_worksheets_answer_key.pdf")
-    render_html_to_pdf(ak_html, ak_pdf)
-    ak_pages = count_pdf_pages(ak_pdf)
-    ak_kb = os.path.getsize(ak_pdf) / 1024
-    print(f"RENDERED MASTER ANSWER KEY: year8_maths_worksheets_answer_key.pdf | {ak_pages} page(s) | {ak_kb:.1f} KB")
+    # Render Master Answer Key PDFs
+    ak_files = sorted(glob.glob(os.path.join(HTML_DIR, "year8_maths_worksheets*answer_key.html")))
+    for ak_html in ak_files:
+        ak_base = os.path.splitext(os.path.basename(ak_html))[0] + ".pdf"
+        ak_pdf = os.path.join(PDF_DIR, ak_base)
+        render_html_to_pdf(ak_html, ak_pdf)
+        ak_pages = count_pdf_pages(ak_pdf)
+        ak_kb = os.path.getsize(ak_pdf) / 1024
+        print(f"RENDERED MASTER ANSWER KEY: {ak_base} | {ak_pages} page(s) | {ak_kb:.1f} KB")
 
     if multi_page:
         print(f"ERROR: Some student worksheets exceeded 1 page: {multi_page}", file=sys.stderr)

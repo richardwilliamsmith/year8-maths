@@ -289,6 +289,102 @@
         { "id": "WS7_3_8", "expression": "6 / (2.5 * 1.6)", "expected": 1.5 },
         { "id": "WS7_3_9", "expression": "10**3 / 250", "expected": 4 }
       ]
+    },
+    {
+      "section_id": "7_4",
+      "section_code": "7D",
+      "title": "Time Zones, 24-Hour Time, and Duration",
+      "vcaa_code": "VC2M8M04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each time between 12-hour and 24-hour notation:",
+          "parts": [
+            { "label": "a", "question": "$4{:}50\\text{ pm}$ to 24-hour time", "answer": "$16{:}50$" },
+            { "label": "b", "question": "$12{:}15\\text{ am}$ to 24-hour time", "answer": "$00{:}15$" },
+            { "label": "c", "question": "$21{:}08$ to 12-hour am/pm time", "answer": "$9{:}08\\text{ pm}$" },
+            { "label": "d", "question": "$11{:}42\\text{ pm}$ to 24-hour time", "answer": "$23{:}42$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the exact time duration between each pair of 24-hour times:",
+          "parts": [
+            { "label": "a", "question": "From $07{:}45$ to $13{:}20$ on the same day", "answer": "$5\\text{ h } 35\\text{ min}$" },
+            { "label": "b", "question": "From $14{:}55$ to $21{:}10$ on the same day", "answer": "$6\\text{ h } 15\\text{ min}$" },
+            { "label": "c", "question": "Overnight from $21{:}40$ on Tuesday to $06{:}25$ on Wednesday", "answer": "$8\\text{ h } 45\\text{ min}$" },
+            { "label": "d", "question": "What 24-hour time is $5\\text{ h } 45\\text{ min}$ before $03{:}15$?", "answer": "$21{:}30$ (previous evening)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "During summer (January), Melbourne/Sydney observe AEDT (UTC$+11$), Brisbane is AEST (UTC$+10$), Adelaide is ACST+DST = ACDT (UTC$+10.5$), Darwin is ACST (UTC$+9.5$), and Perth is AWST (UTC$+8$). When it is $15{:}00$ ($3{:}00\\text{ pm}$) AEDT in Melbourne, find the local 24-hour time in:",
+          "parts": [
+            { "label": "a", "question": "Brisbane (UTC$+10$)", "answer": "$14{:}00$" },
+            { "label": "b", "question": "Adelaide (UTC$+10.5$)", "answer": "$14{:}30$" },
+            { "label": "c", "question": "Darwin (UTC$+9.5$)", "answer": "$13{:}30$" },
+            { "label": "d", "question": "Perth (UTC$+8$)", "answer": "$12{:}00$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use UTC offsets to convert international times when Melbourne is on AEST (UTC$+10$):",
+          "parts": [
+            { "label": "a", "question": "Singapore (UTC$+8$) when Melbourne is $18{:}30$ Tuesday", "answer": "$16{:}30$ Tuesday" },
+            { "label": "b", "question": "Tokyo (UTC$+9$) when Melbourne is $09{:}15$ Friday", "answer": "$08{:}15$ Friday" },
+            { "label": "c", "question": "London (UTC$+0$) when Melbourne is $07{:}00$ Thursday", "answer": "$21{:}00$ Wednesday" },
+            { "label": "d", "question": "Los Angeles (UTC$-7$) when Melbourne is $10{:}00$ Monday", "answer": "$17{:}00$ Sunday" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Qantas flight departs Perth (AWST, UTC$+8$) at $13{:}15$ local time and flies for $3\\text{ hours } 50\\text{ minutes}$ to Melbourne during July (AEST, UTC$+10$). Find the local arrival time in Melbourne in 24-hour and 12-hour time.",
+          "answer": "$19{:}05$ AEST ($7{:}05\\text{ pm}$)"
+        },
+        {
+          "number": 6,
+          "question": "An overnight NSW TrainLink XPT service departs Sydney Central at $20{:}42$ and arrives at Melbourne Southern Cross at $07{:}30$ the next morning. How long is the train journey in hours and minutes?",
+          "answer": "$10\\text{ hours } 48\\text{ minutes}$"
+        },
+        {
+          "number": 7,
+          "question": "A flight from Melbourne (AEST, UTC$+10$) to Singapore (UTC$+8$) departs Melbourne at $11{:}25$ AEST and lands in Singapore at $17{:}10$ Singapore local time on the same day. What is the actual flight duration in hours and minutes?",
+          "answer": "$7\\text{ hours } 45\\text{ minutes}$ (lands at $19{:}10$ AEST)"
+        },
+        {
+          "number": 8,
+          "question": "A software engineering team has members in Melbourne (AEST, UTC$+10$), Perth (AWST, UTC$+8$), and London (BST, UTC$+1$). If a $1$-hour video call starts at $17{:}00$ ($5{:}00\\text{ pm}$) in Melbourne, state the local start time in Perth and in London.",
+          "answer": "Perth: $15{:}00$ ($3{:}00\\text{ pm}$); London: $08{:}00$ ($8{:}00\\text{ am}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In January, a flight departs Gold Coast (Queensland, UTC$+10$) at $09{:}00$ local time and lands in Tweed Heads / Sydney time zone (NSW, UTC$+11$) after a $1\\text{ hour } 15\\text{ minute}$ flight, while a return flight departs NSW at $09{:}00$ (UTC$+11$) and takes $1\\text{ hour } 15\\text{ minutes}$ to land in Queensland (UTC$+10$). Compare the two local arrival times and explain why the northbound flight appears to take only $15$ minutes on the clock.",
+          "answer": "Southbound arrives at $11{:}15$ NSW time ($+1\\text{ h } 15\\text{ min} + 1\\text{ h}$ zone shift); Northbound arrives at $09{:}15$ QLD time ($+1\\text{ h } 15\\text{ min} - 1\\text{ h}$ zone shift), because crossing from UTC$+11$ to UTC$+10$ sets the clock back $1$ hour."
+        },
+        {
+          "number": 10,
+          "question": "Why do Australian Central time zones (ACST UTC$+9.5$ and ACDT UTC$+10.5$) require extra care when adding or subtracting time differences compared with whole-hour offsets?",
+          "answer": "A $0.5$-hour offset equals $30$ minutes (not $50$ minutes), so crossing $60$ minutes when adding or subtracting $30$ minutes shifts the hour column by $1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS7_4_1a", "expression": "4 + 12", "expected": 16 },
+        { "id": "WS7_4_2a", "expression": "(13 * 60 + 20) - (7 * 60 + 45)", "expected": 335 },
+        { "id": "WS7_4_2b", "expression": "(21 * 60 + 10) - (14 * 60 + 55)", "expected": 375 },
+        { "id": "WS7_4_2c", "expression": "(24 * 60 - (21 * 60 + 40)) + (6 * 60 + 25)", "expected": 525 },
+        { "id": "WS7_4_3c", "expression": "15 - Rational(15, 10)", "expected": 13.5 },
+        { "id": "WS7_4_4c", "expression": "7 - 10 + 24", "expected": 21 },
+        { "id": "WS7_4_5", "expression": "(13 * 60 + 15) + (3 * 60 + 50) + 2 * 60", "expected": 1145 },
+        { "id": "WS7_4_6", "expression": "(24 * 60 - (20 * 60 + 42)) + (7 * 60 + 30)", "expected": 648 },
+        { "id": "WS7_4_7", "expression": "(17 * 60 + 10 + 2 * 60) - (11 * 60 + 25)", "expected": 465 },
+        { "id": "WS7_4_8_lon", "expression": "17 - (10 - 1)", "expected": 8 }
+      ]
     }
   ]
 }

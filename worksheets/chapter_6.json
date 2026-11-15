@@ -193,6 +193,102 @@
         { "id": "WS6_2_8", "expression": "Rational(1, 2) * (18 / 2) * (18 / 3)", "expected": 27 },
         { "id": "WS6_2_10", "expression": "(4 - (-5))/(2 - (-1)) - (16 - 4)/(6 - 2)", "expected": 0 }
       ]
+    },
+    {
+      "section_id": "6_3",
+      "section_code": "6C",
+      "title": "Algebraic Algorithms, Flowcharts, and Error-Testing",
+      "vcaa_code": "VC2M8A04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A flowchart algorithm takes input $x$, multiplies by $4$, subtracts $7$, and divides the result by $3$ to produce output $y$. Find:",
+          "parts": [
+            { "label": "a", "question": "The algebraic formula for $y$ in terms of $x$", "answer": "$y = \\dfrac{4x - 7}{3}$" },
+            { "label": "b", "question": "The output $y$ when input $x = 10$", "answer": "$y = 11$" },
+            { "label": "c", "question": "The output $y$ when input $x = -2$", "answer": "$y = -5$" },
+            { "label": "d", "question": "The input $x$ required to produce output $y = 7$ (by backtracking)", "answer": "$x = 7$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A branching algorithm sets $y = 3x - 5$ if $x \\ge 4$, and $y = 11 - x$ if $x < 4$. Find the output $y$ for each input:",
+          "parts": [
+            { "label": "a", "question": "$x = 7$", "answer": "$y = 16$" },
+            { "label": "b", "question": "$x = 4$", "answer": "$y = 7$" },
+            { "label": "c", "question": "$x = 2$", "answer": "$y = 9$" },
+            { "label": "d", "question": "$x = -5$", "answer": "$y = 16$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Trace the iterative loop: Start with $n = 3$. Repeat while $n < 40$: replace $n$ with $2n + 1$. State the value of $n$ after:",
+          "parts": [
+            { "label": "a", "question": "Iteration $1$", "answer": "$7$" },
+            { "label": "b", "question": "Iteration $2$", "answer": "$15$" },
+            { "label": "c", "question": "Iteration $3$", "answer": "$31$" },
+            { "label": "d", "question": "Iteration $4$ (when the loop terminates)", "answer": "$63$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Error-test each student's proposed solution by substituting into both sides of the equation and finding $\\text{LHS} - \\text{RHS}$:",
+          "parts": [
+            { "label": "a", "question": "Test $x = 5$ in $3(x - 2) = 2x - 1$", "answer": "Valid ($\\text{LHS} = 9, \\text{RHS} = 9$)" },
+            { "label": "b", "question": "Test $x = 3$ in $4x - 7 = 2x + 1$", "answer": "Invalid ($\\text{LHS} = 5, \\text{RHS} = 7$; correct solution is $x = 4$)" },
+            { "label": "c", "question": "Test $x = -4$ in $5 - 2x = 13$", "answer": "Valid ($\\text{LHS} = 13, \\text{RHS} = 13$)" },
+            { "label": "d", "question": "Test $x = 6$ in $\\dfrac{2x + 3}{3} = 4$", "answer": "Invalid ($\\text{LHS} = 5 \\neq 4$; correct solution is $x = 4.5$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An online bookstore in Melbourne uses a checkout algorithm for order subtotal $s$ (in dollars): if $s < 60$, add a $\\$9$ delivery fee ($C = s + 9$); if $s \\ge 60$, apply a $10\\%$ discount with free delivery ($C = 0.9s$). Calculate the final charge $C$ for (a) $s = \\$48$ and (b) $s = \\$80$.",
+          "answer": "(a) $\\$57$, (b) $\\$72$"
+        },
+        {
+          "number": 6,
+          "question": "A smart thermostat algorithm starts at temperature $T = 28^\\circ\\text{C}$ and each cycle replaces $T$ with $T - 2.5^\\circ\\text{C}$ until $T \\le 20^\\circ\\text{C}$. Trace the value of $T$ after each cycle and state how many cycles are needed before the cooling stops.",
+          "answer": "$25.5^\\circ\\text{C}, 23.0^\\circ\\text{C}, 20.5^\\circ\\text{C}, 18.0^\\circ\\text{C}$; stops after $4$ cycles."
+        },
+        {
+          "number": 7,
+          "question": "A programmer writes the formula $P = 2l + w$ instead of $P = 2(l + w)$ to compute the perimeter of a rectangle. If the algorithm is tested with $l = 12\\text{ cm}$ and $w = 7\\text{ cm}$, what output does the buggy algorithm give, and by how much does it underestimate the true perimeter?",
+          "answer": "Buggy output $= 31\\text{ cm}$; true perimeter $= 38\\text{ cm}$; underestimates by $7\\text{ cm}$ ($w$)."
+        },
+        {
+          "number": 8,
+          "question": "Two flowchart algorithms are proposed to convert hours $h$ into total rental cost: Algorithm A computes $\\text{Multiply } h \\text{ by } 15 \\to \\text{Add } 25$, while Algorithm B computes $\\text{Add } 5 \\text{ to } h \\to \\text{Multiply by } 15 \\to \\text{Subtract } 50$. Simplify both rules algebraically to verify whether they are equivalent.",
+          "answer": "Algorithm A: $15h + 25$. Algorithm B: $15(h + 5) - 50 = 15h + 25$. Yes, they are algebraically equivalent."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A student tests whether $2(x + 3)$ is equivalent to $2x + 3$ by substituting $x = 0$, getting $6$ and $3$, and concludes they are not equivalent. Another student tests $(x + 2)^2$ against $x^2 + 4$ by substituting $x = 0$, getting $4$ and $4$, and claims they ARE equivalent. Explain why testing a single value like $x = 0$ can prove an identity is FALSE, but cannot prove an identity is TRUE.",
+          "answer": "One counterexample proves two expressions are not equal, but two different expressions can coincidentally agree at a specific input (like $x = 0$); testing $x = 1$ gives $(1+2)^2 = 9 \\neq 1^2 + 4 = 5$."
+        },
+        {
+          "number": 10,
+          "question": "Consider the Collatz step algorithm: if $n$ is even, replace $n$ with $\\dfrac{n}{2}$; if $n$ is odd, replace $n$ with $3n + 1$. Starting from $n = 6$, trace all steps until $n$ reaches $1$, and state the maximum value reached along the trajectory.",
+          "answer": "$6 \\to 3 \\to 10 \\to 5 \\to 16 \\to 8 \\to 4 \\to 2 \\to 1$ ($8$ steps; maximum value reached is $16$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS6_3_1b", "expression": "(4 * 10 - 7) / 3", "expected": 11 },
+        { "id": "WS6_3_1c", "expression": "(4 * (-2) - 7) / 3", "expected": -5 },
+        { "id": "WS6_3_1d", "expression": "(7 * 3 + 7) / 4", "expected": 7 },
+        { "id": "WS6_3_2a", "expression": "3 * 7 - 5", "expected": 16 },
+        { "id": "WS6_3_2d", "expression": "11 - (-5)", "expected": 16 },
+        { "id": "WS6_3_3d", "expression": "2 * (2 * (2 * (2 * 3 + 1) + 1) + 1) + 1", "expected": 63 },
+        { "id": "WS6_3_5a", "expression": "48 + 9", "expected": 57 },
+        { "id": "WS6_3_5b", "expression": "Rational(9, 10) * 80", "expected": 72 },
+        { "id": "WS6_3_6", "expression": "28 - 4 * Rational(25, 10)", "expected": 18 },
+        { "id": "WS6_3_7", "expression": "2 * (12 + 7) - (2 * 12 + 7)", "expected": 7 }
+      ]
     }
   ]
 }

@@ -1,0 +1,391 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Integers and Number Properties",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "1_1",
+      "section_code": "1A",
+      "title": "Adding and Subtracting Integers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use a number line to start at the first number and move right ($+$) or left ($-$):",
+          "parts": [
+            { "label": "a", "question": "$-4 + 7$", "answer": "$3$" },
+            { "label": "b", "question": "$5 - 9$", "answer": "$-4$" },
+            { "label": "c", "question": "$-6 + 6$", "answer": "$0$" },
+            { "label": "d", "question": "$-3 - 5$", "answer": "$-8$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Add these negative integers (adding a negative moves left on the number line):",
+          "parts": [
+            { "label": "a", "question": "$8 + (-3)$", "answer": "$5$" },
+            { "label": "b", "question": "$4 + (-10)$", "answer": "$-6$" },
+            { "label": "c", "question": "$-5 + (-4)$", "answer": "$-9$" },
+            { "label": "d", "question": "$-10 + (-7)$", "answer": "$-17$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Rewrite each double negative $-(-)$ as a plus $(+)$, then evaluate:",
+          "parts": [
+            { "label": "a", "question": "$6 - (-4)$", "answer": "$10$" },
+            { "label": "b", "question": "$12 - (-5)$", "answer": "$17$" },
+            { "label": "c", "question": "$-7 - (-3)$", "answer": "$-4$" },
+            { "label": "d", "question": "$-9 - (-15)$", "answer": "$6$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Work from left to right to evaluate each two-step expression:",
+          "parts": [
+            { "label": "a", "question": "$-5 + 8 - 4$", "answer": "$-1$" },
+            { "label": "b", "question": "$10 - 14 + 6$", "answer": "$2$" },
+            { "label": "c", "question": "$-8 - (-5) + 3$", "answer": "$0$" },
+            { "label": "d", "question": "$7 + (-12) - (-4)$", "answer": "$-1$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "At Mount Buller, the morning temperature is $-2^\\circ\\text{C}$. By lunchtime the temperature rises by $7^\\circ\\text{C}$. Calculate $-2 + 7$ to find the lunchtime temperature.",
+          "answer": "$5^\\circ\\text{C}$"
+        },
+        {
+          "number": 6,
+          "question": "A hotel lift in Melbourne starts on the ground floor ($0$), goes down $3$ levels to the car park ($-3$), and then goes up $8$ levels. Which floor is the lift on now?",
+          "answer": "Level $5$"
+        },
+        {
+          "number": 7,
+          "question": "Sam's bank account has a balance of $\\$15$. He uses his debit card to pay $\\$22$ for lunch. Calculate $15 - 22$ to find his new account balance.",
+          "answer": "$-\\$7$"
+        },
+        {
+          "number": 8,
+          "question": "A scuba diver is swimming at $-6\\text{ m}$ below sea level and dives a further $5\\text{ m}$ deeper. Calculate $-6 - 5$ to find her new depth.",
+          "answer": "$-11\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Circle the correct sign ($+$ or $-$) to complete the rule: When two signs sit next to each other, $10 - (-4)$ is the same as $10 \\; (+) \\; 4$, which equals ______.",
+          "answer": "$+$ sign; $10 + 4 = 14$."
+        },
+        {
+          "number": 10,
+          "question": "Mia says that $-5 + 2 = -7$. Use a number line starting at $-5$ to explain why moving $2$ steps to the right gives $-3$, not $-7$.",
+          "answer": "Adding $+2$ moves $2$ steps right (towards zero) from $-5$ to $-4$ then $-3$; moving left gives $-7$ ($-5 - 2 = -7$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF1_1_1a", "expression": "-4 + 7", "expected": 3 },
+        { "id": "WSF1_1_1b", "expression": "5 - 9", "expected": -4 },
+        { "id": "WSF1_1_2b", "expression": "4 + (-10)", "expected": -6 },
+        { "id": "WSF1_1_2d", "expression": "-10 + (-7)", "expected": -17 },
+        { "id": "WSF1_1_3a", "expression": "6 - (-4)", "expected": 10 },
+        { "id": "WSF1_1_3d", "expression": "-9 - (-15)", "expected": 6 },
+        { "id": "WSF1_1_4a", "expression": "-5 + 8 - 4", "expected": -1 },
+        { "id": "WSF1_1_4d", "expression": "7 + (-12) - (-4)", "expected": -1 },
+        { "id": "WSF1_1_5", "expression": "-2 + 7", "expected": 5 },
+        { "id": "WSF1_1_7", "expression": "15 - 22", "expected": -7 }
+      ]
+    },
+    {
+      "section_id": "1_2",
+      "section_code": "1B",
+      "title": "Multiplying and Dividing Integers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Multiply these integers (one positive and one negative gives a negative answer):",
+          "parts": [
+            { "label": "a", "question": "$-3 \\times 4$", "answer": "$-12$" },
+            { "label": "b", "question": "$6 \\times (-5)$", "answer": "$-30$" },
+            { "label": "c", "question": "$-7 \\times 3$", "answer": "$-21$" },
+            { "label": "d", "question": "$8 \\times (-4)$", "answer": "$-32$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Multiply these negative integers (two negatives give a positive answer):",
+          "parts": [
+            { "label": "a", "question": "$-2 \\times (-5)$", "answer": "$10$" },
+            { "label": "b", "question": "$-4 \\times (-6)$", "answer": "$24$" },
+            { "label": "c", "question": "$-7 \\times (-7)$", "answer": "$49$" },
+            { "label": "d", "question": "$-9 \\times (-5)$", "answer": "$45$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Divide these integers using the sign rules (same signs $\\to +$, different signs $\\to -$):",
+          "parts": [
+            { "label": "a", "question": "$-20 \\div 5$", "answer": "$-4$" },
+            { "label": "b", "question": "$28 \\div (-4)$", "answer": "$-7$" },
+            { "label": "c", "question": "$-36 \\div (-6)$", "answer": "$6$" },
+            { "label": "d", "question": "$-45 \\div (-9)$", "answer": "$5$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each square by writing it out as a multiplication first:",
+          "parts": [
+            { "label": "a", "question": "$(-3)^2 = (-3) \\times (-3)$", "answer": "$9$" },
+            { "label": "b", "question": "$(-5)^2 = (-5) \\times (-5)$", "answer": "$25$" },
+            { "label": "c", "question": "$(-8)^2$", "answer": "$64$" },
+            { "label": "d", "question": "$(-10)^2$", "answer": "$100$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A submarine descends at $-5\\text{ m}$ per second for $8$ seconds. Multiply $-5 \\times 8$ to find the total change in depth.",
+          "answer": "$-40\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "Each incorrect answer in a game deducts $4$ points ($-4$). If Leo gets $6$ answers incorrect, calculate $6 \\times (-4)$ to find his change in score.",
+          "answer": "$-24\\text{ points}$"
+        },
+        {
+          "number": 7,
+          "question": "The temperature in Canberra dropped by a total of $-18^\\circ\\text{C}$ evenly over $6$ hours. Calculate $-18 \\div 6$ to find the temperature change per hour.",
+          "answer": "$-3^\\circ\\text{C/h}$"
+        },
+        {
+          "number": 8,
+          "question": "Four friends share a club debt of $-\\$32$ equally. Calculate $-32 \\div 4$ to find each person's share of the balance.",
+          "answer": "$-\\$8$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Without calculating the numbers, state whether each answer is positive ($+$) or negative ($-$): (a) $-14 \\times 9$, (b) $-25 \\div (-5)$, (c) $18 \\div (-3)$.",
+          "answer": "(a) Negative ($-$), (b) Positive ($+$), (c) Negative ($-$)."
+        },
+        {
+          "number": 10,
+          "question": "What integer multiplied by $-6$ gives $+30$? Explain how you know whether the missing integer is positive or negative.",
+          "answer": "$-5$, because a negative multiplied by a negative is required to produce a positive product ($+30$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF1_2_1a", "expression": "-3 * 4", "expected": -12 },
+        { "id": "WSF1_2_1d", "expression": "8 * (-4)", "expected": -32 },
+        { "id": "WSF1_2_2b", "expression": "-4 * (-6)", "expected": 24 },
+        { "id": "WSF1_2_2d", "expression": "-9 * (-5)", "expected": 45 },
+        { "id": "WSF1_2_3a", "expression": "-20 / 5", "expected": -4 },
+        { "id": "WSF1_2_3c", "expression": "-36 / (-6)", "expected": 6 },
+        { "id": "WSF1_2_4c", "expression": "(-8)**2", "expected": 64 },
+        { "id": "WSF1_2_5", "expression": "-5 * 8", "expected": -40 },
+        { "id": "WSF1_2_6", "expression": "6 * (-4)", "expected": -24 },
+        { "id": "WSF1_2_7", "expression": "-18 / 6", "expected": -3 }
+      ]
+    },
+    {
+      "section_id": "1_3",
+      "section_code": "1C",
+      "title": "Order of Operations and Directed Numbers",
+      "vcaa_code": "VC2M8N04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate the brackets first, then complete the calculation:",
+          "parts": [
+            { "label": "a", "question": "$3 \\times (-2 + 7)$", "answer": "$15$" },
+            { "label": "b", "question": "$(-10 + 4) \\div 2$", "answer": "$-3$" },
+            { "label": "c", "question": "$-4 \\times (8 - 5)$", "answer": "$-12$" },
+            { "label": "d", "question": "$(6 - 14) \\div (-2)$", "answer": "$4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Multiply or divide BEFORE adding or subtracting:",
+          "parts": [
+            { "label": "a", "question": "$10 + 3 \\times (-4)$", "answer": "$-2$" },
+            { "label": "b", "question": "$-6 + 20 \\div 5$", "answer": "$-2$" },
+            { "label": "c", "question": "$15 - 4 \\times (-2)$", "answer": "$23$" },
+            { "label": "d", "question": "$-12 - 18 \\div 3$", "answer": "$-18$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Evaluate the power first, then add or subtract:",
+          "parts": [
+            { "label": "a", "question": "$(-3)^2 + 5$", "answer": "$14$" },
+            { "label": "b", "question": "$20 - (-4)^2$", "answer": "$4$" },
+            { "label": "c", "question": "$(-2)^3 + 10$", "answer": "$2$" },
+            { "label": "d", "question": "$2 \\times (-3)^2$", "answer": "$18$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate the top (numerator) and bottom (denominator) separately, then divide:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{-12 - 8}{5}$", "answer": "$-4$" },
+            { "label": "b", "question": "$\\dfrac{15 - (-9)}{-6}$", "answer": "$-4$" },
+            { "label": "c", "question": "$\\dfrac{-18}{2 - 5}$", "answer": "$6$" },
+            { "label": "d", "question": "$\\dfrac{-10 + 2}{-4}$", "answer": "$2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A freezer starts at $4^\\circ\\text{C}$ and cools down by $3^\\circ\\text{C}$ per hour for $5$ hours. Evaluate $4 + 5 \\times (-3)$ by multiplying first to find the final temperature.",
+          "answer": "$-11^\\circ\\text{C}$"
+        },
+        {
+          "number": 6,
+          "question": "Ruby has $\\$30$ on her Myki card and takes $4$ train trips that each change her balance by $-\\$5$. Evaluate $30 + 4 \\times (-5)$ to find her remaining balance.",
+          "answer": "$\\$10$"
+        },
+        {
+          "number": 7,
+          "question": "Over $3$ winter mornings in Orange, the minimum temperatures were $-4^\\circ\\text{C}, -1^\\circ\\text{C}$, and $-7^\\circ\\text{C}$. Evaluate $\\dfrac{-4 + (-1) + (-7)}{3}$ to find the average temperature.",
+          "answer": "$-4^\\circ\\text{C}$"
+        },
+        {
+          "number": 8,
+          "question": "In a trivia quiz, Team A gets $6$ questions right ($+5$ points each) and $2$ questions wrong ($-3$ points each). Evaluate $6 \\times 5 + 2 \\times (-3)$ to find their total score.",
+          "answer": "$24\\text{ points}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In the expression $8 + 2 \\times (-5)$, which operation must be done first: $8 + 2$ or $2 \\times (-5)$? Calculate the correct answer.",
+          "answer": "Multiply $2 \\times (-5) = -10$ first, then $8 + (-10) = -2$."
+        },
+        {
+          "number": 10,
+          "question": "Explain the difference between $(-4)^2$ and $-4^2$ by writing out what is being squared in each expression.",
+          "answer": "In $(-4)^2 = (-4) \\times (-4) = +16$, the negative sign is inside the brackets and is squared; in $-4^2 = -(4 \\times 4) = -16$, only $4$ is squared."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF1_3_1a", "expression": "3 * (-2 + 7)", "expected": 15 },
+        { "id": "WSF1_3_1d", "expression": "(6 - 14) / (-2)", "expected": 4 },
+        { "id": "WSF1_3_2a", "expression": "10 + 3 * (-4)", "expected": -2 },
+        { "id": "WSF1_3_2c", "expression": "15 - 4 * (-2)", "expected": 23 },
+        { "id": "WSF1_3_3b", "expression": "20 - (-4)**2", "expected": 4 },
+        { "id": "WSF1_3_3d", "expression": "2 * (-3)**2", "expected": 18 },
+        { "id": "WSF1_3_4b", "expression": "(15 - (-9)) / (-6)", "expected": -4 },
+        { "id": "WSF1_3_5", "expression": "4 + 5 * (-3)", "expected": -11 },
+        { "id": "WSF1_3_7", "expression": "(-4 - 1 - 7) / 3", "expected": -4 },
+        { "id": "WSF1_3_8", "expression": "6 * 5 + 2 * (-3)", "expected": 24 }
+      ]
+    },
+    {
+      "section_id": "1_4",
+      "section_code": "1D",
+      "title": "LCM, HCF, and Prime Factorisation",
+      "vcaa_code": "VC2M8N02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "List all factors of each number, then state the Highest Common Factor ($\\text{HCF}$):",
+          "parts": [
+            { "label": "a", "question": "$12$ and $18$", "answer": "$6$" },
+            { "label": "b", "question": "$15$ and $25$", "answer": "$5$" },
+            { "label": "c", "question": "$16$ and $24$", "answer": "$8$" },
+            { "label": "d", "question": "$20$ and $30$", "answer": "$10$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "List the first five multiples of each number, then state the Lowest Common Multiple ($\\text{LCM}$):",
+          "parts": [
+            { "label": "a", "question": "$3$ and $4$", "answer": "$12$" },
+            { "label": "b", "question": "$4$ and $6$", "answer": "$12$" },
+            { "label": "c", "question": "$5$ and $8$", "answer": "$40$" },
+            { "label": "d", "question": "$6$ and $9$", "answer": "$18$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Complete each factor tree and write the prime factorisation in index form:",
+          "parts": [
+            { "label": "a", "question": "$12 = 2 \\times 2 \\times 3$", "answer": "$2^2 \\times 3$" },
+            { "label": "b", "question": "$20 = 2 \\times 2 \\times 5$", "answer": "$2^2 \\times 5$" },
+            { "label": "c", "question": "$36 = 2 \\times 2 \\times 3 \\times 3$", "answer": "$2^2 \\times 3^2$" },
+            { "label": "d", "question": "$45 = 3 \\times 3 \\times 5$", "answer": "$3^2 \\times 5$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "State whether each number is a Prime (P) or Composite (C) number:",
+          "parts": [
+            { "label": "a", "question": "$17$", "answer": "Prime (only factors are $1$ and $17$)" },
+            { "label": "b", "question": "$21$", "answer": "Composite ($3 \\times 7$)" },
+            { "label": "c", "question": "$29$", "answer": "Prime" },
+            { "label": "d", "question": "$35$", "answer": "Composite ($5 \\times 7$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Sausages are sold in packs of $6$ and bread rolls are sold in packs of $8$. Find $\\text{LCM}(6, 8)$ to work out the smallest number of sausages and rolls you can buy so there are none left over.",
+          "answer": "$24$ ($4$ packs of sausages and $3$ packs of rolls)"
+        },
+        {
+          "number": 6,
+          "question": "A teacher has $18$ blue pens and $24$ black pens to share equally into the greatest possible number of prize bags. Find $\\text{HCF}(18, 24)$ to find the maximum number of prize bags.",
+          "answer": "$6\\text{ prize bags}$ ($3$ blue and $4$ black pens per bag)"
+        },
+        {
+          "number": 7,
+          "question": "One lighthouse flashes every $4$ seconds and a second lighthouse flashes every $10$ seconds. If they flash together now, after how many seconds will they next flash together?",
+          "answer": "$20\\text{ seconds}$ ($\\text{LCM}(4, 10) = 20$)"
+        },
+        {
+          "number": 8,
+          "question": "Two ribbons of lengths $15\\text{ cm}$ and $20\\text{ cm}$ are to be cut into pieces of equal whole-centimetre length with no ribbon left over. What is the longest possible length of each piece?",
+          "answer": "$5\\text{ cm}$ ($\\text{HCF}(15, 20) = 5$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why the number $2$ is the ONLY even prime number.",
+          "answer": "Every even number greater than $2$ is divisible by $2$ (as well as $1$ and itself), so it has at least $3$ factors and is composite."
+        },
+        {
+          "number": 10,
+          "question": "A student writes the prime factorisation of $24$ as $2^2 \\times 6$. Explain why this is not complete and write the correct prime factorisation.",
+          "answer": "$6$ is a composite number ($2 \\times 3$), not prime. Replacing $6$ with $2 \\times 3$ gives $2^3 \\times 3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF1_4_1a", "expression": "igcd(12, 18)", "expected": 6 },
+        { "id": "WSF1_4_1c", "expression": "igcd(16, 24)", "expected": 8 },
+        { "id": "WSF1_4_2b", "expression": "ilcm(4, 6)", "expected": 12 },
+        { "id": "WSF1_4_2d", "expression": "ilcm(6, 9)", "expected": 18 },
+        { "id": "WSF1_4_3c", "expression": "2**2 * 3**2", "expected": 36 },
+        { "id": "WSF1_4_3d", "expression": "3**2 * 5", "expected": 45 },
+        { "id": "WSF1_4_5", "expression": "ilcm(6, 8)", "expected": 24 },
+        { "id": "WSF1_4_6", "expression": "igcd(18, 24)", "expected": 6 },
+        { "id": "WSF1_4_7", "expression": "ilcm(4, 10)", "expected": 20 },
+        { "id": "WSF1_4_8", "expression": "igcd(15, 20)", "expected": 5 }
+      ]
+    }
+  ]
+}

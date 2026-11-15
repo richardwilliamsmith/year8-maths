@@ -97,6 +97,102 @@
         { "id": "WS9_1_8", "expression": "Rational(6, 10) * Rational(5, 9)", "expected": "1/3" },
         { "id": "WS9_1_10", "expression": "1 - Rational(2, 8)", "expected": "3/4" }
       ]
+    },
+    {
+      "section_id": "9_2",
+      "section_code": "9B",
+      "title": "Experimental Probability, Relative Frequency, and Simulations",
+      "vcaa_code": "VC2M8P03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A biased spinner with $4$ colours (Red, Blue, Green, Yellow) is spun $80$ times with frequencies: Red $= 28$, Blue $= 18$, Green $= 24$, Yellow $= 10$. Find the relative frequency (as a decimal and simplified fraction) of:",
+          "parts": [
+            { "label": "a", "question": "Red", "answer": "$\\dfrac{7}{20} = 0.35$" },
+            { "label": "b", "question": "Green", "answer": "$\\dfrac{3}{10} = 0.30$" },
+            { "label": "c", "question": "Yellow", "answer": "$\\dfrac{1}{8} = 0.125$" },
+            { "label": "d", "question": "Red or Blue", "answer": "$\\dfrac{23}{40} = 0.575$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use the formula $\\text{Expected frequency} = n \\times p$ to find the expected number of occurrences in $n$ trials:",
+          "parts": [
+            { "label": "a", "question": "Rolling a $6$ on a fair die in $n = 180$ rolls ($p = \\frac{1}{6}$)", "answer": "$30$" },
+            { "label": "b", "question": "Spinning a multiple of $3$ on a fair $1$–$10$ spinner in $n = 250$ spins ($p = \\frac{3}{10}$)", "answer": "$75$" },
+            { "label": "c", "question": "Getting two Heads when tossing two fair coins $n = 320$ times ($p = \\frac{1}{4}$)", "answer": "$80$" },
+            { "label": "d", "question": "A basketballer with free-throw probability $p = 0.78$ taking $n = 150$ shots", "answer": "$117$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A drawing pin is tossed $50, 200, 500$, and $2000$ times, landing 'point up' $32, 118, 305$, and $1220$ times respectively. Calculate the relative frequency (as a decimal) after:",
+          "parts": [
+            { "label": "a", "question": "$50$ tosses ($\\frac{32}{50}$)", "answer": "$0.64$" },
+            { "label": "b", "question": "$200$ tosses ($\\frac{118}{200}$)", "answer": "$0.59$" },
+            { "label": "c", "question": "$500$ tosses ($\\frac{305}{500}$)", "answer": "$0.61$" },
+            { "label": "d", "question": "$2000$ tosses ($\\frac{1220}{2000}$), and state which estimate is most reliable", "answer": "$0.61$ (the $2000$-toss estimate is most reliable)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A random-digit simulation uses digits $0$–$9$ to model an event. State which digits could represent success and the theoretical probability $p$ for:",
+          "parts": [
+            { "label": "a", "question": "A $30\\%$ chance of afternoon thunderstorms in Brisbane", "answer": "Digits $0, 1, 2$ ($p = \\frac{3}{10} = 0.3$)" },
+            { "label": "b", "question": "An $80\\%$ chance of a commuter train arriving on time", "answer": "Digits $0$–$7$ ($p = \\frac{8}{10} = 0.8$)" },
+            { "label": "c", "question": "Guessing a 5-option multiple-choice question ($A$–$E$) correctly", "answer": "Digits $0, 1$ ($p = \\frac{2}{10} = 0.2$)" },
+            { "label": "d", "question": "In $20$ simulated 3-digit groups where $0, 1, 2$ mean rain, if $14$ groups contain at least one of $0, 1, 2$, what is the simulated probability of rain on at least one of $3$ days?", "answer": "$\\dfrac{14}{20} = 0.70$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Quality control at a solar-panel plant in Geelong inspects a batch of $400$ panels and finds $6$ with minor micro-cracks. (a) Find the experimental probability that a panel has a micro-crack. (b) In a production run of $10\\,000$ panels, how many are expected to have micro-cracks?",
+          "answer": "(a) $\\dfrac{6}{400} = 0.015$ ($1.5\\%$), (b) $150\\text{ panels}$"
+        },
+        {
+          "number": 6,
+          "question": "A mystery bag contains $20$ marbles that are either red or blue. Without looking, students draw a marble, record its colour, and replace it $100$ times, observing $64$ red marbles and $36$ blue marbles. Estimate how many of the $20$ marbles in the bag are red and how many are blue.",
+          "answer": "Approximately $13$ red ($0.64 \\times 20 = 12.8 \\approx 13$) and $7$ blue"
+        },
+        {
+          "number": 7,
+          "question": "A cereal promotion places $1$ of $4$ Australian animal collector cards equally likely inside each box. To simulate how many boxes are needed to collect all $4$ cards, a student rolls a fair $4$-sided die until all numbers $1, 2, 3, 4$ appear. In $10$ simulation trials, the number of boxes required was $6, 9, 5, 11, 8, 7, 10, 6, 12, 9$. Find the experimental mean number of boxes required.",
+          "answer": "$8.3\\text{ boxes}$ ($83 \\div 10 = 8.3$)"
+        },
+        {
+          "number": 8,
+          "question": "Two fair $6$-sided dice are rolled $180$ times and the sum is $7$ on $33$ occasions. Compare the experimental relative frequency with the theoretical probability $\\Pr(\\text{sum} = 7) = \\dfrac{6}{36} = \\dfrac{1}{6}$, and find the difference between the observed count ($33$) and the expected count.",
+          "answer": "Experimental $= \\dfrac{33}{180} = \\dfrac{11}{60} \\approx 0.1833$ vs theoretical $\\dfrac{1}{6} \\approx 0.1667$; expected count $= 30$, so observed is $3$ higher than expected."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A fair coin is tossed $5$ times and lands on Heads all $5$ times ($\\text{HHHHH}$). A student claims: 'By the Law of Large Numbers, Tails is due next, so $\\Pr(\\text{Tails on 6th toss}) > 0.5$.' Explain the flaw in this reasoning (the Gambler's Fallacy) and state what the Law of Large Numbers actually says.",
+          "answer": "Each coin toss is independent, so $\\Pr(\\text{Tails on 6th toss})$ is still exactly $0.5$. The Law of Large Numbers says that as the total number of tosses $n$ grows very large, the long-run proportion $\\frac{\\text{Heads}}{n}$ approaches $0.5$ (diluting early streaks, not compensating for them)."
+        },
+        {
+          "number": 10,
+          "question": "Why must we use experimental probability (relative frequency) rather than theoretical symmetry to find the probability that a kicked AFL football lands on its point, or that a randomly selected 40-year-old Australian will make a health insurance claim this year?",
+          "answer": "Neither outcome has equally likely symmetrical cases (an AFL ball is not symmetric like a fair die, and health claims depend on complex real-world factors), so probabilities can only be estimated from large-sample empirical frequencies."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_2_1a", "expression": "Rational(28, 80)", "expected": 0.35 },
+        { "id": "WS9_2_1c", "expression": "Rational(10, 80)", "expected": 0.125 },
+        { "id": "WS9_2_1d", "expression": "Rational(28 + 18, 80)", "expected": 0.575 },
+        { "id": "WS9_2_2a", "expression": "180 * Rational(1, 6)", "expected": 30 },
+        { "id": "WS9_2_2d", "expression": "150 * Rational(78, 100)", "expected": 117 },
+        { "id": "WS9_2_3b", "expression": "Rational(118, 200)", "expected": 0.59 },
+        { "id": "WS9_2_3d", "expression": "Rational(1220, 2000)", "expected": 0.61 },
+        { "id": "WS9_2_5b", "expression": "10000 * Rational(6, 400)", "expected": 150 },
+        { "id": "WS9_2_7", "expression": "Rational(6 + 9 + 5 + 11 + 8 + 7 + 10 + 6 + 12 + 9, 10)", "expected": 8.3 },
+        { "id": "WS9_2_8_diff", "expression": "33 - 180 * Rational(1, 6)", "expected": 3 }
+      ]
     }
   ]
 }

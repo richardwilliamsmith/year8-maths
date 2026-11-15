@@ -1,0 +1,199 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Probability and Venn Diagrams",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_1",
+      "section_code": "9A",
+      "title": "Complementary Events, Venn Diagrams and Two-Way Tables",
+      "vcaa_code": "VC2M8P02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A fair $6$-sided die ($1, 2, 3, 4, 5, 6$) is rolled once. Find the probability of rolling:",
+          "parts": [
+            { "label": "a", "question": "The number $5$", "answer": "$\\dfrac{1}{6}$" },
+            { "label": "b", "question": "An even number ($2, 4, 6$)", "answer": "$\\dfrac{3}{6} = \\dfrac{1}{2}$" },
+            { "label": "c", "question": "A number greater than $4$ ($5$ or $6$)", "answer": "$\\dfrac{2}{6} = \\dfrac{1}{3}$" },
+            { "label": "d", "question": "A number that is NOT $5$", "answer": "$\\dfrac{5}{6}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use the complementary rule $\\Pr(\\text{not } A) = 1 - \\Pr(A)$ to find $\\Pr(\\text{not } A)$:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(A) = 0.3$", "answer": "$0.7$" },
+            { "label": "b", "question": "$\\Pr(A) = 0.75$", "answer": "$0.25$" },
+            { "label": "c", "question": "$\\Pr(A) = \\dfrac{2}{5}$", "answer": "$\\dfrac{3}{5}$" },
+            { "label": "d", "question": "$\\Pr(A) = \\dfrac{3}{10}$", "answer": "$\\dfrac{7}{10}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A Venn diagram of $20$ students shows $8$ play Soccer ONLY, $5$ play BOTH Soccer and Tennis, and $4$ play Tennis ONLY ($3$ play neither). Find:",
+          "parts": [
+            { "label": "a", "question": "Total number of students who play Soccer ($8 + 5$)", "answer": "$13$" },
+            { "label": "b", "question": "Total number of students who play Tennis ($5 + 4$)", "answer": "$9$" },
+            { "label": "c", "question": "Number of students who play Soccer OR Tennis ($8 + 5 + 4$)", "answer": "$17$" },
+            { "label": "d", "question": "Probability a chosen student plays BOTH sports", "answer": "$\\dfrac{5}{20} = \\dfrac{1}{4}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A bag holds $10$ marbles of different colour: $5$ red, $3$ blue, and $2$ green. One marble is drawn at random. Find:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(\\text{red})$", "answer": "$\\dfrac{5}{10} = \\dfrac{1}{2}$" },
+            { "label": "b", "question": "$\\Pr(\\text{blue})$", "answer": "$\\dfrac{3}{10}$" },
+            { "label": "c", "question": "$\\Pr(\\text{red or green})$", "answer": "$\\dfrac{7}{10}$" },
+            { "label": "d", "question": "$\\Pr(\\text{not green})$", "answer": "$\\dfrac{8}{10} = \\dfrac{4}{5}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "The Bureau of Meteorology says the probability of rain in Melbourne tomorrow is $0.40$. Calculate $1 - 0.40$ to find the probability that it does NOT rain.",
+          "answer": "$0.60$"
+        },
+        {
+          "number": 6,
+          "question": "In a raffle at a surf club in Torquay with $50$ tickets sold, Jack buys $5$ tickets. Write the fraction $\\dfrac{5}{50}$ in simplest form to find his probability of winning first prize.",
+          "answer": "$\\dfrac{1}{10}$ ($0.1$)"
+        },
+        {
+          "number": 7,
+          "question": "A two-way table of $30$ pets at a vet clinic shows $12$ cats and $18$ dogs. Of the $18$ dogs, $10$ are microchipped. How many dogs are NOT microchipped ($18 - 10$), and what is the probability of picking a dog from all $30$ pets?",
+          "answer": "$8$ dogs not microchipped; $\\Pr(\\text{dog}) = \\dfrac{18}{30} = \\dfrac{3}{5}$"
+        },
+        {
+          "number": 8,
+          "question": "In a class of $25$ students, $15$ bring a laptop, $12$ bring a tablet, and $4$ bring BOTH. Calculate $15 + 12 - 4$ to find how many students bring at least one device.",
+          "answer": "$23\\text{ students}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why a probability can never be equal to $1.4$ or $-0.2$. What are the smallest and largest possible values for any probability?",
+          "answer": "Every probability must be between $0$ (impossible) and $1$ (certain) inclusive, so it cannot be negative or greater than $1$."
+        },
+        {
+          "number": 10,
+          "question": "In Question 3, $13$ students play Soccer and $9$ play Tennis, yet $13 + 9 = 22$ is more than the $20$ students in the class. Explain why adding $13 + 9$ double-counts some students.",
+          "answer": "The $5$ students in the overlap who play BOTH Soccer and Tennis are counted in the $13$ AND in the $9$, so they are counted twice."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_1_1b", "expression": "Rational(3, 6)", "expected": "1/2" },
+        { "id": "WSF9_1_2a", "expression": "1 - Rational(3, 10)", "expected": 0.7 },
+        { "id": "WSF9_1_2b", "expression": "1 - Rational(75, 100)", "expected": 0.25 },
+        { "id": "WSF9_1_2c", "expression": "1 - Rational(2, 5)", "expected": "3/5" },
+        { "id": "WSF9_1_3a", "expression": "8 + 5", "expected": 13 },
+        { "id": "WSF9_1_3c", "expression": "8 + 5 + 4", "expected": 17 },
+        { "id": "WSF9_1_3d", "expression": "Rational(5, 20)", "expected": "1/4" },
+        { "id": "WSF9_1_5", "expression": "1 - Rational(40, 100)", "expected": 0.6 },
+        { "id": "WSF9_1_6", "expression": "Rational(5, 50)", "expected": "1/10" },
+        { "id": "WSF9_1_8", "expression": "15 + 12 - 4", "expected": 23 }
+      ]
+    },
+    {
+      "section_id": "9_2",
+      "section_code": "9B",
+      "title": "Experimental Probability, Relative Frequency, and Simulations",
+      "vcaa_code": "VC2M8P03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A coin is tossed $20$ times and lands on Heads $11$ times and Tails $9$ times. Use $\\text{Relative frequency} = \\dfrac{\\text{count}}{\\text{total trials}}$ to find:",
+          "parts": [
+            { "label": "a", "question": "Relative frequency of Heads as a fraction", "answer": "$\\dfrac{11}{20}$" },
+            { "label": "b", "question": "Relative frequency of Heads as a decimal ($11 \\div 20$)", "answer": "$0.55$" },
+            { "label": "c", "question": "Relative frequency of Tails as a fraction", "answer": "$\\dfrac{9}{20}$" },
+            { "label": "d", "question": "Sum of the two relative frequencies ($\\frac{11}{20} + \\frac{9}{20}$)", "answer": "$1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A spinner is spun $50$ times with results: Red $= 20$, Blue $= 15$, Green $= 10$, Yellow $= 5$. Find the experimental probability of:",
+          "parts": [
+            { "label": "a", "question": "Red ($\\frac{20}{50}$ simplified)", "answer": "$\\dfrac{2}{5} = 0.4$" },
+            { "label": "b", "question": "Blue ($\\frac{15}{50}$ simplified)", "answer": "$\\dfrac{3}{10} = 0.3$" },
+            { "label": "c", "question": "Green ($\\frac{10}{50}$ simplified)", "answer": "$\\dfrac{1}{5} = 0.2$" },
+            { "label": "d", "question": "Yellow ($\\frac{5}{50}$ simplified)", "answer": "$\\dfrac{1}{10} = 0.1$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use $\\text{Expected count} = \\text{number of trials } n \\times p$ to find how many times you expect each event to happen:",
+          "parts": [
+            { "label": "a", "question": "Tossing Heads ($p = \\frac{1}{2}$) in $n = 40$ coin tosses", "answer": "$20$" },
+            { "label": "b", "question": "Rolling a $4$ ($p = \\frac{1}{6}$) in $n = 60$ rolls of a fair die", "answer": "$10$" },
+            { "label": "c", "question": "Winning a prize ($p = 0.2$) in $n = 50$ games", "answer": "$10$" },
+            { "label": "d", "question": "Rain ($p = 0.3$) over $n = 100$ days", "answer": "$30$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "To simulate a $50\\%$ chance of rain, a student tosses a fair coin ($\\text{H} = \\text{Rain}$, $\\text{T} = \\text{Dry}$) $10$ times and gets $\\text{H, T, T, H, H, T, H, T, T, T}$. Find:",
+          "parts": [
+            { "label": "a", "question": "How many times $\\text{H}$ (Rain) appeared in the $10$ trials", "answer": "$4$" },
+            { "label": "b", "question": "How many times $\\text{T}$ (Dry) appeared in the $10$ trials", "answer": "$6$" },
+            { "label": "c", "question": "The simulated probability of Rain ($\\frac{\\text{count of H}}{10}$)", "answer": "$\\dfrac{4}{10} = 0.4$" },
+            { "label": "d", "question": "If the student repeats the simulation for $1000$ tosses instead of $10$, what value will the relative frequency get closer to?", "answer": "$0.5$ ($\\dfrac{1}{2}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Netball goal shooter Ruby scores $18$ goals from $20$ shots at training. Calculate $\\dfrac{18}{20}$ as a decimal to find her experimental scoring probability.",
+          "answer": "$0.9$"
+        },
+        {
+          "number": 6,
+          "question": "At a school fete in Bendigo, $100$ ducks are plucked from a pond and $15$ have a star underneath. If $300$ children play the game (with replacement), multiply $300 \\times \\dfrac{15}{100}$ to find the expected number of winners.",
+          "answer": "$45\\text{ winners}$"
+        },
+        {
+          "number": 7,
+          "question": "A ranger checks $40$ nesting boxes in the Dandenong Ranges and finds sugar gliders in $12$ of them. Divide $12 \\div 40$ to find the relative frequency of occupied boxes.",
+          "answer": "$0.3$ ($\\dfrac{3}{10}$)"
+        },
+        {
+          "number": 8,
+          "question": "A fair $6$-sided die is rolled $30$ times and lands on the number $6$ seven times. Find the theoretical expected number of sixes ($30 \\times \\frac{1}{6}$) and state how many more sixes were rolled than expected.",
+          "answer": "Expected $= 5$; $2$ more sixes than expected ($7 - 5 = 2$)."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Liam tosses a coin $10$ times and Chloe tosses the same coin $500$ times. Whose experimental relative frequency is more likely to be close to the true probability ($0.5$), and why?",
+          "answer": "Chloe's, because a larger number of trials ($500$ vs $10$) reduces random chance variation and gives a more reliable estimate."
+        },
+        {
+          "number": 10,
+          "question": "If you roll a fair die $6$ times, are you guaranteed to get one of each number ($1, 2, 3, 4, 5, 6$)? Explain why or why not.",
+          "answer": "No; each roll is independent and random, so in a small number of trials some numbers may appear more than once and others not at all."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_2_1b", "expression": "Rational(11, 20)", "expected": 0.55 },
+        { "id": "WSF9_2_1d", "expression": "Rational(11, 20) + Rational(9, 20)", "expected": 1 },
+        { "id": "WSF9_2_2a", "expression": "Rational(20, 50)", "expected": 0.4 },
+        { "id": "WSF9_2_2b", "expression": "Rational(15, 50)", "expected": 0.3 },
+        { "id": "WSF9_2_3a", "expression": "40 * Rational(1, 2)", "expected": 20 },
+        { "id": "WSF9_2_3b", "expression": "60 * Rational(1, 6)", "expected": 10 },
+        { "id": "WSF9_2_3c", "expression": "50 * Rational(2, 10)", "expected": 10 },
+        { "id": "WSF9_2_5", "expression": "Rational(18, 20)", "expected": 0.9 },
+        { "id": "WSF9_2_6", "expression": "300 * Rational(15, 100)", "expected": 45 },
+        { "id": "WSF9_2_7", "expression": "Rational(12, 40)", "expected": 0.3 }
+      ]
+    }
+  ]
+}

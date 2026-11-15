@@ -1,0 +1,199 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Ratios, Rates and Best Buys",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "4_1",
+      "section_code": "4A",
+      "title": "Simplifying Ratios and Dividing in a Ratio",
+      "vcaa_code": "VC2M8M07",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each ratio by dividing both numbers by the common factor in brackets:",
+          "parts": [
+            { "label": "a", "question": "$6 : 8$ ($\\div 2$)", "answer": "$3 : 4$" },
+            { "label": "b", "question": "$15 : 20$ ($\\div 5$)", "answer": "$3 : 4$" },
+            { "label": "c", "question": "$12 : 18$ ($\\div 6$)", "answer": "$2 : 3$" },
+            { "label": "d", "question": "$40 : 10$ ($\\div 10$)", "answer": "$4 : 1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Convert to the same units first (shown in brackets), then simplify the ratio:",
+          "parts": [
+            { "label": "a", "question": "$50\\text{ cm} : 1\\text{ m}$ ($50\\text{ cm} : 100\\text{ cm}$)", "answer": "$1 : 2$" },
+            { "label": "b", "question": "$30\\text{ min} : 1\\text{ hour}$ ($30\\text{ min} : 60\\text{ min}$)", "answer": "$1 : 2$" },
+            { "label": "c", "question": "$500\\text{ g} : 2\\text{ kg}$ ($500\\text{ g} : 2000\\text{ g}$)", "answer": "$1 : 4$" },
+            { "label": "d", "question": "$20\\text{ cents} : \\$1$ ($20\\text{ c} : 100\\text{ c}$)", "answer": "$1 : 5$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the missing number $x$ in each equivalent ratio:",
+          "parts": [
+            { "label": "a", "question": "$1 : 3 = 2 : x$ ($\\times 2$)", "answer": "$x = 6$" },
+            { "label": "b", "question": "$2 : 5 = 6 : x$ ($\\times 3$)", "answer": "$x = 15$" },
+            { "label": "c", "question": "$3 : 4 = x : 20$ ($\\times 5$)", "answer": "$x = 15$" },
+            { "label": "d", "question": "$5 : 2 = 20 : x$ ($\\times 4$)", "answer": "$x = 8$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Add the parts to find $1$ part, then divide each quantity in the given ratio:",
+          "parts": [
+            { "label": "a", "question": "$\\$20$ in the ratio $1 : 3$ ($4$ parts $\\to \\$5$ per part)", "answer": "$\\$5$ and $\\$15$" },
+            { "label": "b", "question": "$30\\text{ kg}$ in the ratio $2 : 3$ ($5$ parts $\\to 6\\text{ kg}$ per part)", "answer": "$12\\text{ kg}$ and $18\\text{ kg}$" },
+            { "label": "c", "question": "$\\$40$ in the ratio $3 : 5$ ($8$ parts $\\to \\$5$ per part)", "answer": "$\\$15$ and $\\$25$" },
+            { "label": "d", "question": "$18\\text{ L}$ in the ratio $1 : 2$ ($3$ parts $\\to 6\\text{ L}$ per part)", "answer": "$6\\text{ L}$ and $12\\text{ L}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Cordial is mixed with water in the ratio $1 : 4$. If you use $100\\text{ mL}$ of cordial, multiply $100 \\times 4$ to find how much water is needed.",
+          "answer": "$400\\text{ mL}$ of water"
+        },
+        {
+          "number": 6,
+          "question": "Two sisters share $\\$60$ in the ratio $1 : 2$ ($3$ equal parts in total). Divide $\\$60 \\div 3$ to find $1$ part, then state each sister's share.",
+          "answer": "$\\$20$ and $\\$40$"
+        },
+        {
+          "number": 7,
+          "question": "A Year 8 class in Brisbane has $12$ boys and $16$ girls. Divide both numbers by $4$ to write the ratio of boys to girls in simplest form.",
+          "answer": "$3 : 4$"
+        },
+        {
+          "number": 8,
+          "question": "A map has a scale where $1\\text{ cm}$ represents $5\\text{ km}$. If two towns are $4\\text{ cm}$ apart on the map, multiply $4 \\times 5$ to find the real distance.",
+          "answer": "$20\\text{ km}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In a basket of $5$ apples and $8$ oranges, explain why the ratio of apples to oranges is $5 : 8$ and NOT $8 : 5$.",
+          "answer": "Order matters in a ratio: 'apples to oranges' means the number of apples ($5$) must come first and oranges ($8$) second."
+        },
+        {
+          "number": 10,
+          "question": "Sam simplifies $2\\text{ m} : 50\\text{ cm}$ as $2 : 50 = 1 : 25$. Explain why Sam must convert $2\\text{ m}$ to $200\\text{ cm}$ first, and write the correct simplified ratio.",
+          "answer": "Both parts of a ratio must be in the same units before simplifying: $200\\text{ cm} : 50\\text{ cm} = 4 : 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF4_1_1a", "expression": "Rational(6, 8)", "expected": "3/4" },
+        { "id": "WSF4_1_1c", "expression": "Rational(12, 18)", "expected": "2/3" },
+        { "id": "WSF4_1_2c", "expression": "Rational(500, 2000)", "expected": "1/4" },
+        { "id": "WSF4_1_3b", "expression": "(6 / 2) * 5", "expected": 15 },
+        { "id": "WSF4_1_3c", "expression": "(20 / 4) * 3", "expected": 15 },
+        { "id": "WSF4_1_4a", "expression": "(20 / 4) * 3", "expected": 15 },
+        { "id": "WSF4_1_4b", "expression": "(30 / 5) * 3", "expected": 18 },
+        { "id": "WSF4_1_5", "expression": "100 * 4", "expected": 400 },
+        { "id": "WSF4_1_6", "expression": "(60 / 3) * 2", "expected": 40 },
+        { "id": "WSF4_1_8", "expression": "4 * 5", "expected": 20 }
+      ]
+    },
+    {
+      "section_id": "4_2",
+      "section_code": "4B",
+      "title": "Rates, Speed and Best Buys",
+      "vcaa_code": "VC2M8M05",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Divide to find each unit rate (amount per $1$ unit):",
+          "parts": [
+            { "label": "a", "question": "$180\\text{ km}$ in $3\\text{ hours}$ ($180 \\div 3$)", "answer": "$60\\text{ km/h}$" },
+            { "label": "b", "question": "$\\$100$ for $4\\text{ hours}$ of work ($100 \\div 4$)", "answer": "$\\$25/\\text{h}$" },
+            { "label": "c", "question": "$40\\text{ L}$ in $5\\text{ minutes}$ ($40 \\div 5$)", "answer": "$8\\text{ L/min}$" },
+            { "label": "d", "question": "$\\$15$ for $3\\text{ kg}$ of apples ($15 \\div 3$)", "answer": "$\\$5/\\text{kg}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use the speed formulas ($D = S \\times T$, $S = D \\div T$, $T = D \\div S$) to calculate each answer:",
+          "parts": [
+            { "label": "a", "question": "Distance at $80\\text{ km/h}$ for $2\\text{ hours}$ ($80 \\times 2$)", "answer": "$160\\text{ km}$" },
+            { "label": "b", "question": "Distance at $5\\text{ m/s}$ for $10\\text{ seconds}$ ($5 \\times 10$)", "answer": "$50\\text{ m}$" },
+            { "label": "c", "question": "Speed for $100\\text{ m}$ in $20\\text{ seconds}$ ($100 \\div 20$)", "answer": "$5\\text{ m/s}$" },
+            { "label": "d", "question": "Time for $210\\text{ km}$ at $70\\text{ km/h}$ ($210 \\div 70$)", "answer": "$3\\text{ hours}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the cost of $1$ item for each pack:",
+          "parts": [
+            { "label": "a", "question": "$4$ muffins for $\\$12$ ($12 \\div 4$)", "answer": "$\\$3$ each" },
+            { "label": "b", "question": "$6$ juice boxes for $\\$9$ ($9 \\div 6$)", "answer": "$\\$1.50$ each" },
+            { "label": "c", "question": "$2\\text{ L}$ of milk for $\\$3.60$ ($3.60 \\div 2$)", "answer": "$\\$1.80/\\text{L}$" },
+            { "label": "d", "question": "$5\\text{ kg}$ of potatoes for $\\$10$ ($10 \\div 5$)", "answer": "$\\$2/\\text{kg}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the unit price of each option and state which is the Best Buy (cheaper per unit):",
+          "parts": [
+            { "label": "a", "question": "Option A: $2\\text{ kg}$ for $\\$6$ vs Option B: $3\\text{ kg}$ for $\\$12$", "answer": "Option A ($\\$3/\\text{kg}$ vs $\\$4/\\text{kg}$)" },
+            { "label": "b", "question": "Option A: $1\\text{ L}$ for $\\$4$ vs Option B: $2\\text{ L}$ for $\\$7$", "answer": "Option B ($\\$3.50/\\text{L}$ vs $\\$4/\\text{L}$)" },
+            { "label": "c", "question": "Option A: $5$ pens for $\\$10$ vs Option B: $10$ pens for $\\$15$", "answer": "Option B ($\\$1.50$/pen vs $\\$2$/pen)" },
+            { "label": "d", "question": "Option A: $100\\text{ g}$ for $\\$2$ vs Option B: $200\\text{ g}$ for $\\$3.60$", "answer": "Option B ($\\$1.80/100\\text{ g}$ vs $\\$2/100\\text{ g}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A car travels along the Princes Highway at an average speed of $90\\text{ km/h}$ for $3\\text{ hours}$. Multiply $90 \\times 3$ to find the distance travelled.",
+          "answer": "$270\\text{ km}$"
+        },
+        {
+          "number": 6,
+          "question": "Noah earns $\\$120$ for working a $6$-hour shift at a Melbourne bakery. Divide $120 \\div 6$ to find his hourly pay rate.",
+          "answer": "$\\$20/\\text{h}$"
+        },
+        {
+          "number": 7,
+          "question": "Cereal is sold in a $500\\text{ g}$ box for $\\$4.00$ or a $1\\text{ kg}$ ($1000\\text{ g}$) box for $\\$7.00$. Double the $500\\text{ g}$ price to compare $1\\text{ kg}$ of each and state the best buy.",
+          "answer": "Two $500\\text{ g}$ boxes cost $\\$8.00$, so the $1\\text{ kg}$ box for $\\$7.00$ is the best buy."
+        },
+        {
+          "number": 8,
+          "question": "A garden hose fills a $60\\text{ L}$ tub at a rate of $12\\text{ L/min}$. Divide $60 \\div 12$ to find how many minutes it takes to fill the tub.",
+          "answer": "$5\\text{ minutes}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why a ratio (such as $3 : 4$) has no units, whereas a rate (such as $60\\text{ km/h}$) must include units.",
+          "answer": "A ratio compares quantities of the SAME kind (so the units cancel out), whereas a rate compares two DIFFERENT kinds of quantities (such as distance in $\\text{km}$ and time in $\\text{h}$)."
+        },
+        {
+          "number": 10,
+          "question": "If you walk at $4\\text{ km/h}$, how far do you walk in $30\\text{ minutes}$ (half an hour)? Explain your answer.",
+          "answer": "$2\\text{ km}$, because $30\\text{ minutes}$ is $\\dfrac{1}{2}\\text{ hour}$ and $\\dfrac{1}{2} \\times 4\\text{ km} = 2\\text{ km}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF4_2_1a", "expression": "180 / 3", "expected": 60 },
+        { "id": "WSF4_2_1b", "expression": "100 / 4", "expected": 25 },
+        { "id": "WSF4_2_2a", "expression": "80 * 2", "expected": 160 },
+        { "id": "WSF4_2_2d", "expression": "210 / 70", "expected": 3 },
+        { "id": "WSF4_2_3b", "expression": "9 / 6", "expected": 1.5 },
+        { "id": "WSF4_2_3c", "expression": "3.60 / 2", "expected": 1.8 },
+        { "id": "WSF4_2_5", "expression": "90 * 3", "expected": 270 },
+        { "id": "WSF4_2_6", "expression": "120 / 6", "expected": 20 },
+        { "id": "WSF4_2_8", "expression": "60 / 12", "expected": 5 },
+        { "id": "WSF4_2_10", "expression": "4 * Rational(1, 2)", "expected": 2 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "curriculum": "Victorian Curriculum F-10 Version 2.0 (VCAA)",
+  "year_level": 9,
+  "title": "Open-Source Essential Mathematics for the Victorian Curriculum Year 9",
+  "version": "2.0.0",
+  "locale": "en-AU",
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "id": "y9_chapter_1",
+      "title": "Real Numbers, Surds, and Index Laws",
+      "strand": "Number",
+      "vcaa_codes": ["VC2M9N01", "VC2M9A01"],
+      "description": "Rational and irrational numbers on the real number line, simplifying surds, negative and zero integer exponents, and scientific notation.",
+      "sections": [
+        {
+          "section_id": "9_1_1",
+          "section_code": "1A",
+          "title": "The Real Number System and Surds",
+          "vcaa_code": "VC2M9N01",
+          "vcaa_description": "Recognise that the real number system includes the rational numbers and the irrational numbers, and solve problems involving real numbers using digital tools.",
+          "target_mastery": "Classify real numbers, locate surds on the number line using geometric constructions, and simplify basic square-root surds.",
+          "prerequisites": ["Irrational numbers and square roots (Year 8 VC2M8N01)", "Pythagoras' theorem (Year 8 VC2M8M06)"],
+          "sub_concepts": ["Real number hierarchy (N, Z, Q, R\\Q, R)", "Simplifying surds using square factors", "Exact vs approximate decimal calculations"]
+        },
+        {
+          "section_id": "9_1_2",
+          "section_code": "1B",
+          "title": "Index Laws with Algebraic Bases and Negative Indices",
+          "vcaa_code": "VC2M9A01",
+          "vcaa_description": "Apply the exponent laws to numerical expressions with integer exponents and extend to variables.",
+          "target_mastery": "Simplify algebraic and numerical expressions using all index laws, including zero and negative integer indices a^(-n) = 1/a^n.",
+          "prerequisites": ["Index laws with positive integer exponents (Year 8 VC2M8N02)"],
+          "sub_concepts": ["Index laws with pronumeral bases", "Negative integer exponents and reciprocals", "Products and quotients of algebraic powers"]
+        },
+        {
+          "section_id": "9_1_3",
+          "section_code": "1C",
+          "title": "Scientific Notation and Significant Figures",
+          "vcaa_code": "VC2M9M01",
+          "vcaa_description": "Solve problems involving very small and very large measurements, time scales and intervals expressed in scientific notation.",
+          "target_mastery": "Convert between standard decimal form and scientific notation a x 10^n, round to a given number of significant figures, and solve scientific measurement problems.",
+          "prerequisites": ["Negative integer powers of 10 (Section 1B)"],
+          "sub_concepts": ["Scientific notation for large and small numbers", "Significant figures and metric prefixes (nano to tera)", "Multiplying and dividing in scientific notation"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "id": "y9_chapter_2",
+      "title": "Financial Mathematics and Direct Proportion",
+      "strand": "Number & Algebra",
+      "vcaa_codes": ["VC2M9N02", "VC2M9A04"],
+      "description": "Wages, salaries, overtime, commission, Australian income tax tables, simple interest, and direct proportion modelling.",
+      "sections": [
+        {
+          "section_id": "9_2_1",
+          "section_code": "2A",
+          "title": "Earning Income, Commission, and Australian Taxation",
+          "vcaa_code": "VC2M9N02",
+          "vcaa_description": "Use mathematical modelling to solve practical problems involving direct proportion, rates, ratios and percentages, including in financial contexts.",
+          "target_mastery": "Calculate gross pay including time-and-a-half/double-time overtime, tiered commission, leave loading (17.5%), and Australian PAYG progressive income tax.",
+          "prerequisites": ["Percentages and financial modelling (Year 8 VC2M8N05)"],
+          "sub_concepts": ["Wages, salaries, and overtime penalty rates", "Retainers and tiered sales commission", "Australian progressive income tax brackets and Medicare levy"]
+        },
+        {
+          "section_id": "9_2_2",
+          "section_code": "2B",
+          "title": "Simple Interest, Repayment Modelling, and Direct Proportion",
+          "vcaa_code": "VC2M9N02",
+          "vcaa_description": "Use mathematical modelling to solve practical problems involving direct proportion, rates, ratios and percentages, including in financial contexts.",
+          "target_mastery": "Transpose the simple interest formula I = Prt to find principal, rate, or time, and model direct variation y = kx.",
+          "prerequisites": ["Simple interest (Year 8 Section 3B)", "Solving linear equations"],
+          "sub_concepts": ["Rearranging I = Prt for P, r, and t", "Hire-purchase and effective interest rates", "Direct proportion y = kx and constant of proportionality"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "id": "y9_chapter_3",
+      "title": "Algebraic Expansion and Factorisation",
+      "strand": "Algebra",
+      "vcaa_codes": ["VC2M9A02"],
+      "description": "Expanding binomial products, perfect squares, difference of two squares, and factorising monic quadratic trinomials.",
+      "sections": [
+        {
+          "section_id": "9_3_1",
+          "section_code": "3A",
+          "title": "Expanding Binomial Products and Special Identities",
+          "vcaa_code": "VC2M9A02",
+          "vcaa_description": "Simplify algebraic expressions, expand binomial products and factorise monic quadratic expressions.",
+          "target_mastery": "Expand binomial products (x + a)(x + b), perfect squares (a +/- b)^2, and difference of two squares (a - b)(a + b).",
+          "prerequisites": ["Distributive law and linear factorisation (Year 8 VC2M8A01)"],
+          "sub_concepts": ["Expanding (ax + b)(cx + d) using the distributive law", "Perfect square identities (a +/- b)^2 = a^2 +/- 2ab + b^2", "Difference of two squares identity (a - b)(a + b) = a^2 - b^2"]
+        },
+        {
+          "section_id": "9_3_2",
+          "section_code": "3B",
+          "title": "Factorising Difference of Two Squares and Grouping",
+          "vcaa_code": "VC2M9A02",
+          "vcaa_description": "Simplify algebraic expressions, expand binomial products and factorise monic quadratic expressions.",
+          "target_mastery": "Factorise expressions by extracting common factors, grouping in pairs, and applying the difference of two squares identity.",
+          "prerequisites": ["Expanding binomial products (Section 3A)"],
+          "sub_concepts": ["Common factor extraction before DOTS", "Difference of two squares a^2 - b^2 = (a - b)(a + b)", "Factorising four-term expressions by grouping in pairs"]
+        },
+        {
+          "section_id": "9_3_3",
+          "section_code": "3C",
+          "title": "Factorising Monic Quadratic Trinomials",
+          "vcaa_code": "VC2M9A02",
+          "vcaa_description": "Simplify algebraic expressions, expand binomial products and factorise monic quadratic expressions.",
+          "target_mastery": "Factorise monic quadratic trinomials x^2 + bx + c by finding factor pairs of c that sum to b.",
+          "prerequisites": ["Expanding binomial products (Section 3A)", "Directed number factors"],
+          "sub_concepts": ["Sum-and-product method for x^2 + bx + c", "Handling negative constant terms and negative middle terms", "Extracting a common numerical factor before trinomial factorisation"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "id": "y9_chapter_4",
+      "title": "Linear Equations, Inequalities, and Coordinate Geometry",
+      "strand": "Algebra",
+      "vcaa_codes": ["VC2M9A03", "VC2M9A04"],
+      "description": "Linear equations with algebraic fractions, gradient, midpoint, distance between two points, parallel and perpendicular lines.",
+      "sections": [
+        {
+          "section_id": "9_4_1",
+          "section_code": "4A",
+          "title": "Linear Equations with Fractions and Literal Equations",
+          "vcaa_code": "VC2M9A04",
+          "vcaa_description": "Use mathematical modelling to solve applied problems involving change, including linear relations.",
+          "target_mastery": "Solve multi-step linear equations involving algebraic fractions with binomial numerators and rearrange formulas.",
+          "prerequisites": ["Solving linear equations (Year 8 VC2M8A02)"],
+          "sub_concepts": ["Clearing fractional denominators using the LCM", "Cross-multiplication for rational equations", "Transposing formulas for a specified variable"]
+        },
+        {
+          "section_id": "9_4_2",
+          "section_code": "4B",
+          "title": "Gradient, Midpoint, and Distance on the Cartesian Plane",
+          "vcaa_code": "VC2M9A03",
+          "vcaa_description": "Find the gradient of a line segment, the midpoint of a line segment and the distance between 2 points on the Cartesian plane, using a range of strategies, including digital tools.",
+          "target_mastery": "Calculate the gradient m, midpoint M, and exact length d of a line segment joining (x1, y1) and (x2, y2).",
+          "prerequisites": ["Graphing linear relations (Year 8 VC2M8A03)", "Pythagoras' theorem (Year 8 VC2M8M06)"],
+          "sub_concepts": ["Gradient formula m = (y2 - y1)/(x2 - x1)", "Midpoint formula M = ((x1 + x2)/2, (y1 + y2)/2)", "Distance formula d = sqrt((x2 - x1)^2 + (y2 - y1)^2)"]
+        },
+        {
+          "section_id": "9_4_3",
+          "section_code": "4C",
+          "title": "Equations of Straight Lines and Linear Modelling",
+          "vcaa_code": "VC2M9A04",
+          "vcaa_description": "Use mathematical modelling to solve applied problems involving change, including linear relations.",
+          "target_mastery": "Determine the equation of a straight line from two points or point and gradient, sketch using x- and y-intercepts, and model linear change.",
+          "prerequisites": ["Gradient formula (Section 4B)"],
+          "sub_concepts": ["Gradient-intercept form y = mx + c and point-gradient form y - y1 = m(x - x1)", "Sketching lines via dual intercepts", "Horizontal (y = k) and vertical (x = h) lines"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "id": "y9_chapter_5",
+      "title": "Quadratic Equations and Non-Linear Graphs",
+      "strand": "Algebra",
+      "vcaa_codes": ["VC2M9A05", "VC2M9A06"],
+      "description": "Null Factor Law, solving monic quadratic equations, graphing parabolas and circles, and algorithmic approximations.",
+      "sections": [
+        {
+          "section_id": "9_5_1",
+          "section_code": "5A",
+          "title": "Solving Quadratic Equations via the Null Factor Law",
+          "vcaa_code": "VC2M9A05",
+          "vcaa_description": "Use the null factor law to solve monic quadratic equations with integer roots, and graph quadratic relations, identifying key features.",
+          "target_mastery": "Factorise monic quadratic equations and apply the Null Factor Law (ab = 0 => a = 0 or b = 0) to find roots.",
+          "prerequisites": ["Factorising monic quadratics (Section 3C)"],
+          "sub_concepts": ["The Null Factor Law", "Rearranging quadratics into standard form x^2 + bx + c = 0", "Modelling area and projectile problems with quadratic equations"]
+        },
+        {
+          "section_id": "9_5_2",
+          "section_code": "5B",
+          "title": "Graphing Quadratic Relations and Key Features of Parabolas",
+          "vcaa_code": "VC2M9A05",
+          "vcaa_description": "Use the null factor law to solve monic quadratic equations with integer roots, and graph quadratic relations, identifying key features.",
+          "target_mastery": "Sketch parabolas y = a(x - h)^2 + k and y = (x - p)(x - q), identifying the turning point, axis of symmetry, y-intercept, and x-intercepts.",
+          "prerequisites": ["Null Factor Law (Section 5A)", "Cartesian plane plotting"],
+          "sub_concepts": ["Dilation, reflection, and translation of y = x^2", "Turning point form y = a(x - h)^2 + k", "Intercept form and axis of symmetry x = (p + q)/2"]
+        },
+        {
+          "section_id": "9_5_3",
+          "section_code": "5C",
+          "title": "Non-Linear Relations and Algorithmic Root Approximation",
+          "vcaa_code": "VC2M9A06",
+          "vcaa_description": "Experiment with the effects of the parameters on the graphs of non-linear relations, and use algorithms and digital tools to approximate solutions.",
+          "target_mastery": "Explore graphs of simple exponential and reciprocal relations and apply the bisection/systematic trial algorithm to approximate non-integer roots.",
+          "prerequisites": ["Algebraic algorithms (Year 8 VC2M8A04)", "Parabola graphs (Section 5B)"],
+          "sub_concepts": ["Comparing linear, quadratic, and exponential growth", "Bisection algorithm for approximating irrational roots", "Parameter exploration with digital graphing tools"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "id": "y9_chapter_6",
+      "title": "Surface Area and Volume of Cylinders, Prisms, and Composite Solids",
+      "strand": "Measurement",
+      "vcaa_codes": ["VC2M9M02", "VC2M9M05"],
+      "description": "Total surface area and volume of right prisms and cylinders, composite solids, and absolute/percentage measurement error.",
+      "sections": [
+        {
+          "section_id": "9_6_1",
+          "section_code": "6A",
+          "title": "Surface Area of Right Prisms and Cylinders",
+          "vcaa_code": "VC2M9M02",
+          "vcaa_description": "Solve problems involving the volume and surface area of right prisms and cylinders using appropriate units.",
+          "target_mastery": "Calculate the total and curved surface area of right prisms, cylinders (TSA = 2*pi*r^2 + 2*pi*r*h), and composite solids.",
+          "prerequisites": ["Area of circles and composite shapes (Year 8 VC2M8M01, VC2M8M03)"],
+          "sub_concepts": ["Nets of right prisms and cylinders", "Curved vs total surface area of open and closed cylinders", "Surface area of composite 3D solids"]
+        },
+        {
+          "section_id": "9_6_2",
+          "section_code": "6B",
+          "title": "Volume of Cylinders, Composite Solids, and Error in Measurement",
+          "vcaa_code": "VC2M9M02",
+          "vcaa_description": "Solve problems involving the volume and surface area of right prisms and cylinders using appropriate units; calculate absolute, relative and percentage errors in measurements (VC2M9M05).",
+          "target_mastery": "Calculate the volume of cylinders (V = pi*r^2*h) and composite solids, and determine limits of accuracy, absolute error, and percentage error.",
+          "prerequisites": ["Volume of right prisms (Year 8 VC2M8M02)"],
+          "sub_concepts": ["Volume of cylinders and hollow pipes (annular prisms)", "Limits of accuracy (+/- 0.5 of smallest unit)", "Absolute, relative, and percentage error (VC2M9M05)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "id": "y9_chapter_7",
+      "title": "Similarity, Scale Factors, and Geometric Reasoning",
+      "strand": "Measurement & Space",
+      "vcaa_codes": ["VC2M9M03", "VC2M9SP01", "VC2M9SP02", "VC2M9SP03"],
+      "description": "Similarity tests for triangles, area and volume scale factors (k, k^2, k^3), Euler's formula for polyhedra, and geometric algorithms.",
+      "sections": [
+        {
+          "section_id": "9_7_1",
+          "section_code": "7A",
+          "title": "Similar Triangles and Geometric Proofs",
+          "vcaa_code": "VC2M9SP02",
+          "vcaa_description": "Establish the conditions for similarity of triangles and use them to solve problems and prove geometric properties (including VC2M9SP01 angle properties).",
+          "target_mastery": "Prove triangles are similar using AAA, SAS, SSS, and RHS similarity tests and calculate unknown side lengths in overlapping triangles.",
+          "prerequisites": ["Congruence and similarity introduction (Year 8 VC2M8SP01)"],
+          "sub_concepts": ["Four similarity tests for triangles (AAA, SAS, SSS, RHS)", "Finding unknown lengths using equal ratios of corresponding sides", "Deductive angle and similarity proofs (VC2M9SP01)"]
+        },
+        {
+          "section_id": "9_7_2",
+          "section_code": "7B",
+          "title": "Scale Factors for Length, Area, and Volume, and Polyhedra",
+          "vcaa_code": "VC2M9M03",
+          "vcaa_description": "Solve problems involving the ratio of corresponding sides of similar figures, and the relationships between length, area and volume of similar figures and solids.",
+          "target_mastery": "Apply the area scale factor k^2 and volume scale factor k^3 to similar 2D figures and 3D solids, and verify Euler's formula V - E + F = 2 (VC2M9SP03).",
+          "prerequisites": ["Similar triangles (Section 7A)", "Surface area and volume (Chapter 6)"],
+          "sub_concepts": ["Linear scale factor k, area ratio k^2, and volume ratio k^3", "Enlargements and reductions on the Cartesian plane", "Polyhedra nets and Euler's formula V - E + F = 2 (VC2M9SP03)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "id": "y9_chapter_8",
+      "title": "Pythagoras' Theorem and Right-Angled Trigonometry",
+      "strand": "Measurement",
+      "vcaa_codes": ["VC2M9M04"],
+      "description": "3D applications of Pythagoras' theorem, trigonometric ratios (sine, cosine, tangent), finding unknown sides and angles, and angles of elevation and depression.",
+      "sections": [
+        {
+          "section_id": "9_8_1",
+          "section_code": "8A",
+          "title": "Trigonometric Ratios (SOHCAHTOA) and Finding Side Lengths",
+          "vcaa_code": "VC2M9M04",
+          "vcaa_description": "Use similarity to investigate the constancy of the sine, cosine and tangent ratios for a given angle in right-angled triangles, and use trigonometric ratios and Pythagoras' theorem to solve right-angled triangle problems.",
+          "target_mastery": "Define sin, cos, and tan in right-angled triangles and use them to calculate unknown side lengths when the unknown is in the numerator or denominator.",
+          "prerequisites": ["Pythagoras' theorem (Year 8 VC2M8M06)", "Similar right-angled triangles (Section 7A)"],
+          "sub_concepts": ["Labelling Hypotenuse, Opposite, and Adjacent sides", "Sine, cosine, and tangent ratios (SOHCAHTOA)", "Calculating unknown sides (unknown in numerator vs denominator)"]
+        },
+        {
+          "section_id": "9_8_2",
+          "section_code": "8B",
+          "title": "Inverse Trigonometry, Elevation, Depression, and Bearings",
+          "vcaa_code": "VC2M9M04",
+          "vcaa_description": "Use trigonometric ratios and Pythagoras' theorem to solve right-angled triangle problems.",
+          "target_mastery": "Use inverse trigonometric functions (sin^-1, cos^-1, tan^-1) to find acute angles and solve applied problems involving angles of elevation, depression, and compass bearings.",
+          "prerequisites": ["Trigonometric ratios (Section 8A)"],
+          "sub_concepts": ["Inverse trigonometric functions for finding angles", "Angles of elevation and depression (alternate angles on horizontal lines)", "Navigation and true bearings in right-angled triangles"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 9,
+      "id": "y9_chapter_9",
+      "title": "Multi-Stage Probability and Relative Frequency",
+      "strand": "Probability",
+      "vcaa_codes": ["VC2M9P01", "VC2M9P02", "VC2M9P03"],
+      "description": "Two- and three-step chance experiments with and without replacement, tree diagrams, arrays, conditional language ('given that'), and simulations.",
+      "sections": [
+        {
+          "section_id": "9_9_1",
+          "section_code": "9A",
+          "title": "Two-Step Experiments With and Without Replacement",
+          "vcaa_code": "VC2M9P01",
+          "vcaa_description": "List all outcomes for compound events both with and without replacement, using lists, tree diagrams, tables or arrays; assign probabilities to outcomes.",
+          "target_mastery": "Construct lattice arrays and probability tree diagrams for two-step experiments with and without replacement and calculate compound probabilities.",
+          "prerequisites": ["Venn diagrams and two-way tables (Year 8 VC2M8P02)"],
+          "sub_concepts": ["Sample space arrays for independent events", "Tree diagrams with replacement vs without replacement", "Multiplying along branches and adding mutually exclusive paths"]
+        },
+        {
+          "section_id": "9_9_2",
+          "section_code": "9B",
+          "title": "Relative Frequency, 'And/Or' Compound Events, and Simulations",
+          "vcaa_code": "VC2M9P02",
+          "vcaa_description": "Calculate relative frequencies from given or collected data to estimate probabilities of events involving 'and', inclusive 'or' and exclusive 'or' (and design simulations VC2M9P03).",
+          "target_mastery": "Estimate compound probabilities from survey and experimental data using the Addition Rule Pr(A union B) = Pr(A) + Pr(B) - Pr(A intersect B) and multi-trial simulations.",
+          "prerequisites": ["Experimental probability (Year 8 VC2M8P03)", "Two-step experiments (Section 9A)"],
+          "sub_concepts": ["Inclusive 'or' vs exclusive 'or'", "The Addition Rule for probability", "Designing multi-step chance simulations (VC2M9P03)"]
+        }
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "id": "y9_chapter_10",
+      "title": "Statistics, Back-to-Back Displays, and Bivariate Data",
+      "strand": "Statistics",
+      "vcaa_codes": ["VC2M9ST01", "VC2M9ST02", "VC2M9ST03", "VC2M9ST04", "VC2M9ST05"],
+      "description": "Sampling critiques in media reports, grouped frequency histograms, back-to-back stem-and-leaf plots, quartiles and IQR, and bivariate scatterplots.",
+      "sections": [
+        {
+          "section_id": "9_10_1",
+          "section_code": "10A",
+          "title": "Grouped Histograms, Back-to-Back Stem Plots, and Quartiles",
+          "vcaa_code": "VC2M9ST03",
+          "vcaa_description": "Represent the distribution of multiple data sets for numerical variables using comparative representations; compare data distributions with consideration of centre, spread and shape (including VC2M9ST01, VC2M9ST04).",
+          "target_mastery": "Construct and compare back-to-back stem-and-leaf plots and grouped histograms, and calculate the five-number summary and Interquartile Range (IQR = Q3 - Q1).",
+          "prerequisites": ["Summary statistics and distribution shape (Year 8 VC2M8ST01-03)"],
+          "sub_concepts": ["Five-number summary (Min, Q1, Median, Q3, Max) and IQR", "Back-to-back stem-and-leaf plots and parallel dot plots", "Critiquing statistical claims and sampling bias in media reports (VC2M9ST01, VC2M9ST04)"]
+        },
+        {
+          "section_id": "9_10_2",
+          "section_code": "10B",
+          "title": "Bivariate Data, Two-Way Associations, and Scatterplots",
+          "vcaa_code": "VC2M9ST02",
+          "vcaa_description": "Analyse how different sampling methods can affect the results of a statistical investigation; plan and conduct statistical investigations involving bivariate data (VC2M9ST05).",
+          "target_mastery": "Plot bivariate numerical data on a scatterplot and describe the direction (positive/negative), form (linear/non-linear), and strength (strong/moderate/weak) of association.",
+          "prerequisites": ["Cartesian plane plotting", "Comparative distributions (Section 10A)"],
+          "sub_concepts": ["Explanatory (independent) and response (dependent) variables", "Constructing and interpreting scatterplots", "Correlation vs causation in statistical investigations (VC2M9ST05)"]
+        }
+      ]
+    }
+  ]
+}
