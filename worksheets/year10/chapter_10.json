@@ -1,0 +1,103 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Bivariate Data, Time Series, and Linear Regression (10 & 10A)",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "10_10_1",
+      "section_code": "10A",
+      "title": "Scatterplots, Lines of Best Fit, and Time-Series Data",
+      "vcaa_code": "VC2M10ST03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A line of best fit passes through the two points $(2, 11)$ and $(6, 23)$ on a scatterplot. Find:",
+          "parts": [
+            { "label": "a", "question": "The gradient $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$ of the line of best fit", "answer": "$m = 3$" },
+            { "label": "b", "question": "The $y$-intercept $c$ and the equation $y = mx + c$", "answer": "$c = 5$; $y = 3x + 5$" },
+            { "label": "c", "question": "The predicted value of $y$ when $x = 4$ (interpolation)", "answer": "$y = 17$" },
+            { "label": "d", "question": "The value of $x$ when the predicted value is $y = 35$", "answer": "$x = 10$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "[10A] Match or interpret each value of Pearson's correlation coefficient $r$ ($-1 \\le r \\le 1$):",
+          "parts": [
+            { "label": "a", "question": "Describe the strength and direction of a linear association with $r = 0.92$", "answer": "Strong positive linear association" },
+            { "label": "b", "question": "Describe the strength and direction of a linear association with $r = -0.85$", "answer": "Strong negative linear association" },
+            { "label": "c", "question": "Describe the linear association when $r = 0.04$", "answer": "No (or very weak) linear association" },
+            { "label": "d", "question": "Find the coefficient of determination $r^2$ (as a percentage) when $r = -0.80$", "answer": "$r^2 = 0.64 = 64\\%$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Quarterly electricity bills (in $\\$$) for a Melbourne home across a year are Q1: $\\$320$, Q2: $\\$480$, Q3: $\\$540$, Q4: $\\$360$. Find:",
+          "parts": [
+            { "label": "a", "question": "The annual mean quarterly bill", "answer": "$\\$425$" },
+            { "label": "b", "question": "The $3$-point moving average centred on Q2 ($\\frac{\\text{Q1} + \\text{Q2} + \\text{Q3}}{3}$)", "answer": "$\\$446.67$ ($\\frac{1340}{3}$)" },
+            { "label": "c", "question": "The $3$-point moving average centred on Q3 ($\\frac{\\text{Q2} + \\text{Q3} + \\text{Q4}}{3}$)", "answer": "$\\$460$" },
+            { "label": "d", "question": "Which component of a time series (secular trend, seasonality, or random noise) explains the regular winter peak in Q2 and Q3?", "answer": "Seasonality" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "[10A] The least-squares regression line $y = a + bx$ has slope $b = r\\dfrac{s_y}{s_x}$ and passes through $(\\bar{x}, \\bar{y})$. Given $\\bar{x} = 10$, $\\bar{y} = 40$, $s_x = 4$, $s_y = 10$, and $r = 0.8$, find:",
+          "parts": [
+            { "label": "a", "question": "The gradient $b = r\\dfrac{s_y}{s_x}$", "answer": "$b = 2$" },
+            { "label": "b", "question": "The $y$-intercept $a = \\bar{y} - b\\bar{x}$", "answer": "$a = 20$" },
+            { "label": "c", "question": "The equation of the least-squares regression line", "answer": "$y = 20 + 2x$ (or $y = 2x + 20$)" },
+            { "label": "d", "question": "The residual $e = y_{\\text{actual}} - y_{\\text{predicted}}$ for an observation at $(10, 43)$", "answer": "$e = 43 - 40 = +3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A study of $8$ rooftop solar systems in Adelaide for panel area $x$ ($\\text{m}^2$, ranging from $10\\text{ m}^2$ to $30\\text{ m}^2$) and daily output $y$ ($\\text{kWh}$) gives the line of best fit $y = 0.85x + 1.2$. Predict the daily output for $x = 20\\text{ m}^2$, and state whether predicting for $x = 100\\text{ m}^2$ is interpolation or extrapolation.",
+          "answer": "At $x = 20$: $y = 0.85(20) + 1.2 = 18.2\\text{ kWh}$. Predicting at $x = 100\\text{ m}^2$ is **extrapolation** (outside $[10, 30]$) and may be unreliable."
+        },
+        {
+          "number": 6,
+          "question": "The resale value $V$ (in thousands of dollars) of a utility vehicle $t$ years after purchase ($1 \\le t \\le 8$) is modelled by $V = 48 - 4.5t$. Interpret the vertical intercept ($48$) and the gradient ($-4.5$) in the context of the vehicle.",
+          "answer": "The vertical intercept $\\$48\\,000$ is the estimated initial value when new ($t = 0$), and the gradient $-4.5$ means the vehicle depreciates by an average of $\\$4500$ per year."
+        },
+        {
+          "number": 7,
+          "question": "Ice-cream sales at Bondi Beach and the number of surf-lifesaving rescues per day show a strong positive correlation ($r = 0.84$). Does eating ice-cream cause surf rescues? Identify the lurking (confounding) variable.",
+          "answer": "No; correlation does not imply causation. Hot, sunny summer weather is a confounding variable that independently increases both ice-cream sales and the number of swimmers in the surf."
+        },
+        {
+          "number": 8,
+          "question": "A time-series linear trend for annual passenger numbers $P$ (in millions) at Melbourne Airport $t$ years after $2020$ is $P = 24.5 + 2.8t$. Predict the passenger numbers in $2026$ ($t = 6$).",
+          "answer": "$P = 24.5 + 2.8(6) = 24.5 + 16.8 = 41.3\\text{ million}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why making a prediction using **interpolation** (within the range of observed $x$-values) is generally reliable, whereas **extrapolation** far beyond the observed data range is risky.",
+          "answer": "Within the observed data range, the scatterplot confirms that the linear trend holds; outside that range, there is no evidence that the relationship remains linear (e.g. growth may level off or become non-linear)."
+        },
+        {
+          "number": 10,
+          "question": "[10A] Explain what the least-squares regression line minimises geometrically on a scatterplot, and state why a single extreme outlier can strongly distort both Pearson's $r$ and the least-squares line.",
+          "answer": "The least-squares line minimises the sum of the squares of the vertical residuals $\\sum (y_i - \\hat{y}_i)^2$. Because the residuals are squared, an outlier with a large residual contributes a huge squared error, pulling the regression line and $r$ towards itself."
+        }
+      ],
+      "assertions": [
+        { "id": "WS10_10_1_1a", "expression": "(23 - 11) / (6 - 2)", "expected": 3 },
+        { "id": "WS10_10_1_1b", "expression": "11 - 3 * 2", "expected": 5 },
+        { "id": "WS10_10_1_1c", "expression": "3 * 4 + 5", "expected": 17 },
+        { "id": "WS10_10_1_2d", "expression": "Rational(-8, 10)**2", "expected": 0.64 },
+        { "id": "WS10_10_1_3a", "expression": "(320 + 480 + 540 + 360) / 4", "expected": 425 },
+        { "id": "WS10_10_1_3c", "expression": "(480 + 540 + 360) / 3", "expected": 460 },
+        { "id": "WS10_10_1_4a", "expression": "Rational(8, 10) * Rational(10, 4)", "expected": 2 },
+        { "id": "WS10_10_1_4b", "expression": "40 - 2 * 10", "expected": 20 },
+        { "id": "WS10_10_1_5", "expression": "Rational(85, 100) * 20 + Rational(12, 10)", "expected": 18.2 },
+        { "id": "WS10_10_1_8", "expression": "Rational(245, 10) + Rational(28, 10) * 6", "expected": 41.3 }
+      ]
+    }
+  ]
+}

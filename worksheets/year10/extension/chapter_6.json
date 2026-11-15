@@ -1,0 +1,295 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Trigonometry, Bearings, and Non-Right-Angled Triangles (10 & 10A)",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_6_1",
+      "section_code": "6A",
+      "title": "Right-Angled Trigonometry in 2D/3D and True Bearings",
+      "vcaa_code": "VC2M10M03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A ship sails from port $O$ for $12\\text{ km}$ on a bearing of $030^\\circ\\text{T}$ to $A$, then $16\\text{ km}$ on a bearing of $120^\\circ\\text{T}$ to $B$. Find:",
+          "parts": [
+            { "label": "a", "question": "The interior angle $\\angle OAB$ (using parallel north lines)", "answer": "$90^\\circ$" },
+            { "label": "b", "question": "The direct distance $OB$ from port $O$", "answer": "$20\\text{ km}$" },
+            { "label": "c", "question": "$\\tan(\\angle AOB)$ as a simplified fraction", "answer": "$\\dfrac{4}{3}$" },
+            { "label": "d", "question": "The true bearing of $B$ from $O$ correct to $1$ decimal place", "answer": "$083.1^\\circ\\text{T}$ ($30^\\circ + 53.1^\\circ$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A right square-based pyramid $ABCDE$ has base side length $10\\sqrt{2}\\text{ cm}$ and vertical height $EM = 12\\text{ cm}$ above the base centre $M$. Find:",
+          "parts": [
+            { "label": "a", "question": "The exact length of the base diagonal $AC$ and half-diagonal $AM$", "answer": "$AC = 20\\text{ cm}, AM = 10\\text{ cm}$" },
+            { "label": "b", "question": "The exact slant edge length $AE$", "answer": "$\\sqrt{244} = 2\\sqrt{61}\\text{ cm}$" },
+            { "label": "c", "question": "$\\tan(\\angle EAM)$, where $\\angle EAM$ is the angle a slant edge makes with the base", "answer": "$\\dfrac{6}{5} = 1.2$" },
+            { "label": "d", "question": "$\\tan\\phi$, where $\\phi$ is the angle a triangular face makes with the base", "answer": "$\\dfrac{12}{5\\sqrt{2}} = \\dfrac{6\\sqrt{2}}{5}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "From two points $A$ and $B$ in line with the foot $F$ of a vertical tower $TF$ of height $h$, the angles of elevation to $T$ are $30^\\circ$ and $60^\\circ$ respectively, with $AB = 40\\text{ m}$ ($A$ further from $F$). Find:",
+          "parts": [
+            { "label": "a", "question": "Expressions for $AF$ and $BF$ in terms of $h$ using exact values", "answer": "$AF = h\\sqrt{3}$, $BF = \\dfrac{h}{\\sqrt{3}}$" },
+            { "label": "b", "question": "The exact simplified value of $AF - BF$ in terms of $h$", "answer": "$\\dfrac{2h}{\\sqrt{3}}$" },
+            { "label": "c", "question": "The exact height $h$ of the tower", "answer": "$20\\sqrt{3}\\text{ m}$" },
+            { "label": "d", "question": "The exact distance $BF$ from the closer observation point to the base of the tower", "answer": "$20\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A vertical communications tower of height $h$ stands at the origin $O(0, 0)$. From $A$ due south of $O$, the angle of elevation to the top is $45^\\circ$; from $B$ due east of $O$, the angle of elevation is $30^\\circ$. Given $AB = 100\\text{ m}$, find:",
+          "parts": [
+            { "label": "a", "question": "The horizontal distances $OA$ and $OB$ in terms of $h$", "answer": "$OA = h$, $OB = h\\sqrt{3}$" },
+            { "label": "b", "question": "An equation relating $h$ and $AB = 100$ using Pythagoras' theorem on $\\triangle OAB$", "answer": "$h^2 + 3h^2 = 100^2 \\implies 4h^2 = 10\\,000$" },
+            { "label": "c", "question": "The exact height $h$ of the tower", "answer": "$50\\text{ m}$" },
+            { "label": "d", "question": "The true bearing of $B$ from $A$", "answer": "$060^\\circ\\text{T}$ ($\\tan(\\angle OAB) = \\sqrt{3}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An aircraft flies from Darwin $150\\text{ km}$ on a bearing of $150^\\circ\\text{T}$, then $200\\text{ km}$ on a bearing of $240^\\circ\\text{T}$. Prove that the two legs are perpendicular, find the exact direct distance back to Darwin, and find how far south of Darwin the aircraft is at the end of the second leg (exact surd).",
+          "answer": "Back-bearing of first leg is $330^\\circ\\text{T}$, so angle between legs is $330^\\circ - 240^\\circ = 90^\\circ$. Distance $= \\sqrt{150^2 + 200^2} = 250\\text{ km}$. Total south $= 150\\cos 30^\\circ + 200\\sin 30^\\circ = 75\\sqrt{3} + 100\\text{ km}$."
+        },
+        {
+          "number": 6,
+          "question": "A rectangular room in a Sydney warehouse measures $12\\text{ m}$ long, $9\\text{ m}$ wide, and $8\\text{ m}$ high. A spider crawls in a straight line on the surfaces from a bottom corner $A$ to the opposite top corner $G$ by crossing the floor ($12\\text{ m} \\times 9\\text{ m}$) and climbing an end wall. Compare the 3D straight-line air distance $AG$ with the shortest surface path unfolded across the net.",
+          "answer": "3D air distance $AG = \\sqrt{12^2 + 9^2 + 8^2} = 17\\text{ m}$; shortest surface path unfolding the $12\\text{ m}$ edge gives $\\sqrt{12^2 + (9 + 8)^2} = \\sqrt{144 + 289} = \\sqrt{433} \\approx 20.81\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "From a lighthouse $60\\text{ m}$ above sea level at Cape Otway, a yacht is sighted due south at an angle of depression of $45^\\circ$, and $10$ minutes later the same yacht is sighted due east at an angle of depression of $30^\\circ$. Find the exact distance travelled by the yacht and its speed in $\\text{km/h}$.",
+          "answer": "$OA = 60\\text{ m}$, $OB = 60\\sqrt{3}\\text{ m}$; distance $AB = \\sqrt{60^2 + (60\\sqrt{3})^2} = 120\\text{ m} = 0.12\\text{ km}$; speed $= 0.12 \\times 6 = 0.72\\text{ km/h}$"
+        },
+        {
+          "number": 8,
+          "question": "A regular tetrahedron has all $6$ edges of length $6\\text{ cm}$. Find (a) the exact altitude of one equilateral triangular face, (b) the distance from a base vertex to the centroid of the base (two-thirds of the face altitude), and (c) the exact perpendicular height $H$ of the tetrahedron.",
+          "answer": "(a) $3\\sqrt{3}\\text{ cm}$, (b) $2\\sqrt{3}\\text{ cm}$, (c) $H = \\sqrt{6^2 - (2\\sqrt{3})^2} = \\sqrt{24} = 2\\sqrt{6}\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A vertical tower of height $h$ stands at the origin $O$. From point $A$ at angle of elevation $\\alpha$ (due south of $O$) and point $B$ at angle of elevation $\\beta$ (due east of $O$), the horizontal distance between $A$ and $B$ is $d$. Prove that $h = \\dfrac{d}{\\sqrt{\\cot^2\\alpha + \\cot^2\\beta}}$.",
+          "answer": "In $\\triangle OAT$, $OA = h\\cot\\alpha$; in $\\triangle OBT$, $OB = h\\cot\\beta$. Since $OA \\perp OB$ on the horizontal ground, $OA^2 + OB^2 = d^2 \\implies h^2(\\cot^2\\alpha + \\cot^2\\beta) = d^2 \\implies h = \\dfrac{d}{\\sqrt{\\cot^2\\alpha + \\cot^2\\beta}}$."
+        },
+        {
+          "number": 10,
+          "question": "In a rectangular prism with dimensions $l, w, h$ and 3D space diagonal $D$, let $\\alpha, \\beta, \\gamma$ be the angles that $D$ makes with the three mutually perpendicular edges $l, w, h$ respectively. Prove that $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$.",
+          "answer": "Since $\\cos\\alpha = \\frac{l}{D}$, $\\cos\\beta = \\frac{w}{D}$, and $\\cos\\gamma = \\frac{h}{D}$, we have $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = \\dfrac{l^2 + w^2 + h^2}{D^2} = \\dfrac{D^2}{D^2} = 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_6_1_1b", "expression": "sqrt(12**2 + 16**2)", "expected": 20 },
+        { "id": "WSE10_6_1_2a", "expression": "sqrt((10*sqrt(2))**2 + (10*sqrt(2))**2)", "expected": 20 },
+        { "id": "WSE10_6_1_2b", "expression": "10**2 + 12**2", "expected": 244 },
+        { "id": "WSE10_6_1_3c", "expression": "40 * sqrt(3) / 2", "expected": "20*sqrt(3)" },
+        { "id": "WSE10_6_1_4c", "expression": "sqrt(100**2 / 4)", "expected": 50 },
+        { "id": "WSE10_6_1_5", "expression": "sqrt(150**2 + 200**2)", "expected": 250 },
+        { "id": "WSE10_6_1_6a", "expression": "sqrt(12**2 + 9**2 + 8**2)", "expected": 17 },
+        { "id": "WSE10_6_1_6b", "expression": "12**2 + (9 + 8)**2", "expected": 433 },
+        { "id": "WSE10_6_1_7", "expression": "sqrt(60**2 + (60*sqrt(3))**2)", "expected": 120 },
+        { "id": "WSE10_6_1_8c", "expression": "6**2 - (2*sqrt(3))**2", "expected": 24 }
+      ]
+    },
+    {
+      "section_id": "10_6_2",
+      "section_code": "6B",
+      "title": "[10A] The Sine Rule, Cosine Rule, and Triangle Area Formula",
+      "vcaa_code": "VC2M10AM02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "In the ambiguous case of the Sine Rule, $\\triangle ABC$ has $\\angle A = 30^\\circ$, $b = 8\\sqrt{3}\\text{ cm}$, and $a = 12\\text{ cm}$. Find:",
+          "parts": [
+            { "label": "a", "question": "The exact value of $\\sin B$", "answer": "$\\sin B = \\dfrac{\\sqrt{3}}{2}$" },
+            { "label": "b", "question": "The two possible values of $\\angle B$", "answer": "$B_1 = 60^\\circ$ or $B_2 = 120^\\circ$" },
+            { "label": "c", "question": "The corresponding two possible values of $\\angle C$", "answer": "$C_1 = 90^\\circ$ or $C_2 = 30^\\circ$" },
+            { "label": "d", "question": "The two possible exact lengths of side $c$", "answer": "$c_1 = 24\\text{ cm}$ or $c_2 = 12\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "In $\\triangle ABC$, $AB = 7\\text{ cm}$, $BC = 8\\text{ cm}$, and $AC = x\\text{ cm}$ with $\\angle B = 60^\\circ$. Find:",
+          "parts": [
+            { "label": "a", "question": "The exact value of $x$ using the Cosine Rule", "answer": "$x = \\sqrt{57}\\text{ cm}$" },
+            { "label": "b", "question": "Both positive values of $y$ if instead $\\angle B = 60^\\circ$, $AB = 8\\text{ cm}$, $AC = 7\\text{ cm}$, and $BC = y\\text{ cm}$ ($y^2 - 8y + 15 = 0$)", "answer": "$y = 3\\text{ cm}$ or $y = 5\\text{ cm}$" },
+            { "label": "c", "question": "The exact difference in area between the two triangles in part (b)", "answer": "$4\\sqrt{3}\\text{ cm}^2$ ($10\\sqrt{3} - 6\\sqrt{3}$)" },
+            { "label": "d", "question": "The value of $\\cos\\theta$ for the obtuse angle in a triangle with sides $3, 5, 7$", "answer": "$-\\dfrac{1}{2}$ (so $\\theta = 120^\\circ$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A circle has radius $r = 6\\text{ cm}$ and a chord $AB$ subtends an angle of $\\angle AOB = 120^\\circ$ at the centre $O$. Find:",
+          "parts": [
+            { "label": "a", "question": "The exact length of chord $AB$ using the Cosine Rule on $\\triangle OAB$", "answer": "$6\\sqrt{3}\\text{ cm}$" },
+            { "label": "b", "question": "The exact area of $\\triangle OAB$", "answer": "$9\\sqrt{3}\\text{ cm}^2$" },
+            { "label": "c", "question": "The exact area of the sector $OAB$ ($\\frac{120}{360}\\pi r^2$)", "answer": "$12\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "The exact area of the minor segment cut off by chord $AB$", "answer": "$(12\\pi - 9\\sqrt{3})\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "In quadrilateral $ABCD$, $AB = 3\\text{ m}$, $BC = 4\\text{ m}$, $\\angle ABC = 90^\\circ$, $CD = 12\\text{ m}$, and $DA = 13\\text{ m}$. Find:",
+          "parts": [
+            { "label": "a", "question": "The length of diagonal $AC$", "answer": "$5\\text{ m}$" },
+            { "label": "b", "question": "$\\cos(\\angle ACD)$ using the Cosine Rule on $\\triangle ACD$", "answer": "$0$ (so $\\angle ACD = 90^\\circ$)" },
+            { "label": "c", "question": "The total exact area of quadrilateral $ABCD$", "answer": "$36\\text{ m}^2$ ($6 + 30$)" },
+            { "label": "d", "question": "$\\sin(\\angle DAC)$ in $\\triangle ACD$", "answer": "$\\dfrac{12}{13}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Two patrol boats leave Fremantle at the same time. Boat $A$ travels at $14\\text{ km/h}$ on a bearing of $025^\\circ\\text{T}$ and Boat $B$ travels at $16\\text{ km/h}$ on a bearing of $145^\\circ\\text{T}$. Find the exact distance between the two boats after $1.5\\text{ hours}$.",
+          "answer": "Distances are $21\\text{ km}$ and $24\\text{ km}$ with included angle $120^\\circ$; distance $= \\sqrt{21^2 + 24^2 - 2(21)(24)\\cos 120^\\circ} = \\sqrt{1521} = 39\\text{ km}$"
+        },
+        {
+          "number": 6,
+          "question": "A vertical flagpole $TP$ stands on top of a hill. From the base of the hill, a path slopes upwards at $15^\\circ$ to the horizontal directly towards $P$. From a point $A$ on the path $40\\text{ m}$ from $P$, the angle of elevation to the top of the flagpole $T$ is $45^\\circ$. Show that $\\angle TAP = 30^\\circ$ and $\\angle ATP = 45^\\circ$, and use the Sine Rule to find the exact height $TP$ of the flagpole.",
+          "answer": "$\\angle TAP = 45^\\circ - 15^\\circ = 30^\\circ$; since $TP$ is vertical, the angle between $TP$ and the line of sight $AT$ is $90^\\circ - 45^\\circ = 45^\\circ$. By the Sine Rule, $TP = \\dfrac{40\\sin 30^\\circ}{\\sin 45^\\circ} = 20\\sqrt{2}\\text{ m}$."
+        },
+        {
+          "number": 7,
+          "question": "A parallelogram has adjacent side lengths of $7\\text{ cm}$ and $9\\text{ cm}$ and an acute interior angle of $60^\\circ$. Find the exact lengths of both diagonals of the parallelogram and verify that the sum of the squares of the diagonals equals the sum of the squares of all four sides.",
+          "answer": "$d_1 = \\sqrt{7^2 + 9^2 - 2(7)(9)\\cos 60^\\circ} = \\sqrt{67}\\text{ cm}$; $d_2 = \\sqrt{7^2 + 9^2 - 2(7)(9)\\cos 120^\\circ} = \\sqrt{193}\\text{ cm}$; $d_1^2 + d_2^2 = 67 + 193 = 260 = 2(7^2 + 9^2)$."
+        },
+        {
+          "number": 8,
+          "question": "A triangular solar farm in Mildura has side lengths $130\\text{ m}$, $140\\text{ m}$, and $150\\text{ m}$. Use the Cosine Rule to find $\\cos C$ (opposite the $150\\text{ m}$ side), deduce $\\sin C$ using $\\sin^2 C + \\cos^2 C = 1$, and calculate the exact area of the solar farm.",
+          "answer": "$\\cos C = \\dfrac{130^2 + 140^2 - 150^2}{2(130)(140)} = \\dfrac{5}{13}$; $\\sin C = \\dfrac{12}{13}$; Area $= \\frac{1}{2}(130)(140)\\left(\\frac{12}{13}\\right) = 8400\\text{ m}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In any $\\triangle ABC$, drop the perpendicular altitude $h$ from vertex $B$ to side $AC$ (splitting $AC = b$ into $c\\cos A$ and $b - c\\cos A$). Use Pythagoras' theorem on the two right-angled triangles and the identity $\\sin^2 A + \\cos^2 A = 1$ to prove the Cosine Rule $a^2 = b^2 + c^2 - 2bc\\cos A$.",
+          "answer": "In the first right-angled triangle, $h = c\\sin A$. In the second, $a^2 = h^2 + (b - c\\cos A)^2 = c^2\\sin^2 A + b^2 - 2bc\\cos A + c^2\\cos^2 A = b^2 + c^2(\\sin^2 A + \\cos^2 A) - 2bc\\cos A = b^2 + c^2 - 2bc\\cos A$."
+        },
+        {
+          "number": 10,
+          "question": "Prove the **Parallelogram Law**: in any parallelogram with adjacent sides $a$ and $b$ and diagonals $d_1$ and $d_2$, show using the Cosine Rule and $\\cos(180^\\circ - \\theta) = -\\cos\\theta$ that $d_1^2 + d_2^2 = 2(a^2 + b^2)$.",
+          "answer": "By the Cosine Rule, $d_1^2 = a^2 + b^2 - 2ab\\cos\\theta$ and $d_2^2 = a^2 + b^2 - 2ab\\cos(180^\\circ - \\theta) = a^2 + b^2 + 2ab\\cos\\theta$. Adding the two equations cancels the $\\mp 2ab\\cos\\theta$ terms, giving $d_1^2 + d_2^2 = 2(a^2 + b^2)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_6_2_1d_1", "expression": "12 / sin(pi/6)", "expected": 24 },
+        { "id": "WSE10_6_2_2a", "expression": "7**2 + 8**2 - 2*7*8*cos(pi/3)", "expected": 57 },
+        { "id": "WSE10_6_2_2d", "expression": "(3**2 + 5**2 - 7**2) / (2*3*5)", "expected": -0.5 },
+        { "id": "WSE10_6_2_3a", "expression": "sqrt(6**2 + 6**2 - 2*6*6*cos(2*pi/3))", "expected": "6*sqrt(3)" },
+        { "id": "WSE10_6_2_3b", "expression": "Rational(1, 2) * 6 * 6 * sin(2*pi/3)", "expected": "9*sqrt(3)" },
+        { "id": "WSE10_6_2_4c", "expression": "Rational(1, 2)*3*4 + Rational(1, 2)*5*12", "expected": 36 },
+        { "id": "WSE10_6_2_5", "expression": "sqrt(21**2 + 24**2 - 2*21*24*cos(2*pi/3))", "expected": 39 },
+        { "id": "WSE10_6_2_6", "expression": "40 * sin(pi/6) / sin(pi/4)", "expected": "20*sqrt(2)" },
+        { "id": "WSE10_6_2_7", "expression": "2 * (7**2 + 9**2)", "expected": 260 },
+        { "id": "WSE10_6_2_8", "expression": "Rational(1, 2) * 130 * 140 * Rational(12, 13)", "expected": 8400 }
+      ]
+    },
+    {
+      "section_id": "10_6_3",
+      "section_code": "6C",
+      "title": "[10A] The Unit Circle, Exact Values, and Trigonometric Graphs",
+      "vcaa_code": "VC2M10AM03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each trigonometric expression exactly without a calculator:",
+          "parts": [
+            { "label": "a", "question": "$\\sin 240^\\circ \\cos 330^\\circ - \\cos 120^\\circ \\sin 150^\\circ$", "answer": "$-\\dfrac{1}{2}$ ($-\\frac{3}{4} + \\frac{1}{4}$)" },
+            { "label": "b", "question": "$\\tan^2 300^\\circ + 4\\sin^2 225^\\circ$", "answer": "$5$ ($3 + 2$)" },
+            { "label": "c", "question": "$\\cos(-60^\\circ) + \\sin(-30^\\circ) + \\tan 135^\\circ$", "answer": "$-1$ ($\\frac{1}{2} - \\frac{1}{2} - 1$)" },
+            { "label": "d", "question": "$\\sin 420^\\circ \\cos 390^\\circ$", "answer": "$\\dfrac{3}{4}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each trigonometric equation for $0^\\circ \\le x \\le 360^\\circ$:",
+          "parts": [
+            { "label": "a", "question": "$2\\cos x + \\sqrt{3} = 0$", "answer": "$x = 150^\\circ, 210^\\circ$" },
+            { "label": "b", "question": "$\\sqrt{3}\\tan x + 1 = 0$", "answer": "$x = 150^\\circ, 330^\\circ$" },
+            { "label": "c", "question": "$4\\sin^2 x - 3 = 0$", "answer": "$x = 60^\\circ, 120^\\circ, 240^\\circ, 300^\\circ$" },
+            { "label": "d", "question": "$\\sin(2x) = \\dfrac{1}{2}$", "answer": "$x = 15^\\circ, 75^\\circ, 195^\\circ, 255^\\circ$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given $\\cos\\theta = -\\dfrac{5}{13}$ and $180^\\circ < \\theta < 270^\\circ$ (Quadrant 3), find the exact values of:",
+          "parts": [
+            { "label": "a", "question": "$\\sin\\theta$", "answer": "$-\\dfrac{12}{13}$" },
+            { "label": "b", "question": "$\\tan\\theta$", "answer": "$\\dfrac{12}{5}$" },
+            { "label": "c", "question": "$\\sin(180^\\circ - \\theta)$", "answer": "$-\\dfrac{12}{13}$" },
+            { "label": "d", "question": "$\\cos(360^\\circ - \\theta)$", "answer": "$-\\dfrac{5}{13}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "For the transformed trigonometric function $y = 4 - 3\\cos(2x)$ on $0^\\circ \\le x \\le 360^\\circ$, find:",
+          "parts": [
+            { "label": "a", "question": "The amplitude and the period", "answer": "Amplitude $= 3$, period $= 180^\\circ$" },
+            { "label": "b", "question": "The range $[y_{\\min}, y_{\\max}]$", "answer": "$[1, 7]$" },
+            { "label": "c", "question": "The coordinates of all maximum turning points on $0^\\circ \\le x \\le 360^\\circ$", "answer": "$(90^\\circ, 7)$ and $(270^\\circ, 7)$" },
+            { "label": "d", "question": "All values of $x$ on $0^\\circ \\le x \\le 360^\\circ$ where $y = 2.5$", "answer": "$x = 30^\\circ, 150^\\circ, 210^\\circ, 330^\\circ$ ($\\cos 2x = 0.5$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "In Broome, the tide height $h(t)$ metres above chart datum $t$ hours after midnight is modelled by $h(t) = 4.5 - 3.0\\cos(30t^\\circ)$ for $0 \\le t \\le 24$. Find all times $t$ during the first $12\\text{ hours}$ when the water depth is at least $6.0\\text{ m}$.",
+          "answer": "$4.5 - 3.0\\cos(30t^\\circ) \\ge 6.0 \\implies \\cos(30t^\\circ) \\le -0.5 \\implies 120^\\circ \\le 30t^\\circ \\le 240^\\circ \\implies 4 \\le t \\le 8$ (between $4:00\\text{ am}$ and $8:00\\text{ am}$)"
+        },
+        {
+          "number": 6,
+          "question": "The mean daily maximum temperature $T(m)$ (in $^\\circ\\text{C}$) in Hobart during month $m$ ($m = 1$ for January, $m = 12$ for December) is modelled by $T(m) = 17 + 5\\cos(30(m - 1)^\\circ)$. Find the predicted mean maximum temperature in May ($m = 5$) and August ($m = 8$).",
+          "answer": "May ($m = 5$): $17 + 5\\cos 120^\\circ = 14.5^\\circ\\text{C}$; August ($m = 8$): $17 + 5\\cos 210^\\circ = 17 - \\frac{5\\sqrt{3}}{2} \\approx 12.67^\\circ\\text{C}$"
+        },
+        {
+          "number": 7,
+          "question": "A weight suspended from a spring oscillates vertically such that its height $y(t)$ cm above a bench after $t$ seconds is $y(t) = 25 + 10\\sin(120t^\\circ)$. Find the period of oscillation and the exact fraction of each cycle during which the weight is above $30\\text{ cm}$.",
+          "answer": "Period $= \\dfrac{360}{120} = 3\\text{ s}$; $y > 30 \\iff \\sin(120t^\\circ) > 0.5 \\iff 30^\\circ < 120t^\\circ < 150^\\circ$, which is $\\dfrac{120^\\circ}{360^\\circ} = \\dfrac{1}{3}$ of each cycle ($1\\text{ s}$ per cycle)."
+        },
+        {
+          "number": 8,
+          "question": "Solve the quadratic trigonometric equation $2\\sin^2\\theta - \\sin\\theta - 1 = 0$ for $0^\\circ \\le \\theta \\le 360^\\circ$ by factorising.",
+          "answer": "$(2\\sin\\theta + 1)(\\sin\\theta - 1) = 0 \\implies \\sin\\theta = -\\frac{1}{2}$ or $\\sin\\theta = 1 \\implies \\theta = 90^\\circ, 210^\\circ, 330^\\circ$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Starting from the Pythagorean identity $\\sin^2\\theta + \\cos^2\\theta = 1$, prove that $1 + \\tan^2\\theta = \\dfrac{1}{\\cos^2\\theta}$ for all $\\theta$ where $\\cos\\theta \\neq 0$, and use this identity to find $\\cos\\theta$ exactly if $\\tan\\theta = -\\dfrac{3}{4}$ and $\\theta$ is in Quadrant 2.",
+          "answer": "Dividing both sides of $\\sin^2\\theta + \\cos^2\\theta = 1$ by $\\cos^2\\theta$ gives $\\tan^2\\theta + 1 = \\dfrac{1}{\\cos^2\\theta}$. With $\\tan\\theta = -\\frac{3}{4}$, $\\frac{1}{\\cos^2\\theta} = 1 + \\frac{9}{16} = \\frac{25}{16} \\implies \\cos^2\\theta = \\frac{16}{25}$. Since $\\theta$ is in Q2 ($\\cos\\theta < 0$), $\\cos\\theta = -\\dfrac{4}{5}$."
+        },
+        {
+          "number": 10,
+          "question": "Using a right-angled triangle inside the unit circle, explain geometrically why $\\sin(90^\\circ - \\theta) = \\cos\\theta$ and $\\cos(90^\\circ - \\theta) = \\sin\\theta$, and hence explain why the graph of $y = \\cos x$ is a horizontal translation of $y = \\sin x$ by $90^\\circ$ to the left.",
+          "answer": "Reflecting the point $P(\\cos\\theta, \\sin\\theta)$ across the line $y = x$ swaps the $x$- and $y$-coordinates and maps angle $\\theta$ to $90^\\circ - \\theta$, proving $\\cos(90^\\circ - \\theta) = \\sin\\theta$ and $\\sin(90^\\circ - \\theta) = \\cos\\theta$. Since $\\cos(-x) = \\cos x$, we have $\\cos x = \\sin(x + 90^\\circ)$, which is $y = \\sin x$ shifted $90^\\circ$ left."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_6_3_1a", "expression": "sin(4*pi/3)*cos(11*pi/6) - cos(2*pi/3)*sin(5*pi/6)", "expected": -0.5 },
+        { "id": "WSE10_6_3_1b", "expression": "tan(5*pi/3)**2 + 4*sin(5*pi/4)**2", "expected": 5 },
+        { "id": "WSE10_6_3_1c", "expression": "cos(-pi/3) + sin(-pi/6) + tan(3*pi/4)", "expected": -1 },
+        { "id": "WSE10_6_3_1d", "expression": "sin(7*pi/3)*cos(13*pi/6)", "expected": 0.75 },
+        { "id": "WSE10_6_3_3a", "expression": "-sqrt(1 - Rational(-5, 13)**2)", "expected": "Rational(-12, 13)" },
+        { "id": "WSE10_6_3_4b_min", "expression": "4 - 3*1", "expected": 1 },
+        { "id": "WSE10_6_3_4b_max", "expression": "4 - 3*(-1)", "expected": 7 },
+        { "id": "WSE10_6_3_6", "expression": "17 + 5*cos(2*pi/3)", "expected": 14.5 },
+        { "id": "WSE10_6_3_7", "expression": "Rational(150 - 30, 360)", "expected": "Rational(1, 3)" },
+        { "id": "WSE10_6_3_9", "expression": "-sqrt(1 / (1 + Rational(-3, 4)**2))", "expected": -0.8 }
+      ]
+    }
+  ]
+}

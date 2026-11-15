@@ -1,0 +1,199 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Quadratic Algebra and Equations (10 & 10A)",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "10_3_1",
+      "section_code": "3A",
+      "title": "Factorising Quadratics and Completing the Square",
+      "vcaa_code": "VC2M10A01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the two numbers that multiply to $c$ and add to $b$, then factorise $x^2 + bx + c$:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 5x + 6$ (multiply to $6$, add to $5$)", "answer": "$(x + 2)(x + 3)$" },
+            { "label": "b", "question": "$x^2 + 7x + 12$ (multiply to $12$, add to $7$)", "answer": "$(x + 3)(x + 4)$" },
+            { "label": "c", "question": "$x^2 - 6x + 8$ (multiply to $8$, add to $-6$)", "answer": "$(x - 2)(x - 4)$" },
+            { "label": "d", "question": "$x^2 + 2x - 15$ (multiply to $-15$, add to $2$)", "answer": "$(x + 5)(x - 3)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise each difference of two squares using $a^2 - b^2 = (a - b)(a + b)$:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 9 = x^2 - 3^2$", "answer": "$(x - 3)(x + 3)$" },
+            { "label": "b", "question": "$x^2 - 25 = x^2 - 5^2$", "answer": "$(x - 5)(x + 5)$" },
+            { "label": "c", "question": "$x^2 - 49 = x^2 - 7^2$", "answer": "$(x - 7)(x + 7)$" },
+            { "label": "d", "question": "$4x^2 - 1 = (2x)^2 - 1^2$", "answer": "$(2x - 1)(2x + 1)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the number $\\left(\\dfrac{b}{2}\\right)^2$ needed to complete the square, and write as a perfect square:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 6x + \\_\\_\\_ = (x + 3)^2$", "answer": "$9$; $(x + 3)^2$" },
+            { "label": "b", "question": "$x^2 + 8x + \\_\\_\\_ = (x + 4)^2$", "answer": "$16$; $(x + 4)^2$" },
+            { "label": "c", "question": "$x^2 - 4x + \\_\\_\\_ = (x - 2)^2$", "answer": "$4$; $(x - 2)^2$" },
+            { "label": "d", "question": "$x^2 - 10x + \\_\\_\\_ = (x - 5)^2$", "answer": "$25$; $(x - 5)^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Cancel the common bracket factor to simplify each algebraic fraction:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{(x + 2)(x + 5)}{x + 2}$", "answer": "$x + 5$" },
+            { "label": "b", "question": "$\\dfrac{(x - 3)(x + 3)}{x - 3}$", "answer": "$x + 3$" },
+            { "label": "c", "question": "$\\dfrac{x^2 + 5x + 6}{x + 2} = \\dfrac{(x + 2)(x + 3)}{x + 2}$", "answer": "$x + 3$" },
+            { "label": "d", "question": "$\\dfrac{x^2 - 16}{x + 4} = \\dfrac{(x - 4)(x + 4)}{x + 4}$", "answer": "$x - 4$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular garden bed has area $(x^2 + 6x + 8)\\text{ m}^2$. Factorise $x^2 + 6x + 8$ to find the expressions for its length and width.",
+          "answer": "$(x + 4)\\text{ m}$ and $(x + 2)\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A square tile has area $(x^2 + 10x + 25)\\text{ cm}^2$. Factorise this perfect square trinomial to find the side length of the tile.",
+          "answer": "$(x + 5)^2$, so side length $= (x + 5)\\text{ cm}$"
+        },
+        {
+          "number": 7,
+          "question": "A large square of area $x^2\\text{ m}^2$ has a smaller corner square of area $4\\text{ m}^2$ removed, leaving $(x^2 - 4)\\text{ m}^2$. Factorise $x^2 - 4$.",
+          "answer": "$(x - 2)(x + 2)$"
+        },
+        {
+          "number": 8,
+          "question": "Complete the square on $x^2 + 4x + 1$ by writing it as $(x^2 + 4x + 4) - 4 + 1 = (x + 2)^2 + k$. What is the value of $k$?",
+          "answer": "$k = -3$, giving $(x + 2)^2 - 3$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "How can you check whether your factorisation $(x + 2)(x + 5)$ of $x^2 + 7x + 10$ is correct?",
+          "answer": "Expand the brackets $(x + 2)(x + 5) = x^2 + 5x + 2x + 10 = x^2 + 7x + 10$ to verify it matches the original expression."
+        },
+        {
+          "number": 10,
+          "question": "Why can $x^2 - 9$ be factorised using the difference of two squares, whereas $x^2 + 9$ is a sum of two squares and cannot be factorised over the real numbers?",
+          "answer": "$(x - 3)(x + 3) = x^2 - 9$ because the middle terms $-3x + 3x$ cancel and $(-3)(+3) = -9$; for $x^2 + 9$, $(x + 3)^2 = x^2 + 6x + 9$ has a non-zero middle term $6x$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10F_3A_1a", "expression": "simplify((x + 2)*(x + 3) - (x**2 + 5*x + 6))", "expected": 0 },
+        { "id": "Y10F_3A_1b", "expression": "simplify((x + 3)*(x + 4) - (x**2 + 7*x + 12))", "expected": 0 },
+        { "id": "Y10F_3A_1c", "expression": "simplify((x - 2)*(x - 4) - (x**2 - 6*x + 8))", "expected": 0 },
+        { "id": "Y10F_3A_1d", "expression": "simplify((x + 5)*(x - 3) - (x**2 + 2*x - 15))", "expected": 0 },
+        { "id": "Y10F_3A_2a", "expression": "simplify((x - 3)*(x + 3) - (x**2 - 9))", "expected": 0 },
+        { "id": "Y10F_3A_2d", "expression": "simplify((2*x - 1)*(2*x + 1) - (4*x**2 - 1))", "expected": 0 },
+        { "id": "Y10F_3A_3a", "expression": "(6 / 2)**2", "expected": 9 },
+        { "id": "Y10F_3A_3d", "expression": "(-10 / 2)**2", "expected": 25 },
+        { "id": "Y10F_3A_5", "expression": "simplify((x + 4)*(x + 2) - (x**2 + 6*x + 8))", "expected": 0 },
+        { "id": "Y10F_3A_8", "expression": "simplify((x + 2)**2 - 3 - (x**2 + 4*x + 1))", "expected": 0 }
+      ]
+    },
+    {
+      "section_id": "10_3_2",
+      "section_code": "3B",
+      "title": "The Quadratic Formula and the Discriminant",
+      "vcaa_code": "VC2M10A05",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use the Null Factor Law ($A \\times B = 0 \\implies A = 0$ or $B = 0$) to solve each factorised equation:",
+          "parts": [
+            { "label": "a", "question": "$(x - 3)(x - 5) = 0$", "answer": "$x = 3$ or $x = 5$" },
+            { "label": "b", "question": "$(x + 4)(x - 2) = 0$", "answer": "$x = -4$ or $x = 2$" },
+            { "label": "c", "question": "$x(x - 7) = 0$", "answer": "$x = 0$ or $x = 7$" },
+            { "label": "d", "question": "$(2x - 6)(x + 1) = 0$", "answer": "$x = 3$ or $x = -1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Identify the coefficients $a$, $b$, and $c$ in each quadratic equation $ax^2 + bx + c = 0$:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 5x + 6 = 0$", "answer": "$a = 1, b = 5, c = 6$" },
+            { "label": "b", "question": "$2x^2 - 7x + 3 = 0$", "answer": "$a = 2, b = -7, c = 3$" },
+            { "label": "c", "question": "$3x^2 + 4x - 5 = 0$", "answer": "$a = 3, b = 4, c = -5$" },
+            { "label": "d", "question": "$x^2 - 6x - 8 = 0$", "answer": "$a = 1, b = -6, c = -8$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the discriminant $\\Delta = b^2 - 4ac$ and state how many real solutions the equation has ($2$, $1$, or $0$):",
+          "parts": [
+            { "label": "a", "question": "$a = 1, b = 5, c = 4$ ($\\Delta = 5^2 - 4(1)(4)$)", "answer": "$\\Delta = 9 > 0$ ($2$ solutions)" },
+            { "label": "b", "question": "$a = 1, b = 6, c = 9$ ($\\Delta = 6^2 - 4(1)(9)$)", "answer": "$\\Delta = 0$ ($1$ solution)" },
+            { "label": "c", "question": "$a = 1, b = 2, c = 5$ ($\\Delta = 2^2 - 4(1)(5)$)", "answer": "$\\Delta = -16 < 0$ ($0$ real solutions)" },
+            { "label": "d", "question": "$a = 2, b = -5, c = 2$ ($\\Delta = (-5)^2 - 4(2)(2)$)", "answer": "$\\Delta = 9 > 0$ ($2$ solutions)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Substitute into the Quadratic Formula $x = \\dfrac{-b \\pm \\sqrt{\\Delta}}{2a}$ to find the two solutions:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 5x + 6 = 0$ ($a = 1, b = -5, \\Delta = 1$)", "answer": "$x = \\dfrac{5 \\pm 1}{2} \\implies x = 3$ or $x = 2$" },
+            { "label": "b", "question": "$x^2 + 3x - 4 = 0$ ($a = 1, b = 3, \\Delta = 25$)", "answer": "$x = \\dfrac{-3 \\pm 5}{2} \\implies x = 1$ or $x = -4$" },
+            { "label": "c", "question": "$2x^2 - 5x + 2 = 0$ ($a = 2, b = -5, \\Delta = 9$)", "answer": "$x = \\dfrac{5 \\pm 3}{4} \\implies x = 2$ or $x = \\dfrac{1}{2}$" },
+            { "label": "d", "question": "$x^2 - 4x + 1 = 0$ ($a = 1, b = -4, \\Delta = 12 = 4 \\times 3$)", "answer": "$x = 2 \\pm \\sqrt{3}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangle has width $x\\text{ m}$ and length $(x + 2)\\text{ m}$, and its area is $15\\text{ m}^2$, giving $x^2 + 2x - 15 = (x + 5)(x - 3) = 0$. Since width must be positive, what is $x$?",
+          "answer": "$x = 3\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A ball thrown into the air has height $h = -t(t - 4)\\text{ m}$ after $t\\text{ seconds}$. Solve $-t(t - 4) = 0$ to find when the ball starts at ground level and when it lands.",
+          "answer": "$t = 0\\text{ s}$ (start) and $t = 4\\text{ s}$ (landing)"
+        },
+        {
+          "number": 7,
+          "question": "A square paddock has area $x^2 = 49\\text{ m}^2$. Solve $x^2 - 49 = 0$ and state the positive side length.",
+          "answer": "$x = \\pm 7$, so the side length is $7\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "Does the quadratic equation $x^2 + 2x + 10 = 0$ have any real solutions? Calculate $\\Delta = b^2 - 4ac$ to justify your answer.",
+          "answer": "$\\Delta = 2^2 - 4(1)(10) = -36 < 0$, so it has no real solutions."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why does a negative discriminant ($\\Delta < 0$) mean that a quadratic equation has no real solutions?",
+          "answer": "Because the Quadratic Formula requires taking $\\sqrt{\\Delta}$, and the square root of a negative number is not a real number."
+        },
+        {
+          "number": 10,
+          "question": "When solving a word problem about the length of a fence, why do we reject a negative solution like $x = -5$?",
+          "answer": "Physical lengths and distances must be positive ($x > 0$)."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10F_3B_3a", "expression": "5**2 - 4*1*4", "expected": 9 },
+        { "id": "Y10F_3B_3b", "expression": "6**2 - 4*1*9", "expected": 0 },
+        { "id": "Y10F_3B_3c", "expression": "2**2 - 4*1*5", "expected": -16 },
+        { "id": "Y10F_3B_3d", "expression": "(-5)**2 - 4*2*2", "expected": 9 },
+        { "id": "Y10F_3B_4a", "expression": "(5 + 1) / 2", "expected": 3 },
+        { "id": "Y10F_3B_4b", "expression": "(-3 + 5) / 2", "expected": 1 },
+        { "id": "Y10F_3B_4c", "expression": "(5 + 3) / 4", "expected": 2 },
+        { "id": "Y10F_3B_5", "expression": "3**2 + 2*3 - 15", "expected": 0 },
+        { "id": "Y10F_3B_7", "expression": "7**2 - 49", "expected": 0 },
+        { "id": "Y10F_3B_8", "expression": "2**2 - 4*1*10", "expected": -36 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "section_id": "9_7_1",
+    "section_code": "7A",
+    "chapter_number": 7,
+    "chapter_title": "Similarity, Scale Factors, and Geometric Reasoning",
+    "title": "Similar Triangles and Geometric Proofs",
+    "vcaa_code": "VC2M9SP02",
+    "vcaa_description": "Establish the conditions for similarity of triangles and use them to solve problems and prove geometric properties (including VC2M9SP01 angle properties).",
+    "strand": "Space",
+    "target_mastery": "Prove triangles are similar using AAA, SAS, SSS, and RHS similarity tests and calculate unknown side lengths in overlapping and non-overlapping triangles.",
+    "prerequisites": [
+      "Congruence and similarity introduction (Year 8 VC2M8SP01)",
+      "Parallel line and polygon angle properties (Year 8 VC2M8M05)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Similar figures ($\\sim$)",
+        "definition": "Two geometric figures that have the exact same shape but not necessarily the same size; their corresponding angles are equal and their corresponding side lengths are in a constant ratio."
+      },
+      {
+        "term": "Linear scale factor ($k$)",
+        "definition": "The constant ratio of any side length in the image (second figure) to the corresponding side length in the original (first figure): $k = \\frac{\\text{image length}}{\\text{original length}}$."
+      },
+      {
+        "term": "Similarity tests for triangles",
+        "definition": "Four minimum sufficient conditions to prove two triangles are similar: Angle-Angle-Angle ($\\text{AAA}$), Side-Angle-Side ($\\text{SAS}$ in ratio), Side-Side-Side ($\\text{SSS}$ in ratio), and Right angle-Hypotenuse-Side ($\\text{RHS}$ in ratio)."
+      },
+      {
+        "term": "Corresponding sides",
+        "definition": "Pairs of sides located opposite equal angles in two similar triangles, whose lengths form equal ratios."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_7_1_1",
+      "title": "The Four Similarity Tests for Triangles (AAA, SAS, SSS, RHS)",
+      "explanation": "Two triangles $\\triangle ABC$ and $\\triangle DEF$ are similar (written $\\triangle ABC \\sim \\triangle DEF$, with vertices listed in matching order) if they satisfy any one of four tests: (1) $\\text{AAA}$ (or $\\text{AA}$): two pairs of corresponding angles are equal (the third pair is automatically equal by the $180^\\circ$ angle sum); (2) $\\text{SAS}$: two pairs of corresponding sides are in the same ratio and the included angles between them are equal; (3) $\\text{SSS}$: all three pairs of corresponding sides are in the same constant ratio $k$; (4) $\\text{RHS}$: both triangles contain a $90^\\circ$ right angle, and the hypotenuses and one pair of shorter sides are in the same ratio.",
+      "formula_latex": "\\triangle ABC \\sim \\triangle DEF \\iff \\frac{DE}{AB} = \\frac{EF}{BC} = \\frac{DF}{AC} = k \\quad \\text{and} \\quad \\angle A = \\angle D,\\; \\angle B = \\angle E,\\; \\angle C = \\angle F",
+      "callout_title": "Vertex Order Locks In the Side Ratios",
+      "callout_rule": "Once you write $\\triangle ABC \\sim \\triangle DEF$ in matching angle order, the corresponding side ratios can be read straight from the letters without even looking at the diagram: $\\frac{DE}{AB} = \\frac{EF}{BC} = \\frac{DF}{AC}$."
+    },
+    {
+      "id": "theory_9_7_1_2",
+      "title": "Finding Unknown Side Lengths Using Scale Factors and Proportions",
+      "explanation": "Once two triangles are known or proved to be similar, any unknown side length can be found either by calculating the scale factor $k = \\frac{\\text{image}}{\\text{original}}$ from a known pair of corresponding sides, or by setting up a proportion equation with the unknown in the numerator. Always match sides that lie opposite equal angles.",
+      "formula_latex": "\\frac{x}{a} = \\frac{d}{c} \\implies x = \\frac{a \\times d}{c}",
+      "callout_title": "Put the Unknown Side on Top",
+      "callout_rule": "When writing a similarity proportion, always place the unknown pronumeral $x$ in the numerator on the left-hand side so that solving takes just one multiplication step."
+    },
+    {
+      "id": "theory_9_7_1_3",
+      "title": "Overlapping and Parallel-Line Triangles in Geometric Proofs",
+      "explanation": "When a line segment $DE$ is drawn parallel to the base $BC$ of $\\triangle ABC$ (with $D$ on $AB$ and $E$ on $AC$), the smaller triangle $\\triangle ADE$ and the full triangle $\\triangle ABC$ share a common angle at $A$, and have equal corresponding angles $\\angle ADE = \\angle ABC$ and $\\angle AED = \\angle ACB$ on the parallel lines. Therefore $\\triangle ADE \\sim \\triangle ABC$ by $\\text{AAA}$. Similarly, a bowtie (hourglass) configuration formed by parallel lines creates similar triangles via vertically opposite angles and alternate angles.",
+      "formula_latex": "DE \\parallel BC \\implies \\triangle ADE \\sim \\triangle ABC \\; (\\text{AAA}) \\implies \\frac{AD}{AB} = \\frac{AE}{AC} = \\frac{DE}{BC}",
+      "callout_title": "Use Full Side Lengths in Nested Triangles",
+      "callout_rule": "In a nested triangle $\\triangle ADE$ inside $\\triangle ABC$, the side of the large triangle is the FULL length $AB = AD + DB$, never just the lower piece $DB$ when comparing with the parallel bases $DE$ and $BC$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_7_1_1",
+      "title": "Proving Two Triangles Are Similar and Finding a Scale Factor",
+      "difficulty": "Fluency",
+      "problem": "In $\\triangle ABC$, $AB = 6\\text{ cm}$, $BC = 9\\text{ cm}$, and $\\angle ABC = 52^\\circ$. In $\\triangle PQR$, $PQ = 10\\text{ cm}$, $QR = 15\\text{ cm}$, and $\\angle PQR = 52^\\circ$. (a) Write a formal similarity proof to show that $\\triangle ABC \\sim \\triangle PQR$. (b) If $AC = 7.2\\text{ cm}$, find the length of $PR$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the ratios of the two pairs of given sides around the $52^\\circ$ included angle.",
+          "working": "$$\\frac{PQ}{AB} = \\frac{10}{6} = \\frac{5}{3}, \\qquad \\frac{QR}{BC} = \\frac{15}{9} = \\frac{5}{3}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "State the equal included angles and conclude similarity with the correct test and vertex order.",
+          "working": "$$\\angle ABC = \\angle PQR = 52^\\circ \\text{ (given included angle)}$$\n$$\\therefore \\triangle ABC \\sim \\triangle PQR \\; (\\text{SAS similarity},\\; k = \\tfrac{5}{3})$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Multiply $AC = 7.2\\text{ cm}$ by the linear scale factor $k = \\frac{5}{3}$ to find $PR$.",
+          "working": "$$PR = k \\times AC = \\frac{5}{3} \\times 7.2 = 12\\text{ cm}$$"
+        }
+      ],
+      "final_answer": "(a) $\\triangle ABC \\sim \\triangle PQR$ by $\\text{SAS}$ with $k = \\frac{5}{3}$, (b) $PR = 12\\text{ cm}$",
+      "now_you_try": {
+        "problem": "Triangle $DEF$ has side lengths $4\\text{ cm}$, $7\\text{ cm}$, and $9\\text{ cm}$. Triangle $XYZ$ has side lengths $10\\text{ cm}$, $17.5\\text{ cm}$, and $22.5\\text{ cm}$. State the similarity test that proves $\\triangle DEF \\sim \\triangle XYZ$ and find the scale factor $k$.",
+        "hint": "Check whether $\\frac{10}{4}$, $\\frac{17.5}{7}$, and $\\frac{22.5}{9}$ simplify to the same number.",
+        "working_summary": "$\\frac{10}{4} = 2.5$, $\\frac{17.5}{7} = 2.5$, and $\\frac{22.5}{9} = 2.5$, so $\\triangle DEF \\sim \\triangle XYZ$ by $\\text{SSS}$ with $k = 2.5$ (or $\\frac{5}{2}$).",
+        "answer": "$\\text{SSS}$ similarity with $k = 2.5$"
+      }
+    },
+    {
+      "id": "WE9_7_1_2",
+      "title": "Finding Unknown Lengths in Overlapping Parallel-Line Triangles",
+      "difficulty": "Fluency",
+      "problem": "In $\\triangle ABC$, point $D$ lies on $AB$ and point $E$ lies on $AC$ such that $DE \\parallel BC$. Given $AD = 8\\text{ cm}$, $DB = 4\\text{ cm}$, and $DE = 10\\text{ cm}$, prove that $\\triangle ADE \\sim \\triangle ABC$ and calculate the length of the base $BC$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Prove $\\triangle ADE \\sim \\triangle ABC$ using the common angle at $A$ and corresponding angles on parallel lines $DE \\parallel BC$.",
+          "working": "$$\\angle DAE = \\angle BAC \\text{ (common angle)}$$\n$$\\angle ADE = \\angle ABC \\text{ (corresponding angles, } DE \\parallel BC\\text{)}$$\n$$\\therefore \\triangle ADE \\sim \\triangle ABC \\; (\\text{AAA})$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Find the full side length $AB = AD + DB = 8 + 4 = 12\\text{ cm}$ and equate ratios of corresponding sides.",
+          "working": "$$AB = 8 + 4 = 12\\text{ cm}$$\n$$\\frac{BC}{DE} = \\frac{AB}{AD} \\implies \\frac{BC}{10} = \\frac{12}{8} \\implies BC = 10 \\times 1.5 = 15\\text{ cm}$$"
+        }
+      ],
+      "final_answer": "$BC = 15\\text{ cm}$",
+      "now_you_try": {
+        "problem": "In $\\triangle PQR$, $ST \\parallel QR$ with $S$ on $PQ$ and $T$ on $PR$. If $PS = 6\\text{ cm}$, $SQ = 9\\text{ cm}$, and $QR = 20\\text{ cm}$, find the length of $ST$.",
+        "hint": "The full side is $PQ = 6 + 9 = 15\\text{ cm}$, and $\\frac{ST}{QR} = \\frac{PS}{PQ}$.",
+        "working_summary": "$PQ = 15\\text{ cm}$. Since $\\triangle PST \\sim \\triangle PQR$ ($\\text{AAA}$), $\\frac{ST}{20} = \\frac{6}{15} \\implies ST = 20 \\times \\frac{2}{5} = 8\\text{ cm}$.",
+        "answer": "$8\\text{ cm}$"
+      }
+    },
+    {
+      "id": "WE9_7_1_3",
+      "title": "Indirect Shadow Measurement Using Similar Right-Angled Triangles",
+      "difficulty": "Problem-Solving",
+      "problem": "In Melbourne's Royal Botanic Gardens, a vertical $1.8\\text{ m}$ sighting pole casts a horizontal shadow of length $2.4\\text{ m}$ at the same instant that a tall eucalyptus tree casts a horizontal shadow of length $18\\text{ m}$. Assuming the sun's rays are parallel, calculate the height $h$ of the eucalyptus tree.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Both the pole and the tree stand vertically ($90^\\circ$ to the horizontal ground), and the parallel sun rays meet the ground at equal angles, so the two right-angled shadow triangles are similar by $\\text{AAA}$.",
+          "working": "$$\\frac{\\text{Tree height}}{\\text{Pole height}} = \\frac{\\text{Tree shadow}}{\\text{Pole shadow}} \\implies \\frac{h}{1.8} = \\frac{18}{2.4}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply both sides by $1.8$ to solve for $h$.",
+          "working": "$$h = \\frac{18 \\times 1.8}{2.4} = \\frac{32.4}{2.4} = 13.5\\text{ m}$$"
+        }
+      ],
+      "final_answer": "$13.5\\text{ m}$",
+      "now_you_try": {
+        "problem": "A $1.5\\text{ m}$ fence post casts a $2.0\\text{ m}$ shadow at the same time a stadium light tower casts a $36\\text{ m}$ shadow. How tall is the light tower?",
+        "hint": "Set up $\\frac{h}{1.5} = \\frac{36}{2.0}$.",
+        "working_summary": "$h = 1.5 \\times \\frac{36}{2.0} = 1.5 \\times 18 = 27\\text{ m}$.",
+        "answer": "$27\\text{ m}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_7_1_1",
+      "title": "Using the Partial Segment Instead of the Full Side in Nested Triangles",
+      "misconception": "When $DE \\parallel BC$ inside $\\triangle ABC$, students often write $\\frac{DE}{BC} = \\frac{AD}{DB}$ using the lower side segment $DB$ instead of the full triangle side $AB = AD + DB$.",
+      "correct_concept": "Because $BC$ is a side of the complete triangle $\\triangle ABC$, its ratio partner must be the complete side $AB = AD + DB$ of $\\triangle ABC$. The trapezoid segment $DB$ is not a side of any triangle.",
+      "incorrect_working": "$$AD = 6,\\; DB = 3,\\; DE = 8: \\quad \\frac{8}{BC} = \\frac{6}{3} \\implies BC = 4 \\quad \\text{(Incorrect — smaller than } DE\\text{!)}$$",
+      "correct_working": "$$AB = 6 + 3 = 9: \\quad \\frac{BC}{8} = \\frac{9}{6} \\implies BC = 12$$",
+      "counter_example": "If $AD = 6$ and $DB = 3$, the base $BC$ is clearly wider than $DE = 8$; using $\\frac{6}{3}$ wrongly makes $BC = 4$."
+    },
+    {
+      "id": "misc_9_7_1_2",
+      "title": "Applying SAS Similarity When the Equal Angle Is Not Included",
+      "misconception": "Concluding two triangles are similar by $\\text{SAS}$ when two sides are in ratio and a non-included angle is equal.",
+      "correct_concept": "For $\\text{SAS}$ similarity, the equal angle MUST be the included angle sandwiched directly between the two proportional sides.",
+      "incorrect_working": "$$\\frac{AB}{DE} = \\frac{BC}{EF} \\text{ and } \\angle A = \\angle D \\implies \\triangle ABC \\sim \\triangle DEF \\text{ by SAS} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\frac{AB}{DE} = \\frac{BC}{EF} \\text{ requires the included angle } \\angle B = \\angle E \\text{ for SAS similarity.}$$",
+      "counter_example": "Just like the ambiguous case in congruence, two side lengths and a non-included acute angle can form two completely different non-similar triangles."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_7_1_Q1",
+        "question": "Given that $\\triangle ABC \\sim \\triangle DEF$ with $AB = 5\\text{ cm}$, $BC = 8\\text{ cm}$, $DE = 15\\text{ cm}$, and $EF = x\\text{ cm}$, find the linear scale factor $k$ and the value of $x$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$k = 3,\\; x = 24$",
+        "step_by_step_solution": [
+          "Calculate the linear scale factor from the corresponding sides $AB$ and $DE$: $k = \\frac{DE}{AB} = \\frac{15}{5} = 3$.",
+          "Multiply $BC = 8\\text{ cm}$ by $k = 3$: $x = 3 \\times 8 = 24$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q2",
+        "question": "Determine whether $\\triangle ABC$ with sides $6\\text{ cm}, 8\\text{ cm}, 12\\text{ cm}$ and $\\triangle DEF$ with sides $9\\text{ cm}, 12\\text{ cm}, 18\\text{ cm}$ are similar. If so, state the similarity test and scale factor $k$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "Yes, $\\triangle ABC \\sim \\triangle DEF$ by $\\text{SSS}$ with $k = 1.5$ (or $\\frac{3}{2}$)",
+        "step_by_step_solution": [
+          "Match shortest, middle, and longest sides: $\\frac{9}{6} = 1.5$, $\\frac{12}{8} = 1.5$, and $\\frac{18}{12} = 1.5$.",
+          "Since all three pairs of corresponding sides are in the same ratio $k = 1.5$, $\\triangle ABC \\sim \\triangle DEF$ by $\\text{SSS}$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q3",
+        "question": "Two right-angled triangles $\\triangle ABC$ ($\\angle B = 90^\\circ$) and $\\triangle DEF$ ($\\angle E = 90^\\circ$) have hypotenuses $AC = 10\\text{ cm}$ and $DF = 25\\text{ cm}$, and shorter sides $AB = 6\\text{ cm}$ and $DE = 15\\text{ cm}$. State the similarity test that proves $\\triangle ABC \\sim \\triangle DEF$ and find $EF$ if $BC = 8\\text{ cm}$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$\\text{RHS}$ similarity ($k = 2.5$), $EF = 20\\text{ cm}$",
+        "step_by_step_solution": [
+          "Check the ratio of the hypotenuses and shorter legs: $\\frac{DF}{AC} = \\frac{25}{10} = 2.5$ and $\\frac{DE}{AB} = \\frac{15}{6} = 2.5$ with $\\angle B = \\angle E = 90^\\circ$, so $\\triangle ABC \\sim \\triangle DEF$ by $\\text{RHS}$.",
+          "Multiply $BC = 8\\text{ cm}$ by $k = 2.5$: $EF = 8 \\times 2.5 = 20\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q4",
+        "question": "In $\\triangle ABC$, a line $DE$ is parallel to $BC$ with $D$ on $AB$ and $E$ on $AC$. If $AD = 9\\text{ cm}$, $DB = 6\\text{ cm}$, and $BC = 20\\text{ cm}$, find the length of $DE$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$12\\text{ cm}$",
+        "step_by_step_solution": [
+          "By $\\text{AAA}$ similarity, $\\triangle ADE \\sim \\triangle ABC$, where the full side is $AB = 9 + 6 = 15\\text{ cm}$.",
+          "Set up $\\frac{DE}{20} = \\frac{9}{15} = \\frac{3}{5} \\implies DE = 20 \\times \\frac{3}{5} = 12\\text{ cm}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_7_1_Q5",
+        "question": "Two straight segments $AB$ and $CD$ intersect at point $X$ between parallel riverbanks $AC \\parallel BD$ along the Yarra River. A surveyor measures $AX = 12\\text{ m}$, $BX = 30\\text{ m}$, and the bank baseline $AC = 18\\text{ m}$. Find the width $BD$ on the opposite bank.",
+        "difficulty": "Medium",
+        "context": "Surveying & Navigation",
+        "final_answer": "$45\\text{ m}$",
+        "step_by_step_solution": [
+          "Since $AC \\parallel BD$, alternate angles $\\angle XAC = \\angle XBD$ and vertically opposite angles $\\angle AXC = \\angle BXD$ are equal, so $\\triangle AXC \\sim \\triangle BXD$ ($\\text{AAA}$).",
+          "Equate corresponding sides: $\\frac{BD}{AC} = \\frac{BX}{AX} \\implies \\frac{BD}{18} = \\frac{30}{12} = 2.5 \\implies BD = 45\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q6",
+        "question": "An A-frame ski chalet roof at Mount Buller has rafters of total length $7.5\\text{ m}$ from the apex $A$ to the eaves $B$ and $C$, where the ground floor width is $BC = 9.0\\text{ m}$. A horizontal ceiling joist $DE$ is installed $5.0\\text{ m}$ down the rafters from the apex $A$. Find the width of the ceiling joist $DE$.",
+        "difficulty": "Medium",
+        "context": "Alpine Architecture",
+        "final_answer": "$6.0\\text{ m}$",
+        "step_by_step_solution": [
+          "Since $DE \\parallel BC$, $\\triangle ADE \\sim \\triangle ABC$ ($\\text{AAA}$) with $AD = 5.0\\text{ m}$ and $AB = 7.5\\text{ m}$.",
+          "Solve $\\frac{DE}{9.0} = \\frac{5.0}{7.5} = \\frac{2}{3} \\implies DE = 6.0\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q7",
+        "question": "A student places a small flat mirror horizontally on the ground $3\\text{ m}$ from the base of a flagpole and steps back $1.2\\text{ m}$ from the mirror until she sees the top of the flagpole centred in the mirror. If her eyes are $1.6\\text{ m}$ above the ground, and the angle of incidence equals the angle of reflection, how tall is the flagpole?",
+        "difficulty": "Challenging",
+        "context": "Optics & Indirect Measurement",
+        "final_answer": "$4\\text{ m}$",
+        "step_by_step_solution": [
+          "Both the student and flagpole are vertical ($90^\\circ$) and the reflection angles at the mirror are equal, so the two right-angled triangles are similar by $\\text{AAA}$.",
+          "Solve $\\frac{h}{1.6} = \\frac{3}{1.2} = 2.5 \\implies h = 4\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q8",
+        "question": "A ramp rises uniformly from ground level to a loading dock. At a horizontal distance of $2.4\\text{ m}$ from the start of the ramp, a vertical support strut of height $0.45\\text{ m}$ touches the underside of the ramp. If the total horizontal length of the ramp is $6.4\\text{ m}$, find the height of the loading dock.",
+        "difficulty": "Challenging",
+        "context": "Civil Engineering",
+        "final_answer": "$1.2\\text{ m}$",
+        "step_by_step_solution": [
+          "The vertical strut and the vertical loading dock form similar right-angled triangles with the horizontal ground ($\\text{AAA}$).",
+          "Solve $\\frac{H}{0.45} = \\frac{6.4}{2.4} = \\frac{8}{3} \\implies H = 0.45 \\times \\frac{8}{3} = 1.2\\text{ m}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_7_1_Q9",
+        "question": "In $\\triangle ABC$, $DE \\parallel BC$ with $AD = x\\text{ cm}$, $DB = 5\\text{ cm}$, $AE = 6\\text{ cm}$, and $EC = 7.5\\text{ cm}$. Prove that $\\frac{AD}{AB} = \\frac{AE}{AC}$ and hence solve for $x$.",
+        "difficulty": "Medium",
+        "context": "Algebraic Similarity Proof",
+        "final_answer": "$x = 4$",
+        "step_by_step_solution": [
+          "Since $DE \\parallel BC$, $\\triangle ADE \\sim \\triangle ABC$ ($\\text{AAA}$), so $\\frac{AD}{AB} = \\frac{AE}{AC}$ where $AB = x + 5$ and $AC = 6 + 7.5 = 13.5$.",
+          "Solve $\\frac{x}{x + 5} = \\frac{6}{13.5} = \\frac{4}{9} \\implies 9x = 4x + 20 \\implies 5x = 20 \\implies x = 4$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q10",
+        "question": "Explain why all equilateral triangles are similar to one another, whereas not all isosceles triangles are similar.",
+        "difficulty": "Medium",
+        "context": "Geometric Reasoning",
+        "final_answer": "Every equilateral triangle has angles $60^\\circ, 60^\\circ, 60^\\circ$ ($\\text{AAA}$), whereas isosceles triangles can have different apex angles (e.g. $40^\\circ, 70^\\circ, 70^\\circ$ vs $100^\\circ, 40^\\circ, 40^\\circ$)",
+        "step_by_step_solution": [
+          "Every equilateral triangle has all three interior angles equal to $60^\\circ$, so any two equilateral triangles satisfy the $\\text{AAA}$ similarity test.",
+          "Two isosceles triangles can have completely different interior angles (such as $40^\\circ, 70^\\circ, 70^\\circ$ and $100^\\circ, 40^\\circ, 40^\\circ$), failing $\\text{AAA}$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q11",
+        "question": "In a right-angled triangle $\\triangle ABC$ with $\\angle ABC = 90^\\circ$, an altitude $BD$ is drawn perpendicular to the hypotenuse $AC$. Prove that $\\triangle ADB \\sim \\triangle BDC$ and deduce that $BD^2 = AD \\times DC$. If $AD = 4\\text{ cm}$ and $DC = 9\\text{ cm}$, find $BD$.",
+        "difficulty": "Extension",
+        "context": "Right-Triangle Altitude Theorem",
+        "final_answer": "$BD = 6\\text{ cm}$",
+        "step_by_step_solution": [
+          "Let $\\angle DAB = \\theta$. Then in right-angled $\\triangle ADB$, $\\angle ABD = 90^\\circ - \\theta$. Since $\\angle ABC = 90^\\circ$, $\\angle DBC = 90^\\circ - (90^\\circ - \\theta) = \\theta = \\angle DAB$. With $\\angle ADB = \\angle BDC = 90^\\circ$, $\\triangle ADB \\sim \\triangle BDC$ ($\\text{AAA}$).",
+          "Equating corresponding sides gives $\\frac{BD}{DC} = \\frac{AD}{BD} \\implies BD^2 = AD \\times DC = 4 \\times 9 = 36 \\implies BD = 6\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_7_1_Q12",
+        "question": "Two vertical poles of heights $a = 3\\text{ m}$ and $b = 6\\text{ m}$ stand on horizontal ground. Taut wires connect the top of each pole to the base of the other pole, crossing at height $h$ above the ground. Using similar triangles, show that $\\frac{1}{h} = \\frac{1}{a} + \\frac{1}{b}$ regardless of the distance between the poles, and calculate $h$.",
+        "difficulty": "Extension",
+        "context": "Crossed Ladders Theorem",
+        "final_answer": "$h = 2\\text{ m}$",
+        "step_by_step_solution": [
+          "Let the horizontal distance between the poles be $d$, divided into $d_1 + d_2 = d$ at the point directly below the intersection. By similar right-angled triangles, $\\frac{h}{a} = \\frac{d_2}{d}$ and $\\frac{h}{b} = \\frac{d_1}{d}$.",
+          "Adding the two equations gives $\\frac{h}{a} + \\frac{h}{b} = \\frac{d_1 + d_2}{d} = 1 \\implies \\frac{1}{h} = \\frac{1}{3} + \\frac{1}{6} = \\frac{1}{2} \\implies h = 2\\text{ m}$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_7_1_1a",
+      "description": "Worked Example 9.7.1.1 scale factor k",
+      "expression": "Rational(10, 6)",
+      "expected": "5/3"
+    },
+    {
+      "id": "WE9_7_1_1b",
+      "description": "Worked Example 9.7.1.1 length PR",
+      "expression": "Rational(5, 3) * Rational(72, 10)",
+      "expected": 12
+    },
+    {
+      "id": "NYT9_7_1_1",
+      "description": "Now You Try 9.7.1.1 scale factor",
+      "expression": "Rational(10, 4)",
+      "expected": 2.5
+    },
+    {
+      "id": "WE9_7_1_2",
+      "description": "Worked Example 9.7.1.2 length BC",
+      "expression": "10 * Rational(8 + 4, 8)",
+      "expected": 15
+    },
+    {
+      "id": "NYT9_7_1_2",
+      "description": "Now You Try 9.7.1.2 length ST",
+      "expression": "20 * Rational(6, 6 + 9)",
+      "expected": 8
+    },
+    {
+      "id": "WE9_7_1_3",
+      "description": "Worked Example 9.7.1.3 tree height",
+      "expression": "Rational(18 * 18, 24)",
+      "expected": 13.5
+    },
+    {
+      "id": "NYT9_7_1_3",
+      "description": "Now You Try 9.7.1.3 tower height",
+      "expression": "Rational(15, 10) * Rational(36, 2)",
+      "expected": 27
+    },
+    {
+      "id": "EX9_7_1_Q1",
+      "description": "Exercise 9.7.1 Q1 unknown side x",
+      "expression": "Rational(15, 5) * 8",
+      "expected": 24
+    },
+    {
+      "id": "EX9_7_1_Q2",
+      "description": "Exercise 9.7.1 Q2 SSS ratio check",
+      "expression": "Rational(9, 6) - Rational(12, 8) + Rational(18, 12)",
+      "expected": 1.5
+    },
+    {
+      "id": "EX9_7_1_Q3",
+      "description": "Exercise 9.7.1 Q3 RHS side EF",
+      "expression": "8 * Rational(25, 10)",
+      "expected": 20
+    },
+    {
+      "id": "EX9_7_1_Q4",
+      "description": "Exercise 9.7.1 Q4 parallel line base DE",
+      "expression": "20 * Rational(9, 9 + 6)",
+      "expected": 12
+    },
+    {
+      "id": "EX9_7_1_Q5",
+      "description": "Exercise 9.7.1 Q5 river width BD",
+      "expression": "18 * Rational(30, 12)",
+      "expected": 45
+    },
+    {
+      "id": "EX9_7_1_Q6",
+      "description": "Exercise 9.7.1 Q6 ceiling joist DE",
+      "expression": "9 * Rational(50, 75)",
+      "expected": 6
+    },
+    {
+      "id": "EX9_7_1_Q7",
+      "description": "Exercise 9.7.1 Q7 flagpole height",
+      "expression": "Rational(16, 10) * Rational(30, 12)",
+      "expected": 4
+    },
+    {
+      "id": "EX9_7_1_Q8",
+      "description": "Exercise 9.7.1 Q8 loading dock height",
+      "expression": "Rational(45, 100) * Rational(64, 24)",
+      "expected": 1.2
+    },
+    {
+      "id": "EX9_7_1_Q9",
+      "description": "Exercise 9.7.1 Q9 solve for x",
+      "expression": "solve(Eq(x / (x + 5), Rational(6, 13.5)))[0]",
+      "expected": 4
+    },
+    {
+      "id": "EX9_7_1_Q11",
+      "description": "Exercise 9.7.1 Q11 altitude BD",
+      "expression": "sqrt(4 * 9)",
+      "expected": 6
+    },
+    {
+      "id": "EX9_7_1_Q12",
+      "description": "Exercise 9.7.1 Q12 crossed wires height h",
+      "expression": "1 / (Rational(1, 3) + Rational(1, 6))",
+      "expected": 2
+    }
+  ]
+}

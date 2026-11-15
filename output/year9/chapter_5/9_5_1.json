@@ -1,0 +1,390 @@
+{
+  "metadata": {
+    "section_id": "9_5_1",
+    "section_code": "5A",
+    "chapter_number": 5,
+    "chapter_title": "Quadratic Equations and Non-Linear Graphs",
+    "title": "Solving Quadratic Equations via the Null Factor Law",
+    "vcaa_code": "VC2M9A05",
+    "vcaa_description": "Use the null factor law to solve monic quadratic equations with integer roots, and graph quadratic relations, identifying key features.",
+    "strand": "Algebra",
+    "target_mastery": "Rearrange quadratic equations into standard form $x^2 + bx + c = 0$, factorise monic quadratic expressions, and apply the Null Factor Law ($ab = 0 \\implies a = 0 \\text{ or } b = 0$) to find roots and solve modelling problems.",
+    "prerequisites": [
+      "Factorising difference of two squares and common factors (Section 3B)",
+      "Factorising monic quadratic trinomials $x^2 + bx + c$ (Section 3C)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Quadratic equation",
+        "definition": "A polynomial equation of degree $2$ that can be written in the standard form $ax^2 + bx + c = 0$, where $a \\neq 0$."
+      },
+      {
+        "term": "Monic quadratic equation",
+        "definition": "A quadratic equation in which the leading coefficient of $x^2$ is $a = 1$, giving $x^2 + bx + c = 0$."
+      },
+      {
+        "term": "Null Factor Law",
+        "definition": "The algebraic property that if the product of two or more real factors is zero ($AB = 0$), then at least one of the factors must equal zero ($A = 0$ or $B = 0$)."
+      },
+      {
+        "term": "Roots (Solutions)",
+        "definition": "The values of the variable $x$ that satisfy a polynomial equation $P(x) = 0$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_5_1_1",
+      "title": "The Null Factor Law (Zero Product Property)",
+      "explanation": "If the product of two real numbers or algebraic expressions $A$ and $B$ equals zero, then either $A = 0$, $B = 0$, or both are zero. Consequently, an equation written in factorised form $(x - p)(x - q) = 0$ splits into two simple linear equations $x - p = 0$ or $x - q = 0$.",
+      "formula_latex": "AB = 0 \\iff A = 0 \\;\\text{ or }\\; B = 0 \\qquad \\implies \\qquad (x - p)(x - q) = 0 \\iff x = p \\;\\text{ or }\\; x = q",
+      "callout_title": "Right-Hand Side Must Be Zero First",
+      "callout_rule": "The Null Factor Law only works when the product equals $0$. If $(x - 2)(x + 3) = 6$, you cannot set the factors equal to $6$; you must expand, subtract $6$, and re-factorise."
+    },
+    {
+      "id": "theory_9_5_1_2",
+      "title": "Solving Monic Quadratics by Factorising",
+      "explanation": "To solve a quadratic equation $x^2 + bx + c = 0$, first ensure all terms are collected on one side so that the other side is $0$. Then factorise the quadratic expression—using common factors, difference of two squares, or sum-and-product trinomial factorisation—and apply the Null Factor Law.",
+      "formula_latex": "x^2 + (m + n)x + mn = 0 \\implies (x + m)(x + n) = 0 \\implies x = -m \\;\\text{ or }\\; x = -n",
+      "callout_title": "Never Divide Both Sides by $x$",
+      "callout_rule": "In an equation like $x^2 = 7x$, never divide by $x$ (which loses the root $x = 0$). Instead, rearrange to $x^2 - 7x = 0$, factorise $x(x - 7) = 0$, and obtain $x = 0$ or $x = 7$."
+    },
+    {
+      "id": "theory_9_5_1_3",
+      "title": "Modelling Geometric and Physical Problems with Quadratics",
+      "explanation": "When quadratic equations model physical quantities such as length, width, or elapsed time, solving the algebra often yields one positive root and one negative root. Always check both roots against physical constraints and reject any negative or out-of-domain values.",
+      "formula_latex": "\\text{Length } x > 0 \\implies \\text{reject negative roots } x < 0 \\text{ in geometric contexts}",
+      "callout_title": "Check Domain Constraints in Context",
+      "callout_rule": "State both algebraic solutions first, then explicitly write 'Since $x > 0$' to justify selecting the physically valid solution."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_5_1_1",
+      "title": "Applying the Null Factor Law to Factorised and Binomial Quadratics",
+      "difficulty": "Fluency",
+      "problem": "Solve the following quadratic equations: (a) $(x + 5)(2x - 7) = 0$, and (b) $x^2 - 9x = 0$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), the equation is already factorised and equal to $0$. Set each factor equal to $0$ using the Null Factor Law.",
+          "working": "$$x + 5 = 0 \\implies x = -5 \\quad \\text{or} \\quad 2x - 7 = 0 \\implies x = \\frac{7}{2}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), extract the common factor $x$ on the left-hand side and apply the Null Factor Law.",
+          "working": "$$x(x - 9) = 0 \\implies x = 0 \\quad \\text{or} \\quad x = 9$$"
+        }
+      ],
+      "final_answer": "(a) $x = -5$ or $x = \\frac{7}{2}$, (b) $x = 0$ or $x = 9$",
+      "now_you_try": {
+        "problem": "Solve (a) $(x - 8)(3x + 4) = 0$ and (b) $x^2 + 6x = 0$.",
+        "hint": "Set each factor to $0$. For part (b), factorise as $x(x + 6) = 0$.",
+        "working_summary": "(a) $x = 8$ or $3x = -4 \\implies x = -\\frac{4}{3}$; (b) $x(x + 6) = 0 \\implies x = 0$ or $x = -6$.",
+        "answer": "(a) $x = 8$ or $x = -\\frac{4}{3}$, (b) $x = 0$ or $x = -6$"
+      }
+    },
+    {
+      "id": "WE9_5_1_2",
+      "title": "Solving a Monic Quadratic Equation by Rearranging and Factorising",
+      "difficulty": "Understanding",
+      "problem": "Solve the quadratic equation $x^2 - 4x = 21$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Subtract $21$ from both sides so that the right-hand side is $0$, then find two integers that multiply to $-21$ and add to $-4$ (namely $-7$ and $+3$).",
+          "working": "$$x^2 - 4x - 21 = 0$$\n$$(x - 7)(x + 3) = 0$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Apply the Null Factor Law to find both roots.",
+          "working": "$$x - 7 = 0 \\implies x = 7 \\quad \\text{or} \\quad x + 3 = 0 \\implies x = -3$$"
+        }
+      ],
+      "final_answer": "$x = 7$ or $x = -3$",
+      "now_you_try": {
+        "problem": "Solve $x^2 + 5x = 24$.",
+        "hint": "Rearrange to $x^2 + 5x - 24 = 0$ and find factors of $-24$ that sum to $+5$.",
+        "working_summary": "$(x + 8)(x - 3) = 0 \\implies x = -8$ or $x = 3$.",
+        "answer": "$x = -8$ or $x = 3$"
+      }
+    },
+    {
+      "id": "WE9_5_1_3",
+      "title": "Modelling a Rectangular Garden Bed with a Quadratic Equation",
+      "difficulty": "Problem-Solving",
+      "problem": "A community vegetable garden in Brunswick is designed as a rectangle whose length is $5\\text{ m}$ greater than its width $w\\text{ m}$. If the area of the garden is $84\\text{ m}^2$, find the width and length of the garden.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Express the length as $(w + 5)\\text{ m}$, write the area equation $w(w + 5) = 84$, and rearrange into standard quadratic form.",
+          "working": "$$w(w + 5) = 84 \\implies w^2 + 5w - 84 = 0$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Factorise using $-7$ and $+12$ (since $12 \\times (-7) = -84$ and $12 - 7 = 5$), solve, and reject the negative width.",
+          "working": "$$(w + 12)(w - 7) = 0 \\implies w = -12 \\;\\text{ or }\\; w = 7$$\n$$\\text{Since } w > 0,\\; w = 7\\text{ m} \\text{ and length } = 7 + 5 = 12\\text{ m}.$$"
+        }
+      ],
+      "final_answer": "Width $= 7\\text{ m}$, length $= 12\\text{ m}$",
+      "now_you_try": {
+        "problem": "A rectangular solar panel has a length $4\\text{ m}$ longer than its width $w\\text{ m}$ and an area of $45\\text{ m}^2$. Find its width and length.",
+        "hint": "Solve $w(w + 4) = 45 \\implies w^2 + 4w - 45 = 0$.",
+        "working_summary": "$(w + 9)(w - 5) = 0 \\implies w = 5\\text{ m}$ (since $w > 0$) and length $= 9\\text{ m}$.",
+        "answer": "Width $= 5\\text{ m}$, length $= 9\\text{ m}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_5_1_1",
+      "title": "Dividing Both Sides by the Variable $x$ and Losing the Zero Root",
+      "misconception": "Solving $x^2 = 5x$ by dividing both sides by $x$ to get $x = 5$, missing the valid solution $x = 0$.",
+      "correct_concept": "Dividing by $x$ is invalid when $x = 0$. Always subtract $5x$ to get $x^2 - 5x = 0$ and factorise $x(x - 5) = 0$.",
+      "incorrect_working": "$$x^2 = 5x \\implies x = 5 \\quad \\text{(Incomplete: lost } x = 0\\text{)}$$",
+      "correct_working": "$$x^2 - 5x = 0 \\implies x(x - 5) = 0 \\implies x = 0 \\;\\text{ or }\\; x = 5$$",
+      "counter_example": "Substituting $x = 0$ into $x^2 = 5x$ gives $0 = 0$, which is true."
+    },
+    {
+      "id": "misc_9_5_1_2",
+      "title": "Applying the Null Factor Law When the RHS Is Non-Zero",
+      "misconception": "Seeing $(x - 3)(x + 2) = 14$ and claiming $x - 3 = 14$ or $x + 2 = 14$.",
+      "correct_concept": "Infinitely many pairs of numbers multiply to $14$ (such as $2 \\times 7$), whereas a product equals $0$ only when a factor is $0$. Expand and set the RHS to $0$ first.",
+      "incorrect_working": "$$(x - 3)(x + 2) = 14 \\implies x - 3 = 14 \\;\\text{ or }\\; x + 2 = 14 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$x^2 - x - 6 = 14 \\implies x^2 - x - 20 = 0 \\implies (x - 5)(x + 4) = 0 \\implies x = 5 \\;\\text{ or }\\; x = -4$$",
+      "counter_example": "When $x = 5$, $(5 - 3)(5 + 2) = 2 \\times 7 = 14$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_5_1_Q1",
+        "question": "Solve $x^2 - 49 = 0$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$x = -7$ or $x = 7$",
+        "step_by_step_solution": [
+          "Factorise using difference of two squares: $(x - 7)(x + 7) = 0$.",
+          "Apply the Null Factor Law: $x = 7$ or $x = -7$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q2",
+        "question": "Solve $x^2 - 11x + 28 = 0$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$x = 4$ or $x = 7$",
+        "step_by_step_solution": [
+          "Find two factors of $+28$ that add to $-11$: $-4$ and $-7$, giving $(x - 4)(x - 7) = 0$.",
+          "Apply the Null Factor Law: $x = 4$ or $x = 7$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q3",
+        "question": "Solve $x^2 + 3x = 40$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$x = -8$ or $x = 5$",
+        "step_by_step_solution": [
+          "Subtract $40$ from both sides: $x^2 + 3x - 40 = 0$.",
+          "Factorise as $(x + 8)(x - 5) = 0$, giving $x = -8$ or $x = 5$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q4",
+        "question": "Solve $(x - 2)(x + 5) = 18$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$x = -7$ or $x = 4$",
+        "step_by_step_solution": [
+          "Expand the LHS and subtract $18$: $x^2 + 3x - 10 = 18 \\implies x^2 + 3x - 28 = 0$.",
+          "Factorise as $(x + 7)(x - 4) = 0$, giving $x = -7$ or $x = 4$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_5_1_Q5",
+        "question": "The product of two consecutive positive integers is $132$. Form a quadratic equation and find the two integers.",
+        "difficulty": "Medium",
+        "context": "Number Modelling",
+        "final_answer": "$11$ and $12$",
+        "step_by_step_solution": [
+          "Let the integers be $n$ and $n + 1$: $n(n + 1) = 132 \\implies n^2 + n - 132 = 0$.",
+          "Factorise: $(n + 12)(n - 11) = 0$. Since $n > 0$, $n = 11$, so the integers are $11$ and $12$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q6",
+        "question": "A flare launched from a rescue boat off Phillip Island has height $h\\text{ metres}$ above sea level after $t\\text{ seconds}$ given by $h = -5t^2 + 30t + 35$. Find the time $t > 0$ when the flare hits the water ($h = 0$).",
+        "difficulty": "Challenging",
+        "context": "Projectile Motion",
+        "final_answer": "$t = 7\\text{ seconds}$",
+        "step_by_step_solution": [
+          "Set $h = 0$ and divide every term by $-5$: $-5t^2 + 30t + 35 = 0 \\implies t^2 - 6t - 7 = 0$.",
+          "Factorise: $(t - 7)(t + 1) = 0$. Since $t > 0$, the flare hits the water at $t = 7\\text{ seconds}$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q7",
+        "question": "A right-angled triangle has a hypotenuse of length $15\\text{ cm}$, and one leg is $3\\text{ cm}$ longer than the other leg $x\\text{ cm}$. Use Pythagoras' theorem to form a quadratic equation and find the lengths of the two legs.",
+        "difficulty": "Challenging",
+        "context": "Geometric Modelling",
+        "final_answer": "$9\\text{ cm}$ and $12\\text{ cm}$",
+        "step_by_step_solution": [
+          "By Pythagoras' theorem: $x^2 + (x + 3)^2 = 15^2 \\implies x^2 + x^2 + 6x + 9 = 225 \\implies 2x^2 + 6x - 216 = 0$.",
+          "Divide by $2$: $x^2 + 3x - 108 = 0 \\implies (x + 12)(x - 9) = 0$. Since $x > 0$, $x = 9\\text{ cm}$ and $x + 3 = 12\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q8",
+        "question": "A rectangular swimming pool measuring $10\\text{ m}$ by $6\\text{ m}$ is surrounded by a uniform paved path of width $x\\text{ m}$. If the combined total area of the pool and path is $140\\text{ m}^2$, find the width $x$ of the path.",
+        "difficulty": "Challenging",
+        "context": "Landscape Design",
+        "final_answer": "$x = 2\\text{ m}$",
+        "step_by_step_solution": [
+          "The outer dimensions are $(10 + 2x)\\text{ m}$ and $(6 + 2x)\\text{ m}$, so $(2x + 10)(2x + 6) = 140 \\implies 4x^2 + 32x + 60 = 140 \\implies 4x^2 + 32x - 80 = 0$.",
+          "Divide by $4$: $x^2 + 8x - 20 = 0 \\implies (x + 10)(x - 2) = 0$. Since $x > 0$, the path width is $x = 2\\text{ m}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_5_1_Q9",
+        "question": "Explain why the quadratic equation $x^2 - 10x + 25 = 0$ has only one distinct real solution (a repeated root), and state its value.",
+        "difficulty": "Medium",
+        "context": "Repeated Roots",
+        "final_answer": "It factorises as a perfect square $(x - 5)^2 = 0$, giving the single repeated root $x = 5$",
+        "step_by_step_solution": [
+          "Factorise the trinomial: $x^2 - 10x + 25 = (x - 5)(x - 5) = (x - 5)^2 = 0$.",
+          "Because both linear factors are identical, setting each factor to zero gives the same solution $x = 5$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q10",
+        "question": "Construct a monic quadratic equation in standard form $x^2 + bx + c = 0$ whose roots are $x = -4$ and $x = 9$. Explain your reasoning.",
+        "difficulty": "Medium",
+        "context": "Reverse Engineering Quadratics",
+        "final_answer": "$x^2 - 5x - 36 = 0$",
+        "step_by_step_solution": [
+          "By the converse of the Null Factor Law, roots $x = -4$ and $x = 9$ correspond to linear factors $(x + 4)$ and $(x - 9)$.",
+          "Expanding $(x + 4)(x - 9) = 0$ gives $x^2 - 5x - 36 = 0$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q11",
+        "question": "Explain why the equation $x^2 + 16 = 0$ has no real solutions, contrasting it with $x^2 - 16 = 0$.",
+        "difficulty": "Challenging",
+        "context": "Real Number System",
+        "final_answer": "For all real $x$, $x^2 \\ge 0$, so $x^2 + 16 \\ge 16 > 0$ and can never equal $0$; whereas $x^2 - 16 = (x - 4)(x + 4) = 0$ has roots $x = \\pm 4$",
+        "step_by_step_solution": [
+          "Rearranging $x^2 + 16 = 0$ gives $x^2 = -16$. Because the square of any real number is non-negative ($x^2 \\ge 0$), no real number squares to $-16$.",
+          "By contrast, $x^2 - 16 = 0$ is a difference of two squares $(x - 4)(x + 4) = 0$, yielding $x = 4$ or $x = -4$."
+        ]
+      },
+      {
+        "id": "9_5_1_Q12",
+        "question": "Solve the rational equation $x + \\frac{12}{x} = 8$ for $x \\neq 0$ by transforming it into a monic quadratic equation.",
+        "difficulty": "Extension",
+        "context": "Algebraic Transformation",
+        "final_answer": "$x = 2$ or $x = 6$",
+        "step_by_step_solution": [
+          "Multiply every term by $x$ (since $x \\neq 0$): $x^2 + 12 = 8x \\implies x^2 - 8x + 12 = 0$.",
+          "Factorise: $(x - 2)(x - 6) = 0 \\implies x = 2$ or $x = 6$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_5_1_1a",
+      "description": "Worked Example 9.5.1.1(a) roots",
+      "expression": "solve((x + 5)*(2*x - 7), x)",
+      "expected": [-5, "Rational(7, 2)"]
+    },
+    {
+      "id": "WE9_5_1_1b",
+      "description": "Worked Example 9.5.1.1(b) roots",
+      "expression": "solve(x**2 - 9*x, x)",
+      "expected": [0, 9]
+    },
+    {
+      "id": "WE9_5_1_2",
+      "description": "Worked Example 9.5.1.2 roots",
+      "expression": "solve(x**2 - 4*x - 21, x)",
+      "expected": [-3, 7]
+    },
+    {
+      "id": "NYT9_5_1_2",
+      "description": "Now You Try 9.5.1.2 roots",
+      "expression": "solve(x**2 + 5*x - 24, x)",
+      "expected": [-8, 3]
+    },
+    {
+      "id": "WE9_5_1_3",
+      "description": "Worked Example 9.5.1.3 garden roots",
+      "expression": "solve(x**2 + 5*x - 84, x)",
+      "expected": [-12, 7]
+    },
+    {
+      "id": "NYT9_5_1_3",
+      "description": "Now You Try 9.5.1.3 solar panel roots",
+      "expression": "solve(x**2 + 4*x - 45, x)",
+      "expected": [-9, 5]
+    },
+    {
+      "id": "EX9_5_1_Q1",
+      "description": "Exercise 9.5.1 Q1 roots",
+      "expression": "solve(x**2 - 49, x)",
+      "expected": [-7, 7]
+    },
+    {
+      "id": "EX9_5_1_Q2",
+      "description": "Exercise 9.5.1 Q2 roots",
+      "expression": "solve(x**2 - 11*x + 28, x)",
+      "expected": [4, 7]
+    },
+    {
+      "id": "EX9_5_1_Q3",
+      "description": "Exercise 9.5.1 Q3 roots",
+      "expression": "solve(x**2 + 3*x - 40, x)",
+      "expected": [-8, 5]
+    },
+    {
+      "id": "EX9_5_1_Q4",
+      "description": "Exercise 9.5.1 Q4 roots",
+      "expression": "solve((x - 2)*(x + 5) - 18, x)",
+      "expected": [-7, 4]
+    },
+    {
+      "id": "EX9_5_1_Q5",
+      "description": "Exercise 9.5.1 Q5 consecutive integers",
+      "expression": "solve(x*(x + 1) - 132, x)",
+      "expected": [-12, 11]
+    },
+    {
+      "id": "EX9_5_1_Q6",
+      "description": "Exercise 9.5.1 Q6 flare roots",
+      "expression": "solve(-5*x**2 + 30*x + 35, x)",
+      "expected": [-1, 7]
+    },
+    {
+      "id": "EX9_5_1_Q7",
+      "description": "Exercise 9.5.1 Q7 right triangle roots",
+      "expression": "solve(x**2 + (x + 3)**2 - 15**2, x)",
+      "expected": [-12, 9]
+    },
+    {
+      "id": "EX9_5_1_Q8",
+      "description": "Exercise 9.5.1 Q8 pool path roots",
+      "expression": "solve((2*x + 10)*(2*x + 6) - 140, x)",
+      "expected": [-10, 2]
+    },
+    {
+      "id": "EX9_5_1_Q12",
+      "description": "Exercise 9.5.1 Q12 rational quadratic roots",
+      "expression": "solve(x**2 - 8*x + 12, x)",
+      "expected": [2, 6]
+    }
+  ]
+}

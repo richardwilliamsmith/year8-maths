@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "section_id": "9_5_3",
+    "section_code": "5C",
+    "chapter_number": 5,
+    "chapter_title": "Quadratic Equations and Non-Linear Graphs",
+    "title": "Non-Linear Relations and Algorithmic Root Approximation",
+    "vcaa_code": "VC2M9A06",
+    "vcaa_description": "Experiment with the effects of the parameters on the graphs of non-linear relations, and use algorithms and digital tools to approximate solutions.",
+    "strand": "Algebra",
+    "target_mastery": "Explore graphs of simple exponential ($y = a^x$), reciprocal ($y = \\frac{k}{x}$), and circle ($x^2 + y^2 = r^2$) relations, and apply the bisection algorithm to approximate non-integer roots.",
+    "prerequisites": [
+      "Parabola graphs and key features (Section 5B)",
+      "Index laws including zero and negative exponents (Section 1B)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Exponential relation",
+        "definition": "A non-linear relation of the form $y = a^x$ (with $a > 0, a \\neq 1$) in which the independent variable $x$ appears in the exponent."
+      },
+      {
+        "term": "Asymptote",
+        "definition": "A straight line that a curve approaches ever more closely as $x$ or $y$ tends to $\\pm\\infty$, without ever reaching it."
+      },
+      {
+        "term": "Circle relation",
+        "definition": "The set of all points $(x, y)$ at a fixed distance (radius $r$) from the origin $(0, 0)$, described by $x^2 + y^2 = r^2$."
+      },
+      {
+        "term": "Bisection algorithm",
+        "definition": "An iterative root-finding algorithm that repeatedly halves an interval $[a, b]$ where a continuous function $f(x)$ changes sign."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_5_3_1",
+      "title": "Comparing Linear, Quadratic, and Exponential Growth ($y = a^x$)",
+      "explanation": "While a linear relation $y = mx + c$ changes by a constant difference and a quadratic $y = ax^2$ changes by a linearly increasing difference, an exponential relation $y = a^x$ ($a > 1$) multiplies by a constant factor $a$ for each $1$-unit increase in $x$. Every basic exponential curve $y = a^x$ passes through $(0, 1)$ (since $a^0 = 1$) and has the horizontal asymptote $y = 0$.",
+      "formula_latex": "y = a^x \\quad (a > 1): \\quad y\\text{-intercept } (0, 1), \\quad \\text{Horizontal asymptote } y = 0",
+      "callout_title": "Exponential Growth Eventually Overtakes Any Polynomial",
+      "callout_rule": "For $x > 0$ and $a > 1$, $y = a^x$ grows slowly at first but rapidly overtakes both linear and quadratic relations as $x$ increases."
+    },
+    {
+      "id": "theory_9_5_3_2",
+      "title": "Circles ($x^2 + y^2 = r^2$) and Reciprocal Hyperbolas ($y = \\frac{k}{x}$)",
+      "explanation": "By the distance formula, every point $(x, y)$ at distance $r$ from the origin satisfies $x^2 + y^2 = r^2$, forming a circle of centre $(0, 0)$ and radius $r$ with intercepts $(\\pm r, 0)$ and $(0, \\pm r)$. A reciprocal relation $y = \\frac{k}{x}$ ($x \\neq 0$, inverse proportion) forms a rectangular hyperbola with two branches and asymptotes along both coordinate axes ($x = 0$ and $y = 0$).",
+      "formula_latex": "\\text{Circle: } x^2 + y^2 = r^2 \\qquad \\text{Hyperbola: } y = \\frac{k}{x} \\;\\;(x \\neq 0,\\; y \\neq 0)",
+      "callout_title": "Take the Square Root of $r^2$ to Find the Radius",
+      "callout_rule": "In $x^2 + y^2 = 25$, the radius is $r = \\sqrt{25} = 5$, not $25$."
+    },
+    {
+      "id": "theory_9_5_3_3",
+      "title": "The Bisection Algorithm for Approximating Irrational Roots",
+      "explanation": "When an equation $f(x) = 0$ has an irrational root that cannot be found by integer factorisation, we locate an interval $[a, b]$ where $f(a)$ and $f(b)$ have opposite signs. In each step of the bisection algorithm, we evaluate $f(m)$ at the midpoint $m = \\frac{a + b}{2}$ and replace whichever endpoint has the same sign as $f(m)$, halving the interval width each iteration.",
+      "formula_latex": "m = \\frac{a + b}{2}: \\quad \\text{keep } [a, m] \\text{ if } f(a)f(m) < 0,\\; \\text{else keep } [m, b]",
+      "callout_title": "Sign Change Guarantees a Root Inside the Interval",
+      "callout_rule": "If a continuous function changes from negative to positive between $a$ and $b$, it must cross $f(x) = 0$ at least once between $a$ and $b$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_5_3_1",
+      "title": "Evaluating Exponential and Reciprocal Relations and Identifying Asymptotes",
+      "difficulty": "Fluency",
+      "problem": "For the exponential relation $y = 2^x - 3$: (a) evaluate $y$ at $x = -1, 0, 2, 3$, (b) state the $y$-intercept, and (c) state the equation of the horizontal asymptote.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Substitute $x = -1, 0, 2, 3$ into $y = 2^x - 3$, using $2^{-1} = \\frac{1}{2}$ and $2^0 = 1$.",
+          "working": "$$x = -1: y = \\frac{1}{2} - 3 = -2.5; \\quad x = 0: y = 1 - 3 = -2$$\n$$x = 2: y = 4 - 3 = 1; \\quad x = 3: y = 8 - 3 = 5$$"
+        },
+        {
+          "step": 2,
+          "thinking": "At $x = 0$, $y = -2$. As $x \\to -\\infty$, $2^x \\to 0$, so $y = 2^x - 3$ approaches $-3$.",
+          "working": "$$y\\text{-intercept: } (0, -2), \\qquad \\text{Horizontal asymptote: } y = -3$$"
+        }
+      ],
+      "final_answer": "(a) $-2.5, -2, 1, 5$; (b) $(0, -2)$; (c) $y = -3$",
+      "now_you_try": {
+        "problem": "For $y = 3^x + 2$, find (a) the value of $y$ when $x = 0$ and $x = 2$, and (b) the equation of the horizontal asymptote.",
+        "hint": "Remember $3^0 = 1$ and $3^x > 0$ for all real $x$.",
+        "working_summary": "(a) At $x = 0, y = 1 + 2 = 3$; at $x = 2, y = 9 + 2 = 11$. (b) Horizontal asymptote is $y = 2$.",
+        "answer": "(a) $y = 3$ and $y = 11$, (b) $y = 2$"
+      }
+    },
+    {
+      "id": "WE9_5_3_2",
+      "title": "Identifying Features of a Circle and Testing Points",
+      "difficulty": "Understanding",
+      "problem": "A circle has equation $x^2 + y^2 = 100$. (a) State its centre, radius, and axis intercepts. (b) Determine whether the point $P(-6, 8)$ lies inside, on, or outside the circle.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Compare $x^2 + y^2 = 100$ with $x^2 + y^2 = r^2$ to find $r = \\sqrt{100} = 10$.",
+          "working": "$$\\text{Centre } (0, 0), \\quad r = 10, \\quad \\text{Intercepts } (\\pm 10, 0) \\text{ and } (0, \\pm 10)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $(-6, 8)$ into $x^2 + y^2$ and compare with $100$.",
+          "working": "$$(-6)^2 + 8^2 = 36 + 64 = 100 \\implies P(-6, 8) \\text{ lies on the circle.}$$"
+        }
+      ],
+      "final_answer": "(a) Centre $(0, 0)$, radius $10$, intercepts $(\\pm 10, 0)$ and $(0, \\pm 10)$; (b) On the circle",
+      "now_you_try": {
+        "problem": "For the circle $x^2 + y^2 = 25$, state the radius and determine whether $(3, -3)$ lies inside, on, or outside the circle.",
+        "hint": "Compare $3^2 + (-3)^2$ with $25$.",
+        "working_summary": "$r = 5$; since $3^2 + (-3)^2 = 18 < 25$, the point lies inside the circle.",
+        "answer": "Radius $r = 5$; inside the circle (since $18 < 25$)"
+      }
+    },
+    {
+      "id": "WE9_5_3_3",
+      "title": "Approximating a Root Using Two Iterations of the Bisection Algorithm",
+      "difficulty": "Problem-Solving",
+      "problem": "Consider the equation $f(x) = x^2 - 2x - 5 = 0$. (a) Show that a root lies in the interval $[3, 4]$. (b) Perform two iterations of the bisection algorithm to find a narrower interval of width $0.25$ containing the root.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Evaluate $f(3)$ and $f(4)$ to verify a sign change, then test the first midpoint $m_1 = 3.5$.",
+          "working": "$$f(3) = 9 - 6 - 5 = -2 < 0, \\quad f(4) = 16 - 8 - 5 = 3 > 0$$\n$$m_1 = 3.5: \\quad f(3.5) = 3.5^2 - 2(3.5) - 5 = 12.25 - 7 - 5 = 0.25 > 0$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Since $f(3) < 0$ and $f(3.5) > 0$, the root lies in $[3, 3.5]$. Test the second midpoint $m_2 = 3.25$.",
+          "working": "$$m_2 = 3.25: \\quad f(3.25) = 3.25^2 - 2(3.25) - 5 = 10.5625 - 6.5 - 5 = -0.9375 < 0$$\n$$\\text{Since } f(3.25) < 0 \\text{ and } f(3.5) > 0,\\text{ the root lies in } [3.25, 3.5].$$"
+        }
+      ],
+      "final_answer": "(a) $f(3) = -2 < 0$ and $f(4) = 3 > 0$, (b) $[3.25, 3.5]$",
+      "now_you_try": {
+        "problem": "For $f(x) = x^2 - 7 = 0$ on $[2, 3]$, perform two bisection steps using $m_1 = 2.5$ and the appropriate second midpoint.",
+        "hint": "Calculate $f(2) = -3$, $f(3) = 2$, and $f(2.5) = 2.5^2 - 7 = -0.75$.",
+        "working_summary": "$f(2.5) = -0.75 < 0 \\implies$ root in $[2.5, 3]$. Next $m_2 = 2.75$, $f(2.75) = 7.5625 - 7 = 0.5625 > 0 \\implies$ root in $[2.5, 2.75]$.",
+        "answer": "Root lies in $[2.5, 2.75]$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_5_3_1",
+      "title": "Using $r^2$ Instead of $r$ as the Radius of a Circle",
+      "misconception": "Seeing $x^2 + y^2 = 36$ and stating that the radius is $36$ or $18$.",
+      "correct_concept": "In the circle equation $x^2 + y^2 = r^2$, the right-hand side is the square of the radius, so $r = \\sqrt{36} = 6$.",
+      "incorrect_working": "$$x^2 + y^2 = 36 \\implies r = 36 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$x^2 + y^2 = 36 \\implies r^2 = 36 \\implies r = \\sqrt{36} = 6$$",
+      "counter_example": "When $y = 0$, $x^2 = 36 \\implies x = \\pm 6$, so the circle crosses the axes at distance $6$ from the origin."
+    },
+    {
+      "id": "misc_9_5_3_2",
+      "title": "Choosing the Wrong Sub-Interval in the Bisection Algorithm",
+      "misconception": "Keeping the sub-interval where both endpoints have the same sign rather than opposite signs.",
+      "correct_concept": "A root is guaranteed between two points where the function values have opposite signs ($f(a) \\times f(b) < 0$). Always pair the midpoint with the endpoint of opposite sign.",
+      "incorrect_working": "$$f(3) = -2,\\; f(3.5) = +0.25,\\; f(4) = +3 \\implies \\text{choose } [3.5, 4] \\quad \\text{(Incorrect: both positive)}$$",
+      "correct_working": "$$f(3) = -2 < 0 \\text{ and } f(3.5) = +0.25 > 0 \\implies \\text{choose } [3, 3.5]$$",
+      "counter_example": "The exact positive root of $x^2 - 2x - 5 = 0$ is $1 + \\sqrt{6} \\approx 3.449$, which lies inside $[3, 3.5]$, not $[3.5, 4]$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_5_3_Q1",
+        "question": "For the exponential relation $y = 4^x$, calculate the exact value of $y$ when (a) $x = -2$, (b) $x = 0$, and (c) $x = 3$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $\\frac{1}{16}$, (b) $1$, (c) $64$",
+        "step_by_step_solution": [
+          "Use index laws: $4^{-2} = \\frac{1}{4^2} = \\frac{1}{16}$ and $4^0 = 1$.",
+          "For $x = 3$: $4^3 = 64$."
+        ]
+      },
+      {
+        "id": "9_5_3_Q2",
+        "question": "State the radius and the four axis intercepts of the circle $x^2 + y^2 = 81$, and find the exact positive value of $y$ when $x = 7$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "Radius $r = 9$, intercepts $(\\pm 9, 0)$ and $(0, \\pm 9)$, $y = 4\\sqrt{2}$",
+        "step_by_step_solution": [
+          "Since $r^2 = 81$, $r = 9$ and the intercepts are $(\\pm 9, 0)$ and $(0, \\pm 9)$.",
+          "When $x = 7$: $49 + y^2 = 81 \\implies y^2 = 32 \\implies y = \\sqrt{32} = 4\\sqrt{2}$ (for $y > 0$)."
+        ]
+      },
+      {
+        "id": "9_5_3_Q3",
+        "question": "A reciprocal relation has equation $y = \\frac{24}{x}$. Evaluate $y$ for $x = -6, -2, 3, 8$, and state the equations of its two asymptotes.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$y = -4, -12, 8, 3$; asymptotes $x = 0$ and $y = 0$",
+        "step_by_step_solution": [
+          "Substitute each $x$-value: $\\frac{24}{-6} = -4$, $\\frac{24}{-2} = -12$, $\\frac{24}{3} = 8$, and $\\frac{24}{8} = 3$.",
+          "Because $x \\neq 0$ and $y = \\frac{24}{x} \\neq 0$, the vertical asymptote is $x = 0$ and the horizontal asymptote is $y = 0$."
+        ]
+      },
+      {
+        "id": "9_5_3_Q4",
+        "question": "Let $f(x) = x^2 - 11$. Evaluate $f(3)$, $f(4)$, and $f(3.5)$, and state which half-interval ($[3, 3.5]$ or $[3.5, 4]$) contains $\\sqrt{11}$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$f(3) = -2$, $f(4) = 5$, $f(3.5) = 1.25$; $\\sqrt{11}$ lies in $[3, 3.5]$",
+        "step_by_step_solution": [
+          "Calculate $f(3) = 9 - 11 = -2$, $f(4) = 16 - 11 = 5$, and $f(3.5) = 12.25 - 11 = 1.25$.",
+          "Because $f(3) < 0$ and $f(3.5) > 0$, the sign change occurs on $[3, 3.5]$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_5_3_Q5",
+        "question": "A bacterial culture in a pathology laboratory in Parkville starts with $500$ bacteria and doubles every hour, so its population after $t$ hours is $P = 500 \\times 2^t$. (a) Find the population after $4$ hours. (b) After how many hours does the population reach $32\\,000$?",
+        "difficulty": "Medium",
+        "context": "Biological Growth",
+        "final_answer": "(a) $8000$, (b) $t = 6\\text{ hours}$",
+        "step_by_step_solution": [
+          "At $t = 4$: $P = 500 \\times 2^4 = 500 \\times 16 = 8000$.",
+          "Set $P = 32\\,000$: $500 \\times 2^t = 32\\,000 \\implies 2^t = 64 = 2^6 \\implies t = 6\\text{ hours}$."
+        ]
+      },
+      {
+        "id": "9_5_3_Q6",
+        "question": "The time $T\\text{ hours}$ required to pump out a flooded mine shaft varies inversely with the pump flow rate $R\\text{ ML/h}$ according to $T = \\frac{180}{R}$. (a) How long does it take at $R = 15\\text{ ML/h}$? (b) What flow rate is required to empty the shaft in $7.5\\text{ hours}$?",
+        "difficulty": "Medium",
+        "context": "Inverse Proportion Modelling",
+        "final_answer": "(a) $12\\text{ hours}$, (b) $24\\text{ ML/h}$",
+        "step_by_step_solution": [
+          "Substitute $R = 15$: $T = \\frac{180}{15} = 12\\text{ hours}$.",
+          "Substitute $T = 7.5$: $7.5 = \\frac{180}{R} \\implies R = \\frac{180}{7.5} = 24\\text{ ML/h}$."
+        ]
+      },
+      {
+        "id": "9_5_3_Q7",
+        "question": "A weather radar at Laverton has a circular range of radius $15\\text{ km}$, modelled by $x^2 + y^2 = 225$. A storm cell travels along the straight line $y = x + 3$. Find the coordinates of the two points where the storm cell enters and exits the radar coverage.",
+        "difficulty": "Challenging",
+        "context": "Radar Geometry",
+        "final_answer": "$(-12, -9)$ and $(9, 12)$",
+        "step_by_step_solution": [
+          "Substitute $y = x + 3$ into $x^2 + y^2 = 225$: $x^2 + (x + 3)^2 = 225 \\implies 2x^2 + 6x + 9 = 225 \\implies 2x^2 + 6x - 216 = 0$.",
+          "Divide by $2$: $x^2 + 3x - 108 = 0 \\implies (x + 12)(x - 9) = 0 \\implies x = -12$ or $x = 9$. Using $y = x + 3$ gives $(-12, -9)$ and $(9, 12)$."
+        ]
+      },
+      {
+        "id": "9_5_3_Q8",
+        "question": "To approximate the positive root of $f(x) = x^3 + x - 12 = 0$ on the interval $[2, 3]$: (a) verify that a root lies in $[2, 3]$, and (b) carry out two steps of the bisection algorithm to narrow the interval to width $0.25$.",
+        "difficulty": "Challenging",
+        "context": "Algorithmic Approximation",
+        "final_answer": "(a) $f(2) = -2 < 0$ and $f(3) = 18 > 0$; (b) $[2, 2.25]$",
+        "step_by_step_solution": [
+          "Evaluate $f(2) = 8 + 2 - 12 = -2 < 0$ and $f(3) = 27 + 3 - 12 = 18 > 0$, confirming a root in $[2, 3]$.",
+          "First midpoint $m_1 = 2.5$: $f(2.5) = 15.625 + 2.5 - 12 = 6.125 > 0 \\implies$ root in $[2, 2.5]$. Second midpoint $m_2 = 2.25$: $f(2.25) = 11.390625 + 2.25 - 12 = 1.640625 > 0 \\implies$ root lies in $[2, 2.25]$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_5_3_Q9",
+        "question": "Compare the values of $y_1 = 2x$, $y_2 = x^2$, and $y_3 = 2^x$ at $x = 2$, $x = 4$, and $x = 5$, and comment on how the three models behave for $x > 4$.",
+        "difficulty": "Medium",
+        "context": "Comparative Growth Analysis",
+        "final_answer": "At $x = 2$, all three equal $4$; at $x = 4$, $y_2 = y_3 = 16 > y_1 = 8$; at $x = 5$, $y_3 = 32 > y_2 = 25 > y_1 = 10$, showing $2^x$ overtakes $x^2$ for $x > 4$",
+        "step_by_step_solution": [
+          "At $x = 2$: $y_1 = 4, y_2 = 4, y_3 = 4$. At $x = 4$: $y_1 = 8, y_2 = 16, y_3 = 16$.",
+          "At $x = 5$: $y_1 = 10, y_2 = 25, y_3 = 32$. For all $x > 4$, exponential growth $2^x$ exceeds quadratic growth $x^2$."
+        ]
+      },
+      {
+        "id": "9_5_3_Q10",
+        "question": "Explain why each iteration of the bisection algorithm halves the maximum possible error when the midpoint of the current interval is used as the root approximation, and state the interval width after $4$ iterations starting from $[1, 2]$.",
+        "difficulty": "Challenging",
+        "context": "Algorithmic Convergence",
+        "final_answer": "Each bisection divides the interval length by $2$; after $4$ iterations from width $1$, the width is $\\frac{1}{2^4} = \\frac{1}{16} = 0.0625$",
+        "step_by_step_solution": [
+          "Starting with an interval $[a, b]$ of length $L = b - a$, replacing one endpoint with the midpoint $m = \\frac{a + b}{2}$ produces a new interval of length $\\frac{L}{2}$.",
+          "Starting from $[1, 2]$ of width $1$, after $4$ iterations the width is $\\frac{1}{2^4} = \\frac{1}{16} = 0.0625$."
+        ]
+      },
+      {
+        "id": "9_5_3_Q11",
+        "question": "Explain why the circle relation $x^2 + y^2 = 25$ gives two $y$-values for each $x$ in $-5 < x < 5$, whereas the parabola $y = x^2 - 25$ gives only one $y$-value for each $x$.",
+        "difficulty": "Medium",
+        "context": "Relations vs Functions",
+        "final_answer": "Solving $x^2 + y^2 = 25$ gives $y = \\pm\\sqrt{25 - x^2}$ (an upper semicircle and a lower semicircle), whereas $y = x^2 - 25$ defines a single value of $y$ for each $x$",
+        "step_by_step_solution": [
+          "In $x^2 + y^2 = 25$, rearranging for $y$ yields $y^2 = 25 - x^2 \\implies y = +\\sqrt{25 - x^2}$ or $y = -\\sqrt{25 - x^2}$, which are two distinct points for any $-5 < x < 5$.",
+          "In $y = x^2 - 25$, $y$ is already the first-degree subject, producing a unique output for every input $x$."
+        ]
+      },
+      {
+        "id": "9_5_3_Q12",
+        "question": "Find the coordinates of all points of intersection in the first quadrant ($x > 0, y > 0$) of the circle $x^2 + y^2 = 25$ and the hyperbola $y = \\frac{12}{x}$. (Hint: compute $(x + y)^2$ and $(x - y)^2$ using $xy = 12$.)",
+        "difficulty": "Extension",
+        "context": "Non-Linear Systems",
+        "final_answer": "$(3, 4)$ and $(4, 3)$",
+        "step_by_step_solution": [
+          "From $y = \\frac{12}{x}$, we have $xy = 12$. Then $(x + y)^2 = x^2 + y^2 + 2xy = 25 + 24 = 49 \\implies x + y = 7$ (since $x, y > 0$).",
+          "Substituting $y = 7 - x$ into $xy = 12$ gives $x(7 - x) = 12 \\implies x^2 - 7x + 12 = 0 \\implies (x - 3)(x - 4) = 0$, giving $(3, 4)$ and $(4, 3)$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_5_3_1_x3",
+      "description": "Worked Example 9.5.3.1(a) y at x=3",
+      "expression": "2**3 - 3",
+      "expected": 5
+    },
+    {
+      "id": "NYT9_5_3_1_x2",
+      "description": "Now You Try 9.5.3.1(a) y at x=2",
+      "expression": "3**2 + 2",
+      "expected": 11
+    },
+    {
+      "id": "WE9_5_3_2b",
+      "description": "Worked Example 9.5.3.2(b) circle point test",
+      "expression": "(-6)**2 + 8**2",
+      "expected": 100
+    },
+    {
+      "id": "WE9_5_3_3_m1",
+      "description": "Worked Example 9.5.3.3 f(3.5)",
+      "expression": "Rational(7, 2)**2 - 2*Rational(7, 2) - 5",
+      "expected": "Rational(1, 4)"
+    },
+    {
+      "id": "WE9_5_3_3_m2",
+      "description": "Worked Example 9.5.3.3 f(3.25)",
+      "expression": "Rational(13, 4)**2 - 2*Rational(13, 4) - 5",
+      "expected": "Rational(-15, 16)"
+    },
+    {
+      "id": "EX9_5_3_Q1a",
+      "description": "Exercise 9.5.3 Q1(a) 4^(-2)",
+      "expression": "Rational(1, 4**2)",
+      "expected": "Rational(1, 16)"
+    },
+    {
+      "id": "EX9_5_3_Q1c",
+      "description": "Exercise 9.5.3 Q1(c) 4^3",
+      "expression": "4**3",
+      "expected": 64
+    },
+    {
+      "id": "EX9_5_3_Q2",
+      "description": "Exercise 9.5.3 Q2 circle y at x=7",
+      "expression": "sqrt(81 - 7**2)",
+      "expected": "4 * sqrt(2)"
+    },
+    {
+      "id": "EX9_5_3_Q4_m1",
+      "description": "Exercise 9.5.3 Q4 f(3.5)",
+      "expression": "Rational(7, 2)**2 - 11",
+      "expected": "Rational(5, 4)"
+    },
+    {
+      "id": "EX9_5_3_Q5a",
+      "description": "Exercise 9.5.3 Q5(a) bacteria at t=4",
+      "expression": "500 * 2**4",
+      "expected": 8000
+    },
+    {
+      "id": "EX9_5_3_Q5b",
+      "description": "Exercise 9.5.3 Q5(b) time to reach 32000",
+      "expression": "log(32000 / 500, 2)",
+      "expected": 6
+    },
+    {
+      "id": "EX9_5_3_Q6b",
+      "description": "Exercise 9.5.3 Q6(b) flow rate for 7.5 hours",
+      "expression": "180 / Rational(15, 2)",
+      "expected": 24
+    },
+    {
+      "id": "EX9_5_3_Q7",
+      "description": "Exercise 9.5.3 Q7 radar line intersection x-coordinates",
+      "expression": "solve(x**2 + (x + 3)**2 - 225, x)",
+      "expected": [-12, 9]
+    },
+    {
+      "id": "EX9_5_3_Q8_m2",
+      "description": "Exercise 9.5.3 Q8 f(2.25)",
+      "expression": "Rational(9, 4)**3 + Rational(9, 4) - 12",
+      "expected": "Rational(105, 64)"
+    },
+    {
+      "id": "EX9_5_3_Q10",
+      "description": "Exercise 9.5.3 Q10 interval width after 4 iterations",
+      "expression": "Rational(1, 2**4)",
+      "expected": "Rational(1, 16)"
+    },
+    {
+      "id": "EX9_5_3_Q12",
+      "description": "Exercise 9.5.3 Q12 circle-hyperbola x-coordinates",
+      "expression": "solve(x**2 - 7*x + 12, x)",
+      "expected": [3, 4]
+    }
+  ]
+}

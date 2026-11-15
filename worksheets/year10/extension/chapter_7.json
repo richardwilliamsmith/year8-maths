@@ -1,0 +1,199 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Geometric Proofs, Circle Geometry, and Networks (10 & 10A)",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_7_1",
+      "section_code": "7A",
+      "title": "Deductive Geometric Proofs and Network Algorithms",
+      "vcaa_code": "VC2M10SP01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "In right-angled $\\triangle ABC$ ($\\angle ACB = 90^\\circ$), the altitude $CD$ is drawn perpendicular to the hypotenuse $AB$, so $\\triangle ACD \\sim \\triangle CBD \\sim \\triangle ABC$. Given $AD = 4\\text{ cm}$ and $DB = 9\\text{ cm}$, find:",
+          "parts": [
+            { "label": "a", "question": "The length of altitude $CD$ using $\\dfrac{AD}{CD} = \\dfrac{CD}{DB}$", "answer": "$6\\text{ cm}$" },
+            { "label": "b", "question": "The exact length of leg $AC$", "answer": "$\\sqrt{52} = 2\\sqrt{13}\\text{ cm}$" },
+            { "label": "c", "question": "The exact length of leg $BC$", "answer": "$\\sqrt{117} = 3\\sqrt{13}\\text{ cm}$" },
+            { "label": "d", "question": "The ratio of areas $\\text{Area}(\\triangle ACD) : \\text{Area}(\\triangle CBD)$", "answer": "$4 : 9$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A connected planar graph is $3$-regular (every vertex has degree $3$) and has $V = 8$ vertices (such as the skeleton of a cube). Find:",
+          "parts": [
+            { "label": "a", "question": "The sum of the degrees of all vertices", "answer": "$24$" },
+            { "label": "b", "question": "The number of edges $E$", "answer": "$12$" },
+            { "label": "c", "question": "The number of faces $F$ using Euler's planar formula $V - E + F = 2$", "answer": "$6$" },
+            { "label": "d", "question": "How many edges must be removed from this graph to form a spanning tree", "answer": "$5$ (since a spanning tree has $V - 1 = 7$ edges)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A complete graph $K_n$ has $n$ vertices with every pair of vertices joined by a single edge ($E = \\frac{1}{2}n(n - 1)$). Find:",
+          "parts": [
+            { "label": "a", "question": "The degree of each vertex and total number of edges in $K_5$", "answer": "Degree $= 4$, edges $E = 10$" },
+            { "label": "b", "question": "Whether $K_5$ has an Eulerian circuit", "answer": "Yes (all $5$ vertices have even degree $4$)" },
+            { "label": "c", "question": "The minimum number of edges that must be removed from $K_4$ ($E = 6$, all degrees $3$) so that the remaining network has an Eulerian circuit", "answer": "$3$ (reducing to a $3$-cycle $K_3$ with degrees $2, 2, 2$ and an isolated vertex, or adding $2$ edges; to keep all $4$ vertices in a circuit requires degree $2$ at each vertex, which is a $4$-cycle with $4$ edges, removing $2$ non-adjacent edges!)" },
+            { "label": "d", "question": "Verify that removing $2$ opposite edges from $K_4$ ($E = 6 - 2 = 4$) leaves every vertex with degree $2$", "answer": "Yes, $4$ edges remain ($C_4$), each vertex has degree $2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Apply Dijkstra's shortest-path algorithm to the weighted network with vertices $S, A, B, C, D, T$ and edge weights $SA = 3, SB = 8, AB = 2, AC = 7, BC = 3, BD = 6, CD = 1, CT = 5, DT = 2$. Find:",
+          "parts": [
+            { "label": "a", "question": "The shortest distance from $S$ to $B$", "answer": "$5$ ($S \\to A \\to B$)" },
+            { "label": "b", "question": "The shortest distance from $S$ to $C$", "answer": "$8$ ($S \\to A \\to B \\to C$)" },
+            { "label": "c", "question": "The shortest distance from $S$ to $D$", "answer": "$9$ ($S \\to A \\to B \\to C \\to D$)" },
+            { "label": "d", "question": "The shortest distance from $S$ to $T$", "answer": "$11$ ($S \\to A \\to B \\to C \\to D \\to T$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A soccer ball is stitched from $12$ regular pentagons and $20$ regular hexagons ($F = 32$ faces in total), with every vertex where $3$ faces meet having degree $3$. Count the total number of polygon sides ($12 \\times 5 + 20 \\times 6$), divide by $2$ to find the number of edges $E$, and use Euler's formula $V - E + F = 2$ to find the number of vertices $V$.",
+          "answer": "$E = \\dfrac{60 + 120}{2} = 90$ edges; $V = 2 + E - F = 2 + 90 - 32 = 60$ vertices."
+        },
+        {
+          "number": 6,
+          "question": "In trapezium $ABCD$ with $AB \\parallel DC$ and $AB = 12\\text{ cm}$, $DC = 20\\text{ cm}$, the diagonals $AC$ and $BD$ intersect at $P$. Given $AC = 24\\text{ cm}$, use similar triangles $\\triangle APB \\sim \\triangle CPD$ to find the length of $AP$ and $PC$.",
+          "answer": "$\\dfrac{AP}{PC} = \\dfrac{AB}{DC} = \\dfrac{12}{20} = \\dfrac{3}{5}$; thus $AP = \\frac{3}{8}(24) = 9\\text{ cm}$ and $PC = 15\\text{ cm}$."
+        },
+        {
+          "number": 7,
+          "question": "Six regional hospitals in NSW are to be linked in a backup power communication tree. The available weighted links (in $\\$1000$s) between pairs are: $AB = 14, BC = 10, CD = 8, DE = 12, EF = 9, FA = 15, AC = 11, BD = 16, CE = 13$. Use Kruskal's algorithm to select the $5$ edges of the Minimum Spanning Tree and find its minimum cost.",
+          "answer": "Edges chosen in order: $CD(8), EF(9), BC(10), AC(11)$ [skipping $AC$? Wait: $BC=10$ and $AC=11$ plus $AB=14$: picking $CD(8), EF(9), BC(10), AC(11), DE(12)$ forms no cycles and connects all $6$ vertices $A,B,C,D,E,F$!]. Total cost $= 8 + 9 + 10 + 11 + 12 = 50$ ($\\$50\\,000$)."
+        },
+        {
+          "number": 8,
+          "question": "In $\\triangle ABC$, the medians $BM$ and $CN$ (where $M$ is the midpoint of $AC$ and $N$ is the midpoint of $AB$) intersect at the centroid $G$. Since $MN \\parallel BC$ and $MN = \\frac{1}{2}BC$, use $\\triangle MNG \\sim \\triangle BCG$ to find the ratio $BG : GM$, and find $BG$ if $BM = 18\\text{ cm}$.",
+          "answer": "Since $\\dfrac{BC}{MN} = 2$, $BG : GM = 2 : 1$; thus $BG = \\frac{2}{3}(18) = 12\\text{ cm}$."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that for any simple connected planar graph with $V \\ge 3$ vertices, where every face is bounded by at least $3$ edges ($3F \\le 2E$), the number of edges satisfies $E \\le 3V - 6$, and hence prove that the complete graph $K_5$ ($V = 5, E = 10$) is non-planar.",
+          "answer": "From $3F \\le 2E$ and Euler's formula $F = 2 - V + E$, we get $3(2 - V + E) \\le 2E \\implies 6 - 3V + 3E \\le 2E \\implies E \\le 3V - 6$. For $K_5$, $V = 5$ gives $3V - 6 = 9$, but $K_5$ has $E = 10 > 9$, so $K_5$ cannot be planar."
+        },
+        {
+          "number": 10,
+          "question": "Prove using deductive geometry that the midpoints $P, Q, R, S$ of the four sides of any quadrilateral $ABCD$ form a parallelogram (**Varignon's Theorem**) by drawing diagonal $AC$ and applying the Midpoint Theorem to $\\triangle ABC$ and $\\triangle ADC$.",
+          "answer": "In $\\triangle ABC$, $P$ and $Q$ are the midpoints of $AB$ and $BC$, so by the Midpoint Theorem $PQ \\parallel AC$ and $PQ = \\frac{1}{2}AC$. Similarly, in $\\triangle ADC$, $SR \\parallel AC$ and $SR = \\frac{1}{2}AC$. Since $PQ \\parallel SR$ and $PQ = SR$, $PQRS$ is a parallelogram."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_7_1_1a", "expression": "sqrt(4 * 9)", "expected": 6 },
+        { "id": "WSE10_7_1_1b", "expression": "4**2 + 6**2", "expected": 52 },
+        { "id": "WSE10_7_1_2b", "expression": "(8 * 3) / 2", "expected": 12 },
+        { "id": "WSE10_7_1_2c", "expression": "2 - 8 + 12", "expected": 6 },
+        { "id": "WSE10_7_1_3a", "expression": "5 * 4 / 2", "expected": 10 },
+        { "id": "WSE10_7_1_4d", "expression": "3 + 2 + 3 + 1 + 2", "expected": 11 },
+        { "id": "WSE10_7_1_5_E", "expression": "(12*5 + 20*6) / 2", "expected": 90 },
+        { "id": "WSE10_7_1_5_V", "expression": "2 + 90 - 32", "expected": 60 },
+        { "id": "WSE10_7_1_6", "expression": "24 * Rational(3, 8)", "expected": 9 },
+        { "id": "WSE10_7_1_7", "expression": "8 + 9 + 10 + 11 + 12", "expected": 50 }
+      ]
+    },
+    {
+      "section_id": "10_7_2",
+      "section_code": "7B",
+      "title": "[10A] Circle Geometry: Angle, Chord, and Tangent Theorems",
+      "vcaa_code": "VC2M10ASP01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the value of $x$ in each circle geometry problem:",
+          "parts": [
+            { "label": "a", "question": "Reflex angle at the centre $\\angle AOB = 250^\\circ$; find angle $\\angle ACB = x^\\circ$ on the major arc", "answer": "$x = 125$ ($\\frac{1}{2} \\times 250^\\circ$)" },
+            { "label": "b", "question": "Cyclic quadrilateral $ABCD$ has $\\angle A = (2x + 15)^\\circ$ and opposite angle $\\angle C = (3x - 10)^\\circ$", "answer": "$x = 35$" },
+            { "label": "c", "question": "Tangent $AT$ and chord $AB$ meet at $\\angle TAB = 58^\\circ$, and $AC$ is a diameter; find $\\angle ABC$ and $\\angle ACB = x^\\circ$", "answer": "$\\angle ABC = 90^\\circ, x = 58$" },
+            { "label": "d", "question": "Two tangents from $P$ touch a circle of radius $8\\text{ cm}$ at $A$ and $B$ with $OP = 17\\text{ cm}$; find the perimeter of kite $OAPB$", "answer": "$46\\text{ cm}$ ($2 \\times 8 + 2 \\times 15$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use the chord, secant, and tangent power theorems to solve for the positive pronumeral $x$:",
+          "parts": [
+            { "label": "a", "question": "Chords $AB$ and $CD$ intersect at $P$ with $AP = x$, $PB = x + 5$, $CP = 4$, $PD = 9$", "answer": "$x = 4$" },
+            { "label": "b", "question": "Secant $PAB$ and tangent $PT = 12\\text{ cm}$ from external point $P$ have $PA = 8\\text{ cm}$ and internal chord $AB = x\\text{ cm}$", "answer": "$x = 10$ ($8(8 + x) = 144$)" },
+            { "label": "c", "question": "Two secants $PAB$ and $PCD$ from external point $P$ have $PA = 6, AB = 9$ and $PC = 5, CD = x$", "answer": "$x = 13$ ($6 \\times 15 = 5(5 + x)$)" },
+            { "label": "d", "question": "Tangent $PT = x + 2$, external secant segment $PA = x$, and internal chord $AB = 5$", "answer": "$x = 4$ ($(x + 2)^2 = x(x + 5)$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Two circles of radii $R = 10\\text{ cm}$ and $r = 4\\text{ cm}$ have their centres $O_1$ and $O_2$ at a distance $d = 15\\text{ cm}$ apart. A direct common external tangent touches the circles at $A$ and $B$. Find:",
+          "parts": [
+            { "label": "a", "question": "The difference in radii $R - r$", "answer": "$6\\text{ cm}$" },
+            { "label": "b", "question": "The exact length of the common external tangent $AB = \\sqrt{d^2 - (R - r)^2}$", "answer": "$\\sqrt{189} = 3\\sqrt{21}\\text{ cm}$" },
+            { "label": "c", "question": "The length of $AB$ if the two circles instead touch externally ($d = R + r = 14\\text{ cm}$)", "answer": "$\\sqrt{160} = 4\\sqrt{10}\\text{ cm}$" },
+            { "label": "d", "question": "The length of a common internal tangent when $d = 15\\text{ cm}$ using $\\sqrt{d^2 - (R + r)^2}$", "answer": "$\\sqrt{29}\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A circle with centre $O$ has two parallel chords $AB = 16\\text{ cm}$ and $CD = 12\\text{ cm}$ on opposite sides of the centre $O$, and the radius of the circle is $r = 10\\text{ cm}$. Find:",
+          "parts": [
+            { "label": "a", "question": "The perpendicular distance $OM$ from $O$ to chord $AB$", "answer": "$6\\text{ cm}$" },
+            { "label": "b", "question": "The perpendicular distance $ON$ from $O$ to chord $CD$", "answer": "$8\\text{ cm}$" },
+            { "label": "c", "question": "The distance $MN$ between the two parallel chords", "answer": "$14\\text{ cm}$" },
+            { "label": "d", "question": "The distance between the chords if they instead lie on the same side of the centre $O$", "answer": "$2\\text{ cm}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "From an observation deck at height $h$ above the ocean, the distance to the visible horizon is the tangent length $d$ from the observer to a spherical Earth of radius $R$ (so $d^2 = h(2R + h)$ by the tangent-secant theorem). Using $R = 6400\\text{ km}$ and $h = 0.08\\text{ km}$ ($80\\text{ m}$), calculate the exact value of $d^2$ and the horizon distance $d$ to $1$ decimal place.",
+          "answer": "$d^2 = 0.08(12\\,800.08) = 1024.0064\\text{ km}^2 \\implies d \\approx 32.0\\text{ km}$"
+        },
+        {
+          "number": 6,
+          "question": "Two circular gears of radii $12\\text{ cm}$ and $4\\text{ cm}$ touch externally so that the distance between their centres is $16\\text{ cm}$. A taut drive belt wraps around both gears, including two straight common external tangent segments. Find the exact length of each straight tangent segment.",
+          "answer": "$L = \\sqrt{16^2 - (12 - 4)^2} = \\sqrt{256 - 64} = \\sqrt{192} = 8\\sqrt{3}\\text{ cm}$"
+        },
+        {
+          "number": 7,
+          "question": "A circular railway tunnel has internal radius $r = 5.0\\text{ m}$. A flat horizontal concrete floor of width $8.0\\text{ m}$ is poured along the bottom of the tunnel, and an overhead ventilation duct is mounted along a horizontal chord $6.0\\text{ m}$ wide near the top of the tunnel. Find the vertical clearance between the floor and the ventilation duct.",
+          "answer": "Distance from centre to floor $= \\sqrt{5^2 - 4^2} = 3.0\\text{ m}$ below $O$; distance to duct $= \\sqrt{5^2 - 3^2} = 4.0\\text{ m}$ above $O$; total clearance $= 3.0 + 4.0 = 7.0\\text{ m}$."
+        },
+        {
+          "number": 8,
+          "question": "In cyclic quadrilateral $ABCD$, the side $AB$ is extended to an external point $E$. Given $\\angle BCD = 112^\\circ$, find the interior angle $\\angle BAD$ and the exterior angle $\\angle CBE$, and state the general relationship between the exterior angle of a cyclic quadrilateral and its interior opposite angle.",
+          "answer": "$\\angle BAD = 180^\\circ - 112^\\circ = 68^\\circ$, and $\\angle CBE = 180^\\circ - 68^\\circ = 112^\\circ$. The exterior angle of a cyclic quadrilateral equals the interior opposite angle."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove the **Intersecting Chords Theorem** ($AP \\cdot PB = CP \\cdot PD$): when two chords $AB$ and $CD$ intersect at $P$ inside a circle, prove that $\\triangle APC \\sim \\triangle DPB$ using circle angle theorems.",
+          "answer": "In $\\triangle APC$ and $\\triangle DPB$: $\\angle APC = \\angle DPB$ (vertically opposite angles) and $\\angle CAP = \\angle BDP$ (angles in the same segment standing on arc $BC$). Thus $\\triangle APC \\sim \\triangle DPB$ ($\\text{AAA}$), so $\\dfrac{AP}{DP} = \\dfrac{CP}{PB} \\implies AP \\cdot PB = CP \\cdot PD$."
+        },
+        {
+          "number": 10,
+          "question": "Prove the **Alternate Segment Theorem**: if $AT$ is a tangent to a circle at $A$ and $AB$ is a chord making an acute angle $\\angle TAB = \\theta$, draw the diameter $AD$ and point $C$ in the alternate segment to prove that $\\angle ACB = \\theta$.",
+          "answer": "Draw diameter $AD$ through centre $O$. Since radius $OA \\perp AT$, $\\angle DAB = 90^\\circ - \\theta$. Because $AD$ is a diameter, $\\angle ABD = 90^\\circ$ (angle in a semicircle), so in $\\triangle ABD$, $\\angle ADB = 90^\\circ - (90^\\circ - \\theta) = \\theta$. Finally, $\\angle ACB = \\angle ADB = \\theta$ (angles in the same segment)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_7_2_1a", "expression": "250 / 2", "expected": 125 },
+        { "id": "WSE10_7_2_1b", "expression": "(180 - 15 + 10) / 5", "expected": 35 },
+        { "id": "WSE10_7_2_1d", "expression": "2 * 8 + 2 * sqrt(17**2 - 8**2)", "expected": 46 },
+        { "id": "WSE10_7_2_2b", "expression": "12**2 / 8 - 8", "expected": 10 },
+        { "id": "WSE10_7_2_2c", "expression": "(6 * 15) / 5 - 5", "expected": 13 },
+        { "id": "WSE10_7_2_3b", "expression": "15**2 - (10 - 4)**2", "expected": 189 },
+        { "id": "WSE10_7_2_3d", "expression": "15**2 - (10 + 4)**2", "expected": 29 },
+        { "id": "WSE10_7_2_4c", "expression": "sqrt(10**2 - 8**2) + sqrt(10**2 - 6**2)", "expected": 14 },
+        { "id": "WSE10_7_2_6", "expression": "16**2 - (12 - 4)**2", "expected": 192 },
+        { "id": "WSE10_7_2_7", "expression": "sqrt(5**2 - 4**2) + sqrt(5**2 - 3**2)", "expected": 7 }
+      ]
+    }
+  ]
+}

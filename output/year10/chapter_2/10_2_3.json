@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "section_id": "10_2_3",
+    "section_code": "2C",
+    "chapter_number": 2,
+    "chapter_title": "Linear Inequalities, Simultaneous Equations, and Coordinate Geometry",
+    "title": "Parallel and Perpendicular Lines",
+    "vcaa_code": "VC2M10A03",
+    "vcaa_description": "Recognise the connection between algebraic and graphical representations of relations including parallel and perpendicular lines.",
+    "strand": "Algebra",
+    "target_mastery": "Use m1 = m2 for parallel lines and m1 * m2 = -1 for perpendicular lines to find equations of straight lines and perpendicular bisectors.",
+    "prerequisites": [
+      "Gradient, midpoint, and distance formulas (Year 9 VC2M9A03)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Parallel lines",
+        "definition": "Distinct coplanar straight lines that never intersect; non-vertical parallel lines have the exact same gradient ($m_1 = m_2$)."
+      },
+      {
+        "term": "Perpendicular lines",
+        "definition": "Two straight lines that intersect at a right angle ($90^\\circ$); for non-vertical, non-horizontal perpendicular lines, the product of their gradients is $-1$ ($m_1 m_2 = -1$)."
+      },
+      {
+        "term": "Negative reciprocal",
+        "definition": "The number obtained by flipping a fraction and reversing its sign: the negative reciprocal of $\\frac{a}{b}$ is $-\\frac{b}{a}$, so that $\\frac{a}{b} \\times \\left(-\\frac{b}{a}\\right) = -1$."
+      },
+      {
+        "term": "Perpendicular bisector",
+        "definition": "The straight line that passes through the midpoint of a line segment $AB$ at a $90^\\circ$ angle to $AB$; every point on the perpendicular bisector is equidistant from $A$ and $B$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_2_3_1",
+      "title": "Parallel Lines and Point-Gradient Form",
+      "explanation": "Two non-vertical straight lines $y = m_1 x + c_1$ and $y = m_2 x + c_2$ are parallel if and only if they rise at the exact same rate, meaning $m_1 = m_2$ (with $c_1 \\neq c_2$ for distinct lines). Once you know the gradient $m$ of a line and a point $(x_1, y_1)$ on the line, you can write its equation immediately using the point-gradient formula $y - y_1 = m(x - x_1)$.",
+      "formula_latex": "L_1 \\parallel L_2 \\iff m_1 = m_2; \\quad y - y_1 = m(x - x_1)",
+      "callout_title": "Rearrange to $y = mx + c$ Before Reading the Gradient",
+      "callout_rule": "If a line is given in standard form such as $2x + 5y = 10$, do NOT say the gradient is $2$! Rearrange to make $y$ the subject first: $y = -\\frac{2}{5}x + 2$, so $m = -\\frac{2}{5}$."
+    },
+    {
+      "id": "theory_10_2_3_2",
+      "title": "Perpendicular Lines and Negative Reciprocal Gradients",
+      "explanation": "If a line has gradient $m_1 = \\frac{\\text{rise}}{\\text{run}} = \\frac{b}{a}$, rotating its gradient triangle through $90^\\circ$ swaps the horizontal run and vertical rise and reverses the direction of one of them, giving gradient $m_2 = -\\frac{a}{b}$. Therefore, two non-vertical, non-horizontal lines are perpendicular if and only if the product of their gradients is $-1$, or equivalently $m_2 = -\\frac{1}{m_1}$. Note that any horizontal line ($y = k$, gradient $0$) is perpendicular to any vertical line ($x = h$, undefined gradient).",
+      "formula_latex": "L_1 \\perp L_2 \\iff m_1 m_2 = -1 \\iff m_2 = -\\frac{1}{m_1}",
+      "callout_title": "Flip the Fraction and Flip the Sign",
+      "callout_rule": "To find the perpendicular gradient $m_{\\perp}$: if $m = \\frac{3}{4}$, then $m_{\\perp} = -\\frac{4}{3}$; if $m = -5 = -\\frac{5}{1}$, then $m_{\\perp} = +\\frac{1}{5}$."
+    },
+    {
+      "id": "theory_10_2_3_3",
+      "title": "Finding the Equation of a Perpendicular Bisector",
+      "explanation": "The perpendicular bisector of the line segment joining $A(x_1, y_1)$ and $B(x_2, y_2)$ is found in three systematic steps: (1) find the midpoint $M$ of $AB$, (2) calculate the gradient $m_{AB}$ of $AB$ and take its negative reciprocal $m_{\\perp} = -\\frac{1}{m_{AB}}$, and (3) substitute $m_{\\perp}$ and the coordinates of $M$ into the point-gradient formula $y - y_M = m_{\\perp}(x - x_M)$.",
+      "formula_latex": "M = \\left(\\frac{x_1 + x_2}{2},\\, \\frac{y_1 + y_2}{2}\\right), \\quad m_{AB} = \\frac{y_2 - y_1}{x_2 - x_1}, \\quad m_{\\perp} = -\\frac{1}{m_{AB}}",
+      "callout_title": "Use the Midpoint $M$, Not Endpoint $A$ or $B$",
+      "callout_rule": "A perpendicular bisector passes through the MIDPOINT $M$ of segment $AB$, so substitute $M(x_M, y_M)$ into $y - y_1 = m_{\\perp}(x - x_1)$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_2_3_1",
+      "title": "Finding the Equation of a Parallel Line",
+      "difficulty": "Fluency",
+      "problem": "Find the equation of the straight line passing through $(3, -2)$ that is parallel to $4x - 2y = 9$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Rearrange $4x - 2y = 9$ into gradient-intercept form $y = mx + c$ to find its gradient.",
+          "working": "$$2y = 4x - 9 \\implies y = 2x - \\frac{9}{2} \\implies m_1 = 2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Since the required line is parallel, its gradient is $m_2 = m_1 = 2$. Substitute $m = 2$ and $(3, -2)$ into $y - y_1 = m(x - x_1)$.",
+          "working": "$$y - (-2) = 2(x - 3) \\implies y + 2 = 2x - 6 \\implies y = 2x - 8$$"
+        }
+      ],
+      "final_answer": "$y = 2x - 8$",
+      "now_you_try": {
+        "problem": "Find the equation of the straight line passing through $(-2, 5)$ that is parallel to $6x + 2y = 7$.",
+        "hint": "Rearranging $6x + 2y = 7$ gives $y = -3x + \\frac{7}{2}$, so $m = -3$.",
+        "working_summary": "$y - 5 = -3(x - (-2)) = -3x - 6 \\implies y = -3x - 1$.",
+        "answer": "$y = -3x - 1$"
+      }
+    },
+    {
+      "id": "WE10_2_3_2",
+      "title": "Finding the Equation of a Perpendicular Line",
+      "difficulty": "Understanding",
+      "problem": "Find the equation of the line passing through $(6, 1)$ that is perpendicular to $y = -\\frac{3}{2}x + 4$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Identify the gradient of the given line $m_1 = -\\frac{3}{2}$ and take its negative reciprocal to find $m_{\\perp}$.",
+          "working": "$$m_{\\perp} = -\\frac{1}{-3/2} = \\frac{2}{3}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $m_{\\perp} = \\frac{2}{3}$ and $(x_1, y_1) = (6, 1)$ into $y - y_1 = m(x - x_1)$ and simplify.",
+          "working": "$$y - 1 = \\frac{2}{3}(x - 6) \\implies y - 1 = \\frac{2}{3}x - 4 \\implies y = \\frac{2}{3}x - 3$$"
+        }
+      ],
+      "final_answer": "$y = \\frac{2}{3}x - 3$",
+      "now_you_try": {
+        "problem": "Find the equation of the line passing through $(4, -1)$ that is perpendicular to $y = \\frac{2}{5}x - 3$.",
+        "hint": "The negative reciprocal of $\\frac{2}{5}$ is $-\\frac{5}{2}$.",
+        "working_summary": "$y - (-1) = -\\frac{5}{2}(x - 4) = -\\frac{5}{2}x + 10 \\implies y = -\\frac{5}{2}x + 9$.",
+        "answer": "$y = -\\frac{5}{2}x + 9$"
+      }
+    },
+    {
+      "id": "WE10_2_3_3",
+      "title": "Finding the Perpendicular Bisector of a Line Segment",
+      "difficulty": "Problem-Solving",
+      "problem": "Find the equation of the perpendicular bisector of the line segment joining $A(1, 2)$ and $B(5, 10)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the midpoint $M$ of $A(1, 2)$ and $B(5, 10)$.",
+          "working": "$$M = \\left(\\frac{1 + 5}{2},\\, \\frac{2 + 10}{2}\\right) = (3, 6)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Find the gradient of segment $AB$ and then the perpendicular gradient $m_{\\perp}$.",
+          "working": "$$m_{AB} = \\frac{10 - 2}{5 - 1} = \\frac{8}{4} = 2 \\implies m_{\\perp} = -\\frac{1}{2}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Substitute $m_{\\perp} = -\\frac{1}{2}$ and the midpoint $M(3, 6)$ into $y - y_M = m_{\\perp}(x - x_M)$.",
+          "working": "$$y - 6 = -\\frac{1}{2}(x - 3) \\implies y = -\\frac{1}{2}x + \\frac{3}{2} + 6 = -\\frac{1}{2}x + \\frac{15}{2}$$"
+        }
+      ],
+      "final_answer": "$y = -\\frac{1}{2}x + \\frac{15}{2}$ (or $x + 2y = 15$)",
+      "now_you_try": {
+        "problem": "Find the equation of the perpendicular bisector of the line segment joining $P(2, 1)$ and $Q(6, 5)$.",
+        "hint": "Find the midpoint $M(4, 3)$ and the gradient $m_{PQ} = 1$, so $m_{\\perp} = -1$.",
+        "working_summary": "$M = (4, 3)$, $m_{PQ} = \\frac{5 - 1}{6 - 2} = 1 \\implies m_{\\perp} = -1$; $y - 3 = -1(x - 4) \\implies y = -x + 7$.",
+        "answer": "$y = -x + 7$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_2_3_1",
+      "title": "Taking the Reciprocal Without Flipping the Sign for Perpendicular Gradients",
+      "misconception": "Saying that a line perpendicular to $y = \\frac{2}{3}x + 1$ has gradient $+\\frac{3}{2}$ instead of $-\\frac{3}{2}$.",
+      "correct_concept": "Two positive gradients both slope upwards from left to right and can never meet at $90^\\circ$. Perpendicular gradients must have opposite signs so that $m_1 m_2 = -1$ ($\\frac{2}{3} \\times \\left(-\\frac{3}{2}\\right) = -1$).",
+      "incorrect_working": "$$m_1 = \\frac{2}{3} \\implies m_{\\perp} = \\frac{3}{2} \\quad (\\text{Incorrect: product is } +1, \\text{ not } -1)$$",
+      "correct_working": "$$m_1 = \\frac{2}{3} \\implies m_{\\perp} = -\\frac{3}{2} \\quad (\\text{Correct: product is } -1)$$",
+      "counter_example": "The lines $y = x$ ($m = 1$) and $y = -x$ ($m = -1$) bisect the quadrants at $90^\\circ$, and $1 \\times (-1) = -1$."
+    },
+    {
+      "id": "MISC_10_2_3_2",
+      "title": "Reading the Coefficient of $x$ in $ax + by = c$ as the Gradient",
+      "misconception": "Assuming the gradient of $3x + 4y = 12$ is $m = 3$.",
+      "correct_concept": "The coefficient of $x$ is the gradient ONLY when the equation is solved for $y$ in the form $y = mx + c$. Rearranging $3x + 4y = 12$ gives $4y = -3x + 12 \\implies y = -\\frac{3}{4}x + 3$, so $m = -\\frac{3}{4}$.",
+      "incorrect_working": "$$3x + 4y = 12 \\implies m = 3 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$3x + 4y = 12 \\implies y = -\\frac{3}{4}x + 3 \\implies m = -\\frac{3}{4} \\quad (\\text{Correct})$$",
+      "counter_example": "The line $3x + 4y = 12$ passes through $(0, 3)$ and $(4, 0)$, giving gradient $\\frac{0 - 3}{4 - 0} = -\\frac{3}{4} \\neq 3$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_2_3_Q1",
+        "question": "Find the equation of the line passing through $(2, 7)$ that is parallel to $y = 3x - 4$.",
+        "difficulty": "Easy",
+        "context": "Parallel Line Equation",
+        "final_answer": "$y = 3x + 1$",
+        "step_by_step_solution": [
+          "The parallel gradient is $m = 3$.",
+          "Substitute $m = 3$ and $(2, 7)$ into $y - y_1 = m(x - x_1)$: $y - 7 = 3(x - 2) \\implies y = 3x + 1$."
+        ]
+      },
+      {
+        "id": "10_2_3_Q2",
+        "question": "Find the equation of the line passing through $(-4, 3)$ that is perpendicular to $y = 2x + 5$.",
+        "difficulty": "Easy",
+        "context": "Perpendicular Line Equation",
+        "final_answer": "$y = -\\frac{1}{2}x + 1$",
+        "step_by_step_solution": [
+          "The gradient of $y = 2x + 5$ is $m_1 = 2$, so $m_{\\perp} = -\\frac{1}{2}$.",
+          "Substitute $m_{\\perp} = -\\frac{1}{2}$ and $(-4, 3)$: $y - 3 = -\\frac{1}{2}(x + 4) = -\\frac{1}{2}x - 2 \\implies y = -\\frac{1}{2}x + 1$."
+        ]
+      },
+      {
+        "id": "10_2_3_Q3",
+        "question": "Determine whether the lines $2x - 3y = 6$ and $6x + 4y = 12$ are parallel, perpendicular, or neither.",
+        "difficulty": "Medium",
+        "context": "Classifying Line Pairs",
+        "final_answer": "Perpendicular ($m_1 = \\frac{2}{3}$, $m_2 = -\\frac{3}{2}$, and $m_1 m_2 = -1$)",
+        "step_by_step_solution": [
+          "Rearrange the first line: $3y = 2x - 6 \\implies y = \\frac{2}{3}x - 2$, so $m_1 = \\frac{2}{3}$.",
+          "Rearrange the second line: $4y = -6x + 12 \\implies y = -\\frac{3}{2}x + 3$, so $m_2 = -\\frac{3}{2}$.",
+          "Since $m_1 m_2 = \\frac{2}{3} \\times \\left(-\\frac{3}{2}\\right) = -1$, the lines are perpendicular."
+        ]
+      },
+      {
+        "id": "10_2_3_Q4",
+        "question": "Find the value of $k$ if the line joining $(1, 3)$ and $(4, k)$ is perpendicular to a line with gradient $-\\frac{3}{5}$.",
+        "difficulty": "Medium",
+        "context": "Unknown Coordinate from Perpendicularity",
+        "final_answer": "$k = 8$",
+        "step_by_step_solution": [
+          "The gradient perpendicular to $-\\frac{3}{5}$ is $m_{\\perp} = \\frac{5}{3}$.",
+          "Set the gradient between $(1, 3)$ and $(4, k)$ equal to $\\frac{5}{3}$: $\\frac{k - 3}{4 - 1} = \\frac{5}{3} \\implies \\frac{k - 3}{3} = \\frac{5}{3} \\implies k = 8$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_2_3_Q5",
+        "question": "Two emergency mobile towers are located at $A(-2, 4)$ and $B(4, -2)$ on a Cartesian grid (in kilometres). The boundary line where mobile phones switch from Tower A to Tower B is the perpendicular bisector of $AB$. Find its equation.",
+        "difficulty": "Medium",
+        "context": "Voronoi Boundary / Perpendicular Bisector",
+        "final_answer": "$y = x$",
+        "step_by_step_solution": [
+          "Find the midpoint $M$ of $A(-2, 4)$ and $B(4, -2)$: $M = \\left(\\frac{-2 + 4}{2}, \\frac{4 - 2}{2}\\right) = (1, 1)$.",
+          "Find $m_{AB} = \\frac{-2 - 4}{4 - (-2)} = \\frac{-6}{6} = -1$, so $m_{\\perp} = -\\frac{1}{-1} = 1$.",
+          "Substitute $m_{\\perp} = 1$ and $M(1, 1)$: $y - 1 = 1(x - 1) \\implies y = x$."
+        ]
+      },
+      {
+        "id": "10_2_3_Q6",
+        "question": "Triangle $ABC$ has vertices $A(1, 1)$, $B(4, 5)$, and $C(9, 2)$. By calculating the gradients of $AB$ and $BC$, determine whether $\\triangle ABC$ is a right-angled triangle at $B$. Wait—let us check $C(8, 2)$: for $A(1, 1)$, $B(4, 5)$, and $C(8, 2)$, calculate $m_{AB}$ and $m_{BC}$ and prove that $\\angle ABC = 90^\\circ$.",
+        "difficulty": "Medium",
+        "context": "Proving a Right Angle via Gradients",
+        "final_answer": "$m_{AB} = \\frac{4}{3}$ and $m_{BC} = -\\frac{3}{4}$; since $m_{AB} \\times m_{BC} = -1$, $AB \\perp BC$ and $\\angle ABC = 90^\\circ$",
+        "step_by_step_solution": [
+          "Calculate the gradient of $AB$: $m_{AB} = \\frac{5 - 1}{4 - 1} = \\frac{4}{3}$.",
+          "Calculate the gradient of $BC$: $m_{BC} = \\frac{2 - 5}{8 - 4} = -\\frac{3}{4}$.",
+          "Multiply the gradients: $m_{AB} \\times m_{BC} = \\frac{4}{3} \\times \\left(-\\frac{3}{4}\\right) = -1$, proving $AB \\perp BC$ and $\\angle ABC = 90^\\circ$."
+        ]
+      },
+      {
+        "id": "10_2_3_Q7",
+        "question": "A gas pipeline follows the line $y = 2x + 1$. A farmhouse at $F(5, 1)$ needs to be connected to the pipeline by the shortest possible straight pipe. Find: (a) the equation of the connecting pipe, and (b) the coordinates of the junction point $J$ on the pipeline.",
+        "difficulty": "Challenging",
+        "context": "Shortest Distance from a Point to a Line",
+        "final_answer": "(a) $y = -\\frac{1}{2}x + \\frac{7}{2}$, (b) $J(1, 3)$",
+        "step_by_step_solution": [
+          "The shortest path from a point to a line is perpendicular to the line, so the connecting pipe has gradient $m_{\\perp} = -\\frac{1}{2}$.",
+          "Using $F(5, 1)$: $y - 1 = -\\frac{1}{2}(x - 5) \\implies y = -\\frac{1}{2}x + \\frac{7}{2}$.",
+          "Solve simultaneously with $y = 2x + 1$: $2x + 1 = -\\frac{1}{2}x + \\frac{7}{2} \\implies \\frac{5}{2}x = \\frac{5}{2} \\implies x = 1$, and $y = 2(1) + 1 = 3$, so $J = (1, 3)$."
+        ]
+      },
+      {
+        "id": "10_2_3_Q8",
+        "question": "Using the junction point $J(1, 3)$ from Question `10_2_3_Q7`, calculate the exact shortest distance from the farmhouse $F(5, 1)$ to the pipeline $y = 2x + 1$.",
+        "difficulty": "Challenging",
+        "context": "Exact Perpendicular Distance",
+        "final_answer": "$2\\sqrt{5}$ units",
+        "step_by_step_solution": [
+          "Apply the distance formula between $F(5, 1)$ and $J(1, 3)$: $d = \\sqrt{(5 - 1)^2 + (1 - 3)^2}$.",
+          "$d = \\sqrt{16 + 4} = \\sqrt{20} = 2\\sqrt{5}$ units."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_2_3_Q9",
+        "question": "Explain why the condition $m_1 m_2 = -1$ cannot be used to test whether the lines $x = 4$ and $y = -2$ are perpendicular, and explain why they are nevertheless perpendicular.",
+        "difficulty": "Medium",
+        "context": "Horizontal and Vertical Perpendicularity",
+        "final_answer": "$y = -2$ has gradient $0$ and $x = 4$ has an undefined gradient, so $m_1 m_2$ cannot be evaluated; however, a vertical line and a horizontal line always intersect at $90^\\circ$ at $(4, -2)$",
+        "step_by_step_solution": [
+          "The horizontal line $y = -2$ has gradient $m_1 = 0$, while the vertical line $x = 4$ has an undefined gradient (division by zero).",
+          "Because $m_2$ is undefined, the product $m_1 m_2$ is not defined, but geometrically any horizontal line (parallel to the $x$-axis) and vertical line (parallel to the $y$-axis) meet at $90^\\circ$."
+        ]
+      },
+      {
+        "id": "10_2_3_Q10",
+        "question": "Four points in the plane are $A(1, 2)$, $B(5, 4)$, $C(7, 8)$, and $D(3, 6)$. Use gradients to prove that $ABCD$ is a parallelogram.",
+        "difficulty": "Medium",
+        "context": "Coordinate Proof of a Parallelogram",
+        "final_answer": "$m_{AB} = m_{DC} = \\frac{1}{2}$ and $m_{BC} = m_{AD} = 2$; since both pairs of opposite sides are parallel, $ABCD$ is a parallelogram",
+        "step_by_step_solution": [
+          "Calculate the gradients of opposite sides $AB$ and $DC$: $m_{AB} = \\frac{4 - 2}{5 - 1} = \\frac{2}{4} = \\frac{1}{2}$ and $m_{DC} = \\frac{8 - 6}{7 - 3} = \\frac{2}{4} = \\frac{1}{2}$, so $AB \\parallel DC$.",
+          "Calculate the gradients of opposite sides $BC$ and $AD$: $m_{BC} = \\frac{8 - 4}{7 - 5} = \\frac{4}{2} = 2$ and $m_{AD} = \\frac{6 - 2}{3 - 1} = \\frac{4}{2} = 2$, so $BC \\parallel AD$.",
+          "Since both pairs of opposite sides are parallel, $ABCD$ is a parallelogram."
+        ]
+      },
+      {
+        "id": "10_2_3_Q11",
+        "question": "For the parallelogram $ABCD$ in Question `10_2_3_Q10` with $A(1, 2)$, $B(5, 4)$, $C(7, 8)$, and $D(3, 6)$, find the gradients of the diagonals $AC$ and $BD$ and prove that the diagonals are perpendicular (showing $ABCD$ is a rhombus).",
+        "difficulty": "Challenging",
+        "context": "Perpendicular Diagonals of a Rhombus",
+        "final_answer": "$m_{AC} = 1$ and $m_{BD} = -1$; since $m_{AC} \\times m_{BD} = -1$, $AC \\perp BD$ and $ABCD$ is a rhombus",
+        "step_by_step_solution": [
+          "Gradient of diagonal $AC$: $m_{AC} = \\frac{8 - 2}{7 - 1} = \\frac{6}{6} = 1$.",
+          "Gradient of diagonal $BD$: $m_{BD} = \\frac{6 - 4}{3 - 5} = \\frac{2}{-2} = -1$.",
+          "Since $m_{AC} \\times m_{BD} = 1 \\times (-1) = -1$, the diagonals intersect at $90^\\circ$, proving $ABCD$ is a rhombus."
+        ]
+      },
+      {
+        "id": "10_2_3_Q12",
+        "question": "Prove algebraically that for any non-zero constants $a$ and $b$, the straight lines $ax + by = c_1$ and $bx - ay = c_2$ are always perpendicular.",
+        "difficulty": "Extension",
+        "context": "General Standard-Form Perpendicularity Proof",
+        "final_answer": "Their gradients are $m_1 = -\\frac{a}{b}$ and $m_2 = \\frac{b}{a}$, whose product is $m_1 m_2 = -1$",
+        "step_by_step_solution": [
+          "Rearrange $ax + by = c_1$ to solve for $y$: $y = -\\frac{a}{b}x + \\frac{c_1}{b}$, which has gradient $m_1 = -\\frac{a}{b}$.",
+          "Rearrange $bx - ay = c_2$ to solve for $y$: $y = \\frac{b}{a}x - \\frac{c_2}{a}$, which has gradient $m_2 = \\frac{b}{a}$.",
+          "Multiply the gradients: $m_1 m_2 = \\left(-\\frac{a}{b}\\right)\\left(\\frac{b}{a}\\right) = -1$, proving the lines are always perpendicular."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_2_3_1",
+      "description": "Worked Example 10.2.3.1 y-intercept",
+      "expression": "-2 - 2*3",
+      "expected": -8
+    },
+    {
+      "id": "NYT10_2_3_1",
+      "description": "Now You Try 10.2.3.1 y-intercept",
+      "expression": "5 - (-3)*(-2)",
+      "expected": -1
+    },
+    {
+      "id": "WE10_2_3_2m",
+      "description": "Worked Example 10.2.3.2 perpendicular gradient",
+      "expression": "-1 / Rational(-3, 2)",
+      "expected": "Rational(2, 3)"
+    },
+    {
+      "id": "WE10_2_3_2c",
+      "description": "Worked Example 10.2.3.2 y-intercept",
+      "expression": "1 - Rational(2, 3)*6",
+      "expected": -3
+    },
+    {
+      "id": "NYT10_2_3_2",
+      "description": "Now You Try 10.2.3.2 y-intercept",
+      "expression": "-1 - Rational(-5, 2)*4",
+      "expected": 9
+    },
+    {
+      "id": "WE10_2_3_3c",
+      "description": "Worked Example 10.2.3.3 y-intercept",
+      "expression": "6 - Rational(-1, 2)*3",
+      "expected": "Rational(15, 2)"
+    },
+    {
+      "id": "NYT10_2_3_3",
+      "description": "Now You Try 10.2.3.3 y-intercept",
+      "expression": "3 - (-1)*4",
+      "expected": 7
+    },
+    {
+      "id": "EX10_2_3_Q1",
+      "description": "Exercise 10.2.3 Q1 y-intercept",
+      "expression": "7 - 3*2",
+      "expected": 1
+    },
+    {
+      "id": "EX10_2_3_Q2",
+      "description": "Exercise 10.2.3 Q2 y-intercept",
+      "expression": "3 - Rational(-1, 2)*(-4)",
+      "expected": 1
+    },
+    {
+      "id": "EX10_2_3_Q3",
+      "description": "Exercise 10.2.3 Q3 gradient product",
+      "expression": "Rational(2, 3) * Rational(-3, 2)",
+      "expected": -1
+    },
+    {
+      "id": "EX10_2_3_Q4",
+      "description": "Exercise 10.2.3 Q4 k value",
+      "expression": "solve(Eq((k - 3)/(4 - 1), Rational(5, 3)), k)[0]",
+      "expected": 8
+    },
+    {
+      "id": "EX10_2_3_Q6",
+      "description": "Exercise 10.2.3 Q6 perpendicular check",
+      "expression": "((5 - 1)/(4 - 1)) * ((2 - 5)/(8 - 4))",
+      "expected": -1
+    },
+    {
+      "id": "EX10_2_3_Q7x",
+      "description": "Exercise 10.2.3 Q7 junction x",
+      "expression": "solve(Eq(2*x + 1, Rational(-1, 2)*x + Rational(7, 2)), x)[0]",
+      "expected": 1
+    },
+    {
+      "id": "EX10_2_3_Q8",
+      "description": "Exercise 10.2.3 Q8 distance",
+      "expression": "simplify(sqrt((5 - 1)**2 + (1 - 3)**2) - 2*sqrt(5))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_2_3_Q11",
+      "description": "Exercise 10.2.3 Q11 rhombus diagonals product",
+      "expression": "((8 - 2)/(7 - 1)) * ((6 - 4)/(3 - 5))",
+      "expected": -1
+    },
+    {
+      "id": "EX10_2_3_Q12",
+      "description": "Exercise 10.2.3 Q12 general perpendicular product",
+      "expression": "simplify((-a/b) * (b/a))",
+      "expected": -1
+    }
+  ]
+}

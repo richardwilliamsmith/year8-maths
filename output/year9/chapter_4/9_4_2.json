@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "section_id": "9_4_2",
+    "section_code": "4B",
+    "chapter_number": 4,
+    "chapter_title": "Linear Equations, Inequalities, and Coordinate Geometry",
+    "title": "Gradient, Midpoint, and Distance on the Cartesian Plane",
+    "vcaa_code": "VC2M9A03",
+    "vcaa_description": "Find the gradient of a line segment, the midpoint of a line segment and the distance between 2 points on the Cartesian plane, using a range of strategies, including digital tools.",
+    "strand": "Algebra",
+    "target_mastery": "Calculate the gradient $m$, midpoint $M$, and exact length $d$ of a line segment joining $(x_1, y_1)$ and $(x_2, y_2)$ on the Cartesian plane.",
+    "prerequisites": [
+      "Plotting coordinates and finding rise/run on the Cartesian plane (Year 8 VC2M8A03)",
+      "Pythagoras' theorem $c^2 = a^2 + b^2$ and simplifying surds (Year 8 VC2M8M06, Section 1A)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Line segment (Interval)",
+        "definition": "The part of a straight line bounded by two distinct endpoints $A(x_1, y_1)$ and $B(x_2, y_2)$."
+      },
+      {
+        "term": "Gradient ($m$)",
+        "definition": "The rate of change of $y$ with respect to $x$ along a line segment, given by $m = \\frac{y_2 - y_1}{x_2 - x_1}$."
+      },
+      {
+        "term": "Midpoint ($M$)",
+        "definition": "The point on a line segment that is equidistant from both endpoints, whose coordinates are the averages of the endpoint coordinates."
+      },
+      {
+        "term": "Euclidean distance ($d$)",
+        "definition": "The straight-line length between two points $(x_1, y_1)$ and $(x_2, y_2)$, derived from Pythagoras' theorem."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_4_2_1",
+      "title": "The Gradient Formula",
+      "explanation": "For any two points $A(x_1, y_1)$ and $B(x_2, y_2)$ with $x_1 \\neq x_2$, the gradient $m$ measures the vertical rise per unit of horizontal run. Subtracting coordinates in either order gives the same gradient, provided the $x$- and $y$-coordinates are subtracted in the same direction.",
+      "formula_latex": "m = \\frac{\\text{rise}}{\\text{run}} = \\frac{y_2 - y_1}{x_2 - x_1} \\quad (x_1 \\neq x_2)",
+      "callout_title": "Keep Coordinate Subtraction Order Consistent",
+      "callout_rule": "Label your points $(x_1, y_1)$ and $(x_2, y_2)$ before substituting, and place brackets around negative coordinates."
+    },
+    {
+      "id": "theory_9_4_2_2",
+      "title": "The Midpoint Formula",
+      "explanation": "The midpoint $M$ of the line segment joining $A(x_1, y_1)$ and $B(x_2, y_2)$ lies halfway horizontally and halfway vertically between $A$ and $B$. Its $x$-coordinate is the mean of $x_1$ and $x_2$, and its $y$-coordinate is the mean of $y_1$ and $y_2$.",
+      "formula_latex": "M = \\left(\\frac{x_1 + x_2}{2},\\; \\frac{y_1 + y_2}{2}\\right)",
+      "callout_title": "Midpoint Means Average the Coordinates",
+      "callout_rule": "Add the $x$-coordinates and divide by $2$; add the $y$-coordinates and divide by $2$. Never subtract when finding a midpoint."
+    },
+    {
+      "id": "theory_9_4_2_3",
+      "title": "The Distance Formula via Pythagoras' Theorem",
+      "explanation": "Constructing a right-angled triangle with horizontal leg $|x_2 - x_1|$ and vertical leg $|y_2 - y_1|$ between $A(x_1, y_1)$ and $B(x_2, y_2)$ allows us to apply Pythagoras' theorem $d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2$ to find the exact straight-line distance $d$.",
+      "formula_latex": "d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}",
+      "callout_title": "Squares of Differences Are Always Non-Negative",
+      "callout_rule": "Even when $x_2 - x_1$ or $y_2 - y_1$ is negative, its square is positive: $(-6)^2 = +36$, never $-36$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_4_2_1",
+      "title": "Calculating Gradient and Midpoint of a Line Segment",
+      "difficulty": "Fluency",
+      "problem": "For the line segment joining $A(-3, 7)$ and $B(5, -9)$, find (a) the gradient $m$ of $AB$ and (b) the coordinates of the midpoint $M$ of $AB$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Substitute $(x_1, y_1) = (-3, 7)$ and $(x_2, y_2) = (5, -9)$ into the gradient formula $m = \\frac{y_2 - y_1}{x_2 - x_1}$.",
+          "working": "$$m = \\frac{-9 - 7}{5 - (-3)} = \\frac{-16}{8} = -2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Average the $x$-coordinates and the $y$-coordinates to find the midpoint $M$.",
+          "working": "$$M = \\left(\\frac{-3 + 5}{2},\\; \\frac{7 + (-9)}{2}\\right) = \\left(\\frac{2}{2},\\; \\frac{-2}{2}\\right) = (1, -1)$$"
+        }
+      ],
+      "final_answer": "(a) $m = -2$, (b) $M(1, -1)$",
+      "now_you_try": {
+        "problem": "For the points $P(-4, -2)$ and $Q(6, 13)$, find (a) the gradient of $PQ$ and (b) the midpoint of $PQ$.",
+        "hint": "Use $m = \\frac{13 - (-2)}{6 - (-4)}$ and $M = \\left(\\frac{-4 + 6}{2}, \\frac{-2 + 13}{2}\\right)$.",
+        "working_summary": "(a) $m = \\frac{15}{10} = \\frac{3}{2}$; (b) $M = (1, 5.5)$ or $\\left(1, \\frac{11}{2}\\right)$.",
+        "answer": "(a) $m = \\frac{3}{2}$, (b) $M\\left(1, \\frac{11}{2}\\right)$"
+      }
+    },
+    {
+      "id": "WE9_4_2_2",
+      "title": "Finding Exact and Decimal Distance Between Two Points",
+      "difficulty": "Understanding",
+      "problem": "Find the exact distance between the points $C(-2, 5)$ and $D(4, -3)$, and also state the exact simplified surd distance between $E(1, 2)$ and $F(7, 5)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Substitute $C(-2, 5)$ and $D(4, -3)$ into $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$.",
+          "working": "$$d_{CD} = \\sqrt{(4 - (-2))^2 + (-3 - 5)^2} = \\sqrt{6^2 + (-8)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $E(1, 2)$ and $F(7, 5)$ into the distance formula and simplify the surd by extracting the largest square factor.",
+          "working": "$$d_{EF} = \\sqrt{(7 - 1)^2 + (5 - 2)^2} = \\sqrt{6^2 + 3^2} = \\sqrt{36 + 9} = \\sqrt{45} = 3\\sqrt{5}$$"
+        }
+      ],
+      "final_answer": "$d_{CD} = 10$, $d_{EF} = 3\\sqrt{5}$",
+      "now_you_try": {
+        "problem": "Find the exact distance between $A(-1, -4)$ and $B(4, 8)$.",
+        "hint": "Calculate $\\sqrt{(4 - (-1))^2 + (8 - (-4))^2}$.",
+        "working_summary": "$d = \\sqrt{5^2 + 12^2} = \\sqrt{25 + 144} = \\sqrt{169} = 13$.",
+        "answer": "$13$"
+      }
+    },
+    {
+      "id": "WE9_4_2_3",
+      "title": "Finding an Unknown Endpoint from the Midpoint",
+      "difficulty": "Problem-Solving",
+      "problem": "The midpoint of the line segment $AB$ is $M(3, -2)$. If point $A$ has coordinates $(-4, 5)$, find the coordinates of point $B(x, y)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Set up two separate equations using the midpoint formula $\\left(\\frac{-4 + x}{2}, \\frac{5 + y}{2}\\right) = (3, -2)$.",
+          "working": "$$\\frac{-4 + x}{2} = 3 \\quad \\text{and} \\quad \\frac{5 + y}{2} = -2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply both equations by $2$ and solve for $x$ and $y$.",
+          "working": "$$-4 + x = 6 \\implies x = 10$$\n$$5 + y = -4 \\implies y = -9 \\implies B(10, -9)$$"
+        }
+      ],
+      "final_answer": "$B(10, -9)$",
+      "now_you_try": {
+        "problem": "The midpoint of segment $PQ$ is $M(-1, 4)$. Given $P(5, -3)$, find the coordinates of $Q(x, y)$.",
+        "hint": "Solve $\\frac{5 + x}{2} = -1$ and $\\frac{-3 + y}{2} = 4$.",
+        "working_summary": "$5 + x = -2 \\implies x = -7$; $-3 + y = 8 \\implies y = 11$.",
+        "answer": "$Q(-7, 11)$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_4_2_1",
+      "title": "Subtracting Instead of Adding in the Midpoint Formula",
+      "misconception": "Confusing the midpoint formula with the gradient/distance formulas and calculating $\\left(\\frac{x_2 - x_1}{2}, \\frac{y_2 - y_1}{2}\\right)$.",
+      "correct_concept": "A midpoint is an average (mean) of two positions, so the coordinates are added before dividing by $2$: $\\left(\\frac{x_1 + x_2}{2}, \\frac{y_1 + y_2}{2}\\right)$.",
+      "incorrect_working": "$$\\text{Midpoint of } (2, 6) \\text{ and } (8, 10): \\quad \\left(\\frac{8 - 2}{2}, \\frac{10 - 6}{2}\\right) = (3, 2) \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$M = \\left(\\frac{2 + 8}{2}, \\frac{6 + 10}{2}\\right) = (5, 8)$$",
+      "counter_example": "The number halfway between $2$ and $8$ is $5$, not $3$."
+    },
+    {
+      "id": "misc_9_4_2_2",
+      "title": "Squaring Negative Numbers Incorrectly on a Calculator",
+      "misconception": "Typing $-8^2$ into a calculator and obtaining $-64$ inside the distance formula.",
+      "correct_concept": "In Python and scientific calculators, exponentiation binds tighter than negation, so $-8^2 = -(8^2) = -64$, whereas $(-8)^2 = (-8) \\times (-8) = +64$. Distance components squared are always positive.",
+      "incorrect_working": "$$d = \\sqrt{6^2 + (-8)^2} = \\sqrt{36 - 64} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$d = \\sqrt{6^2 + (-8)^2} = \\sqrt{36 + 64} = \\sqrt{100} = 10$$",
+      "counter_example": "A right-angled triangle with legs $6$ and $8$ has hypotenuse $10$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_4_2_Q1",
+        "question": "Find the gradient and midpoint of the line segment joining $A(2, -5)$ and $B(10, 11)$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$m = 2$, $M(6, 3)$",
+        "step_by_step_solution": [
+          "Calculate the gradient: $m = \\frac{11 - (-5)}{10 - 2} = \\frac{16}{8} = 2$.",
+          "Calculate the midpoint: $M = \\left(\\frac{2 + 10}{2}, \\frac{-5 + 11}{2}\\right) = (6, 3)$."
+        ]
+      },
+      {
+        "id": "9_4_2_Q2",
+        "question": "Find the exact distance between the points $(-5, -2)$ and $(7, 3)$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$13$",
+        "step_by_step_solution": [
+          "Apply the distance formula: $d = \\sqrt{(7 - (-5))^2 + (3 - (-2))^2}$.",
+          "Simplify: $d = \\sqrt{12^2 + 5^2} = \\sqrt{144 + 25} = \\sqrt{169} = 13$."
+        ]
+      },
+      {
+        "id": "9_4_2_Q3",
+        "question": "Find the exact length of the line segment joining $P(-3, 4)$ and $Q(1, -4)$ in simplified surd form.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$4\\sqrt{5}$",
+        "step_by_step_solution": [
+          "Substitute into the distance formula: $d = \\sqrt{(1 - (-3))^2 + (-4 - 4)^2} = \\sqrt{4^2 + (-8)^2}$.",
+          "Simplify the surd: $d = \\sqrt{16 + 64} = \\sqrt{80} = \\sqrt{16 \\times 5} = 4\\sqrt{5}$."
+        ]
+      },
+      {
+        "id": "9_4_2_Q4",
+        "question": "The line segment joining $A(-2, k)$ and $B(4, 13)$ has a gradient of $3$. Find the value of $k$ and the midpoint of $AB$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$k = -5$, $M(1, 4)$",
+        "step_by_step_solution": [
+          "Use the gradient formula: $\\frac{13 - k}{4 - (-2)} = 3 \\implies \\frac{13 - k}{6} = 3 \\implies 13 - k = 18 \\implies k = -5$.",
+          "With $A(-2, -5)$ and $B(4, 13)$, the midpoint is $M = \\left(\\frac{-2 + 4}{2}, \\frac{-5 + 13}{2}\\right) = (1, 4)$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_4_2_Q5",
+        "question": "On a Cartesian grid of Melbourne (where $1\\text{ unit} = 1\\text{ km}$), a rescue helicopter base is at $H(-3, 2)$ and a vessel in Port Phillip Bay is at $V(6, -10)$. (a) Find the straight-line distance from the base to the vessel. (b) A refuelling buoy is located at the midpoint of $HV$. State its coordinates.",
+        "difficulty": "Medium",
+        "context": "Marine Navigation",
+        "final_answer": "(a) $15\\text{ km}$, (b) $(1.5, -4)$",
+        "step_by_step_solution": [
+          "Calculate the distance: $d = \\sqrt{(6 - (-3))^2 + (-10 - 2)^2} = \\sqrt{9^2 + (-12)^2} = \\sqrt{81 + 144} = \\sqrt{225} = 15\\text{ km}$.",
+          "Calculate the midpoint: $M = \\left(\\frac{-3 + 6}{2}, \\frac{2 + (-10)}{2}\\right) = (1.5, -4)$."
+        ]
+      },
+      {
+        "id": "9_4_2_Q6",
+        "question": "A circle has diameter $AB$, where $A(-1, 2)$ and $B(7, 8)$. Find (a) the coordinates of the centre $C$ of the circle and (b) the exact radius $r$ of the circle.",
+        "difficulty": "Medium",
+        "context": "Circle Geometry on the Plane",
+        "final_answer": "(a) $C(3, 5)$, (b) $r = 5$",
+        "step_by_step_solution": [
+          "The centre $C$ is the midpoint of diameter $AB$: $C = \\left(\\frac{-1 + 7}{2}, \\frac{2 + 8}{2}\\right) = (3, 5)$.",
+          "The radius is the distance from $C(3, 5)$ to $B(7, 8)$: $r = \\sqrt{(7 - 3)^2 + (8 - 5)^2} = \\sqrt{16 + 9} = \\sqrt{25} = 5$."
+        ]
+      },
+      {
+        "id": "9_4_2_Q7",
+        "question": "A triangle has vertices $P(0, 0)$, $Q(6, 8)$, and $R(12, 0)$. Calculate the perimeter of $\\triangle PQR$.",
+        "difficulty": "Challenging",
+        "context": "Geometric Perimeter",
+        "final_answer": "$32\\text{ units}$",
+        "step_by_step_solution": [
+          "Find each side length: $PQ = \\sqrt{6^2 + 8^2} = 10$, $QR = \\sqrt{(12 - 6)^2 + (0 - 8)^2} = \\sqrt{36 + 64} = 10$, and $PR = 12 - 0 = 12$.",
+          "Add the three side lengths: $\\text{Perimeter} = 10 + 10 + 12 = 32\\text{ units}$."
+        ]
+      },
+      {
+        "id": "9_4_2_Q8",
+        "question": "The distance between the points $A(1, 3)$ and $B(x, 11)$ is $10\\text{ units}$. Find the two possible values of $x$.",
+        "difficulty": "Challenging",
+        "context": "Coordinate Equations",
+        "final_answer": "$x = 7$ or $x = -5$",
+        "step_by_step_solution": [
+          "Use $d^2 = 10^2$: $(x - 1)^2 + (11 - 3)^2 = 100 \\implies (x - 1)^2 + 64 = 100 \\implies (x - 1)^2 = 36$.",
+          "Take the square root of both sides: $x - 1 = 6$ or $x - 1 = -6$, giving $x = 7$ or $x = -5$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_4_2_Q9",
+        "question": "Prove that the triangle with vertices $A(1, 1)$, $B(4, 5)$, and $C(8, 2)$ is an isosceles right-angled triangle.",
+        "difficulty": "Challenging",
+        "context": "Geometric Proof",
+        "final_answer": "$AB = BC = 5$ and $AC = 5\\sqrt{2}$, so $AB^2 + BC^2 = 25 + 25 = 50 = AC^2$, proving $\\triangle ABC$ is isosceles and right-angled at $B$",
+        "step_by_step_solution": [
+          "Calculate the squared lengths of the sides: $AB^2 = (4 - 1)^2 + (5 - 1)^2 = 9 + 16 = 25$, $BC^2 = (8 - 4)^2 + (2 - 5)^2 = 16 + 9 = 25$, and $AC^2 = (8 - 1)^2 + (2 - 1)^2 = 49 + 1 = 50$.",
+          "Since $AB = BC = 5$, the triangle is isosceles. Furthermore, $AB^2 + BC^2 = 25 + 25 = 50 = AC^2$, which satisfies the converse of Pythagoras' theorem with a right angle at $B$."
+        ]
+      },
+      {
+        "id": "9_4_2_Q10",
+        "question": "A quadrilateral $ABCD$ has vertices $A(1, 2)$, $B(6, 4)$, $C(9, 10)$, and $D(4, 8)$. Use the midpoint formula to show that the diagonals $AC$ and $BD$ bisect each other, and state what type of quadrilateral $ABCD$ must be.",
+        "difficulty": "Challenging",
+        "context": "Parallelogram Diagonals",
+        "final_answer": "Both diagonals share the same midpoint $(5, 6)$, so $ABCD$ is a parallelogram",
+        "step_by_step_solution": [
+          "Find the midpoint of diagonal $AC$: $M_{AC} = \\left(\\frac{1 + 9}{2}, \\frac{2 + 10}{2}\\right) = (5, 6)$.",
+          "Find the midpoint of diagonal $BD$: $M_{BD} = \\left(\\frac{6 + 4}{2}, \\frac{4 + 8}{2}\\right) = (5, 6)$. Because the midpoints coincide, the diagonals bisect each other and $ABCD$ is a parallelogram."
+        ]
+      },
+      {
+        "id": "9_4_2_Q11",
+        "question": "Explain why $\\frac{y_2 - y_1}{x_2 - x_1}$ and $\\frac{y_1 - y_2}{x_1 - x_2}$ always produce the same gradient for any non-vertical line segment.",
+        "difficulty": "Medium",
+        "context": "Algebraic Justification",
+        "final_answer": "Both numerator and denominator are multiplied by $-1$, and $\\frac{-1}{-1} = +1$",
+        "step_by_step_solution": [
+          "Note that $y_1 - y_2 = -(y_2 - y_1)$ and $x_1 - x_2 = -(x_2 - x_1)$.",
+          "Dividing the two gives $\\frac{-(y_2 - y_1)}{-(x_2 - x_1)} = \\frac{y_2 - y_1}{x_2 - x_1}$ because the factors of $-1$ cancel."
+        ]
+      },
+      {
+        "id": "9_4_2_Q12",
+        "question": "Point $P(x, 0)$ lies on the $x$-axis and is equidistant from $A(2, 4)$ and $B(8, 6)$. Find the coordinates of $P$.",
+        "difficulty": "Extension",
+        "context": "Equidistant Locus",
+        "final_answer": "$P\\left(\\frac{20}{3}, 0\\right)$",
+        "step_by_step_solution": [
+          "Equate the squared distances $PA^2 = PB^2$: $(x - 2)^2 + (0 - 4)^2 = (x - 8)^2 + (0 - 6)^2$.",
+          "Expand and solve: $x^2 - 4x + 4 + 16 = x^2 - 16x + 64 + 36 \\implies -4x + 20 = -16x + 100 \\implies 12x = 80 \\implies x = \\frac{80}{12} = \\frac{20}{3}$, so $P\\left(\\frac{20}{3}, 0\\right)$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_4_2_1a",
+      "description": "Worked Example 9.4.2.1(a) gradient",
+      "expression": "(-9 - 7) / (5 - (-3))",
+      "expected": -2
+    },
+    {
+      "id": "WE9_4_2_1b_x",
+      "description": "Worked Example 9.4.2.1(b) midpoint x",
+      "expression": "(-3 + 5) / 2",
+      "expected": 1
+    },
+    {
+      "id": "WE9_4_2_1b_y",
+      "description": "Worked Example 9.4.2.1(b) midpoint y",
+      "expression": "(7 + (-9)) / 2",
+      "expected": -1
+    },
+    {
+      "id": "NYT9_4_2_1a",
+      "description": "Now You Try 9.4.2.1(a) gradient",
+      "expression": "Rational(13 - (-2), 6 - (-4))",
+      "expected": "Rational(3, 2)"
+    },
+    {
+      "id": "WE9_4_2_2_CD",
+      "description": "Worked Example 9.4.2.2 distance CD",
+      "expression": "sqrt((4 - (-2))**2 + (-3 - 5)**2)",
+      "expected": 10
+    },
+    {
+      "id": "WE9_4_2_2_EF",
+      "description": "Worked Example 9.4.2.2 distance EF",
+      "expression": "sqrt((7 - 1)**2 + (5 - 2)**2)",
+      "expected": "3 * sqrt(5)"
+    },
+    {
+      "id": "NYT9_4_2_2",
+      "description": "Now You Try 9.4.2.2 distance AB",
+      "expression": "sqrt((4 - (-1))**2 + (8 - (-4))**2)",
+      "expected": 13
+    },
+    {
+      "id": "WE9_4_2_3_x",
+      "description": "Worked Example 9.4.2.3 endpoint B x-coordinate",
+      "expression": "2 * 3 - (-4)",
+      "expected": 10
+    },
+    {
+      "id": "WE9_4_2_3_y",
+      "description": "Worked Example 9.4.2.3 endpoint B y-coordinate",
+      "expression": "2 * (-2) - 5",
+      "expected": -9
+    },
+    {
+      "id": "EX9_4_2_Q2",
+      "description": "Exercise 9.4.2 Q2 distance",
+      "expression": "sqrt((7 - (-5))**2 + (3 - (-2))**2)",
+      "expected": 13
+    },
+    {
+      "id": "EX9_4_2_Q3",
+      "description": "Exercise 9.4.2 Q3 surd distance",
+      "expression": "sqrt((1 - (-3))**2 + (-4 - 4)**2)",
+      "expected": "4 * sqrt(5)"
+    },
+    {
+      "id": "EX9_4_2_Q4_k",
+      "description": "Exercise 9.4.2 Q4 value of k",
+      "expression": "13 - 3 * (4 - (-2))",
+      "expected": -5
+    },
+    {
+      "id": "EX9_4_2_Q5a",
+      "description": "Exercise 9.4.2 Q5(a) helicopter distance",
+      "expression": "sqrt((6 - (-3))**2 + (-10 - 2)**2)",
+      "expected": 15
+    },
+    {
+      "id": "EX9_4_2_Q6b",
+      "description": "Exercise 9.4.2 Q6(b) circle radius",
+      "expression": "sqrt((7 - 3)**2 + (8 - 5)**2)",
+      "expected": 5
+    },
+    {
+      "id": "EX9_4_2_Q7",
+      "description": "Exercise 9.4.2 Q7 triangle perimeter",
+      "expression": "sqrt(6**2 + 8**2) + sqrt(6**2 + (-8)**2) + 12",
+      "expected": 32
+    },
+    {
+      "id": "EX9_4_2_Q12",
+      "description": "Exercise 9.4.2 Q12 equidistant point x-coordinate",
+      "expression": "solve(Eq((x - 2)**2 + 16, (x - 8)**2 + 36), x)[0]",
+      "expected": "Rational(20, 3)"
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <title>Worksheet 6A (Standard) — Surface Area of Right Prisms and Cylinders</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 13mm 10mm 13mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 184mm;
+      height: 276mm;
+      margin: 0 auto;
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #111111;
+      background: #ffffff;
+      font-size: 9.5pt;
+      line-height: 1.38;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .no-print-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #141413;
+      color: #ffffff;
+      padding: 8px 14px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .print-btn {
+      background: #ffffff;
+      color: #141413;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 3px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    @media print {
+      .no-print-bar {
+        display: none !important;
+      }
+    }
+    .page-frame {
+      width: 100%;
+      height: 275mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .top-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5mm;
+    }
+    .ws-header {
+      border-bottom: 1.5pt solid #111111;
+      padding-bottom: 2mm;
+    }
+    .ws-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.4pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #4b4b4b;
+      margin-bottom: 1mm;
+    }
+    .ws-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 4mm;
+    }
+    .ws-main-title {
+      font-size: 13.5pt;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #111111;
+    }
+    .ws-code-pill {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff;
+      font-size: 9.8pt;
+      font-weight: 700;
+      padding: 0.4mm 2.1mm;
+      border-radius: 1mm;
+      margin-right: 2mm;
+      vertical-align: baseline;
+    }
+    .ws-tier-badge {
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: #111111;
+      background: #f3f2ee;
+      border: 0.9pt solid #111111;
+      padding: 0.4mm 2.2mm;
+      border-radius: 0.8mm;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .student-info-row {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr;
+      gap: 4mm;
+      margin-top: 2mm;
+      padding-top: 1.6mm;
+      border-top: 0.5pt solid #cccccc;
+      font-size: 8.4pt;
+      color: #333333;
+    }
+    .info-field {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5mm;
+    }
+    .info-line {
+      flex: 1;
+      border-bottom: 0.6pt solid #666666;
+      height: 3.3mm;
+    }
+    .ws-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8mm;
+    }
+    .ws-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f3f2ee;
+      border-left: 2.5pt solid #111111;
+      padding: 0.9mm 2.5mm;
+      margin-top: 0.4mm;
+    }
+    .ws-section-title {
+      font-size: 8.6pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #111111;
+    }
+    .ws-section-note {
+      font-size: 7.4pt;
+      color: #555555;
+      font-style: italic;
+    }
+    .fluency-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2mm;
+      padding: 0 1mm;
+    }
+    .fluency-q {
+      border-bottom: 0.4pt dashed #dad8d0;
+      padding-bottom: 1.8mm;
+    }
+    .fluency-q:last-child {
+      border-bottom: none;
+      padding-bottom: 0.4mm;
+    }
+    .q-stem {
+      display: flex;
+      gap: 1.8mm;
+      margin-bottom: 1.2mm;
+      font-weight: 600;
+      font-size: 9.2pt;
+    }
+    .q-num {
+      font-weight: 700;
+      min-width: 6.5mm;
+      color: #111111;
+    }
+    .fluency-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.3mm 2.8mm;
+      padding-left: 6.5mm;
+    }
+    .fluency-part {
+      display: flex;
+      align-items: baseline;
+      gap: 1.2mm;
+      font-size: 9.1pt;
+    }
+    .part-label {
+      font-weight: 600;
+      color: #444444;
+      font-size: 8.4pt;
+    }
+    .word-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.1mm;
+      padding: 0 1mm;
+    }
+    .word-q {
+      display: grid;
+      grid-template-columns: 7.5mm 1fr;
+      align-items: baseline;
+      padding-bottom: 1.8mm;
+      border-bottom: 0.4pt dashed #dad8d0;
+    }
+    .word-q:last-child {
+      border-bottom: none;
+      padding-bottom: 0.4mm;
+    }
+    .q-num-col {
+      font-weight: 700;
+      font-size: 9.2pt;
+      color: #111111;
+    }
+    .q-text-col {
+      font-size: 9.2pt;
+      text-align: justify;
+    }
+    .ws-footer {
+      border-top: 0.8pt solid #111111;
+      padding-top: 1.4mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.4pt;
+      color: #555555;
+    }
+    .katex {
+      font-size: 1.01em !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print-bar">
+        <span><strong>Year 9 Mathematics · Section 6A: Surface Area of Right Prisms and Cylinders</strong> (Standard Worksheet · Core)</span>
+        <button onclick="window.print()" class="print-btn">Print / Save as A4 PDF (Ctrl+P)</button>
+      </div>
+  <div class="page-frame">
+    <div class="top-content">
+      <header class="ws-header">
+        <div class="ws-meta-bar">
+          <span>Year 9 Mathematics · Victorian Curriculum v2.0 (VC2M9M02)</span>
+          <span>Chapter 6: Surface Area and Volume of Cylinders, Prisms, and Composite Solids</span>
+        </div>
+        <div class="ws-title-row">
+          <h1 class="ws-main-title">
+            <span class="ws-code-pill">6A</span>Surface Area of Right Prisms and Cylinders
+          </h1>
+          <span class="ws-tier-badge">Standard Worksheet · Core</span>
+        </div>
+        <div class="student-info-row">
+          <div class="info-field"><span>Name:</span><span class="info-line"></span></div>
+          <div class="info-field"><span>Class:</span><span class="info-line"></span></div>
+          <div class="info-field"><span>Date:</span><span class="info-line"></span></div>
+        </div>
+      </header>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part A · Fluency &amp; Skill Practice</span>
+          <span class="ws-section-note">Show complete step-by-step working in your workbook</span>
+        </div>
+        <div class="fluency-list">
+          
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q1.</span>
+            <span class="q-prompt">Find the total surface area of each right prism:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">Rectangular prism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mtext> cm</mtext><mo>×</mo><mn>4</mn><mtext> cm</mtext><mo>×</mo><mn>5</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">6\text{ cm} \times 4\text{ cm} \times 5\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> cm</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">Cube of side length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">8\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">Right-angled triangular prism with base legs <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mtext> cm</mtext><mo separator="true">,</mo><mn>4</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">3\text{ cm}, 4\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mord text"><span class="mord"> cm</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>, hypotenuse <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">5\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>, and length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">Isosceles triangular prism with base <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>, triangle height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">12\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">12</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>, slant sides <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>13</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">13\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">13</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>, and length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">15\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">15</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q2.</span>
+            <span class="q-prompt">Find the exact curved surface area (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>CSA</mtext><mo>=</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">\text{CSA} = 2\pi rh</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">CSA</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span></span></span></span>) and exact total surface area (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>TSA</mtext><mo>=</mo><mn>2</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">\text{TSA} = 2\pi r^2 + 2\pi rh</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">TSA</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span></span></span></span>) of each closed cylinder:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">Radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>3</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">r = 3\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>, height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>7</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">h = 7\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">Radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>5</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">r = 5\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mord text"><span class="mord"> m</span></span></span></span></span>, height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>12</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">h = 12\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">12</span><span class="mord text"><span class="mord"> m</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">Diameter <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>8</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">d = 8\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>, height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>10</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">h = 10\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">Diameter <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mo>=</mo><mn>12</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">d = 12\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">12</span><span class="mord text"><span class="mord"> m</span></span></span></span></span>, height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>9</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">h = 9\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">9</span><span class="mord text"><span class="mord"> m</span></span></span></span></span></span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q3.</span>
+            <span class="q-prompt">Find the exact total exterior surface area in terms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span></span></span></span> for each modified cylinder:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">Open-top cylindrical cup with radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">4\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>9</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">9\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">9</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">\pi r^2 + 2\pi rh</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span></span></span></span>)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">Hollow open-ended pipe (curved outer surface only) with radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>15</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">15\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">15</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">Solid half-cylinder (cut along its length) with radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">4\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mi>π</mi><mi>r</mi><mi>h</mi><mo>+</mo><mn>2</mn><mi>r</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">\pi r^2 + \pi rh + 2rh</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span></span></span></span>)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">Quarter-cylinder wedge with radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>π</mi><mi>r</mi><mi>h</mi><mo>+</mo><mn>2</mn><mi>r</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">\frac{1}{2}\pi r^2 + \frac{1}{2}\pi rh + 2rh</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span></span></span></span>)</span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q4.</span>
+            <span class="q-prompt">Find the unknown dimension in each solid given its surface area:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">Cube with total surface area <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>294</mn><msup><mtext> cm</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">294\text{ cm}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">294</span><span class="mord"><span class="mord text"><span class="mord"> cm</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> (find side length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span>)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">Cylinder with radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">5\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and curved surface area <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>90</mn><mi>π</mi><msup><mtext> cm</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">90\pi\text{ cm}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">90</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord text"><span class="mord"> cm</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> (find height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span>)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">Closed cylinder with radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">4\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and total surface area <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>112</mn><mi>π</mi><msup><mtext> cm</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">112\pi\text{ cm}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">112</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord text"><span class="mord"> cm</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> (find height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span>)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">Rectangular prism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mtext> cm</mtext><mo>×</mo><mn>5</mn><mtext> cm</mtext><mo>×</mo><mi>h</mi><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">8\text{ cm} \times 5\text{ cm} \times h\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">8</span><span class="mord text"><span class="mord"> cm</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mord text"><span class="mord"> cm</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> with total surface area <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>236</mn><msup><mtext> cm</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">236\text{ cm}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">236</span><span class="mord"><span class="mord text"><span class="mord"> cm</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> (find <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span>)</span>
+          </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part B · Problem-Solving &amp; Applications</span>
+          <span class="ws-section-note">Write clear mathematical statements with units</span>
+        </div>
+        <div class="word-list">
+          
+      <div class="q-block word-q">
+        <div class="q-num-col">Q5.</div>
+        <div class="q-text-col">A Corrugated steel water tank in regional Victoria is a closed cylinder with radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.0</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">2.0\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2.0</span><span class="mord text"><span class="mord"> m</span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3.0</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">3.0\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3.0</span><span class="mord text"><span class="mord"> m</span></span></span></span></span>. Calculate its exact total surface area in terms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span></span></span></span> and round to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> decimal places.</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q6.</div>
+        <div class="q-text-col">An A-frame garden shed is a triangular prism <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4.0</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">4.0\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4.0</span><span class="mord text"><span class="mord"> m</span></span></span></span></span> long. Its cross-section is an isosceles triangle with base <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3.0</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">3.0\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3.0</span><span class="mord text"><span class="mord"> m</span></span></span></span></span>, perpendicular height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.0</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">2.0\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2.0</span><span class="mord text"><span class="mord"> m</span></span></span></span></span>, and two sloping roof sides each <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2.5</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">2.5\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2.5</span><span class="mord text"><span class="mord"> m</span></span></span></span></span> wide. Find the total exterior surface area of the four walls/roof faces (excluding the rectangular floor on the ground).</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q7.</div>
+        <div class="q-text-col">A cylindrical paint roller used by a Melbourne decorator has diameter <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">7\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and width <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">25\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">25</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>. Find the exact area of wall covered in one complete revolution (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>CSA</mtext><mo>=</mo><mi>π</mi><mi>d</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">\text{CSA} = \pi d h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">CSA</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal">d</span><span class="mord mathnormal">h</span></span></span></span>) and the area in <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mtext>cm</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">\text{cm}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord text"><span class="mord">cm</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span> rounded to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> decimal place.</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q8.</div>
+        <div class="q-text-col">A trophy base consists of a solid cylinder of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">3\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">5\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> glued centrally on top of a solid cube of side length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">10\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>. Find the total exposed surface area of the composite solid in exact form.</div>
+      </div>
+        </div>
+      </section>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part C · Reasoning &amp; Challenge</span>
+          <span class="ws-section-note">Justify your conclusions using algebraic or geometric reasoning</span>
+        </div>
+        <div class="word-list">
+          
+      <div class="q-block word-q">
+        <div class="q-num-col">Q9.</div>
+        <div class="q-text-col">Explain using a diagram or algebraic cancellation why gluing a solid cylinder of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span> upright onto the flat top face of a larger rectangular prism increases the prism's total exposed surface area by exactly the curved surface area <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">2\pi rh</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span></span></span></span> (and not <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mn>2</mn><mi>π</mi><mi>r</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">2\pi r^2 + 2\pi rh</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">h</span></span></span></span>).</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q10.</div>
+        <div class="q-text-col">Cylinder <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi></mrow><annotation encoding="application/x-tex">A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span> has radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">r = 6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>4</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">h = 4\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>, while Cylinder <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>B</mi></mrow><annotation encoding="application/x-tex">B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0502em;">B</span></span></span></span> has radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>4</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">r = 4\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">h = 6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>. Show that they have the exact same curved surface area, and determine which cylinder has the greater total surface area and why.</div>
+      </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="ws-footer">
+      <span>Open-Source Year 9 Mathematics · Victorian Curriculum F–10 v2.0</span>
+      <span>Section 6A (VC2M9M02) · Standard Printable Worksheet (Core Tier)</span>
+      <span>Page 1 of 1</span>
+    </footer>
+  </div>
+</body>
+</html>

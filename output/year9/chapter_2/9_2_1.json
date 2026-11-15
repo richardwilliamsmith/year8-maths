@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "section_id": "9_2_1",
+    "section_code": "2A",
+    "chapter_number": 2,
+    "chapter_title": "Financial Mathematics and Direct Proportion",
+    "title": "Earning Income, Commission, and Australian Taxation",
+    "vcaa_code": "VC2M9N02",
+    "vcaa_description": "Use mathematical modelling to solve practical problems involving direct proportion, rates, ratios and percentages, including in financial contexts.",
+    "strand": "Number",
+    "target_mastery": "Calculate gross pay including time-and-a-half/double-time overtime, tiered commission, leave loading (17.5%), and Australian PAYG progressive income tax.",
+    "prerequisites": [
+      "Percentages and financial modelling (Year 8 VC2M8N05)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Overtime and penalty rates",
+        "definition": "Higher hourly pay rates paid for hours worked beyond standard full-time hours, commonly time-and-a-half ($1.5 \\times \\text{normal rate}$) or double time ($2.0 \\times \\text{normal rate}$)."
+      },
+      {
+        "term": "Commission and retainer",
+        "definition": "Income earned as a percentage of the value of goods sold, often combined with a fixed base payment called a retainer."
+      },
+      {
+        "term": "Leave loading",
+        "definition": "An extra allowance of $17.5\\%$ added to $4$ weeks of normal pay during annual holiday leave in many Australian awards."
+      },
+      {
+        "term": "Taxable income and progressive tax",
+        "definition": "Taxable income equals gross income minus allowable tax deductions. Under Australia's progressive PAYG tax system, higher marginal rates apply only to the portion of taxable income above each bracket threshold."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_2_1_1",
+      "title": "Wages, Salaries, Overtime, and Holiday Leave Loading",
+      "explanation": "A wage earner is paid an hourly rate $r$ for each hour worked, whereas a salary earner receives a fixed annual amount divided across $52$ weeks or $26$ fortnights (for accounting accuracy, $1\\text{ year} = 52\\text{ weeks} = 26\\text{ fortnights} = 12\\text{ months}$). Overtime hours worked beyond standard hours are paid at time-and-a-half ($1.5r$) or double time ($2r$). Under many Australian employment awards, $4$-week annual holiday pay includes a $17.5\\%$ leave loading bonus.",
+      "formula_latex": "\\text{Gross Wage} = h_{\\text{norm}} r + h_{1.5}(1.5r) + h_{2.0}(2r), \\quad \\text{Holiday Pay (4 wks)} = 4w \\times 1.175",
+      "callout_title": "Convert Between Annual Salary and Weekly Pay Carefully",
+      "callout_rule": "To convert an annual salary to weekly pay, divide by $52$ (or by $26$ for fortnightly pay). Multiply by $1.175$ to include the $17.5\\%$ holiday leave loading on $4$ weeks of pay."
+    },
+    {
+      "id": "theory_9_2_1_2",
+      "title": "Retainers and Tiered Sales Commission",
+      "explanation": "Salespeople such as real-estate agents and car dealers often earn a fixed retainer plus a percentage commission on sales. In a tiered (sliding-scale) commission scheme, one percentage rate applies to sales up to a specified threshold, and a different percentage rate applies only to the sales amount exceeding that threshold.",
+      "formula_latex": "\\text{Total Earnings} = \\text{Retainer} + r_1 T + r_2 (\\text{Sales} - T) \\quad (\\text{for } \\text{Sales} > T)",
+      "callout_title": "Tiered Rates Apply Only to the Excess Above the Threshold",
+      "callout_rule": "If commission is $2\\%$ on the first $\\$500\\,000$ and $1.5\\%$ on the balance above $\\$500\\,000$, a sale of $\\$700\\,000$ earns $0.02(\\$500\\,000) + 0.015(\\$200\\,000)$."
+    },
+    {
+      "id": "theory_9_2_1_3",
+      "title": "Australian Progressive Income Tax and the Medicare Levy",
+      "explanation": "Taxable income is calculated by subtracting work-related tax deductions from gross annual income. Under the 2024–25 Australian Resident Income Tax rates: $\\$0\\text{–}\\$18\\,200$ is tax-free; $\\$18\\,201\\text{–}\\$45\\,000$ is taxed at $16\\text{c}$ per $\\$1$ over $\\$18\\,200$; $\\$45\\,001\\text{–}\\$135\\,000$ is $\\$4288$ plus $30\\text{c}$ per $\\$1$ over $\\$45\\,000$; $\\$135\\,001\\text{–}\\$190\\,000$ is $\\$31\\,288$ plus $37\\text{c}$ per $\\$1$ over $\\$135\\,000$; and over $\\$190\\,000$ is $\\$51\\,638$ plus $45\\text{c}$ per $\\$1$ over $\\$190\\,000$. Most taxpayers also pay a $2\\%$ Medicare levy on their entire taxable income.",
+      "formula_latex": "\\text{Taxable Income} = \\text{Gross Income} - \\text{Deductions}, \\quad \\text{Medicare Levy} = 0.02 \\times \\text{Taxable Income}",
+      "callout_title": "Crossing Into a Higher Tax Bracket Never Reduces Net Pay",
+      "callout_rule": "Only the dollars earned ABOVE a bracket threshold are taxed at the higher marginal rate — all income below the threshold stays taxed at the lower rates."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_2_1_1",
+      "title": "Calculating Weekly Gross Pay with Overtime",
+      "difficulty": "Fluency",
+      "problem": "Chloe works as an apprentice electrician in Ballarat at a normal rate of $\\$28\\text{/h}$. In one week she works $38$ normal hours, $4$ hours at time-and-a-half, and $3$ hours on Sunday at double time. Calculate her gross weekly pay.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate her normal pay for $38$ hours at $\\$28\\text{/h}$, time-and-a-half pay for $4$ hours at $1.5 \\times \\$28 = \\$42\\text{/h}$, and double-time pay for $3$ hours at $2 \\times \\$28 = \\$56\\text{/h}$.",
+          "working": "$$\\text{Normal} = 38 \\times 28 = \\$1064, \\quad \\text{Time-and-a-half} = 4 \\times 42 = \\$168, \\quad \\text{Double time} = 3 \\times 56 = \\$168$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Sum the three components to find Chloe's total gross pay for the week.",
+          "working": "$$\\text{Gross Pay} = 1064 + 168 + 168 = \\$1400$$"
+        }
+      ],
+      "final_answer": "$\\$1400$",
+      "now_you_try": {
+        "problem": "Liam earns $\\$24\\text{/h}$ for a standard $35$-hour week, plus $6$ hours at time-and-a-half and $2$ hours at double time. Find his gross weekly pay.",
+        "hint": "Time-and-a-half is $\\$36\\text{/h}$ and double time is $\\$48\\text{/h}$.",
+        "working_summary": "$35(24) + 6(36) + 2(48) = 840 + 216 + 96 = \\$1152$.",
+        "answer": "$\\$1152$"
+      }
+    },
+    {
+      "id": "WE9_2_1_2",
+      "title": "Tiered Commission with a Weekly Retainer",
+      "difficulty": "Understanding",
+      "problem": "A software sales representative in Melbourne receives a weekly retainer of $\\$650$, plus $4\\%$ commission on the first $\\$20\\,000$ of weekly sales and $6.5\\%$ on all sales exceeding $\\$20\\,000$. Calculate her total earnings in a week where her sales total $\\$34\\,000$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Split the $\\$34\\,000$ sales into the first $\\$20\\,000$ (at $4\\%$) and the excess $\\$34\\,000 - \\$20\\,000 = \\$14\\,000$ (at $6.5\\%$).",
+          "working": "$$\\text{Commission} = 0.04 \\times 20\\,000 + 0.065 \\times 14\\,000 = 800 + 910 = \\$1710$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Add the weekly retainer of $\\$650$ to the total commission.",
+          "working": "$$\\text{Total Earnings} = 650 + 1710 = \\$2360$$"
+        }
+      ],
+      "final_answer": "$\\$2360$",
+      "now_you_try": {
+        "problem": "A real-estate agent earns $2.5\\%$ commission on the first $\\$600\\,000$ of a property's sale price and $1.5\\%$ on the remainder above $\\$600\\,000$. Find the total commission on a house sold for $\\$840\\,000$.",
+        "hint": "The excess above $\\$600\\,000$ is $\\$240\\,000$.",
+        "working_summary": "$0.025(600\\,000) + 0.015(240\\,000) = 15\\,000 + 3600 = \\$18\\,600$.",
+        "answer": "$\\$18\\,600$"
+      }
+    },
+    {
+      "id": "WE9_2_1_3",
+      "title": "Calculating Australian Income Tax and Medicare Levy",
+      "difficulty": "Problem-Solving",
+      "problem": "An engineer in Adelaide has a gross annual salary of $\\$98\\,400$ and allowable work-related deductions of $\\$3400$. Using the 2024–25 resident tax bracket ($\\$45\\,001\\text{–}\\$135\\,000$: $\\$4288$ plus $30\\text{c}$ for each $\\$1$ over $\\$45\\,000$), calculate: (a) her taxable income, (b) her income tax payable, and (c) her $2\\%$ Medicare levy.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Subtract allowable deductions from gross income to find taxable income.",
+          "working": "$$\\text{Taxable Income} = 98\\,400 - 3400 = \\$95\\,000$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Since $\\$95\\,000$ lies in the $\\$45\\,001\\text{–}\\$135\\,000$ bracket, add $\\$4288$ to $30\\%$ of the excess above $\\$45\\,000$ ($\\$95\\,000 - \\$45\\,000 = \\$50\\,000$), and compute $2\\%$ of $\\$95\\,000$ for the Medicare levy.",
+          "working": "$$\\text{Income Tax} = 4288 + 0.30(95\\,000 - 45\\,000) = 4288 + 15\\,000 = \\$19\\,288, \\quad \\text{Medicare} = 0.02 \\times 95\\,000 = \\$1900$$"
+        }
+      ],
+      "final_answer": "(a) $\\$95\\,000$, (b) $\\$19\\,288$, (c) $\\$1900$",
+      "now_you_try": {
+        "problem": "A teacher has a gross income of $\\$84\\,200$ and tax deductions of $\\$2200$. Using the same bracket ($\\$4288 + 30\\%$ of excess over $\\$45\\,000$), find their taxable income and income tax payable.",
+        "hint": "Taxable income is $\\$82\\,000$, which is $\\$37\\,000$ over $\\$45\\,000$.",
+        "working_summary": "Taxable income $= \\$82\\,000$; Tax $= 4288 + 0.30(37\\,000) = 4288 + 11\\,100 = \\$15\\,388$.",
+        "answer": "Taxable income $= \\$82\\,000$; Income tax $= \\$15\\,388$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_9_2_1_1",
+      "title": "Applying the Top Marginal Tax Rate to the Entire Taxable Income",
+      "misconception": "Thinking that a worker with a taxable income of $\\$50\\,000$ in the $30\\%$ bracket pays $0.30 \\times \\$50\\,000 = \\$15\\,000$ in income tax.",
+      "correct_concept": "In a progressive tax system, the first $\\$18\\,200$ is taxed at $0\\%$, the slice from $\\$18\\,200$ to $\\$45\\,000$ is taxed at $16\\%$ ($\\$4288$), and only the $\\$5000$ above $\\$45\\,000$ is taxed at $30\\%$ ($\\$1500$), giving $\\$5788$ total tax.",
+      "incorrect_working": "$$\\text{Tax} = 0.30 \\times 50\\,000 = \\$15\\,000 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\text{Tax} = 4288 + 0.30(50\\,000 - 45\\,000) = 4288 + 1500 = \\$5788 \\quad (\\text{Correct})$$",
+      "counter_example": "At $\\$50\\,000$ taxable income, the effective average tax rate is $\\frac{5788}{50\\,000} = 11.576\\%$, far below $30\\%$."
+    },
+    {
+      "id": "MISC_9_2_1_2",
+      "title": "Dividing Annual Salary by 48 Instead of 52 to Find Weekly Pay",
+      "misconception": "Assuming $1\\text{ month} = 4\\text{ weeks}$ and dividing an annual salary by $48$ (or multiplying weekly pay by $4$ to get monthly pay).",
+      "correct_concept": "A standard year has $52$ weeks ($365 \\div 7 \\approx 52.14$), not $48$. Always convert between weekly and monthly via the annual figure.",
+      "incorrect_working": "$$\\text{Weekly Pay} = \\frac{\\text{Annual Salary}}{48} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\text{Weekly Pay} = \\frac{\\text{Annual Salary}}{52}, \\quad \\text{Monthly Pay} = \\frac{\\text{Annual Salary}}{12} \\quad (\\text{Correct})$$",
+      "counter_example": "For a $\\$62\\,400$ annual salary, true weekly pay is $\\$62\\,400 \\div 52 = \\$1200$, whereas dividing by $48$ falsely gives $\\$1300$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_2_1_Q1",
+        "question": "Noah earns a normal wage of $\\$25\\text{/h}$. In one week he works $36$ normal hours and $6$ hours of overtime at time-and-a-half. Calculate his gross pay for the week.",
+        "difficulty": "Easy",
+        "context": "Wages and Overtime",
+        "final_answer": "$\\$1125$",
+        "step_by_step_solution": [
+          "Normal pay $= 36 \\times 25 = \\$900$.",
+          "Overtime rate $= 1.5 \\times 25 = \\$37.50\\text{/h}$, so overtime pay $= 6 \\times 37.50 = \\$225$.",
+          "Total gross pay $= 900 + 225 = \\$1125$."
+        ]
+      },
+      {
+        "id": "9_2_1_Q2",
+        "question": "Sienna earns a standard weekly wage of $\\$1160$. She takes $4$ weeks of annual holiday leave and receives a $17.5\\%$ leave loading on all $4$ weeks. Find her total holiday pay.",
+        "difficulty": "Easy",
+        "context": "Annual Leave Loading",
+        "final_answer": "$\\$5452$",
+        "step_by_step_solution": [
+          "Calculate $4$ weeks of normal pay: $4 \\times 1160 = \\$4640$.",
+          "Multiply by $1.175$ to include the $17.5\\%$ leave loading: $4640 \\times 1.175 = \\$5452$ (loading is $\\$812$)."
+        ]
+      },
+      {
+        "id": "9_2_1_Q3",
+        "question": "A car salesperson is paid a monthly retainer of $\\$1800$ plus $3.5\\%$ commission on all vehicle sales. How much does he earn in a month where he sells cars worth $\\$140\\,000$?",
+        "difficulty": "Easy",
+        "context": "Retainer and Commission",
+        "final_answer": "$\\$6700$",
+        "step_by_step_solution": [
+          "Calculate the commission: $0.035 \\times 140\\,000 = \\$4900$.",
+          "Add the monthly retainer: $1800 + 4900 = \\$6700$."
+        ]
+      },
+      {
+        "id": "9_2_1_Q4",
+        "question": "Using the 2024–25 Australian tax bracket for $\\$18\\,201\\text{–}\\$45\\,000$ ($16\\text{c}$ for each $\\$1$ over $\\$18\\,200$), calculate the income tax payable on a taxable income of $\\$38\\,200$.",
+        "difficulty": "Medium",
+        "context": "Second Tax Bracket Calculation",
+        "final_answer": "$\\$3200$",
+        "step_by_step_solution": [
+          "Find the excess taxable income over the $\\$18\\,200$ tax-free threshold: $38\\,200 - 18\\,200 = \\$20\\,000$.",
+          "Multiply by $0.16$: $0.16 \\times 20\\,000 = \\$3200$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_2_1_Q5",
+        "question": "A nurse in Hobart earns $\\$40\\text{/h}$ for a standard $38$-hour week. Overtime on Saturdays is paid at time-and-a-half, and overtime on Sundays is paid at double time. In one week she works $38$ normal hours, $5$ hours on Saturday, and $h$ hours on Sunday, earning a gross pay of $\\$2140$. Find $h$.",
+        "difficulty": "Medium",
+        "context": "Solving for Unknown Overtime Hours",
+        "final_answer": "$h = 4\\text{ hours}$",
+        "step_by_step_solution": [
+          "Normal pay $= 38 \\times 40 = \\$1520$; Saturday pay $= 5 \\times (1.5 \\times 40) = 5 \\times 60 = \\$300$.",
+          "Sunday double-time rate is $2 \\times 40 = \\$80\\text{/h}$. Set up the equation: $1520 + 300 + 80h = 2140$.",
+          "Solve $1820 + 80h = 2140 \\implies 80h = 320 \\implies h = 4\\text{ hours}$."
+        ]
+      },
+      {
+        "id": "9_2_1_Q6",
+        "question": "An agricultural equipment agent in Shepparton receives a monthly retainer of $\\$2200$ plus $5\\%$ commission on all sales above a monthly quota of $\\$30\\,000$. What total value of sales must she achieve in a month to earn a gross monthly income of $\\$6450$?",
+        "difficulty": "Medium",
+        "context": "Target Sales Quota",
+        "final_answer": "$\\$115\\,000$",
+        "step_by_step_solution": [
+          "Subtract the retainer to find the required commission: $6450 - 2200 = \\$4250$.",
+          "Let $S$ be total sales above $\\$30\\,000$: $0.05(S - 30\\,000) = 4250 \\implies S - 30\\,000 = 85\\,000 \\implies S = \\$115\\,000$."
+        ]
+      },
+      {
+        "id": "9_2_1_Q7",
+        "question": "Marcus has a taxable income of $\\$150\\,000$. Using the 2024–25 bracket ($\\$135\\,001\\text{–}\\$190\\,000$: $\\$31\\,288$ plus $37\\text{c}$ for each $\\$1$ over $\\$135\\,000$) and the $2\\%$ Medicare levy, calculate his total tax + Medicare levy, and hence find his net annual after-tax income.",
+        "difficulty": "Challenging",
+        "context": "Net Income After Tax and Medicare",
+        "final_answer": "Total tax + Medicare $= \\$39\\,838$; Net income $= \\$110\\,162$",
+        "step_by_step_solution": [
+          "Income tax $= 31\\,288 + 0.37(150\\,000 - 135\\,000) = 31\\,288 + 0.37(15\\,000) = 31\\,288 + 5550 = \\$36\\,838$.",
+          "Medicare levy $= 0.02 \\times 150\\,000 = \\$3000$, giving total deduction $36\\,838 + 3000 = \\$39\\,838$.",
+          "Net annual income $= 150\\,000 - 39\\,838 = \\$110\\,162$."
+        ]
+      },
+      {
+        "id": "9_2_1_Q8",
+        "question": "During the year, an employer withheld $\\$410$ per week in PAYG tax instalments for $52$ weeks from a worker whose final taxable income was $\\$85\\,000$. Using the 2024–25 tax rule ($\\$4288 + 30\\%$ of excess over $\\$45\\,000$) plus the $2\\%$ Medicare levy, determine whether the worker receives a tax refund or owes a tax bill, and state the exact dollar amount.",
+        "difficulty": "Challenging",
+        "context": "PAYG Tax Refund vs Balance Payable",
+        "final_answer": "Tax refund of $\\$3332$",
+        "step_by_step_solution": [
+          "Total PAYG tax withheld over $52$ weeks $= 52 \\times 410 = \\$21\\,320$.",
+          "Actual tax liability $= 4288 + 0.30(85\\,000 - 45\\,000) + 0.02(85\\,000) = 4288 + 12\\,000 + 1700 = \\$17\\,988$.",
+          "Since $\\$21\\,320 > \\$17\\,988$, the worker receives a tax refund of $21\\,320 - 17\\,988 = \\$3332$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_2_1_Q9",
+        "question": "Verify mathematically where the base tax figure of $\\$4288$ at the start of the $\\$45\\,001\\text{–}\\$135\\,000$ bracket comes from in the 2024–25 Australian tax table.",
+        "difficulty": "Easy",
+        "context": "Continuity of Progressive Tax Brackets",
+        "final_answer": "$0.16 \\times (45\\,000 - 18\\,200) = 0.16 \\times 26\\,800 = \\$4288$",
+        "step_by_step_solution": [
+          "In the previous bracket ($\\$18\\,201\\text{–}\\$45\\,000$), the width of the bracket is $45\\,000 - 18\\,200 = \\$26\\,800$.",
+          "Taxing that entire $\\$26\\,800$ slice at $16\\text{c}$ per dollar gives $0.16 \\times 26\\,800 = \\$4288$."
+        ]
+      },
+      {
+        "id": "9_2_1_Q10",
+        "question": "A worker whose taxable income is $\\$75\\,000$ (in the $30\\%$ marginal tax bracket, plus $2\\%$ Medicare levy) buys a $\\$500$ textbook and professional tool kit that is an allowable work-related deduction. Explain why this deduction reduces their total tax + Medicare bill by $\\$160$, not $\\$500$.",
+        "difficulty": "Medium",
+        "context": "How Tax Deductions Work",
+        "final_answer": "A deduction reduces taxable income by $\\$500$, saving the combined marginal tax and Medicare rate of $32\\%$ ($0.32 \\times \\$500 = \\$160$)",
+        "step_by_step_solution": [
+          "A tax deduction is subtracted from gross income before tax is calculated, reducing taxable income from $\\$75\\,000$ to $\\$74\\,500$.",
+          "Since each marginal dollar in this bracket is taxed at $30\\%$ income tax plus $2\\%$ Medicare levy ($32\\%$ total), the tax saved is $0.32 \\times 500 = \\$160$."
+        ]
+      },
+      {
+        "id": "9_2_1_Q11",
+        "question": "Job Offer A pays a flat salary of $\\$1250$ per week. Job Offer B pays a weekly retainer of $\\$550$ plus $7\\%$ commission on all weekly sales $S$. Write an equation to find the weekly sales $S$ at which both offers pay the same amount, and state when Offer B is better.",
+        "difficulty": "Medium",
+        "context": "Comparing Remuneration Packages",
+        "final_answer": "$S = \\$10\\,000$; Offer B is better whenever weekly sales exceed $\\$10\\,000$",
+        "step_by_step_solution": [
+          "Equate the two weekly pay expressions: $550 + 0.07S = 1250$.",
+          "Solve $0.07S = 700 \\implies S = \\$10\\,000$. Whenever weekly sales exceed $\\$10\\,000$, Offer B pays more."
+        ]
+      },
+      {
+        "id": "9_2_1_Q12",
+        "question": "Define the effective (average) income tax rate as $\\frac{\\text{Income Tax Payable}}{\\text{Taxable Income}} \\times 100\\%$ (excluding Medicare). Find the exact taxable income $T$ in the $\\$45\\,001\\text{–}\\$135\\,000$ bracket at which a resident's effective income tax rate equals exactly $20\\%$.",
+        "difficulty": "Extension",
+        "context": "Effective vs Marginal Tax Rate",
+        "final_answer": "$\\$92\\,120$",
+        "step_by_step_solution": [
+          "For $45\\,000 < T \\le 135\\,000$, income tax is $4288 + 0.30(T - 45\\,000) = 0.30T - 9212$.",
+          "Set this equal to $0.20T$: $0.30T - 9212 = 0.20T \\implies 0.10T = 9212 \\implies T = \\$92\\,120$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_2_1_1",
+      "description": "Worked Example 9.2.1.1 Chloe weekly pay",
+      "expression": "38*28 + 4*(Rational(3, 2)*28) + 3*(2*28)",
+      "expected": 1400
+    },
+    {
+      "id": "NYT9_2_1_1",
+      "description": "Now You Try 9.2.1.1 Liam weekly pay",
+      "expression": "35*24 + 6*(Rational(3, 2)*24) + 2*(2*24)",
+      "expected": 1152
+    },
+    {
+      "id": "WE9_2_1_2",
+      "description": "Worked Example 9.2.1.2 tiered commission",
+      "expression": "650 + Rational(4, 100)*20000 + Rational(65, 1000)*(34000 - 20000)",
+      "expected": 2360
+    },
+    {
+      "id": "NYT9_2_1_2",
+      "description": "Now You Try 9.2.1.2 real estate commission",
+      "expression": "Rational(25, 1000)*600000 + Rational(15, 1000)*(840000 - 600000)",
+      "expected": 18600
+    },
+    {
+      "id": "WE9_2_1_3b",
+      "description": "Worked Example 9.2.1.3(b) income tax",
+      "expression": "4288 + Rational(30, 100)*(95000 - 45000)",
+      "expected": 19288
+    },
+    {
+      "id": "WE9_2_1_3c",
+      "description": "Worked Example 9.2.1.3(c) Medicare levy",
+      "expression": "Rational(2, 100)*95000",
+      "expected": 1900
+    },
+    {
+      "id": "NYT9_2_1_3",
+      "description": "Now You Try 9.2.1.3 teacher tax",
+      "expression": "4288 + Rational(30, 100)*(82000 - 45000)",
+      "expected": 15388
+    },
+    {
+      "id": "EX9_2_1_Q1",
+      "description": "Exercise 9.2.1 Q1 Noah gross pay",
+      "expression": "36*25 + 6*Rational(3, 2)*25",
+      "expected": 1125
+    },
+    {
+      "id": "EX9_2_1_Q2",
+      "description": "Exercise 9.2.1 Q2 Sienna holiday pay",
+      "expression": "4 * 1160 * Rational(1175, 1000)",
+      "expected": 5452
+    },
+    {
+      "id": "EX9_2_1_Q3",
+      "description": "Exercise 9.2.1 Q3 car salesperson",
+      "expression": "1800 + Rational(35, 1000)*140000",
+      "expected": 6700
+    },
+    {
+      "id": "EX9_2_1_Q4",
+      "description": "Exercise 9.2.1 Q4 second bracket tax",
+      "expression": "Rational(16, 100)*(38200 - 18200)",
+      "expected": 3200
+    },
+    {
+      "id": "EX9_2_1_Q5",
+      "description": "Exercise 9.2.1 Q5 Sunday overtime hours",
+      "expression": "solve(Eq(38*40 + 5*60 + 80*h, 2140), h)[0]",
+      "expected": 4
+    },
+    {
+      "id": "EX9_2_1_Q6",
+      "description": "Exercise 9.2.1 Q6 target sales",
+      "expression": "solve(Eq(2200 + Rational(5, 100)*(s - 30000), 6450), s)[0]",
+      "expected": 115000
+    },
+    {
+      "id": "EX9_2_1_Q7",
+      "description": "Exercise 9.2.1 Q7 net income after tax and Medicare",
+      "expression": "150000 - (31288 + Rational(37, 100)*(150000 - 135000) + Rational(2, 100)*150000)",
+      "expected": 110162
+    },
+    {
+      "id": "EX9_2_1_Q8",
+      "description": "Exercise 9.2.1 Q8 tax refund",
+      "expression": "52*410 - (4288 + Rational(30, 100)*(85000 - 45000) + Rational(2, 100)*85000)",
+      "expected": 3332
+    },
+    {
+      "id": "EX9_2_1_Q9",
+      "description": "Exercise 9.2.1 Q9 base tax 4288",
+      "expression": "Rational(16, 100)*(45000 - 18200)",
+      "expected": 4288
+    },
+    {
+      "id": "EX9_2_1_Q11",
+      "description": "Exercise 9.2.1 Q11 break-even sales",
+      "expression": "solve(Eq(550 + Rational(7, 100)*s, 1250), s)[0]",
+      "expected": 10000
+    },
+    {
+      "id": "EX9_2_1_Q12",
+      "description": "Exercise 9.2.1 Q12 20% effective tax rate",
+      "expression": "solve(Eq(4288 + Rational(30, 100)*(T - 45000), Rational(20, 100)*T), T)[0]",
+      "expected": 92120
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Financial Mathematics, Surds, and Logarithms (10 & 10A)",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "10_1_1",
+      "section_code": "1A",
+      "title": "Compound Interest, Depreciation, and Financial Modelling",
+      "vcaa_code": "VC2M10N01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the growth factor $(1 + r)$ and the depreciated factor $(1 - r)$ as a decimal for each annual rate:",
+          "parts": [
+            { "label": "a", "question": "$r = 10\\% = 0.10$", "answer": "$1 + r = 1.10$, $1 - r = 0.90$" },
+            { "label": "b", "question": "$r = 5\\% = 0.05$", "answer": "$1 + r = 1.05$, $1 - r = 0.95$" },
+            { "label": "c", "question": "$r = 8\\% = 0.08$", "answer": "$1 + r = 1.08$, $1 - r = 0.92$" },
+            { "label": "d", "question": "$r = 20\\% = 0.20$", "answer": "$1 + r = 1.20$, $1 - r = 0.80$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Substitute into $A = P(1 + r)^n$ to find the final amount $A$:",
+          "parts": [
+            { "label": "a", "question": "$P = \\$1000$, $r = 0.10$, $n = 2$ ($A = 1000 \\times 1.10^2$)", "answer": "$\\$1210.00$" },
+            { "label": "b", "question": "$P = \\$2000$, $r = 0.10$, $n = 3$ ($A = 2000 \\times 1.10^3$)", "answer": "$\\$2662.00$" },
+            { "label": "c", "question": "$P = \\$4000$, $r = 0.05$, $n = 2$ ($A = 4000 \\times 1.05^2$)", "answer": "$\\$4410.00$" },
+            { "label": "d", "question": "$P = \\$5000$, $r = 0.20$, $n = 2$ ($A = 5000 \\times 1.20^2$)", "answer": "$\\$7200.00$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the interest rate per period $r$ and the total number of compounding periods $n$:",
+          "parts": [
+            { "label": "a", "question": "$8\\%$ p.a. compounded half-yearly ($2$ times/year) for $3$ years", "answer": "$r = 4\\%$, $n = 6$" },
+            { "label": "b", "question": "$12\\%$ p.a. compounded quarterly ($4$ times/year) for $2$ years", "answer": "$r = 3\\%$, $n = 8$" },
+            { "label": "c", "question": "$6\\%$ p.a. compounded monthly ($12$ times/year) for $2$ years", "answer": "$r = 0.5\\%$, $n = 24$" },
+            { "label": "d", "question": "$10\\%$ p.a. compounded half-yearly ($2$ times/year) for $5$ years", "answer": "$r = 5\\%$, $n = 10$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use the depreciation formula $A = P(1 - r)^n$ to find the value of each item:",
+          "parts": [
+            { "label": "a", "question": "$P = \\$1000$, $r = 0.10$, $n = 2$ ($A = 1000 \\times 0.90^2$)", "answer": "$\\$810.00$" },
+            { "label": "b", "question": "$P = \\$5000$, $r = 0.20$, $n = 2$ ($A = 5000 \\times 0.80^2$)", "answer": "$\\$3200.00$" },
+            { "label": "c", "question": "$P = \\$2000$, $r = 0.50$, $n = 3$ ($A = 2000 \\times 0.50^3$)", "answer": "$\\$250.00$" },
+            { "label": "d", "question": "$P = \\$10\\,000$, $r = 0.10$, $n = 3$ ($A = 10\\,000 \\times 0.90^3$)", "answer": "$\\$7290.00$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Ruby deposits $\\$3000$ in a Bendigo savings account paying $10\\%$ p.a. compounded annually for $2$ years. Find the final amount $A = 3000(1.10)^2$ and the compound interest $I = A - 3000$.",
+          "answer": "$A = \\$3630.00$, $I = \\$630.00$"
+        },
+        {
+          "number": 6,
+          "question": "A gaming console bought in Perth for $\\$1000$ loses $20\\%$ of its value each year ($1 - r = 0.80$). Find its value after $2$ years using $A = 1000(0.80)^2$.",
+          "answer": "$\\$640.00$"
+        },
+        {
+          "number": 7,
+          "question": "An investment of $\\$2000$ earns $10\\%$ p.a. compounded half-yearly for $1$ year ($r = 5\\% = 0.05$, $n = 2$). Calculate $A = 2000(1.05)^2$.",
+          "answer": "$\\$2205.00$"
+        },
+        {
+          "number": 8,
+          "question": "For $\\$1000$ invested at $10\\%$ p.a. for $2$ years, simple interest gives $A = \\$1200$ and compound interest gives $A = \\$1210$. How much extra interest does compounding earn?",
+          "answer": "$\\$10.00$ extra"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain in your own words why compound interest grows faster than simple interest after the first year.",
+          "answer": "In compound interest, the interest earned in year $1$ is added to the principal, so in year $2$ you earn interest on both the original principal and the previous interest."
+        },
+        {
+          "number": 10,
+          "question": "If a car depreciates by $20\\%$ p.a. reducing-balance from $\\$10\\,000$, why does it lose $\\$2000$ in the first year but only $\\$1600$ in the second year?",
+          "answer": "After year $1$ its value is $\\$8000$, and $20\\%$ of the smaller value $\\$8000$ is $\\$1600$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10F_1A_2a", "expression": "1000 * Rational(11, 10)**2", "expected": 1210 },
+        { "id": "Y10F_1A_2b", "expression": "2000 * Rational(11, 10)**3", "expected": 2662 },
+        { "id": "Y10F_1A_2c", "expression": "4000 * Rational(21, 20)**2", "expected": 4410 },
+        { "id": "Y10F_1A_2d", "expression": "5000 * Rational(6, 5)**2", "expected": 7200 },
+        { "id": "Y10F_1A_4a", "expression": "1000 * Rational(9, 10)**2", "expected": 810 },
+        { "id": "Y10F_1A_4b", "expression": "5000 * Rational(4, 5)**2", "expected": 3200 },
+        { "id": "Y10F_1A_4c", "expression": "2000 * Rational(1, 2)**3", "expected": 250 },
+        { "id": "Y10F_1A_4d", "expression": "10000 * Rational(9, 10)**3", "expected": 7290 },
+        { "id": "Y10F_1A_5", "expression": "3000 * Rational(11, 10)**2", "expected": 3630 },
+        { "id": "Y10F_1A_7", "expression": "2000 * Rational(21, 20)**2", "expected": 2205 }
+      ]
+    },
+    {
+      "section_id": "10_1_2",
+      "section_code": "1B",
+      "title": "[10A] Operations with Surds and Rationalising the Denominator",
+      "vcaa_code": "VC2M10AN01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Collect the like surds in each expression:",
+          "parts": [
+            { "label": "a", "question": "$3\\sqrt{2} + 5\\sqrt{2}$", "answer": "$8\\sqrt{2}$" },
+            { "label": "b", "question": "$7\\sqrt{5} - 2\\sqrt{5}$", "answer": "$5\\sqrt{5}$" },
+            { "label": "c", "question": "$\\sqrt{12} + \\sqrt{3}$ (Hint: $\\sqrt{12} = 2\\sqrt{3}$)", "answer": "$3\\sqrt{3}$" },
+            { "label": "d", "question": "$\\sqrt{18} - \\sqrt{2}$ (Hint: $\\sqrt{18} = 3\\sqrt{2}$)", "answer": "$2\\sqrt{2}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Multiply or expand using $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}$ and $(\\sqrt{a})^2 = a$:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{3} \\times \\sqrt{5}$", "answer": "$\\sqrt{15}$" },
+            { "label": "b", "question": "$2\\sqrt{3} \\times 3\\sqrt{3}$", "answer": "$18$" },
+            { "label": "c", "question": "$\\sqrt{2}(\\sqrt{5} + \\sqrt{2})$", "answer": "$\\sqrt{10} + 2$" },
+            { "label": "d", "question": "$(3 + \\sqrt{5})(3 - \\sqrt{5})$", "answer": "$4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Rationalise each denominator by multiplying top and bottom by $\\sqrt{a}$:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{1}{\\sqrt{2}} \\times \\dfrac{\\sqrt{2}}{\\sqrt{2}}$", "answer": "$\\dfrac{\\sqrt{2}}{2}$" },
+            { "label": "b", "question": "$\\dfrac{6}{\\sqrt{3}}$", "answer": "$2\\sqrt{3}$" },
+            { "label": "c", "question": "$\\dfrac{10}{\\sqrt{5}}$", "answer": "$2\\sqrt{5}$" },
+            { "label": "d", "question": "$\\dfrac{14}{\\sqrt{7}}$", "answer": "$2\\sqrt{7}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the conjugate of each expression, then multiply them using $(a + \\sqrt{b})(a - \\sqrt{b}) = a^2 - b$:",
+          "parts": [
+            { "label": "a", "question": "Conjugate of $(2 + \\sqrt{3})$ and product $(2 + \\sqrt{3})(2 - \\sqrt{3})$", "answer": "$2 - \\sqrt{3}$; product $= 1$" },
+            { "label": "b", "question": "Conjugate of $(4 - \\sqrt{6})$ and product $(4 - \\sqrt{6})(4 + \\sqrt{6})$", "answer": "$4 + \\sqrt{6}$; product $= 10$" },
+            { "label": "c", "question": "Rationalise $\\dfrac{1}{2 + \\sqrt{3}}$ by multiplying by $\\dfrac{2 - \\sqrt{3}}{2 - \\sqrt{3}}$", "answer": "$2 - \\sqrt{3}$" },
+            { "label": "d", "question": "Rationalise $\\dfrac{2}{\\sqrt{5} - \\sqrt{3}}$ by multiplying by $\\dfrac{\\sqrt{5} + \\sqrt{3}}{\\sqrt{5} + \\sqrt{3}}$", "answer": "$\\sqrt{5} + \\sqrt{3}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A square garden tile has side length $\\sqrt{6}\\text{ m}$. Find its exact perimeter ($4 \\times \\sqrt{6}$) and its exact area ($\\sqrt{6} \\times \\sqrt{6}$).",
+          "answer": "Perimeter $= 4\\sqrt{6}\\text{ m}$, Area $= 6\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A rectangle has length $(4 + \\sqrt{3})\\text{ cm}$ and width $(4 - \\sqrt{3})\\text{ cm}$. Multiply the dimensions to find the exact area.",
+          "answer": "$4^2 - (\\sqrt{3})^2 = 16 - 3 = 13\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A triangle has three sides of lengths $2\\sqrt{5}\\text{ cm}$, $3\\sqrt{5}\\text{ cm}$, and $4\\sqrt{5}\\text{ cm}$. Find its exact perimeter.",
+          "answer": "$9\\sqrt{5}\\text{ cm}$"
+        },
+        {
+          "number": 8,
+          "question": "In trigonometry, $\\sin(45^\\circ) = \\dfrac{1}{\\sqrt{2}}$. Write this exact ratio with a rational denominator.",
+          "answer": "$\\dfrac{\\sqrt{2}}{2}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $2\\sqrt{3} + 4\\sqrt{5}$ cannot be simplified into a single surd term.",
+          "answer": "$\\sqrt{3}$ and $\\sqrt{5}$ are unlike surds because they have different numbers under the radical sign."
+        },
+        {
+          "number": 10,
+          "question": "Why does multiplying $\\dfrac{6}{\\sqrt{3}}$ by $\\dfrac{\\sqrt{3}}{\\sqrt{3}}$ not change the numerical value of the fraction?",
+          "answer": "Because $\\dfrac{\\sqrt{3}}{\\sqrt{3}} = 1$, and multiplying any number by $1$ leaves its value unchanged."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10F_1B_1a", "expression": "simplify(3*sqrt(2) + 5*sqrt(2) - 8*sqrt(2))", "expected": 0 },
+        { "id": "Y10F_1B_1c", "expression": "simplify(sqrt(12) + sqrt(3) - 3*sqrt(3))", "expected": 0 },
+        { "id": "Y10F_1B_2b", "expression": "simplify(2*sqrt(3) * 3*sqrt(3))", "expected": 18 },
+        { "id": "Y10F_1B_2d", "expression": "simplify((3 + sqrt(5))*(3 - sqrt(5)))", "expected": 4 },
+        { "id": "Y10F_1B_3b", "expression": "simplify(6 / sqrt(3) - 2*sqrt(3))", "expected": 0 },
+        { "id": "Y10F_1B_3c", "expression": "simplify(10 / sqrt(5) - 2*sqrt(5))", "expected": 0 },
+        { "id": "Y10F_1B_4a", "expression": "simplify((2 + sqrt(3))*(2 - sqrt(3)))", "expected": 1 },
+        { "id": "Y10F_1B_4b", "expression": "simplify((4 - sqrt(6))*(4 + sqrt(6)))", "expected": 10 },
+        { "id": "Y10F_1B_4d", "expression": "simplify(2 / (sqrt(5) - sqrt(3)) - (sqrt(5) + sqrt(3)))", "expected": 0 },
+        { "id": "Y10F_1B_6", "expression": "simplify((4 + sqrt(3))*(4 - sqrt(3)))", "expected": 13 }
+      ]
+    },
+    {
+      "section_id": "10_1_3",
+      "section_code": "1C",
+      "title": "[10A] Fractional Indices and Logarithms",
+      "vcaa_code": "VC2M10AN02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each fractional power using $a^{1/2} = \\sqrt{a}$ and $a^{1/3} = \\sqrt[3]{a}$:",
+          "parts": [
+            { "label": "a", "question": "$25^{1/2}$", "answer": "$5$" },
+            { "label": "b", "question": "$8^{1/3}$", "answer": "$2$" },
+            { "label": "c", "question": "$81^{1/4}$", "answer": "$3$" },
+            { "label": "d", "question": "$8^{2/3} = (\\sqrt[3]{8})^2$", "answer": "$4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Rewrite each index statement in logarithmic form $\\log_a(y) = x$:",
+          "parts": [
+            { "label": "a", "question": "$2^3 = 8$", "answer": "$\\log_2(8) = 3$" },
+            { "label": "b", "question": "$10^2 = 100$", "answer": "$\\log_{10}(100) = 2$" },
+            { "label": "c", "question": "$5^2 = 25$", "answer": "$\\log_5(25) = 2$" },
+            { "label": "d", "question": "$3^4 = 81$", "answer": "$\\log_3(81) = 4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Evaluate each logarithm by finding the power of the base:",
+          "parts": [
+            { "label": "a", "question": "$\\log_2(16)$ (since $2^4 = 16$)", "answer": "$4$" },
+            { "label": "b", "question": "$\\log_{10}(1000)$ (since $10^3 = 1000$)", "answer": "$3$" },
+            { "label": "c", "question": "$\\log_5(1)$ (since $5^0 = 1$)", "answer": "$0$" },
+            { "label": "d", "question": "$\\log_2\\left(\\dfrac{1}{2}\\right)$ (since $2^{-1} = \\frac{1}{2}$)", "answer": "$-1$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Simplify into a single logarithm using $\\log_a(x) + \\log_a(y) = \\log_a(xy)$ and $\\log_a(x) - \\log_a(y) = \\log_a(x/y)$:",
+          "parts": [
+            { "label": "a", "question": "$\\log_2(3) + \\log_2(5)$", "answer": "$\\log_2(15)$" },
+            { "label": "b", "question": "$\\log_{10}(20) - \\log_{10}(4)$", "answer": "$\\log_{10}(5)$" },
+            { "label": "c", "question": "$\\log_3(3) + \\log_3(3)$", "answer": "$\\log_3(9) = 2$" },
+            { "label": "d", "question": "$2\\log_5(3) = \\log_5(3^2)$", "answer": "$\\log_5(9)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A cube has volume $V = 64\\text{ cm}^3$. Its side length is $s = V^{1/3} = 64^{1/3}$. Find the side length of the cube.",
+          "answer": "$4\\text{ cm}$"
+        },
+        {
+          "number": 6,
+          "question": "The Richter magnitude of an earthquake with relative amplitude $I = 10^4$ is $M = \\log_{10}(10^4)$. Find $M$.",
+          "answer": "$M = 4$"
+        },
+        {
+          "number": 7,
+          "question": "A pond weed doubles in area every week so that after $t$ weeks its area is $2^t\\text{ m}^2$. Solve $2^t = 8$ to find how many weeks it takes to reach $8\\text{ m}^2$.",
+          "answer": "$t = 3\\text{ weeks}$"
+        },
+        {
+          "number": 8,
+          "question": "For pure water, the hydrogen ion concentration is $10^{-7}\\text{ mol/L}$, and $\\text{pH} = -\\log_{10}(10^{-7})$. Find the pH of pure water.",
+          "answer": "$\\text{pH} = 7$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Using the index law $a^0 = 1$ (for $a > 0, a \\neq 1$), explain why $\\log_a(1) = 0$ for any valid base $a$.",
+          "answer": "Because $\\log_a(1)$ asks what power $a$ must be raised to in order to get $1$, and $a^0 = 1$ always."
+        },
+        {
+          "number": 10,
+          "question": "Show with a numerical example that $\\log_{10}(2) + \\log_{10}(5) = \\log_{10}(10) = 1$, and not $\\log_{10}(7)$.",
+          "answer": "By the log product law, adding logs multiplies the arguments: $\\log_{10}(2 \\times 5) = \\log_{10}(10) = 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10F_1C_1a", "expression": "25**Rational(1, 2)", "expected": 5 },
+        { "id": "Y10F_1C_1b", "expression": "8**Rational(1, 3)", "expected": 2 },
+        { "id": "Y10F_1C_1c", "expression": "81**Rational(1, 4)", "expected": 3 },
+        { "id": "Y10F_1C_1d", "expression": "8**Rational(2, 3)", "expected": 4 },
+        { "id": "Y10F_1C_3a", "expression": "log(16, 2)", "expected": 4 },
+        { "id": "Y10F_1C_3b", "expression": "log(1000, 10)", "expected": 3 },
+        { "id": "Y10F_1C_3c", "expression": "log(1, 5)", "expected": 0 },
+        { "id": "Y10F_1C_3d", "expression": "log(Rational(1, 2), 2)", "expected": -1 },
+        { "id": "Y10F_1C_4c", "expression": "simplify(log(3, 3) + log(3, 3))", "expected": 2 },
+        { "id": "Y10F_1C_10", "expression": "simplify(log(2, 10) + log(5, 10))", "expected": 1 }
+      ]
+    }
+  ]
+}

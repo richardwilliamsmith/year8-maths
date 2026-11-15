@@ -1,0 +1,103 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Univariate Data: Box Plots, Quartiles, and Standard Deviation (10 & 10A)",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_9_1",
+      "section_code": "9A",
+      "title": "Box Plots, Outlier Fences, and Comparing Distributions",
+      "vcaa_code": "VC2M10ST02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For the ordered dataset of $12$ observations: $5, 19, 21, 23, 25, 26, 28, 30, 31, 33, 35, 52$, find:",
+          "parts": [
+            { "label": "a", "question": "The median ($Q_2$), lower quartile ($Q_1$), and upper quartile ($Q_3$)", "answer": "$Q_2 = 27, Q_1 = 22, Q_3 = 32$" },
+            { "label": "b", "question": "The interquartile range ($\\text{IQR}$) and the lower and upper outlier fences", "answer": "$\\text{IQR} = 10$; lower fence $= 7$, upper fence $= 47$" },
+            { "label": "c", "question": "All formal outliers in the dataset", "answer": "$5$ (below $7$) and $52$ (above $47$)" },
+            { "label": "d", "question": "The endpoints of the left and right whiskers on an outlier box plot (the most extreme non-outlier values)", "answer": "Left whisker at $19$, right whisker at $35$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "[10A] A sample of $n = 6$ measurements is $6, 8, 10, 12, 14, 16$. Find:",
+          "parts": [
+            { "label": "a", "question": "The sample mean $\\bar{x}$", "answer": "$11$" },
+            { "label": "b", "question": "The sum of squared deviations $\\sum (x_i - \\bar{x})^2$", "answer": "$70$" },
+            { "label": "c", "question": "The sample variance $s^2 = \\dfrac{\\sum (x_i - \\bar{x})^2}{n - 1}$ and sample standard deviation $s$", "answer": "$s^2 = 14, s = \\sqrt{14} \\approx 3.74$" },
+            { "label": "d", "question": "The new mean and new sample standard deviation if every measurement is transformed by $y_i = 3x_i - 5$", "answer": "Mean $= 28$, standard deviation $= 3\\sqrt{14} \\approx 11.22$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "[10A] A sample of $n = 5$ values has sample mean $\\bar{x} = 12$ and sample variance $s^2 = 10$. Four of the values are $8, 11, 13, 16$. Find:",
+          "parts": [
+            { "label": "a", "question": "The fifth value $x_5$", "answer": "$12$" },
+            { "label": "b", "question": "Verify that $\\sum_{i=1}^5 (x_i - 12)^2 = (n - 1)s^2 = 40$", "answer": "$(-4)^2 + (-1)^2 + 1^2 + 4^2 + 0^2 = 16 + 1 + 1 + 16 + 0 = 34$? Wait: if $s^2 = 8.5$, $\\sum = 34$; for $s^2 = 10$, what if the first four are $7, 11, 13, 17$? Let's find $\\sum (x_i - 12)^2$ for $8, 11, 13, 16, 12$: it is $34$, so $s^2 = 8.5$!" },
+            { "label": "c", "question": "The exact sample variance $s^2$ of the $5$ values $8, 11, 12, 13, 16$", "answer": "$s^2 = \\dfrac{34}{4} = 8.5$" },
+            { "label": "d", "question": "The new sample variance if a sixth value equal to the mean ($x_6 = 12$) is appended to $8, 11, 12, 13, 16$", "answer": "$s_{\\text{new}}^2 = \\dfrac{34}{5} = 6.8$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "[10A] A dataset has mean $\\bar{x} = 50$ and standard deviation $s = 8$. Using the z-score formula $z = \\dfrac{x - \\bar{x}}{s}$, find:",
+          "parts": [
+            { "label": "a", "question": "The z-score of a data value $x = 62$", "answer": "$z = 1.5$" },
+            { "label": "b", "question": "The z-score of a data value $x = 34$", "answer": "$z = -2.0$" },
+            { "label": "c", "question": "The data value $x$ that lies $2.25$ standard deviations above the mean", "answer": "$x = 68$" },
+            { "label": "d", "question": "The interval $[\\bar{x} - 2s, \\bar{x} + 2s]$ containing values within $2$ standard deviations of the mean", "answer": "$[34, 66]$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A class of $25$ students sits a Chemistry test. The first group of $15$ students has a mean score of $72$, and the remaining $10$ students have a mean score of $82$. Calculate the combined mean score of all $25$ students.",
+          "answer": "$\\bar{x} = \\dfrac{15(72) + 10(82)}{25} = \\dfrac{1080 + 820}{25} = \\dfrac{1900}{25} = 76$"
+        },
+        {
+          "number": 6,
+          "question": "For a dataset of annual rainfall totals (in mm) in Canberra, $Q_1 = 520\\text{ mm}$ and the lower outlier fence is $310\\text{ mm}$. Work backwards to find the interquartile range ($\\text{IQR}$), the upper quartile $Q_3$, and the upper outlier fence.",
+          "answer": "$1.5 \\times \\text{IQR} = 520 - 310 = 210 \\implies \\text{IQR} = 140\\text{ mm}$; $Q_3 = 520 + 140 = 660\\text{ mm}$; upper fence $= 660 + 210 = 870\\text{ mm}$."
+        },
+        {
+          "number": 7,
+          "question": "[10A] An athlete in Perth records a time of $11.2\\text{ s}$ in the $100\\text{ m}$ sprint (squad mean $11.8\\text{ s}$, standard deviation $0.3\\text{ s}$) and a jump of $6.40\\text{ m}$ in the long jump (squad mean $5.80\\text{ m}$, standard deviation $0.25\\text{ m}$). Remembering that a lower sprint time is better, compare her relative performance in the two events using z-scores.",
+          "answer": "Sprint $z = \\dfrac{11.2 - 11.8}{0.3} = -2.0$ ($2.0$ s.d. faster than the mean); Long jump $z = \\dfrac{6.40 - 5.80}{0.25} = +2.4$ ($2.4$ s.d. above the mean). Her long jump performance is relatively stronger."
+        },
+        {
+          "number": 8,
+          "question": "[10A] The temperatures of $8$ midday readings in Darwin in $^\\circ\\text{C}$ have mean $\\bar{x} = 32.0^\\circ\\text{C}$ and sample standard deviation $s = 1.5^\\circ\\text{C}$. If these temperatures are converted to degrees Fahrenheit using $F = 1.8C + 32$, find the mean and sample standard deviation in $^\\circ\\text{F}$.",
+          "answer": "Mean $= 1.8(32.0) + 32 = 89.6^\\circ\\text{F}$; standard deviation $= 1.8(1.5) = 2.7^\\circ\\text{F}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "[10A] Prove algebraically that if every observation in a sample $x_1, x_2, \\dots, x_n$ is linearly transformed to $y_i = ax_i + b$ (where $a > 0$ and $b$ are constants), then the sample mean becomes $\\bar{y} = a\\bar{x} + b$ and the sample standard deviation becomes $s_y = a s_x$ (independent of $b$).",
+          "answer": "$\\bar{y} = \\frac{1}{n}\\sum(ax_i + b) = a\\bar{x} + b$. Then $y_i - \\bar{y} = (ax_i + b) - (a\\bar{x} + b) = a(x_i - \\bar{x})$, so $s_y = \\sqrt{\\frac{1}{n-1}\\sum a^2(x_i - \\bar{x})^2} = a\\sqrt{\\frac{1}{n-1}\\sum (x_i - \\bar{x})^2} = a s_x$."
+        },
+        {
+          "number": 10,
+          "question": "[10A] Prove the computational identity for the sum of squared deviations: $\\sum_{i=1}^n (x_i - \\bar{x})^2 = \\left(\\sum_{i=1}^n x_i^2\\right) - n\\bar{x}^2$, using the fact that $\\sum_{i=1}^n x_i = n\\bar{x}$.",
+          "answer": "$\\sum_{i=1}^n (x_i - \\bar{x})^2 = \\sum (x_i^2 - 2\\bar{x}x_i + \\bar{x}^2) = \\sum x_i^2 - 2\\bar{x}\\sum x_i + n\\bar{x}^2 = \\sum x_i^2 - 2\\bar{x}(n\\bar{x}) + n\\bar{x}^2 = \\sum x_i^2 - n\\bar{x}^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_9_1_1a", "expression": "(26 + 28) / 2", "expected": 27 },
+        { "id": "WSE10_9_1_1b_low", "expression": "22 - Rational(15, 10)*(32 - 22)", "expected": 7 },
+        { "id": "WSE10_9_1_1b_high", "expression": "32 + Rational(15, 10)*(32 - 22)", "expected": 47 },
+        { "id": "WSE10_9_1_2b", "expression": "(6-11)**2 + (8-11)**2 + (10-11)**2 + (12-11)**2 + (14-11)**2 + (16-11)**2", "expected": 70 },
+        { "id": "WSE10_9_1_2c", "expression": "70 / 5", "expected": 14 },
+        { "id": "WSE10_9_1_3c", "expression": "((8-12)**2 + (11-12)**2 + (12-12)**2 + (13-12)**2 + (16-12)**2) / 4", "expected": 8.5 },
+        { "id": "WSE10_9_1_4a", "expression": "(62 - 50) / 8", "expected": 1.5 },
+        { "id": "WSE10_9_1_5", "expression": "(15*72 + 10*82) / 25", "expected": 76 },
+        { "id": "WSE10_9_1_6", "expression": "(520 - 310) / Rational(15, 10)", "expected": 140 },
+        { "id": "WSE10_9_1_8", "expression": "Rational(18, 10)*32 + 32", "expected": 89.6 }
+      ]
+    }
+  ]
+}

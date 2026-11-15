@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "section_id": "10_4_1",
+    "section_code": "4A",
+    "chapter_number": 4,
+    "chapter_title": "Parabolas, Exponentials, Polynomials, and Functions (10 & 10A)",
+    "title": "Sketching Parabolas, Exponential Graphs, and Circles",
+    "vcaa_code": "VC2M10A06",
+    "vcaa_description": "Graph and investigate exponential, quadratic, circle and other non-linear relations, using digital tools and algorithms.",
+    "strand": "Algebra",
+    "target_mastery": "Sketch parabolas in general, turning-point, and intercept forms, graph exponential relations y = a * b^x + k with asymptotes, and graph circles x^2 + y^2 = r^2.",
+    "prerequisites": [
+      "Parabola features (Year 9 VC2M9A05)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Turning-point form",
+        "definition": "A quadratic equation written as $y = a(x - h)^2 + k$, whose parabola has vertex (turning point) at $(h, k)$ and axis of symmetry $x = h$."
+      },
+      {
+        "term": "Horizontal asymptote",
+        "definition": "A horizontal line $y = k$ that an exponential curve $y = a \\cdot b^x + k$ approaches ever more closely as $x \\to -\\infty$ (for $b > 1$) or $x \\to +\\infty$ (for $0 < b < 1$) without ever crossing."
+      },
+      {
+        "term": "Circle relation",
+        "definition": "The set of all points $(x, y)$ at a constant distance $r$ (the radius) from a fixed centre $(h, k)$, given by $(x - h)^2 + (y - k)^2 = r^2$."
+      },
+      {
+        "term": "Axis of symmetry",
+        "definition": "The vertical line $x = -\\frac{b}{2a}$ (or $x = \\frac{x_1 + x_2}{2}$ midway between the $x$-intercepts) that divides a parabola into two mirror-image halves."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_4_1_1",
+      "title": "Sketching Parabolas in Turning-Point, Intercept, and General Forms",
+      "explanation": "A quadratic graph can be presented in three main algebraic forms, each directly revealing key geometric features: (1) Turning-point form $y = a(x - h)^2 + k$ gives the vertex $(h, k)$ and axis of symmetry $x = h$; (2) Intercept (factorised) form $y = a(x - p)(x - q)$ gives the $x$-intercepts $(p, 0)$ and $(q, 0)$, with the axis of symmetry halfway between them at $x = \\frac{p + q}{2}$; and (3) General form $y = ax^2 + bx + c$ gives the $y$-intercept $(0, c)$ and axis of symmetry $x = -\\frac{b}{2a}$. In all forms, $a > 0$ gives an upright parabola (minimum turning point) and $a < 0$ gives an inverted parabola (maximum turning point).",
+      "formula_latex": "y = a(x - h)^2 + k \\implies \\text{Vertex } (h, k); \\quad y = ax^2 + bx + c \\implies x_v = -\\frac{b}{2a}",
+      "callout_title": "Opposite Sign Inside the Bracket, Same Sign Outside",
+      "callout_rule": "In $y = 2(x - 3)^2 - 5$, the $(x - 3)$ shifts the parabola RIGHT to $h = +3$, while $-5$ shifts it DOWN to $k = -5$, giving vertex $(3, -5)$."
+    },
+    {
+      "id": "theory_10_4_1_2",
+      "title": "Exponential Graphs and Horizontal Asymptotes",
+      "explanation": "An exponential relation has the form $y = a \\cdot b^x + k$ ($b > 0, b \\neq 1$). Because $b^x > 0$ for every real number $x$, the term $a \\cdot b^x$ can never equal $0$, which means $y$ can never equal $k$. Thus the horizontal line $y = k$ is a horizontal asymptote (always drawn as a dashed line and labelled with its equation $y = k$). The $y$-intercept is found by substituting $x = 0$, giving $y = a \\cdot b^0 + k = a + k$. When $b > 1$ (and $a > 0$), the graph shows exponential growth; when $0 < b < 1$ (or when the exponent is $-x$), it shows exponential decay.",
+      "formula_latex": "y = a \\cdot b^x + k: \\quad \\text{Horizontal asymptote } y = k, \\quad y\\text{-intercept } (0,\\, a + k)",
+      "callout_title": "Always Draw and Label the Dashed Asymptote $y = k$",
+      "callout_rule": "On any exponential graph sketch, draw the horizontal line $y = k$ as a dashed line and label its equation explicitly, alongside the $y$-intercept and any $x$-intercept."
+    },
+    {
+      "id": "theory_10_4_1_3",
+      "title": "Circles in the Cartesian Plane",
+      "explanation": "By Pythagoras' theorem (the distance formula), a point $P(x, y)$ lies at distance $r$ from the centre $C(h, k)$ if and only if $\\sqrt{(x - h)^2 + (y - k)^2} = r$. Squaring both sides gives the standard equation of a circle with centre $(h, k)$ and radius $r$. When the centre is at the origin $(0, 0)$, the equation simplifies to $x^2 + y^2 = r^2$, with axis intercepts $(\\pm r, 0)$ and $(0, \\pm r)$.",
+      "formula_latex": "(x - h)^2 + (y - k)^2 = r^2 \\quad (\\text{Centre } (h, k),\\; \\text{Radius } r > 0)",
+      "callout_title": "Take the Square Root of the Right-Hand Side to Find the Radius",
+      "callout_rule": "In $(x + 2)^2 + (y - 5)^2 = 16$, the right-hand side is $r^2 = 16$, so the radius is $r = \\sqrt{16} = 4$ (NOT $16$), and the centre is $(-2, 5)$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_4_1_1",
+      "title": "Finding Key Features of a Parabola in Turning-Point Form",
+      "difficulty": "Fluency",
+      "problem": "For the parabola $y = (x - 2)^2 - 9$, find: (a) the coordinates of the turning point, (b) the $y$-intercept, and (c) the $x$-intercepts.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Read $(h, k)$ directly from $y = (x - 2)^2 - 9$: $h = 2$ and $k = -9$ (a minimum since $a = 1 > 0$).",
+          "working": "$$\\text{Turning point (minimum)} = (2, -9)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $x = 0$ to find the $y$-intercept.",
+          "working": "$$y = (0 - 2)^2 - 9 = 4 - 9 = -5 \\implies (0, -5)$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Substitute $y = 0$ and solve $(x - 2)^2 = 9$ to find the $x$-intercepts.",
+          "working": "$$(x - 2)^2 = 9 \\implies x - 2 = \\pm 3 \\implies x = 5 \\text{ or } x = -1$$"
+        }
+      ],
+      "final_answer": "(a) $(2, -9)$, (b) $(0, -5)$, (c) $(-1, 0)$ and $(5, 0)$",
+      "now_you_try": {
+        "problem": "For the parabola $y = (x + 1)^2 - 4$, find the turning point, the $y$-intercept, and the $x$-intercepts.",
+        "hint": "Note that $(x + 1) = (x - (-1))$, so $h = -1$.",
+        "working_summary": "Vertex $(-1, -4)$; $y$-intercept at $x = 0$ is $1 - 4 = -3$; $x$-intercepts from $(x + 1)^2 = 4 \\implies x = 1$ or $x = -3$.",
+        "answer": "Turning point $(-1, -4)$, $y$-intercept $(0, -3)$, $x$-intercepts $(-3, 0)$ and $(1, 0)$"
+      }
+    },
+    {
+      "id": "WE10_4_1_2",
+      "title": "Finding Key Features of an Exponential Graph",
+      "difficulty": "Understanding",
+      "problem": "For the exponential relation $y = 2^x - 4$, find the equation of its horizontal asymptote, its $y$-intercept, and its $x$-intercept.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "As $x \\to -\\infty$, $2^x \\to 0$, so $y \\to -4$. The horizontal asymptote is $y = -4$.",
+          "working": "$$\\text{Horizontal asymptote: } y = -4$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $x = 0$ (using $2^0 = 1$) to find the $y$-intercept.",
+          "working": "$$y = 2^0 - 4 = 1 - 4 = -3 \\implies (0, -3)$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Substitute $y = 0$ and solve $2^x - 4 = 0$ to find the $x$-intercept.",
+          "working": "$$2^x = 4 = 2^2 \\implies x = 2 \\implies (2, 0)$$"
+        }
+      ],
+      "final_answer": "Asymptote $y = -4$, $y$-intercept $(0, -3)$, $x$-intercept $(2, 0)$",
+      "now_you_try": {
+        "problem": "For the exponential relation $y = 3^x - 9$, find the equation of the horizontal asymptote, the $y$-intercept, and the $x$-intercept.",
+        "hint": "Set $x = 0$ ($3^0 = 1$) for the $y$-intercept and $3^x = 9$ for the $x$-intercept.",
+        "working_summary": "Asymptote $y = -9$; $y$-intercept $(0, 1 - 9) = (0, -8)$; $x$-intercept from $3^x = 9 \\implies x = 2$, so $(2, 0)$.",
+        "answer": "Asymptote $y = -9$, $y$-intercept $(0, -8)$, $x$-intercept $(2, 0)$"
+      }
+    },
+    {
+      "id": "WE10_4_1_3",
+      "title": "Identifying the Centre, Radius, and Intercepts of a Circle",
+      "difficulty": "Problem-Solving",
+      "problem": "Find the centre and radius of the circle $(x - 3)^2 + (y + 4)^2 = 25$, and determine whether the circle passes through the origin $(0, 0)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Compare $(x - 3)^2 + (y - (-4))^2 = 5^2$ with $(x - h)^2 + (y - k)^2 = r^2$.",
+          "working": "$$\\text{Centre } (h, k) = (3, -4), \\quad \\text{Radius } r = \\sqrt{25} = 5$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $(x, y) = (0, 0)$ into the left-hand side of the equation to check if it equals $25$.",
+          "working": "$$(0 - 3)^2 + (0 + 4)^2 = 9 + 16 = 25 \\implies \\text{Yes, } (0, 0) \\text{ lies on the circle.}$$"
+        }
+      ],
+      "final_answer": "Centre $(3, -4)$, radius $r = 5$; yes, the circle passes through $(0, 0)$",
+      "now_you_try": {
+        "problem": "Find the centre and radius of the circle $(x + 1)^2 + (y - 2)^2 = 36$.",
+        "hint": "Rewrite $(x + 1)$ as $(x - (-1))$ and take $\\sqrt{36}$ for the radius.",
+        "working_summary": "Centre $(-1, 2)$ and radius $r = \\sqrt{36} = 6$.",
+        "answer": "Centre $(-1, 2)$, radius $6$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_4_1_1",
+      "title": "Assuming the $y$-Intercept of $y = b^x$ is $0$ Instead of $1$",
+      "misconception": "Substituting $x = 0$ into $y = 2^x$ and writing $y = 2^0 = 0$.",
+      "correct_concept": "By the zero index law, any non-zero base raised to the power $0$ equals $1$ ($b^0 = 1$). Therefore, every basic exponential curve $y = b^x$ passes through $(0, 1)$, never $(0, 0)$.",
+      "incorrect_working": "$$x = 0 \\implies y = 2^0 = 0 \\implies (0, 0) \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$x = 0 \\implies y = 2^0 = 1 \\implies (0, 1) \\quad (\\text{Correct})$$",
+      "counter_example": "The line $y = 0$ is the horizontal asymptote of $y = 2^x$, so $2^x$ is strictly positive and never touches $(0, 0)$."
+    },
+    {
+      "id": "MISC_10_4_1_2",
+      "title": "Forgetting to Take the Square Root of $r^2$ in a Circle Equation",
+      "misconception": "Stating that the circle $x^2 + y^2 = 49$ has radius $49$.",
+      "correct_concept": "In $x^2 + y^2 = r^2$, the constant on the right-hand side is the SQUARE of the radius ($r^2$), so the radius is $r = \\sqrt{49} = 7$.",
+      "incorrect_working": "$$x^2 + y^2 = 49 \\implies r = 49 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$x^2 + y^2 = 49 \\implies r = \\sqrt{49} = 7 \\quad (\\text{Correct})$$",
+      "counter_example": "When $y = 0$, $x^2 = 49 \\implies x = \\pm 7$, so the circle crosses the $x$-axis at $7$ units from the origin, not $49$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_4_1_Q1",
+        "question": "Find the axis of symmetry and the coordinates of the turning point of the parabola $y = x^2 - 6x + 5$.",
+        "difficulty": "Easy",
+        "context": "Parabola Vertex from General Form",
+        "final_answer": "Axis of symmetry $x = 3$; turning point $(3, -4)$",
+        "step_by_step_solution": [
+          "Use $x = -\\frac{b}{2a} = -\\frac{-6}{2(1)} = 3$.",
+          "Substitute $x = 3$ into the equation: $y = 3^2 - 6(3) + 5 = 9 - 18 + 5 = -4$, giving $(3, -4)$."
+        ]
+      },
+      {
+        "id": "10_4_1_Q2",
+        "question": "Find the $x$-intercepts and the coordinates of the turning point of $y = -(x - 1)(x - 5)$.",
+        "difficulty": "Easy",
+        "context": "Parabola in Intercept Form",
+        "final_answer": "$x$-intercepts $(1, 0)$ and $(5, 0)$; maximum turning point $(3, 4)$",
+        "step_by_step_solution": [
+          "Setting $y = 0$ gives $x$-intercepts at $x = 1$ and $x = 5$.",
+          "The axis of symmetry is midway at $x = \\frac{1 + 5}{2} = 3$. Substituting $x = 3$ gives $y = -(3 - 1)(3 - 5) = -2(-2) = 4$, so the vertex is $(3, 4)$."
+        ]
+      },
+      {
+        "id": "10_4_1_Q3",
+        "question": "Find the horizontal asymptote, $y$-intercept, and $x$-intercept of the exponential graph $y = 2 \\times 3^x - 6$.",
+        "difficulty": "Medium",
+        "context": "Exponential Graph Features",
+        "final_answer": "Asymptote $y = -6$, $y$-intercept $(0, -4)$, $x$-intercept $(1, 0)$",
+        "step_by_step_solution": [
+          "As $x \\to -\\infty$, $3^x \\to 0$, so the horizontal asymptote is $y = -6$.",
+          "At $x = 0$, $y = 2(3^0) - 6 = 2 - 6 = -4 \\implies (0, -4)$.",
+          "At $y = 0$, $2 \\times 3^x = 6 \\implies 3^x = 3^1 \\implies x = 1 \\implies (1, 0)$."
+        ]
+      },
+      {
+        "id": "10_4_1_Q4",
+        "question": "Write the equation of the circle with centre $(-3, 2)$ and radius $4$.",
+        "difficulty": "Easy",
+        "context": "Writing a Circle Equation",
+        "final_answer": "$(x + 3)^2 + (y - 2)^2 = 16$",
+        "step_by_step_solution": [
+          "Substitute $h = -3$, $k = 2$, and $r = 4$ into $(x - h)^2 + (y - k)^2 = r^2$.",
+          "$(x - (-3))^2 + (y - 2)^2 = 4^2 \\implies (x + 3)^2 + (y - 2)^2 = 16$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_4_1_Q5",
+        "question": "A parabolic bridge arch is modelled by $y = -\\frac{1}{4}(x - 10)^2 + 25$, where $x$ is the horizontal distance in metres and $y$ is the height in metres above the river. Find: (a) the maximum height of the arch, and (b) the horizontal span of the arch at river level ($y = 0$).",
+        "difficulty": "Medium",
+        "context": "Parabolic Bridge Arch",
+        "final_answer": "(a) Maximum height $25\\text{ m}$ (at $x = 10\\text{ m}$); (b) span $20\\text{ m}$ (from $x = 0$ to $x = 20$)",
+        "step_by_step_solution": [
+          "The vertex of $y = -\\frac{1}{4}(x - 10)^2 + 25$ is $(10, 25)$, so the maximum height is $25\\text{ m}$.",
+          "Set $y = 0$: $\\frac{1}{4}(x - 10)^2 = 25 \\implies (x - 10)^2 = 100 \\implies x - 10 = \\pm 10 \\implies x = 0$ or $x = 20$.",
+          "The horizontal span is $20 - 0 = 20\\text{ m}$."
+        ]
+      },
+      {
+        "id": "10_4_1_Q6",
+        "question": "A hot cup of tea placed in a room with ambient temperature $20^\\circ\\text{C}$ has temperature $T(^\\circ\\text{C})$ after $t$ minutes modelled by $T = 70(2)^{-t/5} + 20$. Find: (a) the initial temperature of the tea, (b) its temperature after $10$ minutes, and (c) the long-term temperature it approaches.",
+        "difficulty": "Medium",
+        "context": "Newton's Law of Cooling",
+        "final_answer": "(a) $90^\\circ\\text{C}$, (b) $37.5^\\circ\\text{C}$, (c) $20^\\circ\\text{C}$ (asymptote $T = 20$)",
+        "step_by_step_solution": [
+          "At $t = 0$, $T = 70(2)^0 + 20 = 70 + 20 = 90^\\circ\\text{C}$.",
+          "At $t = 10$, $T = 70(2)^{-2} + 20 = \\frac{70}{4} + 20 = 17.5 + 20 = 37.5^\\circ\\text{C}$.",
+          "As $t \\to \\infty$, $2^{-t/5} \\to 0$, so $T \\to 20^\\circ\\text{C}$ (the room's ambient temperature)."
+        ]
+      },
+      {
+        "id": "10_4_1_Q7",
+        "question": "Complete the square for both $x$ and $y$ to find the centre and radius of the circle $x^2 - 6x + y^2 + 8y = 0$.",
+        "difficulty": "Challenging",
+        "context": "Completing the Square for a Circle",
+        "final_answer": "Centre $(3, -4)$, radius $r = 5$",
+        "step_by_step_solution": [
+          "Add $(-3)^2 = 9$ and $4^2 = 16$ to both sides: $(x^2 - 6x + 9) + (y^2 + 8y + 16) = 9 + 16$.",
+          "Rewrite as $(x - 3)^2 + (y + 4)^2 = 25$, giving centre $(3, -4)$ and radius $r = \\sqrt{25} = 5$."
+        ]
+      },
+      {
+        "id": "10_4_1_Q8",
+        "question": "Find the two points of intersection of the circle $x^2 + y^2 = 25$ and the straight line $y = x + 1$.",
+        "difficulty": "Challenging",
+        "context": "Intersection of a Line and a Circle",
+        "final_answer": "$(3, 4)$ and $(-4, -3)$",
+        "step_by_step_solution": [
+          "Substitute $y = x + 1$ into $x^2 + y^2 = 25$: $x^2 + (x + 1)^2 = 25 \\implies 2x^2 + 2x - 24 = 0 \\implies x^2 + x - 12 = 0$.",
+          "Factorise: $(x + 4)(x - 3) = 0 \\implies x = 3$ or $x = -4$.",
+          "Substitute back into $y = x + 1$: for $x = 3, y = 4$; for $x = -4, y = -3$. Points are $(3, 4)$ and $(-4, -3)$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_4_1_Q9",
+        "question": "Explain why the parabola $y = 2(x - 3)^2 + 5$ has no $x$-intercepts, using both algebraic reasoning and geometric reasoning.",
+        "difficulty": "Medium",
+        "context": "Parabola Above the x-Axis",
+        "final_answer": "Geometrically its minimum vertex is $(3, 5)$ above the $x$-axis and it opens upwards ($a = 2 > 0$); algebraically $2(x - 3)^2 = -5$ has no real solutions since $(x - 3)^2 \\ge 0$",
+        "step_by_step_solution": [
+          "Geometrically, the vertex is $(3, 5)$, which lies above the $x$-axis, and since $a = 2 > 0$ the parabola opens upwards, never crossing $y = 0$.",
+          "Algebraically, setting $y = 0$ gives $(x - 3)^2 = -\\frac{5}{2}$, which has no real solutions because a square is never negative."
+        ]
+      },
+      {
+        "id": "10_4_1_Q10",
+        "question": "Show algebraically that the graphs of $y = 2^{-x}$ and $y = \\left(\\frac{1}{2}\\right)^x$ are identical, and explain how their graph is related to the graph of $y = 2^x$.",
+        "difficulty": "Medium",
+        "context": "Exponential Reflection in the y-Axis",
+        "final_answer": "$2^{-x} = (2^{-1})^x = \\left(\\frac{1}{2}\\right)^x$; replacing $x$ with $-x$ reflects the graph of $y = 2^x$ in the $y$-axis",
+        "step_by_step_solution": [
+          "By the index laws, $2^{-x} = (2^{-1})^x = \\left(\\frac{1}{2}\\right)^x$ for all real $x$.",
+          "Replacing $x$ with $-x$ reflects every point $(x, y)$ on $y = 2^x$ to $(-x, y)$ across the $y$-axis, turning exponential growth into exponential decay."
+        ]
+      },
+      {
+        "id": "10_4_1_Q11",
+        "question": "Determine whether the point $P(4, 5)$ lies inside, on, or outside the circle $(x - 1)^2 + (y - 2)^2 = 16$, and justify your conclusion.",
+        "difficulty": "Challenging",
+        "context": "Point Position Relative to a Circle",
+        "final_answer": "Outside the circle, because $(4 - 1)^2 + (5 - 2)^2 = 18 > 16$ (distance from centre is $\\sqrt{18} > 4$)",
+        "step_by_step_solution": [
+          "Calculate the squared distance from the centre $(1, 2)$ to $P(4, 5)$: $d^2 = (4 - 1)^2 + (5 - 2)^2 = 9 + 9 = 18$.",
+          "Since $d^2 = 18 > r^2 = 16$ (so $d = 3\\sqrt{2} \\approx 4.24 > 4$), $P(4, 5)$ lies strictly outside the circle."
+        ]
+      },
+      {
+        "id": "10_4_1_Q12",
+        "question": "A parabola has vertex $(2, -8)$ and passes through the point $(4, 0)$. Find its quadratic equation in turning-point form and general form.",
+        "difficulty": "Extension",
+        "context": "Determining a Quadratic Rule from Vertex and Point",
+        "final_answer": "$y = 2(x - 2)^2 - 8 = 2x^2 - 8x$",
+        "step_by_step_solution": [
+          "Substitute vertex $(h, k) = (2, -8)$ into $y = a(x - h)^2 + k$: $y = a(x - 2)^2 - 8$.",
+          "Substitute $(4, 0)$: $0 = a(4 - 2)^2 - 8 \\implies 4a = 8 \\implies a = 2$.",
+          "Thus $y = 2(x - 2)^2 - 8 = 2(x^2 - 4x + 4) - 8 = 2x^2 - 8x$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_4_1_1b",
+      "description": "Worked Example 10.4.1.1(b) y-intercept",
+      "expression": "(0 - 2)**2 - 9",
+      "expected": -5
+    },
+    {
+      "id": "WE10_4_1_1c",
+      "description": "Worked Example 10.4.1.1(c) x-intercepts",
+      "expression": "solve(Eq((x - 2)**2 - 9, 0), x)",
+      "expected": [-1, 5]
+    },
+    {
+      "id": "NYT10_4_1_1",
+      "description": "Now You Try 10.4.1.1 x-intercepts",
+      "expression": "solve(Eq((x + 1)**2 - 4, 0), x)",
+      "expected": [-3, 1]
+    },
+    {
+      "id": "WE10_4_1_2y",
+      "description": "Worked Example 10.4.1.2 y-intercept",
+      "expression": "2**0 - 4",
+      "expected": -3
+    },
+    {
+      "id": "WE10_4_1_2x",
+      "description": "Worked Example 10.4.1.2 x-intercept",
+      "expression": "solve(Eq(2**x - 4, 0), x)[0]",
+      "expected": 2
+    },
+    {
+      "id": "NYT10_4_1_2y",
+      "description": "Now You Try 10.4.1.2 y-intercept",
+      "expression": "3**0 - 9",
+      "expected": -8
+    },
+    {
+      "id": "WE10_4_1_3",
+      "description": "Worked Example 10.4.1.3 origin check",
+      "expression": "(0 - 3)**2 + (0 + 4)**2",
+      "expected": 25
+    },
+    {
+      "id": "EX10_4_1_Q1",
+      "description": "Exercise 10.4.1 Q1 vertex y",
+      "expression": "3**2 - 6*3 + 5",
+      "expected": -4
+    },
+    {
+      "id": "EX10_4_1_Q2",
+      "description": "Exercise 10.4.1 Q2 vertex y",
+      "expression": "-(3 - 1)*(3 - 5)",
+      "expected": 4
+    },
+    {
+      "id": "EX10_4_1_Q3y",
+      "description": "Exercise 10.4.1 Q3 y-intercept",
+      "expression": "2 * 3**0 - 6",
+      "expected": -4
+    },
+    {
+      "id": "EX10_4_1_Q3x",
+      "description": "Exercise 10.4.1 Q3 x-intercept",
+      "expression": "solve(Eq(2 * 3**x - 6, 0), x)[0]",
+      "expected": 1
+    },
+    {
+      "id": "EX10_4_1_Q5",
+      "description": "Exercise 10.4.1 Q5 bridge x-intercepts",
+      "expression": "solve(Eq(-Rational(1, 4)*(x - 10)**2 + 25, 0), x)",
+      "expected": [0, 20]
+    },
+    {
+      "id": "EX10_4_1_Q6",
+      "description": "Exercise 10.4.1 Q6 temp at t=10",
+      "expression": "70 * 2**(-10/5) + 20",
+      "expected": "Rational(75, 2)"
+    },
+    {
+      "id": "EX10_4_1_Q8",
+      "description": "Exercise 10.4.1 Q8 circle line x-coordinates",
+      "expression": "solve(Eq(x**2 + (x + 1)**2, 25), x)",
+      "expected": [-4, 3]
+    },
+    {
+      "id": "EX10_4_1_Q11",
+      "description": "Exercise 10.4.1 Q11 squared distance",
+      "expression": "(4 - 1)**2 + (5 - 2)**2",
+      "expected": 18
+    },
+    {
+      "id": "EX10_4_1_Q12",
+      "description": "Exercise 10.4.1 Q12 expansion",
+      "expression": "simplify(expand(2*(x - 2)**2 - 8) - (2*x**2 - 8*x))",
+      "expected": 0
+    }
+  ]
+}

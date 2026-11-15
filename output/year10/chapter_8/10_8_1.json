@@ -1,0 +1,411 @@
+{
+  "metadata": {
+    "section_id": "10_8_1",
+    "section_code": "8A",
+    "chapter_number": 8,
+    "chapter_title": "Conditional Probability and Independence (10 & 10A)",
+    "title": "Conditional Probability and Independent Events",
+    "vcaa_code": "VC2M10P01",
+    "vcaa_description": "Use the language of 'if ... then', 'given', 'of', 'knowing that' to investigate conditional statements and identify common mistakes in interpreting such language (and VC2M10P02, VC2M10AP01).",
+    "strand": "Probability",
+    "target_mastery": "Calculate conditional probabilities $\\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)}$ from Venn diagrams, two-way Karnaugh tables, and tree diagrams, test whether two events are independent ($\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$), and apply counting principles and sampling with/without replacement (10A VC2M10AP02).",
+    "prerequisites": [
+      "Two-stage probability and Venn/tree diagrams (Year 9 VC2M9P01, VC2M9P02)",
+      "Addition rule of probability $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Conditional probability ($\\Pr(A \\mid B)$)",
+        "definition": "The probability that event $A$ occurs given that event $B$ is already known to have occurred, restricting the sample space to $B$: $\\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)} = \\frac{n(A \\cap B)}{n(B)}$ (for $\\Pr(B) > 0$)."
+      },
+      {
+        "term": "Independent events",
+        "definition": "Two events $A$ and $B$ whose occurrence has no effect on each other's probability, satisfying $\\Pr(A \\mid B) = \\Pr(A)$ and the multiplication test $\\Pr(A \\cap B) = \\Pr(A) \\times \\Pr(B)$."
+      },
+      {
+        "term": "Mutually exclusive (disjoint) events",
+        "definition": "Two events that cannot occur at the same time ($A \\cap B = \\varnothing$, so $\\Pr(A \\cap B) = 0$). Two events with non-zero probabilities cannot be both mutually exclusive and independent."
+      },
+      {
+        "term": "Sampling without replacement and factorials ($n!$)",
+        "definition": "Selecting items sequentially without returning them to the pool, so conditional branch probabilities change at each stage; the number of ways to arrange $n$ distinct items in a row is $n! = n(n - 1)(n - 2)\\cdots 1$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_8_1_1",
+      "title": "Conditional Probability and Restricted Sample Spaces",
+      "explanation": "Phrases such as 'given that $B$', 'if $B$', 'knowing that $B$', or 'of those in $B$, find the probability of $A$' all describe conditional probability, denoted $\\Pr(A \\mid B)$. Knowing that $B$ has occurred shrinks the sample space from the universal set $\\xi$ down to $B$ alone, and the favourable outcomes are only those inside the intersection $A \\cap B$. Rearranging the formula produces the general Multiplication Law of Probability: $\\Pr(A \\cap B) = \\Pr(B) \\times \\Pr(A \\mid B)$.",
+      "formula_latex": "\\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)} = \\frac{n(A \\cap B)}{n(B)}, \\qquad \\Pr(A \\cap B) = \\Pr(B)\\Pr(A \\mid B)",
+      "callout_title": "What Follows 'GIVEN' Goes in the Denominator",
+      "callout_rule": "In $\\Pr(A \\mid B)$, the condition $B$ ('given $B$' or 'of the $B$s') ALWAYS forms the denominator $\\Pr(B)$, while the intersection $\\Pr(A \\cap B)$ ALWAYS forms the numerator."
+    },
+    {
+      "id": "theory_10_8_1_2",
+      "title": "Testing for Independence vs Mutual Exclusivity",
+      "explanation": "Events $A$ and $B$ are mathematically independent if knowing that $B$ occurred does not change the probability of $A$, i.e. $\\Pr(A \\mid B) = \\Pr(A)$. Substituting this into the conditional probability formula gives the universal test for independence: $\\Pr(A \\cap B) = \\Pr(A) \\times \\Pr(B)$. Be careful never to confuse independent events with mutually exclusive (disjoint) events: if $A$ and $B$ have positive probabilities and are mutually exclusive ($\\Pr(A \\cap B) = 0$), knowing $B$ happened guarantees $A$ did NOT happen ($\\Pr(A \\mid B) = 0 \\neq \\Pr(A)$), so mutually exclusive events are strongly dependent!",
+      "formula_latex": "A \\text{ and } B \\text{ are independent} \\iff \\Pr(A \\cap B) = \\Pr(A) \\times \\Pr(B) \\iff \\Pr(A \\mid B) = \\Pr(A)",
+      "callout_title": "Compare $\\Pr(A \\cap B)$ Against $\\Pr(A) \\times \\Pr(B)$",
+      "callout_rule": "To prove or disprove independence, calculate $\\Pr(A \\cap B)$ and $\\Pr(A) \\times \\Pr(B)$ separately. If they are equal, $A$ and $B$ are independent; if not, they are dependent."
+    },
+    {
+      "id": "theory_10_8_1_3",
+      "title": "Multi-Stage Tree Diagrams Without Replacement and Counting Principles (10A)",
+      "explanation": "When items are drawn from a finite group with replacement, the stage probabilities stay constant and the draws are independent. When items are drawn without replacement, both the total denominator and the remaining counts decrease by $1$ after each draw, so the second-stage branch probabilities are conditional probabilities $\\Pr(B \\mid A)$. In Year 10A combinatorics (VC2M10AP02), by the multiplication principle, if step 1 can be done in $m$ ways and step 2 in $n$ ways, there are $m \\times n$ outcomes; $n$ distinct objects can be arranged in $n!$ ways, and a subset of $r$ items can be chosen from $n$ items in $\\binom{n}{r} = \\frac{n!}{r!(n - r)!}$ ways.",
+      "formula_latex": "n! = n(n - 1)\\cdots 1, \\qquad \\binom{n}{r} = \\frac{n!}{r!(n - r)!}",
+      "callout_title": "Reduce Both Numerator and Denominator Without Replacement",
+      "callout_rule": "When drawing a second item of the same colour without replacement from $k$ favourable out of $N$ total items, the conditional probability is $\\frac{k - 1}{N - 1}$, not $\\frac{k}{N}$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_8_1_1",
+      "title": "Conditional Probability from a Two-Way Table (Karnaugh Map)",
+      "difficulty": "Fluency",
+      "problem": "A survey of $100$ Year 10 students in Melbourne asked whether they play Basketball ($B$) and/or Tennis ($T$). In total, $50$ play Basketball, $40$ play Tennis, and $20$ play both sports. Find: (a) $\\Pr(B \\cup T)$, (b) $\\Pr(B \\mid T)$ (the probability a student plays Basketball given they play Tennis), and (c) $\\Pr(T \\mid B)$, and determine whether $B$ and $T$ are independent.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Use the Addition Rule $\\Pr(B \\cup T) = \\Pr(B) + \\Pr(T) - \\Pr(B \\cap T)$ with $\\Pr(B) = \\frac{50}{100} = \\frac{1}{2}$, $\\Pr(T) = \\frac{40}{100} = \\frac{2}{5}$, and $\\Pr(B \\cap T) = \\frac{20}{100} = \\frac{1}{5}$.",
+          "working": "$$\\Pr(B \\cup T) = \\frac{50}{100} + \\frac{40}{100} - \\frac{20}{100} = \\frac{70}{100} = \\frac{7}{10}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Evaluate $\\Pr(B \\mid T) = \\frac{n(B \\cap T)}{n(T)}$ and $\\Pr(T \\mid B) = \\frac{n(B \\cap T)}{n(B)}$.",
+          "working": "$$\\Pr(B \\mid T) = \\frac{20}{40} = \\frac{1}{2}, \\qquad \\Pr(T \\mid B) = \\frac{20}{50} = \\frac{2}{5}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Compare $\\Pr(B \\mid T) = \\frac{1}{2}$ with $\\Pr(B) = \\frac{1}{2}$ (or check $\\Pr(B)\\Pr(T) = \\frac{1}{2} \\times \\frac{2}{5} = \\frac{1}{5} = \\Pr(B \\cap T)$).",
+          "working": "$$\\Pr(B \\cap T) = \\frac{1}{5} \\quad \\text{and} \\quad \\Pr(B) \\times \\Pr(T) = \\frac{1}{2} \\times \\frac{2}{5} = \\frac{1}{5} \\implies B \\text{ and } T \\text{ are independent!}$$"
+        }
+      ],
+      "final_answer": "(a) $\\frac{7}{10}$, (b) $\\frac{1}{2}$, (c) $\\frac{2}{5}$; $B$ and $T$ are independent because $\\Pr(B \\cap T) = \\Pr(B)\\Pr(T) = \\frac{1}{5}$",
+      "now_you_try": {
+        "problem": "For two events $A$ and $B$, $\\Pr(A) = 0.6$, $\\Pr(B) = 0.5$, and $\\Pr(A \\cap B) = 0.2$. Find (a) $\\Pr(A \\mid B)$, (b) $\\Pr(B \\mid A)$, and (c) state with a reason whether $A$ and $B$ are independent.",
+        "hint": "Divide $\\Pr(A \\cap B)$ by $\\Pr(B)$ for (a), by $\\Pr(A)$ for (b), and compare $\\Pr(A \\cap B)$ with $\\Pr(A)\\Pr(B)$.",
+        "working_summary": "(a) $\\Pr(A \\mid B) = \\frac{0.2}{0.5} = \\frac{2}{5} = 0.4$; (b) $\\Pr(B \\mid A) = \\frac{0.2}{0.6} = \\frac{1}{3}$; (c) $\\Pr(A)\\Pr(B) = 0.6 \\times 0.5 = 0.3 \\neq 0.2 = \\Pr(A \\cap B)$, so $A$ and $B$ are NOT independent.",
+        "answer": "(a) $\\frac{2}{5}$, (b) $\\frac{1}{3}$, (c) Not independent ($\\Pr(A)\\Pr(B) = 0.3 \\neq 0.2$)"
+      }
+    },
+    {
+      "id": "WE10_8_1_2",
+      "title": "Sampling Without Replacement on a Conditional Tree Diagram",
+      "difficulty": "Fluency",
+      "problem": "A box of chocolates contains $6$ dark chocolates ($D$) and $4$ milk chocolates ($M$). Two chocolates are selected at random one after the other without replacement. Find: (a) the probability that both chocolates are dark, $\\Pr(D_1 \\cap D_2)$, (b) the probability that the two chocolates are of different types, and (c) the conditional probability that the first chocolate was dark given that the two chocolates were of different types.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "On the first draw there are $6$ dark out of $10$; given $D_1$, on the second draw there are $5$ dark left out of $9$.",
+          "working": "$$\\Pr(D_1 \\cap D_2) = \\Pr(D_1) \\times \\Pr(D_2 \\mid D_1) = \\frac{6}{10} \\times \\frac{5}{9} = \\frac{30}{90} = \\frac{1}{3}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Different types occur along two disjoint branches: $(D_1 \\cap M_2)$ or $(M_1 \\cap D_2)$.",
+          "working": "$$\\Pr(\\text{different}) = \\Pr(D_1 \\cap M_2) + \\Pr(M_1 \\cap D_2) = \\left(\\frac{6}{10} \\times \\frac{4}{9}\\right) + \\left(\\frac{4}{10} \\times \\frac{6}{9}\\right) = \\frac{24}{90} + \\frac{24}{90} = \\frac{48}{90} = \\frac{8}{15}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Use $\\Pr(D_1 \\mid \\text{different}) = \\frac{\\Pr(D_1 \\cap M_2)}{\\Pr(\\text{different})}$.",
+          "working": "$$\\Pr(D_1 \\mid \\text{different}) = \\frac{24/90}{48/90} = \\frac{1}{2}$$"
+        }
+      ],
+      "final_answer": "(a) $\\frac{1}{3}$, (b) $\\frac{8}{15}$, (c) $\\frac{1}{2}$",
+      "now_you_try": {
+        "problem": "A bag contains $5$ red marbles and $3$ blue marbles. Two marbles are drawn at random without replacement. Find (a) $\\Pr(R_1 \\cap R_2)$ and (b) $\\Pr(B_1 \\cap B_2)$.",
+        "hint": "There are $8$ marbles initially and $7$ marbles left for the second draw.",
+        "working_summary": "(a) $\\Pr(R_1 \\cap R_2) = \\frac{5}{8} \\times \\frac{4}{7} = \\frac{20}{56} = \\frac{5}{14}$; (b) $\\Pr(B_1 \\cap B_2) = \\frac{3}{8} \\times \\frac{2}{7} = \\frac{6}{56} = \\frac{3}{28}$.",
+        "answer": "(a) $\\frac{5}{14}$, (b) $\\frac{3}{28}$"
+      }
+    },
+    {
+      "id": "WE10_8_1_3",
+      "title": "[10A] Counting Principles, Combinations, and Committee Selection",
+      "difficulty": "Problem-Solving",
+      "problem": "A school leadership council is choosing a $3$-student delegation at random from a pool of $5$ Year 10 girls and $4$ Year 10 boys ($9$ students in total). Find: (a) the total number of possible $3$-student delegations $\\binom{9}{3}$, (b) the number of delegations consisting of all $3$ girls and its probability, and (c) the conditional probability that the delegation consists of all $3$ girls given that it contains at least $2$ girls.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Use $\\binom{n}{r} = \\frac{n!}{r!(n - r)!}$ to count the total number of $3$-student subsets from $9$ students, and all-girl subsets from $5$ girls.",
+          "working": "$$\\text{Total delegations} = \\binom{9}{3} = \\frac{9 \\times 8 \\times 7}{3 \\times 2 \\times 1} = 84$$\n$$\\text{All } 3 \\text{ girls} = \\binom{5}{3} = 10 \\implies \\Pr(3\\text{ girls}) = \\frac{10}{84} = \\frac{5}{42}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "'At least $2$ girls' means either ($2$ girls and $1$ boy) or ($3$ girls and $0$ boys). Count $\\binom{5}{2}\\binom{4}{1} + \\binom{5}{3}$.",
+          "working": "$$n(\\text{at least } 2\\text{ girls}) = \\binom{5}{2}\\binom{4}{1} + \\binom{5}{3} = (10 \\times 4) + 10 = 40 + 10 = 50$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Divide $n(3\\text{ girls})$ by $n(\\text{at least } 2\\text{ girls})$.",
+          "working": "$$\\Pr(3\\text{ girls} \\mid \\text{at least } 2\\text{ girls}) = \\frac{10}{50} = \\frac{1}{5}$$"
+        }
+      ],
+      "final_answer": "(a) $84$ delegations, (b) $10$ delegations ($\\Pr = \\frac{5}{42}$), (c) $\\frac{1}{5}$",
+      "now_you_try": {
+        "problem": "How many different $4$-digit PINs can be formed using the digits $1, 2, 3, 4, 5, 6$ without repeating any digit, and what is the probability that a randomly chosen such PIN starts with an even digit?",
+        "hint": "Use $6 \\times 5 \\times 4 \\times 3$ for the total count; $3$ of the $6$ digits are even.",
+        "working_summary": "Total $= 6 \\times 5 \\times 4 \\times 3 = 360$; starting with $2, 4,$ or $6$ gives $\\frac{3}{6} = \\frac{1}{2}$ (or $\\frac{3 \\times 5 \\times 4 \\times 3}{360} = \\frac{180}{360} = \\frac{1}{2}$).",
+        "answer": "$360$ PINs; probability $= \\frac{1}{2}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_10_8_1_1",
+      "title": "Confusing $\\Pr(A \\mid B)$ with $\\Pr(B \\mid A)$ ( the Prosecutor's / Inverse Fallacy)",
+      "misconception": "Assuming that 'the probability of $A$ given $B$' equals 'the probability of $B$ given $A$' (e.g. confusing the probability of having a disease given a positive test with the probability of a positive test given the disease).",
+      "correct_concept": "$\\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)}$ and $\\Pr(B \\mid A) = \\frac{\\Pr(A \\cap B)}{\\Pr(A)}$ share the same numerator $\\Pr(A \\cap B)$ but divide by completely different denominators! They are equal only when $\\Pr(A) = \\Pr(B)$.",
+      "incorrect_working": "$$\\Pr(A \\mid B) = \\Pr(B \\mid A) \\quad \\text{(Incorrect whenever } \\Pr(A) \\neq \\Pr(B)\\text{)}$$",
+      "correct_working": "$$\\Pr(A \\mid B) = \\frac{\\Pr(A \\cap B)}{\\Pr(B)} \\neq \\frac{\\Pr(A \\cap B)}{\\Pr(A)} = \\Pr(B \\mid A)$$",
+      "counter_example": "Given a person plays in the AFL ($B$), the probability they live in Australia ($A$) is nearly $1$ ($\\Pr(A \\mid B) \\approx 1$), whereas given a person lives in Australia ($A$), the probability they play in the AFL ($B$) is tiny ($\\Pr(B \\mid A) < 0.0001$)."
+    },
+    {
+      "id": "misc_10_8_1_2",
+      "title": "Thinking Mutually Exclusive Events Are Independent",
+      "misconception": "Believing that because two disjoint events $A$ and $B$ have 'nothing in common' ($A \\cap B = \\varnothing$), they must be independent.",
+      "correct_concept": "Mutually exclusive events with $\\Pr(A) > 0$ and $\\Pr(B) > 0$ are maximally DEPENDENT: if $B$ happens, $A$ is completely blocked from happening ($\\Pr(A \\mid B) = 0 \\neq \\Pr(A)$). For independent events, the overlap must be non-zero: $\\Pr(A \\cap B) = \\Pr(A)\\Pr(B) > 0$.",
+      "incorrect_working": "$$A \\cap B = \\varnothing \\implies A \\text{ and } B \\text{ are independent} \\quad \\text{(False!)}$$",
+      "correct_working": "$$A \\cap B = \\varnothing \\implies \\Pr(A \\cap B) = 0 \\neq \\Pr(A)\\Pr(B) \\implies A \\text{ and } B \\text{ are dependent}$$",
+      "counter_example": "On a single roll of a die, rolling a $6$ ($A$) and rolling an odd number ($B$) are mutually exclusive: if you are told the roll was odd, the probability it is a $6$ drops from $\\frac{1}{6}$ to $0$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_8_1_Q1",
+        "question": "Given $\\Pr(A) = \\frac{1}{2}$, $\\Pr(B) = \\frac{2}{5}$, and $\\Pr(A \\cap B) = \\frac{1}{5}$, find (a) $\\Pr(A \\cup B)$, (b) $\\Pr(A \\mid B)$, (c) $\\Pr(B \\mid A)$, and (d) state whether $A$ and $B$ are independent.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $\\frac{7}{10}$, (b) $\\frac{1}{2}$, (c) $\\frac{2}{5}$, (d) Independent ($\\Pr(A)\\Pr(B) = \\frac{1}{2} \\times \\frac{2}{5} = \\frac{1}{5} = \\Pr(A \\cap B)$)",
+        "step_by_step_solution": [
+          "By the Addition Rule, $\\Pr(A \\cup B) = \\frac{1}{2} + \\frac{2}{5} - \\frac{1}{5} = \\frac{7}{10}$.",
+          "$\\Pr(A \\mid B) = \\frac{1/5}{2/5} = \\frac{1}{2}$ and $\\Pr(B \\mid A) = \\frac{1/5}{1/2} = \\frac{2}{5}$; since $\\Pr(A \\mid B) = \\Pr(A) = \\frac{1}{2}$, $A$ and $B$ are independent."
+        ]
+      },
+      {
+        "id": "10_8_1_Q2",
+        "question": "A fair $6$-sided die is rolled once. Let event $E$ be 'rolling an even number' ($\\{2, 4, 6\\}$) and event $G$ be 'rolling a number greater than $3$' ($\\{4, 5, 6\\}$). Find (a) $\\Pr(E \\cap G)$, (b) $\\Pr(E \\mid G)$, and (c) determine whether $E$ and $G$ are independent.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $\\frac{1}{3}$, (b) $\\frac{2}{3}$, (c) Not independent ($\\Pr(E)\\Pr(G) = \\frac{1}{2} \\times \\frac{1}{2} = \\frac{1}{4} \\neq \\frac{1}{3}$)",
+        "step_by_step_solution": [
+          "The intersection is $E \\cap G = \\{4, 6\\}$, so $\\Pr(E \\cap G) = \\frac{2}{6} = \\frac{1}{3}$, and $\\Pr(E \\mid G) = \\frac{n(E \\cap G)}{n(G)} = \\frac{2}{3}$.",
+          "Since $\\Pr(E) = \\frac{3}{6} = \\frac{1}{2}$ and $\\Pr(E \\mid G) = \\frac{2}{3} \\neq \\frac{1}{2}$, events $E$ and $G$ are not independent."
+        ]
+      },
+      {
+        "id": "10_8_1_Q3",
+        "question": "Two events $A$ and $B$ are known to be independent with $\\Pr(A) = 0.4$ and $\\Pr(B) = 0.3$. Find (a) $\\Pr(A \\cap B)$, (b) $\\Pr(A \\cup B)$, and (c) $\\Pr(A \\mid B)$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "(a) $0.12$, (b) $0.58$, (c) $0.4$",
+        "step_by_step_solution": [
+          "Because $A$ and $B$ are independent, $\\Pr(A \\cap B) = \\Pr(A)\\Pr(B) = 0.4 \\times 0.3 = 0.12$ and $\\Pr(A \\mid B) = \\Pr(A) = 0.4$.",
+          "By the Addition Rule, $\\Pr(A \\cup B) = 0.4 + 0.3 - 0.12 = 0.58$."
+        ]
+      },
+      {
+        "id": "10_8_1_Q4",
+        "question": "In a group of $80$ motorists tested at a roadside station, $50$ drive SUVs ($S$), $30$ drive electric vehicles ($E$), and $15$ drive electric SUVs ($S \\cap E$). If a tested motorist is chosen at random, find the probability that they drive an electric vehicle given that they drive an SUV.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$\\frac{3}{10} = 0.3$",
+        "step_by_step_solution": [
+          "Identify $n(S) = 50$ and $n(S \\cap E) = 15$.",
+          "Compute $\\Pr(E \\mid S) = \\frac{n(S \\cap E)}{n(S)} = \\frac{15}{50} = \\frac{3}{10}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_8_1_Q5",
+        "question": "A raffle barrel at a Geelong community fete contains $12$ winning tickets and $8$ blank tickets ($20$ tickets in total). Two tickets are drawn at random without replacement. Find the probability that: (a) both tickets are winning tickets, and (b) the second ticket is a winning ticket given that the first ticket was blank.",
+        "difficulty": "Medium",
+        "context": "Community Raffle",
+        "final_answer": "(a) $\\frac{33}{95}$, (b) $\\frac{12}{19}$",
+        "step_by_step_solution": [
+          "For (a), $\\Pr(W_1 \\cap W_2) = \\frac{12}{20} \\times \\frac{11}{19} = \\frac{3}{5} \\times \\frac{11}{19} = \\frac{33}{95}$.",
+          "For (b), given the first ticket was blank, $12$ winning tickets remain among the $19$ remaining tickets, so $\\Pr(W_2 \\mid B_1) = \\frac{12}{19}$."
+        ]
+      },
+      {
+        "id": "10_8_1_Q6",
+        "question": "A solar battery backup system has two independent power inverters $I_1$ and $I_2$. On any given storm day, the probability that $I_1$ functions without fault is $0.90$ and the probability that $I_2$ functions without fault is $0.80$. Find the probability that: (a) both inverters function, (b) at least one inverter functions, and (c) both inverters function given that at least one functions.",
+        "difficulty": "Challenging",
+        "context": "Reliability Engineering",
+        "final_answer": "(a) $0.72$, (b) $0.98$, (c) $\\frac{36}{49} \\approx 0.7347$",
+        "step_by_step_solution": [
+          "By independence, $\\Pr(I_1 \\cap I_2) = 0.90 \\times 0.80 = 0.72$, and $\\Pr(I_1 \\cup I_2) = 0.90 + 0.80 - 0.72 = 0.98$ (or $1 - 0.10 \\times 0.20 = 0.98$).",
+          "Since $(I_1 \\cap I_2) \\subseteq (I_1 \\cup I_2)$, $\\Pr(I_1 \\cap I_2 \\mid I_1 \\cup I_2) = \\frac{0.72}{0.98} = \\frac{36}{49}$."
+        ]
+      },
+      {
+        "id": "10_8_1_Q7",
+        "question": "On days when it rains in Melbourne ($\\Pr(R) = 0.30$), a commuter train is late with probability $\\Pr(L \\mid R) = 0.40$. On dry days ($\\Pr(R') = 0.70$), the train is late with probability $\\Pr(L \\mid R') = 0.10$. Find (a) the overall probability $\\Pr(L)$ that the train is late on a randomly chosen day, and (b) the conditional probability $\\Pr(R \\mid L)$ that it was raining given that the train was late.",
+        "difficulty": "Challenging",
+        "context": "Tree Diagrams & Bayes' Rule",
+        "final_answer": "(a) $\\Pr(L) = 0.19$, (b) $\\Pr(R \\mid L) = \\frac{12}{19} \\approx 0.6316$",
+        "step_by_step_solution": [
+          "Sum the two 'Late' branches of the tree diagram: $\\Pr(L) = \\Pr(R \\cap L) + \\Pr(R' \\cap L) = (0.30 \\times 0.40) + (0.70 \\times 0.10) = 0.12 + 0.07 = 0.19$.",
+          "Apply the conditional probability formula: $\\Pr(R \\mid L) = \\frac{\\Pr(R \\cap L)}{\\Pr(L)} = \\frac{0.12}{0.19} = \\frac{12}{19}$."
+        ]
+      },
+      {
+        "id": "10_8_1_Q8",
+        "question": "[10A] In a state Tattslotto-style mini-draw, $4$ winning numbers are drawn without replacement from balls numbered $1$ to $10$ (where order does not matter). Find (a) the total number of $4$-number combinations $\\binom{10}{4}$, and (b) the probability that a player's single ticket of $4$ numbers matches all $4$ winning numbers.",
+        "difficulty": "Medium",
+        "context": "Combinatorics & Lotteries",
+        "final_answer": "(a) $210$ combinations, (b) $\\frac{1}{210}$",
+        "step_by_step_solution": [
+          "Calculate $\\binom{10}{4} = \\frac{10 \\times 9 \\times 8 \\times 7}{4 \\times 3 \\times 2 \\times 1} = 210$.",
+          "Since only $1$ combination of $4$ numbers matches all $4$ drawn numbers, the probability is $\\frac{1}{210}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_8_1_Q9",
+        "question": "A medical screening test for a rare condition ($1\\%$ prevalence in the population, so $\\Pr(D) = 0.01$ and $\\Pr(D') = 0.99$) correctly tests positive ($+$) for $99\\%$ of people with the condition ($\\Pr(+ \\mid D) = 0.99$), but also gives a false positive for $1\\%$ of healthy people ($\\Pr(+ \\mid D') = 0.01$). Show that if a randomly tested person receives a positive result, the actual probability $\\Pr(D \\mid +)$ that they have the condition is only $\\frac{1}{2}$ ($50\\%$), and explain why people often mistakenly think it is $99\\%$.",
+        "difficulty": "Challenging",
+        "context": "Medical Screening & Base-Rate Fallacy",
+        "final_answer": "$\\Pr(+) = 0.01(0.99) + 0.99(0.01) = 0.0198 \\implies \\Pr(D \\mid +) = \\frac{0.0099}{0.0198} = \\frac{1}{2} = 50\\%$ (people confuse $\\Pr(D \\mid +)$ with $\\Pr(+ \\mid D) = 99\\%$)",
+        "step_by_step_solution": [
+          "Calculate $\\Pr(D \\cap +) = 0.01 \\times 0.99 = 0.0099$ (true positives) and $\\Pr(D' \\cap +) = 0.99 \\times 0.01 = 0.0099$ (false positives), so $\\Pr(+) = 0.0099 + 0.0099 = 0.0198$.",
+          "Therefore $\\Pr(D \\mid +) = \\frac{0.0099}{0.0198} = \\frac{1}{2} = 50\\%$. Because the condition is rare ($1\\%$), the number of false positives from the large healthy group equals the number of true positives."
+        ]
+      },
+      {
+        "id": "10_8_1_Q10",
+        "question": "Prove algebraically that if $A$ and $B$ are independent events (so $\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$) with $\\Pr(B') > 0$, then $A$ and $B'$ (the complement of $B$) are also independent events.",
+        "difficulty": "Challenging",
+        "context": "Algebraic Proof of Complement Independence",
+        "final_answer": "$\\Pr(A \\cap B') = \\Pr(A) - \\Pr(A \\cap B) = \\Pr(A) - \\Pr(A)\\Pr(B) = \\Pr(A)(1 - \\Pr(B)) = \\Pr(A)\\Pr(B')$",
+        "step_by_step_solution": [
+          "Partition event $A$ into two disjoint parts: $A = (A \\cap B) \\cup (A \\cap B')$, so $\\Pr(A \\cap B') = \\Pr(A) - \\Pr(A \\cap B)$.",
+          "Substitute $\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$ and factorise: $\\Pr(A \\cap B') = \\Pr(A)(1 - \\Pr(B)) = \\Pr(A)\\Pr(B')$, which proves $A$ and $B'$ are independent."
+        ]
+      },
+      {
+        "id": "10_8_1_Q11",
+        "question": "A fair coin is tossed $3$ times. Let event $A$ be 'the first toss is Heads', event $B$ be 'the second toss is Heads', and event $C$ be 'exactly $2$ of the $3$ tosses are Heads'. Show whether $A$ and $C$ are independent.",
+        "difficulty": "Extension",
+        "context": "Three-Stage Sample Space",
+        "final_answer": "Not independent: $\\Pr(A) = \\frac{1}{2}$, $\\Pr(C) = \\frac{3}{8}$, and $\\Pr(A \\cap C) = \\frac{2}{8} = \\frac{1}{4} \\neq \\frac{1}{2} \\times \\frac{3}{8} = \\frac{3}{16}$",
+        "step_by_step_solution": [
+          "Of the $8$ equally likely outcomes, $C = \\{\\text{HHT, HTH, THH}\\}$ has $\\Pr(C) = \\frac{3}{8}$, and $A \\cap C = \\{\\text{HHT, HTH}\\}$ has $\\Pr(A \\cap C) = \\frac{2}{8} = \\frac{1}{4}$.",
+          "Since $\\Pr(A)\\Pr(C) = \\frac{1}{2} \\times \\frac{3}{8} = \\frac{3}{16} \\neq \\frac{1}{4}$, events $A$ and $C$ are dependent ($\\Pr(C \\mid A) = \\frac{1}{2} > \\frac{3}{8}$)."
+        ]
+      },
+      {
+        "id": "10_8_1_Q12",
+        "question": "[10A] The Monty Hall problem: A contestant chooses Door 1 out of $3$ doors (behind $1$ door is a car with probability $\\frac{1}{3}$; behind the other $2$ doors are goats). The host, who knows where the car is, opens one of the other two doors (say Door 3) to reveal a goat. By tracing a tree diagram based on the car's initial location (Door 1, Door 2, or Door 3, each $\\frac{1}{3}$), prove that switching to the remaining closed door wins the car with probability $\\frac{2}{3}$, whereas staying with Door 1 wins with probability $\\frac{1}{3}$.",
+        "difficulty": "Extension",
+        "context": "The Monty Hall Conditional Probability Paradox",
+        "final_answer": "Staying wins if and only if the car was initially behind Door 1 ($\\Pr = \\frac{1}{3}$); switching wins whenever the car was initially behind Door 2 or Door 3 ($\\Pr = \\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3}$)",
+        "step_by_step_solution": [
+          "If the car is behind Door 1 (probability $\\frac{1}{3}$), switching loses and staying wins.",
+          "If the car is behind Door 2 (probability $\\frac{1}{3}$) or Door 3 (probability $\\frac{1}{3}$), the host is forced to open the only other goat door, leaving the car behind the unopened switch door with total probability $\\frac{1}{3} + \\frac{1}{3} = \\frac{2}{3}$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_8_1_1a",
+      "description": "WE10_8_1_1(a) Pr(B union T)",
+      "expression": "Rational(50, 100) + Rational(40, 100) - Rational(20, 100)",
+      "expected": 0.7
+    },
+    {
+      "id": "WE10_8_1_1b",
+      "description": "WE10_8_1_1(b) Pr(B|T)",
+      "expression": "Rational(20, 40)",
+      "expected": 0.5
+    },
+    {
+      "id": "WE10_8_1_1_indep",
+      "description": "WE10_8_1_1 independence check Pr(B)*Pr(T) - Pr(B cap T)",
+      "expression": "Rational(50, 100) * Rational(40, 100) - Rational(20, 100)",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_8_1_1a",
+      "description": "NYT10_8_1_1(a) Pr(A|B)",
+      "expression": "Rational(2, 10) / Rational(5, 10)",
+      "expected": 0.4
+    },
+    {
+      "id": "WE10_8_1_2a",
+      "description": "WE10_8_1_2(a) Pr(D1 cap D2) minus 1/3",
+      "expression": "Rational(6, 10) * Rational(5, 9) - Rational(1, 3)",
+      "expected": 0
+    },
+    {
+      "id": "WE10_8_1_2b",
+      "description": "WE10_8_1_2(b) Pr(different) minus 8/15",
+      "expression": "2 * Rational(6, 10) * Rational(4, 9) - Rational(8, 15)",
+      "expected": 0
+    },
+    {
+      "id": "WE10_8_1_3a",
+      "description": "WE10_8_1_3(a) binomial(9, 3)",
+      "expression": "binomial(9, 3)",
+      "expected": 84
+    },
+    {
+      "id": "WE10_8_1_3c",
+      "description": "WE10_8_1_3(c) conditional committee probability",
+      "expression": "Rational(binomial(5, 3), binomial(5, 2)*binomial(4, 1) + binomial(5, 3))",
+      "expected": 0.2
+    },
+    {
+      "id": "NYT10_8_1_3",
+      "description": "NYT10_8_1_3 4-digit PINs count",
+      "expression": "6 * 5 * 4 * 3",
+      "expected": 360
+    },
+    {
+      "id": "EX10_8_1_Q1a",
+      "description": "Exercise 10.8.1 Q1a Pr(A union B)",
+      "expression": "Rational(1, 2) + Rational(2, 5) - Rational(1, 5)",
+      "expected": 0.7
+    },
+    {
+      "id": "EX10_8_1_Q3b",
+      "description": "Exercise 10.8.1 Q3b Pr(A union B) for independent events",
+      "expression": "Rational(4, 10) + Rational(3, 10) - Rational(4, 10) * Rational(3, 10)",
+      "expected": 0.58
+    },
+    {
+      "id": "EX10_8_1_Q4",
+      "description": "Exercise 10.8.1 Q4 Pr(E|S)",
+      "expression": "Rational(15, 50)",
+      "expected": 0.3
+    },
+    {
+      "id": "EX10_8_1_Q6b",
+      "description": "Exercise 10.8.1 Q6b Pr(at least one inverter)",
+      "expression": "1 - Rational(1, 10) * Rational(2, 10)",
+      "expected": 0.98
+    },
+    {
+      "id": "EX10_8_1_Q7a",
+      "description": "Exercise 10.8.1 Q7a total probability Pr(L)",
+      "expression": "Rational(3, 10) * Rational(4, 10) + Rational(7, 10) * Rational(1, 10)",
+      "expected": 0.19
+    },
+    {
+      "id": "EX10_8_1_Q8a",
+      "description": "Exercise 10.8.1 Q8a binomial(10, 4)",
+      "expression": "binomial(10, 4)",
+      "expected": 210
+    },
+    {
+      "id": "EX10_8_1_Q9",
+      "description": "Exercise 10.8.1 Q9 medical screening Pr(D|+)",
+      "expression": "Rational(1, 100)*Rational(99, 100) / (Rational(1, 100)*Rational(99, 100) + Rational(99, 100)*Rational(1, 100))",
+      "expected": 0.5
+    }
+  ]
+}

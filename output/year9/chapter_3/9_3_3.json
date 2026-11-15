@@ -1,0 +1,423 @@
+{
+  "metadata": {
+    "section_id": "9_3_3",
+    "section_code": "3C",
+    "chapter_number": 3,
+    "chapter_title": "Algebraic Expansion and Factorisation",
+    "title": "Factorising Monic Quadratic Trinomials",
+    "vcaa_code": "VC2M9A02",
+    "vcaa_description": "Simplify algebraic expressions, expand binomial products and factorise monic quadratic expressions.",
+    "strand": "Algebra",
+    "target_mastery": "Factorise monic quadratic trinomials x^2 + bx + c by finding factor pairs of c that sum to b.",
+    "prerequisites": [
+      "Expanding binomial products (Section 3A)",
+      "Directed number factors"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Monic quadratic trinomial",
+        "definition": "A quadratic expression of the form $x^2 + bx + c$ whose leading coefficient (the coefficient of $x^2$) is equal to $1$."
+      },
+      {
+        "term": "Sum-and-product factorisation",
+        "definition": "Factorising $x^2 + bx + c$ into $(x + m)(x + n)$ by finding two numbers $m$ and $n$ whose product is $mn = c$ and whose sum is $m + n = b$."
+      },
+      {
+        "term": "Perfect square trinomial",
+        "definition": "A quadratic trinomial of the form $x^2 \\pm 2ax + a^2$ that factorises into the repeated linear factor $(x \\pm a)^2$."
+      },
+      {
+        "term": "Algebraic fraction simplification",
+        "definition": "Cancelling common binomial factors between the numerator and denominator of a rational expression after both have been fully factorised."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_3_3_1",
+      "title": "The Sum-and-Product Method for Monic Quadratics",
+      "explanation": "Since expanding $(x + m)(x + n)$ yields $x^2 + (m + n)x + mn$, factorising a monic quadratic trinomial $x^2 + bx + c$ is the reverse puzzle: find two integers $m$ and $n$ that multiply to give the constant term $c$ ($mn = c$) and add to give the middle coefficient $b$ ($m + n = b$). Always list factor pairs of $c$ systematically rather than guessing at random.",
+      "formula_latex": "x^2 + bx + c = (x + m)(x + n) \\quad \\text{where } m \\times n = c \\text{ and } m + n = b",
+      "callout_title": "Test Factor Pairs of c First, Not Pairs That Sum to b",
+      "callout_rule": "There are infinitely many integer pairs that add to $b$, but only a few integer factor pairs that multiply to $c$. Always start from the factors of $c$."
+    },
+    {
+      "id": "theory_9_3_3_2",
+      "title": "Using the Signs of b and c to Determine Factor Signs",
+      "explanation": "The signs of $c$ and $b$ immediately tell you the signs of the two numbers $m$ and $n$: (1) If $c > 0$ and $b > 0$, both $m$ and $n$ are positive. (2) If $c > 0$ and $b < 0$, both $m$ and $n$ are negative (since a negative times a negative is positive, and their sum is negative). (3) If $c < 0$, one factor is positive and the other is negative, and the factor with the larger absolute value has the same sign as $b$.",
+      "formula_latex": "x^2 - 7x + 12 = (x - 3)(x - 4), \\quad x^2 - 4x - 12 = (x - 6)(x + 2)",
+      "callout_title": "Sign Shortcut for Factor Pairs (m, n)",
+      "callout_rule": "If $c > 0$, $m$ and $n$ have the SAME sign (both match the sign of $b$). If $c < 0$, $m$ and $n$ have OPPOSITE signs (the larger one matches the sign of $b$)."
+    },
+    {
+      "id": "theory_9_3_3_3",
+      "title": "Extracting a Common Factor Before Trinomial Factorisation",
+      "explanation": "When a quadratic trinomial $ax^2 + bx + c$ has a common numerical or algebraic factor across all three terms (such as $2x^2 - 10x - 28$), factor out the HCF first. If the remaining bracketed quadratic is monic, apply the sum-and-product method to complete the factorisation.",
+      "formula_latex": "2x^2 - 10x - 28 = 2(x^2 - 5x - 14) = 2(x - 7)(x + 2)",
+      "callout_title": "Factor Out a Negative Coefficient When x^2 Is Negative",
+      "callout_rule": "If the $x^2$ term is negative, such as $-x^2 + 3x + 10$, factor out $-1$ first to make the bracketed trinomial monic: $-(x^2 - 3x - 10) = -(x - 5)(x + 2)$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_3_3_1",
+      "title": "Factorising Monic Trinomials with a Positive Constant Term",
+      "difficulty": "Fluency",
+      "problem": "Factorise: (a) $x^2 + 9x + 20$ and (b) $x^2 - 11x + 24$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), since $c = +20 > 0$ and $b = +9 > 0$, look for two positive factors of $20$ that add to $9$: $4 \\times 5 = 20$ and $4 + 5 = 9$.",
+          "working": "$$x^2 + 9x + 20 = (x + 4)(x + 5)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), since $c = +24 > 0$ and $b = -11 < 0$, look for two negative factors of $24$ that add to $-11$: $(-3) \\times (-8) = +24$ and $(-3) + (-8) = -11$.",
+          "working": "$$x^2 - 11x + 24 = (x - 3)(x - 8)$$"
+        }
+      ],
+      "final_answer": "(a) $(x + 4)(x + 5)$, (b) $(x - 3)(x - 8)$",
+      "now_you_try": {
+        "problem": "Factorise: (a) $x^2 + 10x + 21$ and (b) $x^2 - 9x + 18$.",
+        "hint": "Use $3 \\times 7 = 21$ in (a) and $(-3) \\times (-6) = 18$ in (b).",
+        "working_summary": "(a) $(x + 3)(x + 7)$; (b) $(x - 3)(x - 6)$.",
+        "answer": "(a) $(x + 3)(x + 7)$, (b) $(x - 3)(x - 6)$"
+      }
+    },
+    {
+      "id": "WE9_3_3_2",
+      "title": "Factorising Monic Trinomials with a Negative Constant Term",
+      "difficulty": "Understanding",
+      "problem": "Factorise: (a) $x^2 + 4x - 32$ and (b) $x^2 - 5x - 36$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), $c = -32 < 0$, so the factors have opposite signs with the larger one positive: $+8 \\times (-4) = -32$ and $+8 + (-4) = +4$.",
+          "working": "$$x^2 + 4x - 32 = (x + 8)(x - 4)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), $c = -36 < 0$ and $b = -5 < 0$, so the larger factor is negative: $(-9) \\times (+4) = -36$ and $(-9) + 4 = -5$.",
+          "working": "$$x^2 - 5x - 36 = (x - 9)(x + 4)$$"
+        }
+      ],
+      "final_answer": "(a) $(x + 8)(x - 4)$, (b) $(x - 9)(x + 4)$",
+      "now_you_try": {
+        "problem": "Factorise: (a) $x^2 + 3x - 28$ and (b) $x^2 - 6x - 27$.",
+        "hint": "Find opposite-sign factors of $-28$ and $-27$.",
+        "working_summary": "(a) $+7$ and $-4$ give $(x + 7)(x - 4)$; (b) $-9$ and $+3$ give $(x - 9)(x + 3)$.",
+        "answer": "(a) $(x + 7)(x - 4)$, (b) $(x - 9)(x + 3)$"
+      }
+    },
+    {
+      "id": "WE9_3_3_3",
+      "title": "Multi-Step Factorisation and Simplifying Algebraic Fractions",
+      "difficulty": "Challenging",
+      "problem": "(a) Factorise completely $3x^2 - 6x - 45$. (b) Hence simplify the algebraic fraction $\\frac{3x^2 - 6x - 45}{x^2 - 25}$ (for $x \\neq \\pm 5$).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), extract the HCF of $3$ from all three terms, then factorise the monic trinomial $x^2 - 2x - 15$ using $(-5) \\times (+3) = -15$ and $-5 + 3 = -2$.",
+          "working": "$$3x^2 - 6x - 45 = 3(x^2 - 2x - 15) = 3(x - 5)(x + 3)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), factorise the denominator $x^2 - 25 = (x - 5)(x + 5)$ by DOTS and cancel the common binomial factor $(x - 5)$.",
+          "working": "$$\\frac{3x^2 - 6x - 45}{x^2 - 25} = \\frac{3(x - 5)(x + 3)}{(x - 5)(x + 5)} = \\frac{3(x + 3)}{x + 5}$$"
+        }
+      ],
+      "final_answer": "(a) $3(x - 5)(x + 3)$, (b) $\\frac{3(x + 3)}{x + 5}$",
+      "now_you_try": {
+        "problem": "(a) Factorise completely $2x^2 + 4x - 30$. (b) Hence simplify $\\frac{2x^2 + 4x - 30}{x^2 - 9}$ (for $x \\neq \\pm 3$).",
+        "hint": "Extract $2$ first to get $2(x^2 + 2x - 15)$.",
+        "working_summary": "(a) $2(x + 5)(x - 3)$; (b) $\\frac{2(x + 5)(x - 3)}{(x - 3)(x + 3)} = \\frac{2(x + 5)}{x + 3}$.",
+        "answer": "(a) $2(x + 5)(x - 3)$, (b) $\\frac{2(x + 5)}{x + 3}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_9_3_3_1",
+      "title": "Reversing the Signs of the Factor Pair When c Is Negative",
+      "misconception": "Factorising $x^2 - 4x - 21$ as $(x + 7)(x - 3)$ instead of $(x - 7)(x + 3)$.",
+      "correct_concept": "Because the middle coefficient $b = -4$ is negative, the factor with the larger magnitude ($7$) must be negative: $(-7) + 3 = -4$, whereas $+7 + (-3) = +4$.",
+      "incorrect_working": "$$x^2 - 4x - 21 = (x + 7)(x - 3) \\quad (\\text{Incorrect — expands to } x^2 + 4x - 21)$$",
+      "correct_working": "$$x^2 - 4x - 21 = (x - 7)(x + 3) \\quad (\\text{Correct})$$",
+      "counter_example": "If $x = 7$, $7^2 - 4(7) - 21 = 49 - 28 - 21 = 0$, matching $(7 - 7)(7 + 3) = 0$, whereas $(7 + 7)(7 - 3) = 56 \\neq 0$."
+    },
+    {
+      "id": "MISC_9_3_3_2",
+      "title": "Cancelling Individual Terms Across Addition in Algebraic Fractions",
+      "misconception": "Cancelling $x^2$ from top and bottom of $\\frac{x^2 + 5x + 6}{x^2 - 4}$ to get $\\frac{5x + 6}{-4}$.",
+      "correct_concept": "You can only cancel common FACTORS that multiply the entire numerator and denominator, never individual terms added or subtracted. Always factorise numerator and denominator first.",
+      "incorrect_working": "$$\\frac{x^2 + 5x + 6}{x^2 - 4} = \\frac{5x + 6}{-4} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\frac{x^2 + 5x + 6}{x^2 - 4} = \\frac{(x + 2)(x + 3)}{(x + 2)(x - 2)} = \\frac{x + 3}{x - 2} \\quad (\\text{Correct})$$",
+      "counter_example": "For $x = 3$, $\\frac{9 + 15 + 6}{9 - 4} = \\frac{30}{5} = 6$, which matches $\\frac{3 + 3}{3 - 2} = 6$, whereas $\\frac{15 + 6}{-4} = -5.25$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_3_3_Q1",
+        "question": "Factorise $x^2 - 13x + 40$.",
+        "difficulty": "Easy",
+        "context": "Monic Trinomial Factorisation",
+        "final_answer": "$(x - 5)(x - 8)$",
+        "step_by_step_solution": [
+          "Find two negative integers that multiply to $+40$ and add to $-13$: $-5$ and $-8$.",
+          "Write the factorised form: $(x - 5)(x - 8)$."
+        ]
+      },
+      {
+        "id": "9_3_3_Q2",
+        "question": "Factorise $x^2 - 14x + 49$ as a perfect square.",
+        "difficulty": "Easy",
+        "context": "Perfect Square Trinomial",
+        "final_answer": "$(x - 7)^2$",
+        "step_by_step_solution": [
+          "Note that $(-7) \\times (-7) = 49$ and $(-7) + (-7) = -14$.",
+          "Therefore $x^2 - 14x + 49 = (x - 7)(x - 7) = (x - 7)^2$."
+        ]
+      },
+      {
+        "id": "9_3_3_Q3",
+        "question": "Factorise completely $4x^2 + 12x - 72$.",
+        "difficulty": "Medium",
+        "context": "HCF Before Trinomial Factorisation",
+        "final_answer": "$4(x + 6)(x - 3)$",
+        "step_by_step_solution": [
+          "Extract the common numerical factor $4$: $4(x^2 + 3x - 18)$.",
+          "Find factors of $-18$ that add to $+3$ ($+6$ and $-3$): $4(x + 6)(x - 3)$."
+        ]
+      },
+      {
+        "id": "9_3_3_Q4",
+        "question": "Factorise completely $-x^2 + 2x + 35$.",
+        "difficulty": "Medium",
+        "context": "Negative Leading Coefficient",
+        "final_answer": "$-(x - 7)(x + 5)$",
+        "step_by_step_solution": [
+          "Factor out $-1$ first so the bracketed trinomial is monic: $-(x^2 - 2x - 35)$.",
+          "Find factors of $-35$ that add to $-2$ ($-7$ and $+5$): $-(x - 7)(x + 5)$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_3_3_Q5",
+        "question": "A rectangular tennis court enclosure in Geelong has an area modelled by $(x^2 + 14x + 45)\\text{ m}^2$. Factorise this expression to find binomial expressions for the length and width of the enclosure, and calculate the perimeter when $x = 15\\text{ m}$.",
+        "difficulty": "Medium",
+        "context": "Rectangular Area and Perimeter",
+        "final_answer": "Dimensions $(x + 9)\\text{ m}$ by $(x + 5)\\text{ m}$; Perimeter $= 88\\text{ m}$",
+        "step_by_step_solution": [
+          "Since $9 \\times 5 = 45$ and $9 + 5 = 14$, $x^2 + 14x + 45 = (x + 9)(x + 5)$.",
+          "Perimeter $P = 2((x + 9) + (x + 5)) = 2(2x + 14) = 4x + 28\\text{ m}$.",
+          "When $x = 15$, $P = 4(15) + 28 = 60 + 28 = 88\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_3_3_Q6",
+        "question": "A rectangular prism water tank has volume $V = (x^3 - 3x^2 - 10x)\\text{ m}^3$ for $x > 5$. Factorise $V$ completely to find algebraic expressions for its three dimensions (height, width, and length), and evaluate the volume when $x = 8$.",
+        "difficulty": "Medium",
+        "context": "3D Prism Dimensions from Cubic Polynomial",
+        "final_answer": "$x(x - 5)(x + 2)$; Volume $= 240\\text{ m}^3$ when $x = 8$",
+        "step_by_step_solution": [
+          "Extract the common pronumeral factor $x$: $V = x(x^2 - 3x - 10)$.",
+          "Factorise the trinomial using $-5$ and $+2$: $V = x(x - 5)(x + 2)$.",
+          "When $x = 8$, $V = 8(8 - 5)(8 + 2) = 8 \\times 3 \\times 10 = 240\\text{ m}^3$."
+        ]
+      },
+      {
+        "id": "9_3_3_Q7",
+        "question": "Simplify the product of algebraic fractions $\\frac{x^2 - x - 12}{x^2 - 9} \\times \\frac{x^2 + 5x + 6}{x^2 - 2x - 8}$ by factorising all four quadratics first.",
+        "difficulty": "Challenging",
+        "context": "Multiplying Rational Expressions",
+        "final_answer": "$\\frac{x + 3}{x - 3}$",
+        "step_by_step_solution": [
+          "Factorise each numerator and denominator: $\\frac{(x - 4)(x + 3)}{(x - 3)(x + 3)} \\times \\frac{(x + 2)(x + 3)}{(x - 4)(x + 2)}$.",
+          "Cancel the common factors $(x - 4)$, $(x + 2)$, and one pair of $(x + 3)$ to obtain $\\frac{x + 3}{x - 3}$."
+        ]
+      },
+      {
+        "id": "9_3_3_Q8",
+        "question": "A square courtyard has area $(x^2 + 16x + 64)\\text{ m}^2$. A smaller square fountain of area $9\\text{ m}^2$ is built inside it. Write the remaining unpaved area $(x^2 + 16x + 64) - 9$ as a difference of two squares and factorise it completely.",
+        "difficulty": "Challenging",
+        "context": "Perfect Square Trinomial Plus DOTS",
+        "final_answer": "$(x + 5)(x + 11)$",
+        "step_by_step_solution": [
+          "Recognise $x^2 + 16x + 64 = (x + 8)^2$ as a perfect square trinomial.",
+          "Rewrite the remaining area as $(x + 8)^2 - 3^2$ and apply DOTS: $(x + 8 - 3)(x + 8 + 3) = (x + 5)(x + 11)$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_3_3_Q9",
+        "question": "Find all possible integer values of the middle coefficient $b$ such that $x^2 + bx + 12$ can be factorised into $(x + m)(x + n)$ with integer constants $m$ and $n$.",
+        "difficulty": "Medium",
+        "context": "Exploring Factorisable Trinomials",
+        "final_answer": "$b \\in \\{\\pm 7, \\pm 8, \\pm 13\\}$",
+        "step_by_step_solution": [
+          "List all positive integer factor pairs of $12$: $(1, 12)$, $(2, 6)$, and $(3, 4)$, which sum to $13$, $8$, and $7$ respectively.",
+          "Including the corresponding negative factor pairs $(-1, -12)$, $(-2, -6)$, and $(-3, -4)$ gives $b = \\pm 7, \\pm 8, \\pm 13$."
+        ]
+      },
+      {
+        "id": "9_3_3_Q10",
+        "question": "Find the positive constant $k$ that makes $x^2 - 18x + k$ a perfect square trinomial, and write its factorised form.",
+        "difficulty": "Easy",
+        "context": "Completing the Perfect Square",
+        "final_answer": "$k = 81$; $(x - 9)^2$",
+        "step_by_step_solution": [
+          "In a monic perfect square $x^2 - 2ax + a^2 = (x - a)^2$, half the coefficient of $x$ is $\\frac{-18}{2} = -9$.",
+          "Square $-9$ to find $k = (-9)^2 = 81$, giving $(x - 9)^2$."
+        ]
+      },
+      {
+        "id": "9_3_3_Q11",
+        "question": "Explain why the quadratic trinomial $x^2 + 3x + 5$ cannot be factorised into $(x + m)(x + n)$ using integers $m$ and $n$.",
+        "difficulty": "Easy",
+        "context": "Prime Quadratics Over the Integers",
+        "final_answer": "The only integer factor pairs of $+5$ are $(1, 5)$ and $(-1, -5)$, which sum to $+6$ and $-6$, never $+3$",
+        "step_by_step_solution": [
+          "Since $5$ is prime, the only integer pairs $(m, n)$ with $mn = 5$ are $(1, 5)$ and $(-1, -5)$.",
+          "Their sums are $1 + 5 = 6 \\neq 3$ and $-1 + (-5) = -6 \\neq 3$, so no integer factorisation exists."
+        ]
+      },
+      {
+        "id": "9_3_3_Q12",
+        "question": "By letting $u = x^2$, factorise the quartic (degree-$4$) polynomial $x^4 - 13x^2 + 36$ completely into four linear factors.",
+        "difficulty": "Extension",
+        "context": "Quartic Reducible to a Quadratic",
+        "final_answer": "$(x - 2)(x + 2)(x - 3)(x + 3)$",
+        "step_by_step_solution": [
+          "Substitute $u = x^2$ to obtain the monic quadratic $u^2 - 13u + 36 = (u - 4)(u - 9)$.",
+          "Replace $u$ with $x^2$: $(x^2 - 4)(x^2 - 9)$.",
+          "Apply DOTS to each bracket: $(x - 2)(x + 2)(x - 3)(x + 3)$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_3_3_1a",
+      "description": "Worked Example 9.3.3.1(a)",
+      "expression": "simplify(expand((x + 4)*(x + 5)) - (x**2 + 9*x + 20))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_3_1b",
+      "description": "Worked Example 9.3.3.1(b)",
+      "expression": "simplify(expand((x - 3)*(x - 8)) - (x**2 - 11*x + 24))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_3_1a",
+      "description": "Now You Try 9.3.3.1(a)",
+      "expression": "simplify(expand((x + 3)*(x + 7)) - (x**2 + 10*x + 21))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_3_1b",
+      "description": "Now You Try 9.3.3.1(b)",
+      "expression": "simplify(expand((x - 3)*(x - 6)) - (x**2 - 9*x + 18))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_3_2a",
+      "description": "Worked Example 9.3.3.2(a)",
+      "expression": "simplify(expand((x + 8)*(x - 4)) - (x**2 + 4*x - 32))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_3_2b",
+      "description": "Worked Example 9.3.3.2(b)",
+      "expression": "simplify(expand((x - 9)*(x + 4)) - (x**2 - 5*x - 36))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_3_2a",
+      "description": "Now You Try 9.3.3.2(a)",
+      "expression": "simplify(expand((x + 7)*(x - 4)) - (x**2 + 3*x - 28))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_3_2b",
+      "description": "Now You Try 9.3.3.2(b)",
+      "expression": "simplify(expand((x - 9)*(x + 3)) - (x**2 - 6*x - 27))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_3_3a",
+      "description": "Worked Example 9.3.3.3(a)",
+      "expression": "simplify(expand(3*(x - 5)*(x + 3)) - (3*x**2 - 6*x - 45))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_3_3b",
+      "description": "Worked Example 9.3.3.3(b)",
+      "expression": "simplify((3*x**2 - 6*x - 45)/(x**2 - 25) - 3*(x + 3)/(x + 5))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_3_3b",
+      "description": "Now You Try 9.3.3.3(b)",
+      "expression": "simplify((2*x**2 + 4*x - 30)/(x**2 - 9) - 2*(x + 5)/(x + 3))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_3_Q1",
+      "description": "Exercise 9.3.3 Q1",
+      "expression": "simplify(expand((x - 5)*(x - 8)) - (x**2 - 13*x + 40))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_3_Q2",
+      "description": "Exercise 9.3.3 Q2",
+      "expression": "simplify(expand((x - 7)**2) - (x**2 - 14*x + 49))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_3_Q3",
+      "description": "Exercise 9.3.3 Q3",
+      "expression": "simplify(expand(4*(x + 6)*(x - 3)) - (4*x**2 + 12*x - 72))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_3_Q4",
+      "description": "Exercise 9.3.3 Q4",
+      "expression": "simplify(expand(-(x - 7)*(x + 5)) - (-x**2 + 2*x + 35))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_3_Q5",
+      "description": "Exercise 9.3.3 Q5 perimeter at x=15",
+      "expression": "2*((15 + 9) + (15 + 5))",
+      "expected": 88
+    },
+    {
+      "id": "EX9_3_3_Q6",
+      "description": "Exercise 9.3.3 Q6 volume at x=8",
+      "expression": "8**3 - 3*8**2 - 10*8",
+      "expected": 240
+    },
+    {
+      "id": "EX9_3_3_Q7",
+      "description": "Exercise 9.3.3 Q7 rational product",
+      "expression": "simplify(((x**2 - x - 12)/(x**2 - 9)) * ((x**2 + 5*x + 6)/(x**2 - 2*x - 8)) - (x + 3)/(x - 3))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_3_Q8",
+      "description": "Exercise 9.3.3 Q8 perfect square minus 9",
+      "expression": "simplify(expand((x + 5)*(x + 11)) - (x**2 + 16*x + 64 - 9))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_3_Q12",
+      "description": "Exercise 9.3.3 Q12 quartic factorisation",
+      "expression": "simplify(expand((x - 2)*(x + 2)*(x - 3)*(x + 3)) - (x**4 - 13*x**2 + 36))",
+      "expected": 0
+    }
+  ]
+}

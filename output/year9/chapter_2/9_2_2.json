@@ -1,0 +1,416 @@
+{
+  "metadata": {
+    "section_id": "9_2_2",
+    "section_code": "2B",
+    "chapter_number": 2,
+    "chapter_title": "Financial Mathematics and Direct Proportion",
+    "title": "Simple Interest, Repayment Modelling, and Direct Proportion",
+    "vcaa_code": "VC2M9N02",
+    "vcaa_description": "Use mathematical modelling to solve practical problems involving direct proportion, rates, ratios and percentages, including in financial contexts.",
+    "strand": "Number",
+    "target_mastery": "Transpose the simple interest formula I = Prt to find principal, rate, or time, and model direct variation y = kx.",
+    "prerequisites": [
+      "Simple interest (Year 8 Section 3B)",
+      "Solving linear equations"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Simple interest",
+        "definition": "Interest calculated as a fixed percentage of the original principal $P$ for each time period: $I = Prt$, where $r$ is the decimal interest rate per period and $t$ is the number of periods."
+      },
+      {
+        "term": "Hire-purchase agreement",
+        "definition": "buying an item by paying an initial deposit followed by regular equal instalments; the total paid minus the cash price equals the total interest charged."
+      },
+      {
+        "term": "Direct proportion (direct variation)",
+        "definition": "A relationship between two variables $x$ and $y$ where their ratio $\\frac{y}{x} = k$ is constant, written $y = kx$ (or $y \\propto x$). Its graph is a straight line through the origin $(0, 0)$."
+      },
+      {
+        "term": "Constant of proportionality",
+        "definition": "The fixed multiplier $k = \\frac{y}{x}$ in a direct variation relationship $y = kx$, representing the rate of change of $y$ per unit of $x$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_2_2_1",
+      "title": "Transposing the Simple Interest Formula for P, r, and t",
+      "explanation": "When simple interest $I$ is earned or charged on a principal $P$ at an annual rate $r$ (expressed as a decimal or fraction $\\frac{R}{100}$) over $t$ years, $I = Prt$ and the total amount is $A = P + I = P(1 + rt)$. By dividing both sides of $I = Prt$ by the known factors, we can transpose the formula to find an unknown principal $P$, rate $r$, or time $t$. Remember that $r$ and $t$ must always use matching time units (for example, p.a. rate with $t$ in years).",
+      "formula_latex": "I = Prt \\implies P = \\frac{I}{rt}, \\quad r = \\frac{I}{Pt}, \\quad t = \\frac{I}{Pr}",
+      "callout_title": "Convert Months or Days to Years Before Using a p.a. Rate",
+      "callout_rule": "If the interest rate is given per annum (p.a.) and the loan duration is $m$ months, substitute $t = \\frac{m}{12}$ years into $I = Prt$."
+    },
+    {
+      "id": "theory_9_2_2_2",
+      "title": "Hire-Purchase and Loan Repayment Modelling",
+      "explanation": "Under a hire-purchase or flat-rate repayment plan, a buyer pays an upfront deposit and settles the balance Paid Financed $= \\text{Cash Price} - \\text{Deposit}$ plus interest via equal instalments. The total interest paid is the difference between the total of all instalments and the balance financed (or equivalently, $\\text{Total Paid} - \\text{Cash Price}$).",
+      "formula_latex": "\\text{Balance Financed} = P = \\text{Cash Price} - \\text{Deposit}, \\quad I = \\text{Total Instalments} - P",
+      "callout_title": "Interest Rate Applies to the Balance Financed, Not the Full Cash Price",
+      "callout_rule": "Once a deposit is paid upfront, only the remaining unpaid balance $P = \\text{Cash Price} - \\text{Deposit}$ is borrowed, so the flat rate $r$ is calculated on $P$."
+    },
+    {
+      "id": "theory_9_2_2_3",
+      "title": "Direct Proportion and the Constant of Proportionality",
+      "explanation": "Two quantities $y$ and $x$ are in direct proportion ($y \\propto x$) if multiplying $x$ by any factor multiplies $y$ by the exact same factor. Equivalently, $y = kx$, where $k$ is the constant of proportionality. Note that simple interest $I = Prt$ is simultaneously directly proportional to $P$, to $r$, and to $t$ when the other two variables are held fixed.",
+      "formula_latex": "y \\propto x \\iff y = kx \\iff \\frac{y_1}{x_1} = \\frac{y_2}{x_2} = k",
+      "callout_title": "Three-Step Method for Direct Variation Problems",
+      "callout_rule": "1. Write $y = kx$. 2. Substitute the given pair $(x_1, y_1)$ to solve for $k = \\frac{y_1}{x_1}$. 3. Write the specific law $y = kx$ and substitute to find the unknown value."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_2_2_1",
+      "title": "Finding Unknown Principal or Rate Using I = Prt",
+      "difficulty": "Fluency",
+      "problem": "(a) What principal must be invested at $4.5\\%$ p.a. simple interest to earn $\\$810$ interest in $4$ years? (b) At what annual simple interest rate will $\\$6000$ earn $\\$540$ interest in $18$ months?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), substitute $I = 810$, $r = 0.045$, and $t = 4$ into $P = \\frac{I}{rt}$.",
+          "working": "$$P = \\frac{810}{0.045 \\times 4} = \\frac{810}{0.18} = \\$4500$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), convert $18$ months to $t = \\frac{18}{12} = 1.5\\text{ years}$, then substitute $I = 540$, $P = 6000$, and $t = 1.5$ into $r = \\frac{I}{Pt}$.",
+          "working": "$$r = \\frac{540}{6000 \\times 1.5} = \\frac{540}{9000} = 0.06 = 6\\%\\text{ p.a.}$$"
+        }
+      ],
+      "final_answer": "(a) $\\$4500$, (b) $6\\%$ p.a.",
+      "now_you_try": {
+        "problem": "(a) Find the principal that earns $\\$630$ simple interest in $3$ years at $3.5\\%$ p.a. (b) Find the annual simple interest rate if $\\$4000$ earns $\\$250$ in $15$ months.",
+        "hint": "In (b), $15\\text{ months} = \\frac{15}{12} = 1.25\\text{ years}$.",
+        "working_summary": "(a) $P = \\frac{630}{0.035 \\times 3} = \\$6000$; (b) $r = \\frac{250}{4000 \\times 1.25} = 0.05 = 5\\%$ p.a.",
+        "answer": "(a) $\\$6000$, (b) $5\\%$ p.a."
+      }
+    },
+    {
+      "id": "WE9_2_2_2",
+      "title": "Analysing a Hire-Purchase Repayment Agreement",
+      "difficulty": "Understanding",
+      "problem": "A musical instrument in Melbourne has a cash price of $\\$3200$. Under a hire-purchase agreement, Ruby pays a $15\\%$ deposit and repays the balance via $24$ monthly instalments of $\\$135.70$. Find: (a) the balance financed, (b) the total interest charged, and (c) the flat annual simple interest rate charged on the balance financed.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the $15\\%$ deposit ($0.15 \\times 3200 = \\$480$) and subtract it from the cash price to find the principal financed $P$. Then compare total instalments ($24 \\times 135.70$) with $P$ to find interest $I$.",
+          "working": "$$P = 3200 - 480 = \\$2720, \\quad I = 24 \\times 135.70 - 2720 = 3256.80 - 2720 = \\$536.80$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $I = 536.80$, $P = 2720$, and $t = \\frac{24}{12} = 2\\text{ years}$ into $r = \\frac{I}{Pt}$.",
+          "working": "$$r = \\frac{536.80}{2720 \\times 2} = \\frac{536.80}{5440} = 0.098676\\dots \\approx 9.87\\%\\text{ p.a.}$$"
+        }
+      ],
+      "final_answer": "(a) $\\$2720$, (b) $\\$536.80$, (c) $9.87\\%$ p.a. (or exact $\\frac{671}{68}\\%$ p.a.)",
+      "now_you_try": {
+        "problem": "A laptop with cash price $\\$2000$ is bought on hire-purchase with a $\\$400$ deposit and $18$ monthly payments of $\\$98$. Find: (a) the balance financed, (b) the interest charged, and (c) the flat annual simple interest rate.",
+        "hint": "Here $P = \\$1600$ and $t = 1.5\\text{ years}$.",
+        "working_summary": "(a) $P = \\$1600$; (b) $I = 18(98) - 1600 = 1764 - 1600 = \\$164$; (c) $r = \\frac{164}{1600 \\times 1.5} = \\frac{41}{600} \\approx 6.83\\%$ p.a.",
+        "answer": "(a) $\\$1600$, (b) $\\$164$, (c) $6.83\\%$ p.a."
+      }
+    },
+    {
+      "id": "WE9_2_2_3",
+      "title": "Modelling Direct Proportion",
+      "difficulty": "Understanding",
+      "problem": "The electrical energy $E$ (in kilowatt-hours, $\\text{kWh}$) generated by a rooftop solar array in Mildura is directly proportional to the hours of peak sunlight $t$. If the array generates $19.5\\text{ kWh}$ in $3$ hours of peak sunlight: (a) find the equation connecting $E$ and $t$, (b) find the energy generated in $5.5$ hours, and (c) find how long it takes to generate $45.5\\text{ kWh}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Write $E = kt$ and substitute $E = 19.5$ when $t = 3$ to find the constant of proportionality $k$.",
+          "working": "$$19.5 = 3k \\implies k = \\frac{19.5}{3} = 6.5\\text{ kW} \\implies E = 6.5t$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $t = 5.5$ to find $E$, and substitute $E = 45.5$ to solve for $t$.",
+          "working": "$$\\text{(b) } E = 6.5(5.5) = 35.75\\text{ kWh}, \\quad \\text{(c) } 45.5 = 6.5t \\implies t = \\frac{45.5}{6.5} = 7\\text{ hours}$$"
+        }
+      ],
+      "final_answer": "(a) $E = 6.5t$, (b) $35.75\\text{ kWh}$, (c) $7\\text{ hours}$",
+      "now_you_try": {
+        "problem": "The mass $m$ (in grams) of a copper wire is directly proportional to its length $L$ (in metres). A $4\\text{ m}$ length of wire has mass $72\\text{ g}$. Find: (a) the formula for $m$ in terms of $L$, (b) the mass of $9.5\\text{ m}$ of wire, and (c) the length of wire with mass $270\\text{ g}$.",
+        "hint": "Find $k = \\frac{72}{4} = 18\\text{ g/m}$.",
+        "working_summary": "(a) $m = 18L$; (b) $m = 18(9.5) = 171\\text{ g}$; (c) $L = \\frac{270}{18} = 15\\text{ m}$.",
+        "answer": "(a) $m = 18L$, (b) $171\\text{ g}$, (c) $15\\text{ m}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_9_2_2_1",
+      "title": "Substituting Months Directly for t When the Interest Rate Is Per Annum",
+      "misconception": "Calculating $I = 2000 \\times 0.06 \\times 9 = \\$1080$ for a $9$-month loan at $6\\%$ p.a., treating $9$ months as $9$ years.",
+      "correct_concept": "The time period $t$ must match the rate unit. For a per annum (yearly) rate, $9$ months must be converted to $t = \\frac{9}{12} = 0.75\\text{ years}$.",
+      "incorrect_working": "$$I = 2000 \\times 0.06 \\times 9 = \\$1080 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$I = 2000 \\times 0.06 \\times \\frac{9}{12} = \\$90 \\quad (\\text{Correct})$$",
+      "counter_example": "$9$ months is less than $1$ year, so the interest must be less than $1$ year's interest ($0.06 \\times 2000 = \\$120$)."
+    },
+    {
+      "id": "MISC_9_2_2_2",
+      "title": "Confusing Any Increasing Linear Relationship y = mx + c with Direct Proportion",
+      "misconception": "Claiming that a plumber's charge $C = 90 + 60h$ is directly proportional to hours worked $h$ because $C$ increases linearly with $h$.",
+      "correct_concept": "Direct proportion requires $y = kx$ with zero y-intercept ($c = 0$), so doubling $x$ doubles $y$. Because of the $\\$90$ call-out fee, doubling $h$ from $1$ to $2$ hours increases $C$ from $\\$150$ to $\\$210$ (not $\\$300$).",
+      "incorrect_working": "$$C = 90 + 60h \\text{ is linear, so } C \\propto h. \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\frac{C}{h} = \\frac{90}{h} + 60 \\text{ is not constant, so } C \\text{ is NOT directly proportional to } h. \\quad (\\text{Correct})$$",
+      "counter_example": "At $h = 1$, $\\frac{C}{h} = 150$; at $h = 2$, $\\frac{C}{h} = 105 \\neq 150$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_2_2_Q1",
+        "question": "How many years will it take for an investment of $\\$8000$ at $5.5\\%$ p.a. simple interest to earn $\\$1980$ in interest?",
+        "difficulty": "Easy",
+        "context": "Finding Time in Simple Interest",
+        "final_answer": "$4.5\\text{ years}$",
+        "step_by_step_solution": [
+          "Use $t = \\frac{I}{Pr}$ with $I = 1980$, $P = 8000$, and $r = 0.055$.",
+          "Calculate $t = \\frac{1980}{8000 \\times 0.055} = \\frac{1980}{440} = 4.5\\text{ years}$."
+        ]
+      },
+      {
+        "id": "9_2_2_Q2",
+        "question": "An investor deposits a principal $P$ at $4\\%$ p.a. simple interest. After $5$ years, the total amount in the account (principal plus interest) is $\\$9000$. Find the original principal $P$.",
+        "difficulty": "Medium",
+        "context": "Finding Principal from Maturity Value",
+        "final_answer": "$\\$7500$",
+        "step_by_step_solution": [
+          "Use $A = P(1 + rt)$ with $A = 9000$, $r = 0.04$, and $t = 5$.",
+          "Since $1 + 0.04(5) = 1.20$, solve $1.20P = 9000 \\implies P = \\frac{9000}{1.20} = \\$7500$."
+        ]
+      },
+      {
+        "id": "9_2_2_Q3",
+        "question": "Given that $y$ is directly proportional to $x$ and $y = 42$ when $x = 12$, find the constant of proportionality $k$ and the value of $y$ when $x = 20$.",
+        "difficulty": "Easy",
+        "context": "Direct Proportion Law",
+        "final_answer": "$k = 3.5$ (or $\\frac{7}{2}$); $y = 70$",
+        "step_by_step_solution": [
+          "Find $k = \\frac{y}{x} = \\frac{42}{12} = 3.5$, so $y = 3.5x$.",
+          "Substitute $x = 20$: $y = 3.5 \\times 20 = 70$."
+        ]
+      },
+      {
+        "id": "9_2_2_Q4",
+        "question": "A loan of $\\$3600$ is repaid over $9$ months with simple interest of $\\$216$. Calculate the annual simple interest rate (% p.a.).",
+        "difficulty": "Medium",
+        "context": "Fractional Year Rate Calculation",
+        "final_answer": "$8\\%$ p.a.",
+        "step_by_step_solution": [
+          "Convert $9$ months to years: $t = \\frac{9}{12} = 0.75\\text{ years}$.",
+          "Calculate $r = \\frac{I}{Pt} = \\frac{216}{3600 \\times 0.75} = \\frac{216}{2700} = 0.08 = 8\\%$ p.a."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_2_2_Q5",
+        "question": "An electric bike in Brisbane has a cash price of $\\$2500$. Sam buys it on hire-purchase by paying a $20\\%$ deposit and borrowing the balance at $9\\%$ p.a. simple interest over $2$ years, repaid in $24$ equal monthly instalments. Calculate the amount of each monthly instalment.",
+        "difficulty": "Medium",
+        "context": "Hire-Purchase Monthly Instalments",
+        "final_answer": "$\\$98.33$ (exact $\\$\\frac{295}{3}$ per month)",
+        "step_by_step_solution": [
+          "Deposit $= 0.20 \\times 2500 = \\$500$, so balance financed $P = 2500 - 500 = \\$2000$.",
+          "Interest over $2$ years: $I = 2000 \\times 0.09 \\times 2 = \\$360$. Total to repay $= 2000 + 360 = \\$2360$.",
+          "Monthly instalment $= \\frac{2360}{24} = \\frac{295}{3} \\approx \\$98.33$."
+        ]
+      },
+      {
+        "id": "9_2_2_Q6",
+        "question": "By Hooke's Law, the extension $e\\text{ (cm)}$ of a steel spring is directly proportional to the load mass $m\\text{ (kg)}$ suspended from it. A mass of $6\\text{ kg}$ extends the spring by $4.5\\text{ cm}$. What mass will extend the spring by $12\\text{ cm}$?",
+        "difficulty": "Medium",
+        "context": "Hooke's Law Direct Variation",
+        "final_answer": "$16\\text{ kg}$",
+        "step_by_step_solution": [
+          "Write $e = km$ and substitute $e = 4.5, m = 6$ to get $k = \\frac{4.5}{6} = 0.75\\text{ cm/kg}$.",
+          "Substitute $e = 12$: $12 = 0.75m \\implies m = \\frac{12}{0.75} = 16\\text{ kg}$."
+        ]
+      },
+      {
+        "id": "9_2_2_Q7",
+        "question": "An electric vehicle travelling along the Hume Highway uses $27\\text{ kWh}$ of battery energy to travel $180\\text{ km}$ at a constant speed. Assuming energy consumption $E$ is directly proportional to distance $d$, how far can the vehicle travel on a full $72\\text{ kWh}$ battery charge?",
+        "difficulty": "Medium",
+        "context": "Electric Vehicle Range Modelling",
+        "final_answer": "$480\\text{ km}$",
+        "step_by_step_solution": [
+          "Set up the direct proportion ratio $\\frac{d}{E} = \\frac{180}{27} = \\frac{20}{3}\\text{ km/kWh}$.",
+          "Multiply by $72\\text{ kWh}$: $d = \\frac{20}{3} \\times 72 = 480\\text{ km}$."
+        ]
+      },
+      {
+        "id": "9_2_2_Q8",
+        "question": "Ava invests a total of $\\$10\\,000$ split across two accounts for $1$ year: Account A pays $4\\%$ p.a. simple interest and Account B pays $6.5\\%$ p.a. simple interest. If her combined annual interest from both accounts is $\\$550$, how much principal did she invest in each account?",
+        "difficulty": "Challenging",
+        "context": "Dual-Account Simple Interest Allocation",
+        "final_answer": "$\\$4000$ in Account A and $\\$6000$ in Account B",
+        "step_by_step_solution": [
+          "Let $x$ be the amount in Account A and $10\\,000 - x$ be the amount in Account B.",
+          "Write the total interest equation: $0.04x + 0.065(10\\,000 - x) = 550$.",
+          "Simplify: $0.04x + 650 - 0.065x = 550 \\implies -0.025x = -100 \\implies x = 4000$. Thus $\\$4000$ is in Account A and $\\$6000$ is in Account B."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_2_2_Q9",
+        "question": "At what annual simple interest rate (% p.a.) will any non-zero principal $P$ double in value ($A = 2P$) in exactly $8$ years? Explain why the answer does not depend on the starting amount $P$.",
+        "difficulty": "Medium",
+        "context": "Doubling Time Under Simple Interest",
+        "final_answer": "$12.5\\%$ p.a.; $P$ cancels from both sides of $I = P = Prt$",
+        "step_by_step_solution": [
+          "For the investment to double, the interest earned must equal the original principal ($I = P$).",
+          "Substitute $I = P$ into $I = Prt$: $P = P \\times r \\times 8$. Dividing both sides by $P > 0$ cancels $P$, leaving $8r = 1 \\implies r = \\frac{1}{8} = 12.5\\%$ p.a."
+        ]
+      },
+      {
+        "id": "9_2_2_Q10",
+        "question": "Two variables $x$ and $y$ are recorded in a table: $(x, y) = (2, 9), (4, 18), (6, 27), (8, 34)$. Determine whether $y$ is directly proportional to $x$ across the entire table, justifying your conclusion.",
+        "difficulty": "Easy",
+        "context": "Testing for Direct Proportionality",
+        "final_answer": "No; the ratio $\\frac{y}{x}$ is $4.5$ for the first three pairs, but $\\frac{34}{8} = 4.25 \\neq 4.5$ for the fourth pair",
+        "step_by_step_solution": [
+          "Check the ratio $\\frac{y}{x}$ for each pair: $\\frac{9}{2} = 4.5$, $\\frac{18}{4} = 4.5$, $\\frac{27}{6} = 4.5$.",
+          "For $(8, 34)$, $\\frac{34}{8} = 4.25 \\neq 4.5$ (it would need to be $36$), so $y$ is not directly proportional to $x$ across the whole table."
+        ]
+      },
+      {
+        "id": "9_2_2_Q11",
+        "question": "In a hire-purchase agreement, a borrower repays the principal gradually each month, yet flat-rate simple interest is charged on the initial balance financed for the entire loan term. Explain why the true effective interest rate is roughly double the advertised flat rate.",
+        "difficulty": "Challenging",
+        "context": "Flat Rate vs Effective Interest Rate",
+        "final_answer": "Because regular monthly repayments steadily reduce the owing balance from $P$ down to $\\$0$, the average amount owed over the loan term is approximately $\\frac{1}{2}P$, making the effective rate on the average balance owed roughly $2r$.",
+        "step_by_step_solution": [
+          "Under flat-rate interest, interest $I = Prt$ is charged as if the borrower kept the full principal $P$ for the entire $t$ years.",
+          "In reality, paying equal monthly instalments reduces the principal owed linearly from $P$ to $0$, so the average principal owed during the loan is approximately $\\frac{P}{2}$, making the true annual cost rate close to $\\frac{I}{(P/2)t} = 2r$."
+        ]
+      },
+      {
+        "id": "9_2_2_Q12",
+        "question": "Suppose $y$ is directly proportional to $x$ with $y = k_1 x$, and $z$ is directly proportional to $y$ with $z = k_2 y$. Prove that $z$ is directly proportional to $x$ and state the constant of proportionality in terms of $k_1$ and $k_2$.",
+        "difficulty": "Extension",
+        "context": "Transitivity of Direct Proportion",
+        "final_answer": "$z = (k_1 k_2)x$, with constant of proportionality $k = k_1 k_2$",
+        "step_by_step_solution": [
+          "Substitute $y = k_1 x$ into $z = k_2 y$: $z = k_2(k_1 x) = (k_1 k_2)x$.",
+          "Since $k_1$ and $k_2$ are constants, their product $k = k_1 k_2$ is constant, proving $z \\propto x$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_2_2_1a",
+      "description": "Worked Example 9.2.2.1(a) find P",
+      "expression": "810 / (Rational(45, 1000) * 4)",
+      "expected": 4500
+    },
+    {
+      "id": "WE9_2_2_1b",
+      "description": "Worked Example 9.2.2.1(b) find r",
+      "expression": "540 / (6000 * Rational(18, 12))",
+      "expected": "Rational(6, 100)"
+    },
+    {
+      "id": "NYT9_2_2_1a",
+      "description": "Now You Try 9.2.2.1(a) find P",
+      "expression": "630 / (Rational(35, 1000) * 3)",
+      "expected": 6000
+    },
+    {
+      "id": "NYT9_2_2_1b",
+      "description": "Now You Try 9.2.2.1(b) find r",
+      "expression": "250 / (4000 * Rational(15, 12))",
+      "expected": "Rational(5, 100)"
+    },
+    {
+      "id": "WE9_2_2_2a",
+      "description": "Worked Example 9.2.2.2(a) balance financed",
+      "expression": "3200 - Rational(15, 100)*3200",
+      "expected": 2720
+    },
+    {
+      "id": "WE9_2_2_2b",
+      "description": "Worked Example 9.2.2.2(b) interest charged",
+      "expression": "24 * Rational(1357, 10) - 2720",
+      "expected": "Rational(2684, 5)"
+    },
+    {
+      "id": "NYT9_2_2_2b",
+      "description": "Now You Try 9.2.2.2(b) interest charged",
+      "expression": "18 * 98 - (2000 - 400)",
+      "expected": 164
+    },
+    {
+      "id": "WE9_2_2_3b",
+      "description": "Worked Example 9.2.2.3(b) solar energy at t=5.5",
+      "expression": "(Rational(195, 10) / 3) * Rational(55, 10)",
+      "expected": "Rational(143, 4)"
+    },
+    {
+      "id": "WE9_2_2_3c",
+      "description": "Worked Example 9.2.2.3(c) time for 45.5 kWh",
+      "expression": "Rational(455, 10) / (Rational(195, 10) / 3)",
+      "expected": 7
+    },
+    {
+      "id": "NYT9_2_2_3b",
+      "description": "Now You Try 9.2.2.3(b) wire mass",
+      "expression": "(72 / 4) * Rational(95, 10)",
+      "expected": 171
+    },
+    {
+      "id": "EX9_2_2_Q1",
+      "description": "Exercise 9.2.2 Q1 time in years",
+      "expression": "1980 / (8000 * Rational(55, 1000))",
+      "expected": "Rational(9, 2)"
+    },
+    {
+      "id": "EX9_2_2_Q2",
+      "description": "Exercise 9.2.2 Q2 original principal",
+      "expression": "solve(Eq(P * (1 + Rational(4, 100) * 5), 9000), P)[0]",
+      "expected": 7500
+    },
+    {
+      "id": "EX9_2_2_Q3",
+      "description": "Exercise 9.2.2 Q3 y when x=20",
+      "expression": "Rational(42, 12) * 20",
+      "expected": 70
+    },
+    {
+      "id": "EX9_2_2_Q4",
+      "description": "Exercise 9.2.2 Q4 annual rate",
+      "expression": "216 / (3600 * Rational(9, 12))",
+      "expected": "Rational(8, 100)"
+    },
+    {
+      "id": "EX9_2_2_Q5",
+      "description": "Exercise 9.2.2 Q5 monthly instalment",
+      "expression": "(2000 + 2000 * Rational(9, 100) * 2) / 24",
+      "expected": "Rational(295, 3)"
+    },
+    {
+      "id": "EX9_2_2_Q6",
+      "description": "Exercise 9.2.2 Q6 Hooke's law mass",
+      "expression": "12 / (Rational(45, 10) / 6)",
+      "expected": 16
+    },
+    {
+      "id": "EX9_2_2_Q7",
+      "description": "Exercise 9.2.2 Q7 EV range",
+      "expression": "Rational(180, 27) * 72",
+      "expected": 480
+    },
+    {
+      "id": "EX9_2_2_Q8",
+      "description": "Exercise 9.2.2 Q8 Account A principal",
+      "expression": "solve(Eq(Rational(4, 100)*x + Rational(65, 1000)*(10000 - x), 550), x)[0]",
+      "expected": 4000
+    },
+    {
+      "id": "EX9_2_2_Q9",
+      "description": "Exercise 9.2.2 Q9 doubling rate in 8 years",
+      "expression": "Rational(100, 8)",
+      "expected": "Rational(25, 2)"
+    }
+  ]
+}

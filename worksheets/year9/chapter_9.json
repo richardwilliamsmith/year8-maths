@@ -1,0 +1,199 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Multi-Stage Probability and Relative Frequency",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "9_9_1",
+      "section_code": "9A",
+      "title": "Two-Step Experiments With and Without Replacement",
+      "vcaa_code": "VC2M9P01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Two fair $6$-sided dice are rolled ($36$ equally likely outcomes in a $6 \\times 6$ lattice array). Find the exact simplified probability of rolling:",
+          "parts": [
+            { "label": "a", "question": "A double (both dice show the same number)", "answer": "$\\dfrac{6}{36} = \\dfrac{1}{6}$" },
+            { "label": "b", "question": "A sum of $7$", "answer": "$\\dfrac{6}{36} = \\dfrac{1}{6}$" },
+            { "label": "c", "question": "A sum of at least $10$ ($10, 11$, or $12$)", "answer": "$\\dfrac{6}{36} = \\dfrac{1}{6}$" },
+            { "label": "d", "question": "Two even numbers", "answer": "$\\dfrac{9}{36} = \\dfrac{1}{4}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A bag contains $3$ red ($R$) and $5$ blue ($B$) marbles ($8$ in total). Two marbles are drawn **with replacement**. Using a tree diagram, find:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(R, R)$", "answer": "$\\dfrac{9}{64}$" },
+            { "label": "b", "question": "$\\Pr(B, B)$", "answer": "$\\dfrac{25}{64}$" },
+            { "label": "c", "question": "$\\Pr(\\text{one of each colour}) = \\Pr(R, B) + \\Pr(B, R)$", "answer": "$\\dfrac{30}{64} = \\dfrac{15}{32}$" },
+            { "label": "d", "question": "$\\Pr(\\text{at least one red}) = 1 - \\Pr(B, B)$", "answer": "$\\dfrac{39}{64}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "The same bag ($3$ red and $5$ blue marbles) now has two marbles drawn **without replacement**. Find each exact simplified probability:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(R, R) = \\dfrac{3}{8} \\times \\dfrac{2}{7}$", "answer": "$\\dfrac{6}{56} = \\dfrac{3}{28}$" },
+            { "label": "b", "question": "$\\Pr(B, B) = \\dfrac{5}{8} \\times \\dfrac{4}{7}$", "answer": "$\\dfrac{20}{56} = \\dfrac{5}{14}$" },
+            { "label": "c", "question": "$\\Pr(\\text{one red and one blue in either order})$", "answer": "$\\dfrac{30}{56} = \\dfrac{15}{28}$" },
+            { "label": "d", "question": "$\\Pr(\\text{at least one red}) = 1 - \\Pr(B, B)$", "answer": "$\\dfrac{9}{14}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A fair coin is tossed $3$ times ($2^3 = 8$ equally likely outcomes). Find the probability of obtaining:",
+          "parts": [
+            { "label": "a", "question": "Three Heads ($HHH$)", "answer": "$\\dfrac{1}{8}$" },
+            { "label": "b", "question": "Exactly two Heads ($HHT, HTH, THH$)", "answer": "$\\dfrac{3}{8}$" },
+            { "label": "c", "question": "At least one Tail ($1 - \\Pr(HHH)$)", "answer": "$\\dfrac{7}{8}$" },
+            { "label": "d", "question": "All three tosses showing the same result ($HHH$ or $TTT$)", "answer": "$\\dfrac{2}{8} = \\dfrac{1}{4}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A box of chocolates in Melbourne contains $4$ dark chocolates and $6$ milk chocolates ($10$ in total). Sam eats two chocolates at random **without replacement**. Find the probability that both chocolates are dark.",
+          "answer": "$\\dfrac{4}{10} \\times \\dfrac{3}{9} = \\dfrac{12}{90} = \\dfrac{2}{15}$"
+        },
+        {
+          "number": 6,
+          "question": "A drawer contains $6$ black socks and $4$ white socks ($10$ socks in total). In the dark, Maya pulls out two socks at random **without replacement**. Find the probability that she pulls out a matching pair of the same colour ($BB$ or $WW$).",
+          "answer": "$\\dfrac{6}{10}\\times\\dfrac{5}{9} + \\dfrac{4}{10}\\times\\dfrac{3}{9} = \\dfrac{30 + 12}{90} = \\dfrac{42}{90} = \\dfrac{7}{15}$"
+        },
+        {
+          "number": 7,
+          "question": "An AFL goal-kicker has a $0.8$ ($\\frac{4}{5}$) probability of kicking a goal on any independent set shot. If he takes two shots at the MCG, find the probability that (a) he kicks both goals and (b) he kicks at least one goal.",
+          "answer": "(a) $0.8 \\times 0.8 = 0.64$ ($\\frac{16}{25}$), (b) $1 - 0.2^2 = 0.96$ ($\\frac{24}{25}$)"
+        },
+        {
+          "number": 8,
+          "question": "Two letters are chosen at random **without replacement** from the $5$-letter word $\\text{KOALA}$ (which has $3$ vowels $\\text{O, A, A}$ and $2$ consonants $\\text{K, L}$). Find the probability that both chosen letters are vowels.",
+          "answer": "$\\dfrac{3}{5} \\times \\dfrac{2}{4} = \\dfrac{6}{20} = \\dfrac{3}{10}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A bag holds $5$ red and $5$ blue counters ($10$ in total). Explain why the probability of drawing two red counters **without replacement** ($\\frac{5}{10} \\times \\frac{4}{9} = \\frac{2}{9}$) is strictly less than the probability of drawing two red counters **with replacement** ($\\frac{5}{10} \\times \\frac{5}{10} = \\frac{1}{4}$).",
+          "answer": "Once the first red counter is removed and not replaced, only $4$ red counters remain out of $9$ counters in total, reducing the conditional probability on the second draw from $\\frac{5}{10} = 0.5$ to $\\frac{4}{9} \\approx 0.444$."
+        },
+        {
+          "number": 10,
+          "question": "In any two-step tree diagram (whether with or without replacement), explain why the sum of the probabilities of all four end branches ($AA, AB, BA, BB$) must always equal $1$.",
+          "answer": "The four end branches represent all mutually exclusive and exhaustive outcomes in the sample space of the two-step experiment, so their probabilities must sum to $1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_9_1_1a", "expression": "Rational(6, 36)", "expected": "1/6" },
+        { "id": "WS9_9_1_1d", "expression": "Rational(9, 36)", "expected": "1/4" },
+        { "id": "WS9_9_1_2a", "expression": "Rational(3, 8) * Rational(3, 8)", "expected": "9/64" },
+        { "id": "WS9_9_1_2c", "expression": "2 * Rational(3, 8) * Rational(5, 8)", "expected": "15/32" },
+        { "id": "WS9_9_1_3a", "expression": "Rational(3, 8) * Rational(2, 7)", "expected": "3/28" },
+        { "id": "WS9_9_1_3b", "expression": "Rational(5, 8) * Rational(4, 7)", "expected": "5/14" },
+        { "id": "WS9_9_1_3c", "expression": "2 * Rational(3, 8) * Rational(5, 7)", "expected": "15/28" },
+        { "id": "WS9_9_1_5", "expression": "Rational(4, 10) * Rational(3, 9)", "expected": "2/15" },
+        { "id": "WS9_9_1_6", "expression": "Rational(6, 10)*Rational(5, 9) + Rational(4, 10)*Rational(3, 9)", "expected": "7/15" },
+        { "id": "WS9_9_1_8", "expression": "Rational(3, 5) * Rational(2, 4)", "expected": "3/10" }
+      ]
+    },
+    {
+      "section_id": "9_9_2",
+      "section_code": "9B",
+      "title": "Relative Frequency, 'And/Or' Compound Events, and Simulations",
+      "vcaa_code": "VC2M9P02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use the Addition Rule $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$ to find the missing probability:",
+          "parts": [
+            { "label": "a", "question": "Given $\\Pr(A) = 0.5, \\Pr(B) = 0.4, \\Pr(A \\cap B) = 0.2$; find $\\Pr(A \\cup B)$", "answer": "$0.7$" },
+            { "label": "b", "question": "Given $\\Pr(A) = \\dfrac{3}{10}, \\Pr(B) = \\dfrac{5}{10}, \\Pr(A \\cap B) = \\dfrac{1}{10}$; find $\\Pr(A \\cup B)$", "answer": "$\\dfrac{7}{10}$" },
+            { "label": "c", "question": "Given $\\Pr(A) = 0.6, \\Pr(B) = 0.5, \\Pr(A \\cup B) = 0.8$; find $\\Pr(A \\cap B)$", "answer": "$0.3$" },
+            { "label": "d", "question": "Using part (c), find $\\Pr(\\text{neither } A \\text{ nor } B) = 1 - \\Pr(A \\cup B)$", "answer": "$0.2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A survey of $100$ Year 9 students in Geelong shows $55$ play Basketball ($B$), $40$ play Tennis ($T$), and $20$ play both ($B \\cap T$). Estimate the probability that a randomly selected student plays:",
+          "parts": [
+            { "label": "a", "question": "Basketball or Tennis (inclusive 'or': $B \\cup T$)", "answer": "$\\dfrac{75}{100} = \\dfrac{3}{4} = 0.75$" },
+            { "label": "b", "question": "Basketball or Tennis, but NOT both (exclusive 'or')", "answer": "$\\dfrac{35 + 20}{100} = \\dfrac{55}{100} = \\dfrac{11}{20} = 0.55$" },
+            { "label": "c", "question": "Neither Basketball nor Tennis", "answer": "$\\dfrac{25}{100} = \\dfrac{1}{4} = 0.25$" },
+            { "label": "d", "question": "Tennis given that they play Basketball ($\\dfrac{20}{55}$)", "answer": "$\\dfrac{4}{11}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A spinner with sectors Red, Blue, Green, and Yellow is spun $200$ times, landing on Red $64$ times, Blue $56$ times, Green $48$ times, and Yellow $32$ times. Find the relative frequency (as a decimal) of:",
+          "parts": [
+            { "label": "a", "question": "Red", "answer": "$0.32$" },
+            { "label": "b", "question": "Blue or Green", "answer": "$0.52$" },
+            { "label": "c", "question": "Not Yellow", "answer": "$0.84$" },
+            { "label": "d", "question": "Expected number of Reds in $500$ future spins based on this relative frequency", "answer": "$160$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A simulation uses random two-digit numbers ($00$ to $99$) where digits $0, 1, 2$ represent Rain ($30\\%$) and $3\\text{--}9$ represent Dry ($70\\%$) on Saturday and Sunday. Out of $20$ simulated weekends, $2$ are (Rain, Rain), $9$ have Rain on exactly one day, and $9$ are (Dry, Dry). Find:",
+          "parts": [
+            { "label": "a", "question": "The simulated relative frequency of Rain on both weekend days", "answer": "$\\dfrac{2}{20} = 0.10$" },
+            { "label": "b", "question": "The simulated relative frequency of Rain on at least one day (inclusive 'or')", "answer": "$\\dfrac{11}{20} = 0.55$" },
+            { "label": "c", "question": "The theoretical probability of Rain on both days ($0.3 \\times 0.3$)", "answer": "$0.09$" },
+            { "label": "d", "question": "The theoretical probability of Rain on at least one day ($1 - 0.7^2$)", "answer": "$0.51$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "At a Hobart café, records of $250$ morning customers show $160$ ordered coffee, $110$ ordered a pastry, and $50$ ordered both. Estimate the probability that the next customer orders (a) coffee or a pastry (inclusive) and (b) coffee or a pastry, but not both (exclusive).",
+          "answer": "(a) $\\dfrac{160 + 110 - 50}{250} = \\dfrac{220}{250} = 0.88$, (b) $\\dfrac{220 - 50}{250} = \\dfrac{170}{250} = 0.68$"
+        },
+        {
+          "number": 6,
+          "question": "Quality control at a solar battery factory in Adelaide tests $400$ batteries: $12$ fail the voltage test, $8$ fail the casing check, and $4$ fail both tests. What is the relative frequency of a battery passing both tests?",
+          "answer": "$\\dfrac{400 - (12 + 8 - 4)}{400} = \\dfrac{384}{400} = 0.96$ ($96\\%$)"
+        },
+        {
+          "number": 7,
+          "question": "A cereal company places $1$ of $2$ collectible stickers ($A$ or $B$, equally likely) inside each box. A student simulates buying $3$ boxes by tossing $3$ fair coins ($H = A, T = B$). What is the theoretical probability that $3$ boxes contain at least one of each sticker (i.e. not $AAA$ and not $BBB$)?",
+          "answer": "$1 - \\dfrac{2}{8} = \\dfrac{6}{8} = \\dfrac{3}{4} = 0.75$"
+        },
+        {
+          "number": 8,
+          "question": "In a Bureau of Meteorology archive of $120$ April days in Melbourne, $36$ days were windy ($W$), $30$ days were rainy ($R$), and $18$ days were both windy and rainy. Find the relative frequency of a rainy day given that the day was windy.",
+          "answer": "$\\dfrac{18}{36} = \\dfrac{1}{2} = 0.5$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain the difference between **inclusive 'or'** ($A \\text{ or } B \\text{ or both}$) and **exclusive 'or'** ($A \\text{ or } B \\text{ but not both}$), and write a formula for $\\Pr(A \\text{ exclusive-or } B)$ in terms of $\\Pr(A)$, $\\Pr(B)$, and $\\Pr(A \\cap B)$.",
+          "answer": "Inclusive 'or' includes the overlap $A \\cap B$ once ($\\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$), whereas exclusive 'or' excludes the overlap completely, so $\\Pr(A \\text{ xor } B) = \\Pr(A) + \\Pr(B) - 2\\Pr(A \\cap B)$."
+        },
+        {
+          "number": 10,
+          "question": "Why does a computer simulation of $10\\,000$ trials of a compound chance experiment generally give a relative frequency much closer to the true theoretical probability than a classroom simulation of $20$ trials?",
+          "answer": "By the Law of Large Numbers, random sampling variability averages out as the number of trials $n$ increases, causing the relative frequency to converge towards the theoretical probability."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_9_2_1a", "expression": "Rational(5, 10) + Rational(4, 10) - Rational(2, 10)", "expected": 0.7 },
+        { "id": "WS9_9_2_1c", "expression": "Rational(6, 10) + Rational(5, 10) - Rational(8, 10)", "expected": 0.3 },
+        { "id": "WS9_9_2_2a", "expression": "Rational(55 + 40 - 20, 100)", "expected": 0.75 },
+        { "id": "WS9_9_2_2b", "expression": "Rational(55 + 40 - 2*20, 100)", "expected": 0.55 },
+        { "id": "WS9_9_2_3b", "expression": "Rational(56 + 48, 200)", "expected": 0.52 },
+        { "id": "WS9_9_2_3d", "expression": "Rational(64, 200) * 500", "expected": 160 },
+        { "id": "WS9_9_2_4d", "expression": "1 - Rational(7, 10)**2", "expected": 0.51 },
+        { "id": "WS9_9_2_5a", "expression": "Rational(160 + 110 - 50, 250)", "expected": 0.88 },
+        { "id": "WS9_9_2_6", "expression": "Rational(400 - (12 + 8 - 4), 400)", "expected": 0.96 },
+        { "id": "WS9_9_2_7", "expression": "1 - Rational(2, 8)", "expected": 0.75 }
+      ]
+    }
+  ]
+}

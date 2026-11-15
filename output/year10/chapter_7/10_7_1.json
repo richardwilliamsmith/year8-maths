@@ -1,0 +1,406 @@
+{
+  "metadata": {
+    "section_id": "10_7_1",
+    "section_code": "7A",
+    "chapter_number": 7,
+    "chapter_title": "Geometric Proofs, Circle Geometry, and Networks (10 & 10A)",
+    "title": "Deductive Geometric Proofs and Network Algorithms",
+    "vcaa_code": "VC2M10SP01",
+    "vcaa_description": "Apply deductive reasoning to proofs involving shapes in the plane and use networks and network algorithms to solve spatial problems (VC2M10SP02).",
+    "strand": "Space",
+    "target_mastery": "Write formal deductive geometric proofs using congruence (SSS, SAS, ASA, RHS) and similarity tests, and analyse planar graphs, Eulerian trails, shortest-path networks (Dijkstra's algorithm), and minimum spanning trees (Prim's/Kruskal's algorithms).",
+    "prerequisites": [
+      "Congruence and similarity of triangles (Year 9 VC2M9SP02)",
+      "Parallel line and polygon angle properties (Year 8)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Deductive proof",
+        "definition": "A step-by-step logical chain of mathematical statements, each justified by an established definition, axiom, or theorem (such as congruence tests SSS, SAS, ASA, RHS or parallel line properties), leading irrefutably from given premises to a conclusion."
+      },
+      {
+        "term": "Graph (network), vertices ($V$), edges ($E$), and faces ($F$)",
+        "definition": "A mathematical structure consisting of vertices (nodes) connected by edges (links); for any connected planar graph (drawn without edge crossings), Euler's formula states $V - E + F = 2$ (including the infinite outer face)."
+      },
+      {
+        "term": "Vertex degree ($\\deg(v)$) and Eulerian trail/circuit",
+        "definition": "The degree of a vertex is the number of edges incident to it (where $\\sum \\deg(v) = 2E$). A connected network has an Eulerian circuit (traversing every edge once and returning to the start) if and only if every vertex has even degree, and an open Eulerian trail if and only if it has exactly $2$ vertices of odd degree."
+      },
+      {
+        "term": "Minimum Spanning Tree (MST) and shortest path",
+        "definition": "A spanning tree of a connected graph on $V$ vertices is a cycle-free subgraph connecting all $V$ vertices using exactly $V - 1$ edges; a Minimum Spanning Tree has the smallest possible total edge weight, found via Kruskal's or Prim's greedy algorithm."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_7_1_1",
+      "title": "Formal Deductive Proofs Using Triangle Congruence and Similarity",
+      "explanation": "In deductive geometry, visual appearance is never accepted as proof. To prove properties of triangles and quadrilaterals (for example, that the opposite sides of a parallelogram are equal, or that the diagonals of a rhombus bisect each other at $90^\\circ$), split the figure into triangles and prove they are congruent using one of the four congruence tests: SSS, SAS, ASA (or AAS), or RHS. Once $\\triangle ABC \\equiv \\triangle DEF$ is established, any pair of matching sides or angles is equal by the reason 'matching sides/angles of congruent triangles (CPCTC)'.",
+      "formula_latex": "\\text{Congruence tests: } \\text{SSS}, \\quad \\text{SAS}, \\quad \\text{ASA}, \\quad \\text{RHS} \\implies \\text{matching parts equal}",
+      "callout_title": "Three Equal Pairs + Test Name + CPCTC",
+      "callout_rule": "Every congruence proof follows a $5$-line structure: (1)–(3) state three pairs of equal sides/angles with bracketed geometric reasons, (4) state $\\triangle_1 \\equiv \\triangle_2$ with the test code, and (5) deduce the required matching side or angle."
+    },
+    {
+      "id": "theory_10_7_1_2",
+      "title": "Planar Networks, the Handshaking Lemma, and Eulerian Trails",
+      "explanation": "A network (graph) models connections between objects. Since each edge has two endpoints, the sum of the degrees of all vertices always equals twice the number of edges ($\\sum \\deg(v) = 2E$, the Handshaking Lemma). For any connected planar graph drawn without intersecting edges, Euler's polyhedral/planar formula relates the number of vertices $V$, edges $E$, and regions/faces $F$ (counting the exterior region as $1$ face): $V - E + F = 2$. Euler's Konigsberg Bridge theorem tells us immediately whether every edge can be traversed exactly once: $0$ odd-degree vertices gives an Eulerian circuit, $2$ odd-degree vertices gives an Eulerian trail starting at one odd vertex and ending at the other, and more than $2$ odd vertices makes an Eulerian traversal impossible.",
+      "formula_latex": "\\sum_{v \\in V} \\deg(v) = 2E, \\qquad V - E + F = 2 \\quad \\text{(connected planar graph)}",
+      "callout_title": "Count the Odd-Degree Vertices",
+      "callout_rule": "$0$ odd vertices $\\implies$ Eulerian circuit (start and end at same vertex). $2$ odd vertices $\\implies$ Eulerian trail (start at one odd vertex, finish at the other). $> 2$ odd vertices $\\implies$ cannot traverse every edge once."
+    },
+    {
+      "id": "theory_10_7_1_3",
+      "title": "Network Algorithms: Shortest Paths and Minimum Spanning Trees",
+      "explanation": "In a weighted network where edge weights represent distances, travel times, or cabling costs, two classic optimisation problems arise. (1) The Shortest Path Problem (solved by Dijkstra's algorithm) finds the path of minimum total weight between a start vertex $S$ and a destination vertex $T$ by iteratively locking in the unvisited vertex with the smallest cumulative distance from $S$. (2) The Minimum Spanning Tree (MST) Problem (solved by Kruskal's algorithm or Prim's algorithm) connects all $V$ vertices together using $V - 1$ edges of minimum total weight without forming any closed cycles.",
+      "formula_latex": "E_{\\text{spanning tree}} = V - 1, \\qquad W_{\\text{MST}} = \\min \\sum_{e \\in T} w(e)",
+      "callout_title": "Kruskal's Algorithm: Sort Edges Shortest-First and Reject Cycles",
+      "callout_rule": "To build an MST by Kruskal's algorithm, list all edges in increasing order of weight and add them one by one, skipping any edge that would complete a closed loop, until $V - 1$ edges are chosen."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_7_1_1",
+      "title": "Deductive Proof that a Parallelogram Has Equal Opposite Sides",
+      "difficulty": "Fluency",
+      "problem": "Let $ABCD$ be a parallelogram with $AB \\parallel DC$ and $AD \\parallel BC$. By drawing the diagonal $AC$, write a formal deductive proof that $AB = DC$ and $AD = BC$, and calculate the perimeter of $ABCD$ if $AB = 3x + 4\\text{ cm}$, $DC = 5x - 6\\text{ cm}$, and $BC = 2x + 1\\text{ cm}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In $\\triangle ABC$ and $\\triangle CDA$, use alternate interior angles on parallel lines $AB \\parallel DC$ and $AD \\parallel BC$ with transversal $AC$, plus the common side $AC$.",
+          "working": "$$\\angle BAC = \\angle DCA \\quad (\\text{alternate angles, } AB \\parallel DC)$$\n$$\\angle BCA = \\angle DAC \\quad (\\text{alternate angles, } AD \\parallel BC)$$\n$$AC = CA \\quad (\\text{common side})$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Conclude congruence by ASA and equate matching opposite sides.",
+          "working": "$$\\therefore \\triangle ABC \\equiv \\triangle CDA \\quad (\\text{ASA}) \\implies AB = CD \\text{ and } BC = DA \\quad (\\text{matching sides of congruent triangles})$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Set $AB = DC$ to solve for $x$, then evaluate all four side lengths to find the perimeter.",
+          "working": "$$3x + 4 = 5x - 6 \\implies 2x = 10 \\implies x = 5$$\n$$AB = DC = 19\\text{ cm}, \\quad BC = AD = 2(5) + 1 = 11\\text{ cm} \\implies \\text{Perimeter} = 2(19 + 11) = 60\\text{ cm}$$"
+        }
+      ],
+      "final_answer": "Proof by ASA ($\\triangle ABC \\equiv \\triangle CDA$); $x = 5$ and $\\text{Perimeter} = 60\\text{ cm}$",
+      "now_you_try": {
+        "problem": "In an isosceles triangle $\\triangle ABC$ with $AB = AC = 13\\text{ cm}$ and base $BC = 10\\text{ cm}$, let $M$ be the midpoint of $BC$. State the congruence test that proves $\\triangle ABM \\equiv \\triangle ACM$, deduce $\\angle AMB$, and find the altitude $AM$.",
+        "hint": "Compare the three pairs of sides in $\\triangle ABM$ and $\\triangle ACM$.",
+        "working_summary": "$AB = AC$ (given), $BM = CM = 5\\text{ cm}$ ($M$ midpoint), $AM$ is common $\\implies \\triangle ABM \\equiv \\triangle ACM$ (SSS). Since $\\angle AMB + \\angle AMC = 180^\\circ$ and they are equal, $\\angle AMB = 90^\\circ$, so $AM = \\sqrt{13^2 - 5^2} = 12\\text{ cm}$.",
+        "answer": "SSS congruence; $\\angle AMB = 90^\\circ$; $AM = 12\\text{ cm}$"
+      }
+    },
+    {
+      "id": "WE10_7_1_2",
+      "title": "Planar Graphs, Vertex Degrees, and Euler's Formula",
+      "difficulty": "Fluency",
+      "problem": "A connected planar network has $V = 6$ vertices with degrees $2, 3, 3, 4, 4, 4$. Find: (a) the number of edges $E$ in the network, (b) the number of faces $F$ (including the outer face) using Euler's formula, and (c) whether the network possesses an Eulerian circuit, an open Eulerian trail, or neither.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "By the Handshaking Lemma, the sum of all vertex degrees equals $2E$.",
+          "working": "$$\\sum \\deg(v) = 2 + 3 + 3 + 4 + 4 + 4 = 20 = 2E \\implies E = 10\\text{ edges}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $V = 6$ and $E = 10$ into Euler's planar graph formula $V - E + F = 2$.",
+          "working": "$$6 - 10 + F = 2 \\implies F = 2 + 4 = 6\\text{ faces}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Count how many vertices have odd degree in the list $2, 3, 3, 4, 4, 4$.",
+          "working": "$$\\text{Exactly } 2 \\text{ vertices have odd degree } (3 \\text{ and } 3) \\implies \\text{the network has an open Eulerian trail (starting at one degree-}3\\text{ vertex and ending at the other).}$$"
+        }
+      ],
+      "final_answer": "(a) $E = 10$ edges, (b) $F = 6$ faces, (c) Open Eulerian trail (since there are exactly $2$ odd-degree vertices)",
+      "now_you_try": {
+        "problem": "A connected planar graph has $V = 8$ vertices, each of degree $3$ (such as the skeleton of a cube). Find (a) the number of edges $E$, (b) the number of faces $F$, and (c) whether an Eulerian trail exists.",
+        "hint": "Use $2E = 8 \\times 3$, then $V - E + F = 2$, and count the odd-degree vertices.",
+        "working_summary": "$2E = 24 \\implies E = 12$; $8 - 12 + F = 2 \\implies F = 6$; since all $8$ vertices have odd degree ($3$), neither an Eulerian circuit nor an Eulerian trail exists.",
+        "answer": "(a) $E = 12$, (b) $F = 6$, (c) Neither ($8$ odd vertices)"
+      }
+    },
+    {
+      "id": "WE10_7_1_3",
+      "title": "Shortest Path and Minimum Spanning Tree on a Weighted Network",
+      "difficulty": "Problem-Solving",
+      "problem": "Five regional towns $A, B, C, D, E$ in Victoria are to be linked by optical fibre along existing road reserves with distances (in $\\text{km}$): $AB = 4$, $AC = 8$, $BC = 3$, $BD = 6$, $CD = 4$, $CE = 7$, and $DE = 5$. Find: (a) the shortest path distance from town $A$ to town $E$, and (b) the minimum total length of optical fibre required to connect all $5$ towns in a Minimum Spanning Tree (MST).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For the shortest path from $A$ to $E$, apply Dijkstra's algorithm by finding the minimum cumulative distance from $A$ to each vertex in order: $d(A) = 0$, $d(B) = 4$ (via $AB$), $d(C) = \\min(8,\\, 4 + 3) = 7$ (via $A\\text{–}B\\text{–}C$), $d(D) = \\min(4 + 6,\\, 7 + 4) = 10$ (via $A\\text{–}B\\text{–}D$), and $d(E) = \\min(7 + 7,\\, 10 + 5) = 14$ (via $A\\text{–}B\\text{–}C\\text{–}E$).",
+          "working": "$$\\text{Shortest path } A \\to B \\to C \\to E = 4 + 3 + 7 = 14\\text{ km}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For the MST on $V = 5$ vertices, we need $V - 1 = 4$ edges. Sort all edges by weight: $BC(3), AB(4), CD(4), DE(5), BD(6), CE(7), AC(8)$ and apply Kruskal's algorithm.",
+          "working": "$$\\text{Select } BC(3), \\text{ then } AB(4), \\text{ then } CD(4), \\text{ then } DE(5) \\quad (\\text{no cycles formed, } 4 \\text{ edges selected})$$\n$$W_{\\text{MST}} = 3 + 4 + 4 + 5 = 16\\text{ km}$$"
+        }
+      ],
+      "final_answer": "(a) Shortest path $A \\to B \\to C \\to E$ has length $14\\text{ km}$; (b) Minimum Spanning Tree has total length $16\\text{ km}$",
+      "now_you_try": {
+        "problem": "Four camp huts $P, Q, R, S$ have possible path lengths (in metres): $PQ = 50$, $PR = 90$, $QR = 30$, $QS = 70$, $RS = 40$. Find (a) the shortest path distance from $P$ to $S$, and (b) the total weight of the Minimum Spanning Tree.",
+        "hint": "Compare $P\\text{–}Q\\text{–}S$ with $P\\text{–}Q\\text{–}R\\text{–}S$, and pick the $3$ shortest non-cycling edges for the MST.",
+        "working_summary": "Shortest path $P \\to Q \\to S = 50 + 70 = 120\\text{ m}$ vs $P \\to Q \\to R \\to S = 50 + 30 + 40 = 120\\text{ m}$ (both equal $120\\text{ m}$); MST uses $QR(30), RS(40), PQ(50) = 120\\text{ m}$.",
+        "answer": "(a) $120\\text{ m}$, (b) $120\\text{ m}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_10_7_1_1",
+      "title": "Using 'SSA' or 'AAA' as a Triangle Congruence Test",
+      "misconception": "Claiming two triangles are congruent because they have three equal angles (AAA) or two equal sides and a non-included angle (SSA).",
+      "correct_concept": "AAA proves similarity (same shape, possibly different scale factor), never congruence. SSA is the ambiguous case (unless the angle is $90^\\circ$, which is the valid RHS test). For SAS, the equal angle MUST be the included angle sandwiched between the two equal sides.",
+      "incorrect_working": "$$\\triangle ABC \\equiv \\triangle DEF \\quad (\\text{AAA or SSA}) \\quad \\text{(Invalid congruence reason!)}$$",
+      "correct_working": "$$\\text{Valid congruence tests: } \\text{SSS}, \\quad \\text{SAS (included angle)}, \\quad \\text{ASA / AAS}, \\quad \\text{RHS}$$",
+      "counter_example": "Two equilateral triangles of side $3\\text{ cm}$ and side $10\\text{ cm}$ share all three angles ($60^\\circ, 60^\\circ, 60^\\circ$) but are clearly not congruent."
+    },
+    {
+      "id": "misc_10_7_1_2",
+      "title": "Forgetting the Infinite Exterior Face in Euler's Formula $V - E + F = 2$",
+      "misconception": "Counting only the bounded enclosed polygons inside a planar network and getting $V - E + F = 1$.",
+      "correct_concept": "In Euler's planar formula $V - E + F = 2$, the unbounded region surrounding the outside of the graph ALWAYS counts as $1$ face. For example, a single triangle has $V = 3$ vertices, $E = 3$ edges, and $F = 2$ faces ($1$ interior + $1$ exterior): $3 - 3 + 2 = 2$.",
+      "incorrect_working": "$$\\text{Single triangle: } V = 3,\\, E = 3,\\, F = 1 \\implies V - E + F = 1 \\quad \\text{(Forgot exterior face!)}$$",
+      "correct_working": "$$\\text{Single triangle: } V = 3,\\, E = 3,\\, F = 2 \\text{ (1 inside + 1 outside)} \\implies 3 - 3 + 2 = 2$$",
+      "counter_example": "A tree network with no closed loops has $0$ enclosed regions, so $F = 1$ (the outside face alone), matching $V - (V - 1) + 1 = 2$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_7_1_Q1",
+        "question": "A connected planar network has $V = 9$ vertices and $E = 14$ edges. Use Euler's formula $V - E + F = 2$ to find the number of faces $F$ (including the exterior face).",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$F = 7$ faces",
+        "step_by_step_solution": [
+          "Substitute $V = 9$ and $E = 14$ into Euler's formula $V - E + F = 2$: $9 - 14 + F = 2$.",
+          "Solve for $F$: $-5 + F = 2 \\implies F = 7$ faces."
+        ]
+      },
+      {
+        "id": "10_7_1_Q2",
+        "question": "A network has $5$ vertices with degrees $2, 2, 3, 4, 5$. Find (a) the number of edges $E$ in the network, and (b) whether the network has an Eulerian circuit, an open Eulerian trail, or neither.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $E = 8$ edges, (b) Open Eulerian trail (exactly $2$ odd-degree vertices: $3$ and $5$)",
+        "step_by_step_solution": [
+          "Sum the degrees: $\\sum \\deg(v) = 2 + 2 + 3 + 4 + 5 = 16 = 2E \\implies E = 8$ edges.",
+          "Count the odd degrees: only $3$ and $5$ are odd ($2$ odd vertices), so the network has an open Eulerian trail."
+        ]
+      },
+      {
+        "id": "10_7_1_Q3",
+        "question": "In $\\triangle ABC$ and $\\triangle EDC$, point $C$ is the midpoint of both segments $AE$ and $BD$ (which intersect at $C$). Prove that $\\triangle ABC \\equiv \\triangle EDC$ and find $AB$ if $ED = 14\\text{ cm}$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "SAS congruence ($AC = EC$, $\\angle ACB = \\angle ECD$ vertically opposite, $BC = DC$); $AB = 14\\text{ cm}$",
+        "step_by_step_solution": [
+          "Since $C$ bisects $AE$ and $BD$, we have $AC = EC$ and $BC = DC$, and $\\angle ACB = \\angle ECD$ (vertically opposite angles).",
+          "Therefore $\\triangle ABC \\equiv \\triangle EDC$ (SAS), so matching sides are equal: $AB = ED = 14\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "10_7_1_Q4",
+        "question": "In $\\triangle ABC$, a line segment $DE$ is drawn parallel to the base $BC$ ($D$ on $AB$, $E$ on $AC$). Given $AD = 6\\text{ cm}$, $DB = 9\\text{ cm}$, and $DE = 8\\text{ cm}$, prove that $\\triangle ADE \\sim \\triangle ABC$ and find the length of $BC$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "AAA similarity ($\\angle A$ common, $\\angle ADE = \\angle ABC$ corresponding); $BC = 20\\text{ cm}$",
+        "step_by_step_solution": [
+          "In $\\triangle ADE$ and $\\triangle ABC$, $\\angle DAE = \\angle BAC$ (common) and $\\angle ADE = \\angle ABC$ (corresponding angles, $DE \\parallel BC$), so $\\triangle ADE \\sim \\triangle ABC$ (AAA).",
+          "Since $AB = AD + DB = 6 + 9 = 15\\text{ cm}$, the similarity ratio gives $\\frac{BC}{DE} = \\frac{AB}{AD} \\implies \\frac{BC}{8} = \\frac{15}{6} = \\frac{5}{2} \\implies BC = 20\\text{ cm}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_7_1_Q5",
+        "question": "A council ranger in the Dandenong Ranges wants to inspect every walking track in a park network exactly once and return to the trailhead carpark. The network has $6$ trail junctions with vertex degrees $4, 4, 2, 3, 3, 2$. (a) Explain why the ranger cannot complete an Eulerian circuit starting and ending at the same junction. (b) If the council builds $1$ new track directly connecting the two degree-$3$ junctions, how many edges will the updated network have, and will an Eulerian circuit now be possible?",
+        "difficulty": "Medium",
+        "context": "Park Ranger Route Planning",
+        "final_answer": "(a) Two vertices have odd degree ($3$ and $3$), so only an open trail is possible; (b) $E_{\\text{new}} = 10$ edges and all degrees become even ($4, 4, 2, 4, 4, 2$), so an Eulerian circuit is now possible",
+        "step_by_step_solution": [
+          "Initially $\\sum \\deg(v) = 4 + 4 + 2 + 3 + 3 + 2 = 18 \\implies E = 9$ edges; because two junctions have odd degree ($3$), any single traversal of all tracks must start at one odd junction and finish at the other.",
+          "Adding $1$ edge between the two degree-$3$ junctions increases their degrees to $4$ and $4$ (giving $E_{\\text{new}} = 10$ edges and all even degrees), so an Eulerian circuit becomes possible."
+        ]
+      },
+      {
+        "id": "10_7_1_Q6",
+        "question": "Six solar farm inverter stations $A, B, C, D, E, F$ are to be linked into a single Minimum Spanning Tree. After running Kruskal's algorithm, the $5$ selected cable segments have lengths $120\\text{ m}, 150\\text{ m}, 180\\text{ m}, 210\\text{ m}$, and $240\\text{ m}$. If trenching and cabling costs $\\$45$ per metre, find (a) the total cable length in the MST, and (b) the total installation cost.",
+        "difficulty": "Easy",
+        "context": "Renewable Energy Infrastructure",
+        "final_answer": "(a) $900\\text{ m}$, (b) $\\$40\\,500$",
+        "step_by_step_solution": [
+          "Sum the $V - 1 = 5$ edge weights of the Minimum Spanning Tree: $L = 120 + 150 + 180 + 210 + 240 = 900\\text{ m}$.",
+          "Multiply by the cost per metre: $\\text{Cost} = 900 \\times \\$45 = \\$40\\,500$."
+        ]
+      },
+      {
+        "id": "10_7_1_Q7",
+        "question": "In a delivery network with $5$ depots $A, B, C, D, E$, the travel times (in minutes) along direct roads are: $AB = 5$, $AC = 12$, $BC = 4$, $BD = 11$, $CD = 5$, $CE = 9$, and $DE = 3$. Use Dijkstra's shortest-path algorithm to find (a) the minimum travel time from $A$ to $E$, and (b) the minimum spanning tree total weight across all $5$ depots.",
+        "difficulty": "Challenging",
+        "context": "Logistics & Freight Routing",
+        "final_answer": "(a) $17\\text{ minutes}$ (via $A \\to B \\to C \\to D \\to E$), (b) MST weight $= 17\\text{ minutes}$",
+        "step_by_step_solution": [
+          "From $A$: $d(A) = 0$, $d(B) = 5$, $d(C) = \\min(12,\\, 5 + 4) = 9$ ($A\\text{–}B\\text{–}C$), $d(D) = \\min(5 + 11,\\, 9 + 5) = 14$ ($A\\text{–}B\\text{–}C\\text{–}D$), and $d(E) = \\min(9 + 9,\\, 14 + 3) = 17$ minutes via $A \\to B \\to C \\to D \\to E$.",
+          "By Kruskal's algorithm, the $4$ shortest edges $DE(3), BC(4), AB(5), CD(5)$ form no cycles and connect all $5$ vertices with total weight $3 + 4 + 5 + 5 = 17$."
+        ]
+      },
+      {
+        "id": "10_7_1_Q8",
+        "question": "A bridge truss consists of two right-angled triangles $\\triangle ABD$ and $\\triangle CBD$ sharing a vertical central strut $BD$ perpendicular to the horizontal deck $AC$ at its midpoint $D$ ($AD = CD = 2.4\\text{ m}$ and $BD = 1.8\\text{ m}$). Prove that $\\triangle ABD \\equiv \\triangle CBD$ and find the combined length of the two sloping rafters $AB + CB$.",
+        "difficulty": "Medium",
+        "context": "Structural Engineering",
+        "final_answer": "SAS congruence ($AD = CD$, $\\angle ADB = \\angle CDB = 90^\\circ$, $BD$ common); $AB + CB = 6.0\\text{ m}$",
+        "step_by_step_solution": [
+          "In $\\triangle ABD$ and $\\triangle CBD$, $AD = CD = 2.4\\text{ m}$ (given), $\\angle ADB = \\angle CDB = 90^\\circ$ ($BD \\perp AC$), and $BD$ is common, so $\\triangle ABD \\equiv \\triangle CBD$ (SAS).",
+          "By Pythagoras' theorem, $AB = CB = \\sqrt{2.4^2 + 1.8^2} = \\sqrt{5.76 + 3.24} = \\sqrt{9} = 3.0\\text{ m}$, giving $AB + CB = 6.0\\text{ m}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_7_1_Q9",
+        "question": "Use the Handshaking Lemma $\\sum \\deg(v) = 2E$ to prove that in ANY network, the number of vertices with an odd degree must always be an even number (i.e. it is impossible to draw a graph with an odd number of odd-degree vertices).",
+        "difficulty": "Challenging",
+        "context": "Number Theory in Graph Theory",
+        "final_answer": "Since $\\sum \\deg(v) = 2E$ is even and the sum of even degrees is even, the sum of the odd degrees must also be even, which requires an even number of odd summands",
+        "step_by_step_solution": [
+          "Split the sum of all vertex degrees into even-degree vertices and odd-degree vertices: $\\sum_{\\text{even}} \\deg(v) + \\sum_{\\text{odd}} \\deg(v) = 2E$.",
+          "Because $2E$ is even and $\\sum_{\\text{even}} \\deg(v)$ is even, their difference $\\sum_{\\text{odd}} \\deg(v)$ must be even; since a sum of odd integers is even if and only if there are an even number of terms, the count of odd-degree vertices is always even."
+        ]
+      },
+      {
+        "id": "10_7_1_Q10",
+        "question": "Prove deductively that the diagonals of a rhombus $ABCD$ (where $AB = BC = CD = DA$) intersect at right angles ($90^\\circ$), given that the diagonals of any parallelogram bisect each other at $M$ ($AM = CM$ and $BM = DM$).",
+        "difficulty": "Challenging",
+        "context": "Quadrilateral Diagonal Proof",
+        "final_answer": "In $\\triangle AMB$ and $\\triangle CMB$, $AB = CB$, $AM = CM$, and $BM$ is common $\\implies \\triangle AMB \\equiv \\triangle CMB$ (SSS) $\\implies \\angle AMB = \\angle CMB = 90^\\circ$",
+        "step_by_step_solution": [
+          "Consider $\\triangle AMB$ and $\\triangle CMB$: $AB = CB$ (sides of a rhombus), $AM = CM$ (diagonals bisect each other), and $BM = BM$ (common side), so $\\triangle AMB \\equiv \\triangle CMB$ (SSS).",
+          "Therefore $\\angle AMB = \\angle CMB$ (matching angles); since $AMC$ is a straight line ($\\angle AMB + \\angle CMB = 180^\\circ$), we have $2\\angle AMB = 180^\\circ \\implies \\angle AMB = 90^\\circ$."
+        ]
+      },
+      {
+        "id": "10_7_1_Q11",
+        "question": "A complete graph $K_n$ has $n$ vertices with an edge connecting every pair of distinct vertices. (a) Show that each vertex has degree $n - 1$ and that the total number of edges is $E = \\frac{n(n - 1)}{2}$. (b) Evaluate $E$ for $K_5$ and $K_6$, and determine which of $K_5$ and $K_6$ has an Eulerian circuit.",
+        "difficulty": "Extension",
+        "context": "Complete Graphs $K_n$",
+        "final_answer": "(a) $2E = n(n - 1) \\implies E = \\frac{n(n - 1)}{2}$; (b) $K_5$ has $E = 10$ edges and an Eulerian circuit (all $5$ vertices have even degree $4$), whereas $K_6$ has $E = 15$ edges and no Eulerian circuit/trail (all $6$ vertices have odd degree $5$)",
+        "step_by_step_solution": [
+          "Each of the $n$ vertices connects to the other $n - 1$ vertices, so $\\sum \\deg(v) = n(n - 1) = 2E \\implies E = \\frac{n(n - 1)}{2}$.",
+          "For $K_5$, $E = \\frac{5 \\times 4}{2} = 10$ and every vertex has even degree $4$ (Eulerian circuit exists); for $K_6$, $E = \\frac{6 \\times 5}{2} = 15$ and every vertex has odd degree $5$ (no Eulerian circuit or trail)."
+        ]
+      },
+      {
+        "id": "10_7_1_Q12",
+        "question": "A soccer ball (truncated icosahedron) is a connected planar polyhedron made of $12$ regular pentagons and $20$ regular hexagons ($F = 32$ faces in total), where every vertex has degree $3$. Use the face-edge relation and Euler's formula $V - E + F = 2$ to find the exact number of edges $E$ and vertices $V$ on a soccer ball.",
+        "difficulty": "Extension",
+        "context": "Polyhedral Topology",
+        "final_answer": "$E = 90$ edges and $V = 60$ vertices",
+        "step_by_step_solution": [
+          "The $12$ pentagons and $20$ hexagons have $12 \\times 5 + 20 \\times 6 = 60 + 120 = 180$ polygon sides in total; since each edge is shared by $2$ faces, $E = \\frac{180}{2} = 90$ edges.",
+          "By Euler's formula $V - E + F = 2$, we have $V - 90 + 32 = 2 \\implies V = 60$ vertices (which also matches $3V = 2E = 180$)."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_7_1_1_x",
+      "description": "WE10_7_1_1 solve 3x+4 = 5x-6",
+      "expression": "(4 + 6) / (5 - 3)",
+      "expected": 5
+    },
+    {
+      "id": "WE10_7_1_1_perim",
+      "description": "WE10_7_1_1 parallelogram perimeter",
+      "expression": "2 * ((3*5 + 4) + (2*5 + 1))",
+      "expected": 60
+    },
+    {
+      "id": "NYT10_7_1_1_AM",
+      "description": "NYT10_7_1_1 altitude AM",
+      "expression": "sqrt(13**2 - 5**2)",
+      "expected": 12
+    },
+    {
+      "id": "WE10_7_1_2_E",
+      "description": "WE10_7_1_2 edges from degree sum",
+      "expression": "Rational(2 + 3 + 3 + 4 + 4 + 4, 2)",
+      "expected": 10
+    },
+    {
+      "id": "WE10_7_1_2_F",
+      "description": "WE10_7_1_2 faces from Euler formula",
+      "expression": "2 - 6 + 10",
+      "expected": 6
+    },
+    {
+      "id": "NYT10_7_1_2_E",
+      "description": "NYT10_7_1_2 cube graph edges",
+      "expression": "Rational(8 * 3, 2)",
+      "expected": 12
+    },
+    {
+      "id": "WE10_7_1_3_path",
+      "description": "WE10_7_1_3 shortest path A to E",
+      "expression": "4 + 3 + 7",
+      "expected": 14
+    },
+    {
+      "id": "WE10_7_1_3_MST",
+      "description": "WE10_7_1_3 MST total weight",
+      "expression": "3 + 4 + 4 + 5",
+      "expected": 16
+    },
+    {
+      "id": "EX10_7_1_Q1",
+      "description": "Exercise 10.7.1 Q1 Euler faces",
+      "expression": "2 - 9 + 14",
+      "expected": 7
+    },
+    {
+      "id": "EX10_7_1_Q2_E",
+      "description": "Exercise 10.7.1 Q2 edges",
+      "expression": "Rational(2 + 2 + 3 + 4 + 5, 2)",
+      "expected": 8
+    },
+    {
+      "id": "EX10_7_1_Q4_BC",
+      "description": "Exercise 10.7.1 Q4 similar triangles BC",
+      "expression": "8 * Rational(6 + 9, 6)",
+      "expected": 20
+    },
+    {
+      "id": "EX10_7_1_Q6_cost",
+      "description": "Exercise 10.7.1 Q6 MST cabling cost",
+      "expression": "(120 + 150 + 180 + 210 + 240) * 45",
+      "expected": 40500
+    },
+    {
+      "id": "EX10_7_1_Q7_path",
+      "description": "Exercise 10.7.1 Q7 shortest path A to E",
+      "expression": "5 + 4 + 5 + 3",
+      "expected": 17
+    },
+    {
+      "id": "EX10_7_1_Q8",
+      "description": "Exercise 10.7.1 Q8 rafters AB + CB",
+      "expression": "2 * sqrt(Rational(24, 10)**2 + Rational(18, 10)**2)",
+      "expected": 6
+    },
+    {
+      "id": "EX10_7_1_Q11_K5",
+      "description": "Exercise 10.7.1 Q11 K5 edges",
+      "expression": "binomial(5, 2)",
+      "expected": 10
+    },
+    {
+      "id": "EX10_7_1_Q12_V",
+      "description": "Exercise 10.7.1 Q12 soccer ball vertices",
+      "expression": "2 + Rational(12 * 5 + 20 * 6, 2) - (12 + 20)",
+      "expected": 60
+    }
+  ]
+}

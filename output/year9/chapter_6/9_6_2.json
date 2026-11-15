@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "section_id": "9_6_2",
+    "section_code": "6B",
+    "chapter_number": 6,
+    "chapter_title": "Surface Area and Volume of Cylinders, Prisms, and Composite Solids",
+    "title": "Volume of Cylinders, Composite Solids, and Error in Measurement",
+    "vcaa_code": "VC2M9M02",
+    "vcaa_description": "Solve problems involving the volume and surface area of right prisms and cylinders using appropriate units; calculate absolute, relative and percentage errors in measurements (VC2M9M05).",
+    "strand": "Measurement",
+    "target_mastery": "Calculate the volume and capacity of right prisms, cylinders ($V = \\pi r^2 h$), and composite solids, and determine limits of accuracy, absolute error, and percentage error in measurements.",
+    "prerequisites": [
+      "Volume of right prisms $V = A_{\\text{base}} \\times H$ and capacity conversions (Year 8 VC2M8M02)",
+      "Surface area of prisms and cylinders (Section 6A)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Volume of a cylinder",
+        "definition": "The three-dimensional space occupied by a cylinder of radius $r$ and perpendicular height $h$, given by $V = A_{\\text{base}} h = \\pi r^2 h$."
+      },
+      {
+        "term": "Limits of accuracy",
+        "definition": "The lower bound and upper bound within which a true continuous measurement lies, given by $\\text{Measured value} \\pm 0.5 \\times (\\text{smallest unit of measurement})$."
+      },
+      {
+        "term": "Absolute error",
+        "definition": "The magnitude of the difference between a measured (or approximated) value and the true (or exact) value: $E_{\\text{abs}} = |\\text{Measured} - \\text{True}|$."
+      },
+      {
+        "term": "Percentage error",
+        "definition": "The absolute error expressed as a percentage of the true value: $\\text{Percentage error} = \\frac{|\\text{Measured} - \\text{True}|}{\\text{True}} \\times 100\\%$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_6_2_1",
+      "title": "Volume of Right Prisms, Cylinders, and Annular Pipes",
+      "explanation": "Every right prism or cylinder has a uniform cross-sectional area $A$ along its entire height (or length) $h$, so its volume is $V = A \\times h$. For a circular cylinder, $A = \\pi r^2$, giving $V = \\pi r^2 h$. For a hollow cylindrical pipe (annular prism) with outer radius $R$ and inner radius $r$, the cross-sectional area is $\\pi(R^2 - r^2)$.",
+      "formula_latex": "V_{\\text{cylinder}} = \\pi r^2 h, \\qquad V_{\\text{hollow pipe}} = \\pi(R^2 - r^2)h",
+      "callout_title": "Key Capacity Conversions",
+      "callout_rule": "$1\\text{ cm}^3 = 1\\text{ mL}$, $\\;1000\\text{ cm}^3 = 1\\text{ L}$, and $1\\text{ m}^3 = 1000\\text{ L} = 1\\text{ kL}$."
+    },
+    {
+      "id": "theory_9_6_2_2",
+      "title": "Volume of Composite Solids (Addition and Subtraction)",
+      "explanation": "Unlike surface area—where hidden interfaces are tricky—the volume of a composite solid is simply the sum of the volumes of its component parts (or the difference when a cavity or hole is drilled out).",
+      "formula_latex": "V_{\\text{composite}} = V_1 + V_2 \\quad \\text{(joined)} \\qquad V_{\\text{excavated}} = V_{\\text{outer}} - V_{\\text{hole}}",
+      "callout_title": "Volumes Add and Subtract Directly",
+      "callout_rule": "To find the volume of a block with a cylindrical hole drilled through it, calculate $V_{\\text{block}} - V_{\\text{cylinder}}$."
+    },
+    {
+      "id": "theory_9_6_2_3",
+      "title": "Limits of Accuracy, Absolute Error, and Percentage Error",
+      "explanation": "All physical measurements are rounded to a chosen precision (smallest scale unit $u$). The maximum possible error (tolerance) is $\\pm 0.5u$, giving lower bound $M - 0.5u$ and upper bound $M + 0.5u$. When comparing a measured value $M$ to a known true value $T$, the absolute error is $|M - T|$, the relative error is $\\frac{|M - T|}{T}$, and the percentage error is $\\frac{|M - T|}{T} \\times 100\\%$.",
+      "formula_latex": "\\text{Absolute error} = |M - T|, \\qquad \\text{Percentage error} = \\frac{|M - T|}{T} \\times 100\\%",
+      "callout_title": "Divide by the True Value for Percentage Error",
+      "callout_rule": "Always place the true (exact) value $T$ in the denominator when calculating relative or percentage error."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_6_2_1",
+      "title": "Calculating the Volume and Capacity of a Cylindrical Water Tank",
+      "difficulty": "Fluency",
+      "problem": "A cylindrical rainwater tank on a farm near Echuca has an internal diameter of $4\\text{ m}$ and height $2.5\\text{ m}$. Find (a) its exact volume in $\\text{m}^3$ in terms of $\\pi$, and (b) its capacity in litres rounded to the nearest litre.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Halve the diameter to get $r = 2\\text{ m}$, then substitute $r = 2$ and $h = 2.5$ into $V = \\pi r^2 h$.",
+          "working": "$$r = \\frac{4}{2} = 2\\text{ m} \\implies V = \\pi(2)^2(2.5) = 10\\pi\\text{ m}^3$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Convert $\\text{m}^3$ to litres by multiplying by $1000$ (since $1\\text{ m}^3 = 1000\\text{ L}$).",
+          "working": "$$\\text{Capacity} = 10\\pi \\times 1000 = 10\\,000\\pi \\approx 31\\,416\\text{ L}$$"
+        }
+      ],
+      "final_answer": "(a) $10\\pi\\text{ m}^3$, (b) $31\\,416\\text{ L}$",
+      "now_you_try": {
+        "problem": "A cylindrical soup tin has radius $4\\text{ cm}$ and height $10\\text{ cm}$. Find its exact volume in $\\text{cm}^3$ and its capacity in millilitres to one decimal place.",
+        "hint": "Use $V = \\pi r^2 h$ and recall $1\\text{ cm}^3 = 1\\text{ mL}$.",
+        "working_summary": "$V = \\pi(4)^2(10) = 160\\pi\\text{ cm}^3 \\approx 502.7\\text{ mL}$.",
+        "answer": "$160\\pi\\text{ cm}^3 \\approx 502.7\\text{ mL}$"
+      }
+    },
+    {
+      "id": "WE9_6_2_2",
+      "title": "Volume of a Composite Archway Block",
+      "difficulty": "Understanding",
+      "problem": "A concrete bridge support is formed by a rectangular prism of length $10\\text{ m}$, width $6\\text{ m}$, and height $8\\text{ m}$, with a semicircular tunnel of radius $r = 2\\text{ m}$ running completely through its $10\\text{ m}$ length. Find the exact volume of concrete in the support.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the volume of the full rectangular prism and the volume of the half-cylinder tunnel.",
+          "working": "$$V_{\\text{prism}} = 10 \\times 6 \\times 8 = 480\\text{ m}^3$$\n$$V_{\\text{tunnel}} = \\frac{1}{2}\\pi r^2 h = \\frac{1}{2}\\pi(2)^2(10) = 20\\pi\\text{ m}^3$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Subtract the volume of the tunnel from the volume of the rectangular prism.",
+          "working": "$$V_{\\text{concrete}} = (480 - 20\\pi)\\text{ m}^3 \\approx 417.17\\text{ m}^3$$"
+        }
+      ],
+      "final_answer": "$(480 - 20\\pi)\\text{ m}^3 \\approx 417.17\\text{ m}^3$",
+      "now_you_try": {
+        "problem": "A solid grain silo consists of a rectangular prism base ($6\\text{ m} \\times 4\\text{ m} \\times 5\\text{ m}$) topped by a half-cylinder roof of radius $r = 2\\text{ m}$ and length $6\\text{ m}$. Find the exact total volume.",
+        "hint": "Add $V_{\\text{prism}} = 6 \\times 4 \\times 5$ and $V_{\\text{half-cylinder}} = \\frac{1}{2}\\pi(2)^2(6)$.",
+        "working_summary": "$V = 120 + 12\\pi\\text{ m}^3$.",
+        "answer": "$(120 + 12\\pi)\\text{ m}^3$"
+      }
+    },
+    {
+      "id": "WE9_6_2_3",
+      "title": "Limits of Accuracy, Absolute Error, and Percentage Error",
+      "difficulty": "Problem-Solving",
+      "problem": "A carpenter measures the length of a timber beam as $240\\text{ cm}$, rounded to the nearest centimetre, whereas laser surveying shows the true length is $241.2\\text{ cm}$. (a) State the lower and upper bounds (limits of accuracy) implied by the $240\\text{ cm}$ measurement. (b) Calculate the absolute error and percentage error (to $2$ decimal places) of the carpenter's measurement compared to the true length.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For a measurement to the nearest $1\\text{ cm}$, the maximum rounding error is $\\pm 0.5\\text{ cm}$.",
+          "working": "$$\\text{Lower bound} = 240 - 0.5 = 239.5\\text{ cm}, \\qquad \\text{Upper bound} = 240 + 0.5 = 240.5\\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Calculate $E_{\\text{abs}} = |240 - 241.2|$ and divide by the true length $241.2\\text{ cm}$ to find the percentage error.",
+          "working": "$$E_{\\text{abs}} = |240 - 241.2| = 1.2\\text{ cm}$$\n$$\\text{Percentage error} = \\frac{1.2}{241.2} \\times 100\\% = \\frac{100}{201}\\% \\approx 0.50\\%$$"
+        }
+      ],
+      "final_answer": "(a) $239.5\\text{ cm}$ to $240.5\\text{ cm}$, (b) Absolute error $= 1.2\\text{ cm}$, percentage error $\\approx 0.50\\%$",
+      "now_you_try": {
+        "problem": "A chemist measures out $48\\text{ mL}$ of solution when the true required volume is $50\\text{ mL}$. Find (a) the absolute error and (b) the percentage error.",
+        "hint": "Divide the absolute error $|48 - 50|$ by the true value $50$.",
+        "working_summary": "(a) $|48 - 50| = 2\\text{ mL}$; (b) $\\frac{2}{50} \\times 100\\% = 4\\%$.",
+        "answer": "(a) $2\\text{ mL}$, (b) $4\\%$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_6_2_1",
+      "title": "Squaring the Difference of Radii $(R - r)^2$ Instead of $R^2 - r^2$ for a Hollow Pipe",
+      "misconception": "Calculating the cross-sectional area of a hollow pipe as $\\pi(R - r)^2$ instead of $\\pi(R^2 - r^2)$.",
+      "correct_concept": "The volume of a hollow pipe is the outer cylinder volume $\\pi R^2 h$ minus the inner cylinder hole volume $\\pi r^2 h$, which factorises to $\\pi(R^2 - r^2)h$. Because $(R - r)^2 \\neq R^2 - r^2$, subtract the squares of the radii, not the square of their difference.",
+      "incorrect_working": "$$R = 5,\\; r = 3,\\; h = 10 \\implies V = \\pi(5 - 3)^2(10) = 40\\pi \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$V = \\pi(5^2 - 3^2)(10) = \\pi(25 - 9)(10) = 160\\pi$$",
+      "counter_example": "$25 - 9 = 16$, whereas $(5 - 3)^2 = 4$."
+    },
+    {
+      "id": "misc_9_6_2_2",
+      "title": "Dividing by the Measured Value Instead of the True Value in Percentage Error",
+      "misconception": "Computing percentage error as $\\frac{|M - T|}{M} \\times 100\\%$ instead of $\\frac{|M - T|}{T} \\times 100\\%$.",
+      "correct_concept": "Percentage error measures how large the error is relative to the true (exact) reference value $T$.",
+      "incorrect_working": "$$M = 80,\\; T = 100 \\implies \\frac{|80 - 100|}{80} \\times 100\\% = 25\\% \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{Percentage error} = \\frac{|80 - 100|}{100} \\times 100\\% = 20\\%$$",
+      "counter_example": "A measurement of $80$ when the true value is $100$ is $20\\%$ below the true value."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_6_2_Q1",
+        "question": "Calculate the exact volume of a cylinder with radius $6\\text{ cm}$ and height $15\\text{ cm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$540\\pi\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "Substitute $r = 6$ and $h = 15$ into $V = \\pi r^2 h$.",
+          "Evaluate: $V = \\pi(6)^2(15) = 36 \\times 15\\pi = 540\\pi\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "9_6_2_Q2",
+        "question": "Calculate the volume of a right trapezoidal prism whose cross-section has parallel sides $8\\text{ cm}$ and $14\\text{ cm}$, perpendicular height $6\\text{ cm}$, and prism length $12\\text{ cm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$792\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "Find the area of the trapezium base: $A = \\frac{1}{2}(8 + 14)(6) = 66\\text{ cm}^2$.",
+          "Multiply by the prism length $H = 12\\text{ cm}$: $V = 66 \\times 12 = 792\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "9_6_2_Q3",
+        "question": "A length is recorded as $16.4\\text{ cm}$, correct to one decimal place ($0.1\\text{ cm}$). State the absolute rounding tolerance and the lower and upper bounds of the true length.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "Tolerance $\\pm 0.05\\text{ cm}$; lower bound $16.35\\text{ cm}$, upper bound $16.45\\text{ cm}$",
+        "step_by_step_solution": [
+          "Half of the smallest unit ($0.1\\text{ cm}$) is $0.5 \\times 0.1 = 0.05\\text{ cm}$.",
+          "Subtract and add $0.05\\text{ cm}$: lower bound $= 16.35\\text{ cm}$ and upper bound $= 16.45\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_6_2_Q4",
+        "question": "A hollow brass tube has length $25\\text{ cm}$, outer diameter $10\\text{ cm}$, and inner diameter $6\\text{ cm}$. Find the exact volume of brass in the tube.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$400\\pi\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "The outer radius is $R = 5\\text{ cm}$ and the inner radius is $r = 3\\text{ cm}$.",
+          "Use $V = \\pi(R^2 - r^2)h = \\pi(5^2 - 3^2)(25) = 16\\pi \\times 25 = 400\\pi\\text{ cm}^3$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_6_2_Q5",
+        "question": "A cylinder has a volume of $245\\pi\\text{ cm}^3$ and a height of $5\\text{ cm}$. Find the radius $r$ of the cylinder.",
+        "difficulty": "Medium",
+        "context": "Inverse Mensuration",
+        "final_answer": "$r = 7\\text{ cm}$",
+        "step_by_step_solution": [
+          "Substitute into $\\pi r^2 h = V$: $\\pi r^2 (5) = 245\\pi \\implies r^2 = \\frac{245}{5} = 49$.",
+          "Since $r > 0$, $r = \\sqrt{49} = 7\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_6_2_Q6",
+        "question": "A horse drinking trough in the Goulburn Valley is shaped as a half-cylinder of internal diameter $1.2\\text{ m}$ and length $2.5\\text{ m}$. Using $\\pi \\approx 3.1416$, calculate the capacity of the trough in litres, rounded to the nearest litre.",
+        "difficulty": "Medium",
+        "context": "Agricultural Capacity",
+        "final_answer": "$1414\\text{ L}$",
+        "step_by_step_solution": [
+          "The radius is $r = 0.6\\text{ m}$, so the volume of the half-cylinder is $V = \\frac{1}{2}\\pi r^2 h = \\frac{1}{2}\\pi(0.6)^2(2.5) = 0.45\\pi\\text{ m}^3$.",
+          "Multiply by $1000\\text{ L/m}^3$: $\\text{Capacity} = 450\\pi \\approx 450 \\times 3.14159265 \\approx 1414\\text{ L}$."
+        ]
+      },
+      {
+        "id": "9_6_2_Q7",
+        "question": "A machinist manufactures a cylindrical steel bolt with a true specification diameter of $12.50\\text{ mm}$. Quality control measures the bolt diameter as $12.35\\text{ mm}$. Find (a) the absolute error and (b) the percentage error of the bolt diameter.",
+        "difficulty": "Medium",
+        "context": "Manufacturing Quality Control",
+        "final_answer": "(a) $0.15\\text{ mm}$, (b) $1.2\\%$",
+        "step_by_step_solution": [
+          "Calculate the absolute error: $|12.35 - 12.50| = 0.15\\text{ mm}$.",
+          "Calculate the percentage error: $\\frac{0.15}{12.50} \\times 100\\% = 1.2\\%$."
+        ]
+      },
+      {
+        "id": "9_6_2_Q8",
+        "question": "A rectangular swimming pool is $25\\text{ m}$ long and $10\\text{ m}$ wide. Its depth increases linearly from $1.2\\text{ m}$ at the shallow end to $2.4\\text{ m}$ at the deep end, so its side profile is a trapezium. Calculate (a) the volume of the pool in $\\text{m}^3$ and (b) its capacity in kilolitres ($\\text{kL}$).",
+        "difficulty": "Challenging",
+        "context": "Civil Engineering",
+        "final_answer": "(a) $450\\text{ m}^3$, (b) $450\\text{ kL}$",
+        "step_by_step_solution": [
+          "The trapezoidal cross-section has area $A = \\frac{1}{2}(1.2 + 2.4)(25) = 1.8 \\times 25 = 45\\text{ m}^2$.",
+          "Multiply by the width $H = 10\\text{ m}$: $V = 45 \\times 10 = 450\\text{ m}^3 = 450\\text{ kL}$ (since $1\\text{ m}^3 = 1\\text{ kL}$)."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_6_2_Q9",
+        "question": "Compare the effect on the volume of a cylinder $V = \\pi r^2 h$ when (a) its height $h$ is doubled (with $r$ constant) versus when (b) its radius $r$ is doubled (with $h$ constant).",
+        "difficulty": "Medium",
+        "context": "Proportional Reasoning",
+        "final_answer": "Doubling $h$ doubles the volume ($2V$), whereas doubling $r$ quadruples the volume ($4V$) because $r$ is squared",
+        "step_by_step_solution": [
+          "Replacing $h$ with $2h$ gives $V_{\\text{new}} = \\pi r^2 (2h) = 2(\\pi r^2 h) = 2V$.",
+          "Replacing $r$ with $2r$ gives $V_{\\text{new}} = \\pi (2r)^2 h = 4\\pi r^2 h = 4V$."
+        ]
+      },
+      {
+        "id": "9_6_2_Q10",
+        "question": "A rectangular tabletop has measured length $20\\text{ cm}$ and width $10\\text{ cm}$, each measured to the nearest centimetre ($\\pm 0.5\\text{ cm}$). Find the lower bound and upper bound of the true area of the tabletop, and explain why the maximum error in the area is not simply $0.5 \\times 0.5 = 0.25\\text{ cm}^2$.",
+        "difficulty": "Challenging",
+        "context": "Error Propagation",
+        "final_answer": "Lower bound $185.25\\text{ cm}^2$, upper bound $215.25\\text{ cm}^2$; error strips along the full length and width dominate",
+        "step_by_step_solution": [
+          "The length lies in $[19.5, 20.5]$ and the width lies in $[9.5, 10.5]$. Thus $A_{\\min} = 19.5 \\times 9.5 = 185.25\\text{ cm}^2$ and $A_{\\max} = 20.5 \\times 10.5 = 215.25\\text{ cm}^2$.",
+          "Expanding $(20 + 0.5)(10 + 0.5) = 200 + 20(0.5) + 10(0.5) + 0.25 = 215.25$ shows that the $\\pm 0.5\\text{ cm}$ errors multiply by the full side lengths $20\\text{ cm}$ and $10\\text{ cm}$, producing $\\approx \\pm 15\\text{ cm}^2$ of variation."
+        ]
+      },
+      {
+        "id": "9_6_2_Q11",
+        "question": "Archimedes used $\\frac{22}{7}$ as a rational approximation for $\\pi$. Calculate the percentage error of $\\frac{22}{7}$ compared to $\\pi$, rounded to $3$ decimal places.",
+        "difficulty": "Challenging",
+        "context": "Historical Approximations",
+        "final_answer": "$0.040\\%$",
+        "step_by_step_solution": [
+          "The absolute error is $\\left|\\frac{22}{7} - \\pi\\right| \\approx 3.142857 - 3.141593 = 0.0012645$.",
+          "Divide by $\\pi$ and multiply by $100\\%$: $\\frac{0.0012645}{3.1415927} \\times 100\\% \\approx 0.040\\%$."
+        ]
+      },
+      {
+        "id": "9_6_2_Q12",
+        "question": "A solid metal cylinder of radius $6\\text{ cm}$ and height $14\\text{ cm}$ is melted down and recast into a right square-based prism of height $11\\text{ cm}$ (using $\\pi \\approx \\frac{22}{7}$). Find the side length $s$ of the square base.",
+        "difficulty": "Extension",
+        "context": "Conservation of Volume",
+        "final_answer": "$s = 12\\text{ cm}$",
+        "step_by_step_solution": [
+          "Using $\\pi = \\frac{22}{7}$, the volume of the cylinder is $V = \\frac{22}{7} \\times 6^2 \\times 14 = 22 \\times 36 \\times 2 = 1584\\text{ cm}^3$.",
+          "Equate to the volume of the square prism $s^2 h = 11s^2$: $11s^2 = 1584 \\implies s^2 = 144 \\implies s = 12\\text{ cm}$ (since $s > 0$)."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_6_2_1a",
+      "description": "Worked Example 9.6.2.1(a) cylinder volume",
+      "expression": "pi * 2**2 * Rational(5, 2)",
+      "expected": "10 * pi"
+    },
+    {
+      "id": "NYT9_6_2_1",
+      "description": "Now You Try 9.6.2.1 soup tin volume",
+      "expression": "pi * 4**2 * 10",
+      "expected": "160 * pi"
+    },
+    {
+      "id": "WE9_6_2_2",
+      "description": "Worked Example 9.6.2.2 concrete archway volume",
+      "expression": "10 * 6 * 8 - Rational(1, 2) * pi * 2**2 * 10",
+      "expected": "480 - 20 * pi"
+    },
+    {
+      "id": "NYT9_6_2_2",
+      "description": "Now You Try 9.6.2.2 grain silo volume",
+      "expression": "6 * 4 * 5 + Rational(1, 2) * pi * 2**2 * 6",
+      "expected": "120 + 12 * pi"
+    },
+    {
+      "id": "WE9_6_2_3b",
+      "description": "Worked Example 9.6.2.3(b) percentage error",
+      "expression": "Rational(12, 10) / Rational(2412, 10) * 100",
+      "expected": "Rational(100, 201)"
+    },
+    {
+      "id": "NYT9_6_2_3b",
+      "description": "Now You Try 9.6.2.3(b) percentage error",
+      "expression": "Abs(48 - 50) / 50 * 100",
+      "expected": 4
+    },
+    {
+      "id": "EX9_6_2_Q1",
+      "description": "Exercise 9.6.2 Q1 cylinder volume",
+      "expression": "pi * 6**2 * 15",
+      "expected": "540 * pi"
+    },
+    {
+      "id": "EX9_6_2_Q2",
+      "description": "Exercise 9.6.2 Q2 trapezoidal prism volume",
+      "expression": "Rational(1, 2) * (8 + 14) * 6 * 12",
+      "expected": 792
+    },
+    {
+      "id": "EX9_6_2_Q4",
+      "description": "Exercise 9.6.2 Q4 hollow brass tube volume",
+      "expression": "pi * (5**2 - 3**2) * 25",
+      "expected": "400 * pi"
+    },
+    {
+      "id": "EX9_6_2_Q5",
+      "description": "Exercise 9.6.2 Q5 cylinder radius",
+      "expression": "sqrt(245 / 5)",
+      "expected": 7
+    },
+    {
+      "id": "EX9_6_2_Q6",
+      "description": "Exercise 9.6.2 Q6 half-cylinder trough exact volume in L",
+      "expression": "1000 * Rational(1, 2) * pi * Rational(6, 10)**2 * Rational(25, 10)",
+      "expected": "450 * pi"
+    },
+    {
+      "id": "EX9_6_2_Q7b",
+      "description": "Exercise 9.6.2 Q7(b) bolt percentage error",
+      "expression": "Rational(15, 100) / Rational(1250, 100) * 100",
+      "expected": "Rational(6, 5)"
+    },
+    {
+      "id": "EX9_6_2_Q8",
+      "description": "Exercise 9.6.2 Q8 swimming pool volume",
+      "expression": "Rational(1, 2) * (Rational(12, 10) + Rational(24, 10)) * 25 * 10",
+      "expected": 450
+    },
+    {
+      "id": "EX9_6_2_Q10_min",
+      "description": "Exercise 9.6.2 Q10 minimum tabletop area",
+      "expression": "Rational(39, 2) * Rational(19, 2)",
+      "expected": "Rational(741, 4)"
+    },
+    {
+      "id": "EX9_6_2_Q10_max",
+      "description": "Exercise 9.6.2 Q10 maximum tabletop area",
+      "expression": "Rational(41, 2) * Rational(21, 2)",
+      "expected": "Rational(861, 4)"
+    },
+    {
+      "id": "EX9_6_2_Q12",
+      "description": "Exercise 9.6.2 Q12 recast square prism side length",
+      "expression": "sqrt((Rational(22, 7) * 6**2 * 14) / 11)",
+      "expected": 12
+    }
+  ]
+}

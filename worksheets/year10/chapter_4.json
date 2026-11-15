@@ -1,0 +1,198 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Parabolas, Exponentials, Polynomials, and Functions (10 & 10A)",
+  "worksheets": [
+    {
+      "section_id": "10_4_1",
+      "section_code": "4A",
+      "title": "Sketching Parabolas, Exponential Graphs, and Circles",
+      "vcaa_code": "VC2M10A06",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State the turning point $(h, k)$, axis of symmetry, and $y$-intercept of each parabola:",
+          "parts": [
+            { "label": "a", "question": "$y = (x - 3)^2 - 4$", "answer": "TP $(3, -4)$, $x = 3$, $y$-int $(0, 5)$" },
+            { "label": "b", "question": "$y = -2(x + 1)^2 + 8$", "answer": "TP $(-1, 8)$, $x = -1$, $y$-int $(0, 6)$" },
+            { "label": "c", "question": "$y = x^2 - 6x + 5$", "answer": "TP $(3, -4)$, $x = 3$, $y$-int $(0, 5)$" },
+            { "label": "d", "question": "$y = (x - 5)(x + 1)$", "answer": "TP $(2, -9)$, $x = 2$, $y$-int $(0, -5)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the $x$-intercepts of each parabola by setting $y = 0$:",
+          "parts": [
+            { "label": "a", "question": "$y = (x - 3)^2 - 4$", "answer": "$x = 1$ and $x = 5$" },
+            { "label": "b", "question": "$y = -2(x + 1)^2 + 8$", "answer": "$x = -3$ and $x = 1$" },
+            { "label": "c", "question": "$y = x^2 - 4x - 12$", "answer": "$x = -2$ and $x = 6$" },
+            { "label": "d", "question": "$y = 2(x - 1)^2 - 6$", "answer": "$x = 1 \\pm \\sqrt{3}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "For each exponential function, state the horizontal asymptote, $y$-intercept, and $x$-intercept (if any):",
+          "parts": [
+            { "label": "a", "question": "$y = 2^x - 4$", "answer": "Asymptote $y = -4$, $y$-int $(0, -3)$, $x$-int $(2, 0)$" },
+            { "label": "b", "question": "$y = 3^x + 2$", "answer": "Asymptote $y = 2$, $y$-int $(0, 3)$, no $x$-int" },
+            { "label": "c", "question": "$y = 9 - 3^x$", "answer": "Asymptote $y = 9$, $y$-int $(0, 8)$, $x$-int $(2, 0)$" },
+            { "label": "d", "question": "$y = 2^{-x} - 1$", "answer": "Asymptote $y = -1$, $y$-int $(0, 0)$, $x$-int $(0, 0)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "State the centre $(h, k)$ and radius $r$ of each circle, or state the asymptotes of the hyperbola:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + y^2 = 36$", "answer": "Centre $(0, 0)$, radius $r = 6$" },
+            { "label": "b", "question": "$(x - 3)^2 + (y + 4)^2 = 25$", "answer": "Centre $(3, -4)$, radius $r = 5$" },
+            { "label": "c", "question": "$(x + 2)^2 + y^2 = 18$", "answer": "Centre $(-2, 0)$, radius $r = 3\\sqrt{2}$" },
+            { "label": "d", "question": "Hyperbola $y = \\dfrac{4}{x - 2} + 3$", "answer": "Asymptotes $x = 2$ and $y = 3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A parabolic arch bridge in Sydney has height $y = -\\dfrac{1}{4}(x - 12)^2 + 36\\text{ m}$, where $x\\text{ m}$ is the horizontal distance from the left support $(0, 0)$. Find the maximum height of the arch and the total horizontal span between the supports.",
+          "answer": "Maximum height $= 36\\text{ m}$ at $x = 12\\text{ m}$; span $= 24\\text{ m}$ (from $x = 0$ to $x = 24$)"
+        },
+        {
+          "number": 6,
+          "question": "A cup of tea in a Hobart cafe cools according to $T(t) = 60(2)^{-t/10} + 20^\\circ\\text{C}$, where $t$ is the time in minutes. Find the initial temperature $T(0)$, the temperature after $10$ minutes, and the room temperature asymptote.",
+          "answer": "$T(0) = 80^\\circ\\text{C}$, $T(10) = 50^\\circ\\text{C}$, horizontal asymptote $T = 20^\\circ\\text{C}$"
+        },
+        {
+          "number": 7,
+          "question": "A radar beacon in Darwin covers a circular zone with equation $(x - 3)^2 + (y + 4)^2 = 100$ (where units are kilometres). Does a boat at $(9, 4)$ lie inside, on, or outside the radar boundary?",
+          "answer": "$(9 - 3)^2 + (4 + 4)^2 = 36 + 64 = 100$, so the boat lies exactly on the boundary."
+        },
+        {
+          "number": 8,
+          "question": "Find the points of intersection of the line $y = x + 1$ and the parabola $y = x^2 - 3x + 4$.",
+          "answer": "$x^2 - 3x + 4 = x + 1 \\implies x^2 - 4x + 3 = (x - 1)(x - 3) = 0 \\implies (1, 2)$ and $(3, 4)$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why the exponential curve $y = a \\cdot b^x + k$ ($a > 0, b > 1$) approaches the horizontal line $y = k$ as $x \\to -\\infty$ but never touches or crosses $y = k$.",
+          "answer": "Because $b^x > 0$ for all real $x$ and $b^x \\to 0$ as $x \\to -\\infty$, the value of $a \\cdot b^x$ is always strictly positive, so $y = a \\cdot b^x + k > k$ for every real $x$."
+        },
+        {
+          "number": 10,
+          "question": "Show how Pythagoras' theorem on a right-angled triangle with vertices $(h, k)$, $(x, k)$, and $(x, y)$ gives the Cartesian equation of a circle with centre $(h, k)$ and radius $r$.",
+          "answer": "The horizontal leg has length $|x - h|$ and the vertical leg has length $|y - k|$; since the hypotenuse from the centre $(h, k)$ to $(x, y)$ is $r$, Pythagoras' theorem gives $(x - h)^2 + (y - k)^2 = r^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10_4A_1a", "expression": "(0 - 3)**2 - 4", "expected": 5 },
+        { "id": "Y10_4A_1b", "expression": "-2*(0 + 1)**2 + 8", "expected": 6 },
+        { "id": "Y10_4A_1d", "expression": "(2 - 5)*(2 + 1)", "expected": -9 },
+        { "id": "Y10_4A_2a", "expression": "(5 - 3)**2 - 4", "expected": 0 },
+        { "id": "Y10_4A_2b", "expression": "-2*(1 + 1)**2 + 8", "expected": 0 },
+        { "id": "Y10_4A_3a", "expression": "2**2 - 4", "expected": 0 },
+        { "id": "Y10_4A_3c", "expression": "9 - 3**2", "expected": 0 },
+        { "id": "Y10_4A_5", "expression": "Rational(-1, 4)*(24 - 12)**2 + 36", "expected": 0 },
+        { "id": "Y10_4A_6", "expression": "60 * 2**(-10/10) + 20", "expected": 50 },
+        { "id": "Y10_4A_7", "expression": "(9 - 3)**2 + (4 + 4)**2", "expected": 100 }
+      ]
+    },
+    {
+      "section_id": "10_4_2",
+      "section_code": "4B",
+      "title": "[10A] Polynomials, Remainder and Factor Theorems, and Functions",
+      "vcaa_code": "VC2M10AA01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Given $P(x) = x^3 - 4x^2 + x + 6$, use the Remainder and Factor Theorems to evaluate:",
+          "parts": [
+            { "label": "a", "question": "The remainder when $P(x)$ is divided by $(x - 1)$, i.e. $P(1)$", "answer": "$P(1) = 4$" },
+            { "label": "b", "question": "The remainder when $P(x)$ is divided by $(x + 1)$, i.e. $P(-1)$", "answer": "$P(-1) = 0$ (so $x + 1$ is a factor)" },
+            { "label": "c", "question": "The remainder when $P(x)$ is divided by $(x - 2)$, i.e. $P(2)$", "answer": "$P(2) = 0$ (so $x - 2$ is a factor)" },
+            { "label": "d", "question": "The remainder when $P(x)$ is divided by $(x - 3)$, i.e. $P(3)$", "answer": "$P(3) = 0$ (so $x - 3$ is a factor)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Divide each cubic polynomial by the given linear factor and factorise completely:",
+          "parts": [
+            { "label": "a", "question": "$(x^3 - 4x^2 + x + 6) \\div (x + 1)$", "answer": "$x^2 - 5x + 6 = (x - 2)(x - 3)$, so $P(x) = (x + 1)(x - 2)(x - 3)$" },
+            { "label": "b", "question": "$(x^3 - 2x^2 - 5x + 6) \\div (x - 1)$", "answer": "$x^2 - x - 6 = (x - 3)(x + 2)$, so $(x - 1)(x - 3)(x + 2)$" },
+            { "label": "c", "question": "$(x^3 + 2x^2 - 9x - 18) \\div (x + 2)$", "answer": "$x^2 - 9 = (x - 3)(x + 3)$, so $(x + 2)(x - 3)(x + 3)$" },
+            { "label": "d", "question": "Solve $x^3 - 6x^2 + 11x - 6 = 0$ given $P(1) = 0$", "answer": "$(x - 1)(x - 2)(x - 3) = 0 \\implies x = 1, 2, 3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given $f(x) = 2x^2 - 3x + 1$ and $g(x) = 3x - 5$, evaluate or simplify:",
+          "parts": [
+            { "label": "a", "question": "$f(-2)$", "answer": "$15$" },
+            { "label": "b", "question": "$g(f(2))$", "answer": "$4$" },
+            { "label": "c", "question": "$f(a + 1)$ in expanded form", "answer": "$2a^2 + a$" },
+            { "label": "d", "question": "The inverse function $g^{-1}(x)$", "answer": "$g^{-1}(x) = \\dfrac{x + 5}{3}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "State the maximal real domain and the range of each function:",
+          "parts": [
+            { "label": "a", "question": "$f(x) = \\sqrt{x - 3}$", "answer": "Domain $[3, \\infty)$, Range $[0, \\infty)$" },
+            { "label": "b", "question": "$f(x) = \\dfrac{1}{x + 4}$", "answer": "Domain $\\mathbb{R} \\setminus \\{-4\\}$, Range $\\mathbb{R} \\setminus \\{0\\}$" },
+            { "label": "c", "question": "$f(x) = (x - 2)^2 + 5$", "answer": "Domain $\\mathbb{R}$, Range $[5, \\infty)$" },
+            { "label": "d", "question": "$f(x) = 9 - x^2$ for $-2 \\le x \\le 3$", "answer": "Domain $[-2, 3]$, Range $[0, 9]$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An open-top rectangular box is made from a $10\\text{ cm} \\times 8\\text{ cm}$ sheet of cardboard by cutting squares of side $x\\text{ cm}$ from each corner and folding up the sides. Show that the volume is $V(x) = x(10 - 2x)(8 - 2x)$, state the practical domain for $x$, and evaluate $V(2)$.",
+          "answer": "Domain $0 < x < 4$; $V(2) = 2(6)(4) = 48\\text{ cm}^3$"
+        },
+        {
+          "number": 6,
+          "question": "When the polynomial $P(x) = x^3 + kx^2 - 5x + 6$ is divided by $(x - 2)$, the remainder is $8$. Use the Remainder Theorem to find the value of $k$.",
+          "answer": "$P(2) = 8 + 4k - 10 + 6 = 4k + 4 = 8 \\implies k = 1$"
+        },
+        {
+          "number": 7,
+          "question": "The Celsius-to-Fahrenheit conversion function is $F(C) = \\dfrac{9}{5}C + 32$. Find the inverse function $C(F)$ and use it to convert $68^\\circ\\text{F}$ to Celsius.",
+          "answer": "$C(F) = \\dfrac{5}{9}(F - 32)$; $C(68) = \\dfrac{5}{9}(36) = 20^\\circ\\text{C}$"
+        },
+        {
+          "number": 8,
+          "question": "A cubic rollercoaster section has height $h(x) = -(x + 1)(x - 2)(x - 5)\\text{ m}$ for $-1 \\le x \\le 5$. State all $x$-intercepts and the $y$-intercept.",
+          "answer": "$x$-intercepts: $(-1, 0), (2, 0), (5, 0)$; $y$-intercept: $(0, -10)$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Using the division identity $P(x) = (x - a)Q(x) + R$, where $R$ is a constant remainder, prove the Remainder Theorem $R = P(a)$ and deduce the Factor Theorem.",
+          "answer": "Substituting $x = a$ into $P(x) = (x - a)Q(x) + R$ gives $P(a) = (a - a)Q(a) + R = 0 + R = R$. Therefore $(x - a)$ is an exact factor of $P(x)$ ($R = 0$) if and only if $P(a) = 0$."
+        },
+        {
+          "number": 10,
+          "question": "Explain the vertical line test for determining whether a relation is a function, and use it to explain why the circle $x^2 + y^2 = 25$ is not a function.",
+          "answer": "A relation is a function if every vertical line $x = c$ cuts its graph at most once (each input $x$ has a unique output $y$). For $x^2 + y^2 = 25$, the vertical line $x = 3$ cuts the circle twice at $(3, 4)$ and $(3, -4)$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10_4B_1a", "expression": "1**3 - 4*1**2 + 1 + 6", "expected": 4 },
+        { "id": "Y10_4B_1b", "expression": "(-1)**3 - 4*(-1)**2 + (-1) + 6", "expected": 0 },
+        { "id": "Y10_4B_1c", "expression": "2**3 - 4*2**2 + 2 + 6", "expected": 0 },
+        { "id": "Y10_4B_2b", "expression": "simplify((x - 1)*(x - 3)*(x + 2) - (x**3 - 2*x**2 - 5*x + 6))", "expected": 0 },
+        { "id": "Y10_4B_2c", "expression": "simplify((x + 2)*(x - 3)*(x + 3) - (x**3 + 2*x**2 - 9*x - 18))", "expected": 0 },
+        { "id": "Y10_4B_3a", "expression": "2*(-2)**2 - 3*(-2) + 1", "expected": 15 },
+        { "id": "Y10_4B_3b", "expression": "3*(2*2**2 - 3*2 + 1) - 5", "expected": 4 },
+        { "id": "Y10_4B_3c", "expression": "simplify(2*(a + 1)**2 - 3*(a + 1) + 1 - (2*a**2 + a))", "expected": 0 },
+        { "id": "Y10_4B_5", "expression": "2 * (10 - 2*2) * (8 - 2*2)", "expected": 48 },
+        { "id": "Y10_4B_7", "expression": "Rational(5, 9) * (68 - 32)", "expected": 20 }
+      ]
+    }
+  ]
+}

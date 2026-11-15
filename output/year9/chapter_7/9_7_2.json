@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "section_id": "9_7_2",
+    "section_code": "7B",
+    "chapter_number": 7,
+    "chapter_title": "Similarity, Scale Factors, and Geometric Reasoning",
+    "title": "Scale Factors for Length, Area, and Volume, and Polyhedra",
+    "vcaa_code": "VC2M9M03",
+    "vcaa_description": "Solve problems involving the ratio of corresponding sides of similar figures, and the relationships between length, area and volume of similar figures and solids.",
+    "strand": "Measurement",
+    "target_mastery": "Apply the area scale factor $k^2$ and volume scale factor $k^3$ to similar 2D figures and 3D solids, and verify Euler's formula $V - E + F = 2$ for convex polyhedra (VC2M9SP03).",
+    "prerequisites": [
+      "Similar triangles and linear scale factors (Section 7A)",
+      "Surface area and volume of prisms and cylinders (Chapter 6)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Area scale factor ($k^2$)",
+        "definition": "If two 2D figures or 3D surfaces are similar with linear scale factor $k$, the ratio of their corresponding areas is $k^2 = \\frac{\\text{Area of image}}{\\text{Area of original}}$."
+      },
+      {
+        "term": "Volume scale factor ($k^3$)",
+        "definition": "If two 3D solids are similar with linear scale factor $k$, the ratio of their volumes (or capacities) is $k^3 = \\frac{\\text{Volume of image}}{\\text{Volume of original}}$."
+      },
+      {
+        "term": "Convex polyhedron",
+        "definition": "A closed three-dimensional solid bounded entirely by flat polygonal faces ($F$), straight edges ($E$), and sharp corner vertices ($V$), with no indentations."
+      },
+      {
+        "term": "Euler's polyhedron formula",
+        "definition": "For any convex polyhedron with $V$ vertices, $E$ edges, and $F$ faces, the alternating sum of vertices, edges, and faces is always $2$: $V - E + F = 2$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_7_2_1",
+      "title": "Scaling Length ($k$), Area ($k^2$), and Volume ($k^3$)",
+      "explanation": "When every linear dimension (length, width, height, radius) of a shape or solid is multiplied by a linear scale factor $k$, any two-dimensional area is multiplied by $k \\times k = k^2$, and any three-dimensional volume (or liquid capacity) is multiplied by $k \\times k \\times k = k^3$. If corresponding lengths are in the ratio $a : b$, then corresponding areas are in the ratio $a^2 : b^2$ and corresponding volumes are in the ratio $a^3 : b^3$.",
+      "formula_latex": "k_{\\text{length}} = k \\implies k_{\\text{area}} = k^2 \\quad \\text{and} \\quad k_{\\text{volume}} = k^3",
+      "callout_title": "Match the Exponent to the Dimension",
+      "callout_rule": "Length is $1\\text{D}$ (multiply by $k^1$), Area is $2\\text{D}$ in $\\text{cm}^2$ (multiply by $k^2$), and Volume is $3\\text{D}$ in $\\text{cm}^3$ (multiply by $k^3$)."
+    },
+    {
+      "id": "theory_9_7_2_2",
+      "title": "Working Backwards from Area or Volume Ratios to Find $k$",
+      "explanation": "If you are given the areas or volumes of two similar objects and need to find a missing length, you must first recover the linear scale factor $k$ before scaling any other quantity. From areas, take the square root: $k = \\sqrt{\\frac{A_2}{A_1}}$. From volumes, take the cube root: $k = \\sqrt[3]{\\frac{V_2}{V_1}}$. To convert from an area ratio to a volume ratio, go through $k$ as a bridge: $V_2 / V_1 = k^3 = (\\sqrt{A_2 / A_1})^3$.",
+      "formula_latex": "k = \\sqrt{\\frac{A_{\\text{image}}}{A_{\\text{original}}}} = \\sqrt[3]{\\frac{V_{\\text{image}}}{V_{\\text{original}}}}",
+      "callout_title": "Always Pass Through the Linear Bridge $k$",
+      "callout_rule": "Never try to convert directly between area and volume in one step. Always take $\\sqrt{\\text{area ratio}}$ or $\\sqrt[3]{\\text{volume ratio}}$ to find $k$ first, then raise $k$ to the target dimension."
+    },
+    {
+      "id": "theory_9_7_2_3",
+      "title": "Polyhedra Nets and Euler's Formula ($V - E + F = 2$)",
+      "explanation": "A polyhedron is a 3D solid with flat polygonal faces (e.g., prisms, pyramids, and the five Platonic solids: tetrahedron, cube, octahedron, dodecahedron, and icosahedron). Cylinders, cones, and spheres are not polyhedra because they have curved surfaces. Leonhard Euler proved that for every convex polyhedron with $V$ vertices, $E$ edges, and $F$ faces, the invariant relation $V - E + F = 2$ (equivalently $V + F = E + 2$) always holds.",
+      "formula_latex": "V - E + F = 2 \\iff V + F = E + 2",
+      "callout_title": "Vertices Plus Faces Equals Edges Plus Two",
+      "callout_rule": "For a quick mental check without negative signs, add Vertices and Faces together — the result is always exactly $2$ more than the number of Edges ($V + F = E + 2$)."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_7_2_1",
+      "title": "Calculating Surface Area and Volume of Similar Solids from Length Ratio",
+      "difficulty": "Fluency",
+      "problem": "Two mathematically similar water tanks have heights of $1.5\\text{ m}$ and $4.5\\text{ m}$. The smaller tank has an external surface area of $12\\text{ m}^2$ and a capacity of $4500\\text{ L}$. Find (a) the surface area and (b) the capacity of the larger tank.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the linear scale factor $k$ from the heights, then find the area scale factor $k^2$ and volume scale factor $k^3$.",
+          "working": "$$k = \\frac{4.5}{1.5} = 3 \\implies k^2 = 3^2 = 9, \\qquad k^3 = 3^3 = 27$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply the smaller tank's surface area by $k^2 = 9$ and its capacity by $k^3 = 27$.",
+          "working": "$$\\text{Area}_{\\text{large}} = 9 \\times 12 = 108\\text{ m}^2$$\n$$\\text{Capacity}_{\\text{large}} = 27 \\times 4500 = 121\\,500\\text{ L}$$"
+        }
+      ],
+      "final_answer": "(a) $108\\text{ m}^2$, (b) $121\\,500\\text{ L}$ (or $121.5\\text{ kL}$)",
+      "now_you_try": {
+        "problem": "A model yacht is built to a linear scale of $1 : 5$ compared to a full-size racing yacht. If the model's sail area is $0.8\\text{ m}^2$ and its hull volume is $0.04\\text{ m}^3$, find the sail area and hull volume of the full-size yacht.",
+        "hint": "Here $k = 5$, so multiply area by $5^2 = 25$ and volume by $5^3 = 125$.",
+        "working_summary": "$\\text{Sail area} = 25 \\times 0.8 = 20\\text{ m}^2$; $\\text{Hull volume} = 125 \\times 0.04 = 5\\text{ m}^3$.",
+        "answer": "Sail area $20\\text{ m}^2$, hull volume $5\\text{ m}^3$"
+      }
+    },
+    {
+      "id": "WE9_7_2_2",
+      "title": "Finding Linear Dimensions and Surface Area Ratio from Volumes",
+      "difficulty": "Fluency",
+      "problem": "Two similar solid brass statues have volumes of $160\\text{ cm}^3$ and $1280\\text{ cm}^3$. (a) Find the linear scale factor $k$ from the smaller statue to the larger statue. (b) If the smaller statue is $12\\text{ cm}$ tall and requires $\\$18$ worth of gold leaf to gild its surface, find the height and the cost of gilding the larger statue.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Divide the volumes to find $k^3$, then take the cube root to find the linear scale factor $k$.",
+          "working": "$$k^3 = \\frac{1280}{160} = 8 \\implies k = \\sqrt[3]{8} = 2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Height is a $1\\text{D}$ length (multiply by $k = 2$), while gilding cost is proportional to $2\\text{D}$ surface area (multiply by $k^2 = 4$).",
+          "working": "$$\\text{Height}_{\\text{large}} = 2 \\times 12 = 24\\text{ cm}$$\n$$\\text{Cost}_{\\text{large}} = 2^2 \\times \\$18 = 4 \\times \\$18 = \\$72$$"
+        }
+      ],
+      "final_answer": "(a) $k = 2$, (b) Height $= 24\\text{ cm}$, Gilding cost $= \\$72$",
+      "now_you_try": {
+        "problem": "Two similar olive oil tins have surface areas of $150\\text{ cm}^2$ and $600\\text{ cm}^2$. If the smaller tin holds $250\\text{ mL}$, how much olive oil does the larger tin hold?",
+        "hint": "Find $k = \\sqrt{\\frac{600}{150}}$ first, then multiply the volume by $k^3$.",
+        "working_summary": "$k^2 = \\frac{600}{150} = 4 \\implies k = 2$. Then $V_{\\text{large}} = 2^3 \\times 250 = 8 \\times 250 = 2000\\text{ mL}$ ($2\\text{ L}$).",
+        "answer": "$2000\\text{ mL}$ (or $2\\text{ L}$)"
+      }
+    },
+    {
+      "id": "WE9_7_2_3",
+      "title": "Verifying and Applying Euler's Formula for Polyhedra",
+      "difficulty": "Problem-Solving",
+      "problem": "(a) A hexagonal prism has $2$ hexagonal bases and $6$ rectangular side faces. Count its faces $F$, vertices $V$, and edges $E$, and verify Euler's formula $V - E + F = 2$. (b) A convex polyhedron (a regular icosahedron) has $20$ triangular faces and $30$ edges. How many vertices does it have?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For a hexagonal prism, count faces ($2 + 6 = 8$), vertices ($6$ top $+ 6$ bottom $= 12$), and edges ($6$ top $+ 6$ bottom $+ 6$ vertical $= 18$), then evaluate $V - E + F$.",
+          "working": "$$F = 8,\\; V = 12,\\; E = 18 \\implies V - E + F = 12 - 18 + 8 = 2 \\quad \\checkmark$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $F = 20$ and $E = 30$ into $V - E + F = 2$ and solve for $V$.",
+          "working": "$$V - 30 + 20 = 2 \\implies V - 10 = 2 \\implies V = 12$$"
+        }
+      ],
+      "final_answer": "(a) $F = 8, V = 12, E = 18$ ($12 - 18 + 8 = 2$), (b) $V = 12$ vertices",
+      "now_you_try": {
+        "problem": "A regular dodecahedron has $12$ pentagonal faces and $20$ vertices. Use Euler's formula to find the number of edges $E$.",
+        "hint": "Substitute $V = 20$ and $F = 12$ into $V + F = E + 2$.",
+        "working_summary": "$20 + 12 = E + 2 \\implies E = 32 - 2 = 30$ edges.",
+        "answer": "$30$ edges"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_7_2_1",
+      "title": "Multiplying Area or Volume by the Linear Scale Factor $k$",
+      "misconception": "Assuming that doubling all side lengths of a box doubles its surface area and doubles its volume.",
+      "correct_concept": "Doubling every linear dimension ($k = 2$) multiplies surface area by $k^2 = 2^2 = 4$ and multiplies volume by $k^3 = 2^3 = 8$ because scaling occurs independently along length, width, and height.",
+      "incorrect_working": "$$k = 2,\\; V_1 = 10\\text{ cm}^3 \\implies V_2 = 2 \\times 10 = 20\\text{ cm}^3 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$k = 2,\\; V_1 = 10\\text{ cm}^3 \\implies V_2 = 2^3 \\times 10 = 80\\text{ cm}^3$$",
+      "counter_example": "A $1 \\times 1 \\times 1$ cube has volume $1\\text{ cm}^3$, whereas a $2 \\times 2 \\times 2$ cube fits $8$ unit cubes ($8\\text{ cm}^3$), not $2$."
+    },
+    {
+      "id": "misc_9_7_2_2",
+      "title": "Confusing the Signs in Euler's Formula ($V - E + F = 2$)",
+      "misconception": "Writing $V + E - F = 2$ or $V + E + F = 2$ because students forget which letter is subtracted.",
+      "correct_concept": "In any polyhedron, the number of Edges ($E$) is always the largest of the three counts ($E > V$ and $E > F$), so $E$ is the quantity subtracted: $V - E + F = 2$, or equivalently $V + F = E + 2$.",
+      "incorrect_working": "$$\\text{Cube } (V=8, F=6): \\quad 8 + E - 6 = 2 \\implies E = 0 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$V + F = E + 2 \\implies 8 + 6 = E + 2 \\implies E = 12$$",
+      "counter_example": "A cube has $8$ vertices, $6$ faces, and $12$ edges ($8 + 6 = 12 + 2 = 14$)."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_7_2_Q1",
+        "question": "Two similar triangles have corresponding base lengths in the ratio $2 : 5$. If the smaller triangle has an area of $16\\text{ cm}^2$, find the area of the larger triangle.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$100\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "The linear scale factor is $k = \\frac{5}{2}$, so the area scale factor is $k^2 = \\left(\\frac{5}{2}\\right)^2 = \\frac{25}{4}$.",
+          "Multiply the smaller area by $k^2$: $A = \\frac{25}{4} \\times 16 = 100\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_7_2_Q2",
+        "question": "Two similar cylinders have radii of $4\\text{ cm}$ and $6\\text{ cm}$. If the smaller cylinder has a volume of $240\\text{ cm}^3$, find the volume of the larger cylinder.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$810\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "The linear scale factor is $k = \\frac{6}{4} = \\frac{3}{2}$, so the volume scale factor is $k^3 = \\left(\\frac{3}{2}\\right)^3 = \\frac{27}{8}$.",
+          "Multiply the smaller volume by $k^3$: $V = \\frac{27}{8} \\times 240 = 810\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "9_7_2_Q3",
+        "question": "Two similar polygons have areas of $45\\text{ cm}^2$ and $180\\text{ cm}^2$. If the perimeter of the smaller polygon is $30\\text{ cm}$, find the perimeter of the larger polygon.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$60\\text{ cm}$",
+        "step_by_step_solution": [
+          "Find $k^2 = \\frac{180}{45} = 4 \\implies k = \\sqrt{4} = 2$.",
+          "Since perimeter is a $1\\text{D}$ length measurement, multiply by $k = 2$: $P = 2 \\times 30 = 60\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_7_2_Q4",
+        "question": "A pentagonal pyramid has $1$ pentagonal base and $5$ triangular lateral faces. Find its number of faces $F$, vertices $V$, and edges $E$, and verify Euler's formula.",
+        "difficulty": "Easy",
+        "context": "Polyhedra",
+        "final_answer": "$F = 6,\\; V = 6,\\; E = 10$ ($6 - 10 + 6 = 2$)",
+        "step_by_step_solution": [
+          "A pentagonal pyramid has $F = 1 + 5 = 6$ faces, $V = 5 + 1 = 6$ vertices ($5$ base $+ 1$ apex), and $E = 5 + 5 = 10$ edges.",
+          "Check Euler's formula: $V - E + F = 6 - 10 + 6 = 2$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_7_2_Q5",
+        "question": "A Melbourne café sells coffee in two mathematically similar takeaway cups of heights $9\\text{ cm}$ (regular) and $12\\text{ cm}$ (jumbo). If the regular cup holds $270\\text{ mL}$, how many millilitres does the jumbo cup hold?",
+        "difficulty": "Medium",
+        "context": "Hospitality & Packaging",
+        "final_answer": "$640\\text{ mL}$",
+        "step_by_step_solution": [
+          "Calculate the linear scale factor: $k = \\frac{12}{9} = \\frac{4}{3}$.",
+          "Multiply the volume by $k^3 = \\left(\\frac{4}{3}\\right)^3 = \\frac{64}{27}$: $V = \\frac{64}{27} \\times 270 = 640\\text{ mL}$."
+        ]
+      },
+      {
+        "id": "9_7_2_Q6",
+        "question": "An architectural scale model of a stadium in Brisbane is built at a linear scale of $1 : 200$. The model roof has an area of $0.75\\text{ m}^2$. What is the actual roof area of the stadium in square metres ($\\text{m}^2$) and in hectares ($1\\text{ ha} = 10\\,000\\text{ m}^2$)?",
+        "difficulty": "Medium",
+        "context": "Architectural Modelling",
+        "final_answer": "$30\\,000\\text{ m}^2$ ($3\\text{ ha}$)",
+        "step_by_step_solution": [
+          "With $k = 200$, the area scale factor is $k^2 = 200^2 = 40\\,000$.",
+          "Multiply the model area by $40\\,000$: $A = 40\\,000 \\times 0.75 = 30\\,000\\text{ m}^2 = 3\\text{ ha}$."
+        ]
+      },
+      {
+        "id": "9_7_2_Q7",
+        "question": "Two mathematically similar solid chocolate bunnies are made from the same chocolate. The smaller bunny weighs $125\\text{ g}$ and is wrapped in $100\\text{ cm}^2$ of gold foil. If the larger bunny weighs $1000\\text{ g}$, what area of gold foil is needed to wrap it?",
+        "difficulty": "Challenging",
+        "context": "Manufacturing & Mass-Volume Scaling",
+        "final_answer": "$400\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Mass is proportional to volume for uniform density, so $k^3 = \\frac{1000}{125} = 8 \\implies k = \\sqrt[3]{8} = 2$.",
+          "Foil area scales by $k^2 = 2^2 = 4$, giving $A = 4 \\times 100 = 400\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_7_2_Q8",
+        "question": "A standard soccer ball (a truncated icosahedron) is stitched from $12$ regular pentagons and $20$ regular hexagons ($F = 32$ faces in total). Every edge is shared by exactly $2$ faces, and every vertex is where $3$ edges meet. Find the number of edges $E$ and vertices $V$, and verify that $V - E + F = 2$.",
+        "difficulty": "Challenging",
+        "context": "Sports Equipment Geometry",
+        "final_answer": "$E = 90,\\; V = 60$ ($60 - 90 + 32 = 2$)",
+        "step_by_step_solution": [
+          "The $12$ pentagons and $20$ hexagons have $12 \\times 5 + 20 \\times 6 = 60 + 120 = 180$ polygon sides in total. Since each edge joins $2$ faces, $E = \\frac{180}{2} = 90$ edges.",
+          "Since $3$ edges meet at each vertex, $V = \\frac{180}{3} = 60$ vertices. Checking Euler's formula: $V - E + F = 60 - 90 + 32 = 2$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_7_2_Q9",
+        "question": "A right circular cone of total height $H$ and volume $V$ is sliced horizontally halfway down from its apex (at depth $\\frac{1}{2}H$). What fraction of the total volume $V$ is contained in the top small cone, and what fraction is in the bottom frustum?",
+        "difficulty": "Challenging",
+        "context": "Frustum Volume Reasoning",
+        "final_answer": "Top cone is $\\frac{1}{8}V$; bottom frustum is $\\frac{7}{8}V$",
+        "step_by_step_solution": [
+          "The top cone is similar to the full cone with linear scale factor $k = \\frac{1}{2}$, so its volume is $k^3 V = \\left(\\frac{1}{2}\\right)^3 V = \\frac{1}{8}V$.",
+          "Subtracting from the full cone leaves $V - \\frac{1}{8}V = \\frac{7}{8}V$ in the bottom frustum."
+        ]
+      },
+      {
+        "id": "9_7_2_Q10",
+        "question": "If a cube of side length $4\\text{ cm}$ has one small corner sliced off by a flat triangular cut (truncating one vertex without reaching the adjacent vertices), determine the new numbers of faces $F$, vertices $V$, and edges $E$, and show that Euler's formula $V - E + F = 2$ still holds.",
+        "difficulty": "Challenging",
+        "context": "Truncated Polyhedra Invariance",
+        "final_answer": "$F = 7,\\; V = 10,\\; E = 15$ ($10 - 15 + 7 = 2$)",
+        "step_by_step_solution": [
+          "A standard cube has $F = 6, V = 8, E = 12$. Slicing off one corner adds $1$ new triangular face ($F = 6 + 1 = 7$), replaces $1$ old vertex with $3$ new vertices ($V = 8 - 1 + 3 = 10$), and adds $3$ new edges around the triangle ($E = 12 + 3 = 15$).",
+          "Evaluating Euler's formula gives $V - E + F = 10 - 15 + 7 = 2$."
+        ]
+      },
+      {
+        "id": "9_7_2_Q11",
+        "question": "Galileo's Square-Cube Law in biology states that an animal's bone cross-sectional strength is proportional to its area ($k^2$), whereas its body weight is proportional to its volume ($k^3$). If a giant creature were scaled up by a linear factor of $k = 10$ compared to a human while keeping the exact same shape and material density, by what factor would the stress (weight divided by bone cross-sectional area) on its leg bones increase?",
+        "difficulty": "Extension",
+        "context": "Biomechanics & Square-Cube Law",
+        "final_answer": "Bone stress increases by a factor of $10$ ($\\frac{k^3}{k^2} = k = 10$)",
+        "step_by_step_solution": [
+          "Body weight increases by $k^3 = 10^3 = 1000$, while bone cross-sectional area increases only by $k^2 = 10^2 = 100$.",
+          "Therefore the weight-to-area ratio (stress) increases by $\\frac{k^3}{k^2} = k = \\frac{1000}{100} = 10$ times, which would crush the bones unless the legs are made proportionally thicker."
+        ]
+      },
+      {
+        "id": "9_7_2_Q12",
+        "question": "A prism has an $n$-sided polygon as its cross-section. Write algebraic expressions in terms of $n$ for its number of faces $F$, vertices $V$, and edges $E$, and prove algebraically that $V - E + F = 2$ for every positive integer $n \\ge 3$.",
+        "difficulty": "Extension",
+        "context": "General Algebraic Proof of Euler's Formula for Prisms",
+        "final_answer": "$F = n + 2,\\; V = 2n,\\; E = 3n \\implies 2n - 3n + (n + 2) = 2$",
+        "step_by_step_solution": [
+          "An $n$-gonal prism has $2$ end bases and $n$ rectangular side faces ($F = n + 2$), $n$ vertices on each end ($V = 2n$), and $n$ edges on each end plus $n$ vertical edges ($E = 3n$).",
+          "Substituting into Euler's expression gives $V - E + F = 2n - 3n + (n + 2) = 2$ for all $n \\ge 3$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_7_2_1a",
+      "description": "Worked Example 9.7.2.1(a) tank surface area",
+      "expression": "(Rational(45, 15)**2) * 12",
+      "expected": 108
+    },
+    {
+      "id": "WE9_7_2_1b",
+      "description": "Worked Example 9.7.2.1(b) tank capacity",
+      "expression": "(Rational(45, 15)**3) * 4500",
+      "expected": 121500
+    },
+    {
+      "id": "NYT9_7_2_1_area",
+      "description": "Now You Try 9.7.2.1 sail area",
+      "expression": "(5**2) * Rational(8, 10)",
+      "expected": 20
+    },
+    {
+      "id": "NYT9_7_2_1_vol",
+      "description": "Now You Try 9.7.2.1 hull volume",
+      "expression": "(5**3) * Rational(4, 100)",
+      "expected": 5
+    },
+    {
+      "id": "WE9_7_2_2a",
+      "description": "Worked Example 9.7.2.2(a) cube root scale factor",
+      "expression": "cbrt(Rational(1280, 160))",
+      "expected": 2
+    },
+    {
+      "id": "WE9_7_2_2b_cost",
+      "description": "Worked Example 9.7.2.2(b) gilding cost",
+      "expression": "(cbrt(Rational(1280, 160))**2) * 18",
+      "expected": 72
+    },
+    {
+      "id": "NYT9_7_2_2",
+      "description": "Now You Try 9.7.2.2 olive oil volume",
+      "expression": "(sqrt(Rational(600, 150))**3) * 250",
+      "expected": 2000
+    },
+    {
+      "id": "WE9_7_2_3a",
+      "description": "Worked Example 9.7.2.3(a) hexagonal prism Euler check",
+      "expression": "12 - 18 + 8",
+      "expected": 2
+    },
+    {
+      "id": "WE9_7_2_3b",
+      "description": "Worked Example 9.7.2.3(b) icosahedron vertices",
+      "expression": "2 + 30 - 20",
+      "expected": 12
+    },
+    {
+      "id": "NYT9_7_2_3",
+      "description": "Now You Try 9.7.2.3 dodecahedron edges",
+      "expression": "20 + 12 - 2",
+      "expected": 30
+    },
+    {
+      "id": "EX9_7_2_Q1",
+      "description": "Exercise 9.7.2 Q1 larger triangle area",
+      "expression": "(Rational(5, 2)**2) * 16",
+      "expected": 100
+    },
+    {
+      "id": "EX9_7_2_Q2",
+      "description": "Exercise 9.7.2 Q2 larger cylinder volume",
+      "expression": "(Rational(6, 4)**3) * 240",
+      "expected": 810
+    },
+    {
+      "id": "EX9_7_2_Q3",
+      "description": "Exercise 9.7.2 Q3 larger polygon perimeter",
+      "expression": "sqrt(Rational(180, 45)) * 30",
+      "expected": 60
+    },
+    {
+      "id": "EX9_7_2_Q5",
+      "description": "Exercise 9.7.2 Q5 jumbo coffee cup volume",
+      "expression": "(Rational(12, 9)**3) * 270",
+      "expected": 640
+    },
+    {
+      "id": "EX9_7_2_Q6",
+      "description": "Exercise 9.7.2 Q6 stadium roof area",
+      "expression": "(200**2) * Rational(75, 100)",
+      "expected": 30000
+    },
+    {
+      "id": "EX9_7_2_Q7",
+      "description": "Exercise 9.7.2 Q7 chocolate bunny foil area",
+      "expression": "(cbrt(Rational(1000, 125))**2) * 100",
+      "expected": 400
+    },
+    {
+      "id": "EX9_7_2_Q8",
+      "description": "Exercise 9.7.2 Q8 soccer ball Euler check",
+      "expression": "60 - 90 + 32",
+      "expected": 2
+    },
+    {
+      "id": "EX9_7_2_Q9",
+      "description": "Exercise 9.7.2 Q9 frustum fraction",
+      "expression": "1 - Rational(1, 2)**3",
+      "expected": "7/8"
+    }
+  ]
+}

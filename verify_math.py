@@ -48,7 +48,7 @@ SECTION_SCHEMA: Dict[str, Any] = {
                 "chapter_number": {"type": "integer", "minimum": 1, "maximum": 10},
                 "chapter_title": {"type": "string", "minLength": 3},
                 "title": {"type": "string", "minLength": 3},
-                "vcaa_code": {"type": "string", "pattern": "^VC2M8[A-Z]+[0-9]+$"},
+                "vcaa_code": {"type": "string", "pattern": "^VC2M(8|9|10A?)[A-Z]+[0-9]+$"},
                 "vcaa_description": {"type": "string", "minLength": 10},
                 "strand": {"type": "string", "minLength": 3},
                 "target_mastery": {"type": "string", "minLength": 10},
@@ -255,6 +255,17 @@ SYMPY_LOCALS = {
     "Mod": sp.Mod,
     "floor": sp.floor,
     "ceiling": sp.ceiling,
+    "sin": sp.sin,
+    "cos": sp.cos,
+    "tan": sp.tan,
+    "asin": sp.asin,
+    "acos": sp.acos,
+    "atan": sp.atan,
+    "log": sp.log,
+    "ln": sp.ln,
+    "exp": sp.exp,
+    "factorial": sp.factorial,
+    "binomial": sp.binomial,
 }
 
 
@@ -531,9 +542,13 @@ def main() -> int:
 
     targets: List[pathlib.Path] = []
     if args.all:
-        targets = sorted(pathlib.Path("output").glob("chapter_*/*.json"))
+        targets = (
+            sorted(pathlib.Path("output").glob("chapter_*/*.json"))
+            + sorted(pathlib.Path("output/year9").glob("chapter_*/*.json"))
+            + sorted(pathlib.Path("output/year10").glob("chapter_*/*.json"))
+        )
         if not targets:
-            print("No JSON files found under output/chapter_*/", file=sys.stderr)
+            print("No JSON files found under output/", file=sys.stderr)
             return 1
     elif args.files:
         targets = [pathlib.Path(f) for f in args.files]

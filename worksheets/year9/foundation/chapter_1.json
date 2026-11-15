@@ -1,0 +1,289 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Real Numbers, Surds, and Index Laws",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_1_1",
+      "section_code": "1A",
+      "title": "The Real Number System and Surds",
+      "vcaa_code": "VC2M9N01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each exact square root, then state whether it is rational:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{16}$", "answer": "$4$ (Rational)" },
+            { "label": "b", "question": "$\\sqrt{36}$", "answer": "$6$ (Rational)" },
+            { "label": "c", "question": "$\\sqrt{81}$", "answer": "$9$ (Rational)" },
+            { "label": "d", "question": "$\\sqrt{100}$", "answer": "$10$ (Rational)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Complete each step to simplify the surd using the given square factor:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{12} = \\sqrt{4 \\times 3}$", "answer": "$2\\sqrt{3}$" },
+            { "label": "b", "question": "$\\sqrt{18} = \\sqrt{9 \\times 2}$", "answer": "$3\\sqrt{2}$" },
+            { "label": "c", "question": "$\\sqrt{20} = \\sqrt{4 \\times 5}$", "answer": "$2\\sqrt{5}$" },
+            { "label": "d", "question": "$\\sqrt{50} = \\sqrt{25 \\times 2}$", "answer": "$5\\sqrt{2}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Collect the like surds (just like adding $3x + 4x = 7x$):",
+          "parts": [
+            { "label": "a", "question": "$3\\sqrt{2} + 4\\sqrt{2}$", "answer": "$7\\sqrt{2}$" },
+            { "label": "b", "question": "$6\\sqrt{5} - 2\\sqrt{5}$", "answer": "$4\\sqrt{5}$" },
+            { "label": "c", "question": "$5\\sqrt{3} + \\sqrt{3}$", "answer": "$6\\sqrt{3}$" },
+            { "label": "d", "question": "$8\\sqrt{7} - 5\\sqrt{7} + 2\\sqrt{7}$", "answer": "$5\\sqrt{7}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Multiply or divide using $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}$:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{3} \\times \\sqrt{5}$", "answer": "$\\sqrt{15}$" },
+            { "label": "b", "question": "$\\sqrt{2} \\times \\sqrt{7}$", "answer": "$\\sqrt{14}$" },
+            { "label": "c", "question": "$\\sqrt{5} \\times \\sqrt{5}$", "answer": "$5$" },
+            { "label": "d", "question": "$\\dfrac{\\sqrt{15}}{\\sqrt{3}}$", "answer": "$\\sqrt{5}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A square garden tile in Melbourne has an area of $7\\text{ m}^2$. Write its exact side length as a surd.",
+          "answer": "$\\sqrt{7}\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "Two timber planks have lengths $3\\sqrt{2}\\text{ m}$ and $5\\sqrt{2}\\text{ m}$. If they are laid end-to-end, what is their combined exact length?",
+          "answer": "$8\\sqrt{2}\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "Since $\\sqrt{4} = 2$ and $\\sqrt{9} = 3$, between which two consecutive whole numbers does $\\sqrt{6}$ lie on the number line?",
+          "answer": "Between $2$ and $3$"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular poster has width $\\sqrt{3}\\text{ m}$ and height $\\sqrt{12}\\text{ m}$. Multiply $\\sqrt{3} \\times \\sqrt{12} = \\sqrt{36}$ to find the area of the poster.",
+          "answer": "$6\\text{ m}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $\\sqrt{9} = 3$ is a rational number, whereas $\\sqrt{10}$ is an irrational number.",
+          "answer": "$9$ is a perfect square so $\\sqrt{9} = \\dfrac{3}{1}$ is a fraction of integers (rational), whereas $10$ is not a perfect square so $\\sqrt{10}$ cannot be written as an exact fraction."
+        },
+        {
+          "number": 10,
+          "question": "Chloe claims that $\\sqrt{2} + \\sqrt{3} = \\sqrt{5}$. Check whether this is true by squaring $\\sqrt{5}$ or remembering the rule for adding like surds.",
+          "answer": "False; $\\sqrt{2}$ and $\\sqrt{3}$ are unlike surds and cannot be combined into a single root ($\\sqrt{2} + \\sqrt{3} \\approx 3.146$, while $\\sqrt{5} \\approx 2.236$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_1_1_1a", "expression": "sqrt(16)", "expected": 4 },
+        { "id": "WSF9_1_1_1c", "expression": "sqrt(81)", "expected": 9 },
+        { "id": "WSF9_1_1_2a", "expression": "sqrt(12) - 2*sqrt(3)", "expected": 0 },
+        { "id": "WSF9_1_1_2b", "expression": "sqrt(18) - 3*sqrt(2)", "expected": 0 },
+        { "id": "WSF9_1_1_2d", "expression": "sqrt(50) - 5*sqrt(2)", "expected": 0 },
+        { "id": "WSF9_1_1_3a", "expression": "3*sqrt(2) + 4*sqrt(2) - 7*sqrt(2)", "expected": 0 },
+        { "id": "WSF9_1_1_4c", "expression": "sqrt(5)*sqrt(5)", "expected": 5 },
+        { "id": "WSF9_1_1_8", "expression": "sqrt(3)*sqrt(12)", "expected": 6 }
+      ]
+    },
+    {
+      "section_id": "9_1_2",
+      "section_code": "1B",
+      "title": "Index Laws with Algebraic Bases and Negative Indices",
+      "vcaa_code": "VC2M9A01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify using the first two index laws ($a^m \\times a^n = a^{m+n}$ and $a^m \\div a^n = a^{m-n}$):",
+          "parts": [
+            { "label": "a", "question": "$x^3 \\times x^4$", "answer": "$x^7$" },
+            { "label": "b", "question": "$a^5 \\times a^2$", "answer": "$a^7$" },
+            { "label": "c", "question": "$y^8 \\div y^3$", "answer": "$y^5$" },
+            { "label": "d", "question": "$m^6 \\div m^2$", "answer": "$m^4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Simplify using the power of a power law $(a^m)^n = a^{mn}$ and zero index law $a^0 = 1$:",
+          "parts": [
+            { "label": "a", "question": "$(x^2)^3$", "answer": "$x^6$" },
+            { "label": "b", "question": "$(y^4)^2$", "answer": "$y^8$" },
+            { "label": "c", "question": "$7^0$", "answer": "$1$" },
+            { "label": "d", "question": "$4x^0$", "answer": "$4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Write each negative power as a fraction using $a^{-n} = \\dfrac{1}{a^n}$:",
+          "parts": [
+            { "label": "a", "question": "$x^{-2}$", "answer": "$\\dfrac{1}{x^2}$" },
+            { "label": "b", "question": "$y^{-5}$", "answer": "$\\dfrac{1}{y^5}$" },
+            { "label": "c", "question": "$3^{-1}$", "answer": "$\\dfrac{1}{3}$" },
+            { "label": "d", "question": "$5^{-2}$", "answer": "$\\dfrac{1}{25}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Write each expression with a positive index:",
+          "parts": [
+            { "label": "a", "question": "$4x^{-1}$", "answer": "$\\dfrac{4}{x}$" },
+            { "label": "b", "question": "$9a^{-3}$", "answer": "$\\dfrac{9}{a^3}$" },
+            { "label": "c", "question": "$\\dfrac{1}{x^{-4}}$", "answer": "$x^4$" },
+            { "label": "d", "question": "$x^2 \\times x^{-5}$", "answer": "$\\dfrac{1}{x^3}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A computer hard drive holds $2^8\\text{ GB}$ of data. A server holds $2^3$ times as much data. Express the server's capacity as a single power of $2$.",
+          "answer": "$2^{11}\\text{ GB}$"
+        },
+        {
+          "number": 6,
+          "question": "A square solar panel has side length $x^3\\text{ cm}$. Find its area $x^3 \\times x^3$ as a single power of $x$.",
+          "answer": "$x^6\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A probability game has a winning chance of $2^{-3}$. Write this probability as an ordinary fraction.",
+          "answer": "$\\dfrac{1}{8}$"
+        },
+        {
+          "number": 8,
+          "question": "In metric units, $1\\text{ millimetre}$ is $10^{-3}\\text{ m}$. Write $10^{-3}$ as a fraction with denominator $1000$.",
+          "answer": "$\\dfrac{1}{1000}\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Look at the pattern: $2^3 = 8$, $2^2 = 4$, $2^1 = 2$, $2^0 = 1$. Since we divide by $2$ each step, what are the next two values for $2^{-1}$ and $2^{-2}$?",
+          "answer": "$2^{-1} = \\dfrac{1}{2}$ and $2^{-2} = \\dfrac{1}{4}$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why $3^{-2}$ is a positive fraction ($\\dfrac{1}{9}$) and not a negative number ($-9$).",
+          "answer": "A negative index means taking the reciprocal (dividing by powers of $3$), so $3^{-2} = \\dfrac{1}{3^2} = \\dfrac{1}{9} > 0$; it does not make the base negative."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_1_2_1a", "expression": "x**3 * x**4", "expected": "x**7" },
+        { "id": "WSF9_1_2_1c", "expression": "y**8 / y**3", "expected": "y**5" },
+        { "id": "WSF9_1_2_2a", "expression": "(x**2)**3", "expected": "x**6" },
+        { "id": "WSF9_1_2_2c", "expression": "7**0", "expected": 1 },
+        { "id": "WSF9_1_2_3c", "expression": "3**(-1)", "expected": "1/3" },
+        { "id": "WSF9_1_2_3d", "expression": "5**(-2)", "expected": "1/25" },
+        { "id": "WSF9_1_2_4d", "expression": "x**2 * x**(-5)", "expected": "1/x**3" },
+        { "id": "WSF9_1_2_7", "expression": "2**(-3)", "expected": "1/8" }
+      ]
+    },
+    {
+      "section_id": "9_1_3",
+      "section_code": "1C",
+      "title": "Scientific Notation and Significant Figures",
+      "vcaa_code": "VC2M9M01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Write each large number in scientific notation ($a \\times 10^n$):",
+          "parts": [
+            { "label": "a", "question": "$3000$", "answer": "$3 \\times 10^3$" },
+            { "label": "b", "question": "$52\\,000$", "answer": "$5.2 \\times 10^4$" },
+            { "label": "c", "question": "$800\\,000$", "answer": "$8 \\times 10^5$" },
+            { "label": "d", "question": "$4\\,100\\,000$", "answer": "$4.1 \\times 10^6$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Write each small decimal in scientific notation:",
+          "parts": [
+            { "label": "a", "question": "$0.04$", "answer": "$4 \\times 10^{-2}$" },
+            { "label": "b", "question": "$0.007$", "answer": "$7 \\times 10^{-3}$" },
+            { "label": "c", "question": "$0.0025$", "answer": "$2.5 \\times 10^{-3}$" },
+            { "label": "d", "question": "$0.00061$", "answer": "$6.1 \\times 10^{-4}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Write each scientific notation number as an ordinary number:",
+          "parts": [
+            { "label": "a", "question": "$5 \\times 10^3$", "answer": "$5000$" },
+            { "label": "b", "question": "$2.4 \\times 10^4$", "answer": "$24\\,000$" },
+            { "label": "c", "question": "$9 \\times 10^{-2}$", "answer": "$0.09$" },
+            { "label": "d", "question": "$3.6 \\times 10^{-3}$", "answer": "$0.0036$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Round each number to $2$ significant figures:",
+          "parts": [
+            { "label": "a", "question": "$482$", "answer": "$480$" },
+            { "label": "b", "question": "$7390$", "answer": "$7400$" },
+            { "label": "c", "question": "$0.0562$", "answer": "$0.056$" },
+            { "label": "d", "question": "$0.00318$", "answer": "$0.0032$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "The crowd at the Melbourne Cricket Ground (MCG) for the AFL Grand Final was approximately $100\\,000$ people. Write $100\\,000$ as a power of $10$.",
+          "answer": "$1 \\times 10^5$ (or $10^5$)"
+        },
+        {
+          "number": 6,
+          "question": "The distance from Sydney to Perth is about $3.9 \\times 10^3\\text{ km}$. Write this distance as an ordinary number in kilometres.",
+          "answer": "$3900\\text{ km}$"
+        },
+        {
+          "number": 7,
+          "question": "A human red blood cell has a width of $0.000008\\text{ m}$. Write this measurement in scientific notation.",
+          "answer": "$8 \\times 10^{-6}\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "Multiply $(2 \\times 10^3) \\times (3 \\times 10^2)$ by multiplying $2 \\times 3$ and adding the powers of $10$.",
+          "answer": "$6 \\times 10^5$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When converting $4.5 \\times 10^{-3}$ to a basic numeral, do you move the decimal point $3$ places to the left or $3$ places to the right? Why?",
+          "answer": "To the left, because $10^{-3} = \\dfrac{1}{1000}$ makes the number smaller ($0.0045$)."
+        },
+        {
+          "number": 10,
+          "question": "Which number is larger: $9.2 \\times 10^3$ or $1.5 \\times 10^4$? Explain how you can tell just by looking at the powers of $10$.",
+          "answer": "$1.5 \\times 10^4$ ($15\\,000$) is larger than $9.2 \\times 10^3$ ($9200$) because its power of ten ($10^4$) is greater than $10^3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_1_3_1a", "expression": "3 * 10**3", "expected": 3000 },
+        { "id": "WSF9_1_3_1b", "expression": "5.2 * 10**4", "expected": 52000 },
+        { "id": "WSF9_1_3_2a", "expression": "4 * 10**(-2)", "expected": 0.04 },
+        { "id": "WSF9_1_3_2c", "expression": "2.5 * 10**(-3)", "expected": 0.0025 },
+        { "id": "WSF9_1_3_3b", "expression": "2.4 * 10**4", "expected": 24000 },
+        { "id": "WSF9_1_3_6", "expression": "3.9 * 10**3", "expected": 3900 },
+        { "id": "WSF9_1_3_7", "expression": "8 * 10**(-6)", "expected": 0.000008 },
+        { "id": "WSF9_1_3_8", "expression": "(2 * 10**3) * (3 * 10**2)", "expected": 600000 }
+      ]
+    }
+  ]
+}

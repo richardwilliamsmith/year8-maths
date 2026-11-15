@@ -1,0 +1,199 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Surface Area and Volume of Cylinders, Prisms, and Composite Solids",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_6_1",
+      "section_code": "6A",
+      "title": "Surface Area of Right Prisms and Cylinders",
+      "vcaa_code": "VC2M9M02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use Pythagoras' theorem to find any unknown slant edge or height first, then calculate the total surface area of each right prism:",
+          "parts": [
+            { "label": "a", "question": "Isosceles triangular prism with base $16\\text{ cm}$, perpendicular height $15\\text{ cm}$, and length $20\\text{ cm}$", "answer": "$1240\\text{ cm}^2$ (slant side $= 17\\text{ cm}$)" },
+            { "label": "b", "question": "Right-angled triangular prism with hypotenuse $25\\text{ cm}$, one leg $7\\text{ cm}$, and length $12\\text{ cm}$", "answer": "$840\\text{ cm}^2$ (other leg $= 24\\text{ cm}$)" },
+            { "label": "c", "question": "Symmetrical trapezoidal prism with parallel sides $10\\text{ cm}$ and $22\\text{ cm}$, height $8\\text{ cm}$, and length $15\\text{ cm}$", "answer": "$1036\\text{ cm}^2$ (slant side $= 10\\text{ cm}$)" },
+            { "label": "d", "question": "Rhombus-based prism whose diagonals are $12\\text{ cm}$ and $16\\text{ cm}$, with prism height $10\\text{ cm}$", "answer": "$592\\text{ cm}^2$ (rhombus side $= 10\\text{ cm}$, end area $= 96\\text{ cm}^2$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the exact total surface area (in terms of $\\pi$) of each hollow or sector cylinder:",
+          "parts": [
+            { "label": "a", "question": "Hollow cylindrical pipe of length $12\\text{ cm}$, outer radius $R = 5\\text{ cm}$, and inner radius $r = 3\\text{ cm}$ (including both annular end rings)", "answer": "$224\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Cylindrical sector wedge of angle $\\theta = 60^\\circ$, radius $6\\text{ cm}$, and height $10\\text{ cm}$ (including the two flat rectangular faces)", "answer": "$(32\\pi + 120)\\text{ cm}^2$" },
+            { "label": "c", "question": "Solid cube of side $10\\text{ cm}$ with a circular hole of radius $2\\text{ cm}$ drilled completely through from top to bottom", "answer": "$(600 + 32\\pi)\\text{ cm}^2$" },
+            { "label": "d", "question": "Closed cylinder whose height equals its diameter ($h = 2r$) with radius $r = 5\\text{ cm}$", "answer": "$150\\pi\\text{ cm}^2$ ($6\\pi r^2$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve for the exact positive value of the pronumeral in each surface area problem:",
+          "parts": [
+            { "label": "a", "question": "Closed cylinder of height $h = 7\\text{ cm}$ and total surface area $40\\pi\\text{ cm}^2$ (solve $2r^2 + 14r - 40 = 0$ for $r$)", "answer": "$r = 2\\text{ cm}$" },
+            { "label": "b", "question": "Closed cylinder of height $h = 5\\text{ cm}$ and total surface area $48\\pi\\text{ cm}^2$ (solve $r^2 + 5r - 24 = 0$ for $r$)", "answer": "$r = 3\\text{ cm}$" },
+            { "label": "c", "question": "Cube whose total surface area in $\\text{cm}^2$ is numerically equal to $3$ times its volume in $\\text{cm}^3$ ($6s^2 = 3s^3$)", "answer": "$s = 2\\text{ cm}$" },
+            { "label": "d", "question": "Rectangular prism with dimensions $x, 2x, 3x$ and total surface area $198\\text{ cm}^2$", "answer": "$x = 3\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Calculate the total exterior surface area of each composite solid in exact form:",
+          "parts": [
+            { "label": "a", "question": "A rectangular barn $10\\text{ m}$ long, $8\\text{ m}$ wide, and $6\\text{ m}$ high, topped by a half-cylinder roof of radius $4\\text{ m}$ and length $10\\text{ m}$ (including the flat floor)", "answer": "$(296 + 56\\pi)\\text{ m}^2$" },
+            { "label": "b", "question": "Two solid cylinders of height $6\\text{ cm}$: a top cylinder of radius $3\\text{ cm}$ stacked concentrically on a bottom cylinder of radius $5\\text{ cm}$", "answer": "$146\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "A solid cylinder of radius $6\\text{ cm}$ and height $10\\text{ cm}$ with a coaxial cylindrical recess of radius $2\\text{ cm}$ and depth $4\\text{ cm}$ bored into the top face (not all the way through)", "answer": "$208\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "An L-shaped prism of length $10\\text{ cm}$ whose cross-section is a $6\\text{ cm} \\times 6\\text{ cm}$ square with a $2\\text{ cm} \\times 2\\text{ cm}$ corner removed", "answer": "$304\\text{ cm}^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A concrete culvert pipe under the Hume Highway is a hollow cylinder of length $8.0\\text{ m}$ with external diameter $2.0\\text{ m}$ ($R = 1.0\\text{ m}$) and wall thickness $0.2\\text{ m}$ ($r = 0.8\\text{ m}$). Find the exact total surface area (inner wall, outer wall, and both annular ends) in terms of $\\pi$.",
+          "answer": "$29.52\\pi\\text{ m}^2$ ($\\text{CSA}_{\\text{outer}} + \\text{CSA}_{\\text{inner}} + 2\\text{ends} = 16\\pi + 12.8\\pi + 0.72\\pi = 29.52\\pi\\text{ m}^2$)"
+        },
+        {
+          "number": 6,
+          "question": "A Norman window tunnel display is $5\\text{ m}$ deep; its front and back cross-sections each consist of a rectangle $4\\text{ m}$ wide by $3\\text{ m}$ high topped by a semicircle of radius $2\\text{ m}$. Find the exact total exterior surface area of the 3D solid.",
+          "answer": "$(94 + 14\\pi)\\text{ m}^2$ (two ends $= 2(12 + 2\\pi) = 24 + 4\\pi$, floor and two side walls $= (4 + 3 + 3) \\times 5 = 50$, curved roof $= \\pi(2)(5) = 10\\pi$)"
+        },
+        {
+          "number": 7,
+          "question": "A machine part is made by taking a solid steel cube of edge length $12\\text{ cm}$ and drilling a circular hole of diameter $6\\text{ cm}$ ($r = 3\\text{ cm}$) right through the centre from the front face to the back face. Find the exact total surface area of the finished part.",
+          "answer": "$(864 + 54\\pi)\\text{ cm}^2$ ($6 \\times 12^2 - 2\\pi(3^2) + 2\\pi(3)(12) = 864 + 54\\pi\\text{ cm}^2$)"
+        },
+        {
+          "number": 8,
+          "question": "A closed cylindrical chemical tank must hold a fixed volume of $128\\pi\\text{ m}^3$. If its radius is $r = 4\\text{ m}$, find its height $h$ and its exact total surface area, and compare this with the total surface area if $r = 8\\text{ m}$.",
+          "answer": "When $r = 4\\text{ m}$, $h = 8\\text{ m}$ and $\\text{TSA} = 96\\pi\\text{ m}^2$; when $r = 8\\text{ m}$, $h = 2\\text{ m}$ and $\\text{TSA} = 160\\pi\\text{ m}^2$ (so $r = 4\\text{ m}$, where $h = 2r$, uses much less steel)."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that for a hollow cylindrical pipe of length $h$, outer radius $R$, and inner radius $r$, the total surface area (inner curved wall, outer curved wall, and two annular end rings) factorises neatly to $\\text{TSA} = 2\\pi(R + r)(R - r + h)$.",
+          "answer": "$\\text{TSA} = 2\\pi Rh + 2\\pi rh + 2\\pi(R^2 - r^2) = 2\\pi h(R + r) + 2\\pi(R - r)(R + r) = 2\\pi(R + r)(R - r + h)$."
+        },
+        {
+          "number": 10,
+          "question": "A solid cylinder of radius $r$ and height $h$ is sliced into two congruent half-cylinders by a vertical cut through the diameter of its circular ends. Find the ratio of the combined surface area of the two half-cylinders to the original cylinder's surface area when $h = r$, simplified in terms of $\\pi$.",
+          "answer": "Original $\\text{TSA} = 2\\pi r^2 + 2\\pi r(r) = 4\\pi r^2$. Cutting adds two rectangular cross-sections each of area $2r \\times h = 2r^2$ ($4r^2$ total), giving $(4\\pi + 4)r^2$. The ratio is $\\dfrac{4\\pi + 4}{4\\pi} = 1 + \\dfrac{1}{\\pi}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_6_1_1a", "expression": "2*Rational(1,2)*16*15 + (16 + 2*sqrt(8**2 + 15**2))*20", "expected": 1240 },
+        { "id": "WSE9_6_1_1b", "expression": "2*Rational(1,2)*7*24 + (7 + 24 + 25)*12", "expected": 840 },
+        { "id": "WSE9_6_1_1c", "expression": "2*Rational(1,2)*(10 + 22)*8 + (10 + 22 + 2*sqrt(6**2 + 8**2))*15", "expected": 1036 },
+        { "id": "WSE9_6_1_2a", "expression": "2*pi*5*12 + 2*pi*3*12 + 2*pi*(5**2 - 3**2)", "expected": "224*pi" },
+        { "id": "WSE9_6_1_2c", "expression": "6*10**2 - 2*pi*2**2 + 2*pi*2*10", "expected": "600 + 32*pi" },
+        { "id": "WSE9_6_1_3a", "expression": "2*2**2 + 14*2 - 40", "expected": 0 },
+        { "id": "WSE9_6_1_3d", "expression": "sqrt(198 / (2*(1*2 + 1*3 + 2*3)))", "expected": 3 },
+        { "id": "WSE9_6_1_4b", "expression": "2*pi*5**2 + 2*pi*5*6 + 2*pi*3*6", "expected": "146*pi" },
+        { "id": "WSE9_6_1_4c", "expression": "2*pi*6**2 + 2*pi*6*10 + 2*pi*2*4", "expected": "208*pi" },
+        { "id": "WSE9_6_1_7", "expression": "6*12**2 - 2*pi*3**2 + 2*pi*3*12", "expected": "864 + 54*pi" }
+      ]
+    },
+    {
+      "section_id": "9_6_2",
+      "section_code": "6B",
+      "title": "Volume of Cylinders, Composite Solids, and Error in Measurement",
+      "vcaa_code": "VC2M9M02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the exact volume of each solid:",
+          "parts": [
+            { "label": "a", "question": "Annular pipe with outer diameter $16\\text{ cm}$, inner diameter $12\\text{ cm}$, and length $15\\text{ cm}$", "answer": "$420\\pi\\text{ cm}^3$" },
+            { "label": "b", "question": "Cylindrical sector wedge with central angle $120^\\circ$, radius $6\\text{ cm}$, and height $10\\text{ cm}$", "answer": "$120\\pi\\text{ cm}^3$" },
+            { "label": "c", "question": "Regular hexagonal prism made of $6$ equilateral triangles of side $4\\text{ cm}$ (each area $4\\sqrt{3}\\text{ cm}^2$) and length $10\\text{ cm}$", "answer": "$240\\sqrt{3}\\text{ cm}^3$" },
+            { "label": "d", "question": "Cube of side $10\\text{ cm}$ with a cylindrical hole of diameter $6\\text{ cm}$ drilled through one face to the opposite face", "answer": "$(1000 - 90\\pi)\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the unknown dimension in each volume problem:",
+          "parts": [
+            { "label": "a", "question": "Cylinder with volume $245\\pi\\text{ cm}^3$ and height $5\\text{ cm}$ (find radius $r$)", "answer": "$r = 7\\text{ cm}$" },
+            { "label": "b", "question": "Hollow pipe of length $10\\text{ cm}$, outer radius $R = 10\\text{ cm}$, and volume $360\\pi\\text{ cm}^3$ (find inner radius $r$)", "answer": "$r = 8\\text{ cm}$" },
+            { "label": "c", "question": "Trapezoidal prism of length $12\\text{ cm}$, perpendicular height $6\\text{ cm}$, one parallel side $9\\text{ cm}$, and volume $540\\text{ cm}^3$ (find other parallel side $b$)", "answer": "$b = 6\\text{ cm}$" },
+            { "label": "d", "question": "Cylinder whose volume is $54\\pi\\text{ cm}^3$ and whose height equals twice its radius ($h = 2r$; find $r$)", "answer": "$r = 3\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A rectangle has measured length $L = 10\\text{ cm}$ and width $W = 6\\text{ cm}$, both measured to the nearest centimetre ($\\pm 0.5\\text{ cm}$). Calculate:",
+          "parts": [
+            { "label": "a", "question": "The lower bound $A_{\\min}$ and upper bound $A_{\\max}$ of the rectangle's area", "answer": "$A_{\\min} = 52.25\\text{ cm}^2, A_{\\max} = 68.25\\text{ cm}^2$" },
+            { "label": "b", "question": "The maximum absolute error $|A_{\\max} - 60|$ above the nominal area of $60\\text{ cm}^2$", "answer": "$8.25\\text{ cm}^2$" },
+            { "label": "c", "question": "The percentage error corresponding to $A_{\\max}$ relative to the nominal area $60\\text{ cm}^2$", "answer": "$13.75\\%$" },
+            { "label": "d", "question": "The lower bound $P_{\\min}$ and upper bound $P_{\\max}$ of its perimeter", "answer": "$P_{\\min} = 30\\text{ cm}, P_{\\max} = 34\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A cube has side length measured as $s = 10.0\\text{ cm}$ to the nearest millimetre ($\\pm 0.05\\text{ cm}$). Find:",
+          "parts": [
+            { "label": "a", "question": "The percentage error in the linear measurement $s$", "answer": "$0.5\\%$" },
+            { "label": "b", "question": "The lower bound $V_{\\min} = 9.95^3$ and upper bound $V_{\\max} = 10.05^3$ rounded to $2$ d.p.", "answer": "$V_{\\min} \\approx 985.07\\text{ cm}^3, V_{\\max} \\approx 1015.08\\text{ cm}^3$" },
+            { "label": "c", "question": "The percentage error of $V_{\\max}$ relative to the nominal volume $1000\\text{ cm}^3$ (to $2$ d.p.)", "answer": "$1.51\\%$ (approximately $3 \\times 0.5\\%$)" },
+            { "label": "d", "question": "The percentage error of $A_{\\max} = 6(10.05)^2$ relative to nominal surface area $600\\text{ cm}^2$ (to $2$ d.p.)", "answer": "$1.00\\%$ ($1.0025\\%$, approximately $2 \\times 0.5\\%$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Water flows through a cylindrical irrigation pipe of internal diameter $10\\text{ cm}$ ($r = 0.05\\text{ m}$) into an empty cylindrical farm tank in Mildura of radius $2.0\\text{ m}$ and height $1.5\\text{ m}$. If water flows through the pipe at a speed of $2.0\\text{ m/s}$, how many seconds does it take to fill the tank completely?",
+          "answer": "$1200\\text{ seconds}$ ($20\\text{ minutes}$, since $V_{\\text{tank}} = 6\\pi\\text{ m}^3$ and flow rate $= \\pi(0.05)^2(2) = 0.005\\pi\\text{ m}^3/\\text{s}$)"
+        },
+        {
+          "number": 6,
+          "question": "A solid metal cylinder of radius $4\\text{ cm}$ and height $9\\text{ cm}$ is submerged completely in a partially filled cylindrical beaker of internal radius $6\\text{ cm}$. By how many centimetres does the water level in the beaker rise?",
+          "answer": "$4\\text{ cm}$ ($\\pi(6^2)h_{\\text{rise}} = \\pi(4^2)(9) = 144\\pi \\implies 36h_{\\text{rise}} = 144 \\implies h_{\\text{rise}} = 4\\text{ cm}$)"
+        },
+        {
+          "number": 7,
+          "question": "A trough of length $2.0\\text{ m}$ ($200\\text{ cm}$) has an isosceles trapezoidal cross-section with bottom width $30\\text{ cm}$, top width $50\\text{ cm}$, and slant sides $26\\text{ cm}$. Use Pythagoras' theorem to find the perpendicular depth of the trough, and hence find its capacity in litres ($1\\text{ L} = 1000\\text{ cm}^3$).",
+          "answer": "Depth $= \\sqrt{26^2 - 10^2} = 24\\text{ cm}$; cross-sectional area $= \\frac{1}{2}(30 + 50)(24) = 960\\text{ cm}^2$; volume $= 960 \\times 200 = 192\\,000\\text{ cm}^3 = 192\\text{ L}$"
+        },
+        {
+          "number": 8,
+          "question": "A density calculation uses $D = \\dfrac{m}{V}$. A rock sample has mass $m = 300\\text{ g}$ measured to the nearest $10\\text{ g}$ ($295 \\le m < 305$) and volume $V = 100\\text{ cm}^3$ measured to the nearest $10\\text{ cm}^3$ ($95 \\le V < 105$). Find the minimum and maximum possible values of the density $D$ as exact simplified fractions.",
+          "answer": "$D_{\\min} = \\dfrac{295}{105} = \\dfrac{59}{21}\\text{ g/cm}^3$, $D_{\\max} = \\dfrac{305}{95} = \\dfrac{61}{19}\\text{ g/cm}^3$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why, when calculating the upper bound of a quotient $Q = \\dfrac{a}{b}$ from rounded positive measurements $a$ and $b$, you must divide the upper bound of $a$ by the **lower** bound of $b$ ($Q_{\\max} = \\dfrac{a_{\\max}}{b_{\\min}}$) rather than dividing $a_{\\max}$ by $b_{\\max}$.",
+          "answer": "A fraction increases when its numerator increases and when its denominator decreases. Therefore, to maximise $\\dfrac{a}{b}$, you must pair the largest possible numerator $a_{\\max}$ with the smallest possible positive denominator $b_{\\min}$."
+        },
+        {
+          "number": 10,
+          "question": "A rectangular sheet of metal of length $a$ and width $b$ ($a > b$) can be rolled into an open cylinder in two ways: either with circumference $a$ and height $b$, or with circumference $b$ and height $a$. Prove algebraically that rolling the longer side $a$ as the circumference gives the larger volume, by a ratio of $\\dfrac{a}{b}$.",
+          "answer": "If circumference $= a$, then $r_1 = \\dfrac{a}{2\\pi}$ and $V_1 = \\pi\\left(\\dfrac{a}{2\\pi}\\right)^2 b = \\dfrac{a^2b}{4\\pi}$. If circumference $= b$, then $r_2 = \\dfrac{b}{2\\pi}$ and $V_2 = \\dfrac{ab^2}{4\\pi}$. Thus $\\dfrac{V_1}{V_2} = \\dfrac{a}{b} > 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_6_2_1a", "expression": "pi * (8**2 - 6**2) * 15", "expected": "420*pi" },
+        { "id": "WSE9_6_2_1b", "expression": "Rational(120, 360) * pi * 6**2 * 10", "expected": "120*pi" },
+        { "id": "WSE9_6_2_2a", "expression": "sqrt(245 / 5)", "expected": 7 },
+        { "id": "WSE9_6_2_2b", "expression": "sqrt(10**2 - 360 / 10)", "expected": 8 },
+        { "id": "WSE9_6_2_2d", "expression": "cbrt(54 / 2)", "expected": 3 },
+        { "id": "WSE9_6_2_3a_min", "expression": "Rational(95, 10) * Rational(55, 10)", "expected": 52.25 },
+        { "id": "WSE9_6_2_3a_max", "expression": "Rational(105, 10) * Rational(65, 10)", "expected": 68.25 },
+        { "id": "WSE9_6_2_3c", "expression": "(Rational(6825, 100) - 60) / 60 * 100", "expected": 13.75 },
+        { "id": "WSE9_6_2_6", "expression": "(4**2 * 9) / 6**2", "expected": 4 },
+        { "id": "WSE9_6_2_7", "expression": "Rational(1, 2) * (30 + 50) * sqrt(26**2 - 10**2) * 200 / 1000", "expected": 192 }
+      ]
+    }
+  ]
+}

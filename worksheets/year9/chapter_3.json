@@ -1,0 +1,291 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Algebraic Expansion and Factorisation",
+  "worksheets": [
+    {
+      "section_id": "9_3_1",
+      "section_code": "3A",
+      "title": "Expanding Binomial Products and Special Identities",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Expand and simplify each monic binomial product:",
+          "parts": [
+            { "label": "a", "question": "$(x + 4)(x + 7)$", "answer": "$x^2 + 11x + 28$" },
+            { "label": "b", "question": "$(x - 5)(x + 9)$", "answer": "$x^2 + 4x - 45$" },
+            { "label": "c", "question": "$(x + 3)(x - 8)$", "answer": "$x^2 - 5x - 24$" },
+            { "label": "d", "question": "$(x - 6)(x - 7)$", "answer": "$x^2 - 13x + 42$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Expand and simplify each general binomial product:",
+          "parts": [
+            { "label": "a", "question": "$(2x + 3)(x + 5)$", "answer": "$2x^2 + 13x + 15$" },
+            { "label": "b", "question": "$(3x - 4)(2x + 1)$", "answer": "$6x^2 - 5x - 4$" },
+            { "label": "c", "question": "$(4x - 3)(2x - 5)$", "answer": "$8x^2 - 26x + 15$" },
+            { "label": "d", "question": "$(5 - 2x)(3 + x)$", "answer": "$15 - x - 2x^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Expand each perfect square using $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$:",
+          "parts": [
+            { "label": "a", "question": "$(x + 6)^2$", "answer": "$x^2 + 12x + 36$" },
+            { "label": "b", "question": "$(x - 9)^2$", "answer": "$x^2 - 18x + 81$" },
+            { "label": "c", "question": "$(3x + 4)^2$", "answer": "$9x^2 + 24x + 16$" },
+            { "label": "d", "question": "$(2x - 5y)^2$", "answer": "$4x^2 - 20xy + 25y^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Expand each difference of two squares using $(a - b)(a + b) = a^2 - b^2$:",
+          "parts": [
+            { "label": "a", "question": "$(x - 8)(x + 8)$", "answer": "$x^2 - 64$" },
+            { "label": "b", "question": "$(2x + 7)(2x - 7)$", "answer": "$4x^2 - 49$" },
+            { "label": "c", "question": "$(5a - 3b)(5a + 3b)$", "answer": "$25a^2 - 9b^2$" },
+            { "label": "d", "question": "$(9 - 4x)(9 + 4x)$", "answer": "$81 - 16x^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A square lawn in a Melbourne park has side length $x\\text{ m}$. One pair of opposite sides is increased by $5\\text{ m}$ and the other pair is decreased by $2\\text{ m}$ to form a rectangle. Write an expanded quadratic expression for the area of the rectangle.",
+          "answer": "$(x + 5)(x - 2) = (x^2 + 3x - 10)\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A square swimming pool of side length $x\\text{ m}$ is surrounded by a uniform paved path of width $2\\text{ m}$ on all four sides. Expand $(x + 4)^2 - x^2$ to find a simplified expression for the area of the path, and evaluate it when $x = 10$.",
+          "answer": "$(8x + 16)\\text{ m}^2$; when $x = 10$, area $= 96\\text{ m}^2$"
+        },
+        {
+          "number": 7,
+          "question": "Use the difference of two squares identity $(a - b)(a + b) = a^2 - b^2$ to mentally evaluate $47 \\times 53$ by writing it as $(50 - 3)(50 + 3)$.",
+          "answer": "$50^2 - 3^2 = 2500 - 9 = 2491$"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular solar panel has length $(3x + 2)\\text{ cm}$ and width $(2x - 1)\\text{ cm}$. Find an expanded expression for its area and calculate the area when $x = 10$.",
+          "answer": "$(6x^2 + x - 2)\\text{ cm}^2$; when $x = 10$, area $= 608\\text{ cm}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Sam expands $(x + 5)^2$ as $x^2 + 25$. Use an area diagram of a square of side $(x + 5)$ split into four regions to explain what missing terms Sam forgot.",
+          "answer": "Splitting the side into $x$ and $5$ produces four regions of areas $x^2$, $5x$, $5x$, and $25$. Sam missed the two rectangular cross-terms $5x + 5x = 10x$, so $(x + 5)^2 = x^2 + 10x + 25$."
+        },
+        {
+          "number": 10,
+          "question": "Prove algebraically that for any integer $n$, the product of one less than $n$ and one more than $n$, plus $1$, is always a perfect square.",
+          "answer": "$(n - 1)(n + 1) + 1 = (n^2 - 1) + 1 = n^2$, which is the square of the integer $n$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_3_1_1a", "expression": "expand((x + 4)*(x + 7)) - (x**2 + 11*x + 28)", "expected": 0 },
+        { "id": "WS9_3_1_1d", "expression": "expand((x - 6)*(x - 7)) - (x**2 - 13*x + 42)", "expected": 0 },
+        { "id": "WS9_3_1_2b", "expression": "expand((3*x - 4)*(2*x + 1)) - (6*x**2 - 5*x - 4)", "expected": 0 },
+        { "id": "WS9_3_1_2c", "expression": "expand((4*x - 3)*(2*x - 5)) - (8*x**2 - 26*x + 15)", "expected": 0 },
+        { "id": "WS9_3_1_3c", "expression": "expand((3*x + 4)**2) - (9*x**2 + 24*x + 16)", "expected": 0 },
+        { "id": "WS9_3_1_4b", "expression": "expand((2*x + 7)*(2*x - 7)) - (4*x**2 - 49)", "expected": 0 },
+        { "id": "WS9_3_1_6", "expression": "expand((x + 4)**2 - x**2) - (8*x + 16)", "expected": 0 },
+        { "id": "WS9_3_1_7", "expression": "47 * 53", "expected": 2491 },
+        { "id": "WS9_3_1_8", "expression": "(3*10 + 2)*(2*10 - 1)", "expected": 608 }
+      ]
+    },
+    {
+      "section_id": "9_3_2",
+      "section_code": "3B",
+      "title": "Factorising Difference of Two Squares and Grouping",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Factorise each expression by extracting the highest common factor (HCF):",
+          "parts": [
+            { "label": "a", "question": "$12x^2 - 18x$", "answer": "$6x(2x - 3)$" },
+            { "label": "b", "question": "$15a^2 b + 20ab^2$", "answer": "$5ab(3a + 4b)$" },
+            { "label": "c", "question": "$-8y^2 - 20y$", "answer": "$-4y(2y + 5)$" },
+            { "label": "d", "question": "$4x(x + 3) - 7(x + 3)$", "answer": "$(x + 3)(4x - 7)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise each difference of two squares using $a^2 - b^2 = (a - b)(a + b)$:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 49$", "answer": "$(x - 7)(x + 7)$" },
+            { "label": "b", "question": "$9x^2 - 25$", "answer": "$(3x - 5)(3x + 5)$" },
+            { "label": "c", "question": "$64 - 49y^2$", "answer": "$(8 - 7y)(8 + 7y)$" },
+            { "label": "d", "question": "$16a^2 - 81b^2$", "answer": "$(4a - 9b)(4a + 9b)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factorise completely by first taking out a common factor and then using DOTS:",
+          "parts": [
+            { "label": "a", "question": "$2x^2 - 50$", "answer": "$2(x - 5)(x + 5)$" },
+            { "label": "b", "question": "$3y^2 - 27$", "answer": "$3(y - 3)(y + 3)$" },
+            { "label": "c", "question": "$5a^2 - 20b^2$", "answer": "$5(a - 2b)(a + 2b)$" },
+            { "label": "d", "question": "$x^3 - 16x$", "answer": "$x(x - 4)(x + 4)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise each four-term expression by grouping in pairs:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 4x + 3x + 12$", "answer": "$(x + 4)(x + 3)$" },
+            { "label": "b", "question": "$x^2 - 5x + 2x - 10$", "answer": "$(x - 5)(x + 2)$" },
+            { "label": "c", "question": "$2x^2 + 6x - 5x - 15$", "answer": "$(x + 3)(2x - 5)$" },
+            { "label": "d", "question": "$ab - 4a - 3b + 12$", "answer": "$(b - 4)(a - 3)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Use the difference of two squares factorisation $a^2 - b^2 = (a - b)(a + b)$ to evaluate $74^2 - 26^2$ without a calculator.",
+          "answer": "$(74 - 26)(74 + 26) = 48 \\times 100 = 4800$"
+        },
+        {
+          "number": 6,
+          "question": "A circular washer has outer radius $R = 6.8\\text{ cm}$ and inner hole radius $r = 3.2\\text{ cm}$. Factorise the area formula $A = \\pi R^2 - \\pi r^2$ and hence find the exact area in terms of $\\pi$.",
+          "answer": "$A = \\pi(R - r)(R + r) = \\pi(3.6)(10) = 36\\pi\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A rectangular plaza in Perth has area $(4x^2 - 9)\\text{ m}^2$. If its width is $(2x - 3)\\text{ m}$, find an expression for its length and calculate the perimeter when $x = 8$.",
+          "answer": "Length $= (2x + 3)\\text{ m}$; perimeter $= 8x = 64\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular sheet of metal has area $(xy + 5x + 3y + 15)\\text{ cm}^2$. Factorise by grouping to find the dimensions of the sheet in terms of $x$ and $y$.",
+          "answer": "$(x + 3)\\text{ cm}$ by $(y + 5)\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $x^2 + 16$ cannot be factorised into linear factors over the real numbers, whereas $x^2 - 16$ factorises into $(x - 4)(x + 4)$.",
+          "answer": "Expanding $(x + 4)^2$ gives $x^2 + 8x + 16$ and $(x - 4)^2$ gives $x^2 - 8x + 16$; only opposite signs $(x - 4)(x + 4)$ cancel the middle $x$-term, which makes the constant term $-16$, not $+16$. Also $x^2 + 16 \\ge 16 > 0$ has no real roots."
+        },
+        {
+          "number": 10,
+          "question": "When factorising $ab - 4a - 3b + 12$ by grouping the last two terms, why must we write $a(b - 4) - 3(b - 4)$ rather than $a(b - 4) - 3(b + 4)$?",
+          "answer": "Factoring out $-3$ from $-3b + 12$ reverses the sign of $+12$ because $-3 \\times (-4) = +12$, giving the matching binomial factor $(b - 4)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_3_2_1a", "expression": "expand(6*x*(2*x - 3) - (12*x**2 - 18*x))", "expected": 0 },
+        { "id": "WS9_3_2_2b", "expression": "expand((3*x - 5)*(3*x + 5) - (9*x**2 - 25))", "expected": 0 },
+        { "id": "WS9_3_2_2d", "expression": "expand((4*a - 9*b)*(4*a + 9*b) - (16*a**2 - 81*b**2))", "expected": 0 },
+        { "id": "WS9_3_2_3a", "expression": "expand(2*(x - 5)*(x + 5) - (2*x**2 - 50))", "expected": 0 },
+        { "id": "WS9_3_2_3d", "expression": "expand(x*(x - 4)*(x + 4) - (x**3 - 16*x))", "expected": 0 },
+        { "id": "WS9_3_2_4c", "expression": "expand((x + 3)*(2*x - 5) - (2*x**2 + 6*x - 5*x - 15))", "expected": 0 },
+        { "id": "WS9_3_2_4d", "expression": "expand((b - 4)*(a - 3) - (a*b - 4*a - 3*b + 12))", "expected": 0 },
+        { "id": "WS9_3_2_5", "expression": "74**2 - 26**2", "expected": 4800 },
+        { "id": "WS9_3_2_6", "expression": "6.8**2 - 3.2**2", "expected": 36 }
+      ]
+    },
+    {
+      "section_id": "9_3_3",
+      "section_code": "3C",
+      "title": "Factorising Monic Quadratic Trinomials",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Factorise each monic quadratic trinomial with positive terms:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 7x + 12$", "answer": "$(x + 3)(x + 4)$" },
+            { "label": "b", "question": "$x^2 + 9x + 20$", "answer": "$(x + 4)(x + 5)$" },
+            { "label": "c", "question": "$x^2 + 11x + 24$", "answer": "$(x + 3)(x + 8)$" },
+            { "label": "d", "question": "$x^2 + 10x + 25$", "answer": "$(x + 5)^2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise each monic quadratic trinomial with a positive constant term and negative middle term:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 8x + 15$", "answer": "$(x - 3)(x - 5)$" },
+            { "label": "b", "question": "$x^2 - 11x + 28$", "answer": "$(x - 4)(x - 7)$" },
+            { "label": "c", "question": "$x^2 - 13x + 36$", "answer": "$(x - 4)(x - 9)$" },
+            { "label": "d", "question": "$x^2 - 14x + 49$", "answer": "$(x - 7)^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factorise each monic quadratic trinomial with a negative constant term:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 3x - 18$", "answer": "$(x + 6)(x - 3)$" },
+            { "label": "b", "question": "$x^2 - 4x - 21$", "answer": "$(x - 7)(x + 3)$" },
+            { "label": "c", "question": "$x^2 + 5x - 36$", "answer": "$(x + 9)(x - 4)$" },
+            { "label": "d", "question": "$x^2 - 7x - 30$", "answer": "$(x - 10)(x + 3)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise completely by first extracting the common numerical factor:",
+          "parts": [
+            { "label": "a", "question": "$2x^2 + 14x + 20$", "answer": "$2(x + 2)(x + 5)$" },
+            { "label": "b", "question": "$3x^2 - 15x + 18$", "answer": "$3(x - 2)(x - 3)$" },
+            { "label": "c", "question": "$4x^2 - 8x - 32$", "answer": "$4(x - 4)(x + 2)$" },
+            { "label": "d", "question": "$-x^2 + 6x - 8$", "answer": "$-(x - 2)(x - 4)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular community garden in Canberra has area $(x^2 + 12x + 35)\\text{ m}^2$. Factorise the trinomial to find algebraic expressions for its length and width, and state the dimensions when $x = 10\\text{ m}$.",
+          "answer": "$(x + 7)\\text{ m}$ by $(x + 5)\\text{ m}$; when $x = 10$, $17\\text{ m}$ by $15\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A rectangular prism shipping box has volume $(2x^3 - 10x^2 + 12x)\\text{ cm}^3$. Factorise the expression completely into three factors representing its height, width, and length.",
+          "answer": "$2x(x - 2)(x - 3)\\text{ cm}^3$"
+        },
+        {
+          "number": 7,
+          "question": "The area of a square solar tile is $(x^2 - 16x + 64)\\text{ cm}^2$ for $x > 8$. Factorise this perfect square trinomial to find the side length and perimeter of the tile in terms of $x$.",
+          "answer": "Side length $= (x - 8)\\text{ cm}$; perimeter $= (4x - 32)\\text{ cm}$"
+        },
+        {
+          "number": 8,
+          "question": "Simplify the algebraic fraction $\\dfrac{x^2 + 2x - 15}{x + 5}$ (for $x \\neq -5$) by factorising the numerator first.",
+          "answer": "$\\dfrac{(x + 5)(x - 3)}{x + 5} = x - 3$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When factorising $x^2 + bx + c$ into $(x + p)(x + q)$, explain what the signs of $b$ and $c$ tell you about the signs of the integers $p$ and $q$ when (a) $c > 0$ and $b < 0$, and (b) $c < 0$.",
+          "answer": "(a) Since $pq = c > 0$, $p$ and $q$ have the same sign, and since $p + q = b < 0$, both $p$ and $q$ are negative. (b) Since $pq = c < 0$, $p$ and $q$ have opposite signs (one positive, one negative)."
+        },
+        {
+          "number": 10,
+          "question": "Find all possible integer values of $b$ such that $x^2 + bx + 12$ can be factorised into $(x + p)(x + q)$ with integer values of $p$ and $q$.",
+          "answer": "Factor pairs of $12$ are $(\\pm 1, \\pm 12), (\\pm 2, \\pm 6), (\\pm 3, \\pm 4)$, giving $b = p + q \\in \\{\\pm 13, \\pm 8, \\pm 7\\}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_3_3_1c", "expression": "expand((x + 3)*(x + 8) - (x**2 + 11*x + 24))", "expected": 0 },
+        { "id": "WS9_3_3_2b", "expression": "expand((x - 4)*(x - 7) - (x**2 - 11*x + 28))", "expected": 0 },
+        { "id": "WS9_3_3_2d", "expression": "expand((x - 7)**2 - (x**2 - 14*x + 49))", "expected": 0 },
+        { "id": "WS9_3_3_3b", "expression": "expand((x - 7)*(x + 3) - (x**2 - 4*x - 21))", "expected": 0 },
+        { "id": "WS9_3_3_3d", "expression": "expand((x - 10)*(x + 3) - (x**2 - 7*x - 30))", "expected": 0 },
+        { "id": "WS9_3_3_4c", "expression": "expand(4*(x - 4)*(x + 2) - (4*x**2 - 8*x - 32))", "expected": 0 },
+        { "id": "WS9_3_3_4d", "expression": "expand(-(x - 2)*(x - 4) - (-x**2 + 6*x - 8))", "expected": 0 },
+        { "id": "WS9_3_3_6", "expression": "expand(2*x*(x - 2)*(x - 3) - (2*x**3 - 10*x**2 + 12*x))", "expected": 0 },
+        { "id": "WS9_3_3_8", "expression": "simplify((x**2 + 2*x - 15)/(x + 5) - (x - 3))", "expected": 0 }
+      ]
+    }
+  ]
+}

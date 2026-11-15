@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "section_id": "9_1_2",
+    "section_code": "1B",
+    "chapter_number": 1,
+    "chapter_title": "Real Numbers, Surds, and Index Laws",
+    "title": "Index Laws with Algebraic Bases and Negative Indices",
+    "vcaa_code": "VC2M9A01",
+    "vcaa_description": "Apply the exponent laws to numerical expressions with integer exponents and extend to variables.",
+    "strand": "Algebra",
+    "target_mastery": "Simplify algebraic and numerical expressions using all index laws, including zero and negative integer indices a^(-n) = 1/a^n.",
+    "prerequisites": [
+      "Index laws with positive integer exponents (Year 8 VC2M8N02)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Base and index (exponent)",
+        "definition": "In the power $a^n$, the base $a$ is the repeated factor and the index (or exponent) $n$ indicates the power to which the base is raised."
+      },
+      {
+        "term": "Zero index law",
+        "definition": "Any non-zero base raised to the power of zero equals $1$: $a^0 = 1$ for $a \\neq 0$."
+      },
+      {
+        "term": "Negative index (reciprocal) law",
+        "definition": "Raising a non-zero base $a$ to a negative integer index $-n$ takes the reciprocal of $a^n$: $a^{-n} = \\frac{1}{a^n}$."
+      },
+      {
+        "term": "Power of a product or quotient",
+        "definition": "An outer index outside brackets applies to every numerical coefficient and pronumeral factor inside the brackets: $(ab)^n = a^n b^n$ and $\\left(\\frac{a}{b}\\right)^n = \\frac{a^n}{b^n}$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_1_2_1",
+      "title": "Index Laws for Algebraic Products, Quotients, and Powers",
+      "explanation": "The index laws established for numerical bases extend directly to algebraic pronumerals (variables), provided the bases are identical and non-zero. When multiplying terms with the same base, multiply their numerical coefficients and add their indices. When dividing, divide the coefficients and subtract the denominator's index from the numerator's index. When raising a power to another power, multiply the indices.",
+      "formula_latex": "a^m \\times a^n = a^{m+n}, \\quad \\frac{a^m}{a^n} = a^{m-n}, \\quad (a^m)^n = a^{mn}, \\quad (ab)^n = a^n b^n",
+      "callout_title": "Apply the Outer Index to the Numerical Coefficient Too",
+      "callout_rule": "In $(3x^4)^2$, the coefficient $3$ is inside the brackets and must also be squared: $(3x^4)^2 = 3^2 (x^4)^2 = 9x^8$, not $3x^8$."
+    },
+    {
+      "id": "theory_9_1_2_2",
+      "title": "The Zero Index and Negative Integer Indices",
+      "explanation": "Continuing the division pattern $\\frac{a^n}{a^n} = 1 = a^{n-n} = a^0$ shows that any non-zero expression raised to the power $0$ equals $1$. Similarly, $\\frac{a^0}{a^n} = a^{0-n} = a^{-n}$ shows that a negative index represents a reciprocal — it does NOT make the number negative. Moving a factor across the fraction bar between numerator and denominator reverses the sign of its index.",
+      "formula_latex": "a^0 = 1 \\;(a \\neq 0), \\quad a^{-n} = \\frac{1}{a^n}, \\quad \\frac{1}{a^{-n}} = a^n, \\quad \\left(\\frac{a}{b}\\right)^{-n} = \\left(\\frac{b}{a}\\right)^n",
+      "callout_title": "A Negative Index Means Reciprocal, Not a Negative Sign",
+      "callout_rule": "Never confuse a negative index with a negative coefficient: $2^{-3} = \\frac{1}{2^3} = \\frac{1}{8} > 0$, whereas $-2^3 = -8$."
+    },
+    {
+      "id": "theory_9_1_2_3",
+      "title": "Expressing Algebraic Fractions with Positive Indices",
+      "explanation": "By convention, simplified algebraic answers are usually written with positive indices only. Only the base immediately attached to a negative index moves across the fraction bar: in $5x^{-3}$, the index $-3$ applies only to $x$, whereas the coefficient $5 = 5^1$ has a positive index and remains in the numerator.",
+      "formula_latex": "5x^{-3} = \\frac{5}{x^3}, \\quad (5x)^{-3} = \\frac{1}{(5x)^3} = \\frac{1}{125x^3}, \\quad \\frac{4a^{-2}}{b^{-5}} = \\frac{4b^5}{a^2}",
+      "callout_title": "Check What the Negative Index Is Attached To",
+      "callout_rule": "Without brackets around $5x$, the coefficient $5$ stays on top: $5x^{-3} = \\frac{5}{x^3}$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_1_2_1",
+      "title": "Simplifying Products and Quotients of Algebraic Powers",
+      "difficulty": "Fluency",
+      "problem": "Simplify: $\\frac{6a^4 b^2 \\times 4a^3 b^5}{8a^5 b^3}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Multiply the numerator terms first by multiplying coefficients ($6 \\times 4 = 24$) and adding indices of like bases ($a^{4+3}$ and $b^{2+5}$).",
+          "working": "$$\\frac{6a^4 b^2 \\times 4a^3 b^5}{8a^5 b^3} = \\frac{24a^7 b^7}{8a^5 b^3}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide the coefficients ($24 \\div 8 = 3$) and subtract the denominator indices from the numerator indices.",
+          "working": "$$= 3a^{7-5} b^{7-3} = 3a^2 b^4$$"
+        }
+      ],
+      "final_answer": "$3a^2 b^4$",
+      "now_you_try": {
+        "problem": "Simplify: $\\frac{10x^5 y^3 \\times 3x^2 y^4}{6x^4 y^2}$.",
+        "hint": "Combine the numerator to $30x^7 y^7$, then divide by $6x^4 y^2$.",
+        "working_summary": "$\\frac{30x^7 y^7}{6x^4 y^2} = 5x^{7-4} y^{7-2} = 5x^3 y^5$.",
+        "answer": "$5x^3 y^5$"
+      }
+    },
+    {
+      "id": "WE9_1_2_2",
+      "title": "Evaluating Numerical Expressions with Zero and Negative Indices",
+      "difficulty": "Understanding",
+      "problem": "Evaluate as exact integers or fractions: (a) $5^0 - (3x)^0 + 4^{-2}$ and (b) $\\left(\\frac{2}{3}\\right)^{-3}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), apply $5^0 = 1$, $(3x)^0 = 1$, and $4^{-2} = \\frac{1}{4^2} = \\frac{1}{16}$.",
+          "working": "$$5^0 - (3x)^0 + 4^{-2} = 1 - 1 + \\frac{1}{16} = \\frac{1}{16}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), invert the fraction inside the brackets to change the index from $-3$ to $+3$, then cube both numerator and denominator.",
+          "working": "$$\\left(\\frac{2}{3}\\right)^{-3} = \\left(\\frac{3}{2}\\right)^3 = \\frac{3^3}{2^3} = \\frac{27}{8}$$"
+        }
+      ],
+      "final_answer": "(a) $\\frac{1}{16}$, (b) $\\frac{27}{8}$",
+      "now_you_try": {
+        "problem": "Evaluate as exact fractions: (a) $7^0 + 3^{-2}$ and (b) $\\left(\\frac{3}{4}\\right)^{-2}$.",
+        "hint": "$3^{-2} = \\frac{1}{9}$, and in (b) flip the fraction first to get $\\left(\\frac{4}{3}\\right)^2$.",
+        "working_summary": "(a) $1 + \\frac{1}{9} = \\frac{10}{9}$; (b) $\\left(\\frac{4}{3}\\right)^2 = \\frac{16}{9}$.",
+        "answer": "(a) $\\frac{10}{9}$, (b) $\\frac{16}{9}$"
+      }
+    },
+    {
+      "id": "WE9_1_2_3",
+      "title": "Simplifying Expressions with Negative Indices into Positive Index Form",
+      "difficulty": "Challenging",
+      "problem": "Simplify $\\frac{(2m^3 n^{-2})^3}{4m^5 n^{-4}}$ and express your answer with positive indices only.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Expand the bracketed numerator by cubing the coefficient $2^3 = 8$ and multiplying each inner index by $3$.",
+          "working": "$$\\frac{(2m^3 n^{-2})^3}{4m^5 n^{-4}} = \\frac{8m^9 n^{-6}}{4m^5 n^{-4}}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide the coefficients ($8 \\div 4 = 2$), subtract the denominator indices from the numerator indices (noting $-6 - (-4) = -2$), and rewrite $n^{-2}$ in the denominator.",
+          "working": "$$= 2m^{9-5} n^{-6 - (-4)} = 2m^4 n^{-2} = \\frac{2m^4}{n^2}$$"
+        }
+      ],
+      "final_answer": "$\\frac{2m^4}{n^2}$",
+      "now_you_try": {
+        "problem": "Simplify $\\frac{(3x^2 y^{-3})^2}{9x^6 y^{-2}}$ and express your answer with positive indices only.",
+        "hint": "Expand the numerator to $9x^4 y^{-6}$, then subtract indices carefully.",
+        "working_summary": "$\\frac{9x^4 y^{-6}}{9x^6 y^{-2}} = x^{4-6} y^{-6 - (-2)} = x^{-2} y^{-4} = \\frac{1}{x^2 y^4}$.",
+        "answer": "$\\frac{1}{x^2 y^4}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_9_1_2_1",
+      "title": "Moving the Coefficient to the Denominator When Only the Pronumeral Has a Negative Index",
+      "misconception": "Rewriting $4x^{-2}$ as $\\frac{1}{4x^2}$.",
+      "correct_concept": "By order of operations, indices bind more tightly than multiplication. In $4x^{-2}$, the exponent $-2$ applies only to $x$, so $4x^{-2} = 4 \\times \\frac{1}{x^2} = \\frac{4}{x^2}$.",
+      "incorrect_working": "$$4x^{-2} = \\frac{1}{4x^2} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$4x^{-2} = 4 \\times \\frac{1}{x^2} = \\frac{4}{x^2} \\quad (\\text{Correct})$$",
+      "counter_example": "If $x = 2$, $4(2)^{-2} = 4 \\times \\frac{1}{4} = 1$, whereas $\\frac{1}{4(2)^2} = \\frac{1}{16} \\neq 1$."
+    },
+    {
+      "id": "MISC_9_1_2_2",
+      "title": "Treating $a x^0$ as Equal to $1$",
+      "misconception": "Simplifying $7x^0$ to $1$ instead of $7$.",
+      "correct_concept": "In $7x^0$, only $x$ is raised to the power $0$, so $7x^0 = 7 \\times 1 = 7$. In contrast, $(7x)^0 = 1$.",
+      "incorrect_working": "$$7x^0 = 1 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$7x^0 = 7 \\times x^0 = 7 \\times 1 = 7 \\quad (\\text{Correct})$$",
+      "counter_example": "For $x = 5$, $7 \\times 5^0 = 7 \\times 1 = 7$, whereas $(7 \\times 5)^0 = 35^0 = 1$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_1_2_Q1",
+        "question": "Evaluate $6x^0 - (6x)^0 + 2^{-3}$ as an exact fraction (for $x \\neq 0$).",
+        "difficulty": "Easy",
+        "context": "Zero and Negative Indices",
+        "final_answer": "$\\frac{41}{8}$",
+        "step_by_step_solution": [
+          "Substitute $x^0 = 1$, $(6x)^0 = 1$, and $2^{-3} = \\frac{1}{8}$.",
+          "Calculate $6(1) - 1 + \\frac{1}{8} = 5 + \\frac{1}{8} = \\frac{41}{8}$."
+        ]
+      },
+      {
+        "id": "9_1_2_Q2",
+        "question": "Simplify $(3a^2 b^4)^3 \\times 2a^{-4} b^{-5}$ using positive indices.",
+        "difficulty": "Medium",
+        "context": "Power of a Product and Negative Indices",
+        "final_answer": "$54a^2 b^7$",
+        "step_by_step_solution": [
+          "Expand the first bracket: $(3a^2 b^4)^3 = 27a^6 b^{12}$.",
+          "Multiply by $2a^{-4} b^{-5}$: $(27 \\times 2)a^{6-4} b^{12-5} = 54a^2 b^7$."
+        ]
+      },
+      {
+        "id": "9_1_2_Q3",
+        "question": "Write $\\frac{15p^{-3} q^4}{5p^2 q^{-1}}$ in simplest form with positive indices only.",
+        "difficulty": "Medium",
+        "context": "Quotient Law with Negative Indices",
+        "final_answer": "$\\frac{3q^5}{p^5}$",
+        "step_by_step_solution": [
+          "Divide the coefficients: $15 \\div 5 = 3$.",
+          "Subtract the indices: $3p^{-3-2} q^{4 - (-1)} = 3p^{-5} q^5 = \\frac{3q^5}{p^5}$."
+        ]
+      },
+      {
+        "id": "9_1_2_Q4",
+        "question": "Simplify $\\left(\\frac{2x^3}{y^{-2}}\\right)^{-2}$ and write your answer with positive indices.",
+        "difficulty": "Challenging",
+        "context": "Negative Power of a Quotient",
+        "final_answer": "$\\frac{1}{4x^6 y^4}$",
+        "step_by_step_solution": [
+          "First rewrite inside the brackets with positive indices: $\\frac{2x^3}{y^{-2}} = 2x^3 y^2$.",
+          "Apply the outer index $-2$: $(2x^3 y^2)^{-2} = \\frac{1}{(2x^3 y^2)^2} = \\frac{1}{4x^6 y^4}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_1_2_Q5",
+        "question": "The intensity $I$ of a radio signal (in $\\text{W/m}^2$) at distance $d$ metres from a transmitter in the Outback is modelled by $I = 120 d^{-2}$. Calculate the exact intensity at a distance of $d = 20\\text{ m}$ as a simplified fraction.",
+        "difficulty": "Easy",
+        "context": "Inverse-Square Law Radio Signal",
+        "final_answer": "$\\frac{3}{10}\\text{ W/m}^2$ (or $0.3\\text{ W/m}^2$)",
+        "step_by_step_solution": [
+          "Rewrite the formula with a positive index: $I = \\frac{120}{d^2}$.",
+          "Substitute $d = 20$: $I = \\frac{120}{20^2} = \\frac{120}{400} = \\frac{3}{10}\\text{ W/m}^2$."
+        ]
+      },
+      {
+        "id": "9_1_2_Q6",
+        "question": "A rectangular microchip component has length $4x^3 y^{-1}\\text{ mm}$ and width $3x^{-1} y^4\\text{ mm}$. Find a simplified algebraic expression for its area in terms of positive indices, and evaluate the area when $x = 2$ and $y = 3$.",
+        "difficulty": "Medium",
+        "context": "Microchip Area Modelling",
+        "final_answer": "$A = 12x^2 y^3\\text{ mm}^2$; $1296\\text{ mm}^2$",
+        "step_by_step_solution": [
+          "Multiply length by width: $A = (4x^3 y^{-1})(3x^{-1} y^4) = 12x^{3-1} y^{-1+4} = 12x^2 y^3\\text{ mm}^2$.",
+          "Substitute $x = 2$ and $y = 3$: $A = 12(2^2)(3^3) = 12 \\times 4 \\times 27 = 1296\\text{ mm}^2$."
+        ]
+      },
+      {
+        "id": "9_1_2_Q7",
+        "question": "A cylinder has volume $V = 36\\pi r^5 h^{-1}\\text{ cm}^3$ and circular base area $A = 9\\pi r^2\\text{ cm}^2$. Given that height equals $\\frac{V}{A}$, find an expression for the height of the cylinder with positive indices.",
+        "difficulty": "Medium",
+        "context": "Algebraic Volume and Base Area",
+        "final_answer": "$\\frac{4r^3}{h}\\text{ cm}$",
+        "step_by_step_solution": [
+          "Divide volume by base area: $\\frac{V}{A} = \\frac{36\\pi r^5 h^{-1}}{9\\pi r^2}$.",
+          "Cancel $\\pi$, divide $36 \\div 9 = 4$, subtract indices of $r$, and move $h^{-1}$ to the denominator: $\\frac{4r^3}{h}\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_1_2_Q8",
+        "question": "The mass of a radioactive medical isotope after $t$ hours is modelled by $M = 80 \\times 2^{-t}\\text{ mg}$. Find the exact mass remaining after $t = 4$ hours, and determine by what factor the mass decreases when $t$ increases by $3$ hours.",
+        "difficulty": "Challenging",
+        "context": "Radioactive Decay",
+        "final_answer": "$5\\text{ mg}$; decreases by a factor of $8$ (multiplied by $2^{-3} = \\frac{1}{8}$)",
+        "step_by_step_solution": [
+          "Substitute $t = 4$: $M = 80 \\times 2^{-4} = \\frac{80}{16} = 5\\text{ mg}$.",
+          "Increasing $t$ by $3$ multiplies the mass by $2^{-3} = \\frac{1}{8}$, so the mass decreases by a factor of $8$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_1_2_Q9",
+        "question": "Explain using the quotient index law why $a^0 = 1$ for any $a \\neq 0$, and explain why $0^0$ cannot be proven equal to $1$ by this method.",
+        "difficulty": "Medium",
+        "context": "Deriving the Zero Index Law",
+        "final_answer": "$\\frac{a^n}{a^n} = a^{n-n} = a^0$ and $\\frac{a^n}{a^n} = 1$; for $a = 0$, $\\frac{0^n}{0^n} = \\frac{0}{0}$ involves division by zero, which is undefined",
+        "step_by_step_solution": [
+          "For $a \\neq 0$, dividing $a^n$ by itself gives $1$, while subtracting indices gives $a^{n-n} = a^0$, so $a^0 = 1$.",
+          "If $a = 0$, the denominator $0^n = 0$, and division by zero is undefined."
+        ]
+      },
+      {
+        "id": "9_1_2_Q10",
+        "question": "Solve the index equation $3^{2x - 1} = \\frac{1}{27}$ by rewriting both sides as powers of $3$.",
+        "difficulty": "Medium",
+        "context": "Solving Exponential Equations",
+        "final_answer": "$x = -1$",
+        "step_by_step_solution": [
+          "Write $\\frac{1}{27} = \\frac{1}{3^3} = 3^{-3}$.",
+          "Equate the indices of the common base $3$: $2x - 1 = -3 \\implies 2x = -2 \\implies x = -1$."
+        ]
+      },
+      {
+        "id": "9_1_2_Q11",
+        "question": "Simplify $\\frac{2^{n+2} - 2^n}{2^n}$ by factoring $2^n$ out of the numerator, and explain why the result does not depend on $n$.",
+        "difficulty": "Challenging",
+        "context": "Factoring Exponential Expressions",
+        "final_answer": "$3$",
+        "step_by_step_solution": [
+          "Use the first index law in reverse to write $2^{n+2} = 2^n \\times 2^2 = 4 \\times 2^n$.",
+          "Factor out $2^n$: $\\frac{2^n(2^2 - 1)}{2^n} = 4 - 1 = 3$, since the non-zero factor $2^n$ cancels completely."
+        ]
+      },
+      {
+        "id": "9_1_2_Q12",
+        "question": "Prove that for any non-zero real numbers $a$ and $b$, $\\frac{a^{-1} + b^{-1}}{(ab)^{-1}} = a + b$.",
+        "difficulty": "Extension",
+        "context": "Algebraic Proof with Reciprocals",
+        "final_answer": "$\\frac{\\frac{1}{a} + \\frac{1}{b}}{\\frac{1}{ab}} = ab\\left(\\frac{1}{a} + \\frac{1}{b}\\right) = b + a = a + b$",
+        "step_by_step_solution": [
+          "Rewrite each negative power as a reciprocal: $\\frac{\\frac{1}{a} + \\frac{1}{b}}{\\frac{1}{ab}}$.",
+          "Multiply numerator and denominator by $ab$: $ab\\left(\\frac{1}{a} + \\frac{1}{b}\\right) = b + a = a + b$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_1_2_1",
+      "description": "Worked Example 9.1.2.1 product and quotient of powers",
+      "expression": "simplify((6*a**4*b**2 * 4*a**3*b**5) / (8*a**5*b**3) - 3*a**2*b**4)",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_1_2_1",
+      "description": "Now You Try 9.1.2.1",
+      "expression": "simplify((10*x**5*y**3 * 3*x**2*y**4) / (6*x**4*y**2) - 5*x**3*y**5)",
+      "expected": 0
+    },
+    {
+      "id": "WE9_1_2_2a",
+      "description": "Worked Example 9.1.2.2(a)",
+      "expression": "5**0 - 1 + Rational(1, 4)**2",
+      "expected": "Rational(1, 16)"
+    },
+    {
+      "id": "WE9_1_2_2b",
+      "description": "Worked Example 9.1.2.2(b)",
+      "expression": "Rational(2, 3)**(-3)",
+      "expected": "Rational(27, 8)"
+    },
+    {
+      "id": "NYT9_1_2_2a",
+      "description": "Now You Try 9.1.2.2(a)",
+      "expression": "7**0 + Rational(1, 3)**2",
+      "expected": "Rational(10, 9)"
+    },
+    {
+      "id": "NYT9_1_2_2b",
+      "description": "Now You Try 9.1.2.2(b)",
+      "expression": "Rational(3, 4)**(-2)",
+      "expected": "Rational(16, 9)"
+    },
+    {
+      "id": "WE9_1_2_3",
+      "description": "Worked Example 9.1.2.3 negative indices",
+      "expression": "simplify(((2*m**3*n**(-2))**3) / (4*m**5*n**(-4)) - 2*m**4/n**2)",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_1_2_3",
+      "description": "Now You Try 9.1.2.3 negative indices",
+      "expression": "simplify(((3*x**2*y**(-3))**2) / (9*x**6*y**(-2)) - 1/(x**2*y**4))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_2_Q1",
+      "description": "Exercise 9.1.2 Q1",
+      "expression": "6*1 - 1 + Rational(1, 2)**3",
+      "expected": "Rational(41, 8)"
+    },
+    {
+      "id": "EX9_1_2_Q2",
+      "description": "Exercise 9.1.2 Q2",
+      "expression": "simplify((3*a**2*b**4)**3 * 2*a**(-4)*b**(-5) - 54*a**2*b**7)",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_2_Q3",
+      "description": "Exercise 9.1.2 Q3",
+      "expression": "simplify((15*p**(-3)*q**4) / (5*p**2*q**(-1)) - 3*q**5/p**5)",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_2_Q4",
+      "description": "Exercise 9.1.2 Q4",
+      "expression": "simplify(((2*x**3)/(y**(-2)))**(-2) - 1/(4*x**6*y**4))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_2_Q5",
+      "description": "Exercise 9.1.2 Q5 radio intensity",
+      "expression": "120 * Rational(1, 20)**2",
+      "expected": "Rational(3, 10)"
+    },
+    {
+      "id": "EX9_1_2_Q6",
+      "description": "Exercise 9.1.2 Q6 microchip area at x=2, y=3",
+      "expression": "12 * (2**2) * (3**3)",
+      "expected": 1296
+    },
+    {
+      "id": "EX9_1_2_Q8",
+      "description": "Exercise 9.1.2 Q8 isotope mass at t=4",
+      "expression": "80 * Rational(1, 2)**4",
+      "expected": 5
+    },
+    {
+      "id": "EX9_1_2_Q10",
+      "description": "Exercise 9.1.2 Q10 solve 2x - 1 = -3",
+      "expression": "solve(Eq(2*x - 1, -3), x)[0]",
+      "expected": -1
+    },
+    {
+      "id": "EX9_1_2_Q11",
+      "description": "Exercise 9.1.2 Q11 (2**(n+2) - 2**n)/2**n",
+      "expression": "simplify((2**(n+2) - 2**n) / 2**n)",
+      "expected": 3
+    },
+    {
+      "id": "EX9_1_2_Q12",
+      "description": "Exercise 9.1.2 Q12 reciprocal identity",
+      "expression": "simplify((a**(-1) + b**(-1)) / ((a*b)**(-1)) - (a + b))",
+      "expected": 0
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Geometric Proofs, Circle Geometry, and Networks (10 & 10A)",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "10_7_1",
+      "section_code": "7A",
+      "title": "Deductive Geometric Proofs and Network Algorithms",
+      "vcaa_code": "VC2M10SP01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "In $\\triangle ABC$, $D$ and $E$ are the midpoints of $AB$ and $AC$ respectively, so $DE \\parallel BC$ and $\\triangle ADE \\sim \\triangle ABC$ with scale factor $k = 2$. Given $DE = 7\\text{ cm}$, $AD = 5\\text{ cm}$, $AE = 6\\text{ cm}$, and $\\angle ADE = 58^\\circ$, find:",
+          "parts": [
+            { "label": "a", "question": "The length of base $BC$", "answer": "$14\\text{ cm}$" },
+            { "label": "b", "question": "The perimeter of $\\triangle ABC$", "answer": "$36\\text{ cm}$" },
+            { "label": "c", "question": "The size of $\\angle ABC$ (stating the geometric reason)", "answer": "$58^\\circ$ (corresponding angles on parallel lines $DE \\parallel BC$)" },
+            { "label": "d", "question": "The ratio of areas $\\text{Area}(\\triangle ADE) : \\text{Area}(\\triangle ABC)$", "answer": "$1 : 4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A connected planar network has $V = 6$ vertices and $E = 9$ edges. Find:",
+          "parts": [
+            { "label": "a", "question": "The number of faces $F$ (including the outer infinite face) using Euler's formula $V - E + F = 2$", "answer": "$F = 5$" },
+            { "label": "b", "question": "The sum of the degrees of all vertices ($\\sum \\deg(v) = 2E$)", "answer": "$18$" },
+            { "label": "c", "question": "The degree of each vertex if the network is regular (all vertices have equal degree)", "answer": "$3$" },
+            { "label": "d", "question": "The number of edges in a spanning tree of this $6$-vertex network ($V - 1$)", "answer": "$5$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Determine whether each connected network has an **Eulerian trail** (0 or 2 odd vertices), an **Eulerian circuit** (0 odd vertices), or **neither**, given its list of vertex degrees:",
+          "parts": [
+            { "label": "a", "question": "Degrees: $2, 2, 4, 4, 2$", "answer": "Eulerian circuit (all $0$ odd vertices)" },
+            { "label": "b", "question": "Degrees: $3, 2, 2, 3, 4$", "answer": "Eulerian trail (exactly $2$ odd vertices)" },
+            { "label": "c", "question": "Degrees: $3, 3, 3, 3$", "answer": "Neither ($4$ odd vertices)" },
+            { "label": "d", "question": "Degrees: $2, 4, 3, 3, 2, 2$", "answer": "Eulerian trail (exactly $2$ odd vertices)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A weighted network on vertices $A, B, C, D$ has edges $AB = 4, AC = 7, BC = 2, BD = 6, CD = 3$. Find:",
+          "parts": [
+            { "label": "a", "question": "The length of the direct path $A \\to B \\to D$", "answer": "$10$" },
+            { "label": "b", "question": "The length of the path $A \\to C \\to D$", "answer": "$10$" },
+            { "label": "c", "question": "The shortest path distance from $A$ to $D$ via $A \\to B \\to C \\to D$", "answer": "$9$ ($4 + 2 + 3$)" },
+            { "label": "d", "question": "The total weight of the Minimum Spanning Tree (MST) connecting $A, B, C, D$", "answer": "$9$ (edges $BC = 2, CD = 3, AB = 4$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A council ranger in the Dandenong Ranges wants to inspect every walking track in a connected park network exactly once and return to the starting carpark. The five trail junctions have degrees $2, 4, 4, 2, 4$. Explain why this circuit is possible and find how many tracks are in the network.",
+          "answer": "All $5$ vertices have even degree ($0$ odd vertices), so an Eulerian circuit exists. Number of tracks $E = \\frac{1}{2}(2 + 4 + 4 + 2 + 4) = 8$."
+        },
+        {
+          "number": 6,
+          "question": "An NBN fibre-optic cable network must connect $5$ regional towns in Victoria ($V = 5$) using a Minimum Spanning Tree. If the cheapest links picked by Kruskal's algorithm (without forming any cycles) are $12\\text{ km}$, $15\\text{ km}$, $18\\text{ km}$, and $22\\text{ km}$, find the number of edges used and the minimum total cable length.",
+          "answer": "$4$ edges ($V - 1 = 4$); total length $= 12 + 15 + 18 + 22 = 67\\text{ km}$"
+        },
+        {
+          "number": 7,
+          "question": "A bridge truss consists of two parallel horizontal beams $AB$ and $CD$ connected by intersecting diagonal struts $AD$ and $BC$ meeting at $M$, where $M$ is the midpoint of $AD$ ($AM = DM$). Given $AB \\parallel CD$, state the congruence test that proves $\\triangle ABM \\cong \\triangle DCM$, and find $CD$ if $AB = 6.5\\text{ m}$.",
+          "answer": "$\\text{ASA}$ (or $\\text{AAS}$: $\\angle BAM = \\angle CDM$ alternate, $\\angle AMB = \\angle DMC$ vertically opposite, and $AM = DM$); hence $CD = AB = 6.5\\text{ m}$."
+        },
+        {
+          "number": 8,
+          "question": "A delivery van leaves depot $S$ to reach customer $T$. Route 1 ($S \\to P \\to T$) has travel times $14\\text{ min} + 19\\text{ min}$; Route 2 ($S \\to Q \\to T$) has $18\\text{ min} + 13\\text{ min}$; Route 3 ($S \\to P \\to Q \\to T$) uses a $2\\text{ min}$ connector $P \\to Q$. Find the shortest travel time from $S$ to $T$.",
+          "answer": "Route 3 ($S \\to P \\to Q \\to T$) takes $14 + 2 + 13 = 29\\text{ min}$ (shorter than $33\\text{ min}$ and $31\\text{ min}$)."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove the **Midpoint Theorem**: in $\\triangle ABC$, if $D$ and $E$ are the midpoints of $AB$ and $AC$ respectively, prove using $\\text{SAS}$ similarity that $\\triangle ADE \\sim \\triangle ABC$, and deduce that $DE \\parallel BC$ and $DE = \\frac{1}{2}BC$.",
+          "answer": "In $\\triangle ADE$ and $\\triangle ABC$: $\\dfrac{AD}{AB} = \\dfrac{AE}{AC} = \\dfrac{1}{2}$ and $\\angle DAE = \\angle BAC$ is common. By $\\text{SAS}$ similarity, $\\triangle ADE \\sim \\triangle ABC$. Therefore $\\dfrac{DE}{BC} = \\dfrac{1}{2} \\implies DE = \\frac{1}{2}BC$, and equal corresponding angles $\\angle ADE = \\angle ABC$ imply $DE \\parallel BC$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why the sum of the degrees of all vertices in any undirected network is always an even number ($\\sum \\deg(v) = 2E$), and deduce why a network can never have an odd number of odd-degree vertices.",
+          "answer": "Every edge connects two endpoints and therefore contributes $+2$ to the total sum of vertex degrees, so $\\sum \\deg(v) = 2E$ is even. Since the sum of even numbers is even, the remaining odd degrees must also sum to an even number, which requires an even number of odd-degree vertices."
+        }
+      ],
+      "assertions": [
+        { "id": "WS10_7_1_1a", "expression": "2 * 7", "expected": 14 },
+        { "id": "WS10_7_1_1b", "expression": "2 * (5 + 6 + 7)", "expected": 36 },
+        { "id": "WS10_7_1_2a", "expression": "2 - 6 + 9", "expected": 5 },
+        { "id": "WS10_7_1_2b", "expression": "2 * 9", "expected": 18 },
+        { "id": "WS10_7_1_2c", "expression": "18 / 6", "expected": 3 },
+        { "id": "WS10_7_1_2d", "expression": "6 - 1", "expected": 5 },
+        { "id": "WS10_7_1_4c", "expression": "4 + 2 + 3", "expected": 9 },
+        { "id": "WS10_7_1_5", "expression": "(2 + 4 + 4 + 2 + 4) / 2", "expected": 8 },
+        { "id": "WS10_7_1_6", "expression": "12 + 15 + 18 + 22", "expected": 67 },
+        { "id": "WS10_7_1_8", "expression": "14 + 2 + 13", "expected": 29 }
+      ]
+    },
+    {
+      "section_id": "10_7_2",
+      "section_code": "7B",
+      "title": "[10A] Circle Geometry: Angle, Chord, and Tangent Theorems",
+      "vcaa_code": "VC2M10ASP01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Points $A, B, C, D$ lie on a circle with centre $O$. Find the unknown angle $x^\\circ$ in each case:",
+          "parts": [
+            { "label": "a", "question": "Angle at the circumference $\\angle ACB = 37^\\circ$; find angle at the centre $\\angle AOB = x^\\circ$", "answer": "$x = 74$" },
+            { "label": "b", "question": "Angle at the centre $\\angle AOB = 136^\\circ$; find angle at the circumference $\\angle ACB = x^\\circ$", "answer": "$x = 68$" },
+            { "label": "c", "question": "$AB$ is a diameter and $C$ lies on the circle with $\\angle CAB = 29^\\circ$; find $\\angle ABC = x^\\circ$", "answer": "$x = 61$ (since $\\angle ACB = 90^\\circ$)" },
+            { "label": "d", "question": "Angles in the same segment: $\\angle ADB = 52^\\circ$; find $\\angle ACB = x^\\circ$", "answer": "$x = 52$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the unknown angle $x^\\circ$ using cyclic quadrilateral and tangent properties:",
+          "parts": [
+            { "label": "a", "question": "Cyclic quadrilateral $ABCD$ has $\\angle ABC = 108^\\circ$; find opposite angle $\\angle ADC = x^\\circ$", "answer": "$x = 72$" },
+            { "label": "b", "question": "Tangent $PT$ touches the circle at $T$ and $\\angle OPT = 34^\\circ$ (where $O$ is the centre); find $\\angle POT = x^\\circ$", "answer": "$x = 56$ (since $\\angle OTP = 90^\\circ$)" },
+            { "label": "c", "question": "Tangents $PA$ and $PB$ from external point $P$ meet at $\\angle APB = 50^\\circ$; find $\\angle PAB = x^\\circ$ in isosceles $\\triangle PAB$", "answer": "$x = 65$" },
+            { "label": "d", "question": "Alternate Segment Theorem: chord $AB$ makes $63^\\circ$ with tangent $AT$; find $\\angle ACB = x^\\circ$ in the alternate segment", "answer": "$x = 63$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the intersecting chords theorem ($AP \\cdot PB = CP \\cdot PD$) and tangent-secant theorem ($PT^2 = PA \\cdot PB$) to find $x$:",
+          "parts": [
+            { "label": "a", "question": "Chords $AB$ and $CD$ intersect at $P$ inside a circle with $AP = 6, PB = 8, CP = 4, PD = x$", "answer": "$x = 12$" },
+            { "label": "b", "question": "Chords intersect at $P$ with $AP = 9, PB = 4$, and $CP = PD = x$", "answer": "$x = 6$" },
+            { "label": "c", "question": "Secants from external point $P$ have $PA = 5, PB = 12$ and $PC = 6, PD = x$", "answer": "$x = 10$" },
+            { "label": "d", "question": "Tangent $PT = x$ and secant $PAB$ has $PA = 4, PB = 9$", "answer": "$x = 6$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A circle with centre $O$ has radius $r = 13\\text{ cm}$. A chord $AB$ has length $24\\text{ cm}$, and $M$ is the midpoint of $AB$. Find:",
+          "parts": [
+            { "label": "a", "question": "The length of $AM$", "answer": "$12\\text{ cm}$" },
+            { "label": "b", "question": "The angle $\\angle OMA$", "answer": "$90^\\circ$" },
+            { "label": "c", "question": "The perpendicular distance $OM$ from the centre $O$ to the chord $AB$", "answer": "$5\\text{ cm}$" },
+            { "label": "d", "question": "The distance from $M$ to the nearest point on the circumference (the sagitta $r - OM$)", "answer": "$8\\text{ cm}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A circular skate bowl in St Kilda has two straight drainage pipes $AB$ and $CD$ running across it that intersect at point $P$. If $AP = 3.0\\text{ m}$, $PB = 6.0\\text{ m}$, and $CP = 4.0\\text{ m}$, find the length of $PD$ and the total length of pipe $CD$.",
+          "answer": "$PD = \\dfrac{3.0 \\times 6.0}{4.0} = 4.5\\text{ m}$; total length $CD = 4.0 + 4.5 = 8.5\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A geostationary satellite at $P$ views the circular cross-section of Earth (centre $O$, radius $R$). Two tangent lines of sight $PA$ and $PB$ touch the horizon at $A$ and $B$. If the angle between the two horizon lines of sight is $\\angle APB = 18^\\circ$, find the central angle $\\angle AOB$ subtended at Earth's centre.",
+          "answer": "In quadrilateral $OAPB$, $\\angle OAP = \\angle OBP = 90^\\circ$, so $\\angle AOB = 180^\\circ - 18^\\circ = 162^\\circ$."
+        },
+        {
+          "number": 7,
+          "question": "An archaeologist finds a broken fragment of a circular ceramic plate. A chord $AB$ across the fragment measures $16\\text{ cm}$, and the perpendicular distance (sagitta) from the midpoint $M$ of the chord to the outer rim $C$ is $4\\text{ cm}$. Extending $CM$ into a full diameter $CD$ of length $2r$, use the intersecting chords theorem $AM \\cdot MB = CM \\cdot MD$ to find the original radius $r$ of the plate.",
+          "answer": "$8 \\times 8 = 4 \\times (2r - 4) \\implies 64 = 8r - 16 \\implies 8r = 80 \\implies r = 10\\text{ cm}$"
+        },
+        {
+          "number": 8,
+          "question": "Four floodlight towers $A, B, C, D$ stand around the circular boundary of the MCG. If $\\angle DAB = 98^\\circ$ and $\\angle ABC = 85^\\circ$, find $\\angle BCD$ and $\\angle CDA$.",
+          "answer": "Opposite angles of a cyclic quadrilateral are supplementary: $\\angle BCD = 180^\\circ - 98^\\circ = 82^\\circ$ and $\\angle CDA = 180^\\circ - 85^\\circ = 95^\\circ$."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove **Thales' Theorem** ( the angle in a semicircle is $90^\\circ$) as a special case of the theorem that the angle at the centre is twice the angle at the circumference.",
+          "answer": "When $AB$ is a diameter through the centre $O$, the straight angle at the centre is $\\angle AOB = 180^\\circ$. Since the angle at the centre is twice the angle at the circumference standing on the same arc, $\\angle ACB = \\frac{1}{2}(180^\\circ) = 90^\\circ$."
+        },
+        {
+          "number": 10,
+          "question": "Prove that opposite angles of a cyclic quadrilateral $ABCD$ are supplementary ($\\angle ABC + \\angle ADC = 180^\\circ$) by joining $OA$ and $OC$ to the centre $O$ and using the angle-at-the-centre theorem.",
+          "answer": "Let the angles at the centre on the two arcs $ADC$ and $ABC$ be $2\\angle ABC$ and $2\\angle ADC$. Since the two central angles form a full revolution around $O$, $2\\angle ABC + 2\\angle ADC = 360^\\circ \\implies \\angle ABC + \\angle ADC = 180^\\circ$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS10_7_2_1a", "expression": "2 * 37", "expected": 74 },
+        { "id": "WS10_7_2_1b", "expression": "136 / 2", "expected": 68 },
+        { "id": "WS10_7_2_1c", "expression": "90 - 29", "expected": 61 },
+        { "id": "WS10_7_2_2a", "expression": "180 - 108", "expected": 72 },
+        { "id": "WS10_7_2_2c", "expression": "(180 - 50) / 2", "expected": 65 },
+        { "id": "WS10_7_2_3a", "expression": "6 * 8 / 4", "expected": 12 },
+        { "id": "WS10_7_2_3d", "expression": "sqrt(4 * 9)", "expected": 6 },
+        { "id": "WS10_7_2_4c", "expression": "sqrt(13**2 - 12**2)", "expected": 5 },
+        { "id": "WS10_7_2_5", "expression": "4 + (3 * 6) / 4", "expected": 8.5 },
+        { "id": "WS10_7_2_7", "expression": "(8**2 / 4 + 4) / 2", "expected": 10 }
+      ]
+    }
+  ]
+}

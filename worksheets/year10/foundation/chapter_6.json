@@ -1,0 +1,295 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Trigonometry, Bearings, and Non-Right-Angled Triangles (10 & 10A)",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "10_6_1",
+      "section_code": "6A",
+      "title": "Right-Angled Trigonometry in 2D/3D and True Bearings",
+      "vcaa_code": "VC2M10M03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Write the three-figure true bearing (measured clockwise from North $= 000^\\circ\\text{T}$) for each direction:",
+          "parts": [
+            { "label": "a", "question": "Due East", "answer": "$090^\\circ\\text{T}$" },
+            { "label": "b", "question": "Due South", "answer": "$180^\\circ\\text{T}$" },
+            { "label": "c", "question": "Due West", "answer": "$270^\\circ\\text{T}$" },
+            { "label": "d", "question": "$45^\\circ$ clockwise from North (North-East)", "answer": "$045^\\circ\\text{T}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Convert each compass bearing or find the opposite back-bearing:",
+          "parts": [
+            { "label": "a", "question": "$\\text{N}20^\\circ\\text{E}$ as a three-figure true bearing", "answer": "$020^\\circ\\text{T}$" },
+            { "label": "b", "question": "$\\text{S}30^\\circ\\text{E}$ ($180^\\circ - 30^\\circ$) as a true bearing", "answer": "$150^\\circ\\text{T}$" },
+            { "label": "c", "question": "Back-bearing of $050^\\circ\\text{T}$ (add $180^\\circ$)", "answer": "$230^\\circ\\text{T}$" },
+            { "label": "d", "question": "Back-bearing of $260^\\circ\\text{T}$ (subtract $180^\\circ$)", "answer": "$080^\\circ\\text{T}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "In a right-angled triangle with sides $6\\text{ cm}$, $8\\text{ cm}$, and hypotenuse $10\\text{ cm}$ (where $\\theta$ is opposite the $6\\text{ cm}$ side), state:",
+          "parts": [
+            { "label": "a", "question": "$\\sin\\theta = \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}}$ as a simplified fraction", "answer": "$\\dfrac{3}{5}$" },
+            { "label": "b", "question": "$\\cos\\theta = \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}}$ as a simplified fraction", "answer": "$\\dfrac{4}{5}$" },
+            { "label": "c", "question": "$\\tan\\theta = \\dfrac{\\text{Opposite}}{\\text{Adjacent}}$ as a simplified fraction", "answer": "$\\dfrac{3}{4}$" },
+            { "label": "d", "question": "The value of $x$ if $\\sin 30^\\circ = \\dfrac{x}{10}$ (given $\\sin 30^\\circ = 0.5$)", "answer": "$x = 5\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A rectangular box has a flat base measuring $3\\text{ cm}$ by $4\\text{ cm}$ and vertical height $12\\text{ cm}$. Find:",
+          "parts": [
+            { "label": "a", "question": "The base diagonal $d = \\sqrt{3^2 + 4^2}$", "answer": "$5\\text{ cm}$" },
+            { "label": "b", "question": "The 3D space diagonal $D = \\sqrt{5^2 + 12^2}$", "answer": "$13\\text{ cm}$" },
+            { "label": "c", "question": "$\\tan\\theta = \\dfrac{\\text{height}}{\\text{base diagonal}}$ for the angle $\\theta$ the space diagonal makes with the base", "answer": "$\\dfrac{12}{5} = 2.4$" },
+            { "label": "d", "question": "$\\sin\\theta = \\dfrac{\\text{height}}{\\text{space diagonal}}$", "answer": "$\\dfrac{12}{13}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A hiker walks $8\\text{ km}$ due North and then $8\\text{ km}$ due East. Since the two legs are equal, what is the true bearing of the hiker's finishing point from the start?",
+          "answer": "$045^\\circ\\text{T}$"
+        },
+        {
+          "number": 6,
+          "question": "A $10\\text{ m}$ ramp slopes upwards at an angle of elevation of $30^\\circ$ from horizontal ground. Using $h = 10\\sin 30^\\circ$ (where $\\sin 30^\\circ = 0.5$), find the vertical height of the top of the ramp.",
+          "answer": "$5\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "From the top of a lighthouse, the angle of depression down to a boat is $28^\\circ$. By alternate angles between horizontal parallel lines, what is the angle of elevation from the boat up to the top of the lighthouse?",
+          "answer": "$28^\\circ$"
+        },
+        {
+          "number": 8,
+          "question": "A ferry sails from Circular Quay on a bearing of $065^\\circ\\text{T}$ to Manly. What true bearing must the ferry take to sail straight back from Manly to Circular Quay?",
+          "answer": "$245^\\circ\\text{T}$ ($65^\\circ + 180^\\circ = 245^\\circ$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why are true bearings always written with three digits (such as $045^\\circ\\text{T}$ instead of $45^\\circ\\text{T}$) in aviation and marine navigation?",
+          "answer": "Writing three digits prevents misreading or radio communication errors so that every bearing from $000^\\circ\\text{T}$ to $360^\\circ\\text{T}$ has a consistent three-digit format."
+        },
+        {
+          "number": 10,
+          "question": "Explain why the angle of elevation from point $A$ up to point $B$ is always equal to the angle of depression from point $B$ down to point $A$.",
+          "answer": "The horizontal lines at $A$ and $B$ are parallel, and the line of sight $AB$ is a transversal, making the angle of elevation and angle of depression equal alternate angles."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_6_1_2b", "expression": "180 - 30", "expected": 150 },
+        { "id": "WSF10_6_1_2c", "expression": "50 + 180", "expected": 230 },
+        { "id": "WSF10_6_1_2d", "expression": "260 - 180", "expected": 80 },
+        { "id": "WSF10_6_1_3a", "expression": "Rational(6, 10)", "expected": 0.6 },
+        { "id": "WSF10_6_1_3b", "expression": "Rational(8, 10)", "expected": 0.8 },
+        { "id": "WSF10_6_1_3d", "expression": "10 * sin(pi/6)", "expected": 5 },
+        { "id": "WSF10_6_1_4a", "expression": "sqrt(3**2 + 4**2)", "expected": 5 },
+        { "id": "WSF10_6_1_4b", "expression": "sqrt(5**2 + 12**2)", "expected": 13 },
+        { "id": "WSF10_6_1_6", "expression": "10 * sin(pi/6)", "expected": 5 },
+        { "id": "WSF10_6_1_8", "expression": "65 + 180", "expected": 245 }
+      ]
+    },
+    {
+      "section_id": "10_6_2",
+      "section_code": "6B",
+      "title": "[10A] The Sine Rule, Cosine Rule, and Triangle Area Formula",
+      "vcaa_code": "VC2M10AM02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use $\\sin 30^\\circ = 0.5$ in the Sine Rule $\\dfrac{a}{\\sin A} = \\dfrac{b}{\\sin B}$ to find each value:",
+          "parts": [
+            { "label": "a", "question": "Evaluate $\\dfrac{10}{\\sin 30^\\circ}$", "answer": "$20$" },
+            { "label": "b", "question": "Find $a$ if $\\dfrac{a}{\\sin 30^\\circ} = 16$", "answer": "$a = 8$" },
+            { "label": "c", "question": "Find $\\sin B$ if $\\dfrac{6}{\\sin 30^\\circ} = \\dfrac{9}{\\sin B}$", "answer": "$\\sin B = \\dfrac{9}{12} = 0.75$" },
+            { "label": "d", "question": "Find $a$ if $\\dfrac{a}{\\sin 30^\\circ} = \\dfrac{10}{\\sin 30^\\circ}$", "answer": "$a = 10$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use the Cosine Rule $c^2 = a^2 + b^2 - 2ab\\cos C$ (with $\\cos 60^\\circ = 0.5$) to find $c^2$ and $c$:",
+          "parts": [
+            { "label": "a", "question": "Find $2ab\\cos 60^\\circ$ when $a = 3$ and $b = 8$", "answer": "$24$" },
+            { "label": "b", "question": "Find $c^2 = 3^2 + 8^2 - 24$", "answer": "$49$" },
+            { "label": "c", "question": "Hence state the side length $c = \\sqrt{49}$", "answer": "$7$" },
+            { "label": "d", "question": "Find $c$ when $a = 5$, $b = 8$, and $C = 60^\\circ$ ($c^2 = 25 + 64 - 40$)", "answer": "$7$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the triangle area rule $\\text{Area} = \\frac{1}{2}ab\\sin C$ (with $\\sin 30^\\circ = 0.5$ and $\\sin 90^\\circ = 1$) to find each area:",
+          "parts": [
+            { "label": "a", "question": "$a = 6\\text{ cm}, b = 8\\text{ cm}, C = 30^\\circ$", "answer": "$12\\text{ cm}^2$" },
+            { "label": "b", "question": "$a = 10\\text{ m}, b = 12\\text{ m}, C = 30^\\circ$", "answer": "$30\\text{ m}^2$" },
+            { "label": "c", "question": "$a = 5\\text{ cm}, b = 8\\text{ cm}, C = 90^\\circ$", "answer": "$20\\text{ cm}^2$" },
+            { "label": "d", "question": "$a = 4\\text{ m}, b = 10\\text{ m}, C = 30^\\circ$", "answer": "$10\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "State whether you would use the **Sine Rule** or the **Cosine Rule** first to solve each triangle:",
+          "parts": [
+            { "label": "a", "question": "Given two angles and one side ($A = 40^\\circ, B = 60^\\circ, a = 10\\text{ cm}$)", "answer": "Sine Rule" },
+            { "label": "b", "question": "Given two sides and the included angle ($a = 7\\text{ cm}, b = 9\\text{ cm}, C = 50^\\circ$)", "answer": "Cosine Rule" },
+            { "label": "c", "question": "Given all three sides ($a = 5\\text{ cm}, b = 6\\text{ cm}, c = 8\\text{ cm}$)", "answer": "Cosine Rule" },
+            { "label": "d", "question": "Given two sides and an angle opposite one of them ($a = 8\\text{ cm}, b = 11\\text{ cm}, A = 35^\\circ$)", "answer": "Sine Rule" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A triangular garden bed has sides $a = 8\\text{ m}$ and $b = 10\\text{ m}$ with an included angle of $C = 30^\\circ$. Calculate $\\text{Area} = \\frac{1}{2} \\times 8 \\times 10 \\times \\sin 30^\\circ$ to find the area of the garden bed.",
+          "answer": "$20\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "Two walking tracks of lengths $3\\text{ km}$ and $8\\text{ km}$ meet at a camp at an angle of $60^\\circ$. Using the Cosine Rule $c^2 = 3^2 + 8^2 - 2(3)(8)\\cos 60^\\circ$, find the distance $c$ between the ends of the tracks.",
+          "answer": "$7\\text{ km}$"
+        },
+        {
+          "number": 7,
+          "question": "In a triangle $ABC$, side $b = 14\\text{ m}$, $\\angle B = 90^\\circ$ ($\\sin 90^\\circ = 1$), and $\\angle A = 30^\\circ$ ($\\sin 30^\\circ = 0.5$). Use the Sine Rule $\\dfrac{a}{\\sin 30^\\circ} = \\dfrac{14}{\\sin 90^\\circ}$ to find side $a$.",
+          "answer": "$7\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "A triangular sail has two sides of lengths $6\\text{ m}$ and $5\\text{ m}$ with an included angle of $30^\\circ$. Find the area of the sail using $\\text{Area} = \\frac{1}{2}ab\\sin C$.",
+          "answer": "$7.5\\text{ m}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In the triangle area formula $\\text{Area} = \\frac{1}{2}ab\\sin C$, where must the angle $C$ be located in relation to sides $a$ and $b$?",
+          "answer": "Angle $C$ must be the **included angle** directly between sides $a$ and $b$."
+        },
+        {
+          "number": 10,
+          "question": "Why can't you use basic right-angled $\\text{SOHCAHTOA}$ ratios directly on a triangle with angles $50^\\circ$, $60^\\circ$, and $70^\\circ$?",
+          "answer": "Because none of the angles is $90^\\circ$, so the triangle has no hypotenuse; you must use the Sine Rule or Cosine Rule instead."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_6_2_1a", "expression": "10 / sin(pi/6)", "expected": 20 },
+        { "id": "WSF10_6_2_1b", "expression": "16 * sin(pi/6)", "expected": 8 },
+        { "id": "WSF10_6_2_1c", "expression": "9 * sin(pi/6) / 6", "expected": 0.75 },
+        { "id": "WSF10_6_2_2a", "expression": "2 * 3 * 8 * cos(pi/3)", "expected": 24 },
+        { "id": "WSF10_6_2_2b", "expression": "3**2 + 8**2 - 24", "expected": 49 },
+        { "id": "WSF10_6_2_2d", "expression": "sqrt(5**2 + 8**2 - 2*5*8*cos(pi/3))", "expected": 7 },
+        { "id": "WSF10_6_2_3a", "expression": "Rational(1, 2) * 6 * 8 * sin(pi/6)", "expected": 12 },
+        { "id": "WSF10_6_2_3b", "expression": "Rational(1, 2) * 10 * 12 * sin(pi/6)", "expected": 30 },
+        { "id": "WSF10_6_2_7", "expression": "14 * sin(pi/6) / sin(pi/2)", "expected": 7 },
+        { "id": "WSF10_6_2_8", "expression": "Rational(1, 2) * 6 * 5 * sin(pi/6)", "expected": 7.5 }
+      ]
+    },
+    {
+      "section_id": "10_6_3",
+      "section_code": "6C",
+      "title": "[10A] The Unit Circle, Exact Values, and Trigonometric Graphs",
+      "vcaa_code": "VC2M10AM03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Write the exact value of each trigonometric ratio for acute and boundary angles:",
+          "parts": [
+            { "label": "a", "question": "$\\sin 30^\\circ$", "answer": "$\\dfrac{1}{2} = 0.5$" },
+            { "label": "b", "question": "$\\cos 60^\\circ$", "answer": "$\\dfrac{1}{2} = 0.5$" },
+            { "label": "c", "question": "$\\tan 45^\\circ$", "answer": "$1$" },
+            { "label": "d", "question": "$\\sin 90^\\circ$", "answer": "$1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "On the unit circle, a point at angle $\\theta$ has coordinates $(\\cos\\theta, \\sin\\theta)$. Use the given coordinates to state $\\cos\\theta$ and $\\sin\\theta$:",
+          "parts": [
+            { "label": "a", "question": "At $\\theta = 0^\\circ$, the point is $(1, 0)$", "answer": "$\\cos 0^\\circ = 1, \\sin 0^\\circ = 0$" },
+            { "label": "b", "question": "At $\\theta = 90^\\circ$, the point is $(0, 1)$", "answer": "$\\cos 90^\\circ = 0, \\sin 90^\\circ = 1$" },
+            { "label": "c", "question": "At $\\theta = 180^\\circ$, the point is $(-1, 0)$", "answer": "$\\cos 180^\\circ = -1, \\sin 180^\\circ = 0$" },
+            { "label": "d", "question": "At $\\theta = 270^\\circ$, the point is $(0, -1)$", "answer": "$\\cos 270^\\circ = 0, \\sin 270^\\circ = -1$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the $\\text{CAST}$ rule (All positive in Q1, Sine in Q2, Tan in Q3, Cos in Q4) to state whether each value is **positive** or **negative**:",
+          "parts": [
+            { "label": "a", "question": "$\\sin 130^\\circ$ (Quadrant 2)", "answer": "Positive" },
+            { "label": "b", "question": "$\\cos 130^\\circ$ (Quadrant 2)", "answer": "Negative" },
+            { "label": "c", "question": "$\\tan 210^\\circ$ (Quadrant 3)", "answer": "Positive" },
+            { "label": "d", "question": "$\\sin 310^\\circ$ (Quadrant 4)", "answer": "Negative" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "State the amplitude $a$ of each sine or cosine graph:",
+          "parts": [
+            { "label": "a", "question": "$y = 2\\sin x$", "answer": "$2$" },
+            { "label": "b", "question": "$y = 5\\cos x$", "answer": "$5$" },
+            { "label": "c", "question": "$y = 0.5\\sin x$", "answer": "$0.5$" },
+            { "label": "d", "question": "$y = 4\\cos(2x)$ (also state the period $\\frac{360^\\circ}{2}$)", "answer": "Amplitude $= 4$, period $= 180^\\circ$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A tide height is modelled by $h = 3\\sin(t)$ metres relative to mean sea level. What is the maximum height above mean sea level and the minimum height below mean sea level?",
+          "answer": "Maximum $= +3\\text{ m}$, minimum $= -3\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A Ferris wheel cabin's vertical offset from the hub is $y = 20\\sin\\theta$ metres, where $\\theta$ is the rotation angle. Find the vertical offset when $\\theta = 30^\\circ$ (using $\\sin 30^\\circ = 0.5$) and when $\\theta = 90^\\circ$ (using $\\sin 90^\\circ = 1$).",
+          "answer": "At $30^\\circ$: $10\\text{ m}$; at $90^\\circ$: $20\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A wave repeats one complete cycle every $180^\\circ$. How many complete cycles does this wave make between $0^\\circ$ and $360^\\circ$?",
+          "answer": "$2$ complete cycles ($360 \\div 180 = 2$)"
+        },
+        {
+          "number": 8,
+          "question": "Use the symmetry rule $\\sin(180^\\circ - \\theta) = \\sin\\theta$ and $\\sin 30^\\circ = 0.5$ to find the exact value of $\\sin 150^\\circ$.",
+          "answer": "$0.5$ (since $150^\\circ = 180^\\circ - 30^\\circ$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why is the circle $x^2 + y^2 = 1$ called the **unit circle**, and why can $\\sin\\theta$ never be equal to $2$?",
+          "answer": "It is called the unit circle because its radius is $1$ unit. Since $\\sin\\theta$ is the $y$-coordinate of a point on this circle, $\\sin\\theta$ must stay between $-1$ and $1$ and can never equal $2$."
+        },
+        {
+          "number": 10,
+          "question": "On the unit circle, why is $\\cos\\theta$ negative in both Quadrant 2 and Quadrant 3?",
+          "answer": "Because $\\cos\\theta$ is the $x$-coordinate on the unit circle, and both Quadrant 2 and Quadrant 3 lie to the left of the $y$-axis where $x < 0$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_6_3_1a", "expression": "sin(pi/6)", "expected": 0.5 },
+        { "id": "WSF10_6_3_1b", "expression": "cos(pi/3)", "expected": 0.5 },
+        { "id": "WSF10_6_3_1c", "expression": "tan(pi/4)", "expected": 1 },
+        { "id": "WSF10_6_3_1d", "expression": "sin(pi/2)", "expected": 1 },
+        { "id": "WSF10_6_3_2a", "expression": "cos(0)", "expected": 1 },
+        { "id": "WSF10_6_3_2c", "expression": "cos(pi)", "expected": -1 },
+        { "id": "WSF10_6_3_4d", "expression": "360 / 2", "expected": 180 },
+        { "id": "WSF10_6_3_6a", "expression": "20 * sin(pi/6)", "expected": 10 },
+        { "id": "WSF10_6_3_7", "expression": "360 / 180", "expected": 2 },
+        { "id": "WSF10_6_3_8", "expression": "sin(5*pi/6)", "expected": 0.5 }
+      ]
+    }
+  ]
+}

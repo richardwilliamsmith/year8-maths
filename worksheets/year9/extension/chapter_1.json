@@ -1,0 +1,292 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Real Numbers, Surds, and Index Laws",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_1_1",
+      "section_code": "1A",
+      "title": "The Real Number System and Surds",
+      "vcaa_code": "VC2M9N01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Expand and simplify each surd expression:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{6}(\\sqrt{12} - \\sqrt{3})$", "answer": "$3\\sqrt{2}$" },
+            { "label": "b", "question": "$(2\\sqrt{3} + \\sqrt{5})^2$", "answer": "$17 + 4\\sqrt{15}$" },
+            { "label": "c", "question": "$(3\\sqrt{2} - 2\\sqrt{3})(3\\sqrt{2} + 2\\sqrt{3})$", "answer": "$6$" },
+            { "label": "d", "question": "$(2\\sqrt{5} - 3)(\\sqrt{5} + 4)$", "answer": "$5\\sqrt{5} - 2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Rationalise the denominator and simplify fully:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{15}{\\sqrt{5}}$", "answer": "$3\\sqrt{5}$" },
+            { "label": "b", "question": "$\\dfrac{6\\sqrt{2}}{\\sqrt{27}}$", "answer": "$\\dfrac{2\\sqrt{6}}{3}$" },
+            { "label": "c", "question": "$\\dfrac{4}{\\sqrt{5} - 1}$", "answer": "$\\sqrt{5} + 1$" },
+            { "label": "d", "question": "$\\dfrac{\\sqrt{3} + 1}{\\sqrt{3} - 1}$", "answer": "$2 + \\sqrt{3}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Express each recurring decimal as an exact simplified fraction:",
+          "parts": [
+            { "label": "a", "question": "$0.\\overline{36}$", "answer": "$\\dfrac{4}{11}$" },
+            { "label": "b", "question": "$0.2\\overline{7}$", "answer": "$\\dfrac{5}{18}$" },
+            { "label": "c", "question": "$1.\\overline{142857}$", "answer": "$\\dfrac{8}{7}$" },
+            { "label": "d", "question": "$0.1\\overline{45}$", "answer": "$\\dfrac{8}{55}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the integers $a$ and $b$ in each surd identity:",
+          "parts": [
+            { "label": "a", "question": "$(3 - \\sqrt{2})^2 = a + b\\sqrt{2}$", "answer": "$a = 11,\\; b = -6$" },
+            { "label": "b", "question": "$\\sqrt{8} + \\sqrt{50} - \\sqrt{98} = a\\sqrt{b}$", "answer": "$a = 0$ (equals $0$)" },
+            { "label": "c", "question": "$\\dfrac{14}{3 - \\sqrt{2}} = a + b\\sqrt{2}$", "answer": "$a = 6,\\; b = 2$" },
+            { "label": "d", "question": "$\\sqrt{7 + 4\\sqrt{3}} = a + \\sqrt{b}$ ($a, b > 0$)", "answer": "$a = 2,\\; b = 3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A golden rectangle sculpture in Canberra has width $2\\text{ m}$ and length $(1 + \\sqrt{5})\\text{ m}$. Find the exact ratio of width to length with a rationalised denominator.",
+          "answer": "$\\dfrac{\\sqrt{5} - 1}{2}$"
+        },
+        {
+          "number": 6,
+          "question": "A right-angled triangle has hypotenuse $(3\\sqrt{2} + \\sqrt{3})\\text{ cm}$ and one shorter side $(3\\sqrt{2} - \\sqrt{3})\\text{ cm}$. Use Pythagoras' theorem to find the exact length of the other shorter side in simplest surd form.",
+          "answer": "$2\\sqrt{6}\\text{ cm}$"
+        },
+        {
+          "number": 7,
+          "question": "In a Spiral of Theodorus starting with a right-angled isosceles triangle of legs $1\\text{ cm}$ and $1\\text{ cm}$, each subsequent right-angled triangle uses the previous hypotenuse as its base and adds a perpendicular leg of $1\\text{ cm}$. How many triangles are required until the hypotenuse has length $5\\text{ cm}$?",
+          "answer": "$24$ triangles (since the $n$-th triangle has hypotenuse $\\sqrt{n+1}$ and $\\sqrt{24+1} = 5$)"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular solar cell has area $(18 + 6\\sqrt{5})\\text{ cm}^2$ and length $(3 + \\sqrt{5})\\text{ cm}$. Find its exact width.",
+          "answer": "$6\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove by contradiction that $\\sqrt{2}$ is irrational by assuming $\\sqrt{2} = \\dfrac{p}{q}$ in lowest terms where $\\gcd(p, q) = 1$.",
+          "answer": "Squaring gives $2q^2 = p^2$, so $p^2$ is even and hence $p = 2k$ is even. Substituting gives $2q^2 = 4k^2 \\implies q^2 = 2k^2$, so $q$ is also even. This contradicts $\\gcd(p, q) = 1$, so $\\sqrt{2}$ is irrational."
+        },
+        {
+          "number": 10,
+          "question": "Evaluate the telescoping surd sum $S = \\dfrac{1}{1 + \\sqrt{2}} + \\dfrac{1}{\\sqrt{2} + \\sqrt{3}} + \\dfrac{1}{\\sqrt{3} + \\sqrt{4}} + \\dots + \\dfrac{1}{\\sqrt{99} + \\sqrt{100}}$ by rationalising the general term $\\dfrac{1}{\\sqrt{k} + \\sqrt{k+1}}$.",
+          "answer": "Since $\\dfrac{1}{\\sqrt{k} + \\sqrt{k+1}} = \\sqrt{k+1} - \\sqrt{k}$, the sum telescopes to $(\\sqrt{2} - 1) + (\\sqrt{3} - \\sqrt{2}) + \\dots + (\\sqrt{100} - \\sqrt{99}) = \\sqrt{100} - 1 = 9$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_1_1_1a", "expression": "sqrt(6)*(sqrt(12) - sqrt(3)) - 3*sqrt(2)", "expected": 0 },
+        { "id": "WSE9_1_1_1b", "expression": "(2*sqrt(3) + sqrt(5))**2 - (17 + 4*sqrt(15))", "expected": 0 },
+        { "id": "WSE9_1_1_1c", "expression": "(3*sqrt(2) - 2*sqrt(3))*(3*sqrt(2) + 2*sqrt(3))", "expected": 6 },
+        { "id": "WSE9_1_1_2c", "expression": "4/(sqrt(5) - 1) - (sqrt(5) + 1)", "expected": 0 },
+        { "id": "WSE9_1_1_2d", "expression": "(sqrt(3) + 1)/(sqrt(3) - 1) - (2 + sqrt(3))", "expected": 0 },
+        { "id": "WSE9_1_1_4c", "expression": "14/(3 - sqrt(2)) - (6 + 2*sqrt(2))", "expected": 0 },
+        { "id": "WSE9_1_1_4d", "expression": "(2 + sqrt(3))**2 - (7 + 4*sqrt(3))", "expected": 0 },
+        { "id": "WSE9_1_1_6", "expression": "sqrt((3*sqrt(2) + sqrt(3))**2 - (3*sqrt(2) - sqrt(3))**2) - 2*sqrt(6)", "expected": 0 },
+        { "id": "WSE9_1_1_8", "expression": "(18 + 6*sqrt(5))/(3 + sqrt(5))", "expected": 6 }
+      ]
+    },
+    {
+      "section_id": "9_1_2",
+      "section_code": "1B",
+      "title": "Index Laws with Algebraic Bases and Negative Indices",
+      "vcaa_code": "VC2M9A01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify fully and express with positive indices:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{(2x^{-3} y^2)^{-2} \\times 12x^{-4} y^5}{3x^{-2} y^{-1}}$", "answer": "$x^4 y^2$" },
+            { "label": "b", "question": "$\\left(\\dfrac{3a^{-2} b^3}{6a^3 b^{-1}}\\right)^{-3}$", "answer": "$\\dfrac{8a^{15}}{b^{12}}$" },
+            { "label": "c", "question": "$\\dfrac{(4m^2 n^{-3})^2}{(2m^{-1} n^2)^{-3}}$", "answer": "$128m$" },
+            { "label": "d", "question": "$\\dfrac{9^{n+1} \\times 3^{2n-1}}{27^n}$", "answer": "$3^{n+1}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each numerical expression as an exact simplified fraction:",
+          "parts": [
+            { "label": "a", "question": "$(2^{-1} + 3^{-1})^{-1}$", "answer": "$\\dfrac{6}{5}$" },
+            { "label": "b", "question": "$\\dfrac{4^{-2} - 2^{-3}}{2^{-4}}$", "answer": "$-1$" },
+            { "label": "c", "question": "$\\left(\\dfrac{2}{3}\\right)^{-3} \\times \\left(\\dfrac{9}{4}\\right)^{-2}$", "answer": "$\\dfrac{2}{3}$" },
+            { "label": "d", "question": "$(3^{-2} + 4^{-2})^{-1/2}$", "answer": "$\\dfrac{12}{5}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each exponential equation for $x$:",
+          "parts": [
+            { "label": "a", "question": "$2^{3x-1} = \\dfrac{1}{32}$", "answer": "$x = -\\dfrac{4}{3}$" },
+            { "label": "b", "question": "$9^{x-1} = 27^{-x}$", "answer": "$x = \\dfrac{2}{5}$" },
+            { "label": "c", "question": "$4^{x} \\times 8^{x-1} = \\dfrac{1}{16}$", "answer": "$x = -\\dfrac{1}{5}$" },
+            { "label": "d", "question": "$5^{2x} - 6(5^x) + 5 = 0$", "answer": "$x = 0$ or $x = 1$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Simplify each algebraic fraction involving negative powers:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x^{-1} + y^{-1}}{x^{-1} y^{-1}}$", "answer": "$x + y$" },
+            { "label": "b", "question": "$\\dfrac{a^{-2} - b^{-2}}{a^{-1} - b^{-1}}$", "answer": "$\\dfrac{a + b}{ab}$" },
+            { "label": "c", "question": "$\\dfrac{2^{n+3} - 2^{n+1}}{2^n}$", "answer": "$6$" },
+            { "label": "d", "question": "$\\dfrac{3^{n+2} + 3^{n}}{10 \\times 3^{n-1}}$", "answer": "$3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Two resistors of resistance $R_1 = 6\\;\\Omega$ and $R_2 = 12\\;\\Omega$ are connected in parallel, where the combined resistance satisfies $R = (R_1^{-1} + R_2^{-1})^{-1}$. Evaluate $R$.",
+          "answer": "$4\\;\\Omega$"
+        },
+        {
+          "number": 6,
+          "question": "A radioactive medical isotope in a Melbourne hospital decays so that the fraction remaining after $t$ hours is $F(t) = 2^{-t/3}$. After how many hours has the sample decayed to $\\dfrac{1}{64}$ of its initial mass?",
+          "answer": "$18\\text{ hours}$"
+        },
+        {
+          "number": 7,
+          "question": "Gravitational acceleration at distance $r$ from a planet's centre is $g(r) = k r^{-2}$. If a satellite moves from orbit radius $r = 2R$ to $r = 6R$, by what factor does $g(r)$ change?",
+          "answer": "Multiplied by $3^{-2} = \\dfrac{1}{9}$"
+        },
+        {
+          "number": 8,
+          "question": "A cylinder has volume $V = \\pi r^2 h$ where $r = 2x^{-2} y\\text{ cm}$ and $h = 3x^5 y^{-4}\\text{ cm}$. Express $V$ in terms of $\\pi, x, y$ with positive indices only.",
+          "answer": "$\\dfrac{12\\pi x}{y^2}\\text{ cm}^3$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that for all non-zero real numbers $a$ and $b$, $(a^{-1} + b^{-1})^{-1} = \\dfrac{ab}{a + b}$ (when $a + b \\neq 0$), and find a pair of positive integers $(a, b)$ to show that $(a^{-1} + b^{-1})^{-1} \\neq a + b$.",
+          "answer": "$(a^{-1} + b^{-1})^{-1} = \\left(\\dfrac{1}{a} + \\dfrac{1}{b}\\right)^{-1} = \\left(\\dfrac{a + b}{ab}\\right)^{-1} = \\dfrac{ab}{a + b}$. For $a = 1, b = 1$, LHS $= \\dfrac{1}{2}$ while $a + b = 2$."
+        },
+        {
+          "number": 10,
+          "question": "Determine the last digit of $2^{2026}$ and hence simplify $\\dfrac{2^{2026} + 2^{2024}}{5 \\times 2^{2023}}$.",
+          "answer": "Powers of $2$ cycle in last digits $(2, 4, 8, 6)$ with period $4$; since $2026 = 4 \\times 506 + 2$, the last digit is $4$. Factoring $2^{2024}$ gives $\\dfrac{2^{2024}(2^2 + 1)}{5 \\times 2^{2023}} = \\dfrac{5 \\times 2^{2024}}{5 \\times 2^{2023}} = 2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_1_2_1a", "expression": "((2*x**(-3)*y**2)**(-2) * 12*x**(-4)*y**5)/(3*x**(-2)*y**(-1))", "expected": "x**4*y**2" },
+        { "id": "WSE9_1_2_1b", "expression": "((3*a**(-2)*b**3)/(6*a**3*b**(-1)))**(-3)", "expected": "8*a**15/b**12" },
+        { "id": "WSE9_1_2_1c", "expression": "(4*m**2*n**(-3))**2 / (2*m**(-1)*n**2)**(-3)", "expected": "128*m" },
+        { "id": "WSE9_1_2_2a", "expression": "(2**(-1) + 3**(-1))**(-1)", "expected": "6/5" },
+        { "id": "WSE9_1_2_2b", "expression": "(4**(-2) - 2**(-3))/(2**(-4))", "expected": -1 },
+        { "id": "WSE9_1_2_2c", "expression": "(2/3)**(-3) * (9/4)**(-2)", "expected": "2/3" },
+        { "id": "WSE9_1_2_4a", "expression": "(x**(-1) + y**(-1))/(x**(-1)*y**(-1))", "expected": "x + y" },
+        { "id": "WSE9_1_2_4c", "expression": "(2**(n+3) - 2**(n+1))/2**n", "expected": 6 },
+        { "id": "WSE9_1_2_5", "expression": "(6**(-1) + 12**(-1))**(-1)", "expected": 4 }
+      ]
+    },
+    {
+      "section_id": "9_1_3",
+      "section_code": "1C",
+      "title": "Scientific Notation and Significant Figures",
+      "vcaa_code": "VC2M9M01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each expression and write your answer in scientific notation:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{(4.5 \\times 10^{-4}) \\times (8.0 \\times 10^9)}{1.2 \\times 10^{-3}}$", "answer": "$3 \\times 10^9$" },
+            { "label": "b", "question": "$(5.0 \\times 10^{-6})^3$", "answer": "$1.25 \\times 10^{-16}$" },
+            { "label": "c", "question": "$\\sqrt{3.6 \\times 10^{-9}}$", "answer": "$6 \\times 10^{-5}$" },
+            { "label": "d", "question": "$\\dfrac{(6.0 \\times 10^5)^2}{9.0 \\times 10^{-4}}$", "answer": "$4 \\times 10^{14}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each sum or difference in scientific notation:",
+          "parts": [
+            { "label": "a", "question": "$4.8 \\times 10^6 + 7.5 \\times 10^5$", "answer": "$5.55 \\times 10^6$" },
+            { "label": "b", "question": "$6.2 \\times 10^{-4} - 8.5 \\times 10^{-5}$", "answer": "$5.35 \\times 10^{-4}$" },
+            { "label": "c", "question": "$9.4 \\times 10^8 + 8.6 \\times 10^8$", "answer": "$1.8 \\times 10^9$" },
+            { "label": "d", "question": "$1.02 \\times 10^{-3} - 9.7 \\times 10^{-4}$", "answer": "$5 \\times 10^{-5}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Convert each metric quantity to SI base units (metres, grams, or seconds) in scientific notation:",
+          "parts": [
+            { "label": "a", "question": "$450\\text{ nm}$ (nanometres, $1\\text{ nm} = 10^{-9}\\text{ m}$)", "answer": "$4.5 \\times 10^{-7}\\text{ m}$" },
+            { "label": "b", "question": "$2.4\\text{ THz}$ to $\\text{Hz}$ ($1\\text{ THz} = 10^{12}\\text{ Hz}$)", "answer": "$2.4 \\times 10^{12}\\text{ Hz}$" },
+            { "label": "c", "question": "$85\\;\\mu\\text{s}$ (microseconds, $1\\;\\mu\\text{s} = 10^{-6}\\text{ s}$)", "answer": "$8.5 \\times 10^{-5}\\text{ s}$" },
+            { "label": "d", "question": "$12.5\\text{ km}^2$ to $\\text{m}^2$", "answer": "$1.25 \\times 10^7\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "State the lower and upper bounds of a measurement $x$ rounded to the given accuracy:",
+          "parts": [
+            { "label": "a", "question": "$x = 4.5 \\times 10^3$ ($2$ sig. figs.)", "answer": "$4450 \\le x < 4550$" },
+            { "label": "b", "question": "$x = 3.20 \\times 10^4$ ($3$ sig. figs.)", "answer": "$31\\,950 \\le x < 32\\,050$" },
+            { "label": "c", "question": "$x = 0.068$ ($2$ sig. figs.)", "answer": "$0.0675 \\le x < 0.0685$" },
+            { "label": "d", "question": "$x = 7.0 \\times 10^{-2}$ ($2$ sig. figs.)", "answer": "$0.0695 \\le x < 0.0705$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Proxima Centauri is $4.24$ light-years from Earth, where $1$ light-year is the distance light travels in $365.25\\text{ days}$ at $3.00 \\times 10^8\\text{ m/s}$. Calculate the distance to Proxima Centauri in metres in scientific notation, correct to $3$ significant figures.",
+          "answer": "$4.01 \\times 10^{16}\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "The Australian Synchrotron in Clayton accelerates electrons so that a beam pulse of duration $5.0 \\times 10^{-11}\\text{ s}$ carries a total charge of $1.6 \\times 10^{-9}\\text{ C}$. Given that one electron has charge $1.6 \\times 10^{-19}\\text{ C}$, find (a) the number of electrons in the pulse and (b) the average current $I = \\dfrac{Q}{t}$ in amperes.",
+          "answer": "(a) $1.0 \\times 10^{10}$ electrons, (b) $32\\text{ A}$ ($3.2 \\times 10^1\\text{ A}$)"
+        },
+        {
+          "number": 7,
+          "question": "Lake Argyle in Western Australia holds approximately $1.08 \\times 10^{10}\\text{ m}^3$ of water. If $1\\text{ m}^3$ has mass $10^6\\text{ g}$ and one water molecule has mass $3.0 \\times 10^{-23}\\text{ g}$, estimate the number of water molecules in Lake Argyle in scientific notation.",
+          "answer": "$3.6 \\times 10^{38}$ molecules"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular wafer in a Sydney quantum computing lab has length $a = 4.0 \\times 10^{-3}\\text{ m}$ and width $b = 2.5 \\times 10^{-3}\\text{ m}$, both measured to $2$ significant figures. Find the minimum possible area of the wafer in scientific notation, correct to $3$ significant figures.",
+          "answer": "$9.68 \\times 10^{-6}\\text{ m}^2$ ($3.95 \\times 10^{-3} \\times 2.45 \\times 10^{-3} = 9.6775 \\times 10^{-6}\\text{ m}^2$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A student estimates the minimum area in Question 8 by subtracting $0.05 \\times 10^{-3}$ from the nominal area $10 \\times 10^{-6}\\text{ m}^2$. Show using the expansion $(4.0 - 0.05)(2.5 - 0.05) \\times 10^{-6}$ why the true lower bound is $9.6775 \\times 10^{-6}\\text{ m}^2$.",
+          "answer": "$(4.0 - 0.05)(2.5 - 0.05) = 10 - 0.20 - 0.125 + 0.0025 = 9.6775$, so the lower bound is $9.6775 \\times 10^{-6}\\text{ m}^2$ ($9.68 \\times 10^{-6}\\text{ m}^2$ to $3$ sig. figs.)."
+        },
+        {
+          "number": 10,
+          "question": "Let $A = a \\times 10^m$ and $B = b \\times 10^n$ be two numbers in scientific notation ($1 \\le a, b < 10$). Determine the two possible values for the exponent of $10$ when the product $AB$ is written in scientific notation, and state the condition on $a b$ for each case.",
+          "answer": "$AB = (ab) \\times 10^{m+n}$. Since $1 \\le a, b < 10$, we have $1 \\le ab < 100$. If $1 \\le ab < 10$, the exponent is $m + n$; if $10 \\le ab < 100$, we write $ab = (ab/10) \\times 10^1$ and the exponent is $m + n + 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_1_3_1a", "expression": "((4.5 * 10**(-4)) * (8.0 * 10**9)) / (1.2 * 10**(-3))", "expected": 3000000000 },
+        { "id": "WSE9_1_3_1b", "expression": "(5 * 10**(-6))**3 - 1.25 * 10**(-16)", "expected": 0 },
+        { "id": "WSE9_1_3_1c", "expression": "sqrt(36 * 10**(-10)) - 6 * 10**(-5)", "expected": 0 },
+        { "id": "WSE9_1_3_1d", "expression": "(6 * 10**5)**2 / (9 * 10**(-4)) - 4 * 10**14", "expected": 0 },
+        { "id": "WSE9_1_3_2a", "expression": "4.8 * 10**6 + 7.5 * 10**5", "expected": 5550000 },
+        { "id": "WSE9_1_3_2b", "expression": "6.2 * 10**(-4) - 8.5 * 10**(-5)", "expected": 0.000535 },
+        { "id": "WSE9_1_3_6a", "expression": "(1.6 * 10**(-9)) / (1.6 * 10**(-19))", "expected": 10000000000 },
+        { "id": "WSE9_1_3_6b", "expression": "(1.6 * 10**(-9)) / (5.0 * 10**(-11))", "expected": 32 },
+        { "id": "WSE9_1_3_7", "expression": "(1.08 * 10**10 * 10**6) / (3.0 * 10**(-23)) / 10**38", "expected": 3.6 }
+      ]
+    }
+  ]
+}

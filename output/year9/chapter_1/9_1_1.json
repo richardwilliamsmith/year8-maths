@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "section_id": "9_1_1",
+    "section_code": "1A",
+    "chapter_number": 1,
+    "chapter_title": "Real Numbers, Surds, and Index Laws",
+    "title": "The Real Number System and Surds",
+    "vcaa_code": "VC2M9N01",
+    "vcaa_description": "Recognise that the real number system includes the rational numbers and the irrational numbers, and solve problems involving real numbers using digital tools.",
+    "strand": "Number",
+    "target_mastery": "Classify real numbers, locate surds on the number line using geometric constructions, and simplify basic square-root surds.",
+    "prerequisites": [
+      "Irrational numbers and square roots (Year 8 VC2M8N01)",
+      "Pythagoras' theorem (Year 8 VC2M8M06)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Rational number",
+        "definition": "Any number that can be expressed as a fraction $\\frac{p}{q}$ where $p$ and $q$ are integers and $q \\neq 0$. Its decimal expansion either terminates or recurs."
+      },
+      {
+        "term": "Irrational number",
+        "definition": "A real number that cannot be written as a ratio of two integers; its decimal expansion is infinite and non-recurring (for example, $\\pi$ and $\\sqrt{2}$)."
+      },
+      {
+        "term": "Surd",
+        "definition": "An irrational root of a rational number, such as $\\sqrt{3}$, $\\sqrt{10}$, or $\\sqrt[3]{5}$, whose exact value cannot be written as a fraction."
+      },
+      {
+        "term": "Simplest surd form",
+        "definition": "A square-root surd $a\\sqrt{b}$ where the integer radicand $b$ has no perfect square factors greater than $1$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_1_1_1",
+      "title": "The Real Number Hierarchy",
+      "explanation": "The set of real numbers ($\\mathbb{R}$) represents every point on the continuous number line and splits into two mutually exclusive sets: the rational numbers ($\\mathbb{Q}$) and the irrational numbers ($\\mathbb{R} \\setminus \\mathbb{Q}$). Inside the rationals sit the integers ($\\mathbb{Z} = \\{\\dots, -2, -1, 0, 1, 2, \\dots\\}$) and the natural counting numbers ($\\mathbb{N} = \\{1, 2, 3, \\dots\\}$). Note that a square root of a perfect square, such as $\\sqrt{49} = 7$, is rational, whereas the square root of a non-square integer, such as $\\sqrt{7}$, is an irrational surd.",
+      "formula_latex": "\\mathbb{N} \\subset \\mathbb{Z} \\subset \\mathbb{Q} \\subset \\mathbb{R}, \\quad \\mathbb{R} = \\mathbb{Q} \\cup (\\mathbb{R} \\setminus \\mathbb{Q})",
+      "callout_title": "Not Every Root Is a Surd",
+      "callout_rule": "Always evaluate roots of perfect squares first: $\\sqrt{36} = 6$ and $\\sqrt{\\frac{9}{25}} = \\frac{3}{5}$ are rational numbers, not surds."
+    },
+    {
+      "id": "theory_9_1_1_2",
+      "title": "Locating Surds on the Real Number Line",
+      "explanation": "Even though a surd has an infinite non-recurring decimal expansion, it occupies a single exact location on the number line. By constructing a right-angled triangle with integer legs $a$ and $b$ starting at the origin, Pythagoras' theorem guarantees a hypotenuse of exact length $\\sqrt{a^2 + b^2}$. Using a pair of compasses centred at $0$ to swing this hypotenuse down onto the positive axis plots $\\sqrt{a^2 + b^2}$ exactly.",
+      "formula_latex": "c = \\sqrt{a^2 + b^2} \\implies \\sqrt{1^2 + 1^2} = \\sqrt{2}, \\quad \\sqrt{2^2 + 1^2} = \\sqrt{5}",
+      "callout_title": "Bounding Surds Between Consecutive Integers",
+      "callout_rule": "To estimate $\\sqrt{n}$ without a calculator, bracket $n$ between consecutive perfect squares: since $16 < 20 < 25$, taking square roots gives $4 < \\sqrt{20} < 5$."
+    },
+    {
+      "id": "theory_9_1_1_3",
+      "title": "Simplifying, Adding, and Multiplying Surds",
+      "explanation": "For any positive real numbers $a$ and $b$, the square root of a product equals the product of the square roots. To write a surd $\\sqrt{n}$ in simplest form, factor out the largest perfect square factor $k^2$ that divides $n$. Once surds are simplified, 'like surds' sharing the same radicand can be added or subtracted just like algebraic like terms.",
+      "formula_latex": "\\sqrt{ab} = \\sqrt{a}\\sqrt{b}, \\quad \\sqrt{\\frac{a}{b}} = \\frac{\\sqrt{a}}{\\sqrt{b}}, \\quad m\\sqrt{c} \\pm n\\sqrt{c} = (m \\pm n)\\sqrt{c}",
+      "callout_title": "Extract the Largest Perfect Square Factor",
+      "callout_rule": "When simplifying $\\sqrt{72}$, use the largest square factor $36$ ($\\sqrt{72} = \\sqrt{36 \\times 2} = 6\\sqrt{2}$) rather than stopping at $\\sqrt{4 \\times 18} = 2\\sqrt{18}$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_1_1_1",
+      "title": "Simplifying Square-Root Surds",
+      "difficulty": "Fluency",
+      "problem": "Express each surd in simplest form: (a) $\\sqrt{48}$ and (b) $3\\sqrt{75}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), identify the largest perfect square factor of $48$, which is $16$ since $48 = 16 \\times 3$.",
+          "working": "$$\\sqrt{48} = \\sqrt{16 \\times 3} = \\sqrt{16} \\times \\sqrt{3} = 4\\sqrt{3}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), identify the largest perfect square factor of $75$, which is $25$ ($75 = 25 \\times 3$), and multiply its square root by the outside coefficient $3$.",
+          "working": "$$3\\sqrt{75} = 3\\sqrt{25 \\times 3} = 3 \\times 5\\sqrt{3} = 15\\sqrt{3}$$"
+        }
+      ],
+      "final_answer": "(a) $4\\sqrt{3}$, (b) $15\\sqrt{3}$",
+      "now_you_try": {
+        "problem": "Express in simplest surd form: (a) $\\sqrt{50}$ and (b) $4\\sqrt{27}$.",
+        "hint": "Use the square factors $25$ for $50$ and $9$ for $27$.",
+        "working_summary": "(a) $\\sqrt{25 \\times 2} = 5\\sqrt{2}$; (b) $4\\sqrt{9 \\times 3} = 4 \\times 3\\sqrt{3} = 12\\sqrt{3}$.",
+        "answer": "(a) $5\\sqrt{2}$, (b) $12\\sqrt{3}$"
+      }
+    },
+    {
+      "id": "WE9_1_1_2",
+      "title": "Simplifying and Collecting Like Surds",
+      "difficulty": "Understanding",
+      "problem": "Simplify $2\\sqrt{18} + \\sqrt{50} - \\sqrt{8}$ in exact surd form.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Simplify each surd individually by extracting its largest perfect square factor: $18 = 9 \\times 2$, $50 = 25 \\times 2$, and $8 = 4 \\times 2$.",
+          "working": "$$2\\sqrt{18} + \\sqrt{50} - \\sqrt{8} = 2\\sqrt{9 \\times 2} + \\sqrt{25 \\times 2} - \\sqrt{4 \\times 2}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Evaluate the square roots of the perfect squares and combine the coefficients of the like surd $\\sqrt{2}$.",
+          "working": "$$= 6\\sqrt{2} + 5\\sqrt{2} - 2\\sqrt{2} = (6 + 5 - 2)\\sqrt{2} = 9\\sqrt{2}$$"
+        }
+      ],
+      "final_answer": "$9\\sqrt{2}$",
+      "now_you_try": {
+        "problem": "Simplify $3\\sqrt{12} + \\sqrt{27} - \\sqrt{3}$.",
+        "hint": "Write $\\sqrt{12} = 2\\sqrt{3}$ and $\\sqrt{27} = 3\\sqrt{3}$.",
+        "working_summary": "$3(2\\sqrt{3}) + 3\\sqrt{3} - 1\\sqrt{3} = 6\\sqrt{3} + 3\\sqrt{3} - \\sqrt{3} = 8\\sqrt{3}$.",
+        "answer": "$8\\sqrt{3}$"
+      }
+    },
+    {
+      "id": "WE9_1_1_3",
+      "title": "Exact Geometric Distances Using Surds",
+      "difficulty": "Problem-Solving",
+      "problem": "A square courtyard in Geelong has side length $6\\text{ m}$. Find the exact length of its diagonal in simplest surd form, and state which two consecutive integers this length lies between.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Apply Pythagoras' theorem $d = \\sqrt{6^2 + 6^2}$ to find the unsimplified surd length and compare $\\sqrt{72}$ with nearby perfect squares $64$ and $81$.",
+          "working": "$$d = \\sqrt{6^2 + 6^2} = \\sqrt{72}\\text{ m}, \\quad \\sqrt{64} < \\sqrt{72} < \\sqrt{81} \\implies 8 < d < 9$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Factor out the largest perfect square $36$ from $72$ to write the exact length in simplest surd form.",
+          "working": "$$d = \\sqrt{36 \\times 2} = 6\\sqrt{2}\\text{ m}$$"
+        }
+      ],
+      "final_answer": "$6\\sqrt{2}\\text{ m}$, which lies between $8\\text{ m}$ and $9\\text{ m}$",
+      "now_you_try": {
+        "problem": "A rectangle has length $8\\text{ cm}$ and width $4\\text{ cm}$. Find its exact diagonal length in simplest surd form and the two consecutive integers it lies between.",
+        "hint": "Calculate $\\sqrt{8^2 + 4^2} = \\sqrt{80}$ and factor out $16$.",
+        "working_summary": "$d = \\sqrt{64 + 16} = \\sqrt{80} = 4\\sqrt{5}\\text{ cm}$; since $64 < 80 < 81$, it lies between $8$ and $9$.",
+        "answer": "$4\\sqrt{5}\\text{ cm}$, between $8\\text{ cm}$ and $9\\text{ cm}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_9_1_1_1",
+      "title": "Adding Radicands Under Separate Square Roots",
+      "misconception": "Writing $\\sqrt{9} + \\sqrt{16} = \\sqrt{9 + 16} = \\sqrt{25} = 5$, or claiming $\\sqrt{2} + \\sqrt{3} = \\sqrt{5}$.",
+      "correct_concept": "Square roots do NOT distribute over addition or subtraction: $\\sqrt{a} + \\sqrt{b} \\neq \\sqrt{a + b}$. Only like surds with the same radicand can be combined by adding their coefficients.",
+      "incorrect_working": "$$\\sqrt{9} + \\sqrt{16} = \\sqrt{25} = 5 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7 \\quad (\\text{Correct})$$",
+      "counter_example": "$\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$, whereas $\\sqrt{9 + 16} = \\sqrt{25} = 5 \\neq 7$."
+    },
+    {
+      "id": "MISC_9_1_1_2",
+      "title": "Confusing Any Square Root Symbol with an Irrational Surd",
+      "misconception": "Classifying $\\sqrt{64}$ or $\\sqrt{\\frac{4}{9}}$ as irrational surds simply because they are written with a radical sign $\\sqrt{\\phantom{x}}$.",
+      "correct_concept": "Whether a number is rational or irrational depends on its value, not how it is written. Because $\\sqrt{64} = 8$ and $\\sqrt{\\frac{4}{9}} = \\frac{2}{3}$, both are rational numbers.",
+      "incorrect_working": "$$\\sqrt{64} \\text{ has a root sign, so it is an irrational surd.} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\sqrt{64} = 8 = \\frac{8}{1} \\in \\mathbb{Q} \\quad (\\text{Rational, not a surd})$$",
+      "counter_example": "$\\sqrt{49} = 7$ is a natural number, an integer, and a rational number."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_1_1_Q1",
+        "question": "From the list $\\left\\{-\\sqrt{36},\\; \\sqrt{15},\\; 0.\\overline{4},\\; \\pi,\\; \\sqrt{\\frac{25}{49}}\\right\\}$, state which numbers are irrational and simplify the rational square roots.",
+        "difficulty": "Easy",
+        "context": "Classifying Real Numbers",
+        "final_answer": "Irrational: $\\sqrt{15}, \\pi$; simplified rational roots: $-\\sqrt{36} = -6$ and $\\sqrt{\\frac{25}{49}} = \\frac{5}{7}$",
+        "step_by_step_solution": [
+          "Evaluate each square root where possible: $-\\sqrt{36} = -6 \\in \\mathbb{Q}$ and $\\sqrt{\\frac{25}{49}} = \\frac{5}{7} \\in \\mathbb{Q}$.",
+          "Note that $0.\\overline{4} = \\frac{4}{9} \\in \\mathbb{Q}$. Since $15$ is not a perfect square, $\\sqrt{15}$ and $\\pi$ are irrational."
+        ]
+      },
+      {
+        "id": "9_1_1_Q2",
+        "question": "Simplify the surd $\\sqrt{108}$ into simplest surd form.",
+        "difficulty": "Easy",
+        "context": "Simplifying Surds",
+        "final_answer": "$6\\sqrt{3}$",
+        "step_by_step_solution": [
+          "Find the largest perfect square factor of $108$: $108 = 36 \\times 3$.",
+          "Write $\\sqrt{108} = \\sqrt{36} \\times \\sqrt{3} = 6\\sqrt{3}$."
+        ]
+      },
+      {
+        "id": "9_1_1_Q3",
+        "question": "Simplify $5\\sqrt{20} - 2\\sqrt{45} + \\sqrt{80}$.",
+        "difficulty": "Medium",
+        "context": "Adding and Subtracting Like Surds",
+        "final_answer": "$8\\sqrt{5}$",
+        "step_by_step_solution": [
+          "Simplify each surd: $5\\sqrt{4 \\times 5} = 10\\sqrt{5}$, $2\\sqrt{9 \\times 5} = 6\\sqrt{5}$, and $\\sqrt{16 \\times 5} = 4\\sqrt{5}$.",
+          "Combine the like surds: $10\\sqrt{5} - 6\\sqrt{5} + 4\\sqrt{5} = 8\\sqrt{5}$."
+        ]
+      },
+      {
+        "id": "9_1_1_Q4",
+        "question": "Multiply and simplify $3\\sqrt{6} \\times 2\\sqrt{15}$.",
+        "difficulty": "Medium",
+        "context": "Multiplying Surds",
+        "final_answer": "$18\\sqrt{10}$",
+        "step_by_step_solution": [
+          "Multiply the outside coefficients and the radicands: $(3 \\times 2)\\sqrt{6 \\times 15} = 6\\sqrt{90}$.",
+          "Extract the largest square factor $9$ from $90$: $6\\sqrt{9 \\times 10} = 6 \\times 3\\sqrt{10} = 18\\sqrt{10}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_1_1_Q5",
+        "question": "To mark the exact point $\\sqrt{13}$ on a number line starting at $0$, a student draws a horizontal segment of length $a$ units along the axis and a vertical segment of length $b$ units at right angles to it, where $a$ and $b$ are positive integers with $a > b$. Find $a$ and $b$.",
+        "difficulty": "Medium",
+        "context": "Geometric Number Line Construction",
+        "final_answer": "$a = 3, b = 2$",
+        "step_by_step_solution": [
+          "By Pythagoras' theorem, the hypotenuse has length $\\sqrt{a^2 + b^2} = \\sqrt{13}$, so $a^2 + b^2 = 13$.",
+          "Testing positive integer squares less than $13$ ($1, 4, 9$) gives $9 + 4 = 13$, so $a = 3$ and $b = 2$."
+        ]
+      },
+      {
+        "id": "9_1_1_Q6",
+        "question": "A rectangular vegetable garden in Bendigo has length $5\\sqrt{3}\\text{ m}$ and width $2\\sqrt{12}\\text{ m}$. Find both the exact perimeter (in simplest surd form) and the exact area of the garden.",
+        "difficulty": "Medium",
+        "context": "Perimeter and Area with Surds",
+        "final_answer": "Perimeter $= 18\\sqrt{3}\\text{ m}$; Area $= 60\\text{ m}^2$",
+        "step_by_step_solution": [
+          "First simplify the width: $2\\sqrt{12} = 2\\sqrt{4 \\times 3} = 4\\sqrt{3}\\text{ m}$.",
+          "Perimeter $P = 2(5\\sqrt{3} + 4\\sqrt{3}) = 2(9\\sqrt{3}) = 18\\sqrt{3}\\text{ m}$.",
+          "Area $A = 5\\sqrt{3} \\times 4\\sqrt{3} = 20 \\times 3 = 60\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "9_1_1_Q7",
+        "question": "A guy wire is attached to the top of a vertical $12\\text{ m}$ mast and anchored to level ground $6\\text{ m}$ from the base of the mast. Find the exact length of the wire in simplest surd form.",
+        "difficulty": "Medium",
+        "context": "Engineering Exact Lengths",
+        "final_answer": "$6\\sqrt{5}\\text{ m}$",
+        "step_by_step_solution": [
+          "By Pythagoras' theorem, $L = \\sqrt{12^2 + 6^2} = \\sqrt{144 + 36} = \\sqrt{180}\\text{ m}$.",
+          "Extract the largest square factor $36$: $\\sqrt{180} = \\sqrt{36 \\times 5} = 6\\sqrt{5}\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_1_1_Q8",
+        "question": "An equilateral triangle has side length $8\\text{ cm}$. An altitude drawn from the top vertex bisects the base into two $4\\text{ cm}$ segments. Find the exact perpendicular height $h$ in simplest surd form, and hence find the exact area of the equilateral triangle.",
+        "difficulty": "Challenging",
+        "context": "Exact Altitude and Area",
+        "final_answer": "$h = 4\\sqrt{3}\\text{ cm}$; Area $= 16\\sqrt{3}\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Apply Pythagoras' theorem to half of the equilateral triangle: $h = \\sqrt{8^2 - 4^2} = \\sqrt{64 - 16} = \\sqrt{48} = 4\\sqrt{3}\\text{ cm}$.",
+          "Calculate the area: $A = \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 8 \\times 4\\sqrt{3} = 16\\sqrt{3}\\text{ cm}^2$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_1_1_Q9",
+        "question": "Without using a calculator, determine which is larger: $4\\sqrt{3}$ or $3\\sqrt{5}$. Justify your answer by rewriting each number as the square root of a single integer.",
+        "difficulty": "Medium",
+        "context": "Ordering Surds Exactly",
+        "final_answer": "$4\\sqrt{3}$ is larger because $\\sqrt{48} > \\sqrt{45}$",
+        "step_by_step_solution": [
+          "Write each outside factor inside the square root: $4\\sqrt{3} = \\sqrt{16 \\times 3} = \\sqrt{48}$ and $3\\sqrt{5} = \\sqrt{9 \\times 5} = \\sqrt{45}$.",
+          "Since $48 > 45$ and the square root function is strictly increasing, $\\sqrt{48} > \\sqrt{45}$, so $4\\sqrt{3} > 3\\sqrt{5}$."
+        ]
+      },
+      {
+        "id": "9_1_1_Q10",
+        "question": "A student claims that the product of two irrational surds is always irrational. Disprove this claim with a counter-example and state a condition under which $\\sqrt{a} \\times \\sqrt{b}$ is rational.",
+        "difficulty": "Medium",
+        "context": "Closure of Irrational Numbers",
+        "final_answer": "Counter-example: $\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4 \\in \\mathbb{Q}$; rational whenever $ab$ is a perfect square",
+        "step_by_step_solution": [
+          "Choose two surds whose radicands multiply to a perfect square, such as $\\sqrt{2}$ and $\\sqrt{8}$.",
+          "Then $\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4$, which is rational. In general, $\\sqrt{a}\\sqrt{b} = \\sqrt{ab}$ is rational whenever $ab$ is a perfect square."
+        ]
+      },
+      {
+        "id": "9_1_1_Q11",
+        "question": "To eliminate the surd from the denominator of $\\frac{12}{\\sqrt{3}}$ (called rationalising the denominator), multiply both the numerator and denominator by $\\sqrt{3}$ and simplify.",
+        "difficulty": "Challenging",
+        "context": "Rationalising the Denominator",
+        "final_answer": "$4\\sqrt{3}$",
+        "step_by_step_solution": [
+          "Multiply numerator and denominator by $\\sqrt{3}$: $\\frac{12}{\\sqrt{3}} \\times \\frac{\\sqrt{3}}{\\sqrt{3}} = \\frac{12\\sqrt{3}}{3}$.",
+          "Divide $12$ by $3$ to obtain $4\\sqrt{3}$."
+        ]
+      },
+      {
+        "id": "9_1_1_Q12",
+        "question": "In the Spiral of Theodorus, the first right-angled triangle has legs of $1\\text{ cm}$ and $1\\text{ cm}$ (hypotenuse $\\sqrt{2}\\text{ cm}$), and each subsequent triangle uses the previous hypotenuse as one leg and a perpendicular segment of $1\\text{ cm}$ as the other leg. Find the hypotenuse of the $17\\text{th}$ triangle in simplest surd form.",
+        "difficulty": "Extension",
+        "context": "Spiral of Theodorus",
+        "final_answer": "$3\\sqrt{2}\\text{ cm}$",
+        "step_by_step_solution": [
+          "The $1\\text{st}$ triangle has hypotenuse $\\sqrt{1 + 1} = \\sqrt{2}$, the $2\\text{nd}$ has $\\sqrt{3}$, and by induction the $n\\text{th}$ triangle has hypotenuse $\\sqrt{n + 1}\\text{ cm}$.",
+          "For $n = 17$, the hypotenuse is $\\sqrt{17 + 1} = \\sqrt{18} = \\sqrt{9 \\times 2} = 3\\sqrt{2}\\text{ cm}$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_1_1_1a",
+      "description": "Worked Example 9.1.1.1(a) sqrt(48) = 4*sqrt(3)",
+      "expression": "simplify(sqrt(48) - 4*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_1_1_1b",
+      "description": "Worked Example 9.1.1.1(b) 3*sqrt(75) = 15*sqrt(3)",
+      "expression": "simplify(3*sqrt(75) - 15*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_1_1_1a",
+      "description": "Now You Try 9.1.1.1(a) sqrt(50) = 5*sqrt(2)",
+      "expression": "simplify(sqrt(50) - 5*sqrt(2))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_1_1_1b",
+      "description": "Now You Try 9.1.1.1(b) 4*sqrt(27) = 12*sqrt(3)",
+      "expression": "simplify(4*sqrt(27) - 12*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_1_1_2",
+      "description": "Worked Example 9.1.1.2 like surds",
+      "expression": "simplify(2*sqrt(18) + sqrt(50) - sqrt(8) - 9*sqrt(2))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_1_1_2",
+      "description": "Now You Try 9.1.1.2 like surds",
+      "expression": "simplify(3*sqrt(12) + sqrt(27) - sqrt(3) - 8*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_1_1_3",
+      "description": "Worked Example 9.1.1.3 diagonal of 6m square",
+      "expression": "simplify(sqrt(6**2 + 6**2) - 6*sqrt(2))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_1_1_3",
+      "description": "Now You Try 9.1.1.3 diagonal of 8x4 rectangle",
+      "expression": "simplify(sqrt(8**2 + 4**2) - 4*sqrt(5))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_1_Q1",
+      "description": "Exercise 9.1.1 Q1 rational roots",
+      "expression": "sqrt(Rational(25, 49))",
+      "expected": "Rational(5, 7)"
+    },
+    {
+      "id": "EX9_1_1_Q2",
+      "description": "Exercise 9.1.1 Q2 sqrt(108)",
+      "expression": "simplify(sqrt(108) - 6*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_1_Q3",
+      "description": "Exercise 9.1.1 Q3 like surds",
+      "expression": "simplify(5*sqrt(20) - 2*sqrt(45) + sqrt(80) - 8*sqrt(5))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_1_Q4",
+      "description": "Exercise 9.1.1 Q4 multiplying surds",
+      "expression": "simplify(3*sqrt(6) * 2*sqrt(15) - 18*sqrt(10))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_1_Q6a",
+      "description": "Exercise 9.1.1 Q6 perimeter",
+      "expression": "simplify(2*(5*sqrt(3) + 2*sqrt(12)) - 18*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_1_Q6b",
+      "description": "Exercise 9.1.1 Q6 area",
+      "expression": "simplify(5*sqrt(3) * 2*sqrt(12))",
+      "expected": 60
+    },
+    {
+      "id": "EX9_1_1_Q7",
+      "description": "Exercise 9.1.1 Q7 guy wire length",
+      "expression": "simplify(sqrt(12**2 + 6**2) - 6*sqrt(5))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_1_Q8",
+      "description": "Exercise 9.1.1 Q8 equilateral triangle area",
+      "expression": "simplify(Rational(1, 2) * 8 * sqrt(8**2 - 4**2) - 16*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_1_Q11",
+      "description": "Exercise 9.1.1 Q11 rationalising denominator",
+      "expression": "simplify(12/sqrt(3) - 4*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_1_1_Q12",
+      "description": "Exercise 9.1.1 Q12 Spiral of Theodorus 17th triangle",
+      "expression": "simplify(sqrt(17 + 1) - 3*sqrt(2))",
+      "expected": 0
+    }
+  ]
+}

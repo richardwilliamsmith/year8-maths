@@ -1,0 +1,199 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Pythagoras' Theorem and Right-Angled Trigonometry",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_8_1",
+      "section_code": "8A",
+      "title": "Trigonometric Ratios (SOHCAHTOA) and Finding Side Lengths",
+      "vcaa_code": "VC2M9M04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "In a right-angled triangle with acute angle $\\theta$, opposite side $O = 3\\text{ cm}$, adjacent side $A = 4\\text{ cm}$, and hypotenuse $H = 5\\text{ cm}$, write each SOHCAHTOA ratio as a fraction:",
+          "parts": [
+            { "label": "a", "question": "$\\sin(\\theta) = \\dfrac{\\text{Opposite}}{\\text{Hypotenuse}}$", "answer": "$\\dfrac{3}{5}$" },
+            { "label": "b", "question": "$\\cos(\\theta) = \\dfrac{\\text{Adjacent}}{\\text{Hypotenuse}}$", "answer": "$\\dfrac{4}{5}$" },
+            { "label": "c", "question": "$\\tan(\\theta) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}}$", "answer": "$\\dfrac{3}{4}$" },
+            { "label": "d", "question": "Which side ($O, A$, or $H$) is always opposite the $90^\\circ$ right angle?", "answer": "Hypotenuse ($H$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "In a right-angled triangle with legs $5\\text{ cm}$ (opposite $\\theta$), $12\\text{ cm}$ (adjacent to $\\theta$), and hypotenuse $13\\text{ cm}$, state:",
+          "parts": [
+            { "label": "a", "question": "$\\sin(\\theta)$", "answer": "$\\dfrac{5}{13}$" },
+            { "label": "b", "question": "$\\cos(\\theta)$", "answer": "$\\dfrac{12}{13}$" },
+            { "label": "c", "question": "$\\tan(\\theta)$", "answer": "$\\dfrac{5}{12}$" },
+            { "label": "d", "question": "Check Pythagoras' theorem: $5^2 + 12^2$", "answer": "$169 = 13^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given that $\\sin(30^\\circ) = 0.5$, $\\cos(60^\\circ) = 0.5$, and $\\tan(45^\\circ) = 1$, find the unknown side $x$:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x}{10} = \\sin(30^\\circ) \\implies x = 10 \\times 0.5$", "answer": "$x = 5\\text{ cm}$" },
+            { "label": "b", "question": "$\\dfrac{x}{16} = \\cos(60^\\circ) \\implies x = 16 \\times 0.5$", "answer": "$x = 8\\text{ cm}$" },
+            { "label": "c", "question": "$\\dfrac{x}{9} = \\tan(45^\\circ) \\implies x = 9 \\times 1$", "answer": "$x = 9\\text{ cm}$" },
+            { "label": "d", "question": "$\\dfrac{x}{24} = \\sin(30^\\circ) \\implies x = 24 \\times 0.5$", "answer": "$x = 12\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "State which trigonometric ratio ($\\sin, \\cos$, or $\\tan$) you should choose when given:",
+          "parts": [
+            { "label": "a", "question": "The Opposite side and the Hypotenuse ($\\text{SOH}$)", "answer": "$\\sin$" },
+            { "label": "b", "question": "The Adjacent side and the Hypotenuse ($\\text{CAH}$)", "answer": "$\\cos$" },
+            { "label": "c", "question": "The Opposite side and the Adjacent side ($\\text{TOA}$)", "answer": "$\\tan$" },
+            { "label": "d", "question": "Find $x$ if $\\dfrac{6}{x} = \\sin(30^\\circ) = 0.5$ ($x = 6 \\div 0.5$)", "answer": "$x = 12$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A $10\\text{ m}$ ramp slopes upward at an angle of $30^\\circ$ to the horizontal ground. Using $h = 10\\sin(30^\\circ)$ where $\\sin(30^\\circ) = 0.5$, find the vertical height $h$ at the top of the ramp.",
+          "answer": "$5\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A $4\\text{ m}$ ladder leans against a wall at an angle of $60^\\circ$ to the ground. Using $d = 4\\cos(60^\\circ)$ where $\\cos(60^\\circ) = 0.5$, find how far the bottom of the ladder is from the wall.",
+          "answer": "$2\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A vertical flagpole casts a shadow $15\\text{ m}$ long on flat ground when the sun is at an angle of $45^\\circ$. Using $h = 15\\tan(45^\\circ)$ where $\\tan(45^\\circ) = 1$, find the height of the flagpole.",
+          "answer": "$15\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "A cable car in Cairns climbs a vertical height of $200\\text{ m}$ along a cable inclined at $30^\\circ$ to the horizontal. Calculate $L = \\dfrac{200}{\\sin(30^\\circ)} = 200 \\div 0.5$ to find the length of the cable.",
+          "answer": "$400\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "What does the memory aid **SOHCAHTOA** stand for? Write out the meaning of all nine letters.",
+          "answer": "**S**ine = **O**pposite / **H**ypotenuse, **C**osine = **A**djacent / **H**ypotenuse, **T**angent = **O**pposite / **A**djacent."
+        },
+        {
+          "number": 10,
+          "question": "When $\\theta = 45^\\circ$ in a right-angled triangle, the other acute angle is also $45^\\circ$ ($180^\\circ - 90^\\circ - 45^\\circ = 45^\\circ$), making the triangle isosceles. Use this to explain why $\\tan(45^\\circ) = 1$.",
+          "answer": "Because the two acute angles are equal ($45^\\circ$), the Opposite and Adjacent legs have the exact same length, so $\\tan(45^\\circ) = \\dfrac{\\text{Opposite}}{\\text{Adjacent}} = 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_8_1_2d", "expression": "5**2 + 12**2", "expected": 169 },
+        { "id": "WSF9_8_1_3a", "expression": "10 * sin(pi/6)", "expected": 5 },
+        { "id": "WSF9_8_1_3b", "expression": "16 * cos(pi/3)", "expected": 8 },
+        { "id": "WSF9_8_1_3c", "expression": "9 * tan(pi/4)", "expected": 9 },
+        { "id": "WSF9_8_1_3d", "expression": "24 * sin(pi/6)", "expected": 12 },
+        { "id": "WSF9_8_1_4d", "expression": "6 / sin(pi/6)", "expected": 12 },
+        { "id": "WSF9_8_1_5", "expression": "10 * sin(pi/6)", "expected": 5 },
+        { "id": "WSF9_8_1_6", "expression": "4 * cos(pi/3)", "expected": 2 },
+        { "id": "WSF9_8_1_7", "expression": "15 * tan(pi/4)", "expected": 15 },
+        { "id": "WSF9_8_1_8", "expression": "200 / sin(pi/6)", "expected": 400 }
+      ]
+    },
+    {
+      "section_id": "9_8_2",
+      "section_code": "8B",
+      "title": "Inverse Trigonometry, Elevation, Depression, and Bearings",
+      "vcaa_code": "VC2M9M04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the acute angle $\\theta$ in each right-angled triangle using known exact ratios:",
+          "parts": [
+            { "label": "a", "question": "Opposite $= 4\\text{ cm}$, Hypotenuse $= 8\\text{ cm}$, so $\\sin(\\theta) = 0.5$", "answer": "$\\theta = 30^\\circ$" },
+            { "label": "b", "question": "Adjacent $= 5\\text{ cm}$, Hypotenuse $= 10\\text{ cm}$, so $\\cos(\\theta) = 0.5$", "answer": "$\\theta = 60^\\circ$" },
+            { "label": "c", "question": "Opposite $= 7\\text{ cm}$, Adjacent $= 7\\text{ cm}$, so $\\tan(\\theta) = 1$", "answer": "$\\theta = 45^\\circ$" },
+            { "label": "d", "question": "Opposite $= 6\\text{ m}$, Hypotenuse $= 12\\text{ m}$, so $\\sin(\\theta) = 0.5$", "answer": "$\\theta = 30^\\circ$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "State which inverse calculator function ($\\sin^{-1}, \\cos^{-1}$, or $\\tan^{-1}$) finds $\\theta$ in each case:",
+          "parts": [
+            { "label": "a", "question": "Opposite $= 5\\text{ cm}$, Hypotenuse $= 9\\text{ cm}$", "answer": "$\\theta = \\sin^{-1}\\left(\\dfrac{5}{9}\\right)$" },
+            { "label": "b", "question": "Adjacent $= 7\\text{ cm}$, Hypotenuse $= 11\\text{ cm}$", "answer": "$\\theta = \\cos^{-1}\\left(\\dfrac{7}{11}\\right)$" },
+            { "label": "c", "question": "Opposite $= 8\\text{ cm}$, Adjacent $= 15\\text{ cm}$", "answer": "$\\theta = \\tan^{-1}\\left(\\dfrac{8}{15}\\right)$" },
+            { "label": "d", "question": "Opposite $= 10\\text{ m}$, Adjacent $= 10\\text{ m}$", "answer": "$\\theta = \\tan^{-1}(1) = 45^\\circ$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "True bearings are measured clockwise from North ($000^\\circ\\text{T}$). State the 3-digit true bearing for:",
+          "parts": [
+            { "label": "a", "question": "Due East", "answer": "$090^\\circ\\text{T}$" },
+            { "label": "b", "question": "Due South", "answer": "$180^\\circ\\text{T}$" },
+            { "label": "c", "question": "Due West", "answer": "$270^\\circ\\text{T}$" },
+            { "label": "d", "question": "North-East (halfway between $000^\\circ$ and $090^\\circ$)", "answer": "$045^\\circ\\text{T}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use alternate angles and bearings to answer each question:",
+          "parts": [
+            { "label": "a", "question": "If the angle of elevation from a boat up to a lighthouse is $28^\\circ$, what is the angle of depression from the lighthouse down to the boat?", "answer": "$28^\\circ$" },
+            { "label": "b", "question": "Turn $35^\\circ$ clockwise from North ($000^\\circ$); write the 3-digit true bearing.", "answer": "$035^\\circ\\text{T}$" },
+            { "label": "c", "question": "Turn $20^\\circ$ anticlockwise (West) from South ($180^\\circ$): $180^\\circ + 20^\\circ$ clockwise from North.", "answer": "$200^\\circ\\text{T}$" },
+            { "label": "d", "question": "Turn $30^\\circ$ anticlockwise from North ($360^\\circ - 30^\\circ$).", "answer": "$330^\\circ\\text{T}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A $10\\text{ m}$ ladder reaches $5\\text{ m}$ vertically up a wall. Since $\\sin(\\theta) = \\dfrac{5}{10} = 0.5$, what angle $\\theta$ does the ladder make with the horizontal ground?",
+          "answer": "$30^\\circ$"
+        },
+        {
+          "number": 6,
+          "question": "A person stands $20\\text{ m}$ horizontally from a $20\\text{ m}$ tall gum tree. Since $\\tan(\\theta) = \\dfrac{20}{20} = 1$, what is the angle of elevation $\\theta$ from the ground to the top of the tree?",
+          "answer": "$45^\\circ$"
+        },
+        {
+          "number": 7,
+          "question": "A yacht leaves Sydney Harbour and sails on a bearing of $090^\\circ\\text{T}$ (due East) for $12\\text{ km}$. On what 3-digit true bearing must it sail to head due West straight back to harbour?",
+          "answer": "$270^\\circ\\text{T}$"
+        },
+        {
+          "number": 8,
+          "question": "From a $30\\text{ m}$ high cliff look-out, a tourist looks down at a kayak at an angle of depression of $45^\\circ$. Using $\\tan(45^\\circ) = 1$, how far is the kayak horizontally from the base of the cliff?",
+          "answer": "$30\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "What is the difference between an **angle of elevation** and an **angle of depression**? Which line are both angles always measured from?",
+          "answer": "An angle of elevation is measured **upwards** from the horizontal line, while an angle of depression is measured **downwards** from the horizontal line. Both are always measured from the horizontal."
+        },
+        {
+          "number": 10,
+          "question": "Why do we write a true bearing of $45^\\circ$ with three digits as $045^\\circ\\text{T}$ in navigation and aviation?",
+          "answer": "Writing all true bearings with three digits (including a leading zero for angles under $100^\\circ$) prevents misreading or radio confusion in navigation."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_8_2_1a", "expression": "asin(Rational(4, 8)) * 180 / pi", "expected": 30 },
+        { "id": "WSF9_8_2_1b", "expression": "acos(Rational(5, 10)) * 180 / pi", "expected": 60 },
+        { "id": "WSF9_8_2_1c", "expression": "atan(Rational(7, 7)) * 180 / pi", "expected": 45 },
+        { "id": "WSF9_8_2_3d", "expression": "(0 + 90) / 2", "expected": 45 },
+        { "id": "WSF9_8_2_4c", "expression": "180 + 20", "expected": 200 },
+        { "id": "WSF9_8_2_4d", "expression": "360 - 30", "expected": 330 },
+        { "id": "WSF9_8_2_5", "expression": "asin(Rational(5, 10)) * 180 / pi", "expected": 30 },
+        { "id": "WSF9_8_2_6", "expression": "atan(Rational(20, 20)) * 180 / pi", "expected": 45 },
+        { "id": "WSF9_8_2_7", "expression": "90 + 180", "expected": 270 },
+        { "id": "WSF9_8_2_8", "expression": "30 / tan(pi/4)", "expected": 30 }
+      ]
+    }
+  ]
+}

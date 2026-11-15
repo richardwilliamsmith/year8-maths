@@ -1,0 +1,295 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Financial Mathematics, Surds, and Logarithms (10 & 10A)",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_1_1",
+      "section_code": "1A",
+      "title": "Compound Interest, Depreciation, and Financial Modelling",
+      "vcaa_code": "VC2M10N01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Calculate the exact effective annual interest rate $r_{\\text{eff}} = (1 + i/m)^m - 1$ as a percentage:",
+          "parts": [
+            { "label": "a", "question": "$10\\%$ p.a. compounded half-yearly ($m = 2$)", "answer": "$10.25\\%$" },
+            { "label": "b", "question": "$8\\%$ p.a. compounded quarterly ($m = 4$, exact decimal)", "answer": "$8.243216\\%$" },
+            { "label": "c", "question": "$20\\%$ p.a. compounded half-yearly ($m = 2$)", "answer": "$21\\%$" },
+            { "label": "d", "question": "$12\\%$ p.a. compounded half-yearly ($m = 2$)", "answer": "$12.36\\%$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each compound growth or depreciation equation for the exact unknown parameter:",
+          "parts": [
+            { "label": "a", "question": "Find $P$ if $P(1.05)^3 = \\$18\\,522$", "answer": "$P = \\$16\\,000$" },
+            { "label": "b", "question": "Find $r$ ($0 < r < 1$) if $\\$8000(1 + r)^3 = \\$10\\,648$", "answer": "$r = 0.10$ ($10\\%$ p.a.)" },
+            { "label": "c", "question": "Find $r$ ($0 < r < 1$) if $\\$16\\,000(1 - r)^4 = \\$5062.50$", "answer": "$r = 0.25$ ($25\\%$ p.a.)" },
+            { "label": "d", "question": "Find $n$ if $\\$5000(1.20)^n = \\$8640$", "answer": "$n = 3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the real purchasing-power multiplier $\\dfrac{1 + r_{\\text{nom}}}{1 + r_{\\text{inf}}}$ after $1$ year:",
+          "parts": [
+            { "label": "a", "question": "Nominal return $10\\%$, inflation $10\\%$", "answer": "$1$ ($0\\%$ real growth)" },
+            { "label": "b", "question": "Nominal return $15.5\\%$, inflation $5\\%$", "answer": "$1.10$ ($10\\%$ real growth)" },
+            { "label": "c", "question": "Nominal return $8.16\\%$, inflation $4\\%$", "answer": "$1.04$ ($4\\%$ real growth)" },
+            { "label": "d", "question": "Nominal return $2\\%$, inflation $4\\%$ (as a simplified fraction)", "answer": "$\\dfrac{51}{52}$ (real loss)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "An annuity receives $\\$1000$ at the start of each year at $10\\%$ p.a. compound interest. Find the total balance at the end of:",
+          "parts": [
+            { "label": "a", "question": "Year $1$: $1000(1.1)$", "answer": "$\\$1100.00$" },
+            { "label": "b", "question": "Year $2$: $1000(1.1)^2 + 1000(1.1)$", "answer": "$\\$2310.00$" },
+            { "label": "c", "question": "Year $3$: $1000(1.1)^3 + 1000(1.1)^2 + 1000(1.1)$", "answer": "$\\$3641.00$" },
+            { "label": "d", "question": "Verify that the Year $3$ balance equals $1100 \\times \\dfrac{1.1^3 - 1}{1.1 - 1}$", "answer": "$\\$3641.00$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A commercial solar battery in Adelaide costs $\\$27\\,000$ and depreciates by $1/3$ of its value each year ($A = 27\\,000(2/3)^n$). Meanwhile, a replacement fund of $\\$8000$ grows by $50\\%$ per year ($B = 8000(3/2)^n$). Find the number of years $n$ when $A = B$.",
+          "answer": "$27\\,000(2/3)^n = 8000(3/2)^n \\implies (9/4)^n = 27/8 \\implies (3/2)^{2n} = (3/2)^3 \\implies n = 1.5\\text{ years}$ (or after $n = 2$ years, $A = \\$12\\,000$ and $B = \\$18\\,000$)"
+        },
+        {
+          "number": 6,
+          "question": "A Perth investor deposits $\\$10\\,000$ at $10\\%$ p.a. compounded annually for $2$ years, then the rate changes to $5\\%$ p.a. compounded annually for the next $2$ years. Find the exact final balance after $4$ years.",
+          "answer": "$10\\,000(1.10)^2(1.05)^2 = 12\\,100 \\times 1.1025 = \\$13\\,340.25$"
+        },
+        {
+          "number": 7,
+          "question": "Compare the exact interest earned on $\\$100\\,000$ over $1$ year at $8\\%$ p.a. compounded quarterly versus $8.2\\%$ p.a. simple interest.",
+          "answer": "Quarterly compounding: $\\$100\\,000(1.02)^4 - \\$100\\,000 = \\$8243.216$; Simple: $\\$8200$. Quarterly compounding earns $\\$43.22$ more."
+        },
+        {
+          "number": 8,
+          "question": "A machine bought for $\\$P$ depreciates by $20\\%$ in year $1$ and $25\\%$ in year $2$, reaching a book value of $\\$36\\,000$. Find the original price $P$ and the single equivalent annual depreciation rate $r_{\\text{eq}}$ over the $2$ years.",
+          "answer": "$P(0.80)(0.75) = 0.60P = 36\\,000 \\implies P = \\$60\\,000$; $r_{\\text{eq}} = 1 - \\sqrt{0.60} \\approx 22.54\\%$ p.a."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove algebraically that if an asset increases in value by $p\\%$ in year $1$ and decreases by $p\\%$ in year $2$ ($p > 0$), its final value is always strictly less than its initial value $P$.",
+          "answer": "$A = P(1 + p/100)(1 - p/100) = P\\left(1 - \\dfrac{p^2}{10\\,000}\\right) < P$ since $p^2 > 0$."
+        },
+        {
+          "number": 10,
+          "question": "Using the compound interest formula $A = P(1 + r)^n$, show that the doubling time $n$ satisfies $n = \\dfrac{\\ln(2)}{\\ln(1 + r)}$, and explain why for small $r$ (where $\\ln(1+r) \\approx r$ and $\\ln(2) \\approx 0.693$) this gives the financial 'Rule of $70$'.",
+          "answer": "Setting $A = 2P$ gives $(1 + r)^n = 2 \\implies n\\ln(1 + r) = \\ln(2) \\implies n = \\dfrac{\\ln(2)}{\\ln(1 + r)} \\approx \\dfrac{0.693}{r} \\approx \\dfrac{70}{100r}$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10E_1A_1a", "expression": "(Rational(21, 20)**2 - 1) * 100", "expected": "41/4" },
+        { "id": "Y10E_1A_1d", "expression": "(Rational(53, 50)**2 - 1) * 100", "expected": "309/25" },
+        { "id": "Y10E_1A_2a", "expression": "18522 / Rational(21, 20)**3", "expected": 16000 },
+        { "id": "Y10E_1A_2b", "expression": "(Rational(10648, 8000))**Rational(1, 3) - 1", "expected": "1/10" },
+        { "id": "Y10E_1A_2c", "expression": "1 - (Rational(50625, 160000))**Rational(1, 4)", "expected": "1/4" },
+        { "id": "Y10E_1A_3b", "expression": "Rational(1155, 1000) / Rational(105, 100)", "expected": "11/10" },
+        { "id": "Y10E_1A_3c", "expression": "Rational(10816, 10000) / Rational(104, 100)", "expected": "26/25" },
+        { "id": "Y10E_1A_4c", "expression": "1000*Rational(11,10)**3 + 1000*Rational(11,10)**2 + 1000*Rational(11,10)", "expected": 3641 },
+        { "id": "Y10E_1A_6", "expression": "10000 * Rational(11, 10)**2 * Rational(21, 20)**2", "expected": "53361/4" },
+        { "id": "Y10E_1A_8", "expression": "36000 / (Rational(4, 5) * Rational(3, 4))", "expected": 60000 }
+      ]
+    },
+    {
+      "section_id": "10_1_2",
+      "section_code": "1B",
+      "title": "[10A] Operations with Surds and Rationalising the Denominator",
+      "vcaa_code": "VC2M10AN01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Rationalise each denominator and combine into a single simplified expression:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{1}{\\sqrt{3} - \\sqrt{2}} + \\dfrac{1}{\\sqrt{3} + \\sqrt{2}}$", "answer": "$2\\sqrt{3}$" },
+            { "label": "b", "question": "$\\dfrac{\\sqrt{5} + \\sqrt{3}}{\\sqrt{5} - \\sqrt{3}} - \\dfrac{\\sqrt{5} - \\sqrt{3}}{\\sqrt{5} + \\sqrt{3}}$", "answer": "$2\\sqrt{15}$" },
+            { "label": "c", "question": "$\\dfrac{\\sqrt{7} + \\sqrt{5}}{\\sqrt{7} - \\sqrt{5}} + \\dfrac{\\sqrt{7} - \\sqrt{5}}{\\sqrt{7} + \\sqrt{5}}$", "answer": "$12$" },
+            { "label": "d", "question": "$\\dfrac{3\\sqrt{2} + 2\\sqrt{3}}{3\\sqrt{2} - 2\\sqrt{3}}$", "answer": "$5 + 2\\sqrt{6}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Express each nested surd $\\sqrt{a \\pm 2\\sqrt{b}}$ in the form $\\sqrt{m} \\pm \\sqrt{n}$ where $m > n$:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{5 + 2\\sqrt{6}}$ (Hint: $(\\sqrt{3} + \\sqrt{2})^2 = 5 + 2\\sqrt{6}$)", "answer": "$\\sqrt{3} + \\sqrt{2}$" },
+            { "label": "b", "question": "$\\sqrt{8 - 2\\sqrt{15}}$", "answer": "$\\sqrt{5} - \\sqrt{3}$" },
+            { "label": "c", "question": "$\\sqrt{7 + 4\\sqrt{3}}$", "answer": "$2 + \\sqrt{3}$" },
+            { "label": "d", "question": "$\\sqrt{9 - 4\\sqrt{5}}$", "answer": "$\\sqrt{5} - 2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given $x = 2 + \\sqrt{3}$ and $y = 2 - \\sqrt{3}$, evaluate each symmetric expression:",
+          "parts": [
+            { "label": "a", "question": "$x + y$ and $xy$", "answer": "$x + y = 4$, $xy = 1$" },
+            { "label": "b", "question": "$x^2 + y^2 = (x + y)^2 - 2xy$", "answer": "$14$" },
+            { "label": "c", "question": "$x^3 + y^3 = (x + y)^3 - 3xy(x + y)$", "answer": "$52$" },
+            { "label": "d", "question": "$\\dfrac{x}{y} + \\dfrac{y}{x}$", "answer": "$14$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the rational numbers $a$ and $b$ in each surd identity:",
+          "parts": [
+            { "label": "a", "question": "$(3 - 2\\sqrt{2})^2 = a + b\\sqrt{2}$", "answer": "$a = 17, b = -12$" },
+            { "label": "b", "question": "$\\dfrac{5 + 2\\sqrt{3}}{7 + 4\\sqrt{3}} = a + b\\sqrt{3}$", "answer": "$a = 11, b = -6$" },
+            { "label": "c", "question": "$(1 + \\sqrt{2})^3 = a + b\\sqrt{2}$", "answer": "$a = 7, b = 5$" },
+            { "label": "d", "question": "$\\dfrac{14}{3\\sqrt{3} - \\sqrt{5}} = a\\sqrt{3} + b\\sqrt{5}$", "answer": "$a = \\dfrac{21}{11}, b = \\dfrac{7}{11}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Evaluate the telescoping sum $S = \\dfrac{1}{1 + \\sqrt{2}} + \\dfrac{1}{\\sqrt{2} + \\sqrt{3}} + \\dfrac{1}{\\sqrt{3} + \\sqrt{4}} + \\dots + \\dfrac{1}{\\sqrt{99} + \\sqrt{100}}$ by rationalising each denominator.",
+          "answer": "$(\\sqrt{2} - 1) + (\\sqrt{3} - \\sqrt{2}) + \\dots + (\\sqrt{100} - \\sqrt{99}) = \\sqrt{100} - 1 = 9$"
+        },
+        {
+          "number": 6,
+          "question": "Using the exact half-angle trigonometric value $\\tan(15^\\circ) = \\dfrac{\\sqrt{3} - 1}{\\sqrt{3} + 1}$, rationalise the denominator to express $\\tan(15^\\circ)$ in the form $a - \\sqrt{b}$.",
+          "answer": "$\\dfrac{(\\sqrt{3} - 1)^2}{3 - 1} = \\dfrac{4 - 2\\sqrt{3}}{2} = 2 - \\sqrt{3}$"
+        },
+        {
+          "number": 7,
+          "question": "A golden rectangle has length $\\phi = \\dfrac{1 + \\sqrt{5}}{2}$ and width $1$. If a $1 \\times 1$ square is removed, show that the remaining rectangle of dimensions $1$ by $(\\phi - 1)$ has the exact same length-to-width ratio $\\dfrac{1}{\\phi - 1} = \\phi$.",
+          "answer": "$\\dfrac{1}{\\frac{\\sqrt{5}-1}{2}} = \\dfrac{2}{\\sqrt{5} - 1} = \\dfrac{2(\\sqrt{5} + 1)}{4} = \\dfrac{1 + \\sqrt{5}}{2} = \\phi$"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular prism has exact edge lengths $\\sqrt{6} + \\sqrt{2}$, $\\sqrt{6} - \\sqrt{2}$, and $\\sqrt{3}$. Find its exact volume and its exact space diagonal $d = \\sqrt{l^2 + w^2 + h^2}$.",
+          "answer": "$V = (6 - 2)\\sqrt{3} = 4\\sqrt{3}$; $d = \\sqrt{(8 + 4\\sqrt{3}) + (8 - 4\\sqrt{3}) + 3} = \\sqrt{19}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove by contradiction that $\\sqrt{2}$ is irrational: assume $\\sqrt{2} = \\dfrac{p}{q}$ in lowest terms ($\\gcd(p, q) = 1$) and show that both $p$ and $q$ must be even.",
+          "answer": "$2 = p^2/q^2 \\implies p^2 = 2q^2$, so $p^2$ is even $\\implies p = 2k$ is even. Then $4k^2 = 2q^2 \\implies q^2 = 2k^2$, so $q$ is also even, contradicting $\\gcd(p, q) = 1$."
+        },
+        {
+          "number": 10,
+          "question": "Show how to rationalise the three-term denominator of $\\dfrac{1}{1 + \\sqrt{2} + \\sqrt{3}}$ in two steps by first grouping $(1 + \\sqrt{2}) + \\sqrt{3}$.",
+          "answer": "Multiply by $(1 + \\sqrt{2}) - \\sqrt{3}$ to get $\\dfrac{1 + \\sqrt{2} - \\sqrt{3}}{(1 + 2\\sqrt{2} + 2) - 3} = \\dfrac{1 + \\sqrt{2} - \\sqrt{3}}{2\\sqrt{2}} = \\dfrac{\\sqrt{2} + 2 - \\sqrt{6}}{4}$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10E_1B_1a", "expression": "simplify(1/(sqrt(3) - sqrt(2)) + 1/(sqrt(3) + sqrt(2)) - 2*sqrt(3))", "expected": 0 },
+        { "id": "Y10E_1B_1b", "expression": "simplify((sqrt(5) + sqrt(3))/(sqrt(5) - sqrt(3)) - (sqrt(5) - sqrt(3))/(sqrt(5) + sqrt(3)) - 2*sqrt(15))", "expected": 0 },
+        { "id": "Y10E_1B_1c", "expression": "simplify((sqrt(7) + sqrt(5))/(sqrt(7) - sqrt(5)) + (sqrt(7) - sqrt(5))/(sqrt(7) + sqrt(5)))", "expected": 12 },
+        { "id": "Y10E_1B_1d", "expression": "simplify((3*sqrt(2) + 2*sqrt(3))/(3*sqrt(2) - 2*sqrt(3)) - (5 + 2*sqrt(6)))", "expected": 0 },
+        { "id": "Y10E_1B_2a", "expression": "simplify((sqrt(3) + sqrt(2))**2 - (5 + 2*sqrt(6)))", "expected": 0 },
+        { "id": "Y10E_1B_3b", "expression": "simplify((2 + sqrt(3))**2 + (2 - sqrt(3))**2)", "expected": 14 },
+        { "id": "Y10E_1B_3c", "expression": "simplify((2 + sqrt(3))**3 + (2 - sqrt(3))**3)", "expected": 52 },
+        { "id": "Y10E_1B_4b", "expression": "simplify((5 + 2*sqrt(3))/(7 + 4*sqrt(3)) - (11 - 6*sqrt(3)))", "expected": 0 },
+        { "id": "Y10E_1B_6", "expression": "simplify((sqrt(3) - 1)/(sqrt(3) + 1) - (2 - sqrt(3)))", "expected": 0 },
+        { "id": "Y10E_1B_10", "expression": "simplify(1/(1 + sqrt(2) + sqrt(3)) - (sqrt(2) + 2 - sqrt(6))/4)", "expected": 0 }
+      ]
+    },
+    {
+      "section_id": "10_1_3",
+      "section_code": "1C",
+      "title": "[10A] Fractional Indices and Logarithms",
+      "vcaa_code": "VC2M10AN02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each algebraic expression involving fractional and negative exponents ($x, y > 0$):",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{(8x^6)^{-2/3}}{x^{-1}}$", "answer": "$\\dfrac{1}{4x^3}$" },
+            { "label": "b", "question": "$\\left(\\dfrac{27x^{3/2}}{8y^{-3}}\\right)^{2/3}$", "answer": "$\\dfrac{9xy^2}{4}$" },
+            { "label": "c", "question": "$x^{1/2}(x^{3/2} - 2x^{-1/2})$", "answer": "$x^2 - 2$" },
+            { "label": "d", "question": "$\\dfrac{x^{4/3} - x^{1/3}}{x^{1/3}}$", "answer": "$x - 1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use the change-of-base theorem $\\log_a(b) = \\dfrac{\\log_c(b)}{\\log_c(a)}$ to evaluate each product or quotient:",
+          "parts": [
+            { "label": "a", "question": "$\\log_2(3) \\times \\log_3(4) \\times \\log_4(8)$", "answer": "$3$" },
+            { "label": "b", "question": "$\\log_4(8) + \\log_8(4)$", "answer": "$\\dfrac{13}{6}$" },
+            { "label": "c", "question": "$\\log_9(27) - \\log_{27}(9)$", "answer": "$\\dfrac{5}{6}$" },
+            { "label": "d", "question": "$\\log_5(2) \\times \\log_4(25)$", "answer": "$1$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each logarithmic equation for $x$, checking all domain restrictions:",
+          "parts": [
+            { "label": "a", "question": "$\\log_2(x - 1) + \\log_2(x + 2) = 2$", "answer": "$x = 2$ (reject $x = -3$)" },
+            { "label": "b", "question": "$\\log_3(2x + 1) - \\log_3(x - 1) = 1$", "answer": "$x = 4$" },
+            { "label": "c", "question": "$(\\log_2 x)^2 - 5\\log_2(x) + 6 = 0$", "answer": "$x = 4$ or $x = 8$" },
+            { "label": "d", "question": "$\\log_2(x) + \\log_4(x) = 3$", "answer": "$x = 4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each disguised quadratic exponential equation for $x$:",
+          "parts": [
+            { "label": "a", "question": "$2^{2x} - 6(2^x) + 8 = 0$", "answer": "$x = 1$ or $x = 2$" },
+            { "label": "b", "question": "$3^{2x} - 12(3^x) + 27 = 0$", "answer": "$x = 1$ or $x = 2$" },
+            { "label": "c", "question": "$5^{2x} - 4(5^x) - 5 = 0$", "answer": "$x = 1$ (since $5^x > 0$)" },
+            { "label": "d", "question": "$4^x - 10(2^x) + 16 = 0$", "answer": "$x = 1$ or $x = 3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Carbon-$14$ decays according to $M(t) = M_0 \\times 2^{-t/5730}$. An ancient Aboriginal hearth charcoal sample contains $\\dfrac{1}{8}$ of its original Carbon-$14$. Find the age $t$ of the sample in years.",
+          "answer": "$2^{-t/5730} = 2^{-3} \\implies t = 3 \\times 5730 = 17\\,190\\text{ years}$"
+        },
+        {
+          "number": 6,
+          "question": "If the sound intensity $I$ at a concert in Sydney increases by a factor of $20$, by how many decibels does the loudness $L = 10\\log_{10}(I/I_0)$ increase? Give your answer in terms of $\\log_{10}(2)$.",
+          "answer": "$\\Delta L = 10\\log_{10}(20) = 10(1 + \\log_{10} 2) = 10 + 10\\log_{10}(2) \\approx 13.01\\text{ dB}$"
+        },
+        {
+          "number": 7,
+          "question": "The energy $E$ released by an earthquake of Richter magnitude $M$ satisfies $\\log_{10}(E) = 4.4 + 1.5M$. Find the exact ratio $\\dfrac{E_2}{E_1}$ of the energy released by a magnitude $7$ earthquake compared to a magnitude $5$ earthquake.",
+          "answer": "$\\log_{10}(E_2/E_1) = 1.5(7 - 5) = 3 \\implies \\dfrac{E_2}{E_1} = 10^3 = 1000$"
+        },
+        {
+          "number": 8,
+          "question": "Solve for $t$ in exact logarithmic form: an investment triples when $(1.08)^t = 3$. Express $t$ using base-$10$ logarithms.",
+          "answer": "$t = \\dfrac{\\log_{10}(3)}{\\log_{10}(1.08)}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove the change-of-base theorem $\\log_a(b) = \\dfrac{\\log_c(b)}{\\log_c(a)}$ ($a, b, c > 0$, $a, c \\neq 1$) by letting $y = \\log_a(b)$ and taking $\\log_c$ of both sides of $a^y = b$.",
+          "answer": "Let $y = \\log_a(b) \\iff a^y = b$. Taking $\\log_c$ of both sides gives $\\log_c(a^y) = \\log_c(b) \\implies y\\log_c(a) = \\log_c(b) \\implies y = \\dfrac{\\log_c(b)}{\\log_c(a)}$."
+        },
+        {
+          "number": 10,
+          "question": "Show that $a^{\\log_b(c)} = c^{\\log_b(a)}$ for all $a, b, c > 0$ ($b \\neq 1$) by taking $\\log_b$ of both sides.",
+          "answer": "$\\log_b\\left(a^{\\log_b c}\\right) = \\log_b(c) \\cdot \\log_b(a) = \\log_b(a) \\cdot \\log_b(c) = \\log_b\\left(c^{\\log_b a}\\right)$, so $a^{\\log_b(c)} = c^{\\log_b(a)}$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10E_1C_2a", "expression": "simplify(log(3, 2) * log(4, 3) * log(8, 4))", "expected": 3 },
+        { "id": "Y10E_1C_2b", "expression": "simplify(log(8, 4) + log(4, 8))", "expected": "13/6" },
+        { "id": "Y10E_1C_2c", "expression": "simplify(log(27, 9) - log(9, 27))", "expected": "5/6" },
+        { "id": "Y10E_1C_2d", "expression": "simplify(log(2, 5) * log(25, 4))", "expected": 1 },
+        { "id": "Y10E_1C_3a", "expression": "simplify(log(2 - 1, 2) + log(2 + 2, 2))", "expected": 2 },
+        { "id": "Y10E_1C_3b", "expression": "simplify(log(2*4 + 1, 3) - log(4 - 1, 3))", "expected": 1 },
+        { "id": "Y10E_1C_3d", "expression": "simplify(log(4, 2) + log(4, 4))", "expected": 3 },
+        { "id": "Y10E_1C_4c", "expression": "5**(2*1) - 4*(5**1) - 5", "expected": 0 },
+        { "id": "Y10E_1C_5", "expression": "3 * 5730", "expected": 17190 },
+        { "id": "Y10E_1C_7", "expression": "10**(Rational(3, 2) * (7 - 5))", "expected": 1000 }
+      ]
+    }
+  ]
+}

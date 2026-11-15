@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "section_id": "10_5_1",
+    "section_code": "5A",
+    "chapter_number": 5,
+    "chapter_title": "Surface Area and Volume of Pyramids, Cones, and Spheres (10 & 10A)",
+    "title": "Surface Area and Volume of Pyramids, Cones, and Spheres",
+    "vcaa_code": "VC2M10M01",
+    "vcaa_description": "Solve problems involving the surface area and volume of composite objects using appropriate units (and 10A pyramids, cones, spheres VC2M10AM01).",
+    "strand": "Measurement",
+    "target_mastery": "Calculate the total surface area and volume of right pyramids ($V = \\frac{1}{3}Ah$), cones ($\\text{TSA} = \\pi r^2 + \\pi r s$, $V = \\frac{1}{3}\\pi r^2 h$), spheres ($\\text{TSA} = 4\\pi r^2$, $V = \\frac{4}{3}\\pi r^3$), composite solids, and logarithmic scales (VC2M10M02).",
+    "prerequisites": [
+      "Surface area and volume of prisms and cylinders (Year 9 VC2M9M02)",
+      "Pythagoras' theorem for slant height"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Slant height ($s$)",
+        "definition": "The distance measured along the outer sloping face of a right pyramid or cone from the apex to the midpoint of a base edge (or circular base rim), related to perpendicular height $h$ by Pythagoras' theorem."
+      },
+      {
+        "term": "Right pyramid and right cone",
+        "definition": "Three-dimensional solids that taper uniformly from a flat base (polygonal for a pyramid, circular for a cone) to a single apex directly above the centre of the base, with volume $V = \\frac{1}{3}Ah$."
+      },
+      {
+        "term": "Sphere and hemisphere",
+        "definition": "A sphere is the locus of all points in 3D space at a constant distance $r$ from a centre, with $\\text{TSA} = 4\\pi r^2$ and $V = \\frac{4}{3}\\pi r^3$; a closed hemisphere has $\\text{TSA} = 3\\pi r^2$ and $V = \\frac{2}{3}\\pi r^3$."
+      },
+      {
+        "term": "Composite solid",
+        "definition": "A 3D object formed by joining or hollowing out two or more basic solids (such as a silo made from a cylinder and a cone); any internal joining faces are excluded when calculating exterior surface area."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_5_1_1",
+      "title": "Surface Area and Volume of Right Pyramids and Cones",
+      "explanation": "Every right pyramid or cone occupies exactly one-third of the volume of the prism or cylinder sharing the same base area $A$ and perpendicular height $h$. To find the total surface area ($\\text{TSA}$) of a square-based pyramid with base side $b$ and slant height $s$, add the square base area $b^2$ to the four congruent triangular faces ($4 \\times \\frac{1}{2}bs = 2bs$). For a right circular cone of radius $r$, perpendicular height $h$, and slant height $s = \\sqrt{r^2 + h^2}$, the curved lateral surface unrolls into a sector of area $\\pi r s$.",
+      "formula_latex": "V_{\\text{pyramid}} = \\frac{1}{3}Ah, \\quad V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 h, \\quad \\text{TSA}_{\\text{cone}} = \\pi r^2 + \\pi r s \\quad \\left(s = \\sqrt{r^2 + h^2}\\right)",
+      "callout_title": "Perpendicular Height $h$ for Volume; Slant Height $s$ for Surface Area",
+      "callout_rule": "Never confuse $h$ and $s$: Volume ALWAYS uses the vertical perpendicular height $h$ inside the solid, whereas Surface Area ALWAYS uses the sloping slant height $s$ on the outer face."
+    },
+    {
+      "id": "theory_10_5_1_2",
+      "title": "Surface Area and Volume of Spheres and Hemispheres",
+      "explanation": "Archimedes proved that the surface area of a sphere of radius $r$ is exactly four times the area of its greatest circular cross-section ($\\text{TSA} = 4\\pi r^2$), and its volume is $V = \\frac{4}{3}\\pi r^3$. When a sphere is sliced in half to form a solid hemisphere, its curved dome has area $2\\pi r^2$, and if the flat circular base ($\\pi r^2$) is included, the closed hemisphere has total surface area $3\\pi r^2$ and volume $\\frac{2}{3}\\pi r^3$.",
+      "formula_latex": "\\text{TSA}_{\\text{sphere}} = 4\\pi r^2, \\quad V_{\\text{sphere}} = \\frac{4}{3}\\pi r^3, \\quad \\text{TSA}_{\\text{closed hemisphere}} = 3\\pi r^2, \\quad V_{\\text{hemisphere}} = \\frac{2}{3}\\pi r^3",
+      "callout_title": "Closed vs Open Hemisphere Surface Area",
+      "callout_rule": "An open hemispherical bowl or dome roof has curved surface area $2\\pi r^2$; a solid closed hemisphere includes the flat circular base and has $\\text{TSA} = 2\\pi r^2 + \\pi r^2 = 3\\pi r^2$."
+    },
+    {
+      "id": "theory_10_5_1_3",
+      "title": "Composite Solids and Logarithmic Measurement Scales",
+      "explanation": "To find the volume of a composite solid, add the volumes of joined components (or subtract the volume of a hollowed-out cavity). To find its exterior surface area, sum only the exposed outer faces — never include the hidden internal circle or polygon where two solids are glued together! In measurement science (VC2M10M02), quantities spanning many orders of magnitude (such as sound intensity in decibels, earthquake amplitude on the Richter scale, and acidity on the $\\text{pH}$ scale) are measured on base-$10$ logarithmic scales, where each $+1$ step on the scale represents a $10$-fold multiplication in physical intensity.",
+      "formula_latex": "\\text{TSA}_{\\text{composite}} = \\sum \\text{(exposed outer surfaces only)}, \\qquad I_2 / I_1 = 10^{M_2 - M_1}",
+      "callout_title": "Internal Joining Faces Are Not Exposed",
+      "callout_rule": "When a cone or hemisphere sits on top of a cylinder, the circular interface between them is buried inside the solid — subtract or omit that circle from both shapes when calculating $\\text{TSA}$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_5_1_1",
+      "title": "Total Surface Area and Volume of a Square-Based Pyramid",
+      "difficulty": "Fluency",
+      "problem": "A right square-based pyramid has a base side length of $b = 12\\text{ cm}$ and a vertical perpendicular height of $h = 8\\text{ cm}$. Find: (a) the slant height $s$ of each triangular face, (b) the total surface area ($\\text{TSA}$), and (c) the volume $V$ of the pyramid.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The perpendicular height $h = 8\\text{ cm}$, half the base width $\\frac{b}{2} = 6\\text{ cm}$, and the slant height $s$ form a right-angled triangle inside the pyramid.",
+          "working": "$$s = \\sqrt{h^2 + \\left(\\frac{b}{2}\\right)^2} = \\sqrt{8^2 + 6^2} = \\sqrt{64 + 36} = \\sqrt{100} = 10\\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Add the area of the $12\\text{ cm} \\times 12\\text{ cm}$ square base to the areas of the $4$ congruent triangular faces of base $12\\text{ cm}$ and slant height $10\\text{ cm}$.",
+          "working": "$$\\text{TSA} = b^2 + 4\\left(\\frac{1}{2}bs\\right) = 12^2 + 4\\left(\\frac{1}{2} \\times 12 \\times 10\\right) = 144 + 240 = 384\\text{ cm}^2$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Substitute the base area $A = 144\\text{ cm}^2$ and perpendicular height $h = 8\\text{ cm}$ into $V = \\frac{1}{3}Ah$.",
+          "working": "$$V = \\frac{1}{3} \\times 144 \\times 8 = 48 \\times 8 = 384\\text{ cm}^3$$"
+        }
+      ],
+      "final_answer": "(a) $s = 10\\text{ cm}$, (b) $\\text{TSA} = 384\\text{ cm}^2$, (c) $V = 384\\text{ cm}^3$",
+      "now_you_try": {
+        "problem": "A right square-based pyramid has base side length $10\\text{ cm}$ and perpendicular height $12\\text{ cm}$. Find (a) its slant height $s$, (b) its total surface area, and (c) its volume.",
+        "hint": "Use a right-angled triangle with legs $12\\text{ cm}$ and $\\frac{10}{2} = 5\\text{ cm}$ to find $s$.",
+        "working_summary": "$s = \\sqrt{12^2 + 5^2} = 13\\text{ cm}$; $\\text{TSA} = 10^2 + 2(10)(13) = 100 + 260 = 360\\text{ cm}^2$; $V = \\frac{1}{3}(100)(12) = 400\\text{ cm}^3$.",
+        "answer": "(a) $s = 13\\text{ cm}$, (b) $\\text{TSA} = 360\\text{ cm}^2$, (c) $V = 400\\text{ cm}^3$"
+      }
+    },
+    {
+      "id": "WE10_5_1_2",
+      "title": "Exact and Rounded Surface Area and Volume of a Cone and Sphere",
+      "difficulty": "Fluency",
+      "problem": "(a) A right circular cone has base radius $r = 5\\text{ cm}$ and perpendicular height $h = 12\\text{ cm}$. Find its exact total surface area and volume in terms of $\\pi$. (b) A solid sphere has radius $r = 6\\text{ cm}$. Find its exact total surface area and volume in terms of $\\pi$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For the cone in part (a), first find the slant height $s = \\sqrt{r^2 + h^2}$, then evaluate $\\text{TSA} = \\pi r^2 + \\pi r s$ and $V = \\frac{1}{3}\\pi r^2 h$.",
+          "working": "$$s = \\sqrt{5^2 + 12^2} = 13\\text{ cm}$$\n$$\\text{TSA}_{\\text{cone}} = \\pi(5)^2 + \\pi(5)(13) = 25\\pi + 65\\pi = 90\\pi\\text{ cm}^2$$\n$$V_{\\text{cone}} = \\frac{1}{3}\\pi(5)^2(12) = 100\\pi\\text{ cm}^3$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For the sphere in part (b), substitute $r = 6\\text{ cm}$ into $\\text{TSA} = 4\\pi r^2$ and $V = \\frac{4}{3}\\pi r^3$.",
+          "working": "$$\\text{TSA}_{\\text{sphere}} = 4\\pi(6)^2 = 144\\pi\\text{ cm}^2$$\n$$V_{\\text{sphere}} = \\frac{4}{3}\\pi(6)^3 = \\frac{4}{3}\\pi(216) = 288\\pi\\text{ cm}^3$$"
+        }
+      ],
+      "final_answer": "(a) $\\text{TSA} = 90\\pi\\text{ cm}^2$, $V = 100\\pi\\text{ cm}^3$; (b) $\\text{TSA} = 144\\pi\\text{ cm}^2$, $V = 288\\pi\\text{ cm}^3$",
+      "now_you_try": {
+        "problem": "Find the exact total surface area and exact volume of a solid closed hemisphere of radius $r = 3\\text{ cm}$ in terms of $\\pi$.",
+        "hint": "Use $\\text{TSA} = 3\\pi r^2$ and $V = \\frac{2}{3}\\pi r^3$.",
+        "working_summary": "$\\text{TSA} = 3\\pi(3)^2 = 27\\pi\\text{ cm}^2$; $V = \\frac{2}{3}\\pi(3)^3 = 18\\pi\\text{ cm}^3$.",
+        "answer": "$\\text{TSA} = 27\\pi\\text{ cm}^2$, $V = 18\\pi\\text{ cm}^3$"
+      }
+    },
+    {
+      "id": "WE10_5_1_3",
+      "title": "Composite Grain Silo — Volume and Exposed Surface Area",
+      "difficulty": "Problem-Solving",
+      "problem": "A cylindrical wheat silo in the Wimmera (Victoria) consists of a vertical cylinder of radius $r = 3\\text{ m}$ and height $h_{\\text{cyl}} = 10\\text{ m}$, topped by a right conical roof of the same radius $r = 3\\text{ m}$ and vertical height $h_{\\text{cone}} = 4\\text{ m}$. Find in exact terms of $\\pi$: (a) the total storage volume $V$ of the silo, and (b) the total exterior surface area to be painted (comprising the curved cylinder wall and the sloped conical roof, excluding the concrete floor on the ground).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Add the volume of the cylinder ($\\pi r^2 h_{\\text{cyl}}$) and the volume of the cone ($\\frac{1}{3}\\pi r^2 h_{\\text{cone}}$).",
+          "working": "$$V = \\pi(3)^2(10) + \\frac{1}{3}\\pi(3)^2(4) = 90\\pi + 12\\pi = 102\\pi\\text{ m}^3$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Find the slant height $s$ of the conical roof using $r = 3\\text{ m}$ and $h_{\\text{cone}} = 4\\text{ m}$.",
+          "working": "$$s = \\sqrt{3^2 + 4^2} = 5\\text{ m}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Sum the curved wall of the cylinder ($2\\pi r h_{\\text{cyl}}$) and the curved roof of the cone ($\\pi r s$). Neither the internal circle between them nor the floor on the ground is painted.",
+          "working": "$$A_{\\text{painted}} = 2\\pi(3)(10) + \\pi(3)(5) = 60\\pi + 15\\pi = 75\\pi\\text{ m}^2$$"
+        }
+      ],
+      "final_answer": "(a) $V = 102\\pi\\text{ m}^3 \\approx 320.44\\text{ m}^3$, (b) $A_{\\text{painted}} = 75\\pi\\text{ m}^2 \\approx 235.62\\text{ m}^2$",
+      "now_you_try": {
+        "problem": "A medicine capsule consists of a cylinder of radius $3\\text{ mm}$ and length $10\\text{ mm}$ capped at both ends by two hemispheres of radius $3\\text{ mm}$. Find the exact total surface area and volume in terms of $\\pi$.",
+        "hint": "Two hemispheres of radius $3\\text{ mm}$ combine to form one full sphere of radius $3\\text{ mm}$.",
+        "working_summary": "$\\text{TSA} = 2\\pi r h + 4\\pi r^2 = 2\\pi(3)(10) + 4\\pi(3)^2 = 60\\pi + 36\\pi = 96\\pi\\text{ mm}^2$; $V = \\pi r^2 h + \\frac{4}{3}\\pi r^3 = 90\\pi + 36\\pi = 126\\pi\\text{ mm}^3$.",
+        "answer": "$\\text{TSA} = 96\\pi\\text{ mm}^2$, $V = 126\\pi\\text{ mm}^3$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_10_5_1_1",
+      "title": "Using Slant Height $s$ Instead of Perpendicular Height $h$ in the Volume Formula",
+      "misconception": "Substituting the slant height $s$ directly into $V = \\frac{1}{3}\\pi r^2 h$ without first using Pythagoras' theorem to find the vertical height $h = \\sqrt{s^2 - r^2}$.",
+      "correct_concept": "Volume depends on the vertical altitude $h$ perpendicular to the base. If given radius $r = 6\\text{ cm}$ and slant height $s = 10\\text{ cm}$, you must first calculate $h = \\sqrt{10^2 - 6^2} = 8\\text{ cm}$.",
+      "incorrect_working": "$$V = \\frac{1}{3}\\pi(6)^2(10) = 120\\pi\\text{ cm}^3 \\quad \\text{(Incorrect — used slant height } s = 10\\text{)}$$",
+      "correct_working": "$$h = \\sqrt{10^2 - 6^2} = 8\\text{ cm} \\implies V = \\frac{1}{3}\\pi(6)^2(8) = 96\\pi\\text{ cm}^3$$",
+      "counter_example": "A cone with radius $6\\text{ cm}$ and slant height $6\\text{ cm}$ is completely flat ($h = 0$) and has zero volume, not $\\frac{1}{3}\\pi(6)^3 = 72\\pi$."
+    },
+    {
+      "id": "misc_10_5_1_2",
+      "title": "Including Hidden Internal Joining Faces in Composite Surface Area",
+      "misconception": "Adding the full $\\text{TSA}$ of a cylinder and the full $\\text{TSA}$ of a hemisphere when a hemisphere is mounted on top of a cylinder.",
+      "correct_concept": "Where the hemisphere meets the top of the cylinder, the circular base of the hemisphere and the top circular face of the cylinder are sealed inside the object. Neither circle is part of the exterior surface area.",
+      "incorrect_working": "$$\\text{TSA} = (2\\pi r^2 + 2\\pi r h) + 3\\pi r^2 = 5\\pi r^2 + 2\\pi r h \\quad \\text{(Incorrect — counts internal circle twice!)}$$",
+      "correct_working": "$$\\text{TSA} = \\pi r^2_{\\text{(bottom)}} + 2\\pi r h_{\\text{(wall)}} + 2\\pi r^2_{\\text{(dome)}} = 3\\pi r^2 + 2\\pi r h$$",
+      "counter_example": "If you dip the composite object in paint, paint never touches the internal circle where the two parts are joined."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_5_1_Q1",
+        "question": "Find the volume of a right rectangular-based pyramid with base length $9\\text{ cm}$, base width $5\\text{ cm}$, and perpendicular height $8\\text{ cm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$120\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "Calculate the area of the rectangular base: $A = 9 \\times 5 = 45\\text{ cm}^2$.",
+          "Substitute $A = 45$ and $h = 8$ into $V = \\frac{1}{3}Ah$: $V = \\frac{1}{3} \\times 45 \\times 8 = 15 \\times 8 = 120\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "10_5_1_Q2",
+        "question": "A right circular cone has a base radius of $r = 8\\text{ cm}$ and a perpendicular height of $h = 15\\text{ cm}$. Find (a) its slant height $s$, (b) its exact total surface area in terms of $\\pi$, and (c) its exact volume in terms of $\\pi$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $s = 17\\text{ cm}$, (b) $\\text{TSA} = 200\\pi\\text{ cm}^2$, (c) $V = 320\\pi\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "By Pythagoras' theorem, $s = \\sqrt{8^2 + 15^2} = \\sqrt{64 + 225} = \\sqrt{289} = 17\\text{ cm}$.",
+          "Calculate $\\text{TSA} = \\pi r^2 + \\pi r s = \\pi(8)^2 + \\pi(8)(17) = 64\\pi + 136\\pi = 200\\pi\\text{ cm}^2$.",
+          "Calculate $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi(64)(15) = 320\\pi\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "10_5_1_Q3",
+        "question": "A solid glass sphere has a diameter of $18\\text{ cm}$. Find its exact surface area and exact volume in terms of $\\pi$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$\\text{TSA} = 324\\pi\\text{ cm}^2$, $V = 972\\pi\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "Halve the diameter to obtain the radius: $r = \\frac{18}{2} = 9\\text{ cm}$.",
+          "Substitute $r = 9$ into $\\text{TSA} = 4\\pi r^2 = 4\\pi(81) = 324\\pi\\text{ cm}^2$ and $V = \\frac{4}{3}\\pi r^3 = \\frac{4}{3}\\pi(729) = 972\\pi\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "10_5_1_Q4",
+        "question": "A right square-based pyramid has a base side length of $16\\text{ cm}$ and a slant height of $s = 17\\text{ cm}$. Find (a) its total surface area, (b) its perpendicular height $h$, and (c) its volume.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "(a) $\\text{TSA} = 800\\text{ cm}^2$, (b) $h = 15\\text{ cm}$, (c) $V = 1280\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "Calculate $\\text{TSA} = b^2 + 2bs = 16^2 + 2(16)(17) = 256 + 544 = 800\\text{ cm}^2$.",
+          "Use Pythagoras' theorem with half-base $\\frac{16}{2} = 8\\text{ cm}$ and hypotenuse $s = 17\\text{ cm}$: $h = \\sqrt{17^2 - 8^2} = \\sqrt{225} = 15\\text{ cm}$.",
+          "Calculate $V = \\frac{1}{3}b^2 h = \\frac{1}{3}(256)(15) = 256 \\times 5 = 1280\\text{ cm}^3$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_5_1_Q5",
+        "question": "An ice-cream waffle cone has an internal radius of $3\\text{ cm}$ and a perpendicular depth of $10\\text{ cm}$. It is filled completely with ice-cream and topped with a hemispherical scoop of radius $3\\text{ cm}$. Find the exact total volume of ice-cream in $\\text{cm}^3$.",
+        "difficulty": "Medium",
+        "context": "Food & Hospitality",
+        "final_answer": "$48\\pi\\text{ cm}^3 \\approx 150.80\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "Find the volume inside the cone: $V_{\\text{cone}} = \\frac{1}{3}\\pi(3)^2(10) = 30\\pi\\text{ cm}^3$.",
+          "Find the volume of the hemispherical scoop: $V_{\\text{hemi}} = \\frac{2}{3}\\pi(3)^3 = 18\\pi\\text{ cm}^3$.",
+          "Add the two volumes: $V_{\\text{total}} = 30\\pi + 18\\pi = 48\\pi\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "10_5_1_Q6",
+        "question": "An astronomical observatory dome in regional New South Wales consists of a cylinder of radius $6\\text{ m}$ and height $5\\text{ m}$, surmounted by a hemispherical roof of radius $6\\text{ m}$. Find the exact exterior surface area of the building (vertical wall plus hemispherical dome, excluding the floor) in terms of $\\pi$.",
+        "difficulty": "Medium",
+        "context": "Architecture & Engineering",
+        "final_answer": "$132\\pi\\text{ m}^2 \\approx 414.69\\text{ m}^2$",
+        "step_by_step_solution": [
+          "Calculate the curved surface area of the cylindrical wall: $A_{\\text{wall}} = 2\\pi r h = 2\\pi(6)(5) = 60\\pi\\text{ m}^2$.",
+          "Calculate the curved surface area of the hemispherical dome: $A_{\\text{dome}} = 2\\pi r^2 = 2\\pi(6)^2 = 72\\pi\\text{ m}^2$.",
+          "Sum the exposed surfaces: $A_{\\text{total}} = 60\\pi + 72\\pi = 132\\pi\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "10_5_1_Q7",
+        "question": "A solid metal cylinder of radius $6\\text{ cm}$ and height $16\\text{ cm}$ is melted down and recast into solid spheres each of radius $3\\text{ cm}$ with no waste. How many complete spheres are formed?",
+        "difficulty": "Challenging",
+        "context": "Manufacturing & Casting",
+        "final_answer": "$16$ spheres",
+        "step_by_step_solution": [
+          "Find the volume of the cylinder: $V_{\\text{cyl}} = \\pi(6)^2(16) = 576\\pi\\text{ cm}^3$.",
+          "Find the volume of one sphere of radius $3\\text{ cm}$: $V_{\\text{sphere}} = \\frac{4}{3}\\pi(3)^3 = 36\\pi\\text{ cm}^3$.",
+          "Divide the volumes: $N = \\frac{576\\pi}{36\\pi} = 16$ spheres."
+        ]
+      },
+      {
+        "id": "10_5_1_Q8",
+        "question": "On the Richter logarithmic scale (VC2M10M02), each increase of $1.0$ in earthquake magnitude corresponds to a $10$-fold increase in ground-wave amplitude ($A_2 / A_1 = 10^{M_2 - M_1}$). How many times greater is the ground-wave amplitude of a magnitude $7.0$ earthquake compared to a magnitude $4.0$ tremor?",
+        "difficulty": "Challenging",
+        "context": "Seismology & Logarithmic Scales",
+        "final_answer": "$1000$ times greater",
+        "step_by_step_solution": [
+          "Compute the difference in Richter magnitudes: $M_2 - M_1 = 7.0 - 4.0 = 3.0$.",
+          "Evaluate the base-$10$ ratio: $\\frac{A_2}{A_1} = 10^{7 - 4} = 10^3 = 1000$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_5_1_Q9",
+        "question": "A sphere of radius $r$ fits snugly inside a right circular cylinder of radius $r$ and height $h = 2r$ (touching the top, bottom, and curved wall, as studied by Archimedes). Prove that the ratio of the volume of the sphere to the volume of the cylinder is $2 : 3$, and show that the ratio of the sphere's surface area to the cylinder's total surface area (including both circular ends) is also $2 : 3$.",
+        "difficulty": "Challenging",
+        "context": "Archimedes' Tombstone Proof",
+        "final_answer": "Both ratios equal $\\frac{2}{3}$ ($V_{\\text{sphere}} : V_{\\text{cyl}} = \\frac{4}{3}\\pi r^3 : 2\\pi r^3 = 2 : 3$ and $\\text{TSA}_{\\text{sphere}} : \\text{TSA}_{\\text{cyl}} = 4\\pi r^2 : 6\\pi r^2 = 2 : 3$)",
+        "step_by_step_solution": [
+          "The cylinder has height $h = 2r$, so $V_{\\text{cyl}} = \\pi r^2(2r) = 2\\pi r^3$, giving $\\frac{V_{\\text{sphere}}}{V_{\\text{cyl}}} = \\frac{\\frac{4}{3}\\pi r^3}{2\\pi r^3} = \\frac{2}{3}$.",
+          "The closed cylinder has $\\text{TSA}_{\\text{cyl}} = 2\\pi r^2 + 2\\pi r(2r) = 6\\pi r^2$, giving $\\frac{\\text{TSA}_{\\text{sphere}}}{\\text{TSA}_{\\text{cyl}}} = \\frac{4\\pi r^2}{6\\pi r^2} = \\frac{2}{3}$."
+        ]
+      },
+      {
+        "id": "10_5_1_Q10",
+        "question": "Find the positive radius $r$ (in $\\text{cm}$) for which a sphere has the exact same numerical value for its surface area (in $\\text{cm}^2$) and its volume (in $\\text{cm}^3$).",
+        "difficulty": "Medium",
+        "context": "Algebraic Reasoning",
+        "final_answer": "$r = 3\\text{ cm}$",
+        "step_by_step_solution": [
+          "Equate the two formulas: $\\frac{4}{3}\\pi r^3 = 4\\pi r^2$.",
+          "Divide both sides by $4\\pi r^2$ (since $r > 0$): $\\frac{r}{3} = 1 \\implies r = 3\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "10_5_1_Q11",
+        "question": "[10A] A frustum of a right circular cone is formed by slicing off the top cone of radius $r_1 = 3\\text{ cm}$ and height $h_1 = 4\\text{ cm}$ parallel to the base of a larger cone of radius $r_2 = 9\\text{ cm}$ and height $h_2 = 12\\text{ cm}$. Find the exact volume of the frustum in terms of $\\pi$.",
+        "difficulty": "Extension",
+        "context": "Frustum of a Cone",
+        "final_answer": "$312\\pi\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "Calculate the volume of the original large cone: $V_{\\text{large}} = \\frac{1}{3}\\pi(9)^2(12) = 324\\pi\\text{ cm}^3$.",
+          "Calculate the volume of the removed top cone: $V_{\\text{small}} = \\frac{1}{3}\\pi(3)^2(4) = 12\\pi\\text{ cm}^3$.",
+          "Subtract to find the frustum volume: $V_{\\text{frustum}} = 324\\pi - 12\\pi = 312\\pi\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "10_5_1_Q12",
+        "question": "A circular sector of radius $s = 10\\text{ cm}$ and arc length $12\\pi\\text{ cm}$ is rolled up so its straight edges meet to form the curved surface of a hollow right circular cone (without base). Find (a) the base radius $r$ of the cone, (b) its perpendicular height $h$, and (c) its exact capacity (volume) in terms of $\\pi$.",
+        "difficulty": "Extension",
+        "context": "From 2D Net to 3D Solid",
+        "final_answer": "(a) $r = 6\\text{ cm}$, (b) $h = 8\\text{ cm}$, (c) $V = 96\\pi\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "The circumference of the cone's circular base equals the sector arc length: $2\\pi r = 12\\pi \\implies r = 6\\text{ cm}$.",
+          "The sector radius becomes the cone's slant height $s = 10\\text{ cm}$, so $h = \\sqrt{s^2 - r^2} = \\sqrt{10^2 - 6^2} = 8\\text{ cm}$.",
+          "The cone's volume is $V = \\frac{1}{3}\\pi r^2 h = \\frac{1}{3}\\pi(6)^2(8) = 96\\pi\\text{ cm}^3$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_5_1_1_s",
+      "description": "WE10_5_1_1 slant height of pyramid",
+      "expression": "sqrt(8**2 + 6**2)",
+      "expected": 10
+    },
+    {
+      "id": "WE10_5_1_1_TSA",
+      "description": "WE10_5_1_1 TSA of pyramid",
+      "expression": "12**2 + 4 * Rational(1, 2) * 12 * 10",
+      "expected": 384
+    },
+    {
+      "id": "WE10_5_1_1_V",
+      "description": "WE10_5_1_1 Volume of pyramid",
+      "expression": "Rational(1, 3) * 12**2 * 8",
+      "expected": 384
+    },
+    {
+      "id": "NYT10_5_1_1_TSA",
+      "description": "NYT10_5_1_1 TSA of pyramid",
+      "expression": "10**2 + 2 * 10 * sqrt(12**2 + 5**2)",
+      "expected": 360
+    },
+    {
+      "id": "WE10_5_1_2_cone_TSA",
+      "description": "WE10_5_1_2 cone TSA coefficient of pi",
+      "expression": "(pi * 5**2 + pi * 5 * sqrt(5**2 + 12**2)) / pi",
+      "expected": 90
+    },
+    {
+      "id": "WE10_5_1_2_sphere_V",
+      "description": "WE10_5_1_2 sphere volume coefficient of pi",
+      "expression": "(Rational(4, 3) * pi * 6**3) / pi",
+      "expected": 288
+    },
+    {
+      "id": "WE10_5_1_3_V",
+      "description": "WE10_5_1_3 composite silo volume coefficient of pi",
+      "expression": "(pi * 3**2 * 10 + Rational(1, 3) * pi * 3**2 * 4) / pi",
+      "expected": 102
+    },
+    {
+      "id": "WE10_5_1_3_A",
+      "description": "WE10_5_1_3 composite silo painted area coefficient of pi",
+      "expression": "(2 * pi * 3 * 10 + pi * 3 * sqrt(3**2 + 4**2)) / pi",
+      "expected": 75
+    },
+    {
+      "id": "EX10_5_1_Q1",
+      "description": "Exercise 10.5.1 Q1 rectangular pyramid volume",
+      "expression": "Rational(1, 3) * 9 * 5 * 8",
+      "expected": 120
+    },
+    {
+      "id": "EX10_5_1_Q2_TSA",
+      "description": "Exercise 10.5.1 Q2 cone TSA coefficient of pi",
+      "expression": "8**2 + 8 * sqrt(8**2 + 15**2)",
+      "expected": 200
+    },
+    {
+      "id": "EX10_5_1_Q3_V",
+      "description": "Exercise 10.5.1 Q3 sphere volume coefficient of pi",
+      "expression": "Rational(4, 3) * 9**3",
+      "expected": 972
+    },
+    {
+      "id": "EX10_5_1_Q4_V",
+      "description": "Exercise 10.5.1 Q4 square pyramid volume",
+      "expression": "Rational(1, 3) * 16**2 * sqrt(17**2 - 8**2)",
+      "expected": 1280
+    },
+    {
+      "id": "EX10_5_1_Q5",
+      "description": "Exercise 10.5.1 Q5 ice-cream volume coefficient of pi",
+      "expression": "Rational(1, 3) * 3**2 * 10 + Rational(2, 3) * 3**3",
+      "expected": 48
+    },
+    {
+      "id": "EX10_5_1_Q7",
+      "description": "Exercise 10.5.1 Q7 recast spheres count",
+      "expression": "(pi * 6**2 * 16) / (Rational(4, 3) * pi * 3**3)",
+      "expected": 16
+    },
+    {
+      "id": "EX10_5_1_Q8",
+      "description": "Exercise 10.5.1 Q8 Richter amplitude ratio",
+      "expression": "10**(7 - 4)",
+      "expected": 1000
+    },
+    {
+      "id": "EX10_5_1_Q11",
+      "description": "Exercise 10.5.1 Q11 frustum volume coefficient of pi",
+      "expression": "Rational(1, 3) * 9**2 * 12 - Rational(1, 3) * 3**2 * 4",
+      "expected": 312
+    }
+  ]
+}

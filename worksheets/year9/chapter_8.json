@@ -1,0 +1,199 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Pythagoras' Theorem and Right-Angled Trigonometry",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "9_8_1",
+      "section_code": "8A",
+      "title": "Trigonometric Ratios (SOHCAHTOA) and Finding Side Lengths",
+      "vcaa_code": "VC2M9M04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "In right-angled $\\triangle ABC$ ($\\angle C = 90^\\circ$) with legs $BC = 8\\text{ cm}$ (opposite $\\angle A$), $AC = 15\\text{ cm}$ (adjacent to $\\angle A$), and hypotenuse $AB = 17\\text{ cm}$, state each exact fraction:",
+          "parts": [
+            { "label": "a", "question": "$\\sin(A)$", "answer": "$\\dfrac{8}{17}$" },
+            { "label": "b", "question": "$\\cos(A)$", "answer": "$\\dfrac{15}{17}$" },
+            { "label": "c", "question": "$\\tan(A)$", "answer": "$\\dfrac{8}{15}$" },
+            { "label": "d", "question": "$\\sin(B)$ and $\\tan(B)$", "answer": "$\\sin(B) = \\dfrac{15}{17}, \\tan(B) = \\dfrac{15}{8}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the unknown side length $x$ (unknown in numerator), giving the exact trigonometric expression and the value rounded to $2$ decimal places:",
+          "parts": [
+            { "label": "a", "question": "Opposite side $x$ when hypotenuse $= 12\\text{ cm}$ and $\\theta = 30^\\circ$ ($\\sin 30^\\circ = 0.5$)", "answer": "$12\\sin(30^\\circ) = 6\\text{ cm}$" },
+            { "label": "b", "question": "Adjacent side $x$ when hypotenuse $= 20\\text{ m}$ and $\\theta = 60^\\circ$ ($\\cos 60^\\circ = 0.5$)", "answer": "$20\\cos(60^\\circ) = 10\\text{ m}$" },
+            { "label": "c", "question": "Opposite side $x$ when adjacent side $= 14\\text{ cm}$ and $\\theta = 45^\\circ$ ($\\tan 45^\\circ = 1$)", "answer": "$14\\tan(45^\\circ) = 14\\text{ cm}$" },
+            { "label": "d", "question": "Opposite side $x$ when hypotenuse $= 15\\text{ m}$ and $\\theta = 38^\\circ$", "answer": "$15\\sin(38^\\circ) \\approx 9.23\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the unknown side length $x$ (unknown in denominator), giving the exact expression and the value rounded to $2$ decimal places:",
+          "parts": [
+            { "label": "a", "question": "Hypotenuse $x$ when opposite side $= 9\\text{ cm}$ and $\\theta = 30^\\circ$", "answer": "$\\dfrac{9}{\\sin(30^\\circ)} = 18\\text{ cm}$" },
+            { "label": "b", "question": "Hypotenuse $x$ when adjacent side $= 11\\text{ m}$ and $\\theta = 60^\\circ$", "answer": "$\\dfrac{11}{\\cos(60^\\circ)} = 22\\text{ m}$" },
+            { "label": "c", "question": "Adjacent side $x$ when opposite side $= 18\\text{ cm}$ and $\\theta = 45^\\circ$", "answer": "$\\dfrac{18}{\\tan(45^\\circ)} = 18\\text{ cm}$" },
+            { "label": "d", "question": "Hypotenuse $x$ when adjacent side $= 25\\text{ m}$ and $\\theta = 52^\\circ$", "answer": "$\\dfrac{25}{\\cos(52^\\circ)} \\approx 40.61\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Using the exact special-angle values ($\\sin 30^\\circ = \\cos 60^\\circ = \\frac{1}{2}$, $\\cos 30^\\circ = \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$, $\\tan 60^\\circ = \\sqrt{3}$), find the exact surd value of $x$:",
+          "parts": [
+            { "label": "a", "question": "Opposite side $x$ when hypotenuse $= 10\\text{ cm}$ and $\\theta = 60^\\circ$", "answer": "$5\\sqrt{3}\\text{ cm}$" },
+            { "label": "b", "question": "Adjacent side $x$ when hypotenuse $= 16\\text{ cm}$ and $\\theta = 30^\\circ$", "answer": "$8\\sqrt{3}\\text{ cm}$" },
+            { "label": "c", "question": "Opposite side $x$ when adjacent side $= 7\\text{ m}$ and $\\theta = 60^\\circ$", "answer": "$7\\sqrt{3}\\text{ m}$" },
+            { "label": "d", "question": "Hypotenuse $x$ when opposite side $= 6\\sqrt{3}\\text{ cm}$ and $\\theta = 60^\\circ$", "answer": "$12\\text{ cm}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A $6.0\\text{ m}$ rescue ladder in Melbourne leans against a vertical wall, making an angle of $60^\\circ$ with the horizontal ground. Find (a) the exact distance of the foot of the ladder from the wall and (b) the exact surd height the ladder reaches up the wall.",
+          "answer": "(a) $6\\cos(60^\\circ) = 3.0\\text{ m}$, (b) $6\\sin(60^\\circ) = 3\\sqrt{3}\\text{ m} \\approx 5.20\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A kite is flying on a taut string of length $80\\text{ m}$ at an angle of $30^\\circ$ to the horizontal beach at St Kilda. Assuming the string is held at ground level, find the vertical height of the kite above the beach.",
+          "answer": "$80\\sin(30^\\circ) = 40\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A wheelchair access ramp at a Bendigo library must rise a vertical height of $1.2\\text{ m}$ at a gentle incline angle of $\\theta$ where $\\sin(\\theta) = \\frac{1}{12}$. Calculate the sloping length of the ramp.",
+          "answer": "$\\dfrac{1.2}{\\sin(\\theta)} = 1.2 \\times 12 = 14.4\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "A surveyor stands $40\\text{ m}$ horizontally from the base of a vertical eucalyptus tree in the Dandenong Ranges and measures the angle to the top of the tree as $45^\\circ$ from ground level. How tall is the tree, and what is the straight-line distance from the surveyor to the treetop in exact surd form?",
+          "answer": "Height $= 40\\tan(45^\\circ) = 40\\text{ m}$; distance $= \\dfrac{40}{\\cos(45^\\circ)} = 40\\sqrt{2}\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In any right-angled triangle with acute complementary angles $\\theta$ and $(90^\\circ - \\theta)$, explain why $\\sin(\\theta) = \\cos(90^\\circ - \\theta)$ always holds.",
+          "answer": "The side that is **opposite** angle $\\theta$ is the exact same side that is **adjacent** to the complementary angle $(90^\\circ - \\theta)$, and both ratios divide by the same hypotenuse $H$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why $\\sin(\\theta)$ and $\\cos(\\theta)$ can never be greater than $1$ for any acute angle $\\theta$ in a right-angled triangle, whereas $\\tan(\\theta)$ can be greater than $1$.",
+          "answer": "In any right-angled triangle, the hypotenuse $H$ is strictly the longest side ($O < H$ and $A < H$), so $\\sin(\\theta) = \\frac{O}{H} < 1$ and $\\cos(\\theta) = \\frac{A}{H} < 1$. However, the opposite side $O$ can be longer than the adjacent side $A$ (when $\\theta > 45^\\circ$), making $\\tan(\\theta) = \\frac{O}{A} > 1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_8_1_1_pyth", "expression": "sqrt(8**2 + 15**2)", "expected": 17 },
+        { "id": "WS9_8_1_2a", "expression": "12 * sin(pi/6)", "expected": 6 },
+        { "id": "WS9_8_1_2b", "expression": "20 * cos(pi/3)", "expected": 10 },
+        { "id": "WS9_8_1_2c", "expression": "14 * tan(pi/4)", "expected": 14 },
+        { "id": "WS9_8_1_3a", "expression": "9 / sin(pi/6)", "expected": 18 },
+        { "id": "WS9_8_1_3b", "expression": "11 / cos(pi/3)", "expected": 22 },
+        { "id": "WS9_8_1_3c", "expression": "18 / tan(pi/4)", "expected": 18 },
+        { "id": "WS9_8_1_4d", "expression": "6*sqrt(3) / sin(pi/3)", "expected": 12 },
+        { "id": "WS9_8_1_5a", "expression": "6 * cos(pi/3)", "expected": 3 },
+        { "id": "WS9_8_1_6", "expression": "80 * sin(pi/6)", "expected": 40 }
+      ]
+    },
+    {
+      "section_id": "9_8_2",
+      "section_code": "8B",
+      "title": "Inverse Trigonometry, Elevation, Depression, and Bearings",
+      "vcaa_code": "VC2M9M04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the acute angle $\\theta$ (in degrees) using inverse trigonometric ratios:",
+          "parts": [
+            { "label": "a", "question": "$\\sin(\\theta) = \\dfrac{1}{2}$ (opposite $= 5$, hypotenuse $= 10$)", "answer": "$\\theta = 30^\\circ$" },
+            { "label": "b", "question": "$\\cos(\\theta) = \\dfrac{1}{2}$ (adjacent $= 7$, hypotenuse $= 14$)", "answer": "$\\theta = 60^\\circ$" },
+            { "label": "c", "question": "$\\tan(\\theta) = 1$ (opposite $= 9$, adjacent $= 9$)", "answer": "$\\theta = 45^\\circ$" },
+            { "label": "d", "question": "$\\tan(\\theta) = \\sqrt{3}$ (opposite $= 4\\sqrt{3}$, adjacent $= 4$)", "answer": "$\\theta = 60^\\circ$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Write the inverse trigonometric expression and calculate $\\theta$ rounded to $1$ decimal place:",
+          "parts": [
+            { "label": "a", "question": "Right-angled triangle with opposite side $= 3\\text{ cm}$ and adjacent side $= 4\\text{ cm}$", "answer": "$\\theta = \\tan^{-1}\\left(\\frac{3}{4}\\right) \\approx 36.9^\\circ$" },
+            { "label": "b", "question": "Right-angled triangle with opposite side $= 5\\text{ m}$ and hypotenuse $= 13\\text{ m}$", "answer": "$\\theta = \\sin^{-1}\\left(\\frac{5}{13}\\right) \\approx 22.6^\\circ$" },
+            { "label": "c", "question": "Right-angled triangle with adjacent side $= 8\\text{ cm}$ and hypotenuse $= 17\\text{ cm}$", "answer": "$\\theta = \\cos^{-1}\\left(\\frac{8}{17}\\right) \\approx 61.9^\\circ$" },
+            { "label": "d", "question": "Right-angled triangle with opposite side $= 7\\text{ m}$ and adjacent side $= 24\\text{ m}$", "answer": "$\\theta = \\tan^{-1}\\left(\\frac{7}{24}\\right) \\approx 16.3^\\circ$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Convert between compass directions, true three-figure bearings ($^\\circ\\text{T}$), and back bearings:",
+          "parts": [
+            { "label": "a", "question": "Write $\\text{N}40^\\circ\\text{E}$ and $\\text{S}35^\\circ\\text{E}$ as three-figure true bearings", "answer": "$040^\\circ\\text{T}$ and $145^\\circ\\text{T}$" },
+            { "label": "b", "question": "Write $\\text{S}50^\\circ\\text{W}$ and $\\text{N}25^\\circ\\text{W}$ as three-figure true bearings", "answer": "$230^\\circ\\text{T}$ and $335^\\circ\\text{T}$" },
+            { "label": "c", "question": "Find the true bearing of $A$ from $B$ if the bearing of $B$ from $A$ is $068^\\circ\\text{T}$", "answer": "$248^\\circ\\text{T}$ ($68^\\circ + 180^\\circ$)" },
+            { "label": "d", "question": "Find the true bearing of $A$ from $B$ if the bearing of $B$ from $A$ is $295^\\circ\\text{T}$", "answer": "$115^\\circ\\text{T}$ ($295^\\circ - 180^\\circ$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A ship sails $20\\text{ km}$ from port $O$ on a true bearing of $060^\\circ\\text{T}$ ($30^\\circ$ north of east). Find:",
+          "parts": [
+            { "label": "a", "question": "How far north of $O$ the ship is ($20\\cos 60^\\circ$)", "answer": "$10\\text{ km}$" },
+            { "label": "b", "question": "How far east of $O$ the ship is in exact surd form ($20\\sin 60^\\circ$)", "answer": "$10\\sqrt{3}\\text{ km} \\approx 17.32\\text{ km}$" },
+            { "label": "c", "question": "The true bearing on which the ship must sail to return directly to port $O$", "answer": "$240^\\circ\\text{T}$" },
+            { "label": "d", "question": "The angle of depression from a $50\\text{ m}$ cliff top to a boat $50\\text{ m}$ horizontally from the cliff base", "answer": "$45^\\circ$ ($\\tan\\theta = \\frac{50}{50} = 1$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "From the top of the $70\\text{ m}$ high Cape Otway lighthouse vertical cliff, a ranger spots a whale at an angle of depression of $30^\\circ$. Find the exact surd horizontal distance from the base of the cliff to the whale ($\\dfrac{70}{\\tan 30^\\circ}$) and round to $1$ decimal place.",
+          "answer": "$70\\sqrt{3}\\text{ m} \\approx 121.2\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A road in the Victorian Alps rises $150\\text{ m}$ vertically over a sloping road length of $1500\\text{ m}$. Write down $\\sin(\\theta)$ as a simplified fraction and calculate the angle of elevation $\\theta$ rounded to $2$ decimal places.",
+          "answer": "$\\sin(\\theta) = \\dfrac{1}{10} = 0.1$; $\\theta = \\sin^{-1}(0.1) \\approx 5.74^\\circ$"
+        },
+        {
+          "number": 7,
+          "question": "A bushwalker hikes $6\\text{ km}$ due north from camp $C$ to point $P$, then turns and walks $6\\sqrt{3}\\text{ km}$ due east to a lookout $L$. Find (a) the straight-line distance $CL$ and (b) the true bearing of the lookout $L$ from camp $C$.",
+          "answer": "(a) $CL = \\sqrt{6^2 + (6\\sqrt{3})^2} = \\sqrt{36 + 108} = 12\\text{ km}$, (b) $\\tan(\\theta) = \\frac{6\\sqrt{3}}{6} = \\sqrt{3} \\implies \\theta = 060^\\circ\\text{T}$"
+        },
+        {
+          "number": 8,
+          "question": "A $1.6\\text{ m}$ tall observer stands $30\\text{ m}$ away from a communications tower in Darwin and measures an angle of elevation of $45^\\circ$ from her eyes to the top of the tower. Find the total height of the tower above the ground.",
+          "answer": "$31.6\\text{ m}$ ($30\\tan(45^\\circ) + 1.6 = 30 + 1.6 = 31.6\\text{ m}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Using a diagram with two horizontal lines (one through an observer $A$ at the top of a cliff and one at ground level through an object $B$), explain why the angle of depression from $A$ down to $B$ is always equal to the angle of elevation from $B$ up to $A$.",
+          "answer": "All horizontal lines are parallel, and the line of sight $AB$ acts as a transversal cutting across the two horizontal lines. Therefore, the angle of depression and the angle of elevation form a pair of alternate interior angles, which are always equal."
+        },
+        {
+          "number": 10,
+          "question": "When finding the angle of depression $\\theta$ from the top of a $40\\text{ m}$ vertical cliff to a boat $80\\text{ m}$ from the cliff base, a student puts $\\theta$ inside the triangle between the vertical cliff face and the line of sight, writing $\\tan(\\theta) = \\frac{80}{40} = 2$. Explain the student's mistake and find the correct angle of depression.",
+          "answer": "An angle of depression must always be measured downwards from the **horizontal**, not from the vertical cliff face. The angle inside the triangle against the vertical cliff is the complement $(90^\\circ - \\theta)$; the correct equation is $\\tan(\\theta) = \\frac{40}{80} = 0.5 \\implies \\theta \\approx 26.6^\\circ$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_8_2_1a", "expression": "asin(Rational(1, 2)) * 180 / pi", "expected": 30 },
+        { "id": "WS9_8_2_1b", "expression": "acos(Rational(1, 2)) * 180 / pi", "expected": 60 },
+        { "id": "WS9_8_2_1c", "expression": "atan(1) * 180 / pi", "expected": 45 },
+        { "id": "WS9_8_2_1d", "expression": "atan(sqrt(3)) * 180 / pi", "expected": 60 },
+        { "id": "WS9_8_2_3a", "expression": "180 - 35", "expected": 145 },
+        { "id": "WS9_8_2_3b", "expression": "180 + 50", "expected": 230 },
+        { "id": "WS9_8_2_3c", "expression": "68 + 180", "expected": 248 },
+        { "id": "WS9_8_2_3d", "expression": "295 - 180", "expected": 115 },
+        { "id": "WS9_8_2_4a", "expression": "20 * cos(pi/3)", "expected": 10 },
+        { "id": "WS9_8_2_7a", "expression": "sqrt(6**2 + (6*sqrt(3))**2)", "expected": 12 }
+      ]
+    }
+  ]
+}

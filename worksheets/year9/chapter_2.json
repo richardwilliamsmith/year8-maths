@@ -1,0 +1,197 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Financial Mathematics and Direct Proportion",
+  "worksheets": [
+    {
+      "section_id": "9_2_1",
+      "section_code": "2A",
+      "title": "Earning Income, Commission, and Australian Taxation",
+      "vcaa_code": "VC2M9N02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Calculate the gross weekly pay for each worker given an ordinary hourly rate of $\\$28/\\text{h}$:",
+          "parts": [
+            { "label": "a", "question": "$38$ normal hours", "answer": "$\\$1064$" },
+            { "label": "b", "question": "$35$ normal hours plus $4$ hours at time-and-a-half", "answer": "$\\$1148$" },
+            { "label": "c", "question": "$38$ normal hours plus $3$ hours at double time", "answer": "$\\$1232$" },
+            { "label": "d", "question": "$36$ normal hours, $4$ hours at time-and-a-half, and $2$ hours at double time", "answer": "$\\$1288$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the total weekly earnings for each salesperson:",
+          "parts": [
+            { "label": "a", "question": "$3.5\\%$ commission on $\\$42\\,000$ in sales (no retainer)", "answer": "$\\$1470$" },
+            { "label": "b", "question": "$\\$650$ retainer plus $4\\%$ commission on $\\$18\\,500$ in sales", "answer": "$\\$1390$" },
+            { "label": "c", "question": "$\\$500$ retainer plus $6\\%$ commission on sales above $\\$10\\,000$, given total sales of $\\$26\\,000$", "answer": "$\\$1460$" },
+            { "label": "d", "question": "Tiered commission: $2\\%$ on the first $\\$20\\,000$ and $5\\%$ on the balance for total sales of $\\$34\\,000$", "answer": "$\\$1100$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the $4$-week holiday pay (normal $4$-week pay plus $17.5\\%$ annual leave loading) for each weekly wage:",
+          "parts": [
+            { "label": "a", "question": "$\\$900/\\text{week}$", "answer": "$\\$4230$" },
+            { "label": "b", "question": "$\\$1200/\\text{week}$", "answer": "$\\$5640$" },
+            { "label": "c", "question": "$\\$1450/\\text{week}$", "answer": "$\\$6815$" },
+            { "label": "d", "question": "$\\$1680/\\text{week}$", "answer": "$\\$7896$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Using Australian resident tax brackets ($\\$0\\text{--}\\$18\\,200$: nil; $\\$18\\,201\\text{--}\\$45\\,000$: $16\\text{c}$ per $\\$1$ over $\\$18\\,200$; $\\$45\\,001\\text{--}\\$135\\,000$: $\\$4288 + 30\\text{c}$ per $\\$1$ over $\\$45\\,000$), find the income tax payable on each taxable income:",
+          "parts": [
+            { "label": "a", "question": "$\\$16\\,500$", "answer": "$\\$0$" },
+            { "label": "b", "question": "$\\$32\\,200$", "answer": "$\\$2240$" },
+            { "label": "c", "question": "$\\$65\\,000$", "answer": "$\\$10\\,288$" },
+            { "label": "d", "question": "$\\$95\\,000$", "answer": "$\\$19\\,288$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An electrician in Dandenong earns $\\$36.00/\\text{h}$ for a standard $38$-hour week, time-and-a-half for the next $4$ hours, and double time thereafter. What is her gross pay in a week where she works $45$ hours?",
+          "answer": "$\\$1800$"
+        },
+        {
+          "number": 6,
+          "question": "A real estate agent in Geelong charges a tiered commission of $2.5\\%$ on the first $\\$500\\,000$ of a property's sale price and $1.5\\%$ on the amount above $\\$500\\,000$. Calculate the total commission on a house sold for $\\$780\\,000$.",
+          "answer": "$\\$16\\,700$"
+        },
+        {
+          "number": 7,
+          "question": "A nurse in Melbourne has a gross annual salary of $\\$88\\,400$ and claims $\\$3400$ in allowable work-related tax deductions. Find (a) his taxable income and (b) his total tax plus $2\\%$ Medicare levy using the $\\$45\\,001\\text{--}\\$135\\,000$ bracket ($\\$4288 + 30\\%$ over $\\$45\\,000$).",
+          "answer": "(a) $\\$85\\,000$, (b) $\\$17\\,988$ ($\\$16\\,288$ income tax $+ \\$1700$ Medicare levy)"
+        },
+        {
+          "number": 8,
+          "question": "A retail manager in Hobart receives a total $4$-week holiday payout of $\\$5170$, which includes the $17.5\\%$ leave loading on all $4$ weeks. What is her normal weekly wage?",
+          "answer": "$\\$1100$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Tarek earns $\\$45\\,000$ and his friend Priya earns $\\$45\\,100$, moving her into the $30\\%$ marginal tax bracket. Priya worries that her entire $\\$45\\,100$ income is now taxed at $30\\%$. Explain why she is mistaken and calculate how much extra income tax Priya actually pays compared to Tarek.",
+          "answer": "Australian income tax is progressive: only the dollars above the $\\$45\\,000$ threshold ($\\$100$) are taxed at the marginal rate of $30\\%$. Priya pays only $0.30 \\times \\$100 = \\$30$ more income tax than Tarek."
+        },
+        {
+          "number": 10,
+          "question": "An employee works $38$ normal hours at $\\$R/\\text{h}$, $4$ hours at time-and-a-half, and $3$ hours at double time. Show that their total weekly pay is equivalent to $50$ normal hours ($50R$), and hence find $R$ if the weekly pay is $\\$1625$.",
+          "answer": "Equivalent normal hours $= 38 + 4(1.5) + 3(2) = 38 + 6 + 6 = 50$ hours, so $\\text{Pay} = 50R$. Solving $50R = 1625$ gives $R = \\$32.50/\\text{h}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_2_1_1b", "expression": "35*28 + 4*28*1.5", "expected": 1148 },
+        { "id": "WS9_2_1_1d", "expression": "36*28 + 4*28*1.5 + 2*28*2", "expected": 1288 },
+        { "id": "WS9_2_1_2b", "expression": "650 + 0.04 * 18500", "expected": 1390 },
+        { "id": "WS9_2_1_2d", "expression": "0.02 * 20000 + 0.05 * (34000 - 20000)", "expected": 1100 },
+        { "id": "WS9_2_1_3b", "expression": "4 * 1200 * 1.175", "expected": 5640 },
+        { "id": "WS9_2_1_4c", "expression": "4288 + 0.30 * (65000 - 45000)", "expected": 10288 },
+        { "id": "WS9_2_1_5", "expression": "38*36 + 4*36*1.5 + 3*36*2", "expected": 1800 },
+        { "id": "WS9_2_1_6", "expression": "0.025 * 500000 + 0.015 * 280000", "expected": 16700 },
+        { "id": "WS9_2_1_7b", "expression": "4288 + 0.30 * (85000 - 45000) + 0.02 * 85000", "expected": 17988 },
+        { "id": "WS9_2_1_8", "expression": "5170 / (4 * 1.175)", "expected": 1100 }
+      ]
+    },
+    {
+      "section_id": "9_2_2",
+      "section_code": "2B",
+      "title": "Simple Interest, Repayment Modelling, and Direct Proportion",
+      "vcaa_code": "VC2M9N02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Calculate the simple interest $I = Prt$ and total amount $A = P + I$ for each investment:",
+          "parts": [
+            { "label": "a", "question": "$P = \\$4000$, $r = 5\\%\\text{ p.a.}$, $t = 3\\text{ years}$", "answer": "$I = \\$600,\\; A = \\$4600$" },
+            { "label": "b", "question": "$P = \\$7500$, $r = 4.8\\%\\text{ p.a.}$, $t = 2.5\\text{ years}$", "answer": "$I = \\$900,\\; A = \\$8400$" },
+            { "label": "c", "question": "$P = \\$12\\,000$, $r = 6\\%\\text{ p.a.}$, $t = 9\\text{ months}$", "answer": "$I = \\$540,\\; A = \\$12\\,540$" },
+            { "label": "d", "question": "$P = \\$9600$, $r = 5.5\\%\\text{ p.a.}$, $t = 18\\text{ months}$", "answer": "$I = \\$792,\\; A = \\$10\\,392$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Transpose $I = Prt$ to find the unknown quantity:",
+          "parts": [
+            { "label": "a", "question": "Find $P$ when $I = \\$840$, $r = 7\\%\\text{ p.a.}$, $t = 3\\text{ years}$", "answer": "$P = \\$4000$" },
+            { "label": "b", "question": "Find $r$ (\\% p.a.) when $P = \\$5000$, $I = \\$900$, $t = 4\\text{ years}$", "answer": "$r = 4.5\\%\\text{ p.a.}$" },
+            { "label": "c", "question": "Find $t$ (years) when $P = \\$8000$, $r = 6.5\\%\\text{ p.a.}$, $I = \\$1300$", "answer": "$t = 2.5\\text{ years}$" },
+            { "label": "d", "question": "Find $P$ when $A = \\$6900$, $r = 5\\%\\text{ p.a.}$, $t = 3\\text{ years}$", "answer": "$P = \\$6000$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given that $y$ is directly proportional to $x$ ($y = kx$), find the constant of proportionality $k$ and the unknown value:",
+          "parts": [
+            { "label": "a", "question": "$y = 36$ when $x = 9$; find $y$ when $x = 15$", "answer": "$k = 4,\\; y = 60$" },
+            { "label": "b", "question": "$y = 42$ when $x = 12$; find $y$ when $x = 20$", "answer": "$k = 3.5,\\; y = 70$" },
+            { "label": "c", "question": "$y = 75$ when $x = 6$; find $x$ when $y = 125$", "answer": "$k = 12.5,\\; x = 10$" },
+            { "label": "d", "question": "$y = 19.2$ when $x = 8$; find $x$ when $y = 48$", "answer": "$k = 2.4,\\; x = 20$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "For each hire-purchase agreement, find the total amount paid and the flat simple interest rate (% p.a.) charged on the balance owing:",
+          "parts": [
+            { "label": "a", "question": "Cash price $\\$2500$; $\\$500$ deposit $+ 24$ monthly payments of $\\$95$", "answer": "Total $\\$2780$; $r = 7\\%\\text{ p.a.}$" },
+            { "label": "b", "question": "Cash price $\\$5000$; $\\$1000$ deposit $+ 36$ monthly payments of $\\$130$", "answer": "Total $\\$5680$; $r = 5.67\\%\\text{ p.a.}$ ($\\dfrac{17}{3}\\%$)" },
+            { "label": "c", "question": "Cash price $\\$3800$; $10\\%$ deposit $+ 2$ years of monthly payments of $\\$165$", "answer": "Total $\\$4340$; $r = 7.89\\%\\text{ p.a.}$ ($\\dfrac{150}{19}\\%$)" },
+            { "label": "d", "question": "Cash price $\\$10\\,000$; $\\$2000$ deposit $+ 40$ monthly payments of $\\$236$", "answer": "Total $\\$11\\,440$; $r = 5.4\\%\\text{ p.a.}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An apprentice carpenter in Ballarat buys a tool trailer priced at $\\$4800$. He pays a $15\\%$ deposit and borrows the balance at $8\\%\\text{ p.a.}$ flat simple interest over $3$ years. Find (a) the balance borrowed and (b) the equal monthly repayment.",
+          "answer": "(a) $\\$4080$, (b) $\\$140.53$ ($\\$5059.20 \\div 36 = \\$140.53$ to the nearest cent)"
+        },
+        {
+          "number": 6,
+          "question": "How many months must $\\$15\\,000$ be invested in a term deposit at $4.8\\%\\text{ p.a.}$ simple interest to earn $\\$1080$ in interest?",
+          "answer": "$18\\text{ months}$ ($1.5\\text{ years}$)"
+        },
+        {
+          "number": 7,
+          "question": "The electrical energy $E$ (in kWh) generated by a rooftop solar array in Adelaide is directly proportional to the hours of peak sunlight $t$. If the system generates $27\\text{ kWh}$ in $4.5\\text{ hours}$, write the equation for $E$ in terms of $t$ and find the time needed to generate $45\\text{ kWh}$.",
+          "answer": "$E = 6t$; $t = 7.5\\text{ hours}$"
+        },
+        {
+          "number": 8,
+          "question": "According to Hooke's Law, the extension $e\\text{ cm}$ of a steel suspension spring is directly proportional to the load $m\\text{ kg}$ attached to it. A load of $35\\text{ kg}$ extends the spring by $14\\text{ cm}$. Find the load that produces an extension of $22\\text{ cm}$.",
+          "answer": "$55\\text{ kg}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Starting from $A = P + I$ and $I = Prt$, factorise the right-hand side to show that $P = \\dfrac{A}{1 + rt}$. Use this formula to find the principal $P$ that grows to $\\$7020$ after $4$ years at $4.25\\%\\text{ p.a.}$ simple interest.",
+          "answer": "$A = P + Prt = P(1 + rt) \\implies P = \\dfrac{A}{1 + rt}$. Substituting $A = 7020, r = 0.0425, t = 4$ gives $P = \\dfrac{7020}{1 + 0.17} = \\dfrac{7020}{1.17} = \\$6000$."
+        },
+        {
+          "number": 10,
+          "question": "Explain how you can tell immediately from a Cartesian graph whether a linear relationship between $x$ and $y$ represents direct proportion ($y = kx$) or merely a general linear relation ($y = mx + c$ with $c \\neq 0$).",
+          "answer": "A direct proportion graph $y = kx$ is a straight line that must pass through the origin $(0, 0)$, so doubling $x$ always doubles $y$. If the $y$-intercept $c \\neq 0$, the ratio $\\dfrac{y}{x}$ is not constant."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_2_2_1b", "expression": "7500 * 0.048 * 2.5", "expected": 900 },
+        { "id": "WS9_2_2_1c", "expression": "12000 * 0.06 * (9/12)", "expected": 540 },
+        { "id": "WS9_2_2_2a", "expression": "840 / (0.07 * 3)", "expected": 4000 },
+        { "id": "WS9_2_2_2c", "expression": "1300 / (8000 * 0.065)", "expected": 2.5 },
+        { "id": "WS9_2_2_2d", "expression": "6900 / (1 + 0.05 * 3)", "expected": 6000 },
+        { "id": "WS9_2_2_4a", "expression": "(24*95 - 2000) / (2000 * 2) * 100", "expected": 7 },
+        { "id": "WS9_2_2_4d", "expression": "(40*236 - 8000) / (8000 * (40/12)) * 100", "expected": 5.4 },
+        { "id": "WS9_2_2_6", "expression": "1080 / (15000 * 0.048) * 12", "expected": 18 },
+        { "id": "WS9_2_2_9", "expression": "7020 / (1 + 0.0425 * 4)", "expected": 6000 }
+      ]
+    }
+  ]
+}

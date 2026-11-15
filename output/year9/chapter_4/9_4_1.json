@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "section_id": "9_4_1",
+    "section_code": "4A",
+    "chapter_number": 4,
+    "chapter_title": "Linear Equations, Inequalities, and Coordinate Geometry",
+    "title": "Linear Equations with Fractions and Literal Equations",
+    "vcaa_code": "VC2M9A04",
+    "vcaa_description": "Use mathematical modelling to solve applied problems involving change, including linear relations.",
+    "strand": "Algebra",
+    "target_mastery": "Solve multi-step linear equations involving algebraic fractions with binomial numerators and rearrange formulas for a specified subject.",
+    "prerequisites": [
+      "Solving multi-step linear equations with brackets (Year 8 VC2M8A02)",
+      "Lowest common multiple (LCM) of integers and basic fraction arithmetic"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Algebraic fraction",
+        "definition": "A fraction in which the numerator, denominator, or both contain algebraic pronumerals, such as $\\frac{2x - 3}{5}$."
+      },
+      {
+        "term": "Lowest Common Denominator (LCD)",
+        "definition": "The lowest common multiple (LCM) of all denominators in an equation, used to clear fractions in a single multiplication step."
+      },
+      {
+        "term": "Literal equation (Formula)",
+        "definition": "An equation involving two or more variables (pronumerals), such as $v = u + at$ or $A = \\frac{1}{2}(a + b)h$."
+      },
+      {
+        "term": "Subject of a formula",
+        "definition": "The single variable isolated on one side of a formula with a coefficient of $1$, expressed in terms of the remaining variables."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_4_1_1",
+      "title": "Clearing Fractional Denominators Using the LCD",
+      "explanation": "When solving a linear equation containing fractions, multiply every term on both sides of the equation by the lowest common denominator (LCD) of all fractions. Because a fraction bar acts as an invisible bracket around its numerator, always enclose binomial numerators in brackets before expanding.",
+      "formula_latex": "\\frac{ax + b}{m} - \\frac{cx + d}{n} = k \\implies \\text{Multiply all terms by } \\text{lcm}(m, n)",
+      "callout_title": "Bracket Binomial Numerators Immediately",
+      "callout_rule": "A subtraction sign in front of a fraction applies to the entire numerator: $-\\frac{2x - 5}{3}$ becomes $-(2x - 5) = -2x + 5$ after clearing the denominator."
+    },
+    {
+      "id": "theory_9_4_1_2",
+      "title": "Cross-Multiplication for Single-Fraction Proportions",
+      "explanation": "When an equation has the form of one single fraction equal to another single fraction (where denominators are non-zero), multiplying both sides by the product of the denominators yields the cross-multiplication rule.",
+      "formula_latex": "\\frac{A}{B} = \\frac{C}{D} \\implies AD = BC \\quad (B \\neq 0,\\; D \\neq 0)",
+      "callout_title": "Only Cross-Multiply Single Fractions",
+      "callout_rule": "Cross-multiplication only applies when there is a single fraction on the left-hand side and a single fraction on the right-hand side."
+    },
+    {
+      "id": "theory_9_4_1_3",
+      "title": "Transposing Literal Equations and Formulas",
+      "explanation": "To make a specified variable the subject of a literal equation or scientific formula, apply inverse operations in reverse order of operations (SAMDOB), treating all other pronumerals as constants. If the target variable appears in more than one term, collect those terms on one side and factorise.",
+      "formula_latex": "v^2 = u^2 + 2as \\implies 2as = v^2 - u^2 \\implies a = \\frac{v^2 - u^2}{2s}",
+      "callout_title": "Treat Other Pronumerals Like Numbers",
+      "callout_rule": "Every inverse step used for numerical equations—clearing fractions, expanding brackets, subtracting terms, and dividing by the coefficient—works identically for literal equations."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_4_1_1",
+      "title": "Solving a Linear Equation with Binomial Fraction Numerators",
+      "difficulty": "Fluency",
+      "problem": "Solve the linear equation $\\frac{2x + 1}{3} - \\frac{x - 4}{2} = 5$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The denominators are $3$ and $2$, so the LCD is $\\text{lcm}(3, 2) = 6$. Multiply every term on both sides by $6$, placing brackets around each binomial numerator.",
+          "working": "$$6 \\times \\frac{2x + 1}{3} - 6 \\times \\frac{x - 4}{2} = 6 \\times 5$$\n$$2(2x + 1) - 3(x - 4) = 30$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Expand the brackets carefully (noting $-3 \\times (-4) = +12$), collect like terms, and solve for $x$.",
+          "working": "$$4x + 2 - 3x + 12 = 30$$\n$$x + 14 = 30 \\implies x = 16$$"
+        }
+      ],
+      "final_answer": "$x = 16$",
+      "now_you_try": {
+        "problem": "Solve $\\frac{3x - 2}{4} - \\frac{x - 5}{3} = 4$.",
+        "hint": "Multiply every term by the LCD $12$: $3(3x - 2) - 4(x - 5) = 48$.",
+        "working_summary": "$9x - 6 - 4x + 20 = 48 \\implies 5x + 14 = 48 \\implies 5x = 34 \\implies x = \\frac{34}{5} = 6.8$.",
+        "answer": "$x = \\frac{34}{5}$ (or $6.8$)"
+      }
+    },
+    {
+      "id": "WE9_4_1_2",
+      "title": "Solving Rational Equations Using Cross-Multiplication",
+      "difficulty": "Understanding",
+      "problem": "Solve $\\frac{4x - 3}{5} = \\frac{2x + 3}{3}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Since a single fraction equals a single fraction, cross-multiply by multiplying both sides by $15$.",
+          "working": "$$3(4x - 3) = 5(2x + 3)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Expand both sides, subtract $10x$ from both sides, and solve for $x$.",
+          "working": "$$12x - 9 = 10x + 15$$\n$$2x = 24 \\implies x = 12$$"
+        }
+      ],
+      "final_answer": "$x = 12$",
+      "now_you_try": {
+        "problem": "Solve $\\frac{5x - 1}{4} = \\frac{3x + 5}{3}$.",
+        "hint": "Cross-multiply to obtain $3(5x - 1) = 4(3x + 5)$.",
+        "working_summary": "$15x - 3 = 12x + 20 \\implies 3x = 23 \\implies x = \\frac{23}{3}$.",
+        "answer": "$x = \\frac{23}{3}$"
+      }
+    },
+    {
+      "id": "WE9_4_1_3",
+      "title": "Transposing the Trapezium Area Formula",
+      "difficulty": "Problem-Solving",
+      "problem": "The area $A$ of a trapezium with parallel sides $a$ and $b$ and perpendicular height $h$ is given by $A = \\frac{1}{2}(a + b)h$. (a) Transpose the formula to make $b$ the subject. (b) Hence find $b$ when $A = 54\\text{ cm}^2$, $h = 6\\text{ cm}$, and $a = 7\\text{ cm}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Multiply both sides by $2$ to clear the fraction, then divide both sides by $h$, and finally subtract $a$.",
+          "working": "$$2A = (a + b)h \\implies \\frac{2A}{h} = a + b \\implies b = \\frac{2A}{h} - a$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $A = 54$, $h = 6$, and $a = 7$ into the transposed formula.",
+          "working": "$$b = \\frac{2(54)}{6} - 7 = \\frac{108}{6} - 7 = 18 - 7 = 11\\text{ cm}$$"
+        }
+      ],
+      "final_answer": "(a) $b = \\frac{2A}{h} - a$, (b) $b = 11\\text{ cm}$",
+      "now_you_try": {
+        "problem": "The temperature conversion formula from Celsius ($C$) to Fahrenheit ($F$) is $F = \\frac{9}{5}C + 32$. (a) Make $C$ the subject. (b) Find $C$ when $F = 95$.",
+        "hint": "Subtract $32$ first, then multiply the result by $\\frac{5}{9}$.",
+        "working_summary": "(a) $C = \\frac{5(F - 32)}{9}$; (b) $C = \\frac{5(95 - 32)}{9} = \\frac{5 \\times 63}{9} = 35^\\circ\\text{C}$.",
+        "answer": "(a) $C = \\frac{5(F - 32)}{9}$, (b) $C = 35$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_4_1_1",
+      "title": "Failing to Distribute a Negative Sign Across a Binomial Numerator",
+      "misconception": "When subtracting an algebraic fraction such as $-\\frac{x - 4}{2}$, students often multiply to get $-3x - 12$ instead of $-3(x - 4) = -3x + 12$.",
+      "correct_concept": "The vinculum (fraction bar) groups the entire numerator as if it were inside brackets. Always write the brackets explicitly before expanding.",
+      "incorrect_working": "$$6 \\times \\frac{2x + 1}{3} - 6 \\times \\frac{x - 4}{2} = 2(2x + 1) - 3x - 4 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$6 \\times \\frac{2x + 1}{3} - 6 \\times \\frac{x - 4}{2} = 2(2x + 1) - 3(x - 4) = 4x + 2 - 3x + 12$$",
+      "counter_example": "If $x = 16$, then $\\frac{2(16)+1}{3} - \\frac{16-4}{2} = \\frac{33}{3} - \\frac{12}{2} = 11 - 6 = 5$, which matches the RHS only when $-3(-4) = +12$ is used."
+    },
+    {
+      "id": "misc_9_4_1_2",
+      "title": "Forgetting to Multiply Integer Terms When Clearing Fractions",
+      "misconception": "Multiplying only the fractional terms by the LCD and leaving non-fraction constant terms unchanged.",
+      "correct_concept": "To preserve equality, every term on both sides of the equation—including integers—must be multiplied by the LCD.",
+      "incorrect_working": "$$\\frac{x}{3} + 2 = 5 \\implies x + 2 = 15 \\quad \\text{(Incorrect: } 2 \\text{ was not multiplied by } 3\\text{)}$$",
+      "correct_working": "$$3 \\times \\frac{x}{3} + 3 \\times 2 = 3 \\times 5 \\implies x + 6 = 15 \\implies x = 9$$",
+      "counter_example": "Substituting $x = 9$ into $\\frac{x}{3} + 2$ gives $\\frac{9}{3} + 2 = 3 + 2 = 5$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_4_1_Q1",
+        "question": "Solve $\\frac{3x - 5}{4} = 7$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$x = 11$",
+        "step_by_step_solution": [
+          "Multiply both sides by $4$: $3x - 5 = 28$.",
+          "Add $5$ to both sides: $3x = 33 \\implies x = 11$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q2",
+        "question": "Solve $\\frac{x + 2}{3} + \\frac{x + 1}{4} = 5$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$x = 7$",
+        "step_by_step_solution": [
+          "Multiply every term by $\\text{lcm}(3, 4) = 12$: $4(x + 2) + 3(x + 1) = 60$.",
+          "Expand and simplify: $4x + 8 + 3x + 3 = 60 \\implies 7x + 11 = 60 \\implies 7x = 49 \\implies x = 7$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q3",
+        "question": "Solve $\\frac{2x - 1}{3} - \\frac{x - 5}{6} = 4$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$x = 7$",
+        "step_by_step_solution": [
+          "Multiply every term by the LCD $6$: $2(2x - 1) - (x - 5) = 24$.",
+          "Expand and solve: $4x - 2 - x + 5 = 24 \\implies 3x + 3 = 24 \\implies 3x = 21 \\implies x = 7$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q4",
+        "question": "Transpose the linear motion formula $v = u + at$ to make $t$ the subject, and find $t$ when $v = 32$, $u = 8$, and $a = 6$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$t = \\frac{v - u}{a}$, $t = 4$",
+        "step_by_step_solution": [
+          "Subtract $u$ from both sides: $v - u = at$, then divide by $a$: $t = \\frac{v - u}{a}$.",
+          "Substitute $v = 32, u = 8, a = 6$: $t = \\frac{32 - 8}{6} = \\frac{24}{6} = 4$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_4_1_Q5",
+        "question": "A cyclist rides from Geelong to Lorne. She travels the first part of a training circuit at $20\\text{ km/h}$ for $x\\text{ km}$ and returns along an $x + 15\\text{ km}$ coastal route at $30\\text{ km/h}$. The total riding time is $3\\text{ hours}$, modelled by $\\frac{x}{20} + \\frac{x + 15}{30} = 3$. Solve for $x$.",
+        "difficulty": "Medium",
+        "context": "Kinematics Modelling",
+        "final_answer": "$x = 30\\text{ km}$",
+        "step_by_step_solution": [
+          "Multiply every term by $\\text{lcm}(20, 30) = 60$: $3x + 2(x + 15) = 180$.",
+          "Expand and solve: $3x + 2x + 30 = 180 \\implies 5x = 150 \\implies x = 30\\text{ km}$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q6",
+        "question": "An electrician in Ballarat charges a call-out fee of $\\$F$ plus $\\$r$ per hour for $h$ hours, plus $10\\%$ GST on the total bill, so the final invoice $C$ is $C = \\frac{11}{10}(F + rh)$. (a) Rearrange the formula to make $h$ the subject. (b) Find $h$ if $C = \\$429$, $F = \\$90$, and $r = \\$75$.",
+        "difficulty": "Challenging",
+        "context": "Australian Trade Pricing",
+        "final_answer": "(a) $h = \\frac{10C - 11F}{11r}$, (b) $h = 4\\text{ hours}$",
+        "step_by_step_solution": [
+          "Multiply by $10$ and divide by $11$: $\\frac{10C}{11} = F + rh \\implies rh = \\frac{10C}{11} - F = \\frac{10C - 11F}{11} \\implies h = \\frac{10C - 11F}{11r}$.",
+          "Substitute $C = 429, F = 90, r = 75$: $h = \\frac{10(429) - 11(90)}{11(75)} = \\frac{4290 - 990}{825} = \\frac{3300}{825} = 4\\text{ hours}$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q7",
+        "question": "Two inlet pipes fill a rainwater tank in Bendigo. Pipe A alone fills the tank in $6\\text{ hours}$ and Pipe B alone fills it in $4\\text{ hours}$. Together, the time $t\\text{ hours}$ required to fill the tank satisfies $\\frac{t}{6} + \\frac{t}{4} = 1$. Find $t$ in hours and minutes.",
+        "difficulty": "Challenging",
+        "context": "Rate Modelling",
+        "final_answer": "$t = \\frac{12}{5}\\text{ hours}$ ($2\\text{ hours } 24\\text{ minutes}$)",
+        "step_by_step_solution": [
+          "Multiply every term by $\\text{lcm}(6, 4) = 12$: $2t + 3t = 12$.",
+          "Solve for $t$: $5t = 12 \\implies t = \\frac{12}{5} = 2.4\\text{ hours}$, which is $2\\text{ hours } 24\\text{ minutes}$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q8",
+        "question": "The total surface area $S$ of a closed cylinder of radius $r$ and height $h$ is $S = 2\\pi r^2 + 2\\pi rh$. (a) Transpose the formula to make $h$ the subject. (b) Find the exact value of $h$ when $S = 96\\pi\\text{ cm}^2$ and $r = 4\\text{ cm}$.",
+        "difficulty": "Challenging",
+        "context": "Measurement Formulas",
+        "final_answer": "(a) $h = \\frac{S - 2\\pi r^2}{2\\pi r}$, (b) $h = 8\\text{ cm}$",
+        "step_by_step_solution": [
+          "Subtract $2\\pi r^2$ from both sides: $S - 2\\pi r^2 = 2\\pi rh$, then divide by $2\\pi r$: $h = \\frac{S - 2\\pi r^2}{2\\pi r}$.",
+          "Substitute $S = 96\\pi$ and $r = 4$: $h = \\frac{96\\pi - 2\\pi(16)}{2\\pi(4)} = \\frac{64\\pi}{8\\pi} = 8\\text{ cm}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_4_1_Q9",
+        "question": "Liam attempts to solve $\\frac{5x - 2}{3} - \\frac{x - 6}{3} = 4$ and writes $5x - 2 - x - 6 = 12 \\implies 4x - 8 = 12 \\implies x = 5$. Identify Liam's error and find the correct solution.",
+        "difficulty": "Medium",
+        "context": "Error Analysis",
+        "final_answer": "Liam wrote $-6$ instead of $+6$ when subtracting $-(x - 6)$; the correct answer is $x = 2$",
+        "step_by_step_solution": [
+          "Multiplying by $3$ gives $(5x - 2) - (x - 6) = 12$. Distributing the negative sign across $(x - 6)$ yields $-x + 6$, not $-x - 6$.",
+          "Solving correctly: $5x - 2 - x + 6 = 12 \\implies 4x + 4 = 12 \\implies 4x = 8 \\implies x = 2$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q10",
+        "question": "Explain why the equation $\\frac{6}{x - 3} = \\frac{2}{x - 3} + 4$ cannot have $x = 3$ as a valid solution, and solve the equation to find the valid root.",
+        "difficulty": "Challenging",
+        "context": "Domain Restrictions",
+        "final_answer": "$x = 3$ causes division by zero; the valid solution is $x = 4$",
+        "step_by_step_solution": [
+          "If $x = 3$, the denominator $x - 3$ equals $0$, and division by zero is undefined.",
+          "For $x \\neq 3$, multiply all terms by $(x - 3)$: $6 = 2 + 4(x - 3) \\implies 4 = 4(x - 3) \\implies x - 3 = 1 \\implies x = 4$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q11",
+        "question": "To make $x$ the subject of $ax + b = cx + d$ (where $a \\neq c$), explain why all terms containing $x$ must be collected on one side and factorised.",
+        "difficulty": "Challenging",
+        "context": "Algebraic Reasoning",
+        "final_answer": "Factorising $x(a - c) = d - b$ combines the two $x$ terms into a single occurrence of $x$, giving $x = \\frac{d - b}{a - c}$",
+        "step_by_step_solution": [
+          "Subtract $cx$ and $b$ to collect $x$-terms on the LHS: $ax - cx = d - b$.",
+          "Because $a$ and $c$ are non-like pronumerals, $ax - cx$ must be factorised as $x(a - c) = d - b$, allowing division by $(a - c)$ to isolate $x = \\frac{d - b}{a - c}$."
+        ]
+      },
+      {
+        "id": "9_4_1_Q12",
+        "question": "The harmonic mean $H$ of two positive numbers $a$ and $b$ satisfies $\\frac{2}{H} = \\frac{1}{a} + \\frac{1}{b}$. (a) Show that $H = \\frac{2ab}{a + b}$. (b) Rearrange this formula to make $a$ the subject in terms of $H$ and $b$, and evaluate $a$ when $H = 12$ and $b = 15$.",
+        "difficulty": "Extension",
+        "context": "Literal Equations & Proof",
+        "final_answer": "(a) $\\frac{2}{H} = \\frac{b + a}{ab} \\implies H = \\frac{2ab}{a + b}$, (b) $a = \\frac{Hb}{2b - H}$, $a = 10$",
+        "step_by_step_solution": [
+          "Add the fractions on the RHS over the common denominator $ab$: $\\frac{2}{H} = \\frac{a + b}{ab}$. Taking the reciprocal of both sides and multiplying by $2$ gives $H = \\frac{2ab}{a + b}$.",
+          "To isolate $a$: $H(a + b) = 2ab \\implies Ha + Hb = 2ab \\implies Hb = 2ab - Ha = a(2b - H) \\implies a = \\frac{Hb}{2b - H}$. When $H = 12, b = 15$: $a = \\frac{12(15)}{2(15) - 12} = \\frac{180}{18} = 10$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_4_1_1",
+      "description": "Worked Example 9.4.1.1 solution",
+      "expression": "solve(Eq((2*x + 1)/3 - (x - 4)/2, 5), x)[0]",
+      "expected": 16
+    },
+    {
+      "id": "NYT9_4_1_1",
+      "description": "Now You Try 9.4.1.1 solution",
+      "expression": "solve(Eq((3*x - 2)/4 - (x - 5)/3, 4), x)[0]",
+      "expected": "Rational(34, 5)"
+    },
+    {
+      "id": "WE9_4_1_2",
+      "description": "Worked Example 9.4.1.2 solution",
+      "expression": "solve(Eq((4*x - 3)/5, (2*x + 3)/3), x)[0]",
+      "expected": 12
+    },
+    {
+      "id": "NYT9_4_1_2",
+      "description": "Now You Try 9.4.1.2 solution",
+      "expression": "solve(Eq((5*x - 1)/4, (3*x + 5)/3), x)[0]",
+      "expected": "Rational(23, 3)"
+    },
+    {
+      "id": "WE9_4_1_3b",
+      "description": "Worked Example 9.4.1.3(b) trapezium base b",
+      "expression": "(2 * 54) / 6 - 7",
+      "expected": 11
+    },
+    {
+      "id": "NYT9_4_1_3b",
+      "description": "Now You Try 9.4.1.3(b) Celsius from Fahrenheit 95",
+      "expression": "Rational(5, 9) * (95 - 32)",
+      "expected": 35
+    },
+    {
+      "id": "EX9_4_1_Q1",
+      "description": "Exercise 9.4.1 Q1 solution",
+      "expression": "solve(Eq((3*x - 5)/4, 7), x)[0]",
+      "expected": 11
+    },
+    {
+      "id": "EX9_4_1_Q2",
+      "description": "Exercise 9.4.1 Q2 solution",
+      "expression": "solve(Eq((x + 2)/3 + (x + 1)/4, 5), x)[0]",
+      "expected": 7
+    },
+    {
+      "id": "EX9_4_1_Q3",
+      "description": "Exercise 9.4.1 Q3 solution",
+      "expression": "solve(Eq((2*x - 1)/3 - (x - 5)/6, 4), x)[0]",
+      "expected": 7
+    },
+    {
+      "id": "EX9_4_1_Q4",
+      "description": "Exercise 9.4.1 Q4 time t",
+      "expression": "(32 - 8) / 6",
+      "expected": 4
+    },
+    {
+      "id": "EX9_4_1_Q5",
+      "description": "Exercise 9.4.1 Q5 cyclist distance x",
+      "expression": "solve(Eq(x/20 + (x + 15)/30, 3), x)[0]",
+      "expected": 30
+    },
+    {
+      "id": "EX9_4_1_Q6b",
+      "description": "Exercise 9.4.1 Q6(b) electrician hours h",
+      "expression": "(10 * 429 - 11 * 90) / (11 * 75)",
+      "expected": 4
+    },
+    {
+      "id": "EX9_4_1_Q7",
+      "description": "Exercise 9.4.1 Q7 two pipes time t",
+      "expression": "solve(Eq(x/6 + x/4, 1), x)[0]",
+      "expected": "Rational(12, 5)"
+    },
+    {
+      "id": "EX9_4_1_Q8b",
+      "description": "Exercise 9.4.1 Q8(b) cylinder height h",
+      "expression": "(96 * pi - 2 * pi * 4**2) / (2 * pi * 4)",
+      "expected": 8
+    },
+    {
+      "id": "EX9_4_1_Q9",
+      "description": "Exercise 9.4.1 Q9 correct solution",
+      "expression": "solve(Eq((5*x - 2)/3 - (x - 6)/3, 4), x)[0]",
+      "expected": 2
+    },
+    {
+      "id": "EX9_4_1_Q12b",
+      "description": "Exercise 9.4.1 Q12(b) harmonic mean parameter a",
+      "expression": "(12 * 15) / (2 * 15 - 12)",
+      "expected": 10
+    }
+  ]
+}

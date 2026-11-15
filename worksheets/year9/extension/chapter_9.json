@@ -1,0 +1,199 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Multi-Stage Probability and Relative Frequency",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_9_1",
+      "section_code": "9A",
+      "title": "Two-Step Experiments With and Without Replacement",
+      "vcaa_code": "VC2M9P01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A jar contains $4$ red ($R$), $3$ blue ($B$), and $2$ green ($G$) marbles ($9$ in total). Two marbles are drawn **without replacement**. Find each exact simplified probability:",
+          "parts": [
+            { "label": "a", "question": "Both marbles are the same colour ($RR$, $BB$, or $GG$)", "answer": "$\\dfrac{12 + 6 + 2}{72} = \\dfrac{20}{72} = \\dfrac{5}{18}$" },
+            { "label": "b", "question": "The two marbles are of different colours", "answer": "$1 - \\dfrac{5}{18} = \\dfrac{13}{18}$" },
+            { "label": "c", "question": "Neither marble is green", "answer": "$\\dfrac{7}{9} \\times \\dfrac{6}{8} = \\dfrac{42}{72} = \\dfrac{7}{12}$" },
+            { "label": "d", "question": "At least one marble is green", "answer": "$1 - \\dfrac{7}{12} = \\dfrac{5}{12}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Three cards are drawn **without replacement** from a mini-deck consisting of $4$ Aces and $6$ Kings ($10$ cards in total). Find the probability of drawing:",
+          "parts": [
+            { "label": "a", "question": "All $3$ Aces ($AAA$)", "answer": "$\\dfrac{4}{10} \\times \\dfrac{3}{9} \\times \\dfrac{2}{8} = \\dfrac{24}{720} = \\dfrac{1}{30}$" },
+            { "label": "b", "question": "All $3$ Kings ($KKK$)", "answer": "$\\dfrac{6}{10} \\times \\dfrac{5}{9} \\times \\dfrac{4}{8} = \\dfrac{120}{720} = \\dfrac{1}{6}$" },
+            { "label": "c", "question": "Exactly $2$ Aces and $1$ King in any order ($AAK, AKA, KAA$)", "answer": "$3 \\times \\dfrac{4 \\times 3 \\times 6}{720} = \\dfrac{216}{720} = \\dfrac{3}{10}$" },
+            { "label": "d", "question": "At least $1$ Ace ($1 - \\Pr(KKK)$)", "answer": "$\\dfrac{5}{6}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Box $A$ contains $3$ gold and $2$ silver coins; Box $B$ contains $1$ gold and $4$ silver coins. A fair coin is tossed: if Heads, a coin is drawn from Box $A$; if Tails, a coin is drawn from Box $B$. Find:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(\\text{Heads and Gold})$", "answer": "$\\dfrac{1}{2} \\times \\dfrac{3}{5} = \\dfrac{3}{10}$" },
+            { "label": "b", "question": "$\\Pr(\\text{Tails and Gold})$", "answer": "$\\dfrac{1}{2} \\times \\dfrac{1}{5} = \\dfrac{1}{10}$" },
+            { "label": "c", "question": "Total probability $\\Pr(\\text{Gold})$", "answer": "$\\dfrac{3}{10} + \\dfrac{1}{10} = \\dfrac{4}{10} = \\dfrac{2}{5}$" },
+            { "label": "d", "question": "Conditional probability $\\Pr(\\text{from Box } A \\mid \\text{Gold}) = \\dfrac{\\Pr(A \\cap G)}{\\Pr(G)}$", "answer": "$\\dfrac{3/10}{4/10} = \\dfrac{3}{4}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each algebraic probability problem:",
+          "parts": [
+            { "label": "a", "question": "A bag has $r$ red marbles out of $10$. Two are drawn without replacement and $\\Pr(RR) = \\dfrac{2}{15}$. Find $r$.", "answer": "$r = 4$ ($r(r-1) = 12$)" },
+            { "label": "b", "question": "A biased coin has $\\Pr(H) = p$. In $2$ tosses, $\\Pr(HH) = 0.36$. Find $p$ and $\\Pr(\\text{exactly one } H)$.", "answer": "$p = 0.6$, $\\Pr(\\text{one } H) = 2(0.6)(0.4) = 0.48$" },
+            { "label": "c", "question": "A bag has $3$ red and $n$ blue counters. With replacement, $\\Pr(RR) = \\dfrac{9}{49}$. Find $n$.", "answer": "$n = 4$" },
+            { "label": "d", "question": "Find the minimum number of tosses $n$ of a fair coin so that $\\Pr(\\text{at least one } H) = 1 - \\left(\\frac{1}{2}\\right)^n > 0.99$.", "answer": "$n = 7$ ($1 - \\frac{1}{128} = \\frac{127}{128} \\approx 0.992$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A committee of $3$ students is chosen at random without replacement from $5$ Year 9 students and $4$ Year 10 students ($9$ in total). Find the probability that the committee has a majority of Year 9 students (either $2$ or $3$ Year 9 students).",
+          "answer": "$\\dfrac{25}{42}$ ($\\Pr(3\\text{ Y9}) = \\frac{5 \\cdot 4 \\cdot 3}{9 \\cdot 8 \\cdot 7} = \\frac{60}{504}$, $\\Pr(2\\text{ Y9}, 1\\text{ Y10}) = 3 \\times \\frac{5 \\cdot 4 \\cdot 4}{504} = \\frac{240}{504}$; sum $= \\frac{300}{504} = \\frac{25}{42}$)"
+        },
+        {
+          "number": 6,
+          "question": "A bushfire warning system in Victoria uses two independent satellite sensors: Sensor $1$ detects a fire with probability $0.90$ and Sensor $2$ detects it with probability $0.85$. Find the probability that (a) at least one sensor detects a fire, and (b) only one sensor detects it.",
+          "answer": "(a) $1 - (0.10)(0.15) = 0.985$, (b) $(0.90)(0.15) + (0.10)(0.85) = 0.135 + 0.085 = 0.22$"
+        },
+        {
+          "number": 7,
+          "question": "Bag $X$ contains $2$ red and $3$ white balls. Bag $Y$ contains $4$ red and $1$ white ball. One ball is transferred at random from Bag $X$ into Bag $Y$, and then a ball is drawn from Bag $Y$. Find the exact probability that the ball drawn from Bag $Y$ is red.",
+          "answer": "$\\dfrac{11}{15}$ ($\\Pr(R_X)\\Pr(R_Y\\mid R_X) + \\Pr(W_X)\\Pr(R_Y\\mid W_X) = \\frac{2}{5}\\cdot\\frac{5}{6} + \\frac{3}{5}\\cdot\\frac{4}{6} = \\frac{22}{30} = \\frac{11}{15}$)"
+        },
+        {
+          "number": 8,
+          "question": "Two players $A$ and $B$ take turns rolling a fair $6$-sided die; the first to roll a $6$ wins. If $A$ rolls first and the game stops if neither wins within the first two rolls (one roll by $A$, then one roll by $B$), find $\\Pr(A \\text{ wins})$, $\\Pr(B \\text{ wins})$, and $\\Pr(\\text{no winner in first round})$.",
+          "answer": "$\\Pr(A) = \\dfrac{1}{6} = \\dfrac{6}{36}$, $\\Pr(B) = \\dfrac{5}{6} \\times \\dfrac{1}{6} = \\dfrac{5}{36}$, $\\Pr(\\text{neither}) = \\dfrac{25}{36}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A bag contains $r$ red and $b$ blue marbles ($N = r + b$). Two marbles are drawn **without replacement**. Prove algebraically that the probability the **second** marble is red, $\\Pr(R_2) = \\Pr(R_1 R_2) + \\Pr(B_1 R_2)$, simplifies to $\\dfrac{r}{r + b}$, identical to the probability on the first draw.",
+          "answer": "$\\Pr(R_2) = \\dfrac{r}{N}\\cdot\\dfrac{r - 1}{N - 1} + \\dfrac{b}{N}\\cdot\\dfrac{r}{N - 1} = \\dfrac{r(r - 1 + b)}{N(N - 1)} = \\dfrac{r(N - 1)}{N(N - 1)} = \\dfrac{r}{N} = \\dfrac{r}{r + b}$."
+        },
+        {
+          "number": 10,
+          "question": "A bag contains $n$ marbles, of which $r$ are red. Two marbles are drawn without replacement, and the probability that both are red is exactly $\\dfrac{1}{2}$. Show that $n(n - 1) = 2r(r - 1)$ and verify that $(n, r) = (4, 3)$ and $(n, r) = (21, 15)$ both satisfy this condition.",
+          "answer": "$\\Pr(RR) = \\dfrac{r}{n}\\cdot\\dfrac{r - 1}{n - 1} = \\dfrac{1}{2} \\iff n(n - 1) = 2r(r - 1)$. For $(4, 3)$: $4 \\times 3 = 12 = 2(3)(2)$. For $(21, 15)$: $21 \\times 20 = 420 = 2(15)(14)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_9_1_1a", "expression": "Rational(4*3 + 3*2 + 2*1, 9*8)", "expected": "5/18" },
+        { "id": "WSE9_9_1_1c", "expression": "Rational(7, 9) * Rational(6, 8)", "expected": "7/12" },
+        { "id": "WSE9_9_1_2a", "expression": "Rational(4*3*2, 10*9*8)", "expected": "1/30" },
+        { "id": "WSE9_9_1_2b", "expression": "Rational(6*5*4, 10*9*8)", "expected": "1/6" },
+        { "id": "WSE9_9_1_2c", "expression": "3 * Rational(4*3*6, 10*9*8)", "expected": "3/10" },
+        { "id": "WSE9_9_1_3c", "expression": "Rational(1, 2)*Rational(3, 5) + Rational(1, 2)*Rational(1, 5)", "expected": "2/5" },
+        { "id": "WSE9_9_1_3d", "expression": "Rational(3, 10) / Rational(4, 10)", "expected": "3/4" },
+        { "id": "WSE9_9_1_5", "expression": "Rational(60 + 240, 504)", "expected": "25/42" },
+        { "id": "WSE9_9_1_6a", "expression": "1 - Rational(10, 100)*Rational(15, 100)", "expected": 0.985 },
+        { "id": "WSE9_9_1_7", "expression": "Rational(2, 5)*Rational(5, 6) + Rational(3, 5)*Rational(4, 6)", "expected": "11/15" }
+      ]
+    },
+    {
+      "section_id": "9_9_2",
+      "section_code": "9B",
+      "title": "Relative Frequency, 'And/Or' Compound Events, and Simulations",
+      "vcaa_code": "VC2M9P02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For events $A$ and $B$ with $\\Pr(A) = 0.6$, $\\Pr(B) = 0.5$, and $\\Pr(A \\cup B) = 0.85$, calculate:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(A \\cap B)$", "answer": "$0.25$" },
+            { "label": "b", "question": "$\\Pr(A \\text{ exclusive-or } B) = \\Pr(A \\cup B) - \\Pr(A \\cap B)$", "answer": "$0.60$" },
+            { "label": "c", "question": "$\\Pr(A \\mid B) = \\dfrac{\\Pr(A \\cap B)}{\\Pr(B)}$", "answer": "$0.50$" },
+            { "label": "d", "question": "Are events $A$ and $B$ independent? (Check whether $\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$)", "answer": "No ($0.25 \\neq 0.6 \\times 0.5 = 0.30$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "In a cohort of $200$ Year 9 students, $110$ study French ($F$), $90$ study Music ($M$), and $30$ study neither. Let $x$ be the number of students who study both French and Music. Find:",
+          "parts": [
+            { "label": "a", "question": "The number of students in $F \\cup M$ ($200 - 30$)", "answer": "$170$" },
+            { "label": "b", "question": "The number of students $x$ who study both ($110 + 90 - x = 170$)", "answer": "$x = 30$" },
+            { "label": "c", "question": "The relative frequency of studying French or Music, but not both (exclusive 'or')", "answer": "$\\dfrac{80 + 60}{200} = 0.70$" },
+            { "label": "d", "question": "The conditional relative frequency $\\Pr(M \\mid F)$ as a simplified fraction", "answer": "$\\dfrac{30}{110} = \\dfrac{3}{11}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the three-event Inclusion-Exclusion Principle $\\Pr(A \\cup B \\cup C) = \\Pr(A) + \\Pr(B) + \\Pr(C) - \\Pr(A \\cap B) - \\Pr(A \\cap C) - \\Pr(B \\cap C) + \\Pr(A \\cap B \\cap C)$ for a group of $100$ athletes where $50$ run ($R$), $40$ swim ($S$), $35$ cycle ($C$), $20$ do $R \\cap S$, $15$ do $R \\cap C$, $12$ do $S \\cap C$, and $8$ do all three:",
+          "parts": [
+            { "label": "a", "question": "Find the number of athletes in $R \\cup S \\cup C$", "answer": "$86$" },
+            { "label": "b", "question": "Find the probability that a randomly selected athlete does none of the three sports", "answer": "$\\dfrac{14}{100} = 0.14$" },
+            { "label": "c", "question": "Find the number of athletes who run ONLY ($50 - 20 - 15 + 8$)", "answer": "$23$" },
+            { "label": "d", "question": "Find the probability that an athlete does exactly two of the three sports", "answer": "$\\dfrac{(20-8) + (15-8) + (12-8)}{100} = \\dfrac{23}{100} = 0.23$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A Monte Carlo simulation estimates $\\pi$ by generating random points $(x, y)$ uniformly in the $2 \\times 2$ square $[-1, 1] \\times [-1, 1]$ (area $4$) and counting how many fall inside the unit circle $x^2 + y^2 \\le 1$ (area $\\pi$). Answer:",
+          "parts": [
+            { "label": "a", "question": "What is the exact theoretical probability $p$ that a random point falls inside the circle?", "answer": "$\\dfrac{\\pi}{4}$" },
+            { "label": "b", "question": "If $785$ out of $1000$ simulated points land inside the circle, what is the estimate of $\\pi = 4 \\times \\hat{p}$?", "answer": "$3.14$" },
+            { "label": "c", "question": "Does the point $(0.6, 0.7)$ land inside or outside the unit circle $x^2 + y^2 \\le 1$?", "answer": "Inside ($0.6^2 + 0.7^2 = 0.85 \\le 1$)" },
+            { "label": "d", "question": "Does the point $(-0.8, 0.7)$ land inside or outside the unit circle?", "answer": "Outside ($0.64 + 0.49 = 1.13 > 1$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A medical screening test for a livestock virus in Queensland is $95\\%$ sensitive (if an animal has the virus, it tests positive $95\\%$ of the time) and has a $4\\%$ false-positive rate (if an animal is virus-free, it tests positive $4\\%$ of the time). In a herd of $10\\,000$ cattle where $2\\%$ ($200$ cattle) actually have the virus, calculate the total number of positive tests and the relative frequency that an animal testing positive actually has the virus.",
+          "answer": "$582$ positive tests ($200 \\times 0.95 + 9800 \\times 0.04 = 190 + 392 = 582$); $\\Pr(\\text{Virus} \\mid \\text{Positive}) = \\dfrac{190}{582} = \\dfrac{95}{291} \\approx 32.6\\%$"
+        },
+        {
+          "number": 6,
+          "question": "In the Coupon Collector problem with $3$ distinct footy cards ($A, B, C$, equally likely in each packet), a collector already has $1$ card after buying the first packet. Find (a) the probability that the second packet gives a new card, (b) the expected number of packets to get the second distinct card ($\\frac{3}{2}$), and (c) the total expected number of packets $1 + \\frac{3}{2} + \\frac{3}{1}$ to collect all $3$ cards.",
+          "answer": "(a) $\\dfrac{2}{3}$, (b) $1.5\\text{ packets}$, (c) $1 + 1.5 + 3 = 5.5\\text{ packets}$"
+        },
+        {
+          "number": 7,
+          "question": "Two independent events $A$ and $B$ satisfy $\\Pr(A) = 0.4$ and $\\Pr(A \\cup B) = 0.7$. Since $A$ and $B$ are independent ($\\Pr(A \\cap B) = 0.4\\Pr(B)$), use the Addition Rule to solve for $\\Pr(B)$ and $\\Pr(A \\text{ exclusive-or } B)$.",
+          "answer": "$\\Pr(B) = 0.5$ ($0.4 + p - 0.4p = 0.7 \\implies 0.6p = 0.3 \\implies p = 0.5$); $\\Pr(A \\text{ xor } B) = 0.7 - 0.2 = 0.5$"
+        },
+        {
+          "number": 8,
+          "question": "A random walk starts at $x = 0$ on the number line. Each second, a particle moves $+1$ (right) with probability $\\frac{2}{3}$ or $-1$ (left) with probability $\\frac{1}{3}$. Find the exact probability that the particle is at $x = +1$ after $3$ seconds.",
+          "answer": "$\\dfrac{4}{9}$ (to be at $+1$ after $3$ steps requires two $+1$ steps and one $-1$ step in any of $3$ orders: $3 \\times (\\frac{2}{3})^2(\\frac{1}{3}) = \\frac{12}{27} = \\frac{4}{9}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "For two independent events $A$ and $B$, prove using the Addition Rule and $\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$ that $\\Pr(A \\cup B) = 1 - (1 - \\Pr(A))(1 - \\Pr(B))$, and explain why this equals $1 - \\Pr(A')\\Pr(B')$.",
+          "answer": "$1 - (1 - \\Pr(A))(1 - \\Pr(B)) = 1 - (1 - \\Pr(A) - \\Pr(B) + \\Pr(A)\\Pr(B)) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B) = \\Pr(A \\cup B)$. Since $1 - \\Pr(A) = \\Pr(A')$ and $1 - \\Pr(B) = \\Pr(B')$, this states that $\\Pr(\\text{at least one of } A, B) = 1 - \\Pr(\\text{neither } A \\text{ nor } B)$."
+        },
+        {
+          "number": 10,
+          "question": "Explain the difference between **mutually exclusive** events ($\\Pr(A \\cap B) = 0$) and **independent** events ($\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$). Can two events with non-zero probabilities ($\\Pr(A) > 0, \\Pr(B) > 0$) ever be both mutually exclusive and independent?",
+          "answer": "No. If $\\Pr(A) > 0$ and $\\Pr(B) > 0$, independence requires $\\Pr(A \\cap B) = \\Pr(A)\\Pr(B) > 0$, whereas mutual exclusivity requires $\\Pr(A \\cap B) = 0$. If $A$ and $B$ are mutually exclusive, knowing $A$ occurred guarantees $B$ did not occur, making them strongly dependent."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_9_2_1a", "expression": "Rational(6, 10) + Rational(5, 10) - Rational(85, 100)", "expected": 0.25 },
+        { "id": "WSE9_9_2_1b", "expression": "Rational(85, 100) - Rational(25, 100)", "expected": 0.6 },
+        { "id": "WSE9_9_2_2b", "expression": "110 + 90 - (200 - 30)", "expected": 30 },
+        { "id": "WSE9_9_2_2c", "expression": "Rational((110 - 30) + (90 - 30), 200)", "expected": 0.7 },
+        { "id": "WSE9_9_2_3a", "expression": "50 + 40 + 35 - 20 - 15 - 12 + 8", "expected": 86 },
+        { "id": "WSE9_9_2_3c", "expression": "50 - 20 - 15 + 8", "expected": 23 },
+        { "id": "WSE9_9_2_4b", "expression": "4 * Rational(785, 1000)", "expected": 3.14 },
+        { "id": "WSE9_9_2_5", "expression": "200*Rational(95, 100) + 9800*Rational(4, 100)", "expected": 582 },
+        { "id": "WSE9_9_2_7", "expression": "Rational(7 - 4, 10 - 4)", "expected": 0.5 },
+        { "id": "WSE9_9_2_8", "expression": "3 * Rational(2, 3)**2 * Rational(1, 3)", "expected": "4/9" }
+      ]
+    }
+  ]
+}

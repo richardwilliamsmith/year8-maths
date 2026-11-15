@@ -1,0 +1,292 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Algebraic Expansion and Factorisation",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_3_1",
+      "section_code": "3A",
+      "title": "Expanding Binomial Products and Special Identities",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Expand and simplify each composite quadratic expression:",
+          "parts": [
+            { "label": "a", "question": "$2(3x - 2)^2 - 3(2x + 1)(2x - 1)$", "answer": "$6x^2 - 24x + 11$" },
+            { "label": "b", "question": "$(4x - 3y)^2 - (2x + 3y)(2x - 3y)$", "answer": "$12x^2 - 24xy + 18y^2$" },
+            { "label": "c", "question": "$(x + 2)(x - 3)(x + 3)$", "answer": "$x^3 + 2x^2 - 9x - 18$" },
+            { "label": "d", "question": "$(2x - 1)(x + 4) - (x - 3)^2$", "answer": "$x^2 + 13x - 13$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Expand each trinomial or grouped product using special identities:",
+          "parts": [
+            { "label": "a", "question": "$(x + y + 3)(x + y - 3)$", "answer": "$x^2 + 2xy + y^2 - 9$" },
+            { "label": "b", "question": "$(a - b + 4)(a + b - 4)$", "answer": "$a^2 - b^2 + 8b - 16$" },
+            { "label": "c", "question": "$(x + 2y - 3)^2$", "answer": "$x^2 + 4xy + 4y^2 - 6x - 12y + 9$" },
+            { "label": "d", "question": "$(x - 2)(x + 2)(x^2 + 4)$", "answer": "$x^4 - 16$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Expand each rational algebraic expression:",
+          "parts": [
+            { "label": "a", "question": "$\\left(x + \\dfrac{1}{x}\\right)^2$", "answer": "$x^2 + 2 + \\dfrac{1}{x^2}$" },
+            { "label": "b", "question": "$\\left(2x - \\dfrac{3}{x}\\right)^2$", "answer": "$4x^2 - 12 + \\dfrac{9}{x^2}$" },
+            { "label": "c", "question": "$\\left(\\dfrac{x}{2} - \\dfrac{y}{3}\\right)\\left(\\dfrac{x}{2} + \\dfrac{y}{3}\\right)$", "answer": "$\\dfrac{x^2}{4} - \\dfrac{y^2}{9}$" },
+            { "label": "d", "question": "$\\left(x + \\dfrac{1}{x}\\right)^2 - \\left(x - \\dfrac{1}{x}\\right)^2$", "answer": "$4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Given $x + y = 7$ and $xy = 10$, evaluate each expression without finding $x$ and $y$ individually:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + y^2$", "answer": "$29$" },
+            { "label": "b", "question": "$(x - y)^2$", "answer": "$9$" },
+            { "label": "c", "question": "$(x + 2)(y + 2)$", "answer": "$28$" },
+            { "label": "d", "question": "$x^4 + y^4$", "answer": "$641$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular lawn in Adelaide measures $(3x + 4)\\text{ m}$ by $(2x + 3)\\text{ m}$. A square gazebo of side $(x + 2)\\text{ m}$ is built inside the lawn. Find a simplified quadratic expression for the remaining lawn area, and evaluate it when $x = 5$.",
+          "answer": "$(5x^2 + 13x + 8)\\text{ m}^2$; when $x = 5$, area $= 198\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "An open-top rectangular box is made from a square sheet of cardboard of side $20\\text{ cm}$ by cutting squares of side $x\\text{ cm}$ from each of the four corners and folding up the sides. Write an expanded polynomial in $x$ for the volume $V(x)$ of the box.",
+          "answer": "$V(x) = x(20 - 2x)^2 = (4x^3 - 80x^2 + 400x)\\text{ cm}^3$"
+        },
+        {
+          "number": 7,
+          "question": "Given that $x + \\dfrac{1}{x} = 5$, use the identity $\\left(x + \\dfrac{1}{x}\\right)^2 = x^2 + 2 + \\dfrac{1}{x^2}$ to find the exact values of (a) $x^2 + \\dfrac{1}{x^2}$ and (b) $x^4 + \\dfrac{1}{x^4}$.",
+          "answer": "(a) $23$, (b) $527$"
+        },
+        {
+          "number": 8,
+          "question": "Use the telescoping difference of two squares product $(2 - 1)(2 + 1)(2^2 + 1)(2^4 + 1)(2^8 + 1)$ to find the exact value of $3 \\times 5 \\times 17 \\times 257$ in the form $2^n - 1$.",
+          "answer": "$2^{16} - 1 = 65\\,535$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove Lagrange's identity $(a^2 + b^2)(c^2 + d^2) = (ac + bd)^2 + (ad - bc)^2$ by expanding both sides, and explain what this proves about the product of two integers that are each a sum of two squares.",
+          "answer": "Both sides expand to $a^2 c^2 + a^2 d^2 + b^2 c^2 + b^2 d^2$ (since $+2abcd$ and $-2abcd$ cancel on the RHS). This proves that the product of two sums of two squares is itself always a sum of two squares."
+        },
+        {
+          "number": 10,
+          "question": "Prove that the sum of the squares of any two consecutive odd integers $(2n - 1)$ and $(2n + 1)$ leaves a remainder of $2$ when divided by $8$.",
+          "answer": "$(2n - 1)^2 + (2n + 1)^2 = (4n^2 - 4n + 1) + (4n^2 + 4n + 1) = 8n^2 + 2$, which is $2$ more than a multiple of $8$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_3_1_1a", "expression": "expand(2*(3*x - 2)**2 - 3*(2*x + 1)*(2*x - 1)) - (6*x**2 - 24*x + 11)", "expected": 0 },
+        { "id": "WSE9_3_1_1b", "expression": "expand((4*x - 3*y)**2 - (2*x + 3*y)*(2*x - 3*y)) - (12*x**2 - 24*x*y + 18*y**2)", "expected": 0 },
+        { "id": "WSE9_3_1_1c", "expression": "expand((x + 2)*(x - 3)*(x + 3)) - (x**3 + 2*x**2 - 9*x - 18)", "expected": 0 },
+        { "id": "WSE9_3_1_2b", "expression": "expand((a - b + 4)*(a + b - 4)) - (a**2 - b**2 + 8*b - 16)", "expected": 0 },
+        { "id": "WSE9_3_1_2d", "expression": "expand((x - 2)*(x + 2)*(x**2 + 4)) - (x**4 - 16)", "expected": 0 },
+        { "id": "WSE9_3_1_3d", "expression": "simplify((x + 1/x)**2 - (x - 1/x)**2)", "expected": 4 },
+        { "id": "WSE9_3_1_5", "expression": "expand((3*x + 4)*(2*x + 3) - (x + 2)**2) - (5*x**2 + 13*x + 8)", "expected": 0 },
+        { "id": "WSE9_3_1_6", "expression": "expand(x*(20 - 2*x)**2) - (4*x**3 - 80*x**2 + 400*x)", "expected": 0 },
+        { "id": "WSE9_3_1_8", "expression": "3 * 5 * 17 * 257 - (2**16 - 1)", "expected": 0 }
+      ]
+    },
+    {
+      "section_id": "9_3_2",
+      "section_code": "3B",
+      "title": "Factorising Difference of Two Squares and Grouping",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Factorise each compound difference of two squares completely:",
+          "parts": [
+            { "label": "a", "question": "$(2x + 3)^2 - (x - 4)^2$", "answer": "$(x + 7)(3x - 1)$" },
+            { "label": "b", "question": "$9(x - 1)^2 - 4(x + 2)^2$", "answer": "$(x - 7)(5x + 1)$" },
+            { "label": "c", "question": "$x^4 - 81$", "answer": "$(x - 3)(x + 3)(x^2 + 9)$" },
+            { "label": "d", "question": "$16x^4 - y^4$", "answer": "$(2x - y)(2x + y)(4x^2 + y^2)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise over the real numbers using surds where necessary:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 11$", "answer": "$(x - \\sqrt{11})(x + \\sqrt{11})$" },
+            { "label": "b", "question": "$x^2 - 18$", "answer": "$(x - 3\\sqrt{2})(x + 3\\sqrt{2})$" },
+            { "label": "c", "question": "$(x - 3)^2 - 5$", "answer": "$(x - 3 - \\sqrt{5})(x - 3 + \\sqrt{5})$" },
+            { "label": "d", "question": "$3x^2 - 21$", "answer": "$3(x - \\sqrt{7})(x + \\sqrt{7})$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factorise completely by grouping ($2$ and $2$, or $3$ and $1$):",
+          "parts": [
+            { "label": "a", "question": "$x^3 - 3x^2 - 4x + 12$", "answer": "$(x - 3)(x - 2)(x + 2)$" },
+            { "label": "b", "question": "$2x^3 + 5x^2 - 18x - 45$", "answer": "$(2x + 5)(x - 3)(x + 3)$" },
+            { "label": "c", "question": "$x^2 + 6x + 9 - y^2$", "answer": "$(x + 3 - y)(x + 3 + y)$" },
+            { "label": "d", "question": "$x^2 - 4xy + 4y^2 - 25$", "answer": "$(x - 2y - 5)(x - 2y + 5)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each numerical expression without a calculator using algebraic factorisation:",
+          "parts": [
+            { "label": "a", "question": "$987^2 - 13^2$", "answer": "$974\\,000$" },
+            { "label": "b", "question": "$\\dfrac{64.5^2 - 35.5^2}{29}$", "answer": "$100$" },
+            { "label": "c", "question": "$100^2 - 99^2 + 98^2 - 97^2 + \\dots + 2^2 - 1^2$", "answer": "$5050$" },
+            { "label": "d", "question": "$2026^2 - 2025 \\times 2027$", "answer": "$1$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A hollow cylindrical steel pipe in Newcastle has length $L = 50\\text{ cm}$, outer radius $R = 8.4\\text{ cm}$, and inner radius $r = 6.6\\text{ cm}$. Factorise the volume formula $V = \\pi R^2 L - \\pi r^2 L$ and find the exact volume in terms of $\\pi$.",
+          "answer": "$V = \\pi L (R - r)(R + r) = 50\\pi(1.8)(15) = 1350\\pi\\text{ cm}^3$"
+        },
+        {
+          "number": 6,
+          "question": "Find all pairs of positive integers $(x, y)$ that satisfy $x^2 - y^2 = 21$.",
+          "answer": "$(x, y) = (11, 10)$ or $(5, 2)$"
+        },
+        {
+          "number": 7,
+          "question": "A rectangular prism tank has volume $(x^3 + 2x^2 - 9x - 18)\\text{ m}^3$ for $x > 3$. Factorise the polynomial completely to find the three linear dimensions of the tank, and calculate its total surface area when $x = 5$.",
+          "answer": "Dimensions: $(x - 3)\\text{ m}, (x + 2)\\text{ m}, (x + 3)\\text{ m}$; when $x = 5$ ($2\\text{ m} \\times 7\\text{ m} \\times 8\\text{ m}$), TSA $= 172\\text{ m}^2$"
+        },
+        {
+          "number": 8,
+          "question": "Factorise $2^{12} - 1$ using the difference of two squares repeatedly ($2^{12} - 1 = (2^6 - 1)(2^6 + 1) = \\dots$) to find all prime factors of $4095$.",
+          "answer": "$3, 5, 7, 13$ ($4095 = 3^2 \\times 5 \\times 7 \\times 13$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that every odd integer $2k + 1$ ($k \\in \\mathbb{Z}$) can be written as the difference of two consecutive integer squares, whereas no integer of the form $4k + 2$ can be written as the difference of any two integer squares.",
+          "answer": "First, $(k + 1)^2 - k^2 = 2k + 1$, giving any odd integer. Second, for any integers $a, b$, $a^2 - b^2 = (a - b)(a + b)$. Since $(a + b) - (a - b) = 2b$ is even, $a - b$ and $a + b$ have the same parity: either both are odd (product is odd) or both are even (product is a multiple of $4$). Thus $a^2 - b^2$ can never leave remainder $2$ modulo $4$."
+        },
+        {
+          "number": 10,
+          "question": "By adding and subtracting $4x^2 y^2$ (completing the square of the middle term), factorise Sophie Germain's identity $x^4 + 4y^4$ into two quadratic factors.",
+          "answer": "$x^4 + 4y^4 = (x^4 + 4x^2 y^2 + 4y^4) - 4x^2 y^2 = (x^2 + 2y^2)^2 - (2xy)^2 = (x^2 - 2xy + 2y^2)(x^2 + 2xy + 2y^2)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_3_2_1a", "expression": "expand((x + 7)*(3*x - 1) - ((2*x + 3)**2 - (x - 4)**2))", "expected": 0 },
+        { "id": "WSE9_3_2_1b", "expression": "expand((x - 7)*(5*x + 1) - (9*(x - 1)**2 - 4*(x + 2)**2))", "expected": 0 },
+        { "id": "WSE9_3_2_1c", "expression": "expand((x - 3)*(x + 3)*(x**2 + 9) - (x**4 - 81))", "expected": 0 },
+        { "id": "WSE9_3_2_3a", "expression": "expand((x - 3)*(x - 2)*(x + 2) - (x**3 - 3*x**2 - 4*x + 12))", "expected": 0 },
+        { "id": "WSE9_3_2_3c", "expression": "expand((x + 3 - y)*(x + 3 + y) - (x**2 + 6*x + 9 - y**2))", "expected": 0 },
+        { "id": "WSE9_3_2_4a", "expression": "987**2 - 13**2", "expected": 974000 },
+        { "id": "WSE9_3_2_4b", "expression": "(64.5**2 - 35.5**2)/29", "expected": 100 },
+        { "id": "WSE9_3_2_5", "expression": "50 * (8.4**2 - 6.6**2)", "expected": 1350 },
+        { "id": "WSE9_3_2_10", "expression": "expand((x**2 - 2*x*y + 2*y**2)*(x**2 + 2*x*y + 2*y**2) - (x**4 + 4*y**4))", "expected": 0 }
+      ]
+    },
+    {
+      "section_id": "9_3_3",
+      "section_code": "3C",
+      "title": "Factorising Monic Quadratic Trinomials",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Factorise each homogeneous two-variable quadratic trinomial:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 5xy + 6y^2$", "answer": "$(x + 2y)(x + 3y)$" },
+            { "label": "b", "question": "$x^2 - 9xy + 20y^2$", "answer": "$(x - 4y)(x - 5y)$" },
+            { "label": "c", "question": "$a^2 - 4ab - 45b^2$", "answer": "$(a - 9b)(a + 5b)$" },
+            { "label": "d", "question": "$3x^2 - 6xy - 72y^2$", "answer": "$3(x - 6y)(x + 4y)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise completely into linear factors by using substitution ($u = x^2$ or $u = x + k$):",
+          "parts": [
+            { "label": "a", "question": "$x^4 - 13x^2 + 36$", "answer": "$(x - 2)(x + 2)(x - 3)(x + 3)$" },
+            { "label": "b", "question": "$x^4 - 5x^2 - 36$", "answer": "$(x - 3)(x + 3)(x^2 + 4)$" },
+            { "label": "c", "question": "$(x + 2)^2 - 7(x + 2) + 10$", "answer": "$(x - 3)(x + 0) = x(x - 3)$" },
+            { "label": "d", "question": "$(x^2 - 2x)^2 - 11(x^2 - 2x) + 24$", "answer": "$(x - 4)(x + 2)(x - 3)(x + 1)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factorise each non-monic quadratic trinomial by splitting the middle term:",
+          "parts": [
+            { "label": "a", "question": "$2x^2 + 7x + 3$", "answer": "$(2x + 1)(x + 3)$" },
+            { "label": "b", "question": "$3x^2 - 11x + 6$", "answer": "$(3x - 2)(x - 3)$" },
+            { "label": "c", "question": "$6x^2 + 5x - 6$", "answer": "$(2x + 3)(3x - 2)$" },
+            { "label": "d", "question": "$4x^2 - 4x - 15$", "answer": "$(2x - 5)(2x + 3)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise and simplify each rational algebraic expression:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x^2 - 5x + 6}{x^2 - 9}$", "answer": "$\\dfrac{x - 2}{x + 3}$" },
+            { "label": "b", "question": "$\\dfrac{x^2 + 4x - 12}{x^2 - 4} \\times \\dfrac{x + 2}{x + 6}$", "answer": "$1$" },
+            { "label": "c", "question": "$\\dfrac{x^2 - 7x + 12}{x^2 - 16} \\div \\dfrac{x - 3}{x + 4}$", "answer": "$1$" },
+            { "label": "d", "question": "$\\dfrac{2x^2 - 12x + 18}{x^2 - x - 6}$", "answer": "$\\dfrac{2(x - 3)}{x + 2}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular solar farm in Mildura is divided into panels such that its total area is $(x^2 + 2x)^2 - 11(x^2 + 2x) + 24\\text{ m}^2$. Factorise this expression completely into four linear factors.",
+          "answer": "$(x - 2)(x + 4)(x - 1)(x + 3)\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "For a cylinder of radius $r$ and height $h$, the ratio of two surface area components simplifies to $\\dfrac{r^2 + 3rh + 2h^2}{r^2 + rh - 2h^2}$ (with $r > h > 0$). Factorise the numerator and denominator to simplify this ratio.",
+          "answer": "$\\dfrac{r + 2h}{r - h}$"
+        },
+        {
+          "number": 7,
+          "question": "How many negative integers $c$ with $-100 \\le c < 0$ allow the monic quadratic $x^2 + x + c$ to be factorised into $(x + p)(x + q)$ with integers $p, q$?",
+          "answer": "$9$ values of $c$ ($c = -k(k+1)$ for $k = 1, 2, \\dots, 9$, from $c = -2$ to $c = -90$)"
+        },
+        {
+          "number": 8,
+          "question": "If $(x - 4)$ is a common factor of $x^2 + ax - 12$ and $x^2 - bx + 20$, find the values of $a$ and $b$ and hence simplify $\\dfrac{x^2 + ax - 12}{x^2 - bx + 20}$ for $x \\neq 4, 5$.",
+          "answer": "$a = -1,\\; b = 9$; fraction simplifies to $\\dfrac{x + 3}{x - 5}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that for any integer $n$, the product of four consecutive integers plus $1$, $P = n(n + 1)(n + 2)(n + 3) + 1$, is always the square of the quadratic $n^2 + 3n + 1$.",
+          "answer": "Group $n(n + 3) = n^2 + 3n$ and $(n + 1)(n + 2) = n^2 + 3n + 2$. Let $u = n^2 + 3n$; then $P = u(u + 2) + 1 = u^2 + 2u + 1 = (u + 1)^2 = (n^2 + 3n + 1)^2$."
+        },
+        {
+          "number": 10,
+          "question": "Show by completing the square that a monic quadratic $x^2 + bx + c$ can be factorised into $(x + p)(x + q)$ with integer coefficients if and only if the discriminant $\\Delta = b^2 - 4c$ is a perfect square.",
+          "answer": "$x^2 + bx + c = \\left(x + \\dfrac{b}{2}\\right)^2 - \\dfrac{b^2 - 4c}{4}$. This is a difference of two rational squares $\\left(x + \\dfrac{b - \\sqrt{\\Delta}}{2}\\right)\\left(x + \\dfrac{b + \\sqrt{\\Delta}}{2}\\right)$ with integer roots if and only if $\\Delta = b^2 - 4c = k^2$ for some integer $k$ (since $b$ and $k$ automatically share the same parity)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_3_3_1c", "expression": "expand((a - 9*b)*(a + 5*b) - (a**2 - 4*a*b - 45*b**2))", "expected": 0 },
+        { "id": "WSE9_3_3_2a", "expression": "expand((x - 2)*(x + 2)*(x - 3)*(x + 3) - (x**4 - 13*x**2 + 36))", "expected": 0 },
+        { "id": "WSE9_3_3_2c", "expression": "expand(x*(x - 3) - ((x + 2)**2 - 7*(x + 2) + 10))", "expected": 0 },
+        { "id": "WSE9_3_3_2d", "expression": "expand((x - 4)*(x + 2)*(x - 3)*(x + 1) - ((x**2 - 2*x)**2 - 11*(x**2 - 2*x) + 24))", "expected": 0 },
+        { "id": "WSE9_3_3_3c", "expression": "expand((2*x + 3)*(3*x - 2) - (6*x**2 + 5*x - 6))", "expected": 0 },
+        { "id": "WSE9_3_3_4b", "expression": "simplify(((x**2 + 4*x - 12)/(x**2 - 4)) * ((x + 2)/(x + 6)))", "expected": 1 },
+        { "id": "WSE9_3_3_4c", "expression": "simplify(((x**2 - 7*x + 12)/(x**2 - 16)) / ((x - 3)/(x + 4)))", "expected": 1 },
+        { "id": "WSE9_3_3_5", "expression": "expand((x - 2)*(x + 4)*(x - 1)*(x + 3) - ((x**2 + 2*x)**2 - 11*(x**2 + 2*x) + 24))", "expected": 0 },
+        { "id": "WSE9_3_3_9", "expression": "expand(n*(n + 1)*(n + 2)*(n + 3) + 1 - (n**2 + 3*n + 1)**2)", "expected": 0 }
+      ]
+    }
+  ]
+}

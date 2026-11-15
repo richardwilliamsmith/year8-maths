@@ -1,0 +1,400 @@
+{
+  "metadata": {
+    "section_id": "10_6_3",
+    "section_code": "6C",
+    "chapter_number": 6,
+    "chapter_title": "Trigonometry, Bearings, and Non-Right-Angled Triangles (10 & 10A)",
+    "title": "[10A] The Unit Circle, Exact Values, and Trigonometric Graphs",
+    "vcaa_code": "VC2M10AM03",
+    "vcaa_description": "Use the unit circle to define trigonometric functions as functions of a real variable, and graph them with and without digital tools.",
+    "strand": "Measurement (10A)",
+    "target_mastery": "Determine exact values of $\\sin\\theta$, $\\cos\\theta$, and $\\tan\\theta$ for angles in all four quadrants using reference angles ($30^\\circ, 45^\\circ, 60^\\circ$) and boundary angles, and determine the amplitude, period, and key features of $y = a\\sin(bx) + c$ and $y = a\\cos(bx) + c$.",
+    "prerequisites": [
+      "Operations with surds (Section 1B)",
+      "Right-angled trigonometric ratios (Section 6A)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Unit circle",
+        "definition": "The circle of radius $1$ centred at the origin $(0, 0)$ with equation $x^2 + y^2 = 1$; for any angle $\\theta$ measured anticlockwise from the positive $x$-axis, the point $P(\\theta)$ on the circle has coordinates $(\\cos\\theta, \\sin\\theta)$."
+      },
+      {
+        "term": "Reference angle (related acute angle $\\alpha$)",
+        "definition": "The acute angle ($0^\\circ < \\alpha < 90^\\circ$) formed between the terminal ray of $\\theta$ and the horizontal $x$-axis: $\\alpha = 180^\\circ - \\theta$ (Q2), $\\alpha = \\theta - 180^\\circ$ (Q3), or $\\alpha = 360^\\circ - \\theta$ (Q4)."
+      },
+      {
+        "term": "CAST quadrant diagram",
+        "definition": "A memory aid showing which trigonometric ratios are positive in each quadrant: All in Quadrant 1 ($0^\\circ$–$90^\\circ$), Sine in Quadrant 2 ($90^\\circ$–$180^\\circ$), Tangent in Quadrant 3 ($180^\\circ$–$270^\\circ$), and Cosine in Quadrant 4 ($270^\\circ$–$360^\\circ$)."
+      },
+      {
+        "term": "Amplitude and period",
+        "definition": "For $y = a\\sin(bx) + c$ or $y = a\\cos(bx) + c$, the amplitude $|a|$ is the vertical half-height from the centre line $y = c$ to a peak or trough, and the period $T = \\frac{360^\\circ}{b}$ (or $\\frac{2\\pi}{b}$ in radians) is the horizontal length of one complete wave cycle."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_6_3_1",
+      "title": "Exact Values for Special Angles ($30^\\circ, 45^\\circ, 60^\\circ$) and Boundary Angles",
+      "explanation": "Two special triangles generate all standard exact trigonometric ratios: an isosceles right-angled triangle with legs $1, 1$ and hypotenuse $\\sqrt{2}$ gives the ratios for $45^\\circ$, and an equilateral triangle of side $2$ bisected into two right-angled triangles with legs $1, \\sqrt{3}$ and hypotenuse $2$ gives the ratios for $30^\\circ$ and $60^\\circ$. On the unit circle $x^2 + y^2 = 1$, the four axis intercepts $(1,0), (0,1), (-1,0), (0,-1)$ immediately give the exact values at the boundary angles $0^\\circ, 90^\\circ, 180^\\circ, 270^\\circ, 360^\\circ$.",
+      "formula_latex": "\\begin{array}{c|ccc} \\theta & 30^\\circ & 45^\\circ & 60^\\circ \\\\ \\hline \\sin\\theta & \\frac{1}{2} & \\frac{\\sqrt{2}}{2} & \\frac{\\sqrt{3}}{2} \\\\ \\cos\\theta & \\frac{\\sqrt{3}}{2} & \\frac{\\sqrt{2}}{2} & \\frac{1}{2} \\\\ \\tan\\theta & \\frac{\\sqrt{3}}{3} & 1 & \\sqrt{3} \\end{array}",
+      "callout_title": "The $\\frac{\\sqrt{0}}{2}, \\frac{\\sqrt{1}}{2}, \\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{4}}{2}$ Pattern",
+      "callout_rule": "For $\\theta = 0^\\circ, 30^\\circ, 45^\\circ, 60^\\circ, 90^\\circ$, $\\sin\\theta$ simply counts up $\\frac{\\sqrt{0}}{2}, \\frac{\\sqrt{1}}{2}, \\frac{\\sqrt{2}}{2}, \\frac{\\sqrt{3}}{2}, \\frac{\\sqrt{4}}{2}$ while $\\cos\\theta$ counts down in reverse!"
+    },
+    {
+      "id": "theory_10_6_3_2",
+      "title": "The Unit Circle and Four-Quadrant Symmetry (CAST)",
+      "explanation": "For any angle $\\theta$, let $P(\\cos\\theta, \\sin\\theta)$ be the point where the terminal ray meets the unit circle, with $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$ equal to the gradient of the ray $OP$. By Pythagoras' theorem on the unit circle, $\\cos^2\\theta + \\sin^2\\theta = 1$ for every angle $\\theta$. To evaluate $\\sin\\theta, \\cos\\theta$, or $\\tan\\theta$ in Quadrants 2, 3, or 4: (1) identify the quadrant and determine the sign ($+$ or $-$) using CAST (All, Sine, Tangent, Cosine), and (2) find the acute reference angle $\\alpha$ measured to the horizontal $x$-axis ($180^\\circ \\pm \\alpha$ or $360^\\circ - \\alpha$).",
+      "formula_latex": "\\text{Q2: } 180^\\circ - \\alpha \\ (+\\sin), \\quad \\text{Q3: } 180^\\circ + \\alpha \\ (+\\tan), \\quad \\text{Q4: } 360^\\circ - \\alpha \\ (+\\cos)",
+      "callout_title": "Always Measure the Reference Angle to the Horizontal $x$-Axis",
+      "callout_rule": "Never use $90^\\circ \\pm \\alpha$ or $270^\\circ \\pm \\alpha$ for reference angles — always measure $\\alpha$ to the horizontal $180^\\circ$ or $360^\\circ$ axis so the trigonometric function name stays the same."
+    },
+    {
+      "id": "theory_10_6_3_3",
+      "title": "Graphs of Sine and Cosine Functions ($y = a\\sin(bx) + c$ and $y = a\\cos(bx) + c$)",
+      "explanation": "As $\\theta$ rotates around the unit circle, plotting $y = \\sin x$ and $y = \\cos x$ against $x$ produces smooth, periodic wave curves oscillating between $-1$ and $1$ with a fundamental period of $360^\\circ$ (or $2\\pi$ radians). For the transformed functions $y = a\\sin(bx) + c$ and $y = a\\cos(bx) + c$: the vertical mean (equilibrium) line is $y = c$, the amplitude is $|a|$ (so the range is $[c - |a|,\\, c + |a|]$), and the period is $T = \\frac{360^\\circ}{b}$. Dividing one period $T$ into $4$ equal quarter-steps of length $\\frac{T}{4}$ locates all peaks, troughs, and centre-line intercepts.",
+      "formula_latex": "\\text{Amplitude} = |a|, \\qquad \\text{Period } T = \\frac{360^\\circ}{b}, \\qquad \\text{Range} = [c - |a|,\\, c + |a|]",
+      "callout_title": "Sine Starts at the Centre Line; Cosine Starts at the Peak",
+      "callout_rule": "At $x = 0^\\circ$, $\\sin 0^\\circ = 0$ (starts on the centre line heading up for $a > 0$), whereas $\\cos 0^\\circ = 1$ (starts at the maximum peak $c + a$ for $a > 0$)."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_6_3_1",
+      "title": "Evaluating Exact Trigonometric Ratios Across All Four Quadrants",
+      "difficulty": "Fluency",
+      "problem": "Without using a calculator, find the exact value of: (a) $\\cos 150^\\circ$, (b) $\\tan 225^\\circ$, and (c) $\\sin 300^\\circ$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In (a), $150^\\circ$ lies in Quadrant 2 ($90^\\circ < 150^\\circ < 180^\\circ$), where cosine is negative. The acute reference angle to $180^\\circ$ is $\\alpha = 180^\\circ - 150^\\circ = 30^\\circ$.",
+          "working": "$$\\cos 150^\\circ = -\\cos(180^\\circ - 150^\\circ) = -\\cos 30^\\circ = -\\frac{\\sqrt{3}}{2}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In (b), $225^\\circ$ lies in Quadrant 3 ($180^\\circ < 225^\\circ < 270^\\circ$), where tangent is positive. The acute reference angle to $180^\\circ$ is $\\alpha = 225^\\circ - 180^\\circ = 45^\\circ$.",
+          "working": "$$\\tan 225^\\circ = +\\tan(225^\\circ - 180^\\circ) = \\tan 45^\\circ = 1$$"
+        },
+        {
+          "step": 3,
+          "thinking": "In (c), $300^\\circ$ lies in Quadrant 4 ($270^\\circ < 300^\\circ < 360^\\circ$), where sine is negative. The acute reference angle to $360^\\circ$ is $\\alpha = 360^\\circ - 300^\\circ = 60^\\circ$.",
+          "working": "$$\\sin 300^\\circ = -\\sin(360^\\circ - 300^\\circ) = -\\sin 60^\\circ = -\\frac{\\sqrt{3}}{2}$$"
+        }
+      ],
+      "final_answer": "(a) $-\\frac{\\sqrt{3}}{2}$, (b) $1$, (c) $-\\frac{\\sqrt{3}}{2}$",
+      "now_you_try": {
+        "problem": "Find the exact values of (a) $\\sin 135^\\circ$, (b) $\\cos 240^\\circ$, and (c) $\\tan 330^\\circ$.",
+        "hint": "Find the quadrant sign using CAST and the reference angle to $180^\\circ$ or $360^\\circ$.",
+        "working_summary": "(a) Q2 ($+\\sin$), $\\alpha = 45^\\circ \\implies \\frac{\\sqrt{2}}{2}$; (b) Q3 ($-\\cos$), $\\alpha = 60^\\circ \\implies -\\frac{1}{2}$; (c) Q4 ($-\\tan$), $\\alpha = 30^\\circ \\implies -\\frac{\\sqrt{3}}{3}$.",
+        "answer": "(a) $\\frac{\\sqrt{2}}{2}$, (b) $-\\frac{1}{2}$, (c) $-\\frac{\\sqrt{3}}{3}$"
+      }
+    },
+    {
+      "id": "WE10_6_3_2",
+      "title": "Solving Trigonometric Equations on $0^\\circ \\le \\theta \\le 360^\\circ$",
+      "difficulty": "Fluency",
+      "problem": "Solve for $\\theta$ in the domain $0^\\circ \\le \\theta \\le 360^\\circ$: (a) $\\sin\\theta = \\frac{1}{2}$, and (b) $2\\cos\\theta + \\sqrt{3} = 0$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In (a), $\\sin\\theta = \\frac{1}{2} > 0$, so $\\theta$ lies in Quadrant 1 or Quadrant 2. Since $\\sin 30^\\circ = \\frac{1}{2}$, the reference angle is $\\alpha = 30^\\circ$.",
+          "working": "$$\\theta = 30^\\circ \\quad \\text{or} \\quad \\theta = 180^\\circ - 30^\\circ = 150^\\circ$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In (b), rearrange to isolate $\\cos\\theta$: $\\cos\\theta = -\\frac{\\sqrt{3}}{2} < 0$. Cosine is negative in Quadrant 2 and Quadrant 3, with reference angle $\\alpha = 30^\\circ$ (since $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$).",
+          "working": "$$\\cos\\theta = -\\frac{\\sqrt{3}}{2} \\implies \\theta = 180^\\circ - 30^\\circ = 150^\\circ \\quad \\text{or} \\quad \\theta = 180^\\circ + 30^\\circ = 210^\\circ$$"
+        }
+      ],
+      "final_answer": "(a) $\\theta = 30^\\circ, 150^\\circ$; (b) $\\theta = 150^\\circ, 210^\\circ$",
+      "now_you_try": {
+        "problem": "Solve $\\cos\\theta = \\frac{1}{2}$ for $0^\\circ \\le \\theta \\le 360^\\circ$.",
+        "hint": "Cosine is positive in Quadrant 1 ($\\alpha$) and Quadrant 4 ($360^\\circ - \\alpha$), with $\\alpha = 60^\\circ$.",
+        "working_summary": "$\\alpha = 60^\\circ \\implies \\theta = 60^\\circ$ or $\\theta = 360^\\circ - 60^\\circ = 300^\\circ$.",
+        "answer": "$\\theta = 60^\\circ, 300^\\circ$"
+      }
+    },
+    {
+      "id": "WE10_6_3_3",
+      "title": "Amplitude, Period, Range, and Tidal Modelling with Cosine Graphs",
+      "difficulty": "Problem-Solving",
+      "problem": "The water depth $d(t)$ (in metres) at a pier on the Bass Coast $t$ hours after high tide ($t = 0$) is modelled by $d(t) = 3\\cos(30t^\\circ) + 5$ for $0 \\le t \\le 24$. Find: (a) the amplitude, period (in hours), and range (minimum and maximum depths), (b) the water depth at $t = 4$ hours, and (c) the first time $t > 0$ when low tide occurs.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Compare $d(t) = 3\\cos(30t^\\circ) + 5$ with $y = a\\cos(bt^\\circ) + c$, where $a = 3, b = 30$, and $c = 5$.",
+          "working": "$$\\text{Amplitude} = |3| = 3\\text{ m}, \\qquad \\text{Period } T = \\frac{360}{30} = 12\\text{ hours}$$\n$$\\text{Range} = [5 - 3,\\, 5 + 3] = [2\\text{ m},\\, 8\\text{ m}]$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $t = 4$ into $d(t)$ and evaluate $\\cos(120^\\circ) = -\\frac{1}{2}$.",
+          "working": "$$d(4) = 3\\cos(120^\\circ) + 5 = 3\\left(-\\frac{1}{2}\\right) + 5 = 3.5\\text{ m}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Low tide ($d = 2\\text{ m}$) occurs halfway through the $12$-hour period when $\\cos(30t^\\circ) = -1$, i.e. $30t = 180$.",
+          "working": "$$30t = 180 \\implies t = 6\\text{ hours}$$"
+        }
+      ],
+      "final_answer": "(a) Amplitude $= 3\\text{ m}$, period $= 12\\text{ hours}$, range $= [2\\text{ m}, 8\\text{ m}]$; (b) $3.5\\text{ m}$; (c) $t = 6\\text{ hours}$",
+      "now_you_try": {
+        "problem": "State the amplitude, period (in degrees), and range of the function $y = 4\\sin(2x) - 1$.",
+        "hint": "Use $|a| = 4$, $T = \\frac{360^\\circ}{2}$, and $[c - |a|,\\, c + |a|]$.",
+        "working_summary": "Amplitude $= 4$, Period $= \\frac{360^\\circ}{2} = 180^\\circ$, Range $= [-1 - 4,\\, -1 + 4] = [-5,\\, 3]$.",
+        "answer": "Amplitude $= 4$, period $= 180^\\circ$, range $= [-5, 3]$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_10_6_3_1",
+      "title": "Measuring Reference Angles to the Vertical $y$-Axis ($90^\\circ$ or $270^\\circ$)",
+      "misconception": "Writing $150^\\circ = 90^\\circ + 60^\\circ$ and concluding $\\sin 150^\\circ = \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$.",
+      "correct_concept": "Reference angles MUST be measured to the horizontal $x$-axis ($180^\\circ$ or $360^\\circ$). Since $150^\\circ = 180^\\circ - 30^\\circ$, the reference angle is $30^\\circ$, so $\\sin 150^\\circ = \\sin 30^\\circ = \\frac{1}{2}$.",
+      "incorrect_working": "$$\\sin 150^\\circ = \\sin(90^\\circ + 60^\\circ) = \\sin 60^\\circ = \\frac{\\sqrt{3}}{2} \\quad \\text{(Incorrect — used } 90^\\circ \\text{ axis!)}$$",
+      "correct_working": "$$\\sin 150^\\circ = \\sin(180^\\circ - 30^\\circ) = \\sin 30^\\circ = \\frac{1}{2}$$",
+      "counter_example": "At $150^\\circ$, the ray is only $30^\\circ$ above the negative $x$-axis, so its $y$-coordinate ($\\sin 150^\\circ$) is $\\frac{1}{2}$, not $\\frac{\\sqrt{3}}{2} \\approx 0.866$."
+    },
+    {
+      "id": "misc_10_6_3_2",
+      "title": "Reporting a Negative Amplitude or Confusing Amplitude with Full Peak-to-Trough Height",
+      "misconception": "Saying that $y = -3\\sin(x)$ has amplitude $-3$, or that a wave oscillating between $-3$ and $3$ has amplitude $6$.",
+      "correct_concept": "Amplitude is a distance (half the peak-to-trough vertical span): $\\text{Amplitude} = |a| = \\frac{y_{\\max} - y_{\\min}}{2} > 0$. A negative sign in $a = -3$ reflects the wave vertically across the centre line, but the amplitude is still $|-3| = 3$.",
+      "incorrect_working": "$$y = -3\\sin(x) \\implies \\text{Amplitude} = -3 \\text{ or } 6 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$y = -3\\sin(x) \\implies \\text{Amplitude} = |-3| = 3$$",
+      "counter_example": "A water wave with crests $3\\text{ m}$ above mean sea level and troughs $3\\text{ m}$ below mean sea level has a $3\\text{ m}$ amplitude and a $6\\text{ m}$ total tidal range."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_6_3_Q1",
+        "question": "Evaluate the exact value of the expression $\\sin^2 30^\\circ + \\cos^2 60^\\circ + \\tan 45^\\circ$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$\\frac{3}{2} = 1.5$",
+        "step_by_step_solution": [
+          "Substitute the exact values $\\sin 30^\\circ = \\frac{1}{2}$, $\\cos 60^\\circ = \\frac{1}{2}$, and $\\tan 45^\\circ = 1$.",
+          "Compute $\\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{1}{2}\\right)^2 + 1 = \\frac{1}{4} + \\frac{1}{4} + 1 = \\frac{3}{2}$."
+        ]
+      },
+      {
+        "id": "10_6_3_Q2",
+        "question": "Find the exact values of: (a) $\\sin 120^\\circ$, (b) $\\cos 225^\\circ$, and (c) $\\tan 300^\\circ$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $\\frac{\\sqrt{3}}{2}$, (b) $-\\frac{\\sqrt{2}}{2}$, (c) $-\\sqrt{3}$",
+        "step_by_step_solution": [
+          "In Q2, $\\sin 120^\\circ = +\\sin(180^\\circ - 120^\\circ) = \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$.",
+          "In Q3, $\\cos 225^\\circ = -\\cos(225^\\circ - 180^\\circ) = -\\cos 45^\\circ = -\\frac{\\sqrt{2}}{2}$; in Q4, $\\tan 300^\\circ = -\\tan(360^\\circ - 300^\\circ) = -\\tan 60^\\circ = -\\sqrt{3}$."
+        ]
+      },
+      {
+        "id": "10_6_3_Q3",
+        "question": "Given that $\\sin\\theta = \\frac{3}{5}$ and $\\theta$ lies in Quadrant 2 ($90^\\circ < \\theta < 180^\\circ$), use the Pythagorean identity $\\cos^2\\theta + \\sin^2\\theta = 1$ to find the exact values of $\\cos\\theta$ and $\\tan\\theta$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$\\cos\\theta = -\\frac{4}{5}$, $\\tan\\theta = -\\frac{3}{4}$",
+        "step_by_step_solution": [
+          "Substitute $\\sin\\theta = \\frac{3}{5}$ into $\\cos^2\\theta = 1 - \\sin^2\\theta = 1 - \\frac{9}{25} = \\frac{16}{25}$; since $\\theta$ is in Q2 where cosine is negative, $\\cos\\theta = -\\frac{4}{5}$.",
+          "Then $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{3/5}{-4/5} = -\\frac{3}{4}$."
+        ]
+      },
+      {
+        "id": "10_6_3_Q4",
+        "question": "Solve $2\\sin\\theta + 1 = 0$ for $0^\\circ \\le \\theta \\le 360^\\circ$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$\\theta = 210^\\circ$ or $\\theta = 330^\\circ$",
+        "step_by_step_solution": [
+          "Rearrange to $\\sin\\theta = -\\frac{1}{2}$, which has acute reference angle $\\alpha = 30^\\circ$.",
+          "Sine is negative in Quadrants 3 and 4, giving $\\theta = 180^\\circ + 30^\\circ = 210^\\circ$ and $\\theta = 360^\\circ - 30^\\circ = 330^\\circ$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_6_3_Q5",
+        "question": "For the trigonometric function $y = 5\\cos(3x) + 2$, find (a) its amplitude, (b) its period in degrees, (c) its minimum and maximum values, and (d) the value of $y$ when $x = 60^\\circ$.",
+        "difficulty": "Medium",
+        "context": "Periodic Functions",
+        "final_answer": "(a) $5$, (b) $120^\\circ$, (c) minimum $-3$ and maximum $7$, (d) $y(60^\\circ) = -3$",
+        "step_by_step_solution": [
+          "With $a = 5, b = 3, c = 2$, the amplitude is $5$, the period is $\\frac{360^\\circ}{3} = 120^\\circ$, and the extrema are $2 - 5 = -3$ and $2 + 5 = 7$.",
+          "At $x = 60^\\circ$, $y = 5\\cos(180^\\circ) + 2 = 5(-1) + 2 = -3$."
+        ]
+      },
+      {
+        "id": "10_6_3_Q6",
+        "question": "A passenger cabin on the Melbourne Star observation wheel has height $h(t)$ (in metres above the ground) after $t$ minutes modelled by $h(t) = 60 - 50\\cos(12t^\\circ)$ for $0 \\le t \\le 30$. Find (a) the boarding height at $t = 0$, (b) the maximum height at the top of the wheel, and (c) the time taken for one complete revolution.",
+        "difficulty": "Medium",
+        "context": "Circular Motion Modelling",
+        "final_answer": "(a) $10\\text{ m}$, (b) $110\\text{ m}$, (c) $30\\text{ minutes}$",
+        "step_by_step_solution": [
+          "At $t = 0$, $h(0) = 60 - 50\\cos 0^\\circ = 60 - 50(1) = 10\\text{ m}$.",
+          "The maximum height occurs when $\\cos(12t^\\circ) = -1$: $h_{\\max} = 60 - 50(-1) = 110\\text{ m}$, and the period is $T = \\frac{360}{12} = 30\\text{ minutes}$."
+        ]
+      },
+      {
+        "id": "10_6_3_Q7",
+        "question": "The average daily temperature $T(m)$ (in $^\\circ\\text{C}$) in an alpine Victorian town at month $m$ ($m = 1$ for January, $m = 7$ for July) is modelled by $T(m) = 8\\cos\\left(30(m - 1)^\\circ\\right) + 12$. Find (a) the predicted average temperature in January ($m = 1$) and July ($m = 7$), and (b) the months $m \\in [1, 12]$ when the average temperature is $16^\\circ\\text{C}$.",
+        "difficulty": "Challenging",
+        "context": "Climate Modelling",
+        "final_answer": "(a) January: $20^\\circ\\text{C}$, July: $4^\\circ\\text{C}$; (b) $m = 3$ (March) and $m = 11$ (November)",
+        "step_by_step_solution": [
+          "At $m = 1$, $T(1) = 8\\cos 0^\\circ + 12 = 20^\\circ\\text{C}$; at $m = 7$, $T(7) = 8\\cos 180^\\circ + 12 = -8 + 12 = 4^\\circ\\text{C}$.",
+          "Set $8\\cos(30(m - 1)^\\circ) + 12 = 16 \\implies \\cos(30(m - 1)^\\circ) = \\frac{1}{2} \\implies 30(m - 1) = 60$ or $300 \\implies m = 3$ or $m = 11$."
+        ]
+      },
+      {
+        "id": "10_6_3_Q8",
+        "question": "In Australian household mains electricity, the alternating voltage $V(t)$ starts at $0\\text{ V}$ at $t = 0$ and completes $50$ full cycles every second ($f = 50\\text{ Hz}$) with a peak amplitude of $340\\text{ V}$. Find (a) the period $T$ of one cycle in seconds (as a fraction and decimal), and (b) the voltage at $t = \\frac{1}{200}\\text{ s}$ (one-quarter of a period).",
+        "difficulty": "Challenging",
+        "context": "Electrical Engineering",
+        "final_answer": "(a) $T = \\frac{1}{50}\\text{ s} = 0.02\\text{ s}$, (b) $340\\text{ V}$",
+        "step_by_step_solution": [
+          "Since $50$ cycles occur in $1$ second, one period is $T = \\frac{1}{50}\\text{ s} = 0.02\\text{ s}$.",
+          "Starting from $0\\text{ V}$ and rising, a sine wave reaches its first positive peak amplitude ($340\\text{ V}$) at $t = \\frac{T}{4} = \\frac{1}{200}\\text{ s}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_6_3_Q9",
+        "question": "Use the unit circle definition $P(\\cos\\theta, \\sin\\theta)$ to prove that for any angle $\\theta$: (a) $\\cos^2\\theta + \\sin^2\\theta = 1$, and (b) $\\cos(-\\theta) = \\cos\\theta$ while $\\sin(-\\theta) = -\\sin\\theta$ (even and odd symmetry).",
+        "difficulty": "Medium",
+        "context": "Unit Circle Identities",
+        "final_answer": "(a) $(x, y) = (\\cos\\theta, \\sin\\theta)$ lies on $x^2 + y^2 = 1$; (b) reflecting across the $x$-axis maps $(x, y) \\mapsto (x, -y)$, so $\\cos(-\\theta) = \\cos\\theta$ and $\\sin(-\\theta) = -\\sin\\theta$",
+        "step_by_step_solution": [
+          "By Pythagoras' theorem, every point $(x, y) = (\\cos\\theta, \\sin\\theta)$ on the unit circle of radius $1$ satisfies $x^2 + y^2 = 1 \\implies \\cos^2\\theta + \\sin^2\\theta = 1$.",
+          "Rotating clockwise by $\\theta$ (angle $-\\theta$) reflects the point $P(x, y)$ across the horizontal $x$-axis to $(x, -y)$, preserving the $x$-coordinate ($\\cos(-\\theta) = \\cos\\theta$) and negating the $y$-coordinate ($\\sin(-\\theta) = -\\sin\\theta$)."
+        ]
+      },
+      {
+        "id": "10_6_3_Q10",
+        "question": "Explain using the unit circle why $\\tan 90^\\circ$ and $\\tan 270^\\circ$ are undefined, whereas $\\tan 0^\\circ = \\tan 180^\\circ = \\tan 360^\\circ = 0$.",
+        "difficulty": "Medium",
+        "context": "Asymptotes of Tangent",
+        "final_answer": "Since $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$, at $90^\\circ$ and $270^\\circ$ we have $\\cos\\theta = 0$ (division by zero, vertical line gradient), whereas at $0^\\circ, 180^\\circ, 360^\\circ$ we have $\\sin\\theta = 0$ and $\\cos\\theta = \\pm 1$ (zero gradient)",
+        "step_by_step_solution": [
+          "By definition, $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta} = \\frac{y}{x}$. At $90^\\circ$ and $270^\\circ$, the point on the unit circle is $(0, \\pm 1)$, so $x = \\cos\\theta = 0$ and division by zero is undefined.",
+          "At $0^\\circ, 180^\\circ, 360^\\circ$, the point is $(\\pm 1, 0)$, so $y = \\sin\\theta = 0$ and $\\tan\\theta = \\frac{0}{\\pm 1} = 0$."
+        ]
+      },
+      {
+        "id": "10_6_3_Q11",
+        "question": "How many solutions does the equation $\\sin(2x) = \\frac{1}{2}$ have on the interval $0^\\circ \\le x \\le 360^\\circ$? Find all of them.",
+        "difficulty": "Challenging",
+        "context": "Compressed Period Equations",
+        "final_answer": "$4$ solutions: $x = 15^\\circ, 75^\\circ, 195^\\circ, 255^\\circ$",
+        "step_by_step_solution": [
+          "Let $u = 2x$, so as $x$ ranges over $[0^\\circ, 360^\\circ]$, $u = 2x$ ranges over two full revolutions $[0^\\circ, 720^\\circ]$.",
+          "Solve $\\sin u = \\frac{1}{2}$ on $[0^\\circ, 720^\\circ]$: $u = 30^\\circ, 150^\\circ, 390^\\circ, 510^\\circ$, and divide by $2$ to get $x = 15^\\circ, 75^\\circ, 195^\\circ, 255^\\circ$."
+        ]
+      },
+      {
+        "id": "10_6_3_Q12",
+        "question": "Show by comparing exact values at $x = 0^\\circ, 30^\\circ, 60^\\circ, 90^\\circ$ and using right-angled triangle co-functions that $\\sin(90^\\circ - \\theta) = \\cos\\theta$ for all acute angles $\\theta$, and explain what this means graphically for the curves $y = \\sin x$ and $y = \\cos x$.",
+        "difficulty": "Extension",
+        "context": "Co-Function Phase Shift",
+        "final_answer": "In a right-angled triangle, the side opposite $90^\\circ - \\theta$ is adjacent to $\\theta$, so $\\sin(90^\\circ - \\theta) = \\cos\\theta$; graphically, $y = \\cos x$ is the curve $y = \\sin x$ shifted $90^\\circ$ to the left",
+        "step_by_step_solution": [
+          "In any right-angled triangle with acute angles $\\theta$ and $90^\\circ - \\theta$, $\\sin(90^\\circ - \\theta) = \\frac{\\text{Opp}(90^\\circ - \\theta)}{\\text{Hyp}} = \\frac{\\text{Adj}(\\theta)}{\\text{Hyp}} = \\cos\\theta$.",
+          "Graphically, $\\cos x = \\sin(x + 90^\\circ)$, meaning the cosine wave is identical in shape to the sine wave translated $90^\\circ$ horizontally to the left."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_6_3_1a_sq",
+      "description": "WE10_6_3_1(a) cos(150 deg) squared",
+      "expression": "(cos(5*pi/6))**2",
+      "expected": 0.75
+    },
+    {
+      "id": "WE10_6_3_1b",
+      "description": "WE10_6_3_1(b) tan(225 deg)",
+      "expression": "tan(5*pi/4)",
+      "expected": 1
+    },
+    {
+      "id": "WE10_6_3_1c_sq",
+      "description": "WE10_6_3_1(c) sin(300 deg) squared",
+      "expression": "(sin(5*pi/3))**2",
+      "expected": 0.75
+    },
+    {
+      "id": "NYT10_6_3_1b",
+      "description": "NYT10_6_3_1(b) cos(240 deg)",
+      "expression": "cos(4*pi/3)",
+      "expected": -0.5
+    },
+    {
+      "id": "WE10_6_3_2a",
+      "description": "WE10_6_3_2(a) sin(150 deg)",
+      "expression": "sin(5*pi/6)",
+      "expected": 0.5
+    },
+    {
+      "id": "WE10_6_3_3_T",
+      "description": "WE10_6_3_3 period T",
+      "expression": "Rational(360, 30)",
+      "expected": 12
+    },
+    {
+      "id": "WE10_6_3_3_d4",
+      "description": "WE10_6_3_3 depth at t=4",
+      "expression": "3 * cos(2*pi/3) + 5",
+      "expected": 3.5
+    },
+    {
+      "id": "EX10_6_3_Q1",
+      "description": "Exercise 10.6.3 Q1 exact expression",
+      "expression": "sin(pi/6)**2 + cos(pi/3)**2 + tan(pi/4)",
+      "expected": 1.5
+    },
+    {
+      "id": "EX10_6_3_Q3_cos",
+      "description": "Exercise 10.6.3 Q3 cos(theta) in Q2",
+      "expression": "-sqrt(1 - Rational(3, 5)**2)",
+      "expected": -0.8
+    },
+    {
+      "id": "EX10_6_3_Q3_tan",
+      "description": "Exercise 10.6.3 Q3 tan(theta) in Q2",
+      "expression": "Rational(3, 5) / (-sqrt(1 - Rational(3, 5)**2))",
+      "expected": -0.75
+    },
+    {
+      "id": "EX10_6_3_Q4",
+      "description": "Exercise 10.6.3 Q4 check sin(210 deg)",
+      "expression": "2 * sin(7*pi/6) + 1",
+      "expected": 0
+    },
+    {
+      "id": "EX10_6_3_Q5_y60",
+      "description": "Exercise 10.6.3 Q5 y(60 deg)",
+      "expression": "5 * cos(pi) + 2",
+      "expected": -3
+    },
+    {
+      "id": "EX10_6_3_Q6_max",
+      "description": "Exercise 10.6.3 Q6 max wheel height",
+      "expression": "60 - 50 * cos(pi)",
+      "expected": 110
+    },
+    {
+      "id": "EX10_6_3_Q7_jul",
+      "description": "Exercise 10.6.3 Q7 July temperature",
+      "expression": "8 * cos(pi) + 12",
+      "expected": 4
+    },
+    {
+      "id": "EX10_6_3_Q11_sum",
+      "description": "Exercise 10.6.3 Q11 sum of 4 solutions",
+      "expression": "15 + 75 + 195 + 255",
+      "expected": 540
+    }
+  ]
+}

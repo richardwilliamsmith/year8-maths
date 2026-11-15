@@ -1,0 +1,294 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Linear Inequalities, Simultaneous Equations, and Coordinate Geometry",
+  "worksheets": [
+    {
+      "section_id": "10_2_1",
+      "section_code": "2A",
+      "title": "Solving Linear Inequalities and Half-Planes",
+      "vcaa_code": "VC2M10A02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each linear inequality for $x$:",
+          "parts": [
+            { "label": "a", "question": "$3x - 7 > 11$", "answer": "$x > 6$" },
+            { "label": "b", "question": "$5x + 4 \\le 2x - 8$", "answer": "$x \\le -4$" },
+            { "label": "c", "question": "$\\dfrac{2x - 1}{3} \\ge 5$", "answer": "$x \\ge 8$" },
+            { "label": "d", "question": "$4(x - 2) < 2x + 6$", "answer": "$x < 7$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each linear inequality, remembering to reverse the inequality sign when dividing by a negative:",
+          "parts": [
+            { "label": "a", "question": "$-4x + 9 \\le 21$", "answer": "$x \\ge -3$" },
+            { "label": "b", "question": "$15 - 3x > 6$", "answer": "$x < 3$" },
+            { "label": "c", "question": "$\\dfrac{4 - 2x}{5} \\ge 2$", "answer": "$x \\le -3$" },
+            { "label": "d", "question": "$2(3 - x) < 5x - 15$", "answer": "$x > 3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each compound inequality or intersection of inequalities:",
+          "parts": [
+            { "label": "a", "question": "$-5 \\le 2x + 1 < 9$", "answer": "$-3 \\le x < 4$" },
+            { "label": "b", "question": "$1 < \\dfrac{3x - 2}{4} \\le 4$", "answer": "$2 < x \\le 6$" },
+            { "label": "c", "question": "$-7 < 5 - 3x \\le 11$", "answer": "$-2 \\le x < 4$" },
+            { "label": "d", "question": "$2x - 3 \\ge 1$ and $3x + 1 \\le 19$", "answer": "$2 \\le x \\le 6$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Determine whether the test point $(2, -1)$ satisfies each half-plane inequality:",
+          "parts": [
+            { "label": "a", "question": "$y \\le 3x - 5$", "answer": "Yes ($-1 \\le 1$ is true)" },
+            { "label": "b", "question": "$2x - 3y < 6$", "answer": "No ($7 < 6$ is false)" },
+            { "label": "c", "question": "$x + 4y \\ge -2$", "answer": "Yes ($-2 \\ge -2$ is true)" },
+            { "label": "d", "question": "$3x + 2y > 4$", "answer": " No ($4 > 4$ is false)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A mobile plan in Melbourne charges $\\$25$ per month plus $\\$0.15$ per megabyte of excess data $d$. Write and solve an inequality to find the maximum excess megabytes $d$ so that the monthly bill does not exceed $\\$52$.",
+          "answer": "$25 + 0.15d \\le 52 \\implies 0.15d \\le 27 \\implies d \\le 180\\text{ MB}$"
+        },
+        {
+          "number": 6,
+          "question": "A rectangular paddock has width $w\\text{ m}$ and length $(2w + 5)\\text{ m}$. If its perimeter must be at least $70\\text{ m}$ and at most $106\\text{ m}$, write and solve a compound inequality for $w$.",
+          "answer": "$70 \\le 6w + 10 \\le 106 \\implies 10 \\le w \\le 16\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A school fundraiser in Geelong sells student tickets for $\\$10$ ($x$) and adult tickets for $\\$20$ ($y$) and aims to raise at least $\\$600$. Write the half-plane inequality and state the boundary intercepts.",
+          "answer": "$10x + 20y \\ge 600$ (or $x + 2y \\ge 60$, $x, y \\ge 0$); intercepts $(60, 0)$ and $(0, 30)$"
+        },
+        {
+          "number": 8,
+          "question": "A lift in a Sydney office tower has a maximum safe load of $950\\text{ kg}$. If an operator weighing $80\\text{ kg}$ loads identical $30\\text{ kg}$ crates, what is the maximum number of crates $n$ the lift can carry at once?",
+          "answer": "$80 + 30n \\le 950 \\implies 30n \\le 870 \\implies n \\le 29\\text{ crates}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Use the number-line order of $-2 < 5$ to explain why multiplying or dividing both sides of an inequality by a negative number reverses the direction of the inequality sign.",
+          "answer": "Multiplying by $-1$ reflects numbers across $0$ on the number line: $-2 < 5$, but $(-1)(-2) = 2$ lies to the right of $(-1)(5) = -5$, so $2 > -5$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why the origin $(0, 0)$ is a convenient test point for shading a half-plane $ax + by < c$ when $c \\neq 0$, and explain why another test point must be chosen when $c = 0$.",
+          "answer": "When $c \\neq 0$, substituting $(0, 0)$ immediately simplifies $ax + by$ to $0$, testing $0 < c$. When $c = 0$, the boundary line $ax + by = 0$ passes through $(0, 0)$, so $(0, 0)$ lies on the boundary rather than in either open half-plane."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10_2A_1a", "expression": "(11 + 7) / 3", "expected": 6 },
+        { "id": "Y10_2A_1b", "expression": "(-8 - 4) / (5 - 2)", "expected": -4 },
+        { "id": "Y10_2A_1c", "expression": "(3 * 5 + 1) / 2", "expected": 8 },
+        { "id": "Y10_2A_2a", "expression": "(21 - 9) / (-4)", "expected": -3 },
+        { "id": "Y10_2A_2c", "expression": "(2 * 5 - 4) / (-2)", "expected": -3 },
+        { "id": "Y10_2A_2d", "expression": "(6 + 15) / (5 + 2)", "expected": 3 },
+        { "id": "Y10_2A_3b", "expression": "(4 * 4 + 2) / 3", "expected": 6 },
+        { "id": "Y10_2A_5", "expression": "(52 - 25) / Rational(15, 100)", "expected": 180 },
+        { "id": "Y10_2A_6", "expression": "(106 - 10) / 6", "expected": 16 },
+        { "id": "Y10_2A_8", "expression": "(950 - 80) / 30", "expected": 29 }
+      ]
+    },
+    {
+      "section_id": "10_2_2",
+      "section_code": "2B",
+      "title": "Simultaneous Linear Equations: Substitution and Elimination",
+      "vcaa_code": "VC2M10A02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each pair of simultaneous equations using the substitution method:",
+          "parts": [
+            { "label": "a", "question": "$y = 3x - 2$ and $2x + y = 13$", "answer": "$(3, 7)$" },
+            { "label": "b", "question": "$y = 2x + 5$ and $y = 5x - 4$", "answer": "$(3, 11)$" },
+            { "label": "c", "question": "$x = 4 - 2y$ and $3x - 2y = 4$", "answer": "$(2, 1)$" },
+            { "label": "d", "question": "$y = 7 - 3x$ and $4x - 3y = 5$", "answer": "$(2, 1)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each pair of simultaneous equations by adding or subtracting to eliminate a variable:",
+          "parts": [
+            { "label": "a", "question": "$3x + 2y = 19$ and $5x - 2y = 21$", "answer": "$(5, 2)$" },
+            { "label": "b", "question": "$4x + 3y = 18$ and $4x - y = 10$", "answer": "$(3, 2)$" },
+            { "label": "c", "question": "$2x + 5y = 9$ and $2x + y = -3$", "answer": "$(-3, 3)$" },
+            { "label": "d", "question": "$7x - 3y = 20$ and $2x + 3y = 7$", "answer": "$(3, \\dfrac{1}{3})$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each pair of simultaneous equations using multipliers and the elimination method:",
+          "parts": [
+            { "label": "a", "question": "$2x + 3y = 13$ and $3x + 2y = 12$", "answer": "$(2, 3)$" },
+            { "label": "b", "question": "$3x - 4y = 10$ and $5x + 2y = 8$", "answer": "$(2, -1)$" },
+            { "label": "c", "question": "$4x + 3y = 11$ and $3x - 2y = 1$", "answer": "$(\\dfrac{25}{17}, \\dfrac{29}{17})$" },
+            { "label": "d", "question": "$5x - 3y = 19$ and $2x - 5y = 1$", "answer": "$(5, 2)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Classify each linear system as having a unique solution, no solution, or infinitely many solutions:",
+          "parts": [
+            { "label": "a", "question": "$y = 2x + 3$ and $y = 2x - 5$", "answer": "No solution (parallel distinct lines)" },
+            { "label": "b", "question": "$2x - 3y = 6$ and $4x - 6y = 12$", "answer": "Infinitely many solutions (coincident lines)" },
+            { "label": "c", "question": "$3x + y = 7$ and $x - 3y = -1$", "answer": "Unique solution $(2, 1)$" },
+            { "label": "d", "question": "$6x - 2y = 8$ and $3x - y = 5$", "answer": "No solution (parallel distinct lines)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "At a Melbourne bakery, $3$ meat pies and $2$ coffees cost $\\$24$, while $2$ meat pies and $3$ coffees cost $\\$21$. Set up and solve simultaneous equations to find the price of one pie $p$ and one coffee $c$.",
+          "answer": "$p = \\$6$, $c = \\$3$"
+        },
+        {
+          "number": 6,
+          "question": "A craftsman makes wooden chopping boards. His weekly cost is $C = 15n + 360$ dollars and his revenue from selling $n$ boards is $R = 39n$ dollars. Find the break-even number of boards $n$ and the break-even revenue.",
+          "answer": "$39n = 15n + 360 \\implies 24n = 360 \\implies n = 15\\text{ boards}$; revenue $= \\$585$"
+        },
+        {
+          "number": 7,
+          "question": "A chemist mixes $x\\text{ mL}$ of a $10\\%$ saline solution with $y\\text{ mL}$ of a $30\\%$ saline solution to obtain $200\\text{ mL}$ of a $18\\%$ saline solution. Solve $x + y = 200$ and $0.10x + 0.30y = 36$ for $x$ and $y$.",
+          "answer": "$x = 120\\text{ mL}$, $y = 80\\text{ mL}$"
+        },
+        {
+          "number": 8,
+          "question": "The perimeter of a rectangular swimming pool in Brisbane is $64\\text{ m}$, and the length $l$ is $8\\text{ m}$ greater than the width $w$. Find the length and width of the pool.",
+          "answer": "$2l + 2w = 64$ and $l - w = 8 \\implies l = 20\\text{ m}, w = 12\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain geometrically why a system of two linear equations $y = m_1x + c_1$ and $y = m_2x + c_2$ has no solutions when $m_1 = m_2$ and $c_1 \\neq c_2$.",
+          "answer": "Equal gradients ($m_1 = m_2$) with different $y$-intercepts ($c_1 \\neq c_2$) represent two parallel non-overlapping straight lines, which never intersect."
+        },
+        {
+          "number": 10,
+          "question": "For the system $kx + 3y = 6$ and $4x + 6y = 12$, find the value of $k$ that produces infinitely many solutions, and explain what happens for any other value of $k$.",
+          "answer": "Multiplying the first equation by $2$ gives $2kx + 6y = 12$. When $2k = 4 \\implies k = 2$, both equations represent the same line (infinitely many solutions); for $k \\neq 2$, the gradients differ and there is a unique solution $(0, 2)$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10_2B_1a", "expression": "2*3 + (3*3 - 2)", "expected": 13 },
+        { "id": "Y10_2B_1b", "expression": "(2*3 + 5) - (5*3 - 4)", "expected": 0 },
+        { "id": "Y10_2B_2a", "expression": "3*5 + 2*2", "expected": 19 },
+        { "id": "Y10_2B_2b", "expression": "4*3 + 3*2", "expected": 18 },
+        { "id": "Y10_2B_3a", "expression": "2*2 + 3*3", "expected": 13 },
+        { "id": "Y10_2B_3b", "expression": "3*2 - 4*(-1)", "expected": 10 },
+        { "id": "Y10_2B_3d", "expression": "5*5 - 3*2", "expected": 19 },
+        { "id": "Y10_2B_5", "expression": "3*6 + 2*3", "expected": 24 },
+        { "id": "Y10_2B_6", "expression": "360 / (39 - 15)", "expected": 15 },
+        { "id": "Y10_2B_7", "expression": "Rational(1, 10)*120 + Rational(3, 10)*80", "expected": 36 }
+      ]
+    },
+    {
+      "section_id": "10_2_3",
+      "section_code": "2C",
+      "title": "Parallel and Perpendicular Lines",
+      "vcaa_code": "VC2M10A03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For each line, state the gradient of a parallel line ($m_{\\parallel}$) and a perpendicular line ($m_{\\perp}$):",
+          "parts": [
+            { "label": "a", "question": "$y = 4x - 7$", "answer": "$m_{\\parallel} = 4$, $m_{\\perp} = -\\dfrac{1}{4}$" },
+            { "label": "b", "question": "$y = -\\dfrac{2}{3}x + 5$", "answer": "$m_{\\parallel} = -\\dfrac{2}{3}$, $m_{\\perp} = \\dfrac{3}{2}$" },
+            { "label": "c", "question": "$3x - 5y = 10$", "answer": "$m_{\\parallel} = \\dfrac{3}{5}$, $m_{\\perp} = -\\dfrac{5}{3}$" },
+            { "label": "d", "question": "$x + 2y - 8 = 0$", "answer": "$m_{\\parallel} = -\\dfrac{1}{2}$, $m_{\\perp} = 2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the equation of each line in gradient-intercept form $y = mx + c$:",
+          "parts": [
+            { "label": "a", "question": "Parallel to $y = 3x - 4$ and passing through $(2, 5)$", "answer": "$y = 3x - 1$" },
+            { "label": "b", "question": "Parallel to $y = -2x + 1$ and passing through $(-3, 4)$", "answer": "$y = -2x - 2$" },
+            { "label": "c", "question": "Parallel to $2x - 3y = 6$ and passing through $(6, 1)$", "answer": "$y = \\dfrac{2}{3}x - 3$" },
+            { "label": "d", "question": "Parallel to $x + 4y = 8$ and passing through $(-4, 3)$", "answer": "$y = -\\dfrac{1}{4}x + 2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the equation of each perpendicular line in gradient-intercept form $y = mx + c$:",
+          "parts": [
+            { "label": "a", "question": "Perpendicular to $y = 2x + 3$ and passing through $(4, -1)$", "answer": "$y = -\\dfrac{1}{2}x + 1$" },
+            { "label": "b", "question": "Perpendicular to $y = -\\dfrac{1}{3}x + 2$ and passing through $(1, 5)$", "answer": "$y = 3x + 2$" },
+            { "label": "c", "question": "Perpendicular to $3x + 2y = 7$ and passing through $(6, 2)$", "answer": "$y = \\dfrac{2}{3}x - 2$" },
+            { "label": "d", "question": "Perpendicular to $4x - 5y = 20$ and passing through $(-4, 6)$", "answer": "$y = -\\dfrac{5}{4}x + 1$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Determine whether the pair of lines is parallel, perpendicular, or neither:",
+          "parts": [
+            { "label": "a", "question": "$y = 3x - 2$ and $x + 3y = 9$", "answer": "Perpendicular ($3 \\times (-\\frac{1}{3}) = -1$)" },
+            { "label": "b", "question": "$4x - 2y = 10$ and $y = 2x + 1$", "answer": "Parallel ($m_1 = m_2 = 2$)" },
+            { "label": "c", "question": "$2x + 3y = 6$ and $2x - 3y = 6$", "answer": "Neither ($m_1 = -\\frac{2}{3}, m_2 = \\frac{2}{3}$)" },
+            { "label": "d", "question": "$5x - 2y = 4$ and $2x + 5y = 15$", "answer": "Perpendicular ($\\frac{5}{2} \\times (-\\frac{2}{5}) = -1$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Find the equation of the perpendicular bisector of the line segment joining $A(2, 1)$ and $B(6, 9)$.",
+          "answer": "Midpoint $M(4, 5)$, $m_{AB} = 2 \\implies m_{\\perp} = -\\dfrac{1}{2}$; equation is $y = -\\dfrac{1}{2}x + 7$"
+        },
+        {
+          "number": 6,
+          "question": "On a town planning grid in Canberra, a new bike path must pass through $P(3, -2)$ and run parallel to an existing road with equation $2x + y = 7$. Find the equation of the bike path.",
+          "answer": "$m = -2$; $y - (-2) = -2(x - 3) \\implies y = -2x + 4$"
+        },
+        {
+          "number": 7,
+          "question": "Show by calculating gradients that the triangle with vertices $A(1, 2)$, $B(4, 6)$, and $C(8, 3)$ has a right angle at $B$, and find its exact area.",
+          "answer": "$m_{AB} = \\dfrac{4}{3}$ and $m_{BC} = -\\dfrac{3}{4}$, so $m_{AB} m_{BC} = -1$ ($\\angle B = 90^\\circ$); $AB = 5, BC = 5 \\implies \\text{Area} = \\dfrac{25}{2} = 12.5\\text{ units}^2$"
+        },
+        {
+          "number": 8,
+          "question": "Find the value of $k$ such that the line passing through $(1, k)$ and $(4, 9)$ is perpendicular to the line $3x - 6y = 12$.",
+          "answer": "Line $3x - 6y = 12$ has $m = \\dfrac{1}{2}$, so $m_{\\perp} = -2$; $\\dfrac{9 - k}{4 - 1} = -2 \\implies 9 - k = -6 \\implies k = 15$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why every point $P(x, y)$ on the perpendicular bisector of segment $AB$ is equidistant from $A$ and $B$ ($PA = PB$).",
+          "answer": "Let $M$ be the midpoint of $AB$. For any point $P$ on the perpendicular bisector, $\\triangle PMA \\cong \\triangle PMB$ by SAS ($AM = BM$, $\\angle PMA = \\angle PMB = 90^\\circ$, and $PM$ is common), so $PA = PB$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why the perpendicular gradient formula $m_1 m_2 = -1$ cannot be used when one of the lines is horizontal ($y = k$) and the other is vertical ($x = h$).",
+          "answer": "A horizontal line has gradient $m_1 = 0$ and a vertical line has an undefined gradient (division by zero), so the product $m_1 m_2$ is not defined even though the lines meet at $90^\\circ$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10_2C_1b", "expression": "Rational(-2, 3) * Rational(3, 2)", "expected": -1 },
+        { "id": "Y10_2C_1c", "expression": "Rational(3, 5) * Rational(-5, 3)", "expected": -1 },
+        { "id": "Y10_2C_2a", "expression": "3*2 - 1", "expected": 5 },
+        { "id": "Y10_2C_2c", "expression": "Rational(2, 3)*6 - 3", "expected": 1 },
+        { "id": "Y10_2C_3a", "expression": "Rational(-1, 2)*4 + 1", "expected": -1 },
+        { "id": "Y10_2C_3c", "expression": "Rational(2, 3)*6 - 2", "expected": 2 },
+        { "id": "Y10_2C_3d", "expression": "Rational(-5, 4)*(-4) + 1", "expected": 6 },
+        { "id": "Y10_2C_5", "expression": "Rational(-1, 2)*4 + 7", "expected": 5 },
+        { "id": "Y10_2C_7", "expression": "Rational(6 - 2, 4 - 1) * Rational(3 - 6, 8 - 4)", "expected": -1 },
+        { "id": "Y10_2C_8", "expression": "(9 - 15) / (4 - 1)", "expected": -2 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,295 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Linear Inequalities, Simultaneous Equations, and Coordinate Geometry",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_2_1",
+      "section_code": "2A",
+      "title": "Solving Linear Inequalities and Half-Planes",
+      "vcaa_code": "VC2M10A02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each fractional linear inequality for $x$:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{3x - 2}{4} - \\dfrac{2x + 1}{3} \\le \\dfrac{1}{6}$", "answer": "$x \\le 12$" },
+            { "label": "b", "question": "$\\dfrac{2 - 5x}{3} - \\dfrac{1 - 2x}{2} > 2$", "answer": "$x < -\\dfrac{11}{4}$" },
+            { "label": "c", "question": "$\\dfrac{4x - 3}{5} - \\dfrac{3x + 2}{2} \\ge -4$", "answer": "$x \\le 4$" },
+            { "label": "d", "question": "$\\dfrac{x + 3}{2} - \\dfrac{2x - 1}{3} < \\dfrac{3x - 5}{6}$", "answer": "$x > 4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each simultaneous system of linear inequalities and express the solution as a single interval:",
+          "parts": [
+            { "label": "a", "question": "$2x - 5 \\le 3x - 2 \\le 2x + 4$", "answer": "$-3 \\le x \\le 6$" },
+            { "label": "b", "question": "$x - 3 < 2x + 1 < x + 7$", "answer": "$-4 < x < 6$" },
+            { "label": "c", "question": "$-3 \\le \\dfrac{4 - 3x}{5} < 2$", "answer": "$-2 < x \\le \\dfrac{19}{3}$" },
+            { "label": "d", "question": "$3(x - 1) \\ge x + 3$ and $2(5 - x) > x - 8$", "answer": "$3 \\le x < 6$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the exact area of the polygonal region in the Cartesian plane defined by each system of half-planes:",
+          "parts": [
+            { "label": "a", "question": "$x \\ge 0$, $y \\ge 0$, and $2x + 3y \\le 12$", "answer": "$12\\text{ units}^2$" },
+            { "label": "b", "question": "$x \\ge 1$, $y \\ge 2$, and $x + y \\le 7$", "answer": "$8\\text{ units}^2$" },
+            { "label": "c", "question": "$y \\ge 0$, $y \\le 2x$, and $x + y \\le 6$", "answer": "$12\\text{ units}^2$" },
+            { "label": "d", "question": "$0 \\le x \\le 4$, $y \\ge 0$, and $y \\le x + 2$", "answer": "$16\\text{ units}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each absolute-value linear inequality by rewriting it as a compound inequality:",
+          "parts": [
+            { "label": "a", "question": "$|2x - 3| \\le 7$", "answer": "$-2 \\le x \\le 5$" },
+            { "label": "b", "question": "$|3x + 2| < 11$", "answer": "$-\\dfrac{13}{3} < x < 3$" },
+            { "label": "c", "question": "$|4 - x| \\le 5$", "answer": "$-1 \\le x \\le 9$" },
+            { "label": "d", "question": "$|2x - 5| \\ge 3$", "answer": "$x \\le 1$ or $x \\ge 4$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Gippsland dairy farm allocates $x$ hectares to pasture and $y$ hectares to lucerne subject to $x \\ge 0$, $y \\ge 0$, $x + y \\le 50$, and $2x + y \\le 80$. Find the four corner points (vertices) of the feasible region and maximise profit $P = 300x + 200y$.",
+          "answer": "Vertices: $(0,0), (40,0), (30,20), (0,50)$; maximum $P = \\$13\\,000$ at $(30, 20)$"
+        },
+        {
+          "number": 6,
+          "question": "A student has scores of $74$, $81$, and $79$ on three maths tests. What range of scores $x$ on the fourth test (marked out of $100$) will give a four-test average of at least $80$?",
+          "answer": "$\\dfrac{74 + 81 + 79 + x}{4} \\ge 80 \\implies 234 + x \\ge 320 \\implies 86 \\le x \\le 100$"
+        },
+        {
+          "number": 7,
+          "question": "Find all integer values of $n$ that simultaneously satisfy $3n - 7 > n + 1$ and $5n - 12 \\le 2n + 9$.",
+          "answer": "$n > 4$ and $n \\le 7$, so $n \\in \\{5, 6, 7\\}$"
+        },
+        {
+          "number": 8,
+          "question": "A triangular park is bounded by the lines $y = 0$, $y = x$, and $x + 2y = 12$. Write the three inequalities defining the interior and boundary of the park, and calculate its exact area.",
+          "answer": "$y \\ge 0, y \\le x, x + 2y \\le 12$; vertices $(0,0), (12,0), (4,4) \\implies \\text{Area} = \\dfrac{1}{2} \\times 12 \\times 4 = 24\\text{ units}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why multiplying both sides of the rational inequality $\\dfrac{4}{x - 2} > 1$ by $(x - 2)$ without case analysis is invalid.",
+          "answer": "The sign of $(x - 2)$ depends on $x$: if $x > 2$, $(x - 2) > 0$ and the inequality stays $4 > x - 2$ ($2 < x < 6$); if $x < 2$, $(x - 2) < 0$ and the inequality reverses to $4 < x - 2$, which is impossible for $x < 2$."
+        },
+        {
+          "number": 10,
+          "question": "Prove that if $0 < a < b$, then $\\dfrac{1}{a} > \\dfrac{1}{b}$. Does this reciprocal reversal still hold if $a < 0 < b$?",
+          "answer": "Since $a, b > 0$, their product $ab > 0$. Dividing both sides of $a < b$ by $ab$ gives $\\dfrac{1}{b} < \\dfrac{1}{a}$. If $a < 0 < b$, then $\\dfrac{1}{a} < 0 < \\dfrac{1}{b}$, so the inequality does NOT reverse."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10E_2A_1a", "expression": "Rational(3*12 - 2, 4) - Rational(2*12 + 1, 3)", "expected": "1/6" },
+        { "id": "Y10E_2A_1c", "expression": "Rational(4*4 - 3, 5) - Rational(3*4 + 2, 2)", "expected": -4 },
+        { "id": "Y10E_2A_3a", "expression": "Rational(1, 2) * 6 * 4", "expected": 12 },
+        { "id": "Y10E_2A_3b", "expression": "Rational(1, 2) * (5 - 1) * (6 - 2)", "expected": 8 },
+        { "id": "Y10E_2A_3c", "expression": "Rational(1, 2) * 6 * 4", "expected": 12 },
+        { "id": "Y10E_2A_3d", "expression": "Rational(1, 2) * (2 + 6) * 4", "expected": 16 },
+        { "id": "Y10E_2A_5", "expression": "300 * 30 + 200 * 20", "expected": 13000 },
+        { "id": "Y10E_2A_6", "expression": "4 * 80 - (74 + 81 + 79)", "expected": 86 },
+        { "id": "Y10E_2A_7", "expression": "(12 + 9) / (5 - 2)", "expected": 7 },
+        { "id": "Y10E_2A_8", "expression": "Rational(1, 2) * 12 * 4", "expected": 24 }
+      ]
+    },
+    {
+      "section_id": "10_2_2",
+      "section_code": "2B",
+      "title": "Simultaneous Linear Equations: Substitution and Elimination",
+      "vcaa_code": "VC2M10A02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each system of fractional linear equations by clearing denominators first:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x}{2} + \\dfrac{y}{3} = 4$ and $\\dfrac{x}{3} - \\dfrac{y}{6} = 1$", "answer": "$(4, 6)$" },
+            { "label": "b", "question": "$\\dfrac{x + y}{2} + \\dfrac{x - y}{3} = 5$ and $x - 2y = 2$", "answer": "$(6, 2)$" },
+            { "label": "c", "question": "$\\dfrac{2x - 1}{3} + \\dfrac{y + 2}{4} = 4$ and $x - y = 2$", "answer": "$(5, 3)$" },
+            { "label": "d", "question": "$\\dfrac{3x}{4} - \\dfrac{2y}{3} = 1$ and $\\dfrac{x}{2} + \\dfrac{y}{3} = 3$", "answer": "$(4, 3)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each non-linear system by substituting $u = \\dfrac{1}{x}$ and $v = \\dfrac{1}{y}$:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2}{x} + \\dfrac{3}{y} = 2$ and $\\dfrac{4}{x} - \\dfrac{9}{y} = -1$", "answer": "$x = 2, y = 3$" },
+            { "label": "b", "question": "$\\dfrac{3}{x} + \\dfrac{2}{y} = 12$ and $\\dfrac{5}{x} - \\dfrac{4}{y} = -2$", "answer": "$x = \\dfrac{1}{2}, y = \\dfrac{1}{3}$" },
+            { "label": "c", "question": "$\\dfrac{1}{x} + \\dfrac{1}{y} = \\dfrac{5}{6}$ and $\\dfrac{1}{x} - \\dfrac{1}{y} = \\dfrac{1}{6}$", "answer": "$x = 2, y = 3$" },
+            { "label": "d", "question": "$\\dfrac{6}{x} - \\dfrac{2}{y} = 1$ and $\\dfrac{3}{x} + \\dfrac{4}{y} = 3$", "answer": "$x = 3, y = 2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each $3 \\times 3$ linear system for $(x, y, z)$:",
+          "parts": [
+            { "label": "a", "question": "$x + y + z = 6$, $x - y + z = 2$, $2x + y - z = 1$", "answer": "$(1, 2, 3)$" },
+            { "label": "b", "question": "$x + y = 5$, $y + z = 7$, $z + x = 6$", "answer": "$(2, 3, 4)$" },
+            { "label": "c", "question": "$2x + y - z = 3$, $x - y + 2z = 7$, $3x + 2y + z = 10$", "answer": "$(2, 1, 2)$" },
+            { "label": "d", "question": "$x + 2y + z = 9$, $2x - y + z = 5$, $x + y - 2z = 1$", "answer": "$(2, 2, 3)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the value(s) of the parameter $k$ for which each linear system has the stated property:",
+          "parts": [
+            { "label": "a", "question": "$kx + 2y = 5$ and $3x - 4y = 1$ has no solution", "answer": "$k = -\\dfrac{3}{2}$" },
+            { "label": "b", "question": "$2x + ky = 6$ and $6x + 9y = 18$ has infinitely many solutions", "answer": "$k = 3$" },
+            { "label": "c", "question": "$kx + 3y = k$ and $12x + ky = 12$ has infinitely many solutions", "answer": "$k = 6$" },
+            { "label": "d", "question": "$kx + 4y = 8$ and $9x + ky = 12$ has no solution", "answer": "$k = -6$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A river boat on the Murray River travels $24\\text{ km}$ downstream in $2\\text{ hours}$ and returns the same $24\\text{ km}$ upstream in $3\\text{ hours}$. Find the boat's speed in still water $v$ and the river current speed $c$.",
+          "answer": "$v + c = 12$ and $v - c = 8 \\implies v = 10\\text{ km/h}, c = 2\\text{ km/h}$"
+        },
+        {
+          "number": 6,
+          "question": "Tap A and Tap B together fill a water tank in $6\\text{ hours}$ ($\\frac{1}{a} + \\frac{1}{b} = \\frac{1}{6}$). If Tap A runs for $4\\text{ hours}$ and Tap B runs for $9\\text{ hours}$, they also fill the tank ($\\frac{4}{a} + \\frac{9}{b} = 1$). Find the time each tap takes alone.",
+          "answer": "$a = 10\\text{ hours}$, $b = 15\\text{ hours}$"
+        },
+        {
+          "number": 7,
+          "question": "A jeweller in Kalgoorlie melts $x\\text{ g}$ of an $18$-carat gold alloy ($75\\%$ gold) with $y\\text{ g}$ of a $9$-carat gold alloy ($37.5\\%$ gold) to produce $120\\text{ g}$ of a $15$-carat alloy ($62.5\\%$ gold). Find $x$ and $y$.",
+          "answer": "$x + y = 120$ and $0.75x + 0.375y = 75 \\implies x = 80\\text{ g}, y = 40\\text{ g}$"
+        },
+        {
+          "number": 8,
+          "question": "Find the coordinates of the orthocentre or circumcentre intersection: the lines $x + 2y = 8$, $2x - y = 1$, and $kx + y = 9$ are concurrent (all three meet at a single point). Find the intersection point and the value of $k$.",
+          "answer": "Intersection of first two is $(2, 3)$; substituting into $kx + y = 9$ gives $2k + 3 = 9 \\implies k = 3$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Show that for the general $2 \\times 2$ linear system $a_1x + b_1y = c_1$ and $a_2x + b_2y = c_2$, eliminating $y$ yields $(a_1b_2 - a_2b_1)x = c_1b_2 - c_2b_1$, and state the condition on $a_1b_2 - a_2b_1$ for a unique solution.",
+          "answer": "Multiplying the first equation by $b_2$ and the second by $b_1$ and subtracting gives $(a_1b_2 - a_2b_1)x = c_1b_2 - c_2b_1$. A unique solution exists if and only if the determinant $a_1b_2 - a_2b_1 \\neq 0$."
+        },
+        {
+          "number": 10,
+          "question": "Consider the system $kx + 4y = k + 2$ and $x + ky = 2$. Find all values of $k$ for which the system fails to have a unique solution, and distinguish between no solution and infinitely many solutions.",
+          "answer": "$k^2 - 4 = 0 \\implies k = \\pm 2$. When $k = 2$, both equations become $x + 2y = 2$ (infinitely many solutions); when $k = -2$, we get $-2x + 4y = 0$ and $x - 2y = 2$, which are inconsistent (no solution)."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10E_2B_1a", "expression": "Rational(4, 2) + Rational(6, 3)", "expected": 4 },
+        { "id": "Y10E_2B_1c", "expression": "Rational(2*5 - 1, 3) + Rational(3 + 2, 4)", "expected": 4 },
+        { "id": "Y10E_2B_2a", "expression": "Rational(2, 2) + Rational(3, 3)", "expected": 2 },
+        { "id": "Y10E_2B_2d", "expression": "Rational(6, 3) - Rational(2, 2)", "expected": 1 },
+        { "id": "Y10E_2B_3a", "expression": "2*1 + 2 - 3", "expected": 1 },
+        { "id": "Y10E_2B_3d", "expression": "2 + 2*2 + 3", "expected": 9 },
+        { "id": "Y10E_2B_5", "expression": "(12 + 8) / 2", "expected": 10 },
+        { "id": "Y10E_2B_6", "expression": "Rational(4, 10) + Rational(9, 15)", "expected": 1 },
+        { "id": "Y10E_2B_7", "expression": "Rational(3, 4)*80 + Rational(3, 8)*40", "expected": 75 },
+        { "id": "Y10E_2B_8", "expression": "(9 - 3) / 2", "expected": 3 }
+      ]
+    },
+    {
+      "section_id": "10_2_3",
+      "section_code": "2C",
+      "title": "Parallel and Perpendicular Lines",
+      "vcaa_code": "VC2M10A03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the equation of the perpendicular bisector of each segment $AB$ in general form $ax + by + c = 0$:",
+          "parts": [
+            { "label": "a", "question": "$A(1, 3)$ and $B(5, 11)$", "answer": "$x + 2y - 17 = 0$" },
+            { "label": "b", "question": "$A(-2, 4)$ and $B(4, -2)$", "answer": "$x - y = 0$ ($y = x$)" },
+            { "label": "c", "question": "$A(2, -1)$ and $B(8, 3)$", "answer": "$3x + 2y - 17 = 0$" },
+            { "label": "d", "question": "$A(-3, 2)$ and $B(5, 6)$", "answer": "$2x + y - 6 = 0$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the coordinates of the foot of the perpendicular from the point $P$ to the given line:",
+          "parts": [
+            { "label": "a", "question": "$P(5, 7)$ to the line $y = 2x - 3$", "answer": "$(3, 3)$" },
+            { "label": "b", "question": "$P(1, 8)$ to the line $y = x + 1$", "answer": "$(4, 5)$" },
+            { "label": "c", "question": "$P(-1, 5)$ to the line $x + 2y = 4$", "answer": "$(0, 2)$" },
+            { "label": "d", "question": "$P(7, 1)$ to the line $3x - y = 1$", "answer": "$(1, 2)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the exact shortest (perpendicular) distance from the point $P$ to the line in Question 2:",
+          "parts": [
+            { "label": "a", "question": "$P(5, 7)$ to $(3, 3)$ on $y = 2x - 3$", "answer": "$2\\sqrt{5}$" },
+            { "label": "b", "question": "$P(1, 8)$ to $(4, 5)$ on $y = x + 1$", "answer": "$3\\sqrt{2}$" },
+            { "label": "c", "question": "$P(-1, 5)$ to $(0, 2)$ on $x + 2y = 4$", "answer": "$\\sqrt{10}$" },
+            { "label": "d", "question": "$P(7, 1)$ to $(1, 2)$ on $3x - y = 1$", "answer": "$\\sqrt{37}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "For $\\triangle ABC$ with vertices $A(0, 0)$, $B(6, 0)$, and $C(2, 4)$, find:",
+          "parts": [
+            { "label": "a", "question": "The equations of the perpendicular bisectors of $AB$ and $AC$", "answer": "$x = 3$ and $x + 2y = 5$" },
+            { "label": "b", "question": "The circumcentre $O$ (intersection of the perpendicular bisectors)", "answer": "$O(3, 1)$" },
+            { "label": "c", "question": "The equations of the altitudes from $C$ to $AB$ and from $B$ to $AC$", "answer": "$x = 2$ and $x + 2y = 6$" },
+            { "label": "d", "question": "The orthocentre $H$ (intersection of the altitudes)", "answer": "$H(2, 2)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Find the coordinates of the reflection $P'$ of the point $P(5, 7)$ across the mirror line $y = 2x - 3$ (Hint: use the foot of the perpendicular $F(3, 3)$ as the midpoint of $PP'$).",
+          "answer": "$F(3, 3)$ is the midpoint of $P(5, 7)$ and $P'(x', y') \\implies P'(1, -1)$"
+        },
+        {
+          "number": 6,
+          "question": "Three mobile towers in rural NSW are located at $A(0, 0)$, $B(6, 0)$, and $C(2, 4)$. Using the circumcentre $O(3, 1)$, verify that $OA = OB = OC$ and find the exact radius of the circle passing through all three towers.",
+          "answer": "$OA = OB = OC = \\sqrt{3^2 + 1^2} = \\sqrt{10}$"
+        },
+        {
+          "number": 7,
+          "question": "A parallelogram $ABCD$ has consecutive vertices $A(1, 1)$, $B(5, 3)$, and $C(6, 7)$. Find the equations of sides $AD$ and $CD$ and hence find the coordinates of vertex $D$.",
+          "answer": "$AD$ has $m = 4$ through $(1, 1) \\implies y = 4x - 3$; $CD$ has $m = \\frac{1}{2}$ through $(6, 7) \\implies y = \\frac{1}{2}x + 4$; intersection is $D(2, 5)$"
+        },
+        {
+          "number": 8,
+          "question": "Find the exact distance between the two parallel lines $y = 2x + 5$ and $y = 2x - 5$.",
+          "answer": "The perpendicular line through $(0, 5)$ is $y = -\\frac{1}{2}x + 5$, which meets $y = 2x - 5$ at $(4, 3)$; distance $= \\sqrt{4^2 + (3 - 5)^2} = \\sqrt{20} = 2\\sqrt{5}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Use Pythagoras' theorem on the triangle with vertices $O(0, 0)$, $P(1, m_1)$, and $Q(1, m_2)$ ($m_1 > 0, m_2 < 0$) to prove that $OP \\perp OQ \\iff m_1 m_2 = -1$.",
+          "answer": "$OP^2 = 1 + m_1^2$, $OQ^2 = 1 + m_2^2$, and $PQ^2 = (m_1 - m_2)^2$. By Pythagoras, $OP^2 + OQ^2 = PQ^2 \\iff 2 + m_1^2 + m_2^2 = m_1^2 - 2m_1m_2 + m_2^2 \\iff 2 = -2m_1m_2 \\iff m_1m_2 = -1$."
+        },
+        {
+          "number": 10,
+          "question": "Prove that a quadrilateral with vertices $A(0, b)$, $B(a, 0)$, $C(0, -b)$, and $D(-a, 0)$ ($a, b > 0$) has perpendicular diagonals, and explain why it is a rhombus.",
+          "answer": "Diagonal $AC$ lies on the $y$-axis ($x = 0$) and diagonal $BD$ lies on the $x$-axis ($y = 0$), so $AC \\perp BD$. All four sides have length $\\sqrt{a^2 + b^2}$, so $ABCD$ is a rhombus."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10E_2C_1a", "expression": "3 + 2*7 - 17", "expected": 0 },
+        { "id": "Y10E_2C_1c", "expression": "3*5 + 2*1 - 17", "expected": 0 },
+        { "id": "Y10E_2C_1d", "expression": "2*1 + 4 - 6", "expected": 0 },
+        { "id": "Y10E_2C_3a", "expression": "simplify(sqrt((5 - 3)**2 + (7 - 3)**2) - 2*sqrt(5))", "expected": 0 },
+        { "id": "Y10E_2C_3b", "expression": "simplify(sqrt((1 - 4)**2 + (8 - 5)**2) - 3*sqrt(2))", "expected": 0 },
+        { "id": "Y10E_2C_3c", "expression": "simplify(sqrt((-1 - 0)**2 + (5 - 2)**2) - sqrt(10))", "expected": 0 },
+        { "id": "Y10E_2C_4b", "expression": "3 + 2*1", "expected": 5 },
+        { "id": "Y10E_2C_5", "expression": "2*3 - 5", "expected": 1 },
+        { "id": "Y10E_2C_7", "expression": "4*2 - 3", "expected": 5 },
+        { "id": "Y10E_2C_8", "expression": "simplify(sqrt((4 - 0)**2 + (3 - 5)**2) - 2*sqrt(5))", "expected": 0 }
+      ]
+    }
+  ]
+}

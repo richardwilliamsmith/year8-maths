@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "section_id": "9_8_1",
+    "section_code": "8A",
+    "chapter_number": 8,
+    "chapter_title": "Pythagoras' Theorem and Right-Angled Trigonometry",
+    "title": "Trigonometric Ratios (SOHCAHTOA) and Finding Side Lengths",
+    "vcaa_code": "VC2M9M04",
+    "vcaa_description": "Use similarity to investigate the constancy of the sine, cosine and tangent ratios for a given angle in right-angled triangles, and use trigonometric ratios and Pythagoras' theorem to solve right-angled triangle problems.",
+    "strand": "Measurement",
+    "target_mastery": "Define $\\sin\\theta$, $\\cos\\theta$, and $\\tan\\theta$ in right-angled triangles using similarity and SOHCAHTOA, and calculate unknown side lengths when the unknown is in the numerator or denominator.",
+    "prerequisites": [
+      "Pythagoras' theorem (Year 8 VC2M8M06)",
+      "Similar right-angled triangles (Section 7A)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Hypotenuse ($H$)",
+        "definition": "The longest side of a right-angled triangle, always located directly opposite the $90^\\circ$ right angle."
+      },
+      {
+        "term": "Opposite ($O$) and Adjacent ($A$) sides",
+        "definition": "Relative to a chosen reference acute angle $\\theta$, the Opposite side ($O$) is directly across from $\\theta$, and the Adjacent side ($A$) is next to $\\theta$ (forming one arm of $\\theta$ along with the hypotenuse)."
+      },
+      {
+        "term": "Sine, Cosine, and Tangent ($\\sin\\theta, \\cos\\theta, \\tan\\theta$)",
+        "definition": "The three primary trigonometric ratios for an acute angle $\\theta$ in a right-angled triangle: $\\sin\\theta = \\frac{O}{H}$, $\\cos\\theta = \\frac{A}{H}$, and $\\tan\\theta = \\frac{O}{A}$ (remembered via the mnemonic $\\text{SOH}\\text{CAH}\\text{TOA}$)."
+      },
+      {
+        "term": "Exact trigonometric values",
+        "definition": "The exact surd and fractional values of $\\sin\\theta$, $\\cos\\theta$, and $\\tan\\theta$ for the special angles $30^\\circ, 45^\\circ$, and $60^\\circ$, derived from an equilateral triangle of side $2$ and a right-angled isosceles triangle of legs $1, 1$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_8_1_1",
+      "title": "Similarity and the Three Trigonometric Ratios (SOHCAHTOA)",
+      "explanation": "By the $\\text{AAA}$ similarity test, all right-angled triangles that share the same acute reference angle $\\theta$ are similar to one another. Consequently, the ratios between their side lengths depend ONLY on the angle $\\theta$, not on the size of the triangle. Labelling the sides relative to $\\theta$ as Hypotenuse ($H$, opposite $90^\\circ$), Opposite ($O$, across from $\\theta$), and Adjacent ($A$, next to $\\theta$) defines the three trigonometric ratios:",
+      "formula_latex": "\\sin\\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}} = \\frac{O}{H}, \\qquad \\cos\\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}} = \\frac{A}{H}, \\qquad \\tan\\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}} = \\frac{O}{A}",
+      "callout_title": "Label H, O, A Before Choosing a Ratio",
+      "callout_rule": "Always label $H$ (opposite $90^\\circ$) first, then $O$ (opposite the marked angle $\\theta$), and finally $A$ (the remaining side next to $\\theta$). Cross out the side with no information and use $\\text{SOH}\\text{CAH}\\text{TOA}$ to pick the ratio linking the other two."
+    },
+    {
+      "id": "theory_9_8_1_2",
+      "title": "Finding Unknown Side Lengths: Unknown in Numerator vs Denominator",
+      "explanation": "Once you substitute the known angle and side into the appropriate trigonometric ratio, there are two algebraic cases: (1) If the unknown $x$ is in the numerator (e.g., $\\sin\\theta = \\frac{x}{12}$), multiply both sides by the denominator: $x = 12\\sin\\theta$. (2) If the unknown $x$ is in the denominator (e.g., $\\cos\\theta = \\frac{15}{x}$), multiply by $x$ and divide by $\\cos\\theta$ (the 'swap' step): $x = \\frac{15}{\\cos\\theta}$. Also remember the exact values for special angles: $\\sin 30^\\circ = \\cos 60^\\circ = \\frac{1}{2}$, $\\cos 30^\\circ = \\sin 60^\\circ = \\frac{\\sqrt{3}}{2}$, $\\tan 30^\\circ = \\frac{1}{\\sqrt{3}}$, $\\tan 45^\\circ = 1$, $\\tan 60^\\circ = \\sqrt{3}$, and $\\sin 45^\\circ = \\cos 45^\\circ = \\frac{\\sqrt{2}}{2}$.",
+      "formula_latex": "\\text{Case 1: } \\frac{x}{c} = \\sin\\theta \\implies x = c\\sin\\theta \\qquad \\text{Case 2: } \\frac{a}{x} = \\cos\\theta \\implies x = \\frac{a}{\\cos\\theta}",
+      "callout_title": "Multiply When x Is on Top; Swap When x Is on the Bottom",
+      "callout_rule": "If $x$ is on top ($\\frac{x}{k} = \\text{ratio}$), multiply: $x = k \\times \\text{ratio}$. If $x$ is on the bottom ($\\frac{k}{x} = \\text{ratio}$), swap $x$ and the trig ratio: $x = \\frac{k}{\\text{ratio}}$."
+    },
+    {
+      "id": "theory_9_8_1_3",
+      "title": "Complementary Angle Identities and 3D Pythagoras",
+      "explanation": "In any right-angled triangle, the two acute angles $\\theta$ and $(90^\\circ - \\theta)$ are complementary (they sum to $90^\\circ$). The side that is Opposite $\\theta$ is Adjacent to $(90^\\circ - \\theta)$, which gives the complementary identities $\\sin\\theta = \\cos(90^\\circ - \\theta)$ and $\\cos\\theta = \\sin(90^\\circ - \\theta)$, while $\\sin^2\\theta + \\cos^2\\theta = \\frac{O^2 + A^2}{H^2} = \\frac{H^2}{H^2} = 1$ by Pythagoras' theorem. In 3D rectangular boxes of dimensions $l \\times w \\times h$, applying Pythagoras' theorem twice gives the space diagonal $d = \\sqrt{l^2 + w^2 + h^2}$.",
+      "formula_latex": "\\sin\\theta = \\cos(90^\\circ - \\theta), \\qquad \\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}, \\qquad \\sin^2\\theta + \\cos^2\\theta = 1",
+      "callout_title": "'Co-sine' Literally Means 'Sine of the Complement'",
+      "callout_rule": "Because the two acute angles in a right-angled triangle add to $90^\\circ$, $\\sin 30^\\circ = \\cos 60^\\circ = 0.5$ and $\\sin 20^\\circ = \\cos 70^\\circ$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_8_1_1",
+      "title": "Writing Exact Trigonometric Ratios and Using Complementary Angles",
+      "difficulty": "Fluency",
+      "problem": "A right-angled triangle $\\triangle ABC$ has $\\angle B = 90^\\circ$, shortest side $AB = 8\\text{ cm}$, and hypotenuse $AC = 17\\text{ cm}$. Let $\\theta = \\angle ACB$. (a) Use Pythagoras' theorem to find the adjacent side $BC$. (b) Write the exact fractions for $\\sin\\theta$, $\\cos\\theta$, and $\\tan\\theta$, and verify that $\\sin^2\\theta + \\cos^2\\theta = 1$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Use Pythagoras' theorem $BC = \\sqrt{AC^2 - AB^2}$ to calculate the missing leg $BC$.",
+          "working": "$$BC = \\sqrt{17^2 - 8^2} = \\sqrt{289 - 64} = \\sqrt{225} = 15\\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Relative to $\\theta = \\angle ACB$, $O = AB = 8$, $A = BC = 15$, and $H = AC = 17$. Write the three ratios and check the Pythagorean identity.",
+          "working": "$$\\sin\\theta = \\frac{8}{17}, \\qquad \\cos\\theta = \\frac{15}{17}, \\qquad \\tan\\theta = \\frac{8}{15}$$\n$$\\sin^2\\theta + \\cos^2\\theta = \\left(\\frac{8}{17}\\right)^2 + \\left(\\frac{15}{17}\\right)^2 = \\frac{64 + 225}{289} = \\frac{289}{289} = 1$$"
+        }
+      ],
+      "final_answer": "(a) $BC = 15\\text{ cm}$, (b) $\\sin\\theta = \\frac{8}{17},\\; \\cos\\theta = \\frac{15}{17},\\; \\tan\\theta = \\frac{8}{15}$",
+      "now_you_try": {
+        "problem": "In right-angled $\\triangle PQR$ ($\\angle Q = 90^\\circ$), $PQ = 5\\text{ cm}$ and $QR = 12\\text{ cm}$. For $\\theta = \\angle PRQ$, find the hypotenuse $PR$ and state the exact fractions for $\\sin\\theta, \\cos\\theta$, and $\\tan\\theta$.",
+        "hint": "Find $PR = \\sqrt{5^2 + 12^2}$ first, then identify $O = 5$, $A = 12$, and $H = PR$.",
+        "working_summary": "$PR = \\sqrt{25 + 144} = 13\\text{ cm}$. Thus $\\sin\\theta = \\frac{5}{13}$, $\\cos\\theta = \\frac{12}{13}$, and $\\tan\\theta = \\frac{5}{12}$.",
+        "answer": "$PR = 13\\text{ cm};\\; \\sin\\theta = \\frac{5}{13},\\; \\cos\\theta = \\frac{12}{13},\\; \\tan\\theta = \\frac{5}{12}$"
+      }
+    },
+    {
+      "id": "WE9_8_1_2",
+      "title": "Finding an Unknown Side When the Unknown Is in the Numerator",
+      "difficulty": "Fluency",
+      "problem": "A right-angled triangle has a hypotenuse of $24\\text{ cm}$ and an acute angle of $30^\\circ$. Find the exact length of (a) the side $x$ opposite the $30^\\circ$ angle and (b) the side $y$ adjacent to the $30^\\circ$ angle (both in exact form and rounded to $2$ decimal places).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For $x$ (Opposite) and $H = 24$, use $\\sin 30^\\circ = \\frac{O}{H}$ where $\\sin 30^\\circ = \\frac{1}{2}$.",
+          "working": "$$\\sin 30^\\circ = \\frac{x}{24} \\implies x = 24 \\sin 30^\\circ = 24 \\times \\frac{1}{2} = 12\\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For $y$ (Adjacent) and $H = 24$, use $\\cos 30^\\circ = \\frac{A}{H}$ where $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$.",
+          "working": "$$\\cos 30^\\circ = \\frac{y}{24} \\implies y = 24 \\cos 30^\\circ = 24 \\times \\frac{\\sqrt{3}}{2} = 12\\sqrt{3}\\text{ cm} \\approx 20.78\\text{ cm}$$"
+        }
+      ],
+      "final_answer": "(a) $x = 12\\text{ cm}$, (b) $y = 12\\sqrt{3}\\text{ cm} \\approx 20.78\\text{ cm}$",
+      "now_you_try": {
+        "problem": "In a right-angled triangle, the side adjacent to a $60^\\circ$ angle is $10\\text{ cm}$. Find the exact length of the opposite side $x$ using $\\tan 60^\\circ = \\sqrt{3}$, and evaluate to $2$ decimal places.",
+        "hint": "Use $\\tan 60^\\circ = \\frac{x}{10} \\implies x = 10\\tan 60^\\circ$.",
+        "working_summary": "$x = 10\\tan 60^\\circ = 10\\sqrt{3}\\text{ cm} \\approx 17.32\\text{ cm}$.",
+        "answer": "$10\\sqrt{3}\\text{ cm} \\approx 17.32\\text{ cm}$"
+      }
+    },
+    {
+      "id": "WE9_8_1_3",
+      "title": "Finding an Unknown Side When the Unknown Is in the Denominator",
+      "difficulty": "Problem-Solving",
+      "problem": "A wheelchair access ramp at a Melbourne train station must rise a vertical height of $1.5\\text{ m}$. For safety compliance, the ramp makes an angle of $30^\\circ$ in a scale test model (or in general $\\theta$ with the horizontal). In a test ramp inclined at $60^\\circ$ where the adjacent horizontal base is $4.5\\text{ m}$, find the hypotenuse length $L$ of the ramp.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Relative to the $60^\\circ$ angle, the horizontal base $A = 4.5\\text{ m}$ is Adjacent and the ramp length $L$ is the Hypotenuse ($H$). Choose $\\cos\\theta = \\frac{A}{H}$.",
+          "working": "$$\\cos 60^\\circ = \\frac{4.5}{L}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Swap $L$ and $\\cos 60^\\circ$ (where $\\cos 60^\\circ = 0.5$) to solve for $L$.",
+          "working": "$$L = \\frac{4.5}{\\cos 60^\\circ} = \\frac{4.5}{0.5} = 9\\text{ m}$$"
+        }
+      ],
+      "final_answer": "$L = 9\\text{ m}$",
+      "now_you_try": {
+        "problem": "A kite is flying at a vertical height of $30\\text{ m}$ above the ground. If the taut kite string makes an angle of $30^\\circ$ with the horizontal ground, find the length $s$ of the kite string.",
+        "hint": "Here $O = 30\\text{ m}$ and $H = s$, so $\\sin 30^\\circ = \\frac{30}{s}$.",
+        "working_summary": "$\\sin 30^\\circ = \\frac{30}{s} \\implies s = \\frac{30}{\\sin 30^\\circ} = \\frac{30}{0.5} = 60\\text{ m}$.",
+        "answer": "$60\\text{ m}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_8_1_1",
+      "title": "Multiplying Instead of Dividing When the Unknown Is in the Denominator",
+      "misconception": "When solving $\\cos\\theta = \\frac{12}{x}$, students often multiply to get $x = 12\\cos\\theta$, which produces a hypotenuse shorter than the adjacent side.",
+      "correct_concept": "When the unknown $x$ is in the denominator ($\\text{ratio} = \\frac{k}{x}$), multiplying both sides by $x$ gives $x \\times \\text{ratio} = k$, so you must divide by the ratio: $x = \\frac{k}{\\text{ratio}}$. Always check that the hypotenuse is the longest side!",
+      "incorrect_working": "$$\\cos 60^\\circ = \\frac{12}{x} \\implies x = 12 \\cos 60^\\circ = 6 \\quad \\text{(Incorrect — hypotenuse shorter than leg } 12\\text{!)}$$",
+      "correct_working": "$$\\cos 60^\\circ = \\frac{12}{x} \\implies x = \\frac{12}{\\cos 60^\\circ} = \\frac{12}{0.5} = 24$$",
+      "counter_example": "A hypotenuse can never be $6\\text{ cm}$ when one of the shorter legs is $12\\text{ cm}$."
+    },
+    {
+      "id": "misc_9_8_1_2",
+      "title": "Swapping Opposite and Adjacent When the Triangle Is Rotated",
+      "misconception": "Assuming the 'Adjacent' side is always the horizontal bottom side and the 'Opposite' side is always the vertical side.",
+      "correct_concept": "Opposite ($O$) and Adjacent ($A$) depend entirely on which acute angle $\\theta$ is chosen as the reference angle, not on how the triangle is oriented on the page.",
+      "incorrect_working": "$$\\text{Angle } \\theta \\text{ at the top vertex: treating vertical side as Opposite} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{When } \\theta \\text{ is at the top vertex, the horizontal base is Opposite } \\theta \\text{ and the vertical leg is Adjacent to } \\theta.$$",
+      "counter_example": "In a $(3, 4, 5)$ triangle, switching from one acute angle to the other swaps Opposite and Adjacent ($\\sin\\alpha = \\frac{3}{5}$ vs $\\sin\\beta = \\frac{4}{5}$)."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_8_1_Q1",
+        "question": "In a right-angled triangle with hypotenuse $20\\text{ cm}$ and acute angle $30^\\circ$, find the length of the side opposite the $30^\\circ$ angle.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$10\\text{ cm}$",
+        "step_by_step_solution": [
+          "Label $O = x$ and $H = 20$, so $\\sin 30^\\circ = \\frac{x}{20}$.",
+          "Multiply by $20$: $x = 20 \\sin 30^\\circ = 20 \\times 0.5 = 10\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_8_1_Q2",
+        "question": "In a right-angled triangle with an angle of $45^\\circ$ and an adjacent side of $14\\text{ cm}$, find the length of the opposite side $x$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$14\\text{ cm}$",
+        "step_by_step_solution": [
+          "Label $O = x$ and $A = 14$, so $\\tan 45^\\circ = \\frac{x}{14}$.",
+          "Since $\\tan 45^\\circ = 1$, $x = 14 \\times 1 = 14\\text{ cm}$ (an isosceles right-angled triangle)."
+        ]
+      },
+      {
+        "id": "9_8_1_Q3",
+        "question": "In a right-angled triangle, the side opposite a $30^\\circ$ angle has length $9\\text{ m}$. Find the length of the hypotenuse $c$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$18\\text{ m}$",
+        "step_by_step_solution": [
+          "Set up $\\sin 30^\\circ = \\frac{9}{c}$.",
+          "Swap $c$ and $\\sin 30^\\circ$: $c = \\frac{9}{\\sin 30^\\circ} = \\frac{9}{0.5} = 18\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_8_1_Q4",
+        "question": "An acute angle $\\theta$ in a right-angled triangle satisfies $\\cos\\theta = \\frac{7}{25}$. Find the exact fractional values of $\\sin\\theta$ and $\\tan\\theta$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$\\sin\\theta = \\frac{24}{25},\\; \\tan\\theta = \\frac{24}{7}$",
+        "step_by_step_solution": [
+          "From $\\cos\\theta = \\frac{A}{H} = \\frac{7}{25}$, let $A = 7$ and $H = 25$. By Pythagoras' theorem, $O = \\sqrt{25^2 - 7^2} = \\sqrt{625 - 49} = \\sqrt{576} = 24$.",
+          "Therefore $\\sin\\theta = \\frac{O}{H} = \\frac{24}{25}$ and $\\tan\\theta = \\frac{O}{A} = \\frac{24}{7}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_8_1_Q5",
+        "question": "A $10\\text{ m}$ pintor's ladder leans against a vertical wall in Geelong, making an angle of $60^\\circ$ with the horizontal ground. (a) How far is the foot of the ladder from the base of the wall? (b) Find the exact surd height the ladder reaches up the wall.",
+        "difficulty": "Medium",
+        "context": "Construction Safety",
+        "final_answer": "(a) $5\\text{ m}$, (b) $5\\sqrt{3}\\text{ m} \\approx 8.66\\text{ m}$",
+        "step_by_step_solution": [
+          "For the horizontal base $b$ (Adjacent to $60^\\circ$), $b = 10 \\cos 60^\\circ = 10 \\times 0.5 = 5\\text{ m}$.",
+          "For the vertical height $h$ (Opposite $60^\\circ$), $h = 10 \\sin 60^\\circ = 10 \\times \\frac{\\sqrt{3}}{2} = 5\\sqrt{3}\\text{ m} \\approx 8.66\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_8_1_Q6",
+        "question": "A symmetrical pitched roof truss spans a total horizontal width of $12\\text{ m}$ and rises at a pitch angle of $30^\\circ$ from each side wall to the central ridge apex. Find the exact vertical height $h$ of the central ridge above the ceiling joists and the exact rafter length $L$.",
+        "difficulty": "Medium",
+        "context": "Roof Carpentry",
+        "final_answer": "$h = 2\\sqrt{3}\\text{ m} \\approx 3.46\\text{ m},\\; L = 4\\sqrt{3}\\text{ m} \\approx 6.93\\text{ m}$",
+        "step_by_step_solution": [
+          "The central apex bisects the $12\\text{ m}$ span into two right-angled triangles of base $A = 6\\text{ m}$. Thus $h = 6 \\tan 30^\\circ = 6 \\times \\frac{\\sqrt{3}}{3} = 2\\sqrt{3}\\text{ m}$.",
+          "The rafter length is $L = \\frac{6}{\\cos 30^\\circ} = \\frac{6}{\\sqrt{3}/2} = \\frac{12}{\\sqrt{3}} = 4\\sqrt{3}\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_8_1_Q7",
+        "question": "A shipping container measures $6\\text{ m}$ long, $2\\text{ m}$ wide, and $3\\text{ m}$ high. Find (a) the exact length of the floor diagonal and (b) the exact 3D space diagonal from a bottom corner to the opposite top corner.",
+        "difficulty": "Challenging",
+        "context": "3D Freight Logistics",
+        "final_answer": "(a) $\\sqrt{40}\\text{ m} = 2\\sqrt{10}\\text{ m}$, (b) $7\\text{ m}$",
+        "step_by_step_solution": [
+          "By Pythagoras' theorem on the floor, $d_{\\text{floor}}^2 = 6^2 + 2^2 = 36 + 4 = 40 \\implies d_{\\text{floor}} = \\sqrt{40} = 2\\sqrt{10}\\text{ m}$.",
+          "In 3D, $D = \\sqrt{d_{\\text{floor}}^2 + 3^2} = \\sqrt{40 + 9} = \\sqrt{49} = 7\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_8_1_Q8",
+        "question": "A cable car in the Blue Mountains travels along a taut straight cable inclined at $30^\\circ$ to the horizontal. If the cable car gains $240\\text{ m}$ in vertical altitude from the valley station to the cliff station, how far does it travel along the cable?",
+        "difficulty": "Medium",
+        "context": "Tourism Engineering",
+        "final_answer": "$480\\text{ m}$",
+        "step_by_step_solution": [
+          "The vertical rise $O = 240\\text{ m}$ is opposite the $30^\\circ$ incline, and the cable length $d$ is the hypotenuse.",
+          "Solve $\\sin 30^\\circ = \\frac{240}{d} \\implies d = \\frac{240}{\\sin 30^\\circ} = \\frac{240}{0.5} = 480\\text{ m}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_8_1_Q9",
+        "question": "Explain why $\\sin\\theta < 1$ and $\\cos\\theta < 1$ for every acute angle $\\theta$ ($0^\\circ < \\theta < 90^\\circ$), whereas $\\tan\\theta$ can be greater than $1$ (for example, $\\tan 60^\\circ = \\sqrt{3} \\approx 1.732$).",
+        "difficulty": "Medium",
+        "context": "Trigonometric Bounds",
+        "final_answer": "The hypotenuse $H$ is strictly longer than both legs $O$ and $A$, so $\\frac{O}{H} < 1$ and $\\frac{A}{H} < 1$; however, $O$ can be longer than $A$ when $\\theta > 45^\\circ$, making $\\tan\\theta = \\frac{O}{A} > 1$",
+        "step_by_step_solution": [
+          "In any right-angled triangle, the hypotenuse $H$ is the longest side ($O < H$ and $A < H$), so $\\sin\\theta = \\frac{O}{H} < 1$ and $\\cos\\theta = \\frac{A}{H} < 1$.",
+          "Because $\\tan\\theta = \\frac{O}{A}$ compares the two shorter legs, whenever $\\theta > 45^\\circ$ the opposite side exceeds the adjacent side ($O > A$), giving $\\tan\\theta > 1$."
+        ]
+      },
+      {
+        "id": "9_8_1_Q10",
+        "question": "Using the definitions $\\sin\\theta = \\frac{O}{H}$, $\\cos\\theta = \\frac{A}{H}$, and $\\tan\\theta = \\frac{O}{A}$, prove algebraically that $\\frac{\\sin\\theta}{\\cos\\theta} = \\tan\\theta$ and $\\sin^2\\theta + \\cos^2\\theta = 1$.",
+        "difficulty": "Challenging",
+        "context": "Trigonometric Identities Proof",
+        "final_answer": "$\\frac{O/H}{A/H} = \\frac{O}{A} = \\tan\\theta$ and $\\frac{O^2 + A^2}{H^2} = \\frac{H^2}{H^2} = 1$",
+        "step_by_step_solution": [
+          "Dividing sine by cosine gives $\\frac{\\sin\\theta}{\\cos\\theta} = \\frac{O/H}{A/H} = \\frac{O}{H} \\times \\frac{H}{A} = \\frac{O}{A} = \\tan\\theta$.",
+          "Squaring and adding gives $\\sin^2\\theta + \\cos^2\\theta = \\frac{O^2}{H^2} + \\frac{A^2}{H^2} = \\frac{O^2 + A^2}{H^2} = \\frac{H^2}{H^2} = 1$ since $O^2 + A^2 = H^2$ by Pythagoras' theorem."
+        ]
+      },
+      {
+        "id": "9_8_1_Q11",
+        "question": "An equilateral triangle $ABC$ of side length $2\\text{ cm}$ is bisected by a perpendicular altitude $AD$ from apex $A$ to the midpoint $D$ of base $BC$. Use this geometric construction to prove from first principles that $\\sin 30^\\circ = \\frac{1}{2}$, $\\cos 30^\\circ = \\frac{\\sqrt{3}}{2}$, and $\\tan 60^\\circ = \\sqrt{3}$.",
+        "difficulty": "Extension",
+        "context": "Exact Value Derivation",
+        "final_answer": "$BD = 1,\\; AD = \\sqrt{2^2 - 1^2} = \\sqrt{3} \\implies \\sin 30^\\circ = \\frac{1}{2},\\; \\cos 30^\\circ = \\frac{\\sqrt{3}}{2},\\; \\tan 60^\\circ = \\frac{\\sqrt{3}}{1} = \\sqrt{3}$",
+        "step_by_step_solution": [
+          "In right-angled $\\triangle ABD$, the hypotenuse is $AB = 2$, the half-base is $BD = 1$, the apex angle is $\\angle BAD = 30^\\circ$, and the base angle is $\\angle ABD = 60^\\circ$.",
+          "By Pythagoras' theorem, $AD = \\sqrt{2^2 - 1^2} = \\sqrt{3}$. Reading off the ratios gives $\\sin 30^\\circ = \\frac{BD}{AB} = \\frac{1}{2}$, $\\cos 30^\\circ = \\frac{AD}{AB} = \\frac{\\sqrt{3}}{2}$, and $\\tan 60^\\circ = \\frac{AD}{BD} = \\sqrt{3}$."
+        ]
+      },
+      {
+        "id": "9_8_1_Q12",
+        "question": "In $\\triangle ABC$, the altitude $CD$ of length $h = 12\\text{ cm}$ divides the base $AB$ into two segments $AD$ and $DB$. If $\\angle CAD = 45^\\circ$ and $\\angle CBD = 30^\\circ$, find the exact perimeter and exact area of $\\triangle ABC$.",
+        "difficulty": "Extension",
+        "context": "Composite Triangle Exact Trigonometry",
+        "final_answer": "$\\text{Perimeter} = 36 + 12\\sqrt{2} + 12\\sqrt{3}\\text{ cm},\\; \\text{Area} = 72 + 72\\sqrt{3}\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "In $\\triangle ACD$ ($45^\\circ$), $AD = \\frac{12}{\\tan 45^\\circ} = 12\\text{ cm}$ and $AC = \\frac{12}{\\sin 45^\\circ} = 12\\sqrt{2}\\text{ cm}$. In $\\triangle BCD$ ($30^\\circ$), $DB = \\frac{12}{\\tan 30^\\circ} = 12\\sqrt{3}\\text{ cm}$ and $BC = \\frac{12}{\\sin 30^\\circ} = 24\\text{ cm}$.",
+          "Thus base $AB = 12 + 12\\sqrt{3}\\text{ cm}$, perimeter $= (12 + 12\\sqrt{3}) + 24 + 12\\sqrt{2} = 36 + 12\\sqrt{2} + 12\\sqrt{3}\\text{ cm}$, and area $= \\frac{1}{2}(12 + 12\\sqrt{3})(12) = 72 + 72\\sqrt{3}\\text{ cm}^2$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_8_1_1a",
+      "description": "Worked Example 9.8.1.1(a) missing leg BC",
+      "expression": "sqrt(17**2 - 8**2)",
+      "expected": 15
+    },
+    {
+      "id": "WE9_8_1_1b",
+      "description": "Worked Example 9.8.1.1(b) Pythagorean identity",
+      "expression": "Rational(8, 17)**2 + Rational(15, 17)**2",
+      "expected": 1
+    },
+    {
+      "id": "NYT9_8_1_1",
+      "description": "Now You Try 9.8.1.1 hypotenuse PR",
+      "expression": "sqrt(5**2 + 12**2)",
+      "expected": 13
+    },
+    {
+      "id": "WE9_8_1_2a",
+      "description": "Worked Example 9.8.1.2(a) opposite side x",
+      "expression": "24 * sin(pi / 6)",
+      "expected": 12
+    },
+    {
+      "id": "WE9_8_1_2b",
+      "description": "Worked Example 9.8.1.2(b) adjacent side y",
+      "expression": "24 * cos(pi / 6)",
+      "expected": "12*sqrt(3)"
+    },
+    {
+      "id": "NYT9_8_1_2",
+      "description": "Now You Try 9.8.1.2 opposite side x",
+      "expression": "10 * tan(pi / 3)",
+      "expected": "10*sqrt(3)"
+    },
+    {
+      "id": "WE9_8_1_3",
+      "description": "Worked Example 9.8.1.3 ramp length L",
+      "expression": "Rational(9, 2) / cos(pi / 3)",
+      "expected": 9
+    },
+    {
+      "id": "NYT9_8_1_3",
+      "description": "Now You Try 9.8.1.3 kite string length",
+      "expression": "30 / sin(pi / 6)",
+      "expected": 60
+    },
+    {
+      "id": "EX9_8_1_Q1",
+      "description": "Exercise 9.8.1 Q1 opposite side",
+      "expression": "20 * sin(pi / 6)",
+      "expected": 10
+    },
+    {
+      "id": "EX9_8_1_Q2",
+      "description": "Exercise 9.8.1 Q2 opposite side at 45 deg",
+      "expression": "14 * tan(pi / 4)",
+      "expected": 14
+    },
+    {
+      "id": "EX9_8_1_Q3",
+      "description": "Exercise 9.8.1 Q3 hypotenuse c",
+      "expression": "9 / sin(pi / 6)",
+      "expected": 18
+    },
+    {
+      "id": "EX9_8_1_Q4",
+      "description": "Exercise 9.8.1 Q4 tan theta from cos theta",
+      "expression": "sqrt(25**2 - 7**2) / 7",
+      "expected": "24/7"
+    },
+    {
+      "id": "EX9_8_1_Q5a",
+      "description": "Exercise 9.8.1 Q5(a) ladder base",
+      "expression": "10 * cos(pi / 3)",
+      "expected": 5
+    },
+    {
+      "id": "EX9_8_1_Q5b",
+      "description": "Exercise 9.8.1 Q5(b) ladder height",
+      "expression": "10 * sin(pi / 3)",
+      "expected": "5*sqrt(3)"
+    },
+    {
+      "id": "EX9_8_1_Q6",
+      "description": "Exercise 9.8.1 Q6 roof ridge height",
+      "expression": "6 * tan(pi / 6)",
+      "expected": "2*sqrt(3)"
+    },
+    {
+      "id": "EX9_8_1_Q7",
+      "description": "Exercise 9.8.1 Q7 3D shipping container diagonal",
+      "expression": "sqrt(6**2 + 2**2 + 3**2)",
+      "expected": 7
+    },
+    {
+      "id": "EX9_8_1_Q8",
+      "description": "Exercise 9.8.1 Q8 cable car distance",
+      "expression": "240 / sin(pi / 6)",
+      "expected": 480
+    },
+    {
+      "id": "EX9_8_1_Q12",
+      "description": "Exercise 9.8.1 Q12 composite triangle area",
+      "expression": "Rational(1, 2) * 12 * (12 / tan(pi / 4) + 12 / tan(pi / 6))",
+      "expected": "72 + 72*sqrt(3)"
+    }
+  ]
+}

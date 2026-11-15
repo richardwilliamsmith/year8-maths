@@ -1,0 +1,418 @@
+{
+  "metadata": {
+    "section_id": "10_2_1",
+    "section_code": "2A",
+    "chapter_number": 2,
+    "chapter_title": "Linear Inequalities, Simultaneous Equations, and Coordinate Geometry",
+    "title": "Solving Linear Inequalities and Half-Planes",
+    "vcaa_code": "VC2M10A02",
+    "vcaa_description": "Solve linear inequalities and simultaneous linear equations in 2 variables; interpret solutions graphically and apply to real-world contexts.",
+    "strand": "Algebra",
+    "target_mastery": "Solve linear inequalities (reversing the inequality sign when multiplying/dividing by a negative), graph solution sets on a number line, and shade half-planes.",
+    "prerequisites": [
+      "Linear equations and graphs (Year 9 VC2M9A04)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Linear inequality",
+        "definition": "A mathematical statement comparing two linear expressions using an inequality symbol ($<$, $>$, $\\le$, or $\\ge$)."
+      },
+      {
+        "term": "Strict vs inclusive inequality",
+        "definition": "A strict inequality ($<$ or $>$) excludes the boundary value (drawn with an open circle or dashed boundary line), whereas an inclusive inequality ($\\le$ or $\\ge$) includes the boundary value (closed circle or solid line)."
+      },
+      {
+        "term": "Compound inequality",
+        "definition": "Two inequalities joined into a single three-part statement, such as $-3 \\le 2x + 1 < 7$, defining a bounded interval on the real number line."
+      },
+      {
+        "term": "Half-plane",
+        "definition": "The region of the Cartesian plane lying on one side of a boundary straight line $ax + by = c$, representing all points $(x, y)$ that satisfy a two-variable linear inequality."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_2_1_1",
+      "title": "Properties of Inequalities and Reversing the Sign",
+      "explanation": "Solving a linear inequality in one variable uses the same inverse operations as solving a linear equation, with one critical exception: multiplying or dividing both sides of an inequality by a negative number reverses the order of the real number line, so the inequality symbol must be flipped ($<$ becomes $>$, and $\\le$ becomes $\\ge$). Adding or subtracting any number, or multiplying/dividing by a positive number, leaves the inequality symbol unchanged.",
+      "formula_latex": "\\text{If } a < b \\text{ and } c < 0, \\text{ then } ac > bc \\text{ and } \\frac{a}{c} > \\frac{b}{c}",
+      "callout_title": "Multiply or Divide by a Negative? Flip the Sign!",
+      "callout_rule": "Notice that $2 < 5$, but multiplying both sides by $-1$ gives $-2 > -5$. Whenever the coefficient of $x$ that you divide by is negative, reverse the inequality direction immediately."
+    },
+    {
+      "id": "theory_10_2_1_2",
+      "title": "Number Line Graphs and Compound Inequalities",
+      "explanation": "The solution set of a one-variable linear inequality is an infinite interval of real numbers. On a number line, an open circle ($\\circ$) at $a$ indicates that $a$ is excluded ($x < a$ or $x > a$), while a filled/closed circle ($\\bullet$) indicates that $a$ is included ($x \\le a$ or $x \\ge a$). A three-part compound inequality $a \\le mx + c < b$ is solved by performing the same inverse operations on all three parts simultaneously.",
+      "formula_latex": "a \\le mx + c < b \\iff \\frac{a - c}{m} \\le x < \\frac{b - c}{m} \\quad (m > 0)",
+      "callout_title": "Apply Every Operation to All Three Parts",
+      "callout_rule": "When solving $-5 < 2x - 1 \\le 7$, add $1$ to the left, middle, AND right parts ($-4 < 2x \\le 8$), then divide all three parts by $2$ ($-2 < x \\le 4$)."
+    },
+    {
+      "id": "theory_10_2_1_3",
+      "title": "Graphing Linear Inequalities in Two Variables (Half-Planes)",
+      "explanation": "A linear inequality in two variables, such as $y \\le 2x + 3$ or $2x + 3y > 6$, divides the Cartesian plane into two half-planes separated by the boundary line $y = 2x + 3$ or $2x + 3y = 6$. Draw the boundary line as a dashed line for strict inequalities ($<$ or $>$) or a solid line for inclusive inequalities ($\\le$ or $\\ge$). Then substitute a convenient test point not on the line—usually the origin $(0, 0)$—to determine which half-plane satisfies the inequality.",
+      "formula_latex": "y > mx + c \\text{ (above dashed line)}, \\quad y \\le mx + c \\text{ (on or below solid line)}",
+      "callout_title": "Test the Origin $(0, 0)$ to Pick the Correct Half-Plane",
+      "callout_rule": "If the boundary line does not pass through $(0, 0)$, substitute $x = 0, y = 0$ into the inequality. If the statement is true, $(0, 0)$ lies in the required region; if false, the required region is on the opposite side of the line."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_2_1_1",
+      "title": "Solving a Linear Inequality with a Negative Coefficient",
+      "difficulty": "Fluency",
+      "problem": "Solve the inequality $7 - 3x \\ge 19$ and describe its graph on a number line.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Subtract $7$ from both sides of the inequality (this does not change the inequality direction).",
+          "working": "$$-3x \\ge 19 - 7 \\implies -3x \\ge 12$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide both sides by $-3$ and reverse the inequality sign from $\\ge$ to $\\le$.",
+          "working": "$$x \\le \\frac{12}{-3} \\implies x \\le -4$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Describe the number line representation.",
+          "working": "$$\\text{Closed circle at } x = -4 \\text{ with an arrow pointing left.}$$"
+        }
+      ],
+      "final_answer": "$x \\le -4$ (closed circle at $-4$, arrow pointing left)",
+      "now_you_try": {
+        "problem": "Solve the inequality $11 - 4x < 27$.",
+        "hint": "Subtract $11$ first, then divide by $-4$ and flip the $<$ sign to $>$.",
+        "working_summary": "$-4x < 16 \\implies x > -4$.",
+        "answer": "$x > -4$"
+      }
+    },
+    {
+      "id": "WE10_2_1_2",
+      "title": "Solving a Three-Part Compound Inequality",
+      "difficulty": "Understanding",
+      "problem": "Solve the compound inequality $-5 \\le 2x + 3 < 11$ and list all integer values of $x$ that satisfy it.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Subtract $3$ from all three parts of the compound inequality.",
+          "working": "$$-5 - 3 \\le 2x < 11 - 3 \\implies -8 \\le 2x < 8$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide all three parts by $+2$ (positive, so the inequality signs remain in the same direction).",
+          "working": "$$-4 \\le x < 4$$"
+        },
+        {
+          "step": 3,
+          "thinking": "List the integers from $-4$ (inclusive) up to $4$ (strictly excluded).",
+          "working": "$$x \\in \\{-4, -3, -2, -1, 0, 1, 2, 3\\}$$"
+        }
+      ],
+      "final_answer": "$-4 \\le x < 4$; integers: $-4, -3, -2, -1, 0, 1, 2, 3$ ($8$ integers)",
+      "now_you_try": {
+        "problem": "Solve the compound inequality $-7 < 3x - 1 \\le 8$.",
+        "hint": "Add $1$ to all three parts, then divide all three parts by $3$.",
+        "working_summary": "$-6 < 3x \\le 9 \\implies -2 < x \\le 3$.",
+        "answer": "$-2 < x \\le 3$"
+      }
+    },
+    {
+      "id": "WE10_2_1_3",
+      "title": "Identifying a Half-Plane Using Intercepts and a Test Point",
+      "difficulty": "Problem-Solving",
+      "problem": "Describe how to sketch the half-plane defined by $2x + 3y < 12$, including the boundary line type, axis intercepts, and whether the origin $(0, 0)$ is included in the solution region.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Find the axis intercepts of the boundary line $2x + 3y = 12$ by setting $y = 0$ and $x = 0$.",
+          "working": "$$y = 0 \\implies 2x = 12 \\implies x = 6; \\quad x = 0 \\implies 3y = 12 \\implies y = 4$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Because the inequality $<$ is strict, the boundary line through $(6, 0)$ and $(0, 4)$ is drawn dashed.",
+          "working": "$$\\text{Dashed boundary line through } (6, 0) \\text{ and } (0, 4)$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Test $(0, 0)$ in $2x + 3y < 12$: $2(0) + 3(0) = 0 < 12$, which is true.",
+          "working": "$$0 < 12 \\text{ (True)} \\implies \\text{the half-plane containing } (0, 0) \\text{ below the line is the solution region.}$$"
+        }
+      ],
+      "final_answer": "Dashed line through $(6, 0)$ and $(0, 4)$; the region below the line containing $(0, 0)$",
+      "now_you_try": {
+        "problem": "Find the axis intercepts of the boundary line for $4x - y \\ge 8$ and determine whether $(0, 0)$ satisfies the inequality.",
+        "hint": "Substitute $(0, 0)$ into $4x - y \\ge 8$ to check whether $0 \\ge 8$ is true or false.",
+        "working_summary": "Intercepts $(2, 0)$ and $(0, -8)$ (solid line); at $(0, 0)$, $0 \\ge 8$ is false, so $(0, 0)$ is NOT in the region.",
+        "answer": "Solid line through $(2, 0)$ and $(0, -8)$; $(0, 0)$ does not satisfy the inequality"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_2_1_1",
+      "title": "Flipping the Inequality Sign Whenever a Negative Number Appears on the Right-Hand Side",
+      "misconception": "Reversing the inequality sign when solving $2x < -10$ to get $x > -5$, simply because $-10$ is negative.",
+      "correct_concept": "The inequality sign reverses ONLY when you multiply or divide both sides by a negative number. In $2x < -10$, you divide by $+2$ (which is positive), so the sign stays $<$: $x < -5$.",
+      "incorrect_working": "$$2x < -10 \\implies x > \\frac{-10}{2} \\implies x > -5 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$2x < -10 \\implies x < \\frac{-10}{2} \\implies x < -5 \\quad (\\text{Correct})$$",
+      "counter_example": "Test $x = -6$ (which satisfies $x < -5$): $2(-6) = -12 < -10$ (True). Testing $x = 0$ (which satisfies $x > -5$) gives $0 < -10$ (False)."
+    },
+    {
+      "id": "MISC_10_2_1_2",
+      "title": "Using a Solid Boundary Line for a Strict Inequality",
+      "misconception": "Drawing a solid boundary line for $y > 2x - 1$ instead of a dashed line.",
+      "correct_concept": "Points on the line $y = 2x - 1$ make the two sides equal, so they do NOT satisfy the strict inequality $y > 2x - 1$. A dashed line visually communicates that points on the boundary are excluded.",
+      "incorrect_working": "$$y > 2x - 1 \\implies \\text{solid line } y = 2x - 1 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$y > 2x - 1 \\implies \\text{dashed line } y = 2x - 1 \\quad (\\text{Correct})$$",
+      "counter_example": "The point $(1, 1)$ lies on the boundary line $y = 2x - 1$, and substituting $(1, 1)$ into $y > 2x - 1$ gives $1 > 1$, which is false."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_2_1_Q1",
+        "question": "Solve the linear inequality $5x - 8 > 2x + 7$.",
+        "difficulty": "Easy",
+        "context": "Variables on Both Sides",
+        "final_answer": "$x > 5$",
+        "step_by_step_solution": [
+          "Subtract $2x$ from both sides and add $8$ to both sides: $3x > 15$.",
+          "Divide both sides by $3$: $x > 5$."
+        ]
+      },
+      {
+        "id": "10_2_1_Q2",
+        "question": "Solve the linear inequality $4(2 - x) \\le 20$.",
+        "difficulty": "Easy",
+        "context": "Brackets and Negative Coefficient",
+        "final_answer": "$x \\ge -3$",
+        "step_by_step_solution": [
+          "Divide both sides by $4$: $2 - x \\le 5$.",
+          "Subtract $2$ from both sides: $-x \\le 3$. Multiply by $-1$ and flip the sign: $x \\ge -3$."
+        ]
+      },
+      {
+        "id": "10_2_1_Q3",
+        "question": "Solve the fractional inequality $\\frac{3 - 2x}{5} > -1$.",
+        "difficulty": "Medium",
+        "context": "Fractional Linear Inequality",
+        "final_answer": "$x < 4$",
+        "step_by_step_solution": [
+          "Multiply both sides by $+5$: $3 - 2x > -5$.",
+          "Subtract $3$ from both sides: $-2x > -8$.",
+          "Divide by $-2$ and reverse the inequality sign: $x < 4$."
+        ]
+      },
+      {
+        "id": "10_2_1_Q4",
+        "question": "Solve the compound inequality $-3 \\le \\frac{4x - 2}{2} < 5$.",
+        "difficulty": "Medium",
+        "context": "Compound Inequality with Fraction",
+        "final_answer": "$-1 \\le x < 3$",
+        "step_by_step_solution": [
+          "Multiply all three parts by $2$: $-6 \\le 4x - 2 < 10$.",
+          "Add $2$ to all three parts: $-4 \\le 4x < 12$.",
+          "Divide all three parts by $4$: $-1 \\le x < 3$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_2_1_Q5",
+        "question": "A Ballarat plumber charges a $\\$90$ call-out fee plus $\\$65$ per hour. If a homeowner has a maximum budget of $\\$350$, write and solve a linear inequality to find the maximum number of hours $h$ the plumber can work.",
+        "difficulty": "Medium",
+        "context": "Budget Constraint Modelling",
+        "final_answer": "$h \\le 4\\text{ hours}$",
+        "step_by_step_solution": [
+          "Set up the inequality: $65h + 90 \\le 350$.",
+          "Subtract $90$: $65h \\le 260$.",
+          "Divide by $65$: $h \\le 4\\text{ hours}$."
+        ]
+      },
+      {
+        "id": "10_2_1_Q6",
+        "question": "Amira scored $74$, $81$, and $79$ on her first three Year 10 Mathematics tests. What minimum score $x$ must she achieve on her fourth test to have an average of at least $80$ across all four tests?",
+        "difficulty": "Medium",
+        "context": "Minimum Test Score Modelling",
+        "final_answer": "At least $86$ ($x \\ge 86$)",
+        "step_by_step_solution": [
+          "Write the average inequality: $\\frac{74 + 81 + 79 + x}{4} \\ge 80$.",
+          "Multiply both sides by $4$: $234 + x \\ge 320$.",
+          "Subtract $234$: $x \\ge 86$."
+        ]
+      },
+      {
+        "id": "10_2_1_Q7",
+        "question": "A school drama production sells student tickets for $\\$10$ ($x$) and adult tickets for $\\$25$ ($y$). To cover hall hire costs, total revenue must be at least $\\$500$. Write a two-variable inequality modelling this requirement and determine whether selling $18$ student tickets and $12$ adult tickets meets the target.",
+        "difficulty": "Medium",
+        "context": "Two-Variable Revenue Inequality",
+        "final_answer": "$10x + 25y \\ge 500$; yes, since $10(18) + 25(12) = \\$480 < \\$500$ is false—actually $\\$480$ is $\\$20$ short, so it does NOT meet the target",
+        "step_by_step_solution": [
+          "The revenue inequality is $10x + 25y \\ge 500$ (where $x, y \\ge 0$ are integers).",
+          "Substitute $x = 18$ and $y = 12$: $10(18) + 25(12) = 180 + 300 = 480$.",
+          "Since $480 < 500$, the point $(18, 12)$ does not satisfy $10x + 25y \\ge 500$ ($\\$20$ short of the target)."
+        ]
+      },
+      {
+        "id": "10_2_1_Q8",
+        "question": "A triangle in the first quadrant is bounded by $x \\ge 0$, $y \\ge 0$, and $3x + 4y \\le 12$. Find the vertices of this triangular region and calculate its exact area.",
+        "difficulty": "Challenging",
+        "context": "Area of a Bounded Region",
+        "final_answer": "Vertices $(0, 0)$, $(4, 0)$, and $(0, 3)$; area $6\\text{ square units}$",
+        "step_by_step_solution": [
+          "The boundary line $3x + 4y = 12$ meets the $x$-axis ($y = 0$) at $(4, 0)$ and the $y$-axis ($x = 0$) at $(0, 3)$.",
+          "With $x \\ge 0$ and $y \\ge 0$, the region is a right-angled triangle with vertices $(0, 0)$, $(4, 0)$, and $(0, 3)$.",
+          "Area $= \\frac{1}{2} \\times \\text{base} \\times \\text{height} = \\frac{1}{2} \\times 4 \\times 3 = 6\\text{ square units}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_2_1_Q9",
+        "question": "Use subtraction to prove algebraically why $a < b$ implies $-a > -b$ for any real numbers $a$ and $b$.",
+        "difficulty": "Challenging",
+        "context": "Proof of Sign Reversal Property",
+        "final_answer": "Subtracting $(a + b)$ from both sides of $a < b$ preserves the inequality direction and yields $-b < -a$, i.e. $-a > -b$",
+        "step_by_step_solution": [
+          "Start with $a < b$. Adding or subtracting any real number from both sides preserves the inequality order.",
+          "Subtract $a$ from both sides: $0 < b - a$.",
+          "Subtract $b$ from both sides: $-b < -a$, which is identical to $-a > -b$."
+        ]
+      },
+      {
+        "id": "10_2_1_Q10",
+        "question": "Explain why the test point $(0, 0)$ cannot be used to decide which side of the boundary line $y \\ge 3x$ to shade, and choose a valid alternative test point to determine the correct half-plane.",
+        "difficulty": "Medium",
+        "context": "Choosing a Valid Test Point",
+        "final_answer": "$(0, 0)$ lies on the boundary line $y = 3x$; testing $(1, 0)$ gives $0 \\ge 3$ (False), so shade the half-plane above/left of $y = 3x$",
+        "step_by_step_solution": [
+          "When $x = 0$ and $y = 0$, $0 = 3(0)$, so $(0, 0)$ lies directly ON the boundary line $y = 3x$ and cannot distinguish between the two open half-planes.",
+          "Choose a point not on the line, such as $(1, 0)$: substituting into $y \\ge 3x$ gives $0 \\ge 3$ (False), so we shade the opposite side (containing $(0, 1)$, where $1 \\ge 0$ is True)."
+        ]
+      },
+      {
+        "id": "10_2_1_Q11",
+        "question": "Find all values of $x$ that satisfy BOTH $3x - 5 < 10$ and $1 - 2x \\le 7$, and state the number of integers in the intersection.",
+        "difficulty": "Challenging",
+        "context": "Intersection of Two Inequalities",
+        "final_answer": "$-3 \\le x < 5$ ($8$ integers)",
+        "step_by_step_solution": [
+          "Solve the first inequality: $3x < 15 \\implies x < 5$.",
+          "Solve the second inequality: $-2x \\le 6 \\implies x \\ge -3$.",
+          "Combining both gives $-3 \\le x < 5$, which contains the $8$ integers $\\{-3, -2, -1, 0, 1, 2, 3, 4\\}$."
+        ]
+      },
+      {
+        "id": "10_2_1_Q12",
+        "question": "A student attempts to solve $\\frac{6}{x} < 2$ by multiplying both sides by $x$ to write $6 < 2x \\implies x > 3$. Explain why this method misses an entire interval of solutions, and state the complete solution set.",
+        "difficulty": "Extension",
+        "context": "Sign of Unknown Variable in Denominator",
+        "final_answer": "If $x < 0$, multiplying by $x$ reverses the inequality sign (and $\\frac{6}{x}$ is negative, which is always $< 2$); complete solution is $x < 0$ or $x > 3$",
+        "step_by_step_solution": [
+          "Because the sign of $x$ is unknown, multiplying by $x$ is only valid without flipping the sign when $x > 0$ (which gives $x > 3$).",
+          "Whenever $x < 0$, the left-hand side $\\frac{6}{x}$ is negative and therefore automatically less than $+2$, so the complete solution is $x < 0$ or $x > 3$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_2_1_1",
+      "description": "Worked Example 10.2.1.1 boundary",
+      "expression": "solve(Eq(7 - 3*x, 19), x)[0]",
+      "expected": -4
+    },
+    {
+      "id": "NYT10_2_1_1",
+      "description": "Now You Try 10.2.1.1 boundary",
+      "expression": "solve(Eq(11 - 4*x, 27), x)[0]",
+      "expected": -4
+    },
+    {
+      "id": "WE10_2_1_2a",
+      "description": "Worked Example 10.2.1.2 lower bound",
+      "expression": "solve(Eq(2*x + 3, -5), x)[0]",
+      "expected": -4
+    },
+    {
+      "id": "WE10_2_1_2b",
+      "description": "Worked Example 10.2.1.2 upper bound",
+      "expression": "solve(Eq(2*x + 3, 11), x)[0]",
+      "expected": 4
+    },
+    {
+      "id": "NYT10_2_1_2a",
+      "description": "Now You Try 10.2.1.2 lower bound",
+      "expression": "solve(Eq(3*x - 1, -7), x)[0]",
+      "expected": -2
+    },
+    {
+      "id": "NYT10_2_1_2b",
+      "description": "Now You Try 10.2.1.2 upper bound",
+      "expression": "solve(Eq(3*x - 1, 8), x)[0]",
+      "expected": 3
+    },
+    {
+      "id": "WE10_2_1_3",
+      "description": "Worked Example 10.2.1.3 x-intercept",
+      "expression": "solve(Eq(2*x + 3*0, 12), x)[0]",
+      "expected": 6
+    },
+    {
+      "id": "EX10_2_1_Q1",
+      "description": "Exercise 10.2.1 Q1 boundary",
+      "expression": "solve(Eq(5*x - 8, 2*x + 7), x)[0]",
+      "expected": 5
+    },
+    {
+      "id": "EX10_2_1_Q2",
+      "description": "Exercise 10.2.1 Q2 boundary",
+      "expression": "solve(Eq(4*(2 - x), 20), x)[0]",
+      "expected": -3
+    },
+    {
+      "id": "EX10_2_1_Q3",
+      "description": "Exercise 10.2.1 Q3 boundary",
+      "expression": "solve(Eq((3 - 2*x)/5, -1), x)[0]",
+      "expected": 4
+    },
+    {
+      "id": "EX10_2_1_Q4a",
+      "description": "Exercise 10.2.1 Q4 lower bound",
+      "expression": "solve(Eq((4*x - 2)/2, -3), x)[0]",
+      "expected": -1
+    },
+    {
+      "id": "EX10_2_1_Q4b",
+      "description": "Exercise 10.2.1 Q4 upper bound",
+      "expression": "solve(Eq((4*x - 2)/2, 5), x)[0]",
+      "expected": 3
+    },
+    {
+      "id": "EX10_2_1_Q5",
+      "description": "Exercise 10.2.1 Q5 max hours",
+      "expression": "solve(Eq(65*h + 90, 350), h)[0]",
+      "expected": 4
+    },
+    {
+      "id": "EX10_2_1_Q6",
+      "description": "Exercise 10.2.1 Q6 min score",
+      "expression": "solve(Eq((74 + 81 + 79 + x)/4, 80), x)[0]",
+      "expected": 86
+    },
+    {
+      "id": "EX10_2_1_Q7",
+      "description": "Exercise 10.2.1 Q7 revenue check",
+      "expression": "10*18 + 25*12",
+      "expected": 480
+    },
+    {
+      "id": "EX10_2_1_Q8",
+      "description": "Exercise 10.2.1 Q8 triangle area",
+      "expression": "Rational(1, 2) * 4 * 3",
+      "expected": 6
+    }
+  ]
+}

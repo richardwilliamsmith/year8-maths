@@ -1,0 +1,199 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Surface Area and Volume of Cylinders, Prisms, and Composite Solids",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_6_1",
+      "section_code": "6A",
+      "title": "Surface Area of Right Prisms and Cylinders",
+      "vcaa_code": "VC2M9M02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the total surface area of each cube or rectangular prism:",
+          "parts": [
+            { "label": "a", "question": "Cube with side length $3\\text{ cm}$ ($\\text{TSA} = 6 \\times 3^2$)", "answer": "$54\\text{ cm}^2$" },
+            { "label": "b", "question": "Cube with side length $5\\text{ cm}$ ($\\text{TSA} = 6 \\times 5^2$)", "answer": "$150\\text{ cm}^2$" },
+            { "label": "c", "question": "Rectangular box $4\\text{ cm} \\times 3\\text{ cm} \\times 2\\text{ cm}$ ($2(12 + 8 + 6)$)", "answer": "$52\\text{ cm}^2$" },
+            { "label": "d", "question": "Rectangular box $5\\text{ cm} \\times 4\\text{ cm} \\times 3\\text{ cm}$ ($2(20 + 15 + 12)$)", "answer": "$94\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A triangular prism has two triangular ends and three rectangular sides. For a prism with triangle area $6\\text{ cm}^2$ at each end and three rectangles of areas $30\\text{ cm}^2, 40\\text{ cm}^2, 50\\text{ cm}^2$, find:",
+          "parts": [
+            { "label": "a", "question": "The combined area of the two triangular ends ($2 \\times 6$)", "answer": "$12\\text{ cm}^2$" },
+            { "label": "b", "question": "The combined area of the three rectangular sides ($30 + 40 + 50$)", "answer": "$120\\text{ cm}^2$" },
+            { "label": "c", "question": "The total surface area of the triangular prism ($12 + 120$)", "answer": "$132\\text{ cm}^2$" },
+            { "label": "d", "question": "The surface area if the bottom rectangle ($40\\text{ cm}^2$) is on the ground and not painted", "answer": "$92\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use $\\text{CSA} = 2\\pi rh$ to find the exact curved surface area of each cylinder in terms of $\\pi$:",
+          "parts": [
+            { "label": "a", "question": "$r = 2\\text{ cm}, h = 5\\text{ cm}$ ($2 \\times \\pi \\times 2 \\times 5$)", "answer": "$20\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "$r = 3\\text{ cm}, h = 4\\text{ cm}$ ($2 \\times \\pi \\times 3 \\times 4$)", "answer": "$24\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "$r = 5\\text{ m}, h = 6\\text{ m}$ ($2 \\times \\pi \\times 5 \\times 6$)", "answer": "$60\\pi\\text{ m}^2$" },
+            { "label": "d", "question": "$r = 4\\text{ cm}, h = 10\\text{ cm}$ ($2 \\times \\pi \\times 4 \\times 10$)", "answer": "$80\\pi\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "For a closed cylinder with radius $r = 3\\text{ cm}$ and height $h = 5\\text{ cm}$, find in terms of $\\pi$:",
+          "parts": [
+            { "label": "a", "question": "The area of one circular end ($\\pi r^2 = \\pi \\times 3^2$)", "answer": "$9\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "The area of both circular ends ($2\\pi r^2$)", "answer": "$18\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "The curved surface area ($2\\pi rh = 2\\pi \\times 3 \\times 5$)", "answer": "$30\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "The total surface area ($18\\pi + 30\\pi$)", "answer": "$48\\pi\\text{ cm}^2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A wooden storage cube in a classroom has side length $4\\text{ m}$ (or $40\\text{ cm}$). If each of its $6$ square faces has area $40 \\times 40 = 1600\\text{ cm}^2$, find the total surface area of all $6$ faces.",
+          "answer": "$9600\\text{ cm}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A soup tin is a cylinder with radius $r = 4\\text{ cm}$ and height $h = 10\\text{ cm}$. The paper label wraps around the curved side only. Calculate $2 \\times \\pi \\times 4 \\times 10$ to find the exact area of the paper label in terms of $\\pi$.",
+          "answer": "$80\\pi\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A cereal box is a rectangular prism $20\\text{ cm}$ wide, $30\\text{ cm}$ high, and $8\\text{ cm}$ deep. Calculate $\\text{TSA} = 2(20 \\times 30 + 20 \\times 8 + 30 \\times 8)$ to find the total cardboard area.",
+          "answer": "$2000\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "An open cylindrical drinking glass (no lid) has a flat circular base of area $9\\pi\\text{ cm}^2$ and a curved side of area $24\\pi\\text{ cm}^2$. Add these together to find the outside surface area of the glass.",
+          "answer": "$33\\pi\\text{ cm}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When you unroll the curved wall of a cylinder of radius $r$ and height $h$ flat onto a table, what 2D shape does it form, and what are its length and width?",
+          "answer": "It forms a rectangle whose height is $h$ and whose width is the circumference of the circle, $2\\pi r$."
+        },
+        {
+          "number": 10,
+          "question": "Why does an open-top cylindrical bucket have total surface area $\\pi r^2 + 2\\pi rh$ instead of $2\\pi r^2 + 2\\pi rh$?",
+          "answer": "Because it has no top lid, so there is only $1$ circular base ($\\pi r^2$) instead of $2$ circular ends ($2\\pi r^2$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_6_1_1a", "expression": "6 * 3**2", "expected": 54 },
+        { "id": "WSF9_6_1_1b", "expression": "6 * 5**2", "expected": 150 },
+        { "id": "WSF9_6_1_1c", "expression": "2*(4*3 + 4*2 + 3*2)", "expected": 52 },
+        { "id": "WSF9_6_1_1d", "expression": "2*(5*4 + 5*3 + 4*3)", "expected": 94 },
+        { "id": "WSF9_6_1_2c", "expression": "2*6 + 30 + 40 + 50", "expected": 132 },
+        { "id": "WSF9_6_1_3a", "expression": "2*pi*2*5", "expected": "20*pi" },
+        { "id": "WSF9_6_1_3c", "expression": "2*pi*5*6", "expected": "60*pi" },
+        { "id": "WSF9_6_1_4d", "expression": "2*pi*3**2 + 2*pi*3*5", "expected": "48*pi" },
+        { "id": "WSF9_6_1_5", "expression": "6 * 40**2", "expected": 9600 },
+        { "id": "WSF9_6_1_7", "expression": "2*(20*30 + 20*8 + 30*8)", "expected": 2000 }
+      ]
+    },
+    {
+      "section_id": "9_6_2",
+      "section_code": "6B",
+      "title": "Volume of Cylinders, Composite Solids, and Error in Measurement",
+      "vcaa_code": "VC2M9M02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use $V = A \\times h$ (Cross-sectional Area $\\times$ height/length) to find the volume of each prism:",
+          "parts": [
+            { "label": "a", "question": "Base area $A = 15\\text{ cm}^2$, height $h = 4\\text{ cm}$", "answer": "$60\\text{ cm}^3$" },
+            { "label": "b", "question": "Base area $A = 25\\text{ m}^2$, length $h = 6\\text{ m}$", "answer": "$150\\text{ m}^3$" },
+            { "label": "c", "question": "Rectangular prism $5\\text{ cm} \\times 4\\text{ cm} \\times 10\\text{ cm}$", "answer": "$200\\text{ cm}^3$" },
+            { "label": "d", "question": "Triangular prism with triangle area $12\\text{ cm}^2$ and length $8\\text{ cm}$", "answer": "$96\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use $V = \\pi r^2 h$ to find the exact volume of each cylinder in terms of $\\pi$:",
+          "parts": [
+            { "label": "a", "question": "$r = 2\\text{ cm}, h = 5\\text{ cm}$ ($\\pi \\times 2^2 \\times 5$)", "answer": "$20\\pi\\text{ cm}^3$" },
+            { "label": "b", "question": "$r = 3\\text{ cm}, h = 10\\text{ cm}$ ($\\pi \\times 3^2 \\times 10$)", "answer": "$90\\pi\\text{ cm}^3$" },
+            { "label": "c", "question": "$r = 5\\text{ m}, h = 4\\text{ m}$ ($\\pi \\times 5^2 \\times 4$)", "answer": "$100\\pi\\text{ m}^3$" },
+            { "label": "d", "question": "Diameter $d = 6\\text{ cm}$ (so $r = 3\\text{ cm}$), height $h = 7\\text{ cm}$", "answer": "$63\\pi\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Each measurement is rounded to the nearest whole unit (maximum error $\\pm 0.5$). Find:",
+          "parts": [
+            { "label": "a", "question": "The lower bound of $10\\text{ cm}$ ($10 - 0.5$)", "answer": "$9.5\\text{ cm}$" },
+            { "label": "b", "question": "The upper bound of $10\\text{ cm}$ ($10 + 0.5$)", "answer": "$10.5\\text{ cm}$" },
+            { "label": "c", "question": "The lower and upper bounds of $24\\text{ m}$ (nearest $1\\text{ m}$)", "answer": "$23.5\\text{ m}$ to $24.5\\text{ m}$" },
+            { "label": "d", "question": "The absolute error if a desk is $120\\text{ cm}$ long but measured as $123\\text{ cm}$ ($123 - 120$)", "answer": "$3\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Calculate the percentage error using $\\dfrac{\\text{Absolute Error}}{\\text{Actual Value}} \\times 100\\%$:",
+          "parts": [
+            { "label": "a", "question": "Absolute error $= 1\\text{ cm}$, actual length $= 10\\text{ cm}$", "answer": "$10\\%$" },
+            { "label": "b", "question": "Absolute error $= 2\\text{ m}$, actual length $= 50\\text{ m}$", "answer": "$4\\%$" },
+            { "label": "c", "question": "Absolute error $= 5\\text{ g}$, actual mass $= 100\\text{ g}$", "answer": "$5\\%$" },
+            { "label": "d", "question": "Absolute error $= 3\\text{ L}$, actual volume $= 60\\text{ L}$", "answer": "$5\\%$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A cylindrical mug has a circular base of radius $r = 4\\text{ cm}$ and a height of $h = 10\\text{ cm}$. Calculate $V = \\pi \\times 4^2 \\times 10$ to find the exact volume in terms of $\\pi$.",
+          "answer": "$160\\pi\\text{ cm}^3$"
+        },
+        {
+          "number": 6,
+          "question": "A concrete garden step is made of two rectangular blocks stacked together: the bottom block has volume $4000\\text{ cm}^3$ and the top block has volume $2500\\text{ cm}^3$. Find the total volume of concrete needed.",
+          "answer": "$6500\\text{ cm}^3$"
+        },
+        {
+          "number": 7,
+          "question": "A student estimates the length of a cricket pitch in Brisbane as $21\\text{ m}$, whereas its actual length is $20\\text{ m}$. Find the absolute error and the percentage error.",
+          "answer": "Absolute error $= 1\\text{ m}$, percentage error $= 5\\%$"
+        },
+        {
+          "number": 8,
+          "question": "A wooden block has volume $500\\text{ cm}^3$. A cylindrical hole of volume $80\\text{ cm}^3$ is drilled out of the middle. Subtract to find the remaining volume of wood.",
+          "answer": "$420\\text{ cm}^3$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "If a cylinder is given with diameter $d = 10\\text{ cm}$ and height $h = 6\\text{ cm}$, why is it wrong to calculate $V = \\pi \\times 10^2 \\times 6$? What should you do first?",
+          "answer": "The formula $V = \\pi r^2 h$ uses the radius $r$, not the diameter $d$. You must first halve the diameter to get $r = 5\\text{ cm}$, giving $V = \\pi \\times 5^2 \\times 6 = 150\\pi\\text{ cm}^3$."
+        },
+        {
+          "number": 10,
+          "question": "A bag of apples is weighed as $3\\text{ kg}$ to the nearest kilogram. Explain why a bag weighing $2.6\\text{ kg}$ rounds to $3\\text{ kg}$, and state the smallest possible weight that rounds up to $3\\text{ kg}$.",
+          "answer": "Any weight from $2.5\\text{ kg}$ up to $3.5\\text{ kg}$ is closer to $3\\text{ kg}$ than to $2\\text{ kg}$ or $4\\text{ kg}$; the smallest weight (lower bound) is $2.5\\text{ kg}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_6_2_1a", "expression": "15 * 4", "expected": 60 },
+        { "id": "WSF9_6_2_1b", "expression": "25 * 6", "expected": 150 },
+        { "id": "WSF9_6_2_1c", "expression": "5 * 4 * 10", "expected": 200 },
+        { "id": "WSF9_6_2_2a", "expression": "pi * 2**2 * 5", "expected": "20*pi" },
+        { "id": "WSF9_6_2_2b", "expression": "pi * 3**2 * 10", "expected": "90*pi" },
+        { "id": "WSF9_6_2_2c", "expression": "pi * 5**2 * 4", "expected": "100*pi" },
+        { "id": "WSF9_6_2_4a", "expression": "Rational(1, 10) * 100", "expected": 10 },
+        { "id": "WSF9_6_2_4b", "expression": "Rational(2, 50) * 100", "expected": 4 },
+        { "id": "WSF9_6_2_6", "expression": "4000 + 2500", "expected": 6500 },
+        { "id": "WSF9_6_2_7", "expression": "Rational(21 - 20, 20) * 100", "expected": 5 }
+      ]
+    }
+  ]
+}

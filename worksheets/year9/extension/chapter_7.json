@@ -1,0 +1,199 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Similarity, Scale Factors, and Geometric Reasoning",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_7_1",
+      "section_code": "7A",
+      "title": "Similar Triangles and Geometric Proofs",
+      "vcaa_code": "VC2M9SP02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "In $\\triangle ABC$, $DE \\parallel BC$ with $D$ on $AB$ and $E$ on $AC$. Find the exact value of $x$:",
+          "parts": [
+            { "label": "a", "question": "$AD = x, DB = x + 3, AE = 4, EC = 6$", "answer": "$x = 6$" },
+            { "label": "b", "question": "$AD = 6, DB = 9, DE = 2x - 1, BC = 4x + 1$", "answer": "$x = 3.5$ ($DE = 6, BC = 15$)" },
+            { "label": "c", "question": "$AD = x, DB = 5, AE = 4, EC = x - 1$ (solve quadratic for $x > 1$)", "answer": "$x = 5$" },
+            { "label": "d", "question": "$AD = x + 1, AB = 2x + 5, DE = 6, BC = 10$", "answer": "$x = 5$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "In right-angled $\\triangle ABC$ ($\\angle ACB = 90^\\circ$), the altitude $CD$ is drawn perpendicular to the hypotenuse $AB$. Using $\\triangle ACD \\sim \\triangle CBD \\sim \\triangle ABC$, find:",
+          "parts": [
+            { "label": "a", "question": "The altitude $CD = h$ when $AD = 4\\text{ cm}$ and $DB = 9\\text{ cm}$ ($h^2 = AD \\cdot DB$)", "answer": "$h = 6\\text{ cm}$" },
+            { "label": "b", "question": "The leg $AC$ when $AD = 4\\text{ cm}$ and $AB = 13\\text{ cm}$ ($AC^2 = AD \\cdot AB$)", "answer": "$\\sqrt{52} = 2\\sqrt{13}\\text{ cm}$" },
+            { "label": "c", "question": "The segment $DB$ when altitude $CD = 12\\text{ cm}$ and $AD = 9\\text{ cm}$", "answer": "$DB = 16\\text{ cm}$" },
+            { "label": "d", "question": "Both legs $AC$ and $BC$ when $AD = 9\\text{ cm}$ and $DB = 16\\text{ cm}$ ($AB = 25\\text{ cm}$)", "answer": "$AC = 15\\text{ cm}, BC = 20\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "In $\\triangle ABC$ and $\\triangle ADE$, point $D$ lies on $AB$ and $E$ lies on $AC$, with $\\angle ADE = \\angle ACB$ (anti-parallel configuration, so $\\triangle ADE \\sim \\triangle ACB$). Given $AD = 4\\text{ cm}$, $AE = 5\\text{ cm}$, and $AC = 12\\text{ cm}$, find:",
+          "parts": [
+            { "label": "a", "question": "The length of side $AB$ (using $\\dfrac{AD}{AC} = \\dfrac{AE}{AB}$)", "answer": "$15\\text{ cm}$" },
+            { "label": "b", "question": "The length of segment $DB = AB - AD$", "answer": "$11\\text{ cm}$" },
+            { "label": "c", "question": "The length of segment $EC = AC - AE$", "answer": "$7\\text{ cm}$" },
+            { "label": "d", "question": "The length of $BC$ if $DE = 6\\text{ cm}$", "answer": "$18\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Trapezium $ABCD$ has parallel sides $AB = 8\\text{ cm}$ and $DC = 20\\text{ cm}$, and its diagonals $AC$ and $BD$ intersect at $O$. Find:",
+          "parts": [
+            { "label": "a", "question": "The ratio $AO : OC$ from similar triangles $\\triangle AOB \\sim \\triangle COD$", "answer": "$2 : 5$" },
+            { "label": "b", "question": "The length of $AO$ if the full diagonal is $AC = 21\\text{ cm}$", "answer": "$6\\text{ cm}$" },
+            { "label": "c", "question": "The length of $BD$ if $BO = 5\\text{ cm}$", "answer": "$17.5\\text{ cm}$ ($OD = 12.5\\text{ cm}$)" },
+            { "label": "d", "question": "The perpendicular height of $\\triangle COD$ if the total height of the trapezium is $14\\text{ cm}$", "answer": "$10\\text{ cm}$ ($\\triangle AOB$ height $= 4\\text{ cm}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Two vertical poles of heights $a = 6\\text{ m}$ and $b = 10\\text{ m}$ stand on level ground in Adelaide with wires stretched taut from the top of each pole to the foot of the other pole. Using similar triangles, find the height $h$ above the ground at which the two wires cross (note that $h = \\dfrac{ab}{a + b}$).",
+          "answer": "$h = 3.75\\text{ m}$ ($\\dfrac{6 \\times 10}{6 + 10} = \\dfrac{60}{16} = 3.75\\text{ m}$)"
+        },
+        {
+          "number": 6,
+          "question": "A square solar cell $PQRS$ of side length $x\\text{ cm}$ is inscribed inside a right-angled triangular frame $ABC$ whose legs are $a = 12\\text{ cm}$ and $b = 18\\text{ cm}$, with two sides of the square resting along the legs of the triangle and vertex $Q$ on the hypotenuse. Use similar triangles to find $x$.",
+          "answer": "$x = 7.2\\text{ cm}$ ($\\dfrac{12 - x}{x} = \\dfrac{12}{18} \\implies 3(12 - x) = 2x \\implies x = 7.2\\text{ cm}$)"
+        },
+        {
+          "number": 7,
+          "question": "A surveyor in the Blue Mountains sights past the top of a $3.0\\text{ m}$ ranging pole to the top of a vertical cliff. Her eye level is $1.5\\text{ m}$ above horizontal ground, the pole is $4.0\\text{ m}$ from her, and the cliff base is $120\\text{ m}$ from her. Find the height of the cliff above the ground.",
+          "answer": "$46.5\\text{ m}$ (rise above eye level is $\\dfrac{120}{4} \\times (3.0 - 1.5) = 30 \\times 1.5 = 45\\text{ m}$; plus $1.5\\text{ m}$ eye height $= 46.5\\text{ m}$)"
+        },
+        {
+          "number": 8,
+          "question": "In a billiards shot on a $2.4\\text{ m} \\times 1.2\\text{ m}$ table, a ball at $(0.4, 0.4)$ bounces off the top cushion $y = 1.2$ at $(x, 1.2)$ to enter the corner pocket at $(2.4, 0)$. Since the angle of incidence equals the angle of reflection, the two right-angled triangles formed with the top cushion are similar. Find $x$.",
+          "answer": "$x = 1.2\\text{ m}$ ($\\dfrac{x - 0.4}{1.2 - 0.4} = \\dfrac{2.4 - x}{1.2 - 0} \\implies \\dfrac{x - 0.4}{0.8} = \\dfrac{2.4 - x}{1.2} \\implies 3(x - 0.4) = 2(2.4 - x) \\implies x = 1.2\\text{ m}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove the Right-Angle Altitude Theorem (Geometric Mean Theorem): in right-angled $\\triangle ABC$ with $\\angle C = 90^\\circ$ and altitude $CD \\perp AB$, prove that $\\triangle ACD \\sim \\triangle CBD$ and deduce that $CD^2 = AD \\cdot DB$.",
+          "answer": "Let $\\angle A = \\alpha$. In right $\\triangle ACD$, $\\angle ACD = 90^\\circ - \\alpha$. Since $\\angle ACB = 90^\\circ$, $\\angle DCB = 90^\\circ - (90^\\circ - \\alpha) = \\alpha = \\angle A$, and $\\angle ADC = \\angle CDB = 90^\\circ$. Thus $\\triangle ACD \\sim \\triangle CBD$ ($\\text{AAA}$), so $\\dfrac{CD}{DB} = \\dfrac{AD}{CD} \\implies CD^2 = AD \\cdot DB$."
+        },
+        {
+          "number": 10,
+          "question": "Prove the Midpoint Theorem using similar triangles: if $M$ and $N$ are the midpoints of sides $AB$ and $AC$ of $\\triangle ABC$, prove that $\\triangle AMN \\sim \\triangle ABC$, and deduce that $MN \\parallel BC$ and $MN = \\frac{1}{2}BC$.",
+          "answer": "Since $M$ and $N$ are midpoints, $\\dfrac{AM}{AB} = \\dfrac{AN}{AC} = \\dfrac{1}{2}$, and $\\angle MAN = \\angle BAC$ is common. By the $\\text{SAS}$ similarity test, $\\triangle AMN \\sim \\triangle ABC$ with scale factor $k = \\frac{1}{2}$. Therefore $MN = \\frac{1}{2}BC$, and corresponding angles $\\angle AMN = \\angle ABC$ are equal, which proves $MN \\parallel BC$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_7_1_1a", "expression": "4 * 3 / (6 - 4)", "expected": 6 },
+        { "id": "WSE9_7_1_1b", "expression": "Rational(5*1 + 2*3, 10 - 8)", "expected": 5.5 },
+        { "id": "WSE9_7_1_2a", "expression": "sqrt(4 * 9)", "expected": 6 },
+        { "id": "WSE9_7_1_2c", "expression": "12**2 / 9", "expected": 16 },
+        { "id": "WSE9_7_1_3a", "expression": "5 * 12 / 4", "expected": 15 },
+        { "id": "WSE9_7_1_3d", "expression": "6 * 12 / 4", "expected": 18 },
+        { "id": "WSE9_7_1_4b", "expression": "21 * Rational(2, 2 + 5)", "expected": 6 },
+        { "id": "WSE9_7_1_5", "expression": "Rational(6 * 10, 6 + 10)", "expected": 3.75 },
+        { "id": "WSE9_7_1_6", "expression": "Rational(12 * 18, 12 + 18)", "expected": 7.2 },
+        { "id": "WSE9_7_1_7", "expression": "Rational(15, 10) + Rational(120, 4) * Rational(15, 10)", "expected": 46.5 }
+      ]
+    },
+    {
+      "section_id": "9_7_2",
+      "section_code": "7B",
+      "title": "Scale Factors for Length, Area, and Volume, and Polyhedra",
+      "vcaa_code": "VC2M9M03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert between ratios of length ($a : b$), surface area ($a^2 : b^2$), and volume ($a^3 : b^3$) for similar 3D solids:",
+          "parts": [
+            { "label": "a", "question": "Surface areas are in the ratio $16 : 49$; find the volume ratio", "answer": "$64 : 343$" },
+            { "label": "b", "question": "Volumes are in the ratio $125 : 512$; find the surface area ratio", "answer": "$25 : 64$" },
+            { "label": "c", "question": "Surface area of $B$ is $2.25$ times the surface area of $A$; find the ratio of their volumes $V_B : V_A$", "answer": "$27 : 8$ ($3.375 : 1$)" },
+            { "label": "d", "question": "Volume of $B$ is $54\\text{ cm}^3$ and volume of $A$ is $16\\text{ cm}^3$; find the simplified ratio of their heights $h_B : h_A$", "answer": "$3 : 2$ ($54 : 16 = 27 : 8$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "In $\\triangle ABC$, a line $DE \\parallel BC$ cuts $AB$ at $D$ and $AC$ at $E$ such that $AD : DB = 2 : 3$ (so $AD : AB = 2 : 5$). Given $\\text{Area}(\\triangle ADE) = 16\\text{ cm}^2$, find:",
+          "parts": [
+            { "label": "a", "question": "The area ratio $\\text{Area}(\\triangle ADE) : \\text{Area}(\\triangle ABC)$", "answer": "$4 : 25$" },
+            { "label": "b", "question": "The total area of $\\triangle ABC$", "answer": "$100\\text{ cm}^2$" },
+            { "label": "c", "question": "The area of the trapezium $DBCE$ ($\\text{Area}(\\triangle ABC) - \\text{Area}(\\triangle ADE)$)", "answer": "$84\\text{ cm}^2$" },
+            { "label": "d", "question": "The ratio $\\text{Area}(\\triangle ADE) : \\text{Area}(\\text{trapezium } DBCE)$", "answer": "$4 : 21$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A right cone of height $H = 12\\text{ cm}$ and volume $V = 108\\pi\\text{ cm}^3$ is sliced parallel to its base at distance $h = 4\\text{ cm}$ from the apex to remove a smaller similar cone. Find:",
+          "parts": [
+            { "label": "a", "question": "The linear scale factor $k = \\dfrac{h}{H}$ of the small top cone to the original cone", "answer": "$k = \\dfrac{1}{3}$" },
+            { "label": "b", "question": "The volume of the small top cone removed", "answer": "$4\\pi\\text{ cm}^3$" },
+            { "label": "c", "question": "The volume of the remaining frustum (bottom section)", "answer": "$104\\pi\\text{ cm}^3$" },
+            { "label": "d", "question": "The ratio of the curved surface area of the small cone to the curved surface area of the frustum", "answer": "$1 : 8$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use Euler's formula $V - E + F = 2$ and vertex/face degree counting ($2E = \\sum \\text{face sides} = \\sum \\text{vertex degrees}$) to solve:",
+          "parts": [
+            { "label": "a", "question": "An icosahedron has $F = 20$ triangular faces ($3$ edges per face, shared in pairs). Find $E$ and $V$.", "answer": "$E = 30, V = 12$" },
+            { "label": "b", "question": "A polyhedron has $6$ square faces and $8$ triangular faces ($F = 14$, cuboctahedron). Find $E$ and $V$.", "answer": "$E = 24, V = 12$" },
+            { "label": "c", "question": "A convex polyhedron has $F = 14$ faces and every vertex has degree $4$ (so $4V = 2E$). Find $V$ and $E$.", "answer": "$V = 12, E = 24$" },
+            { "label": "d", "question": "An $n$-sided prism has $F = n + 2$, $V = 2n$, and $E = 3n$. Verify $V - E + F$ for any $n$.", "answer": "$2n - 3n + (n + 2) = 2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A conical funnel of total depth $20\\text{ cm}$ holds $500\\text{ mL}$ when filled to the brim. When water is poured in to a depth of $12\\text{ cm}$ ($k = \\frac{12}{20} = \\frac{3}{5}$), what volume of water is in the funnel, and how much more water is needed to fill it to the brim?",
+          "answer": "$108\\text{ mL}$ in the funnel ($500 \\times (\\frac{3}{5})^3 = 108\\text{ mL}$); $392\\text{ mL}$ more needed"
+        },
+        {
+          "number": 6,
+          "question": "Two similar bronze statues of Phar Lap are cast from the same solid alloy. The smaller statue requires $18\\text{ cm}^2$ of gold leaf to gild its base plaque and has a mass of $2.16\\text{ kg}$. If the larger statue's plaque has an area of $50\\text{ cm}^2$, find the mass of the larger statue.",
+          "answer": "$10\\text{ kg}$ ($k^2 = \\dfrac{50}{18} = \\dfrac{25}{9} \\implies k = \\dfrac{5}{3} \\implies M = 2.16 \\times \\left(\\dfrac{5}{3}\\right)^3 = 2.16 \\times \\dfrac{125}{27} = 10\\text{ kg}$)"
+        },
+        {
+          "number": 7,
+          "question": "On a $1 : 50\\,000$ topographic map of Wilsons Promontory, a national park reserve covers an area of $40\\text{ cm}^2$. Calculate the actual ground area of the reserve in square kilometres ($1\\text{ km} = 100\\,000\\text{ cm}$, so $1\\text{ cm}$ on the map $= 0.5\\text{ km}$).",
+          "answer": "$10\\text{ km}^2$ ($1\\text{ cm}^2$ on the map represents $0.5^2 = 0.25\\text{ km}^2$, so $40 \\times 0.25 = 10\\text{ km}^2$)"
+        },
+        {
+          "number": 8,
+          "question": "A buckminsterfullerene ('buckyball') molecule forms a truncated icosahedron with $12$ pentagonal faces and $20$ hexagonal faces ($F = 32$). Every edge is shared by exactly $2$ faces, and every vertex meets exactly $3$ edges. Find the number of edges $E$ and carbon atoms (vertices $V$) and verify Euler's formula.",
+          "answer": "$E = \\frac{12 \\times 5 + 20 \\times 6}{2} = 90\\text{ edges}$, $V = \\frac{2E}{3} = 60\\text{ vertices}$; $V - E + F = 60 - 90 + 32 = 2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain Galileo's Square-Cube Law in biomechanics: if an animal's linear dimensions are scaled up by a factor of $k = 10$ while keeping the same body shape and density, its bone cross-sectional strength scales by $k^2$ while its body weight scales by $k^3$. By what factor does the stress (weight per unit bone area) increase?",
+          "answer": "Bone cross-sectional area scales by $k^2 = 100$, whereas weight (volume) scales by $k^3 = 1000$. Therefore, the stress ratio $\\dfrac{\\text{Weight}}{\\text{Area}}$ scales by $\\dfrac{k^3}{k^2} = k = 10$ times higher, which would crush the bones unless they become relatively thicker."
+        },
+        {
+          "number": 10,
+          "question": "In any convex polyhedron whose faces are all triangles ($3F = 2E$), use Euler's formula $V - E + F = 2$ to prove that $E = 3V - 6$ and $F = 2V - 4$.",
+          "answer": "Substituting $F = \\frac{2}{3}E$ into $V - E + F = 2$ gives $V - \\frac{1}{3}E = 2 \\implies E = 3V - 6$. Then $F = \\frac{2}{3}(3V - 6) = 2V - 4$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_7_2_1a", "expression": "sqrt(Rational(49, 16))**3", "expected": "343/64" },
+        { "id": "WSE9_7_2_1b", "expression": "cbrt(Rational(512, 125))**2", "expected": "64/25" },
+        { "id": "WSE9_7_2_2b", "expression": "16 * Rational(5, 2)**2", "expected": 100 },
+        { "id": "WSE9_7_2_2c", "expression": "100 - 16", "expected": 84 },
+        { "id": "WSE9_7_2_3b", "expression": "108 * Rational(4, 12)**3", "expected": 4 },
+        { "id": "WSE9_7_2_3c", "expression": "108 - 4", "expected": 104 },
+        { "id": "WSE9_7_2_4a_E", "expression": "(20 * 3) / 2", "expected": 30 },
+        { "id": "WSE9_7_2_4b_E", "expression": "(6 * 4 + 8 * 3) / 2", "expected": 24 },
+        { "id": "WSE9_7_2_5", "expression": "500 * Rational(12, 20)**3", "expected": 108 },
+        { "id": "WSE9_7_2_7", "expression": "16 * Rational(1, 4)**2", "expected": 1 }
+      ]
+    }
+  ]
+}

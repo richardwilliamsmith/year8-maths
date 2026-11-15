@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "section_id": "9_5_2",
+    "section_code": "5B",
+    "chapter_number": 5,
+    "chapter_title": "Quadratic Equations and Non-Linear Graphs",
+    "title": "Graphing Quadratic Relations and Key Features of Parabolas",
+    "vcaa_code": "VC2M9A05",
+    "vcaa_description": "Use the null factor law to solve monic quadratic equations with integer roots, and graph quadratic relations, identifying key features.",
+    "strand": "Algebra",
+    "target_mastery": "Sketch parabolas in turning point form $y = a(x - h)^2 + k$, factorised form $y = (x - p)(x - q)$, and expanded form $y = x^2 + bx + c$, identifying the turning point, axis of symmetry, $y$-intercept, and $x$-intercepts.",
+    "prerequisites": [
+      "Solving monic quadratic equations via the Null Factor Law (Section 5A)",
+      "Plotting coordinates and intercepts on the Cartesian plane (Chapter 4)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Parabola",
+        "definition": "The smooth, symmetrical U-shaped curve formed by graphing a quadratic relation $y = ax^2 + bx + c$ ($a \\neq 0$)."
+      },
+      {
+        "term": "Turning point (Vertex)",
+        "definition": "The minimum point (when $a > 0$, upright/concave up) or maximum point (when $a < 0$, inverted/concave down) of a parabola."
+      },
+      {
+        "term": "Axis of symmetry",
+        "definition": "The vertical line $x = h$ passing through the turning point that divides a parabola into two mirror-image halves."
+      },
+      {
+        "term": "Turning point form",
+        "definition": "A quadratic relation written as $y = a(x - h)^2 + k$, which directly displays the vertex at $(h, k)$ and axis of symmetry $x = h$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_5_2_1",
+      "title": "Transformations and Turning Point Form $y = a(x - h)^2 + k$",
+      "explanation": "Compared to the basic parabola $y = x^2$ with vertex $(0, 0)$, the graph of $y = a(x - h)^2 + k$ is dilated vertically by factor $|a|$ (reflected in the $x$-axis if $a < 0$), translated $h$ units horizontally, and translated $k$ units vertically. Its turning point is $(h, k)$ and its axis of symmetry is $x = h$.",
+      "formula_latex": "y = a(x - h)^2 + k \\implies \\text{Vertex } (h, k), \\quad \\text{Axis of symmetry } x = h",
+      "callout_title": "Opposite Sign Inside the Bracket for $h$",
+      "callout_rule": "In $y = (x - 3)^2 + 5$, the vertex is $(+3, 5)$; in $y = (x + 4)^2 - 2$, the vertex is $(-4, -2)$."
+    },
+    {
+      "id": "theory_9_5_2_2",
+      "title": "Factorised (Intercept) Form $y = a(x - p)(x - q)$",
+      "explanation": "When a quadratic relation is factorised as $y = a(x - p)(x - q)$, setting $y = 0$ immediately gives the $x$-intercepts at $(p, 0)$ and $(q, 0)$. By symmetry, the axis of symmetry lies halfway between the $x$-intercepts at $x = \\frac{p + q}{2}$. Substituting this $x$-value back into the equation gives the $y$-coordinate of the turning point.",
+      "formula_latex": "x\\text{-intercepts: } (p, 0),\\; (q, 0) \\qquad \\text{Axis of symmetry: } x = \\frac{p + q}{2}",
+      "callout_title": "Vertex Lies Halfway Between the $x$-Intercepts",
+      "callout_rule": "Average the two $x$-intercepts to find the axis of symmetry $x_v = \\frac{p + q}{2}$, then evaluate $y_v$ at $x = x_v$."
+    },
+    {
+      "id": "theory_9_5_2_3",
+      "title": "General Form $y = ax^2 + bx + c$ and Key Features",
+      "explanation": "For a quadratic in general form $y = ax^2 + bx + c$, substituting $x = 0$ gives the $y$-intercept $(0, c)$, and the axis of symmetry is $x = -\\frac{b}{2a}$. Factorising the right-hand side and setting $y = 0$ yields the $x$-intercepts via the Null Factor Law.",
+      "formula_latex": "y = ax^2 + bx + c \\implies y\\text{-intercept } (0, c), \\quad \\text{Axis of symmetry } x = -\\frac{b}{2a}",
+      "callout_title": "Checklist of Four Key Features for Every Parabola Sketch",
+      "callout_rule": "Always label: (1) concavity (up/down), (2) $y$-intercept $(0, c)$, (3) $x$-intercepts (if any), and (4) turning point coordinates."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_5_2_1",
+      "title": "Identifying Key Features from Turning Point Form",
+      "difficulty": "Fluency",
+      "problem": "For the parabola $y = 2(x - 3)^2 - 8$, find (a) the coordinates of the turning point and whether it is a minimum or maximum, (b) the $y$-intercept, and (c) the $x$-intercepts.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Read $(h, k) = (3, -8)$ from $y = a(x - h)^2 + k$. Since $a = 2 > 0$, the parabola opens upwards (minimum). Substitute $x = 0$ for the $y$-intercept.",
+          "working": "$$\\text{Minimum turning point: } (3, -8)$$\n$$\\text{At } x = 0: \\quad y = 2(0 - 3)^2 - 8 = 2(9) - 8 = 10 \\implies (0, 10)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Set $y = 0$ and solve for $x$ to find the $x$-intercepts.",
+          "working": "$$2(x - 3)^2 - 8 = 0 \\implies (x - 3)^2 = 4 \\implies x - 3 = \\pm 2$$\n$$x = 5 \\;\\text{ or }\\; x = 1 \\implies (1, 0) \\text{ and } (5, 0)$$"
+        }
+      ],
+      "final_answer": "(a) Minimum at $(3, -8)$, (b) $y$-intercept $(0, 10)$, (c) $x$-intercepts $(1, 0)$ and $(5, 0)$",
+      "now_you_try": {
+        "problem": "For $y = (x + 2)^2 - 9$, find (a) the turning point, (b) the $y$-intercept, and (c) the $x$-intercepts.",
+        "hint": "Here $h = -2$ and $k = -9$. Set $x = 0$ for the $y$-intercept and $y = 0$ for the $x$-intercepts.",
+        "working_summary": "(a) Minimum at $(-2, -9)$; (b) $y = 4 - 9 = -5 \\implies (0, -5)$; (c) $(x + 2)^2 = 9 \\implies x + 2 = \\pm 3 \\implies x = 1$ or $x = -5$.",
+        "answer": "(a) $(-2, -9)$, (b) $(0, -5)$, (c) $(-5, 0)$ and $(1, 0)$"
+      }
+    },
+    {
+      "id": "WE9_5_2_2",
+      "title": "Finding Key Features of a Monic Quadratic in General Form",
+      "difficulty": "Understanding",
+      "problem": "Consider the quadratic relation $y = x^2 - 6x + 5$. Find (a) the $y$-intercept, (b) the $x$-intercepts, (c) the equation of the axis of symmetry, and (d) the coordinates of the turning point.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Set $x = 0$ for the $y$-intercept, then factorise $x^2 - 6x + 5 = 0$ to find the $x$-intercepts.",
+          "working": "$$y\\text{-intercept: } (0, 5)$$\n$$x^2 - 6x + 5 = 0 \\implies (x - 1)(x - 5) = 0 \\implies (1, 0) \\text{ and } (5, 0)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Average the $x$-intercepts $1$ and $5$ to get the axis of symmetry, and substitute into $y = x^2 - 6x + 5$ for the vertex.",
+          "working": "$$\\text{Axis of symmetry: } x = \\frac{1 + 5}{2} = 3$$\n$$y_v = 3^2 - 6(3) + 5 = 9 - 18 + 5 = -4 \\implies \\text{Vertex } (3, -4)$$"
+        }
+      ],
+      "final_answer": "(a) $(0, 5)$, (b) $(1, 0)$ and $(5, 0)$, (c) $x = 3$, (d) $(3, -4)$",
+      "now_you_try": {
+        "problem": "Find the $y$-intercept, $x$-intercepts, axis of symmetry, and turning point of $y = x^2 + 4x - 12$.",
+        "hint": "Factorise as $y = (x + 6)(x - 2)$ and average the $x$-intercepts.",
+        "working_summary": "$y$-int $(0, -12)$; $x$-ints $(-6, 0), (2, 0)$; axis $x = -2$; vertex $y = (-2)^2 + 4(-2) - 12 = -16 \\implies (-2, -16)$.",
+        "answer": "$y$-int $(0, -12)$, $x$-ints $(-6, 0)$ and $(2, 0)$, axis $x = -2$, turning point $(-2, -16)$"
+      }
+    },
+    {
+      "id": "WE9_5_2_3",
+      "title": "Modelling the Parabolic Arch of a Bridge",
+      "difficulty": "Problem-Solving",
+      "problem": "A pedestrian footbridge arch over the Yarra River is modelled by $h = -\\frac{1}{4}(x - 12)^2 + 36$, where $h\\text{ m}$ is the height above water level and $x\\text{ m}$ is the horizontal distance from the western bank. Find (a) the maximum height of the arch, (b) the height of the arch at the western bank ($x = 0$), and (c) the total horizontal span between the two points where the arch meets water level ($h = 0$).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Read the maximum turning point $(12, 36)$ from turning point form, and evaluate $h$ at $x = 0$.",
+          "working": "$$\\text{(a) Maximum height } = 36\\text{ m (at } x = 12\\text{ m)}$$\n$$\\text{(b) At } x = 0: \\quad h = -\\frac{1}{4}(-12)^2 + 36 = -36 + 36 = 0\\text{ m}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Solve $h = 0$ to find both water-level intercepts and subtract them to get the span.",
+          "working": "$$-\\frac{1}{4}(x - 12)^2 + 36 = 0 \\implies (x - 12)^2 = 144 \\implies x - 12 = \\pm 12$$\n$$x = 0 \\;\\text{ or }\\; x = 24 \\implies \\text{Span} = 24 - 0 = 24\\text{ m}$$"
+        }
+      ],
+      "final_answer": "(a) $36\\text{ m}$, (b) $0\\text{ m}$, (c) $24\\text{ m}$",
+      "now_you_try": {
+        "problem": "A kicked Australian Rules football follows the path $h = -\\frac{1}{20}(x - 20)^2 + 20$, where $h\\text{ m}$ is height and $x\\text{ m}$ is horizontal distance from the kick. Find (a) the maximum height reached and (b) the total horizontal distance travelled before hitting the ground ($h = 0$).",
+        "hint": "Read the vertex $(20, 20)$ and solve $(x - 20)^2 = 400$.",
+        "working_summary": "(a) Max height $= 20\\text{ m}$ at $x = 20\\text{ m}$; (b) $x - 20 = \\pm 20 \\implies x = 40\\text{ m}$.",
+        "answer": "(a) $20\\text{ m}$, (b) $40\\text{ m}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_5_2_1",
+      "title": "Reading the Sign of $h$ Directly Without Reversing in $y = a(x - h)^2 + k$",
+      "misconception": "Stating that the turning point of $y = (x - 4)^2 + 7$ is $(-4, 7)$ instead of $(4, 7)$.",
+      "correct_concept": "The squared term $(x - 4)^2$ reaches its minimum value of $0$ when $x - 4 = 0$, which occurs at $x = +4$.",
+      "incorrect_working": "$$y = (x - 4)^2 + 7 \\implies \\text{Vertex } (-4, 7) \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$x - 4 = 0 \\implies x = 4 \\implies \\text{Vertex } (4, 7)$$",
+      "counter_example": "At $x = 4$, $y = 0^2 + 7 = 7$; at $x = -4$, $y = (-8)^2 + 7 = 71$."
+    },
+    {
+      "id": "misc_9_5_2_2",
+      "title": "Assuming the Constant Term in Turning Point Form Is the $y$-Intercept",
+      "misconception": "Claiming that $k$ in $y = a(x - h)^2 + k$ is the $y$-intercept.",
+      "correct_concept": "The constant $k$ is the $y$-coordinate of the turning point $(h, k)$. To find the $y$-intercept, you must substitute $x = 0$, which gives $y = ah^2 + k$.",
+      "incorrect_working": "$$y = (x - 3)^2 - 4 \\implies y\\text{-intercept is } -4 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{At } x = 0: \\quad y = (0 - 3)^2 - 4 = 9 - 4 = 5 \\implies y\\text{-intercept is } (0, 5)$$",
+      "counter_example": "The point $(0, -4)$ does not satisfy $y = (x - 3)^2 - 4$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_5_2_Q1",
+        "question": "State the coordinates of the turning point, the equation of the axis of symmetry, and the $y$-intercept of $y = (x - 5)^2 - 9$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "Turning point $(5, -9)$, axis of symmetry $x = 5$, $y$-intercept $(0, 16)$",
+        "step_by_step_solution": [
+          "From $y = (x - h)^2 + k$, the turning point is $(5, -9)$ and the axis of symmetry is $x = 5$.",
+          "Substitute $x = 0$: $y = (0 - 5)^2 - 9 = 25 - 9 = 16$, giving $y$-intercept $(0, 16)$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q2",
+        "question": "For the parabola $y = -(x + 3)^2 + 16$, find the coordinates of the maximum turning point and the two $x$-intercepts.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "Maximum turning point $(-3, 16)$, $x$-intercepts $(-7, 0)$ and $(1, 0)$",
+        "step_by_step_solution": [
+          "Since $a = -1 < 0$, the parabola has a maximum turning point at $(-3, 16)$.",
+          "Set $y = 0$: $(x + 3)^2 = 16 \\implies x + 3 = \\pm 4 \\implies x = 1$ or $x = -7$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q3",
+        "question": "Find the $x$-intercepts, $y$-intercept, and turning point of $y = x^2 - 8x + 12$.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$x$-intercepts $(2, 0)$ and $(6, 0)$, $y$-intercept $(0, 12)$, turning point $(4, -4)$",
+        "step_by_step_solution": [
+          "When $x = 0, y = 12 \\implies (0, 12)$. Factorise: $(x - 2)(x - 6) = 0 \\implies (2, 0)$ and $(6, 0)$.",
+          "The axis of symmetry is $x = \\frac{2 + 6}{2} = 4$, and $y_v = (4 - 2)(4 - 6) = -4$, giving turning point $(4, -4)$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q4",
+        "question": "A parabola has turning point $(2, -5)$ and passes through the point $(4, 7)$. Find its equation in turning point form $y = a(x - h)^2 + k$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$y = 3(x - 2)^2 - 5$",
+        "step_by_step_solution": [
+          "Substitute $(h, k) = (2, -5)$ into $y = a(x - h)^2 + k$: $y = a(x - 2)^2 - 5$.",
+          "Substitute $(4, 7)$: $7 = a(4 - 2)^2 - 5 \\implies 12 = 4a \\implies a = 3$, giving $y = 3(x - 2)^2 - 5$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_5_2_Q5",
+        "question": "A dolphin leaps out of the water in Port Phillip Bay. Its height $h\\text{ m}$ above the water at horizontal distance $x\\text{ m}$ from its launch point is modelled by $h = -x^2 + 6x$. Find (a) the horizontal distance where the dolphin re-enters the water and (b) the maximum height of the leap.",
+        "difficulty": "Medium",
+        "context": "Marine Biology Modelling",
+        "final_answer": "(a) $6\\text{ m}$, (b) $9\\text{ m}$",
+        "step_by_step_solution": [
+          "Set $h = 0$: $-x(x - 6) = 0 \\implies x = 0$ (launch) or $x = 6\\text{ m}$ (re-entry).",
+          "The axis of symmetry is $x = \\frac{0 + 6}{2} = 3\\text{ m}$, so maximum height is $h = -(3)^2 + 6(3) = 9\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q6",
+        "question": "A farmer in Gippsland has $40\\text{ m}$ of fencing to enclose a rectangular sheep pen against an existing straight barn wall (so only three sides require fencing: two widths of $x\\text{ m}$ and one length of $(40 - 2x)\\text{ m}$). (a) Show that the area $A\\text{ m}^2$ is $A = 2x(20 - x)$. (b) Find the value of $x$ that maximises the area and state the maximum area.",
+        "difficulty": "Challenging",
+        "context": "Optimisation",
+        "final_answer": "(a) $A = x(40 - 2x) = 2x(20 - x)$, (b) $x = 10\\text{ m}$, maximum area $= 200\\text{ m}^2$",
+        "step_by_step_solution": [
+          "Area $= \\text{width} \\times \\text{length} = x(40 - 2x) = 2x(20 - x)$.",
+          "The $x$-intercepts are $x = 0$ and $x = 20$, so the maximum occurs halfway at $x = 10\\text{ m}$, giving $A_{\\max} = 2(10)(20 - 10) = 200\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q7",
+        "question": "A suspension bridge cable hangs in a parabolic curve $y = \\frac{1}{10}(x - 30)^2 + 8$, where $y\\text{ m}$ is the height above the roadway and $x\\text{ m}$ is the distance from the left tower ($0 \\le x \\le 60$). Find (a) the height of the cable at the towers ($x = 0$ and $x = 60$) and (b) the minimum height of the cable above the roadway.",
+        "difficulty": "Medium",
+        "context": "Structural Engineering",
+        "final_answer": "(a) $98\\text{ m}$, (b) $8\\text{ m}$",
+        "step_by_step_solution": [
+          "At $x = 0$ (and by symmetry $x = 60$): $y = \\frac{1}{10}(-30)^2 + 8 = 90 + 8 = 98\\text{ m}$.",
+          "From turning point form, the minimum height is $k = 8\\text{ m}$ at $x = 30\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q8",
+        "question": "A monic parabola crosses the $x$-axis at $(-3, 0)$ and $(7, 0)$. Find its equation in expanded form $y = x^2 + bx + c$ and determine the coordinates of its turning point.",
+        "difficulty": "Challenging",
+        "context": "Algebraic Reconstruction",
+        "final_answer": "$y = x^2 - 4x - 21$, turning point $(2, -25)$",
+        "step_by_step_solution": [
+          "Using intercept form: $y = (x + 3)(x - 7) = x^2 - 4x - 21$.",
+          "The axis of symmetry is $x = \\frac{-3 + 7}{2} = 2$, and $y_v = (2 + 3)(2 - 7) = -25$, so the turning point is $(2, -25)$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_5_2_Q9",
+        "question": "Without solving for $x$-intercepts, explain how you can tell from the turning point form $y = 3(x - 2)^2 + 5$ that its graph has no $x$-intercepts.",
+        "difficulty": "Medium",
+        "context": "Graphical Reasoning",
+        "final_answer": "The minimum turning point is $(2, 5)$, which lies above the $x$-axis, and the parabola opens upwards ($a = 3 > 0$), so $y \\ge 5 > 0$ for all $x$",
+        "step_by_step_solution": [
+          "Because $(x - 2)^2 \\ge 0$ for all real $x$ and $a = 3 > 0$, the minimum value of $y$ is $5$ at $(2, 5)$.",
+          "A parabola that starts at $(2, 5)$ above the $x$-axis and opens upwards never crosses $y = 0$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q10",
+        "question": "Show by expanding and completing the square that $y = x^2 - 10x + 16$ can be written in both factorised form $y = (x - 2)(x - 8)$ and turning point form $y = (x - 5)^2 - 9$, and explain which feature each form reveals most directly.",
+        "difficulty": "Challenging",
+        "context": "Equivalent Representations",
+        "final_answer": "Factorised form directly shows $x$-intercepts $(2, 0)$ and $(8, 0)$; turning point form directly shows vertex $(5, -9)$; expanded form directly shows $y$-intercept $(0, 16)$",
+        "step_by_step_solution": [
+          "Expanding $(x - 2)(x - 8) = x^2 - 10x + 16$, and expanding $(x - 5)^2 - 9 = x^2 - 10x + 25 - 9 = x^2 - 10x + 16$.",
+          "Each form highlights a different geometric feature: expanded form gives the $y$-intercept $(0, 16)$, factorised form gives the $x$-intercepts $(2, 0)$ and $(8, 0)$, and turning point form gives the vertex $(5, -9)$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q11",
+        "question": "A parabola has axis of symmetry $x = 4$. If the point $(1, 11)$ lies on the parabola, find the coordinates of another point on the parabola with $y$-coordinate $11$. Justify your answer using symmetry.",
+        "difficulty": "Medium",
+        "context": "Symmetry Properties",
+        "final_answer": "$(7, 11)$",
+        "step_by_step_solution": [
+          "The point $(1, 11)$ lies $4 - 1 = 3$ units to the left of the axis of symmetry $x = 4$.",
+          "By reflection symmetry across $x = 4$, the mirror-image point lies $3$ units to the right at $x = 4 + 3 = 7$, giving $(7, 11)$."
+        ]
+      },
+      {
+        "id": "9_5_2_Q12",
+        "question": "Find the coordinates of the two points of intersection of the parabola $y = x^2 - 4x + 3$ and the straight line $y = 2x - 2$.",
+        "difficulty": "Extension",
+        "context": "Simultaneous Linear-Quadratic Systems",
+        "final_answer": "$(1, 0)$ and $(5, 8)$",
+        "step_by_step_solution": [
+          "Equate the two expressions for $y$: $x^2 - 4x + 3 = 2x - 2 \\implies x^2 - 6x + 5 = 0$.",
+          "Factorise: $(x - 1)(x - 5) = 0 \\implies x = 1$ or $x = 5$. Substituting into $y = 2x - 2$ gives $(1, 0)$ and $(5, 8)$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_5_2_1b",
+      "description": "Worked Example 9.5.2.1(b) y-intercept",
+      "expression": "2 * (0 - 3)**2 - 8",
+      "expected": 10
+    },
+    {
+      "id": "WE9_5_2_1c",
+      "description": "Worked Example 9.5.2.1(c) x-intercepts",
+      "expression": "solve(2*(x - 3)**2 - 8, x)",
+      "expected": [1, 5]
+    },
+    {
+      "id": "NYT9_5_2_1c",
+      "description": "Now You Try 9.5.2.1(c) x-intercepts",
+      "expression": "solve((x + 2)**2 - 9, x)",
+      "expected": [-5, 1]
+    },
+    {
+      "id": "WE9_5_2_2b",
+      "description": "Worked Example 9.5.2.2(b) x-intercepts",
+      "expression": "solve(x**2 - 6*x + 5, x)",
+      "expected": [1, 5]
+    },
+    {
+      "id": "WE9_5_2_2d",
+      "description": "Worked Example 9.5.2.2(d) turning point y-coordinate",
+      "expression": "3**2 - 6*3 + 5",
+      "expected": -4
+    },
+    {
+      "id": "NYT9_5_2_2_yv",
+      "description": "Now You Try 9.5.2.2 turning point y-coordinate",
+      "expression": "(-2)**2 + 4*(-2) - 12",
+      "expected": -16
+    },
+    {
+      "id": "WE9_5_2_3c",
+      "description": "Worked Example 9.5.2.3(c) bridge arch roots",
+      "expression": "solve(-Rational(1, 4)*(x - 12)**2 + 36, x)",
+      "expected": [0, 24]
+    },
+    {
+      "id": "EX9_5_2_Q1_yint",
+      "description": "Exercise 9.5.2 Q1 y-intercept",
+      "expression": "(0 - 5)**2 - 9",
+      "expected": 16
+    },
+    {
+      "id": "EX9_5_2_Q2_xint",
+      "description": "Exercise 9.5.2 Q2 x-intercepts",
+      "expression": "solve(-(x + 3)**2 + 16, x)",
+      "expected": [-7, 1]
+    },
+    {
+      "id": "EX9_5_2_Q3_yv",
+      "description": "Exercise 9.5.2 Q3 turning point y-coordinate",
+      "expression": "4**2 - 8*4 + 12",
+      "expected": -4
+    },
+    {
+      "id": "EX9_5_2_Q4_a",
+      "description": "Exercise 9.5.2 Q4 dilation factor a",
+      "expression": "solve(Eq(x*(4 - 2)**2 - 5, 7), x)[0]",
+      "expected": 3
+    },
+    {
+      "id": "EX9_5_2_Q5b",
+      "description": "Exercise 9.5.2 Q5(b) dolphin maximum height",
+      "expression": "-3**2 + 6*3",
+      "expected": 9
+    },
+    {
+      "id": "EX9_5_2_Q6b",
+      "description": "Exercise 9.5.2 Q6(b) maximum paddock area",
+      "expression": "2 * 10 * (20 - 10)",
+      "expected": 200
+    },
+    {
+      "id": "EX9_5_2_Q7a",
+      "description": "Exercise 9.5.2 Q7(a) tower height",
+      "expression": "Rational(1, 10)*(-30)**2 + 8",
+      "expected": 98
+    },
+    {
+      "id": "EX9_5_2_Q8_yv",
+      "description": "Exercise 9.5.2 Q8 turning point y-coordinate",
+      "expression": "(2 + 3)*(2 - 7)",
+      "expected": -25
+    },
+    {
+      "id": "EX9_5_2_Q12",
+      "description": "Exercise 9.5.2 Q12 intersection x-coordinates",
+      "expression": "solve(Eq(x**2 - 4*x + 3, 2*x - 2), x)",
+      "expected": [1, 5]
+    }
+  ]
+}

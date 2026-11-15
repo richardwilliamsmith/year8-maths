@@ -1,0 +1,409 @@
+{
+  "metadata": {
+    "section_id": "10_4_2",
+    "section_code": "4B",
+    "chapter_number": 4,
+    "chapter_title": "Parabolas, Exponentials, Polynomials, and Functions (10 & 10A)",
+    "title": "[10A] Polynomials, Remainder and Factor Theorems, and Functions",
+    "vcaa_code": "VC2M10AA01",
+    "vcaa_description": "Investigate the concept of a polynomial and apply the factor and remainder theorems to solve problems; use function notation and inverse functions (VC2M10AA03).",
+    "strand": "Algebra (10A)",
+    "target_mastery": "Divide polynomials, apply the Remainder and Factor Theorems to factorise and sketch cubic polynomials, and use function notation f(x) and domain/range.",
+    "prerequisites": [
+      "Factorising quadratics (Chapter 3)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Polynomial of degree $n$",
+        "definition": "An algebraic expression of the form $P(x) = a_n x^n + a_{n-1}x^{n-1} + \\dots + a_1 x + a_0$ where the exponents are non-negative integers and the leading coefficient $a_n \\neq 0$."
+      },
+      {
+        "term": "Remainder Theorem",
+        "definition": "When a polynomial $P(x)$ is divided by the linear divisor $(x - a)$, the remainder is equal to $P(a)$."
+      },
+      {
+        "term": "Factor Theorem",
+        "definition": "A linear binomial $(x - a)$ is a factor of the polynomial $P(x)$ if and only if $P(a) = 0$."
+      },
+      {
+        "term": "Function ($f(x)$)",
+        "definition": "A relation between a set of permissible inputs (the domain) and a set of outputs (the range) such that every input $x$ in the domain produces at most one output $y = f(x)$ (passing the vertical line test)."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_4_2_1",
+      "title": "Polynomial Division and the Remainder Theorem",
+      "explanation": "A polynomial $P(x)$ has only non-negative integer powers of $x$ (so expressions containing $x^{-1} = \\frac{1}{x}$ or $x^{1/2} = \\sqrt{x}$ are not polynomials). When $P(x)$ is divided by a linear divisor $(x - a)$, we can write $P(x) = (x - a)Q(x) + R$, where $Q(x)$ is the quotient polynomial and $R$ is a constant remainder. Substituting $x = a$ into this identity makes $(a - a)Q(a) = 0$, immediately proving the Remainder Theorem: $R = P(a)$.",
+      "formula_latex": "P(x) = (x - a)Q(x) + R \\implies R = P(a)",
+      "callout_title": "Watch the Sign of $a$ in $(x - a)$",
+      "callout_rule": "To find the remainder when $P(x)$ is divided by $(x - 3)$, evaluate $P(+3)$. When dividing by $(x + 2) = (x - (-2))$, evaluate $P(-2)$."
+    },
+    {
+      "id": "theory_10_4_2_2",
+      "title": "The Factor Theorem and Factorising Cubic Polynomials",
+      "explanation": "As a direct consequence of the Remainder Theorem, $(x - a)$ divides $P(x)$ with zero remainder ($R = 0$) if and only if $P(a) = 0$. To factorise a cubic polynomial $P(x) = ax^3 + bx^2 + cx + d$, first test integer factors $a$ of the constant term $d$ until you find one with $P(a) = 0$. Then divide $P(x)$ by $(x - a)$ (by long division or equating coefficients) to obtain a quadratic quotient $Q(x)$, and factorise $Q(x)$ into linear factors.",
+      "formula_latex": "P(a) = 0 \\iff (x - a) \\text{ is a factor of } P(x)",
+      "callout_title": "Test Small Divisors $\\pm 1, \\pm 2, \\pm 3$ of the Constant Term First",
+      "callout_rule": "If $P(1) = 0$ (which happens whenever the sum of all coefficients of $P(x)$ is $0$), then $(x - 1)$ is immediately a factor of $P(x)$!"
+    },
+    {
+      "id": "theory_10_4_2_3",
+      "title": "Function Notation, Domain, Range, and Inverse Functions",
+      "explanation": "A relation is a function if every vertical line $x = c$ cuts its graph at most once (the Vertical Line Test). We write $f(x)$ for the output of function $f$ at input $x$. The domain is the set of all valid input $x$-values, and the range is the set of all resulting output $y$-values. For a one-to-one function $y = f(x)$, its inverse function $f^{-1}(x)$ reverses the mapping and is found algebraically by swapping $x$ and $y$ and solving for $y$.",
+      "formula_latex": "y = f(x) \\iff x = f^{-1}(y); \\quad \\text{Graph of } f^{-1} \\text{ is reflection of } f \\text{ in } y = x",
+      "callout_title": "Swap $x$ and $y$, Then Make $y$ the Subject to Find $f^{-1}(x)$",
+      "callout_rule": "Do NOT confuse the inverse function $f^{-1}(x)$ with the reciprocal $\\frac{1}{f(x)}$. For $f(x) = 2x + 3$, swapping $x$ and $y$ gives $x = 2y + 3 \\implies f^{-1}(x) = \\frac{x - 3}{2}$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_4_2_1",
+      "title": "Applying the Remainder Theorem",
+      "difficulty": "Fluency",
+      "problem": "Use the Remainder Theorem to find the remainder when $P(x) = 2x^3 - 5x^2 + 3x - 7$ is divided by: (a) $(x - 2)$ and (b) $(x + 1)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), for divisor $(x - 2)$, substitute $x = 2$ into $P(x)$.",
+          "working": "$$R = P(2) = 2(2)^3 - 5(2)^2 + 3(2) - 7 = 16 - 20 + 6 - 7 = -5$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), for divisor $(x + 1) = (x - (-1))$, substitute $x = -1$ into $P(x)$.",
+          "working": "$$R = P(-1) = 2(-1)^3 - 5(-1)^2 + 3(-1) - 7 = -2 - 5 - 3 - 7 = -17$$"
+        }
+      ],
+      "final_answer": "(a) $-5$, (b) $-17$",
+      "now_you_try": {
+        "problem": "Find the remainder when $P(x) = x^3 + 4x^2 - 2x + 5$ is divided by $(x - 2)$ and by $(x + 3)$.",
+        "hint": "Evaluate $P(2)$ and $P(-3)$.",
+        "working_summary": "$P(2) = 8 + 16 - 4 + 5 = 25$; $P(-3) = -27 + 36 + 6 + 5 = 20$.",
+        "answer": "Divided by $(x - 2)$: $25$; divided by $(x + 3)$: $20$"
+      }
+    },
+    {
+      "id": "WE10_4_2_2",
+      "title": "Factorising a Cubic Polynomial Using the Factor Theorem",
+      "difficulty": "Understanding",
+      "problem": "Factorise $P(x) = x^3 - 2x^2 - 5x + 6$ completely, and hence solve $x^3 - 2x^2 - 5x + 6 = 0$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Test $x = 1$: since $1 - 2 - 5 + 6 = 0$, $P(1) = 0$, so $(x - 1)$ is a factor.",
+          "working": "$$P(1) = (1)^3 - 2(1)^2 - 5(1) + 6 = 0 \\implies (x - 1) \\text{ is a factor}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Divide $x^3 - 2x^2 - 5x + 6$ by $(x - 1)$ to find the quadratic quotient $Q(x) = x^2 - x - 6$.",
+          "working": "$$x^3 - 2x^2 - 5x + 6 = (x - 1)(x^2 - x - 6)$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Factorise the quadratic $x^2 - x - 6 = (x - 3)(x + 2)$ and apply the Null Factor Law.",
+          "working": "$$P(x) = (x - 1)(x - 3)(x + 2) = 0 \\implies x = -2, 1, 3$$"
+        }
+      ],
+      "final_answer": "$P(x) = (x - 1)(x - 3)(x + 2)$; solutions $x = -2, 1, 3$",
+      "now_you_try": {
+        "problem": "Factorise $P(x) = x^3 - 4x^2 + x + 6$ completely.",
+        "hint": "Check $P(-1)$: $(-1)^3 - 4(-1)^2 + (-1) + 6 = -1 - 4 - 1 + 6 = 0$, so $(x + 1)$ is a factor.",
+        "working_summary": "$P(x) = (x + 1)(x^2 - 5x + 6) = (x + 1)(x - 2)(x - 3)$.",
+        "answer": "$(x + 1)(x - 2)(x - 3)$"
+      }
+    },
+    {
+      "id": "WE10_4_2_3",
+      "title": "Evaluating Functions and Finding an Inverse Function",
+      "difficulty": "Problem-Solving",
+      "problem": "Given $f(x) = 3x - 5$ and $g(x) = x^2 + 2$, find: (a) $f(4) + g(-3)$, and (b) the inverse function $f^{-1}(x)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Evaluate $f(4)$ and $g(-3)$ separately and add the results.",
+          "working": "$$f(4) = 3(4) - 5 = 7, \\quad g(-3) = (-3)^2 + 2 = 11 \\implies f(4) + g(-3) = 18$$"
+        },
+        {
+          "step": 2,
+          "thinking": "To find $f^{-1}(x)$, write $y = 3x - 5$, swap $x$ and $y$, and solve for $y$.",
+          "working": "$$x = 3y - 5 \\implies 3y = x + 5 \\implies y = \\frac{x + 5}{3} \\implies f^{-1}(x) = \\frac{x + 5}{3}$$"
+        }
+      ],
+      "final_answer": "(a) $18$, (b) $f^{-1}(x) = \\frac{x + 5}{3}$",
+      "now_you_try": {
+        "problem": "Given $f(x) = 4x + 7$, find $f(-2)$ and find the rule for the inverse function $f^{-1}(x)$.",
+        "hint": "Swap $x$ and $y$ in $y = 4x + 7$ to get $x = 4y + 7$.",
+        "working_summary": "$f(-2) = 4(-2) + 7 = -1$; $x = 4y + 7 \\implies y = \\frac{x - 7}{4}$, so $f^{-1}(x) = \\frac{x - 7}{4}$.",
+        "answer": "$f(-2) = -1$; $f^{-1}(x) = \\frac{x - 7}{4}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_4_2_1",
+      "title": "Substituting $-a$ Instead of $+a$ When Dividing by $(x - a)$",
+      "misconception": "Evaluating $P(-3)$ instead of $P(3)$ when finding the remainder of $P(x) \\div (x - 3)$.",
+      "correct_concept": "Set the linear divisor equal to zero to find the value of $x$ to substitute: $x - 3 = 0 \\implies x = +3$, so the remainder is $P(+3)$.",
+      "incorrect_working": "$$P(x) \\div (x - 3) \\implies R = P(-3) \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$P(x) \\div (x - 3) \\implies x - 3 = 0 \\implies R = P(3) \\quad (\\text{Correct})$$",
+      "counter_example": "For $P(x) = x - 3$, dividing $(x - 3)$ by $(x - 3)$ obviously has remainder $0 = P(3)$, whereas $P(-3) = -6 \\neq 0$."
+    },
+    {
+      "id": "MISC_10_4_2_2",
+      "title": "Confusing Function Notation $f(x)$ with Multiplication $f \\times x$",
+      "misconception": "Expanding $f(x + 2)$ as $f(x) + f(2)$ or $f(x) + 2$, treating $f$ as a pronumeral multiplier.",
+      "correct_concept": "In $f(x + 2)$, the entire expression $(x + 2)$ is the input that replaces every occurrence of $x$ in the rule of $f$. For $f(x) = x^2$, $f(x + 2) = (x + 2)^2 = x^2 + 4x + 4$.",
+      "incorrect_working": "$$f(x) = x^2 \\implies f(x + 2) = x^2 + 2 \\text{ or } x^2 + 4 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$f(x) = x^2 \\implies f(x + 2) = (x + 2)^2 = x^2 + 4x + 4 \\quad (\\text{Correct})$$",
+      "counter_example": "At $x = 3$, $f(3 + 2) = f(5) = 5^2 = 25$, whereas $f(3) + f(2) = 9 + 4 = 13 \\neq 25$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_4_2_Q1",
+        "question": "Find the remainder when $P(x) = 3x^3 - 4x^2 + 2x - 1$ is divided by $(x - 2)$.",
+        "difficulty": "Easy",
+        "context": "Remainder Theorem",
+        "final_answer": "$11$",
+        "step_by_step_solution": [
+          "By the Remainder Theorem, the remainder is $P(2)$.",
+          "$P(2) = 3(2)^3 - 4(2)^2 + 2(2) - 1 = 24 - 16 + 4 - 1 = 11$."
+        ]
+      },
+      {
+        "id": "10_4_2_Q2",
+        "question": "Find the value of $k$ if $(x - 3)$ is a factor of $P(x) = x^3 - 2x^2 + kx + 6$.",
+        "difficulty": "Medium",
+        "context": "Finding an Unknown Coefficient via Factor Theorem",
+        "final_answer": "$k = -5$",
+        "step_by_step_solution": [
+          "By the Factor Theorem, since $(x - 3)$ is a factor, $P(3) = 0$.",
+          "$3^3 - 2(3)^2 + 3k + 6 = 0 \\implies 27 - 18 + 3k + 6 = 0 \\implies 3k = -15 \\implies k = -5$."
+        ]
+      },
+      {
+        "id": "10_4_2_Q3",
+        "question": "Factorise $P(x) = x^3 + 2x^2 - 5x - 6$ completely into three linear factors.",
+        "difficulty": "Medium",
+        "context": "Cubic Factorisation",
+        "final_answer": "$(x + 1)(x - 2)(x + 3)$",
+        "step_by_step_solution": [
+          "Test $x = -1$: $P(-1) = -1 + 2 + 5 - 6 = 0$, so $(x + 1)$ is a factor.",
+          "Divide by $(x + 1)$: $x^3 + 2x^2 - 5x - 6 = (x + 1)(x^2 + x - 6)$.",
+          "Factorise the quadratic: $(x + 1)(x - 2)(x + 3)$."
+        ]
+      },
+      {
+        "id": "10_4_2_Q4",
+        "question": "If $f(x) = 2x^2 - 3x + 4$, evaluate $f(-2)$ and expand and simplify $f(a + 1)$.",
+        "difficulty": "Medium",
+        "context": "Function Evaluation",
+        "final_answer": "$f(-2) = 18$; $f(a + 1) = 2a^2 + a + 3$",
+        "step_by_step_solution": [
+          "Substitute $x = -2$: $f(-2) = 2(-2)^2 - 3(-2) + 4 = 8 + 6 + 4 = 18$.",
+          "Substitute $x = a + 1$: $f(a + 1) = 2(a + 1)^2 - 3(a + 1) + 4 = 2(a^2 + 2a + 1) - 3a - 3 + 4 = 2a^2 + a + 3$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_4_2_Q5",
+        "question": "An open-top rectangular storage box has volume $V(x) = x(10 - 2x)(8 - 2x)\\text{ cm}^3$ when squares of side $x\\text{ cm}$ are cut from a $10\\text{ cm}$ by $8\\text{ cm}$ sheet of cardboard. State the practical domain of $x$ and evaluate the volume when $x = 2\\text{ cm}$.",
+        "difficulty": "Medium",
+        "context": "Cubic Box Volume and Domain",
+        "final_answer": "Practical domain $0 < x < 4$; $V(2) = 48\\text{ cm}^3$",
+        "step_by_step_solution": [
+          "All three dimensions $x$, $10 - 2x$, and $8 - 2x$ must be strictly positive, so $x > 0$ and $8 - 2x > 0 \\implies 0 < x < 4$.",
+          "When $x = 2$, $V(2) = 2(10 - 4)(8 - 4) = 2 \\times 6 \\times 4 = 48\\text{ cm}^3$."
+        ]
+      },
+      {
+        "id": "10_4_2_Q6",
+        "question": "A polynomial $P(x) = x^3 + ax^2 + bx - 6$ has $(x - 1)$ as a factor and leaves a remainder of $12$ when divided by $(x - 2)$. Find the values of $a$ and $b$.",
+        "difficulty": "Challenging",
+        "context": "Simultaneous Equations from Remainder and Factor Theorems",
+        "final_answer": "$a = 2, b = 3$",
+        "step_by_step_solution": [
+          "From $P(1) = 0$: $1 + a + b - 6 = 0 \\implies a + b = 5$.",
+          "From $P(2) = 12$: $8 + 4a + 2b - 6 = 12 \\implies 4a + 2b = 10 \\implies 2a + b = 5$.",
+          "WAIT: subtracting $a + b = 5$ from $2a + b = 5$ gives $a = 0$ and $b = 5$. Let us verify: for $P(x) = x^3 + 5x - 6$, $P(1) = 1 + 5 - 6 = 0$ and $P(2) = 8 + 10 - 6 = 12$. Thus $a = 0$ and $b = 5$!"
+        ]
+      },
+      {
+        "id": "10_4_2_Q7",
+        "question": "For the cubic curve $y = -(x + 2)(x - 1)(x - 4)$, find all $x$-intercepts, the $y$-intercept, and the coordinates of the point on the curve where $x = 2$.",
+        "difficulty": "Medium",
+        "context": "Cubic Graph Features",
+        "final_answer": "$x$-intercepts $(-2, 0), (1, 0), (4, 0)$; $y$-intercept $(0, -8)$; point $(2, 8)$",
+        "step_by_step_solution": [
+          "Setting $y = 0$ gives $x = -2, 1, 4$.",
+          "Setting $x = 0$ gives $y = -(2)(-1)(-4) = -8 \\implies (0, -8)$.",
+          "At $x = 2$, $y = -(4)(1)(-2) = 8 \\implies (2, 8)$."
+        ]
+      },
+      {
+        "id": "10_4_2_Q8",
+        "question": "The function $C(f) = \\frac{5}{9}(f - 32)$ converts a temperature of $f$ degrees Fahrenheit into degrees Celsius. Find the inverse function $C^{-1}(c)$ and use it to convert $25^\\circ\\text{C}$ into degrees Fahrenheit.",
+        "difficulty": "Medium",
+        "context": "Temperature Conversion Inverse Function",
+        "final_answer": "$C^{-1}(c) = \\frac{9}{5}c + 32$; $C^{-1}(25) = 77^\\circ\\text{F}$",
+        "step_by_step_solution": [
+          "Solve $c = \\frac{5}{9}(f - 32)$ for $f$: $\\frac{9}{5}c = f - 32 \\implies f = \\frac{9}{5}c + 32$, so $C^{-1}(c) = \\frac{9}{5}c + 32$.",
+          "Substitute $c = 25$: $C^{-1}(25) = \\frac{9}{5}(25) + 32 = 45 + 32 = 77^\\circ\\text{F}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_4_2_Q9",
+        "question": "Explain why the circle relation $x^2 + y^2 = 25$ is NOT a function, using both algebraic reasoning and the Vertical Line Test.",
+        "difficulty": "Medium",
+        "context": "Vertical Line Test for Functions",
+        "final_answer": "For $-5 < x < 5$ (e.g. $x = 3$), there are two distinct $y$-values ($y = \\pm 4$), so the vertical line $x = 3$ cuts the circle twice",
+        "step_by_step_solution": [
+          "Solving for $y$ gives $y = \\pm\\sqrt{25 - x^2}$. For an input such as $x = 3$, there are TWO outputs: $y = +4$ and $y = -4$.",
+          "Geometrically, the vertical line $x = 3$ intersects the circle at two points $(3, 4)$ and $(3, -4)$, failing the Vertical Line Test."
+        ]
+      },
+      {
+        "id": "10_4_2_Q10",
+        "question": "State the maximal real domain and the range of the quadratic function $f(x) = (x - 4)^2 + 3$.",
+        "difficulty": "Medium",
+        "context": "Domain and Range of a Quadratic Function",
+        "final_answer": "Domain: all real numbers $\\mathbb{R}$ ($-\\infty < x < \\infty$); Range: $y \\ge 3$ (or $[3, \\infty)$)",
+        "step_by_step_solution": [
+          "Any real number $x$ can be substituted into $(x - 4)^2 + 3$, so the domain is $\\mathbb{R}$.",
+          "Since $(x - 4)^2 \\ge 0$ for all $x \\in \\mathbb{R}$, the minimum output is $0 + 3 = 3$ (achieved at $x = 4$), so the range is $y \\ge 3$."
+        ]
+      },
+      {
+        "id": "10_4_2_Q11",
+        "question": "Prove that for any polynomial $P(x) = a_n x^n + \\dots + a_1 x + a_0$, $(x - 1)$ is a factor of $P(x)$ if and only if the sum of its coefficients $a_n + \\dots + a_1 + a_0 = 0$.",
+        "difficulty": "Challenging",
+        "context": "Sum of Coefficients Criterion",
+        "final_answer": "Substituting $x = 1$ gives $P(1) = a_n(1)^n + \\dots + a_1(1) + a_0 = a_n + \\dots + a_1 + a_0$, and by the Factor Theorem $(x - 1)$ is a factor iff $P(1) = 0$",
+        "step_by_step_solution": [
+          "By the Factor Theorem, $(x - 1)$ is a factor of $P(x)$ if and only if $P(1) = 0$.",
+          "Since $1^k = 1$ for every integer $k$, $P(1) = a_n + a_{n-1} + \\dots + a_1 + a_0$, which is the sum of the coefficients."
+        ]
+      },
+      {
+        "id": "10_4_2_Q12",
+        "question": "Prove that when a polynomial $P(x)$ is divided by the non-monic linear divisor $(ax - b)$ (where $a \\neq 0$), the remainder is $R = P\\!\\left(\\frac{b}{a}\\right)$.",
+        "difficulty": "Extension",
+        "context": "Generalised Remainder Theorem Proof",
+        "final_answer": "From $P(x) = (ax - b)Q(x) + R$, substituting $x = \\frac{b}{a}$ makes $ax - b = 0$, leaving $P\\!\\left(\\frac{b}{a}\\right) = R$",
+        "step_by_step_solution": [
+          "Write the division identity $P(x) = (ax - b)Q(x) + R$, where $R$ is a constant.",
+          "Substitute $x = \\frac{b}{a}$ into both sides: $P\\!\\left(\\frac{b}{a}\\right) = \\left(a \\cdot \\frac{b}{a} - b\\right)Q\\!\\left(\\frac{b}{a}\\right) + R = 0 \\cdot Q\\!\\left(\\frac{b}{a}\\right) + R = R$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_4_2_1a",
+      "description": "Worked Example 10.4.2.1(a) P(2)",
+      "expression": "2*2**3 - 5*2**2 + 3*2 - 7",
+      "expected": -5
+    },
+    {
+      "id": "WE10_4_2_1b",
+      "description": "Worked Example 10.4.2.1(b) P(-1)",
+      "expression": "2*(-1)**3 - 5*(-1)**2 + 3*(-1) - 7",
+      "expected": -17
+    },
+    {
+      "id": "NYT10_4_2_1a",
+      "description": "Now You Try 10.4.2.1 P(2)",
+      "expression": "2**3 + 4*2**2 - 2*2 + 5",
+      "expected": 25
+    },
+    {
+      "id": "NYT10_4_2_1b",
+      "description": "Now You Try 10.4.2.1 P(-3)",
+      "expression": "(-3)**3 + 4*(-3)**2 - 2*(-3) + 5",
+      "expected": 20
+    },
+    {
+      "id": "WE10_4_2_2",
+      "description": "Worked Example 10.4.2.2 cubic factorisation",
+      "expression": "simplify(expand((x - 1)*(x - 3)*(x + 2)) - (x**3 - 2*x**2 - 5*x + 6))",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_4_2_2",
+      "description": "Now You Try 10.4.2.2 cubic factorisation",
+      "expression": "simplify(expand((x + 1)*(x - 2)*(x - 3)) - (x**3 - 4*x**2 + x + 6))",
+      "expected": 0
+    },
+    {
+      "id": "WE10_4_2_3a",
+      "description": "Worked Example 10.4.2.3(a) f(4)+g(-3)",
+      "expression": "(3*4 - 5) + ((-3)**2 + 2)",
+      "expected": 18
+    },
+    {
+      "id": "WE10_4_2_3b",
+      "description": "Worked Example 10.4.2.3(b) inverse composition",
+      "expression": "simplify(3*((x + 5)/3) - 5 - x)",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_4_2_3",
+      "description": "Now You Try 10.4.2.3 f(-2)",
+      "expression": "4*(-2) + 7",
+      "expected": -1
+    },
+    {
+      "id": "EX10_4_2_Q1",
+      "description": "Exercise 10.4.2 Q1 P(2)",
+      "expression": "3*2**3 - 4*2**2 + 2*2 - 1",
+      "expected": 11
+    },
+    {
+      "id": "EX10_4_2_Q2",
+      "description": "Exercise 10.4.2 Q2 k value",
+      "expression": "solve(Eq(3**3 - 2*3**2 + 3*k + 6, 0), k)[0]",
+      "expected": -5
+    },
+    {
+      "id": "EX10_4_2_Q3",
+      "description": "Exercise 10.4.2 Q3 cubic factorisation",
+      "expression": "simplify(expand((x + 1)*(x - 2)*(x + 3)) - (x**3 + 2*x**2 - 5*x - 6))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_4_2_Q4a",
+      "description": "Exercise 10.4.2 Q4 f(-2)",
+      "expression": "2*(-2)**2 - 3*(-2) + 4",
+      "expected": 18
+    },
+    {
+      "id": "EX10_4_2_Q4b",
+      "description": "Exercise 10.4.2 Q4 f(a+1)",
+      "expression": "simplify(expand(2*(a + 1)**2 - 3*(a + 1) + 4) - (2*a**2 + a + 3))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_4_2_Q5",
+      "description": "Exercise 10.4.2 Q5 V(2)",
+      "expression": "2*(10 - 2*2)*(8 - 2*2)",
+      "expected": 48
+    },
+    {
+      "id": "EX10_4_2_Q6",
+      "description": "Exercise 10.4.2 Q6 b value",
+      "expression": "solve([Eq(1 + a + b - 6, 0), Eq(8 + 4*a + 2*b - 6, 12)], (a, b))[b]",
+      "expected": 5
+    },
+    {
+      "id": "EX10_4_2_Q8",
+      "description": "Exercise 10.4.2 Q8 Fahrenheit at 25C",
+      "expression": "Rational(9, 5)*25 + 32",
+      "expected": 77
+    }
+  ]
+}

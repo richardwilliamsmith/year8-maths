@@ -1,0 +1,292 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Linear Equations, Inequalities, and Coordinate Geometry",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_4_1",
+      "section_code": "4A",
+      "title": "Linear Equations with Fractions and Literal Equations",
+      "vcaa_code": "VC2M9A04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each multi-term fractional linear equation:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{3x - 2}{4} - \\dfrac{2x - 5}{3} = \\dfrac{x + 1}{6}$", "answer": "$x = -12$" },
+            { "label": "b", "question": "$\\dfrac{2x + 3}{5} - \\dfrac{x - 4}{2} = \\dfrac{3x - 1}{10} - 1$", "answer": "$x = -9$" },
+            { "label": "c", "question": "$\\dfrac{4}{x - 3} = \\dfrac{7}{2x + 1}$", "answer": "$x = -25$" },
+            { "label": "d", "question": "$\\dfrac{3x + 2}{x - 1} = 3 + \\dfrac{5}{2x - 2}$", "answer": "No solution ($5 = \\dfrac{5}{2}$ is impossible)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each literal equation for $x$ in terms of the other pronumerals (assuming non-zero denominators):",
+          "parts": [
+            { "label": "a", "question": "$ax + b = cx + d$", "answer": "$x = \\dfrac{d - b}{a - c}$" },
+            { "label": "b", "question": "$\\dfrac{x}{a} + \\dfrac{x}{b} = 1$", "answer": "$x = \\dfrac{ab}{a + b}$" },
+            { "label": "c", "question": "$\\dfrac{x - a}{b} = \\dfrac{x - b}{a}$ ($a \\neq b$)", "answer": "$x = a + b$" },
+            { "label": "d", "question": "$y = \\dfrac{2x - 3}{x + 4}$", "answer": "$x = \\dfrac{4y + 3}{2 - y}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Transpose each scientific or geometric formula for the specified variable:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{1}{f} = \\dfrac{1}{u} + \\dfrac{1}{v} \\quad [u]$", "answer": "$u = \\dfrac{fv}{v - f}$" },
+            { "label": "b", "question": "$S = \\dfrac{a(1 - r^n)}{1 - r} \\quad [a]$", "answer": "$a = \\dfrac{S(1 - r)}{1 - r^n}$" },
+            { "label": "c", "question": "$T = 2\\pi\\sqrt{\\dfrac{L}{g}} \\quad [L]$", "answer": "$L = \\dfrac{g T^2}{4\\pi^2}$" },
+            { "label": "d", "question": "$A = 2\\pi r^2 + 2\\pi r h \\quad [h]$", "answer": "$h = \\dfrac{A - 2\\pi r^2}{2\\pi r}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each compound linear inequality for $x$:",
+          "parts": [
+            { "label": "a", "question": "$-5 \\le \\dfrac{3 - 2x}{3} < 7$", "answer": "$-9 < x \\le 9$" },
+            { "label": "b", "question": "$2x - 7 \\le 5x + 2 < 2x + 17$", "answer": "$-3 \\le x < 5$" },
+            { "label": "c", "question": "$\\dfrac{x - 1}{2} - \\dfrac{x + 2}{3} > 1$", "answer": "$x > 13$" },
+            { "label": "d", "question": "$|2x - 5| \\le 9$", "answer": "$-2 \\le x \\le 7$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Pump A can fill an irrigation dam in Mildura in $12\\text{ hours}$, while Pump B can fill the same dam in $15\\text{ hours}$. An outlet valve accidentally left open drains a full dam in $20\\text{ hours}$. If both pumps and the drain operate simultaneously, solve $\\dfrac{t}{12} + \\dfrac{t}{15} - \\dfrac{t}{20} = 1$ to find how many hours it takes to fill the dam.",
+          "answer": "$10\\text{ hours}$"
+        },
+        {
+          "number": 6,
+          "question": "A boat travels $30\\text{ km}$ upstream against a Murray River current of $3\\text{ km/h}$ in the same time it takes to travel $45\\text{ km}$ downstream with the current. Let $v\\text{ km/h}$ be the boat's speed in still water; solve $\\dfrac{30}{v - 3} = \\dfrac{45}{v + 3}$ to find $v$.",
+          "answer": "$v = 15\\text{ km/h}$"
+        },
+        {
+          "number": 7,
+          "question": "A chemist in Melbourne has $40\\text{ L}$ of a $15\\%$ saline solution. How many litres $x$ of a $40\\%$ saline solution must be added so that the final mixture has a concentration between $25\\%$ and $30\\%$ inclusive?",
+          "answer": "$\\dfrac{80}{3}\\text{ L} \\le x \\le 60\\text{ L}$ ($26.\\overline{6}\\text{ L}$ to $60\\text{ L}$)"
+        },
+        {
+          "number": 8,
+          "question": "In optics, the thin lens equation is $\\dfrac{1}{f} = \\dfrac{1}{u} + \\dfrac{1}{v}$. Using your transposed formula from Question 3(a), find the object distance $u$ when the focal length is $f = 12\\text{ cm}$ and the image distance is $v = 18\\text{ cm}$.",
+          "answer": "$u = 36\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Consider the literal linear equation $a^2 x - a = 4x - 2$. Solve for $x$ in terms of $a$ when $a \\neq \\pm 2$, and explain what happens to the solution set when (i) $a = 2$ and (ii) $a = -2$.",
+          "answer": "Factoring $(a^2 - 4)x = a - 2$ gives $(a - 2)(a + 2)x = a - 2$. For $a \\neq \\pm 2$, $x = \\dfrac{1}{a + 2}$. (i) When $a = 2$, the equation becomes $0x = 0$, so every real number $x$ is a solution. (ii) When $a = -2$, it becomes $0x = -4$, so there is no solution."
+        },
+        {
+          "number": 10,
+          "question": "Explain why we cannot simply multiply both sides of the inequality $\\dfrac{4}{x - 2} < 1$ by $(x - 2)$ without splitting into cases $x > 2$ and $x < 2$.",
+          "answer": "Because the sign of $(x - 2)$ depends on $x$: if $x > 2$, $(x - 2) > 0$ so the inequality direction is preserved ($4 < x - 2 \\implies x > 6$); if $x < 2$, $(x - 2) < 0$ so the inequality reverses ($4 > x - 2 \\implies x < 2$). Hence the full solution is $x < 2$ or $x > 6$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_4_1_1a", "expression": "(3*(-12) - 2)/4 - (2*(-12) - 5)/3 - ((-12) + 1)/6", "expected": 0 },
+        { "id": "WSE9_4_1_1b", "expression": "(2*(-9) + 3)/5 - ((-9) - 4)/2 - ((3*(-9) - 1)/10 - 1)", "expected": 0 },
+        { "id": "WSE9_4_1_1c", "expression": "4/(-25 - 3) - 7/(2*(-25) + 1)", "expected": 0 },
+        { "id": "WSE9_4_1_2c", "expression": "simplify(((a + b) - a)/b - ((a + b) - b)/a)", "expected": 0 },
+        { "id": "WSE9_4_1_4c", "expression": "(13 - 1)/2 - (13 + 2)/3", "expected": 1 },
+        { "id": "WSE9_4_1_5", "expression": "10/12 + 10/15 - 10/20", "expected": 1 },
+        { "id": "WSE9_4_1_6", "expression": "30/(15 - 3) - 45/(15 + 3)", "expected": 0 },
+        { "id": "WSE9_4_1_7", "expression": "(0.15*40 + 0.40*60)/(40 + 60)", "expected": 0.30 },
+        { "id": "WSE9_4_1_8", "expression": "12*18/(18 - 12)", "expected": 36 }
+      ]
+    },
+    {
+      "section_id": "9_4_2",
+      "section_code": "4B",
+      "title": "Gradient, Midpoint, and Distance on the Cartesian Plane",
+      "vcaa_code": "VC2M9A03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the value(s) of the parameter $k$ satisfying each coordinate geometry condition:",
+          "parts": [
+            { "label": "a", "question": "Points $(-2, 1)$, $(1, k)$, and $(7, 13)$ are collinear", "answer": "$k = 5$" },
+            { "label": "b", "question": "The distance between $(k, -1)$ and $(2, 3)$ is $5$", "answer": "$k = -1$ or $k = 5$" },
+            { "label": "c", "question": "The line through $(k, 3)$ and $(4, k + 1)$ has gradient $-\\dfrac{1}{2}$", "answer": "$k = -8$" },
+            { "label": "d", "question": "Point $(x, 2)$ is equidistant from $A(-1, 5)$ and $B(3, -3)$", "answer": "$x = -1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Given $A(-4, 2)$ and $B(8, -6)$, find the coordinates of the point $P$ that:",
+          "parts": [
+            { "label": "a", "question": "Divides $AB$ internally in the ratio $1 : 3$", "answer": "$(-1, 0)$" },
+            { "label": "b", "question": "Divides $AB$ internally in the ratio $3 : 1$", "answer": "$(5, -4)$" },
+            { "label": "c", "question": "Lies one-third of the way from $A$ to $B$", "answer": "$(0, -\\dfrac{2}{3})$" },
+            { "label": "d", "question": "Is the reflection of $A$ across $B$ (so $B$ is the midpoint of $AP$)", "answer": "$(20, -14)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "In parallelogram $ABCD$, three vertices in order are $A(1, 2)$, $B(5, 4)$, and $C(7, 9)$. Using midpoint and distance properties, find:",
+          "parts": [
+            { "label": "a", "question": "The midpoint of diagonal $AC$", "answer": "$(4, \\dfrac{11}{2})$" },
+            { "label": "b", "question": "The coordinates of the fourth vertex $D$", "answer": "$(3, 7)$" },
+            { "label": "c", "question": "The exact lengths of sides $AB$ and $BC$", "answer": "$AB = 2\\sqrt{5},\\; BC = \\sqrt{29}$" },
+            { "label": "d", "question": "The exact lengths of diagonals $AC$ and $BD$", "answer": "$AC = \\sqrt{85},\\; BD = \\sqrt{13}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "For $\\triangle ABC$ with vertices $A(-2, 1)$, $B(4, 5)$, and $C(6, 2)$:",
+          "parts": [
+            { "label": "a", "question": "Find the gradients of $AB$ and $BC$", "answer": "$m_{AB} = \\dfrac{2}{3},\\; m_{BC} = -\\dfrac{3}{2}$" },
+            { "label": "b", "question": "Find the exact side lengths $AB$, $BC$, and $AC$", "answer": "$AB = 2\\sqrt{13},\\; BC = \\sqrt{13},\\; AC = \\sqrt{65}$" },
+            { "label": "c", "question": "Verify that $AB^2 + BC^2 = AC^2$ and state which angle is $90^\\circ$", "answer": "$52 + 13 = 65$; $\\angle ABC = 90^\\circ$" },
+            { "label": "d", "question": "Find the exact area of $\\triangle ABC$", "answer": "$13\\text{ square units}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Three mobile communications towers in regional Victoria are located at $A(0, 8)$, $B(-6, 0)$, and $C(10, 0)$ (in kilometres). Verify that the point $P(2, 1)$ is equidistant from all three towers (the circumcentre), and state the exact coverage radius $R = PA$.",
+          "answer": "$PA = PB = PC = \\sqrt{65}\\text{ km}$"
+        },
+        {
+          "number": 6,
+          "question": "A drone flies in a straight line from launch pad $A(-5, -2)$ to waypoint $B(10, 8)$ (in kilometres). Where does the drone cross the $y$-axis, and what fraction of its total flight distance has it completed at that moment?",
+          "answer": "Crosses $y$-axis at $(0, \\dfrac{4}{3})$, having completed $\\dfrac{1}{3}$ of the total distance"
+        },
+        {
+          "number": 7,
+          "question": "Show that the quadrilateral with vertices $P(1, 2)$, $Q(4, 6)$, $R(9, 6)$, and $S(6, 2)$ is a rhombus by proving that all four sides have equal length, and find its area using the lengths of its diagonals $PR$ and $QS$.",
+          "answer": "All four sides have length $5$; diagonals $PR = 4\\sqrt{5}$ and $QS = 2\\sqrt{5}$, so area $= \\dfrac{1}{2} PR \\cdot QS = 20\\text{ square units}$"
+        },
+        {
+          "number": 8,
+          "question": "In $\\triangle OAB$ with $O(0, 0)$, $A(8, 2)$, and $B(4, 10)$, let $M$ be the midpoint of $OA$ and $N$ be the midpoint of $OB$. Calculate the gradients and exact lengths of $MN$ and $AB$ to verify the Midpoint Theorem.",
+          "answer": "$M(4, 1), N(2, 5)$; $m_{MN} = m_{AB} = -2$, and $MN = \\sqrt{20} = 2\\sqrt{5} = \\dfrac{1}{2} AB$ ($AB = 4\\sqrt{5}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove using coordinate geometry that for any triangle with vertices $O(0, 0)$, $A(2a, 0)$, and $B(2b, 2c)$, the line segment joining the midpoints of $OA$ and $OB$ is parallel to $AB$ and half its length.",
+          "answer": "Midpoints are $M(a, 0)$ and $N(b, c)$. Gradient $m_{MN} = \\dfrac{c - 0}{b - a} = \\dfrac{c}{b - a}$ and $m_{AB} = \\dfrac{2c - 0}{2b - 2a} = \\dfrac{c}{b - a}$, so $MN \\parallel AB$. Length $MN = \\sqrt{(b - a)^2 + c^2}$ and $AB = \\sqrt{(2b - 2a)^2 + (2c)^2} = 2\\sqrt{(b - a)^2 + c^2} = 2MN$."
+        },
+        {
+          "number": 10,
+          "question": "The centroid $G$ of $\\triangle ABC$ lies two-thirds of the way from vertex $A(x_1, y_1)$ to the midpoint $M$ of $BC$, where $B(x_2, y_2)$ and $C(x_3, y_3)$. Show that the coordinates of $G$ are $\\left(\\dfrac{x_1 + x_2 + x_3}{3}, \\dfrac{y_1 + y_2 + y_3}{3}\\right)$.",
+          "answer": "$M = \\left(\\dfrac{x_2 + x_3}{2}, \\dfrac{y_2 + y_3}{2}\\right)$. Moving $\\dfrac{2}{3}$ of the way from $A$ to $M$ gives $x_G = x_1 + \\dfrac{2}{3}\\left(\\dfrac{x_2 + x_3}{2} - x_1\\right) = \\dfrac{x_1 + x_2 + x_3}{3}$, and similarly $y_G = \\dfrac{y_1 + y_2 + y_3}{3}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_4_2_1a", "expression": "(5 - 1)/(1 - (-2)) - (13 - 5)/(7 - 1)", "expected": 0 },
+        { "id": "WSE9_4_2_1b", "expression": "sqrt((5 - 2)**2 + (-1 - 3)**2)", "expected": 5 },
+        { "id": "WSE9_4_2_1c", "expression": "((-8 + 1) - 3)/(4 - (-8))", "expected": "-1/2" },
+        { "id": "WSE9_4_2_3c", "expression": "sqrt((5 - 1)**2 + (4 - 2)**2) - 2*sqrt(5)", "expected": 0 },
+        { "id": "WSE9_4_2_4c", "expression": "((4 - (-2))**2 + (5 - 1)**2) + ((6 - 4)**2 + (2 - 5)**2) - ((6 - (-2))**2 + (2 - 1)**2)", "expected": 0 },
+        { "id": "WSE9_4_2_4d", "expression": "2*sqrt(13) * sqrt(13) / 2", "expected": 13 },
+        { "id": "WSE9_4_2_5", "expression": "(2 - 0)**2 + (1 - 8)**2", "expected": 65 },
+        { "id": "WSE9_4_2_7", "expression": "sqrt((9 - 1)**2 + (6 - 2)**2) * sqrt((6 - 4)**2 + (2 - 6)**2) / 2", "expected": 20 },
+        { "id": "WSE9_4_2_8", "expression": "sqrt((8 - 4)**2 + (2 - 10)**2) / sqrt((2 - 4)**2 + (5 - 1)**2)", "expected": 2 }
+      ]
+    },
+    {
+      "section_id": "9_4_3",
+      "section_code": "4C",
+      "title": "Equations of Straight Lines and Linear Modelling",
+      "vcaa_code": "VC2M9A04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the equation of each line in gradient-intercept form $y = mx + c$ using parallel ($m_1 = m_2$) and perpendicular ($m_1 m_2 = -1$) relationships:",
+          "parts": [
+            { "label": "a", "question": "Parallel to $y = 3x - 7$ and passing through $(-2, 5)$", "answer": "$y = 3x + 11$" },
+            { "label": "b", "question": "Parallel to $2x + 5y = 10$ and passing through $(5, -1)$", "answer": "$y = -\\dfrac{2}{5}x + 1$" },
+            { "label": "c", "question": "Perpendicular to $y = 2x + 3$ and passing through $(4, -1)$", "answer": "$y = -\\dfrac{1}{2}x + 1$" },
+            { "label": "d", "question": "Perpendicular to $3x - 4y = 12$ and passing through $(-6, 2)$", "answer": "$y = -\\dfrac{4}{3}x - 6$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the equation of the perpendicular bisector of the line segment joining each pair of points:",
+          "parts": [
+            { "label": "a", "question": "$A(2, 1)$ and $B(6, 9)$", "answer": "$y = -\\dfrac{1}{2}x + 7$" },
+            { "label": "b", "question": "$P(-3, 4)$ and $Q(5, -2)$", "answer": "$y = \\dfrac{4}{3}x - \\dfrac{1}{3}$" },
+            { "label": "c", "question": "$M(1, -5)$ and $N(7, 1)$", "answer": "$y = -x + 2$" },
+            { "label": "d", "question": "$R(-4, 2)$ and $S(2, 2)$", "answer": "$x = -1$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the value of the parameter $k$ for each linear condition:",
+          "parts": [
+            { "label": "a", "question": "The lines $kx + 3y = 7$ and $2x - 6y = 5$ are parallel", "answer": "$k = -1$" },
+            { "label": "b", "question": "The lines $4x + ky = 9$ and $3x - 2y = 4$ are perpendicular", "answer": "$k = 6$" },
+            { "label": "c", "question": "The line $(k - 2)x + 3y = 12$ has $x$-intercept $4$", "answer": "$k = 5$" },
+            { "label": "d", "question": "The lines $y = 2x + 1$, $y = -x + 7$, and $y = kx - 3$ are concurrent (meet at a single point)", "answer": "$k = 4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "For the line $3x + 4y = 24$, find:",
+          "parts": [
+            { "label": "a", "question": "The coordinates of its $x$-intercept $A$ and $y$-intercept $B$", "answer": "$A(8, 0),\\; B(0, 6)$" },
+            { "label": "b", "question": "The exact length of the segment $AB$", "answer": "$10$" },
+            { "label": "c", "question": "The equation of the line through the origin $O(0, 0)$ perpendicular to $AB$", "answer": "$y = \\dfrac{4}{3}x$" },
+            { "label": "d", "question": "The shortest (perpendicular) distance from the origin $O(0, 0)$ to the line $3x + 4y = 24$", "answer": "$4.8$ ($\\dfrac{24}{5}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A straight gas pipeline runs along the line $y = 2x - 1$ on a regional grid (in km). A farmhouse at $F(7, 3)$ needs to be connected to the pipeline by the shortest possible service pipe (which meets the main pipeline at right angles). Find (a) the equation of the service pipe, (b) the connection point $P$ on the main pipeline, and (c) the exact length of the service pipe.",
+          "answer": "(a) $y = -\\dfrac{1}{2}x + \\dfrac{13}{2}$, (b) $P(3, 5)$, (c) $2\\sqrt{5}\\text{ km}$"
+        },
+        {
+          "number": 6,
+          "question": "Under Australian taxation depreciation rules, a printing press in Sydney is bought for $\\$84\\,000$ and depreciates linearly to a salvage value of $\\$12\\,000$ over $8$ years. A second machine is bought at the same time for $\\$62\\,000$ and depreciates linearly at $\\$6250$ per year. After how many years do the two machines have the exact same book value, and what is that value?",
+          "answer": "After $8\\text{ years}$, when both have book value $\\$12\\,000$"
+        },
+        {
+          "number": 7,
+          "question": "A line with positive $x$-intercept $a$ and positive $y$-intercept $b$ has intercept equation $\\dfrac{x}{a} + \\dfrac{y}{b} = 1$. If the line has gradient $-\\dfrac{3}{4}$ and encloses a right-angled triangle of area $54\\text{ square units}$ with the coordinate axes in the first quadrant, find $a, b,$ and the equation of the line.",
+          "answer": "$a = 12,\\; b = 9$; equation $3x + 4y = 36$"
+        },
+        {
+          "number": 8,
+          "question": "In $\\triangle ABC$ with vertices $A(0, 6)$, $B(-4, 0)$, and $C(8, 0)$, find the equations of the altitude from $A$ to $BC$ and the altitude from $B$ to $AC$, and hence find the coordinates of the orthocentre $H$ (where the altitudes intersect).",
+          "answer": "Altitude from $A$ is $x = 0$; altitude from $B$ (perpendicular to $AC$ of gradient $-\\dfrac{3}{4}$) is $y = \\dfrac{4}{3}(x + 4)$; orthocentre $H(0, \\dfrac{16}{3})$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Using the right-angled triangle formed by the origin $O(0, 0)$, $P(1, m_1)$, and $Q(1, m_2)$ where $\\angle POQ = 90^\\circ$, apply Pythagoras' theorem $OP^2 + OQ^2 = PQ^2$ to prove that two non-vertical lines are perpendicular if and only if $m_1 m_2 = -1$.",
+          "answer": "$OP^2 = 1 + m_1^2$, $OQ^2 = 1 + m_2^2$, and $PQ^2 = (m_1 - m_2)^2 = m_1^2 - 2m_1 m_2 + m_2^2$. By Pythagoras' theorem, $(1 + m_1^2) + (1 + m_2^2) = m_1^2 - 2m_1 m_2 + m_2^2 \\iff 2 = -2m_1 m_2 \\iff m_1 m_2 = -1$."
+        },
+        {
+          "number": 10,
+          "question": "Prove that every point $(x, y)$ on the perpendicular bisector of $A(x_1, y_1)$ and $B(x_2, y_2)$ is equidistant from $A$ and $B$ by simplifying the algebraic equation $PA^2 = PB^2$.",
+          "answer": "Setting $(x - x_1)^2 + (y - y_1)^2 = (x - x_2)^2 + (y - y_2)^2$ and cancelling $x^2 + y^2$ gives $2(x_2 - x_1)x + 2(y_2 - y_1)y = x_2^2 - x_1^2 + y_2^2 - y_1^2$, which rearranges to $\\left(y - \\dfrac{y_1 + y_2}{2}\\right) = -\\dfrac{x_2 - x_1}{y_2 - y_1}\\left(x - \\dfrac{x_1 + x_2}{2}\\right)$, the exact equation of the perpendicular bisector."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_4_3_1a", "expression": "3*(-2) + 11", "expected": 5 },
+        { "id": "WSE9_4_3_1c", "expression": "(-1/2)*4 + 1", "expected": -1 },
+        { "id": "WSE9_4_3_1d", "expression": "(-4/3)*(-6) - 6", "expected": 2 },
+        { "id": "WSE9_4_3_2a", "expression": "(-1/2)*4 + 7", "expected": 5 },
+        { "id": "WSE9_4_3_3d", "expression": "(5 + 3)/2", "expected": 4 },
+        { "id": "WSE9_4_3_4d", "expression": "8 * 6 / 10", "expected": 4.8 },
+        { "id": "WSE9_4_3_5c", "expression": "sqrt((7 - 3)**2 + (3 - 5)**2) - 2*sqrt(5)", "expected": 0 },
+        { "id": "WSE9_4_3_6", "expression": "(84000 - 62000) / (9000 - 6250)", "expected": 8 },
+        { "id": "WSE9_4_3_7", "expression": "12 * 9 / 2", "expected": 54 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "section_id": "9_6_1",
+    "section_code": "6A",
+    "chapter_number": 6,
+    "chapter_title": "Surface Area and Volume of Cylinders, Prisms, and Composite Solids",
+    "title": "Surface Area of Right Prisms and Cylinders",
+    "vcaa_code": "VC2M9M02",
+    "vcaa_description": "Solve problems involving the volume and surface area of right prisms and cylinders using appropriate units.",
+    "strand": "Measurement",
+    "target_mastery": "Calculate the total surface area and curved surface area of right prisms, closed and open cylinders ($\\text{TSA} = 2\\pi r^2 + 2\\pi rh$), and composite 3D solids.",
+    "prerequisites": [
+      "Area and circumference of circles $A = \\pi r^2$, $C = 2\\pi r$ (Year 8 VC2M8M03)",
+      "Area of triangles, rectangles, trapeziums, and composite 2D shapes (Year 8 VC2M8M01)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Right prism",
+        "definition": "A polyhedron with two congruent, parallel polygonal bases joined by rectangular lateral faces perpendicular to the bases."
+      },
+      {
+        "term": "Total Surface Area (TSA)",
+        "definition": "The sum of the areas of all exposed outer faces and curved surfaces of a three-dimensional solid, measured in square units."
+      },
+      {
+        "term": "Curved Surface Area (CSA)",
+        "definition": "The lateral area of a cylinder of radius $r$ and height $h$, which unrolls into a rectangle of width $2\\pi r$ and height $h$, giving $\\text{CSA} = 2\\pi rh$."
+      },
+      {
+        "term": "Composite solid",
+        "definition": "A three-dimensional object formed by joining or excavating two or more basic geometric solids (such as prisms and cylinders)."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_6_1_1",
+      "title": "Surface Area of Right Prisms via Nets and Cross-Sections",
+      "explanation": "A right prism has two congruent bases of area $A_{\\text{base}}$ and lateral rectangular faces whose combined width equals the perimeter $P_{\\text{base}}$ of the base. Unfolding the net shows that the lateral faces form a single strip of area $P_{\\text{base}} \\times H$, where $H$ is the prism length (height between bases).",
+      "formula_latex": "\\text{TSA}_{\\text{prism}} = 2A_{\\text{base}} + P_{\\text{base}} \\times H",
+      "callout_title": "Use Pythagoras' Theorem for Missing Slant Edges",
+      "callout_rule": "In a right-angled or isosceles triangular prism, always check whether you need Pythagoras' theorem to find the slanted edge of the triangle before calculating the base perimeter."
+    },
+    {
+      "id": "theory_9_6_1_2",
+      "title": "Curved and Total Surface Area of Cylinders",
+      "explanation": "When the curved wall of a right circular cylinder of radius $r$ and height $h$ is cut vertically and unrolled flat, it forms a rectangle of length equal to the circumference $2\\pi r$ and height $h$, giving curved surface area $\\text{CSA} = 2\\pi rh$. Adding the two circular end caps of area $\\pi r^2$ each gives the total surface area of a closed cylinder.",
+      "formula_latex": "\\text{CSA} = 2\\pi rh, \\qquad \\text{TSA}_{\\text{closed}} = 2\\pi r^2 + 2\\pi rh = 2\\pi r(r + h)",
+      "callout_title": "Count How Many Circular Ends Are Present",
+      "callout_rule": "A closed tin has $2$ circular ends ($2\\pi r^2 + 2\\pi rh$); an open-top cup has $1$ circular base ($\\pi r^2 + 2\\pi rh$); an open pipe has $0$ ends ($2\\pi rh$)."
+    },
+    {
+      "id": "theory_9_6_1_3",
+      "title": "Surface Area of Composite Solids and Half-Cylinders",
+      "explanation": "To find the surface area of a composite solid, sum only the faces exposed on the exterior; never include internal joining interfaces that are hidden inside the solid. For a solid half-cylinder of radius $r$ and length $h$, the exterior consists of two semicircular ends (together equal to one full circle $\\pi r^2$), half the curved cylinder wall ($\\pi rh$), and the flat rectangular base ($2rh$).",
+      "formula_latex": "\\text{TSA}_{\\text{half-cylinder}} = \\pi r^2 + \\pi rh + 2rh",
+      "callout_title": "Do Not Forget the Flat Cut Face or Subtract Hidden Overlap",
+      "callout_rule": "When a solid is sliced in half, a new flat face is exposed; when two solids are glued together, the glued overlap area is subtracted from both solids."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_6_1_1",
+      "title": "Total Surface Area of a Right-Angled Triangular Prism",
+      "difficulty": "Fluency",
+      "problem": "A right triangular prism has right-angled triangle bases with perpendicular legs of $6\\text{ cm}$ and $8\\text{ cm}$, and a prism length of $H = 15\\text{ cm}$. Calculate its total surface area.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Use Pythagoras' theorem to find the hypotenuse $c$ of the triangular base, then calculate the area $A_{\\text{base}}$ and perimeter $P_{\\text{base}}$ of the triangle.",
+          "working": "$$c = \\sqrt{6^2 + 8^2} = \\sqrt{100} = 10\\text{ cm}$$\n$$A_{\\text{base}} = \\frac{1}{2} \\times 6 \\times 8 = 24\\text{ cm}^2, \\qquad P_{\\text{base}} = 6 + 8 + 10 = 24\\text{ cm}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Apply $\\text{TSA} = 2A_{\\text{base}} + P_{\\text{base}} \\times H$ with $H = 15\\text{ cm}$.",
+          "working": "$$\\text{TSA} = 2(24) + 24 \\times 15 = 48 + 360 = 408\\text{ cm}^2$$"
+        }
+      ],
+      "final_answer": "$408\\text{ cm}^2$",
+      "now_you_try": {
+        "problem": "A right triangular prism has a right-angled triangular cross-section with legs $5\\text{ cm}$ and $12\\text{ cm}$, and length $H = 10\\text{ cm}$. Find its total surface area.",
+        "hint": "Find the hypotenuse $\\sqrt{5^2 + 12^2} = 13\\text{ cm}$ first.",
+        "working_summary": "$A_{\\text{base}} = 30\\text{ cm}^2$, $P_{\\text{base}} = 5 + 12 + 13 = 30\\text{ cm}$; $\\text{TSA} = 2(30) + 30(10) = 360\\text{ cm}^2$.",
+        "answer": "$360\\text{ cm}^2$"
+      }
+    },
+    {
+      "id": "WE9_6_1_2",
+      "title": "Exact and Rounded Surface Area of a Closed Cylinder",
+      "difficulty": "Understanding",
+      "problem": "A closed cylindrical steel drum has diameter $12\\text{ cm}$ and height $20\\text{ cm}$. Find its total surface area (a) in exact form in terms of $\\pi$ and (b) rounded to two decimal places.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Halve the diameter to obtain the radius $r = 6\\text{ cm}$, then substitute $r = 6$ and $h = 20$ into $\\text{TSA} = 2\\pi r^2 + 2\\pi rh$.",
+          "working": "$$r = \\frac{12}{2} = 6\\text{ cm}$$\n$$\\text{TSA} = 2\\pi(6)^2 + 2\\pi(6)(20) = 72\\pi + 240\\pi = 312\\pi\\text{ cm}^2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Evaluate $312\\pi$ numerically and round to two decimal places.",
+          "working": "$$\\text{TSA} = 312\\pi \\approx 980.18\\text{ cm}^2$$"
+        }
+      ],
+      "final_answer": "(a) $312\\pi\\text{ cm}^2$, (b) $980.18\\text{ cm}^2$",
+      "now_you_try": {
+        "problem": "Find the exact total surface area of a closed cylinder with radius $r = 5\\text{ cm}$ and height $h = 11\\text{ cm}$.",
+        "hint": "Use $\\text{TSA} = 2\\pi r(r + h)$.",
+        "working_summary": "$\\text{TSA} = 2\\pi(5)(5 + 11) = 10\\pi \\times 16 = 160\\pi\\text{ cm}^2$.",
+        "answer": "$160\\pi\\text{ cm}^2$"
+      }
+    },
+    {
+      "id": "WE9_6_1_3",
+      "title": "Surface Area of a Half-Cylinder Quonset Greenhouse",
+      "difficulty": "Problem-Solving",
+      "problem": "A half-cylinder polycarbonate greenhouse in the Dandenong Ranges has a semicircular cross-section of radius $r = 3\\text{ m}$ and length $h = 10\\text{ m}$. Calculate the total exterior surface area of polycarbonate panelling required to cover the curved roof and both semicircular end walls (excluding the soil floor), in exact form and correct to one decimal place.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The two semicircular end walls combine to form one full circle of area $\\pi r^2$. The curved roof is half the curved surface area of a full cylinder, $\\frac{1}{2}(2\\pi rh) = \\pi rh$.",
+          "working": "$$A_{\\text{ends}} = \\pi(3)^2 = 9\\pi\\text{ m}^2$$\n$$A_{\\text{roof}} = \\pi(3)(10) = 30\\pi\\text{ m}^2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Add the two components for the exact area and evaluate to one decimal place.",
+          "working": "$$A_{\\text{total}} = 9\\pi + 30\\pi = 39\\pi \\approx 122.5\\text{ m}^2$$"
+        }
+      ],
+      "final_answer": "$39\\pi\\text{ m}^2 \\approx 122.5\\text{ m}^2$",
+      "now_you_try": {
+        "problem": "If the greenhouse in Worked Example 9.6.1.3 is instead a sealed solid half-cylinder trough including its flat rectangular base of width $2r = 6\\text{ m}$ and length $10\\text{ m}$, what is its exact total surface area?",
+        "hint": "Add the rectangular base area $2rh = 6 \\times 10 = 60\\text{ m}^2$ to $39\\pi\\text{ m}^2$.",
+        "working_summary": "$\\text{TSA} = 39\\pi + 6(10) = (39\\pi + 60)\\text{ m}^2$.",
+        "answer": "$(39\\pi + 60)\\text{ m}^2$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_6_1_1",
+      "title": "Substituting Diameter Instead of Radius into Cylinder Formulas",
+      "misconception": "Substituting the given diameter $d = 12\\text{ cm}$ directly as $r = 12$ in $2\\pi r^2 + 2\\pi rh$.",
+      "correct_concept": "Always check whether a question gives diameter or radius first. If diameter $d$ is given, write $r = \\frac{d}{2}$ at the very top of your working.",
+      "incorrect_working": "$$d = 12,\\; h = 20 \\implies \\text{TSA} = 2\\pi(12)^2 + 2\\pi(12)(20) = 768\\pi \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$r = \\frac{12}{2} = 6 \\implies \\text{TSA} = 2\\pi(6)^2 + 2\\pi(6)(20) = 312\\pi$$",
+      "counter_example": "Using $d$ instead of $r$ quadruples the circular end areas and doubles the curved surface area."
+    },
+    {
+      "id": "misc_9_6_1_2",
+      "title": "Simply Adding Two Solids' Total Surface Areas for a Composite Solid",
+      "misconception": "Calculating the TSA of a cube and the TSA of a cylinder sitting on top of the cube, then adding them together without removing the circular interface.",
+      "correct_concept": "Where the cylinder base sits flat on the cube, that circle of area $\\pi r^2$ is covered on both the cylinder and the cube face, so $2\\pi r^2$ must be subtracted from the combined TSA (leaving only the curved cylinder wall $2\\pi rh$ plus the exposed top circle $\\pi r^2$, which adds just $+2\\pi rh$ to the cube's TSA).",
+      "incorrect_working": "$$\\text{TSA}_{\\text{composite}} = \\text{TSA}_{\\text{cube}} + 2\\pi r^2 + 2\\pi rh \\quad \\text{(Incorrect: counts hidden circle twice)}$$",
+      "correct_working": "$$\\text{TSA}_{\\text{composite}} = \\text{TSA}_{\\text{cube}} + 2\\pi rh \\quad \\text{(top circle replaces covered patch on cube)}$$",
+      "counter_example": "The top circular cap of the cylinder has the exact same area $\\pi r^2$ as the patch of the cube it covers."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_6_1_Q1",
+        "question": "Calculate the total surface area of a rectangular prism of length $9\\text{ cm}$, width $4\\text{ cm}$, and height $5\\text{ cm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$202\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Use $\\text{TSA} = 2(lw + lh + wh)$ with $l = 9, w = 4, h = 5$.",
+          "Evaluate: $\\text{TSA} = 2(36 + 45 + 20) = 2(101) = 202\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q2",
+        "question": "Find the exact curved surface area (CSA) and exact total surface area (TSA) of a closed cylinder with radius $4\\text{ cm}$ and height $9\\text{ cm}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$\\text{CSA} = 72\\pi\\text{ cm}^2$, $\\text{TSA} = 104\\pi\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Calculate $\\text{CSA} = 2\\pi rh = 2\\pi(4)(9) = 72\\pi\\text{ cm}^2$.",
+          "Add the two circular ends $2\\pi r^2 = 2\\pi(16) = 32\\pi\\text{ cm}^2$: $\\text{TSA} = 72\\pi + 32\\pi = 104\\pi\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q3",
+        "question": "An open-top cylindrical stainless-steel beaker has diameter $10\\text{ cm}$ and height $14\\text{ cm}$. Find its exact outer surface area (one circular base plus the curved side).",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$165\\pi\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "The radius is $r = \\frac{10}{2} = 5\\text{ cm}$.",
+          "Since the top is open, $A = \\pi r^2 + 2\\pi rh = \\pi(5)^2 + 2\\pi(5)(14) = 25\\pi + 140\\pi = 165\\pi\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q4",
+        "question": "A right prism has a trapezium cross-section with parallel sides $a = 6\\text{ cm}$ and $b = 12\\text{ cm}$, perpendicular height $4\\text{ cm}$, and two equal sloping sides of $5\\text{ cm}$ each. If the length of the prism is $H = 10\\text{ cm}$, find its total surface area.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$352\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Calculate the base area and perimeter: $A_{\\text{base}} = \\frac{1}{2}(6 + 12)(4) = 36\\text{ cm}^2$ and $P_{\\text{base}} = 6 + 12 + 5 + 5 = 28\\text{ cm}$.",
+          "Apply $\\text{TSA} = 2A_{\\text{base}} + P_{\\text{base}} H = 2(36) + 28(10) = 72 + 280 = 352\\text{ cm}^2$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_6_1_Q5",
+        "question": "A cylindrical paint roller has diameter $7\\text{ cm}$ and width $25\\text{ cm}$. Using $\\pi \\approx \\frac{22}{7}$, find (a) the area of wall painted in one complete revolution and (b) the area painted in $40$ revolutions in $\\text{m}^2$.",
+        "difficulty": "Medium",
+        "context": "Trade & Decorating",
+        "final_answer": "(a) $550\\text{ cm}^2$, (b) $2.2\\text{ m}^2$",
+        "step_by_step_solution": [
+          "One revolution covers the curved surface area $\\text{CSA} = \\pi d h = \\frac{22}{7} \\times 7 \\times 25 = 550\\text{ cm}^2$.",
+          "In $40$ revolutions: $40 \\times 550 = 22\\,000\\text{ cm}^2 = \\frac{22\\,000}{10\\,000}\\text{ m}^2 = 2.2\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q6",
+        "question": "A solid wooden trophy plinth consists of a cube of side length $10\\text{ cm}$ with a solid cylinder of radius $3\\text{ cm}$ and height $8\\text{ cm}$ centred and glued on its top face. Find the exact total exposed surface area of the composite solid.",
+        "difficulty": "Challenging",
+        "context": "Composite Solids",
+        "final_answer": "$(600 + 48\\pi)\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "The cube has total surface area $6 \\times 10^2 = 600\\text{ cm}^2$. The circular top of the cylinder ($\\pi r^2$) replaces the identical circular patch covered on the top face of the cube.",
+          "Therefore, only the curved surface area of the cylinder $2\\pi rh = 2\\pi(3)(8) = 48\\pi\\text{ cm}^2$ is added, giving $\\text{TSA} = (600 + 48\\pi)\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q7",
+        "question": "A camping tent is shaped as an isosceles triangular prism of length $2.5\\text{ m}$, base width $2.4\\text{ m}$, and vertical ridge height $1.6\\text{ m}$. Find the total area of canvas required to make the tent, including both triangular ends, both sloping roof panels, and the rectangular groundsheet floor.",
+        "difficulty": "Challenging",
+        "context": "Outdoor Design",
+        "final_answer": "$19.84\\text{ m}^2$",
+        "step_by_step_solution": [
+          "Half the base width is $1.2\\text{ m}$, so each sloping roof edge has length $s = \\sqrt{1.2^2 + 1.6^2} = \\sqrt{1.44 + 2.56} = \\sqrt{4} = 2.0\\text{ m}$.",
+          "The triangular base has $A_{\\text{base}} = \\frac{1}{2}(2.4)(1.6) = 1.92\\text{ m}^2$ and perimeter $P = 2.4 + 2.0 + 2.0 = 6.4\\text{ m}$. Thus $\\text{TSA} = 2(1.92) + 6.4(2.5) = 3.84 + 16.00 = 19.84\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q8",
+        "question": "A closed cylinder has radius $r = 6\\text{ cm}$ and total surface area $216\\pi\\text{ cm}^2$. Find the height $h$ of the cylinder.",
+        "difficulty": "Challenging",
+        "context": "Inverse Mensuration",
+        "final_answer": "$h = 12\\text{ cm}$",
+        "step_by_step_solution": [
+          "Substitute $r = 6$ and $\\text{TSA} = 216\\pi$ into $2\\pi r^2 + 2\\pi rh = \\text{TSA}$: $2\\pi(36) + 12\\pi h = 216\\pi$.",
+          "Divide by $\\pi$ and solve: $72 + 12h = 216 \\implies 12h = 144 \\implies h = 12\\text{ cm}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_6_1_Q9",
+        "question": "Prove algebraically that for a closed cylinder whose height equals its diameter ($h = 2r$), the curved surface area is exactly twice the combined area of the two circular ends, and state the simplified formula for its total surface area in terms of $r$.",
+        "difficulty": "Medium",
+        "context": "Algebraic Proof",
+        "final_answer": "$\\text{CSA} = 2\\pi r(2r) = 4\\pi r^2 = 2(2\\pi r^2)$, and $\\text{TSA} = 6\\pi r^2$",
+        "step_by_step_solution": [
+          "The two circular ends have combined area $A_{\\text{ends}} = 2\\pi r^2$. Substituting $h = 2r$ into $\\text{CSA} = 2\\pi rh$ gives $\\text{CSA} = 2\\pi r(2r) = 4\\pi r^2 = 2 A_{\\text{ends}}$.",
+          "Adding the two gives $\\text{TSA} = 2\\pi r^2 + 4\\pi r^2 = 6\\pi r^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q10",
+        "question": "A solid cylinder of radius $4\\text{ cm}$ and height $10\\text{ cm}$ is sliced vertically down its axis of symmetry into two identical half-cylinders. By how many $\\text{cm}^2$ does the combined total surface area of the two pieces exceed the total surface area of the original cylinder?",
+        "difficulty": "Challenging",
+        "context": "Geometric Reasoning",
+        "final_answer": "$160\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "All original exterior surfaces remain present across the two halves, while the vertical cut exposes two new flat rectangular faces, each of width $2r = 8\\text{ cm}$ and height $h = 10\\text{ cm}$.",
+          "The extra surface area created by the cut is $2 \\times (8 \\times 10) = 160\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q11",
+        "question": "Explain why converting $1\\text{ m}^2$ of surface area to $\\text{cm}^2$ requires multiplying by $10\\,000$ ($100^2$) rather than $100$.",
+        "difficulty": "Medium",
+        "context": "Unit Conversion",
+        "final_answer": "A square of side $1\\text{ m} = 100\\text{ cm}$ has area $100\\text{ cm} \\times 100\\text{ cm} = 10\\,000\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Area is a two-dimensional measurement formed by multiplying length by width.",
+          "Since $1\\text{ m} = 100\\text{ cm}$ in each of the two perpendicular directions, $1\\text{ m}^2 = 100\\text{ cm} \\times 100\\text{ cm} = 100^2\\text{ cm}^2 = 10\\,000\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_6_1_Q12",
+        "question": "A hollow cylindrical concrete pipe has length $h = 20\\text{ cm}$, outer radius $R = 5\\text{ cm}$, and inner radius $r = 3\\text{ cm}$. Find its exact total surface area (including outer curved wall, inner curved wall, and both annular ring ends).",
+        "difficulty": "Extension",
+        "context": "Annular Cylinder TSA",
+        "final_answer": "$352\\pi\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "The outer curved area is $2\\pi R h = 2\\pi(5)(20) = 200\\pi\\text{ cm}^2$, and the inner curved area is $2\\pi r h = 2\\pi(3)(20) = 120\\pi\\text{ cm}^2$.",
+          "Each annular end has area $\\pi(R^2 - r^2) = \\pi(25 - 9) = 16\\pi\\text{ cm}^2$, so two ends give $32\\pi\\text{ cm}^2$. Total surface area $= 200\\pi + 120\\pi + 32\\pi = 352\\pi\\text{ cm}^2$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_6_1_1_c",
+      "description": "Worked Example 9.6.1.1 hypotenuse",
+      "expression": "sqrt(6**2 + 8**2)",
+      "expected": 10
+    },
+    {
+      "id": "WE9_6_1_1_tsa",
+      "description": "Worked Example 9.6.1.1 triangular prism TSA",
+      "expression": "2 * (Rational(1, 2)*6*8) + (6 + 8 + 10)*15",
+      "expected": 408
+    },
+    {
+      "id": "NYT9_6_1_1",
+      "description": "Now You Try 9.6.1.1 triangular prism TSA",
+      "expression": "2 * (Rational(1, 2)*5*12) + (5 + 12 + 13)*10",
+      "expected": 360
+    },
+    {
+      "id": "WE9_6_1_2a",
+      "description": "Worked Example 9.6.1.2(a) exact cylinder TSA",
+      "expression": "2*pi*6**2 + 2*pi*6*20",
+      "expected": "312 * pi"
+    },
+    {
+      "id": "NYT9_6_1_2",
+      "description": "Now You Try 9.6.1.2 exact cylinder TSA",
+      "expression": "2*pi*5*(5 + 11)",
+      "expected": "160 * pi"
+    },
+    {
+      "id": "WE9_6_1_3",
+      "description": "Worked Example 9.6.1.3 half-cylinder greenhouse area",
+      "expression": "pi*3**2 + pi*3*10",
+      "expected": "39 * pi"
+    },
+    {
+      "id": "EX9_6_1_Q1",
+      "description": "Exercise 9.6.1 Q1 rectangular prism TSA",
+      "expression": "2 * (9*4 + 9*5 + 4*5)",
+      "expected": 202
+    },
+    {
+      "id": "EX9_6_1_Q2_tsa",
+      "description": "Exercise 9.6.1 Q2 cylinder TSA",
+      "expression": "2*pi*4**2 + 2*pi*4*9",
+      "expected": "104 * pi"
+    },
+    {
+      "id": "EX9_6_1_Q3",
+      "description": "Exercise 9.6.1 Q3 open cylinder TSA",
+      "expression": "pi*5**2 + 2*pi*5*14",
+      "expected": "165 * pi"
+    },
+    {
+      "id": "EX9_6_1_Q4",
+      "description": "Exercise 9.6.1 Q4 trapezoidal prism TSA",
+      "expression": "2*(Rational(1, 2)*(6 + 12)*4) + (6 + 12 + 5 + 5)*10",
+      "expected": 352
+    },
+    {
+      "id": "EX9_6_1_Q5a",
+      "description": "Exercise 9.6.1 Q5(a) roller 1 revolution area",
+      "expression": "Rational(22, 7) * 7 * 25",
+      "expected": 550
+    },
+    {
+      "id": "EX9_6_1_Q6",
+      "description": "Exercise 9.6.1 Q6 composite solid TSA",
+      "expression": "6*10**2 + 2*pi*3*8",
+      "expected": "600 + 48*pi"
+    },
+    {
+      "id": "EX9_6_1_Q7",
+      "description": "Exercise 9.6.1 Q7 camping tent TSA",
+      "expression": "2*(Rational(1, 2)*Rational(24, 10)*Rational(16, 10)) + (Rational(24, 10) + 2 + 2)*Rational(25, 10)",
+      "expected": "Rational(496, 25)"
+    },
+    {
+      "id": "EX9_6_1_Q8",
+      "description": "Exercise 9.6.1 Q8 cylinder height h",
+      "expression": "solve(Eq(2*pi*6**2 + 2*pi*6*x, 216*pi), x)[0]",
+      "expected": 12
+    },
+    {
+      "id": "EX9_6_1_Q10",
+      "description": "Exercise 9.6.1 Q10 extra area from vertical cut",
+      "expression": "2 * (2 * 4 * 10)",
+      "expected": 160
+    },
+    {
+      "id": "EX9_6_1_Q12",
+      "description": "Exercise 9.6.1 Q12 hollow pipe TSA",
+      "expression": "2*pi*5*20 + 2*pi*3*20 + 2*pi*(5**2 - 3**2)",
+      "expected": "352 * pi"
+    }
+  ]
+}

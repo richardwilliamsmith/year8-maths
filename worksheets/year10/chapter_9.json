@@ -1,0 +1,103 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Univariate Data: Box Plots, Quartiles, and Standard Deviation (10 & 10A)",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "10_9_1",
+      "section_code": "9A",
+      "title": "Box Plots, Outlier Fences, and Comparing Distributions",
+      "vcaa_code": "VC2M10ST02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For the ordered dataset of $11$ test scores: $42, 48, 51, 55, 58, 62, 66, 70, 74, 79, 85$, find:",
+          "parts": [
+            { "label": "a", "question": "The median ($Q_2$)", "answer": "$62$" },
+            { "label": "b", "question": "The lower quartile ($Q_1$) and upper quartile ($Q_3$)", "answer": "$Q_1 = 51, Q_3 = 74$" },
+            { "label": "c", "question": "The interquartile range ($\\text{IQR} = Q_3 - Q_1$)", "answer": "$23$" },
+            { "label": "d", "question": "The range ($\\text{Max} - \\text{Min}$)", "answer": "$43$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A distribution has five-number summary $\\text{Min} = 8$, $Q_1 = 24$, $\\text{Median} = 30$, $Q_3 = 36$, $\\text{Max} = 58$. Find:",
+          "parts": [
+            { "label": "a", "question": "The interquartile range ($\\text{IQR}$)", "answer": "$12$" },
+            { "label": "b", "question": "The lower fence $Q_1 - 1.5 \\times \\text{IQR}$", "answer": "$6$" },
+            { "label": "c", "question": "The upper fence $Q_3 + 1.5 \\times \\text{IQR}$", "answer": "$54$" },
+            { "label": "d", "question": "Which extreme value ($8$ or $58$) is a formal outlier", "answer": "$58$ (since $58 > 54$, while $8 \\ge 6$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "For a box-and-whisker plot with $\\text{Min} = 10$, $Q_1 = 20$, $Q_2 = 25$, $Q_3 = 40$, $\\text{Max} = 60$ (no outliers), state:",
+          "parts": [
+            { "label": "a", "question": "The percentage of data values that lie between $Q_1 = 20$ and $Q_3 = 40$", "answer": "$50\\%$" },
+            { "label": "b", "question": "The percentage of data values that lie above $Q_1 = 20$", "answer": "$75\\%$" },
+            { "label": "c", "question": "Whether the distribution is symmetric, positively skewed, or negatively skewed", "answer": "Positively skewed (right whisker and upper half of box are longer)" },
+            { "label": "d", "question": "Which measure of centre and spread is most appropriate for this skewed distribution", "answer": "Median and $\\text{IQR}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "[10A] For the sample of $n = 5$ values: $4, 7, 10, 13, 16$, calculate:",
+          "parts": [
+            { "label": "a", "question": "The sample mean $\\bar{x} = \\dfrac{\\sum x}{n}$", "answer": "$10$" },
+            { "label": "b", "question": "The sum of squared deviations $\\sum (x_i - \\bar{x})^2$", "answer": "$90$ ($36 + 9 + 0 + 9 + 36$)" },
+            { "label": "c", "question": "The sample variance $s^2 = \\dfrac{\\sum (x_i - \\bar{x})^2}{n - 1}$", "answer": "$22.5$" },
+            { "label": "d", "question": "The sample standard deviation $s = \\sqrt{s^2}$ in exact surd form and to $2$ d.p.", "answer": "$\\sqrt{22.5} = \\dfrac{3\\sqrt{10}}{2} \\approx 4.74$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Daily maximum temperatures ($^\\circ\\text{C}$) recorded over $9$ days in Mildura are: $21, 23, 24, 25, 26, 27, 29, 30, 41$. Find $Q_1$, $Q_3$, the $\\text{IQR}$, and the upper fence $Q_3 + 1.5 \\times \\text{IQR}$ to determine whether the $41^\\circ\\text{C}$ heatwave day is a statistical outlier.",
+          "answer": "$Q_1 = 23.5$, $Q_3 = 29.5$, $\\text{IQR} = 6.0$; upper fence $= 29.5 + 1.5(6.0) = 38.5^\\circ\\text{C}$. Since $41 > 38.5$, $41^\\circ\\text{C}$ is an outlier."
+        },
+        {
+          "number": 6,
+          "question": "Parallel box plots compare commuting times (minutes) for $120$ train passengers and $120$ bus passengers in Sydney. For train passengers: $\\text{Min} = 15, Q_1 = 25, \\text{Med} = 32, Q_3 = 40, \\text{Max} = 55$. How many train passengers had a commute of $40\\text{ minutes}$ or less, and what is the $\\text{IQR}$?",
+          "answer": "$75\\%$ of $120 = 90$ passengers; $\\text{IQR} = 40 - 25 = 15\\text{ minutes}$"
+        },
+        {
+          "number": 7,
+          "question": "House prices in a coastal Victorian town have a strongly positively skewed distribution due to a few luxury clifftop mansions. Which is larger—the mean or the median—and why do real-estate reports quote the median house price instead of the mean?",
+          "answer": "The mean is larger because high-value outliers pull the mean upwards; the median is quoted because it is resistant to extreme outliers."
+        },
+        {
+          "number": 8,
+          "question": "[10A] Two coffee machines in a Melbourne café dispense espresso shots with the same mean volume of $30\\text{ mL}$, but Machine A has standard deviation $s_A = 0.8\\text{ mL}$ and Machine B has $s_B = 2.5\\text{ mL}$. Which machine is more consistent, and what would happen to $s_A$ if every shot from Machine A were increased by exactly $5\\text{ mL}$?",
+          "answer": "Machine A is more consistent ($s_A < s_B$). Adding $5\\text{ mL}$ to every value shifts the mean to $35\\text{ mL}$ but leaves the standard deviation $s_A = 0.8\\text{ mL}$ unchanged."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why the interquartile range ($\\text{IQR} = Q_3 - Q_1$) is considered a **resistant** measure of spread, whereas the range ($\\text{Max} - \\text{Min}$) and standard deviation $s$ are not resistant to outliers.",
+          "answer": "The $\\text{IQR}$ depends only on the middle $50\\%$ of the ordered data ($Q_1$ and $Q_3$), so changing the maximum or minimum to an extreme outlier does not affect the $\\text{IQR}$, whereas the range and $\\sum(x_i - \\bar{x})^2$ increase substantially."
+        },
+        {
+          "number": 10,
+          "question": "[10A] Prove that for any sample dataset, the sample standard deviation $s = \\sqrt{\\frac{1}{n-1}\\sum (x_i - \\bar{x})^2}$ equals $0$ if and only if all data values in the sample are identical.",
+          "answer": "Since every squared term $(x_i - \\bar{x})^2 \\ge 0$, their sum is $0$ if and only if $x_i - \\bar{x} = 0$ for every $i$, which means $x_1 = x_2 = \\dots = x_n = \\bar{x}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS10_9_1_1c", "expression": "74 - 51", "expected": 23 },
+        { "id": "WS10_9_1_1d", "expression": "85 - 42", "expected": 43 },
+        { "id": "WS10_9_1_2a", "expression": "36 - 24", "expected": 12 },
+        { "id": "WS10_9_1_2b", "expression": "24 - Rational(15, 10)*12", "expected": 6 },
+        { "id": "WS10_9_1_2c", "expression": "36 + Rational(15, 10)*12", "expected": 54 },
+        { "id": "WS10_9_1_4a", "expression": "(4 + 7 + 10 + 13 + 16) / 5", "expected": 10 },
+        { "id": "WS10_9_1_4b", "expression": "(4-10)**2 + (7-10)**2 + (10-10)**2 + (13-10)**2 + (16-10)**2", "expected": 90 },
+        { "id": "WS10_9_1_4c", "expression": "90 / (5 - 1)", "expected": 22.5 },
+        { "id": "WS10_9_1_5", "expression": "Rational(295, 10) + Rational(15, 10)*(Rational(295, 10) - Rational(235, 10))", "expected": 38.5 },
+        { "id": "WS10_9_1_6", "expression": "Rational(3, 4) * 120", "expected": 90 }
+      ]
+    }
+  ]
+}

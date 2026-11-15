@@ -202,20 +202,29 @@ export function loadVcaaStandardsRegistry(): VcaaStandardsRegistry {
 }
 
 export function loadAllGeneratedSections(): Record<string, TextbookSectionData> {
-  const manifest = loadCurriculumManifest();
+  const manifests = loadAllYearManifests();
   const sections: Record<string, TextbookSectionData> = {};
 
-  for (const chapter of manifest.chapters) {
-    for (const sec of chapter.sections) {
-      const filePath = path.join(
-        process.cwd(),
-        "output",
-        `chapter_${chapter.chapter_number}`,
-        `${sec.section_id}.json`
-      );
-      if (fs.existsSync(filePath)) {
-        const raw = fs.readFileSync(filePath, "utf-8");
-        sections[sec.section_id] = JSON.parse(raw) as TextbookSectionData;
+  const yearOutputDirs: Record<string, string[]> = {
+    "8": ["output"],
+    "9": ["output", "year9"],
+    "10": ["output", "year10"],
+  };
+
+  for (const [yr, manifest] of Object.entries(manifests)) {
+    const baseParts = yearOutputDirs[yr] || ["output"];
+    for (const chapter of manifest.chapters) {
+      for (const sec of chapter.sections) {
+        const filePath = path.join(
+          process.cwd(),
+          ...baseParts,
+          `chapter_${chapter.chapter_number}`,
+          `${sec.section_id}.json`
+        );
+        if (fs.existsSync(filePath)) {
+          const raw = fs.readFileSync(filePath, "utf-8");
+          sections[sec.section_id] = JSON.parse(raw) as TextbookSectionData;
+        }
       }
     }
   }
@@ -229,47 +238,61 @@ function loadSingleTierKeys(
   tierLabel: string
 ): Record<string, SectionWorksheetAnswerKey> {
   const keys: Record<string, SectionWorksheetAnswerKey> = {};
+  const yearPrefixes = ["", "year9", "year10"];
 
-  for (let c = 1; c <= 10; c++) {
-    const filePath = subDir
-      ? path.join(process.cwd(), "worksheets", subDir, `chapter_${c}.json`)
-      : path.join(process.cwd(), "worksheets", `chapter_${c}.json`);
+  for (const yrPrefix of yearPrefixes) {
+    for (let c = 1; c <= 10; c++) {
+      const parts = [process.cwd(), "worksheets"];
+      if (yrPrefix) parts.push(yrPrefix);
+      if (subDir) parts.push(subDir);
+      parts.push(`chapter_${c}.json`);
+      const filePath = path.join(...parts);
 
-    if (fs.existsSync(filePath)) {
-      const raw = JSON.parse(fs.readFileSync(filePath, "utf-8"));
-      for (const ws of raw.worksheets || []) {
-        keys[ws.section_id] = {
-          section_id: ws.section_id,
-          section_code: ws.section_code,
-          chapter_number: raw.chapter_number,
-          chapter_title: raw.chapter_title,
-          title: ws.title,
-          vcaa_code: ws.vcaa_code,
-          tier: ws.tier || tierLabel,
-          tier_key: tierKey,
-          pdf_url: `/worksheets/worksheet_${ws.section_id}_${tierKey}.pdf`,
-          fluency_answers: (ws.fluency_questions || []).map(
-            (fq: { number: number; parts: { label: string; answer: string }[] }) => ({
-              number: fq.number,
-              parts: fq.parts.map((pt) => ({
-                label: pt.label,
-                answer: pt.answer,
-              })),
-            })
-          ),
-          application_answers: (ws.application_questions || []).map(
-            (aq: { number: number; answer: string }) => ({
-              number: aq.number,
-              answer: aq.answer,
-            })
-          ),
-          reasoning_answers: (ws.reasoning_questions || []).map(
-            (rq: { number: number; answer: string }) => ({
-              number: rq.number,
-              answer: rq.answer,
-            })
-          ),
-        };
+      if (fs.existsSync(filePath)) {
+        const raw = JSON.parse(fs.readFileSync(filePath, "utf-8"));
+        for (const ws of raw.worksheets || []) {
+          const pdfRel = `/worksheets/worksheet_${ws.section_id}_${tierKey}.pdf`;
+          const htmlRel = `/worksheets/worksheet_${ws.section_id}_${tierKey}.html`;
+          const pdfDisk = path.join(
+            process.cwd(),
+            "public",
+            "worksheets",
+            `worksheet_${ws.section_id}_${tierKey}.pdf`
+          );
+
+          keys[ws.section_id] = {
+            section_id: ws.section_id,
+            section_code: ws.section_code,
+            chapter_number: raw.chapter_number,
+            chapter_title: raw.chapter_title,
+            title: ws.title,
+            vcaa_code: ws.vcaa_code,
+            tier: ws.tier || tierLabel,
+            tier_key: tierKey,
+            pdf_url: fs.existsSync(pdfDisk) ? pdfRel : htmlRel,
+            fluency_answers: (ws.fluency_questions || []).map(
+              (fq: { number: number; parts: { label: string; answer: string }[] }) => ({
+                number: fq.number,
+                parts: fq.parts.map((pt) => ({
+                  label: pt.label,
+                  answer: pt.answer,
+                })),
+              })
+            ),
+            application_answers: (ws.application_questions || []).map(
+              (aq: { number: number; answer: string }) => ({
+                number: aq.number,
+                answer: aq.answer,
+              })
+            ),
+            reasoning_answers: (ws.reasoning_questions || []).map(
+              (rq: { number: number; answer: string }) => ({
+                number: rq.number,
+                answer: rq.answer,
+              })
+            ),
+          };
+        }
       }
     }
   }

@@ -10,6 +10,7 @@ import type {
   VcaaStandardsRegistry,
 } from "@/lib/curriculum";
 import { MathText, FormulaBlock } from "./MathText";
+import { MathDiagram } from "./MathDiagram";
 
 interface TextbookViewerProps {
   yearManifests: Record<string, CurriculumManifest>;
@@ -129,8 +130,9 @@ export function TextbookViewer({
   }
 
   const totalGeneratedCount = Object.keys(generatedSections).length;
-  const totalYear8Sections = yearManifests["8"].chapters.reduce(
-    (acc, ch) => acc + ch.sections.length,
+  const totalAllYearsSections = Object.values(yearManifests).reduce(
+    (acc, m) =>
+      acc + m.chapters.reduce((cAcc, ch) => cAcc + ch.sections.length, 0),
     0
   );
   const totalVerifiedAssertions = Object.values(generatedSections).reduce(
@@ -280,10 +282,10 @@ export function TextbookViewer({
           <h1 className="brand-title">Secondary Mathematics (8–10A)</h1>
           <div className="brand-stats">
             <span>
-              {totalGeneratedCount}/{totalYear8Sections} Y8 sections
+              {totalGeneratedCount}/{totalAllYearsSections} sections
             </span>
             <span>·</span>
-            <span>{totalWorksheetsCount} PDFs</span>
+            <span>{totalWorksheetsCount} sheets</span>
             <span>·</span>
             <span>{totalVerifiedAssertions} checks</span>
           </div>
@@ -518,9 +520,9 @@ export function TextbookViewer({
                     appendixChapterFilter === "all" ? "active" : ""
                   }`}
                 >
-                  All Chapters (1–10)
+                  All Year {selectedYear} Chapters (1–10)
                 </button>
-                {yearManifests["8"].chapters.map((ch) => (
+                {manifest.chapters.map((ch) => (
                   <button
                     key={ch.chapter_number}
                     type="button"
@@ -536,7 +538,7 @@ export function TextbookViewer({
             </header>
 
             <div className="section-content-body">
-              {yearManifests["8"].chapters
+              {manifest.chapters
                 .filter(
                   (ch) =>
                     appendixChapterFilter === "all" ||
@@ -546,8 +548,8 @@ export function TextbookViewer({
                   <section key={ch.id} className="pedagogy-section">
                     <div className="section-heading-bar">
                       <h3>
-                        Chapter {ch.chapter_number}: {ch.title} (
-                        {activeTierMeta.shortLabel} Tier)
+                        Year {selectedYear} · Chapter {ch.chapter_number}:{" "}
+                        {ch.title} ({activeTierMeta.shortLabel} Tier)
                       </h3>
                       <span className="section-subtitle">{ch.strand}</span>
                     </div>
@@ -574,7 +576,6 @@ export function TextbookViewer({
                                 <button
                                   type="button"
                                   onClick={() => {
-                                    setSelectedYear("8");
                                     setSelectedSectionId(sec.section_id);
                                   }}
                                   className="minimal-btn"
@@ -955,6 +956,12 @@ export function TextbookViewer({
                   <div className="section-heading-bar">
                     <h3>Theory &amp; Key Ideas</h3>
                   </div>
+
+                  <MathDiagram
+                    sectionId={activeSection.metadata.section_id}
+                    vcaaCode={activeSection.metadata.vcaa_code}
+                    strand={activeSection.metadata.strand}
+                  />
 
                   {activeSection.metadata.key_vocabulary &&
                     activeSection.metadata.key_vocabulary.length > 0 && (

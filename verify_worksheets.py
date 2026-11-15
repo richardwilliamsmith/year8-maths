@@ -45,6 +45,17 @@ SYMPY_LOCALS = {
     "r": sp.Symbol("r"),
     "t": sp.Symbol("t"),
     "k": sp.Symbol("k"),
+    "sin": sp.sin,
+    "cos": sp.cos,
+    "tan": sp.tan,
+    "asin": sp.asin,
+    "acos": sp.acos,
+    "atan": sp.atan,
+    "log": sp.log,
+    "ln": sp.ln,
+    "exp": sp.exp,
+    "factorial": sp.factorial,
+    "binomial": sp.binomial,
 }
 
 
@@ -128,6 +139,12 @@ def main():
             sorted(glob.glob("worksheets/chapter_*.json"))
             + sorted(glob.glob("worksheets/foundation/chapter_*.json"))
             + sorted(glob.glob("worksheets/extension/chapter_*.json"))
+            + sorted(glob.glob("worksheets/year9/*.json"))
+            + sorted(glob.glob("worksheets/year9/foundation/*.json"))
+            + sorted(glob.glob("worksheets/year9/extension/*.json"))
+            + sorted(glob.glob("worksheets/year10/*.json"))
+            + sorted(glob.glob("worksheets/year10/foundation/*.json"))
+            + sorted(glob.glob("worksheets/year10/extension/*.json"))
         )
     if not files:
         print("No worksheet files found", file=sys.stderr)

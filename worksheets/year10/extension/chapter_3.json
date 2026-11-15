@@ -1,0 +1,199 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Quadratic Algebra and Equations (10 & 10A)",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_3_1",
+      "section_code": "3A",
+      "title": "Factorising Quadratics and Completing the Square",
+      "vcaa_code": "VC2M10A01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Complete the square on each non-monic quadratic to write it in turning-point form $a(x - h)^2 + k$:",
+          "parts": [
+            { "label": "a", "question": "$2x^2 - 12x + 11$", "answer": "$2(x - 3)^2 - 7$" },
+            { "label": "b", "question": "$3x^2 + 6x - 5$", "answer": "$3(x + 1)^2 - 8$" },
+            { "label": "c", "question": "$-x^2 + 8x - 7$", "answer": "$-(x - 4)^2 + 9$" },
+            { "label": "d", "question": "$2x^2 + 5x - 3$", "answer": "$2\\left(x + \\dfrac{5}{4}\\right)^2 - \\dfrac{49}{8}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise each disguised quadratic or higher-degree expression completely over $\\mathbb{R}$:",
+          "parts": [
+            { "label": "a", "question": "$x^4 - 13x^2 + 36$", "answer": "$(x - 2)(x + 2)(x - 3)(x + 3)$" },
+            { "label": "b", "question": "$(x^2 - 2x)^2 - 11(x^2 - 2x) + 24$", "answer": "$(x - 3)(x + 1)(x - 4)(x + 2)$" },
+            { "label": "c", "question": "$6x^2 + 7xy - 20y^2$", "answer": "$(3x - 4y)(2x + 5y)$" },
+            { "label": "d", "question": "$x^2 - 4y^2 + 6x + 9$", "answer": "$(x + 3 - 2y)(x + 3 + 2y)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Add or subtract the algebraic fractions by factorising denominators and finding the lowest common denominator:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{3}{x - 2} - \\dfrac{2}{x + 3}$", "answer": "$\\dfrac{x + 13}{(x - 2)(x + 3)}$" },
+            { "label": "b", "question": "$\\dfrac{2x}{x^2 - 9} - \\dfrac{1}{x - 3}$", "answer": "$\\dfrac{1}{x + 3}$" },
+            { "label": "c", "question": "$\\dfrac{4}{x^2 - 4} + \\dfrac{3}{x^2 + 5x + 6}$", "answer": "$\\dfrac{7x + 6}{(x - 2)(x + 2)(x + 3)}$" },
+            { "label": "d", "question": "$\\dfrac{x + 1}{x^2 - x - 6} - \\dfrac{x - 4}{x^2 - 9}$", "answer": "$\\dfrac{3}{(x + 2)(x + 3)}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use completing the square to state the maximum or minimum value of each quadratic and the value of $x$ where it occurs:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 10x + 32$", "answer": "Minimum of $7$ at $x = 5$" },
+            { "label": "b", "question": "$-x^2 + 6x + 4$", "answer": "Maximum of $13$ at $x = 3$" },
+            { "label": "c", "question": "$2x^2 + 8x + 15$", "answer": "Minimum of $7$ at $x = -2$" },
+            { "label": "d", "question": "$-3x^2 + 12x - 5$", "answer": "Maximum of $7$ at $x = 2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A farmer in the Yarra Valley has $80\\text{ m}$ of fencing to enclose a rectangular paddock along a straight river bank (no fence is needed along the river). Let $x\\text{ m}$ be the width perpendicular to the river. Write the area $A(x)$ and complete the square to find the maximum possible area.",
+          "answer": "$A(x) = x(80 - 2x) = -2(x - 20)^2 + 800$, so maximum area is $800\\text{ m}^2$ when $x = 20\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "Two resistors in parallel with resistances $(x + 1)\\text{ }\\Omega$ and $(x + 4)\\text{ }\\Omega$ have combined conductance $\\dfrac{1}{R} = \\dfrac{1}{x + 1} + \\dfrac{1}{x + 4}$. Express $R$ as a single simplified rational expression in expanded form.",
+          "answer": "$R = \\dfrac{x^2 + 5x + 4}{2x + 5}\\text{ }\\Omega$"
+        },
+        {
+          "number": 7,
+          "question": "Factorise the quartic expression $x^4 + 4$ into two real quadratic factors by adding and subtracting $4x^2$ (Sophie Germain's identity).",
+          "answer": "$x^4 + 4x^2 + 4 - 4x^2 = (x^2 + 2)^2 - (2x)^2 = (x^2 - 2x + 2)(x^2 + 2x + 2)$"
+        },
+        {
+          "number": 8,
+          "question": "Find the minimum possible value of the two-variable expression $E = x^2 - 4x + y^2 + 6y + 20$ for real numbers $x$ and $y$.",
+          "answer": "$E = (x - 2)^2 + (y + 3)^2 + 7 \\ge 7$, with minimum $7$ at $(x, y) = (2, -3)$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "By completing the square on the general quadratic $ax^2 + bx + c$ ($a > 0$), prove that its minimum value is $c - \\dfrac{b^2}{4a} = -\\dfrac{\\Delta}{4a}$ and occurs at $x = -\\dfrac{b}{2a}$.",
+          "answer": "$a\\left(x^2 + \\dfrac{b}{a}x\\right) + c = a\\left(x + \\dfrac{b}{2a}\\right)^2 - \\dfrac{b^2}{4a} + c = a\\left(x + \\dfrac{b}{2a}\\right)^2 - \\dfrac{b^2 - 4ac}{4a}$. Since $a > 0$ and the squared term is $\\ge 0$, the minimum is $-\\dfrac{\\Delta}{4a}$ at $x = -\\dfrac{b}{2a}$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why cancelling $x - 3$ in $\\dfrac{x^2 - 9}{x - 3} = x + 3$ requires the domain restriction $x \\neq 3$.",
+          "answer": "At $x = 3$, the original fraction is $\\dfrac{0}{0}$ (undefined due to division by zero), whereas $x + 3$ evaluates to $6$; the two expressions are equal only for $x \\neq 3$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10E_3A_1a", "expression": "simplify(2*(x - 3)**2 - 7 - (2*x**2 - 12*x + 11))", "expected": 0 },
+        { "id": "Y10E_3A_1b", "expression": "simplify(3*(x + 1)**2 - 8 - (3*x**2 + 6*x - 5))", "expected": 0 },
+        { "id": "Y10E_3A_1d", "expression": "simplify(2*(x + Rational(5, 4))**2 - Rational(49, 8) - (2*x**2 + 5*x - 3))", "expected": 0 },
+        { "id": "Y10E_3A_2a", "expression": "simplify((x - 2)*(x + 2)*(x - 3)*(x + 3) - (x**4 - 13*x**2 + 36))", "expected": 0 },
+        { "id": "Y10E_3A_2b", "expression": "simplify((x - 3)*(x + 1)*(x - 4)*(x + 2) - ((x**2 - 2*x)**2 - 11*(x**2 - 2*x) + 24))", "expected": 0 },
+        { "id": "Y10E_3A_3b", "expression": "simplify(2*x/(x**2 - 9) - 1/(x - 3) - 1/(x + 3))", "expected": 0 },
+        { "id": "Y10E_3A_3d", "expression": "simplify((x + 1)/(x**2 - x - 6) - (x - 4)/(x**2 - 9) - 3/((x + 2)*(x + 3)))", "expected": 0 },
+        { "id": "Y10E_3A_5", "expression": "20 * (80 - 2*20)", "expected": 800 },
+        { "id": "Y10E_3A_7", "expression": "simplify((x**2 - 2*x + 2)*(x**2 + 2*x + 2) - (x**4 + 4))", "expected": 0 },
+        { "id": "Y10E_3A_8", "expression": "2**2 - 4*2 + (-3)**2 + 6*(-3) + 20", "expected": 7 }
+      ]
+    },
+    {
+      "section_id": "10_3_2",
+      "section_code": "3B",
+      "title": "The Quadratic Formula and the Discriminant",
+      "vcaa_code": "VC2M10A05",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each rational equation by clearing fractions and checking for extraneous roots:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x}{x - 2} + \\dfrac{3}{x + 1} = 2$", "answer": "$x = 5$ or $x = -1$ (reject $x = -1$, so $x = 5$)" },
+            { "label": "b", "question": "$\\dfrac{2}{x - 1} + \\dfrac{3}{x + 2} = 1$", "answer": "$x = \\dfrac{3 \\pm \\sqrt{29}}{2}$" },
+            { "label": "c", "question": "$\\dfrac{12}{x - 1} - \\dfrac{12}{x + 1} = 1$", "answer": "$x = 5$ or $x = -5$" },
+            { "label": "d", "question": "$\\dfrac{x + 2}{x - 1} - \\dfrac{x - 1}{x + 2} = \\dfrac{5}{6}$", "answer": "$x = 7$ or $x = -\\dfrac{16}{5}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the values of the parameter $k$ for which each quadratic equation has the specified root property:",
+          "parts": [
+            { "label": "a", "question": "$2x^2 + kx + 8 = 0$ has one repeated real root", "answer": "$k = 8$ or $k = -8$" },
+            { "label": "b", "question": "$x^2 + (k - 2)x + 9 = 0$ has one repeated real root", "answer": "$k = 8$ or $k = -4$" },
+            { "label": "c", "question": "$kx^2 - 4x + k = 0$ ($k \\neq 0$) has two distinct real roots", "answer": "$-2 < k < 2$ ($k \\neq 0$)" },
+            { "label": "d", "question": "$x^2 + 2kx + (k + 6) = 0$ has no real roots", "answer": "$-2 < k < 3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Let $\\alpha$ and $\\beta$ be the roots of $2x^2 - 6x + 3 = 0$. Without solving for $\\alpha$ and $\\beta$, use Vieta's formulas ($\\alpha + \\beta = -b/a, \\alpha\\beta = c/a$) to evaluate:",
+          "parts": [
+            { "label": "a", "question": "$\\alpha + \\beta$ and $\\alpha\\beta$", "answer": "$\\alpha + \\beta = 3$, $\\alpha\\beta = \\dfrac{3}{2}$" },
+            { "label": "b", "question": "$\\dfrac{1}{\\alpha} + \\dfrac{1}{\\beta}$", "answer": "$2$" },
+            { "label": "c", "question": "$\\alpha^2 + \\beta^2 = (\\alpha + \\beta)^2 - 2\\alpha\\beta$", "answer": "$6$" },
+            { "label": "d", "question": "$(\\alpha - \\beta)^2 = (\\alpha + \\beta)^2 - 4\\alpha\\beta$", "answer": "$3$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each disguised quadratic equation for all real values of $x$:",
+          "parts": [
+            { "label": "a", "question": "$x^4 - 5x^2 + 4 = 0$", "answer": "$x = \\pm 1$ or $x = \\pm 2$" },
+            { "label": "b", "question": "$x^4 - 3x^2 - 4 = 0$", "answer": "$x = \\pm 2$ ($x^2 = -1$ has no real roots)" },
+            { "label": "c", "question": "$x - 5\\sqrt{x} + 6 = 0$ ($x \\ge 0$)", "answer": "$x = 4$ or $x = 9$" },
+            { "label": "d", "question": "$\\left(x + \\dfrac{1}{x}\\right)^2 - 4\\left(x + \\dfrac{1}{x}\\right) + 4 = 0$", "answer": "$x = 1$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A kayaker in Tasmania paddles $12\\text{ km}$ upstream and $12\\text{ km}$ back downstream in a total of $5\\text{ hours}$. If the river current flows at $1\\text{ km/h}$, solve $\\dfrac{12}{v - 1} + \\dfrac{12}{v + 1} = 5$ to find the kayaker's speed $v > 1$ in still water.",
+          "answer": "$24v = 5(v^2 - 1) \\implies 5v^2 - 24v - 5 = (5v + 1)(v - 5) = 0 \\implies v = 5\\text{ km/h}$"
+        },
+        {
+          "number": 6,
+          "question": "Find the values of the gradient $m$ for which the line $y = mx - 5$ is tangent to the parabola $y = x^2 - 2x + 4$.",
+          "answer": "$x^2 - (m + 2)x + 9 = 0$; setting $\\Delta = (m + 2)^2 - 36 = 0 \\implies m + 2 = \\pm 6 \\implies m = 4$ or $m = -8$"
+        },
+        {
+          "number": 7,
+          "question": "A rectangular picture frame of outer dimensions $20\\text{ cm}$ by $30\\text{ cm}$ has a border of uniform width $x\\text{ cm}$ surrounding a visible photograph of area $336\\text{ cm}^2$. Find the border width $x$.",
+          "answer": "$(20 - 2x)(30 - 2x) = 336 \\implies x^2 - 25x + 66 = (x - 3)(x - 22) = 0 \\implies x = 3\\text{ cm}$ (since $2x < 20$)"
+        },
+        {
+          "number": 8,
+          "question": "Show that the quadratic equation $x^2 - 2kx + (k^2 - 4) = 0$ always has two distinct rational roots for every rational number $k$, and express the roots in terms of $k$.",
+          "answer": "$\\Delta = 4k^2 - 4(k^2 - 4) = 16 > 0$; roots are $x = \\dfrac{2k \\pm 4}{2} = k \\pm 2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Derive the Quadratic Formula $x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ by dividing $ax^2 + bx + c = 0$ ($a \\neq 0$) by $a$ and completing the square.",
+          "answer": "$x^2 + \\dfrac{b}{a}x = -\\dfrac{c}{a} \\implies \\left(x + \\dfrac{b}{2a}\\right)^2 = \\dfrac{b^2}{4a^2} - \\dfrac{c}{a} = \\dfrac{b^2 - 4ac}{4a^2} \\implies x + \\dfrac{b}{2a} = \\dfrac{\\pm\\sqrt{b^2 - 4ac}}{2a} \\implies x = \\dfrac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$."
+        },
+        {
+          "number": 10,
+          "question": "By comparing $ax^2 + bx + c = a(x - \\alpha)(x - \\beta)$, prove Vieta's formulas $\\alpha + \\beta = -\\dfrac{b}{a}$ and $\\alpha\\beta = \\dfrac{c}{a}$.",
+          "answer": "Expanding $a(x - \\alpha)(x - \\beta) = ax^2 - a(\\alpha + \\beta)x + a\\alpha\\beta$ and equating coefficients with $ax^2 + bx + c$ gives $-a(\\alpha + \\beta) = b \\implies \\alpha + \\beta = -\\dfrac{b}{a}$ and $a\\alpha\\beta = c \\implies \\alpha\\beta = \\dfrac{c}{a}$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10E_3B_1a", "expression": "Rational(5, 5 - 2) + Rational(3, 5 + 1)", "expected": 2 },
+        { "id": "Y10E_3B_1c", "expression": "Rational(12, 5 - 1) - Rational(12, 5 + 1)", "expected": 1 },
+        { "id": "Y10E_3B_1d", "expression": "Rational(7 + 2, 7 - 1) - Rational(7 - 1, 7 + 2)", "expected": "5/6" },
+        { "id": "Y10E_3B_3b", "expression": "3 / Rational(3, 2)", "expected": 2 },
+        { "id": "Y10E_3B_3c", "expression": "3**2 - 2 * Rational(3, 2)", "expected": 6 },
+        { "id": "Y10E_3B_3d", "expression": "3**2 - 4 * Rational(3, 2)", "expected": 3 },
+        { "id": "Y10E_3B_4c", "expression": "9 - 5*sqrt(9) + 6", "expected": 0 },
+        { "id": "Y10E_3B_5", "expression": "Rational(12, 5 - 1) + Rational(12, 5 + 1)", "expected": 5 },
+        { "id": "Y10E_3B_6", "expression": "(4 + 2)**2 - 36", "expected": 0 },
+        { "id": "Y10E_3B_7", "expression": "(20 - 2*3) * (30 - 2*3)", "expected": 336 }
+      ]
+    }
+  ]
+}

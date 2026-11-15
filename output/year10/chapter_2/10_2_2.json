@@ -1,0 +1,427 @@
+{
+  "metadata": {
+    "section_id": "10_2_2",
+    "section_code": "2B",
+    "chapter_number": 2,
+    "chapter_title": "Linear Inequalities, Simultaneous Equations, and Coordinate Geometry",
+    "title": "Simultaneous Linear Equations: Substitution and Elimination",
+    "vcaa_code": "VC2M10A02",
+    "vcaa_description": "Solve linear inequalities and simultaneous linear equations in 2 variables; interpret solutions graphically and apply to real-world contexts.",
+    "strand": "Algebra",
+    "target_mastery": "Solve pairs of simultaneous linear equations graphically, by substitution, and by elimination, and model break-even and mixture problems.",
+    "prerequisites": [
+      "Graphing linear relations (Year 9 Section 4C)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Simultaneous linear equations",
+        "definition": "A system of two or more linear equations in the same variables that must be satisfied at the same time."
+      },
+      {
+        "term": "Point of intersection",
+        "definition": "The coordinate pair $(x, y)$ where the graphs of two linear equations cross, representing the unique simultaneous solution to both equations."
+      },
+      {
+        "term": "Substitution method",
+        "definition": "An algebraic method where one variable is expressed in terms of the other from one equation and substituted into the second equation."
+      },
+      {
+        "term": "Elimination method",
+        "definition": "An algebraic method where equations are added or subtracted (after multiplying by suitable constants if needed) to eliminate one variable."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_2_2_1",
+      "title": "Graphical Interpretation and the Method of Substitution",
+      "explanation": "Geometrically, each linear equation in two variables represents a straight line in the Cartesian plane. Solving a pair of simultaneous equations finds the point of intersection $(x, y)$ that lies on both lines. The substitution method is most efficient when at least one equationalready has $x$ or $y$ isolated as the subject (e.g. $y = 3x - 2$): replace that variable in the other equation with its algebraic expression to obtain a single equation in one unknown.",
+      "formula_latex": "\\begin{cases} y = mx + c \\\\ ax + by = d \\end{cases} \\implies ax + b(mx + c) = d",
+      "callout_title": "Use Brackets When Substituting an Expression",
+      "callout_rule": "When substituting $y = 2x - 5$ into $3x - 4y = 10$, always enclose the expression in brackets: $3x - 4(2x - 5) = 10$, so that $-4$ multiplies both $2x$ and $-5$."
+    },
+    {
+      "id": "theory_10_2_2_2",
+      "title": "The Method of Elimination",
+      "explanation": "When both simultaneous equations are written in standard form $ax + by = c$, the elimination method is usually faster. If one variable has coefficients of equal magnitude in both equations, add the equations (when the signs are opposite, such as $+3y$ and $-3y$) or subtract the equations (when the signs are the same, such as $+2x$ and $+2x$). If neither variable has matching coefficient magnitudes, multiply one or both equations by constants first to create matching coefficients.",
+      "formula_latex": "\\begin{cases} a_1 x + b y = c_1 \\\\ a_2 x - b y = c_2 \\end{cases} \\xrightarrow{\\text{Add (1) + (2)}} (a_1 + a_2)x = c_1 + c_2",
+      "callout_title": "Same Signs Subtract, Opposite Signs Add",
+      "callout_rule": "To eliminate a variable with coefficients $+4y$ and $-4y$ (opposite signs), ADD the two equations. To eliminate $+4y$ and $+4y$ (same signs), SUBTRACT one equation from the other."
+    },
+    {
+      "id": "theory_10_2_2_3",
+      "title": "Parallel Lines, Coincident Lines, and Break-Even Modelling",
+      "explanation": "Two lines in a plane can intersect at a single point (unique solution, when gradients $m_1 \\neq m_2$), be parallel and distinct (no solution, when $m_1 = m_2$ and $c_1 \\neq c_2$), or be the exact same line (infinitely many solutions, when $m_1 = m_2$ and $c_1 = c_2$). In business modelling, solving the cost equation $C = F + vx$ simultaneously with the revenue equation $R = px$ finds the break-even point where revenue equals cost ($R = C$).",
+      "formula_latex": "\\text{Break-even: } R(x) = C(x) \\iff px = F + vx \\implies x = \\frac{F}{p - v}",
+      "callout_title": "Always Define Both Variables and Check Your Solution in Both Equations",
+      "callout_rule": "In word problems, start by writing 'Let $x$ be ... and let $y$ be ...' with units. Once you find $(x, y)$, substitute both values into BOTH original equations to guarantee zero arithmetic errors."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_2_2_1",
+      "title": "Solving Simultaneous Equations by Substitution",
+      "difficulty": "Fluency",
+      "problem": "Solve the simultaneous equations $y = 2x - 1$ and $3x + 2y = 19$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Substitute the expression $y = 2x - 1$ from the first equation into the second equation.",
+          "working": "$$3x + 2(2x - 1) = 19$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Expand the brackets and solve for $x$.",
+          "working": "$$3x + 4x - 2 = 19 \\implies 7x = 21 \\implies x = 3$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Substitute $x = 3$ back into $y = 2x - 1$ to find $y$, and check in the second equation ($3(3) + 2(5) = 19$).",
+          "working": "$$y = 2(3) - 1 = 5 \\implies (x, y) = (3, 5)$$"
+        }
+      ],
+      "final_answer": "$x = 3, y = 5$ or $(3, 5)$",
+      "now_you_try": {
+        "problem": "Solve the simultaneous equations $y = 3x - 4$ and $2x + 3y = 21$.",
+        "hint": "Replace $y$ with $(3x - 4)$ in the second equation: $2x + 3(3x - 4) = 21$.",
+        "working_summary": "$2x + 9x - 12 = 21 \\implies 11x = 33 \\implies x = 3$, and $y = 3(3) - 4 = 5$.",
+        "answer": "$x = 3, y = 5$"
+      }
+    },
+    {
+      "id": "WE10_2_2_2",
+      "title": "Solving Simultaneous Equations by Elimination",
+      "difficulty": "Understanding",
+      "problem": "Solve the simultaneous equations $3x + 2y = 16$ and $5x - 3y = 14$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "To eliminate $y$, multiply equation (1) by $3$ and equation (2) by $2$ so that the $y$-coefficients become $+6y$ and $-6y$.",
+          "working": "$$\\begin{aligned} 9x + 6y &= 48 \\quad (1') \\\\ 10x - 6y &= 28 \\quad (2') \\end{aligned}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Since $+6y$ and $-6y$ have opposite signs, add $(1')$ and $(2')$ to eliminate $y$ and solve for $x$.",
+          "working": "$$19x = 76 \\implies x = 4$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Substitute $x = 4$ into $3x + 2y = 16$ to find $y$.",
+          "working": "$$3(4) + 2y = 16 \\implies 12 + 2y = 16 \\implies 2y = 4 \\implies y = 2$$"
+        }
+      ],
+      "final_answer": "$x = 4, y = 2$",
+      "now_you_try": {
+        "problem": "Solve the simultaneous equations $2x + 5y = 19$ and $3x - 2y = 0$.",
+        "hint": "Multiply the first equation by $2$ and the second equation by $5$, then add.",
+        "working_summary": "$4x + 10y = 38$ and $15x - 10y = 0$; adding gives $19x = 38 \\implies x = 2, y = 3$.",
+        "answer": "$x = 2, y = 3$"
+      }
+    },
+    {
+      "id": "WE10_2_2_3",
+      "title": "Modelling with Simultaneous Equations",
+      "difficulty": "Problem-Solving",
+      "problem": "At a Melbourne bakery, $3$ meat pies and $2$ coffees cost $\\$23$, while $4$ meat pies and $3$ coffees cost $\\$32$. Find the price of one meat pie and one coffee.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Define variables: let $p$ be the price of a meat pie ($\\$$) and $c$ be the price of a coffee ($\\$$). Form two simultaneous equations.",
+          "working": "$$\\begin{aligned} 3p + 2c &= 23 \\quad (1) \\\\ 4p + 3c &= 32 \\quad (2) \\end{aligned}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Multiply (1) by $3$ and (2) by $2$ so both have $+6c$, then subtract $(2')$ from $(1')$.",
+          "working": "$$\\begin{aligned} 9p + 6c &= 69 \\quad (1') \\\\ 8p + 6c &= 64 \\quad (2') \\\\ \\hline p &= 5 \\end{aligned}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Substitute $p = 5$ into equation (1) to find $c$.",
+          "working": "$$3(5) + 2c = 23 \\implies 2c = 8 \\implies c = 4$$"
+        }
+      ],
+      "final_answer": "Meat pie: $\\$5$; coffee: $\\$4$",
+      "now_you_try": {
+        "problem": "At a cinema, $2$ adult tickets and $3$ child tickets cost $\\$69$, while $3$ adult tickets and $2$ child tickets cost $\\$76$. Find the cost of an adult ticket ($a$) and a child ticket ($c$).",
+        "hint": "Set up $2a + 3c = 69$ and $3a + 2c = 76$, then eliminate one variable.",
+        "working_summary": "$6a + 9c = 207$ and $6a + 4c = 152 \\implies 5c = 55 \\implies c = 11$, so $a = 18$.",
+        "answer": "Adult ticket: $\\$18$; child ticket: $\\$11$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_2_2_1",
+      "title": "Adding Instead of Subtracting When Eliminating Terms with the Same Sign",
+      "misconception": "Adding $2x + 3y = 13$ and $5x + 3y = 22$ to get $7x = 35$, forgetting that $+3y + (+3y) = +6y \\neq 0$.",
+      "correct_concept": "When the coefficients of the variable to be eliminated have the SAME sign (both $+3y$ or both $-3y$), you must SUBTRACT one equation from the other so that $3y - 3y = 0$.",
+      "incorrect_working": "$$(2x + 3y) + (5x + 3y) = 13 + 22 \\implies 7x = 35 \\quad (\\text{Incorrect: } 3y + 3y = 6y, \\text{ not } 0)$$",
+      "correct_working": "$$(5x + 3y) - (2x + 3y) = 22 - 13 \\implies 3x = 9 \\implies x = 3, y = 7/3 \\quad (\\text{Correct})$$",
+      "counter_example": "If $x = 5$ (from the incorrect addition), $2(5) + 3y = 13 \\implies y = 1$, which fails in the second equation: $5(5) + 3(1) = 28 \\neq 22$."
+    },
+    {
+      "id": "MISC_10_2_2_2",
+      "title": "Forgetting to Multiply the Right-Hand Side Constant When Scaling an Equation",
+      "misconception": "Multiplying the left-hand side of $2x + 3y = 7$ by $4$ to get $8x + 12y = 7$ instead of $8x + 12y = 28$.",
+      "correct_concept": "To preserve equality, every term on BOTH sides of the equation—including the constant on the right-hand side—must be multiplied by the scaling factor.",
+      "incorrect_working": "$$2x + 3y = 7 \\xrightarrow{\\times 4} 8x + 12y = 7 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$2x + 3y = 7 \\xrightarrow{\\times 4} 8x + 12y = 28 \\quad (\\text{Correct})$$",
+      "counter_example": "The point $(2, 1)$ satisfies $2(2) + 3(1) = 7$ and $8(2) + 12(1) = 28$, not $7$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_2_2_Q1",
+        "question": "Solve the simultaneous equations $y = 4x - 7$ and $2x + y = 11$ using substitution.",
+        "difficulty": "Easy",
+        "context": "Substitution Method",
+        "final_answer": "$x = 3, y = 5$",
+        "step_by_step_solution": [
+          "Substitute $y = 4x - 7$ into $2x + y = 11$: $2x + (4x - 7) = 11 \\implies 6x = 18 \\implies x = 3$.",
+          "Substitute $x = 3$ into $y = 4x - 7$: $y = 4(3) - 7 = 5$."
+        ]
+      },
+      {
+        "id": "10_2_2_Q2",
+        "question": "Solve the simultaneous equations $4x + 3y = 18$ and $2x - 3y = 0$ using elimination.",
+        "difficulty": "Easy",
+        "context": "Elimination by Addition",
+        "final_answer": "$x = 3, y = 2$",
+        "step_by_step_solution": [
+          "Add the two equations to eliminate $y$: $(4x + 2x) + (3y - 3y) = 18 + 0 \\implies 6x = 18 \\implies x = 3$.",
+          "Substitute $x = 3$ into $2x - 3y = 0$: $6 - 3y = 0 \\implies y = 2$."
+        ]
+      },
+      {
+        "id": "10_2_2_Q3",
+        "question": "Solve the simultaneous equations $5x + 2y = 11$ and $3x + 2y = 9$.",
+        "difficulty": "Easy",
+        "context": "Elimination by Subtraction",
+        "final_answer": "$x = 1, y = 3$",
+        "step_by_step_solution": [
+          "Subtract the second equation from the first: $(5x - 3x) + (2y - 2y) = 11 - 9 \\implies 2x = 2 \\implies x = 1$.",
+          "Substitute $x = 1$ into $3x + 2y = 9$: $3 + 2y = 9 \\implies 2y = 6 \\implies y = 3$."
+        ]
+      },
+      {
+        "id": "10_2_2_Q4",
+        "question": "Solve the simultaneous equations $4x - 3y = 18$ and $3x + 5y = -1$.",
+        "difficulty": "Medium",
+        "context": "Scaling Both Equations",
+        "final_answer": "$x = 3, y = -2$",
+        "step_by_step_solution": [
+          "Multiply the first equation by $5$ ($20x - 15y = 90$) and the second equation by $3$ ($9x + 15y = -3$).",
+          "Add the scaled equations: $29x = 87 \\implies x = 3$.",
+          "Substitute $x = 3$ into $3x + 5y = -1$: $9 + 5y = -1 \\implies 5y = -10 \\implies y = -2$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_2_2_Q5",
+        "question": "A Bendigo craftsperson makes wooden chopping boards. Setup costs are $\\$360$ plus $\\$12$ in timber per board ($C = 12n + 360$). Each board sells for $\\$30$ ($R = 30n$). Find the break-even number of boards $n$ and the revenue at the break-even point.",
+        "difficulty": "Medium",
+        "context": "Break-Even Analysis",
+        "final_answer": "$n = 20\\text{ boards}$; break-even revenue $\\$600$",
+        "step_by_step_solution": [
+          "At break-even, $R = C$: $30n = 12n + 360$.",
+          "Subtract $12n$: $18n = 360 \\implies n = 20\\text{ boards}$.",
+          "Break-even revenue $= 30 \\times 20 = \\$600$."
+        ]
+      },
+      {
+        "id": "10_2_2_Q6",
+        "question": "A rectangle has a perimeter of $46\\text{ cm}$. Its length $L$ is $5\\text{ cm}$ greater than twice its width $W$. Set up and solve a pair of simultaneous equations to find $L$ and $W$.",
+        "difficulty": "Medium",
+        "context": "Geometric Perimeter Modelling",
+        "final_answer": "Width $W = 6\\text{ cm}$, length $L = 17\\text{ cm}$",
+        "step_by_step_solution": [
+          "From the perimeter, $2L + 2W = 46 \\implies L + W = 23$. From the length relation, $L = 2W + 5$.",
+          "Substitute $L = 2W + 5$ into $L + W = 23$: $(2W + 5) + W = 23 \\implies 3W = 18 \\implies W = 6\\text{ cm}$.",
+          "Then $L = 2(6) + 5 = 17\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "10_2_2_Q7",
+        "question": "A chemist needs $100\\text{ mL}$ of a $28\\%$ acid solution by mixing $x\\text{ mL}$ of a $20\\%$ acid solution with $y\\text{ mL}$ of a $40\\%$ acid solution. Write and solve simultaneous equations to find $x$ and $y$.",
+        "difficulty": "Challenging",
+        "context": "Chemical Mixture Problem",
+        "final_answer": "$x = 60\\text{ mL}$ of $20\\%$ solution and $y = 40\\text{ mL}$ of $40\\%$ solution",
+        "step_by_step_solution": [
+          "Total volume equation: $x + y = 100$. Pure acid volume equation: $0.20x + 0.40y = 0.28(100) = 28$ (or $2x + 4y = 280$).",
+          "Substitute $y = 100 - x$ into $2x + 4y = 280$: $2x + 4(100 - x) = 280 \\implies -2x = -120 \\implies x = 60\\text{ mL}$.",
+          "Then $y = 100 - 60 = 40\\text{ mL}$."
+        ]
+      },
+      {
+        "id": "10_2_2_Q8",
+        "question": "A river boat on the Murray River travels $36\\text{ km}$ downstream in $2\\text{ hours}$ and returns the same $36\\text{ km}$ upstream in $3\\text{ hours}$. Find the speed of the boat in still water ($b\\text{ km/h}$) and the speed of the river current ($c\\text{ km/h}$).",
+        "difficulty": "Challenging",
+        "context": "Upstream and Downstream Kinematics",
+        "final_answer": "Boat speed $15\\text{ km/h}$; current speed $3\\text{ km/h}$",
+        "step_by_step_solution": [
+          "Downstream speed is $b + c = \\frac{36}{2} = 18\\text{ km/h}$; upstream speed is $b - c = \\frac{36}{3} = 12\\text{ km/h}$.",
+          "Add the two equations: $2b = 30 \\implies b = 15\\text{ km/h}$.",
+          "Substitute $b = 15$: $15 + c = 18 \\implies c = 3\\text{ km/h}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_2_2_Q9",
+        "question": "Explain both algebraically and geometrically why the simultaneous system $2x - y = 4$ and $4x - 2y = 10$ has no solution.",
+        "difficulty": "Medium",
+        "context": "Inconsistent Parallel System",
+        "final_answer": "Multiplying the first equation by $2$ gives $4x - 2y = 8 \\neq 10$; geometrically both lines have gradient $m = 2$ but different $y$-intercepts ($-4$ and $-5$), so they are parallel and never intersect",
+        "step_by_step_solution": [
+          "Algebraically, multiplying $2x - y = 4$ by $2$ gives $4x - 2y = 8$, which contradicts $4x - 2y = 10$ (subtracting gives $0 = -2$, a contradiction).",
+          "Geometrically, rearranging into gradient-intercept form gives $y = 2x - 4$ and $y = 2x - 5$: parallel distinct lines with gradient $2$ that never intersect."
+        ]
+      },
+      {
+        "id": "10_2_2_Q10",
+        "question": "For the system $3x + ky = 6$ and $6x + 8y = 12$, find the value of $k$ for which the system has infinitely many solutions, and explain what happens geometrically for this value of $k$.",
+        "difficulty": "Challenging",
+        "context": "Coincident Lines Parameter",
+        "final_answer": "$k = 4$; the two equations represent the exact same (coincident) straight line",
+        "step_by_step_solution": [
+          "Notice that the $x$-coefficient and constant in $6x + 8y = 12$ are exactly twice those in $3x + ky = 6$.",
+          "For the two equations to be identical multiples of each other, $2k = 8 \\implies k = 4$, making the two lines coincident so every point on the line is a solution."
+        ]
+      },
+      {
+        "id": "10_2_2_Q11",
+        "question": "Without solving for $x$ and $y$ individually, find the value of $x + y$ given that $7x + 5y = 31$ and $5x + 7y = 17$.",
+        "difficulty": "Challenging",
+        "context": "Symmetric Linear System Shortcut",
+        "final_answer": "$x + y = 4$",
+        "step_by_step_solution": [
+          "Add the two equations directly: $(7x + 5y) + (5x + 7y) = 31 + 17 \\implies 12x + 12y = 48$.",
+          "Factor out $12$ and divide both sides by $12$: $12(x + y) = 48 \\implies x + y = 4$."
+        ]
+      },
+      {
+        "id": "10_2_2_Q12",
+        "question": "Prove that for any constants $p$ and $q$, the system $x + y = p$ and $x - y = q$ always has the unique solution $x = \\frac{p + q}{2}$ and $y = \\frac{p - q}{2}$.",
+        "difficulty": "Extension",
+        "context": "General Sum and Difference System",
+        "final_answer": "Adding gives $2x = p + q \\implies x = \\frac{p+q}{2}$; subtracting gives $2y = p - q \\implies y = \\frac{p-q}{2}$",
+        "step_by_step_solution": [
+          "Add the two equations: $(x + y) + (x - y) = p + q \\implies 2x = p + q \\implies x = \\frac{p + q}{2}$.",
+          "Subtract the second equation from the first: $(x + y) - (x - y) = p - q \\implies 2y = p - q \\implies y = \\frac{p - q}{2}$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_2_2_1x",
+      "description": "Worked Example 10.2.2.1 x",
+      "expression": "solve([Eq(y, 2*x - 1), Eq(3*x + 2*y, 19)], (x, y))[x]",
+      "expected": 3
+    },
+    {
+      "id": "WE10_2_2_1y",
+      "description": "Worked Example 10.2.2.1 y",
+      "expression": "solve([Eq(y, 2*x - 1), Eq(3*x + 2*y, 19)], (x, y))[y]",
+      "expected": 5
+    },
+    {
+      "id": "NYT10_2_2_1x",
+      "description": "Now You Try 10.2.2.1 x",
+      "expression": "solve([Eq(y, 3*x - 4), Eq(2*x + 3*y, 21)], (x, y))[x]",
+      "expected": 3
+    },
+    {
+      "id": "WE10_2_2_2x",
+      "description": "Worked Example 10.2.2.2 x",
+      "expression": "solve([Eq(3*x + 2*y, 16), Eq(5*x - 3*y, 14)], (x, y))[x]",
+      "expected": 4
+    },
+    {
+      "id": "WE10_2_2_2y",
+      "description": "Worked Example 10.2.2.2 y",
+      "expression": "solve([Eq(3*x + 2*y, 16), Eq(5*x - 3*y, 14)], (x, y))[y]",
+      "expected": 2
+    },
+    {
+      "id": "NYT10_2_2_2x",
+      "description": "Now You Try 10.2.2.2 x",
+      "expression": "solve([Eq(2*x + 5*y, 19), Eq(3*x - 2*y, 0)], (x, y))[x]",
+      "expected": 2
+    },
+    {
+      "id": "WE10_2_2_3p",
+      "description": "Worked Example 10.2.2.3 pie price",
+      "expression": "solve([Eq(3*p + 2*c, 23), Eq(4*p + 3*c, 32)], (p, c))[p]",
+      "expected": 5
+    },
+    {
+      "id": "WE10_2_2_3c",
+      "description": "Worked Example 10.2.2.3 coffee price",
+      "expression": "solve([Eq(3*p + 2*c, 23), Eq(4*p + 3*c, 32)], (p, c))[c]",
+      "expected": 4
+    },
+    {
+      "id": "NYT10_2_2_3a",
+      "description": "Now You Try 10.2.2.3 adult ticket",
+      "expression": "solve([Eq(2*a + 3*c, 69), Eq(3*a + 2*c, 76)], (a, c))[a]",
+      "expected": 18
+    },
+    {
+      "id": "EX10_2_2_Q1",
+      "description": "Exercise 10.2.2 Q1 x",
+      "expression": "solve([Eq(y, 4*x - 7), Eq(2*x + y, 11)], (x, y))[x]",
+      "expected": 3
+    },
+    {
+      "id": "EX10_2_2_Q2",
+      "description": "Exercise 10.2.2 Q2 y",
+      "expression": "solve([Eq(4*x + 3*y, 18), Eq(2*x - 3*y, 0)], (x, y))[y]",
+      "expected": 2
+    },
+    {
+      "id": "EX10_2_2_Q3",
+      "description": "Exercise 10.2.2 Q3 y",
+      "expression": "solve([Eq(5*x + 2*y, 11), Eq(3*x + 2*y, 9)], (x, y))[y]",
+      "expected": 3
+    },
+    {
+      "id": "EX10_2_2_Q4x",
+      "description": "Exercise 10.2.2 Q4 x",
+      "expression": "solve([Eq(4*x - 3*y, 18), Eq(3*x + 5*y, -1)], (x, y))[x]",
+      "expected": 3
+    },
+    {
+      "id": "EX10_2_2_Q4y",
+      "description": "Exercise 10.2.2 Q4 y",
+      "expression": "solve([Eq(4*x - 3*y, 18), Eq(3*x + 5*y, -1)], (x, y))[y]",
+      "expected": -2
+    },
+    {
+      "id": "EX10_2_2_Q5",
+      "description": "Exercise 10.2.2 Q5 break-even n",
+      "expression": "solve(Eq(30*n, 12*n + 360), n)[0]",
+      "expected": 20
+    },
+    {
+      "id": "EX10_2_2_Q6",
+      "description": "Exercise 10.2.2 Q6 length L",
+      "expression": "solve([Eq(L + W, 23), Eq(L, 2*W + 5)], (L, W))[L]",
+      "expected": 17
+    },
+    {
+      "id": "EX10_2_2_Q7",
+      "description": "Exercise 10.2.2 Q7 x volume",
+      "expression": "solve([Eq(x + y, 100), Eq(2*x + 4*y, 280)], (x, y))[x]",
+      "expected": 60
+    },
+    {
+      "id": "EX10_2_2_Q8",
+      "description": "Exercise 10.2.2 Q8 boat speed",
+      "expression": "solve([Eq(b + c, 18), Eq(b - c, 12)], (b, c))[b]",
+      "expected": 15
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+{
+  "metadata": {
+    "section_id": "9_9_2",
+    "section_code": "9B",
+    "chapter_number": 9,
+    "chapter_title": "Multi-Stage Probability and Relative Frequency",
+    "title": "Relative Frequency, 'And/Or' Compound Events, and Simulations",
+    "vcaa_code": "VC2M9P02",
+    "vcaa_description": "Calculate relative frequencies from given or collected data to estimate probabilities of events involving 'and', inclusive 'or' and exclusive 'or' (and design simulations VC2M9P03).",
+    "strand": "Probability",
+    "target_mastery": "Estimate compound probabilities from survey and experimental data using relative frequencies, two-way tables, the Addition Rule $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$, and multi-trial simulations.",
+    "prerequisites": [
+      "Experimental probability and relative frequency (Year 8 VC2M8P03)",
+      "Two-step experiments and tree diagrams (Section 9A)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Relative frequency",
+        "definition": "The proportion of trials in which an event $E$ occurs during an experiment or survey of $n$ total trials: $\\text{Relative frequency} = \\frac{f}{n}$, used as an empirical estimate of $\\Pr(E)$."
+      },
+      {
+        "term": "Inclusive 'or' ($A \\cup B$) vs exclusive 'or'",
+        "definition": "In mathematics, '$A$ or $B$' is inclusive by default ($A$ occurs, or $B$ occurs, or both $A \\cap B$ occur); exclusive 'or' means 'either $A$ or $B$, but NOT both' ($n(A \\cup B) - n(A \\cap B)$)."
+      },
+      {
+        "term": "Addition Rule for probability",
+        "definition": "For any two events $A$ and $B$, $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$, where subtracting $\\Pr(A \\cap B)$ corrects for double-counting the overlap."
+      },
+      {
+        "term": "Monte Carlo simulation",
+        "definition": "The use of random physical devices (coins, dice, spinners) or digital random number generators to model a real-world multi-stage chance process over many repeated trials."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_9_2_1",
+      "title": "Relative Frequency and the Law of Large Numbers",
+      "explanation": "When theoretical probabilities cannot be determined by symmetry (for example, weather patterns, medical recovery rates, or consumer survey responses), we estimate the probability of an event $E$ using its relative frequency $\\hat{p} = \\frac{f}{n} = \\frac{\\text{number of times } E \\text{ occurred}}{\\text{total number of trials } n}$. As the number of trials $n$ increases, the relative frequency fluctuates less and converges towards the true underlying probability. To find the expected number of occurrences in $N$ future trials, calculate $E(X) = N \\times \\Pr(E)$.",
+      "formula_latex": "\\Pr(E) \\approx \\text{Relative Frequency} = \\frac{f}{n}, \\qquad \\text{Expected frequency} = N \\times \\Pr(E)",
+      "callout_title": "More Trials Give More Reliable Estimates",
+      "callout_rule": "When comparing two experimental estimates of the same probability, always trust the experiment with the larger sample size $n$ (or pool all trials together by adding the numerators and adding the denominators)."
+    },
+    {
+      "id": "theory_9_9_2_2",
+      "title": "Compound Events: 'And', Inclusive 'Or', Exclusive 'Or', and the Addition Rule",
+      "explanation": "From a two-way table or Venn diagram of survey frequencies: (1) '$A$ and $B$' is the intersection $A \\cap B$; (2) Inclusive '$A$ or $B$' is the union $A \\cup B$, which satisfies the Addition Rule $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$ (if $A$ and $B$ are mutually exclusive, $\\Pr(A \\cap B) = 0$); (3) Exclusive '$A$ or $B$' means $A$ or $B$ but NOT both, whose probability is $\\Pr(A) + \\Pr(B) - 2\\Pr(A \\cap B) = \\Pr(A \\cup B) - \\Pr(A \\cap B)$.",
+      "formula_latex": "\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B), \\qquad \\Pr(A \\text{ xor } B) = \\Pr(A \\cup B) - \\Pr(A \\cap B)",
+      "callout_title": "Subtract the Overlap Once for Inclusive 'Or', Twice for Exclusive 'Or'",
+      "callout_rule": "Adding $\\Pr(A) + \\Pr(B)$ counts the intersection $A \\cap B$ twice. Subtract $\\Pr(A \\cap B)$ once to keep the overlap (inclusive 'or'), or subtract $2\\Pr(A \\cap B)$ to remove the overlap completely (exclusive 'or')."
+    },
+    {
+      "id": "theory_9_9_2_3",
+      "title": "Conditional Relative Frequency and Designing Simulations (VC2M9P03)",
+      "explanation": "When a question restricts the group using phrases like 'given that', 'of those who...', or 'among the students who...', the denominator changes from the grand total $n$ to the subtotal of that condition: $\\Pr(A \\mid B) = \\frac{n(A \\cap B)}{n(B)}$. To simulate a real-world event with probability $p = \\frac{a}{b}$, assign $a$ equally likely outcomes of a random generator (such as digits $0\\text{--}9$, a die, or random integers $1\\text{--}100$) to 'Success' and the remaining $b - a$ outcomes to 'Failure', and repeat for many multi-step trials.",
+      "formula_latex": "\\Pr(A \\mid B) = \\frac{n(A \\cap B)}{n(B)} = \\frac{\\Pr(A \\cap B)}{\\Pr(B)}",
+      "callout_title": "'Given That' Shrinks the Denominator",
+      "callout_rule": "Whenever you see 'given that $B$' or 'of the people in row/column $B$', immediately replace the grand total in the denominator with the row/column total $n(B)$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_9_2_1",
+      "title": "Calculating 'And', Inclusive 'Or', and Exclusive 'Or' from Survey Data",
+      "difficulty": "Fluency",
+      "problem": "A survey of $200$ Year 9 students in Victoria found that $110$ play Australian Rules Football ($F$), $85$ play Basketball ($B$), and $35$ play both sports ($F \\cap B$). Estimate using relative frequencies the probability that a randomly chosen student plays: (a) both sports ($F \\text{ and } B$), (b) Football or Basketball (inclusive 'or'), (c) Football or Basketball, but not both (exclusive 'or'), and (d) neither sport.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Divide $n(F \\cap B) = 35$ by $200$ for part (a), and apply the Addition Rule $n(F \\cup B) = n(F) + n(B) - n(F \\cap B)$ for part (b).",
+          "working": "$$\\Pr(F \\cap B) = \\frac{35}{200} = \\frac{7}{40} = 0.175$$\n$$n(F \\cup B) = 110 + 85 - 35 = 160 \\implies \\Pr(F \\cup B) = \\frac{160}{200} = \\frac{4}{5} = 0.8$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For exclusive 'or' in part (c), subtract the overlap $35$ from the union $160$ ($160 - 35 = 125$). For part (d), subtract the union $160$ from $200$.",
+          "working": "$$\\Pr(F \\text{ xor } B) = \\frac{160 - 35}{200} = \\frac{125}{200} = \\frac{5}{8} = 0.625$$\n$$\\Pr(\\text{neither}) = 1 - \\frac{4}{5} = \\frac{40}{200} = \\frac{1}{5} = 0.2$$"
+        }
+      ],
+      "final_answer": "(a) $\\frac{7}{40} = 0.175$, (b) $\\frac{4}{5} = 0.8$, (c) $\\frac{5}{8} = 0.625$, (d) $\\frac{1}{5} = 0.2$",
+      "now_you_try": {
+        "problem": "In a survey of $100$ café customers, $62$ ordered coffee ($C$), $48$ ordered a muffin ($M$), and $25$ ordered both. Find the relative frequency of a customer ordering coffee or a muffin (inclusive 'or'), and ordering exclusive 'or' (one but not both).",
+        "hint": "Use $n(C \\cup M) = 62 + 48 - 25 = 85$, then subtract $25$ more for exclusive 'or'.",
+        "working_summary": "Inclusive 'or': $\\frac{85}{100} = \\frac{17}{20} = 0.85$. Exclusive 'or': $\\frac{85 - 25}{100} = \\frac{60}{100} = \\frac{3}{5} = 0.60$.",
+        "answer": "Inclusive 'or': $0.85$ ($\\frac{17}{20}$); Exclusive 'or': $0.60$ ($\\frac{3}{5}$)"
+      }
+    },
+    {
+      "id": "WE9_9_2_2",
+      "title": "Relative Frequency and Conditional Probability in a Two-Way Table",
+      "difficulty": "Fluency",
+      "problem": "A roadside inspection tested $300$ vehicles in regional Victoria for tyre tread ($T$: Safe vs Worn) and headlights ($H$: Working vs Faulty). Exactly $240$ vehicles had safe tyres (of which $225$ had working headlights and $15$ had faulty headlights), and $60$ vehicles had worn tyres (of which $45$ had working headlights and $15$ had faulty headlights). Find the relative frequency that a vehicle: (a) has worn tyres OR faulty headlights (inclusive), and (b) has faulty headlights GIVEN THAT it has worn tyres.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "From the counts, $n(\\text{Worn tyres}) = 60$, $n(\\text{Faulty lights}) = 15 + 15 = 30$, and their overlap is $n(\\text{Worn} \\cap \\text{Faulty}) = 15$. Apply the Addition Rule over $300$.",
+          "working": "$$\\Pr(\\text{Worn} \\cup \\text{Faulty}) = \\frac{60 + 30 - 15}{300} = \\frac{75}{300} = \\frac{1}{4} = 0.25$$"
+        },
+        {
+          "step": 2,
+          "thinking": "For 'given that it has worn tyres', restrict the denominator to the $60$ vehicles with worn tyres, of which $15$ have faulty headlights.",
+          "working": "$$\\Pr(\\text{Faulty} \\mid \\text{Worn}) = \\frac{15}{60} = \\frac{1}{4} = 0.25$$"
+        }
+      ],
+      "final_answer": "(a) $\\frac{1}{4} = 0.25$, (b) $\\frac{1}{4} = 0.25$",
+      "now_you_try": {
+        "problem": "Using the same $300$ vehicles, find the probability that a vehicle has worn tyres GIVEN THAT it has faulty headlights.",
+        "hint": "Restrict the denominator to the $30$ vehicles with faulty headlights ($15 + 15 = 30$).",
+        "working_summary": "Out of $30$ vehicles with faulty headlights, $15$ have worn tyres: $\\Pr(\\text{Worn} \\mid \\text{Faulty}) = \\frac{15}{30} = \\frac{1}{2} = 0.5$.",
+        "answer": "$\\frac{1}{2} = 0.5$"
+      }
+    },
+    {
+      "id": "WE9_9_2_3",
+      "title": "Analysing a Multi-Step Simulation (Cereal Box Collector's Problem)",
+      "difficulty": "Problem-Solving",
+      "problem": "A cereal company places $1$ of $2$ collectible AFL footy cards (Card $A$ or Card $B$, equally likely with probability $0.5$ each) inside every box. To estimate how many boxes a fan must buy to collect BOTH cards, a class simulates buying boxes by tossing a coin ($\\text{H} = A, \\text{T} = B$) until both $\\text{H}$ and $\\text{T}$ have appeared. Across $50$ simulated trials, the number of boxes required was: $2$ boxes ($26$ times), $3$ boxes ($12$ times), $4$ boxes ($6$ times), $5$ boxes ($4$ times), and $6$ boxes ($2$ times). (a) Based on the simulation, estimate the probability that a fan collects both cards in at most $3$ boxes. (b) Calculate the exact theoretical probability of collecting both cards in at most $3$ boxes and compare.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Add the frequencies for $2$ boxes ($26$) and $3$ boxes ($12$) and divide by $50$ trials.",
+          "working": "$$\\text{Relative frequency (at most } 3\\text{ boxes)} = \\frac{26 + 12}{50} = \\frac{38}{50} = \\frac{19}{25} = 0.76$$"
+        },
+        {
+          "step": 2,
+          "thinking": "The only way NOT to have both cards after $3$ boxes is to get $3$ identical cards in a row ($AAA$ or $BBB$), which is $2$ out of $2^3 = 8$ outcomes.",
+          "working": "$$\\Pr(\\text{both cards in } \\le 3\\text{ boxes}) = 1 - \\Pr(AAA \\text{ or } BBB) = 1 - \\frac{2}{8} = \\frac{6}{8} = \\frac{3}{4} = 0.75$$"
+        }
+      ],
+      "final_answer": "(a) $0.76$ ($\\frac{19}{25}$), (b) Theoretical probability is $0.75$ ($\\frac{3}{4}$), which is very close to the simulation estimate of $0.76$",
+      "now_you_try": {
+        "problem": "From the same $50$ simulation trials ($26$ of length $2$, $12$ of length $3$, $6$ of length $4$, $4$ of length $5$, $2$ of length $6$), calculate the experimental mean number of boxes bought per trial.",
+        "hint": "Compute $\\frac{2(26) + 3(12) + 4(6) + 5(4) + 6(2)}{50}$.",
+        "working_summary": "Total boxes $= 52 + 36 + 24 + 20 + 12 = 144$. Mean $= \\frac{144}{50} = 2.88$ boxes.",
+        "answer": "$2.88$ boxes"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_9_2_1",
+      "title": "Forgetting to Subtract the Intersection in the Addition Rule",
+      "misconception": "Calculating $\\Pr(A \\text{ or } B) = \\Pr(A) + \\Pr(B)$ when events $A$ and $B$ can occur together (non-mutually exclusive).",
+      "correct_concept": "When $A$ and $B$ overlap, every outcome in $A \\cap B$ is counted once in $\\Pr(A)$ and a second time in $\\Pr(B)$. You must subtract $\\Pr(A \\cap B)$ so that overlapping outcomes are counted only once.",
+      "incorrect_working": "$$\\Pr(\\text{King or Heart}) = \\frac{4}{52} + \\frac{13}{52} = \\frac{17}{52} \\quad \\text{(Incorrect — double-counts King of Hearts!)}$$",
+      "correct_working": "$$\\Pr(\\text{King or Heart}) = \\frac{4}{52} + \\frac{13}{52} - \\frac{1}{52} = \\frac{16}{52} = \\frac{4}{13}$$",
+      "counter_example": "If $\\Pr(A) = 0.6$ and $\\Pr(B) = 0.6$, simply adding gives $\\Pr(A \\cup B) = 1.2 > 1$, which is impossible for any probability."
+    },
+    {
+      "id": "misc_9_9_2_2",
+      "title": "Using the Grand Total Instead of the Condition Subtotal for 'Given That'",
+      "misconception": "Dividing $n(A \\cap B)$ by the grand total $n$ when the question asks for the probability of $A$ GIVEN THAT $B$ occurred.",
+      "correct_concept": "In $\\Pr(A \\cap B)$ ('A and B'), the denominator is the grand total $n$. In $\\Pr(A \\mid B)$ ('A given B'), the sample space is restricted exclusively to group $B$, so the denominator is $n(B)$.",
+      "incorrect_working": "$$\\text{Out of 200 people, 80 swim and 30 swim \\& run: } \\Pr(\\text{Run} \\mid \\text{Swim}) = \\frac{30}{200} \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\Pr(\\text{Run} \\mid \\text{Swim}) = \\frac{n(\\text{Run} \\cap \\text{Swim})}{n(\\text{Swim})} = \\frac{30}{80} = \\frac{3}{8}$$",
+      "counter_example": "$\\frac{30}{200}$ is the probability that a random person from the whole survey both swims and runs, not the proportion among swimmers."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_9_2_Q1",
+        "question": "A biased coin is tossed $250$ times and lands on Heads $145$ times. (a) Find the relative frequency of Heads as a simplified fraction and a decimal. (b) How many Heads would you expect in $1000$ tosses of this coin?",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $\\frac{29}{50} = 0.58$, (b) $580$ Heads",
+        "step_by_step_solution": [
+          "Divide frequency by total trials: $\\hat{p} = \\frac{145}{250} = \\frac{29}{50} = 0.58$.",
+          "Multiply by $1000$ future trials: $1000 \\times 0.58 = 580$ Heads."
+        ]
+      },
+      {
+        "id": "9_9_2_Q2",
+        "question": "Two events $A$ and $B$ have $\\Pr(A) = 0.45$, $\\Pr(B) = 0.35$, and $\\Pr(A \\cap B) = 0.15$. Find: (a) $\\Pr(A \\cup B)$ (inclusive 'or'), and (b) $\\Pr(A \\text{ xor } B)$ (exclusive 'or').",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $0.65$, (b) $0.50$",
+        "step_by_step_solution": [
+          "By the Addition Rule, $\\Pr(A \\cup B) = 0.45 + 0.35 - 0.15 = 0.65$.",
+          "For exclusive 'or', subtract $\\Pr(A \\cap B)$ from $\\Pr(A \\cup B)$: $0.65 - 0.15 = 0.50$."
+        ]
+      },
+      {
+        "id": "9_9_2_Q3",
+        "question": "A card is drawn at random from a standard deck of $52$ playing cards. Find the probability that the card is: (a) a Queen OR a Spade (inclusive 'or'), and (b) a Queen OR a Spade, but not the Queen of Spades (exclusive 'or').",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "(a) $\\frac{4}{13}$, (b) $\\frac{15}{52}$",
+        "step_by_step_solution": [
+          "There are $4$ Queens, $13$ Spades, and $1$ Queen of Spades: $\\Pr(Q \\cup S) = \\frac{4 + 13 - 1}{52} = \\frac{16}{52} = \\frac{4}{13}$.",
+          "Removing the $1$ overlapping Queen of Spades leaves $\\frac{16 - 1}{52} = \\frac{15}{52}$."
+        ]
+      },
+      {
+        "id": "9_9_2_Q4",
+        "question": "Given $\\Pr(A) = 0.6$, $\\Pr(B) = 0.5$, and $\\Pr(A \\cup B) = 0.85$, find $\\Pr(A \\cap B)$ and the conditional probability $\\Pr(A \\mid B)$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$\\Pr(A \\cap B) = 0.25,\\; \\Pr(A \\mid B) = 0.5$",
+        "step_by_step_solution": [
+          "Rearrange the Addition Rule: $\\Pr(A \\cap B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cup B) = 0.6 + 0.5 - 0.85 = 0.25$.",
+          "Divide by $\\Pr(B)$: $\\Pr(A \\mid B) = \\frac{0.25}{0.5} = 0.5$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_9_2_Q5",
+        "question": "At a Geelong secondary college, $120$ Year 9 students were asked whether they study French ($F$) or Japanese ($J$). Exactly $54$ study French, $42$ study Japanese, and $36$ study neither language. (a) How many students study both languages? (b) What is the probability that a randomly selected Japanese student also studies French?",
+        "difficulty": "Medium",
+        "context": "School Language Enrolment",
+        "final_answer": "(a) $12$ students, (b) $\\frac{2}{7}$",
+        "step_by_step_solution": [
+          "Since $36$ study neither, $n(F \\cup J) = 120 - 36 = 84$. By the Addition Rule, $n(F \\cap J) = 54 + 42 - 84 = 12$ students.",
+          "Among the $42$ Japanese students, $12$ also study French: $\\Pr(F \\mid J) = \\frac{12}{42} = \\frac{2}{7}$."
+        ]
+      },
+      {
+        "id": "9_9_2_Q6",
+        "question": "Three students test the same spinner to estimate the probability of landing on Red. Aria spins $20$ times ($7$ Red), Ben spins $80$ times ($26$ Red), and Chloe spins $100$ times ($31$ Red). (a) Which individual student has the most reliable estimate? (b) Pool all three datasets together to calculate the best overall relative frequency estimate of landing on Red.",
+        "difficulty": "Easy",
+        "context": "Pooling Experimental Data",
+        "final_answer": "(a) Chloe ($n = 100$), (b) $\\frac{64}{200} = \\frac{8}{25} = 0.32$",
+        "step_by_step_solution": [
+          "Chloe's individual estimate is most reliable because she conducted the largest number of trials ($n = 100$).",
+          "Pooling all $20 + 80 + 100 = 200$ spins gives $\\frac{7 + 26 + 31}{200} = \\frac{64}{200} = \\frac{8}{25} = 0.32$."
+        ]
+      },
+      {
+        "id": "9_9_2_Q7",
+        "question": "A multiple-choice quiz has $4$ questions, each with $5$ options ($A, B, C, D, E$) of which only $1$ is correct ($\\Pr(\\text{correct}) = 0.2$). A student designs a simulation using random single digits $0\\text{--}9$, where digits $0$ and $1$ represent a correct guess and digits $2\\text{--}9$ represent an incorrect guess. Explain why this digit assignment is valid, and find the theoretical probability that a student who guesses all $4$ questions gets at least $1$ question correct.",
+        "difficulty": "Challenging",
+        "context": "Simulation Design (VC2M9P03)",
+        "final_answer": "$1 - \\left(\\frac{4}{5}\\right)^4 = 1 - \\frac{256}{625} = \\frac{369}{625} = 0.5904$",
+        "step_by_step_solution": [
+          "There are $10$ equally likely digits ($0\\text{--}9$), and assigning $2$ digits ($0, 1$) to 'correct' gives $\\Pr(\\text{correct}) = \\frac{2}{10} = 0.2 = \\frac{1}{5}$, matching the $5$-option quiz.",
+          "Using the complement rule across $4$ independent questions: $\\Pr(\\text{at least } 1\\text{ correct}) = 1 - \\left(\\frac{4}{5}\\right)^4 = 1 - \\frac{256}{625} = \\frac{369}{625} = 0.5904$."
+        ]
+      },
+      {
+        "id": "9_9_2_Q8",
+        "question": "A medical rapid test is trialled on $500$ patients, of whom $100$ actually have a virus ($V$) and $400$ do not ($V'$). Among the $100$ infected patients, $92$ test positive ($+$). Among the $400$ uninfected patients, $28$ falsely test positive ($+$). If a patient tests positive, what is the probability (relative frequency) that they actually have the virus?",
+        "difficulty": "Challenging",
+        "context": "Medical Diagnostics & False Positives",
+        "final_answer": "$\\frac{92}{120} = \\frac{23}{30} \\approx 0.767$",
+        "step_by_step_solution": [
+          "The total number of patients who test positive is $92 + 28 = 120$.",
+          "Of those $120$ positive results, $92$ actually have the virus: $\\Pr(V \\mid +) = \\frac{92}{120} = \\frac{23}{30} \\approx 0.767$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_9_2_Q9",
+        "question": "Using a Venn diagram or algebra, explain why $\\Pr(A \\text{ xor } B) = \\Pr(A) + \\Pr(B) - 2\\Pr(A \\cap B)$ for exclusive 'or', whereas $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$ for inclusive 'or'. Under what condition are inclusive 'or' and exclusive 'or' equal?",
+        "difficulty": "Medium",
+        "context": "Inclusive vs Exclusive Logic",
+        "final_answer": "They are equal if and only if $\\Pr(A \\cap B) = 0$ (when $A$ and $B$ are mutually exclusive)",
+        "step_by_step_solution": [
+          "Only $A$ is $\\Pr(A) - \\Pr(A \\cap B)$ and only $B$ is $\\Pr(B) - \\Pr(A \\cap B)$; summing these two disjoint regions gives $\\Pr(A \\text{ xor } B) = \\Pr(A) + \\Pr(B) - 2\\Pr(A \\cap B)$.",
+          "Comparing with $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B)$, the two expressions are equal if and only if $\\Pr(A \\cap B) = 0$ (mutually exclusive events)."
+        ]
+      },
+      {
+        "id": "9_9_2_Q10",
+        "question": "A game-show host claims that if you roll a fair $6$-sided die $6$ times, you are guaranteed ($100\\%$) to roll at least one $6$ because $\\frac{1}{6} \\times 6 = 1$. Critique this reasoning and calculate the true probability of rolling at least one $6$ in $6$ rolls (to $3$ decimal places).",
+        "difficulty": "Challenging",
+        "context": "Critiquing Probability Fallacies",
+        "final_answer": "False: $\\frac{1}{6} \\times 6 = 1$ is the expected average number of $6$s, not the probability; true probability is $1 - \\left(\\frac{5}{6}\\right)^6 = \\frac{31\\,031}{46\\,656} \\approx 0.665$",
+        "step_by_step_solution": [
+          "Separate rolls are independent, not mutually exclusive, so you cannot add $\\frac{1}{6}$ six times (otherwise $7$ rolls would give probability $\\frac{7}{6} > 1$).",
+          "The true probability of at least one $6$ is $1 - \\Pr(\\text{no } 6\\text{s}) = 1 - \\left(\\frac{5}{6}\\right)^6 = 1 - \\frac{15\\,625}{46\\,656} = \\frac{31\\,031}{46\\,656} \\approx 0.665$."
+        ]
+      },
+      {
+        "id": "9_9_2_Q11",
+        "question": "In a school of $240$ students, $\\Pr(A) = \\frac{1}{2}$ and $\\Pr(B) = \\frac{2}{3}$. Since $\\Pr(A \\cup B) \\le 1$ and $\\Pr(A \\cap B) \\le \\min(\\Pr(A), \\Pr(B))$, find the minimum and maximum possible values of $\\Pr(A \\cap B)$ and the corresponding minimum and maximum number of students in $A \\cap B$.",
+        "difficulty": "Extension",
+        "context": "Fréchet Probability Bounds",
+        "final_answer": "$\\frac{1}{6} \\le \\Pr(A \\cap B) \\le \\frac{1}{2}$ (between $40$ and $120$ students)",
+        "step_by_step_solution": [
+          "Since $\\Pr(A \\cup B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\cap B) \\le 1$, we have $\\Pr(A \\cap B) \\ge \\frac{1}{2} + \\frac{2}{3} - 1 = \\frac{1}{6}$ ($40$ students).",
+          "Since $A \\cap B \\subseteq A$, $\\Pr(A \\cap B) \\le \\Pr(A) = \\frac{1}{2}$ ($120$ students). Thus $40 \\le n(A \\cap B) \\le 120$."
+        ]
+      },
+      {
+        "id": "9_9_2_Q12",
+        "question": "To estimate $\\pi$ using a Monte Carlo simulation, a computer generates random points $(x, y)$ uniformly inside a $2 \\times 2$ square (area $4$) containing an inscribed circle of radius $r = 1$ (area $\\pi r^2 = \\pi$). Out of $2000$ random points, $1571$ fall inside the circle ($x^2 + y^2 \\le 1$). Use the relative frequency to estimate $\\pi$ to $3$ decimal places.",
+        "difficulty": "Extension",
+        "context": "Monte Carlo Estimation of Pi",
+        "final_answer": "$\\hat{\\pi} = 4 \\times \\frac{1571}{2000} = 3.142$",
+        "step_by_step_solution": [
+          "The theoretical probability that a random point lands inside the circle is $\\frac{\\text{Area of circle}}{\\text{Area of square}} = \\frac{\\pi}{4}$.",
+          "Equating this to the relative frequency gives $\\frac{\\hat{\\pi}}{4} = \\frac{1571}{2000} \\implies \\hat{\\pi} = 4 \\times 0.7855 = 3.142$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_9_2_1a",
+      "description": "Worked Example 9.9.2.1(a) Pr(F and B)",
+      "expression": "Rational(35, 200)",
+      "expected": "7/40"
+    },
+    {
+      "id": "WE9_9_2_1b",
+      "description": "Worked Example 9.9.2.1(b) Pr(F union B)",
+      "expression": "Rational(110 + 85 - 35, 200)",
+      "expected": "4/5"
+    },
+    {
+      "id": "WE9_9_2_1c",
+      "description": "Worked Example 9.9.2.1(c) Pr(F xor B)",
+      "expression": "Rational(110 + 85 - 2 * 35, 200)",
+      "expected": "5/8"
+    },
+    {
+      "id": "NYT9_9_2_1_inc",
+      "description": "Now You Try 9.9.2.1 inclusive or",
+      "expression": "Rational(62 + 48 - 25, 100)",
+      "expected": "17/20"
+    },
+    {
+      "id": "NYT9_9_2_1_exc",
+      "description": "Now You Try 9.9.2.1 exclusive or",
+      "expression": "Rational(62 + 48 - 2 * 25, 100)",
+      "expected": "3/5"
+    },
+    {
+      "id": "WE9_9_2_2a",
+      "description": "Worked Example 9.9.2.2(a) worn or faulty",
+      "expression": "Rational(60 + 30 - 15, 300)",
+      "expected": "1/4"
+    },
+    {
+      "id": "WE9_9_2_2b",
+      "description": "Worked Example 9.9.2.2(b) faulty given worn",
+      "expression": "Rational(15, 60)",
+      "expected": "1/4"
+    },
+    {
+      "id": "NYT9_9_2_2",
+      "description": "Now You Try 9.9.2.2 worn given faulty",
+      "expression": "Rational(15, 30)",
+      "expected": "1/2"
+    },
+    {
+      "id": "WE9_9_2_3a",
+      "description": "Worked Example 9.9.2.3(a) simulation relative frequency",
+      "expression": "Rational(26 + 12, 50)",
+      "expected": "19/25"
+    },
+    {
+      "id": "WE9_9_2_3b",
+      "description": "Worked Example 9.9.2.3(b) theoretical probability",
+      "expression": "1 - Rational(2, 8)",
+      "expected": "3/4"
+    },
+    {
+      "id": "NYT9_9_2_3",
+      "description": "Now You Try 9.9.2.3 experimental mean boxes",
+      "expression": "Rational(2 * 26 + 3 * 12 + 4 * 6 + 5 * 4 + 6 * 2, 50)",
+      "expected": 2.88
+    },
+    {
+      "id": "EX9_9_2_Q1b",
+      "description": "Exercise 9.9.2 Q1(b) expected Heads in 1000 tosses",
+      "expression": "1000 * Rational(145, 250)",
+      "expected": 580
+    },
+    {
+      "id": "EX9_9_2_Q2a",
+      "description": "Exercise 9.9.2 Q2(a) Addition Rule",
+      "expression": "Rational(45, 100) + Rational(35, 100) - Rational(15, 100)",
+      "expected": 0.65
+    },
+    {
+      "id": "EX9_9_2_Q3a",
+      "description": "Exercise 9.9.2 Q3(a) Queen or Spade",
+      "expression": "Rational(4 + 13 - 1, 52)",
+      "expected": "4/13"
+    },
+    {
+      "id": "EX9_9_2_Q4",
+      "description": "Exercise 9.9.2 Q4 conditional probability Pr(A|B)",
+      "expression": "(Rational(6, 10) + Rational(5, 10) - Rational(85, 100)) / Rational(5, 10)",
+      "expected": 0.5
+    },
+    {
+      "id": "EX9_9_2_Q5b",
+      "description": "Exercise 9.9.2 Q5(b) Pr(French | Japanese)",
+      "expression": "Rational(54 + 42 - (120 - 36), 42)",
+      "expected": "2/7"
+    },
+    {
+      "id": "EX9_9_2_Q6b",
+      "description": "Exercise 9.9.2 Q6(b) pooled relative frequency",
+      "expression": "Rational(7 + 26 + 31, 20 + 80 + 100)",
+      "expected": "8/25"
+    },
+    {
+      "id": "EX9_9_2_Q7",
+      "description": "Exercise 9.9.2 Q7 quiz guessing at least 1 correct",
+      "expression": "1 - Rational(4, 5)**4",
+      "expected": "369/625"
+    },
+    {
+      "id": "EX9_9_2_Q8",
+      "description": "Exercise 9.9.2 Q8 positive predictive value",
+      "expression": "Rational(92, 92 + 28)",
+      "expected": "23/30"
+    },
+    {
+      "id": "EX9_9_2_Q12",
+      "description": "Exercise 9.9.2 Q12 Monte Carlo pi estimate",
+      "expression": "4 * Rational(1571, 2000)",
+      "expected": 3.142
+    }
+  ]
+}

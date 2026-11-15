@@ -1,0 +1,103 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Univariate Data: Box Plots, Quartiles, and Standard Deviation (10 & 10A)",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "10_9_1",
+      "section_code": "9A",
+      "title": "Box Plots, Outlier Fences, and Comparing Distributions",
+      "vcaa_code": "VC2M10ST02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For the ordered set of $7$ numbers: $10, 12, 15, 18, 20, 25, 30$, find:",
+          "parts": [
+            { "label": "a", "question": "The minimum ($\\text{Min}$) and maximum ($\\text{Max}$)", "answer": "$\\text{Min} = 10, \\text{Max} = 30$" },
+            { "label": "b", "question": "The middle number (the median $Q_2$)", "answer": "$18$" },
+            { "label": "c", "question": "The middle of the lower half $10, 12, 15$ ($Q_1$) and upper half $20, 25, 30$ ($Q_3$)", "answer": "$Q_1 = 12, Q_3 = 25$" },
+            { "label": "d", "question": "The interquartile range ($\\text{IQR} = Q_3 - Q_1$)", "answer": "$13$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A dataset has $Q_1 = 20$ and $Q_3 = 30$. Follow these steps to find the outlier fences:",
+          "parts": [
+            { "label": "a", "question": "Find the $\\text{IQR} = Q_3 - Q_1$", "answer": "$10$" },
+            { "label": "b", "question": "Multiply $1.5 \\times \\text{IQR}$", "answer": "$15$" },
+            { "label": "c", "question": "Find the lower fence $Q_1 - 15$", "answer": "$5$" },
+            { "label": "d", "question": "Find the upper fence $Q_3 + 15$", "answer": "$45$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A box plot divides a dataset into $4$ quarters, with $25\\%$ of the data in each section. If $Q_1 = 15, \\text{Median} = 22, Q_3 = 30$, state what percentage of the data lies:",
+          "parts": [
+            { "label": "a", "question": "Below the median ($22$)", "answer": "$50\\%$" },
+            { "label": "b", "question": "Inside the box between $Q_1 = 15$ and $Q_3 = 30$", "answer": "$50\\%$" },
+            { "label": "c", "question": "Below $Q_1 = 15$", "answer": "$25\\%$" },
+            { "label": "d", "question": "Below $Q_3 = 30$", "answer": "$75\\%$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "[10A] For the small dataset of $3$ scores: $2, 5, 8$, find:",
+          "parts": [
+            { "label": "a", "question": "The sum of the scores ($2 + 5 + 8$)", "answer": "$15$" },
+            { "label": "b", "question": "The mean $\\bar{x} = 15 \\div 3$", "answer": "$5$" },
+            { "label": "c", "question": "The squared deviations from the mean: $(2 - 5)^2 + (5 - 5)^2 + (8 - 5)^2$", "answer": "$18$ ($9 + 0 + 9$)" },
+            { "label": "d", "question": "The sample standard deviation $s = \\sqrt{18 \\div 2}$", "answer": "$3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "In Question 2, the outlier fences were found to be $5$ and $45$. If a student scored $52$ on the test, is $52$ an outlier? Explain why.",
+          "answer": "Yes, because $52$ is greater than the upper fence of $45$."
+        },
+        {
+          "number": 6,
+          "question": "A class of $40$ students sits a maths quiz. The upper quartile is $Q_3 = 18$ marks. Since $25\\%$ of students score above $Q_3$, how many students scored more than $18$ marks?",
+          "answer": "$10$ students ($25\\%$ of $40 = 10$)"
+        },
+        {
+          "number": 7,
+          "question": "Two basketball players both average $15$ points per game, but Player A's scores have $\\text{IQR} = 4$ and Player B's scores have $\\text{IQR} = 12$. Which player is more consistent from game to game?",
+          "answer": "Player A (smaller $\\text{IQR}$ means less spread and greater consistency)."
+        },
+        {
+          "number": 8,
+          "question": "The five-number summary for daily customer counts at a bakery is $\\text{Min} = 40, Q_1 = 55, \\text{Median} = 68, Q_3 = 80, \\text{Max} = 95$. Calculate the range and the $\\text{IQR}$.",
+          "answer": "$\\text{Range} = 95 - 40 = 55$; $\\text{IQR} = 80 - 55 = 25$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "What are the **five numbers** that make up a five-number summary used to draw a box plot?",
+          "answer": "Minimum ($\\text{Min}$), Lower Quartile ($Q_1$), Median ($Q_2$), Upper Quartile ($Q_3$), and Maximum ($\\text{Max}$)."
+        },
+        {
+          "number": 10,
+          "question": "If the right-hand whisker of a box plot is much longer than the left-hand whisker, is the data **positively skewed** or **negatively skewed**?",
+          "answer": "Positively skewed (stretched out towards the higher values on the right)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_9_1_1d", "expression": "25 - 12", "expected": 13 },
+        { "id": "WSF10_9_1_2a", "expression": "30 - 20", "expected": 10 },
+        { "id": "WSF10_9_1_2b", "expression": "Rational(15, 10) * 10", "expected": 15 },
+        { "id": "WSF10_9_1_2c", "expression": "20 - 15", "expected": 5 },
+        { "id": "WSF10_9_1_2d", "expression": "30 + 15", "expected": 45 },
+        { "id": "WSF10_9_1_4b", "expression": "(2 + 5 + 8) / 3", "expected": 5 },
+        { "id": "WSF10_9_1_4c", "expression": "(2 - 5)**2 + (5 - 5)**2 + (8 - 5)**2", "expected": 18 },
+        { "id": "WSF10_9_1_4d", "expression": "sqrt(18 / 2)", "expected": 3 },
+        { "id": "WSF10_9_1_6", "expression": "Rational(1, 4) * 40", "expected": 10 },
+        { "id": "WSF10_9_1_8", "expression": "95 - 40", "expected": 55 }
+      ]
+    }
+  ]
+}

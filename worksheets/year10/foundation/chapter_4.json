@@ -1,0 +1,199 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Parabolas, Exponentials, Polynomials, and Functions (10 & 10A)",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "10_4_1",
+      "section_code": "4A",
+      "title": "Sketching Parabolas, Exponential Graphs, and Circles",
+      "vcaa_code": "VC2M10A06",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Read off the turning point $(h, k)$ directly from each parabola in turning-point form $y = a(x - h)^2 + k$:",
+          "parts": [
+            { "label": "a", "question": "$y = (x - 2)^2 + 5$", "answer": "$(2, 5)$" },
+            { "label": "b", "question": "$y = (x - 4)^2 - 1$", "answer": "$(4, -1)$" },
+            { "label": "c", "question": "$y = (x + 3)^2 + 2$", "answer": "$(-3, 2)$" },
+            { "label": "d", "question": "$y = -(x + 1)^2 + 7$", "answer": "$(-1, 7)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the $y$-intercept (set $x = 0$) and the $x$-intercepts (set $y = 0$) of each factorised parabola:",
+          "parts": [
+            { "label": "a", "question": "$y = (x - 2)(x - 4)$", "answer": "$y$-int $(0, 8)$, $x$-ints $(2, 0)$ and $(4, 0)$" },
+            { "label": "b", "question": "$y = (x + 1)(x - 5)$", "answer": "$y$-int $(0, -5)$, $x$-ints $(-1, 0)$ and $(5, 0)$" },
+            { "label": "c", "question": "$y = (x + 3)(x + 1)$", "answer": "$y$-int $(0, 3)$, $x$-ints $(-3, 0)$ and $(-1, 0)$" },
+            { "label": "d", "question": "$y = x(x - 6)$", "answer": "$y$-int $(0, 0)$, $x$-ints $(0, 0)$ and $(6, 0)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "For each exponential function $y = 2^x + k$, find the $y$-intercept (using $2^0 = 1$) and the horizontal asymptote $y = k$:",
+          "parts": [
+            { "label": "a", "question": "$y = 2^x$", "answer": "$y$-int $(0, 1)$, asymptote $y = 0$" },
+            { "label": "b", "question": "$y = 2^x + 3$", "answer": "$y$-int $(0, 4)$, asymptote $y = 3$" },
+            { "label": "c", "question": "$y = 2^x - 5$", "answer": "$y$-int $(0, -4)$, asymptote $y = -5$" },
+            { "label": "d", "question": "$y = 3^x + 1$", "answer": "$y$-int $(0, 2)$, asymptote $y = 1$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the centre and radius $r$ of each circle $x^2 + y^2 = r^2$ or $(x - h)^2 + (y - k)^2 = r^2$:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + y^2 = 9$", "answer": "Centre $(0, 0)$, radius $r = 3$" },
+            { "label": "b", "question": "$x^2 + y^2 = 49$", "answer": "Centre $(0, 0)$, radius $r = 7$" },
+            { "label": "c", "question": "$(x - 1)^2 + (y - 2)^2 = 16$", "answer": "Centre $(1, 2)$, radius $r = 4$" },
+            { "label": "d", "question": "$(x + 3)^2 + (y - 4)^2 = 25$", "answer": "Centre $(-3, 4)$, radius $r = 5$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A water fountain jet follows the parabola $y = -(x - 3)^2 + 4$, where $x\\text{ m}$ is horizontal distance and $y\\text{ m}$ is height. State the coordinates of the highest point (turning point) of the water jet.",
+          "answer": "$(3, 4)$, so maximum height is $4\\text{ m}$ at a distance of $3\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "The number of bacteria in a dish is $y = 2^x$, where $x$ is the time in hours. Evaluate $y$ when $x = 0$, $x = 1$, $x = 2$, and $x = 3$.",
+          "answer": "$1, 2, 4, 8$"
+        },
+        {
+          "number": 7,
+          "question": "A circular garden sprinkler at the origin $(0, 0)$ waters a circle of radius $r = 5\\text{ m}$. Write the equation of the boundary circle in the form $x^2 + y^2 = r^2$.",
+          "answer": "$x^2 + y^2 = 25$"
+        },
+        {
+          "number": 8,
+          "question": "A parabola crosses the $x$-axis at $x = 2$ and $x = 8$. Since the axis of symmetry is halfway between the $x$-intercepts, find the equation of the axis of symmetry.",
+          "answer": "$x = \\dfrac{2 + 8}{2} = 5$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "How does the sign of $a$ in $y = a(x - h)^2 + k$ tell you whether the parabola opens upwards (minimum turning point) or downwards (maximum turning point)?",
+          "answer": "If $a > 0$, the parabola is upright ($\\cup$) with a minimum turning point; if $a < 0$, it is inverted ($\\cap$) with a maximum turning point."
+        },
+        {
+          "number": 10,
+          "question": "Why does every basic exponential graph $y = b^x$ ($b > 0$) pass through the $y$-intercept $(0, 1)$?",
+          "answer": "When $x = 0$, the first index law states that $b^0 = 1$ for every positive base $b$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10F_4A_2a", "expression": "(0 - 2)*(0 - 4)", "expected": 8 },
+        { "id": "Y10F_4A_2b", "expression": "(0 + 1)*(0 - 5)", "expected": -5 },
+        { "id": "Y10F_4A_2c", "expression": "(0 + 3)*(0 + 1)", "expected": 3 },
+        { "id": "Y10F_4A_3b", "expression": "2**0 + 3", "expected": 4 },
+        { "id": "Y10F_4A_3c", "expression": "2**0 - 5", "expected": -4 },
+        { "id": "Y10F_4A_4a", "expression": "sqrt(9)", "expected": 3 },
+        { "id": "Y10F_4A_4b", "expression": "sqrt(49)", "expected": 7 },
+        { "id": "Y10F_4A_4c", "expression": "sqrt(16)", "expected": 4 },
+        { "id": "Y10F_4A_6", "expression": "2**3", "expected": 8 },
+        { "id": "Y10F_4A_8", "expression": "(2 + 8) / 2", "expected": 5 }
+      ]
+    },
+    {
+      "section_id": "10_4_2",
+      "section_code": "4B",
+      "title": "[10A] Polynomials, Remainder and Factor Theorems, and Functions",
+      "vcaa_code": "VC2M10AA01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State the degree (highest power of $x$) and the constant term of each polynomial:",
+          "parts": [
+            { "label": "a", "question": "$P(x) = 3x^2 - 5x + 7$", "answer": "Degree $2$, constant term $7$" },
+            { "label": "b", "question": "$P(x) = x^3 + 4x^2 - x - 2$", "answer": "Degree $3$, constant term $-2$" },
+            { "label": "c", "question": "$P(x) = 5x - 9$", "answer": "Degree $1$, constant term $-9$" },
+            { "label": "d", "question": "$P(x) = 2x^4 - 3x^2 + 1$", "answer": "Degree $4$, constant term $1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Given $P(x) = x^3 - 2x^2 - x + 2$, evaluate $P(a)$ to test whether $(x - a)$ is a factor:",
+          "parts": [
+            { "label": "a", "question": "$P(1)$", "answer": "$P(1) = 0$ (Yes, $x - 1$ is a factor)" },
+            { "label": "b", "question": "$P(-1)$", "answer": "$P(-1) = 0$ (Yes, $x + 1$ is a factor)" },
+            { "label": "c", "question": "$P(2)$", "answer": "$P(2) = 0$ (Yes, $x - 2$ is a factor)" },
+            { "label": "d", "question": "$P(3)$", "answer": "$P(3) = 8 \\neq 0$ (No, remainder is $8$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given the function $f(x) = 3x + 4$, evaluate each function value:",
+          "parts": [
+            { "label": "a", "question": "$f(0)$", "answer": "$4$" },
+            { "label": "b", "question": "$f(2)$", "answer": "$10$" },
+            { "label": "c", "question": "$f(-1)$", "answer": "$1$" },
+            { "label": "d", "question": "Find $x$ when $f(x) = 19$", "answer": "$x = 5$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each factorised cubic equation using the Null Factor Law:",
+          "parts": [
+            { "label": "a", "question": "$(x - 1)(x - 2)(x - 3) = 0$", "answer": "$x = 1, 2, 3$" },
+            { "label": "b", "question": "$x(x + 2)(x - 5) = 0$", "answer": "$x = 0, -2, 5$" },
+            { "label": "c", "question": "$(x + 1)(x + 3)(x - 4) = 0$", "answer": "$x = -1, -3, 4$" },
+            { "label": "d", "question": "$(x - 2)^2(x + 5) = 0$", "answer": "$x = 2, -5$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A taxi fare in Adelaide is modelled by the function $f(d) = 3d + 5$ dollars for a journey of $d\\text{ km}$. Evaluate $f(8)$ and interpret its meaning.",
+          "answer": "$f(8) = 29$, meaning an $8\\text{ km}$ trip costs $\\$29$."
+        },
+        {
+          "number": 6,
+          "question": "A rectangular prism has volume $V(x) = x(x + 1)(x + 2)\\text{ cm}^3$. Evaluate the volume when $x = 3\\text{ cm}$.",
+          "answer": "$V(3) = 3 \\times 4 \\times 5 = 60\\text{ cm}^3$"
+        },
+        {
+          "number": 7,
+          "question": "Use the Remainder Theorem to find the remainder when $P(x) = x^3 + 2x - 1$ is divided by $(x - 2)$ by calculating $P(2)$.",
+          "answer": "$P(2) = 2^3 + 2(2) - 1 = 11$"
+        },
+        {
+          "number": 8,
+          "question": "To find the inverse of $y = x + 7$, swap $x$ and $y$ to get $x = y + 7$ and solve for $y$. Write $f^{-1}(x)$.",
+          "answer": "$f^{-1}(x) = x - 7$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "According to the Factor Theorem, if $P(4) = 0$, what linear bracket must be a factor of the polynomial $P(x)$?",
+          "answer": "$(x - 4)$ is a factor of $P(x)$."
+        },
+        {
+          "number": 10,
+          "question": "In function notation, why can we not substitute $x = 0$ into $f(x) = \\dfrac{1}{x}$?",
+          "answer": "Division by zero is undefined, so $x = 0$ is excluded from the domain of $f(x)$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10F_4B_2a", "expression": "1**3 - 2*1**2 - 1 + 2", "expected": 0 },
+        { "id": "Y10F_4B_2b", "expression": "(-1)**3 - 2*(-1)**2 - (-1) + 2", "expected": 0 },
+        { "id": "Y10F_4B_2c", "expression": "2**3 - 2*2**2 - 2 + 2", "expected": 0 },
+        { "id": "Y10F_4B_2d", "expression": "3**3 - 2*3**2 - 3 + 2", "expected": 8 },
+        { "id": "Y10F_4B_3a", "expression": "3*0 + 4", "expected": 4 },
+        { "id": "Y10F_4B_3b", "expression": "3*2 + 4", "expected": 10 },
+        { "id": "Y10F_4B_3d", "expression": "(19 - 4) / 3", "expected": 5 },
+        { "id": "Y10F_4B_5", "expression": "3*8 + 5", "expected": 29 },
+        { "id": "Y10F_4B_6", "expression": "3 * (3 + 1) * (3 + 2)", "expected": 60 },
+        { "id": "Y10F_4B_7", "expression": "2**3 + 2*2 - 1", "expected": 11 }
+      ]
+    }
+  ]
+}

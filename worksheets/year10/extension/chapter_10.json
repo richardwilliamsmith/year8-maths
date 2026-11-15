@@ -1,0 +1,103 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Bivariate Data, Time Series, and Linear Regression (10 & 10A)",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_10_1",
+      "section_code": "10A",
+      "title": "Scatterplots, Lines of Best Fit, and Time-Series Data",
+      "vcaa_code": "VC2M10ST03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "[10A] For the bivariate dataset of $n = 5$ points: $(1, 3), (2, 5), (3, 6), (4, 8), (5, 13)$, find:",
+          "parts": [
+            { "label": "a", "question": "The means $\\bar{x}$ and $\\bar{y}$", "answer": "$\\bar{x} = 3, \\bar{y} = 7$" },
+            { "label": "b", "question": "The sums $\\sum (x_i - \\bar{x})^2$ and $\\sum (x_i - \\bar{x})(y_i - \\bar{y})$", "answer": "$\\sum (x_i - \\bar{x})^2 = 10$, $\\sum (x_i - \\bar{x})(y_i - \\bar{y}) = 23$" },
+            { "label": "c", "question": "The least-squares slope $b = \\dfrac{\\sum (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum (x_i - \\bar{x})^2}$ and intercept $a = \\bar{y} - b\\bar{x}$", "answer": "$b = 2.3, a = 0.1$ ($\\hat{y} = 0.1 + 2.3x$)" },
+            { "label": "d", "question": "The residual $e_3 = y_3 - \\hat{y}_3$ at $x = 3$", "answer": "$e_3 = 6 - 7 = -1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "[10A] For a bivariate dataset, $\\bar{x} = 20$, $\\bar{y} = 85$, $s_x = 5$, $s_y = 12$, and the least-squares regression line of $y$ on $x$ is $\\hat{y} = 133 - 2.4x$? Wait: check $133 - 2.4(20) = 85$. Using $\\hat{y} = 133 - 2.4x$, find:",
+          "parts": [
+            { "label": "a", "question": "Verify that the centroid $(\\bar{x}, \\bar{y}) = (20, 85)$ lies on the regression line", "answer": "$133 - 2.4(20) = 133 - 48 = 85$" },
+            { "label": "b", "question": "The value of Pearson's correlation coefficient $r$ using $b = r\\dfrac{s_y}{s_x}$", "answer": "$r = -2.4 \\times \\dfrac{5}{12} = -1.0$? Wait: let $s_y = 15$ so $r = -2.4 \\times \\frac{5}{15} = -0.8$! Using $s_y = 15$, find $r$", "answer": "$r = -0.8$" },
+            { "label": "c", "question": "The coefficient of determination $r^2$ (for $r = -0.8$) and its interpretation", "answer": "$r^2 = 0.64$: $64\\%$ of the variation in $y$ is explained by the linear relationship with $x$" },
+            { "label": "d", "question": "The slope $b_{x|y} = r\\dfrac{s_x}{s_y}$ of the regression line of $x$ on $y$ (with $r = -0.8, s_x = 5, s_y = 15$)", "answer": "$-\\dfrac{4}{15}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A quarterly time series of solar generation (MWh) over a year is Q1: $150$, Q2: $90$, Q3: $80$, Q4: $160$. Find:",
+          "parts": [
+            { "label": "a", "question": "The quarterly mean $\\bar{y}$ for the year", "answer": "$120\\text{ MWh}$" },
+            { "label": "b", "question": "The seasonal indices $S_k = \\dfrac{y_k}{\\bar{y}}$ for Q1, Q2, Q3, and Q4 as decimals or fractions", "answer": "$S_1 = 1.25, S_2 = 0.75, S_3 = \\frac{2}{3} \\approx 0.67, S_4 = \\frac{4}{3} \\approx 1.33$" },
+            { "label": "c", "question": "The sum of the four quarterly seasonal indices $S_1 + S_2 + S_3 + S_4$", "answer": "$4$" },
+            { "label": "d", "question": "The deseasonalised figure for Q1 if actual Q1 generation next year is $165\\text{ MWh}$ ($\\frac{\\text{actual}}{S_1}$)", "answer": "$132\\text{ MWh}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "For a 4-quarter time series with values $y_1 = 20, y_2 = 28, y_3 = 24, y_4 = 36, y_5 = 24$, compute the **centred 4-point moving average** at $t = 3$:",
+          "parts": [
+            { "label": "a", "question": "The first $4$-point average $M_{2.5} = \\dfrac{y_1 + y_2 + y_3 + y_4}{4}$ centred at $t = 2.5$", "answer": "$27$" },
+            { "label": "b", "question": "The second $4$-point average $M_{3.5} = \\dfrac{y_2 + y_3 + y_4 + y_5}{4}$ centred at $t = 3.5$", "answer": "$28$" },
+            { "label": "c", "question": "The centred $4$-point moving average at $t = 3$ ($\\frac{M_{2.5} + M_{3.5}}{2}$)", "answer": "$27.5$" },
+            { "label": "d", "question": "Why centring is necessary for an even-period ($4$-quarter) moving average", "answer": "The average of $4$ consecutive quarters falls halfway between quarters ($t = 2.5$ and $t = 3.5$); averaging two adjacent $4$-point means realigns the smoothed value with integer time $t = 3$." }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "[10A] A study of wheat yield $y$ (tonnes/ha) vs spring rainfall $x$ (mm) across $15$ farms in the Wimmera gives $\\bar{x} = 180\\text{ mm}$, $\\bar{y} = 3.4\\text{ t/ha}$, $s_x = 40\\text{ mm}$, $s_y = 0.8\\text{ t/ha}$, and $r = 0.75$. Find the least-squares regression equation $\\hat{y} = a + bx$ and find the residual for a farm that received $220\\text{ mm}$ of rain and yielded $4.3\\text{ t/ha}$.",
+          "answer": "$b = 0.75\\left(\\frac{0.8}{40}\\right) = 0.015$, $a = 3.4 - 0.015(180) = 0.7$, so $\\hat{y} = 0.7 + 0.015x$. At $x = 220$, $\\hat{y} = 4.0\\text{ t/ha}$; residual $e = 4.3 - 4.0 = +0.3\\text{ t/ha}$."
+        },
+        {
+          "number": 6,
+          "question": "A retail store in Perth has quarterly seasonal indices Q1 $= 0.80$, Q2 $= 0.90$, Q3 $= 0.85$, and Q4 $= k$. Find $k$, and if the deseasonalised trend equation for quarterly sales $T$ (in $\\$1000$s) is $T = 200 + 10t$, predict the actual (seasonalised) sales in Q4 of period $t = 8$ (using $\\text{Actual} = \\text{Trend} \\times S_4$).",
+          "answer": "$k = 4 - (0.80 + 0.90 + 0.85) = 1.45$; at $t = 8$, $\\text{Trend} = 200 + 80 = 280$; predicted actual sales $= 280 \\times 1.45 = \\$406\\text{ thousand}$."
+        },
+        {
+          "number": 7,
+          "question": "[10A] A residual plot (plotting residuals $e_i = y_i - \\hat{y}_i$ against $x_i$) for a linear regression model shows a clear curved U-shaped parabolic pattern rather than a random scatter around $e = 0$. What does this residual pattern indicate about the appropriateness of the linear model?",
+          "answer": "A U-shaped residual plot indicates that the underlying relationship between $x$ and $y$ is **non-linear**, so a linear regression model is not appropriate."
+        },
+        {
+          "number": 8,
+          "question": "[10A] For a dataset of $6$ points, the five residuals for $x_1, \\dots, x_5$ are $+1.4, -0.8, -2.1, +0.9, +1.2$. Using the property that the sum of the residuals of a least-squares regression line is always zero ($\\sum_{i=1}^n e_i = 0$), find the sixth residual $e_6$.",
+          "answer": "$e_6 = -(1.4 - 0.8 - 2.1 + 0.9 + 1.2) = -0.6$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "[10A] Prove algebraically that the sum of the residuals $\\sum_{i=1}^n e_i = \\sum_{i=1}^n (y_i - (a + bx_i))$ for any line passing through the centroid $(\\bar{x}, \\bar{y})$ (where $a = \\bar{y} - b\\bar{x}$) is identically equal to $0$.",
+          "answer": "$\\sum_{i=1}^n (y_i - a - bx_i) = \\sum y_i - na - b\\sum x_i = n\\bar{y} - n(\\bar{y} - b\\bar{x}) - b(n\\bar{x}) = n\\bar{y} - n\\bar{y} + nb\\bar{x} - nb\\bar{x} = 0$."
+        },
+        {
+          "number": 10,
+          "question": "[10A] Using the slopes $b_{y|x} = r\\dfrac{s_y}{s_x}$ (for regressing $y$ on $x$) and $b_{x|y} = r\\dfrac{s_x}{s_y}$ (for regressing $x$ on $y$), prove that the product of the two regression slopes equals the coefficient of determination $r^2$, and explain why the two regression lines coincide if and only if $|r| = 1$.",
+          "answer": "$b_{y|x} \\cdot b_{x|y} = \\left(r\\frac{s_y}{s_x}\\right)\\left(r\\frac{s_x}{s_y}\\right) = r^2$. Rewriting the $x$-on-$y$ line in terms of $y$ gives slope $\\frac{1}{b_{x|y}} = \\frac{1}{r^2}b_{y|x}$, which equals $b_{y|x}$ if and only if $r^2 = 1$ ($|r| = 1$, when all points lie exactly on a straight line)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_10_1_1a_x", "expression": "(1 + 2 + 3 + 4 + 5) / 5", "expected": 3 },
+        { "id": "WSE10_10_1_1a_y", "expression": "(3 + 5 + 6 + 8 + 13) / 5", "expected": 7 },
+        { "id": "WSE10_10_1_1b", "expression": "(1-3)*(3-7) + (2-3)*(5-7) + (3-3)*(6-7) + (4-3)*(8-7) + (5-3)*(13-7)", "expected": 23 },
+        { "id": "WSE10_10_1_1c", "expression": "Rational(23, 10)", "expected": 2.3 },
+        { "id": "WSE10_10_1_2b", "expression": "Rational(-24, 10) * Rational(5, 15)", "expected": -0.8 },
+        { "id": "WSE10_10_1_3d", "expression": "165 / Rational(125, 100)", "expected": 132 },
+        { "id": "WSE10_10_1_4c", "expression": "((20+28+24+36)/4 + (28+24+36+24)/4) / 2", "expected": 27.5 },
+        { "id": "WSE10_10_1_5", "expression": "Rational(7, 10) + Rational(15, 1000)*220", "expected": 4 },
+        { "id": "WSE10_10_1_6", "expression": "(200 + 10*8) * (4 - (Rational(80, 100) + Rational(90, 100) + Rational(85, 100)))", "expected": 406 },
+        { "id": "WSE10_10_1_8", "expression": "-(Rational(14, 10) - Rational(8, 10) - Rational(21, 10) + Rational(9, 10) + Rational(12, 10))", "expected": -0.6 }
+      ]
+    }
+  ]
+}

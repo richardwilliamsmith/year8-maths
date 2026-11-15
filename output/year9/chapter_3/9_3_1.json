@@ -1,0 +1,414 @@
+{
+  "metadata": {
+    "section_id": "9_3_1",
+    "section_code": "3A",
+    "chapter_number": 3,
+    "chapter_title": "Algebraic Expansion and Factorisation",
+    "title": "Expanding Binomial Products and Special Identities",
+    "vcaa_code": "VC2M9A02",
+    "vcaa_description": "Simplify algebraic expressions, expand binomial products and factorise monic quadratic expressions.",
+    "strand": "Algebra",
+    "target_mastery": "Expand binomial products (x + a)(x + b), perfect squares (a +/- b)^2, and difference of two squares (a - b)(a + b).",
+    "prerequisites": [
+      "Distributive law and linear factorisation (Year 8 VC2M8A01)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Binomial product",
+        "definition": "The product of two two-term algebraic expressions, such as $(x + a)(x + b)$ or $(ax + b)(cx + d)$."
+      },
+      {
+        "term": "Quadratic trinomial",
+        "definition": "A degree-$2$ polynomial with three terms of the form $ax^2 + bx + c$ ($a \\neq 0$), called monic when the leading coefficient is $a = 1$."
+      },
+      {
+        "term": "Perfect square expansion",
+        "definition": "The square of a binomial $(a \\pm b)^2 = a^2 \\pm 2ab + b^2$, which always produces a middle term equal to twice the product of the two terms."
+      },
+      {
+        "term": "Difference of two squares (DOTS)",
+        "definition": "The product of a sum and difference of the same two terms, $(a - b)(a + b) = a^2 - b^2$, where the opposite middle terms $-ab$ and $+ab$ cancel to zero."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_3_1_1",
+      "title": "Expanding Binomial Products Using the Distributive Law",
+      "explanation": "Multiplying two binomials $(a + b)(c + d)$ applies the distributive law twice: multiply every term in the first bracket by every term in the second bracket, producing four partial products (First, Outer, Inner, Last — FOIL), and then collect like terms. For monic binomials $(x + a)(x + b)$, the middle $x$-coefficient is the sum $(a + b)$ and the constant term is the product $ab$.",
+      "formula_latex": "(a + b)(c + d) = a(c + d) + b(c + d) = ac + ad + bc + bd, \\quad (x + a)(x + b) = x^2 + (a + b)x + ab",
+      "callout_title": "Sum for the Middle Coefficient, Product for the Constant",
+      "callout_rule": "In $(x + 5)(x - 3)$, the middle coefficient is $5 + (-3) = +2$ and the constant term is $5 \\times (-3) = -15$, giving $x^2 + 2x - 15$ directly."
+    },
+    {
+      "id": "theory_9_3_1_2",
+      "title": "Perfect Square Identities",
+      "explanation": "Geometrically, a square of side length $(a + b)$ splits into two squares of areas $a^2$ and $b^2$ plus two congruent rectangles each of area $ab$. Therefore, squaring a binomial $(a \\pm b)^2$ always produces THREE terms: the square of the first term, plus or minus twice the product of the two terms, plus the square of the last term (which is always positive because $(-b)^2 = +b^2$).",
+      "formula_latex": "(a + b)^2 = a^2 + 2ab + b^2, \\quad (a - b)^2 = a^2 - 2ab + b^2",
+      "callout_title": "Never Forget the Middle Term 2ab",
+      "callout_rule": "$(a + b)^2$ means $(a + b)(a + b) = a^2 + 2ab + b^2$. The last term $+b^2$ is always positive whether the bracket is $(a + b)^2$ or $(a - b)^2$."
+    },
+    {
+      "id": "theory_9_3_1_3",
+      "title": "The Difference of Two Squares Identity",
+      "explanation": "When expanding $(a - b)(a + b)$, the outer product $+ab$ and inner product $-ab$ are additive inverses and cancel completely, leaving only the square of the first term minus the square of the second term. This identity also enables rapid mental arithmetic for products symmetric about a round number, such as $47 \\times 53 = (50 - 3)(50 + 3) = 2500 - 9 = 2491$.",
+      "formula_latex": "(a - b)(a + b) = (a + b)(a - b) = a^2 - b^2",
+      "callout_title": "Conjugate Binomials Cancel the Middle Term",
+      "callout_rule": "Whenever two brackets have the exact same first terms and opposite signs on the second terms, use $(a - b)(a + b) = a^2 - b^2$ immediately."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_3_1_1",
+      "title": "Expanding Monic and Non-Monic Binomial Products",
+      "difficulty": "Fluency",
+      "problem": "Expand and simplify: (a) $(x - 7)(x + 4)$ and (b) $(3x - 2)(2x + 5)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), multiply each term in $(x - 7)$ by each term in $(x + 4)$ and collect the middle like terms.",
+          "working": "$$(x - 7)(x + 4) = x^2 + 4x - 7x - 28 = x^2 - 3x - 28$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), apply the distributive law $3x(2x + 5) - 2(2x + 5)$ and collect like terms in $x$.",
+          "working": "$$(3x - 2)(2x + 5) = 6x^2 + 15x - 4x - 10 = 6x^2 + 11x - 10$$"
+        }
+      ],
+      "final_answer": "(a) $x^2 - 3x - 28$, (b) $6x^2 + 11x - 10$",
+      "now_you_try": {
+        "problem": "Expand and simplify: (a) $(x + 6)(x - 9)$ and (b) $(4x - 3)(2x - 5)$.",
+        "hint": "In (b), note that $(-3) \\times (-5) = +15$.",
+        "working_summary": "(a) $x^2 - 9x + 6x - 54 = x^2 - 3x - 54$; (b) $8x^2 - 20x - 6x + 15 = 8x^2 - 26x + 15$.",
+        "answer": "(a) $x^2 - 3x - 54$, (b) $8x^2 - 26x + 15$"
+      }
+    },
+    {
+      "id": "WE9_3_1_2",
+      "title": "Expanding Perfect Squares and Differences of Two Squares",
+      "difficulty": "Understanding",
+      "problem": "Expand using special identities: (a) $(3x - 5)^2$ and (b) $(4m + 7n)(4m - 7n)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), apply $(a - b)^2 = a^2 - 2ab + b^2$ with $a = 3x$ and $b = 5$.",
+          "working": "$$(3x - 5)^2 = (3x)^2 - 2(3x)(5) + 5^2 = 9x^2 - 30x + 25$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), apply $(a + b)(a - b) = a^2 - b^2$ with $a = 4m$ and $b = 7n$.",
+          "working": "$$(4m + 7n)(4m - 7n) = (4m)^2 - (7n)^2 = 16m^2 - 49n^2$$"
+        }
+      ],
+      "final_answer": "(a) $9x^2 - 30x + 25$, (b) $16m^2 - 49n^2$",
+      "now_you_try": {
+        "problem": "Expand: (a) $(2y + 7)^2$ and (b) $(5a - 3b)(5a + 3b)$.",
+        "hint": "Square the entire term $(2y)^2 = 4y^2$ and $(5a)^2 = 25a^2$.",
+        "working_summary": "(a) $(2y)^2 + 2(2y)(7) + 7^2 = 4y^2 + 28y + 49$; (b) $(5a)^2 - (3b)^2 = 25a^2 - 9b^2$.",
+        "answer": "(a) $4y^2 + 28y + 49$, (b) $25a^2 - 9b^2$"
+      }
+    },
+    {
+      "id": "WE9_3_1_3",
+      "title": "Composite Expressions with Subtracted Binomial Products",
+      "difficulty": "Challenging",
+      "problem": "Expand and simplify $(x + 4)^2 - (x - 3)(x + 5)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Expand both products, keeping the second expansion inside brackets so the subtraction sign applies to every term of $(x - 3)(x + 5)$.",
+          "working": "$$(x + 4)^2 - (x - 3)(x + 5) = (x^2 + 8x + 16) - (x^2 + 2x - 15)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Distribute the minus sign across the second bracket and collect like terms.",
+          "working": "$$= x^2 + 8x + 16 - x^2 - 2x + 15 = 6x + 31$$"
+        }
+      ],
+      "final_answer": "$6x + 31$",
+      "now_you_try": {
+        "problem": "Expand and simplify $(x - 5)^2 - (x - 2)(x + 2)$.",
+        "hint": "Keep $(x^2 - 4)$ in brackets before subtracting: $-(x^2 - 4) = -x^2 + 4$.",
+        "working_summary": "$(x^2 - 10x + 25) - (x^2 - 4) = x^2 - 10x + 25 - x^2 + 4 = -10x + 29$.",
+        "answer": "$-10x + 29$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_9_3_1_1",
+      "title": "Omitting the Middle Term 2ab When Squaring a Binomial",
+      "misconception": "Writing $(x + 5)^2 = x^2 + 25$ or $(x - 5)^2 = x^2 - 25$ (the 'freshman's dream' error).",
+      "correct_concept": "Exponents do not distribute over addition or subtraction. Expanding $(x + 5)(x + 5)$ gives two cross-product rectangles of area $5x$ each, so $(x + 5)^2 = x^2 + 10x + 25$.",
+      "incorrect_working": "$$(x + 5)^2 = x^2 + 25 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$(x + 5)^2 = x^2 + 2(x)(5) + 5^2 = x^2 + 10x + 25 \\quad (\\text{Correct})$$",
+      "counter_example": "If $x = 3$, $(3 + 5)^2 = 8^2 = 64$, whereas $3^2 + 5^2 = 9 + 25 = 34 \\neq 64$."
+    },
+    {
+      "id": "MISC_9_3_1_2",
+      "title": "Failing to Bracket a Subtracted Binomial Product",
+      "misconception": "Expanding $x^2 - (x + 2)(x + 3)$ as $x^2 - x^2 + 5x + 6 = 5x + 6$, negating only the first term of the product.",
+      "correct_concept": "The subtraction sign applies to the entire expanded trinomial $(x^2 + 5x + 6)$, flipping every sign inside: $x^2 - (x^2 + 5x + 6) = -5x - 6$.",
+      "incorrect_working": "$$x^2 - (x + 2)(x + 3) = x^2 - x^2 + 5x + 6 = 5x + 6 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$x^2 - (x + 2)(x + 3) = x^2 - (x^2 + 5x + 6) = -5x - 6 \\quad (\\text{Correct})$$",
+      "counter_example": "For $x = 1$, $1^2 - (3)(4) = 1 - 12 = -11$, which matches $-5(1) - 6 = -11$, not $5(1) + 6 = 11$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_3_1_Q1",
+        "question": "Expand and simplify $(x - 8)(x - 6)$.",
+        "difficulty": "Easy",
+        "context": "Monic Binomial Expansion",
+        "final_answer": "$x^2 - 14x + 48$",
+        "step_by_step_solution": [
+          "Multiply the terms: $x^2 - 6x - 8x + (-8)(-6)$.",
+          "Collect like terms: $x^2 - 14x + 48$."
+        ]
+      },
+      {
+        "id": "9_3_1_Q2",
+        "question": "Expand $(5x - 4)^2$.",
+        "difficulty": "Easy",
+        "context": "Perfect Square Identity",
+        "final_answer": "$25x^2 - 40x + 16$",
+        "step_by_step_solution": [
+          "Use $(a - b)^2 = a^2 - 2ab + b^2$ with $a = 5x$ and $b = 4$.",
+          "$(5x)^2 - 2(5x)(4) + 4^2 = 25x^2 - 40x + 16$."
+        ]
+      },
+      {
+        "id": "9_3_1_Q3",
+        "question": "Expand $(6p + 5q)(6p - 5q)$.",
+        "difficulty": "Easy",
+        "context": "Difference of Two Squares",
+        "final_answer": "$36p^2 - 25q^2$",
+        "step_by_step_solution": [
+          "Apply $(a + b)(a - b) = a^2 - b^2$ with $a = 6p$ and $b = 5q$.",
+          "$(6p)^2 - (5q)^2 = 36p^2 - 25q^2$."
+        ]
+      },
+      {
+        "id": "9_3_1_Q4",
+        "question": "Expand and simplify $(2x + 3)(3x - 4) - (x - 2)^2$.",
+        "difficulty": "Medium",
+        "context": "Combining Binomial Expansions",
+        "final_answer": "$5x^2 + 5x - 16$",
+        "step_by_step_solution": [
+          "Expand each product in brackets: $(6x^2 + x - 12) - (x^2 - 4x + 4)$.",
+          "Distribute the minus sign and collect like terms: $6x^2 + x - 12 - x^2 + 4x - 4 = 5x^2 + 5x - 16$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_3_1_Q5",
+        "question": "A square lawn in a suburban Melbourne park has side length $x\\text{ m}$. It is surrounded on all four sides by a uniform gravel path of width $3\\text{ m}$. Write an expanded expression for the area of the gravel path alone, and find this area when $x = 10\\text{ m}$.",
+        "difficulty": "Medium",
+        "context": "Path Border Area Modelling",
+        "final_answer": "$12x + 36\\text{ m}^2$; $156\\text{ m}^2$ when $x = 10$",
+        "step_by_step_solution": [
+          "The outer square including the path on both sides has side length $(x + 6)\\text{ m}$.",
+          "Subtract the inner lawn area: $A_{\\text{path}} = (x + 6)^2 - x^2 = (x^2 + 12x + 36) - x^2 = 12x + 36\\text{ m}^2$.",
+          "When $x = 10$, $A_{\\text{path}} = 12(10) + 36 = 156\\text{ m}^2$."
+        ]
+      },
+      {
+        "id": "9_3_1_Q6",
+        "question": "A square vegetable patch of side length $x\\text{ m}$ is redesigned into a rectangle by increasing its length by $5\\text{ m}$ and decreasing its width by $5\\text{ m}$. Prove algebraically that the new rectangular patch always has $25\\text{ m}^2$ less area than the original square patch.",
+        "difficulty": "Medium",
+        "context": "Area Comparison via DOTS",
+        "final_answer": "$A_{\\text{new}} = (x + 5)(x - 5) = x^2 - 25$, which is always $25\\text{ m}^2$ less than $x^2$",
+        "step_by_step_solution": [
+          "The original square has area $x^2\\text{ m}^2$, and the new rectangle has dimensions $(x + 5)\\text{ m}$ by $(x - 5)\\text{ m}$.",
+          "By the difference of two squares, $A_{\\text{new}} = (x + 5)(x - 5) = x^2 - 25\\text{ m}^2$, which is exactly $25\\text{ m}^2$ less than $x^2$."
+        ]
+      },
+      {
+        "id": "9_3_1_Q7",
+        "question": "A rectangular sheet of cardboard measures $20\\text{ cm}$ by $14\\text{ cm}$. Equal squares of side length $x\\text{ cm}$ are cut from each of the four corners so the sides can be folded up to form an open-top box. Find an expanded quadratic expression for the base area of the box in terms of $x$.",
+        "difficulty": "Medium",
+        "context": "Open-Top Box Base Area",
+        "final_answer": "$4x^2 - 68x + 280\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Cutting $x\\text{ cm}$ from both ends reduces the length to $(20 - 2x)\\text{ cm}$ and the width to $(14 - 2x)\\text{ cm}$.",
+          "Expand the base area: $A = (20 - 2x)(14 - 2x) = 280 - 40x - 28x + 4x^2 = 4x^2 - 68x + 280\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_3_1_Q8",
+        "question": "A right-angled triangle has legs of length $(x + 3)\\text{ cm}$ and $(x - 4)\\text{ cm}$, and a second rectangle has dimensions $x\\text{ cm}$ by $(x - 6)\\text{ cm}$. Find an expanded expression for the difference between the rectangle's area and twice the triangle's area: $x(x - 6) - (x + 3)(x - 4)$.",
+        "difficulty": "Challenging",
+        "context": "Geometric Area Difference",
+        "final_answer": "$-5x + 12\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Expand both expressions: $x(x - 6) = x^2 - 6x$ and $(x + 3)(x - 4) = x^2 - x - 12$.",
+          "Subtract carefully using brackets: $(x^2 - 6x) - (x^2 - x - 12) = x^2 - 6x - x^2 + x + 12 = -5x + 12\\text{ cm}^2$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_3_1_Q9",
+        "question": "Show how the difference of two squares identity $(a - b)(a + b) = a^2 - b^2$ can be used to evaluate $96 \\times 104$ mentally.",
+        "difficulty": "Easy",
+        "context": "Mental Arithmetic via DOTS",
+        "final_answer": "$(100 - 4)(100 + 4) = 10\\,000 - 16 = 9984$",
+        "step_by_step_solution": [
+          "Rewrite $96$ and $104$ symmetrically around $100$: $96 \\times 104 = (100 - 4)(100 + 4)$.",
+          "Apply $a^2 - b^2$: $100^2 - 4^2 = 10\\,000 - 16 = 9984$."
+        ]
+      },
+      {
+        "id": "9_3_1_Q10",
+        "question": "Expand and simplify $(\\sqrt{5} - \\sqrt{2})(\\sqrt{5} + \\sqrt{2})$ and $(2\\sqrt{3} - 1)^2$, explaining which expansion produces a rational number and why.",
+        "difficulty": "Medium",
+        "context": "Binomial Products with Surds",
+        "final_answer": "$(\\sqrt{5} - \\sqrt{2})(\\sqrt{5} + \\sqrt{2}) = 3 \\in \\mathbb{Q}$; $(2\\sqrt{3} - 1)^2 = 13 - 4\\sqrt{3} \\notin \\mathbb{Q}$",
+        "step_by_step_solution": [
+          "Using DOTS, $(\\sqrt{5} - \\sqrt{2})(\\sqrt{5} + \\sqrt{2}) = (\\sqrt{5})^2 - (\\sqrt{2})^2 = 5 - 2 = 3$, which is rational because the surd cross-terms cancel.",
+          "Using the perfect square identity, $(2\\sqrt{3} - 1)^2 = (2\\sqrt{3})^2 - 2(2\\sqrt{3})(1) + 1^2 = 12 - 4\\sqrt{3} + 1 = 13 - 4\\sqrt{3}$, which remains irrational."
+        ]
+      },
+      {
+        "id": "9_3_1_Q11",
+        "question": "Prove that the difference between the squares of any two consecutive integers, $(n + 1)^2 - n^2$, is always an odd integer and equals the sum of the two consecutive integers.",
+        "difficulty": "Challenging",
+        "context": "Number Theory Proof with Perfect Squares",
+        "final_answer": "$(n + 1)^2 - n^2 = 2n + 1 = n + (n + 1)$, which is always odd",
+        "step_by_step_solution": [
+          "Expand $(n + 1)^2 - n^2 = (n^2 + 2n + 1) - n^2 = 2n + 1$.",
+          "Since $2n$ is always even for any integer $n$, $2n + 1$ is always odd, and $2n + 1 = n + (n + 1)$ is the sum of the two consecutive integers."
+        ]
+      },
+      {
+        "id": "9_3_1_Q12",
+        "question": "Verify Euler's identity $(a + b)^2 - (a - b)^2 = 4ab$ by expanding both perfect squares, and use it to find the exact value of $ab$ if $a + b = 9$ and $a - b = 5$.",
+        "difficulty": "Extension",
+        "context": "Legendre/Euler Perfect Square Identity",
+        "final_answer": "$ab = 14$",
+        "step_by_step_solution": [
+          "Expand both squares: $(a^2 + 2ab + b^2) - (a^2 - 2ab + b^2) = 4ab$.",
+          "Substitute $a + b = 9$ and $a - b = 5$: $9^2 - 5^2 = 4ab \\implies 81 - 25 = 56 = 4ab \\implies ab = 14$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_3_1_1a",
+      "description": "Worked Example 9.3.1.1(a)",
+      "expression": "simplify(expand((x - 7)*(x + 4)) - (x**2 - 3*x - 28))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_1_1b",
+      "description": "Worked Example 9.3.1.1(b)",
+      "expression": "simplify(expand((3*x - 2)*(2*x + 5)) - (6*x**2 + 11*x - 10))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_1_1a",
+      "description": "Now You Try 9.3.1.1(a)",
+      "expression": "simplify(expand((x + 6)*(x - 9)) - (x**2 - 3*x - 54))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_1_1b",
+      "description": "Now You Try 9.3.1.1(b)",
+      "expression": "simplify(expand((4*x - 3)*(2*x - 5)) - (8*x**2 - 26*x + 15))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_1_2a",
+      "description": "Worked Example 9.3.1.2(a) perfect square",
+      "expression": "simplify(expand((3*x - 5)**2) - (9*x**2 - 30*x + 25))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_1_2b",
+      "description": "Worked Example 9.3.1.2(b) DOTS",
+      "expression": "simplify(expand((4*m + 7*n)*(4*m - 7*n)) - (16*m**2 - 49*n**2))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_1_2a",
+      "description": "Now You Try 9.3.1.2(a)",
+      "expression": "simplify(expand((2*y + 7)**2) - (4*y**2 + 28*y + 49))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_1_2b",
+      "description": "Now You Try 9.3.1.2(b)",
+      "expression": "simplify(expand((5*a - 3*b)*(5*a + 3*b)) - (25*a**2 - 9*b**2))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_1_3",
+      "description": "Worked Example 9.3.1.3 composite expansion",
+      "expression": "simplify(expand((x + 4)**2 - (x - 3)*(x + 5)) - (6*x + 31))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_1_3",
+      "description": "Now You Try 9.3.1.3",
+      "expression": "simplify(expand((x - 5)**2 - (x - 2)*(x + 2)) - (-10*x + 29))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_1_Q1",
+      "description": "Exercise 9.3.1 Q1",
+      "expression": "simplify(expand((x - 8)*(x - 6)) - (x**2 - 14*x + 48))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_1_Q2",
+      "description": "Exercise 9.3.1 Q2",
+      "expression": "simplify(expand((5*x - 4)**2) - (25*x**2 - 40*x + 16))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_1_Q3",
+      "description": "Exercise 9.3.1 Q3",
+      "expression": "simplify(expand((6*p + 5*q)*(6*p - 5*q)) - (36*p**2 - 25*q**2))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_1_Q4",
+      "description": "Exercise 9.3.1 Q4",
+      "expression": "simplify(expand((2*x + 3)*(3*x - 4) - (x - 2)**2) - (5*x**2 + 5*x - 16))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_1_Q5",
+      "description": "Exercise 9.3.1 Q5 path area at x=10",
+      "expression": "(10 + 6)**2 - 10**2",
+      "expected": 156
+    },
+    {
+      "id": "EX9_3_1_Q7",
+      "description": "Exercise 9.3.1 Q7 box base area",
+      "expression": "simplify(expand((20 - 2*x)*(14 - 2*x)) - (4*x**2 - 68*x + 280))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_1_Q9",
+      "description": "Exercise 9.3.1 Q9 96 * 104",
+      "expression": "(100 - 4)*(100 + 4)",
+      "expected": 9984
+    },
+    {
+      "id": "EX9_3_1_Q10",
+      "description": "Exercise 9.3.1 Q10 surd perfect square",
+      "expression": "simplify(expand((2*sqrt(3) - 1)**2) - (13 - 4*sqrt(3)))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_1_Q12",
+      "description": "Exercise 9.3.1 Q12 ab from (a+b)^2 - (a-b)^2 = 4ab",
+      "expression": "(9**2 - 5**2) / 4",
+      "expected": 14
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "metadata": {
+    "section_id": "10_1_2",
+    "section_code": "1B",
+    "chapter_number": 1,
+    "chapter_title": "Financial Mathematics, Surds, and Logarithms (10 & 10A)",
+    "title": "[10A] Operations with Surds and Rationalising the Denominator",
+    "vcaa_code": "VC2M10AN01",
+    "vcaa_description": "Define rational and irrational numbers and perform operations with surds and fractional exponents.",
+    "strand": "Number (10A)",
+    "target_mastery": "Add, subtract, multiply, and divide surds, expand binomial surd products, and rationalise monomial and conjugate binomial denominators.",
+    "prerequisites": [
+      "Simplifying surds and DOTS (Year 9 VC2M9N01, VC2M9A02)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Surd",
+        "definition": "An irrational root of a rational number, such as $\\sqrt{2}$, $\\sqrt{5}$, or $\\sqrt[3]{7}$, whose decimal expansion neither terminates nor recurs."
+      },
+      {
+        "term": "Like surds",
+        "definition": "Surds that have the exact same simplified radicand (number under the root sign), such as $3\\sqrt{5}$ and $-7\\sqrt{5}$, which can be combined by adding or subtracting their coefficients."
+      },
+      {
+        "term": "Conjugate surds",
+        "definition": "A pair of binomial surd expressions of the form $a\\sqrt{x} + b\\sqrt{y}$ and $a\\sqrt{x} - b\\sqrt{y}$ whose product is always rational by the Difference of Two Squares identity."
+      },
+      {
+        "term": "Rationalising the denominator",
+        "definition": "Rewriting a fraction containing a surd in its denominator as an equivalent fraction with a rational (integer) denominator."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_1_2_1",
+      "title": "Simplifying, Adding, and Subtracting Surds",
+      "explanation": "A square root $\\sqrt{n}$ is simplified by extracting its largest perfect square factor using $\\sqrt{a^2 b} = a\\sqrt{b}$ (for $a > 0$). Once all surds in an expression are written in simplest form, like surds behave just like algebraic like terms: add or subtract their rational coefficients while keeping the surd factor unchanged.",
+      "formula_latex": "\\sqrt{a^2 b} = a\\sqrt{b}, \\quad m\\sqrt{k} \\pm n\\sqrt{k} = (m \\pm n)\\sqrt{k}",
+      "callout_title": "Simplify Every Surd Before Looking for Like Terms",
+      "callout_rule": "At first glance $\\sqrt{50} + \\sqrt{18}$ look unlike, but simplifying gives $5\\sqrt{2} + 3\\sqrt{2} = 8\\sqrt{2}$. Never add the numbers under the root sign: $\\sqrt{a} + \\sqrt{b} \\neq \\sqrt{a + b}$."
+    },
+    {
+      "id": "theory_10_1_2_2",
+      "title": "Multiplying Surds and Expanding Binomial Products",
+      "explanation": "When multiplying two surd terms, multiply the rational coefficients together and multiply the radicands together using $\\sqrt{a}\\sqrt{b} = \\sqrt{ab}$, then simplify any perfect square factors that arise. Binomial expansions involving surds follow the exact same distributive, perfect square, and Difference of Two Squares (DOTS) identities as algebraic binomials.",
+      "formula_latex": "(a + b\\sqrt{c})^2 = a^2 + 2ab\\sqrt{c} + b^2 c, \\quad (a + \\sqrt{b})(a - \\sqrt{b}) = a^2 - b",
+      "callout_title": "Conjugate Pairs Eliminate the Surd",
+      "callout_rule": "When you multiply conjugate binomial surds $(\\sqrt{a} + \\sqrt{b})(\\sqrt{a} - \\sqrt{b})$, the middle surd terms cancel out completely, leaving the rational number $a - b$."
+    },
+    {
+      "id": "theory_10_1_2_3",
+      "title": "Rationalising Monomial and Binomial Denominators",
+      "explanation": "By mathematical convention, exact answers are written with a rational denominator. If the denominator is a single surd $c\\sqrt{b}$, multiply the numerator and denominator by $\\sqrt{b}$. If the denominator is a binomial surd such as $a + \\sqrt{b}$ or $\\sqrt{a} - \\sqrt{b}$, multiply both numerator and denominator by its conjugate ($a - \\sqrt{b}$ or $\\sqrt{a} + \\sqrt{b}$) so that the denominator becomes a rational difference of two squares.",
+      "formula_latex": "\\frac{a}{\\sqrt{b}} = \\frac{a\\sqrt{b}}{b}, \\quad \\frac{c}{\\sqrt{a} - \\sqrt{b}} \\times \\frac{\\sqrt{a} + \\sqrt{b}}{\\sqrt{a} + \\sqrt{b}} = \\frac{c(\\sqrt{a} + \\sqrt{b})}{a - b}",
+      "callout_title": "Multiply Top and Bottom by the Conjugate",
+      "callout_rule": "Multiplying numerator and denominator by the same non-zero conjugate is equivalent to multiplying by $1$, which changes the form of the fraction without changing its value."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_1_2_1",
+      "title": "Simplifying and Combining Like Surds",
+      "difficulty": "Fluency",
+      "problem": "Simplify $3\\sqrt{12} + 2\\sqrt{27} - \\sqrt{48}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Factor each radicand to extract its largest perfect square factor ($4$, $9$, and $16$).",
+          "working": "$$3\\sqrt{4 \\times 3} + 2\\sqrt{9 \\times 3} - \\sqrt{16 \\times 3}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Simplify each surd using $\\sqrt{a^2 b} = a\\sqrt{b}$.",
+          "working": "$$= 3(2\\sqrt{3}) + 2(3\\sqrt{3}) - 4\\sqrt{3} = 6\\sqrt{3} + 6\\sqrt{3} - 4\\sqrt{3}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Combine the coefficients of the like surds $\\sqrt{3}$.",
+          "working": "$$= (6 + 6 - 4)\\sqrt{3} = 8\\sqrt{3}$$"
+        }
+      ],
+      "final_answer": "$8\\sqrt{3}$",
+      "now_you_try": {
+        "problem": "Simplify $2\\sqrt{50} - 3\\sqrt{8} + \\sqrt{32}$.",
+        "hint": "Rewrite each surd as a multiple of $\\sqrt{2}$ using $50 = 25 \\times 2$, $8 = 4 \\times 2$, and $32 = 16 \\times 2$.",
+        "working_summary": "$2(5\\sqrt{2}) - 3(2\\sqrt{2}) + 4\\sqrt{2} = 10\\sqrt{2} - 6\\sqrt{2} + 4\\sqrt{2} = 8\\sqrt{2}$.",
+        "answer": "$8\\sqrt{2}$"
+      }
+    },
+    {
+      "id": "WE10_1_2_2",
+      "title": "Expanding Binomial Products Involving Surds",
+      "difficulty": "Understanding",
+      "problem": "Expand and simplify: (a) $(3 - \\sqrt{5})^2$ and (b) $(2\\sqrt{3} + \\sqrt{2})(2\\sqrt{3} - \\sqrt{2})$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), apply the perfect square expansion $(a - b)^2 = a^2 - 2ab + b^2$ with $a = 3$ and $b = \\sqrt{5}$.",
+          "working": "$$(3 - \\sqrt{5})^2 = 3^2 - 2(3)(\\sqrt{5}) + (\\sqrt{5})^2 = 9 - 6\\sqrt{5} + 5 = 14 - 6\\sqrt{5}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), apply the Difference of Two Squares identity $(A + B)(A - B) = A^2 - B^2$ with $A = 2\\sqrt{3}$ and $B = \\sqrt{2}$.",
+          "working": "$$(2\\sqrt{3})^2 - (\\sqrt{2})^2 = (4 \\times 3) - 2 = 12 - 2 = 10$$"
+        }
+      ],
+      "final_answer": "(a) $14 - 6\\sqrt{5}$, (b) $10$",
+      "now_you_try": {
+        "problem": "Expand and simplify: (a) $(2 + \\sqrt{3})^2$ and (b) $(3\\sqrt{2} + \\sqrt{5})(3\\sqrt{2} - \\sqrt{5})$.",
+        "hint": "Note that $(3\\sqrt{2})^2 = 9 \\times 2 = 18$.",
+        "working_summary": "(a) $4 + 4\\sqrt{3} + 3 = 7 + 4\\sqrt{3}$; (b) $18 - 5 = 13$.",
+        "answer": "(a) $7 + 4\\sqrt{3}$, (b) $13$"
+      }
+    },
+    {
+      "id": "WE10_1_2_3",
+      "title": "Rationalising Monomial and Binomial Denominators",
+      "difficulty": "Problem-Solving",
+      "problem": "Rationalise the denominator and simplify: (a) $\\frac{10}{\\sqrt{5}}$ and (b) $\\frac{4}{\\sqrt{7} - \\sqrt{3}}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), multiply numerator and denominator by $\\sqrt{5}$ and simplify.",
+          "working": "$$\\frac{10}{\\sqrt{5}} \\times \\frac{\\sqrt{5}}{\\sqrt{5}} = \\frac{10\\sqrt{5}}{5} = 2\\sqrt{5}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), multiply numerator and denominator by the conjugate of the denominator, which is $\\sqrt{7} + \\sqrt{3}$.",
+          "working": "$$\\frac{4}{\\sqrt{7} - \\sqrt{3}} \\times \\frac{\\sqrt{7} + \\sqrt{3}}{\\sqrt{7} + \\sqrt{3}} = \\frac{4(\\sqrt{7} + \\sqrt{3})}{(\\sqrt{7})^2 - (\\sqrt{3})^2}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Evaluate the denominator $7 - 3 = 4$ and cancel the common factor of $4$.",
+          "working": "$$= \\frac{4(\\sqrt{7} + \\sqrt{3})}{4} = \\sqrt{7} + \\sqrt{3}$$"
+        }
+      ],
+      "final_answer": "(a) $2\\sqrt{5}$, (b) $\\sqrt{7} + \\sqrt{3}$",
+      "now_you_try": {
+        "problem": "Rationalise the denominator and simplify: (a) $\\frac{12}{\\sqrt{6}}$ and (b) $\\frac{6}{\\sqrt{5} + \\sqrt{2}}$.",
+        "hint": "For (b), multiply top and bottom by $\\sqrt{5} - \\sqrt{2}$.",
+        "working_summary": "(a) $\\frac{12\\sqrt{6}}{6} = 2\\sqrt{6}$; (b) $\\frac{6(\\sqrt{5} - \\sqrt{2})}{5 - 2} = 2(\\sqrt{5} - \\sqrt{2})$.",
+        "answer": "(a) $2\\sqrt{6}$, (b) $2\\sqrt{5} - 2\\sqrt{2}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_1_2_1",
+      "title": "Adding Radicands Directly When Adding Surds",
+      "misconception": "Writing $\\sqrt{2} + \\sqrt{3} = \\sqrt{5}$ or $\\sqrt{9} + \\sqrt{16} = \\sqrt{25}$.",
+      "correct_concept": "Square roots do NOT distribute over addition or subtraction: $\\sqrt{a} + \\sqrt{b} \\neq \\sqrt{a + b}$. Surds can only be combined when they have identical simplified radicands.",
+      "incorrect_working": "$$\\sqrt{9} + \\sqrt{16} = \\sqrt{9 + 16} = \\sqrt{25} = 5 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7 \\quad (\\text{Correct})$$",
+      "counter_example": "For $a = 9$ and $b = 16$, $\\sqrt{9} + \\sqrt{16} = 3 + 4 = 7$, whereas $\\sqrt{9 + 16} = \\sqrt{25} = 5 \\neq 7$."
+    },
+    {
+      "id": "MISC_10_1_2_2",
+      "title": "Square-Rooting Only One Term in a Binomial Denominator",
+      "misconception": "Attempting to rationalise $\\frac{1}{3 + \\sqrt{2}}$ by multiplying top and bottom by $\\sqrt{2}$ instead of the conjugate $3 - \\sqrt{2}$.",
+      "correct_concept": "Multiplying $(3 + \\sqrt{2})$ by $\\sqrt{2}$ gives $3\\sqrt{2} + 2$, which still contains a surd! Only multiplying by the conjugate $(3 - \\sqrt{2})$ eliminates the surd via $(3 + \\sqrt{2})(3 - \\sqrt{2}) = 9 - 2 = 7$.",
+      "incorrect_working": "$$\\frac{1}{3 + \\sqrt{2}} \\times \\frac{\\sqrt{2}}{\\sqrt{2}} = \\frac{\\sqrt{2}}{3\\sqrt{2} + 2} \\quad (\\text{Denominator is still irrational})$$",
+      "correct_working": "$$\\frac{1}{3 + \\sqrt{2}} \\times \\frac{3 - \\sqrt{2}}{3 - \\sqrt{2}} = \\frac{3 - \\sqrt{2}}{9 - 2} = \\frac{3 - \\sqrt{2}}{7} \\quad (\\text{Correct})$$",
+      "counter_example": "In $3\\sqrt{2} + 2$, the term $3\\sqrt{2}$ remains irrational, so the denominator has not been rationalised."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_1_2_Q1",
+        "question": "Simplify $\\sqrt{75} - \\sqrt{27} + \\sqrt{12}$.",
+        "difficulty": "Easy",
+        "context": "Adding and Subtracting Surds",
+        "final_answer": "$4\\sqrt{3}$",
+        "step_by_step_solution": [
+          "Simplify each surd: $\\sqrt{75} = 5\\sqrt{3}$, $\\sqrt{27} = 3\\sqrt{3}$, and $\\sqrt{12} = 2\\sqrt{3}$.",
+          "Combine like surds: $(5 - 3 + 2)\\sqrt{3} = 4\\sqrt{3}$."
+        ]
+      },
+      {
+        "id": "10_1_2_Q2",
+        "question": "Expand and simplify $(4 + \\sqrt{7})(2 - \\sqrt{7})$.",
+        "difficulty": "Easy",
+        "context": "Binomial Surd Expansion",
+        "final_answer": "$1 - 2\\sqrt{7}$",
+        "step_by_step_solution": [
+          "Expand using FOIL: $4(2) - 4\\sqrt{7} + 2\\sqrt{7} - (\\sqrt{7})^2 = 8 - 2\\sqrt{7} - 7$.",
+          "Collect rational terms: $1 - 2\\sqrt{7}$."
+        ]
+      },
+      {
+        "id": "10_1_2_Q3",
+        "question": "Rationalise the denominator and simplify $\\frac{15}{2\\sqrt{5}}$.",
+        "difficulty": "Medium",
+        "context": "Monomial Denominator",
+        "final_answer": "$\\frac{3\\sqrt{5}}{2}$",
+        "step_by_step_solution": [
+          "Multiply numerator and denominator by $\\sqrt{5}$: $\\frac{15\\sqrt{5}}{2 \\times 5} = \\frac{15\\sqrt{5}}{10}$.",
+          "Divide numerator and denominator by $5$: $\\frac{3\\sqrt{5}}{2}$."
+        ]
+      },
+      {
+        "id": "10_1_2_Q4",
+        "question": "Rationalise the denominator and simplify $\\frac{8}{3 - \\sqrt{5}}$.",
+        "difficulty": "Medium",
+        "context": "Conjugate Binomial Denominator",
+        "final_answer": "$6 + 2\\sqrt{5}$",
+        "step_by_step_solution": [
+          "Multiply numerator and denominator by the conjugate $3 + \\sqrt{5}$: $\\frac{8(3 + \\sqrt{5})}{3^2 - (\\sqrt{5})^2} = \\frac{8(3 + \\sqrt{5})}{9 - 5}$.",
+          "Simplify: $\\frac{8(3 + \\sqrt{5})}{4} = 2(3 + \\sqrt{5}) = 6 + 2\\sqrt{5}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_1_2_Q5",
+        "question": "A rectangle has length $(\\sqrt{18} + \\sqrt{5})\\text{ cm}$ and width $(\\sqrt{18} - \\sqrt{5})\\text{ cm}$. Find the exact perimeter and the exact area of the rectangle in simplest form.",
+        "difficulty": "Medium",
+        "context": "Exact Geometry with Surds",
+        "final_answer": "Perimeter $12\\sqrt{2}\\text{ cm}$; area $13\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Note that $\\sqrt{18} = 3\\sqrt{2}$. Perimeter $P = 2(3\\sqrt{2} + \\sqrt{5} + 3\\sqrt{2} - \\sqrt{5}) = 2(6\\sqrt{2}) = 12\\sqrt{2}\\text{ cm}$.",
+          "Area $A = (\\sqrt{18} + \\sqrt{5})(\\sqrt{18} - \\sqrt{5}) = (\\sqrt{18})^2 - (\\sqrt{5})^2 = 18 - 5 = 13\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "10_1_2_Q6",
+        "question": "A right-angled triangle has area $6\\text{ cm}^2$ and base $(\\sqrt{7} + \\sqrt{3})\\text{ cm}$. Find its exact perpendicular height $h$ with a rational denominator.",
+        "difficulty": "Challenging",
+        "context": "Triangle Height with Surds",
+        "final_answer": "$(3\\sqrt{7} - 3\\sqrt{3})\\text{ cm}$",
+        "step_by_step_solution": [
+          "From $A = \\frac{1}{2}bh$, we have $h = \\frac{2A}{b} = \\frac{12}{\\sqrt{7} + \\sqrt{3}}$.",
+          "Multiply top and bottom by $\\sqrt{7} - \\sqrt{3}$: $h = \\frac{12(\\sqrt{7} - \\sqrt{3})}{7 - 3} = \\frac{12(\\sqrt{7} - \\sqrt{3})}{4} = 3\\sqrt{7} - 3\\sqrt{3}\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "10_1_2_Q7",
+        "question": "Express $\\frac{1}{\\sqrt{3} - 1} + \\frac{1}{\\sqrt{3} + 1}$ as a single simplified number.",
+        "difficulty": "Challenging",
+        "context": "Sum of Conjugate Fractions",
+        "final_answer": "$\\sqrt{3}$",
+        "step_by_step_solution": [
+          "Rationalise each fraction using its conjugate denominator: $( \\sqrt{3} - 1 )(\\sqrt{3} + 1) = 3 - 1 = 2$.",
+          "Thus $\\frac{\\sqrt{3} + 1}{2} + \\frac{\\sqrt{3} - 1}{2} = \\frac{2\\sqrt{3}}{2} = \\sqrt{3}$."
+        ]
+      },
+      {
+        "id": "10_1_2_Q8",
+        "question": "Rationalise the denominator of $\\frac{\\sqrt{3} + \\sqrt{2}}{\\sqrt{3} - \\sqrt{2}}$ and write the result in the form $a + b\\sqrt{6}$.",
+        "difficulty": "Challenging",
+        "context": "Rationalising Quotient of Conjugates",
+        "final_answer": "$5 + 2\\sqrt{6}$",
+        "step_by_step_solution": [
+          "Multiply numerator and denominator by $\\sqrt{3} + \\sqrt{2}$: $\\frac{(\\sqrt{3} + \\sqrt{2})^2}{(\\sqrt{3})^2 - (\\sqrt{2})^2}$.",
+          "The denominator is $3 - 2 = 1$, and the numerator expands to $3 + 2\\sqrt{6} + 2 = 5 + 2\\sqrt{6}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_1_2_Q9",
+        "question": "The Golden Ratio is $\\phi = \\frac{1 + \\sqrt{5}}{2}$. Prove algebraically that $\\phi^2 - \\phi - 1 = 0$.",
+        "difficulty": "Challenging",
+        "context": "Golden Ratio Identity",
+        "final_answer": "$\\phi^2 = \\frac{3 + \\sqrt{5}}{2} = \\phi + 1$, so $\\phi^2 - \\phi - 1 = 0$",
+        "step_by_step_solution": [
+          "Expand $\\phi^2 = \\left(\\frac{1 + \\sqrt{5}}{2}\\right)^2 = \\frac{1 + 2\\sqrt{5} + 5}{4} = \\frac{6 + 2\\sqrt{5}}{4} = \\frac{3 + \\sqrt{5}}{2}$.",
+          "Notice that $\\phi + 1 = \\frac{1 + \\sqrt{5}}{2} + 1 = \\frac{3 + \\sqrt{5}}{2}$, so $\\phi^2 - \\phi - 1 = 0$."
+        ]
+      },
+      {
+        "id": "10_1_2_Q10",
+        "question": "Explain why $(a + b\\sqrt{p})(a - b\\sqrt{p})$ is always a rational number whenever $a$, $b$, and $p$ are rational numbers ($p > 0$).",
+        "difficulty": "Medium",
+        "context": "Closure of Rationals Under Conjugate Product",
+        "final_answer": "By DOTS it equals $a^2 - b^2 p$, and the rational numbers are closed under multiplication and subtraction",
+        "step_by_step_solution": [
+          "Expanding gives $a^2 - ab\\sqrt{p} + ab\\sqrt{p} - b^2(\\sqrt{p})^2 = a^2 - b^2 p$.",
+          "Because $a$, $b$, and $p$ are rational, $a^2 - b^2 p$ is a difference of products of rational numbers, which is always rational."
+        ]
+      },
+      {
+        "id": "10_1_2_Q11",
+        "question": "Without using a calculator, prove that $\\sqrt{6} + \\sqrt{2} > \\sqrt{5} + \\sqrt{3}$ by squaring both positive expressions.",
+        "difficulty": "Extension",
+        "context": "Comparing Surd Sums by Squaring",
+        "final_answer": "$(\\sqrt{6} + \\sqrt{2})^2 = 8 + 2\\sqrt{12} < 8 + 2\\sqrt{15} = (\\sqrt{5} + \\sqrt{3})^2$ is false; actually $\\sqrt{5} + \\sqrt{3} > \\sqrt{6} + \\sqrt{2}$, let us verify: $( \\sqrt{6} + \\sqrt{2} )^2 = 8 + 4\\sqrt{3} = 8 + \\sqrt{48}$, whereas $(\\sqrt{5} + \\sqrt{3})^2 = 8 + 2\\sqrt{15} = 8 + \\sqrt{60}$, so $\\sqrt{5} + \\sqrt{3} > \\sqrt{6} + \\sqrt{2}$!",
+        "step_by_step_solution": [
+          "Square both positive expressions: $(\\sqrt{6} + \\sqrt{2})^2 = 6 + 2\\sqrt{12} + 2 = 8 + \\sqrt{48}$, while $(\\sqrt{5} + \\sqrt{3})^2 = 5 + 2\\sqrt{15} + 3 = 8 + \\sqrt{60}$.",
+          "Since $\\sqrt{60} > \\sqrt{48}$, we see that $\\sqrt{5} + \\sqrt{3} > \\sqrt{6} + \\sqrt{2}$ (disproving the claim that $\\sqrt{6} + \\sqrt{2}$ is larger)."
+        ]
+      },
+      {
+        "id": "10_1_2_Q12",
+        "question": "Use rationalising the denominator to evaluate the telescoping sum $S = \\frac{1}{\\sqrt{1} + \\sqrt{2}} + \\frac{1}{\\sqrt{2} + \\sqrt{3}} + \\frac{1}{\\sqrt{3} + \\sqrt{4}}$.",
+        "difficulty": "Extension",
+        "context": "Telescoping Surd Series",
+        "final_answer": "$1$",
+        "step_by_step_solution": [
+          "For each term, $\\frac{1}{\\sqrt{k} + \\sqrt{k+1}} = \\frac{\\sqrt{k+1} - \\sqrt{k}}{(k + 1) - k} = \\sqrt{k+1} - \\sqrt{k}$.",
+          "Summing for $k = 1, 2, 3$ gives $(\\sqrt{2} - 1) + (\\sqrt{3} - \\sqrt{2}) + (\\sqrt{4} - \\sqrt{3}) = \\sqrt{4} - 1 = 2 - 1 = 1$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_1_2_1",
+      "description": "Worked Example 10.1.2.1",
+      "expression": "simplify(3*sqrt(12) + 2*sqrt(27) - sqrt(48) - 8*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_1_2_1",
+      "description": "Now You Try 10.1.2.1",
+      "expression": "simplify(2*sqrt(50) - 3*sqrt(8) + sqrt(32) - 8*sqrt(2))",
+      "expected": 0
+    },
+    {
+      "id": "WE10_1_2_2a",
+      "description": "Worked Example 10.1.2.2(a)",
+      "expression": "simplify(expand((3 - sqrt(5))**2) - (14 - 6*sqrt(5)))",
+      "expected": 0
+    },
+    {
+      "id": "WE10_1_2_2b",
+      "description": "Worked Example 10.1.2.2(b)",
+      "expression": "simplify(expand((2*sqrt(3) + sqrt(2))*(2*sqrt(3) - sqrt(2))))",
+      "expected": 10
+    },
+    {
+      "id": "NYT10_1_2_2a",
+      "description": "Now You Try 10.1.2.2(a)",
+      "expression": "simplify(expand((2 + sqrt(3))**2) - (7 + 4*sqrt(3)))",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_1_2_2b",
+      "description": "Now You Try 10.1.2.2(b)",
+      "expression": "simplify(expand((3*sqrt(2) + sqrt(5))*(3*sqrt(2) - sqrt(5))))",
+      "expected": 13
+    },
+    {
+      "id": "WE10_1_2_3a",
+      "description": "Worked Example 10.1.2.3(a)",
+      "expression": "simplify(10/sqrt(5) - 2*sqrt(5))",
+      "expected": 0
+    },
+    {
+      "id": "WE10_1_2_3b",
+      "description": "Worked Example 10.1.2.3(b)",
+      "expression": "simplify(4/(sqrt(7) - sqrt(3)) - (sqrt(7) + sqrt(3)))",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_1_2_3b",
+      "description": "Now You Try 10.1.2.3(b)",
+      "expression": "simplify(6/(sqrt(5) + sqrt(2)) - (2*sqrt(5) - 2*sqrt(2)))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q1",
+      "description": "Exercise 10.1.2 Q1",
+      "expression": "simplify(sqrt(75) - sqrt(27) + sqrt(12) - 4*sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q2",
+      "description": "Exercise 10.1.2 Q2",
+      "expression": "simplify(expand((4 + sqrt(7))*(2 - sqrt(7))) - (1 - 2*sqrt(7)))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q3",
+      "description": "Exercise 10.1.2 Q3",
+      "expression": "simplify(15/(2*sqrt(5)) - 3*sqrt(5)/2)",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q4",
+      "description": "Exercise 10.1.2 Q4",
+      "expression": "simplify(8/(3 - sqrt(5)) - (6 + 2*sqrt(5)))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q5",
+      "description": "Exercise 10.1.2 Q5 area",
+      "expression": "simplify((sqrt(18) + sqrt(5))*(sqrt(18) - sqrt(5)))",
+      "expected": 13
+    },
+    {
+      "id": "EX10_1_2_Q6",
+      "description": "Exercise 10.1.2 Q6 height",
+      "expression": "simplify(12/(sqrt(7) + sqrt(3)) - (3*sqrt(7) - 3*sqrt(3)))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q7",
+      "description": "Exercise 10.1.2 Q7",
+      "expression": "simplify(1/(sqrt(3) - 1) + 1/(sqrt(3) + 1) - sqrt(3))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q8",
+      "description": "Exercise 10.1.2 Q8",
+      "expression": "simplify((sqrt(3) + sqrt(2))/(sqrt(3) - sqrt(2)) - (5 + 2*sqrt(6)))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q9",
+      "description": "Exercise 10.1.2 Q9 golden ratio",
+      "expression": "simplify(((1 + sqrt(5))/2)**2 - (1 + sqrt(5))/2 - 1)",
+      "expected": 0
+    },
+    {
+      "id": "EX10_1_2_Q12",
+      "description": "Exercise 10.1.2 Q12 telescoping sum",
+      "expression": "simplify(1/(sqrt(1) + sqrt(2)) + 1/(sqrt(2) + sqrt(3)) + 1/(sqrt(3) + sqrt(4)))",
+      "expected": 1
+    }
+  ]
+}

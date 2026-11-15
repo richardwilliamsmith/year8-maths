@@ -1,0 +1,421 @@
+{
+  "metadata": {
+    "section_id": "9_3_2",
+    "section_code": "3B",
+    "chapter_number": 3,
+    "chapter_title": "Algebraic Expansion and Factorisation",
+    "title": "Factorising Difference of Two Squares and Grouping",
+    "vcaa_code": "VC2M9A02",
+    "vcaa_description": "Simplify algebraic expressions, expand binomial products and factorise monic quadratic expressions.",
+    "strand": "Algebra",
+    "target_mastery": "Factorise expressions by extracting common factors, grouping in pairs, and applying the difference of two squares identity.",
+    "prerequisites": [
+      "Expanding binomial products (Section 3A)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Highest Common Factor (HCF) extraction",
+        "definition": "The mandatory first step in any factorisation problem: dividing out the largest numerical and algebraic factor shared by all terms."
+      },
+      {
+        "term": "Difference of two squares (DOTS) factorisation",
+        "definition": "Rewriting a difference of two squared expressions $a^2 - b^2$ as the conjugate binomial product $(a - b)(a + b)$."
+      },
+      {
+        "term": "Complete factorisation",
+        "definition": "Continuing to factorise each bracketed factor until no factor can be broken down any further."
+      },
+      {
+        "term": "Factorising by grouping in pairs",
+        "definition": "Factorising a four-term expression $ac + ad + bc + bd$ by factoring the first pair as $a(c + d)$ and the second pair as $b(c + d)$, then extracting the common binomial factor $(c + d)$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_3_2_1",
+      "title": "Factorising the Difference of Two Squares (DOTS)",
+      "explanation": "Reversing the expansion $(a - b)(a + b) = a^2 - b^2$ gives the difference of two squares factorisation law. Whenever an expression consists of one squared term subtracted from another squared term, it factorises into the difference and sum of their square roots. This even applies over the real numbers when a constant is not a perfect square by using a surd: $x^2 - 7 = (x - \\sqrt{7})(x + \\sqrt{7})$.",
+      "formula_latex": "a^2 - b^2 = (a - b)(a + b), \\quad x^2 - k = (x - \\sqrt{k})(x + \\sqrt{k}) \\; (k > 0)",
+      "callout_title": "A Sum of Two Squares Does Not Factorise Over the Reals",
+      "callout_rule": "Be careful: $a^2 - b^2 = (a - b)(a + b)$, but $a^2 + b^2$ has a PLUS sign and cannot be factorised into real linear factors."
+    },
+    {
+      "id": "theory_9_3_2_2",
+      "title": "Extracting a Common Factor Before Applying DOTS",
+      "explanation": "Many expressions do not initially look like a difference of two squares until their Highest Common Factor (HCF) is taken out. For example, in $3x^2 - 27$, neither $3$ nor $27$ is a square number, but extracting the common factor $3$ gives $3(x^2 - 9) = 3(x - 3)(x + 3)$.",
+      "formula_latex": "3x^2 - 27 = 3(x^2 - 9) = 3(x - 3)(x + 3)",
+      "callout_title": "Golden Rule of Factorising: Always Check for an HCF First",
+      "callout_rule": "Before trying any special identity, always inspect all terms and factor out the Highest Common Factor first."
+    },
+    {
+      "id": "theory_9_3_2_3",
+      "title": "Factorising Four-Term Expressions by Grouping in Pairs",
+      "explanation": "When an expression has four terms with no single factor common to all four, split the expression into two pairs of two terms. Factor out the HCF from the first pair and the HCF from the second pair so that both pairs leave the exact same bracketed binomial factor, then factor out that common binomial.",
+      "formula_latex": "x^3 + 3x^2 + 4x + 12 = x^2(x + 3) + 4(x + 3) = (x + 3)(x^2 + 4)",
+      "callout_title": "Watch the Sign When the Third Term Is Negative",
+      "callout_rule": "In $x^2 + 5x - 2x - 10$, factor $-2$ out of the second pair so the sign inside flips to match: $x(x + 5) - 2(x + 5) = (x + 5)(x - 2)$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_3_2_1",
+      "title": "Factorising Differences of Two Squares (Including Surds)",
+      "difficulty": "Fluency",
+      "problem": "Factorise completely: (a) $16x^2 - 81y^2$ and (b) $x^2 - 11$ over the real numbers.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), rewrite $16x^2 = (4x)^2$ and $81y^2 = (9y)^2$, then apply $a^2 - b^2 = (a - b)(a + b)$.",
+          "working": "$$16x^2 - 81y^2 = (4x)^2 - (9y)^2 = (4x - 9y)(4x + 9y)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), write $11 = (\\sqrt{11})^2$ and apply DOTS using surds.",
+          "working": "$$x^2 - 11 = x^2 - (\\sqrt{11})^2 = (x - \\sqrt{11})(x + \\sqrt{11})$$"
+        }
+      ],
+      "final_answer": "(a) $(4x - 9y)(4x + 9y)$, (b) $(x - \\sqrt{11})(x + \\sqrt{11})$",
+      "now_you_try": {
+        "problem": "Factorise completely: (a) $25a^2 - 49b^2$ and (b) $x^2 - 18$ (simplify any surd).",
+        "hint": "In (b), $\\sqrt{18} = 3\\sqrt{2}$.",
+        "working_summary": "(a) $(5a - 7b)(5a + 7b)$; (b) $(x - \\sqrt{18})(x + \\sqrt{18}) = (x - 3\\sqrt{2})(x + 3\\sqrt{2})$.",
+        "answer": "(a) $(5a - 7b)(5a + 7b)$, (b) $(x - 3\\sqrt{2})(x + 3\\sqrt{2})$"
+      }
+    },
+    {
+      "id": "WE9_3_2_2",
+      "title": "Multi-Step Factorisation: HCF Followed by DOTS",
+      "difficulty": "Understanding",
+      "problem": "Factorise completely: (a) $5x^2 - 80$ and (b) $(x + 2)^2 - 25$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), extract the common factor $5$ first, then apply DOTS to $(x^2 - 16)$.",
+          "working": "$$5x^2 - 80 = 5(x^2 - 16) = 5(x - 4)(x + 4)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), treat $(x + 2)$ as the first squared term $a$ and $25 = 5^2$ as $b^2$, then simplify inside each bracket.",
+          "working": "$$(x + 2)^2 - 5^2 = ((x + 2) - 5)((x + 2) + 5) = (x - 3)(x + 7)$$"
+        }
+      ],
+      "final_answer": "(a) $5(x - 4)(x + 4)$, (b) $(x - 3)(x + 7)$",
+      "now_you_try": {
+        "problem": "Factorise completely: (a) $2m^3 - 50m$ and (b) $(x - 4)^2 - 9$.",
+        "hint": "In (a), extract $2m$ first.",
+        "working_summary": "(a) $2m(m^2 - 25) = 2m(m - 5)(m + 5)$; (b) $(x - 4 - 3)(x - 4 + 3) = (x - 7)(x - 1)$.",
+        "answer": "(a) $2m(m - 5)(m + 5)$, (b) $(x - 7)(x - 1)$"
+      }
+    },
+    {
+      "id": "WE9_3_2_3",
+      "title": "Factorising by Grouping in Pairs",
+      "difficulty": "Understanding",
+      "problem": "Factorise completely: $2x^2 + 6x - 5x - 15$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Factor $2x$ out of the first two terms ($2x^2 + 6x$) and $-5$ out of the last two terms ($-5x - 15$) so both pairs reveal the common binomial $(x + 3)$.",
+          "working": "$$2x^2 + 6x - 5x - 15 = 2x(x + 3) - 5(x + 3)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Extract the common binomial factor $(x + 3)$.",
+          "working": "$$= (x + 3)(2x - 5)$$"
+        }
+      ],
+      "final_answer": "$(x + 3)(2x - 5)$",
+      "now_you_try": {
+        "problem": "Factorise by grouping in pairs: $3x^2 - 12x - 4x + 16$.",
+        "hint": "Factor $3x$ from the first pair and $-4$ from the second pair.",
+        "working_summary": "$3x(x - 4) - 4(x - 4) = (x - 4)(3x - 4)$.",
+        "answer": "$(x - 4)(3x - 4)$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_9_3_2_1",
+      "title": "Attempting to Factorise a Sum of Two Squares as (a + b)(a + b)",
+      "misconception": "Factorising $x^2 + 9$ as $(x + 3)(x + 3)$ or $(x - 3)(x + 3)$.",
+      "correct_concept": "Expanding $(x + 3)^2$ gives $x^2 + 6x + 9 \\neq x^2 + 9$, and $(x - 3)(x + 3) = x^2 - 9$. A sum of two squares $x^2 + a^2$ ($a \\neq 0$) cannot be factorised over the real numbers.",
+      "incorrect_working": "$$x^2 + 9 = (x + 3)(x + 3) \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$x^2 + 9 \\text{ cannot be factorised over } \\mathbb{R}. \\quad (\\text{Correct})$$",
+      "counter_example": "For $x = 1$, $1^2 + 9 = 10$, whereas $(1 + 3)^2 = 16 \\neq 10$."
+    },
+    {
+      "id": "MISC_9_3_2_2",
+      "title": "Forgetting to Take the Square Root of the Numerical Coefficient in DOTS",
+      "misconception": "Factorising $9x^2 - 16$ as $(9x - 4)(9x + 4)$ instead of $(3x - 4)(3x + 4)$.",
+      "correct_concept": "Since $9x^2 = (3x)^2$, the square root of the first term is $3x$, not $9x$: $9x^2 - 16 = (3x - 4)(3x + 4)$.",
+      "incorrect_working": "$$9x^2 - 16 = (9x - 4)(9x + 4) \\quad (\\text{Incorrect — expands to } 81x^2 - 16)$$",
+      "correct_working": "$$9x^2 - 16 = (3x)^2 - 4^2 = (3x - 4)(3x + 4) \\quad (\\text{Correct})$$",
+      "counter_example": "If $x = 1$, $9(1)^2 - 16 = -7$ and $(3 - 4)(3 + 4) = -7$, whereas $(9 - 4)(9 + 4) = 65$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_3_2_Q1",
+        "question": "Factorise completely $36x^2 - 121$.",
+        "difficulty": "Easy",
+        "context": "Difference of Two Squares",
+        "final_answer": "$(6x - 11)(6x + 11)$",
+        "step_by_step_solution": [
+          "Write $36x^2 = (6x)^2$ and $121 = 11^2$.",
+          "Apply DOTS: $(6x - 11)(6x + 11)$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q2",
+        "question": "Factorise completely $3a^2 - 75b^2$.",
+        "difficulty": "Easy",
+        "context": "HCF Before DOTS",
+        "final_answer": "$3(a - 5b)(a + 5b)$",
+        "step_by_step_solution": [
+          "Extract the common numerical factor $3$: $3(a^2 - 25b^2)$.",
+          "Apply DOTS to $a^2 - (5b)^2$: $3(a - 5b)(a + 5b)$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q3",
+        "question": "Factorise by grouping in pairs: $ab + 4a - 3b - 12$.",
+        "difficulty": "Medium",
+        "context": "Factorising by Grouping",
+        "final_answer": "$(b + 4)(a - 3)$",
+        "step_by_step_solution": [
+          "Factor the first pair by $a$ and the second pair by $-3$: $a(b + 4) - 3(b + 4)$.",
+          "Extract the common binomial factor $(b + 4)$: $(b + 4)(a - 3)$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q4",
+        "question": "Factorise completely $(2x - 1)^2 - (x + 4)^2$.",
+        "difficulty": "Challenging",
+        "context": "DOTS with Two Binomials",
+        "final_answer": "$3(x - 5)(x + 1)$",
+        "step_by_step_solution": [
+          "Apply $A^2 - B^2 = (A - B)(A + B)$ with $A = 2x - 1$ and $B = x + 4$: $((2x - 1) - (x + 4))((2x - 1) + (x + 4))$.",
+          "Simplify each bracket: $(x - 5)(3x + 3)$.",
+          "Extract the common factor $3$ from the second bracket: $3(x - 5)(x + 1)$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_3_2_Q5",
+        "question": "A circular steel washer has outer radius $R = 6.8\\text{ cm}$ and inner hole radius $r = 3.2\\text{ cm}$. Factorise the area formula $A = \\pi R^2 - \\pi r^2$, and use the factorised form to calculate the exact area of the washer in terms of $\\pi$ without squaring decimals.",
+        "difficulty": "Medium",
+        "context": "Annulus Area via DOTS",
+        "final_answer": "$A = \\pi(R - r)(R + r) = 36\\pi\\text{ cm}^2$",
+        "step_by_step_solution": [
+          "Factor out $\\pi$ and apply DOTS: $A = \\pi(R^2 - r^2) = \\pi(R - r)(R + r)$.",
+          "Substitute $R = 6.8$ and $r = 3.2$: $R - r = 3.6$ and $R + r = 10.0$, so $A = \\pi(3.6)(10) = 36\\pi\\text{ cm}^2$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q6",
+        "question": "A rectangular solar panel in Mildura has an area of $(9x^2 - 16)\\text{ m}^2$ and a length of $(3x + 4)\\text{ m}$ (where $x > 2$). Find an algebraic expression for the width of the panel and hence find the perimeter of the panel in terms of $x$.",
+        "difficulty": "Medium",
+        "context": "Solar Panel Dimensions",
+        "final_answer": "Width $= (3x - 4)\\text{ m}$; Perimeter $= 12x\\text{ m}$",
+        "step_by_step_solution": [
+          "Factorise the area: $9x^2 - 16 = (3x + 4)(3x - 4)$. Dividing by length $(3x + 4)$ gives width $= (3x - 4)\\text{ m}$.",
+          "Calculate the perimeter: $P = 2((3x + 4) + (3x - 4)) = 2(6x) = 12x\\text{ m}$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q7",
+        "question": "A right-angled triangle has hypotenuse $c = 85\\text{ cm}$ and one leg $a = 84\\text{ cm}$. Use the factorised form of Pythagoras' theorem $b^2 = c^2 - a^2 = (c - a)(c + a)$ to find the length of the other leg $b$ mentally.",
+        "difficulty": "Medium",
+        "context": "Pythagorean Triples via DOTS",
+        "final_answer": "$b = 13\\text{ cm}$",
+        "step_by_step_solution": [
+          "Substitute $c = 85$ and $a = 84$ into $b^2 = (c - a)(c + a) = (85 - 84)(85 + 84) = 1 \\times 169 = 169$.",
+          "Take the positive square root: $b = \\sqrt{169} = 13\\text{ cm}$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q8",
+        "question": "The volume of a rectangular shipping crate in Port Melbourne is given by the four-term polynomial $V = 2x^3 + 10x^2 - 18x - 90\\text{ m}^3$ (for $x > 3$). Factorise $V$ completely into a constant and three linear factors representing the crate's dimensions.",
+        "difficulty": "Challenging",
+        "context": "3D Volume Factorisation by Grouping and DOTS",
+        "final_answer": "$2(x + 5)(x - 3)(x + 3)$",
+        "step_by_step_solution": [
+          "Extract the common numerical factor $2$: $V = 2(x^3 + 5x^2 - 9x - 45)$.",
+          "Group in pairs inside the brackets: $2[x^2(x + 5) - 9(x + 5)] = 2(x + 5)(x^2 - 9)$.",
+          "Factorise $x^2 - 9$ by DOTS: $V = 2(x + 5)(x - 3)(x + 3)$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_3_2_Q9",
+        "question": "Use the difference of two squares identity to evaluate $2026^2 - 2024^2$ without calculating either square.",
+        "difficulty": "Easy",
+        "context": "Mental Evaluation of Large Squares",
+        "final_answer": "$8100$",
+        "step_by_step_solution": [
+          "Apply $a^2 - b^2 = (a - b)(a + b)$ with $a = 2026$ and $b = 2024$.",
+          "$(2026 - 2024)(2026 + 2024) = 2 \\times 4050 = 8100$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q10",
+        "question": "A student factorised $x^4 - 16$ as $(x^2 - 4)(x^2 + 4)$ and stopped. Explain why this factorisation is incomplete and write the fully factorised form over the real numbers.",
+        "difficulty": "Medium",
+        "context": "Repeated Difference of Two Squares",
+        "final_answer": "$x^2 - 4$ is itself a difference of two squares; complete factorisation is $(x - 2)(x + 2)(x^2 + 4)$",
+        "step_by_step_solution": [
+          "While $x^2 + 4$ is a sum of two squares and cannot be factorised further over $\\mathbb{R}$, the first factor $x^2 - 4 = x^2 - 2^2$ is another difference of two squares.",
+          "Factorising $x^2 - 4 = (x - 2)(x + 2)$ gives the complete factorisation $(x - 2)(x + 2)(x^2 + 4)$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q11",
+        "question": "Factorise $x^2 - 20$ over the real numbers, writing any surds in simplest form.",
+        "difficulty": "Medium",
+        "context": "DOTS with Simplified Surds",
+        "final_answer": "$(x - 2\\sqrt{5})(x + 2\\sqrt{5})$",
+        "step_by_step_solution": [
+          "Write $20 = (\\sqrt{20})^2 = (2\\sqrt{5})^2$.",
+          "Apply DOTS: $x^2 - 20 = (x - 2\\sqrt{5})(x + 2\\sqrt{5})$."
+        ]
+      },
+      {
+        "id": "9_3_2_Q12",
+        "question": "Prove that for any integer $n$, the difference between the squares of the next odd integer $(2n + 3)$ and the previous odd integer $(2n - 1)$ is always a multiple of $8$.",
+        "difficulty": "Extension",
+        "context": "Divisibility Proof Using DOTS",
+        "final_answer": "$(2n + 3)^2 - (2n - 1)^2 = 4(4n + 2) = 8(2n + 1)$, which is always a multiple of $8$",
+        "step_by_step_solution": [
+          "Apply DOTS to $(2n + 3)^2 - (2n - 1)^2$: $((2n + 3) - (2n - 1))((2n + 3) + (2n - 1))$.",
+          "Simplify each bracket: $(4)(4n + 2) = 8(2n + 1)$. Since $2n + 1$ is an integer, $8(2n + 1)$ is a multiple of $8$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_3_2_1a",
+      "description": "Worked Example 9.3.2.1(a)",
+      "expression": "simplify(expand((4*x - 9*y)*(4*x + 9*y)) - (16*x**2 - 81*y**2))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_2_1b",
+      "description": "Worked Example 9.3.2.1(b)",
+      "expression": "simplify(expand((x - sqrt(11))*(x + sqrt(11))) - (x**2 - 11))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_2_1a",
+      "description": "Now You Try 9.3.2.1(a)",
+      "expression": "simplify(expand((5*a - 7*b)*(5*a + 7*b)) - (25*a**2 - 49*b**2))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_2_1b",
+      "description": "Now You Try 9.3.2.1(b)",
+      "expression": "simplify(expand((x - 3*sqrt(2))*(x + 3*sqrt(2))) - (x**2 - 18))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_2_2a",
+      "description": "Worked Example 9.3.2.2(a)",
+      "expression": "simplify(expand(5*(x - 4)*(x + 4)) - (5*x**2 - 80))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_2_2b",
+      "description": "Worked Example 9.3.2.2(b)",
+      "expression": "simplify(expand((x - 3)*(x + 7)) - ((x + 2)**2 - 25))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_2_2a",
+      "description": "Now You Try 9.3.2.2(a)",
+      "expression": "simplify(expand(2*m*(m - 5)*(m + 5)) - (2*m**3 - 50*m))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_2_2b",
+      "description": "Now You Try 9.3.2.2(b)",
+      "expression": "simplify(expand((x - 7)*(x - 1)) - ((x - 4)**2 - 9))",
+      "expected": 0
+    },
+    {
+      "id": "WE9_3_2_3",
+      "description": "Worked Example 9.3.2.3 grouping",
+      "expression": "simplify(expand((x + 3)*(2*x - 5)) - (2*x**2 + 6*x - 5*x - 15))",
+      "expected": 0
+    },
+    {
+      "id": "NYT9_3_2_3",
+      "description": "Now You Try 9.3.2.3 grouping",
+      "expression": "simplify(expand((x - 4)*(3*x - 4)) - (3*x**2 - 12*x - 4*x + 16))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_2_Q1",
+      "description": "Exercise 9.3.2 Q1",
+      "expression": "simplify(expand((6*x - 11)*(6*x + 11)) - (36*x**2 - 121))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_2_Q2",
+      "description": "Exercise 9.3.2 Q2",
+      "expression": "simplify(expand(3*(a - 5*b)*(a + 5*b)) - (3*a**2 - 75*b**2))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_2_Q3",
+      "description": "Exercise 9.3.2 Q3",
+      "expression": "simplify(expand((b + 4)*(a - 3)) - (a*b + 4*a - 3*b - 12))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_2_Q4",
+      "description": "Exercise 9.3.2 Q4",
+      "expression": "simplify(expand(3*(x - 5)*(x + 1)) - ((2*x - 1)**2 - (x + 4)**2))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_2_Q5",
+      "description": "Exercise 9.3.2 Q5 annulus area coefficient of pi",
+      "expression": "Rational(68, 10)**2 - Rational(32, 10)**2",
+      "expected": 36
+    },
+    {
+      "id": "EX9_3_2_Q7",
+      "description": "Exercise 9.3.2 Q7 Pythagoras via DOTS",
+      "expression": "sqrt((85 - 84)*(85 + 84))",
+      "expected": 13
+    },
+    {
+      "id": "EX9_3_2_Q8",
+      "description": "Exercise 9.3.2 Q8 cubic grouping and DOTS",
+      "expression": "simplify(expand(2*(x + 5)*(x - 3)*(x + 3)) - (2*x**3 + 10*x**2 - 18*x - 90))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_2_Q9",
+      "description": "Exercise 9.3.2 Q9 2026^2 - 2024^2",
+      "expression": "2026**2 - 2024**2",
+      "expected": 8100
+    },
+    {
+      "id": "EX9_3_2_Q10",
+      "description": "Exercise 9.3.2 Q10 x^4 - 16",
+      "expression": "simplify(expand((x - 2)*(x + 2)*(x**2 + 4)) - (x**4 - 16))",
+      "expected": 0
+    },
+    {
+      "id": "EX9_3_2_Q12",
+      "description": "Exercise 9.3.2 Q12 odd square difference",
+      "expression": "simplify((2*n + 3)**2 - (2*n - 1)**2 - 8*(2*n + 1))",
+      "expected": 0
+    }
+  ]
+}

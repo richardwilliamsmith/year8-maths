@@ -1,0 +1,199 @@
+{
+  "chapter_number": 9,
+  "chapter_title": "Multi-Stage Probability and Relative Frequency",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_9_1",
+      "section_code": "9A",
+      "title": "Two-Step Experiments With and Without Replacement",
+      "vcaa_code": "VC2M9P01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A fair coin is tossed twice. The $4$ equally likely outcomes are $HH, HT, TH, TT$. Find the probability of getting:",
+          "parts": [
+            { "label": "a", "question": "Two Heads ($HH$)", "answer": "$\\dfrac{1}{4}$" },
+            { "label": "b", "question": "Two Tails ($TT$)", "answer": "$\\dfrac{1}{4}$" },
+            { "label": "c", "question": "Exactly one Head and one Tail ($HT$ or $TH$)", "answer": "$\\dfrac{2}{4} = \\dfrac{1}{2}$" },
+            { "label": "d", "question": "At least one Head ($HH, HT$, or $TH$)", "answer": "$\\dfrac{3}{4}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A fair coin ($H, T$) is tossed and a fair $6$-sided die ($1, 2, 3, 4, 5, 6$) is rolled. Find:",
+          "parts": [
+            { "label": "a", "question": "The total number of outcomes in the grid ($2 \\times 6$)", "answer": "$12$" },
+            { "label": "b", "question": "The probability of getting $(H, 6)$", "answer": "$\\dfrac{1}{12}$" },
+            { "label": "c", "question": "The probability of getting Heads and an even number ($(H,2), (H,4), (H,6)$)", "answer": "$\\dfrac{3}{12} = \\dfrac{1}{4}$" },
+            { "label": "d", "question": "The probability of getting Tails and a number less than $3$ ($(T,1), (T,2)$)", "answer": "$\\dfrac{2}{12} = \\dfrac{1}{6}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A bag has $2$ red ($R$) and $3$ blue ($B$) counters ($5$ in total). One counter is drawn, **put back in the bag** (with replacement), and a second is drawn. Find:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(R)$ on the first draw", "answer": "$\\dfrac{2}{5}$" },
+            { "label": "b", "question": "$\\Pr(R)$ on the second draw (since the counter was replaced)", "answer": "$\\dfrac{2}{5}$" },
+            { "label": "c", "question": "$\\Pr(R, R) = \\dfrac{2}{5} \\times \\dfrac{2}{5}$", "answer": "$\\dfrac{4}{25}$" },
+            { "label": "d", "question": "$\\Pr(B, B) = \\dfrac{3}{5} \\times \\dfrac{3}{5}$", "answer": "$\\dfrac{9}{25}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "The same bag has $2$ red and $3$ blue counters ($5$ in total), but now the first counter is **NOT put back** (without replacement). If the first counter drawn is Red:",
+          "parts": [
+            { "label": "a", "question": "How many counters are left in the bag for the second draw?", "answer": "$4$" },
+            { "label": "b", "question": "How many Red counters are left in the bag?", "answer": "$1$" },
+            { "label": "c", "question": "What is the probability that the second counter is also Red?", "answer": "$\\dfrac{1}{4}$" },
+            { "label": "d", "question": "Calculate $\\Pr(R, R) = \\dfrac{2}{5} \\times \\dfrac{1}{4}$ and simplify.", "answer": "$\\dfrac{2}{20} = \\dfrac{1}{10}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A spinner has $3$ equal sections numbered $1, 2, 3$. It is spun twice ($3 \\times 3 = 9$ outcomes). What is the probability of spinning $(3, 3)$?",
+          "answer": "$\\dfrac{1}{9}$"
+        },
+        {
+          "number": 6,
+          "question": "A lunchbox contains $2$ apples and $2$ bananas ($4$ pieces of fruit). If you pick one piece of fruit at random and eat it, what is the probability the first is an apple ($\\frac{2}{4}$), and what is the probability the second is also an apple ($\\frac{1}{3}$)? Multiply them to find $\\Pr(\\text{both apples})$.",
+          "answer": "$\\dfrac{2}{4} \\times \\dfrac{1}{3} = \\dfrac{2}{12} = \\dfrac{1}{6}$"
+        },
+        {
+          "number": 7,
+          "question": "Traffic lights at an intersection in Canberra are Green half the time ($\\frac{1}{2}$). If a driver passes through two independent intersections, multiply $\\frac{1}{2} \\times \\frac{1}{2}$ to find the probability that both lights are Green.",
+          "answer": "$\\dfrac{1}{4}$"
+        },
+        {
+          "number": 8,
+          "question": "A true-or-false quiz has $2$ questions. If a student guesses both answers at random, list the $4$ possible outcomes using $C$ (correct) and $W$ (wrong) and find the probability of getting at least one correct.",
+          "answer": "Outcomes: $CC, CW, WC, WW$; $\\Pr(\\text{at least one } C) = \\dfrac{3}{4}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In your own words, what is the difference between drawing two marbles **with replacement** and drawing two marbles **without replacement**?",
+          "answer": "With replacement means putting the first marble back into the bag before drawing the second; without replacement means keeping the first marble out, so there is one fewer marble in the bag for the second draw."
+        },
+        {
+          "number": 10,
+          "question": "On a probability tree diagram, do you **multiply** or **add** the probabilities as you move along the branches from left to right to find the probability of a two-step outcome?",
+          "answer": "You **multiply** the probabilities along the branches from left to right."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_9_1_1c", "expression": "Rational(2, 4)", "expected": "1/2" },
+        { "id": "WSF9_9_1_2a", "expression": "2 * 6", "expected": 12 },
+        { "id": "WSF9_9_1_2c", "expression": "Rational(3, 12)", "expected": "1/4" },
+        { "id": "WSF9_9_1_2d", "expression": "Rational(2, 12)", "expected": "1/6" },
+        { "id": "WSF9_9_1_3c", "expression": "Rational(2, 5) * Rational(2, 5)", "expected": "4/25" },
+        { "id": "WSF9_9_1_3d", "expression": "Rational(3, 5) * Rational(3, 5)", "expected": "9/25" },
+        { "id": "WSF9_9_1_4d", "expression": "Rational(2, 5) * Rational(1, 4)", "expected": "1/10" },
+        { "id": "WSF9_9_1_5", "expression": "Rational(1, 3) * Rational(1, 3)", "expected": "1/9" },
+        { "id": "WSF9_9_1_6", "expression": "Rational(2, 4) * Rational(1, 3)", "expected": "1/6" },
+        { "id": "WSF9_9_1_7", "expression": "Rational(1, 2) * Rational(1, 2)", "expected": "1/4" }
+      ]
+    },
+    {
+      "section_id": "9_9_2",
+      "section_code": "9B",
+      "title": "Relative Frequency, 'And/Or' Compound Events, and Simulations",
+      "vcaa_code": "VC2M9P02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A coin is tossed $50$ times and lands on Heads $28$ times and Tails $22$ times. Find the relative frequency of:",
+          "parts": [
+            { "label": "a", "question": "Heads as a fraction out of $50$", "answer": "$\\dfrac{28}{50} = \\dfrac{14}{25}$" },
+            { "label": "b", "question": "Heads as a decimal", "answer": "$0.56$" },
+            { "label": "c", "question": "Tails as a decimal", "answer": "$0.44$" },
+            { "label": "d", "question": "Check the sum of the two relative frequencies: $0.56 + 0.44$", "answer": "$1.00$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "In a class of $20$ students, $8$ own a dog only, $5$ own a cat only, $4$ own both a dog and a cat, and $3$ own neither. Find the probability that a randomly chosen student owns:",
+          "parts": [
+            { "label": "a", "question": "Both a dog AND a cat", "answer": "$\\dfrac{4}{20} = \\dfrac{1}{5}$" },
+            { "label": "b", "question": "A dog ($8 + 4 = 12$ students)", "answer": "$\\dfrac{12}{20} = \\dfrac{3}{5}$" },
+            { "label": "c", "question": "A dog OR a cat or both ($8 + 5 + 4 = 17$ students)", "answer": "$\\dfrac{17}{20}$" },
+            { "label": "d", "question": "A dog or a cat, but NOT both ($8 + 5 = 13$ students)", "answer": "$\\dfrac{13}{20}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the Addition Rule $\\Pr(A \\text{ or } B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\text{ and } B)$ to calculate:",
+          "parts": [
+            { "label": "a", "question": "$0.4 + 0.3 - 0.1$", "answer": "$0.6$" },
+            { "label": "b", "question": "$0.5 + 0.5 - 0.2$", "answer": "$0.8$" },
+            { "label": "c", "question": "$\\dfrac{5}{10} + \\dfrac{4}{10} - \\dfrac{2}{10}$", "answer": "$\\dfrac{7}{10}$" },
+            { "label": "d", "question": "$\\dfrac{6}{12} + \\dfrac{4}{12} - \\dfrac{1}{12}$", "answer": "$\\dfrac{9}{12} = \\dfrac{3}{4}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Match each real-world chance event to the best simulation tool (Fair coin, $6$-sided die, $10$-digit random generator $0\\text{--}9$):",
+          "parts": [
+            { "label": "a", "question": "An event with a $50\\%$ ($\\frac{1}{2}$) chance of happening", "answer": "Fair coin" },
+            { "label": "b", "question": "An event with a $1$ in $6$ chance of happening", "answer": "$6$-sided die" },
+            { "label": "c", "question": "An event with a $30\\%$ ($3$ out of $10$) chance of happening", "answer": "$10$-digit random generator ($0\\text{--}9$)" },
+            { "label": "d", "question": "If relative frequency of winning a game is $0.25$, how many wins are expected in $40$ games?", "answer": "$10\\text{ wins}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A netball player in Townsville shoots $40$ goals at training and scores $30$ of them. Calculate her relative frequency of scoring as a fraction and as a decimal.",
+          "answer": "$\\dfrac{30}{40} = \\dfrac{3}{4} = 0.75$"
+        },
+        {
+          "number": 6,
+          "question": "At a beach kiosk, out of $100$ customers, $60$ buy a drink, $50$ buy an ice-cream, and $30$ buy both. Use $60 + 50 - 30$ to find how many customers bought a drink or an ice-cream (or both).",
+          "answer": "$80\\text{ customers}$ (relative frequency $= 0.80$)"
+        },
+        {
+          "number": 7,
+          "question": "A student rolls a die $60$ times to simulate a board game and rolls a six $12$ times. What is the experimental relative frequency of rolling a six?",
+          "answer": "$\\dfrac{12}{60} = \\dfrac{1}{5} = 0.2$"
+        },
+        {
+          "number": 8,
+          "question": "In a group of $30$ campers, $18$ brought a torch, $15$ brought a compass, and $8$ brought both. How many brought a torch or a compass ($18 + 15 - 8$), and how many brought neither?",
+          "answer": "$25$ brought a torch or compass; $5$ brought neither"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why do we subtract $\\Pr(A \\text{ and } B)$ in the Addition Rule $\\Pr(A \\text{ or } B) = \\Pr(A) + \\Pr(B) - \\Pr(A \\text{ and } B)$?",
+          "answer": "Because the outcomes in the overlap $(A \\text{ and } B)$ get counted twice when we add $\\Pr(A) + \\Pr(B)$, so we must subtract the overlap once to avoid double-counting."
+        },
+        {
+          "number": 10,
+          "question": "If a weather forecast says there is a $50\\%$ chance of rain on Saturday, how could you use a normal coin to simulate whether it rains on Saturday?",
+          "answer": "Toss the fair coin once: let Heads represent Rain ($50\\%$) and Tails represent Dry ($50\\%$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_9_2_1b", "expression": "Rational(28, 50)", "expected": 0.56 },
+        { "id": "WSF9_9_2_1d", "expression": "Rational(28, 50) + Rational(22, 50)", "expected": 1 },
+        { "id": "WSF9_9_2_2c", "expression": "Rational(8 + 5 + 4, 20)", "expected": "17/20" },
+        { "id": "WSF9_9_2_3a", "expression": "Rational(4, 10) + Rational(3, 10) - Rational(1, 10)", "expected": 0.6 },
+        { "id": "WSF9_9_2_3b", "expression": "Rational(5, 10) + Rational(5, 10) - Rational(2, 10)", "expected": 0.8 },
+        { "id": "WSF9_9_2_3d", "expression": "Rational(6 + 4 - 1, 12)", "expected": "3/4" },
+        { "id": "WSF9_9_2_4d", "expression": "Rational(25, 100) * 40", "expected": 10 },
+        { "id": "WSF9_9_2_5", "expression": "Rational(30, 40)", "expected": 0.75 },
+        { "id": "WSF9_9_2_6", "expression": "60 + 50 - 30", "expected": 80 },
+        { "id": "WSF9_9_2_8", "expression": "30 - (18 + 15 - 8)", "expected": 5 }
+      ]
+    }
+  ]
+}

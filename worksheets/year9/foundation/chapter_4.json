@@ -1,0 +1,289 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Linear Equations, Inequalities, and Coordinate Geometry",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_4_1",
+      "section_code": "4A",
+      "title": "Linear Equations with Fractions and Literal Equations",
+      "vcaa_code": "VC2M9A04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each equation by multiplying both sides by the denominator first:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x}{3} = 5$", "answer": "$x = 15$" },
+            { "label": "b", "question": "$\\dfrac{x}{4} = -2$", "answer": "$x = -8$" },
+            { "label": "c", "question": "$\\dfrac{x + 2}{3} = 4$", "answer": "$x = 10$" },
+            { "label": "d", "question": "$\\dfrac{x - 5}{2} = 6$", "answer": "$x = 17$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each two-step equation involving a fraction:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2x}{5} = 4$", "answer": "$x = 10$" },
+            { "label": "b", "question": "$\\dfrac{3x}{4} = 9$", "answer": "$x = 12$" },
+            { "label": "c", "question": "$\\dfrac{x}{2} + 3 = 7$", "answer": "$x = 8$" },
+            { "label": "d", "question": "$\\dfrac{x}{5} - 1 = 3$", "answer": "$x = 20$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each simple linear inequality:",
+          "parts": [
+            { "label": "a", "question": "$x + 4 > 9$", "answer": "$x > 5$" },
+            { "label": "b", "question": "$x - 3 \\le 7$", "answer": "$x \\le 10$" },
+            { "label": "c", "question": "$3x < 18$", "answer": "$x < 6$" },
+            { "label": "d", "question": "$2x + 1 \\ge 11$", "answer": "$x \\ge 5$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Rearrange each formula to make the letter in brackets the subject:",
+          "parts": [
+            { "label": "a", "question": "$y = x + 5 \\quad [x]$", "answer": "$x = y - 5$" },
+            { "label": "b", "question": "$d = st \\quad [s]$", "answer": "$s = \\dfrac{d}{t}$" },
+            { "label": "c", "question": "$V = IR \\quad [I]$", "answer": "$I = \\dfrac{V}{R}$" },
+            { "label": "d", "question": "$P = 4s \\quad [s]$", "answer": "$s = \\dfrac{P}{4}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "One-quarter of a pizza delivery driver's shift tips is $\\$12$ ($\\dfrac{x}{4} = 12$). Solve for $x$ to find the total tips earned.",
+          "answer": "$\\$48$"
+        },
+        {
+          "number": 6,
+          "question": "When a number $x$ is increased by $4$ and then divided by $3$, the result is $7$ ($\\dfrac{x + 4}{3} = 7$). Find the number $x$.",
+          "answer": "$x = 17$"
+        },
+        {
+          "number": 7,
+          "question": "A theme park ride on the Gold Coast requires riders to have height $h$ at least $130\\text{ cm}$. Write this rule as an inequality using $\\ge$.",
+          "answer": "$h \\ge 130$"
+        },
+        {
+          "number": 8,
+          "question": "Using your rearranged speed formula $s = \\dfrac{d}{t}$ from Question 4(b), find the average speed $s$ of a train that travels $d = 180\\text{ km}$ in $t = 2\\text{ hours}$.",
+          "answer": "$90\\text{ km/h}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "To solve $\\dfrac{x + 3}{5} = 4$, why do we multiply by $5$ first before subtracting $3$?",
+          "answer": "Because the fraction bar groups $(x + 3)$ together and divides the whole numerator by $5$, so we undo the division by $5$ first."
+        },
+        {
+          "number": 10,
+          "question": "What is the difference between the solutions to $x > 4$ and $x \\ge 4$?",
+          "answer": "$x \\ge 4$ includes the number $4$ itself (closed circle on a number line), whereas $x > 4$ only includes numbers strictly greater than $4$ (open circle)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_4_1_1a", "expression": "15 / 3", "expected": 5 },
+        { "id": "WSF9_4_1_1c", "expression": "(10 + 2) / 3", "expected": 4 },
+        { "id": "WSF9_4_1_1d", "expression": "(17 - 5) / 2", "expected": 6 },
+        { "id": "WSF9_4_1_2a", "expression": "2 * 10 / 5", "expected": 4 },
+        { "id": "WSF9_4_1_2b", "expression": "3 * 12 / 4", "expected": 9 },
+        { "id": "WSF9_4_1_2c", "expression": "8 / 2 + 3", "expected": 7 },
+        { "id": "WSF9_4_1_5", "expression": "12 * 4", "expected": 48 },
+        { "id": "WSF9_4_1_8", "expression": "180 / 2", "expected": 90 }
+      ]
+    },
+    {
+      "section_id": "9_4_2",
+      "section_code": "4B",
+      "title": "Gradient, Midpoint, and Distance on the Cartesian Plane",
+      "vcaa_code": "VC2M9A03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the gradient $m = \\dfrac{\\text{rise}}{\\text{run}} = \\dfrac{y_2 - y_1}{x_2 - x_1}$ between each pair of points:",
+          "parts": [
+            { "label": "a", "question": "$(0, 0)$ and $(2, 6)$", "answer": "$m = 3$" },
+            { "label": "b", "question": "$(1, 2)$ and $(4, 8)$", "answer": "$m = 2$" },
+            { "label": "c", "question": "$(0, 5)$ and $(5, 10)$", "answer": "$m = 1$" },
+            { "label": "d", "question": "$(1, 9)$ and $(4, 3)$", "answer": "$m = -2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Average the $x$-coordinates and average the $y$-coordinates to find the midpoint $M$:",
+          "parts": [
+            { "label": "a", "question": "$(0, 0)$ and $(6, 8)$", "answer": "$(3, 4)$" },
+            { "label": "b", "question": "$(2, 4)$ and $(6, 10)$", "answer": "$(4, 7)$" },
+            { "label": "c", "question": "$(1, 3)$ and $(5, 3)$", "answer": "$(3, 3)$" },
+            { "label": "d", "question": "$(-2, 4)$ and $(4, 6)$", "answer": "$(1, 5)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$ to find the length of each segment:",
+          "parts": [
+            { "label": "a", "question": "$(0, 0)$ to $(3, 4)$ ($\\sqrt{3^2 + 4^2}$)", "answer": "$5$" },
+            { "label": "b", "question": "$(0, 0)$ to $(6, 8)$ ($\\sqrt{6^2 + 8^2}$)", "answer": "$10$" },
+            { "label": "c", "question": "$(1, 1)$ to $(6, 13)$ ($\\sqrt{5^2 + 12^2}$)", "answer": "$13$" },
+            { "label": "d", "question": "$(2, 3)$ to $(5, 7)$ ($\\sqrt{3^2 + 4^2}$)", "answer": "$5$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the distance between these horizontal or vertical pairs of points:",
+          "parts": [
+            { "label": "a", "question": "$(1, 4)$ and $(8, 4)$", "answer": "$7$" },
+            { "label": "b", "question": "$(3, 2)$ and $(3, 11)$", "answer": "$9$" },
+            { "label": "c", "question": "$(-3, 5)$ and $(4, 5)$", "answer": "$7$" },
+            { "label": "d", "question": "$(2, -4)$ and $(2, 6)$", "answer": "$10$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A walking track starts at $(0, 0)$ and ends at $(8, 6)$ on a park grid where $1\\text{ unit} = 1\\text{ km}$. Find the coordinates of the rest bench at the exact midpoint of the track.",
+          "answer": "$(4, 3)$"
+        },
+        {
+          "number": 6,
+          "question": "Calculate the straight-line length of the walking track from $(0, 0)$ to $(8, 6)$ in Question 5.",
+          "answer": "$10\\text{ km}$"
+        },
+        {
+          "number": 7,
+          "question": "A wheelchair ramp rises $1\\text{ m}$ vertically over a horizontal run of $12\\text{ m}$. Write the gradient of the ramp as a fraction.",
+          "answer": "$\\dfrac{1}{12}$"
+        },
+        {
+          "number": 8,
+          "question": "Two campsites are at $A(-4, 2)$ and $B(4, 2)$. Find the midpoint between the two campsites and the distance between them.",
+          "answer": "Midpoint $(0, 2)$; distance $8\\text{ units}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "How is the distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$ related to Pythagoras' theorem $c^2 = a^2 + b^2$?",
+          "answer": "The horizontal run $a = x_2 - x_1$ and vertical rise $b = y_2 - y_1$ form the two perpendicular legs of a right-angled triangle, and the distance $d$ is the hypotenuse $c = \\sqrt{a^2 + b^2}$."
+        },
+        {
+          "number": 10,
+          "question": "Does a line that slopes downwards from left to right have a positive gradient or a negative gradient?",
+          "answer": "A negative gradient, because as $x$ increases (positive run), $y$ decreases (negative rise)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_4_2_1a", "expression": "(6 - 0)/(2 - 0)", "expected": 3 },
+        { "id": "WSF9_4_2_1d", "expression": "(3 - 9)/(4 - 1)", "expected": -2 },
+        { "id": "WSF9_4_2_2b", "expression": "(2 + 6)/2", "expected": 4 },
+        { "id": "WSF9_4_2_3a", "expression": "sqrt(3**2 + 4**2)", "expected": 5 },
+        { "id": "WSF9_4_2_3b", "expression": "sqrt(6**2 + 8**2)", "expected": 10 },
+        { "id": "WSF9_4_2_3c", "expression": "sqrt(5**2 + 12**2)", "expected": 13 },
+        { "id": "WSF9_4_2_4c", "expression": "4 - (-3)", "expected": 7 },
+        { "id": "WSF9_4_2_8", "expression": "4 - (-4)", "expected": 8 }
+      ]
+    },
+    {
+      "section_id": "9_4_3",
+      "section_code": "4C",
+      "title": "Equations of Straight Lines and Linear Modelling",
+      "vcaa_code": "VC2M9A04",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Write down the gradient ($m$) and $y$-intercept ($c$) for each line $y = mx + c$:",
+          "parts": [
+            { "label": "a", "question": "$y = 2x + 5$", "answer": "$m = 2,\\; c = 5$" },
+            { "label": "b", "question": "$y = 3x - 4$", "answer": "$m = 3,\\; c = -4$" },
+            { "label": "c", "question": "$y = -x + 7$", "answer": "$m = -1,\\; c = 7$" },
+            { "label": "d", "question": "$y = 4x$", "answer": "$m = 4,\\; c = 0$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Write the equation of the line $y = mx + c$ with the given gradient and $y$-intercept:",
+          "parts": [
+            { "label": "a", "question": "Gradient $m = 5$, $y$-intercept $c = 2$", "answer": "$y = 5x + 2$" },
+            { "label": "b", "question": "Gradient $m = 2$, $y$-intercept $c = -6$", "answer": "$y = 2x - 6$" },
+            { "label": "c", "question": "Gradient $m = -3$, $y$-intercept $c = 4$", "answer": "$y = -3x + 4$" },
+            { "label": "d", "question": "Gradient $m = \\dfrac{1}{2}$, $y$-intercept $c = 1$", "answer": "$y = \\dfrac{1}{2}x + 1$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the $y$-intercept (set $x = 0$) and $x$-intercept (set $y = 0$) of each line:",
+          "parts": [
+            { "label": "a", "question": "$y = x + 4$", "answer": "$y\\text{-int} = 4,\\; x\\text{-int} = -4$" },
+            { "label": "b", "question": "$y = 2x - 6$", "answer": "$y\\text{-int} = -6,\\; x\\text{-int} = 3$" },
+            { "label": "c", "question": "$x + y = 5$", "answer": "$y\\text{-int} = 5,\\; x\\text{-int} = 5$" },
+            { "label": "d", "question": "$2x + y = 8$", "answer": "$y\\text{-int} = 8,\\; x\\text{-int} = 4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Substitute $x = 3$ into each equation to find the corresponding $y$-coordinate:",
+          "parts": [
+            { "label": "a", "question": "$y = 2x + 1$", "answer": "$y = 7$" },
+            { "label": "b", "question": "$y = 4x - 5$", "answer": "$y = 7$" },
+            { "label": "c", "question": "$y = 10 - 2x$", "answer": "$y = 4$" },
+            { "label": "d", "question": "$y = -3x + 12$", "answer": "$y = 3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A bowling alley in Sydney charges $\\$6$ for shoe hire plus $\\$8$ per game. Write a linear rule $C = 8g + 6$ for the cost of $g$ games, and find the cost of playing $3$ games.",
+          "answer": "$\\$30$"
+        },
+        {
+          "number": 6,
+          "question": "A sapling eucalypt tree is $50\\text{ cm}$ tall when planted and grows $15\\text{ cm}$ per month. Write an equation for its height $H\\text{ cm}$ after $m$ months, and find its height after $6$ months.",
+          "answer": "$H = 15m + 50$; height after $6$ months $= 140\\text{ cm}$"
+        },
+        {
+          "number": 7,
+          "question": "A line passes through $(0, 3)$ and $(2, 7)$. Find its gradient $m = \\dfrac{7 - 3}{2 - 0}$ and write its equation in the form $y = mx + c$.",
+          "answer": "$m = 2;\\; y = 2x + 3$"
+        },
+        {
+          "number": 8,
+          "question": "State whether the line $y = 4$ is horizontal or vertical, and give the $y$-coordinate of every point on this line.",
+          "answer": "Horizontal; every point has $y$-coordinate $4$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In a real-world linear model $y = mx + c$, what does the $y$-intercept $c$ represent when $x = 0$?",
+          "answer": "The starting value (or fixed initial amount) before any change has occurred."
+        },
+        {
+          "number": 10,
+          "question": "How many points do you need to plot in order to draw a unique straight line on a Cartesian plane? Why is plotting a third point a good habit?",
+          "answer": "Two points determine a unique straight line; plotting a third point acts as a check to make sure all three points line up."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_4_3_3b", "expression": "6 / 2", "expected": 3 },
+        { "id": "WSF9_4_3_3d", "expression": "8 / 2", "expected": 4 },
+        { "id": "WSF9_4_3_4a", "expression": "2*3 + 1", "expected": 7 },
+        { "id": "WSF9_4_3_4b", "expression": "4*3 - 5", "expected": 7 },
+        { "id": "WSF9_4_3_4c", "expression": "10 - 2*3", "expected": 4 },
+        { "id": "WSF9_4_3_5", "expression": "8*3 + 6", "expected": 30 },
+        { "id": "WSF9_4_3_6", "expression": "15*6 + 50", "expected": 140 },
+        { "id": "WSF9_4_3_7", "expression": "(7 - 3)/(2 - 0)", "expected": 2 }
+      ]
+    }
+  ]
+}

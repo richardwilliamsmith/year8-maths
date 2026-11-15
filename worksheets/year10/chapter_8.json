@@ -1,0 +1,103 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Conditional Probability and Independence (10 & 10A)",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "10_8_1",
+      "section_code": "8A",
+      "title": "Conditional Probability and Independent Events",
+      "vcaa_code": "VC2M10P01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "In a sample space with $\\Pr(A) = 0.5$, $\\Pr(B) = 0.4$, and $\\Pr(A \\cap B) = 0.2$, find:",
+          "parts": [
+            { "label": "a", "question": "$\\Pr(A \\cup B)$ using the addition rule", "answer": "$0.7$" },
+            { "label": "b", "question": "$\\Pr(A \\mid B) = \\dfrac{\\Pr(A \\cap B)}{\\Pr(B)}$", "answer": "$0.5$" },
+            { "label": "c", "question": "$\\Pr(B \\mid A) = \\dfrac{\\Pr(A \\cap B)}{\\Pr(A)}$", "answer": "$0.4$" },
+            { "label": "d", "question": "Whether events $A$ and $B$ are independent (check if $\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$)", "answer": "Yes ($0.2 = 0.5 \\times 0.4$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A survey of $100$ Year 10 students in Geelong found that $60$ play Australian Rules football ($F$), $45$ play basketball ($B$), and $25$ play both ($F \\cap B$). Find:",
+          "parts": [
+            { "label": "a", "question": "The number of students who play neither sport", "answer": "$20$" },
+            { "label": "b", "question": "$\\Pr(F \\mid B)$ as a simplified fraction", "answer": "$\\dfrac{5}{9}$ ($\\frac{25}{45}$)" },
+            { "label": "c", "question": "$\\Pr(B \\mid F)$ as a simplified fraction", "answer": "$\\dfrac{5}{12}$ ($\\frac{25}{60}$)" },
+            { "label": "d", "question": "$\\Pr(F \\mid B')$, the probability a student plays football given they do not play basketball", "answer": "$\\dfrac{7}{11}$ ($\\frac{35}{55}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A bag contains $5$ red marbles and $3$ blue marbles ($8$ in total). Two marbles are drawn at random **without replacement**. Find the exact probability that:",
+          "parts": [
+            { "label": "a", "question": "Both marbles are red", "answer": "$\\dfrac{5}{14}$ ($\\frac{5}{8} \\times \\frac{4}{7}$)" },
+            { "label": "b", "question": "The second marble is blue given that the first marble was red", "answer": "$\\dfrac{3}{7}$" },
+            { "label": "c", "question": "Both marbles are the same colour (both red or both blue)", "answer": "$\\dfrac{13}{28}$ ($\\frac{20}{56} + \\frac{6}{56}$)" },
+            { "label": "d", "question": "The two marbles are of different colours", "answer": "$\\dfrac{15}{28}$ ($1 - \\frac{13}{28}$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "[10A] Evaluate each factorial, permutation, or combination expression:",
+          "parts": [
+            { "label": "a", "question": "$5!$", "answer": "$120$" },
+            { "label": "b", "question": "$\\dfrac{8!}{6!}$ (the number of ordered permutations of $2$ items from $8$)", "answer": "$56$" },
+            { "label": "c", "question": "$\\binom{8}{2} = \\dfrac{8!}{2!\\,6!}$ (the number of unordered selections of $2$ items from $8$)", "answer": "$28$" },
+            { "label": "d", "question": "$\\binom{6}{3}$", "answer": "$20$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Bureau of Meteorology records for a winter week in Ballarat show that the probability of rain on Saturday is $0.6$. If it rains on Saturday, the probability of rain on Sunday is $0.7$; if it does not rain on Saturday, the probability of rain on Sunday is $0.25$. Find the total probability that it rains on Sunday.",
+          "answer": "$0.6 \\times 0.7 + 0.4 \\times 0.25 = 0.42 + 0.10 = 0.52$"
+        },
+        {
+          "number": 6,
+          "question": "Two independent fire-alarm sensors $A$ and $B$ in a Brisbane warehouse have detection probabilities $\\Pr(A) = 0.90$ and $\\Pr(B) = 0.80$. If a fire occurs, find the probability that (a) neither sensor detects it, and (b) at least one sensor detects it.",
+          "answer": "(a) $\\Pr(A' \\cap B') = 0.10 \\times 0.20 = 0.02$; (b) $\\Pr(A \\cup B) = 1 - 0.02 = 0.98$"
+        },
+        {
+          "number": 7,
+          "question": "A box of $12$ chocolates contains $8$ milk chocolates and $4$ dark chocolates. Maya eats $2$ chocolates chosen at random without replacement. Find the probability that she eats at least $1$ dark chocolate.",
+          "answer": "$1 - \\Pr(\\text{both milk}) = 1 - \\dfrac{8}{12} \\times \\dfrac{7}{11} = 1 - \\dfrac{14}{33} = \\dfrac{19}{33}$"
+        },
+        {
+          "number": 8,
+          "question": "[10A] A student council committee of $3$ students is to be chosen at random from $5$ Year 10 girls and $4$ Year 10 boys ($9$ students in total). Find the total number of possible committees $\\binom{9}{3}$ and the probability that all $3$ selected students are girls.",
+          "answer": "$\\binom{9}{3} = 84$ committees; $\\Pr(\\text{all 3 girls}) = \\dfrac{\\binom{5}{3}}{84} = \\dfrac{10}{84} = \\dfrac{5}{42}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain the difference between **mutually exclusive** events ($\\Pr(A \\cap B) = 0$) and **independent** events ($\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$). If $\\Pr(A) > 0$ and $\\Pr(B) > 0$, can $A$ and $B$ be both mutually exclusive and independent?",
+          "answer": "Mutually exclusive events cannot occur together ($\\Pr(A \\cap B) = 0$), whereas independent events have no influence on each other's probability ($\\Pr(A \\cap B) = \\Pr(A)\\Pr(B)$). If $\\Pr(A) > 0$ and $\\Pr(B) > 0$, then $\\Pr(A)\\Pr(B) > 0$, so they can never be both mutually exclusive and independent."
+        },
+        {
+          "number": 10,
+          "question": "Explain using an everyday example why $\\Pr(A \\mid B)$ is generally NOT equal to $\\Pr(B \\mid A)$ (the confusion of the inverse), and write down the algebraic formula relating $\\Pr(A \\mid B)$ and $\\Pr(B \\mid A)$.",
+          "answer": "For example, $\\Pr(\\text{cloudy} \\mid \\text{raining}) = 1$, whereas $\\Pr(\\text{raining} \\mid \\text{cloudy})$ is much less than $1$. Algebraically, since $\\Pr(A \\cap B) = \\Pr(A \\mid B)\\Pr(B) = \\Pr(B \\mid A)\\Pr(A)$, we have $\\Pr(A \\mid B) = \\dfrac{\\Pr(B \\mid A)\\Pr(A)}{\\Pr(B)}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS10_8_1_1a", "expression": "Rational(5, 10) + Rational(4, 10) - Rational(2, 10)", "expected": 0.7 },
+        { "id": "WS10_8_1_1b", "expression": "Rational(2, 10) / Rational(4, 10)", "expected": 0.5 },
+        { "id": "WS10_8_1_2a", "expression": "100 - (60 + 45 - 25)", "expected": 20 },
+        { "id": "WS10_8_1_3a", "expression": "Rational(5, 8) * Rational(4, 7)", "expected": "Rational(5, 14)" },
+        { "id": "WS10_8_1_3c", "expression": "Rational(5, 8)*Rational(4, 7) + Rational(3, 8)*Rational(2, 7)", "expected": "Rational(13, 28)" },
+        { "id": "WS10_8_1_4a", "expression": "factorial(5)", "expected": 120 },
+        { "id": "WS10_8_1_4c", "expression": "binomial(8, 2)", "expected": 28 },
+        { "id": "WS10_8_1_5", "expression": "Rational(6, 10)*Rational(7, 10) + Rational(4, 10)*Rational(25, 100)", "expected": 0.52 },
+        { "id": "WS10_8_1_7", "expression": "1 - Rational(8, 12)*Rational(7, 11)", "expected": "Rational(19, 33)" },
+        { "id": "WS10_8_1_8", "expression": "binomial(5, 3) / binomial(9, 3)", "expected": "Rational(5, 42)" }
+      ]
+    }
+  ]
+}

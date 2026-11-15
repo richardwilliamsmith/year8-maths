@@ -1,0 +1,199 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Similarity, Scale Factors, and Geometric Reasoning",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_7_1",
+      "section_code": "7A",
+      "title": "Similar Triangles and Geometric Proofs",
+      "vcaa_code": "VC2M9SP02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the third angle in each triangle (angles in a triangle add to $180^\\circ$):",
+          "parts": [
+            { "label": "a", "question": "$50^\\circ, 60^\\circ, x^\\circ$", "answer": "$x = 70$" },
+            { "label": "b", "question": "$40^\\circ, 80^\\circ, x^\\circ$", "answer": "$x = 60$" },
+            { "label": "c", "question": "$90^\\circ, 35^\\circ, x^\\circ$", "answer": "$x = 55$" },
+            { "label": "d", "question": "Are a triangle with angles $(50^\\circ, 60^\\circ)$ and a triangle with angles $(60^\\circ, 70^\\circ)$ similar by $\\text{AAA}$?", "answer": "Yes (both have angles $50^\\circ, 60^\\circ, 70^\\circ$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Triangle $B$ is an enlargement of Triangle $A$ (sides $3\\text{ cm}, 4\\text{ cm}, 6\\text{ cm}$) with scale factor $k = 3$. Find:",
+          "parts": [
+            { "label": "a", "question": "The side matching $3\\text{ cm}$ ($3 \\times 3$)", "answer": "$9\\text{ cm}$" },
+            { "label": "b", "question": "The side matching $4\\text{ cm}$ ($4 \\times 3$)", "answer": "$12\\text{ cm}$" },
+            { "label": "c", "question": "The side matching $6\\text{ cm}$ ($6 \\times 3$)", "answer": "$18\\text{ cm}$" },
+            { "label": "d", "question": "The scale factor $k$ if a $5\\text{ cm}$ side is enlarged to $20\\text{ cm}$ ($20 \\div 5$)", "answer": "$k = 4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Name the similarity test ($\\text{AAA, SAS, SSS, RHS}$) described in each statement:",
+          "parts": [
+            { "label": "a", "question": "All three pairs of corresponding angles are equal", "answer": "$\\text{AAA}$" },
+            { "label": "b", "question": "All three pairs of corresponding sides are in the same ratio (e.g. doubled)", "answer": "$\\text{SSS}$" },
+            { "label": "c", "question": "Two pairs of sides are in the same ratio and the angle between them is equal", "answer": "$\\text{SAS}$" },
+            { "label": "d", "question": "Both triangles have a $90^\\circ$ right angle, and their hypotenuses and one leg are in the same ratio", "answer": "$\\text{RHS}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each proportion to find the unknown side length $x$ in similar triangles:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x}{4} = \\dfrac{6}{2}$", "answer": "$x = 12$" },
+            { "label": "b", "question": "$\\dfrac{x}{5} = \\dfrac{10}{2}$", "answer": "$x = 25$" },
+            { "label": "c", "question": "$\\dfrac{x}{3} = \\dfrac{8}{4}$", "answer": "$x = 6$" },
+            { "label": "d", "question": "$\\dfrac{x}{6} = \\dfrac{15}{5}$", "answer": "$x = 18$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A $2\\text{ m}$ tall person casts a $3\\text{ m}$ shadow on a sunny day in Perth. At the same time, a flagpole casts a $12\\text{ m}$ shadow (which is $4$ times as long). Multiply the person's height by $4$ to find the height of the flagpole.",
+          "answer": "$8\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A small triangular sail has a base of $2\\text{ m}$ and a height of $3\\text{ m}$. A similar main sail has a base of $6\\text{ m}$ (scale factor $k = 3$). What is the height of the main sail?",
+          "answer": "$9\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "In a small right-angled ramp, the height is $1\\text{ m}$ at a distance of $4\\text{ m}$ from the start. Using similar triangles, how high is the ramp at a distance of $8\\text{ m}$ from the start?",
+          "answer": "$2\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "Two similar triangular road signs have bases of $20\\text{ cm}$ and $60\\text{ cm}$. Find the scale factor $k = 60 \\div 20$, and find the slant side of the larger sign if the smaller sign has slant side $25\\text{ cm}$.",
+          "answer": "$k = 3$; slant side $= 75\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When a triangle is enlarged with scale factor $k = 2$, its side lengths double. What happens to the sizes of its three interior angles?",
+          "answer": "The angles stay the exact same size; enlarging a shape changes its side lengths but never changes its angles."
+        },
+        {
+          "number": 10,
+          "question": "Explain why you only need to check that **two** pairs of angles are equal in two triangles to know that all three pairs of angles are equal ($\\text{AAA}$).",
+          "answer": "Because the three angles in any triangle always add to $180^\\circ$, so if two pairs of angles are equal, the third angle ($180^\\circ$ minus the first two) must also be equal."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_7_1_1a", "expression": "180 - (50 + 60)", "expected": 70 },
+        { "id": "WSF9_7_1_1b", "expression": "180 - (40 + 80)", "expected": 60 },
+        { "id": "WSF9_7_1_1c", "expression": "180 - (90 + 35)", "expected": 55 },
+        { "id": "WSF9_7_1_2c", "expression": "6 * 3", "expected": 18 },
+        { "id": "WSF9_7_1_2d", "expression": "20 / 5", "expected": 4 },
+        { "id": "WSF9_7_1_4a", "expression": "4 * (6 / 2)", "expected": 12 },
+        { "id": "WSF9_7_1_4b", "expression": "5 * (10 / 2)", "expected": 25 },
+        { "id": "WSF9_7_1_5", "expression": "2 * (12 / 3)", "expected": 8 },
+        { "id": "WSF9_7_1_6", "expression": "3 * (6 / 2)", "expected": 9 },
+        { "id": "WSF9_7_1_8", "expression": "25 * (60 / 20)", "expected": 75 }
+      ]
+    },
+    {
+      "section_id": "9_7_2",
+      "section_code": "7B",
+      "title": "Scale Factors for Length, Area, and Volume, and Polyhedra",
+      "vcaa_code": "VC2M9M03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Given the length scale factor $k$, calculate the area scale factor $k^2$ and volume scale factor $k^3$:",
+          "parts": [
+            { "label": "a", "question": "$k = 2$ ($k^2 = 2^2$ and $k^3 = 2^3$)", "answer": "$k^2 = 4, k^3 = 8$" },
+            { "label": "b", "question": "$k = 3$ ($k^2 = 3^2$ and $k^3 = 3^3$)", "answer": "$k^2 = 9, k^3 = 27$" },
+            { "label": "c", "question": "$k = 5$ ($k^2 = 5^2$ and $k^3 = 5^3$)", "answer": "$k^2 = 25, k^3 = 125$" },
+            { "label": "d", "question": "$k = 10$ ($k^2 = 10^2$ and $k^3 = 10^3$)", "answer": "$k^2 = 100, k^3 = 1000$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A small square has area $10\\text{ cm}^2$. Find the area of a larger similar square ($A_{\\text{large}} = k^2 \\times 10$) when:",
+          "parts": [
+            { "label": "a", "question": "Length scale factor $k = 2$ ($4 \\times 10$)", "answer": "$40\\text{ cm}^2$" },
+            { "label": "b", "question": "Length scale factor $k = 3$ ($9 \\times 10$)", "answer": "$90\\text{ cm}^2$" },
+            { "label": "c", "question": "Length scale factor $k = 4$ ($16 \\times 10$)", "answer": "$160\\text{ cm}^2$" },
+            { "label": "d", "question": "Length scale factor $k = 5$ ($25 \\times 10$)", "answer": "$250\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A small box has volume $5\\text{ cm}^3$. Find the volume of a larger similar box ($V_{\\text{large}} = k^3 \\times 5$) when:",
+          "parts": [
+            { "label": "a", "question": "Length scale factor $k = 2$ ($8 \\times 5$)", "answer": "$40\\text{ cm}^3$" },
+            { "label": "b", "question": "Length scale factor $k = 3$ ($27 \\times 5$)", "answer": "$135\\text{ cm}^3$" },
+            { "label": "c", "question": "Length scale factor $k = 4$ ($64 \\times 5$)", "answer": "$320\\text{ cm}^3$" },
+            { "label": "d", "question": "Length scale factor $k = 10$ ($1000 \\times 5$)", "answer": "$5000\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Verify Euler's formula $V - E + F = 2$ for each 3D solid (where $V =$ vertices, $E =$ edges, $F =$ faces):",
+          "parts": [
+            { "label": "a", "question": "Triangular pyramid (tetrahedron): $V = 4, E = 6, F = 4$. Calculate $V - E + F$.", "answer": "$4 - 6 + 4 = 2$" },
+            { "label": "b", "question": "Square-based pyramid: $V = 5, E = 8, F = 5$. Calculate $V - E + F$.", "answer": "$5 - 8 + 5 = 2$" },
+            { "label": "c", "question": "Triangular prism: $V = 6, E = 9, F = 5$. Calculate $V - E + F$.", "answer": "$6 - 9 + 5 = 2$" },
+            { "label": "d", "question": "A solid has $V = 8$ vertices and $E = 12$ edges. Find $F$ so that $8 - 12 + F = 2$.", "answer": "$F = 6$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A small garden bed has area $6\\text{ m}^2$. A similar larger garden bed has side lengths that are $k = 2$ times as long ($k^2 = 4$). Multiply $6 \\times 4$ to find the area of the larger garden bed.",
+          "answer": "$24\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A $1\\text{ cm}$ cube has volume $1\\text{ cm}^3$. If you build a larger cube of side length $3\\text{ cm}$ ($k = 3$), how many $1\\text{ cm}^3$ blocks fit inside it ($3^3$)?",
+          "answer": "$27\\text{ blocks}$ ($27\\text{ cm}^3$)"
+        },
+        {
+          "number": 7,
+          "question": "A small drink bottle holds $200\\text{ mL}$. A giant display bottle is $k = 2$ times as tall, wide, and deep ($k^3 = 8$). Multiply $200 \\times 8$ to find how many millilitres the display bottle holds.",
+          "answer": "$1600\\text{ mL}$"
+        },
+        {
+          "number": 8,
+          "question": "A pentagonal pyramid has $V = 6$ vertices (corners) and $F = 6$ faces. Use $V - E + F = 2$ ($6 - E + 6 = 2$) to find how many edges $E$ it has.",
+          "answer": "$E = 10\\text{ edges}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Draw or imagine a $1 \\times 1$ square enlarged by scale factor $k = 2$ into a $2 \\times 2$ square. Why does the $2 \\times 2$ square contain $4$ unit squares instead of $2$?",
+          "answer": "Because both the length AND the width are multiplied by $2$, so the area is multiplied by $2 \\times 2 = 4$."
+        },
+        {
+          "number": 10,
+          "question": "Does Euler's polyhedron formula $V - E + F = 2$ apply to a smooth sphere or cylinder, or only to flat-faced solids (polyhedra)?",
+          "answer": "It applies only to polyhedra (3D solids with flat polygonal faces, straight edges, and sharp vertices)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_7_2_1a_area", "expression": "2**2", "expected": 4 },
+        { "id": "WSF9_7_2_1a_vol", "expression": "2**3", "expected": 8 },
+        { "id": "WSF9_7_2_1c_vol", "expression": "5**3", "expected": 125 },
+        { "id": "WSF9_7_2_2b", "expression": "3**2 * 10", "expected": 90 },
+        { "id": "WSF9_7_2_3b", "expression": "3**3 * 5", "expected": 135 },
+        { "id": "WSF9_7_2_3c", "expression": "4**3 * 5", "expected": 320 },
+        { "id": "WSF9_7_2_4c", "expression": "6 - 9 + 5", "expected": 2 },
+        { "id": "WSF9_7_2_5", "expression": "6 * 2**2", "expected": 24 },
+        { "id": "WSF9_7_2_7", "expression": "200 * 2**3", "expected": 1600 },
+        { "id": "WSF9_7_2_8", "expression": "6 + 6 - 2", "expected": 10 }
+      ]
+    }
+  ]
+}

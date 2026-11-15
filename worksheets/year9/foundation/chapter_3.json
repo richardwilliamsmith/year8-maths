@@ -1,0 +1,289 @@
+{
+  "chapter_number": 3,
+  "chapter_title": "Algebraic Expansion and Factorisation",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_3_1",
+      "section_code": "3A",
+      "title": "Expanding Binomial Products and Special Identities",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Expand each single bracket using the distributive law $a(b + c) = ab + ac$:",
+          "parts": [
+            { "label": "a", "question": "$3(x + 4)$", "answer": "$3x + 12$" },
+            { "label": "b", "question": "$5(x - 2)$", "answer": "$5x - 10$" },
+            { "label": "c", "question": "$x(x + 6)$", "answer": "$x^2 + 6x$" },
+            { "label": "d", "question": "$2x(x - 5)$", "answer": "$2x^2 - 10x$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Expand and collect the middle like terms in each binomial product:",
+          "parts": [
+            { "label": "a", "question": "$(x + 2)(x + 3)$", "answer": "$x^2 + 5x + 6$" },
+            { "label": "b", "question": "$(x + 4)(x + 5)$", "answer": "$x^2 + 9x + 20$" },
+            { "label": "c", "question": "$(x + 1)(x + 7)$", "answer": "$x^2 + 8x + 7$" },
+            { "label": "d", "question": "$(x + 6)(x - 2)$", "answer": "$x^2 + 4x - 12$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Expand each perfect square by writing $(x + a)(x + a)$ or using $x^2 + 2ax + a^2$:",
+          "parts": [
+            { "label": "a", "question": "$(x + 3)^2$", "answer": "$x^2 + 6x + 9$" },
+            { "label": "b", "question": "$(x + 5)^2$", "answer": "$x^2 + 10x + 25$" },
+            { "label": "c", "question": "$(x - 2)^2$", "answer": "$x^2 - 4x + 4$" },
+            { "label": "d", "question": "$(x - 4)^2$", "answer": "$x^2 - 8x + 16$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Expand each difference of two squares using $(x - a)(x + a) = x^2 - a^2$:",
+          "parts": [
+            { "label": "a", "question": "$(x - 3)(x + 3)$", "answer": "$x^2 - 9$" },
+            { "label": "b", "question": "$(x - 5)(x + 5)$", "answer": "$x^2 - 25$" },
+            { "label": "c", "question": "$(x + 6)(x - 6)$", "answer": "$x^2 - 36$" },
+            { "label": "d", "question": "$(x - 10)(x + 10)$", "answer": "$x^2 - 100$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular garden bed has length $(x + 4)\\text{ m}$ and width $(x + 2)\\text{ m}$. Expand $(x + 4)(x + 2)$ to write an expression for its area.",
+          "answer": "$(x^2 + 6x + 8)\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A square courtyard has side length $(x + 3)\\text{ m}$. Expand $(x + 3)^2$ to find its area, then calculate the area when $x = 7$.",
+          "answer": "$(x^2 + 6x + 9)\\text{ m}^2$; when $x = 7$, area $= 100\\text{ m}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A rectangular rug has length $(x + 4)\\text{ m}$ and width $(x - 4)\\text{ m}$. Expand $(x + 4)(x - 4)$ to find its area.",
+          "answer": "$(x^2 - 16)\\text{ m}^2$"
+        },
+        {
+          "number": 8,
+          "question": "Use $(20 - 1)(20 + 1) = 20^2 - 1^2$ to calculate $19 \\times 21$ without a calculator.",
+          "answer": "$400 - 1 = 399$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When you expand $(x - 5)(x + 5)$, why is there no $x$-term in the final answer?",
+          "answer": "Because the two middle terms are $+5x$ and $-5x$, which add to $0x = 0$ and cancel out."
+        },
+        {
+          "number": 10,
+          "question": "In the FOIL method (First, Outer, Inner, Last) for expanding $(x + 2)(x + 5)$, write down the four terms before collecting like terms.",
+          "answer": "First $= x^2$, Outer $= 5x$, Inner $= 2x$, Last $= 10$, giving $x^2 + 5x + 2x + 10 = x^2 + 7x + 10$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_3_1_1a", "expression": "expand(3*(x + 4)) - (3*x + 12)", "expected": 0 },
+        { "id": "WSF9_3_1_2a", "expression": "expand((x + 2)*(x + 3)) - (x**2 + 5*x + 6)", "expected": 0 },
+        { "id": "WSF9_3_1_2d", "expression": "expand((x + 6)*(x - 2)) - (x**2 + 4*x - 12)", "expected": 0 },
+        { "id": "WSF9_3_1_3a", "expression": "expand((x + 3)**2) - (x**2 + 6*x + 9)", "expected": 0 },
+        { "id": "WSF9_3_1_3d", "expression": "expand((x - 4)**2) - (x**2 - 8*x + 16)", "expected": 0 },
+        { "id": "WSF9_3_1_4a", "expression": "expand((x - 3)*(x + 3)) - (x**2 - 9)", "expected": 0 },
+        { "id": "WSF9_3_1_5", "expression": "expand((x + 4)*(x + 2)) - (x**2 + 6*x + 8)", "expected": 0 },
+        { "id": "WSF9_3_1_8", "expression": "19 * 21", "expected": 399 }
+      ]
+    },
+    {
+      "section_id": "9_3_2",
+      "section_code": "3B",
+      "title": "Factorising Difference of Two Squares and Grouping",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Factorise by taking out the highest common factor:",
+          "parts": [
+            { "label": "a", "question": "$4x + 12$", "answer": "$4(x + 3)$" },
+            { "label": "b", "question": "$6x - 15$", "answer": "$3(2x - 5)$" },
+            { "label": "c", "question": "$x^2 + 5x$", "answer": "$x(x + 5)$" },
+            { "label": "d", "question": "$3x^2 - 9x$", "answer": "$3x(x - 3)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise each difference of two squares using $x^2 - a^2 = (x - a)(x + a)$:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 9 = x^2 - 3^2$", "answer": "$(x - 3)(x + 3)$" },
+            { "label": "b", "question": "$x^2 - 16 = x^2 - 4^2$", "answer": "$(x - 4)(x + 4)$" },
+            { "label": "c", "question": "$x^2 - 25$", "answer": "$(x - 5)(x + 5)$" },
+            { "label": "d", "question": "$x^2 - 64$", "answer": "$(x - 8)(x + 8)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Take out the common bracket factor in each expression:",
+          "parts": [
+            { "label": "a", "question": "$x(x + 2) + 5(x + 2)$", "answer": "$(x + 2)(x + 5)$" },
+            { "label": "b", "question": "$x(x + 4) + 3(x + 4)$", "answer": "$(x + 4)(x + 3)$" },
+            { "label": "c", "question": "$x(x - 6) + 2(x - 6)$", "answer": "$(x - 6)(x + 2)$" },
+            { "label": "d", "question": "$y(y + 5) - 4(y + 5)$", "answer": "$(y + 5)(y - 4)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise the first pair and the second pair, then factorise completely:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 2x + 3x + 6$", "answer": "$(x + 2)(x + 3)$" },
+            { "label": "b", "question": "$x^2 + 5x + 2x + 10$", "answer": "$(x + 5)(x + 2)$" },
+            { "label": "c", "question": "$x^2 + 4x + 6x + 24$", "answer": "$(x + 4)(x + 6)$" },
+            { "label": "d", "question": "$xy + 3x + 2y + 6$", "answer": "$(y + 3)(x + 2)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Use $a^2 - b^2 = (a - b)(a + b)$ to evaluate $15^2 - 5^2$ by calculating $(15 - 5)(15 + 5)$.",
+          "answer": "$10 \\times 20 = 200$"
+        },
+        {
+          "number": 6,
+          "question": "A rectangular banner has area $(x^2 - 36)\\text{ m}^2$. Factorise $x^2 - 36$ to find expressions for its length and width.",
+          "answer": "$(x + 6)\\text{ m}$ and $(x - 6)\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A rectangular path has area $(5x + 20)\\text{ m}^2$ and width $5\\text{ m}$. Factorise $5x + 20$ to find its length.",
+          "answer": "$5(x + 4)\\text{ m}^2$, so the length is $(x + 4)\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "First take out the common factor $2$ from $2x^2 - 18$, then factorise $x^2 - 9$ using difference of two squares.",
+          "answer": "$2(x^2 - 9) = 2(x - 3)(x + 3)$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "How can you check whether your factorisation $6x - 15 = 3(2x - 5)$ is correct?",
+          "answer": "Expand the brackets $3(2x - 5) = 6x - 15$ to verify that it gives back the original expression."
+        },
+        {
+          "number": 10,
+          "question": "Why is $x^2 - 9$ called a 'difference of two squares'?",
+          "answer": "Because it is the subtraction ('difference') of two square terms: $x^2$ and $3^2 = 9$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_3_2_1b", "expression": "expand(3*(2*x - 5) - (6*x - 15))", "expected": 0 },
+        { "id": "WSF9_3_2_1d", "expression": "expand(3*x*(x - 3) - (3*x**2 - 9*x))", "expected": 0 },
+        { "id": "WSF9_3_2_2a", "expression": "expand((x - 3)*(x + 3) - (x**2 - 9))", "expected": 0 },
+        { "id": "WSF9_3_2_2d", "expression": "expand((x - 8)*(x + 8) - (x**2 - 64))", "expected": 0 },
+        { "id": "WSF9_3_2_3a", "expression": "expand((x + 2)*(x + 5) - (x*(x + 2) + 5*(x + 2)))", "expected": 0 },
+        { "id": "WSF9_3_2_4a", "expression": "expand((x + 2)*(x + 3) - (x**2 + 2*x + 3*x + 6))", "expected": 0 },
+        { "id": "WSF9_3_2_5", "expression": "15**2 - 5**2", "expected": 200 },
+        { "id": "WSF9_3_2_8", "expression": "expand(2*(x - 3)*(x + 3) - (2*x**2 - 18))", "expected": 0 }
+      ]
+    },
+    {
+      "section_id": "9_3_3",
+      "section_code": "3C",
+      "title": "Factorising Monic Quadratic Trinomials",
+      "vcaa_code": "VC2M9A02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the two positive numbers that multiply to give the product and add to give the sum:",
+          "parts": [
+            { "label": "a", "question": "Multiply to $6$, add to $5$", "answer": "$2$ and $3$" },
+            { "label": "b", "question": "Multiply to $12$, add to $7$", "answer": "$3$ and $4$" },
+            { "label": "c", "question": "Multiply to $15$, add to $8$", "answer": "$3$ and $5$" },
+            { "label": "d", "question": "Multiply to $20$, add to $9$", "answer": "$4$ and $5$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use your number pairs from Question 1 to factorise each quadratic trinomial:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 5x + 6$", "answer": "$(x + 2)(x + 3)$" },
+            { "label": "b", "question": "$x^2 + 7x + 12$", "answer": "$(x + 3)(x + 4)$" },
+            { "label": "c", "question": "$x^2 + 8x + 15$", "answer": "$(x + 3)(x + 5)$" },
+            { "label": "d", "question": "$x^2 + 9x + 20$", "answer": "$(x + 4)(x + 5)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factorise each trinomial where both numbers in the brackets are negative:",
+          "parts": [
+            { "label": "a", "question": "$x^2 - 5x + 6$", "answer": "$(x - 2)(x - 3)$" },
+            { "label": "b", "question": "$x^2 - 7x + 10$", "answer": "$(x - 2)(x - 5)$" },
+            { "label": "c", "question": "$x^2 - 6x + 8$", "answer": "$(x - 2)(x - 4)$" },
+            { "label": "d", "question": "$x^2 - 9x + 14$", "answer": "$(x - 2)(x - 7)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise each trinomial with one positive and one negative factor:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 2x - 8$ (factors of $-8$ are $+4$ and $-2$)", "answer": "$(x + 4)(x - 2)$" },
+            { "label": "b", "question": "$x^2 + 3x - 10$ (factors of $-10$ are $+5$ and $-2$)", "answer": "$(x + 5)(x - 2)$" },
+            { "label": "c", "question": "$x^2 - 2x - 15$ (factors of $-15$ are $-5$ and $+3$)", "answer": "$(x - 5)(x + 3)$" },
+            { "label": "d", "question": "$x^2 - 4x - 12$ (factors of $-12$ are $-6$ and $+2$)", "answer": "$(x - 6)(x + 2)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular patio has area $(x^2 + 6x + 8)\\text{ m}^2$. Factorise $x^2 + 6x + 8$ to find expressions for its length and width.",
+          "answer": "$(x + 4)\\text{ m}$ and $(x + 2)\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "If $x = 10\\text{ m}$ in Question 5, what are the actual length, width, and area of the patio?",
+          "answer": "Length $= 14\\text{ m}$, width $= 12\\text{ m}$, area $= 168\\text{ m}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A square sandpit has area $(x^2 + 6x + 9)\\text{ m}^2$. Factorise this expression to find the side length of the sandpit.",
+          "answer": "$(x + 3)^2\\text{ m}^2$, so the side length is $(x + 3)\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "Cancel the common factor $(x + 2)$ to simplify $\\dfrac{(x + 2)(x + 5)}{x + 2}$ (for $x \\neq -2$).",
+          "answer": "$x + 5$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why does $x^2 + 7x + 10$ factorise to $(x + 2)(x + 5)$ rather than $(x + 1)(x + 10)$?",
+          "answer": "Although $1 \\times 10 = 10$ and $2 \\times 5 = 10$, we need the pair that adds to the middle coefficient $7$: $2 + 5 = 7$ (whereas $1 + 10 = 11$)."
+        },
+        {
+          "number": 10,
+          "question": "What does the word 'monic' mean in a monic quadratic trinomial $x^2 + bx + c$?",
+          "answer": "It means the coefficient of $x^2$ (the leading coefficient) is $1$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_3_3_2a", "expression": "expand((x + 2)*(x + 3) - (x**2 + 5*x + 6))", "expected": 0 },
+        { "id": "WSF9_3_3_2c", "expression": "expand((x + 3)*(x + 5) - (x**2 + 8*x + 15))", "expected": 0 },
+        { "id": "WSF9_3_3_3b", "expression": "expand((x - 2)*(x - 5) - (x**2 - 7*x + 10))", "expected": 0 },
+        { "id": "WSF9_3_3_3d", "expression": "expand((x - 2)*(x - 7) - (x**2 - 9*x + 14))", "expected": 0 },
+        { "id": "WSF9_3_3_4a", "expression": "expand((x + 4)*(x - 2) - (x**2 + 2*x - 8))", "expected": 0 },
+        { "id": "WSF9_3_3_4d", "expression": "expand((x - 6)*(x + 2) - (x**2 - 4*x - 12))", "expected": 0 },
+        { "id": "WSF9_3_3_5", "expression": "expand((x + 4)*(x + 2) - (x**2 + 6*x + 8))", "expected": 0 },
+        { "id": "WSF9_3_3_6", "expression": "14 * 12", "expected": 168 }
+      ]
+    }
+  ]
+}

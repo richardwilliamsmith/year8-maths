@@ -1,0 +1,199 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Similarity, Scale Factors, and Geometric Reasoning",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "9_7_1",
+      "section_code": "7A",
+      "title": "Similar Triangles and Geometric Proofs",
+      "vcaa_code": "VC2M9SP02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State which similarity test ($\\text{AAA, SAS, SSS, RHS}$) proves each pair of triangles is similar:",
+          "parts": [
+            { "label": "a", "question": "Angles $48^\\circ$ and $62^\\circ$ in $\\triangle ABC$, and angles $48^\\circ$ and $70^\\circ$ in $\\triangle DEF$", "answer": "$\\text{AAA}$ (third angle in $\\triangle ABC$ is $70^\\circ$)" },
+            { "label": "b", "question": "Sides $4\\text{ cm}, 6\\text{ cm}, 8\\text{ cm}$ in $\\triangle ABC$, and $6\\text{ cm}, 9\\text{ cm}, 12\\text{ cm}$ in $\\triangle DEF$", "answer": "$\\text{SSS}$ (scale factor $k = 1.5$)" },
+            { "label": "c", "question": "Sides $5\\text{ cm}, 8\\text{ cm}$ with included angle $55^\\circ$, and sides $15\\text{ cm}, 24\\text{ cm}$ with included angle $55^\\circ$", "answer": "$\\text{SAS}$ (scale factor $k = 3$)" },
+            { "label": "d", "question": "Right-angled triangles with hypotenuse $10\\text{ cm}$, leg $6\\text{ cm}$ and hypotenuse $25\\text{ cm}$, leg $15\\text{ cm}$", "answer": "$\\text{RHS}$ (scale factor $k = 2.5$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Given $\\triangle ABC \\sim \\triangle DEF$ with $AB = 6\\text{ cm}, BC = 8\\text{ cm}, AC = 9\\text{ cm}$ and $DE = 15\\text{ cm}$, find:",
+          "parts": [
+            { "label": "a", "question": "The linear scale factor $k = \\dfrac{DE}{AB}$", "answer": "$k = 2.5$" },
+            { "label": "b", "question": "The length of side $EF$", "answer": "$20\\text{ cm}$" },
+            { "label": "c", "question": "The length of side $DF$", "answer": "$22.5\\text{ cm}$" },
+            { "label": "d", "question": "The perimeter of $\\triangle DEF$", "answer": "$57.5\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "In $\\triangle ABC$, line segment $DE$ is parallel to base $BC$ with $D$ on $AB$ and $E$ on $AC$ (so $\\triangle ADE \\sim \\triangle ABC$). Find the unknown length $x$:",
+          "parts": [
+            { "label": "a", "question": "$AD = 4\\text{ cm}, AB = 10\\text{ cm}, DE = 6\\text{ cm}, BC = x\\text{ cm}$", "answer": "$x = 15$" },
+            { "label": "b", "question": "$AD = 5\\text{ cm}, DB = 3\\text{ cm}, DE = 10\\text{ cm}, BC = x\\text{ cm}$ ($AB = 8\\text{ cm}$)", "answer": "$x = 16$" },
+            { "label": "c", "question": "$AD = 6\\text{ cm}, DB = 9\\text{ cm}, AE = 4\\text{ cm}, EC = x\\text{ cm}$", "answer": "$x = 6$" },
+            { "label": "d", "question": "$AD = x\\text{ cm}, AB = 12\\text{ cm}, DE = 5\\text{ cm}, BC = 15\\text{ cm}$", "answer": "$x = 4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Lines $AC$ and $BD$ intersect at $O$ between parallel lines $AB \\parallel DC$, forming hourglass similar triangles $\\triangle AOB \\sim \\triangle COD$. Find $x$:",
+          "parts": [
+            { "label": "a", "question": "$AB = 6\\text{ cm}, CD = 15\\text{ cm}, AO = 4\\text{ cm}, CO = x\\text{ cm}$", "answer": "$x = 10$" },
+            { "label": "b", "question": "$AB = 8\\text{ cm}, CD = 12\\text{ cm}, BO = 6\\text{ cm}, DO = x\\text{ cm}$", "answer": "$x = 9$" },
+            { "label": "c", "question": "$AO = 5\\text{ cm}, CO = 15\\text{ cm}, CD = 24\\text{ cm}, AB = x\\text{ cm}$", "answer": "$x = 8$" },
+            { "label": "d", "question": "$AO = 3\\text{ cm}, CO = 7\\text{ cm}, BO = 4.5\\text{ cm}, DO = x\\text{ cm}$", "answer": "$x = 10.5$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "At $3\\text{ pm}$ in Ballarat, a vertical $1.8\\text{ m}$ netball goalpost casts a horizontal shadow of length $2.4\\text{ m}$, while a nearby stadium light tower casts a shadow of length $32\\text{ m}$. Using similar right-angled triangles, find the height of the light tower.",
+          "answer": "$24\\text{ m}$ ($\\dfrac{H}{1.8} = \\dfrac{32}{2.4} \\implies H = 24\\text{ m}$)"
+        },
+        {
+          "number": 6,
+          "question": "An A-frame roof cross-section is an isosceles triangle of base $12\\text{ m}$ and height $4.5\\text{ m}$. A horizontal collar tie beam is installed parallel to the base at a distance of $1.5\\text{ m}$ below the apex. Using similar triangles, find the length of the collar tie beam.",
+          "answer": "$4\\text{ m}$ ($\\dfrac{x}{12} = \\dfrac{1.5}{4.5} = \\dfrac{1}{3} \\implies x = 4\\text{ m}$)"
+        },
+        {
+          "number": 7,
+          "question": "To find the distance $PQ$ across a billabong in Kakadu, a ranger aligns sightings from a pivot post $O$ between parallel survey lines $PQ \\parallel RS$. Given $RS = 18\\text{ m}$, $OR = 12\\text{ m}$, and $OP = 30\\text{ m}$, find the width $PQ$ of the billabong.",
+          "answer": "$45\\text{ m}$ ($\\dfrac{PQ}{18} = \\dfrac{30}{12} = 2.5 \\implies PQ = 45\\text{ m}$)"
+        },
+        {
+          "number": 8,
+          "question": "A ramp rises linearly from ground level to a loading dock $1.6\\text{ m}$ high over a horizontal distance of $6.0\\text{ m}$. A vertical support pillar is placed $4.5\\text{ m}$ horizontally from the bottom of the ramp. How tall is the support pillar?",
+          "answer": "$1.2\\text{ m}$ ($\\dfrac{h}{1.6} = \\dfrac{4.5}{6.0} = \\dfrac{3}{4} \\implies h = 1.2\\text{ m}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In $\\triangle ABC$, a line $DE$ is drawn parallel to $BC$ ($D$ on $AB$, $E$ on $AC$). Write a complete deductive proof showing that $\\triangle ADE \\sim \\triangle ABC$ by identifying the angle properties used.",
+          "answer": "In $\\triangle ADE$ and $\\triangle ABC$: (1) $\\angle DAE = \\angle BAC$ (common angle); (2) $\\angle ADE = \\angle ABC$ (corresponding angles on parallel lines $DE \\parallel BC$); (3) $\\angle AED = \\angle ACB$ (corresponding angles on $DE \\parallel BC$). Therefore $\\triangle ADE \\sim \\triangle ABC$ ($\\text{AAA}$)."
+        },
+        {
+          "number": 10,
+          "question": "A student sees that $AD = 4\\text{ cm}$, $DB = 6\\text{ cm}$, and $DE = 5\\text{ cm}$ in the parallel-line diagram $\\triangle ADE \\sim \\triangle ABC$ ($DE \\parallel BC$), and writes $\\dfrac{BC}{5} = \\dfrac{6}{4}$ to get $BC = 7.5\\text{ cm}$. Explain the error in the student's ratio and calculate the correct length of $BC$.",
+          "answer": "The segment $DB = 6\\text{ cm}$ is only the bottom part of side $AB$, not a full side of $\\triangle ABC$. The full corresponding side is $AB = AD + DB = 4 + 6 = 10\\text{ cm}$, so $\\dfrac{BC}{5} = \\dfrac{10}{4} \\implies BC = 12.5\\text{ cm}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_7_1_1a", "expression": "180 - (48 + 62)", "expected": 70 },
+        { "id": "WS9_7_1_2a", "expression": "Rational(15, 6)", "expected": 2.5 },
+        { "id": "WS9_7_1_2b", "expression": "8 * Rational(15, 6)", "expected": 20 },
+        { "id": "WS9_7_1_2c", "expression": "9 * Rational(15, 6)", "expected": 22.5 },
+        { "id": "WS9_7_1_3a", "expression": "6 * Rational(10, 4)", "expected": 15 },
+        { "id": "WS9_7_1_3b", "expression": "10 * Rational(5 + 3, 5)", "expected": 16 },
+        { "id": "WS9_7_1_4a", "expression": "4 * Rational(15, 6)", "expected": 10 },
+        { "id": "WS9_7_1_5", "expression": "Rational(18, 10) * Rational(320, 24)", "expected": 24 },
+        { "id": "WS9_7_1_7", "expression": "18 * Rational(30, 12)", "expected": 45 },
+        { "id": "WS9_7_1_8", "expression": "Rational(16, 10) * Rational(45, 60)", "expected": 1.2 }
+      ]
+    },
+    {
+      "section_id": "9_7_2",
+      "section_code": "7B",
+      "title": "Scale Factors for Length, Area, and Volume, and Polyhedra",
+      "vcaa_code": "VC2M9M03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Two similar figures have linear scale factor $k$ (or length ratio $a : b$). State the area scale factor $k^2$ and volume scale factor $k^3$:",
+          "parts": [
+            { "label": "a", "question": "$k = 3$", "answer": "Area factor $k^2 = 9$, Volume factor $k^3 = 27$" },
+            { "label": "b", "question": "$k = 4$", "answer": "Area factor $k^2 = 16$, Volume factor $k^3 = 64$" },
+            { "label": "c", "question": "Length ratio $2 : 5$ ($k = \\frac{5}{2}$)", "answer": "Area ratio $4 : 25$, Volume ratio $8 : 125$" },
+            { "label": "d", "question": "Length ratio $3 : 4$ ($k = \\frac{4}{3}$)", "answer": "Area ratio $9 : 16$, Volume ratio $27 : 64$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use the area scale factor $A_2 = k^2 A_1$ to solve each problem for similar 2D shapes:",
+          "parts": [
+            { "label": "a", "question": "Smaller shape has area $12\\text{ cm}^2$ and linear scale factor is $k = 3$; find the larger area", "answer": "$108\\text{ cm}^2$" },
+            { "label": "b", "question": "Corresponding sides are $4\\text{ cm}$ and $10\\text{ cm}$, and smaller area is $16\\text{ cm}^2$; find the larger area", "answer": "$100\\text{ cm}^2$" },
+            { "label": "c", "question": "Areas of two similar triangles are $25\\text{ cm}^2$ and $121\\text{ cm}^2$; find the ratio of their corresponding side lengths", "answer": "$5 : 11$" },
+            { "label": "d", "question": "Larger shape has area $180\\text{ cm}^2$ and linear scale factor from small to large is $k = 3$; find the smaller area", "answer": "$20\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the volume scale factor $V_2 = k^3 V_1$ to solve each problem for similar 3D solids:",
+          "parts": [
+            { "label": "a", "question": "Smaller prism has volume $15\\text{ cm}^3$ and linear scale factor is $k = 2$; find the larger volume", "answer": "$120\\text{ cm}^3$" },
+            { "label": "b", "question": "Two similar cylinders have heights in the ratio $2 : 3$, and the smaller volume is $40\\text{ cm}^3$; find the larger volume", "answer": "$135\\text{ cm}^3$" },
+            { "label": "c", "question": "Volumes of two similar solids are $27\\text{ cm}^3$ and $64\\text{ cm}^3$; find the ratio of their heights and the ratio of their surface areas", "answer": "Heights $3 : 4$, Surface areas $9 : 16$" },
+            { "label": "d", "question": "A model statue at scale $1 : 5$ has volume $6\\text{ cm}^3$; find the volume of the full-sized statue", "answer": "$750\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use Euler's formula for convex polyhedra ($V - E + F = 2$) to find the missing value:",
+          "parts": [
+            { "label": "a", "question": "A cube has $V = 8$ vertices and $F = 6$ faces; find the number of edges $E$", "answer": "$E = 12$" },
+            { "label": "b", "question": "An octahedron has $F = 8$ faces and $E = 12$ edges; find the number of vertices $V$", "answer": "$V = 6$" },
+            { "label": "c", "question": "A hexagonal prism has $V = 12$ vertices and $E = 18$ edges; find the number of faces $F$", "answer": "$F = 8$" },
+            { "label": "d", "question": "A dodecahedron has $F = 12$ pentagonal faces and $V = 20$ vertices; find the number of edges $E$", "answer": "$E = 30$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "An architect in Sydney builds a $1 : 20$ scale model of a warehouse roof. If the roof on the model has a surface area of $150\\text{ cm}^2$, calculate the actual roof area in $\\text{cm}^2$ and convert your answer to $\\text{m}^2$ ($1\\text{ m}^2 = 10\\,000\\text{ cm}^2$).",
+          "answer": "$60\\,000\\text{ cm}^2 = 6\\text{ m}^2$ ($150 \\times 20^2 = 60\\,000\\text{ cm}^2$)"
+        },
+        {
+          "number": 6,
+          "question": "Two geometrically similar Vegemite jars have heights of $8\\text{ cm}$ and $12\\text{ cm}$ ($k = 1.5$). If the smaller jar holds $160\\text{ g}$ of spread, how many grams does the larger jar hold?",
+          "answer": "$540\\text{ g}$ ($160 \\times 1.5^3 = 160 \\times 3.375 = 540\\text{ g}$)"
+        },
+        {
+          "number": 7,
+          "question": "Two similar solar panels have surface areas of $0.8\\text{ m}^2$ and $1.8\\text{ m}^2$. If the shorter side of the smaller panel is $0.8\\text{ m}$, find the area ratio, the linear scale factor $k$, and the shorter side of the larger panel.",
+          "answer": "Area ratio $= 9 : 4$ ($k^2 = 2.25$), linear scale factor $k = 1.5$, shorter side $= 1.2\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "A soccer ball is stitched from $12$ regular pentagons and $20$ regular hexagons ($F = 32$ faces in total). Given that the polyhedron has $V = 60$ vertices, use Euler's formula $V - E + F = 2$ to find how many stitched seams (edges $E$) the soccer ball has.",
+          "answer": "$E = 90\\text{ edges}$ ($60 - E + 32 = 2 \\implies E = 90$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A bakery doubles the diameter, width, and height of a novelty cake tin ($k = 2$). A customer assumes the larger cake requires twice as much cake batter and twice as much icing over its surface. Explain what the actual multipliers are for the icing (surface area) and the batter (volume).",
+          "answer": "Icing covers the surface area, which scales by $k^2 = 2^2 = 4$ times as much. Cake batter fills the volume, which scales by $k^3 = 2^3 = 8$ times as much."
+        },
+        {
+          "number": 10,
+          "question": "When a single flat polygonal face of a polyhedron is divided into two triangular faces by drawing one diagonal between two existing vertices, what happens to $V$, $E$, and $F$, and why does $V - E + F$ remain unchanged?",
+          "answer": "No new vertices are added ($\\Delta V = 0$), $1$ new edge is drawn ($\\Delta E = +1$), and $1$ face is split into $2$ faces ($\\Delta F = +1$). Thus $\\Delta(V - E + F) = 0 - 1 + 1 = 0$, leaving $V - E + F = 2$ invariant."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_7_2_1a_area", "expression": "3**2", "expected": 9 },
+        { "id": "WS9_7_2_1a_vol", "expression": "3**3", "expected": 27 },
+        { "id": "WS9_7_2_2a", "expression": "12 * 3**2", "expected": 108 },
+        { "id": "WS9_7_2_2b", "expression": "16 * Rational(10, 4)**2", "expected": 100 },
+        { "id": "WS9_7_2_3a", "expression": "15 * 2**3", "expected": 120 },
+        { "id": "WS9_7_2_3b", "expression": "40 * Rational(3, 2)**3", "expected": 135 },
+        { "id": "WS9_7_2_3d", "expression": "6 * 5**3", "expected": 750 },
+        { "id": "WS9_7_2_4d", "expression": "20 + 12 - 2", "expected": 30 },
+        { "id": "WS9_7_2_6", "expression": "160 * Rational(12, 8)**3", "expected": 540 },
+        { "id": "WS9_7_2_8", "expression": "60 + 32 - 2", "expected": 90 }
+      ]
+    }
+  ]
+}

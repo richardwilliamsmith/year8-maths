@@ -1,0 +1,103 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Conditional Probability and Independence (10 & 10A)",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_8_1",
+      "section_code": "8A",
+      "title": "Conditional Probability and Independent Events",
+      "vcaa_code": "VC2M10P01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Events $A$ and $B$ are independent with $\\\\Pr(A) = 0.6$ and $\\\\Pr(A \\cup B) = 0.72$. Find:",
+          "parts": [
+            { "label": "a", "question": "The value of $\\\\Pr(B)$ using $\\\\Pr(A \\cup B) = \\\\Pr(A) + \\\\Pr(B) - \\\\Pr(A)\\\\Pr(B)$", "answer": "$0.3$" },
+            { "label": "b", "question": "$\\\\Pr(A \\cap B)$", "answer": "$0.18$" },
+            { "label": "c", "question": "$\\\\Pr(A' \\cap B')$", "answer": "$0.28$" },
+            { "label": "d", "question": "$\\\\Pr(A' \\mid B')$", "answer": "$0.4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Urn 1 contains $4$ red and $2$ white balls; Urn 2 contains $2$ red and $6$ white balls. A fair coin is tossed to choose an urn ($\\Pr(U_1) = \\\\Pr(U_2) = \\frac{1}{2}$), and one ball is drawn at random. Find:",
+          "parts": [
+            { "label": "a", "question": "$\\\\Pr(R \\mid U_1)$ and $\\\\Pr(R \\mid U_2)$", "answer": "$\\\\Pr(R \\mid U_1) = \\dfrac{2}{3}, \\\\Pr(R \\mid U_2) = \\dfrac{1}{4}$" },
+            { "label": "b", "question": "The total probability $\\\\Pr(R)$ that the drawn ball is red", "answer": "$\\dfrac{11}{24}$ ($\\frac{1}{3} + \\frac{1}{8}$)" },
+            { "label": "c", "question": "The reverse conditional probability $\\\\Pr(U_1 \\mid R)$ (Bayes' rule)", "answer": "$\\dfrac{8}{11}$" },
+            { "label": "d", "question": "$\\\\Pr(U_2 \\mid W)$ given that the drawn ball was white", "answer": "$\\dfrac{9}{13}$ ($\\frac{3/8}{13/24}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A jar contains $6$ green, $4$ gold, and $2$ silver tokens ($12$ in total). Three tokens are drawn at random **without replacement**. Find the exact probability that:",
+          "parts": [
+            { "label": "a", "question": "All $3$ tokens are green", "answer": "$\\dfrac{1}{11}$ ($\\frac{6}{12} \\times \\frac{5}{11} \\times \\frac{4}{10}$)" },
+            { "label": "b", "question": "None of the $3$ tokens is green", "answer": "$\\dfrac{1}{11}$ ($\\frac{6}{12} \\times \\frac{5}{11} \\times \\frac{4}{10}$)" },
+            { "label": "c", "question": "One token of each colour is drawn (in any order)", "answer": "$\\dfrac{12}{55}$ ($\\frac{6 \\times 4 \\times 2}{\\binom{12}{3}} = \\frac{48}{220}$)" },
+            { "label": "d", "question": "All $3$ tokens are gold given that none of the $3$ tokens is green", "answer": "$\\dfrac{1}{5}$ ($\\frac{\\binom{4}{3}}{\\binom{6}{3}} = \\frac{4}{20}$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "[10A] A squad of $7$ swimmers and $5$ divers ($12$ athletes) selects a delegation of $4$ athletes at random. Find:",
+          "parts": [
+            { "label": "a", "question": "The total number of $4$-person delegations $\\binom{12}{4}$", "answer": "$495$" },
+            { "label": "b", "question": "The number of delegations with exactly $2$ swimmers and $2$ divers ($\\binom{7}{2}\\binom{5}{2}$)", "answer": "$210$" },
+            { "label": "c", "question": "The probability of selecting at least $1$ diver", "answer": "$\\dfrac{92}{99}$ ($1 - \\frac{\\binom{7}{4}}{495} = 1 - \\frac{35}{495}$)" },
+            { "label": "d", "question": "The probability of selecting $2$ swimmers and $2$ divers given that at least $1$ diver is selected", "answer": "$\\dfrac{21}{46}$ ($\\frac{210}{460}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rapid diagnostic test for a livestock virus in rural Victoria has sensitivity $95\\%$ ($\\\\Pr(+ \\mid D) = 0.95$) and a false-positive rate of $2\\%$ ($\\\\Pr(+ \\mid D') = 0.02$). If $4\\%$ of the herd actually carries the virus ($\\\\Pr(D) = 0.04$), find (a) the overall probability $\\\\Pr(+)$ that a randomly tested animal tests positive, and (b) the positive predictive value $\\\\Pr(D \\mid +)$ as an exact simplified fraction.",
+          "answer": "(a) $\\\\Pr(+) = 0.04(0.95) + 0.96(0.02) = 0.038 + 0.0192 = 0.0572$; (b) $\\\\Pr(D \\mid +) = \\dfrac{0.038}{0.0572} = \\dfrac{95}{143} \\approx 66.4\\%$"
+        },
+        {
+          "number": 6,
+          "question": "An archer hits the bullseye on each independent shot with probability $p = 0.4$ (so misses with $q = 0.6$). Find (a) the probability that she hits the bullseye at least once in $3$ shots, and (b) the minimum number of shots $n$ required so that the probability of hitting the bullseye at least once is greater than $0.95$.",
+          "answer": "(a) $1 - 0.6^3 = 1 - 0.216 = 0.784$; (b) $1 - 0.6^n > 0.95 \\implies 0.6^n < 0.05 \\implies n = 6$ (since $0.6^5 = 0.07776$ and $0.6^6 = 0.046656$)"
+        },
+        {
+          "number": 7,
+          "question": "Three machines $A, B, C$ in an Adelaide solar-panel factory produce $50\\%$, $30\\%$, and $20\\%$ of total output respectively. Their defective rates are $1\\%$, $2\\%$, and $5\\%$ respectively. If a randomly inspected panel is found to be defective, find the probability that it was produced by Machine $C$.",
+          "answer": "$\\\\Pr(\\text{Def}) = 0.5(0.01) + 0.3(0.02) + 0.2(0.05) = 0.005 + 0.006 + 0.010 = 0.021$; $\\\\Pr(C \\mid \\text{Def}) = \\dfrac{0.010}{0.021} = \\dfrac{10}{21}$"
+        },
+        {
+          "number": 8,
+          "question": "[10A] Five cards are dealt without replacement from a standard $52$-card deck. Given that the first two cards dealt are both Aces, find the exact probability that the five-card hand contains all $4$ Aces.",
+          "answer": "From the remaining $50$ cards (which contain the remaining $2$ Aces), $3$ more cards are dealt: $\\\\Pr = \\dfrac{\\binom{2}{2}\\binom{48}{1}}{\\binom{50}{3}} = \\dfrac{48}{19\\,600} = \\dfrac{3}{1225}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove algebraically that if events $A$ and $B$ are independent ($\\\\Pr(A \\cap B) = \\\\Pr(A)\\\\Pr(B)$), then $A$ and $B'$ are also independent ($\\\\Pr(A \\cap B') = \\\\Pr(A)\\\\Pr(B')$).",
+          "answer": "Since $A = (A \\cap B) \\cup (A \\cap B')$ are disjoint, $\\\\Pr(A \\cap B') = \\\\Pr(A) - \\\\Pr(A \\cap B) = \\\\Pr(A) - \\\\Pr(A)\\\\Pr(B) = \\\\Pr(A)(1 - \\\\Pr(B)) = \\\\Pr(A)\\\\Pr(B')$, proving $A$ and $B'$ are independent."
+        },
+        {
+          "number": 10,
+          "question": "Derive **Bayes' Theorem** $\\\\Pr(A \\mid B) = \\dfrac{\\\\Pr(B \\mid A)\\\\Pr(A)}{\\\\Pr(B \\mid A)\\\\Pr(A) + \\\\Pr(B \\mid A')\\\\Pr(A')}$ from the definition of conditional probability and the law of total probability, and explain why a medical test with $95\\%$ sensitivity and $98\\%$ specificity can still have a surprisingly high proportion of false positives when a disease is rare.",
+          "answer": "By definition, $\\\\Pr(A \\mid B) = \\dfrac{\\\\Pr(A \\cap B)}{\\\\Pr(B)}$. Expanding the numerator as $\\\\Pr(B \\mid A)\\\\Pr(A)$ and partitioning $B = (B \\cap A) \\cup (B \\cap A')$ in the denominator gives the formula. When a disease is very rare ($\\\\Pr(A)$ tiny, $\\\\Pr(A') \\approx 1$), the false-positive term $\\\\Pr(B \\mid A')\\\\Pr(A')$ can be comparable to or larger than the true-positive term $\\\\Pr(B \\mid A)\\\\Pr(A)$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_8_1_1a", "expression": "(Rational(72, 100) - Rational(6, 10)) / (1 - Rational(6, 10))", "expected": 0.3 },
+        { "id": "WSE10_8_1_2b", "expression": "Rational(1, 2)*Rational(2, 3) + Rational(1, 2)*Rational(1, 4)", "expected": "Rational(11, 24)" },
+        { "id": "WSE10_8_1_2c", "expression": "(Rational(1, 2)*Rational(2, 3)) / Rational(11, 24)", "expected": "Rational(8, 11)" },
+        { "id": "WSE10_8_1_3a", "expression": "binomial(6, 3) / binomial(12, 3)", "expected": "Rational(1, 11)" },
+        { "id": "WSE10_8_1_3c", "expression": "(6 * 4 * 2) / binomial(12, 3)", "expected": "Rational(12, 55)" },
+        { "id": "WSE10_8_1_4a", "expression": "binomial(12, 4)", "expected": 495 },
+        { "id": "WSE10_8_1_4b", "expression": "binomial(7, 2) * binomial(5, 2)", "expected": 210 },
+        { "id": "WSE10_8_1_5b", "expression": "Rational(38, 1000) / Rational(572, 10000)", "expected": "Rational(95, 143)" },
+        { "id": "WSE10_8_1_6a", "expression": "1 - Rational(6, 10)**3", "expected": 0.784 },
+        { "id": "WSE10_8_1_7", "expression": "Rational(10, 1000) / Rational(21, 1000)", "expected": "Rational(10, 21)" }
+      ]
+    }
+  ]
+}

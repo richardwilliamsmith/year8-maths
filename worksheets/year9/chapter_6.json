@@ -1,0 +1,199 @@
+{
+  "chapter_number": 6,
+  "chapter_title": "Surface Area and Volume of Cylinders, Prisms, and Composite Solids",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "9_6_1",
+      "section_code": "6A",
+      "title": "Surface Area of Right Prisms and Cylinders",
+      "vcaa_code": "VC2M9M02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the total surface area of each right prism:",
+          "parts": [
+            { "label": "a", "question": "Rectangular prism $6\\text{ cm} \\times 4\\text{ cm} \\times 5\\text{ cm}$", "answer": "$148\\text{ cm}^2$" },
+            { "label": "b", "question": "Cube of side length $8\\text{ cm}$", "answer": "$384\\text{ cm}^2$" },
+            { "label": "c", "question": "Right-angled triangular prism with base legs $3\\text{ cm}, 4\\text{ cm}$, hypotenuse $5\\text{ cm}$, and length $10\\text{ cm}$", "answer": "$132\\text{ cm}^2$" },
+            { "label": "d", "question": "Isosceles triangular prism with base $10\\text{ cm}$, triangle height $12\\text{ cm}$, slant sides $13\\text{ cm}$, and length $15\\text{ cm}$", "answer": "$660\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the exact curved surface area ($\\text{CSA} = 2\\pi rh$) and exact total surface area ($\\text{TSA} = 2\\pi r^2 + 2\\pi rh$) of each closed cylinder:",
+          "parts": [
+            { "label": "a", "question": "Radius $r = 3\\text{ cm}$, height $h = 7\\text{ cm}$", "answer": "$\\text{CSA} = 42\\pi\\text{ cm}^2, \\text{TSA} = 60\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Radius $r = 5\\text{ m}$, height $h = 12\\text{ m}$", "answer": "$\\text{CSA} = 120\\pi\\text{ m}^2, \\text{TSA} = 170\\pi\\text{ m}^2$" },
+            { "label": "c", "question": "Diameter $d = 8\\text{ cm}$, height $h = 10\\text{ cm}$", "answer": "$\\text{CSA} = 80\\pi\\text{ cm}^2, \\text{TSA} = 112\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "Diameter $d = 12\\text{ m}$, height $h = 9\\text{ m}$", "answer": "$\\text{CSA} = 108\\pi\\text{ m}^2, \\text{TSA} = 180\\pi\\text{ m}^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the exact total exterior surface area in terms of $\\pi$ for each modified cylinder:",
+          "parts": [
+            { "label": "a", "question": "Open-top cylindrical cup with radius $4\\text{ cm}$ and height $9\\text{ cm}$ ($\\pi r^2 + 2\\pi rh$)", "answer": "$88\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Hollow open-ended pipe (curved outer surface only) with radius $6\\text{ cm}$ and length $15\\text{ cm}$", "answer": "$180\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "Solid half-cylinder (cut along its length) with radius $4\\text{ cm}$ and length $10\\text{ cm}$ ($\\pi r^2 + \\pi rh + 2rh$)", "answer": "$(56\\pi + 80)\\text{ cm}^2$" },
+            { "label": "d", "question": "Quarter-cylinder wedge with radius $6\\text{ cm}$ and height $10\\text{ cm}$ ($\\frac{1}{2}\\pi r^2 + \\frac{1}{2}\\pi rh + 2rh$)", "answer": "$(48\\pi + 120)\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the unknown dimension in each solid given its surface area:",
+          "parts": [
+            { "label": "a", "question": "Cube with total surface area $294\\text{ cm}^2$ (find side length $s$)", "answer": "$s = 7\\text{ cm}$" },
+            { "label": "b", "question": "Cylinder with radius $5\\text{ cm}$ and curved surface area $90\\pi\\text{ cm}^2$ (find height $h$)", "answer": "$h = 9\\text{ cm}$" },
+            { "label": "c", "question": "Closed cylinder with radius $4\\text{ cm}$ and total surface area $112\\pi\\text{ cm}^2$ (find height $h$)", "answer": "$h = 10\\text{ cm}$" },
+            { "label": "d", "question": "Rectangular prism $8\\text{ cm} \\times 5\\text{ cm} \\times h\\text{ cm}$ with total surface area $236\\text{ cm}^2$ (find $h$)", "answer": "$h = 6\\text{ cm}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Corrugated steel water tank in regional Victoria is a closed cylinder with radius $2.0\\text{ m}$ and height $3.0\\text{ m}$. Calculate its exact total surface area in terms of $\\pi$ and round to $2$ decimal places.",
+          "answer": "$20\\pi\\text{ m}^2 \\approx 62.83\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "An A-frame garden shed is a triangular prism $4.0\\text{ m}$ long. Its cross-section is an isosceles triangle with base $3.0\\text{ m}$, perpendicular height $2.0\\text{ m}$, and two sloping roof sides each $2.5\\text{ m}$ wide. Find the total exterior surface area of the four walls/roof faces (excluding the rectangular floor on the ground).",
+          "answer": "$26\\text{ m}^2$ (two triangular ends $= 2 \\times 3 = 6\\text{ m}^2$, two sloping roof panels $= 2 \\times 2.5 \\times 4 = 20\\text{ m}^2$)"
+        },
+        {
+          "number": 7,
+          "question": "A cylindrical paint roller used by a Melbourne decorator has diameter $7\\text{ cm}$ and width $25\\text{ cm}$. Find the exact area of wall covered in one complete revolution ($\\text{CSA} = \\pi d h$) and the area in $\\text{cm}^2$ rounded to $1$ decimal place.",
+          "answer": "$175\\pi\\text{ cm}^2 \\approx 549.8\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "A trophy base consists of a solid cylinder of radius $3\\text{ cm}$ and height $5\\text{ cm}$ glued centrally on top of a solid cube of side length $10\\text{ cm}$. Find the total exposed surface area of the composite solid in exact form.",
+          "answer": "$(600 + 30\\pi)\\text{ cm}^2$ (the top circular face of the cylinder replaces the covered circle on the cube, adding only $\\text{CSA}_{\\text{cyl}} = 2\\pi(3)(5) = 30\\pi\\text{ cm}^2$ to the cube's $600\\text{ cm}^2$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain using a diagram or algebraic cancellation why gluing a solid cylinder of radius $r$ and height $h$ upright onto the flat top face of a larger rectangular prism increases the prism's total exposed surface area by exactly the curved surface area $2\\pi rh$ (and not $2\\pi r^2 + 2\\pi rh$).",
+          "answer": "The base of the cylinder covers an area of $\\pi r^2$ on the prism, removing $\\pi r^2$ from the prism's exposed area while the cylinder's top circular face adds $+\\pi r^2$ back. Since $-\\pi r^2 + \\pi r^2 = 0$, the net increase is purely the curved wall $2\\pi rh$."
+        },
+        {
+          "number": 10,
+          "question": "Cylinder $A$ has radius $r = 6\\text{ cm}$ and height $h = 4\\text{ cm}$, while Cylinder $B$ has radius $r = 4\\text{ cm}$ and height $h = 6\\text{ cm}$. Show that they have the exact same curved surface area, and determine which cylinder has the greater total surface area and why.",
+          "answer": "Both have $\\text{CSA} = 2\\pi(6)(4) = 2\\pi(4)(6) = 48\\pi\\text{ cm}^2$. Cylinder $A$ has the greater total surface area ($120\\pi\\text{ cm}^2$ vs $80\\pi\\text{ cm}^2$) because its circular ends have a larger radius ($2\\pi(6^2) = 72\\pi$ vs $2\\pi(4^2) = 32\\pi$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_6_1_1a", "expression": "2*(6*4 + 6*5 + 4*5)", "expected": 148 },
+        { "id": "WS9_6_1_1b", "expression": "6 * 8**2", "expected": 384 },
+        { "id": "WS9_6_1_1c", "expression": "2 * Rational(1,2)*3*4 + (3 + 4 + 5)*10", "expected": 132 },
+        { "id": "WS9_6_1_1d", "expression": "2 * Rational(1,2)*10*12 + (10 + 13 + 13)*15", "expected": 660 },
+        { "id": "WS9_6_1_2a_tsa", "expression": "2*pi*3**2 + 2*pi*3*7", "expected": "60*pi" },
+        { "id": "WS9_6_1_2b_tsa", "expression": "2*pi*5**2 + 2*pi*5*12", "expected": "170*pi" },
+        { "id": "WS9_6_1_3a", "expression": "pi*4**2 + 2*pi*4*9", "expected": "88*pi" },
+        { "id": "WS9_6_1_4a", "expression": "sqrt(294 / 6)", "expected": 7 },
+        { "id": "WS9_6_1_4d", "expression": "(236 - 2*8*5) / (2*(8 + 5))", "expected": 6 },
+        { "id": "WS9_6_1_6", "expression": "2 * Rational(1,2)*3*2 + 2*Rational(25,10)*4", "expected": 26 }
+      ]
+    },
+    {
+      "section_id": "9_6_2",
+      "section_code": "6B",
+      "title": "Volume of Cylinders, Composite Solids, and Error in Measurement",
+      "vcaa_code": "VC2M9M02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the exact volume of each right prism or cylinder ($V = Ah$):",
+          "parts": [
+            { "label": "a", "question": "Cylinder with radius $r = 4\\text{ cm}$ and height $h = 10\\text{ cm}$", "answer": "$160\\pi\\text{ cm}^3$" },
+            { "label": "b", "question": "Cylinder with diameter $d = 12\\text{ m}$ and height $h = 5\\text{ m}$", "answer": "$180\\pi\\text{ m}^3$" },
+            { "label": "c", "question": "Trapezoidal prism with parallel sides $5\\text{ cm}, 9\\text{ cm}$, perpendicular height $4\\text{ cm}$, and length $8\\text{ cm}$", "answer": "$224\\text{ cm}^3$" },
+            { "label": "d", "question": "Triangular prism with base $12\\text{ cm}$, perpendicular height $7\\text{ cm}$, and length $10\\text{ cm}$", "answer": "$420\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the exact volume of each composite or hollow solid:",
+          "parts": [
+            { "label": "a", "question": "Half-cylinder with radius $6\\text{ cm}$ and length $10\\text{ cm}$", "answer": "$180\\pi\\text{ cm}^3$" },
+            { "label": "b", "question": "Hollow cylindrical pipe with outer radius $R = 5\\text{ cm}$, inner radius $r = 3\\text{ cm}$, and length $10\\text{ cm}$", "answer": "$160\\pi\\text{ cm}^3$" },
+            { "label": "c", "question": "Rectangular block $10\\text{ cm} \\times 8\\text{ cm} \\times 5\\text{ cm}$ with a square hole $3\\text{ cm} \\times 3\\text{ cm}$ cut right through its $5\\text{ cm}$ depth", "answer": "$355\\text{ cm}^3$" },
+            { "label": "d", "question": "Quarter-cylinder with radius $4\\text{ cm}$ and height $9\\text{ cm}$", "answer": "$36\\pi\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "State the absolute error ($\\pm 0.5 \\times \\text{unit}$) and the lower and upper bounds (limits of accuracy) for each measurement:",
+          "parts": [
+            { "label": "a", "question": "$18\\text{ cm}$ (measured to the nearest $\\text{cm}$)", "answer": "Error $\\pm 0.5\\text{ cm}$; bounds $17.5\\text{ cm} \\le x < 18.5\\text{ cm}$" },
+            { "label": "b", "question": "$4.6\\text{ m}$ (measured to the nearest $0.1\\text{ m}$)", "answer": "Error $\\pm 0.05\\text{ m}$; bounds $4.55\\text{ m} \\le x < 4.65\\text{ m}$" },
+            { "label": "c", "question": "$250\\text{ g}$ (measured to the nearest $10\\text{ g}$)", "answer": "Error $\\pm 5\\text{ g}$; bounds $245\\text{ g} \\le x < 255\\text{ g}$" },
+            { "label": "d", "question": "$1.25\\text{ L}$ (measured to the nearest $0.01\\text{ L}$)", "answer": "Error $\\pm 0.005\\text{ L}$; bounds $1.245\\text{ L} \\le x < 1.255\\text{ L}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Calculate the absolute error $|\\text{measured} - \\text{actual}|$ and percentage error $\\dfrac{\\text{absolute error}}{\\text{actual}} \\times 100\\%$:",
+          "parts": [
+            { "label": "a", "question": "Measured $= 52\\text{ cm}$, actual $= 50\\text{ cm}$", "answer": "Absolute error $= 2\\text{ cm}$, percentage error $= 4\\%$" },
+            { "label": "b", "question": "Measured $= 76\\text{ m}$, actual $= 80\\text{ m}$", "answer": "Absolute error $= 4\\text{ m}$, percentage error $= 5\\%$" },
+            { "label": "c", "question": "Maximum percentage error of $25\\text{ cm}$ measured to the nearest $1\\text{ cm}$ (error $0.5\\text{ cm}$)", "answer": "Absolute error $= 0.5\\text{ cm}$, percentage error $= 2\\%$" },
+            { "label": "d", "question": "Measured $= 205\\text{ mL}$, actual $= 200\\text{ mL}$", "answer": "Absolute error $= 5\\text{ mL}$, percentage error $= 2.5\\%$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A cylindrical rainwater tank in Geelong has an internal diameter of $4.0\\text{ m}$ and height of $2.5\\text{ m}$. Given that $1\\text{ m}^3 = 1000\\text{ L}$, find the exact volume in $\\text{m}^3$ and the capacity of the tank to the nearest litre.",
+          "answer": "$10\\pi\\text{ m}^3 \\approx 31\\,416\\text{ L}$"
+        },
+        {
+          "number": 6,
+          "question": "A railway tunnel in Melbourne is shaped like a rectangular prism $8\\text{ m}$ wide and $5\\text{ m}$ high, topped by a semicircular arch of radius $4\\text{ m}$. If the tunnel is $100\\text{ m}$ long, find the exact volume of rock excavated.",
+          "answer": "$(4000 + 800\\pi)\\text{ m}^3$ (cross-sectional area $= 8 \\times 5 + \\frac{1}{2}\\pi(4^2) = 40 + 8\\pi\\text{ m}^2$, multiplied by $100\\text{ m}$)"
+        },
+        {
+          "number": 7,
+          "question": "A carpenter measures a timber decking plank as $200\\text{ cm}$ to the nearest centimetre, while its true length is $198.4\\text{ cm}$. Calculate the absolute error and the percentage error rounded to $2$ decimal places.",
+          "answer": "Absolute error $= 1.6\\text{ cm}$; percentage error $= \\dfrac{1.6}{198.4} \\times 100\\% \\approx 0.81\\%$"
+        },
+        {
+          "number": 8,
+          "question": "A rectangular swimming pool tile measures $20\\text{ cm}$ by $10\\text{ cm}$, with each side measured to the nearest centimetre ($\\pm 0.5\\text{ cm}$). Calculate the nominal area ($20 \\times 10$) and the minimum possible area using the lower bounds of both sides.",
+          "answer": "Nominal area $= 200\\text{ cm}^2$; minimum area $= 19.5 \\times 9.5 = 185.25\\text{ cm}^2$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "If the radius $r$ of a cylinder is doubled (to $2r$) while its height $h$ is halved (to $\\frac{1}{2}h$), does the volume of the cylinder stay the same? Prove your answer algebraically.",
+          "answer": "No, the volume doubles: $V_{\\text{new}} = \\pi(2r)^2\\left(\\frac{1}{2}h\\right) = \\pi(4r^2)\\left(\\frac{1}{2}h\\right) = 2\\pi r^2 h = 2V_{\\text{original}}$."
+        },
+        {
+          "number": 10,
+          "question": "Two lengths $8\\text{ cm}$ and $80\\text{ cm}$ are both measured with the same ruler to the nearest centimetre (maximum absolute error $0.5\\text{ cm}$). Explain why the $80\\text{ cm}$ measurement is much more accurate in relative terms by comparing their maximum percentage errors.",
+          "answer": "Both have the same maximum absolute error of $0.5\\text{ cm}$, but for $8\\text{ cm}$ the percentage error is $\\frac{0.5}{8} \\times 100\\% = 6.25\\%$, whereas for $80\\text{ cm}$ it is $\\frac{0.5}{80} \\times 100\\% = 0.625\\%$ (ten times smaller)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_6_2_1a", "expression": "pi * 4**2 * 10", "expected": "160*pi" },
+        { "id": "WS9_6_2_1b", "expression": "pi * 6**2 * 5", "expected": "180*pi" },
+        { "id": "WS9_6_2_1c", "expression": "Rational(1, 2) * (5 + 9) * 4 * 8", "expected": 224 },
+        { "id": "WS9_6_2_1d", "expression": "Rational(1, 2) * 12 * 7 * 10", "expected": 420 },
+        { "id": "WS9_6_2_2b", "expression": "pi * (5**2 - 3**2) * 10", "expected": "160*pi" },
+        { "id": "WS9_6_2_2c", "expression": "10*8*5 - 3*3*5", "expected": 355 },
+        { "id": "WS9_6_2_4a", "expression": "Rational(52 - 50, 50) * 100", "expected": 4 },
+        { "id": "WS9_6_2_4b", "expression": "Rational(80 - 76, 80) * 100", "expected": 5 },
+        { "id": "WS9_6_2_4c", "expression": "Rational(1, 2) / 25 * 100", "expected": 2 },
+        { "id": "WS9_6_2_8", "expression": "Rational(195, 10) * Rational(95, 10)", "expected": 185.25 }
+      ]
+    }
+  ]
+}

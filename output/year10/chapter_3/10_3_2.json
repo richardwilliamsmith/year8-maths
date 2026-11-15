@@ -1,0 +1,418 @@
+{
+  "metadata": {
+    "section_id": "10_3_2",
+    "section_code": "3B",
+    "chapter_number": 3,
+    "chapter_title": "Quadratic Algebra and Equations (10 & 10A)",
+    "title": "The Quadratic Formula and the Discriminant",
+    "vcaa_code": "VC2M10A05",
+    "vcaa_description": "Solve quadratic equations algebraically and graphically, and use mathematical modelling to solve applied problems involving quadratic functions (and 10A VC2M10AA02).",
+    "strand": "Algebra",
+    "target_mastery": "Solve general quadratic equations ax^2 + bx + c = 0 using the Quadratic Formula and use the discriminant Delta = b^2 - 4ac to determine the nature of roots.",
+    "prerequisites": [
+      "Completing the square (Section 3A)",
+      "Null Factor Law (Year 9 VC2M9A05)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "General quadratic equation",
+        "definition": "A second-degree polynomial equation written in standard form $ax^2 + bx + c = 0$, where $a \\neq 0$."
+      },
+      {
+        "term": "Discriminant ($\\Delta$)",
+        "definition": "The quantity $\\Delta = b^2 - 4ac$ under the square root sign in the Quadratic Formula, which determines the number and nature of the real solutions."
+      },
+      {
+        "term": "Quadratic Formula",
+        "definition": "The universal formula $x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$ giving the exact solutions of $ax^2 + bx + c = 0$ when $\\Delta \\ge 0$."
+      },
+      {
+        "term": "Repeated (double) root",
+        "definition": "The single real solution $x = -\\frac{b}{2a}$ that occurs when $\\Delta = 0$, corresponding geometrically to a parabola whose vertex touches the $x$-axis tangentially."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_3_2_1",
+      "title": "The Discriminant and the Nature of Roots",
+      "explanation": "When we complete the square on the general quadratic equation $ax^2 + bx + c = 0$ ($a \\neq 0$), we obtain $\\left(x + \\frac{b}{2a}\\right)^2 = \\frac{b^2 - 4ac}{4a^2}$. Whether we can take the real square root of the right-hand side depends entirely on the sign of the numerator $\\Delta = b^2 - 4ac$, called the discriminant: if $\\Delta > 0$, there are two distinct real solutions (rational if $\\Delta$ is a perfect square, irrational surds otherwise); if $\\Delta = 0$, there is exactly one repeated real solution; and if $\\Delta < 0$, there are no real solutions.",
+      "formula_latex": "\\Delta = b^2 - 4ac: \\quad \\begin{cases} \\Delta > 0 & \\text{2 distinct real roots} \\\\ \\Delta = 0 & \\text{1 repeated real root} \\\\ \\Delta < 0 & \\text{0 real roots} \\end{cases}",
+      "callout_title": "Calculate $\\Delta = b^2 - 4ac$ First!",
+      "callout_rule": "Evaluating $\\Delta = b^2 - 4ac$ before writing the full Quadratic Formula immediately tells you if real solutions exist and prevents sign errors inside the square root."
+    },
+    {
+      "id": "theory_10_3_2_2",
+      "title": "Solving Equations with the Quadratic Formula",
+      "explanation": "Before reading off the coefficients $a$, $b$, and $c$, always rearrange the quadratic equation into standard form $ax^2 + bx + c = 0$ with zero on one side. Then substitute $a$, $b$, and $c$ (including their signs!) into the Quadratic Formula and simplify any surds in the numerator before dividing both terms by $2a$.",
+      "formula_latex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} = \\frac{-b \\pm \\sqrt{\\Delta}}{2a}",
+      "callout_title": "Put Negative $b$ in Brackets When Squaring",
+      "callout_rule": "If $b = -5$, then $-b = -(-5) = +5$, and $b^2 = (-5)^2 = +25$ (ALWAYS positive!). Never type $-5^2$ into a calculator without brackets, as the calculator evaluates $-5^2 = -25$."
+    },
+    {
+      "id": "theory_10_3_2_3",
+      "title": "Quadratic Modelling in Geometry and Kinematics",
+      "explanation": "Many real-world problems involving rectangular areas, Pythagoras' theorem, or projectile motion ($h(t) = -5t^2 + vt + h_0$) lead to quadratic equations. After solving the quadratic equation algebraically, always check both mathematical roots against physical constraints: reject negative lengths, widths, or negative times ($t < 0$) when they lie outside the practical domain of the model.",
+      "formula_latex": "\\text{Area / Pythagoras / Projectile} \\implies ax^2 + bx + c = 0 \\implies \\text{select physically valid root } (x > 0)",
+      "callout_title": "Check Domain Restrictions in Applied Problems",
+      "callout_rule": "An algebraic equation doesn't know that side lengths and time elapsed must be positive—always state why you reject an extraneous negative root in your conclusion."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_3_2_1",
+      "title": "Using the Discriminant to Determine the Number of Real Roots",
+      "difficulty": "Fluency",
+      "problem": "Calculate the discriminant $\\Delta$ and state the number and nature of the real solutions for: (a) $2x^2 - 5x + 4 = 0$ and (b) $9x^2 - 12x + 4 = 0$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), identify $a = 2, b = -5, c = 4$ and evaluate $\\Delta = b^2 - 4ac$.",
+          "working": "$$\\Delta = (-5)^2 - 4(2)(4) = 25 - 32 = -7 < 0 \\implies \\text{no real solutions}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), identify $a = 9, b = -12, c = 4$ and evaluate $\\Delta = b^2 - 4ac$.",
+          "working": "$$\\Delta = (-12)^2 - 4(9)(4) = 144 - 144 = 0 \\implies \\text{1 repeated rational solution}$$"
+        }
+      ],
+      "final_answer": "(a) $\\Delta = -7$ ($0$ real solutions); (b) $\\Delta = 0$ ($1$ repeated rational solution)",
+      "now_you_try": {
+        "problem": "Calculate the discriminant $\\Delta$ and state the number of real solutions for $3x^2 - 7x + 2 = 0$.",
+        "hint": "Substitute $a = 3, b = -7, c = 2$ into $\\Delta = b^2 - 4ac$.",
+        "working_summary": "$\\Delta = (-7)^2 - 4(3)(2) = 49 - 24 = 25 > 0$ (a perfect square), so there are $2$ distinct rational solutions.",
+        "answer": "$\\Delta = 25$; $2$ distinct rational solutions"
+      }
+    },
+    {
+      "id": "WE10_3_2_2",
+      "title": "Finding Exact Surd Solutions Using the Quadratic Formula",
+      "difficulty": "Understanding",
+      "problem": "Solve $x^2 - 6x + 2 = 0$, giving your answers in simplest exact surd form.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Identify $a = 1, b = -6, c = 2$ and calculate the discriminant $\\Delta = b^2 - 4ac$.",
+          "working": "$$\\Delta = (-6)^2 - 4(1)(2) = 36 - 8 = 28$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute into the Quadratic Formula and simplify $\\sqrt{28} = \\sqrt{4 \\times 7} = 2\\sqrt{7}$.",
+          "working": "$$x = \\frac{-(-6) \\pm \\sqrt{28}}{2(1)} = \\frac{6 \\pm 2\\sqrt{7}}{2}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Factor $2$ out of the numerator and cancel with the denominator.",
+          "working": "$$x = \\frac{2(3 \\pm \\sqrt{7})}{2} = 3 \\pm \\sqrt{7}$$"
+        }
+      ],
+      "final_answer": "$x = 3 - \\sqrt{7}$ or $x = 3 + \\sqrt{7}$",
+      "now_you_try": {
+        "problem": "Solve $x^2 + 4x - 1 = 0$, giving your answers in simplest exact surd form.",
+        "hint": "$\\Delta = 4^2 - 4(1)(-1) = 20$ and $\\sqrt{20} = 2\\sqrt{5}$.",
+        "working_summary": "$x = \\frac{-4 \\pm 2\\sqrt{5}}{2} = -2 \\pm \\sqrt{5}$.",
+        "answer": "$x = -2 \\pm \\sqrt{5}$"
+      }
+    },
+    {
+      "id": "WE10_3_2_3",
+      "title": "Modelling Projectile Motion with a Quadratic Equation",
+      "difficulty": "Problem-Solving",
+      "problem": "A ball is thrown upwards from the top of a $15\\text{ m}$ platform. Its height $h$ metres above the ground after $t$ seconds is modelled by $h = -5t^2 + 10t + 15$. Find the time $t$ when the ball hits the ground.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "The ball hits the ground when $h = 0$. Set $-5t^2 + 10t + 15 = 0$ and divide both sides by $-5$ to simplify.",
+          "working": "$$-5t^2 + 10t + 15 = 0 \\xrightarrow{\\div (-5)} t^2 - 2t - 3 = 0$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Factorise or apply the Quadratic Formula to solve for $t$.",
+          "working": "$$(t - 3)(t + 1) = 0 \\implies t = 3 \\text{ or } t = -1$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Since time after launch must be non-negative ($t \\ge 0$), reject $t = -1$.",
+          "working": "$$t = 3\\text{ seconds (since } t \\ge 0\\text{)}$$"
+        }
+      ],
+      "final_answer": "$3\\text{ seconds}$",
+      "now_you_try": {
+        "problem": "A diver jumps from a $10\\text{ m}$ platform so that her height above the water after $t$ seconds is $h = -5t^2 + 5t + 10$. When does she enter the water ($h = 0$)?",
+        "hint": "Set $-5t^2 + 5t + 10 = 0$, divide by $-5$ to get $t^2 - t - 2 = 0$, and select $t > 0$.",
+        "working_summary": "$(t - 2)(t + 1) = 0 \\implies t = 2\\text{ s}$ (rejecting $t = -1$).",
+        "answer": "$2\\text{ seconds}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_3_2_1",
+      "title": "Evaluating $b^2$ as Negative When $b < 0$",
+      "misconception": "Calculating $\\Delta$ for $x^2 - 4x - 5 = 0$ as $-4^2 - 4(1)(-5) = -16 + 20 = 4$ instead of $(-4)^2 - 4(1)(-5) = 16 + 20 = 36$.",
+      "correct_concept": "The square of any non-zero real number is strictly positive: $(-4)^2 = (-4) \\times (-4) = +16$. Always enclose negative values of $b$ in brackets when squaring.",
+      "incorrect_working": "$$\\Delta = -4^2 - 4(1)(-5) = -16 + 20 = 4 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\Delta = (-4)^2 - 4(1)(-5) = 16 + 20 = 36 \\quad (\\text{Correct})$$",
+      "counter_example": "The equation $x^2 - 4x - 5 = (x - 5)(x + 1) = 0$ has solutions $x = 5$ and $x = -1$, which require $\\sqrt{\\Delta} = 6$, so $\\Delta = 36$, not $4$."
+    },
+    {
+      "id": "MISC_10_3_2_2",
+      "title": "Dividing Only the First Term of the Numerator by $2a$",
+      "misconception": "Simplifying $\\frac{6 \\pm 2\\sqrt{5}}{2}$ as $3 \\pm 2\\sqrt{5}$, dividing $6$ by $2$ while leaving $2\\sqrt{5}$ untouched.",
+      "correct_concept": "The denominator $2a$ divides the ENTIRE numerator, so you must divide both $-b$ and $\\sqrt{\\Delta}$ by $2a$: $\\frac{6 \\pm 2\\sqrt{5}}{2} = \\frac{6}{2} \\pm \\frac{2\\sqrt{5}}{2} = 3 \\pm \\sqrt{5}$.",
+      "incorrect_working": "$$\\frac{6 \\pm 2\\sqrt{5}}{2} = 3 \\pm 2\\sqrt{5} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\frac{6 \\pm 2\\sqrt{5}}{2} = \\frac{2(3 \\pm \\sqrt{5})}{2} = 3 \\pm \\sqrt{5} \\quad (\\text{Correct})$$",
+      "counter_example": "With numbers, $\\frac{6 + 4}{2} = \\frac{10}{2} = 5 = 3 + 2$, whereas $3 + 4 = 7 \\neq 5$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_3_2_Q1",
+        "question": "Find the discriminant $\\Delta$ of $2x^2 + 7x - 4 = 0$ and hence solve the equation using the Quadratic Formula.",
+        "difficulty": "Easy",
+        "context": "Rational Roots via Quadratic Formula",
+        "final_answer": "$\\Delta = 81$; $x = \\frac{1}{2}$ or $x = -4$",
+        "step_by_step_solution": [
+          "Calculate $\\Delta = 7^2 - 4(2)(-4) = 49 + 32 = 81$.",
+          "Substitute into the Quadratic Formula: $x = \\frac{-7 \\pm \\sqrt{81}}{2(2)} = \\frac{-7 \\pm 9}{4}$, giving $x = \\frac{2}{4} = \\frac{1}{2}$ or $x = \\frac{-16}{4} = -4$."
+        ]
+      },
+      {
+        "id": "10_3_2_Q2",
+        "question": "Solve $x^2 - 8x + 11 = 0$, expressing your answers in simplest exact surd form.",
+        "difficulty": "Medium",
+        "context": "Simplifying Surd Roots",
+        "final_answer": "$x = 4 \\pm \\sqrt{5}$",
+        "step_by_step_solution": [
+          "Calculate $\\Delta = (-8)^2 - 4(1)(11) = 64 - 44 = 20$.",
+          "$x = \\frac{8 \\pm \\sqrt{20}}{2} = \\frac{8 \\pm 2\\sqrt{5}}{2} = 4 \\pm \\sqrt{5}$."
+        ]
+      },
+      {
+        "id": "10_3_2_Q3",
+        "question": "Rearrange $3x^2 = 4x + 2$ into standard form and solve for $x$ in exact surd form.",
+        "difficulty": "Medium",
+        "context": "Rearranging Before Applying the Formula",
+        "final_answer": "$x = \\frac{2 \\pm \\sqrt{10}}{3}$",
+        "step_by_step_solution": [
+          "Rearrange to $3x^2 - 4x - 2 = 0$, so $a = 3, b = -4, c = -2$.",
+          "Calculate $\\Delta = (-4)^2 - 4(3)(-2) = 16 + 24 = 40$, so $\\sqrt{\\Delta} = 2\\sqrt{10}$.",
+          "$x = \\frac{4 \\pm 2\\sqrt{10}}{6} = \\frac{2 \\pm \\sqrt{10}}{3}$."
+        ]
+      },
+      {
+        "id": "10_3_2_Q4",
+        "question": "Find the positive value of $k$ for which $x^2 + kx + 16 = 0$ has exactly one repeated real solution.",
+        "difficulty": "Medium",
+        "context": "Finding Parameter for Repeated Root",
+        "final_answer": "$k = 8$",
+        "step_by_step_solution": [
+          "For one repeated real solution, set $\\Delta = b^2 - 4ac = 0$: $k^2 - 4(1)(16) = 0$.",
+          "$k^2 = 64 \\implies k = 8$ (taking $k > 0$)."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_3_2_Q5",
+        "question": "The length of a rectangular solar panel is $3\\text{ m}$ longer than its width $w\\text{ m}$, and its area is $28\\text{ m}^2$. Write and solve a quadratic equation to find its width and length.",
+        "difficulty": "Medium",
+        "context": "Rectangular Area Modelling",
+        "final_answer": "Width $4\\text{ m}$, length $7\\text{ m}$",
+        "step_by_step_solution": [
+          "Area equation: $w(w + 3) = 28 \\implies w^2 + 3w - 28 = 0$.",
+          "Factorise or use the Quadratic Formula: $(w + 7)(w - 4) = 0 \\implies w = 4$ (rejecting $w = -7$ since $w > 0$).",
+          "Width is $4\\text{ m}$ and length is $4 + 3 = 7\\text{ m}$."
+        ]
+      },
+      {
+        "id": "10_3_2_Q6",
+        "question": "A right-angled triangle has hypotenuse $13\\text{ cm}$, and one of its shorter sides is $7\\text{ cm}$ longer than the other shorter side $x\\text{ cm}$. Use Pythagoras' theorem to form a quadratic equation and find $x$.",
+        "difficulty": "Medium",
+        "context": "Pythagoras Quadratic Problem",
+        "final_answer": "$x = 5\\text{ cm}$ (sides are $5\\text{ cm}, 12\\text{ cm}, 13\\text{ cm}$)",
+        "step_by_step_solution": [
+          "By Pythagoras' theorem, $x^2 + (x + 7)^2 = 13^2 \\implies x^2 + x^2 + 14x + 49 = 169$.",
+          "Simplify and divide by $2$: $2x^2 + 14x - 120 = 0 \\implies x^2 + 7x - 60 = 0$.",
+          "$(x + 12)(x - 5) = 0 \\implies x = 5\\text{ cm}$ (since $x > 0$)."
+        ]
+      },
+      {
+        "id": "10_3_2_Q7",
+        "question": "A rectangular photograph measuring $12\\text{ cm}$ by $8\\text{ cm}$ is surrounded by a border of uniform width $x\\text{ cm}$. If the combined area of the photograph and border is $140\\text{ cm}^2$, find the width $x$ of the border.",
+        "difficulty": "Challenging",
+        "context": "Uniform Border Area Problem",
+        "final_answer": "$x = 1\\text{ cm}$",
+        "step_by_step_solution": [
+          "The outer dimensions are $(12 + 2x)$ and $(8 + 2x)$, so $(12 + 2x)(8 + 2x) = 140$.",
+          "Expand and rearrange: $96 + 40x + 4x^2 = 140 \\implies 4x^2 + 40x - 44 = 0 \\implies x^2 + 10x - 11 = 0$.",
+          "$(x + 11)(x - 1) = 0 \\implies x = 1\\text{ cm}$ (rejecting $x = -11$)."
+        ]
+      },
+      {
+        "id": "10_3_2_Q8",
+        "question": "Two positive numbers differ by $2$ and the sum of their squares is $34$. Find the two numbers.",
+        "difficulty": "Medium",
+        "context": "Number Modelling",
+        "final_answer": "$3$ and $5$",
+        "step_by_step_solution": [
+          "Let the numbers be $x$ and $x + 2$ ($x > 0$). Then $x^2 + (x + 2)^2 = 34 \\implies 2x^2 + 4x - 30 = 0 \\implies x^2 + 2x - 15 = 0$.",
+          "$(x + 5)(x - 3) = 0 \\implies x = 3$ (since $x > 0$), so the numbers are $3$ and $5$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_3_2_Q9",
+        "question": "Prove that for any non-zero real numbers $a$ and $c$ with opposite signs ($ac < 0$), the quadratic equation $ax^2 + bx + c = 0$ ALWAYS has two distinct real solutions regardless of the value of $b$.",
+        "difficulty": "Challenging",
+        "context": "Guaranteed Real Roots When ac < 0",
+        "final_answer": "Since $b^2 \\ge 0$ and $ac < 0 \\implies -4ac > 0$, the discriminant $\\Delta = b^2 - 4ac > 0$ is strictly positive for all real $b$",
+        "step_by_step_solution": [
+          "Consider the discriminant $\\Delta = b^2 - 4ac$.",
+          "For any real number $b$, $b^2 \\ge 0$. Since $a$ and $c$ have opposite signs, $ac < 0$, which means $-4ac > 0$.",
+          "Therefore $\\Delta = b^2 + (-4ac) > 0$, guaranteeing two distinct real solutions."
+        ]
+      },
+      {
+        "id": "10_3_2_Q10",
+        "question": "Using the Quadratic Formula $x_1 = \\frac{-b + \\sqrt{\\Delta}}{2a}$ and $x_2 = \\frac{-b - \\sqrt{\\Delta}}{2a}$, prove Vieta's sum-of-roots formula $x_1 + x_2 = -\\frac{b}{a}$.",
+        "difficulty": "Challenging",
+        "context": "Vieta's Sum of Roots Proof",
+        "final_answer": "$x_1 + x_2 = \\frac{(-b + \\sqrt{\\Delta}) + (-b - \\sqrt{\\Delta})}{2a} = \\frac{-2b}{2a} = -\\frac{b}{a}$",
+        "step_by_step_solution": [
+          "Add the two roots: $x_1 + x_2 = \\frac{-b + \\sqrt{\\Delta}}{2a} + \\frac{-b - \\sqrt{\\Delta}}{2a}$.",
+          "The $+\\sqrt{\\Delta}$ and $-\\sqrt{\\Delta}$ terms cancel out, leaving $\\frac{-2b}{2a} = -\\frac{b}{a}$."
+        ]
+      },
+      {
+        "id": "10_3_2_Q11",
+        "question": "Using the Quadratic Formula, prove Vieta's product-of-roots formula $x_1 x_2 = \\frac{c}{a}$.",
+        "difficulty": "Extension",
+        "context": "Vieta's Product of Roots Proof",
+        "final_answer": "$x_1 x_2 = \\frac{(-b)^2 - (\\sqrt{b^2 - 4ac})^2}{4a^2} = \\frac{b^2 - (b^2 - 4ac)}{4a^2} = \\frac{4ac}{4a^2} = \\frac{c}{a}$",
+        "step_by_step_solution": [
+          "Multiply the two roots using DOTS in the numerator: $x_1 x_2 = \\left(\\frac{-b + \\sqrt{b^2 - 4ac}}{2a}\\right)\\left(\\frac{-b - \\sqrt{b^2 - 4ac}}{2a}\\right) = \\frac{(-b)^2 - (b^2 - 4ac)}{4a^2}$.",
+          "Simplify the numerator: $\\frac{b^2 - b^2 + 4ac}{4a^2} = \\frac{4ac}{4a^2} = \\frac{c}{a}$."
+        ]
+      },
+      {
+        "id": "10_3_2_Q12",
+        "question": "Find the value of $m$ for which the straight line $y = 2x + m$ is tangent to the parabola $y = x^2 + 6x + 7$.",
+        "difficulty": "Extension",
+        "context": "Tangency of Line and Parabola via Discriminant",
+        "final_answer": "$m = 3$",
+        "step_by_step_solution": [
+          "Equate the two equations to find intersections: $x^2 + 6x + 7 = 2x + m \\implies x^2 + 4x + (7 - m) = 0$.",
+          "A tangent touches the parabola at a single repeated point, so set $\\Delta = 0$: $4^2 - 4(1)(7 - m) = 0$.",
+          "$16 - 28 + 4m = 0 \\implies 4m = 12 \\implies m = 3$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_3_2_1a",
+      "description": "Worked Example 10.3.2.1(a) discriminant",
+      "expression": "(-5)**2 - 4*2*4",
+      "expected": -7
+    },
+    {
+      "id": "WE10_3_2_1b",
+      "description": "Worked Example 10.3.2.1(b) discriminant",
+      "expression": "(-12)**2 - 4*9*4",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_3_2_1",
+      "description": "Now You Try 10.3.2.1 discriminant",
+      "expression": "(-7)**2 - 4*3*2",
+      "expected": 25
+    },
+    {
+      "id": "WE10_3_2_2",
+      "description": "Worked Example 10.3.2.2 roots",
+      "expression": "solve(Eq(x**2 - 6*x + 2, 0), x)",
+      "expected": ["3 - sqrt(7)", "3 + sqrt(7)"]
+    },
+    {
+      "id": "NYT10_3_2_2",
+      "description": "Now You Try 10.3.2.2 roots",
+      "expression": "solve(Eq(x**2 + 4*x - 1, 0), x)",
+      "expected": ["-2 + sqrt(5)", "-sqrt(5) - 2"]
+    },
+    {
+      "id": "WE10_3_2_3",
+      "description": "Worked Example 10.3.2.3 positive root",
+      "expression": "max(solve(Eq(-5*t**2 + 10*t + 15, 0), t))",
+      "expected": 3
+    },
+    {
+      "id": "NYT10_3_2_3",
+      "description": "Now You Try 10.3.2.3 positive root",
+      "expression": "max(solve(Eq(-5*t**2 + 5*t + 10, 0), t))",
+      "expected": 2
+    },
+    {
+      "id": "EX10_3_2_Q1d",
+      "description": "Exercise 10.3.2 Q1 discriminant",
+      "expression": "7**2 - 4*2*(-4)",
+      "expected": 81
+    },
+    {
+      "id": "EX10_3_2_Q1r",
+      "description": "Exercise 10.3.2 Q1 roots",
+      "expression": "solve(Eq(2*x**2 + 7*x - 4, 0), x)",
+      "expected": [-4, "Rational(1, 2)"]
+    },
+    {
+      "id": "EX10_3_2_Q2",
+      "description": "Exercise 10.3.2 Q2 roots",
+      "expression": "solve(Eq(x**2 - 8*x + 11, 0), x)",
+      "expected": ["4 - sqrt(5)", "sqrt(5) + 4"]
+    },
+    {
+      "id": "EX10_3_2_Q3",
+      "description": "Exercise 10.3.2 Q3 discriminant",
+      "expression": "(-4)**2 - 4*3*(-2)",
+      "expected": 40
+    },
+    {
+      "id": "EX10_3_2_Q4",
+      "description": "Exercise 10.3.2 Q4 positive k",
+      "expression": "max(solve(Eq(k**2 - 4*1*16, 0), k))",
+      "expected": 8
+    },
+    {
+      "id": "EX10_3_2_Q5",
+      "description": "Exercise 10.3.2 Q5 width",
+      "expression": "max(solve(Eq(w*(w + 3), 28), w))",
+      "expected": 4
+    },
+    {
+      "id": "EX10_3_2_Q6",
+      "description": "Exercise 10.3.2 Q6 side x",
+      "expression": "max(solve(Eq(x**2 + (x + 7)**2, 13**2), x))",
+      "expected": 5
+    },
+    {
+      "id": "EX10_3_2_Q7",
+      "description": "Exercise 10.3.2 Q7 border width x",
+      "expression": "max(solve(Eq((12 + 2*x)*(8 + 2*x), 140), x))",
+      "expected": 1
+    },
+    {
+      "id": "EX10_3_2_Q8",
+      "description": "Exercise 10.3.2 Q8 smaller number",
+      "expression": "max(solve(Eq(x**2 + (x + 2)**2, 34), x))",
+      "expected": 3
+    },
+    {
+      "id": "EX10_3_2_Q12",
+      "description": "Exercise 10.3.2 Q12 tangent parameter m",
+      "expression": "solve(Eq(4**2 - 4*1*(7 - m), 0), m)[0]",
+      "expected": 3
+    }
+  ]
+}

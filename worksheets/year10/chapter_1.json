@@ -1,0 +1,294 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Financial Mathematics, Surds, and Logarithms (10 & 10A)",
+  "worksheets": [
+    {
+      "section_id": "10_1_1",
+      "section_code": "1A",
+      "title": "Compound Interest, Depreciation, and Financial Modelling",
+      "vcaa_code": "VC2M10N01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the final amount $A = P(1 + r)^n$ and total compound interest $I = A - P$ (to the nearest cent):",
+          "parts": [
+            { "label": "a", "question": "$\\$5000$ at $10\\%$ p.a. compounded annually for $2$ years", "answer": "$A = \\$6050.00$, $I = \\$1050.00$" },
+            { "label": "b", "question": "$\\$8000$ at $5\\%$ p.a. compounded annually for $3$ years", "answer": "$A = \\$9261.00$, $I = \\$1261.00$" },
+            { "label": "c", "question": "$\\$12\\,500$ at $8\\%$ p.a. compounded annually for $2$ years", "answer": "$A = \\$14\\,580.00$, $I = \\$2080.00$" },
+            { "label": "d", "question": "$\\$20\\,000$ at $6\\%$ p.a. compounded annually for $3$ years", "answer": "$A = \\$23\\,820.32$, $I = \\$3820.32$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the period rate $r$, number of periods $n$, and final amount $A$ for each non-annual compounding loan:",
+          "parts": [
+            { "label": "a", "question": "$\\$10\\,000$ at $8\\%$ p.a. compounded half-yearly for $1$ year", "answer": "$r = 4\\%$, $n = 2$, $A = \\$10\\,816.00$" },
+            { "label": "b", "question": "$\\$16\\,000$ at $10\\%$ p.a. compounded quarterly for $6$ months", "answer": "$r = 2.5\\%$, $n = 2$, $A = \\$16\\,810.00$" },
+            { "label": "c", "question": "$\\$10\\,000$ at $12\\%$ p.a. compounded monthly for $2$ months", "answer": "$r = 1\\%$, $n = 2$, $A = \\$10\\,201.00$" },
+            { "label": "d", "question": "$\\$64\\,000$ at $10\\%$ p.a. compounded quarterly for $9$ months", "answer": "$r = 2.5\\%$, $n = 3$, $A = \\$68\\,921.00$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the reducing-balance depreciation formula $A = P(1 - r)^n$ to find the depreciated value:",
+          "parts": [
+            { "label": "a", "question": "$\\$20\\,000$ car depreciating at $10\\%$ p.a. for $2$ years", "answer": "$\\$16\\,200.00$" },
+            { "label": "b", "question": "$\\$15\\,000$ printer depreciating at $20\\%$ p.a. for $2$ years", "answer": "$\\$9600.00$" },
+            { "label": "c", "question": "$\\$8000$ laptop depreciating at $25\\%$ p.a. for $3$ years", "answer": "$\\$3375.00$" },
+            { "label": "d", "question": "$\\$50\\,000$ tractor depreciating at $15\\%$ p.a. for $2$ years", "answer": "$\\$36\\,125.00$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve for the unknown initial principal $P$ or annual rate $r$:",
+          "parts": [
+            { "label": "a", "question": "Find $P$ if $P(1.05)^2 = \\$4410$", "answer": "$P = \\$4000$" },
+            { "label": "b", "question": "Find $P$ if $P(0.90)^2 = \\$7290$", "answer": "$P = \\$9000$" },
+            { "label": "c", "question": "Find $r$ ($0 < r < 1$) if $\\$2000(1 + r)^2 = \\$2420$", "answer": "$r = 0.10$ ($10\\%$ p.a.)" },
+            { "label": "d", "question": "Find $r$ ($0 < r < 1$) if $\\$5000(1 - r)^2 = \\$3200$", "answer": "$r = 0.20$ ($20\\%$ p.a.)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Melbourne cafe invests $\\$25\\,000$ into a term deposit paying $6\\%$ p.a. compounded half-yearly for $1$ year. Find the final balance and the total interest earned.",
+          "answer": "$A = 25\\,000(1.03)^2 = \\$26\\,522.50$; $I = \\$1522.50$"
+        },
+        {
+          "number": 6,
+          "question": "A commercial delivery van in Brisbane is purchased for $\\$40\\,000$ and depreciates by $15\\%$ p.a. using the reducing-balance method. Find its book value after $2$ years and the total depreciation.",
+          "answer": "$A = 40\\,000(0.85)^2 = \\$28\\,900$; total depreciation $= \\$11\\,100$"
+        },
+        {
+          "number": 7,
+          "question": "Due to inflation averaging $4\\%$ p.a., the cost of a basket of groceries in Sydney rises according to $A = P(1.04)^n$. If the basket costs $\\$250$ today, how much will it cost in $2$ years?",
+          "answer": "$250(1.04)^2 = \\$270.40$"
+        },
+        {
+          "number": 8,
+          "question": "Lachlan compares two savings options for $\\$10\\,000$ over $2$ years: Bank A pays $8.2\\%$ p.a. simple interest, while Bank B pays $8\\%$ p.a. compounded annually. Which bank yields a higher return, and by how much?",
+          "answer": "Bank A: $\\$11\\,640$; Bank B: $\\$10\\,000(1.08)^2 = \\$11\\,664$. Bank B is higher by $\\$24.00$."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $12\\%$ p.a. compounded half-yearly ($6\\%$ per half-year) produces more interest over $1$ year than $12\\%$ p.a. compounded annually, and state the effective annual rate.",
+          "answer": "Because $(1.06)^2 = 1.1236 > 1.12$; the interest earned in the first $6$ months itself earns $6\\%$ in the second $6$ months, giving an effective annual rate of $12.36\\%$."
+        },
+        {
+          "number": 10,
+          "question": "A student rounds $(1 + 0.07/12)$ to $1.006$ before raising to the power of $60$ on a $\\$100\\,000$ loan. Explain why premature rounding of $1 + r$ causes significant error in compound interest models.",
+          "answer": "Exponential growth amplifies small base errors over many compounding periods: $0.07/12 \\approx 0.005833$, so rounding to $0.006$ inflates the monthly rate and compounds the error $60$ times."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10_1A_1a", "expression": "5000 * Rational(11, 10)**2", "expected": 6050 },
+        { "id": "Y10_1A_1b", "expression": "8000 * Rational(21, 20)**3", "expected": 9261 },
+        { "id": "Y10_1A_1c", "expression": "12500 * Rational(27, 25)**2", "expected": 14580 },
+        { "id": "Y10_1A_2a", "expression": "10000 * Rational(26, 25)**2", "expected": 10816 },
+        { "id": "Y10_1A_2b", "expression": "16000 * Rational(41, 40)**2", "expected": 16810 },
+        { "id": "Y10_1A_3c", "expression": "8000 * Rational(3, 4)**3", "expected": 3375 },
+        { "id": "Y10_1A_4a", "expression": "4410 / Rational(21, 20)**2", "expected": 4000 },
+        { "id": "Y10_1A_5", "expression": "25000 * Rational(103, 100)**2", "expected": "53045/2" },
+        { "id": "Y10_1A_6", "expression": "40000 * Rational(17, 20)**2", "expected": 28900 },
+        { "id": "Y10_1A_8", "expression": "10000 * Rational(27, 25)**2 - (10000 + 10000 * Rational(82, 1000) * 2)", "expected": 24 }
+      ]
+    },
+    {
+      "section_id": "10_1_2",
+      "section_code": "1B",
+      "title": "[10A] Operations with Surds and Rationalising the Denominator",
+      "vcaa_code": "VC2M10AN01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each surd expression by extracting perfect square factors and collecting like surds:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{75} + \\sqrt{27}$", "answer": "$8\\sqrt{3}$" },
+            { "label": "b", "question": "$\\sqrt{50} - \\sqrt{18} + \\sqrt{8}$", "answer": "$4\\sqrt{2}$" },
+            { "label": "c", "question": "$3\\sqrt{20} - 2\\sqrt{45}$", "answer": "$0$" },
+            { "label": "d", "question": "$2\\sqrt{28} + \\sqrt{63} - \\sqrt{112}$", "answer": "$3\\sqrt{7}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Expand and simplify each product involving surds:",
+          "parts": [
+            { "label": "a", "question": "$3\\sqrt{6} \\times 2\\sqrt{3}$", "answer": "$18\\sqrt{2}$" },
+            { "label": "b", "question": "$\\sqrt{5}(\\sqrt{15} - 2\\sqrt{5})$", "answer": "$5\\sqrt{3} - 10$" },
+            { "label": "c", "question": "$(3 + \\sqrt{2})(4 - \\sqrt{2})$", "answer": "$10 + \\sqrt{2}$" },
+            { "label": "d", "question": "$(2\\sqrt{3} - \\sqrt{5})^2$", "answer": "$17 - 4\\sqrt{15}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Expand each conjugate pair and rationalise each monomial denominator:",
+          "parts": [
+            { "label": "a", "question": "$(5 + \\sqrt{7})(5 - \\sqrt{7})$", "answer": "$18$" },
+            { "label": "b", "question": "$(3\\sqrt{2} - 2\\sqrt{3})(3\\sqrt{2} + 2\\sqrt{3})$", "answer": "$6$" },
+            { "label": "c", "question": "$\\dfrac{15}{\\sqrt{5}}$", "answer": "$3\\sqrt{5}$" },
+            { "label": "d", "question": "$\\dfrac{6 - \\sqrt{12}}{\\sqrt{3}}$", "answer": "$2\\sqrt{3} - 2$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Rationalise the binomial denominator and simplify completely:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{4}{3 - \\sqrt{5}}$", "answer": "$3 + \\sqrt{5}$" },
+            { "label": "b", "question": "$\\dfrac{6}{\\sqrt{7} + 2}$", "answer": "$2\\sqrt{7} - 4$" },
+            { "label": "c", "question": "$\\dfrac{\\sqrt{5} + 1}{\\sqrt{5} - 1}$", "answer": "$\\dfrac{3 + \\sqrt{5}}{2}$" },
+            { "label": "d", "question": "$\\dfrac{10}{2\\sqrt{3} - \\sqrt{2}}$", "answer": "$2\\sqrt{3} + \\sqrt{2}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular courtyard in Adelaide has length $(6 + \\sqrt{5})\\text{ m}$ and width $(6 - \\sqrt{5})\\text{ m}$. Find both its exact perimeter and its exact area.",
+          "answer": "Perimeter $= 24\\text{ m}$, Area $= 31\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "A right-angled triangle has legs of exact lengths $(\\sqrt{6} + \\sqrt{2})\\text{ cm}$ and $(\\sqrt{6} - \\sqrt{2})\\text{ cm}$. Find the exact length of the hypotenuse.",
+          "answer": "$c = \\sqrt{(8 + 4\\sqrt{3}) + (8 - 4\\sqrt{3})} = \\sqrt{16} = 4\\text{ cm}$"
+        },
+        {
+          "number": 7,
+          "question": "The area of a rectangle is $12\\text{ cm}^2$ and its length is $(\\sqrt{7} + \\sqrt{3})\\text{ cm}$. Express the exact width of the rectangle with a rational denominator.",
+          "answer": "$\\dfrac{12}{\\sqrt{7} + \\sqrt{3}} = 3(\\sqrt{7} - \\sqrt{3})\\text{ cm}$"
+        },
+        {
+          "number": 8,
+          "question": "The golden ratio is $\\phi = \\dfrac{1 + \\sqrt{5}}{2}$. Show by rationalising the denominator that $\\dfrac{1}{\\phi} = \\phi - 1$.",
+          "answer": "$\\dfrac{2}{\\sqrt{5} + 1} = \\dfrac{2(\\sqrt{5} - 1)}{4} = \\dfrac{\\sqrt{5} - 1}{2} = \\dfrac{1 + \\sqrt{5}}{2} - 1 = \\phi - 1$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why multiplying the numerator and denominator of $\\dfrac{1}{a + \\sqrt{b}}$ by the conjugate $a - \\sqrt{b}$ eliminates the surd from the denominator, whereas squaring the denominator $(a + \\sqrt{b})^2$ does not.",
+          "answer": "The difference of two squares gives $(a + \\sqrt{b})(a - \\sqrt{b}) = a^2 - b$, which is rational, whereas $(a + \\sqrt{b})^2 = a^2 + 2a\\sqrt{b} + b$ still contains the irrational term $2a\\sqrt{b}$."
+        },
+        {
+          "number": 10,
+          "question": "If $x = 3 + 2\\sqrt{2}$, find the exact value of $x + \\dfrac{1}{x}$ and explain why the result is a rational integer.",
+          "answer": "$\\dfrac{1}{3 + 2\\sqrt{2}} = 3 - 2\\sqrt{2}$ since $3^2 - (2\\sqrt{2})^2 = 9 - 8 = 1$; thus $x + \\dfrac{1}{x} = (3 + 2\\sqrt{2}) + (3 - 2\\sqrt{2}) = 6$."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10_1B_1a", "expression": "simplify(sqrt(75) + sqrt(27) - 8*sqrt(3))", "expected": 0 },
+        { "id": "Y10_1B_1b", "expression": "simplify(sqrt(50) - sqrt(18) + sqrt(8) - 4*sqrt(2))", "expected": 0 },
+        { "id": "Y10_1B_2c", "expression": "simplify((3 + sqrt(2))*(4 - sqrt(2)) - (10 + sqrt(2)))", "expected": 0 },
+        { "id": "Y10_1B_2d", "expression": "simplify((2*sqrt(3) - sqrt(5))**2 - (17 - 4*sqrt(15)))", "expected": 0 },
+        { "id": "Y10_1B_3a", "expression": "simplify((5 + sqrt(7))*(5 - sqrt(7)))", "expected": 18 },
+        { "id": "Y10_1B_4a", "expression": "simplify(4 / (3 - sqrt(5)) - (3 + sqrt(5)))", "expected": 0 },
+        { "id": "Y10_1B_4c", "expression": "simplify((sqrt(5) + 1)/(sqrt(5) - 1) - (3 + sqrt(5))/2)", "expected": 0 },
+        { "id": "Y10_1B_4d", "expression": "simplify(10 / (2*sqrt(3) - sqrt(2)) - (2*sqrt(3) + sqrt(2)))", "expected": 0 },
+        { "id": "Y10_1B_6", "expression": "simplify(sqrt((sqrt(6) + sqrt(2))**2 + (sqrt(6) - sqrt(2))**2))", "expected": 4 },
+        { "id": "Y10_1B_10", "expression": "simplify((3 + 2*sqrt(2)) + 1/(3 + 2*sqrt(2)))", "expected": 6 }
+      ]
+    },
+    {
+      "section_id": "10_1_3",
+      "section_code": "1C",
+      "title": "[10A] Fractional Indices and Logarithms",
+      "vcaa_code": "VC2M10AN02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate each expression involving fractional and negative indices without a calculator:",
+          "parts": [
+            { "label": "a", "question": "$27^{2/3}$", "answer": "$9$" },
+            { "label": "b", "question": "$16^{3/4}$", "answer": "$8$" },
+            { "label": "c", "question": "$32^{-2/5}$", "answer": "$\\dfrac{1}{4}$" },
+            { "label": "d", "question": "$\\left(\\dfrac{8}{27}\\right)^{-2/3}$", "answer": "$\\dfrac{9}{4}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each logarithm using the definition $\\log_a(y) = x \\iff a^x = y$:",
+          "parts": [
+            { "label": "a", "question": "$\\log_2(32)$", "answer": "$5$" },
+            { "label": "b", "question": "$\\log_3\\left(\\dfrac{1}{27}\\right)$", "answer": "$-3$" },
+            { "label": "c", "question": "$\\log_5(\\sqrt{5})$", "answer": "$\\dfrac{1}{2}$" },
+            { "label": "d", "question": "$\\log_{10}(0.001)$", "answer": "$-3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Simplify and evaluate each logarithmic expression using the logarithm laws:",
+          "parts": [
+            { "label": "a", "question": "$\\log_6(9) + \\log_6(4)$", "answer": "$2$" },
+            { "label": "b", "question": "$\\log_2(80) - \\log_2(5)$", "answer": "$4$" },
+            { "label": "c", "question": "$2\\log_3(6) - \\log_3(4)$", "answer": "$2$" },
+            { "label": "d", "question": "$\\dfrac{\\log_5(64)}{\\log_5(4)}$", "answer": "$3$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Solve each exponential or logarithmic equation for $x$:",
+          "parts": [
+            { "label": "a", "question": "$3^{2x - 1} = 27$", "answer": "$x = 2$" },
+            { "label": "b", "question": "$4^x = \\dfrac{1}{32}$", "answer": "$x = -\\dfrac{5}{2}$" },
+            { "label": "c", "question": "$\\log_4(x) = -\\dfrac{3}{2}$", "answer": "$x = \\dfrac{1}{8}$" },
+            { "label": "d", "question": "$\\log_2(x - 3) + \\log_2(x + 3) = 4$ ($x > 3$)", "answer": "$x = 5$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "On the Richter scale, the magnitude $M$ of an earthquake with relative wave amplitude $I$ is $M = \\log_{10}(I)$. How many times greater is the wave amplitude of a magnitude $6.0$ earthquake than a magnitude $4.0$ earthquake?",
+          "answer": "$\\dfrac{10^6}{10^4} = 10^2 = 100$ times greater"
+        },
+        {
+          "number": 6,
+          "question": "Sound loudness in decibels is given by $L = 10\\log_{10}\\left(\\dfrac{I}{I_0}\\right)$. If heavy traffic in Melbourne has intensity $I = 10^8 I_0$, calculate the loudness $L$ in decibels ($\\text{dB}$).",
+          "answer": "$L = 10\\log_{10}(10^8) = 80\\text{ dB}$"
+        },
+        {
+          "number": 7,
+          "question": "A bacterial culture in a pathology lab doubles every hour according to $N = 500 \\times 2^t$. Use logarithms or index laws to find the exact number of hours $t$ required for the population to reach $16\\,000$.",
+          "answer": "$2^t = \\dfrac{16\\,000}{500} = 32 \\implies t = \\log_2(32) = 5\\text{ hours}$"
+        },
+        {
+          "number": 8,
+          "question": "The pH of an aqueous solution is defined as $\\text{pH} = -\\log_{10}[\\text{H}^+]$. Find the pH of a solution with hydrogen ion concentration $[\\text{H}^+] = 10^{-5}\\text{ mol/L}$, and find $[\\text{H}^+]$ when $\\text{pH} = 3$.",
+          "answer": "$\\text{pH} = 5$; when $\\text{pH} = 3$, $[\\text{H}^+] = 10^{-3}\\text{ mol/L}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Using the index law $a^m \\times a^n = a^{m+n}$, let $x = a^m$ and $y = a^n$ to prove the first logarithm law $\\log_a(xy) = \\log_a(x) + \\log_a(y)$.",
+          "answer": "Since $x = a^m \\iff m = \\log_a(x)$ and $y = a^n \\iff n = \\log_a(y)$, we have $xy = a^{m+n}$, so $\\log_a(xy) = m + n = \\log_a(x) + \\log_a(y)$."
+        },
+        {
+          "number": 10,
+          "question": "Explain why $\\log_a(x)$ is undefined for $x \\le 0$ when $a > 0, a \\neq 1$, and use this domain restriction to explain why $x = -5$ must be rejected when solving $\\log_2(x - 3) + \\log_2(x + 3) = 4$.",
+          "answer": "Since $a > 0$, $a^y > 0$ for all real $y$, so no power of $a$ can equal $0$ or a negative number. Substituting $x = -5$ gives $\\log_2(-8)$ and $\\log_2(-2)$, which are undefined."
+        }
+      ],
+      "assertions": [
+        { "id": "Y10_1C_1a", "expression": "27**Rational(2, 3)", "expected": 9 },
+        { "id": "Y10_1C_1b", "expression": "16**Rational(3, 4)", "expected": 8 },
+        { "id": "Y10_1C_1c", "expression": "32**Rational(-2, 5)", "expected": "1/4" },
+        { "id": "Y10_1C_1d", "expression": "Rational(8, 27)**Rational(-2, 3)", "expected": "9/4" },
+        { "id": "Y10_1C_2a", "expression": "log(32, 2)", "expected": 5 },
+        { "id": "Y10_1C_2b", "expression": "log(Rational(1, 27), 3)", "expected": -3 },
+        { "id": "Y10_1C_3a", "expression": "simplify(log(9, 6) + log(4, 6))", "expected": 2 },
+        { "id": "Y10_1C_3b", "expression": "simplify(log(80, 2) - log(5, 2))", "expected": 4 },
+        { "id": "Y10_1C_3c", "expression": "simplify(2*log(6, 3) - log(4, 3))", "expected": 2 },
+        { "id": "Y10_1C_4d", "expression": "simplify(log(5 - 3, 2) + log(5 + 3, 2))", "expected": 4 }
+      ]
+    }
+  ]
+}

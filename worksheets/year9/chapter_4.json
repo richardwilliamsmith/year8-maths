@@ -1,0 +1,291 @@
+{
+  "chapter_number": 4,
+  "chapter_title": "Linear Equations, Inequalities, and Coordinate Geometry",
+  "worksheets": [
+    {
+      "section_id": "9_4_1",
+      "section_code": "4A",
+      "title": "Linear Equations with Fractions and Literal Equations",
+      "vcaa_code": "VC2M9A04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each linear equation involving a single algebraic fraction:",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{2x - 5}{3} = 7$", "answer": "$x = 13$" },
+            { "label": "b", "question": "$\\dfrac{3x + 4}{5} = -4$", "answer": "$x = -8$" },
+            { "label": "c", "question": "$\\dfrac{x}{4} - 3 = 6$", "answer": "$x = 36$" },
+            { "label": "d", "question": "$\\dfrac{4 - 3x}{2} = 11$", "answer": "$x = -6$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each equation by multiplying both sides by the lowest common denominator (LCD):",
+          "parts": [
+            { "label": "a", "question": "$\\dfrac{x}{3} + \\dfrac{x}{4} = 14$", "answer": "$x = 24$" },
+            { "label": "b", "question": "$\\dfrac{x + 2}{3} = \\dfrac{x - 1}{2}$", "answer": "$x = 7$" },
+            { "label": "c", "question": "$\\dfrac{x + 1}{2} + \\dfrac{x - 3}{5} = 4$", "answer": "$x = 3$" },
+            { "label": "d", "question": "$\\dfrac{2x - 1}{3} - \\dfrac{x + 2}{4} = 2$", "answer": "$x = 6$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each linear inequality (remembering to reverse the inequality sign when dividing by a negative number):",
+          "parts": [
+            { "label": "a", "question": "$4x - 7 \\le 13$", "answer": "$x \\le 5$" },
+            { "label": "b", "question": "$15 - 3x > 6$", "answer": "$x < 3$" },
+            { "label": "c", "question": "$\\dfrac{2 - x}{4} \\ge 3$", "answer": "$x \\le -10$" },
+            { "label": "d", "question": "$5x + 2 < 2x - 10$", "answer": "$x < -4$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Transpose each literal equation (formula) to make the pronumeral in brackets the subject:",
+          "parts": [
+            { "label": "a", "question": "$v = u + at \\quad [a]$", "answer": "$a = \\dfrac{v - u}{t}$" },
+            { "label": "b", "question": "$A = \\dfrac{1}{2}(a + b)h \\quad [b]$", "answer": "$b = \\dfrac{2A}{h} - a$" },
+            { "label": "c", "question": "$F = \\dfrac{9}{5}C + 32 \\quad [C]$", "answer": "$C = \\dfrac{5(F - 32)}{9}$" },
+            { "label": "d", "question": "$P = 2l + 2w \\quad [w]$", "answer": "$w = \\dfrac{P - 2l}{2}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A cyclist rides from Geelong to Torquay at $24\\text{ km/h}$ and returns along the same route at $16\\text{ km/h}$. If the total riding time for the round trip is $2.5\\text{ hours}$, solve $\\dfrac{d}{24} + \\dfrac{d}{16} = 2.5$ to find the one-way distance $d$.",
+          "answer": "$d = 24\\text{ km}$"
+        },
+        {
+          "number": 6,
+          "question": "A Melbourne plumber charges a $\\$90$ call-out fee plus $\\$75$ per hour. A homeowner has a maximum repair budget of $\\$350$. Write and solve a linear inequality to find the maximum number of whole hours the plumber can be hired.",
+          "answer": "$90 + 75h \\le 350 \\implies h \\le 3.47$; maximum $3$ whole hours"
+        },
+        {
+          "number": 7,
+          "question": "The area of a trapezium-shaped roof panel in Brisbane is $A = 42\\text{ m}^2$, its perpendicular height is $h = 6\\text{ m}$, and its top parallel side is $a = 5\\text{ m}$. Using your transposed formula from Question 4(b), find the length of the bottom parallel side $b$.",
+          "answer": "$b = 9\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "One-third of the students in a Year 9 camp group choose kayaking, two-fifths choose mountain biking, and the remaining $16$ students choose bushwalking. Solve $\\dfrac{x}{3} + \\dfrac{2x}{5} + 16 = x$ to find the total number of students $x$.",
+          "answer": "$60$ students"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When clearing fractions in $\\dfrac{3x + 1}{2} - \\dfrac{x - 4}{3} = 5$ by multiplying by $6$, a student writes $3(3x + 1) - 2x - 8 = 30$. Identify the sign error and find the correct solution for $x$.",
+          "answer": "The subtraction applies to the entire numerator $(x - 4)$, so $-2(x - 4) = -2x + 8$, not $-2x - 8$. Correct equation: $9x + 3 - 2x + 8 = 30 \\implies 7x = 19 \\implies x = \\dfrac{19}{7}$."
+        },
+        {
+          "number": 10,
+          "question": "Use the number line inequality $-2 < 5$ to explain why multiplying or dividing both sides of an inequality by a negative number (such as $-1$) requires reversing the inequality sign.",
+          "answer": "Multiplying $-2 < 5$ by $-1$ reflects both points across $0$ to $2$ and $-5$. Since $2$ lies to the right of $-5$ on the number line ($2 > -5$), the inequality direction must reverse."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_4_1_1a", "expression": "(2*13 - 5)/3", "expected": 7 },
+        { "id": "WS9_4_1_1b", "expression": "(3*(-8) + 4)/5", "expected": -4 },
+        { "id": "WS9_4_1_2a", "expression": "24/3 + 24/4", "expected": 14 },
+        { "id": "WS9_4_1_2b", "expression": "(7 + 2)/3 - (7 - 1)/2", "expected": 0 },
+        { "id": "WS9_4_1_2c", "expression": "(3 + 1)/2 + (3 - 3)/5", "expected": 4 },
+        { "id": "WS9_4_1_2d", "expression": "(2*6 - 1)/3 - (6 + 2)/4", "expected": 2 },
+        { "id": "WS9_4_1_5", "expression": "24/24 + 24/16", "expected": 2.5 },
+        { "id": "WS9_4_1_7", "expression": "2*42/6 - 5", "expected": 9 },
+        { "id": "WS9_4_1_8", "expression": "60/3 + 2*60/5 + 16", "expected": 60 }
+      ]
+    },
+    {
+      "section_id": "9_4_2",
+      "section_code": "4B",
+      "title": "Gradient, Midpoint, and Distance on the Cartesian Plane",
+      "vcaa_code": "VC2M9A03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the gradient $m = \\dfrac{y_2 - y_1}{x_2 - x_1}$ of the line segment joining each pair of points:",
+          "parts": [
+            { "label": "a", "question": "$(1, 3)$ and $(5, 11)$", "answer": "$m = 2$" },
+            { "label": "b", "question": "$(-2, 8)$ and $(4, -4)$", "answer": "$m = -2$" },
+            { "label": "c", "question": "$(-3, -2)$ and $(6, 4)$", "answer": "$m = \\dfrac{2}{3}$" },
+            { "label": "d", "question": "$(-4, 7)$ and $(5, 7)$", "answer": "$m = 0$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the coordinates of the midpoint $M = \\left(\\dfrac{x_1 + x_2}{2}, \\dfrac{y_1 + y_2}{2}\\right)$ of the segment joining:",
+          "parts": [
+            { "label": "a", "question": "$(2, 6)$ and $(8, 10)$", "answer": "$(5, 8)$" },
+            { "label": "b", "question": "$(-4, 5)$ and $(6, -3)$", "answer": "$(1, 1)$" },
+            { "label": "c", "question": "$(-3, -7)$ and $(4, 2)$", "answer": "$\\left(\\dfrac{1}{2}, -\\dfrac{5}{2}\\right)$" },
+            { "label": "d", "question": "$(0, -9)$ and $(-8, 5)$", "answer": "$(-4, -2)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the exact distance $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$ between each pair of points:",
+          "parts": [
+            { "label": "a", "question": "$(1, 2)$ and $(4, 6)$", "answer": "$5$" },
+            { "label": "b", "question": "$(-3, 5)$ and $(9, 0)$", "answer": "$13$" },
+            { "label": "c", "question": "$(2, -1)$ and $(6, 5)$", "answer": "$2\\sqrt{13}$" },
+            { "label": "d", "question": "$(-2, -3)$ and $(4, 3)$", "answer": "$6\\sqrt{2}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use the gradient or midpoint formula to find the unknown coordinate:",
+          "parts": [
+            { "label": "a", "question": "The line through $(2, 4)$ and $(5, k)$ has gradient $m = 3$. Find $k$.", "answer": "$k = 13$" },
+            { "label": "b", "question": "The line through $(-1, 6)$ and $(a, -2)$ has gradient $m = -2$. Find $a$.", "answer": "$a = 3$" },
+            { "label": "c", "question": "$M(3, 5)$ is the midpoint of $A(1, 2)$ and $B(x, y)$. Find $(x, y)$.", "answer": "$(5, 8)$" },
+            { "label": "d", "question": "$M(-2, 1)$ is the midpoint of $P(-6, 7)$ and $Q(x, y)$. Find $(x, y)$.", "answer": "$(2, -5)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "On a Cartesian map of Melbourne's Hoddle Grid (with $1\\text{ unit} = 100\\text{ m}$), two tram stops are located at $A(-2, 3)$ and $B(6, 9)$. Find (a) the exact straight-line distance between the stops in metres and (b) the coordinates of a pedestrian crossing halfway between them.",
+          "answer": "(a) $10\\text{ units} = 1000\\text{ m}$ ($1\\text{ km}$), (b) $(2, 6)$"
+        },
+        {
+          "number": 6,
+          "question": "A circle has diameter $AB$ where $A(-3, 1)$ and $B(5, 7)$ lie on the circumference. Find (a) the coordinates of the centre $C$ of the circle and (b) the exact radius $r$ of the circle.",
+          "answer": "(a) $C(1, 4)$, (b) $r = 5$"
+        },
+        {
+          "number": 7,
+          "question": "A ski run at Mount Hotham descends from station $P(100, 1820)$ to station $Q(900, 1580)$, where coordinates are given in metres. Calculate the gradient of the ski run as a simplified fraction and as a decimal.",
+          "answer": "$-\\dfrac{3}{10} = -0.3$"
+        },
+        {
+          "number": 8,
+          "question": "Triangle $PQR$ has vertices $P(0, 0)$, $Q(6, 8)$, and $R(10, 0)$. Calculate the lengths of all three sides and classify $\\triangle PQR$ as scalene, isosceles, or equilateral.",
+          "answer": "$PQ = 10,\\; PR = 10,\\; QR = 4\\sqrt{5}$; since $PQ = PR = 10$, $\\triangle PQR$ is isosceles"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why the distance formula $d = \\sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}$ gives the exact same value whether you compute $(x_2 - x_1)^2$ or $(x_1 - x_2)^2$, whereas reversing the order in the numerator of the gradient formula changes the sign of $m$.",
+          "answer": "In the distance formula, $(x_1 - x_2)^2 = (-(x_2 - x_1))^2 = (x_2 - x_1)^2$ because squaring a negative gives a positive. In the gradient formula, $y_1 - y_2 = -(y_2 - y_1)$ is not squared, so reversing only the numerator negates $m$."
+        },
+        {
+          "number": 10,
+          "question": "Points $A(-1, -2)$, $B(2, 4)$, and $C(5, 10)$ are plotted on the Cartesian plane. Use gradients to prove that $A, B,$ and $C$ are collinear (lie on the same straight line).",
+          "answer": "$m_{AB} = \\dfrac{4 - (-2)}{2 - (-1)} = \\dfrac{6}{3} = 2$ and $m_{BC} = \\dfrac{10 - 4}{5 - 2} = \\dfrac{6}{3} = 2$. Since $m_{AB} = m_{BC}$ and both segments share point $B$, $A, B, C$ are collinear."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_4_2_1a", "expression": "(11 - 3)/(5 - 1)", "expected": 2 },
+        { "id": "WS9_4_2_1b", "expression": "(-4 - 8)/(4 - (-2))", "expected": -2 },
+        { "id": "WS9_4_2_1c", "expression": "(4 - (-2))/(6 - (-3))", "expected": "2/3" },
+        { "id": "WS9_4_2_3a", "expression": "sqrt((4 - 1)**2 + (6 - 2)**2)", "expected": 5 },
+        { "id": "WS9_4_2_3b", "expression": "sqrt((9 - (-3))**2 + (0 - 5)**2)", "expected": 13 },
+        { "id": "WS9_4_2_3c", "expression": "sqrt((6 - 2)**2 + (5 - (-1))**2) - 2*sqrt(13)", "expected": 0 },
+        { "id": "WS9_4_2_5a", "expression": "sqrt((6 - (-2))**2 + (9 - 3)**2) * 100", "expected": 1000 },
+        { "id": "WS9_4_2_6b", "expression": "sqrt((5 - (-3))**2 + (7 - 1)**2) / 2", "expected": 5 },
+        { "id": "WS9_4_2_7", "expression": "(1580 - 1820)/(900 - 100)", "expected": -0.3 }
+      ]
+    },
+    {
+      "section_id": "9_4_3",
+      "section_code": "4C",
+      "title": "Equations of Straight Lines and Linear Modelling",
+      "vcaa_code": "VC2M9A04",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State the gradient $m$ and $y$-intercept $c$ of each line:",
+          "parts": [
+            { "label": "a", "question": "$y = 4x - 7$", "answer": "$m = 4,\\; c = -7$" },
+            { "label": "b", "question": "$y = 5 - \\dfrac{2}{3}x$", "answer": "$m = -\\dfrac{2}{3},\\; c = 5$" },
+            { "label": "c", "question": "$3x + y = 9$", "answer": "$m = -3,\\; c = 9$" },
+            { "label": "d", "question": "$2x - 4y = 12$", "answer": "$m = \\dfrac{1}{2},\\; c = -3$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the equation of each line in gradient-intercept form $y = mx + c$:",
+          "parts": [
+            { "label": "a", "question": "Gradient $m = 3$, passing through $(0, -5)$", "answer": "$y = 3x - 5$" },
+            { "label": "b", "question": "Gradient $m = -2$, passing through $(3, 4)$", "answer": "$y = -2x + 10$" },
+            { "label": "c", "question": "Passing through $(1, 5)$ and $(4, 11)$", "answer": "$y = 2x + 3$" },
+            { "label": "d", "question": "Passing through $(-2, 7)$ and $(4, -2)$", "answer": "$y = -\\dfrac{3}{2}x + 4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the $x$-intercept (where $y = 0$) and $y$-intercept (where $x = 0$) of each line:",
+          "parts": [
+            { "label": "a", "question": "$y = 2x - 8$", "answer": "$x\\text{-int} = 4,\\; y\\text{-int} = -8$" },
+            { "label": "b", "question": "$3x + 4y = 12$", "answer": "$x\\text{-int} = 4,\\; y\\text{-int} = 3$" },
+            { "label": "c", "question": "$5x - 2y = 20$", "answer": "$x\\text{-int} = 4,\\; y\\text{-int} = -10$" },
+            { "label": "d", "question": "$2x + 3y + 18 = 0$", "answer": "$x\\text{-int} = -9,\\; y\\text{-int} = -6$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Write the equation of each horizontal or vertical line passing through the given point:",
+          "parts": [
+            { "label": "a", "question": "Horizontal line through $(4, -3)$", "answer": "$y = -3$" },
+            { "label": "b", "question": "Vertical line through $(4, -3)$", "answer": "$x = 4$" },
+            { "label": "c", "question": "Line with gradient $0$ through $(-5, 8)$", "answer": "$y = 8$" },
+            { "label": "d", "question": "Line with undefined gradient through $(-2, 6)$", "answer": "$x = -2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rainwater tank on a farm in Gippsland holds $3600\\text{ L}$ at the start of a dry spell and loses water at a constant rate of $150\\text{ L}$ per day. Write a linear equation for the volume $V\\text{ L}$ remaining after $t$ days, and find how many days it takes for the tank to empty.",
+          "answer": "$V = 3600 - 150t$; empties after $24\\text{ days}$"
+        },
+        {
+          "number": 6,
+          "question": "A courier van in Brisbane charges a fixed booking fee plus a constant rate per kilometre. A $10\\text{ km}$ delivery costs $\\$32$ and a $25\\text{ km}$ delivery costs $\\$62$. Find the linear equation relating cost $C$ (in dollars) to distance $d$ (in km).",
+          "answer": "$C = 2d + 12$ ($\\$2/\\text{km}$ plus $\\$12$ booking fee)"
+        },
+        {
+          "number": 7,
+          "question": "A straight boundary fence on a property map passes through the $x$-intercept $(8, 0)$ and the $y$-intercept $(0, 6)$. Find the equation of the fence line and the area of the right-angled triangle it encloses with the two axes.",
+          "answer": "$y = -\\dfrac{3}{4}x + 6$; area $= 24\\text{ square units}$"
+        },
+        {
+          "number": 8,
+          "question": "An aircraft begins its descent from an altitude of $9600\\text{ m}$ and descends at a steady rate of $400\\text{ m}$ per minute. Write the equation for altitude $h\\text{ m}$ after $t$ minutes, and find its altitude after $15$ minutes.",
+          "answer": "$h = 9600 - 400t$; after $15$ minutes, $h = 3600\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Determine algebraically whether the point $(12, -19)$ lies on the line $y = -2x + 5$.",
+          "answer": "Substitute $x = 12$ into the RHS: $-2(12) + 5 = -24 + 5 = -19 = y$. Since the coordinates satisfy the equation, $(12, -19)$ lies on the line."
+        },
+        {
+          "number": 10,
+          "question": "Explain why a vertical line $x = k$ has an undefined gradient and cannot be written in gradient-intercept form $y = mx + c$.",
+          "answer": "Every point on $x = k$ has the same $x$-coordinate, so $x_2 - x_1 = 0$, making $m = \\dfrac{y_2 - y_1}{0}$ undefined (division by zero). Since $y$ does not appear in $x = k$, it cannot be written as $y = mx + c$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_4_3_1d", "expression": "(12 - 2*0)/(-4)", "expected": -3 },
+        { "id": "WS9_4_3_2b", "expression": "-2*3 + 10", "expected": 4 },
+        { "id": "WS9_4_3_2c", "expression": "(11 - 5)/(4 - 1)", "expected": 2 },
+        { "id": "WS9_4_3_2d", "expression": "(-2 - 7)/(4 - (-2))", "expected": "-3/2" },
+        { "id": "WS9_4_3_3c", "expression": "20 / (-2)", "expected": -10 },
+        { "id": "WS9_4_3_5", "expression": "3600 / 150", "expected": 24 },
+        { "id": "WS9_4_3_6", "expression": "(62 - 32)/(25 - 10)", "expected": 2 },
+        { "id": "WS9_4_3_7", "expression": "8 * 6 / 2", "expected": 24 },
+        { "id": "WS9_4_3_8", "expression": "9600 - 400*15", "expected": 3600 }
+      ]
+    }
+  ]
+}

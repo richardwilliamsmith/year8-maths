@@ -1,0 +1,404 @@
+{
+  "metadata": {
+    "section_id": "10_3_1",
+    "section_code": "3A",
+    "chapter_number": 3,
+    "chapter_title": "Quadratic Algebra and Equations (10 & 10A)",
+    "title": "Factorising Quadratics and Completing the Square",
+    "vcaa_code": "VC2M10A01",
+    "vcaa_description": "Expand, factorise and simplify expressions and solve equations algebraically, applying exponent laws and algebraic fractions.",
+    "strand": "Algebra",
+    "target_mastery": "Factorise monic and non-monic quadratic trinomials (grouping method) and complete the square to factorise over the real numbers.",
+    "prerequisites": [
+      "Monic quadratic factorisation (Year 9 VC2M9A02)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Monic vs non-monic quadratic",
+        "definition": "A quadratic trinomial $ax^2 + bx + c$ is monic when its leading coefficient is $a = 1$, and non-monic when $a \\neq 1$ ($a \\neq 0$)."
+      },
+      {
+        "term": "Grouping (splitting the middle term)",
+        "definition": "A method for factorising a non-monic quadratic $ax^2 + bx + c$ by finding two numbers $p, q$ with $pq = ac$ and $p + q = b$, rewriting $bx = px + qx$, and factorising in pairs."
+      },
+      {
+        "term": "Completing the square",
+        "definition": "Rewriting $x^2 + bx + c$ by adding and subtracting $\\left(\\frac{b}{2}\\right)^2$ so that the first three terms form a perfect square trinomial $\\left(x + \\frac{b}{2}\\right)^2 - \\left(\\frac{b}{2}\\right)^2 + c$."
+      },
+      {
+        "term": "Algebraic fraction",
+        "definition": "A fraction whose numerator and/or denominator are polynomial expressions, simplified by factorising numerator and denominator completely and cancelling common factors."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_3_1_1",
+      "title": "Factorising Non-Monic Quadratics by Grouping",
+      "explanation": "Before applying any trinomial technique, always check whether the three terms of $ax^2 + bx + c$ share a numerical Highest Common Factor (HCF) that can be factored out first. For a non-monic quadratic $ax^2 + bx + c$ ($a \\neq 1$), look for two integers $p$ and $q$ whose product is $p \\times q = a \\times c$ and whose sum is $p + q = b$. Rewrite the middle term $bx$ as $px + qx$, creating a four-term expression that factorises cleanly by grouping in pairs.",
+      "formula_latex": "ax^2 + bx + c = ax^2 + px + qx + c \\quad (\\text{where } pq = ac \\text{ and } p + q = b)",
+      "callout_title": "Multiply $a \\times c$ First for Non-Monic Trinomials",
+      "callout_rule": "In $6x^2 + 11x + 3$, do NOT look for factors of $3$; look for factors of $ac = 6 \\times 3 = 18$ that add to $11$ (namely $9$ and $2$), then split $11x = 9x + 2x$."
+    },
+    {
+      "id": "theory_10_3_1_2",
+      "title": "Completing the Square and Factorising Over the Reals",
+      "explanation": "Many quadratics, such as $x^2 + 6x + 2$, cannot be factorised using rational numbers. By adding and immediately subtracting the square of half the coefficient of $x$, $\\left(\\frac{b}{2}\\right)^2$, we turn the first three terms into a perfect square $\\left(x + \\frac{b}{2}\\right)^2$. If the remaining constant term is negative ($-k^2$), we can then apply the Difference of Two Squares (DOTS) identity $A^2 - B^2 = (A - B)(A + B)$ using surds to factorise over the real numbers.",
+      "formula_latex": "x^2 + bx + c = \\left(x + \\frac{b}{2}\\right)^2 - \\left(\\frac{b}{2}\\right)^2 + c",
+      "callout_title": "Halve the Coefficient of $x$, Square It, Add and Subtract",
+      "callout_rule": "For $x^2 - 8x + 5$, half of $-8$ is $-4$, and $(-4)^2 = 16$: write $(x^2 - 8x + 16) - 16 + 5 = (x - 4)^2 - 11 = (x - 4 - \\sqrt{11})(x - 4 + \\sqrt{11})$."
+    },
+    {
+      "id": "theory_10_3_1_3",
+      "title": "Simplifying Algebraic Fractions",
+      "explanation": "To simplify, multiply, or divide algebraic fractions involving quadratics, first factorise every numerator and denominator completely (using HCF, DOTS, or trinomial factorisation). Then cancel any identical bracketed factors that appear in both numerator and denominator.",
+      "formula_latex": "\\frac{x^2 - 9}{x^2 + 5x + 6} = \\frac{(x - 3)(x + 3)}{(x + 2)(x + 3)} = \\frac{x - 3}{x + 2} \\quad (x \\neq -3, -2)",
+      "callout_title": "Factorise First—Never Cancel Terms Across a $+$ or $-$ Sign",
+      "callout_rule": "You can only cancel FACTORS of the entire numerator and denominator, never individual terms that are added or subtracted."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_3_1_1",
+      "title": "Factorising a Non-Monic Quadratic by Grouping",
+      "difficulty": "Fluency",
+      "problem": "Factorise $6x^2 + 13x - 5$ completely.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Find two numbers that multiply to $ac = 6 \\times (-5) = -30$ and add to $b = 13$. Those numbers are $+15$ and $-2$.",
+          "working": "$$15 \\times (-2) = -30, \\quad 15 + (-2) = 13$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Split the middle term $+13x$ into $+15x - 2x$ and factorise by grouping in pairs.",
+          "working": "$$6x^2 + 15x - 2x - 5 = 3x(2x + 5) - 1(2x + 5)$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Factor out the common binomial factor $(2x + 5)$.",
+          "working": "$$= (2x + 5)(3x - 1)$$"
+        }
+      ],
+      "final_answer": "$(2x + 5)(3x - 1)$",
+      "now_you_try": {
+        "problem": "Factorise $4x^2 + 8x - 5$ completely.",
+        "hint": "Find two numbers that multiply to $4 \\times (-5) = -20$ and add to $+8$ (namely $+10$ and $-2$).",
+        "working_summary": "$4x^2 + 10x - 2x - 5 = 2x(2x + 5) - 1(2x + 5) = (2x + 5)(2x - 1)$.",
+        "answer": "$(2x + 5)(2x - 1)$"
+      }
+    },
+    {
+      "id": "WE10_3_1_2",
+      "title": "Completing the Square to Factorise Over the Reals",
+      "difficulty": "Understanding",
+      "problem": "Factorise $x^2 + 6x + 4$ over the real numbers by completing the square.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Halve the coefficient of $x$ ($\\frac{6}{2} = 3$), square it ($3^2 = 9$), and add and subtract $9$.",
+          "working": "$$x^2 + 6x + 4 = (x^2 + 6x + 9) - 9 + 4 = (x + 3)^2 - 5$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Write $5 = (\\sqrt{5})^2$ and apply the Difference of Two Squares identity $A^2 - B^2 = (A - B)(A + B)$.",
+          "working": "$$= (x + 3)^2 - (\\sqrt{5})^2 = (x + 3 - \\sqrt{5})(x + 3 + \\sqrt{5})$$"
+        }
+      ],
+      "final_answer": "$(x + 3 - \\sqrt{5})(x + 3 + \\sqrt{5})$",
+      "now_you_try": {
+        "problem": "Factorise $x^2 - 4x - 3$ over the real numbers by completing the square.",
+        "hint": "Half of $-4$ is $-2$, and $(-2)^2 = 4$, so add and subtract $4$.",
+        "working_summary": "$(x^2 - 4x + 4) - 4 - 3 = (x - 2)^2 - 7 = (x - 2 - \\sqrt{7})(x - 2 + \\sqrt{7})$.",
+        "answer": "$(x - 2 - \\sqrt{7})(x - 2 + \\sqrt{7})$"
+      }
+    },
+    {
+      "id": "WE10_3_1_3",
+      "title": "Simplifying Algebraic Fractions by Factorising",
+      "difficulty": "Problem-Solving",
+      "problem": "Simplify the algebraic fraction $\\frac{x^2 - 16}{x^2 - 2x - 8}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Factorise the numerator using the Difference of Two Squares ($x^2 - 4^2$) and the denominator as a monic trinomial (factors of $-8$ that add to $-2$ are $-4$ and $+2$).",
+          "working": "$$\\frac{x^2 - 16}{x^2 - 2x - 8} = \\frac{(x - 4)(x + 4)}{(x - 4)(x + 2)}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Cancel the common binomial factor $(x - 4)$ (for $x \\neq 4$).",
+          "working": "$$= \\frac{x + 4}{x + 2} \\quad (x \\neq 4, -2)$$"
+        }
+      ],
+      "final_answer": "$\\frac{x + 4}{x + 2}$",
+      "now_you_try": {
+        "problem": "Simplify the algebraic fraction $\\frac{x^2 - 9}{x^2 + 6x + 9}$.",
+        "hint": "Factorise the numerator as $(x - 3)(x + 3)$ and the denominator as $(x + 3)^2$.",
+        "working_summary": "$\\frac{(x - 3)(x + 3)}{(x + 3)^2} = \\frac{x - 3}{x + 3}$.",
+        "answer": "$\\frac{x - 3}{x + 3}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_3_1_1",
+      "title": "Adding $\\left(\\frac{b}{2}\\right)^2$ Without Subtracting It When Completing the Square on an Expression",
+      "misconception": "Writing $x^2 + 8x + 3 = (x + 4)^2 + 3$, forgetting to subtract $4^2 = 16$ to keep the expression equivalent.",
+      "correct_concept": "Unlike an equation where you can add $16$ to both sides, an algebraic expression has only one side. If you add $16$ to complete the square, you must immediately subtract $16$ so the net change is zero: $x^2 + 8x + 3 = (x + 4)^2 - 16 + 3 = (x + 4)^2 - 13$.",
+      "incorrect_working": "$$x^2 + 8x + 3 = (x + 4)^2 + 3 \\quad (\\text{Incorrect: expands to } x^2 + 8x + 19)$$",
+      "correct_working": "$$x^2 + 8x + 3 = (x^2 + 8x + 16) - 16 + 3 = (x + 4)^2 - 13 \\quad (\\text{Correct})$$",
+      "counter_example": "At $x = 0$, $x^2 + 8x + 3 = 3$ and $(0 + 4)^2 - 13 = 3$, whereas $(0 + 4)^2 + 3 = 19 \\neq 3$."
+    },
+    {
+      "id": "MISC_10_3_1_2",
+      "title": "Cancelling Individual Terms Instead of Common Factors in Algebraic Fractions",
+      "misconception": "Cancelling $x^2$ in $\\frac{x^2 - 4}{x^2 + 2x}$ to write $\\frac{-4}{2x}$.",
+      "correct_concept": "Division does not cancel across addition or subtraction. You must factorise first: $\\frac{x^2 - 4}{x^2 + 2x} = \\frac{(x - 2)(x + 2)}{x(x + 2)} = \\frac{x - 2}{x}$.",
+      "incorrect_working": "$$\\frac{x^2 - 4}{x^2 + 2x} = \\frac{-4}{2x} = -\\frac{2}{x} \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\frac{x^2 - 4}{x^2 + 2x} = \\frac{(x - 2)(x + 2)}{x(x + 2)} = \\frac{x - 2}{x} \\quad (\\text{Correct})$$",
+      "counter_example": "At $x = 4$, $\\frac{4^2 - 4}{4^2 + 8} = \\frac{12}{24} = \\frac{1}{2}$ and $\\frac{4 - 2}{4} = \\frac{1}{2}$, whereas $-\\frac{2}{4} = -\\frac{1}{2}$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_3_1_Q1",
+        "question": "Factorise the monic quadratic $x^2 - 11x + 28$.",
+        "difficulty": "Easy",
+        "context": "Monic Quadratic Factorisation",
+        "final_answer": "$(x - 4)(x - 7)$",
+        "step_by_step_solution": [
+          "Find two numbers that multiply to $+28$ and add to $-11$: they are $-4$ and $-7$.",
+          "Write the factorised form: $(x - 4)(x - 7)$."
+        ]
+      },
+      {
+        "id": "10_3_1_Q2",
+        "question": "Factorise the non-monic quadratic $3x^2 + 10x + 8$.",
+        "difficulty": "Medium",
+        "context": "Non-Monic Grouping Method",
+        "final_answer": "$(3x + 4)(x + 2)$",
+        "step_by_step_solution": [
+          "Find two numbers that multiply to $3 \\times 8 = 24$ and add to $10$: they are $6$ and $4$.",
+          "Split the middle term: $3x^2 + 6x + 4x + 8 = 3x(x + 2) + 4(x + 2) = (3x + 4)(x + 2)$."
+        ]
+      },
+      {
+        "id": "10_3_1_Q3",
+        "question": "Express $x^2 - 10x + 18$ in the completed-square form $(x - h)^2 + k$, and hence factorise it over the real numbers.",
+        "difficulty": "Medium",
+        "context": "Completing the Square",
+        "final_answer": "$(x - 5)^2 - 7 = (x - 5 - \\sqrt{7})(x - 5 + \\sqrt{7})$",
+        "step_by_step_solution": [
+          "Add and subtract $(-5)^2 = 25$: $(x^2 - 10x + 25) - 25 + 18 = (x - 5)^2 - 7$.",
+          "Apply DOTS: $(x - 5 - \\sqrt{7})(x - 5 + \\sqrt{7})$."
+        ]
+      },
+      {
+        "id": "10_3_1_Q4",
+        "question": "Simplify the product of algebraic fractions $\\frac{x^2 - 25}{x^2 + 3x} \\times \\frac{x^2 - 9}{x - 5}$.",
+        "difficulty": "Medium",
+        "context": "Multiplying Algebraic Fractions",
+        "final_answer": "$\\frac{(x + 5)(x - 3)}{x}$",
+        "step_by_step_solution": [
+          "Factorise every numerator and denominator: $\\frac{(x - 5)(x + 5)}{x(x + 3)} \\times \\frac{(x - 3)(x + 3)}{x - 5}$.",
+          "Cancel the common factors $(x - 5)$ and $(x + 3)$ to obtain $\\frac{(x + 5)(x - 3)}{x}$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_3_1_Q5",
+        "question": "A rectangular community garden in Shepparton has area $(6x^2 + 17x + 12)\\text{ m}^2$ and width $(2x + 3)\\text{ m}$. Find an expression for its length, and find the perimeter of the garden when $x = 4\\text{ m}$.",
+        "difficulty": "Medium",
+        "context": "Rectangular Area Factorisation",
+        "final_answer": "Length $(3x + 4)\\text{ m}$; perimeter $54\\text{ m}$ when $x = 4$",
+        "step_by_step_solution": [
+          "Factorise $6x^2 + 17x + 12$: numbers multiplying to $72$ and adding to $17$ are $9$ and $8$, giving $6x^2 + 9x + 8x + 12 = (2x + 3)(3x + 4)$, so the length is $(3x + 4)\\text{ m}$.",
+          "Perimeter $P = 2[(2x + 3) + (3x + 4)] = 2(5x + 7) = 10x + 14$.",
+          "When $x = 4$, $P = 10(4) + 14 = 54\\text{ m}$."
+        ]
+      },
+      {
+        "id": "10_3_1_Q6",
+        "question": "Factorise $2x^2 - 12x + 10$ completely by first extracting a common numerical factor, and state the $x$-values for which the expression equals $0$.",
+        "difficulty": "Medium",
+        "context": "Extracting HCF Before Factorising",
+        "final_answer": "$2(x - 1)(x - 5)$; zeros at $x = 1$ and $x = 5$",
+        "step_by_step_solution": [
+          "Extract the common factor $2$: $2(x^2 - 6x + 5)$.",
+          "Factorise the monic trinomial: $2(x - 1)(x - 5)$.",
+          "By the Null Factor Law, $2(x - 1)(x - 5) = 0 \\implies x = 1$ or $x = 5$."
+        ]
+      },
+      {
+        "id": "10_3_1_Q7",
+        "question": "Express $2x^2 + 8x + 3$ in the form $a(x + h)^2 + k$ by first factoring $2$ out of the first two terms.",
+        "difficulty": "Challenging",
+        "context": "Completing the Square on a Non-Monic Quadratic",
+        "final_answer": "$2(x + 2)^2 - 5$",
+        "step_by_step_solution": [
+          "Factor $2$ from the $x^2$ and $x$ terms: $2(x^2 + 4x) + 3$.",
+          "Complete the square inside the brackets by adding and subtracting $2^2 = 4$: $2[(x + 2)^2 - 4] + 3$.",
+          "Expand the outer $2$: $2(x + 2)^2 - 8 + 3 = 2(x + 2)^2 - 5$."
+        ]
+      },
+      {
+        "id": "10_3_1_Q8",
+        "question": "Combine into a single simplified fraction: $\\frac{3}{x - 2} + \\frac{2}{x + 3}$.",
+        "difficulty": "Medium",
+        "context": "Adding Algebraic Fractions",
+        "final_answer": "$\\frac{5x + 5}{(x - 2)(x + 3)}$ or $\\frac{5(x + 1)}{(x - 2)(x + 3)}$",
+        "step_by_step_solution": [
+          "Use the common denominator $(x - 2)(x + 3)$: $\\frac{3(x + 3) + 2(x - 2)}{(x - 2)(x + 3)}$.",
+          "Expand and simplify the numerator: $\\frac{3x + 9 + 2x - 4}{(x - 2)(x + 3)} = \\frac{5x + 5}{(x - 2)(x + 3)} = \\frac{5(x + 1)}{(x - 2)(x + 3)}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_3_1_Q9",
+        "question": "Use completing the square to explain why the quadratic $x^2 + 4x + 9$ cannot be factorised over the real numbers $\\mathbb{R}$, and state its minimum value.",
+        "difficulty": "Challenging",
+        "context": "Irreducible Quadratics Over the Reals",
+        "final_answer": "$x^2 + 4x + 9 = (x + 2)^2 + 5 \\ge 5 > 0$ for all real $x$ (minimum value is $5$ at $x = -2$), which is a sum of two squares rather than a difference of two squares",
+        "step_by_step_solution": [
+          "Complete the square: $x^2 + 4x + 9 = (x^2 + 4x + 4) - 4 + 9 = (x + 2)^2 + 5$.",
+          "Since $(x + 2)^2 \\ge 0$ for every real number $x$, we have $(x + 2)^2 + 5 \\ge 5 > 0$. Because it is a sum of squares rather than a difference of squares, it has no real roots and no real linear factors."
+        ]
+      },
+      {
+        "id": "10_3_1_Q10",
+        "question": "Prove algebraically that if $x^2 + bx + c = (x + p)(x + q)$, then $p + q = b$ and $pq = c$.",
+        "difficulty": "Easy",
+        "context": "Sum and Product of Binomial Constants",
+        "final_answer": "Expanding $(x + p)(x + q)$ gives $x^2 + (p + q)x + pq$, so matching coefficients of $x$ and the constant term gives $b = p + q$ and $c = pq$",
+        "step_by_step_solution": [
+          "Expand the right-hand side using the distributive law: $(x + p)(x + q) = x^2 + qx + px + pq = x^2 + (p + q)x + pq$.",
+          "Equating coefficients with $x^2 + bx + c$ gives $b = p + q$ and $c = pq$."
+        ]
+      },
+      {
+        "id": "10_3_1_Q11",
+        "question": "Show how completing the square on $x^2 + 5x + 6$ (where $b = 5$ is odd) produces the exact same factorisation as the sum-and-product trinomial method.",
+        "difficulty": "Challenging",
+        "context": "Completing the Square with Fractions",
+        "final_answer": "$\\left(x + \\frac{5}{2}\\right)^2 - \\frac{25}{4} + 6 = \\left(x + \\frac{5}{2}\\right)^2 - \\left(\\frac{1}{2}\\right)^2 = (x + 2)(x + 3)$",
+        "step_by_step_solution": [
+          "Halve $5$ to get $\\frac{5}{2}$, and square it to get $\\frac{25}{4}$: $x^2 + 5x + 6 = \\left(x + \\frac{5}{2}\\right)^2 - \\frac{25}{4} + \\frac{24}{4} = \\left(x + \\frac{5}{2}\\right)^2 - \\frac{1}{4}$.",
+          "Apply DOTS with $\\frac{1}{4} = \\left(\\frac{1}{2}\\right)^2$: $\\left(x + \\frac{5}{2} - \\frac{1}{2}\\right)\\left(x + \\frac{5}{2} + \\frac{1}{2}\\right) = (x + 2)(x + 3)$."
+        ]
+      },
+      {
+        "id": "10_3_1_Q12",
+        "question": "Factorise the quartic expression $x^4 - 13x^2 + 36$ completely into four linear factors by treating it as a quadratic in $u = x^2$.",
+        "difficulty": "Extension",
+        "context": "Disguised Quadratic Factorisation",
+        "final_answer": "$(x - 2)(x + 2)(x - 3)(x + 3)$",
+        "step_by_step_solution": [
+          "Let $u = x^2$, so the expression becomes $u^2 - 13u + 36 = (u - 4)(u - 9)$.",
+          "Substitute $u = x^2$ back: $(x^2 - 4)(x^2 - 9)$.",
+          "Factorise each Difference of Two Squares: $(x - 2)(x + 2)(x - 3)(x + 3)$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_3_1_1",
+      "description": "Worked Example 10.3.1.1",
+      "expression": "simplify(expand((2*x + 5)*(3*x - 1)) - (6*x**2 + 13*x - 5))",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_3_1_1",
+      "description": "Now You Try 10.3.1.1",
+      "expression": "simplify(expand((2*x + 5)*(2*x - 1)) - (4*x**2 + 8*x - 5))",
+      "expected": 0
+    },
+    {
+      "id": "WE10_3_1_2",
+      "description": "Worked Example 10.3.1.2",
+      "expression": "simplify(expand((x + 3 - sqrt(5))*(x + 3 + sqrt(5))) - (x**2 + 6*x + 4))",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_3_1_2",
+      "description": "Now You Try 10.3.1.2",
+      "expression": "simplify(expand((x - 2 - sqrt(7))*(x - 2 + sqrt(7))) - (x**2 - 4*x - 3))",
+      "expected": 0
+    },
+    {
+      "id": "WE10_3_1_3",
+      "description": "Worked Example 10.3.1.3",
+      "expression": "simplify((x**2 - 16)/(x**2 - 2*x - 8) - (x + 4)/(x + 2))",
+      "expected": 0
+    },
+    {
+      "id": "NYT10_3_1_3",
+      "description": "Now You Try 10.3.1.3",
+      "expression": "simplify((x**2 - 9)/(x**2 + 6*x + 9) - (x - 3)/(x + 3))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q1",
+      "description": "Exercise 10.3.1 Q1",
+      "expression": "simplify(expand((x - 4)*(x - 7)) - (x**2 - 11*x + 28))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q2",
+      "description": "Exercise 10.3.1 Q2",
+      "expression": "simplify(expand((3*x + 4)*(x + 2)) - (3*x**2 + 10*x + 8))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q3",
+      "description": "Exercise 10.3.1 Q3",
+      "expression": "simplify(expand((x - 5)**2 - 7) - (x**2 - 10*x + 18))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q4",
+      "description": "Exercise 10.3.1 Q4",
+      "expression": "simplify(((x**2 - 25)/(x**2 + 3*x)) * ((x**2 - 9)/(x - 5)) - (x + 5)*(x - 3)/x)",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q5a",
+      "description": "Exercise 10.3.1 Q5 factorisation",
+      "expression": "simplify(expand((2*x + 3)*(3*x + 4)) - (6*x**2 + 17*x + 12))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q5b",
+      "description": "Exercise 10.3.1 Q5 perimeter at x=4",
+      "expression": "10*4 + 14",
+      "expected": 54
+    },
+    {
+      "id": "EX10_3_1_Q6",
+      "description": "Exercise 10.3.1 Q6",
+      "expression": "simplify(expand(2*(x - 1)*(x - 5)) - (2*x**2 - 12*x + 10))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q7",
+      "description": "Exercise 10.3.1 Q7",
+      "expression": "simplify(expand(2*(x + 2)**2 - 5) - (2*x**2 + 8*x + 3))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q8",
+      "description": "Exercise 10.3.1 Q8",
+      "expression": "simplify(3/(x - 2) + 2/(x + 3) - (5*x + 5)/((x - 2)*(x + 3)))",
+      "expected": 0
+    },
+    {
+      "id": "EX10_3_1_Q12",
+      "description": "Exercise 10.3.1 Q12 quartic factorisation",
+      "expression": "simplify(expand((x - 2)*(x + 2)*(x - 3)*(x + 3)) - (x**4 - 13*x**2 + 36))",
+      "expected": 0
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "metadata": {
+    "section_id": "9_4_3",
+    "section_code": "4C",
+    "chapter_number": 4,
+    "chapter_title": "Linear Equations, Inequalities, and Coordinate Geometry",
+    "title": "Equations of Straight Lines and Linear Modelling",
+    "vcaa_code": "VC2M9A04",
+    "vcaa_description": "Use mathematical modelling to solve applied problems involving change, including linear relations.",
+    "strand": "Algebra",
+    "target_mastery": "Determine the equation of a straight line from two points or a point and gradient, sketch lines using dual intercepts, identify parallel and perpendicular gradients, and model linear change.",
+    "prerequisites": [
+      "Gradient formula $m = \\frac{y_2 - y_1}{x_2 - x_1}$ (Section 4B)",
+      "Gradient-intercept form $y = mx + c$ (Year 8 VC2M8A03)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Gradient-intercept form",
+        "definition": "The equation of a non-vertical line expressed as $y = mx + c$, where $m$ is the gradient and $c$ is the $y$-intercept."
+      },
+      {
+        "term": "Point-gradient form",
+        "definition": "The equation of a line with gradient $m$ passing through a known point $(x_1, y_1)$, written as $y - y_1 = m(x - x_1)$."
+      },
+      {
+        "term": "Parallel lines",
+        "definition": "Lines in the same plane that never intersect; non-vertical parallel lines have identical gradients ($m_1 = m_2$)."
+      },
+      {
+        "term": "Perpendicular lines",
+        "definition": "Lines that intersect at a right angle ($90^\\circ$); two oblique lines are perpendicular if and only if $m_1 m_2 = -1$."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_4_3_1",
+      "title": "Point-Gradient Form and Finding the Equation of a Line",
+      "explanation": "When the gradient $m$ and any point $(x_1, y_1)$ on a line are known, the equation of the line can be found immediately using the point-gradient formula $y - y_1 = m(x - x_1)$. If two points are given, first calculate $m = \\frac{y_2 - y_1}{x_2 - x_1}$ and then substitute either point.",
+      "formula_latex": "y - y_1 = m(x - x_1) \\iff y = mx + (y_1 - mx_1)",
+      "callout_title": "Watch Signs When $(x_1, y_1)$ Has Negative Coordinates",
+      "callout_rule": "Substituting $(-2, -5)$ into $y - y_1 = m(x - x_1)$ gives $y - (-5) = m(x - (-2))$, which simplifies to $y + 5 = m(x + 2)$."
+    },
+    {
+      "id": "theory_9_4_3_2",
+      "title": "Horizontal, Vertical, Parallel, and Perpendicular Lines",
+      "explanation": "A horizontal line passing through $(a, k)$ has equation $y = k$ ($m = 0$), and a vertical line passing through $(h, b)$ has equation $x = h$ (undefined gradient). Two non-vertical lines with gradients $m_1$ and $m_2$ are parallel if $m_1 = m_2$, and perpendicular if $m_2 = -\\frac{1}{m_1}$ (the negative reciprocal).",
+      "formula_latex": "\\text{Parallel: } m_1 = m_2 \\qquad \\text{Perpendicular: } m_1 m_2 = -1 \\implies m_2 = -\\frac{1}{m_1}",
+      "callout_title": "Negative Reciprocal for Perpendicular Gradients",
+      "callout_rule": "To find a perpendicular gradient, flip the fraction and reverse the sign: if $m_1 = \\frac{3}{4}$, then $m_2 = -\\frac{4}{3}$."
+    },
+    {
+      "id": "theory_9_4_3_3",
+      "title": "General Form $Ax + By = C$ and Dual-Intercept Sketching",
+      "explanation": "When a linear relation is given in general (or intercept) form $Ax + By = C$, the fastest way to sketch its graph is the dual-intercept method: set $x = 0$ to find the $y$-intercept, set $y = 0$ to find the $x$-intercept, plot both points, and draw the straight line through them.",
+      "formula_latex": "Ax + By = C \\implies y\\text{-intercept } \\left(0, \\frac{C}{B}\\right),\\quad x\\text{-intercept } \\left(\\frac{C}{A}, 0\\right)",
+      "callout_title": "Two Points Uniquely Determine a Line",
+      "callout_rule": "Only lines that pass through the origin $(0, 0)$ have a single intercept point; for those, substitute a second value such as $x = 1$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_4_3_1",
+      "title": "Finding the Equation of a Line Passing Through Two Points",
+      "difficulty": "Fluency",
+      "problem": "Find the equation of the straight line passing through the points $A(-2, 7)$ and $B(4, -5)$ in the form $y = mx + c$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the gradient $m$ using $m = \\frac{y_2 - y_1}{x_2 - x_1}$.",
+          "working": "$$m = \\frac{-5 - 7}{4 - (-2)} = \\frac{-12}{6} = -2$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $m = -2$ and $(x_1, y_1) = (4, -5)$ into $y - y_1 = m(x - x_1)$ and rearrange to $y = mx + c$.",
+          "working": "$$y - (-5) = -2(x - 4) \\implies y + 5 = -2x + 8 \\implies y = -2x + 3$$"
+        }
+      ],
+      "final_answer": "$y = -2x + 3$",
+      "now_you_try": {
+        "problem": "Find the equation of the line passing through $(-3, -4)$ and $(3, 14)$ in gradient-intercept form.",
+        "hint": "Find $m = \\frac{14 - (-4)}{3 - (-3)}$, then use $y - 14 = m(x - 3)$.",
+        "working_summary": "$m = \\frac{18}{6} = 3$; $y - 14 = 3(x - 3) \\implies y = 3x + 5$.",
+        "answer": "$y = 3x + 5$"
+      }
+    },
+    {
+      "id": "WE9_4_3_2",
+      "title": "Equations of Parallel and Perpendicular Lines",
+      "difficulty": "Understanding",
+      "problem": "Consider the line $L_1$ with equation $y = \\frac{2}{3}x - 4$. Find the equation in gradient-intercept form of (a) the line parallel to $L_1$ passing through $(6, 1)$ and (b) the line perpendicular to $L_1$ passing through $(4, -3)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "A line parallel to $L_1$ has the same gradient $m = \\frac{2}{3}$. Substitute $m = \\frac{2}{3}$ and $(6, 1)$ into $y - y_1 = m(x - x_1)$.",
+          "working": "$$y - 1 = \\frac{2}{3}(x - 6) \\implies y - 1 = \\frac{2}{3}x - 4 \\implies y = \\frac{2}{3}x - 3$$"
+        },
+        {
+          "step": 2,
+          "thinking": "A line perpendicular to $L_1$ has gradient $m_{\\perp} = -\\frac{3}{2}$. Substitute $m_{\\perp} = -\\frac{3}{2}$ and $(4, -3)$ into $y - y_1 = m(x - x_1)$.",
+          "working": "$$y - (-3) = -\\frac{3}{2}(x - 4) \\implies y + 3 = -\\frac{3}{2}x + 6 \\implies y = -\\frac{3}{2}x + 3$$"
+        }
+      ],
+      "final_answer": "(a) $y = \\frac{2}{3}x - 3$, (b) $y = -\\frac{3}{2}x + 3$",
+      "now_you_try": {
+        "problem": "Find the equation of the line perpendicular to $y = -4x + 9$ that passes through $(8, 5)$.",
+        "hint": "The negative reciprocal of $-4$ is $m_{\\perp} = \\frac{1}{4}$.",
+        "working_summary": "$y - 5 = \\frac{1}{4}(x - 8) \\implies y - 5 = \\frac{1}{4}x - 2 \\implies y = \\frac{1}{4}x + 3$.",
+        "answer": "$y = \\frac{1}{4}x + 3$"
+      }
+    },
+    {
+      "id": "WE9_4_3_3",
+      "title": "Linear Modelling from Two Data Points",
+      "difficulty": "Problem-Solving",
+      "problem": "A solar battery in Mildura charges at a constant linear rate during the morning. At $t = 2\\text{ hours}$ after sunrise, the stored energy is $E = 4.6\\text{ kWh}$. At $t = 5\\text{ hours}$ after sunrise, the stored energy is $E = 10.0\\text{ kWh}$. (a) Find the linear rule for $E$ in terms of $t$. (b) State the initial energy at sunrise ($t = 0$) and the charging rate in $\\text{kW}$. (c) Find when the battery reaches its $13.6\\text{ kWh}$ capacity.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Treat the data as two points $(2, 4.6)$ and $(5, 10.0)$. Find the gradient $m$ and substitute into $E - E_1 = m(t - t_1)$.",
+          "working": "$$m = \\frac{10.0 - 4.6}{5 - 2} = \\frac{5.4}{3} = 1.8\\text{ kW}$$\n$$E - 10.0 = 1.8(t - 5) \\implies E = 1.8t + 1.0$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Read off the initial energy $c = 1.0\\text{ kWh}$ at $t = 0$, and solve $1.8t + 1.0 = 13.6$ for part (c).",
+          "working": "$$1.8t + 1.0 = 13.6 \\implies 1.8t = 12.6 \\implies t = \\frac{12.6}{1.8} = 7\\text{ hours}$$"
+        }
+      ],
+      "final_answer": "(a) $E = 1.8t + 1.0$, (b) Initial energy $1.0\\text{ kWh}$, charging rate $1.8\\text{ kW}$, (c) $t = 7\\text{ hours}$",
+      "now_you_try": {
+        "problem": "A commercial oven heats linearly. After $3\\text{ minutes}$ its temperature is $85^\\circ\\text{C}$, and after $8\\text{ minutes}$ its temperature is $195^\\circ\\text{C}$. (a) Find the linear rule for temperature $T$ after $t\\text{ minutes}$. (b) What was its initial temperature at $t = 0$?",
+        "hint": "Find $m = \\frac{195 - 85}{8 - 3}$, then solve for $c$.",
+        "working_summary": "$m = \\frac{110}{5} = 22^\\circ\\text{C/min}$; $T = 22t + 19$, so initial temperature is $19^\\circ\\text{C}$.",
+        "answer": "(a) $T = 22t + 19$, (b) $19^\\circ\\text{C}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_4_3_1",
+      "title": "Taking the Reciprocal Without Changing the Sign for Perpendicular Lines",
+      "misconception": "Assuming the gradient perpendicular to $m = \\frac{2}{5}$ is $\\frac{5}{2}$ instead of $-\\frac{5}{2}$.",
+      "correct_concept": "One of two perpendicular oblique lines must slope upwards ($m > 0$) while the other slopes downwards ($m < 0$), so their gradients must have opposite signs ($m_1 m_2 = -1$).",
+      "incorrect_working": "$$m_1 = \\frac{2}{5} \\implies m_{\\perp} = \\frac{5}{2} \\quad \\text{(Incorrect: product is } +1\\text{, not } -1\\text{)}$$",
+      "correct_working": "$$m_1 = \\frac{2}{5} \\implies m_{\\perp} = -\\frac{5}{2}$$",
+      "counter_example": "$\\frac{2}{5} \\times \\left(-\\frac{5}{2}\\right) = -1$."
+    },
+    {
+      "id": "misc_9_4_3_2",
+      "title": "Swapping Horizontal ($y = k$) and Vertical ($x = h$) Line Equations",
+      "misconception": "Thinking $x = 5$ is a horizontal line because the $x$-axis is horizontal.",
+      "correct_concept": "The equation $x = 5$ consists of all points $(5, y)$ whose $x$-coordinate is fixed at $5$, which forms a vertical line parallel to the $y$-axis.",
+      "incorrect_working": "$$\\text{Horizontal line through } (3, 7): \\quad x = 3 \\quad \\text{(Incorrect)}$$",
+      "correct_working": "$$\\text{Horizontal line through } (3, 7): \\quad y = 7 \\qquad \\text{Vertical line through } (3, 7): \\quad x = 3$$",
+      "counter_example": "The points $(0, 7)$, $(3, 7)$, and $(10, 7)$ all lie on a horizontal line at height $y = 7$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_4_3_Q1",
+        "question": "Find the equation of the straight line with gradient $m = -4$ passing through the point $(3, -2)$ in the form $y = mx + c$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$y = -4x + 10$",
+        "step_by_step_solution": [
+          "Substitute $m = -4$ and $(x_1, y_1) = (3, -2)$ into $y - y_1 = m(x - x_1)$: $y - (-2) = -4(x - 3)$.",
+          "Expand and rearrange: $y + 2 = -4x + 12 \\implies y = -4x + 10$."
+        ]
+      },
+      {
+        "id": "9_4_3_Q2",
+        "question": "Find the $x$-intercept and $y$-intercept of the line $5x - 2y = 20$, and write its equation in gradient-intercept form.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$x$-intercept $(4, 0)$, $y$-intercept $(0, -10)$, $y = \\frac{5}{2}x - 10$",
+        "step_by_step_solution": [
+          "For the $x$-intercept ($y = 0$): $5x = 20 \\implies x = 4 \\implies (4, 0)$. For the $y$-intercept ($x = 0$): $-2y = 20 \\implies y = -10 \\implies (0, -10)$.",
+          "Rearrange $5x - 2y = 20$: $2y = 5x - 20 \\implies y = \\frac{5}{2}x - 10$."
+        ]
+      },
+      {
+        "id": "9_4_3_Q3",
+        "question": "Find the equation of the straight line passing through $(-4, 9)$ and $(2, -6)$ in gradient-intercept form.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$y = -\\frac{5}{2}x - 1$",
+        "step_by_step_solution": [
+          "Find the gradient: $m = \\frac{-6 - 9}{2 - (-4)} = \\frac{-15}{6} = -\\frac{5}{2}$.",
+          "Substitute $(2, -6)$ into $y - y_1 = m(x - x_1)$: $y + 6 = -\\frac{5}{2}(x - 2) = -\\frac{5}{2}x + 5 \\implies y = -\\frac{5}{2}x - 1$."
+        ]
+      },
+      {
+        "id": "9_4_3_Q4",
+        "question": "Find the equation of the line that passes through $(-6, 2)$ and is perpendicular to the line $2x + 3y = 12$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "$y = \\frac{3}{2}x + 11$",
+        "step_by_step_solution": [
+          "Rearrange $2x + 3y = 12$ into gradient-intercept form: $3y = -2x + 12 \\implies y = -\\frac{2}{3}x + 4$, so $m_1 = -\\frac{2}{3}$ and $m_{\\perp} = \\frac{3}{2}$.",
+          "Use point-gradient form with $(-6, 2)$: $y - 2 = \\frac{3}{2}(x + 6) = \\frac{3}{2}x + 9 \\implies y = \\frac{3}{2}x + 11$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_4_3_Q5",
+        "question": "A desalination storage reservoir holds $V\\text{ ML}$ of water $d$ days after maintenance begins. On day $4$, $V = 320\\text{ ML}$, and on day $10$, $V = 470\\text{ ML}$. (a) Assuming a constant inflow rate, find the linear equation relating $V$ and $d$. (b) How much water was in the reservoir initially ($d = 0$)?",
+        "difficulty": "Medium",
+        "context": "Water Resource Modelling",
+        "final_answer": "(a) $V = 25d + 220$, (b) $220\\text{ ML}$",
+        "step_by_step_solution": [
+          "Calculate the rate of change: $m = \\frac{470 - 320}{10 - 4} = \\frac{150}{6} = 25\\text{ ML/day}$.",
+          "Use $(4, 320)$: $V - 320 = 25(d - 4) \\implies V = 25d + 220$, so the initial volume at $d = 0$ was $220\\text{ ML}$."
+        ]
+      },
+      {
+        "id": "9_4_3_Q6",
+        "question": "Find the equation of the perpendicular bisector of the line segment joining $A(1, -2)$ and $B(5, 6)$.",
+        "difficulty": "Challenging",
+        "context": "Coordinate Geometry",
+        "final_answer": "$y = -\\frac{1}{2}x + \\frac{7}{2}$",
+        "step_by_step_solution": [
+          "Find the midpoint $M$ and gradient $m_{AB}$ of $AB$: $M = \\left(\\frac{1 + 5}{2}, \\frac{-2 + 6}{2}\\right) = (3, 2)$ and $m_{AB} = \\frac{6 - (-2)}{5 - 1} = \\frac{8}{4} = 2$.",
+          "The perpendicular bisector has gradient $m_{\\perp} = -\\frac{1}{2}$ and passes through $M(3, 2)$: $y - 2 = -\\frac{1}{2}(x - 3) \\implies y = -\\frac{1}{2}x + \\frac{7}{2}$."
+        ]
+      },
+      {
+        "id": "9_4_3_Q7",
+        "question": "Two country taxis in Warrnambool charge linear fares for a trip of $x\\text{ km}$. Taxi A charges $C_A = 2.4x + 4.5$ and Taxi B charges $C_B = 1.8x + 8.1$ (in dollars). Find the trip distance $x$ for which both taxis charge the same fare, and state that fare.",
+        "difficulty": "Medium",
+        "context": "Financial Comparison",
+        "final_answer": "$x = 6\\text{ km}$, fare $\\$18.90$",
+        "step_by_step_solution": [
+          "Equate the two cost rules: $2.4x + 4.5 = 1.8x + 8.1 \\implies 0.6x = 3.6 \\implies x = 6\\text{ km}$.",
+          "Substitute $x = 6$: $C = 2.4(6) + 4.5 = 14.4 + 4.5 = \\$18.90$."
+        ]
+      },
+      {
+        "id": "9_4_3_Q8",
+        "question": "The line $3x + 4y = 24$ intersects the $x$-axis at $A$ and the $y$-axis at $B$. Find (a) the exact length of segment $AB$ and (b) the perpendicular distance from the origin $O(0, 0)$ to the line $AB$ using the area of $\\triangle OAB$.",
+        "difficulty": "Challenging",
+        "context": "Coordinate Geometry & Mensuration",
+        "final_answer": "(a) $AB = 10$, (b) $4.8\\text{ units}$ (or $\\frac{24}{5}$)",
+        "step_by_step_solution": [
+          "The intercepts are $A(8, 0)$ and $B(0, 6)$, so $AB = \\sqrt{8^2 + 6^2} = 10$.",
+          "The area of $\\triangle OAB$ is $\\frac{1}{2} \\times 8 \\times 6 = 24$. Using $AB = 10$ as the base with perpendicular height $h$: $\\frac{1}{2} \\times 10 \\times h = 24 \\implies 5h = 24 \\implies h = \\frac{24}{5} = 4.8\\text{ units}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_4_3_Q9",
+        "question": "Determine whether the line passing through $A(-1, 4)$ and $B(2, 10)$ is parallel to, perpendicular to, or neither with respect to the line $6x - 3y = 15$. Justify your answer.",
+        "difficulty": "Medium",
+        "context": "Geometric Classification",
+        "final_answer": "Parallel, because both lines have gradient $m = 2$ and different $y$-intercepts",
+        "step_by_step_solution": [
+          "Calculate the gradient of $AB$: $m_{AB} = \\frac{10 - 4}{2 - (-1)} = \\frac{6}{3} = 2$.",
+          "Rearrange $6x - 3y = 15 \\implies 3y = 6x - 15 \\implies y = 2x - 5$, which also has gradient $m = 2$ (and $y$-intercept $-5 \\neq 6$), so the lines are parallel."
+        ]
+      },
+      {
+        "id": "9_4_3_Q10",
+        "question": "Three vertices of a triangle are $P(1, 2)$, $Q(5, 10)$, and $R(9, 8)$. Use gradients to prove that $\\triangle PQR$ is right-angled at $Q$.",
+        "difficulty": "Challenging",
+        "context": "Coordinate Proof",
+        "final_answer": "$m_{PQ} = 2$ and $m_{QR} = -\\frac{1}{2}$; since $m_{PQ} \\times m_{QR} = -1$, $PQ \\perp QR$ and $\\angle PQR = 90^\\circ$",
+        "step_by_step_solution": [
+          "Find the gradient of $PQ$: $m_{PQ} = \\frac{10 - 2}{5 - 1} = \\frac{8}{4} = 2$.",
+          "Find the gradient of $QR$: $m_{QR} = \\frac{8 - 10}{9 - 5} = \\frac{-2}{4} = -\\frac{1}{2}$. Since $m_{PQ} \\times m_{QR} = 2 \\times \\left(-\\frac{1}{2}\\right) = -1$, $PQ$ is perpendicular to $QR$."
+        ]
+      },
+      {
+        "id": "9_4_3_Q11",
+        "question": "State the equations of the horizontal line and the vertical line that intersect at the point $(-7, 11)$, and explain why one has gradient $0$ while the other has an undefined gradient.",
+        "difficulty": "Medium",
+        "context": "Conceptual Communication",
+        "final_answer": "Horizontal: $y = 11$ ($m = 0$); Vertical: $x = -7$ (undefined gradient)",
+        "step_by_step_solution": [
+          "Every point on the horizontal line through $(-7, 11)$ has $y = 11$ (so $\\text{rise} = 0 \\implies m = 0$).",
+          "Every point on the vertical line through $(-7, 11)$ has $x = -7$ (so $\\text{run} = 0$, making $\\frac{\\text{rise}}{0}$ undefined)."
+        ]
+      },
+      {
+        "id": "9_4_3_Q12",
+        "question": "Find the value of $k$ such that the line $(k + 1)x + 6y = 12$ is perpendicular to the line $3x - 2y = 7$.",
+        "difficulty": "Extension",
+        "context": "Parameter Determination",
+        "final_answer": "$k = 3$",
+        "step_by_step_solution": [
+          "The line $3x - 2y = 7 \\implies y = \\frac{3}{2}x - \\frac{7}{2}$ has gradient $m_1 = \\frac{3}{2}$, so a perpendicular line must have gradient $m_2 = -\\frac{2}{3}$.",
+          "Rearrange $(k + 1)x + 6y = 12 \\implies y = -\\frac{k + 1}{6}x + 2$. Equate gradients: $-\\frac{k + 1}{6} = -\\frac{2}{3} \\implies k + 1 = 4 \\implies k = 3$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_4_3_1_m",
+      "description": "Worked Example 9.4.3.1 gradient",
+      "expression": "(-5 - 7) / (4 - (-2))",
+      "expected": -2
+    },
+    {
+      "id": "WE9_4_3_1_c",
+      "description": "Worked Example 9.4.3.1 y-intercept",
+      "expression": "-5 - (-2) * 4",
+      "expected": 3
+    },
+    {
+      "id": "NYT9_4_3_1_m",
+      "description": "Now You Try 9.4.3.1 gradient",
+      "expression": "(14 - (-4)) / (3 - (-3))",
+      "expected": 3
+    },
+    {
+      "id": "WE9_4_3_2a_c",
+      "description": "Worked Example 9.4.3.2(a) parallel line y-intercept",
+      "expression": "1 - Rational(2, 3) * 6",
+      "expected": -3
+    },
+    {
+      "id": "WE9_4_3_2b_c",
+      "description": "Worked Example 9.4.3.2(b) perpendicular line y-intercept",
+      "expression": "-3 - (-Rational(3, 2)) * 4",
+      "expected": 3
+    },
+    {
+      "id": "WE9_4_3_3a_m",
+      "description": "Worked Example 9.4.3.3(a) charging rate",
+      "expression": "(10.0 - 4.6) / (5 - 2)",
+      "expected": 1.8
+    },
+    {
+      "id": "WE9_4_3_3c_t",
+      "description": "Worked Example 9.4.3.3(c) time to reach 13.6 kWh",
+      "expression": "(13.6 - 1.0) / 1.8",
+      "expected": 7
+    },
+    {
+      "id": "EX9_4_3_Q1_c",
+      "description": "Exercise 9.4.3 Q1 y-intercept",
+      "expression": "-2 - (-4) * 3",
+      "expected": 10
+    },
+    {
+      "id": "EX9_4_3_Q3_m",
+      "description": "Exercise 9.4.3 Q3 gradient",
+      "expression": "Rational(-6 - 9, 2 - (-4))",
+      "expected": "Rational(-5, 2)"
+    },
+    {
+      "id": "EX9_4_3_Q4_c",
+      "description": "Exercise 9.4.3 Q4 y-intercept",
+      "expression": "2 - Rational(3, 2) * (-6)",
+      "expected": 11
+    },
+    {
+      "id": "EX9_4_3_Q5_c",
+      "description": "Exercise 9.4.3 Q5 initial reservoir volume",
+      "expression": "320 - 25 * 4",
+      "expected": 220
+    },
+    {
+      "id": "EX9_4_3_Q6_c",
+      "description": "Exercise 9.4.3 Q6 perpendicular bisector y-intercept",
+      "expression": "2 - (-Rational(1, 2)) * 3",
+      "expected": "Rational(7, 2)"
+    },
+    {
+      "id": "EX9_4_3_Q7_x",
+      "description": "Exercise 9.4.3 Q7 break-even distance",
+      "expression": "solve(Eq(Rational(24, 10)*x + Rational(45, 10), Rational(18, 10)*x + Rational(81, 10)), x)[0]",
+      "expected": 6
+    },
+    {
+      "id": "EX9_4_3_Q8b",
+      "description": "Exercise 9.4.3 Q8(b) perpendicular distance from origin",
+      "expression": "Rational(2 * 24, 10)",
+      "expected": "Rational(24, 5)"
+    },
+    {
+      "id": "EX9_4_3_Q10",
+      "description": "Exercise 9.4.3 Q10 product of perpendicular gradients",
+      "expression": "Rational(10 - 2, 5 - 1) * Rational(8 - 10, 9 - 5)",
+      "expected": -1
+    },
+    {
+      "id": "EX9_4_3_Q12",
+      "description": "Exercise 9.4.3 Q12 value of k",
+      "expression": "solve(Eq(-(x + 1)/6, -Rational(2, 3)), x)[0]",
+      "expected": 3
+    }
+  ]
+}

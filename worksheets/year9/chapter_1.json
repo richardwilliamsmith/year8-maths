@@ -1,0 +1,291 @@
+{
+  "chapter_number": 1,
+  "chapter_title": "Real Numbers, Surds, and Index Laws",
+  "worksheets": [
+    {
+      "section_id": "9_1_1",
+      "section_code": "1A",
+      "title": "The Real Number System and Surds",
+      "vcaa_code": "VC2M9N01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Classify each real number as rational ($\\mathbb{Q}$) or irrational ($\\mathbb{R} \\setminus \\mathbb{Q}$):",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{49}$", "answer": "Rational ($\\sqrt{49} = 7$)" },
+            { "label": "b", "question": "$\\sqrt{18}$", "answer": "Irrational ($3\\sqrt{2}$)" },
+            { "label": "c", "question": "$-0.\\overline{27}$", "answer": "Rational ($-\\dfrac{3}{11}$)" },
+            { "label": "d", "question": "$2\\pi - 1$", "answer": "Irrational" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Simplify each surd by extracting the largest perfect square factor:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{45}$", "answer": "$3\\sqrt{5}$" },
+            { "label": "b", "question": "$\\sqrt{72}$", "answer": "$6\\sqrt{2}$" },
+            { "label": "c", "question": "$4\\sqrt{27}$", "answer": "$12\\sqrt{3}$" },
+            { "label": "d", "question": "$5\\sqrt{48}$", "answer": "$20\\sqrt{3}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Simplify each surd expression by collecting like surds:",
+          "parts": [
+            { "label": "a", "question": "$5\\sqrt{3} + 2\\sqrt{3} - 4\\sqrt{3}$", "answer": "$3\\sqrt{3}$" },
+            { "label": "b", "question": "$\\sqrt{12} + \\sqrt{75}$", "answer": "$7\\sqrt{3}$" },
+            { "label": "c", "question": "$\\sqrt{50} - \\sqrt{18}$", "answer": "$2\\sqrt{2}$" },
+            { "label": "d", "question": "$2\\sqrt{20} + 3\\sqrt{45} - \\sqrt{80}$", "answer": "$9\\sqrt{5}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Multiply or divide the following surds and simplify fully:",
+          "parts": [
+            { "label": "a", "question": "$\\sqrt{6} \\times \\sqrt{15}$", "answer": "$3\\sqrt{10}$" },
+            { "label": "b", "question": "$2\\sqrt{3} \\times 5\\sqrt{6}$", "answer": "$30\\sqrt{2}$" },
+            { "label": "c", "question": "$\\dfrac{\\sqrt{54}}{\\sqrt{6}}$", "answer": "$3$" },
+            { "label": "d", "question": "$\\dfrac{12\\sqrt{40}}{3\\sqrt{5}}$", "answer": "$8\\sqrt{2}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A square courtyard in Bendigo has side length $6\\text{ m}$. Using Pythagoras' theorem, find the exact length of its diagonal in simplest surd form.",
+          "answer": "$6\\sqrt{2}\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A rectangular vegetable patch in Mildura measures $3\\sqrt{5}\\text{ m}$ long by $2\\sqrt{5}\\text{ m}$ wide. Find (a) the exact perimeter in surd form and (b) the exact area in square metres.",
+          "answer": "(a) $10\\sqrt{5}\\text{ m}$, (b) $30\\text{ m}^2$"
+        },
+        {
+          "number": 7,
+          "question": "To mark $\\sqrt{13}$ on a number line starting at $0$, a student constructs a right-angled triangle with horizontal base $3$ units and vertical height $h$ units, then swings an arc of radius $\\sqrt{13}$ down to the axis. Find the integer height $h$ and state the two consecutive integers between which $\\sqrt{13}$ lies.",
+          "answer": "$h = 2$ units ($3^2 + 2^2 = 13$); lies between $3$ and $4$"
+        },
+        {
+          "number": 8,
+          "question": "A heritage timber frame in Ballarat uses three diagonal braces of lengths $\\sqrt{28}\\text{ m}$, $\\sqrt{63}\\text{ m}$, and $\\sqrt{112}\\text{ m}$. Express the total length of timber required as a single simplified surd.",
+          "answer": "$9\\sqrt{7}\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Without using a calculator, determine which is larger: $4\\sqrt{3}$ or $3\\sqrt{5}$. Justify your answer by writing both numbers in the form $\\sqrt{n}$.",
+          "answer": "$4\\sqrt{3} = \\sqrt{16 \\times 3} = \\sqrt{48}$ and $3\\sqrt{5} = \\sqrt{9 \\times 5} = \\sqrt{45}$. Since $48 > 45$, $4\\sqrt{3} > 3\\sqrt{5}$."
+        },
+        {
+          "number": 10,
+          "question": "Give a counterexample to show that the product of two irrational numbers is not always irrational, and another example where the product of two irrational numbers is irrational.",
+          "answer": "Rational product: $\\sqrt{2} \\times \\sqrt{8} = \\sqrt{16} = 4 \\in \\mathbb{Q}$. Irrational product: $\\sqrt{2} \\times \\sqrt{3} = \\sqrt{6} \\notin \\mathbb{Q}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_1_1_2a", "expression": "sqrt(45) - 3*sqrt(5)", "expected": 0 },
+        { "id": "WS9_1_1_2b", "expression": "sqrt(72) - 6*sqrt(2)", "expected": 0 },
+        { "id": "WS9_1_1_2d", "expression": "5*sqrt(48) - 20*sqrt(3)", "expected": 0 },
+        { "id": "WS9_1_1_3b", "expression": "sqrt(12) + sqrt(75) - 7*sqrt(3)", "expected": 0 },
+        { "id": "WS9_1_1_3d", "expression": "2*sqrt(20) + 3*sqrt(45) - sqrt(80) - 9*sqrt(5)", "expected": 0 },
+        { "id": "WS9_1_1_4b", "expression": "2*sqrt(3)*5*sqrt(6) - 30*sqrt(2)", "expected": 0 },
+        { "id": "WS9_1_1_4c", "expression": "sqrt(54)/sqrt(6)", "expected": 3 },
+        { "id": "WS9_1_1_6b", "expression": "3*sqrt(5)*2*sqrt(5)", "expected": 30 },
+        { "id": "WS9_1_1_8", "expression": "sqrt(28) + sqrt(63) + sqrt(112) - 9*sqrt(7)", "expected": 0 }
+      ]
+    },
+    {
+      "section_id": "9_1_2",
+      "section_code": "1B",
+      "title": "Index Laws with Algebraic Bases and Negative Indices",
+      "vcaa_code": "VC2M9A01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Simplify each algebraic expression using the index laws:",
+          "parts": [
+            { "label": "a", "question": "$3x^4 \\times 4x^5$", "answer": "$12x^9$" },
+            { "label": "b", "question": "$\\dfrac{18a^7 b^3}{6a^2 b}$", "answer": "$3a^5 b^2$" },
+            { "label": "c", "question": "$(2m^3 n^2)^3$", "answer": "$8m^9 n^6$" },
+            { "label": "d", "question": "$5p^0 + (5p)^0$", "answer": "$6$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Evaluate each numerical expression with negative indices as a fraction or integer:",
+          "parts": [
+            { "label": "a", "question": "$4^{-2}$", "answer": "$\\dfrac{1}{16}$" },
+            { "label": "b", "question": "$2^{-4} + 2^{-2}$", "answer": "$\\dfrac{5}{16}$" },
+            { "label": "c", "question": "$\\left(\\dfrac{3}{5}\\right)^{-2}$", "answer": "$\\dfrac{25}{9}$" },
+            { "label": "d", "question": "$\\dfrac{1}{3^{-3}}$", "answer": "$27$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Rewrite each expression using positive indices only:",
+          "parts": [
+            { "label": "a", "question": "$7x^{-4}$", "answer": "$\\dfrac{7}{x^4}$" },
+            { "label": "b", "question": "$\\dfrac{4a^{-3}}{b^{-2}}$", "answer": "$\\dfrac{4b^2}{a^3}$" },
+            { "label": "c", "question": "$x^3 \\times x^{-8}$", "answer": "$\\dfrac{1}{x^5}$" },
+            { "label": "d", "question": "$\\dfrac{10y^{-2}}{5y^3}$", "answer": "$\\dfrac{2}{y^5}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Simplify fully and express your answer with positive indices:",
+          "parts": [
+            { "label": "a", "question": "$(3x^{-2} y^3)^2$", "answer": "$\\dfrac{9y^6}{x^4}$" },
+            { "label": "b", "question": "$(2a^2 b^{-1})^{-3}$", "answer": "$\\dfrac{b^3}{8a^6}$" },
+            { "label": "c", "question": "$\\dfrac{6m^{-2} n^4}{15m^3 n^{-1}}$", "answer": "$\\dfrac{2n^5}{5m^5}$" },
+            { "label": "d", "question": "$\\left(\\dfrac{2x^2}{y^{-3}}\\right)^{-2}$", "answer": "$\\dfrac{1}{4x^4 y^6}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "The intensity of a radio signal in the Outback decreases with distance $r\\text{ km}$ according to $I = 120r^{-2}$. Find the exact signal intensity when $r = 6\\text{ km}$.",
+          "answer": "$\\dfrac{10}{3}$ units"
+        },
+        {
+          "number": 6,
+          "question": "A culture of bacteria in a Geelong pathology lab has mass $2^{-3}\\text{ g}$ per dish. If a technician prepares $2^7$ identical dishes, find the total bacterial mass in grams.",
+          "answer": "$2^4 = 16\\text{ g}$"
+        },
+        {
+          "number": 7,
+          "question": "A rectangular silicon microchip has length $4x^{-2}\\text{ cm}$ and width $3x^5\\text{ cm}$. Write a simplified algebraic expression with positive indices for the area of the microchip.",
+          "answer": "$12x^3\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "The volume of a cube-shaped storage crate is $V = (3a^2 b^{-1})^3\\text{ m}^3$ and its base area is $A = (3a^2 b^{-1})^2\\text{ m}^2$. Simplify $V \\div A$ with positive indices to confirm the height of the crate.",
+          "answer": "$\\dfrac{3a^2}{b}\\text{ m}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Use the quotient index law $\\dfrac{a^m}{a^n} = a^{m-n}$ with $m = 2$ and $n = 5$ (for $a \\neq 0$) to explain why $a^{-3} = \\dfrac{1}{a^3}$.",
+          "answer": "By the index law, $\\dfrac{a^2}{a^5} = a^{2-5} = a^{-3}$. By cancelling common factors, $\\dfrac{a^2}{a^5} = \\dfrac{1}{a^3}$. Therefore $a^{-3} = \\dfrac{1}{a^3}$."
+        },
+        {
+          "number": 10,
+          "question": "Liam simplifies $2x^{-3}$ as $\\dfrac{1}{2x^3}$. Identify Liam's error and state the correct simplified fraction.",
+          "answer": "The exponent $-3$ applies only to the base $x$, not to the coefficient $2$. Thus $2x^{-3} = 2 \\times \\dfrac{1}{x^3} = \\dfrac{2}{x^3}$ (whereas $(2x)^{-3} = \\dfrac{1}{8x^3}$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_1_2_1a", "expression": "3*x**4 * 4*x**5", "expected": "12*x**9" },
+        { "id": "WS9_1_2_1c", "expression": "(2*m**3*n**2)**3", "expected": "8*m**9*n**6" },
+        { "id": "WS9_1_2_2a", "expression": "4**(-2)", "expected": "1/16" },
+        { "id": "WS9_1_2_2b", "expression": "2**(-4) + 2**(-2)", "expected": "5/16" },
+        { "id": "WS9_1_2_2c", "expression": "(3/5)**(-2)", "expected": "25/9" },
+        { "id": "WS9_1_2_4a", "expression": "(3*x**(-2)*y**3)**2", "expected": "9*y**6/x**4" },
+        { "id": "WS9_1_2_4b", "expression": "(2*a**2*b**(-1))**(-3)", "expected": "b**3/(8*a**6)" },
+        { "id": "WS9_1_2_5", "expression": "120 * 6**(-2)", "expected": "10/3" },
+        { "id": "WS9_1_2_6", "expression": "2**(-3) * 2**7", "expected": 16 }
+      ]
+    },
+    {
+      "section_id": "9_1_3",
+      "section_code": "1C",
+      "title": "Scientific Notation and Significant Figures",
+      "vcaa_code": "VC2M9M01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Write each number in scientific notation ($a \\times 10^n$ where $1 \\le a < 10$):",
+          "parts": [
+            { "label": "a", "question": "$450\\,000$", "answer": "$4.5 \\times 10^5$" },
+            { "label": "b", "question": "$0.000\\,38$", "answer": "$3.8 \\times 10^{-4}$" },
+            { "label": "c", "question": "$72\\,400\\,000$", "answer": "$7.24 \\times 10^7$" },
+            { "label": "d", "question": "$0.000\\,009\\,05$", "answer": "$9.05 \\times 10^{-6}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Convert each number from scientific notation to a basic numeral:",
+          "parts": [
+            { "label": "a", "question": "$6.3 \\times 10^4$", "answer": "$63\\,000$" },
+            { "label": "b", "question": "$5.12 \\times 10^{-3}$", "answer": "$0.00512$" },
+            { "label": "c", "question": "$1.08 \\times 10^6$", "answer": "$1\\,080\\,000$" },
+            { "label": "d", "question": "$4.9 \\times 10^{-5}$", "answer": "$0.000049$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Round each value to $3$ significant figures and express in scientific notation:",
+          "parts": [
+            { "label": "a", "question": "$384\\,620$", "answer": "$3.85 \\times 10^5$" },
+            { "label": "b", "question": "$0.004\\,197$", "answer": "$4.20 \\times 10^{-3}$" },
+            { "label": "c", "question": "$98\\,750\\,000$", "answer": "$9.88 \\times 10^7$" },
+            { "label": "d", "question": "$0.000\\,060\\,44$", "answer": "$6.04 \\times 10^{-5}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each expression and write your answer in scientific notation:",
+          "parts": [
+            { "label": "a", "question": "$(3 \\times 10^4) \\times (2.5 \\times 10^3)$", "answer": "$7.5 \\times 10^7$" },
+            { "label": "b", "question": "$(4 \\times 10^5) \\times (6 \\times 10^{-2})$", "answer": "$2.4 \\times 10^4$" },
+            { "label": "c", "question": "$\\dfrac{8.4 \\times 10^7}{2.1 \\times 10^3}$", "answer": "$4 \\times 10^4$" },
+            { "label": "d", "question": "$\\dfrac{3.6 \\times 10^{-3}}{9 \\times 10^2}$", "answer": "$4 \\times 10^{-6}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Australia's total land area is approximately $7.69 \\times 10^6\\text{ km}^2$. Given that $1\\text{ km}^2 = 10^6\\text{ m}^2$, express Australia's area in square metres in scientific notation.",
+          "answer": "$7.69 \\times 10^{12}\\text{ m}^2$"
+        },
+        {
+          "number": 6,
+          "question": "Light travels at $3.0 \\times 10^8\\text{ m/s}$. How far does a radio signal from the Parkes Observatory (Murriyang) travel in $500\\text{ seconds}$? Give your answer in scientific notation in metres.",
+          "answer": "$1.5 \\times 10^{11}\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A eucalyptus pollen grain has a diameter of $2.5 \\times 10^{-5}\\text{ m}$, while a bushfire smoke particle has a diameter of $5.0 \\times 10^{-7}\\text{ m}$. How many times larger is the diameter of the pollen grain than the smoke particle?",
+          "answer": "$50$ times larger"
+        },
+        {
+          "number": 8,
+          "question": "A solar farm in New South Wales generates $4.8 \\times 10^9\\text{ J}$ of energy per hour. How much energy does it generate in $2.5 \\times 10^3\\text{ hours}$? Express your answer in scientific notation.",
+          "answer": "$1.2 \\times 10^{13}\\text{ J}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why $48.2 \\times 10^5$ is not in strict scientific notation, and write it in correct scientific notation.",
+          "answer": "In scientific notation $a \\times 10^n$, the mantissa $a$ must satisfy $1 \\le a < 10$, whereas $48.2 \\ge 10$. Rewriting $48.2 = 4.82 \\times 10^1$ gives $4.82 \\times 10^6$."
+        },
+        {
+          "number": 10,
+          "question": "State the number of significant figures in (a) $0.00504$ and (b) $5.040 \\times 10^{-3}$, and explain why leading zeros and trailing zeros behave differently.",
+          "answer": "(a) $3$ significant figures; (b) $4$ significant figures. Leading zeros ($0.00...$) only locate the decimal point and are never significant, whereas trailing zeros after a decimal digit ($...40$) indicate measured precision and are significant."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_1_3_1a", "expression": "4.5 * 10**5", "expected": 450000 },
+        { "id": "WS9_1_3_1b", "expression": "3.8 * 10**(-4)", "expected": 0.00038 },
+        { "id": "WS9_1_3_2a", "expression": "6.3 * 10**4", "expected": 63000 },
+        { "id": "WS9_1_3_4a", "expression": "(3 * 10**4) * (2.5 * 10**3)", "expected": 75000000 },
+        { "id": "WS9_1_3_4b", "expression": "(4 * 10**5) * (6 * 10**(-2))", "expected": 24000 },
+        { "id": "WS9_1_3_4c", "expression": "(8.4 * 10**7) / (2.1 * 10**3)", "expected": 40000 },
+        { "id": "WS9_1_3_6", "expression": "3 * 10**8 * 500 - 1.5 * 10**11", "expected": 0 },
+        { "id": "WS9_1_3_7", "expression": "(2.5 * 10**(-5)) / (5.0 * 10**(-7))", "expected": 50 },
+        { "id": "WS9_1_3_8", "expression": "(4.8 * 10**9) * (2.5 * 10**3) - 1.2 * 10**13", "expected": 0 }
+      ]
+    }
+  ]
+}

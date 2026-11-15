@@ -117,6 +117,51 @@ body {
   gap: 0.35rem;
 }
 
+.math-diagram-panel {
+  margin-bottom: 1.5rem;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-hairline);
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.math-diagram-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65rem 1.25rem;
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.math-diagram-kicker {
+  font-size: 0.7rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-primary);
+}
+
+.math-diagram-code {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.math-diagram-canvas {
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  background: var(--bg-surface);
+}
+
+.math-diagram-svg {
+  width: 100%;
+  max-width: 540px;
+  height: auto;
+  display: block;
+}
+
 .chapter-nav {
   padding: 0.75rem;
   display: flex;

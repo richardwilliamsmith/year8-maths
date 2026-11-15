@@ -1,0 +1,420 @@
+{
+  "metadata": {
+    "section_id": "10_1_1",
+    "section_code": "1A",
+    "chapter_number": 1,
+    "chapter_title": "Financial Mathematics, Surds, and Logarithms (10 & 10A)",
+    "title": "Compound Interest, Depreciation, and Financial Modelling",
+    "vcaa_code": "VC2M10N01",
+    "vcaa_description": "Recognise the effect of using approximations of real numbers in repeated calculations and compare the results when using exact representations; use mathematical modelling to solve financial problems involving compound interest (VC2M10A04).",
+    "strand": "Number",
+    "target_mastery": "Apply the compound interest formula A = P(1 + r)^n across annual, quarterly, and monthly compounding periods, and model reducing-balance depreciation.",
+    "prerequisites": [
+      "Simple interest and index laws (Year 9 VC2M9N02, VC2M9A01)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Compound interest",
+        "definition": "Interest calculated on both the initial principal and the accumulated interest from previous compounding periods: $A = P(1 + r)^n$."
+      },
+      {
+        "term": "Compounding period",
+        "definition": "The time interval between successive calculations and additions of interest (e.g. annually, quarterly, monthly, or daily)."
+      },
+      {
+        "term": "Reducing-balance depreciation",
+        "definition": "A model in which an asset loses a fixed percentage $r$ of its current book value each period: $A = P(1 - r)^n$."
+      },
+      {
+        "term": "Rounding error accumulation",
+        "definition": "The discrepancy that grows when intermediate values or interest rates are rounded prematurely before being raised to a power in repeated financial calculations."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_1_1_1",
+      "title": "The Compound Interest Formula",
+      "explanation": "Under simple interest, interest is calculated only on the original principal $P$, producing linear growth. Under compound interest, the interest earned at the end of each period is added to the principal, so that future interest is earned on a growing balance. If a principal $P$ is invested at an interest rate $r$ (expressed as a decimal or exact fraction per compounding period) for $n$ compounding periods, the total amount $A$ is given by an exponential growth model, and the compound interest earned is $I = A - P$.",
+      "formula_latex": "A = P(1 + r)^n, \\quad I = A - P",
+      "callout_title": "Convert Percentage Rates to Decimal or Fraction First",
+      "callout_rule": "If the interest rate is $6\\%$ per annum compounded annually, write $r = 0.06$ (or $\\frac{6}{100}$) so that the growth multiplier for each period is $1 + r = 1.06$."
+    },
+    {
+      "id": "theory_10_1_1_2",
+      "title": "Non-Annual Compounding Periods and Exact Representations",
+      "explanation": "When interest is Quoted at a nominal annual rate $R\\%$ per annum (p.a.) but compounded $k$ times per year (such as $k = 2$ half-yearly, $k = 4$ quarterly, or $k = 12$ monthly) for $t$ years, you must convert both the rate and the time to match the compounding period before substituting into the formula. The rate per period is $r = \\frac{R}{100k}$ and the total number of compounding periods is $n = k \\times t$. When $\\frac{R}{100k}$ is a recurring decimal (such as $8\\%$ p.a. compounded monthly), always retain the exact fraction in your calculation until the final rounding to the nearest cent.",
+      "formula_latex": "A = P\\left(1 + \\frac{R}{100k}\\right)^{kt}",
+      "callout_title": "Match Rate and Periods, and Never Round Early",
+      "callout_rule": "Divide the annual rate by $k$ and multiply the number of years by $k$. Keep exact fractions like $\\frac{0.08}{12} = \\frac{1}{150}$ inside the brackets; rounding intermediate decimals before raising to power $n$ causes significant rounding error accumulation."
+    },
+    {
+      "id": "theory_10_1_1_3",
+      "title": "Reducing-Balance Depreciation and Inflation",
+      "explanation": "Equipment, vehicles, and technology lose value over time. In reducing-balance depreciation, an asset of initial value $P$ decreases by $r$ ($R\\%$) of its current book value each year, so its depreciated value $A$ after $n$ years decays exponentially. Conversely, inflation models the rising cost of goods over time using the compound growth formula $A = P(1 + i)^n$, where $i$ is the annual inflation rate.",
+      "formula_latex": "A = P(1 - r)^n = P\\left(1 - \\frac{R}{100}\\right)^n",
+      "callout_title": "Growth Uses $(1 + r)$, Decay Uses $(1 - r)$",
+      "callout_rule": "A car depreciating at $15\\%$ per year retains $85\\%$ of its value each year, so its multiplier is $1 - 0.15 = 0.85$. Total depreciation after $n$ years is $P - A$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_1_1_1",
+      "title": "Calculating Annual Compound Interest",
+      "difficulty": "Fluency",
+      "problem": "Find the final balance and the total compound interest earned if $\\$5000$ is invested at $6\\%$ p.a. compounded annually for $3$ years.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Identify the principal $P = 5000$, annual interest rate $r = 0.06$, and number of compounding periods $n = 3$.",
+          "working": "$$P = 5000, \\quad r = 0.06, \\quad n = 3$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute into the compound interest formula $A = P(1 + r)^n$ and evaluate.",
+          "working": "$$A = 5000(1 + 0.06)^3 = 5000(1.06)^3 = \\$5955.08$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Subtract the initial principal $P$ from the final amount $A$ to find the compound interest $I$.",
+          "working": "$$I = A - P = 5955.08 - 5000 = \\$955.08$$"
+        }
+      ],
+      "final_answer": "Final balance $\\$5955.08$; compound interest $\\$955.08$",
+      "now_you_try": {
+        "problem": "Find the final balance and total compound interest earned if $\\$10\\,000$ is invested at $5\\%$ p.a. compounded annually for $3$ years.",
+        "hint": "Use $P = 10\\,000$, $r = 0.05$, and $n = 3$ in $A = P(1 + r)^n$.",
+        "working_summary": "$A = 10\\,000(1.05)^3 = \\$11\\,576.25$; $I = 11\\,576.25 - 10\\,000 = \\$1576.25$.",
+        "answer": "Final balance $\\$11\\,576.25$; compound interest $\\$1576.25$"
+      }
+    },
+    {
+      "id": "WE10_1_1_2",
+      "title": "Compounding Quarterly vs Annually",
+      "difficulty": "Understanding",
+      "problem": "An amount of $\\$8000$ is invested at $8\\%$ p.a. compounded quarterly for $1$ year. Find the final value of the investment and compare it with $\\$8000$ invested at $8\\%$ p.a. compounded annually for $1$ year.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "For quarterly compounding ($k = 4$), divide the annual rate by $4$ and multiply the number of years by $4$.",
+          "working": "$$r = \\frac{8\\%}{4} = 2\\% = 0.02, \\quad n = 1 \\times 4 = 4\\text{ quarters}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Calculate the final amount for quarterly compounding.",
+          "working": "$$A_{\\text{quarterly}} = 8000(1.02)^4 = \\$8659.45728 \\approx \\$8659.46$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Compare with annual compounding ($A_{\\text{annual}} = 8000(1.08)^1 = \\$8640$).",
+          "working": "$$\\text{Extra interest} = 8659.46 - 8640.00 = \\$19.46$$"
+        }
+      ],
+      "final_answer": "$\\$8659.46$ (which is $\\$19.46$ more than annual compounding)",
+      "now_you_try": {
+        "problem": "Find the final balance if $\\$20\\,000$ is invested at $12\\%$ p.a. compounded quarterly for $1$ year.",
+        "hint": "With $4$ quarters per year, $r = \\frac{12\\%}{4} = 3\\% = 0.03$ and $n = 4$.",
+        "working_summary": "$A = 20\\,000(1.03)^4 = \\$22\\,510.18$.",
+        "answer": "$\\$22\\,510.18$"
+      }
+    },
+    {
+      "id": "WE10_1_1_3",
+      "title": "Modelling Reducing-Balance Depreciation",
+      "difficulty": "Problem-Solving",
+      "problem": "A Melbourne printing business buys a commercial printer for $\\$25\\,000$. It depreciates on a reducing-balance basis at $20\\%$ p.a. Find: (a) its book value after $3$ years, and (b) the total amount by which it has depreciated.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Identify $P = 25\\,000$, depreciation rate $r = 0.20$, and $n = 3$ years. The decay multiplier is $1 - 0.20 = 0.80$.",
+          "working": "$$A = 25\\,000(1 - 0.20)^3 = 25\\,000(0.8)^3$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Evaluate $0.8^3 = 0.512$ and multiply by $25\\,000$ to find the book value after $3$ years.",
+          "working": "$$A = 25\\,000 \\times 0.512 = \\$12\\,800$$"
+        },
+        {
+          "step": 3,
+          "thinking": "Subtract the depreciated book value from the original purchase price to find the total depreciation.",
+          "working": "$$\\text{Total depreciation} = 25\\,000 - 12\\,800 = \\$12\\,200$$"
+        }
+      ],
+      "final_answer": "(a) $\\$12\\,800$, (b) $\\$12\\,200$",
+      "now_you_try": {
+        "problem": "A delivery van bought for $\\$40\\,000$ depreciates at $15\\%$ p.a. reducing balance. Find its value after $2$ years.",
+        "hint": "Use $A = 40\\,000(1 - 0.15)^2 = 40\\,000(0.85)^2$.",
+        "working_summary": "$A = 40\\,000 \\times 0.7225 = \\$28\\,900$.",
+        "answer": "$\\$28\\,900$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_1_1_1",
+      "title": "Forgetting to Adjust Both the Rate and Number of Periods for Non-Annual Compounding",
+      "misconception": "Using the annual rate $r = 0.06$ with $n = 24$ months, or dividing the rate by $12$ while leaving $n = 2$ years.",
+      "correct_concept": "In $A = P(1 + r)^n$, $r$ and $n$ must be expressed in the same time unit (per compounding period). For $6\\%$ p.a. compounded monthly for $2$ years, $r = \\frac{0.06}{12} = 0.005$ per month AND $n = 2 \\times 12 = 24$ months.",
+      "incorrect_working": "$$A = 1000(1.06)^{24} \\quad \\text{or} \\quad A = 1000(1.005)^2 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$A = 1000\\left(1 + \\frac{0.06}{12}\\right)^{2 \\times 12} = 1000(1.005)^{24} \\quad (\\text{Correct})$$",
+      "counter_example": "Using $1000(1.06)^{24}$ treats $6\\%$ as a monthly rate ($72\\%$ p.a.), inflating the balance to $\\$4048.93$ instead of the true $\\$1127.16$."
+    },
+    {
+      "id": "MISC_10_1_1_2",
+      "title": "Prematurely Rounding the Periodic Interest Rate",
+      "misconception": "Rounding a recurring periodic rate such as $\\frac{8\\%}{12} = 0.00666\\ldots$ to $0.007$ before raising $(1 + r)$ to a large power $n$.",
+      "correct_concept": "Small rounding errors in the base $(1 + r)$ are magnified exponentially when raised to a large power $n$. Always enter the exact fraction $1 + \\frac{0.08}{12}$ into your calculator and round only the final dollar amount.",
+      "incorrect_working": "$$A = 100\\,000(1.007)^{60} = \\$151\\,969.29 \\quad (\\text{Incorrect: rounded rate early})$$",
+      "correct_working": "$$A = 100\\,000\\left(1 + \\frac{0.08}{12}\\right)^{60} = \\$148\\,984.57 \\quad (\\text{Correct})$$",
+      "counter_example": "Over $60$ months on $\\$100\\,000$, rounding $0.00666\\ldots$ to $0.007$ creates an error of $\\$2984.72$!"
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_1_1_Q1",
+        "question": "Find the final amount when $\\$2000$ is invested at $10\\%$ p.a. compounded annually for $3$ years.",
+        "difficulty": "Easy",
+        "context": "Annual Compound Interest",
+        "final_answer": "$\\$2662$",
+        "step_by_step_solution": [
+          "Substitute $P = 2000$, $r = 0.10$, and $n = 3$ into $A = P(1 + r)^n$.",
+          "$A = 2000(1.10)^3 = 2000 \\times 1.331 = \\$2662$."
+        ]
+      },
+      {
+        "id": "10_1_1_Q2",
+        "question": "Calculate the total compound interest earned when $\\$4000$ is invested at $5\\%$ p.a. compounded annually for $2$ years.",
+        "difficulty": "Easy",
+        "context": "Compound Interest Earned",
+        "final_answer": "$\\$410$",
+        "step_by_step_solution": [
+          "Find the final amount: $A = 4000(1.05)^2 = 4000 \\times 1.1025 = \\$4410$.",
+          "Subtract the principal: $I = 4410 - 4000 = \\$410$."
+        ]
+      },
+      {
+        "id": "10_1_1_Q3",
+        "question": "An investment of $\\$16\\,000$ earns $10\\%$ p.a. compounded half-yearly for $2$ years. Find the exact final balance.",
+        "difficulty": "Medium",
+        "context": "Half-Yearly Compounding",
+        "final_answer": "$\\$19\\,448.10$",
+        "step_by_step_solution": [
+          "For half-yearly compounding ($k = 2$), the rate per half-year is $r = \\frac{10\\%}{2} = 5\\% = 0.05$ and the number of periods is $n = 2 \\times 2 = 4$.",
+          "$A = 16\\,000(1.05)^4 = 16\\,000 \\times 1.21550625 = \\$19\\,448.10$."
+        ]
+      },
+      {
+        "id": "10_1_1_Q4",
+        "question": "Find the exact final balance when $\\$10\\,000$ is invested at $12\\%$ p.a. compounded monthly for $3$ months.",
+        "difficulty": "Medium",
+        "context": "Monthly Compounding",
+        "final_answer": "$\\$10\\,303.01$",
+        "step_by_step_solution": [
+          "The monthly interest rate is $r = \\frac{12\\%}{12} = 1\\% = 0.01$ and $n = 3$ months.",
+          "$A = 10\\,000(1.01)^3 = 10\\,000 \\times 1.030301 = \\$10\\,303.01$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_1_1_Q5",
+        "question": "A Geelong cafe purchases an espresso machine for $\\$15\\,000$. Its value depreciates using the reducing-balance method at $10\\%$ p.a. What is its value after $3$ years, and how much value has it lost?",
+        "difficulty": "Medium",
+        "context": "Equipment Depreciation",
+        "final_answer": "Value $\\$10\\,935$; total depreciation $\\$4065$",
+        "step_by_step_solution": [
+          "Substitute $P = 15\\,000$, $r = 0.10$, and $n = 3$ into $A = P(1 - r)^n$.",
+          "$A = 15\\,000(0.9)^3 = 15\\,000 \\times 0.729 = \\$10\\,935$.",
+          "Total value lost $= 15\\,000 - 10\\,935 = \\$4065$."
+        ]
+      },
+      {
+        "id": "10_1_1_Q6",
+        "question": "If the average rate of inflation in Australia is $4\\%$ p.a., what will a basket of groceries currently costing $\\$250$ cost in $2$ years' time?",
+        "difficulty": "Medium",
+        "context": "Inflation Modelling",
+        "final_answer": "$\\$270.40$",
+        "step_by_step_solution": [
+          "Model inflation with $A = P(1 + i)^n$ where $P = 250$, $i = 0.04$, and $n = 2$.",
+          "$A = 250(1.04)^2 = 250 \\times 1.0816 = \\$270.40$."
+        ]
+      },
+      {
+        "id": "10_1_1_Q7",
+        "question": "Priya wants to have $\\$12\\,100$ in her savings account in $2$ years' time to buy a used car. How much principal $P$ must she deposit today into an account paying $10\\%$ p.a. compounded annually?",
+        "difficulty": "Challenging",
+        "context": "Present Value Calculation",
+        "final_answer": "$\\$10\\,000$",
+        "step_by_step_solution": [
+          "Substitute $A = 12\\,100$, $r = 0.10$, and $n = 2$ into $A = P(1 + r)^2$: $12\\,100 = P(1.10)^2 = 1.21P$.",
+          "Divide both sides by $1.21$: $P = \\frac{12\\,100}{1.21} = \\$10\\,000$."
+        ]
+      },
+      {
+        "id": "10_1_1_Q8",
+        "question": "Liam compares two investment options for $\\$5000$ over $2$ years: Option A pays $6.5\\%$ p.a. simple interest, while Option B pays $6\\%$ p.a. compounded annually. Which option yields the greater final balance, and by how much?",
+        "difficulty": "Challenging",
+        "context": "Comparing Simple and Compound Interest",
+        "final_answer": "Option A yields $\\$5650$ and Option B yields $\\$5618$; Option A is greater by $\\$32$",
+        "step_by_step_solution": [
+          "For Option A (simple interest): $A_A = 5000(1 + 0.065 \\times 2) = 5000(1.13) = \\$5650$.",
+          "For Option B (compound interest): $A_B = 5000(1.06)^2 = 5000(1.1236) = \\$5618$.",
+          "Difference: $5650 - 5618 = \\$32$ in favour of Option A."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_1_1_Q9",
+        "question": "A student calculates the balance of $\\$150\\,000$ invested at $8\\%$ p.a. compounded monthly for $1$ month by rounding $\\frac{0.08}{12} = 0.00666\\ldots$ to $0.0067$. Find the exact balance after $1$ month and determine the dollar error caused by this rounding.",
+        "difficulty": "Medium",
+        "context": "Effect of Rounding Approximations",
+        "final_answer": "Exact balance $\\$151\\,000$; rounded calculation gives $\\$151\\,005$ (an error of $\\$5$)",
+        "step_by_step_solution": [
+          "Using the exact fraction $r = \\frac{0.08}{12} = \\frac{1}{150}$, $A_{\\text{exact}} = 150\\,000\\left(1 + \\frac{1}{150}\\right) = 150\\,000 + 1000 = \\$151\\,000$.",
+          "Using the rounded rate $r \\approx 0.0067$, $A_{\\text{approx}} = 150\\,000(1.0067) = \\$151\\,005$.",
+          "The premature rounding introduces an error of $151\\,005 - 151\\,000 = \\$5$ in just one month."
+        ]
+      },
+      {
+        "id": "10_1_1_Q10",
+        "question": "Explain why an asset depreciating by $20\\%$ p.a. under the reducing-balance method does NOT lose $100\\%$ of its value after $5$ years, and state the exact fraction of its original value that remains after $5$ years.",
+        "difficulty": "Medium",
+        "context": "Exponential vs Linear Depreciation",
+        "final_answer": "Each $20\\%$ reduction applies to the reduced balance rather than the original price; $\\left(\\frac{4}{5}\\right)^5 = \\frac{1024}{3125}$ ($32.768\\%$) remains",
+        "step_by_step_solution": [
+          "Under reducing-balance depreciation, the $20\\%$ deduction each year is taken from the current book value, not the initial price $P$.",
+          "After $5$ years, the remaining fraction of value is $(1 - 0.20)^5 = \\left(\\frac{4}{5}\\right)^5 = \\frac{1024}{3125} = 0.32768$ ($32.768\\%$), which is strictly positive."
+        ]
+      },
+      {
+        "id": "10_1_1_Q11",
+        "question": "Find the effective annual interest rate (as an exact percentage) of a loan charging $10\\%$ p.a. compounded half-yearly, and explain why it is greater than $10\\%$ p.a.",
+        "difficulty": "Challenging",
+        "context": "Effective Annual Interest Rate",
+        "final_answer": "$10.25\\%$ p.a., because interest earned in the first half-year earns additional interest in the second half-year",
+        "step_by_step_solution": [
+          "Over $1$ year ($2$ half-years at $5\\%$ per half-year), the growth factor is $(1 + 0.05)^2 = 1.1025$.",
+          "Subtracting $1$ gives the effective annual rate: $1.1025 - 1 = 0.1025 = 10.25\\%$, where the extra $0.25\\%$ is $5\\%$ interest earned on the first half-year's $5\\%$ interest."
+        ]
+      },
+      {
+        "id": "10_1_1_Q12",
+        "question": "Prove algebraically that if a principal $P$ is invested at rate $r$ per period for $2$ periods, the difference between the compound interest earned and the simple interest earned is $Pr^2$.",
+        "difficulty": "Extension",
+        "context": "Algebraic Proof of Compound vs Simple Interest",
+        "final_answer": "$I_{\\text{compound}} - I_{\\text{simple}} = P[(1 + r)^2 - 1] - 2Pr = Pr^2$",
+        "step_by_step_solution": [
+          "For $2$ periods, the compound amount is $A_C = P(1 + r)^2 = P(1 + 2r + r^2) = P + 2Pr + Pr^2$, so $I_C = 2Pr + Pr^2$.",
+          "The simple interest for $2$ periods is $I_S = P \\times r \\times 2 = 2Pr$.",
+          "Subtracting gives $I_C - I_S = (2Pr + Pr^2) - 2Pr = Pr^2$, which is precisely the interest earned in period $2$ on period $1$'s interest $Pr$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_1_1_1a",
+      "description": "Worked Example 10.1.1.1 amount",
+      "expression": "5000 * (1 + Rational(6, 100))**3",
+      "expected": "Rational(148877, 25)"
+    },
+    {
+      "id": "WE10_1_1_1b",
+      "description": "Worked Example 10.1.1.1 interest",
+      "expression": "5000 * (1 + Rational(6, 100))**3 - 5000",
+      "expected": "Rational(23877, 25)"
+    },
+    {
+      "id": "NYT10_1_1_1",
+      "description": "Now You Try 10.1.1.1 amount",
+      "expression": "10000 * (1 + Rational(5, 100))**3",
+      "expected": "Rational(46305, 4)"
+    },
+    {
+      "id": "NYT10_1_1_2",
+      "description": "Now You Try 10.1.1.2 amount",
+      "expression": "20000 * (1 + Rational(3, 100))**4",
+      "expected": "Rational(112550881, 5000)"
+    },
+    {
+      "id": "WE10_1_1_3a",
+      "description": "Worked Example 10.1.1.3(a) depreciated value",
+      "expression": "25000 * (1 - Rational(20, 100))**3",
+      "expected": 12800
+    },
+    {
+      "id": "WE10_1_1_3b",
+      "description": "Worked Example 10.1.1.3(b) total depreciation",
+      "expression": "25000 - 25000 * (1 - Rational(20, 100))**3",
+      "expected": 12200
+    },
+    {
+      "id": "NYT10_1_1_3",
+      "description": "Now You Try 10.1.1.3 depreciated value",
+      "expression": "40000 * (1 - Rational(15, 100))**2",
+      "expected": 28900
+    },
+    {
+      "id": "EX10_1_1_Q1",
+      "description": "Exercise 10.1.1 Q1",
+      "expression": "2000 * (1 + Rational(10, 100))**3",
+      "expected": 2662
+    },
+    {
+      "id": "EX10_1_1_Q2",
+      "description": "Exercise 10.1.1 Q2",
+      "expression": "4000 * (1 + Rational(5, 100))**2 - 4000",
+      "expected": 410
+    },
+    {
+      "id": "EX10_1_1_Q3",
+      "description": "Exercise 10.1.1 Q3",
+      "expression": "16000 * (1 + Rational(5, 100))**4",
+      "expected": "Rational(194481, 10)"
+    },
+    {
+      "id": "EX10_1_1_Q4",
+      "description": "Exercise 10.1.1 Q4",
+      "expression": "10000 * (1 + Rational(1, 100))**3",
+      "expected": "Rational(1030301, 100)"
+    },
+    {
+      "id": "EX10_1_1_Q5",
+      "description": "Exercise 10.1.1 Q5",
+      "expression": "15000 * (1 - Rational(10, 100))**3",
+      "expected": 10935
+    },
+    {
+      "id": "EX10_1_1_Q6",
+      "description": "Exercise 10.1.1 Q6",
+      "expression": "250 * (1 + Rational(4, 100))**2",
+      "expected": "Rational(1352, 5)"
+    },
+    {
+      "id": "EX10_1_1_Q7",
+      "description": "Exercise 10.1.1 Q7",
+      "expression": "12100 / (1 + Rational(10, 100))**2",
+      "expected": 10000
+    },
+    {
+      "id": "EX10_1_1_Q8",
+      "description": "Exercise 10.1.1 Q8 difference",
+      "expression": "5000 * (1 + 2 * Rational(65, 1000)) - 5000 * (1 + Rational(6, 100))**2",
+      "expected": 32
+    },
+    {
+      "id": "EX10_1_1_Q9",
+      "description": "Exercise 10.1.1 Q9 rounding error",
+      "expression": "150000 * (1 + Rational(67, 10000)) - 150000 * (1 + Rational(8, 1200))",
+      "expected": 5
+    },
+    {
+      "id": "EX10_1_1_Q12",
+      "description": "Exercise 10.1.1 Q12 algebraic proof",
+      "expression": "simplify(P * ((1 + r)**2 - 1) - 2*P*r - P*r**2)",
+      "expected": 0
+    }
+  ]
+}

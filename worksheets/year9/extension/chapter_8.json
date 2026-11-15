@@ -1,0 +1,199 @@
+{
+  "chapter_number": 8,
+  "chapter_title": "Pythagoras' Theorem and Right-Angled Trigonometry",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_8_1",
+      "section_code": "8A",
+      "title": "Trigonometric Ratios (SOHCAHTOA) and Finding Side Lengths",
+      "vcaa_code": "VC2M9M04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Given one exact trigonometric ratio for an acute angle $\\theta$, use Pythagoras' theorem to find the remaining two exact ratios and evaluate the expression:",
+          "parts": [
+            { "label": "a", "question": "Given $\\sin(\\theta) = \\dfrac{5}{13}$, find $\\cos(\\theta)$ and $\\tan(\\theta)$", "answer": "$\\cos(\\theta) = \\dfrac{12}{13}, \\tan(\\theta) = \\dfrac{5}{12}$" },
+            { "label": "b", "question": "Given $\\cos(\\theta) = \\dfrac{8}{17}$, find $\\sin(\\theta)$ and $\\tan(\\theta)$", "answer": "$\\sin(\\theta) = \\dfrac{15}{17}, \\tan(\\theta) = \\dfrac{15}{8}$" },
+            { "label": "c", "question": "Given $\\tan(\\theta) = \\dfrac{2}{3}$, find the exact surd values of $\\sin(\\theta)$ and $\\cos(\\theta)$", "answer": "$\\sin(\\theta) = \\dfrac{2}{\\sqrt{13}}, \\cos(\\theta) = \\dfrac{3}{\\sqrt{13}}$" },
+            { "label": "d", "question": "Verify $\\sin^2(\\theta) + \\cos^2(\\theta)$ when $\\sin(\\theta) = \\dfrac{7}{25}$ and $\\cos(\\theta) = \\dfrac{24}{25}$", "answer": "$\\dfrac{49 + 576}{625} = 1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the exact surd value of each unknown using exact trigonometric ratios for $30^\\circ, 45^\\circ, 60^\\circ$:",
+          "parts": [
+            { "label": "a", "question": "The altitude $h$ and area of an equilateral triangle of side length $12\\text{ cm}$", "answer": "$h = 6\\sqrt{3}\\text{ cm}$, $\\text{Area} = 36\\sqrt{3}\\text{ cm}^2$" },
+            { "label": "b", "question": "The perimeter of a $30^\\circ\\text{--}60^\\circ\\text{--}90^\\circ$ triangle whose shortest side (opposite $30^\\circ$) is $5\\text{ cm}$", "answer": "$(15 + 5\\sqrt{3})\\text{ cm}$" },
+            { "label": "c", "question": "In $\\triangle ABC$, altitude $CD = 6\\text{ cm}$ is perpendicular to $AB$, with $\\angle A = 45^\\circ$ and $\\angle B = 30^\\circ$; find $AB = AD + DB$", "answer": "$(6 + 6\\sqrt{3})\\text{ cm}$" },
+            { "label": "d", "question": "The exact area of a parallelogram with sides $8\\text{ cm}$ and $10\\text{ cm}$ and acute interior angle $60^\\circ$", "answer": "$40\\sqrt{3}\\text{ cm}^2$ ($h = 8\\sin 60^\\circ = 4\\sqrt{3}\\text{ cm}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A rectangular prism $ABCDEFGH$ has base length $AB = 8\\text{ cm}$, base width $BC = 6\\text{ cm}$, and vertical height $CG = 24\\text{ cm}$. Find:",
+          "parts": [
+            { "label": "a", "question": "The length of the base diagonal $AC = \\sqrt{8^2 + 6^2}$", "answer": "$10\\text{ cm}$" },
+            { "label": "b", "question": "The length of the 3D space diagonal $AG = \\sqrt{AC^2 + CG^2}$", "answer": "$26\\text{ cm}$" },
+            { "label": "c", "question": "The exact value of $\\tan(\\angle GAC)$, where $\\angle GAC$ is the angle between $AG$ and the base $ABCD$", "answer": "$\\dfrac{24}{10} = \\dfrac{12}{5} = 2.4$" },
+            { "label": "d", "question": "The exact value of $\\sin(\\angle GAC)$ and $\\cos(\\angle GAC)$", "answer": "$\\sin(\\angle GAC) = \\dfrac{12}{13}, \\cos(\\angle GAC) = \\dfrac{5}{13}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Evaluate each exact trigonometric expression without a calculator:",
+          "parts": [
+            { "label": "a", "question": "$\\sin^2(30^\\circ) + \\cos^2(30^\\circ)$", "answer": "$\\left(\\frac{1}{2}\\right)^2 + \\left(\\frac{\\sqrt{3}}{2}\\right)^2 = 1$" },
+            { "label": "b", "question": "$\\tan(60^\\circ)\\tan(30^\\circ) + \\sin(30^\\circ)$", "answer": "$\\sqrt{3} \\cdot \\frac{1}{\\sqrt{3}} + \\frac{1}{2} = \\dfrac{3}{2} = 1.5$" },
+            { "label": "c", "question": "$2\\sin(45^\\circ)\\cos(45^\\circ)$", "answer": "$2\\left(\\frac{1}{\\sqrt{2}}\\right)\\left(\\frac{1}{\\sqrt{2}}\\right) = 1$" },
+            { "label": "d", "question": "$\\dfrac{\\sin(60^\\circ)}{\\cos(60^\\circ)} - \\tan(60^\\circ)$", "answer": "$0$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A regular hexagon of side length $8\\text{ cm}$ is divided into $6$ congruent equilateral triangles meeting at the centre. Using $\\sin(60^\\circ) = \\frac{\\sqrt{3}}{2}$, find the exact perpendicular apothem (height of one triangle) and the exact total area of the regular hexagon.",
+          "answer": "Apothem $= 4\\sqrt{3}\\text{ cm}$; total area $= 6 \\times \\frac{1}{2}(8)(4\\sqrt{3}) = 96\\sqrt{3}\\text{ cm}^2$"
+        },
+        {
+          "number": 6,
+          "question": "Two observers $P$ and $Q$ stand on opposite sides of a vertical radio mast $MT$ of height $h = 30\\text{ m}$ in line with its base $M$. From $P$ the angle of elevation to $T$ is $30^\\circ$, and from $Q$ the angle of elevation to $T$ is $60^\\circ$. Find the exact surd distance $PQ$ between the two observers.",
+          "answer": "$40\\sqrt{3}\\text{ m}$ ($PM = 30\\sqrt{3}\\text{ m}$ and $QM = \\frac{30}{\\sqrt{3}} = 10\\sqrt{3}\\text{ m}$, so $PQ = 40\\sqrt{3}\\text{ m}$)"
+        },
+        {
+          "number": 7,
+          "question": "A square-based pyramid has a base of side length $10\\text{ cm}$ and vertical height $12\\text{ cm}$ directly above the centre of the base. Find (a) the slant height $s$ of each triangular face and (b) the exact value of $\\tan(\\theta)$ where $\\theta$ is the angle between a triangular face and the square base.",
+          "answer": "(a) $s = \\sqrt{12^2 + 5^2} = 13\\text{ cm}$, (b) $\\tan(\\theta) = \\dfrac{12}{5} = 2.4$"
+        },
+        {
+          "number": 8,
+          "question": "A pendulum of length $40\\text{ cm}$ swings to an angle of $60^\\circ$ from the vertical. By how many centimetres has the pendulum bob risen vertically above its lowest point?",
+          "answer": "$20\\text{ cm}$ ($40 - 40\\cos(60^\\circ) = 40 - 20 = 20\\text{ cm}$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Using the definitions $\\sin(\\theta) = \\dfrac{O}{H}$, $\\cos(\\theta) = \\dfrac{A}{H}$, and $\\tan(\\theta) = \\dfrac{O}{A}$ together with Pythagoras' theorem $O^2 + A^2 = H^2$, prove the two fundamental trigonometric identities $\\tan(\\theta) = \\dfrac{\\sin(\\theta)}{\\cos(\\theta)}$ and $\\sin^2(\\theta) + \\cos^2(\\theta) = 1$.",
+          "answer": "First, $\\dfrac{\\sin(\\theta)}{\\cos(\\theta)} = \\dfrac{O/H}{A/H} = \\dfrac{O}{A} = \\tan(\\theta)$. Second, $\\sin^2(\\theta) + \\cos^2(\\theta) = \\left(\\dfrac{O}{H}\\right)^2 + \\left(\\dfrac{A}{H}\\right)^2 = \\dfrac{O^2 + A^2}{H^2} = \\dfrac{H^2}{H^2} = 1$."
+        },
+        {
+          "number": 10,
+          "question": "By bisecting an equilateral triangle of side length $2$ with a perpendicular altitude, derive from first principles the exact values of $\\sin(30^\\circ)$, $\\cos(30^\\circ)$, $\\tan(30^\\circ)$, $\\sin(60^\\circ)$, $\\cos(60^\\circ)$, and $\\tan(60^\\circ)$.",
+          "answer": "The altitude bisects the base of $2$ into segments of length $1$ and bisects the $60^\\circ$ apex angle into $30^\\circ$. By Pythagoras' theorem, the altitude is $\\sqrt{2^2 - 1^2} = \\sqrt{3}$. In the resulting $30^\\circ\\text{--}60^\\circ\\text{--}90^\\circ$ triangle (sides $1, \\sqrt{3}, 2$), $\\sin(30^\\circ) = \\cos(60^\\circ) = \\frac{1}{2}$, $\\cos(30^\\circ) = \\sin(60^\\circ) = \\frac{\\sqrt{3}}{2}$, $\\tan(30^\\circ) = \\frac{1}{\\sqrt{3}}$, and $\\tan(60^\\circ) = \\sqrt{3}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_8_1_1d", "expression": "Rational(7, 25)**2 + Rational(24, 25)**2", "expected": 1 },
+        { "id": "WSE9_8_1_2a", "expression": "Rational(1, 2) * 12 * 12 * sin(pi/3)", "expected": "36*sqrt(3)" },
+        { "id": "WSE9_8_1_2d", "expression": "10 * 8 * sin(pi/3)", "expected": "40*sqrt(3)" },
+        { "id": "WSE9_8_1_3b", "expression": "sqrt(8**2 + 6**2 + 24**2)", "expected": 26 },
+        { "id": "WSE9_8_1_3c", "expression": "Rational(24, 10)", "expected": 2.4 },
+        { "id": "WSE9_8_1_4a", "expression": "sin(pi/6)**2 + cos(pi/6)**2", "expected": 1 },
+        { "id": "WSE9_8_1_4b", "expression": "tan(pi/3)*tan(pi/6) + sin(pi/6)", "expected": 1.5 },
+        { "id": "WSE9_8_1_4c", "expression": "2*sin(pi/4)*cos(pi/4)", "expected": 1 },
+        { "id": "WSE9_8_1_5", "expression": "6 * Rational(1, 2) * 8 * 4 * sqrt(3)", "expected": "96*sqrt(3)" },
+        { "id": "WSE9_8_1_8", "expression": "40 - 40*cos(pi/3)", "expected": 20 }
+      ]
+    },
+    {
+      "section_id": "9_8_2",
+      "section_code": "8B",
+      "title": "Inverse Trigonometry, Elevation, Depression, and Bearings",
+      "vcaa_code": "VC2M9M04",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the exact acute angle $\\theta$ (in degrees) in each geometric configuration:",
+          "parts": [
+            { "label": "a", "question": "A vertical pole of height $10\\text{ m}$ casts a shadow of length $10\\sqrt{3}\\text{ m}$; find the sun's angle of elevation $\\theta$", "answer": "$\\theta = 30^\\circ$" },
+            { "label": "b", "question": "The diagonal of a rectangle is twice the length of its shorter side; find the acute angle between the diagonal and the longer side", "answer": "$30^\\circ$ ($\\sin\\theta = \\frac{1}{2}$)" },
+            { "label": "c", "question": "A rhombus has diagonals of lengths $6\\text{ cm}$ and $6\\sqrt{3}\\text{ cm}$; find its acute and obtuse interior angles", "answer": "$60^\\circ$ and $120^\\circ$ (half-angles are $30^\\circ$ and $60^\\circ$)" },
+            { "label": "d", "question": "A cone has base radius $r = 5\\text{ cm}$ and slant height $s = 10\\text{ cm}$; find the angle between the slant edge and the circular base", "answer": "$60^\\circ$ ($\\cos\\theta = \\frac{5}{10} = \\frac{1}{2}$)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A ship sails from port $P$ for $12\\text{ km}$ on a bearing of $030^\\circ\\text{T}$ to $Q$, and then sails $16\\text{ km}$ on a bearing of $120^\\circ\\text{T}$ to $R$. Find:",
+          "parts": [
+            { "label": "a", "question": "The interior angle $\\angle PQR$ (use the back bearing of $PQ$ at $Q$, which is $210^\\circ\\text{T}$)", "answer": "$90^\\circ$ ($210^\\circ - 120^\\circ = 90^\\circ$)" },
+            { "label": "b", "question": "The straight-line distance $PR$ from port", "answer": "$20\\text{ km}$ ($\\sqrt{12^2 + 16^2} = 20$)" },
+            { "label": "c", "question": "The value of $\\tan(\\angle QPR)$ as a simplified fraction", "answer": "$\\dfrac{4}{3}$" },
+            { "label": "d", "question": "The true bearing of $R$ from $P$ rounded to the nearest degree ($\\tan^{-1}(4/3) \\approx 53^\\circ$)", "answer": "$083^\\circ\\text{T}$ ($30^\\circ + 53^\\circ$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "From two collinear points $A$ and $B$ on level ground (with $B$ closer to the base $C$ of a vertical tower $CD$ of height $h$), the angles of elevation to the top $D$ are $\\alpha = 30^\\circ$ at $A$ and $\\beta = 45^\\circ$ at $B$. Given $h = 50\\text{ m}$, find:",
+          "parts": [
+            { "label": "a", "question": "The distance $BC$ from the closer point to the tower", "answer": "$50\\text{ m}$" },
+            { "label": "b", "question": "The exact distance $AC$ from the further point to the tower", "answer": "$50\\sqrt{3}\\text{ m}$" },
+            { "label": "c", "question": "The exact distance $AB = AC - BC$ between the two observation points", "answer": "$50(\\sqrt{3} - 1)\\text{ m} \\approx 36.60\\text{ m}$" },
+            { "label": "d", "question": "If instead $AB = 20\\text{ m}$ is given with $\\alpha = 30^\\circ$ and $\\beta = 45^\\circ$, express $h$ in the form $\\dfrac{20}{\\sqrt{3} - 1}$ and rationalise to $10(\\sqrt{3} + 1)$", "answer": "$h = 10(\\sqrt{3} + 1)\\text{ m} \\approx 27.32\\text{ m}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "In a 3D cube of side length $a = 10\\text{ cm}$, let $AC$ be the base diagonal and $AG$ be the space diagonal. Find:",
+          "parts": [
+            { "label": "a", "question": "The exact surd lengths of $AC$ and $AG$", "answer": "$AC = 10\\sqrt{2}\\text{ cm}, AG = 10\\sqrt{3}\\text{ cm}$" },
+            { "label": "b", "question": "The exact value of $\\tan(\\angle GAC)$ (angle between the space diagonal and the base)", "answer": "$\\dfrac{1}{\\sqrt{2}} = \\dfrac{\\sqrt{2}}{2}$" },
+            { "label": "c", "question": "The angle $\\angle GAC$ rounded to $1$ decimal place", "answer": "$35.3^\\circ$" },
+            { "label": "d", "question": "The angle between a face diagonal $AC$ and base edge $AB$", "answer": "$45^\\circ$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Coast Guard helicopter hovers at an altitude of $120\\text{ m}$ above Bass Strait and sights two life-rafts directly due east of the helicopter at angles of depression of $30^\\circ$ and $60^\\circ$. Find the exact surd distance between the two life-rafts.",
+          "answer": "$80\\sqrt{3}\\text{ m} \\approx 138.56\\text{ m}$ ($x_1 = 120\\sqrt{3}\\text{ m}$ and $x_2 = \\frac{120}{\\sqrt{3}} = 40\\sqrt{3}\\text{ m}$, so $x_1 - x_2 = 80\\sqrt{3}\\text{ m}$)"
+        },
+        {
+          "number": 6,
+          "question": "A light plane leaves Alice Springs and flies $150\\text{ km}$ on a bearing of $300^\\circ\\text{T}$ ($60^\\circ$ west of north), then turns and flies $150\\text{ km}$ on a bearing of $240^\\circ\\text{T}$ ($60^\\circ$ west of south). Find how far north/south and how far west the plane is from Alice Springs at the end of the second leg.",
+          "answer": "$0\\text{ km}$ north/south (due west) and $150\\sqrt{3}\\text{ km} \\approx 259.81\\text{ km}$ west ($150\\cos 60^\\circ - 150\\cos 60^\\circ = 0$ north; $2 \\times 150\\sin 60^\\circ = 150\\sqrt{3}\\text{ km}$ west)"
+        },
+        {
+          "number": 7,
+          "question": "From a window $15\\text{ m}$ above street level in Brisbane, the angle of depression to the foot of an office building across the street is $30^\\circ$, and the angle of elevation to the top of the same building is $60^\\circ$. Find (a) the exact width of the street and (b) the total height of the office building.",
+          "answer": "(a) Width $= 15\\sqrt{3}\\text{ m}$, (b) Total height $= 15 + (15\\sqrt{3})\\tan(60^\\circ) = 15 + 45 = 60\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "A vertical flagpole of height $20\\text{ m}$ stands at the corner $C$ of a rectangular courtyard $ABCD$ where $BC = 15\\text{ m}$ (south) and $AB = 20\\text{ m}$ (east). Find the distance $AC$ across the ground and the angle of elevation from corner $A$ to the top of the flagpole.",
+          "answer": "$AC = \\sqrt{15^2 + 20^2} = 25\\text{ m}$; angle of elevation $= \\tan^{-1}\\left(\\frac{20}{25}\\right) = \\tan^{-1}(0.8) \\approx 38.7^\\circ$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "An observer walks a horizontal distance $d$ directly towards a vertical tower of height $h$, and the angle of elevation increases from $\\alpha$ to $\\beta$. Prove that the height of the tower is given by the formula $h = \\dfrac{d}{\\frac{1}{\\tan\\alpha} - \\frac{1}{\\tan\\beta}}$.",
+          "answer": "Let the initial horizontal distance be $x_1 = \\dfrac{h}{\\tan\\alpha}$ and the closer distance be $x_2 = \\dfrac{h}{\\tan\\beta}$. Since $d = x_1 - x_2 = h\\left(\\dfrac{1}{\\tan\\alpha} - \\dfrac{1}{\\tan\\beta}\\right)$, dividing both sides gives $h = \\dfrac{d}{\\frac{1}{\\tan\\alpha} - \\frac{1}{\\tan\\beta}}$."
+        },
+        {
+          "number": 10,
+          "question": "Prove that in any cube of side length $a$, the angle $\\theta$ between any space diagonal and any adjacent face is always $\\tan^{-1}\\left(\\frac{1}{\\sqrt{2}}\\right) \\approx 35.26^\\circ$, independent of the size $a$ of the cube.",
+          "answer": "For any cube of edge $a$, the face diagonal has length $\\sqrt{a^2 + a^2} = a\\sqrt{2}$ and the perpendicular edge has length $a$. Thus $\\tan(\\theta) = \\dfrac{a}{a\\sqrt{2}} = \\dfrac{1}{\\sqrt{2}}$, where $a$ cancels completely."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_8_2_1a", "expression": "atan(10 / (10*sqrt(3))) * 180 / pi", "expected": 30 },
+        { "id": "WSE9_8_2_1b", "expression": "asin(Rational(1, 2)) * 180 / pi", "expected": 30 },
+        { "id": "WSE9_8_2_1d", "expression": "acos(Rational(5, 10)) * 180 / pi", "expected": 60 },
+        { "id": "WSE9_8_2_2a", "expression": "210 - 120", "expected": 90 },
+        { "id": "WSE9_8_2_2b", "expression": "sqrt(12**2 + 16**2)", "expected": 20 },
+        { "id": "WSE9_8_2_3d", "expression": "simplify(20 / (sqrt(3) - 1) - 10*(sqrt(3) + 1))", "expected": 0 },
+        { "id": "WSE9_8_2_5", "expression": "120 / tan(pi/6) - 120 / tan(pi/3)", "expected": "80*sqrt(3)" },
+        { "id": "WSE9_8_2_6", "expression": "2 * 150 * sin(pi/3)", "expected": "150*sqrt(3)" },
+        { "id": "WSE9_8_2_7b", "expression": "15 + (15 / tan(pi/6)) * tan(pi/3)", "expected": 60 },
+        { "id": "WSE9_8_2_8", "expression": "sqrt(15**2 + 20**2)", "expected": 25 }
+      ]
+    }
+  ]
+}

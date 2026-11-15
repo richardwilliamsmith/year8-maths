@@ -1,0 +1,196 @@
+{
+  "chapter_number": 2,
+  "chapter_title": "Financial Mathematics and Direct Proportion",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_2_1",
+      "section_code": "2A",
+      "title": "Earning Income, Commission, and Australian Taxation",
+      "vcaa_code": "VC2M9N02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Calculate the weekly wage for each worker (hours $\\times$ hourly rate):",
+          "parts": [
+            { "label": "a", "question": "$20\\text{ hours}$ at $\\$25/\\text{h}$", "answer": "$\\$500$" },
+            { "label": "b", "question": "$38\\text{ hours}$ at $\\$30/\\text{h}$", "answer": "$\\$1140$" },
+            { "label": "c", "question": "$15\\text{ hours}$ at $\\$22/\\text{h}$", "answer": "$\\$330$" },
+            { "label": "d", "question": "$40\\text{ hours}$ at $\\$28/\\text{h}$", "answer": "$\\$1120$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the overtime hourly rate for a worker whose normal rate is $\\$24/\\text{h}$:",
+          "parts": [
+            { "label": "a", "question": "Time-and-a-half rate ($\\$24 \\times 1.5$)", "answer": "$\\$36/\\text{h}$" },
+            { "label": "b", "question": "Double-time rate ($\\$24 \\times 2$)", "answer": "$\\$48/\\text{h}$" },
+            { "label": "c", "question": "Pay for $3$ hours at time-and-a-half", "answer": "$\\$108$" },
+            { "label": "d", "question": "Pay for $4$ hours at double time", "answer": "$\\$192$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Calculate the sales commission earned on each sales total:",
+          "parts": [
+            { "label": "a", "question": "$5\\%$ of $\\$2000$", "answer": "$\\$100$" },
+            { "label": "b", "question": "$10\\%$ of $\\$8500$", "answer": "$\\$850$" },
+            { "label": "c", "question": "$2\\%$ of $\\$30\\,000$", "answer": "$\\$600$" },
+            { "label": "d", "question": "$4\\%$ of $\\$15\\,000$", "answer": "$\\$600$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Calculate the net pay (take-home pay) using $\\text{Net Pay} = \\text{Gross Pay} - \\text{Tax}$:",
+          "parts": [
+            { "label": "a", "question": "Gross pay $\\$850$, tax $\\$120$", "answer": "$\\$730$" },
+            { "label": "b", "question": "Gross pay $\\$1240$, tax $\\$210$", "answer": "$\\$1030$" },
+            { "label": "c", "question": "Gross pay $\\$1500$, tax $\\$315$", "answer": "$\\$1185$" },
+            { "label": "d", "question": "Gross pay $\\$2100$, tax $\\$480$", "answer": "$\\$1620$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A casual café worker in Melbourne earns $\\$26/\\text{h}$ on Saturday and works $6\\text{ hours}$. How much does she earn for the shift?",
+          "answer": "$\\$156$"
+        },
+        {
+          "number": 6,
+          "question": "A car salesperson in Brisbane receives a weekly retainer of $\\$500$ plus $3\\%$ commission on $\\$20\\,000$ of car sales. Find his total pay for the week.",
+          "answer": "$\\$1100$"
+        },
+        {
+          "number": 7,
+          "question": "In Australia, the tax-free threshold is $\\$18\\,200$. If a Year 9 student earns $\\$6400$ from a part-time job over the financial year, how much income tax must they pay?",
+          "answer": "$\\$0$ (since $\\$6400$ is below $\\$18\\,200$)"
+        },
+        {
+          "number": 8,
+          "question": "An office worker earns $\\$1000$ per week. Calculate her $17.5\\%$ holiday leave loading on $1$ week's pay ($0.175 \\times \\$1000$).",
+          "answer": "$\\$175$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain the difference between a worker's gross pay and their net pay.",
+          "answer": "Gross pay is the total amount earned before any deductions; net pay (take-home pay) is the amount left after income tax and other deductions are subtracted."
+        },
+        {
+          "number": 10,
+          "question": "Why might a salesperson prefer a retainer plus a smaller commission percentage rather than a commission-only job?",
+          "answer": "The retainer guarantees a fixed base income even during quiet weeks when no sales are made."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_2_1_1a", "expression": "20 * 25", "expected": 500 },
+        { "id": "WSF9_2_1_1b", "expression": "38 * 30", "expected": 1140 },
+        { "id": "WSF9_2_1_2a", "expression": "24 * 1.5", "expected": 36 },
+        { "id": "WSF9_2_1_2c", "expression": "3 * 24 * 1.5", "expected": 108 },
+        { "id": "WSF9_2_1_3a", "expression": "0.05 * 2000", "expected": 100 },
+        { "id": "WSF9_2_1_3d", "expression": "0.04 * 15000", "expected": 600 },
+        { "id": "WSF9_2_1_5", "expression": "26 * 6", "expected": 156 },
+        { "id": "WSF9_2_1_6", "expression": "500 + 0.03 * 20000", "expected": 1100 },
+        { "id": "WSF9_2_1_8", "expression": "0.175 * 1000", "expected": 175 }
+      ]
+    },
+    {
+      "section_id": "9_2_2",
+      "section_code": "2B",
+      "title": "Simple Interest, Repayment Modelling, and Direct Proportion",
+      "vcaa_code": "VC2M9N02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use the simple interest formula $I = P \\times r \\times t$ to calculate the interest earned:",
+          "parts": [
+            { "label": "a", "question": "$P = \\$1000$, $r = 0.05$, $t = 2\\text{ years}$", "answer": "$\\$100$" },
+            { "label": "b", "question": "$P = \\$2000$, $r = 0.04$, $t = 3\\text{ years}$", "answer": "$\\$240$" },
+            { "label": "c", "question": "$P = \\$500$, $r = 0.06$, $t = 4\\text{ years}$", "answer": "$\\$120$" },
+            { "label": "d", "question": "$P = \\$3000$, $r = 0.05$, $t = 5\\text{ years}$", "answer": "$\\$750$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the unknown value by dividing both sides of $I = Prt$:",
+          "parts": [
+            { "label": "a", "question": "Find $t$ if $I = \\$150$, $P = \\$1000$, $r = 0.05$ ($150 = 50t$)", "answer": "$t = 3\\text{ years}$" },
+            { "label": "b", "question": "Find $t$ if $I = \\$400$, $P = \\$2000$, $r = 0.05$ ($400 = 100t$)", "answer": "$t = 4\\text{ years}$" },
+            { "label": "c", "question": "Find $P$ if $I = \\$120$, $r = 0.06$, $t = 2$ ($120 = 0.12P$)", "answer": "$P = \\$1000$" },
+            { "label": "d", "question": "Find $r$ if $I = \\$180$, $P = \\$1000$, $t = 3$ ($180 = 3000r$)", "answer": "$r = 0.06$ ($6\\%\\text{ p.a.}$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Given the direct proportion rule $y = 5x$, calculate:",
+          "parts": [
+            { "label": "a", "question": "$y$ when $x = 3$", "answer": "$15$" },
+            { "label": "b", "question": "$y$ when $x = 8$", "answer": "$40$" },
+            { "label": "c", "question": "$x$ when $y = 30$", "answer": "$6$" },
+            { "label": "d", "question": "$x$ when $y = 55$", "answer": "$11$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the constant of proportionality $k = \\dfrac{y}{x}$ and write the equation $y = kx$:",
+          "parts": [
+            { "label": "a", "question": "$y = 12$ when $x = 4$", "answer": "$k = 3;\\; y = 3x$" },
+            { "label": "b", "question": "$y = 40$ when $x = 5$", "answer": "$k = 8;\\; y = 8x$" },
+            { "label": "c", "question": "$y = 35$ when $x = 7$", "answer": "$k = 5;\\; y = 5x$" },
+            { "label": "d", "question": "$y = 90$ when $x = 10$", "answer": "$k = 9;\\; y = 9x$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Ruby invests $\\$2000$ in a savings account paying $5\\%\\text{ p.a.}$ simple interest for $3$ years. Find (a) the interest earned and (b) the total amount in the account after $3$ years.",
+          "answer": "(a) $\\$300$, (b) $\\$2300$"
+        },
+        {
+          "number": 6,
+          "question": "A laptop costs $\\$1200$ cash. Under a payment plan, Noah pays a $\\$200$ deposit and $12$ monthly payments of $\\$90$. How much does Noah pay in total, and how much extra interest does he pay?",
+          "answer": "Total $\\$1280$; interest $\\$80$"
+        },
+        {
+          "number": 7,
+          "question": "The cost $C$ (in dollars) of buying apples at a Queen Victoria Market stall is directly proportional to their mass $m$ (in kg). If $3\\text{ kg}$ costs $\\$12$, find the cost per kilogram ($k$) and the cost of $7\\text{ kg}$.",
+          "answer": "$k = \\$4/\\text{kg}$; $7\\text{ kg}$ costs $\\$28$"
+        },
+        {
+          "number": 8,
+          "question": "A car travels at a constant speed of $80\\text{ km/h}$, so distance $d = 80t$. How far does the car travel in $3.5\\text{ hours}$?",
+          "answer": "$280\\text{ km}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "When using $I = Prt$, if the interest rate is given per annum (per year) and the time is $6\\text{ months}$, why must we substitute $t = 0.5$ instead of $t = 6$?",
+          "answer": "Because $r$ is an annual rate, $t$ must be measured in years ($6\\text{ months} = \\dfrac{6}{12} = 0.5\\text{ years}$); using $t = 6$ would calculate interest for $6$ full years."
+        },
+        {
+          "number": 10,
+          "question": "If $y$ is directly proportional to $x$, what happens to $y$ when $x$ is doubled? What is the value of $y$ when $x = 0$?",
+          "answer": "When $x$ is doubled, $y$ is also doubled. When $x = 0$, $y = k(0) = 0$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_2_2_1a", "expression": "1000 * 0.05 * 2", "expected": 100 },
+        { "id": "WSF9_2_2_1b", "expression": "2000 * 0.04 * 3", "expected": 240 },
+        { "id": "WSF9_2_2_1d", "expression": "3000 * 0.05 * 5", "expected": 750 },
+        { "id": "WSF9_2_2_2a", "expression": "150 / (1000 * 0.05)", "expected": 3 },
+        { "id": "WSF9_2_2_2c", "expression": "120 / (0.06 * 2)", "expected": 1000 },
+        { "id": "WSF9_2_2_5b", "expression": "2000 + 2000 * 0.05 * 3", "expected": 2300 },
+        { "id": "WSF9_2_2_6", "expression": "200 + 12 * 90 - 1200", "expected": 80 },
+        { "id": "WSF9_2_2_8", "expression": "80 * 3.5", "expected": 280 }
+      ]
+    }
+  ]
+}

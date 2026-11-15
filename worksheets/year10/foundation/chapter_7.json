@@ -1,0 +1,198 @@
+{
+  "chapter_number": 7,
+  "chapter_title": "Geometric Proofs, Circle Geometry, and Networks (10 & 10A)",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "10_7_1",
+      "section_code": "7A",
+      "title": "Deductive Geometric Proofs and Network Algorithms",
+      "vcaa_code": "VC2M10SP01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State the geometric reason that justifies each angle fact:",
+          "parts": [
+            { "label": "a", "question": "Two intersecting straight lines form equal opposite angles", "answer": "Vertically opposite angles are equal" },
+            { "label": "b", "question": "A transversal crossing parallel lines forms equal Z-angles", "answer": "Alternate angles on parallel lines are equal" },
+            { "label": "c", "question": "The three interior angles of any triangle add to $180^\\circ$", "answer": "Angle sum of a triangle is $180^\\circ$" },
+            { "label": "d", "question": "In $\\triangle ABC$, if $AB = AC$, then $\\angle B = \\angle C$", "answer": "Base angles of an isosceles triangle are equal" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A triangle network has $V = 3$ vertices ($A, B, C$) and $E = 3$ edges ($AB, BC, CA$). State:",
+          "parts": [
+            { "label": "a", "question": "The degree of vertex $A$ (number of edges meeting at $A$)", "answer": "$2$" },
+            { "label": "b", "question": "The sum of the degrees of all $3$ vertices ($2 + 2 + 2$)", "answer": "$6$" },
+            { "label": "c", "question": "The number of faces $F$ (1 inside face $+ 1$ outside face) and verify $V - E + F = 2$", "answer": "$F = 2$ ($3 - 3 + 2 = 2$)" },
+            { "label": "d", "question": "The minimum number of edges needed to keep all $3$ vertices connected in a tree ($V - 1$)", "answer": "$2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Count how many **odd-degree** vertices are in each list of vertex degrees:",
+          "parts": [
+            { "label": "a", "question": "Degrees: $2, 2, 2, 2$", "answer": "$0$ odd vertices (has an Eulerian circuit)" },
+            { "label": "b", "question": "Degrees: $3, 2, 3, 2$", "answer": "$2$ odd vertices (has an Eulerian trail)" },
+            { "label": "c", "question": "Degrees: $1, 2, 1$", "answer": "$2$ odd vertices (has an Eulerian trail)" },
+            { "label": "d", "question": "Degrees: $3, 3, 3, 3$", "answer": "$4$ odd vertices (no Eulerian trail)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "In a small town network, the road from $A$ to $B$ is $5\\text{ km}$, from $B$ to $C$ is $4\\text{ km}$, and the direct road from $A$ to $C$ is $11\\text{ km}$. Find:",
+          "parts": [
+            { "label": "a", "question": "The distance from $A$ to $C$ via $B$ ($A \\to B \\to C$)", "answer": "$9\\text{ km}$" },
+            { "label": "b", "question": "Which route from $A$ to $C$ is shorter: direct ($11\\text{ km}$) or via $B$ ($9\\text{ km}$)?", "answer": "Via $B$ ($9\\text{ km}$)" },
+            { "label": "c", "question": "How many kilometres are saved by taking the shorter path", "answer": "$2\\text{ km}$" },
+            { "label": "d", "question": "The total length of the Minimum Spanning Tree using the two shortest roads ($4\\text{ km}$ and $5\\text{ km}$)", "answer": "$9\\text{ km}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A planar map of park paths has $V = 4$ junctions and $E = 6$ paths. Use Euler's formula $V - E + F = 2$ (so $4 - 6 + F = 2$) to find the number of regions (faces) $F$.",
+          "answer": "$F = 4$"
+        },
+        {
+          "number": 6,
+          "question": "A postman wants to walk along every street in a network once without repeating any street. The network has exactly $2$ odd-degree corners ($A$ and $B$) and all other corners have even degree. Where must the postman start and finish?",
+          "answer": "Start at one odd corner ($A$) and finish at the other odd corner ($B$)."
+        },
+        {
+          "number": 7,
+          "question": "A park council wants to lay water pipes to connect $4$ drinking fountains ($V = 4$) using a spanning tree. How many pipe segments ($V - 1$) are required?",
+          "answer": "$3$ pipe segments"
+        },
+        {
+          "number": 8,
+          "question": "In $\\triangle ABC$, $D$ and $E$ are the midpoints of $AB$ and $AC$. By the Midpoint Theorem, $DE$ is half the length of base $BC$. If $BC = 18\\text{ cm}$, find the length of $DE$.",
+          "answer": "$9\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "In a deductive geometry proof, why is measuring angles with a protractor on a diagram NOT accepted as a mathematical proof?",
+          "answer": "Measurements on a single drawing are only approximate and apply only to that one specific drawing, whereas a deductive proof uses geometric laws to prove the result holds exactly for all possible cases."
+        },
+        {
+          "number": 10,
+          "question": "Why does a **spanning tree** never contain a closed loop (cycle)?",
+          "answer": "If a network had a closed loop, you could remove one edge from the loop and all vertices would still remain connected with less total weight."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_7_1_2b", "expression": "2 + 2 + 2", "expected": 6 },
+        { "id": "WSF10_7_1_2c", "expression": "2 - 3 + 3", "expected": 2 },
+        { "id": "WSF10_7_1_2d", "expression": "3 - 1", "expected": 2 },
+        { "id": "WSF10_7_1_4a", "expression": "5 + 4", "expected": 9 },
+        { "id": "WSF10_7_1_4c", "expression": "11 - 9", "expected": 2 },
+        { "id": "WSF10_7_1_4d", "expression": "4 + 5", "expected": 9 },
+        { "id": "WSF10_7_1_5", "expression": "2 - 4 + 6", "expected": 4 },
+        { "id": "WSF10_7_1_7", "expression": "4 - 1", "expected": 3 },
+        { "id": "WSF10_7_1_8", "expression": "18 / 2", "expected": 9 }
+      ]
+    },
+    {
+      "section_id": "10_7_2",
+      "section_code": "7B",
+      "title": "[10A] Circle Geometry: Angle, Chord, and Tangent Theorems",
+      "vcaa_code": "VC2M10ASP01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "The angle at the centre of a circle is **twice** the angle at the circumference standing on the same arc. Find the missing angle:",
+          "parts": [
+            { "label": "a", "question": "Angle at circumference $= 30^\\circ$; find angle at the centre ($2 \\times 30^\\circ$)", "answer": "$60^\\circ$" },
+            { "label": "b", "question": "Angle at circumference $= 45^\\circ$; find angle at the centre ($2 \\times 45^\\circ$)", "answer": "$90^\\circ$" },
+            { "label": "c", "question": "Angle at the centre $= 100^\\circ$; find angle at the circumference ($100^\\circ \\div 2$)", "answer": "$50^\\circ$" },
+            { "label": "d", "question": "Angle at the centre $= 140^\\circ$; find angle at the circumference ($140^\\circ \\div 2$)", "answer": "$70^\\circ$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Use the semicircle rule (angle in a semicircle $= 90^\\circ$) and the same-segment rule (angles in the same segment are equal) to find $x^\\circ$:",
+          "parts": [
+            { "label": "a", "question": "$AB$ is a diameter and $C$ is on the circle; state $\\angle ACB = x^\\circ$", "answer": "$x = 90$" },
+            { "label": "b", "question": "In $\\triangle ABC$ with $\\angle ACB = 90^\\circ$ and $\\angle CAB = 40^\\circ$, find $\\angle ABC = x^\\circ$", "answer": "$x = 50$" },
+            { "label": "c", "question": "$\\angle ACB$ and $\\angle ADB$ stand on the same arc $AB$. If $\\angle ACB = 35^\\circ$, find $\\angle ADB = x^\\circ$", "answer": "$x = 35$" },
+            { "label": "d", "question": "$\\angle PRQ$ and $\\angle PSQ$ stand on the same arc $PQ$. If $\\angle PRQ = 62^\\circ$, find $\\angle PSQ = x^\\circ$", "answer": "$x = 62$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Opposite angles of a cyclic quadrilateral add to $180^\\circ$. Find the opposite angle $x^\\circ$:",
+          "parts": [
+            { "label": "a", "question": "Given angle $= 80^\\circ$; find $x = 180 - 80$", "answer": "$x = 100$" },
+            { "label": "b", "question": "Given angle $= 110^\\circ$; find $x = 180 - 110$", "answer": "$x = 70$" },
+            { "label": "c", "question": "Given angle $= 95^\\circ$; find $x = 180 - 95$", "answer": "$x = 85$" },
+            { "label": "d", "question": "Given angle $= 64^\\circ$; find $x = 180 - 64$", "answer": "$x = 116$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use tangent properties (a tangent meets a radius at $90^\\circ$, and two tangents from an external point $P$ have equal length $PA = PB$):",
+          "parts": [
+            { "label": "a", "question": "Radius $OT$ meets tangent $PT$ at $T$; state the size of $\\angle OTP$", "answer": "$90^\\circ$" },
+            { "label": "b", "question": "If tangents $PA$ and $PB$ are drawn from $P$ and $PA = 12\\text{ cm}$, find the length of $PB$", "answer": "$12\\text{ cm}$" },
+            { "label": "c", "question": "In right-angled $\\triangle OTP$ ($\\angle OTP = 90^\\circ$), if $OT = 3\\text{ cm}$ and $PT = 4\\text{ cm}$, find $OP$", "answer": "$5\\text{ cm}$" },
+            { "label": "d", "question": "If $\\angle OTP = 90^\\circ$ and $\\angle TOP = 60^\\circ$, find $\\angle OPT$", "answer": "$30^\\circ$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A circular walking track has a straight bridge $AB$ passing right through the centre $O$ (so $AB$ is a diameter). A kiosk $C$ sits on the edge of the circle. What is the size of $\\angle ACB$?",
+          "answer": "$90^\\circ$ (angle in a semicircle)"
+        },
+        {
+          "number": 6,
+          "question": "Four picnic tables $A, B, C, D$ sit on the edge of a circular plaza, forming a cyclic quadrilateral. If the angle at table $A$ is $75^\\circ$, what is the angle at the opposite table $C$?",
+          "answer": "$105^\\circ$ ($180^\\circ - 75^\\circ = 105^\\circ$)"
+        },
+        {
+          "number": 7,
+          "question": "A bicycle wheel of radius $r = 30\\text{ cm}$ rests on flat horizontal ground (which acts as a tangent to the wheel at the contact point $T$). What angle does the vertical radius $OT$ make with the ground?",
+          "answer": "$90^\\circ$"
+        },
+        {
+          "number": 8,
+          "question": "Two intersecting chords $AB$ and $CD$ cross at $P$ inside a circle. Using $AP \\times PB = CP \\times PD$, find $PD$ if $AP = 2\\text{ cm}$, $PB = 6\\text{ cm}$, and $CP = 3\\text{ cm}$.",
+          "answer": "$4\\text{ cm}$ ($2 \\times 6 = 12$, and $12 \\div 3 = 4$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "How can you quickly check whether a four-sided shape $ABCD$ can have a circle drawn through all four of its corners (a cyclic quadrilateral)?",
+          "answer": "Check whether its opposite interior angles add up to $180^\\circ$ ($\\angle A + \\angle C = 180^\\circ$ and $\\angle B + \\angle D = 180^\\circ$)."
+        },
+        {
+          "number": 10,
+          "question": "Why is any triangle formed by two radii $OA$ and $OB$ and a chord $AB$ inside a circle always an **isosceles** triangle?",
+          "answer": "Because $OA$ and $OB$ are both radii of the same circle, so they have equal length ($OA = OB$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_7_2_1a", "expression": "2 * 30", "expected": 60 },
+        { "id": "WSF10_7_2_1c", "expression": "100 / 2", "expected": 50 },
+        { "id": "WSF10_7_2_1d", "expression": "140 / 2", "expected": 70 },
+        { "id": "WSF10_7_2_2b", "expression": "90 - 40", "expected": 50 },
+        { "id": "WSF10_7_2_3a", "expression": "180 - 80", "expected": 100 },
+        { "id": "WSF10_7_2_3b", "expression": "180 - 110", "expected": 70 },
+        { "id": "WSF10_7_2_3d", "expression": "180 - 64", "expected": 116 },
+        { "id": "WSF10_7_2_4c", "expression": "sqrt(3**2 + 4**2)", "expected": 5 },
+        { "id": "WSF10_7_2_6", "expression": "180 - 75", "expected": 105 },
+        { "id": "WSF10_7_2_8", "expression": "(2 * 6) / 3", "expected": 4 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "section_id": "10_6_1",
+    "section_code": "6A",
+    "chapter_number": 6,
+    "chapter_title": "Trigonometry, Bearings, and Non-Right-Angled Triangles (10 & 10A)",
+    "title": "Right-Angled Trigonometry in 2D/3D and True Bearings",
+    "vcaa_code": "VC2M10M03",
+    "vcaa_description": "Use Pythagoras' theorem and trigonometry to solve spatial problems involving right-angled triangles in 2 and 3 dimensions.",
+    "strand": "Measurement",
+    "target_mastery": "Solve multi-step navigation problems using three-figure true bearings ($000^\\circ\\text{T}$ to $360^\\circ\\text{T}$), back-bearings, angles of elevation and depression, and right-angled triangles in 3D space.",
+    "prerequisites": [
+      "Right-angled trigonometry SOHCAHTOA (Year 9 VC2M9M04)",
+      "Pythagoras' theorem in 2D and 3D (Year 9 VC2M9M03)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "True bearing ($\\theta^\\circ\\text{T}$)",
+        "definition": "A direction measured clockwise from True North ($000^\\circ\\text{T}$), written using three digits from $000^\\circ\\text{T}$ to $360^\\circ\\text{T}$ (e.g., due East is $090^\\circ\\text{T}$ and South-West is $225^\\circ\\text{T}$)."
+      },
+      {
+        "term": "Back-bearing (return bearing)",
+        "definition": "The true bearing from point $B$ back to point $A$, which differs from the forward bearing from $A$ to $B$ by exactly $180^\\circ$ (add $180^\\circ$ if $\\theta < 180^\\circ$; subtract $180^\\circ$ if $\\theta \\ge 180^\\circ$)."
+      },
+      {
+        "term": "Angle of elevation and depression",
+        "definition": "The acute angle measured upward (elevation) or downward (depression) from the horizontal line of sight to an object; by alternate interior angles between parallel horizontals, the angle of elevation from $A$ to $B$ equals the angle of depression from $B$ to $A$."
+      },
+      {
+        "term": "Angle between a line and a plane in 3D",
+        "definition": "The acute angle formed between a slanted 3D line segment and its orthogonal projection (shadow) on the horizontal base plane."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_6_1_1",
+      "title": "Three-Figure True Bearings and Back-Bearings",
+      "explanation": "In aviation, bushwalking, and marine navigation, directions are specified using three-figure true bearings measured clockwise from True North ($000^\\circ\\text{T}$). The four cardinal directions are North ($000^\\circ\\text{T}$ or $360^\\circ\\text{T}$), East ($090^\\circ\\text{T}$), South ($180^\\circ\\text{T}$), and West ($270^\\circ\\text{T}$). Because the North-South lines drawn through any two locations $A$ and $B$ are parallel, co-interior and alternate angles allow us to find the back-bearing from $B$ to $A$ by adding or subtracting $180^\\circ$.",
+      "formula_latex": "\\text{Back-bearing} = \\begin{cases} \\theta + 180^\\circ & \\text{if } 0^\\circ \\le \\theta < 180^\\circ \\\\ \\theta - 180^\\circ & \\text{if } 180^\\circ \\le \\theta < 360^\\circ \\end{cases}",
+      "callout_title": "Always Draw a Compass Cross at the 'FROM' Point",
+      "callout_rule": "For 'the bearing of $B$ FROM $A$', draw a North-East-South-West cross at $A$ and sweep clockwise from North to the ray $AB$. Include leading zeros for angles under $100^\\circ$ (e.g., $060^\\circ\\text{T}$)."
+    },
+    {
+      "id": "theory_10_6_1_2",
+      "title": "Navigation Components (East-West and North-South)",
+      "explanation": "When a vessel travels a distance $d$ on a true bearing $\\theta$, its path forms the hypotenuse of a right-angled triangle against the North-South and East-West axes. By finding the acute angle $\\alpha$ against either the North-South line or East-West line, you can resolve the journey into a North/South component and an East/West component using $\\sin\\alpha$ and $\\cos\\alpha$. Multi-leg journeys are solved by summing the net East/West and North/South displacements.",
+      "formula_latex": "\\sin\\theta = \\frac{\\text{Opposite}}{\\text{Hypotenuse}}, \\quad \\cos\\theta = \\frac{\\text{Adjacent}}{\\text{Hypotenuse}}, \\quad \\tan\\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}}",
+      "callout_title": "Extract a Clean 2D Right-Angled Triangle",
+      "callout_rule": "Sketch the compass diagram first, shade the right-angled triangle formed with the North-South axis, and label its acute interior angle before choosing $\\sin$, $\\cos$, or $\\tan$."
+    },
+    {
+      "id": "theory_10_6_1_3",
+      "title": "3D Pythagoras and Right-Angled Trigonometry in Space",
+      "explanation": "To solve a 3D spatial problem (such as finding the space diagonal $AG$ of a cuboid of length $l$, width $w$, and height $h$, or the angle that a pyramid edge makes with its horizontal base), work in two 2D stages. First, apply Pythagoras' theorem or trigonometry in the horizontal base plane to find the floor diagonal $d_{\\text{floor}} = \\sqrt{l^2 + w^2}$. Second, use the vertical right-angled triangle containing $d_{\\text{floor}}$ and the vertical height $h$ to find the 3D hypotenuse $D = \\sqrt{l^2 + w^2 + h^2}$ and the angle of elevation $\\theta$ satisfying $\\tan\\theta = \\frac{h}{d_{\\text{floor}}}$.",
+      "formula_latex": "d_{\\text{floor}} = \\sqrt{l^2 + w^2}, \\qquad D_{\\text{space}} = \\sqrt{l^2 + w^2 + h^2}, \\qquad \\tan\\theta = \\frac{h}{d_{\\text{floor}}}",
+      "callout_title": "Draw Each 2D Triangle Flat on Your Page",
+      "callout_rule": "Right angles in 3D perspective drawings rarely look like $90^\\circ$. Redraw the horizontal base triangle and the vertical elevation triangle separately as flat 2D right-angled triangles."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_6_1_1",
+      "title": "True Bearings, Back-Bearings, and Navigation Components",
+      "difficulty": "Fluency",
+      "problem": "A rescue yacht leaves Sorrento ($S$) and sails $24\\text{ km}$ on a true bearing of $060^\\circ\\text{T}$ to a buoy ($B$). Find: (a) how far North and how far East the buoy $B$ is from Sorrento $S$ (give exact values), and (b) the true bearing of Sorrento $S$ from the buoy $B$ (the back-bearing).",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "A bearing of $060^\\circ\\text{T}$ makes an angle of $60^\\circ$ clockwise from due North. In the right-angled triangle with the North axis, the North component is Adjacent ($24\\cos 60^\\circ$) and the East component is Opposite ($24\\sin 60^\\circ$).",
+          "working": "$$\\text{North distance} = 24\\cos 60^\\circ = 24 \\times \\frac{1}{2} = 12\\text{ km}$$\n$$\\text{East distance} = 24\\sin 60^\\circ = 24 \\times \\frac{\\sqrt{3}}{2} = 12\\sqrt{3}\\text{ km} \\approx 20.78\\text{ km}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Since the forward bearing from $S$ to $B$ is $060^\\circ\\text{T} < 180^\\circ$, add $180^\\circ$ to obtain the back-bearing from $B$ to $S$.",
+          "working": "$$\\text{Back-bearing} = 060^\\circ + 180^\\circ = 240^\\circ\\text{T}$$"
+        }
+      ],
+      "final_answer": "(a) $12\\text{ km}$ North and $12\\sqrt{3}\\text{ km}$ ($\\approx 20.78\\text{ km}$) East; (b) $240^\\circ\\text{T}$",
+      "now_you_try": {
+        "problem": "A hiker walks $10\\text{ km}$ from camp $C$ on a true bearing of $150^\\circ\\text{T}$ to a lookout $L$. Find (a) how far South and how far East $L$ is from $C$, and (b) the true bearing of $C$ from $L$.",
+        "hint": "$150^\\circ\\text{T}$ is $180^\\circ - 150^\\circ = 30^\\circ$ East of due South.",
+        "working_summary": "South $= 10\\cos 30^\\circ = 5\\sqrt{3}\\text{ km}$, East $= 10\\sin 30^\\circ = 5\\text{ km}$; back-bearing $= 150^\\circ + 180^\\circ = 330^\\circ\\text{T}$.",
+        "answer": "(a) $5\\sqrt{3}\\text{ km}$ South and $5\\text{ km}$ East; (b) $330^\\circ\\text{T}$"
+      }
+    },
+    {
+      "id": "WE10_6_1_2",
+      "title": "3D Cuboid Space Diagonal and Angle with the Base Plane",
+      "difficulty": "Fluency",
+      "problem": "A rectangular shipping container $ABCDEFGH$ has a horizontal floor $ABCD$ of length $AB = 12\\text{ m}$ and width $BC = 9\\text{ m}$, and a vertical height of $CG = 8\\text{ m}$ (with $G$ directly above $C$). Find: (a) the length of the floor diagonal $AC$, (b) the length of the 3D internal space diagonal $AG$, and (c) the angle of elevation $\\theta = \\angle GAC$ that the space diagonal $AG$ makes with the horizontal floor, correct to $2$ decimal places.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In the horizontal rectangular floor $\\triangle ABC$ (right-angled at $B$), use Pythagoras' theorem to find $AC$.",
+          "working": "$$AC = \\sqrt{AB^2 + BC^2} = \\sqrt{12^2 + 9^2} = \\sqrt{144 + 81} = \\sqrt{225} = 15\\text{ m}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In the vertical right-angled triangle $\\triangle ACG$ (right-angled at $C$), use $AC = 15\\text{ m}$ and $CG = 8\\text{ m}$ to find the 3D hypotenuse $AG$.",
+          "working": "$$AG = \\sqrt{AC^2 + CG^2} = \\sqrt{15^2 + 8^2} = \\sqrt{225 + 64} = \\sqrt{289} = 17\\text{ m}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "In $\\triangle ACG$, use $\\tan\\theta = \\frac{\\text{Opposite}}{\\text{Adjacent}} = \\frac{CG}{AC}$ to find $\\theta = \\angle GAC$.",
+          "working": "$$\\tan\\theta = \\frac{8}{15} \\implies \\theta = \\arctan\\left(\\frac{8}{15}\\right) \\approx 28.07^\\circ$$"
+        }
+      ],
+      "final_answer": "(a) $AC = 15\\text{ m}$, (b) $AG = 17\\text{ m}$, (c) $\\theta \\approx 28.07^\\circ$",
+      "now_you_try": {
+        "problem": "A rectangular room is $4\\text{ m}$ long, $3\\text{ m}$ wide, and $5\\text{ m}$ high. Find (a) the floor diagonal $d_{\\text{floor}}$, (b) the exact 3D space diagonal $D$, and (c) the exact angle of elevation $\\theta$ of the space diagonal from the floor.",
+        "hint": "Find $d_{\\text{floor}} = \\sqrt{4^2 + 3^2}$ first, then compare $d_{\\text{floor}}$ with the vertical height $5\\text{ m}$.",
+        "working_summary": "$d_{\\text{floor}} = 5\\text{ m}$; $D = \\sqrt{5^2 + 5^2} = 5\\sqrt{2}\\text{ m}$; $\\tan\\theta = \\frac{5}{5} = 1 \\implies \\theta = 45^\\circ$.",
+        "answer": "(a) $5\\text{ m}$, (b) $5\\sqrt{2}\\text{ m}$, (c) $45^\\circ$"
+      }
+    },
+    {
+      "id": "WE10_6_1_3",
+      "title": "3D Surveying Problem — Vertical Tower Viewed from Two Bearings",
+      "difficulty": "Problem-Solving",
+      "problem": "A vertical communications tower $OT$ of height $h = 60\\text{ m}$ stands on flat horizontal ground with its base at $O$. Observer $A$ is due South of $O$ and measures the angle of elevation to the top $T$ as $45^\\circ$. Observer $B$ is due East of $O$ and measures the angle of elevation to $T$ as $30^\\circ$. Find: (a) the exact horizontal distances $OA$ and $OB$, and (b) the straight-line horizontal distance $AB$ between the two observers.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In the vertical right-angled triangle $\\triangle OAT$, $\\angle OAT = 45^\\circ$ and $OT = 60\\text{ m}$, so $OA = \\frac{60}{\\tan 45^\\circ}$.",
+          "working": "$$\\tan 45^\\circ = \\frac{60}{OA} \\implies OA = \\frac{60}{1} = 60\\text{ m}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In the vertical right-angled triangle $\\triangle OBT$, $\\angle OBT = 30^\\circ$ and $OT = 60\\text{ m}$, so $OB = \\frac{60}{\\tan 30^\\circ}$.",
+          "working": "$$\\tan 30^\\circ = \\frac{60}{OB} \\implies OB = \\frac{60}{1 / \\sqrt{3}} = 60\\sqrt{3}\\text{ m}$$"
+        },
+        {
+          "step": 3,
+          "thinking": "On the horizontal ground, $A$ is due South of $O$ and $B$ is due East of $O$, so $\\angle AOB = 90^\\circ$. Apply Pythagoras' theorem in $\\triangle AOB$.",
+          "working": "$$AB = \\sqrt{OA^2 + OB^2} = \\sqrt{60^2 + (60\\sqrt{3})^2} = \\sqrt{3600 + 10\\,800} = \\sqrt{14\\,400} = 120\\text{ m}$$"
+        }
+      ],
+      "final_answer": "(a) $OA = 60\\text{ m}$ and $OB = 60\\sqrt{3}\\text{ m}$, (b) $AB = 120\\text{ m}$",
+      "now_you_try": {
+        "problem": "Using the distances $OA = 60\\text{ m}$ (due South of $O$) and $OB = 60\\sqrt{3}\\text{ m}$ (due East of $O$) from the example above, find the true bearing of observer $B$ from observer $A$.",
+        "hint": "At point $A$ (which is due South of $O$), the ray $AO$ points due North ($000^\\circ\\text{T}$). Find $\\angle OAB$ in right-angled $\\triangle AOB$.",
+        "working_summary": "$\\tan(\\angle OAB) = \\frac{OB}{OA} = \\frac{60\\sqrt{3}}{60} = \\sqrt{3} \\implies \\angle OAB = 60^\\circ$, so the true bearing of $B$ from $A$ is $060^\\circ\\text{T}$.",
+        "answer": "$060^\\circ\\text{T}$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_10_6_1_1",
+      "title": "Measuring Bearings from the East/West Axis or Anticlockwise",
+      "misconception": "Measuring a true bearing from the East axis (like standard unit-circle polar angles) or measuring anticlockwise from North.",
+      "correct_concept": "True bearings are ALWAYS measured clockwise from True North ($000^\\circ\\text{T}$). A direction $30^\\circ$ West of North is $360^\\circ - 30^\\circ = 330^\\circ\\text{T}$, never $030^\\circ\\text{T}$.",
+      "incorrect_working": "$$\\text{Direction } 30^\\circ \\text{ West of North} \\implies 030^\\circ\\text{T} \\quad \\text{(Incorrect — swept anticlockwise)}$$",
+      "correct_working": "$$360^\\circ - 30^\\circ = 330^\\circ\\text{T}$$",
+      "counter_example": "$030^\\circ\\text{T}$ points North-North-East, which is $60^\\circ$ away from North-North-West ($330^\\circ\\text{T}$)."
+    },
+    {
+      "id": "misc_10_6_1_2",
+      "title": "Placing the Angle of Depression Against the Vertical Cliff Instead of the Horizontal",
+      "misconception": "Labelling the angle of depression $\\theta$ between the line of sight and the vertical cliff wall or tower.",
+      "correct_concept": "Both angles of elevation and angles of depression are measured from a HORIZONTAL line of sight. If the angle of depression from a cliff top is $\\theta$, the interior angle at the top of the vertical cliff triangle is the complement $90^\\circ - \\theta$ (while the alternate interior angle at the bottom horizontal is $\\theta$).",
+      "incorrect_working": "$$\\text{Height } h, \\text{ horizontal distance } d, \\text{ depression } \\theta: \\quad \\tan\\theta = \\frac{d}{h} \\quad \\text{(Incorrect — put } \\theta \\text{ against vertical)}$$",
+      "correct_working": "$$\\tan\\theta = \\frac{\\text{vertical height } h}{\\text{horizontal distance } d}$$",
+      "counter_example": "Looking almost straight ahead ($\\theta \\approx 1^\\circ$ depression) corresponds to a very shallow drop, not looking nearly straight down at the cliff base."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_6_1_Q1",
+        "question": "Find the three-figure back-bearing (the bearing of $A$ from $B$) when the true bearing of $B$ from $A$ is: (a) $047^\\circ\\text{T}$, and (b) $295^\\circ\\text{T}$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $227^\\circ\\text{T}$, (b) $115^\\circ\\text{T}$",
+        "step_by_step_solution": [
+          "For (a), since $047^\\circ < 180^\\circ$, add $180^\\circ$: $47^\\circ + 180^\\circ = 227^\\circ\\text{T}$.",
+          "For (b), since $295^\\circ \\ge 180^\\circ$, subtract $180^\\circ$: $295^\\circ - 180^\\circ = 115^\\circ\\text{T}$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q2",
+        "question": "A bushwalker hikes $8\\text{ km}$ due North from trailhead $O$ to point $A$, then turns and walks $8\\sqrt{3}\\text{ km}$ due East to point $B$. Find (a) the straight-line distance $OB$ and (b) the true bearing of $B$ from $O$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "(a) $16\\text{ km}$, (b) $060^\\circ\\text{T}$",
+        "step_by_step_solution": [
+          "In right-angled $\\triangle OAB$, $OB = \\sqrt{8^2 + (8\\sqrt{3})^2} = \\sqrt{64 + 192} = \\sqrt{256} = 16\\text{ km}$.",
+          "Find $\\angle AOB$ from North: $\\tan(\\angle AOB) = \\frac{8\\sqrt{3}}{8} = \\sqrt{3} \\implies \\angle AOB = 60^\\circ$, so the true bearing is $060^\\circ\\text{T}$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q3",
+        "question": "From the top of a vertical lighthouse $45\\text{ m}$ above sea level, the angle of depression to a fishing boat is $30^\\circ$. Find the exact horizontal distance from the base of the lighthouse to the boat.",
+        "difficulty": "Medium",
+        "context": "Fluency",
+        "final_answer": "$45\\sqrt{3}\\text{ m} \\approx 77.94\\text{ m}$",
+        "step_by_step_solution": [
+          "By alternate interior angles, the angle of elevation from the boat to the top of the lighthouse is also $30^\\circ$.",
+          "Solve $\\tan 30^\\circ = \\frac{45}{d} \\implies d = \\frac{45}{1/\\sqrt{3}} = 45\\sqrt{3}\\text{ m}$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q4",
+        "question": "A rectangular prism $ABCDEFGH$ has base length $AB = 8\\text{ cm}$, base width $BC = 6\\text{ cm}$, and vertical height $CG = 10\\text{ cm}$. Find (a) the base diagonal $AC$, (b) the exact 3D space diagonal $AG$, and (c) the exact angle of elevation $\\angle GAC$.",
+        "difficulty": "Medium",
+        "context": "Understanding",
+        "final_answer": "(a) $AC = 10\\text{ cm}$, (b) $AG = 10\\sqrt{2}\\text{ cm}$, (c) $\\angle GAC = 45^\\circ$",
+        "step_by_step_solution": [
+          "In the base $\\triangle ABC$, $AC = \\sqrt{8^2 + 6^2} = \\sqrt{100} = 10\\text{ cm}$.",
+          "In vertical $\\triangle ACG$, $AG = \\sqrt{10^2 + 10^2} = \\sqrt{200} = 10\\sqrt{2}\\text{ cm}$ and $\\tan(\\angle GAC) = \\frac{10}{10} = 1 \\implies \\angle GAC = 45^\\circ$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_6_1_Q5",
+        "question": "A light aircraft departs Mildura Airport and flies $120\\text{ km}$ on a bearing of $300^\\circ\\text{T}$. How far North and how far West of Mildura Airport is the aircraft?",
+        "difficulty": "Medium",
+        "context": "Aviation Navigation",
+        "final_answer": "$60\\text{ km}$ North and $60\\sqrt{3}\\text{ km}$ ($\\approx 103.92\\text{ km}$) West",
+        "step_by_step_solution": [
+          "A bearing of $300^\\circ\\text{T}$ is $360^\\circ - 300^\\circ = 60^\\circ$ West of True North.",
+          "North component $= 120\\cos 60^\\circ = 120 \\times \\frac{1}{2} = 60\\text{ km}$; West component $= 120\\sin 60^\\circ = 60\\sqrt{3}\\text{ km}$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q6",
+        "question": "A surveyor stands on flat ground due South of a building and measures the angle of elevation to the roof as $30^\\circ$. After walking $40\\text{ m}$ due North directly towards the building, the angle of elevation to the roof is $60^\\circ$. Find the exact vertical height $h$ of the building.",
+        "difficulty": "Challenging",
+        "context": "Surveying in 2D",
+        "final_answer": "$h = 20\\sqrt{3}\\text{ m} \\approx 34.64\\text{ m}$",
+        "step_by_step_solution": [
+          "Let $x$ be the horizontal distance from the second observation point to the building, so $h = x\\tan 60^\\circ = x\\sqrt{3}$.",
+          "From the first point ($x + 40\\text{ m}$ away), $\\tan 30^\\circ = \\frac{h}{x + 40} \\implies \\frac{1}{\\sqrt{3}} = \\frac{x\\sqrt{3}}{x + 40} \\implies x + 40 = 3x \\implies x = 20\\text{ m}$.",
+          "Substitute $x = 20$ to obtain $h = 20\\sqrt{3}\\text{ m}$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q7",
+        "question": "A right square-based pyramid $ABCDV$ (modelling a glass skylight) has a horizontal square base $ABCD$ of side length $10\\sqrt{2}\\text{ m}$ and vertical apex height $OV = 10\\text{ m}$ directly above the base centre $O$. Find (a) the distance $OA$ from the centre $O$ to a base corner $A$, (b) the sloping edge length $VA$, and (c) the angle of elevation $\\angle VAO$ of a sloping edge from the base.",
+        "difficulty": "Challenging",
+        "context": "3D Architectural Geometry",
+        "final_answer": "(a) $OA = 10\\text{ m}$, (b) $VA = 10\\sqrt{2}\\text{ m}$, (c) $\\angle VAO = 45^\\circ$",
+        "step_by_step_solution": [
+          "The full diagonal of the square base is $AC = \\sqrt{(10\\sqrt{2})^2 + (10\\sqrt{2})^2} = \\sqrt{400} = 20\\text{ m}$, so $OA = \\frac{1}{2}AC = 10\\text{ m}$.",
+          "In vertical right-angled $\\triangle AOV$, $VA = \\sqrt{OA^2 + OV^2} = \\sqrt{10^2 + 10^2} = 10\\sqrt{2}\\text{ m}$ and $\\tan(\\angle VAO) = \\frac{OV}{OA} = \\frac{10}{10} = 1 \\implies \\angle VAO = 45^\\circ$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q8",
+        "question": "Ship $P$ leaves port $O$ at $09{:}00$ and sails on a bearing of $030^\\circ\\text{T}$ at $12\\text{ km/h}$. Ship $Q$ leaves the same port $O$ at $09{:}00$ and sails on a bearing of $120^\\circ\\text{T}$ at $16\\text{ km/h}$. Find the straight-line distance between the two ships at $11{:}00$.",
+        "difficulty": "Challenging",
+        "context": "Marine Navigation",
+        "final_answer": "$40\\text{ km}$",
+        "step_by_step_solution": [
+          "After $2$ hours, Ship $P$ has travelled $OP = 2 \\times 12 = 24\\text{ km}$ and Ship $Q$ has travelled $OQ = 2 \\times 16 = 32\\text{ km}$.",
+          "The angle between bearings $030^\\circ\\text{T}$ and $120^\\circ\\text{T}$ is $120^\\circ - 30^\\circ = 90^\\circ$, so $\\triangle POQ$ is right-angled at $O$: $PQ = \\sqrt{24^2 + 32^2} = \\sqrt{1600} = 40\\text{ km}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_6_1_Q9",
+        "question": "In a cube of side length $a$, let $\\alpha$ be the angle that a face diagonal makes with an edge ($45^\\circ$), and let $\\beta$ be the angle that the 3D space diagonal makes with the horizontal base face. Prove that $\\tan\\beta = \\frac{1}{\\sqrt{2}}$ and hence explain why $\\beta < 45^\\circ$.",
+        "difficulty": "Challenging",
+        "context": "3D Cube Geometry",
+        "final_answer": "$\\tan\\beta = \\frac{a}{a\\sqrt{2}} = \\frac{1}{\\sqrt{2}} \\approx 0.7071 < 1 = \\tan 45^\\circ$, so $\\beta \\approx 35.26^\\circ < 45^\\circ$",
+        "step_by_step_solution": [
+          "The horizontal base diagonal of a cube of side $a$ has length $d_{\\text{floor}} = \\sqrt{a^2 + a^2} = a\\sqrt{2}$, while the vertical height is $a$.",
+          "Therefore $\\tan\\beta = \\frac{a}{a\\sqrt{2}} = \\frac{1}{\\sqrt{2}} < 1 = \\tan 45^\\circ$; because $\\tan\\theta$ is strictly increasing for $0^\\circ < \\theta < 90^\\circ$, $\\beta < 45^\\circ$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q10",
+        "question": "Prove using co-interior and reflex angles that if the true bearing of $B$ from $A$ is $\\theta$ (where $0^\\circ < \\theta < 180^\\circ$), then the true bearing of $A$ from $B$ is always $\\theta + 180^\\circ$.",
+        "difficulty": "Medium",
+        "context": "Geometric Proof of Back-Bearings",
+        "final_answer": "The North rays at $A$ and $B$ are parallel; the co-interior angle to $\\theta$ is $180^\\circ - \\theta$ (anticlockwise from North at $B$), so the clockwise bearing is $360^\\circ - (180^\\circ - \\theta) = \\theta + 180^\\circ$",
+        "step_by_step_solution": [
+          "Draw parallel North rays $N_A$ at $A$ and $N_B$ at $B$ cut by the transversal segment $AB$.",
+          "The co-interior angle between $N_B$ and $BA$ (measured anticlockwise from North at $B$) is $180^\\circ - \\theta$, so the clockwise angle from $N_B$ around to $BA$ is $360^\\circ - (180^\\circ - \\theta) = \\theta + 180^\\circ$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q11",
+        "question": "A vertical flagpole of height $h$ stands at the corner $C$ of a horizontal rectangular courtyard $ABCD$ of length $AB = 40\\text{ m}$ and width $BC = 30\\text{ m}$. If the angle of elevation of the top of the flagpole from the opposite corner $A$ is $30^\\circ$, find the exact height $h$ of the flagpole.",
+        "difficulty": "Challenging",
+        "context": "3D Courtyard Elevation",
+        "final_answer": "$h = \\frac{50\\sqrt{3}}{3}\\text{ m} \\approx 28.87\\text{ m}$",
+        "step_by_step_solution": [
+          "First find the horizontal diagonal distance across the courtyard: $AC = \\sqrt{40^2 + 30^2} = 50\\text{ m}$.",
+          "In the vertical right-angled triangle at $C$, $h = AC\\tan 30^\\circ = 50 \\times \\frac{\\sqrt{3}}{3} = \\frac{50\\sqrt{3}}{3}\\text{ m}$."
+        ]
+      },
+      {
+        "id": "10_6_1_Q12",
+        "question": "A drone flies $300\\text{ m}$ due East from take-off pad $O$, then $400\\text{ m}$ due North, and simultaneously climbs vertically to an altitude of $500\\text{ m}$ above the ground. Find (a) its horizontal ground distance from $O$, (b) its direct 3D straight-line distance from $O$, and (c) its angle of elevation from $O$.",
+        "difficulty": "Extension",
+        "context": "3D Drone Kinematics",
+        "final_answer": "(a) $500\\text{ m}$, (b) $500\\sqrt{2}\\text{ m} \\approx 707.11\\text{ m}$, (c) $45^\\circ$",
+        "step_by_step_solution": [
+          "The horizontal ground displacement is $d_{\\text{floor}} = \\sqrt{300^2 + 400^2} = 500\\text{ m}$.",
+          "With vertical altitude $h = 500\\text{ m}$, the 3D distance is $D = \\sqrt{500^2 + 500^2} = 500\\sqrt{2}\\text{ m}$ and the angle of elevation satisfies $\\tan\\theta = \\frac{500}{500} = 1 \\implies \\theta = 45^\\circ$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_6_1_1_N",
+      "description": "WE10_6_1_1 North component",
+      "expression": "24 * cos(pi/3)",
+      "expected": 12
+    },
+    {
+      "id": "WE10_6_1_1_E_sq",
+      "description": "WE10_6_1_1 East component squared",
+      "expression": "(24 * sin(pi/3))**2",
+      "expected": 432
+    },
+    {
+      "id": "WE10_6_1_1_back",
+      "description": "WE10_6_1_1 back-bearing",
+      "expression": "60 + 180",
+      "expected": 240
+    },
+    {
+      "id": "WE10_6_1_2_AC",
+      "description": "WE10_6_1_2 floor diagonal AC",
+      "expression": "sqrt(12**2 + 9**2)",
+      "expected": 15
+    },
+    {
+      "id": "WE10_6_1_2_AG",
+      "description": "WE10_6_1_2 3D space diagonal AG",
+      "expression": "sqrt(12**2 + 9**2 + 8**2)",
+      "expected": 17
+    },
+    {
+      "id": "WE10_6_1_3_AB",
+      "description": "WE10_6_1_3 horizontal distance AB between observers",
+      "expression": "sqrt((60 / tan(pi/4))**2 + (60 / tan(pi/6))**2)",
+      "expected": 120
+    },
+    {
+      "id": "NYT10_6_1_3_angle",
+      "description": "NYT10_6_1_3 bearing angle in degrees",
+      "expression": "atan(sqrt(3)) * 180 / pi",
+      "expected": 60
+    },
+    {
+      "id": "EX10_6_1_Q1a",
+      "description": "Exercise 10.6.1 Q1a back-bearing",
+      "expression": "47 + 180",
+      "expected": 227
+    },
+    {
+      "id": "EX10_6_1_Q1b",
+      "description": "Exercise 10.6.1 Q1b back-bearing",
+      "expression": "295 - 180",
+      "expected": 115
+    },
+    {
+      "id": "EX10_6_1_Q2_OB",
+      "description": "Exercise 10.6.1 Q2 distance OB",
+      "expression": "sqrt(8**2 + (8 * sqrt(3))**2)",
+      "expected": 16
+    },
+    {
+      "id": "EX10_6_1_Q4_angle",
+      "description": "Exercise 10.6.1 Q4 elevation angle in degrees",
+      "expression": "atan(10 / sqrt(8**2 + 6**2)) * 180 / pi",
+      "expected": 45
+    },
+    {
+      "id": "EX10_6_1_Q5_N",
+      "description": "Exercise 10.6.1 Q5 North component",
+      "expression": "120 * cos(pi/3)",
+      "expected": 60
+    },
+    {
+      "id": "EX10_6_1_Q6_x",
+      "description": "Exercise 10.6.1 Q6 surveyor distance x",
+      "expression": "40 / (tan(pi/3) / tan(pi/6) - 1)",
+      "expected": 20
+    },
+    {
+      "id": "EX10_6_1_Q7_OA",
+      "description": "Exercise 10.6.1 Q7 half-diagonal OA",
+      "expression": "Rational(1, 2) * sqrt((10 * sqrt(2))**2 + (10 * sqrt(2))**2)",
+      "expected": 10
+    },
+    {
+      "id": "EX10_6_1_Q8",
+      "description": "Exercise 10.6.1 Q8 distance between ships",
+      "expression": "sqrt((2 * 12)**2 + (2 * 16)**2)",
+      "expected": 40
+    },
+    {
+      "id": "EX10_6_1_Q12_floor",
+      "description": "Exercise 10.6.1 Q12 drone horizontal ground distance",
+      "expression": "sqrt(300**2 + 400**2)",
+      "expected": 500
+    }
+  ]
+}

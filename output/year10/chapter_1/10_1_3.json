@@ -1,0 +1,415 @@
+{
+  "metadata": {
+    "section_id": "10_1_3",
+    "section_code": "1C",
+    "chapter_number": 1,
+    "chapter_title": "Financial Mathematics, Surds, and Logarithms (10 & 10A)",
+    "title": "[10A] Fractional Indices and Logarithms",
+    "vcaa_code": "VC2M10AN02",
+    "vcaa_description": "Use the definition of a logarithm to establish and apply the laws of logarithms and investigate logarithmic scales in applied contexts.",
+    "strand": "Number (10A)",
+    "target_mastery": "Evaluate fractional exponents a^(m/n) = (n-th root of a)^m, convert between index and logarithmic form log_a(y) = x, and simplify using logarithm laws.",
+    "prerequisites": [
+      "Index laws with integer exponents (Year 9 VC2M9A01)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Fractional index",
+        "definition": "A rational exponent $\\frac{m}{n}$ where the denominator $n$ indicates the $n$-th root and the numerator $m$ indicates the power: $a^{m/n} = (\\sqrt[n]{a})^m$."
+      },
+      {
+        "term": "Logarithm",
+        "definition": "For $a > 0, a \\neq 1$ and $y > 0$, the logarithm $\\log_a(y)$ is the exponent $x$ to which the base $a$ must be raised to produce $y$: $\\log_a(y) = x \\iff a^x = y$."
+      },
+      {
+        "term": "Logarithm laws",
+        "definition": "Rules derived from the index laws that convert products into sums ($\\log_a(xy) = \\log_a x + \\log_a y$), quotients into differences ($\\log_a(x/y) = \\log_a x - \\log_a y$), and powers into multiples ($\\log_a(x^p) = p\\log_a x$)."
+      },
+      {
+        "term": "Logarithmic scale",
+        "definition": "A measurement scale (such as the Richter scale for earthquake magnitude or decibels for sound intensity) where each unit increase represents a tenfold multiplication of the underlying physical quantity."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_10_1_3_1",
+      "title": "Fractional Indices and $n$-th Roots",
+      "explanation": "By the third index law $(a^p)^q = a^{pq}$, we have $(a^{1/n})^n = a^1 = a$, which defines $a^{1/n}$ as the principal $n$-th root $\\sqrt[n]{a}$ (for $a > 0$). More generally, for a rational exponent $\\frac{m}{n}$, raising $a$ to the power $\\frac{m}{n}$ means taking the $n$-th root and raising the result to the power $m$. Evaluating the $n$-th root FIRST keeps the intermediate numbers small and easy to compute without a calculator.",
+      "formula_latex": "a^{1/n} = \\sqrt[n]{a}, \\quad a^{m/n} = (\\sqrt[n]{a})^m = \\sqrt[n]{a^m}, \\quad a^{-m/n} = \\frac{1}{(\\sqrt[n]{a})^m}",
+      "callout_title": "Root the Denominator First, Then Raise to the Numerator",
+      "callout_rule": "To evaluate $27^{2/3}$ mentally, take the cube root first ($\\sqrt[3]{27} = 3$) and then square it ($3^2 = 9$), rather than computing $\\sqrt[3]{27^2} = \\sqrt[3]{729}$."
+    },
+    {
+      "id": "theory_10_1_3_2",
+      "title": "Definition of a Logarithm",
+      "explanation": "A logarithm answers the question: 'To what power must I raise the base $a$ to obtain $y$?' For any base $a > 0$ ($a \\neq 1$) and any positive number $y > 0$, the statement $\\log_a(y) = x$ is completely equivalent to the index statement $a^x = y$. Because $a^0 = 1$ and $a^1 = a$, it immediately follows that $\\log_a(1) = 0$ and $\\log_a(a) = 1$ for every valid base $a$.",
+      "formula_latex": "\\log_a(y) = x \\iff a^x = y \\quad (a > 0,\\; a \\neq 1,\\; y > 0)",
+      "callout_title": "A Logarithm IS an Exponent",
+      "callout_rule": "Read $\\log_2(8) = 3$ as 'the power to which $2$ is raised to give $8$ is $3$' ($2^3 = 8$). If the argument is a fraction, use negative indices: $\\log_3\\left(\\frac{1}{9}\\right) = \\log_3(3^{-2}) = -2$."
+    },
+    {
+      "id": "theory_10_1_3_3",
+      "title": "The Laws of Logarithms and Logarithmic Scales",
+      "explanation": "Because logarithms are exponents, the index laws $a^m \\times a^n = a^{m+n}$, $a^m \\div a^n = a^{m-n}$, and $(a^m)^p = a^{mp}$ translate directly into three fundamental logarithm laws for any positive $x, y > 0$. Base-$10$ (common) logarithms are used in science to compress vast ranges of magnitudes onto human-readable scales, such as sound level in decibels $L = 10\\log_{10}(I/I_0)$ and pH $= -\\log_{10}[\\text{H}^+]$.",
+      "formula_latex": "\\log_a(xy) = \\log_a x + \\log_a y, \\quad \\log_a\\!\\left(\\frac{x}{y}\\right) = \\log_a x - \\log_a y, \\quad \\log_a(x^p) = p\\log_a x",
+      "callout_title": "Log of a Product is the Sum of the Logs",
+      "callout_rule": "Combine sums of logs with the same base by multiplying their arguments: $\\log_6(4) + \\log_6(9) = \\log_6(4 \\times 9) = \\log_6(36) = 2$."
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE10_1_3_1",
+      "title": "Evaluating Fractional and Negative Fractional Indices",
+      "difficulty": "Fluency",
+      "problem": "Evaluate without a calculator: (a) $16^{3/4}$ and (b) $27^{-2/3}$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), take the $4$-th root of $16$ first ($\\sqrt[4]{16} = 2$) and then raise to the power $3$.",
+          "working": "$$16^{3/4} = (\\sqrt[4]{16})^3 = 2^3 = 8$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), use the negative index law $a^{-p} = \\frac{1}{a^p}$, take the cube root of $27$ ($\\sqrt[3]{27} = 3$), and square it.",
+          "working": "$$27^{-2/3} = \\frac{1}{27^{2/3}} = \\frac{1}{(\\sqrt[3]{27})^2} = \\frac{1}{3^2} = \\frac{1}{9}$$"
+        }
+      ],
+      "final_answer": "(a) $8$, (b) $\\frac{1}{9}$",
+      "now_you_try": {
+        "problem": "Evaluate without a calculator: (a) $8^{4/3}$ and (b) $32^{-3/5}$.",
+        "hint": "Note that $\\sqrt[3]{8} = 2$ and $\\sqrt[5]{32} = 2$.",
+        "working_summary": "(a) $2^4 = 16$; (b) $\\frac{1}{2^3} = \\frac{1}{8}$.",
+        "answer": "(a) $16$, (b) $\\frac{1}{8}$"
+      }
+    },
+    {
+      "id": "WE10_1_3_2",
+      "title": "Evaluating Logarithms from the Definition",
+      "difficulty": "Understanding",
+      "problem": "Evaluate: (a) $\\log_2(32)$ and (b) $\\log_5\\!\\left(\\frac{1}{25}\\right)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "In part (a), express $32$ as a power of the base $2$: $32 = 2^5$.",
+          "working": "$$\\log_2(32) = \\log_2(2^5) = 5$$"
+        },
+        {
+          "step": 2,
+          "thinking": "In part (b), express $\\frac{1}{25}$ as a power of the base $5$: $\\frac{1}{25} = \\frac{1}{5^2} = 5^{-2}$.",
+          "working": "$$\\log_5\\!\\left(\\frac{1}{25}\\right) = \\log_5(5^{-2}) = -2$$"
+        }
+      ],
+      "final_answer": "(a) $5$, (b) $-2$",
+      "now_you_try": {
+        "problem": "Evaluate: (a) $\\log_3(81)$ and (b) $\\log_2\\!\\left(\\frac{1}{8}\\right)$.",
+        "hint": "Write $81 = 3^4$ and $\\frac{1}{8} = 2^{-3}$.",
+        "working_summary": "(a) $\\log_3(3^4) = 4$; (b) $\\log_2(2^{-3}) = -3$.",
+        "answer": "(a) $4$, (b) $-3$"
+      }
+    },
+    {
+      "id": "WE10_1_3_3",
+      "title": "Simplifying Expressions Using Logarithm Laws",
+      "difficulty": "Problem-Solving",
+      "problem": "Simplify and evaluate $2\\log_3(6) - \\log_3(4)$.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Apply the power law $p\\log_a(x) = \\log_a(x^p)$ to the first term.",
+          "working": "$$2\\log_3(6) - \\log_3(4) = \\log_3(6^2) - \\log_3(4) = \\log_3(36) - \\log_3(4)$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Apply the quotient law $\\log_a(x) - \\log_a(y) = \\log_a(x/y)$ and evaluate.",
+          "working": "$$= \\log_3\\!\\left(\\frac{36}{4}\\right) = \\log_3(9) = \\log_3(3^2) = 2$$"
+        }
+      ],
+      "final_answer": "$2$",
+      "now_you_try": {
+        "problem": "Simplify and evaluate $\\log_2(12) + \\log_2(4) - \\log_2(3)$.",
+        "hint": "Combine into a single base-$2$ logarithm: $\\log_2\\!\\left(\\frac{12 \\times 4}{3}\\right)$.",
+        "working_summary": "$\\log_2\\!\\left(\\frac{48}{3}\\right) = \\log_2(16) = \\log_2(2^4) = 4$.",
+        "answer": "$4$"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "MISC_10_1_3_1",
+      "title": "Confusing a Negative Exponent with a Negative Number",
+      "misconception": "Writing $8^{-2/3} = -4$ instead of $\\frac{1}{4}$.",
+      "correct_concept": "A negative index indicates the reciprocal, NOT a negative sign: $a^{-p} = \\frac{1}{a^p}$. Thus $8^{-2/3} = \\frac{1}{8^{2/3}} = \\frac{1}{4}$.",
+      "incorrect_working": "$$8^{-2/3} = -(\\sqrt[3]{8})^2 = -4 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$8^{-2/3} = \\frac{1}{(\\sqrt[3]{8})^2} = \\frac{1}{2^2} = \\frac{1}{4} \\quad (\\text{Correct})$$",
+      "counter_example": "A positive base raised to any real exponent is always strictly positive ($8^x > 0$ for all real $x$)."
+    },
+    {
+      "id": "MISC_10_1_3_2",
+      "title": "Misapplying the Product Law to a Sum Inside a Logarithm",
+      "misconception": "Writing $\\log_a(x + y) = \\log_a(x) + \\log_a(y)$ or $\\frac{\\log_a(x)}{\\log_a(y)} = \\log_a(x - y)$.",
+      "correct_concept": "The sum of two logarithms is the logarithm of their PRODUCT: $\\log_a(x) + \\log_a(y) = \\log_a(xy)$. There is no expansion formula for $\\log_a(x + y)$.",
+      "incorrect_working": "$$\\log_2(4 + 4) = \\log_2(4) + \\log_2(4) = 2 + 2 = 4 \\quad (\\text{Incorrect})$$",
+      "correct_working": "$$\\log_2(4 + 4) = \\log_2(8) = 3, \\quad \\text{and} \\quad \\log_2(4) + \\log_2(4) = \\log_2(4 \\times 4) = \\log_2(16) = 4 \\quad (\\text{Correct})$$",
+      "counter_example": "For $x = 4, y = 4$ and base $2$: $\\log_2(4 + 4) = \\log_2(8) = 3$, whereas $\\log_2(4) + \\log_2(4) = 2 + 2 = 4 \\neq 3$."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "10_1_3_Q1",
+        "question": "Evaluate $64^{2/3}$ without using a calculator.",
+        "difficulty": "Easy",
+        "context": "Fractional Index Evaluation",
+        "final_answer": "$16$",
+        "step_by_step_solution": [
+          "Write $64^{2/3} = (\\sqrt[3]{64})^2$.",
+          "Since $\\sqrt[3]{64} = 4$, we have $4^2 = 16$."
+        ]
+      },
+      {
+        "id": "10_1_3_Q2",
+        "question": "Evaluate $81^{-3/4}$ as an exact fraction.",
+        "difficulty": "Medium",
+        "context": "Negative Fractional Index",
+        "final_answer": "$\\frac{1}{27}$",
+        "step_by_step_solution": [
+          "Rewrite using a positive exponent in the denominator: $81^{-3/4} = \\frac{1}{(\\sqrt[4]{81})^3}$.",
+          "Since $\\sqrt[4]{81} = 3$, this equals $\\frac{1}{3^3} = \\frac{1}{27}$."
+        ]
+      },
+      {
+        "id": "10_1_3_Q3",
+        "question": "Evaluate $\\log_{10}(1000) + \\log_4\\!\\left(\\frac{1}{16}\\right)$.",
+        "difficulty": "Easy",
+        "context": "Evaluating Logarithms",
+        "final_answer": "$1$",
+        "step_by_step_solution": [
+          "Since $1000 = 10^3$, $\\log_{10}(1000) = 3$. Since $\\frac{1}{16} = 4^{-2}$, $\\log_4\\!\\left(\\frac{1}{16}\\right) = -2$.",
+          "Add the results: $3 + (-2) = 1$."
+        ]
+      },
+      {
+        "id": "10_1_3_Q4",
+        "question": "Simplify and evaluate $\\log_6(9) + \\log_6(4)$.",
+        "difficulty": "Medium",
+        "context": "Logarithm Product Law",
+        "final_answer": "$2$",
+        "step_by_step_solution": [
+          "Apply $\\log_a(x) + \\log_a(y) = \\log_a(xy)$: $\\log_6(9 \\times 4) = \\log_6(36)$.",
+          "Since $36 = 6^2$, $\\log_6(36) = 2$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "10_1_3_Q5",
+        "question": "Solve for $x$: $\\log_2(x - 3) + \\log_2(x + 3) = 4$, where $x > 3$.",
+        "difficulty": "Challenging",
+        "context": "Solving Logarithmic Equations",
+        "final_answer": "$x = 5$",
+        "step_by_step_solution": [
+          "Combine the logarithms using the product law: $\\log_2((x - 3)(x + 3)) = 4 \\implies \\log_2(x^2 - 9) = 4$.",
+          "Convert to index form: $x^2 - 9 = 2^4 = 16 \\implies x^2 = 25$.",
+          "Since $x > 3$, take the positive root $x = 5$."
+        ]
+      },
+      {
+        "id": "10_1_3_Q6",
+        "question": "On the Richter logarithmic scale, the magnitude $M$ of an earthquake of intensity $I$ is $M = \\log_{10}(I/I_0)$. How many times more intense is a magnitude $7$ earthquake than a magnitude $4$ earthquake?",
+        "difficulty": "Medium",
+        "context": "Richter Scale Comparison",
+        "final_answer": "$1000$ times more intense",
+        "step_by_step_solution": [
+          "From $M_1 - M_2 = \\log_{10}(I_1 / I_2)$, we have $7 - 4 = 3 = \\log_{10}(I_1 / I_2)$.",
+          "Converting to index form gives $\\frac{I_1}{I_2} = 10^3 = 1000$."
+        ]
+      },
+      {
+        "id": "10_1_3_Q7",
+        "question": "Sound loudness $L$ in decibels (dB) is modelled by $L = 10\\log_{10}(I/I_0)$, where $I_0 = 10^{-12}\\text{ W/m}^2$. Find the loudness in decibels of a Melbourne tram bell whose sound intensity is $I = 10^{-3}\\text{ W/m}^2$.",
+        "difficulty": "Medium",
+        "context": "Decibel Sound Scale",
+        "final_answer": "$90\\text{ dB}$",
+        "step_by_step_solution": [
+          "Compute the intensity ratio: $\\frac{I}{I_0} = \\frac{10^{-3}}{10^{-12}} = 10^9$.",
+          "Substitute into the decibel formula: $L = 10\\log_{10}(10^9) = 10 \\times 9 = 90\\text{ dB}$."
+        ]
+      },
+      {
+        "id": "10_1_3_Q8",
+        "question": "A bacterial culture doubles every hour according to $N = 500 \\times 2^t$. Use logarithms to find the exact number of hours $t$ required for the population to reach $16\\,000$.",
+        "difficulty": "Medium",
+        "context": "Exponential Growth Time",
+        "final_answer": "$5\\text{ hours}$",
+        "step_by_step_solution": [
+          "Substitute $N = 16\\,000$: $500 \\times 2^t = 16\\,000 \\implies 2^t = \\frac{16\\,000}{500} = 32$.",
+          "Using logarithms, $t = \\log_2(32) = 5\\text{ hours}$."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "10_1_3_Q9",
+        "question": "Use the index law $a^m \\times a^n = a^{m+n}$ to prove the logarithm product law $\\log_a(xy) = \\log_a(x) + \\log_a(y)$ for $x, y > 0$.",
+        "difficulty": "Challenging",
+        "context": "Proof of First Logarithm Law",
+        "final_answer": "Let $m = \\log_a x$ and $n = \\log_a y$, so $x = a^m, y = a^n \\implies xy = a^{m+n} \\implies \\log_a(xy) = m + n$",
+        "step_by_step_solution": [
+          "Let $m = \\log_a(x)$ and $n = \\log_a(y)$. By the definition of a logarithm, $x = a^m$ and $y = a^n$.",
+          "Multiply $x$ and $y$: $xy = a^m \\times a^n = a^{m+n}$.",
+          "Rewrite $xy = a^{m+n}$ in logarithmic form: $\\log_a(xy) = m + n = \\log_a(x) + \\log_a(y)$."
+        ]
+      },
+      {
+        "id": "10_1_3_Q10",
+        "question": "Explain why $\\log_a(y)$ is undefined in the real number system when $y \\le 0$ (given $a > 0, a \\neq 1$).",
+        "difficulty": "Medium",
+        "context": "Domain of the Logarithmic Function",
+        "final_answer": "Since $a > 0$, $a^x > 0$ for every real exponent $x$, so $a^x$ can never equal $0$ or a negative number",
+        "step_by_step_solution": [
+          "By definition, $\\log_a(y) = x$ means $a^x = y$.",
+          "Because the base $a$ is strictly positive, raising $a$ to any real power $x$ always produces a strictly positive number ($a^x > 0$). Therefore, no real exponent $x$ can make $a^x \\le 0$."
+        ]
+      },
+      {
+        "id": "10_1_3_Q11",
+        "question": "Simplify $\\frac{\\log_a(27)}{\\log_a(3)}$ and explain why the result does not depend on the base $a$.",
+        "difficulty": "Challenging",
+        "context": "Change-of-Base Ratio",
+        "final_answer": "$3$",
+        "step_by_step_solution": [
+          "Write $27 = 3^3$ and apply the power law to the numerator: $\\log_a(27) = \\log_a(3^3) = 3\\log_a(3)$.",
+          "Divide by $\\log_a(3)$: $\\frac{3\\log_a(3)}{\\log_a(3)} = 3$, since $\\log_a(3) \\neq 0$ cancels out completely."
+        ]
+      },
+      {
+        "id": "10_1_3_Q12",
+        "question": "Evaluate the exact sum $\\log_2\\!\\left(\\frac{2}{1}\\right) + \\log_2\\!\\left(\\frac{3}{2}\\right) + \\log_2\\!\\left(\\frac{4}{3}\\right) + \\dots + \\log_2\\!\\left(\\frac{16}{15}\\right)$.",
+        "difficulty": "Extension",
+        "context": "Telescoping Logarithm Sum",
+        "final_answer": "$4$",
+        "step_by_step_solution": [
+          "By the product law, the sum of the logarithms equals the logarithm of the product of their arguments: $\\log_2\\!\\left(\\frac{2}{1} \\times \\frac{3}{2} \\times \\frac{4}{3} \\times \\dots \\times \\frac{16}{15}\\right)$.",
+          "All intermediate numerators and denominators cancel, leaving $\\log_2\\!\\left(\\frac{16}{1}\\right) = \\log_2(2^4) = 4$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE10_1_3_1a",
+      "description": "Worked Example 10.1.3.1(a)",
+      "expression": "16**Rational(3, 4)",
+      "expected": 8
+    },
+    {
+      "id": "WE10_1_3_1b",
+      "description": "Worked Example 10.1.3.1(b)",
+      "expression": "27**Rational(-2, 3)",
+      "expected": "Rational(1, 9)"
+    },
+    {
+      "id": "NYT10_1_3_1a",
+      "description": "Now You Try 10.1.3.1(a)",
+      "expression": "8**Rational(4, 3)",
+      "expected": 16
+    },
+    {
+      "id": "NYT10_1_3_1b",
+      "description": "Now You Try 10.1.3.1(b)",
+      "expression": "32**Rational(-3, 5)",
+      "expected": "Rational(1, 8)"
+    },
+    {
+      "id": "WE10_1_3_2a",
+      "description": "Worked Example 10.1.3.2(a)",
+      "expression": "log(32, 2)",
+      "expected": 5
+    },
+    {
+      "id": "WE10_1_3_2b",
+      "description": "Worked Example 10.1.3.2(b)",
+      "expression": "log(Rational(1, 25), 5)",
+      "expected": -2
+    },
+    {
+      "id": "NYT10_1_3_2a",
+      "description": "Now You Try 10.1.3.2(a)",
+      "expression": "log(81, 3)",
+      "expected": 4
+    },
+    {
+      "id": "NYT10_1_3_2b",
+      "description": "Now You Try 10.1.3.2(b)",
+      "expression": "log(Rational(1, 8), 2)",
+      "expected": -3
+    },
+    {
+      "id": "WE10_1_3_3",
+      "description": "Worked Example 10.1.3.3",
+      "expression": "simplify(2*log(6, 3) - log(4, 3))",
+      "expected": 2
+    },
+    {
+      "id": "NYT10_1_3_3",
+      "description": "Now You Try 10.1.3.3",
+      "expression": "simplify(log(12, 2) + log(4, 2) - log(3, 2))",
+      "expected": 4
+    },
+    {
+      "id": "EX10_1_3_Q1",
+      "description": "Exercise 10.1.3 Q1",
+      "expression": "64**Rational(2, 3)",
+      "expected": 16
+    },
+    {
+      "id": "EX10_1_3_Q2",
+      "description": "Exercise 10.1.3 Q2",
+      "expression": "81**Rational(-3, 4)",
+      "expected": "Rational(1, 27)"
+    },
+    {
+      "id": "EX10_1_3_Q3",
+      "description": "Exercise 10.1.3 Q3",
+      "expression": "log(1000, 10) + log(Rational(1, 16), 4)",
+      "expected": 1
+    },
+    {
+      "id": "EX10_1_3_Q4",
+      "description": "Exercise 10.1.3 Q4",
+      "expression": "simplify(log(9, 6) + log(4, 6))",
+      "expected": 2
+    },
+    {
+      "id": "EX10_1_3_Q5",
+      "description": "Exercise 10.1.3 Q5",
+      "expression": "log(5 - 3, 2) + log(5 + 3, 2)",
+      "expected": 4
+    },
+    {
+      "id": "EX10_1_3_Q6",
+      "description": "Exercise 10.1.3 Q6",
+      "expression": "10**(7 - 4)",
+      "expected": 1000
+    },
+    {
+      "id": "EX10_1_3_Q7",
+      "description": "Exercise 10.1.3 Q7",
+      "expression": "10 * log(10**(-3) / 10**(-12), 10)",
+      "expected": 90
+    },
+    {
+      "id": "EX10_1_3_Q11",
+      "description": "Exercise 10.1.3 Q11",
+      "expression": "simplify(log(27) / log(3))",
+      "expected": 3
+    },
+    {
+      "id": "EX10_1_3_Q12",
+      "description": "Exercise 10.1.3 Q12",
+      "expression": "log(16, 2)",
+      "expected": 4
+    }
+  ]
+}
