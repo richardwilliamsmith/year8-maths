@@ -60,7 +60,7 @@
         },
         {
           "number": 6,
-          "question": "A right-angled triangle has hypotenuse $(3\\sqrt{2} + \\sqrt{3})\\text{ cm}$ and one shorter side $(3\\sqrt{2} - \\sqrt{3})\\text{ cm}$. Use Pythagoras' theorem to find the exact length of the other shorter side in simplest surd form.",
+          "question": "A right-angled triangle has hypotenuse $4\\sqrt{2}\\text{ cm}$ and one shorter side $2\\sqrt{2}\\text{ cm}$. Use Pythagoras' theorem to find the exact length of the other shorter side in simplest surd form.",
           "answer": "$2\\sqrt{6}\\text{ cm}$"
         },
         {
@@ -94,7 +94,7 @@
         { "id": "WSE9_1_1_2d", "expression": "(sqrt(3) + 1)/(sqrt(3) - 1) - (2 + sqrt(3))", "expected": 0 },
         { "id": "WSE9_1_1_4c", "expression": "14/(3 - sqrt(2)) - (6 + 2*sqrt(2))", "expected": 0 },
         { "id": "WSE9_1_1_4d", "expression": "(2 + sqrt(3))**2 - (7 + 4*sqrt(3))", "expected": 0 },
-        { "id": "WSE9_1_1_6", "expression": "sqrt((3*sqrt(2) + sqrt(3))**2 - (3*sqrt(2) - sqrt(3))**2) - 2*sqrt(6)", "expected": 0 },
+        { "id": "WSE9_1_1_6", "expression": "sqrt((4*sqrt(2))**2 - (2*sqrt(2))**2) - 2*sqrt(6)", "expected": 0 },
         { "id": "WSE9_1_1_8", "expression": "(18 + 6*sqrt(5))/(3 + sqrt(5))", "expected": 6 }
       ]
     },
@@ -277,7 +277,7 @@
         }
       ],
       "assertions": [
-        { "id": "WSE9_1_3_1a", "expression": "((4.5 * 10**(-4)) * (8.0 * 10**9)) / (1.2 * 10**(-3))", "expected": 3000000000 },
+        { "id": "WSE9_1_3_1a", "expression": "((Rational(9, 2) * 10**(-4)) * (8 * 10**9)) / (Rational(6, 5) * 10**(-3))", "expected": 3000000000 },
         { "id": "WSE9_1_3_1b", "expression": "(5 * 10**(-6))**3 - 1.25 * 10**(-16)", "expected": 0 },
         { "id": "WSE9_1_3_1c", "expression": "sqrt(36 * 10**(-10)) - 6 * 10**(-5)", "expected": 0 },
         { "id": "WSE9_1_3_1d", "expression": "(6 * 10**5)**2 / (9 * 10**(-4)) - 4 * 10**14", "expected": 0 },

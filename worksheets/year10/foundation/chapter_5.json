@@ -1,0 +1,103 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Surface Area and Volume of Pyramids, Cones, and Spheres (10 & 10A)",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "10_5_1",
+      "section_code": "5A",
+      "title": "Surface Area and Volume of Pyramids, Cones, and Spheres",
+      "vcaa_code": "VC2M10M01",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use the pyramid volume formula $V = \\frac{1}{3}Ah$ (where $A$ is the base area and $h$ is the perpendicular height) to find each volume:",
+          "parts": [
+            { "label": "a", "question": "A pyramid with base area $A = 30\\text{ cm}^2$ and height $h = 5\\text{ cm}$", "answer": "$50\\text{ cm}^3$" },
+            { "label": "b", "question": "A square-based pyramid with base side $6\\text{ cm}$ and height $h = 4\\text{ cm}$", "answer": "$48\\text{ cm}^3$" },
+            { "label": "c", "question": "A rectangular-based pyramid with base $5\\text{ m}$ by $9\\text{ m}$ and height $h = 7\\text{ m}$", "answer": "$105\\text{ m}^3$" },
+            { "label": "d", "question": "A triangular-based pyramid with base area $A = 18\\text{ cm}^2$ and height $h = 10\\text{ cm}$", "answer": "$60\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A square-based pyramid has base side length $10\\text{ cm}$ and triangular face slant height $s = 13\\text{ cm}$. Follow the steps to find its total surface area:",
+          "parts": [
+            { "label": "a", "question": "Find the area of the square base ($10 \\times 10$)", "answer": "$100\\text{ cm}^2$" },
+            { "label": "b", "question": "Find the area of one triangular face ($\\frac{1}{2} \\times 10 \\times 13$)", "answer": "$65\\text{ cm}^2$" },
+            { "label": "c", "question": "Find the total area of all $4$ triangular faces", "answer": "$260\\text{ cm}^2$" },
+            { "label": "d", "question": "Add the base and $4$ faces to find the total surface area", "answer": "$360\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A cone has radius $r = 3\\text{ cm}$, perpendicular height $h = 4\\text{ cm}$, and slant height $s = 5\\text{ cm}$. Leave your answers in exact form (in terms of $\\pi$):",
+          "parts": [
+            { "label": "a", "question": "Area of the circular base ($\\pi r^2$)", "answer": "$9\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Curved surface area ($\\pi r s$)", "answer": "$15\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "Total surface area ($\\pi r^2 + \\pi r s$)", "answer": "$24\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "Volume of the cone ($V = \\frac{1}{3}\\pi r^2 h$)", "answer": "$12\\pi\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Use $\\text{SA} = 4\\pi r^2$ and $V = \\frac{4}{3}\\pi r^3$ to find each exact value in terms of $\\pi$:",
+          "parts": [
+            { "label": "a", "question": "Surface area of a sphere with radius $r = 5\\text{ cm}$", "answer": "$100\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Surface area of a sphere with diameter $d = 12\\text{ cm}$ ($r = 6\\text{ cm}$)", "answer": "$144\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "Volume of a sphere with radius $r = 3\\text{ cm}$", "answer": "$36\\pi\\text{ cm}^3$" },
+            { "label": "d", "question": "Volume of a hemisphere (half a sphere) with radius $r = 3\\text{ cm}$", "answer": "$18\\pi\\text{ cm}^3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A waffle ice-cream cone has radius $3\\text{ cm}$ and perpendicular height $10\\text{ cm}$. Using $V = \\frac{1}{3}\\pi r^2 h$, find the exact volume of the cone in terms of $\\pi$, and approximate it to $1$ decimal place using $\\pi \\approx 3.14$.",
+          "answer": "$30\\pi\\text{ cm}^3 \\approx 94.2\\text{ cm}^3$"
+        },
+        {
+          "number": 6,
+          "question": "A spherical basketball has radius $r = 12\\text{ cm}$. Calculate its exact surface area in terms of $\\pi$ using $\\text{SA} = 4\\pi r^2$.",
+          "answer": "$576\\pi\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A camping tent is shaped like a square-based pyramid with base side length $4\\text{ m}$ and perpendicular height $3\\text{ m}$. Find the volume of air inside the tent.",
+          "answer": "$V = \\frac{1}{3}(4^2)(3) = 16\\text{ m}^3$"
+        },
+        {
+          "number": 8,
+          "question": "A cylindrical water tank of radius $2\\text{ m}$ and height $5\\text{ m}$ has a conical lid of radius $2\\text{ m}$ and height $3\\text{ m}$ on top. Find the exact total volume of the tank and lid in terms of $\\pi$.",
+          "answer": "$V = \\pi(2^2)(5) + \\frac{1}{3}\\pi(2^2)(3) = 20\\pi + 4\\pi = 24\\pi\\text{ m}^3$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why is the volume of a cone $\\frac{1}{3}$ of the volume of a cylinder with the same radius and height ($V_{\\text{cone}} = \\frac{1}{3}\\pi r^2 h$)?",
+          "answer": "Because a cone tapers smoothly from its circular base to a single point (apex), occupying exactly one-third of the volume of a cylinder with the same base area and perpendicular height."
+        },
+        {
+          "number": 10,
+          "question": "When finding the total surface area of a **solid hemisphere** (half a solid sphere), why is the formula $3\\pi r^2$ rather than $2\\pi r^2$?",
+          "answer": "The curved outer surface of a hemisphere is half of $4\\pi r^2$, which is $2\\pi r^2$, and a solid hemisphere also includes a flat circular base of area $\\pi r^2$, giving $2\\pi r^2 + \\pi r^2 = 3\\pi r^2$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF10_5_1_1b", "expression": "Rational(1, 3) * 6**2 * 4", "expected": 48 },
+        { "id": "WSF10_5_1_1c", "expression": "Rational(1, 3) * (5 * 9) * 7", "expected": 105 },
+        { "id": "WSF10_5_1_2d", "expression": "10**2 + 4 * Rational(1, 2) * 10 * 13", "expected": 360 },
+        { "id": "WSF10_5_1_3c", "expression": "pi * 3**2 + pi * 3 * 5", "expected": "24*pi" },
+        { "id": "WSF10_5_1_3d", "expression": "Rational(1, 3) * pi * 3**2 * 4", "expected": "12*pi" },
+        { "id": "WSF10_5_1_4a", "expression": "4 * pi * 5**2", "expected": "100*pi" },
+        { "id": "WSF10_5_1_4c", "expression": "Rational(4, 3) * pi * 3**3", "expected": "36*pi" },
+        { "id": "WSF10_5_1_5", "expression": "Rational(1, 3) * pi * 3**2 * 10", "expected": "30*pi" },
+        { "id": "WSF10_5_1_7", "expression": "Rational(1, 3) * 4**2 * 3", "expected": 16 },
+        { "id": "WSF10_5_1_8", "expression": "pi * 2**2 * 5 + Rational(1, 3) * pi * 2**2 * 3", "expected": "24*pi" }
+      ]
+    }
+  ]
+}

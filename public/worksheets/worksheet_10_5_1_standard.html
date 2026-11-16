@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <title>Worksheet 5A (Standard) — Surface Area and Volume of Pyramids, Cones, and Spheres</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 13mm 10mm 13mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 184mm;
+      height: 276mm;
+      margin: 0 auto;
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #111111;
+      background: #ffffff;
+      font-size: 9.5pt;
+      line-height: 1.38;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .no-print-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #141413;
+      color: #ffffff;
+      padding: 8px 14px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .print-btn {
+      background: #ffffff;
+      color: #141413;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 3px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    @media print {
+      .no-print-bar {
+        display: none !important;
+      }
+    }
+    .page-frame {
+      width: 100%;
+      height: 275mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .top-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5mm;
+    }
+    .ws-header {
+      border-bottom: 1.5pt solid #111111;
+      padding-bottom: 2mm;
+    }
+    .ws-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.4pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #4b4b4b;
+      margin-bottom: 1mm;
+    }
+    .ws-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 4mm;
+    }
+    .ws-main-title {
+      font-size: 13.5pt;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #111111;
+    }
+    .ws-code-pill {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff;
+      font-size: 9.8pt;
+      font-weight: 700;
+      padding: 0.4mm 2.1mm;
+      border-radius: 1mm;
+      margin-right: 2mm;
+      vertical-align: baseline;
+    }
+    .ws-tier-badge {
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: #111111;
+      background: #f3f2ee;
+      border: 0.9pt solid #111111;
+      padding: 0.4mm 2.2mm;
+      border-radius: 0.8mm;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .student-info-row {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr;
+      gap: 4mm;
+      margin-top: 2mm;
+      padding-top: 1.6mm;
+      border-top: 0.5pt solid #cccccc;
+      font-size: 8.4pt;
+      color: #333333;
+    }
+    .info-field {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5mm;
+    }
+    .info-line {
+      flex: 1;
+      border-bottom: 0.6pt solid #666666;
+      height: 3.3mm;
+    }
+    .ws-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8mm;
+    }
+    .ws-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f3f2ee;
+      border-left: 2.5pt solid #111111;
+      padding: 0.9mm 2.5mm;
+      margin-top: 0.4mm;
+    }
+    .ws-section-title {
+      font-size: 8.6pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #111111;
+    }
+    .ws-section-note {
+      font-size: 7.4pt;
+      color: #555555;
+      font-style: italic;
+    }
+    .fluency-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2mm;
+      padding: 0 1mm;
+    }
+    .fluency-q {
+      border-bottom: 0.4pt dashed #dad8d0;
+      padding-bottom: 1.8mm;
+    }
+    .fluency-q:last-child {
+      border-bottom: none;
+      padding-bottom: 0.4mm;
+    }
+    .q-stem {
+      display: flex;
+      gap: 1.8mm;
+      margin-bottom: 1.2mm;
+      font-weight: 600;
+      font-size: 9.2pt;
+    }
+    .q-num {
+      font-weight: 700;
+      min-width: 6.5mm;
+      color: #111111;
+    }
+    .fluency-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.3mm 2.8mm;
+      padding-left: 6.5mm;
+    }
+    .fluency-part {
+      display: flex;
+      align-items: baseline;
+      gap: 1.2mm;
+      font-size: 9.1pt;
+    }
+    .part-label {
+      font-weight: 600;
+      color: #444444;
+      font-size: 8.4pt;
+    }
+    .word-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.1mm;
+      padding: 0 1mm;
+    }
+    .word-q {
+      display: grid;
+      grid-template-columns: 7.5mm 1fr;
+      align-items: baseline;
+      padding-bottom: 1.8mm;
+      border-bottom: 0.4pt dashed #dad8d0;
+    }
+    .word-q:last-child {
+      border-bottom: none;
+      padding-bottom: 0.4mm;
+    }
+    .q-num-col {
+      font-weight: 700;
+      font-size: 9.2pt;
+      color: #111111;
+    }
+    .q-text-col {
+      font-size: 9.2pt;
+      text-align: justify;
+    }
+    .ws-footer {
+      border-top: 0.8pt solid #111111;
+      padding-top: 1.4mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.4pt;
+      color: #555555;
+    }
+    .katex {
+      font-size: 1.01em !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print-bar">
+        <span><strong>Year 10 & 10A Mathematics · Section 5A: Surface Area and Volume of Pyramids, Cones, and Spheres</strong> (Standard Worksheet · Core)</span>
+        <button onclick="window.print()" class="print-btn">Print / Save as A4 PDF (Ctrl+P)</button>
+      </div>
+  <div class="page-frame">
+    <div class="top-content">
+      <header class="ws-header">
+        <div class="ws-meta-bar">
+          <span>Year 10 & 10A Mathematics · Victorian Curriculum v2.0 (VC2M10M01)</span>
+          <span>Chapter 5: Surface Area and Volume of Pyramids, Cones, and Spheres (10 & 10A)</span>
+        </div>
+        <div class="ws-title-row">
+          <h1 class="ws-main-title">
+            <span class="ws-code-pill">5A</span>Surface Area and Volume of Pyramids, Cones, and Spheres
+          </h1>
+          <span class="ws-tier-badge">Standard Worksheet · Core</span>
+        </div>
+        <div class="student-info-row">
+          <div class="info-field"><span>Name:</span><span class="info-line"></span></div>
+          <div class="info-field"><span>Class:</span><span class="info-line"></span></div>
+          <div class="info-field"><span>Date:</span><span class="info-line"></span></div>
+        </div>
+      </header>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part A · Fluency &amp; Skill Practice</span>
+          <span class="ws-section-note">Show complete step-by-step working in your workbook</span>
+        </div>
+        <div class="fluency-list">
+          
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q1.</span>
+            <span class="q-prompt">A right square-based pyramid has base side length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">12\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">12</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and perpendicular height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">8\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>. Find:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">The area of the square base</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">The volume of the pyramid (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>A</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">V = \frac{1}{3}Ah</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal">A</span><span class="mord mathnormal">h</span></span></span></span>)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">The slant height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span> of each triangular face using Pythagoras' theorem</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">The total surface area of the pyramid</span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q2.</span>
+            <span class="q-prompt">A right circular cone has base radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>5</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">r = 5\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and perpendicular height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>12</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">h = 12\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">12</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>. Leave your answers in exact form (in terms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span></span></span></span>):</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">The slant height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span> of the cone</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">The curved (lateral) surface area (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><mi>r</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">\pi r s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">s</span></span></span></span>)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">The total surface area (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mo>+</mo><mi>π</mi><mi>r</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">\pi r^2 + \pi r s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8974em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">s</span></span></span></span>)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">The volume of the cone (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding="application/x-tex">V = \frac{1}{3}\pi r^2 h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathnormal">h</span></span></span></span>)</span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q3.</span>
+            <span class="q-prompt">Find the exact surface area and volume (in terms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span></span></span></span>) for each sphere or solid hemisphere:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">Surface area of a sphere of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">r = 6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">Volume of a sphere of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">r = 6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">Total surface area of a solid hemisphere of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>3</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">r = 3\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mord text"><span class="mord"> m</span></span></span></span></span> (including its flat circular base)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">Volume of a hemisphere of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>3</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">r = 3\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mord text"><span class="mord"> m</span></span></span></span></span></span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q4.</span>
+            <span class="q-prompt">Find the unknown dimension in each solid:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">The radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span> of a sphere with surface area <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mi>π</mi><msup><mtext> cm</mtext><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">100\pi\text{ cm}^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord text"><span class="mord"> cm</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">The perpendicular height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span> of a cone with volume <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>48</mn><mi>π</mi><msup><mtext> cm</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">48\pi\text{ cm}^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">48</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord text"><span class="mord"> cm</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span> and radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi><mo>=</mo><mn>4</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">r = 4\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">The base side length <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi></mrow><annotation encoding="application/x-tex">x</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span></span></span></span> of a square-based pyramid with volume <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>150</mn><msup><mtext> m</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">150\text{ m}^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">150</span><span class="mord"><span class="mord text"><span class="mord"> m</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>18</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">h = 18\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">18</span><span class="mord text"><span class="mord"> m</span></span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">The diameter <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi></mrow><annotation encoding="application/x-tex">d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> of a sphere with volume <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>36</mn><mi>π</mi><msup><mtext> cm</mtext><mn>3</mn></msup></mrow><annotation encoding="application/x-tex">36\pi\text{ cm}^3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">36</span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord text"><span class="mord"> cm</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span>
+          </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part B · Problem-Solving &amp; Applications</span>
+          <span class="ws-section-note">Write clear mathematical statements with units</span>
+        </div>
+        <div class="word-list">
+          
+      <div class="q-block word-q">
+        <div class="q-num-col">Q5.</div>
+        <div class="q-text-col">A grain silo in Horsham consists of a vertical cylinder of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> m</span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">10\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">10</span><span class="mord text"><span class="mord"> m</span></span></span></span></span>, topped by a conical roof of perpendicular height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">3\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mord text"><span class="mord"> m</span></span></span></span></span> and radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>4</mn><mtext> m</mtext></mrow><annotation encoding="application/x-tex">4\text{ m}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mord text"><span class="mord"> m</span></span></span></span></span>. Find the exact total volume of the silo in terms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span></span></span></span>, and its capacity in kilolitres correct to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn></mrow><annotation encoding="application/x-tex">1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> decimal place (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><msup><mtext> m</mtext><mn>3</mn></msup><mo>=</mo><mn>1</mn><mtext> kL</mtext></mrow><annotation encoding="application/x-tex">1\text{ m}^3 = 1\text{ kL}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord text"><span class="mord"> m</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">1</span><span class="mord text"><span class="mord"> kL</span></span></span></span></span>).</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q6.</div>
+        <div class="q-text-col">A decorative garden bollard is formed by placing a solid hemisphere of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> directly on top of a solid cylinder of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">20\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">20</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>. Find the exact total exposed surface area of the bollard in terms of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>π</mi></mrow><annotation encoding="application/x-tex">\pi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span></span></span></span> (including the bottom circular base of the cylinder).</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q7.</div>
+        <div class="q-text-col">A right rectangular-based pyramid has base dimensions <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">16\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">16</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>12</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">12\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">12</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and perpendicular height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">8\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> directly above the centre of the base. Find the exact slant heights of both pairs of triangular faces and the exact total surface area.</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q8.</div>
+        <div class="q-text-col">A solid metal cone of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>6</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">6\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> and perpendicular height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">18\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">18</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span> is melted down and recast into identical solid spheres of radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mtext> cm</mtext></mrow><annotation encoding="application/x-tex">3\text{ cm}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span><span class="mord text"><span class="mord"> cm</span></span></span></span></span>. How many spheres can be made?</div>
+      </div>
+        </div>
+      </section>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part C · Reasoning &amp; Challenge</span>
+          <span class="ws-section-note">Justify your conclusions using algebraic or geometric reasoning</span>
+        </div>
+        <div class="word-list">
+          
+      <div class="q-block word-q">
+        <div class="q-num-col">Q9.</div>
+        <div class="q-text-col">Explain the difference between the <strong>perpendicular height</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span> and the <strong>slant height</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span> of a right cone, and explain why <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi></mrow><annotation encoding="application/x-tex">h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span></span></span></span> is used in the volume formula <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mfrac><mn>1</mn><mn>3</mn></mfrac><mi>π</mi><msup><mi>r</mi><mn>2</mn></msup><mi>h</mi></mrow><annotation encoding="application/x-tex">V = \frac{1}{3}\pi r^2 h</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1901em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8451em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">3</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathnormal">h</span></span></span></span> whereas <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi></mrow><annotation encoding="application/x-tex">s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">s</span></span></span></span> is used in the curved surface area formula <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>=</mo><mi>π</mi><mi>r</mi><mi>s</mi></mrow><annotation encoding="application/x-tex">A = \pi r s</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0359em;">π</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span><span class="mord mathnormal">s</span></span></span></span>.</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q10.</div>
+        <div class="q-text-col">A cone, a sphere, and a cylinder all have the same radius <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>r</mi></mrow><annotation encoding="application/x-tex">r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span>, and both the cone and the cylinder have height <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>h</mi><mo>=</mo><mn>2</mn><mi>r</mi></mrow><annotation encoding="application/x-tex">h = 2r</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">h</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mord mathnormal" style="margin-right:0.0278em;">r</span></span></span></span>. Find the ratio of their volumes <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>V</mi><mtext>cone</mtext></msub><mo>:</mo><msub><mi>V</mi><mtext>sphere</mtext></msub><mo>:</mo><msub><mi>V</mi><mtext>cylinder</mtext></msub></mrow><annotation encoding="application/x-tex">V_{\text{cone}} : V_{\text{sphere}} : V_{\text{cylinder}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">cone</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">sphere</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.9694em;vertical-align:-0.2861em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">V</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord text mtight"><span class="mord mtight">cylinder</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span> in simplest integer form.</div>
+      </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="ws-footer">
+      <span>Open-Source Year 10 & 10A Mathematics · Victorian Curriculum F–10 v2.0</span>
+      <span>Section 5A (VC2M10M01) · Standard Printable Worksheet (Core Tier)</span>
+      <span>Page 1 of 1</span>
+    </footer>
+  </div>
+</body>
+</html>

@@ -15,8 +15,8 @@
           "number": 1,
           "prompt": "Solve each multi-term fractional linear equation:",
           "parts": [
-            { "label": "a", "question": "$\\dfrac{3x - 2}{4} - \\dfrac{2x - 5}{3} = \\dfrac{x + 1}{6}$", "answer": "$x = -12$" },
-            { "label": "b", "question": "$\\dfrac{2x + 3}{5} - \\dfrac{x - 4}{2} = \\dfrac{3x - 1}{10} - 1$", "answer": "$x = -9$" },
+            { "label": "a", "question": "$\\dfrac{3x - 2}{4} - \\dfrac{2x - 5}{3} = \\dfrac{x + 1}{6}$", "answer": "$x = 12$" },
+            { "label": "b", "question": "$\\dfrac{2x + 3}{5} - \\dfrac{x - 4}{2} = \\dfrac{3x - 1}{10} - 1$", "answer": "$x = \\dfrac{37}{4}$" },
             { "label": "c", "question": "$\\dfrac{4}{x - 3} = \\dfrac{7}{2x + 1}$", "answer": "$x = -25$" },
             { "label": "d", "question": "$\\dfrac{3x + 2}{x - 1} = 3 + \\dfrac{5}{2x - 2}$", "answer": "No solution ($5 = \\dfrac{5}{2}$ is impossible)" }
           ]
@@ -87,8 +87,8 @@
         }
       ],
       "assertions": [
-        { "id": "WSE9_4_1_1a", "expression": "(3*(-12) - 2)/4 - (2*(-12) - 5)/3 - ((-12) + 1)/6", "expected": 0 },
-        { "id": "WSE9_4_1_1b", "expression": "(2*(-9) + 3)/5 - ((-9) - 4)/2 - ((3*(-9) - 1)/10 - 1)", "expected": 0 },
+        { "id": "WSE9_4_1_1a", "expression": "(3*12 - 2)/4 - (2*12 - 5)/3 - (12 + 1)/6", "expected": 0 },
+        { "id": "WSE9_4_1_1b", "expression": "(2*Rational(37, 4) + 3)/5 - (Rational(37, 4) - 4)/2 - ((3*Rational(37, 4) - 1)/10 - 1)", "expected": 0 },
         { "id": "WSE9_4_1_1c", "expression": "4/(-25 - 3) - 7/(2*(-25) + 1)", "expected": 0 },
         { "id": "WSE9_4_1_2c", "expression": "simplify(((a + b) - a)/b - ((a + b) - b)/a)", "expected": 0 },
         { "id": "WSE9_4_1_4c", "expression": "(13 - 1)/2 - (13 + 2)/3", "expected": 1 },
@@ -112,7 +112,7 @@
           "parts": [
             { "label": "a", "question": "Points $(-2, 1)$, $(1, k)$, and $(7, 13)$ are collinear", "answer": "$k = 5$" },
             { "label": "b", "question": "The distance between $(k, -1)$ and $(2, 3)$ is $5$", "answer": "$k = -1$ or $k = 5$" },
-            { "label": "c", "question": "The line through $(k, 3)$ and $(4, k + 1)$ has gradient $-\\dfrac{1}{2}$", "answer": "$k = -8$" },
+            { "label": "c", "question": "The line through $(k, 3)$ and $(4, k + 1)$ has gradient $-\\dfrac{1}{2}$", "answer": "$k = 0$" },
             { "label": "d", "question": "Point $(x, 2)$ is equidistant from $A(-1, 5)$ and $B(3, -3)$", "answer": "$x = -1$" }
           ]
         },
@@ -150,7 +150,7 @@
       "application_questions": [
         {
           "number": 5,
-          "question": "Three mobile communications towers in regional Victoria are located at $A(0, 8)$, $B(-6, 0)$, and $C(10, 0)$ (in kilometres). Verify that the point $P(2, 1)$ is equidistant from all three towers (the circumcentre), and state the exact coverage radius $R = PA$.",
+          "question": "Three mobile communications towers in regional Victoria are located at $A(-2, 8)$, $B(-6, 0)$, and $C(10, 0)$ (in kilometres). Verify that the point $P(2, 1)$ is equidistant from all three towers (the circumcentre), and state the exact coverage radius $R = PA$.",
           "answer": "$PA = PB = PC = \\sqrt{65}\\text{ km}$"
         },
         {
@@ -184,11 +184,11 @@
       "assertions": [
         { "id": "WSE9_4_2_1a", "expression": "(5 - 1)/(1 - (-2)) - (13 - 5)/(7 - 1)", "expected": 0 },
         { "id": "WSE9_4_2_1b", "expression": "sqrt((5 - 2)**2 + (-1 - 3)**2)", "expected": 5 },
-        { "id": "WSE9_4_2_1c", "expression": "((-8 + 1) - 3)/(4 - (-8))", "expected": "-1/2" },
+        { "id": "WSE9_4_2_1c", "expression": "((0 + 1) - 3)/(4 - 0)", "expected": "-1/2" },
         { "id": "WSE9_4_2_3c", "expression": "sqrt((5 - 1)**2 + (4 - 2)**2) - 2*sqrt(5)", "expected": 0 },
         { "id": "WSE9_4_2_4c", "expression": "((4 - (-2))**2 + (5 - 1)**2) + ((6 - 4)**2 + (2 - 5)**2) - ((6 - (-2))**2 + (2 - 1)**2)", "expected": 0 },
         { "id": "WSE9_4_2_4d", "expression": "2*sqrt(13) * sqrt(13) / 2", "expected": 13 },
-        { "id": "WSE9_4_2_5", "expression": "(2 - 0)**2 + (1 - 8)**2", "expected": 65 },
+        { "id": "WSE9_4_2_5", "expression": "(2 - (-2))**2 + (1 - 8)**2", "expected": 65 },
         { "id": "WSE9_4_2_7", "expression": "sqrt((9 - 1)**2 + (6 - 2)**2) * sqrt((6 - 4)**2 + (2 - 6)**2) / 2", "expected": 20 },
         { "id": "WSE9_4_2_8", "expression": "sqrt((8 - 4)**2 + (2 - 10)**2) / sqrt((2 - 4)**2 + (5 - 1)**2)", "expected": 2 }
       ]

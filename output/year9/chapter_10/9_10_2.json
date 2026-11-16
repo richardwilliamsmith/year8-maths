@@ -1,0 +1,408 @@
+{
+  "metadata": {
+    "section_id": "9_10_2",
+    "section_code": "10B",
+    "chapter_number": 10,
+    "chapter_title": "Statistics, Back-to-Back Displays, and Bivariate Data",
+    "title": "Bivariate Data, Two-Way Associations, and Scatterplots",
+    "vcaa_code": "VC2M9ST02",
+    "vcaa_description": "Analyse how different sampling methods can affect the results of a statistical investigation; plan and conduct statistical investigations involving bivariate data (VC2M9ST05).",
+    "strand": "Statistics",
+    "target_mastery": "Plot bivariate numerical data on a scatterplot, distinguish explanatory and response variables, describe the direction, form, and strength of association, analyse two-way associations, and critique correlation versus causation.",
+    "prerequisites": [
+      "Cartesian plane plotting and linear equations (Section 4B)",
+      "Comparative distributions and sampling bias (Section 10A)"
+    ],
+    "key_vocabulary": [
+      {
+        "term": "Bivariate data",
+        "definition": "Data that records two variables simultaneously for each individual or observation (e.g., height and arm span, or year level and transport mode), allowing us to investigate whether an association exists between them."
+      },
+      {
+        "term": "Explanatory and response variables",
+        "definition": "The explanatory (independent) variable $x$ is used to explain or predict changes in the response (dependent) variable $y$; on a scatterplot, $x$ is plotted on the horizontal axis and $y$ on the vertical axis."
+      },
+      {
+        "term": "Scatterplot association (direction, form, strength)",
+        "definition": "A description of the pattern in a scatterplot: direction (positive, negative, or no association), form (linear or non-linear), strength (strong, moderate, or weak), and any outliers."
+      },
+      {
+        "term": "Lurking (confounding) variable",
+        "definition": "A third, unmeasured variable that influences both variables in a bivariate study, creating a strong correlation between them even though neither directly causes the other."
+      }
+    ]
+  },
+  "theory": [
+    {
+      "id": "theory_9_10_2_1",
+      "title": "Bivariate Data, Explanatory vs Response Variables, and Two-Way Associations",
+      "explanation": "Bivariate data consists of ordered pairs $(x, y)$ measured on the same subject. When one variable is thought to influence or predict the other, it is called the explanatory (independent) variable $x$ and is placed on the horizontal axis, while the outcome is the response (dependent) variable $y$ on the vertical axis. For two categorical variables arranged in a two-way frequency table, we test for an association by comparing conditional row (or column) percentages rather than raw counts, because group totals often differ.",
+      "formula_latex": "\\text{Conditional percentage} = \\frac{\\text{Cell frequency}}{\\text{Row (or Column) total}} \\times 100\\%, \\qquad (\\bar{x}, \\bar{y}) = \\left(\\frac{\\sum x}{n},\\; \\frac{\\sum y}{n}\\right)",
+      "callout_title": "Compare Percentages, Not Raw Counts, in Two-Way Tables",
+      "callout_rule": "If Group A has $120$ people and Group B has $60$ people, comparing raw counts is misleading. Always convert each row (or column) into percentages of its own total before judging an association."
+    },
+    {
+      "id": "theory_9_10_2_2",
+      "title": "Scatterplots: Direction, Form, Strength, and Lines of Best Fit",
+      "explanation": "A scatterplot displays bivariate numerical data as points $(x, y)$ on a Cartesian plane. To describe an association, state four features in context: (1) Direction — positive (as $x$ increases, $y$ generally increases), negative (as $x$ increases, $y$ generally decreases), or no association; (2) Form — linear (points cluster around a straight line) or non-linear (curved); (3) Strength — strong (tightly clustered), moderate, or weak; and (4) Outliers — points far from the overall trend. For a linear trend, a line of best fit by eye passes through or near the mean point $(\\bar{x}, \\bar{y})$ with roughly equal numbers of points above and below it. Predicting within the observed $x$-range is interpolation (generally reliable); predicting outside it is extrapolation (unreliable).",
+      "formula_latex": "y = mx + c, \\qquad m = \\frac{y_2 - y_1}{x_2 - x_1}, \\qquad c = y_1 - m x_1",
+      "callout_title": "Interpolation Is Reliable; Extrapolation Is Risky",
+      "callout_rule": "Never assume a linear trend continues indefinitely beyond the observed data range. Extrapolating far outside the minimum and maximum $x$-values can produce physically impossible predictions."
+    },
+    {
+      "id": "theory_9_10_2_3",
+      "title": "Sampling Methods and Correlation vs Causation",
+      "explanation": "How a sample is chosen directly affects the validity of any statistical investigation (VC2M9ST02). Simple random sampling gives every member an equal chance, whereas stratified sampling divides the population into subgroups (strata) and samples proportionally from each. Convenience or voluntary-response samples introduce bias. Even with a well-designed sample, a strong correlation between $x$ and $y$ does NOT automatically prove that $x$ causes $y$ (VC2M9ST05): a third lurking variable (such as warm weather driving both ice-cream sales and swimming pool attendance) or reverse causality may explain the association.",
+      "formula_latex": "\\text{Stratified sample size for stratum } k = \\frac{\\text{Stratum } k \\text{ size}}{\\text{Total population}} \\times \\text{Total sample size}",
+      "callout_title": "Correlation Does Not Imply Causation",
+      "callout_rule": "When two variables are strongly correlated, always ask: could a lurking variable be driving both, could the direction of cause be reversed, or could the relationship be pure coincidence?"
+    }
+  ],
+  "worked_examples": [
+    {
+      "id": "WE9_10_2_1",
+      "title": "Identifying Variables, Mean Point, and Describing a Scatterplot",
+      "difficulty": "Fluency",
+      "problem": "Six Year 9 students in Melbourne record their weekly hours of mathematics revision ($x$) and their test score out of $100$ ($y$): $(2, 54),\\; (3, 62),\\; (4, 68),\\; (5, 75),\\; (6, 81),\\; (7, 92)$. (a) Identify the explanatory and response variables. (b) Calculate the mean point $(\\bar{x}, \\bar{y})$. (c) Describe the association between revision hours and test score.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Revision hours are used to predict test score, so revision hours ($x$) is the explanatory variable and test score ($y$) is the response variable. Sum the $x$-values and $y$-values and divide by $n = 6$.",
+          "working": "$$\\bar{x} = \\frac{2 + 3 + 4 + 5 + 6 + 7}{6} = \\frac{27}{6} = 4.5\\text{ hours}$$\n$$\\bar{y} = \\frac{54 + 62 + 68 + 75 + 81 + 92}{6} = \\frac{432}{6} = 72\\text{ marks}$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Observe how $y$ changes steadily as $x$ increases from $2$ to $7$ (increasing by roughly $7$ to $11$ marks per extra hour) with no obvious outliers.",
+          "working": "$$\\text{Direction: positive; Form: linear; Strength: strong; Outliers: none.}$$"
+        }
+      ],
+      "final_answer": "(a) Explanatory: weekly revision hours ($x$); Response: test score ($y$); (b) $(\\bar{x}, \\bar{y}) = (4.5, 72)$; (c) Strong, positive, linear association with no outliers",
+      "now_you_try": {
+        "problem": "Find the mean point $(\\bar{x}, \\bar{y})$ for the $5$ bivariate data points: $(1, 20),\\; (2, 28),\\; (3, 35),\\; (4, 41),\\; (5, 51)$.",
+        "hint": "Add all five $x$-coordinates and divide by $5$, then add all five $y$-coordinates and divide by $5$.",
+        "working_summary": "$\\bar{x} = \\frac{1 + 2 + 3 + 4 + 5}{5} = \\frac{15}{5} = 3$; $\\bar{y} = \\frac{20 + 28 + 35 + 41 + 51}{5} = \\frac{175}{5} = 35$.",
+        "answer": "$(3, 35)$"
+      }
+    },
+    {
+      "id": "WE9_10_2_2",
+      "title": "Equation of a Line of Best Fit by Eye and Interpolation vs Extrapolation",
+      "difficulty": "Fluency",
+      "problem": "A Sydney café records daily maximum temperature $T$ ($^\\circ\\text{C}$, ranging from $18^\\circ\\text{C}$ to $30^\\circ\\text{C}$) and daily iced coffee sales $S$. A line of best fit by eye passes through $(18, 40)$ and $(30, 100)$. (a) Find the equation of the line in the form $S = mT + c$. (b) Predict iced coffee sales when $T = 25^\\circ\\text{C}$ and when $T = 42^\\circ\\text{C}$, stating which prediction is more reliable.",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Calculate the gradient $m$ using the two points on the line, then substitute $(18, 40)$ to find the vertical intercept $c$.",
+          "working": "$$m = \\frac{100 - 40}{30 - 18} = \\frac{60}{12} = 5$$\n$$40 = 5(18) + c \\implies c = 40 - 90 = -50 \\implies S = 5T - 50$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Substitute $T = 25$ (inside the observed range $18 \\le T \\le 30$, interpolation) and $T = 42$ (outside the observed range, extrapolation).",
+          "working": "$$T = 25: \\quad S = 5(25) - 50 = 75\\text{ iced coffees (interpolation — reliable)}$$\n$$T = 42: \\quad S = 5(42) - 50 = 160\\text{ iced coffees (extrapolation — less reliable)}$$"
+        }
+      ],
+      "final_answer": "(a) $S = 5T - 50$; (b) $75$ iced coffees at $25^\\circ\\text{C}$ (reliable interpolation) and $160$ at $42^\\circ\\text{C}$ (unreliable extrapolation)",
+      "now_you_try": {
+        "problem": "A line of best fit passes through $(10, 85)$ and $(25, 55)$. Find its equation $y = mx + c$ and use it to predict $y$ when $x = 18$.",
+        "hint": "First calculate $m = \\frac{55 - 85}{25 - 10}$, then substitute $(10, 85)$ to find $c$.",
+        "working_summary": "$m = \\frac{-30}{15} = -2$; $85 = -2(10) + c \\implies c = 105$, so $y = -2x + 105$. At $x = 18$, $y = -2(18) + 105 = 69$.",
+        "answer": "$y = -2x + 105$; $y = 69$"
+      }
+    },
+    {
+      "id": "WE9_10_2_3",
+      "title": "Analysing Two-Way Associations and Stratified Sampling",
+      "difficulty": "Problem-Solving",
+      "problem": "A school surveys $200$ students about their main mode of travel to school. Among $80$ Year 7 students, $48$ walk or cycle and $32$ travel by car or bus. Among $120$ Year 9 students, $42$ walk or cycle and $78$ travel by car or bus. (a) Calculate the percentage of students who walk or cycle in each year level. (b) Is there an association between year level and mode of travel? (c) If a stratified sample of $50$ students is drawn from these $200$ students, how many Year 9 students should be selected?",
+      "steps": [
+        {
+          "step": 1,
+          "thinking": "Convert each row's walk/cycle count into a percentage of that year level's total.",
+          "working": "$$\\text{Year 7 walk/cycle} = \\frac{48}{80} \\times 100\\% = 60\\%$$\n$$\\text{Year 9 walk/cycle} = \\frac{42}{120} \\times 100\\% = 35\\%$$"
+        },
+        {
+          "step": 2,
+          "thinking": "Compare the conditional percentages ($60\\%$ vs $35\\%$) to judge association, and use the stratum proportion $\\frac{120}{200}$ to find the stratified sample count.",
+          "working": "$$\\text{Association: Yes, Year 7 students are much more likely to walk/cycle } (60\\% \\text{ vs } 35\\%).$$\n$$\\text{Year 9 sample size} = \\frac{120}{200} \\times 50 = 30\\text{ students}$$"
+        }
+      ],
+      "final_answer": "(a) Year 7: $60\\%$, Year 9: $35\\%$; (b) Yes, Year 7 students walk/cycle at a substantially higher rate; (c) $30$ Year 9 students",
+      "now_you_try": {
+        "problem": "A club has $150$ junior members and $250$ senior members ($400$ total). How many junior members should be included in a stratified sample of $80$ members?",
+        "hint": "Multiply the fraction of junior members $\\left(\\frac{150}{400}\\right)$ by the sample size $80$.",
+        "working_summary": "$\\frac{150}{400} \\times 80 = \\frac{3}{8} \\times 80 = 30$ junior members.",
+        "answer": "$30$ junior members"
+      }
+    }
+  ],
+  "common_misconceptions": [
+    {
+      "id": "misc_9_10_2_1",
+      "title": "Assuming Strong Correlation Proves Causation",
+      "misconception": "Concluding that because two variables move together in a strong linear scatterplot, one variable must directly cause the other.",
+      "correct_concept": "Correlation measures only the strength and direction of a statistical association; it never by itself proves cause and effect, because a lurking variable or coincidence may be responsible.",
+      "incorrect_working": "$$\\text{Ice-cream sales and drowning incidents have a strong positive correlation} \\implies \\text{Eating ice cream causes drowning. (Incorrect!)}$$",
+      "correct_working": "$$\\text{Lurking variable: Hot summer weather increases both ice-cream sales and swimming, creating an indirect correlation.}$$",
+      "counter_example": "Over several decades, the number of storks and the human birth rate in parts of Europe showed a positive correlation, yet storks clearly do not deliver babies."
+    },
+    {
+      "id": "misc_9_10_2_2",
+      "title": "Swapping Explanatory and Response Variables or Extrapolating Blindly",
+      "misconception": "Plotting the response variable on the horizontal axis, or treating an extrapolated prediction far beyond the data as just as accurate as an interpolated one.",
+      "correct_concept": "The explanatory variable $x$ goes on the horizontal axis and the response variable $y$ on the vertical axis; predictions are only reliable within (or very close to) the observed $x$-range.",
+      "incorrect_working": "$$\\text{Infant height model } h = 2.5a + 50 \\text{ (fitted for ages } 0\\text{--}12\\text{ months)} \\implies \\text{At age } 240\\text{ months } (20\\text{ yr}),\\; h = 650\\text{ cm! (Incorrect extrapolation)}$$",
+      "correct_working": "$$\\text{Model } h = 2.5a + 50 \\text{ is only valid for } 0 \\le a \\le 12\\text{ months; growth slows after infancy so linear extrapolation fails.}$$",
+      "counter_example": "Predicting a $20$-year-old human is $6.5\\text{ m}$ tall using an infant growth line shows why extrapolation far outside the data range breaks down."
+    }
+  ],
+  "exercises": {
+    "fluency_and_understanding": [
+      {
+        "id": "9_10_2_Q1",
+        "question": "For each pair of variables, identify which should be the explanatory variable ($x$) and which should be the response variable ($y$): (a) daily rainfall in millimetres and umbrella sales at a Adelaide shop; (b) engine size in litres and fuel consumption per $100\\text{ km}$.",
+        "difficulty": "Easy",
+        "context": "Explanatory vs Response Variables",
+        "final_answer": "(a) Explanatory: daily rainfall; Response: umbrella sales; (b) Explanatory: engine size; Response: fuel consumption",
+        "step_by_step_solution": [
+          "In (a), rainfall influences whether customers buy umbrellas, so rainfall is explanatory ($x$) and umbrella sales is response ($y$).",
+          "In (b), engine size affects how much fuel a car uses, so engine size is explanatory ($x$) and fuel consumption is response ($y$)."
+        ]
+      },
+      {
+        "id": "9_10_2_Q2",
+        "question": "Find the mean point $(\\bar{x}, \\bar{y})$ for the following $5$ bivariate observations: $(2, 14),\\; (4, 18),\\; (6, 21),\\; (8, 25),\\; (10, 32)$.",
+        "difficulty": "Easy",
+        "context": "Fluency",
+        "final_answer": "$(\\bar{x}, \\bar{y}) = (6, 22)$",
+        "step_by_step_solution": [
+          "Calculate $\\bar{x} = \\frac{2 + 4 + 6 + 8 + 10}{5} = \\frac{30}{5} = 6$.",
+          "Calculate $\\bar{y} = \\frac{14 + 18 + 21 + 25 + 32}{5} = \\frac{110}{5} = 22$, giving mean point $(6, 22)$."
+        ]
+      },
+      {
+        "id": "9_10_2_Q3",
+        "question": "Describe the direction, form, and strength of the association in a scatterplot where: (a) points lie very close to a straight line sloping downwards from left to right; (b) points are scattered randomly across the entire graph with no clear pattern.",
+        "difficulty": "Easy",
+        "context": "Interpreting Scatterplots",
+        "final_answer": "(a) Strong, negative, linear association; (b) No association",
+        "step_by_step_solution": [
+          "In (a), sloping downwards means $y$ decreases as $x$ increases (negative), tight clustering around a straight line means strong and linear.",
+          "In (b), random scatter with no upward, downward, or curved trend indicates no association between the variables."
+        ]
+      },
+      {
+        "id": "9_10_2_Q4",
+        "question": "A line of best fit by eye passes through $(4, 15)$ and $(12, 39)$. Find the equation of this line in the form $y = mx + c$, and use it to predict $y$ when $x = 9$.",
+        "difficulty": "Medium",
+        "context": "Line of Best Fit",
+        "final_answer": "$y = 3x + 3$; when $x = 9$, $y = 30$",
+        "step_by_step_solution": [
+          "Find the gradient: $m = \\frac{39 - 15}{12 - 4} = \\frac{24}{8} = 3$. Substitute $(4, 15)$: $15 = 3(4) + c \\implies c = 3$, so $y = 3x + 3$.",
+          "Substitute $x = 9$: $y = 3(9) + 3 = 30$."
+        ]
+      }
+    ],
+    "problem_solving_and_modelling": [
+      {
+        "id": "9_10_2_Q5",
+        "question": "A car dealer in Brisbane records the age $a$ (years, from $1$ to $8$) and resale value $V$ (thousands of dollars) of a popular hatchback. A line of best fit passes through $(2, 24)$ and $(6, 14)$. (a) Find the linear model $V = ma + c$. (b) Interpret the gradient $m$ in context. (c) Predict the resale value of a $5$-year-old car.",
+        "difficulty": "Medium",
+        "context": "Vehicle Depreciation",
+        "final_answer": "(a) $V = -2.5a + 29$; (b) The car loses $\\$2500$ in value per year; (c) $\\$16\\,500$ ($V = 16.5$)",
+        "step_by_step_solution": [
+          "Gradient $m = \\frac{14 - 24}{6 - 2} = \\frac{-10}{4} = -2.5$. Using $(2, 24)$: $24 = -2.5(2) + c \\implies c = 29$, so $V = -2.5a + 29$.",
+          "The gradient $-2.5$ means the resale value decreases by $\\$2.5\\text{k}$ ($\\$2500$) each year. At $a = 5$, $V = -2.5(5) + 29 = 16.5$ ($\\$16\\,500$)."
+        ]
+      },
+      {
+        "id": "9_10_2_Q6",
+        "question": "In a survey of $160$ Australians, $60$ live in regional areas ($42$ own a pet, $18$ do not) and $100$ live in capital cities ($55$ own a pet, $45$ do not). Calculate the percentage of pet owners in each group and state whether location appears to be associated with pet ownership.",
+        "difficulty": "Medium",
+        "context": "Two-Way Association",
+        "final_answer": "Regional: $70\\%$, Capital city: $55\\%$; yes, regional residents have a higher rate of pet ownership ($70\\%$ vs $55\\%$)",
+        "step_by_step_solution": [
+          "Regional pet ownership: $\\frac{42}{60} \\times 100\\% = 70\\%$. Capital city pet ownership: $\\frac{55}{100} \\times 100\\% = 55\\%$.",
+          "Because $70\\%$ is noticeably higher than $55\\%$, there appears to be an association between living in a regional area and owning a pet."
+        ]
+      },
+      {
+        "id": "9_10_2_Q7",
+        "question": "A high school has $240$ Year 7 students, $210$ Year 8 students, and $150$ Year 9 students ($600$ total). The principal wants a stratified sample of $60$ students to investigate homework hours. How many students should be randomly selected from each year level?",
+        "difficulty": "Medium",
+        "context": "Stratified Sampling",
+        "final_answer": "Year 7: $24$, Year 8: $21$, Year 9: $15$",
+        "step_by_step_solution": [
+          "The sampling fraction is $\\frac{60}{600} = \\frac{1}{10}$ ($10\\%$) of each stratum.",
+          "Year 7: $240 \\times \\frac{1}{10} = 24$; Year 8: $210 \\times \\frac{1}{10} = 21$; Year 9: $150 \\times \\frac{1}{10} = 15$ (check: $24 + 21 + 15 = 60$)."
+        ]
+      },
+      {
+        "id": "9_10_2_Q8",
+        "question": "Using the car depreciation model $V = -2.5a + 29$ from Question 5 (fitted for ages $1$ to $8$ years), what value does the equation predict at $a = 14$ years? Explain why this prediction is unreliable.",
+        "difficulty": "Challenging",
+        "context": "Limits of Extrapolation",
+        "final_answer": "$V = -6$ ($-\\$6000$), which is physically impossible because a car's value cannot be negative; $a = 14$ is an unreliable extrapolation beyond $a = 8$",
+        "step_by_step_solution": [
+          "Substitute $a = 14$: $V = -2.5(14) + 29 = -35 + 29 = -6$ (thousands of dollars).",
+          "A negative resale value is impossible; depreciation slows down for older cars, so extrapolating linearly past $8$ years fails."
+        ]
+      }
+    ],
+    "reasoning_and_communication": [
+      {
+        "id": "9_10_2_Q9",
+        "question": "A study finds a strong positive correlation between the number of firefighters attending a bushfire and the dollar value of property damage caused. Does this mean sending more firefighters causes more damage? Identify a likely lurking variable.",
+        "difficulty": "Medium",
+        "context": "Correlation vs Causation",
+        "final_answer": "No; the lurking variable is the size/severity of the bushfire, which causes both more firefighters to be dispatched and greater property damage",
+        "step_by_step_solution": [
+          "Larger, more severe bushfires require more emergency crews and simultaneously destroy more property.",
+          "Thus fire severity is a lurking (confounding) variable; correlation does not imply that firefighters cause the damage."
+        ]
+      },
+      {
+        "id": "9_10_2_Q10",
+        "question": "Two researchers investigate average screen time among Australian teenagers. Researcher A surveys $300$ students at a single Saturday morning gaming convention; Researcher B uses a stratified random sample of $300$ students across $10$ diverse schools. Explain whose results will be more representative and why.",
+        "difficulty": "Medium",
+        "context": "Critiquing Sampling Methods",
+        "final_answer": "Researcher B's results are far more representative because stratified random sampling across diverse schools avoids the severe selection bias of sampling at a gaming convention",
+        "step_by_step_solution": [
+          "Researcher A uses convenience sampling at a gaming event, where attendees are likely to have much higher screen time than typical teenagers (selection bias).",
+          "Researcher B uses probability-based stratified random sampling across varied schools, giving a much more accurate estimate of the national teenage population."
+        ]
+      },
+      {
+        "id": "9_10_2_Q11",
+        "question": "Four bivariate points $(1, 4),\\; (3, 10),\\; (5, 14),\\; (7, k)$ have a mean point $(\\bar{x}, \\bar{y}) = (4, 12)$. Find the missing value $k$.",
+        "difficulty": "Challenging",
+        "context": "Algebraic Reasoning with Bivariate Means",
+        "final_answer": "$k = 20$",
+        "step_by_step_solution": [
+          "Since $\\bar{y} = 12$ for $n = 4$ points, the sum of the $y$-coordinates must be $4 \\times 12 = 48$.",
+          "Solve $4 + 10 + 14 + k = 48 \\implies 28 + k = 48 \\implies k = 20$."
+        ]
+      },
+      {
+        "id": "9_10_2_Q12",
+        "question": "A student fits a line of best fit to a scatterplot with mean point $(\\bar{x}, \\bar{y}) = (10, 26)$ and writes the equation $y = 2.4x + 5$. Without seeing the scatterplot, explain how you know this line does NOT pass through the mean point, and adjust the $y$-intercept $c$ so that a line with gradient $2.4$ passes through $(10, 26)$.",
+        "difficulty": "Extension",
+        "context": "Mean Point Constraint",
+        "final_answer": "Substituting $x = 10$ gives $y = 2.4(10) + 5 = 29 \\neq 26$; to pass through $(10, 26)$, the $y$-intercept must be $c = 2$ (giving $y = 2.4x + 2$)",
+        "step_by_step_solution": [
+          "Evaluate $y = 2.4x + 5$ at $x = 10$: $y = 24 + 5 = 29$, which is $3$ units above $\\bar{y} = 26$.",
+          "For $y = 2.4x + c$ to pass through $(10, 26)$, solve $26 = 2.4(10) + c \\implies c = 26 - 24 = 2$, so $y = 2.4x + 2$."
+        ]
+      }
+    ]
+  },
+  "assertions": [
+    {
+      "id": "WE9_10_2_1_xbar",
+      "description": "Worked Example 9.10.2.1 mean x",
+      "expression": "Rational(2 + 3 + 4 + 5 + 6 + 7, 6)",
+      "expected": 4.5
+    },
+    {
+      "id": "WE9_10_2_1_ybar",
+      "description": "Worked Example 9.10.2.1 mean y",
+      "expression": "Rational(54 + 62 + 68 + 75 + 81 + 92, 6)",
+      "expected": 72
+    },
+    {
+      "id": "NYT9_10_2_1_ybar",
+      "description": "Now You Try 9.10.2.1 mean y",
+      "expression": "Rational(20 + 28 + 35 + 41 + 51, 5)",
+      "expected": 35
+    },
+    {
+      "id": "WE9_10_2_2_m",
+      "description": "Worked Example 9.10.2.2 gradient",
+      "expression": "Rational(100 - 40, 30 - 18)",
+      "expected": 5
+    },
+    {
+      "id": "WE9_10_2_2_interp",
+      "description": "Worked Example 9.10.2.2 interpolation at T=25",
+      "expression": "5 * 25 - 50",
+      "expected": 75
+    },
+    {
+      "id": "WE9_10_2_2_extrap",
+      "description": "Worked Example 9.10.2.2 extrapolation at T=42",
+      "expression": "5 * 42 - 50",
+      "expected": 160
+    },
+    {
+      "id": "NYT9_10_2_2_pred",
+      "description": "Now You Try 9.10.2.2 prediction at x=18",
+      "expression": "-2 * 18 + 105",
+      "expected": 69
+    },
+    {
+      "id": "WE9_10_2_3_yr7",
+      "description": "Worked Example 9.10.2.3 Year 7 walk/cycle percentage",
+      "expression": "Rational(48, 80) * 100",
+      "expected": 60
+    },
+    {
+      "id": "WE9_10_2_3_yr9",
+      "description": "Worked Example 9.10.2.3 Year 9 walk/cycle percentage",
+      "expression": "Rational(42, 120) * 100",
+      "expected": 35
+    },
+    {
+      "id": "WE9_10_2_3_strat",
+      "description": "Worked Example 9.10.2.3 stratified sample Year 9 count",
+      "expression": "Rational(120, 200) * 50",
+      "expected": 30
+    },
+    {
+      "id": "NYT9_10_2_3_strat",
+      "description": "Now You Try 9.10.2.3 junior stratified sample count",
+      "expression": "Rational(150, 400) * 80",
+      "expected": 30
+    },
+    {
+      "id": "EX9_10_2_Q2_ybar",
+      "description": "Exercise 9.10.2 Q2 mean y",
+      "expression": "Rational(14 + 18 + 21 + 25 + 32, 5)",
+      "expected": 22
+    },
+    {
+      "id": "EX9_10_2_Q4_pred",
+      "description": "Exercise 9.10.2 Q4 prediction at x=9",
+      "expression": "3 * 9 + 3",
+      "expected": 30
+    },
+    {
+      "id": "EX9_10_2_Q5_pred",
+      "description": "Exercise 9.10.2 Q5 resale value at a=5",
+      "expression": "-Rational(5, 2) * 5 + 29",
+      "expected": 16.5
+    },
+    {
+      "id": "EX9_10_2_Q6_reg",
+      "description": "Exercise 9.10.2 Q6 regional pet ownership percentage",
+      "expression": "Rational(42, 60) * 100",
+      "expected": 70
+    },
+    {
+      "id": "EX9_10_2_Q8_extrap",
+      "description": "Exercise 9.10.2 Q8 extrapolation at a=14",
+      "expression": "-Rational(5, 2) * 14 + 29",
+      "expected": -6
+    },
+    {
+      "id": "EX9_10_2_Q11_k",
+      "description": "Exercise 9.10.2 Q11 missing y-value k",
+      "expression": "4 * 12 - (4 + 10 + 14)",
+      "expected": 20
+    },
+    {
+      "id": "EX9_10_2_Q12_c",
+      "description": "Exercise 9.10.2 Q12 adjusted y-intercept",
+      "expression": "26 - Rational(24, 10) * 10",
+      "expected": 2
+    }
+  ]
+}

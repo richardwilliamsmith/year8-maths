@@ -1,0 +1,103 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Surface Area and Volume of Pyramids, Cones, and Spheres (10 & 10A)",
+  "tier": "Standard",
+  "worksheets": [
+    {
+      "section_id": "10_5_1",
+      "section_code": "5A",
+      "title": "Surface Area and Volume of Pyramids, Cones, and Spheres",
+      "vcaa_code": "VC2M10M01",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A right square-based pyramid has base side length $12\\text{ cm}$ and perpendicular height $8\\text{ cm}$. Find:",
+          "parts": [
+            { "label": "a", "question": "The area of the square base", "answer": "$144\\text{ cm}^2$" },
+            { "label": "b", "question": "The volume of the pyramid ($V = \\frac{1}{3}Ah$)", "answer": "$384\\text{ cm}^3$" },
+            { "label": "c", "question": "The slant height $s$ of each triangular face using Pythagoras' theorem", "answer": "$10\\text{ cm}$" },
+            { "label": "d", "question": "The total surface area of the pyramid", "answer": "$384\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A right circular cone has base radius $r = 5\\text{ cm}$ and perpendicular height $h = 12\\text{ cm}$. Leave your answers in exact form (in terms of $\\pi$):",
+          "parts": [
+            { "label": "a", "question": "The slant height $s$ of the cone", "answer": "$13\\text{ cm}$" },
+            { "label": "b", "question": "The curved (lateral) surface area ($\\pi r s$)", "answer": "$65\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "The total surface area ($\\pi r^2 + \\pi r s$)", "answer": "$90\\pi\\text{ cm}^2$" },
+            { "label": "d", "question": "The volume of the cone ($V = \\frac{1}{3}\\pi r^2 h$)", "answer": "$100\\pi\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the exact surface area and volume (in terms of $\\pi$) for each sphere or solid hemisphere:",
+          "parts": [
+            { "label": "a", "question": "Surface area of a sphere of radius $r = 6\\text{ cm}$", "answer": "$144\\pi\\text{ cm}^2$" },
+            { "label": "b", "question": "Volume of a sphere of radius $r = 6\\text{ cm}$", "answer": "$288\\pi\\text{ cm}^3$" },
+            { "label": "c", "question": "Total surface area of a solid hemisphere of radius $r = 3\\text{ m}$ (including its flat circular base)", "answer": "$27\\pi\\text{ m}^2$" },
+            { "label": "d", "question": "Volume of a hemisphere of radius $r = 3\\text{ m}$", "answer": "$18\\pi\\text{ m}^3$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the unknown dimension in each solid:",
+          "parts": [
+            { "label": "a", "question": "The radius $r$ of a sphere with surface area $100\\pi\\text{ cm}^2$", "answer": "$r = 5\\text{ cm}$" },
+            { "label": "b", "question": "The perpendicular height $h$ of a cone with volume $48\\pi\\text{ cm}^3$ and radius $r = 4\\text{ cm}$", "answer": "$h = 9\\text{ cm}$" },
+            { "label": "c", "question": "The base side length $x$ of a square-based pyramid with volume $150\\text{ m}^3$ and height $h = 18\\text{ m}$", "answer": "$x = 5\\text{ m}$" },
+            { "label": "d", "question": "The diameter $d$ of a sphere with volume $36\\pi\\text{ cm}^3$", "answer": "$d = 6\\text{ cm}$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A grain silo in Horsham consists of a vertical cylinder of radius $4\\text{ m}$ and height $10\\text{ m}$, topped by a conical roof of perpendicular height $3\\text{ m}$ and radius $4\\text{ m}$. Find the exact total volume of the silo in terms of $\\pi$, and its capacity in kilolitres correct to $1$ decimal place ($1\\text{ m}^3 = 1\\text{ kL}$).",
+          "answer": "$V = 160\\pi + 16\\pi = 176\\pi\\text{ m}^3 \\approx 552.9\\text{ kL}$"
+        },
+        {
+          "number": 6,
+          "question": "A decorative garden bollard is formed by placing a solid hemisphere of radius $6\\text{ cm}$ directly on top of a solid cylinder of radius $6\\text{ cm}$ and height $20\\text{ cm}$. Find the exact total exposed surface area of the bollard in terms of $\\pi$ (including the bottom circular base of the cylinder).",
+          "answer": "$\\text{TSA} = \\pi(6^2) + 2\\pi(6)(20) + 2\\pi(6^2) = 36\\pi + 240\\pi + 72\\pi = 348\\pi\\text{ cm}^2$"
+        },
+        {
+          "number": 7,
+          "question": "A right rectangular-based pyramid has base dimensions $16\\text{ cm}$ by $12\\text{ cm}$ and perpendicular height $8\\text{ cm}$ directly above the centre of the base. Find the exact slant heights of both pairs of triangular faces and the exact total surface area.",
+          "answer": "Slant heights: $s_1 = \\sqrt{8^2 + 6^2} = 10\\text{ cm}$ and $s_2 = \\sqrt{8^2 + 8^2} = 8\\sqrt{2}\\text{ cm}$; $\\text{TSA} = 192 + 160 + 96\\sqrt{2} = (352 + 96\\sqrt{2})\\text{ cm}^2 \\approx 487.8\\text{ cm}^2$"
+        },
+        {
+          "number": 8,
+          "question": "A solid metal cone of radius $6\\text{ cm}$ and perpendicular height $18\\text{ cm}$ is melted down and recast into identical solid spheres of radius $3\\text{ cm}$. How many spheres can be made?",
+          "answer": "$V_{\\text{cone}} = 216\\pi\\text{ cm}^3$ and $V_{\\text{sphere}} = 36\\pi\\text{ cm}^3$, so $\\dfrac{216\\pi}{36\\pi} = 6$ spheres"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain the difference between the **perpendicular height** $h$ and the **slant height** $s$ of a right cone, and explain why $h$ is used in the volume formula $V = \\frac{1}{3}\\pi r^2 h$ whereas $s$ is used in the curved surface area formula $A = \\pi r s$.",
+          "answer": "The perpendicular height $h$ is the vertical distance from the apex straight down to the centre of the circular base, which determines the cross-sectional height for volume. The slant height $s = \\sqrt{r^2 + h^2}$ is the distance along the outer sloped surface from the apex to the rim, which equals the radius of the circular sector when the curved surface is unwrapped."
+        },
+        {
+          "number": 10,
+          "question": "A cone, a sphere, and a cylinder all have the same radius $r$, and both the cone and the cylinder have height $h = 2r$. Find the ratio of their volumes $V_{\\text{cone}} : V_{\\text{sphere}} : V_{\\text{cylinder}}$ in simplest integer form.",
+          "answer": "$V_{\\text{cone}} = \\frac{2}{3}\\pi r^3$, $V_{\\text{sphere}} = \\frac{4}{3}\\pi r^3$, $V_{\\text{cylinder}} = 2\\pi r^3 = \\frac{6}{3}\\pi r^3$, so the ratio is $1 : 2 : 3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS10_5_1_1b", "expression": "Rational(1, 3) * 12**2 * 8", "expected": 384 },
+        { "id": "WS10_5_1_1d", "expression": "12**2 + 4 * Rational(1, 2) * 12 * sqrt(8**2 + 6**2)", "expected": 384 },
+        { "id": "WS10_5_1_2c", "expression": "pi * 5**2 + pi * 5 * sqrt(5**2 + 12**2)", "expected": "90*pi" },
+        { "id": "WS10_5_1_2d", "expression": "Rational(1, 3) * pi * 5**2 * 12", "expected": "100*pi" },
+        { "id": "WS10_5_1_3b", "expression": "Rational(4, 3) * pi * 6**3", "expected": "288*pi" },
+        { "id": "WS10_5_1_3c", "expression": "3 * pi * 3**2", "expected": "27*pi" },
+        { "id": "WS10_5_1_5", "expression": "pi * 4**2 * 10 + Rational(1, 3) * pi * 4**2 * 3", "expected": "176*pi" },
+        { "id": "WS10_5_1_6", "expression": "pi * 6**2 + 2 * pi * 6 * 20 + 2 * pi * 6**2", "expected": "348*pi" },
+        { "id": "WS10_5_1_7", "expression": "16 * 12 + 2 * Rational(1, 2) * 16 * 10 + 2 * Rational(1, 2) * 12 * sqrt(8**2 + 8**2)", "expected": "352 + 96*sqrt(2)" },
+        { "id": "WS10_5_1_8", "expression": "(Rational(1, 3) * pi * 6**2 * 18) / (Rational(4, 3) * pi * 3**3)", "expected": 6 }
+      ]
+    }
+  ]
+}

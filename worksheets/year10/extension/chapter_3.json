@@ -38,7 +38,7 @@
             { "label": "a", "question": "$\\dfrac{3}{x - 2} - \\dfrac{2}{x + 3}$", "answer": "$\\dfrac{x + 13}{(x - 2)(x + 3)}$" },
             { "label": "b", "question": "$\\dfrac{2x}{x^2 - 9} - \\dfrac{1}{x - 3}$", "answer": "$\\dfrac{1}{x + 3}$" },
             { "label": "c", "question": "$\\dfrac{4}{x^2 - 4} + \\dfrac{3}{x^2 + 5x + 6}$", "answer": "$\\dfrac{7x + 6}{(x - 2)(x + 2)(x + 3)}$" },
-            { "label": "d", "question": "$\\dfrac{x + 1}{x^2 - x - 6} - \\dfrac{x - 4}{x^2 - 9}$", "answer": "$\\dfrac{3}{(x + 2)(x + 3)}$" }
+            { "label": "d", "question": "$\\dfrac{x + 1}{x^2 - x - 6} - \\dfrac{x - 4}{x^2 - 9}$", "answer": "$\\dfrac{6x + 11}{(x - 3)(x + 2)(x + 3)}$" }
           ]
         },
         {
@@ -93,7 +93,7 @@
         { "id": "Y10E_3A_2a", "expression": "simplify((x - 2)*(x + 2)*(x - 3)*(x + 3) - (x**4 - 13*x**2 + 36))", "expected": 0 },
         { "id": "Y10E_3A_2b", "expression": "simplify((x - 3)*(x + 1)*(x - 4)*(x + 2) - ((x**2 - 2*x)**2 - 11*(x**2 - 2*x) + 24))", "expected": 0 },
         { "id": "Y10E_3A_3b", "expression": "simplify(2*x/(x**2 - 9) - 1/(x - 3) - 1/(x + 3))", "expected": 0 },
-        { "id": "Y10E_3A_3d", "expression": "simplify((x + 1)/(x**2 - x - 6) - (x - 4)/(x**2 - 9) - 3/((x + 2)*(x + 3)))", "expected": 0 },
+        { "id": "Y10E_3A_3d", "expression": "simplify((x + 1)/(x**2 - x - 6) - (x - 4)/(x**2 - 9) - (6*x + 11)/((x - 3)*(x + 2)*(x + 3)))", "expected": 0 },
         { "id": "Y10E_3A_5", "expression": "20 * (80 - 2*20)", "expected": 800 },
         { "id": "Y10E_3A_7", "expression": "simplify((x**2 - 2*x + 2)*(x**2 + 2*x + 2) - (x**4 + 4))", "expected": 0 },
         { "id": "Y10E_3A_8", "expression": "2**2 - 4*2 + (-3)**2 + 6*(-3) + 20", "expected": 7 }
@@ -111,7 +111,7 @@
           "number": 1,
           "prompt": "Solve each rational equation by clearing fractions and checking for extraneous roots:",
           "parts": [
-            { "label": "a", "question": "$\\dfrac{x}{x - 2} + \\dfrac{3}{x + 1} = 2$", "answer": "$x = 5$ or $x = -1$ (reject $x = -1$, so $x = 5$)" },
+            { "label": "a", "question": "$\\dfrac{x}{x - 2} + \\dfrac{2}{x + 1} = 2$", "answer": "$x = 0$ or $x = 5$" },
             { "label": "b", "question": "$\\dfrac{2}{x - 1} + \\dfrac{3}{x + 2} = 1$", "answer": "$x = \\dfrac{3 \\pm \\sqrt{29}}{2}$" },
             { "label": "c", "question": "$\\dfrac{12}{x - 1} - \\dfrac{12}{x + 1} = 1$", "answer": "$x = 5$ or $x = -5$" },
             { "label": "d", "question": "$\\dfrac{x + 2}{x - 1} - \\dfrac{x - 1}{x + 2} = \\dfrac{5}{6}$", "answer": "$x = 7$ or $x = -\\dfrac{16}{5}$" }
@@ -183,7 +183,7 @@
         }
       ],
       "assertions": [
-        { "id": "Y10E_3B_1a", "expression": "Rational(5, 5 - 2) + Rational(3, 5 + 1)", "expected": 2 },
+        { "id": "Y10E_3B_1a", "expression": "Rational(5, 5 - 2) + Rational(2, 5 + 1)", "expected": 2 },
         { "id": "Y10E_3B_1c", "expression": "Rational(12, 5 - 1) - Rational(12, 5 + 1)", "expected": 1 },
         { "id": "Y10E_3B_1d", "expression": "Rational(7 + 2, 7 - 1) - Rational(7 - 1, 7 + 2)", "expected": "5/6" },
         { "id": "Y10E_3B_3b", "expression": "3 / Rational(3, 2)", "expected": 2 },

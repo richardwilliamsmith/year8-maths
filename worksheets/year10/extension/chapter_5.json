@@ -1,0 +1,103 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Surface Area and Volume of Pyramids, Cones, and Spheres (10 & 10A)",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "10_5_1",
+      "section_code": "5A",
+      "title": "Surface Area and Volume of Pyramids, Cones, and Spheres",
+      "vcaa_code": "VC2M10M01",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "A frustum is formed by slicing the top off a right cone of base radius $R = 9\\text{ cm}$ and total height $H = 12\\text{ cm}$ parallel to the base, leaving a smaller top cone of height $4\\text{ cm}$ removed. Find exact values in terms of $\\pi$:",
+          "parts": [
+            { "label": "a", "question": "The radius $r$ of the top circular face of the frustum (using similar triangles)", "answer": "$r = 3\\text{ cm}$" },
+            { "label": "b", "question": "The volume of the frustum ($V_{\\text{large}} - V_{\\text{small}}$)", "answer": "$312\\pi\\text{ cm}^3$ ($324\\pi - 12\\pi$)" },
+            { "label": "c", "question": "The slant height $s_{\\text{frustum}}$ of the frustum", "answer": "$10\\text{ cm}$ ($15 - 5$)" },
+            { "label": "d", "question": "The total surface area of the solid frustum (including both circular faces)", "answer": "$210\\pi\\text{ cm}^2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "A right square-based pyramid has base side length $10\\text{ cm}$ and slant edge length (from a base corner to the apex) of $13\\text{ cm}$. Find exact values:",
+          "parts": [
+            { "label": "a", "question": "The half-diagonal of the square base", "answer": "$5\\sqrt{2}\\text{ cm}$" },
+            { "label": "b", "question": "The perpendicular height $h$ of the pyramid", "answer": "$\\sqrt{119}\\text{ cm}$" },
+            { "label": "c", "question": "The slant height $s$ of each triangular face", "answer": "$12\\text{ cm}$" },
+            { "label": "d", "question": "The total surface area and exact volume of the pyramid", "answer": "$\\text{TSA} = 340\\text{ cm}^2$; $V = \\dfrac{100\\sqrt{119}}{3}\\text{ cm}^3$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Solve each exact sphere and cone problem (in terms of $\\pi$ unless stated otherwise):",
+          "parts": [
+            { "label": "a", "question": "Find the volume of material in a hollow spherical shell with outer radius $R = 6\\text{ cm}$ and inner radius $r = 3\\text{ cm}$", "answer": "$252\\pi\\text{ cm}^3$" },
+            { "label": "b", "question": "A solid sphere has volume $288\\pi\\text{ cm}^3$. Find its exact surface area", "answer": "$144\\pi\\text{ cm}^2$" },
+            { "label": "c", "question": "If the radius of a sphere is multiplied by $\\frac{3}{2}$, by what exact factors do its surface area and volume increase?", "answer": "Surface area: $\\dfrac{9}{4}$; volume: $\\dfrac{27}{8}$" },
+            { "label": "d", "question": "A cone has total surface area $96\\pi\\text{ cm}^2$ and base radius $6\\text{ cm}$. Find its slant height $s$ and perpendicular height $h$", "answer": "$s = 10\\text{ cm}$, $h = 8\\text{ cm}$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A circular sector of radius $10\\text{ cm}$ and central angle $216^\\circ$ is rolled so that its straight edges meet to form a hollow right circular cone (with no base). Find:",
+          "parts": [
+            { "label": "a", "question": "The exact arc length of the sector", "answer": "$12\\pi\\text{ cm}$" },
+            { "label": "b", "question": "The base radius $r$ of the formed cone", "answer": "$r = 6\\text{ cm}$" },
+            { "label": "c", "question": "The perpendicular height $h$ of the cone", "answer": "$h = 8\\text{ cm}$" },
+            { "label": "d", "question": "The exact volume of the cone", "answer": "$96\\pi\\text{ cm}^3$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A cylindrical drinking glass of internal radius $4\\text{ cm}$ contains water to a depth of $10\\text{ cm}$. Three identical solid steel spheres of radius $2\\text{ cm}$ are dropped into the glass and sink completely without overflowing. Find the exact rise in water level $\\Delta h$.",
+          "answer": "$3 \\times \\frac{4}{3}\\pi(2^3) = 32\\pi\\text{ cm}^3$; $\\pi(4^2)\\Delta h = 32\\pi \\implies \\Delta h = 2\\text{ cm}$"
+        },
+        {
+          "number": 6,
+          "question": "A rocket nosecone is a solid composite of a cone of radius $r = 5\\text{ cm}$ and height $h = 12\\text{ cm}$ mounted on top of a hemisphere of the same radius $r = 5\\text{ cm}$. Find the exact total surface area and exact total volume of the nosecone in terms of $\\pi$.",
+          "answer": "$\\text{TSA} = \\pi(5)(13) + 2\\pi(5^2) = 115\\pi\\text{ cm}^2$; $V = 100\\pi + \\dfrac{250\\pi}{3} = \\dfrac{550\\pi}{3}\\text{ cm}^3$"
+        },
+        {
+          "number": 7,
+          "question": "A frustum of a square-based pyramid has a bottom square base of side $12\\text{ m}$, a top square face of side $6\\text{ m}$, and a perpendicular height of $4\\text{ m}$. Find the exact volume of the frustum and the slant height of its trapezoidal side faces.",
+          "answer": "Full pyramid height $= 8\\text{ m}$, top removed height $= 4\\text{ m}$; $V = \\frac{1}{3}(144)(8) - \\frac{1}{3}(36)(4) = 384 - 48 = 336\\text{ m}^3$; slant height $= \\sqrt{4^2 + 3^2} = 5\\text{ m}$"
+        },
+        {
+          "number": 8,
+          "question": "A solid sphere of radius $R$ is inscribed inside a right circular cylinder so that it touches the top, bottom, and curved side of the cylinder (cylinder radius $R$, height $2R$). What exact fraction of the cylinder's volume is occupied by the sphere, and how does the sphere's surface area compare to the cylinder's curved surface area?",
+          "answer": "$\\dfrac{V_{\\text{sphere}}}{V_{\\text{cyl}}} = \\dfrac{\\frac{4}{3}\\pi R^3}{2\\pi R^3} = \\dfrac{2}{3}$; the sphere's surface area $4\\pi R^2$ equals the cylinder's curved surface area $2\\pi R(2R) = 4\\pi R^2$."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that for a frustum of a cone with bottom radius $R$, top radius $r$, and perpendicular height $h$, the volume is given by $V = \\frac{1}{3}\\pi h(R^2 + Rr + r^2)$.",
+          "answer": "Let the removed top cone have height $x$. By similar triangles, $\\frac{x}{x + h} = \\frac{r}{R} \\implies x = \\frac{rh}{R - r}$ and $x + h = \\frac{Rh}{R - r}$. Then $V = \\frac{1}{3}\\pi R^2(x + h) - \\frac{1}{3}\\pi r^2 x = \\frac{1}{3}\\pi h \\dfrac{R^3 - r^3}{R - r} = \\frac{1}{3}\\pi h(R^2 + Rr + r^2)$."
+        },
+        {
+          "number": 10,
+          "question": "A sphere and a cube have the exact same surface area $S$. Express the radius $r$ of the sphere and the side length $a$ of the cube in terms of $S$, and prove that the sphere encloses a greater volume than the cube.",
+          "answer": "$4\\pi r^2 = S \\implies r = \\sqrt{\\frac{S}{4\\pi}}$ so $V_{\\text{sphere}} = \\frac{S^{3/2}}{6\\sqrt{\\pi}}$; $6a^2 = S \\implies a = \\sqrt{\\frac{S}{6}}$ so $V_{\\text{cube}} = \\frac{S^{3/2}}{6\\sqrt{6}}$. Since $\\pi < 6$, $\\sqrt{\\pi} < \\sqrt{6}$ and therefore $V_{\\text{sphere}} > V_{\\text{cube}}$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE10_5_1_1b", "expression": "Rational(1, 3) * pi * 9**2 * 12 - Rational(1, 3) * pi * 3**2 * 4", "expected": "312*pi" },
+        { "id": "WSE10_5_1_1d", "expression": "pi * 9 * 15 - pi * 3 * 5 + pi * 3**2 + pi * 9**2", "expected": "210*pi" },
+        { "id": "WSE10_5_1_2b", "expression": "sqrt(13**2 - (5*sqrt(2))**2)", "expected": "sqrt(119)" },
+        { "id": "WSE10_5_1_2d", "expression": "10**2 + 4 * Rational(1, 2) * 10 * 12", "expected": 340 },
+        { "id": "WSE10_5_1_3a", "expression": "Rational(4, 3) * pi * (6**3 - 3**3)", "expected": "252*pi" },
+        { "id": "WSE10_5_1_4d", "expression": "Rational(1, 3) * pi * 6**2 * sqrt(10**2 - 6**2)", "expected": "96*pi" },
+        { "id": "WSE10_5_1_5", "expression": "(3 * Rational(4, 3) * pi * 2**3) / (pi * 4**2)", "expected": 2 },
+        { "id": "WSE10_5_1_6a", "expression": "pi * 5 * sqrt(5**2 + 12**2) + 2 * pi * 5**2", "expected": "115*pi" },
+        { "id": "WSE10_5_1_6b", "expression": "Rational(1, 3) * pi * 5**2 * 12 + Rational(2, 3) * pi * 5**3", "expected": "550*pi/3" },
+        { "id": "WSE10_5_1_7", "expression": "Rational(1, 3) * 12**2 * 8 - Rational(1, 3) * 6**2 * 4", "expected": 336 }
+      ]
+    }
+  ]
+}

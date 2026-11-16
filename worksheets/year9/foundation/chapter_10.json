@@ -1,0 +1,195 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Statistics, Back-to-Back Displays, and Bivariate Data",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_10_1",
+      "section_code": "10A",
+      "title": "Grouped Histograms, Back-to-Back Stem Plots, and Quartiles",
+      "vcaa_code": "VC2M9ST03",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the minimum, median ($Q_2$), and maximum for each ordered list:",
+          "parts": [
+            { "label": "a", "question": "$4, 9, 12, 15, 21$", "answer": "$\\text{Min}=4, Q_2=12, \\text{Max}=21$" },
+            { "label": "b", "question": "$10, 14, 18, 22, 26, 30, 35$", "answer": "$\\text{Min}=10, Q_2=22, \\text{Max}=35$" },
+            { "label": "c", "question": "$6, 8, 12, 16$", "answer": "$\\text{Min}=6, Q_2=10, \\text{Max}=16$" },
+            { "label": "d", "question": "$20, 25, 30, 35, 40, 50$", "answer": "$\\text{Min}=20, Q_2=32.5, \\text{Max}=50$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find $Q_1$, $Q_3$, and $\\text{IQR} = Q_3 - Q_1$ for each ordered list of $7$ scores (exclude the middle score $Q_2$ first):",
+          "parts": [
+            { "label": "a", "question": "$2, 5, 8, 10, 14, 18, 21$", "answer": "$Q_1=5, Q_3=18, \\text{IQR}=13$" },
+            { "label": "b", "question": "$11, 13, 16, 20, 25, 29, 34$", "answer": "$Q_1=13, Q_3=29, \\text{IQR}=16$" },
+            { "label": "c", "question": "$40, 44, 48, 52, 56, 60, 64$", "answer": "$Q_1=44, Q_3=60, \\text{IQR}=16$" },
+            { "label": "d", "question": "$1, 3, 6, 9, 12, 15, 19$", "answer": "$Q_1=3, Q_3=15, \\text{IQR}=12$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Put each list in ascending order first, then find the range ($\\text{Max} - \\text{Min}$) and median:",
+          "parts": [
+            { "label": "a", "question": "$15, 4, 11, 8, 20$", "answer": "$\\text{Range}=16, Q_2=11$" },
+            { "label": "b", "question": "$30, 12, 24, 18, 36$", "answer": "$\\text{Range}=24, Q_2=24$" },
+            { "label": "c", "question": "$9, 3, 14, 6, 12, 8, 19$", "answer": "$\\text{Range}=16, Q_2=9$" },
+            { "label": "d", "question": "$50, 22, 38, 41, 29$", "answer": "$\\text{Range}=28, Q_2=38$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "A grouped table of $20$ test marks has intervals: $0\\text{--}<10$ ($f=2$), $10\\text{--}<20$ ($f=5$), $20\\text{--}<30$ ($f=9$), $30\\text{--}<40$ ($f=4$). Answer:",
+          "parts": [
+            { "label": "a", "question": "Which interval is the modal class (highest frequency)?", "answer": "$20\\text{--}<30$" },
+            { "label": "b", "question": "How many students scored less than $20$?", "answer": "$7$ students ($2 + 5$)" },
+            { "label": "c", "question": "What percentage of students scored less than $20$?", "answer": "$35\\%$" },
+            { "label": "d", "question": "What is the midpoint of the interval $20\\text{--}<30$?", "answer": "$25$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Two netball shooters record their goals per game: Player A has median $18$ and $\\text{IQR} = 4$; Player B has median $18$ and $\\text{IQR} = 11$. Which player is more consistent?",
+          "answer": "Player A, because her $\\text{IQR}$ ($4$) is much smaller than Player B's ($11$)."
+        },
+        {
+          "number": 6,
+          "question": "A stem-and-leaf plot has key $4 \\mid 3 = 43$. Write down the numbers represented by stem $3$ with leaves $1, 4, 7$.",
+          "answer": "$31, 34, 37$"
+        },
+        {
+          "number": 7,
+          "question": "Five houses in a street sell for $\\$500\\text{k}, \\$520\\text{k}, \\$540\\text{k}, \\$560\\text{k}, \\$2000\\text{k}$. Find the median house price.",
+          "answer": "$\\$540\\text{k}$ ($\\$540\\,000$)"
+        },
+        {
+          "number": 8,
+          "question": "A school surveys only students waiting at the tuckshop about whether the tuckshop needs more seating. Why might this sample be biased?",
+          "answer": "It uses convenience sampling of tuckshop customers only, ignoring students who bring lunch from home."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why must you always sort numbers from smallest to largest before finding $Q_1, Q_2$, and $Q_3$?",
+          "answer": "Because quartiles and the median depend on position in an ordered list; an unsorted list gives meaningless positions."
+        },
+        {
+          "number": 10,
+          "question": "On the left side of a back-to-back stem plot, why do the leaves grow outwards from right to left?",
+          "answer": "So that the smallest digits sit closest to the central stem on both sides, keeping the plot symmetric around the stem."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_10_1_1c", "expression": "Rational(8 + 12, 2)", "expected": 10 },
+        { "id": "WSF9_10_1_1d", "expression": "Rational(30 + 35, 2)", "expected": 32.5 },
+        { "id": "WSF9_10_1_2a", "expression": "18 - 5", "expected": 13 },
+        { "id": "WSF9_10_1_2b", "expression": "29 - 13", "expected": 16 },
+        { "id": "WSF9_10_1_2d", "expression": "15 - 3", "expected": 12 },
+        { "id": "WSF9_10_1_3a", "expression": "20 - 4", "expected": 16 },
+        { "id": "WSF9_10_1_4c", "expression": "Rational(2 + 5, 20) * 100", "expected": 35 },
+        { "id": "WSF9_10_1_4d", "expression": "Rational(20 + 30, 2)", "expected": 25 }
+      ]
+    },
+    {
+      "section_id": "9_10_2",
+      "section_code": "10B",
+      "title": "Bivariate Data, Two-Way Associations, and Scatterplots",
+      "vcaa_code": "VC2M9ST02",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "State whether each pair of variables is likely to have a positive, negative, or no association:",
+          "parts": [
+            { "label": "a", "question": "Hours spent practising piano and skill level", "answer": "Positive association" },
+            { "label": "b", "question": "Outside temperature and sales of winter coats", "answer": "Negative association" },
+            { "label": "c", "question": "A student's shoe size and their mathematics test score", "answer": "No association" },
+            { "label": "d", "question": "Distance driven and fuel remaining in the tank", "answer": "Negative association" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the mean $\\bar{x}$ and mean $\\bar{y}$ for each small bivariate dataset:",
+          "parts": [
+            { "label": "a", "question": "$(2, 6), (4, 10), (6, 14)$", "answer": "$\\bar{x} = 4, \\bar{y} = 10$" },
+            { "label": "b", "question": "$(1, 20), (3, 16), (5, 12)$", "answer": "$\\bar{x} = 3, \\bar{y} = 16$" },
+            { "label": "c", "question": "$(10, 5), (20, 15), (30, 25)$", "answer": "$\\bar{x} = 20, \\bar{y} = 15$" },
+            { "label": "d", "question": "$(0, 4), (2, 8), (4, 12), (6, 16)$", "answer": "$\\bar{x} = 3, \\bar{y} = 10$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the given line of best fit equation to predict $y$ at the given $x$-value:",
+          "parts": [
+            { "label": "a", "question": "$y = 3x + 4$ at $x = 5$", "answer": "$y = 19$" },
+            { "label": "b", "question": "$y = 2x - 1$ at $x = 8$", "answer": "$y = 15$" },
+            { "label": "c", "question": "$y = -2x + 30$ at $x = 6$", "answer": "$y = 18$" },
+            { "label": "d", "question": "$y = 5x + 10$ at $x = 4$", "answer": "$y = 30$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Convert each fraction from a two-way table into a percentage:",
+          "parts": [
+            { "label": "a", "question": "$15$ out of $50$", "answer": "$30\\%$" },
+            { "label": "b", "question": "$18$ out of $40$", "answer": "$45\\%$" },
+            { "label": "c", "question": "$48$ out of $80$", "answer": "$60\\%$" },
+            { "label": "d", "question": "$21$ out of $30$", "answer": "$70\\%$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A student plots study hours ($x$) against test score ($y$). Which variable goes on the horizontal axis?",
+          "answer": "Study hours ($x$, the explanatory variable)"
+        },
+        {
+          "number": 6,
+          "question": "A line of best fit for plant height $h$ (cm) after $w$ weeks ($1 \\le w \\le 10$) is $h = 3w + 5$. Predict the height after $6$ weeks.",
+          "answer": "$23\\text{ cm}$"
+        },
+        {
+          "number": 7,
+          "question": "In a survey, $24$ out of $40$ boys ($60\\%$) and $15$ out of $50$ girls ($30\\%$) play video games daily. Which group has the higher rate?",
+          "answer": "Boys ($60\\%$ vs $30\\%$)"
+        },
+        {
+          "number": 8,
+          "question": "A school has $100$ Year 7 students and $200$ Year 8 students ($300$ total). How many Year 7 students should be in a fair stratified sample of $30$ students?",
+          "answer": "$10$ Year 7 students"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why is predicting outside the range of your data (extrapolation) risky?",
+          "answer": "Because the trend might curve, level off, or stop making physical sense outside the observed data."
+        },
+        {
+          "number": 10,
+          "question": "Ice-cream sales and sunburn cases both rise in summer. Does eating ice cream cause sunburn? Explain.",
+          "answer": "No; hot sunny weather is a third lurking variable that causes both more ice-cream sales and more sunburn."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_10_2_2a", "expression": "Rational(6 + 10 + 14, 3)", "expected": 10 },
+        { "id": "WSF9_10_2_2d", "expression": "Rational(4 + 8 + 12 + 16, 4)", "expected": 10 },
+        { "id": "WSF9_10_2_3a", "expression": "3*5 + 4", "expected": 19 },
+        { "id": "WSF9_10_2_3c", "expression": "-2*6 + 30", "expected": 18 },
+        { "id": "WSF9_10_2_4a", "expression": "Rational(15, 50) * 100", "expected": 30 },
+        { "id": "WSF9_10_2_4b", "expression": "Rational(18, 40) * 100", "expected": 45 },
+        { "id": "WSF9_10_2_6", "expression": "3*6 + 5", "expected": 23 },
+        { "id": "WSF9_10_2_8", "expression": "Rational(100, 300) * 30", "expected": 10 }
+      ]
+    }
+  ]
+}

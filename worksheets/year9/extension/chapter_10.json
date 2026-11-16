@@ -1,0 +1,195 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Statistics, Back-to-Back Displays, and Bivariate Data",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_10_1",
+      "section_code": "10A",
+      "title": "Grouped Histograms, Back-to-Back Stem Plots, and Quartiles",
+      "vcaa_code": "VC2M9ST03",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Reconstruct the missing value(s) in each ordered dataset of positive integers:",
+          "parts": [
+            { "label": "a", "question": "$5$ numbers $4, x_2, 12, x_4, 22$ with $Q_1 = 6$, $Q_3 = 19$", "answer": "$x_2 = 8, x_4 = 16$" },
+            { "label": "b", "question": "$7$ numbers with $\\text{Min}=10, Q_1=14, Q_2=20, Q_3=28, \\text{Max}=35$, and $\\text{Mean}=21$", "answer": "Sum $= 147$; remaining two values sum to $147 - (10+14+20+28+35) = 40$ (e.g. $17$ and $23$)" },
+            { "label": "c", "question": "Two groups: $n_1 = 25$ (mean $72$) and $n_2 = 15$ (mean $80$); find combined mean", "answer": "$75$" },
+            { "label": "d", "question": "Dataset has $Q_1 = 24, Q_3 = 40$; find the upper outlier fence and $\\text{IQR}$", "answer": "$\\text{IQR} = 16$, upper fence $= 64$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Apply the given linear transformation $y_i = ax_i + b$ to a dataset with $\\text{Mean} = 30, \\text{Median} = 28, \\text{IQR} = 10$:",
+          "parts": [
+            { "label": "a", "question": "Add $12$ to every value ($y = x + 12$)", "answer": "$\\text{Mean}=42, \\text{Median}=40, \\text{IQR}=10$" },
+            { "label": "b", "question": "Multiply every value by $2.5$ ($y = 2.5x$)", "answer": "$\\text{Mean}=75, \\text{Median}=70, \\text{IQR}=25$" },
+            { "label": "c", "question": "Transform by $y = 2x - 10$", "answer": "$\\text{Mean}=50, \\text{Median}=46, \\text{IQR}=20$" },
+            { "label": "d", "question": "Transform by $y = -3x + 100$ (note: $\\text{IQR} > 0$)", "answer": "$\\text{Mean}=10, \\text{Median}=16, \\text{IQR}=30$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "For a grouped dataset with intervals $0\\text{--}<10$ ($f=6$), $10\\text{--}<20$ ($f=14$), $20\\text{--}<30$ ($f=20$), $30\\text{--}<40$ ($f=10$):",
+          "parts": [
+            { "label": "a", "question": "Estimate the mean using midpoints", "answer": "$21.8$" },
+            { "label": "b", "question": "Find the percentage of data in $[10, 30)$", "answer": "$68\\%$" },
+            { "label": "c", "question": "Using linear interpolation within the median class ($20\\text{--}<30$, $n=50$, $25\\text{th}$ score is $5$th into class), estimate the median", "answer": "$20 + \\dfrac{5}{20} \\times 10 = 22.5$" },
+            { "label": "d", "question": "State the shape of the distribution from $\\bar{x} = 21.8$ and estimated median $22.5$", "answer": "Approximately symmetric (slightly negatively skewed)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Determine the minimum value of $x$ that would be flagged as a high outlier ($x > Q_3 + 1.5 \\times \\text{IQR}$) for each summary:",
+          "parts": [
+            { "label": "a", "question": "$Q_1 = 18, Q_3 = 30$", "answer": "Any $x > 48$" },
+            { "label": "b", "question": "$Q_1 = 42, Q_3 = 58$", "answer": "Any $x > 82$" },
+            { "label": "c", "question": "$Q_1 = 110, Q_3 = 150$", "answer": "Any $x > 210$" },
+            { "label": "d", "question": "$Q_1 = 5.5, Q_3 = 9.5$", "answer": "Any $x > 15.5$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A Year 9 cohort has $40$ students in Class A (mean $71$) and $60$ students in Class B. If the overall cohort mean is $77$, find the mean score of Class B.",
+          "answer": "$81$"
+        },
+        {
+          "number": 6,
+          "question": "Nine daily temperatures have $\\text{Mean} = 22^\\circ\\text{C}$. When a $10\\text{th}$ day is added, the mean rises to $23.5^\\circ\\text{C}$. What was the temperature on the $10\\text{th}$ day?",
+          "answer": "$37^\\circ\\text{C}$"
+        },
+        {
+          "number": 7,
+          "question": "A media article claims 'Average salary in our town jumped $15\\%$ this year', based on the arithmetic mean. Explain how this could happen even if $90\\%$ of residents received no pay rise.",
+          "answer": "If a handful of ultra-high earners moved into the town or received massive bonuses, the mean would jump $15\\%$ while the median salary remained completely unchanged."
+        },
+        {
+          "number": 8,
+          "question": "Two datasets have identical five-number summaries ($10, 20, 30, 40, 50$), yet Dataset A has values clustered tightly around $20$ and $40$ (bimodal) while Dataset B is clustered around $30$ (unimodal). What does this show about five-number summaries?",
+          "answer": "A five-number summary captures centre and spread at the quartiles, but cannot distinguish bimodal from unimodal shapes inside the quartiles; a stem plot or histogram is still needed."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove algebraically that if $y_i = ax_i + b$ with $a > 0$, then $\\text{IQR}_y = a \\cdot \\text{IQR}_x$.",
+          "answer": "Since $a > 0$ preserves order, $Q_{1,y} = a Q_{1,x} + b$ and $Q_{3,y} = a Q_{3,x} + b$. Subtracting gives $\\text{IQR}_y = (a Q_{3,x} + b) - (a Q_{1,x} + b) = a(Q_{3,x} - Q_{1,x}) = a \\cdot \\text{IQR}_x$."
+        },
+        {
+          "number": 10,
+          "question": "Under what condition is it possible for a dataset's lower outlier fence $Q_1 - 1.5 \\times \\text{IQR}$ to be negative even when all data values are positive?",
+          "answer": "Whenever $1.5 \\times \\text{IQR} > Q_1$ (i.e., $\\text{IQR} > \\frac{2}{3}Q_1$), which commonly happens in right-skewed positive data where $Q_1$ is small relative to $Q_3$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_10_1_1c", "expression": "Rational(25*72 + 15*80, 40)", "expected": 75 },
+        { "id": "WSE9_10_1_1d", "expression": "40 + Rational(3, 2)*(40 - 24)", "expected": 64 },
+        { "id": "WSE9_10_1_2c", "expression": "2*30 - 10", "expected": 50 },
+        { "id": "WSE9_10_1_3a", "expression": "Rational(6*5 + 14*15 + 20*25 + 10*35, 50)", "expected": 21.8 },
+        { "id": "WSE9_10_1_3b", "expression": "Rational(14 + 20, 50) * 100", "expected": 68 },
+        { "id": "WSE9_10_1_3c", "expression": "20 + Rational(5, 20)*10", "expected": 22.5 },
+        { "id": "WSE9_10_1_5", "expression": "Rational(100*77 - 40*71, 60)", "expected": 81 },
+        { "id": "WSE9_10_1_6", "expression": "10*Rational(47, 2) - 9*22", "expected": 37 }
+      ]
+    },
+    {
+      "section_id": "9_10_2",
+      "section_code": "10B",
+      "title": "Bivariate Data, Two-Way Associations, and Scatterplots",
+      "vcaa_code": "VC2M9ST02",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the equation of the line of best fit $y = mx + c$ that passes through the mean point $(\\bar{x}, \\bar{y})$ and the given second point:",
+          "parts": [
+            { "label": "a", "question": "$(\\bar{x}, \\bar{y}) = (12, 34)$ and $(20, 50)$", "answer": "$y = 2x + 10$" },
+            { "label": "b", "question": "$(\\bar{x}, \\bar{y}) = (15, 40)$ and $(25, 25)$", "answer": "$y = -1.5x + 62.5$" },
+            { "label": "c", "question": "$(\\bar{x}, \\bar{y}) = (8, 19)$ and $(14, 28)$", "answer": "$y = 1.5x + 7$" },
+            { "label": "d", "question": "$(\\bar{x}, \\bar{y}) = (50, 120)$ and $(70, 90)$", "answer": "$y = -1.5x + 195$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Given a residual $r_i = y_i - \\hat{y}_i$ (observed minus predicted), compute the residual for each observation using $\\hat{y} = 2.5x + 10$:",
+          "parts": [
+            { "label": "a", "question": "$(4, 23)$", "answer": "$r = 23 - 20 = +3$" },
+            { "label": "b", "question": "$(10, 31)$", "answer": "$r = 31 - 35 = -4$" },
+            { "label": "c", "question": "$(8, 30)$", "answer": "$r = 30 - 30 = 0$" },
+            { "label": "d", "question": "$(12, 45)$", "answer": "$r = 45 - 40 = +5$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Determine the missing value in each bivariate mean problem:",
+          "parts": [
+            { "label": "a", "question": "$5$ points have $\\bar{y} = 18$; four $y$-values are $10, 14, 22, 26$; find $y_5$", "answer": "$y_5 = 18$" },
+            { "label": "b", "question": "Line $y = 3x + c$ passes through $(\\bar{x}, \\bar{y}) = (7, 25)$; find $c$", "answer": "$c = 4$" },
+            { "label": "c", "question": "Line $y = mx + 12$ passes through $(\\bar{x}, \\bar{y}) = (8, 36)$; find $m$", "answer": "$m = 3$" },
+            { "label": "d", "question": "If every $x$-value is doubled and every $y$-value is increased by $5$, how does $(\\bar{x}, \\bar{y})$ change?", "answer": "$(\\bar{x}, \\bar{y}) \\to (2\\bar{x}, \\bar{y} + 5)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Calculate the stratified sample sizes (rounding to nearest integer if needed) for a sample of $n = 120$ from a population of $1500$:",
+          "parts": [
+            { "label": "a", "question": "Stratum A of size $450$", "answer": "$36$" },
+            { "label": "b", "question": "Stratum B of size $600$", "answer": "$48$" },
+            { "label": "c", "question": "Stratum C of size $300$", "answer": "$24$" },
+            { "label": "d", "question": "Stratum D of size $150$", "answer": "$12$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A non-linear scatterplot of braking distance $d$ (m) vs car speed $v$ (km/h) follows $d = 0.008v^2$. Find $d$ at $v = 50\\text{ km/h}$ and $v = 100\\text{ km/h}$, and explain why a linear model would underestimate braking distance at high speeds.",
+          "answer": "At $50\\text{ km/h}$: $20\\text{ m}$; at $100\\text{ km/h}$: $80\\text{ m}$ ($4\\times$ as far when speed doubles). A linear model grows only $2\\times$ and dangerously underestimates high-speed stopping distance."
+        },
+        {
+          "number": 6,
+          "question": "In a clinical trial, $40\\%$ of Group A (receiving a new drug) improved vs $38\\%$ of Group B (placebo). Why is it essential to know the sample sizes before concluding the drug works, and what role does random assignment play?",
+          "answer": "Small sample sizes (e.g. $n = 10$) mean a $2\\%$ difference could be pure random chance; random assignment balances lurking variables between the two groups."
+        },
+        {
+          "number": 7,
+          "question": "A two-way table compares University Degree (Yes/No) with Income $> \\$100\\text{k}$ (Yes/No). Among $200$ graduates, $90$ earn $> \\$100\\text{k}$; among $300$ non-graduates, $60$ earn $> \\$100\\text{k}$. Calculate both conditional percentages and test for association.",
+          "answer": "Graduates: $45\\%$; Non-graduates: $20\\%$. Strong association ($45\\%$ vs $20\\%$)."
+        },
+        {
+          "number": 8,
+          "question": "A line of best fit has equation $y = -0.8x + 64$ with mean point $(\\bar{x}, \\bar{y}) = (30, 40)$. If a new point $(30, 40)$ is added to the dataset, does the mean point change? Explain.",
+          "answer": "No; adding a point equal to the existing mean $(\\bar{x}, \\bar{y})$ leaves both $\\bar{x}$ and $\\bar{y}$ unchanged."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why does a well-fitted line of best fit always have a sum of residuals $\\sum (y_i - \\hat{y}_i) \\approx 0$ when it passes through the mean point $(\\bar{x}, \\bar{y})$?",
+          "answer": "If $\\hat{y}_i = m x_i + c$ passes through $(\\bar{x}, \\bar{y})$, then $c = \\bar{y} - m\\bar{x}$, so $\\sum (y_i - m x_i - c) = \\sum y_i - m\\sum x_i - n(\\bar{y} - m\\bar{x}) = n\\bar{y} - m n\\bar{x} - n\\bar{y} + m n\\bar{x} = 0$."
+        },
+        {
+          "number": 10,
+          "question": "Explain the difference between an observational bivariate study and a randomised controlled experiment when investigating whether screen time causes poor sleep.",
+          "answer": "An observational study only measures existing habits and cannot rule out lurking variables (like stress or caffeine), whereas a randomised experiment actively assigns participants to screen-time limits to isolate cause and effect."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_10_2_1a", "expression": "Rational(50 - 34, 20 - 12)", "expected": 2 },
+        { "id": "WSE9_10_2_1b", "expression": "40 - (-Rational(3, 2))*15", "expected": 62.5 },
+        { "id": "WSE9_10_2_2a", "expression": "23 - (Rational(5, 2)*4 + 10)", "expected": 3 },
+        { "id": "WSE9_10_2_2b", "expression": "31 - (Rational(5, 2)*10 + 10)", "expected": -4 },
+        { "id": "WSE9_10_2_3b", "expression": "25 - 3*7", "expected": 4 },
+        { "id": "WSE9_10_2_4a", "expression": "Rational(450, 1500) * 120", "expected": 36 },
+        { "id": "WSE9_10_2_5", "expression": "Rational(8, 1000) * 100**2", "expected": 80 },
+        { "id": "WSE9_10_2_7", "expression": "Rational(90, 200) * 100", "expected": 45 }
+      ]
+    }
+  ]
+}

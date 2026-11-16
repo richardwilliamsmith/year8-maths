@@ -26,8 +26,8 @@
           "parts": [
             { "label": "a", "question": "$\\dfrac{x}{3} + \\dfrac{x}{4} = 14$", "answer": "$x = 24$" },
             { "label": "b", "question": "$\\dfrac{x + 2}{3} = \\dfrac{x - 1}{2}$", "answer": "$x = 7$" },
-            { "label": "c", "question": "$\\dfrac{x + 1}{2} + \\dfrac{x - 3}{5} = 4$", "answer": "$x = 3$" },
-            { "label": "d", "question": "$\\dfrac{2x - 1}{3} - \\dfrac{x + 2}{4} = 2$", "answer": "$x = 6$" }
+            { "label": "c", "question": "$\\dfrac{x + 1}{2} + \\dfrac{x - 3}{5} = 2$", "answer": "$x = 3$" },
+            { "label": "d", "question": "$\\dfrac{2x}{3} - \\dfrac{x + 2}{4} = 2$", "answer": "$x = 6$" }
           ]
         },
         {
@@ -90,8 +90,8 @@
         { "id": "WS9_4_1_1b", "expression": "(3*(-8) + 4)/5", "expected": -4 },
         { "id": "WS9_4_1_2a", "expression": "24/3 + 24/4", "expected": 14 },
         { "id": "WS9_4_1_2b", "expression": "(7 + 2)/3 - (7 - 1)/2", "expected": 0 },
-        { "id": "WS9_4_1_2c", "expression": "(3 + 1)/2 + (3 - 3)/5", "expected": 4 },
-        { "id": "WS9_4_1_2d", "expression": "(2*6 - 1)/3 - (6 + 2)/4", "expected": 2 },
+        { "id": "WS9_4_1_2c", "expression": "(3 + 1)/2 + (3 - 3)/5", "expected": 2 },
+        { "id": "WS9_4_1_2d", "expression": "(2*6)/3 - (6 + 2)/4", "expected": 2 },
         { "id": "WS9_4_1_5", "expression": "24/24 + 24/16", "expected": 2.5 },
         { "id": "WS9_4_1_7", "expression": "2*42/6 - 5", "expected": 9 },
         { "id": "WS9_4_1_8", "expression": "60/3 + 2*60/5 + 16", "expected": 60 }

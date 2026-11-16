@@ -1,0 +1,195 @@
+{
+  "chapter_number": 10,
+  "chapter_title": "Statistics, Back-to-Back Displays, and Bivariate Data",
+  "worksheets": [
+    {
+      "section_id": "9_10_1",
+      "section_code": "10A",
+      "title": "Grouped Histograms, Back-to-Back Stem Plots, and Quartiles",
+      "vcaa_code": "VC2M9ST03",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Find the five-number summary ($\\text{Min}, Q_1, Q_2, Q_3, \\text{Max}$) and the Interquartile Range ($\\text{IQR} = Q_3 - Q_1$) for each ordered dataset:",
+          "parts": [
+            { "label": "a", "question": "$5, 8, 11, 14, 17, 20, 25$", "answer": "$\\text{Min}=5, Q_1=8, Q_2=14, Q_3=20, \\text{Max}=25$; $\\text{IQR}=12$" },
+            { "label": "b", "question": "$10, 12, 15, 19, 21, 24, 28, 32$", "answer": "$\\text{Min}=10, Q_1=13.5, Q_2=20, Q_3=26, \\text{Max}=32$; $\\text{IQR}=12.5$" },
+            { "label": "c", "question": "$3, 7, 9, 12, 16, 18, 22, 27, 30$", "answer": "$\\text{Min}=3, Q_1=8, Q_2=16, Q_3=24.5, \\text{Max}=30$; $\\text{IQR}=16.5$" },
+            { "label": "d", "question": "$42, 46, 50, 54, 58, 62, 66, 70, 74, 80$", "answer": "$\\text{Min}=42, Q_1=50, Q_2=60, Q_3=70, \\text{Max}=80$; $\\text{IQR}=20$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Sort each dataset first, then find the median ($Q_2$), range, and $\\text{IQR}$:",
+          "parts": [
+            { "label": "a", "question": "$18, 6, 14, 22, 10, 26, 8$", "answer": "$Q_2 = 14$, $\\text{Range} = 20$, $\\text{IQR} = 14$ ($Q_1=8, Q_3=22$)" },
+            { "label": "b", "question": "$35, 19, 28, 41, 23, 30, 15, 38$", "answer": "$Q_2 = 29$, $\\text{Range} = 26$, $\\text{IQR} = 15.5$ ($Q_1=21, Q_3=36.5$)" },
+            { "label": "c", "question": "$7, 15, 4, 19, 11, 8, 23, 13, 2$", "answer": "$Q_2 = 11$, $\\text{Range} = 21$, $\\text{IQR} = 11.5$ ($Q_1=5.5, Q_3=17$)" },
+            { "label": "d", "question": "$90, 64, 72, 85, 58, 76, 81, 68, 94, 70$", "answer": "$Q_2 = 74$, $\\text{Range} = 36$, $\\text{IQR} = 17$ ($Q_1=68, Q_3=85$)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "A grouped frequency table of $40$ runner times (minutes) has intervals $20\\text{--}<25$ ($f=5$), $25\\text{--}<30$ ($f=11$), $30\\text{--}<35$ ($f=15$), $35\\text{--}<40$ ($f=6$), $40\\text{--}<45$ ($f=3$). Find:",
+          "parts": [
+            { "label": "a", "question": "The modal class interval", "answer": "$30\\text{--}<35$ minutes" },
+            { "label": "b", "question": "The percentage of runners finishing in under $30$ minutes", "answer": "$40\\%$" },
+            { "label": "c", "question": "The class interval containing the median ($20\\text{th}$ and $21\\text{st}$ runners)", "answer": "$30\\text{--}<35$ minutes" },
+            { "label": "d", "question": "The estimated mean time using class midpoints ($22.5, 27.5, 32.5, 37.5, 42.5$)", "answer": "$31.375$ minutes" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Using the outlier fence rule ($\\text{Lower} = Q_1 - 1.5 \\times \\text{IQR}$, $\\text{Upper} = Q_3 + 1.5 \\times \\text{IQR}$), find both fences and test the given value:",
+          "parts": [
+            { "label": "a", "question": "$Q_1 = 20, Q_3 = 32$; test $x = 52$", "answer": "Fences $2$ and $50$; $52$ IS an outlier" },
+            { "label": "b", "question": "$Q_1 = 50, Q_3 = 70$; test $x = 25$", "answer": "Fences $20$ and $100$; $25$ is NOT an outlier" },
+            { "label": "c", "question": "$Q_1 = 12, Q_3 = 18$; test $x = 2$", "answer": "Fences $3$ and $27$; $2$ IS an outlier" },
+            { "label": "d", "question": "$Q_1 = 100, Q_3 = 140$; test $x = 195$", "answer": "Fences $40$ and $200$; $195$ is NOT an outlier" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "Two AFL teams record their points scored across $7$ matches: Team A: $74, 78, 82, 85, 88, 91, 95$; Team B: $52, 68, 75, 86, 98, 110, 122$. Find the median and $\\text{IQR}$ for each team and state which team is more consistent.",
+          "answer": "Team A: $\\text{Median}=85, \\text{IQR}=13$; Team B: $\\text{Median}=86, \\text{IQR}=42$. Team A is much more consistent."
+        },
+        {
+          "number": 6,
+          "question": "The daily maximum temperatures ($^\\circ\\text{C}$) in Melbourne over $7$ days were $18, 19, 20, 21, 22, 23, 38$. Calculate the mean and median, and explain which better represents a typical day.",
+          "answer": "$\\text{Mean} = 23^\\circ\\text{C}$, $\\text{Median} = 21^\\circ\\text{C}$; the median ($21^\\circ\\text{C}$) is better because the $38^\\circ\\text{C}$ heatwave outlier pulls the mean up."
+        },
+        {
+          "number": 7,
+          "question": "A back-to-back stem plot (key: $3 \\mid 4 = 34$) has left-side leaves $8\\; 5\\; 1$ on stem $2$ for Group X. List the three data values represented for Group X.",
+          "answer": "$21, 25, 28$"
+        },
+        {
+          "number": 8,
+          "question": "A television network runs a paid SMS poll during a late-night sports show and claims '$85\\%$ of Australians want longer seasons'. Identify two sources of sampling bias in this claim.",
+          "answer": "Voluntary response / self-selection bias (only viewers motivated to pay and text respond) and coverage bias (late-night sports viewers do not represent all Australians)."
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why is the $\\text{IQR}$ preferred over the range when comparing the spread of skewed datasets such as house prices or personal incomes?",
+          "answer": "The range ($\\text{Max} - \\text{Min}$) is heavily distorted by a single extreme outlier, whereas the $\\text{IQR}$ measures only the middle $50\\%$ of scores and is resistant to extreme outliers."
+        },
+        {
+          "number": 10,
+          "question": "A distribution of exam marks has $\\text{Mean} = 64$ and $\\text{Median} = 73$. Is the distribution positively skewed or negatively skewed? Explain why.",
+          "answer": "Negatively skewed; a tail of very low scores pulls the mean downwards below the median ($\\text{Mean} < \\text{Median}$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_10_1_1b", "expression": "Rational(24 + 28, 2) - Rational(12 + 15, 2)", "expected": 12.5 },
+        { "id": "WS9_10_1_1c", "expression": "Rational(22 + 27, 2) - Rational(7 + 9, 2)", "expected": 16.5 },
+        { "id": "WS9_10_1_2b", "expression": "Rational(35 + 38, 2) - Rational(19 + 23, 2)", "expected": 15.5 },
+        { "id": "WS9_10_1_3b", "expression": "Rational(5 + 11, 40) * 100", "expected": 40 },
+        { "id": "WS9_10_1_3d", "expression": "Rational(5*45 + 11*55 + 15*65 + 6*75 + 3*85, 2*40)", "expected": 31.375 },
+        { "id": "WS9_10_1_4a", "expression": "32 + Rational(3, 2)*(32 - 20)", "expected": 50 },
+        { "id": "WS9_10_1_5", "expression": "(110 - 68) - (91 - 78)", "expected": 29 },
+        { "id": "WS9_10_1_6", "expression": "Rational(18 + 19 + 20 + 21 + 22 + 23 + 38, 7)", "expected": 23 }
+      ]
+    },
+    {
+      "section_id": "9_10_2",
+      "section_code": "10B",
+      "title": "Bivariate Data, Two-Way Associations, and Scatterplots",
+      "vcaa_code": "VC2M9ST02",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Identify the explanatory variable ($x$) and response variable ($y$) for each bivariate investigation:",
+          "parts": [
+            { "label": "a", "question": "Hours of sunlight per day and solar panel electricity output ($\\text{kWh}$)", "answer": "Explanatory: sunlight hours; Response: electricity output" },
+            { "label": "b", "question": "Car speed ($\\text{km/h}$) and braking distance ($\\text{m}$)", "answer": "Explanatory: car speed; Response: braking distance" },
+            { "label": "c", "question": "Height of a basketball player and shoe size", "answer": "Explanatory: height (or either, as neither strictly causes the other); Response: shoe size" },
+            { "label": "d", "question": "Age of a laptop (years) and its resale price ($\\$$)", "answer": "Explanatory: laptop age; Response: resale price" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate the mean point $(\\bar{x}, \\bar{y})$ for each bivariate dataset:",
+          "parts": [
+            { "label": "a", "question": "$(1, 10), (2, 14), (3, 18), (4, 22), (5, 26)$", "answer": "$(3, 18)$" },
+            { "label": "b", "question": "$(2, 40), (4, 34), (6, 28), (8, 22)$", "answer": "$(5, 31)$" },
+            { "label": "c", "question": "$(10, 5), (20, 12), (30, 19), (40, 24)$", "answer": "$(25, 15)$" },
+            { "label": "d", "question": "$(3, 12), (6, 16), (9, 20), (12, 24), (15, 28)$", "answer": "$(9, 20)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the equation $y = mx + c$ of the line of best fit passing through the given two points, and predict $y$ at the given $x$:",
+          "parts": [
+            { "label": "a", "question": "Through $(2, 10)$ and $(6, 26)$; predict at $x = 5$", "answer": "$y = 4x + 2$; at $x = 5$, $y = 22$" },
+            { "label": "b", "question": "Through $(5, 50)$ and $(15, 20)$; predict at $x = 10$", "answer": "$y = -3x + 65$; at $x = 10$, $y = 35$" },
+            { "label": "c", "question": "Through $(4, 12)$ and $(10, 27)$; predict at $x = 8$", "answer": "$y = 2.5x + 2$; at $x = 8$, $y = 22$" },
+            { "label": "d", "question": "Through $(0, 100)$ and $(20, 60)$; predict at $x = 12$", "answer": "$y = -2x + 100$; at $x = 12$, $y = 76$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Describe the direction, form, and strength of each scatterplot:",
+          "parts": [
+            { "label": "a", "question": "Points tightly clustered around an upward-sloping line", "answer": "Strong, positive, linear association" },
+            { "label": "b", "question": "Points loosely scattered around a downward-sloping line", "answer": "Weak, negative, linear association" },
+            { "label": "c", "question": "Points follow a smooth U-shaped curve", "answer": "Non-linear association" },
+            { "label": "d", "question": "Points form a shapeless cloud with no trend", "answer": "No association" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A café in Canberra finds that hot chocolate sales $C$ relate to morning temperature $T$ ($^\\circ\\text{C}$, observed from $2^\\circ\\text{C}$ to $22^\\circ\\text{C}$) by $C = -4T + 110$. Predict sales at $T = 10^\\circ\\text{C}$ and $T = 32^\\circ\\text{C}$, and state which is reliable.",
+          "answer": "At $10^\\circ\\text{C}$: $70$ cups (reliable interpolation); at $32^\\circ\\text{C}$: $-18$ cups (impossible extrapolation)"
+        },
+        {
+          "number": 6,
+          "question": "In a two-way survey, $80$ Year 8 students ($52$ play sport, $28$ do not) and $120$ Year 10 students ($60$ play sport, $60$ do not) are asked about sport participation. Compare the percentage playing sport in each year level.",
+          "answer": "Year 8: $65\\%$; Year 10: $50\\%$. There is an association: Year 8 students have a higher participation rate."
+        },
+        {
+          "number": 7,
+          "question": "A school has $180$ Year 7, $160$ Year 8, and $160$ Year 9 students ($500$ total). How many students from each year level should be chosen in a stratified sample of $50$ students?",
+          "answer": "Year 7: $18$, Year 8: $16$, Year 9: $16$"
+        },
+        {
+          "number": 8,
+          "question": "Four data points $(2, 6), (4, 10), (6, 14), (8, k)$ have mean point $(\\bar{x}, \\bar{y}) = (5, 12)$. Find $k$.",
+          "answer": "$k = 18$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A study shows a strong positive correlation between the number of coffee shops in a suburb and the number of libraries. Does opening more coffee shops cause more libraries to be built? Identify a lurking variable.",
+          "answer": "No; the lurking variable is suburb population size (larger suburbs have more of both coffee shops and libraries)."
+        },
+        {
+          "number": 10,
+          "question": "Why should you compare row percentages rather than raw frequencies in a two-way table when the row totals are unequal?",
+          "answer": "Raw counts are skewed by group size; converting each row to a percentage of its own total puts different-sized groups on a fair $0\\%$ to $100\\%$ scale."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_10_2_2b", "expression": "Rational(40 + 34 + 28 + 22, 4)", "expected": 31 },
+        { "id": "WS9_10_2_2c", "expression": "Rational(5 + 12 + 19 + 24, 4)", "expected": 15 },
+        { "id": "WS9_10_2_3a", "expression": "4*5 + 2", "expected": 22 },
+        { "id": "WS9_10_2_3b", "expression": "-3*10 + 65", "expected": 35 },
+        { "id": "WS9_10_2_3c", "expression": "Rational(5, 2)*8 + 2", "expected": 22 },
+        { "id": "WS9_10_2_5", "expression": "-4*10 + 110", "expected": 70 },
+        { "id": "WS9_10_2_6", "expression": "Rational(52, 80) * 100", "expected": 65 },
+        { "id": "WS9_10_2_7", "expression": "Rational(180, 500) * 50", "expected": 18 },
+        { "id": "WS9_10_2_8", "expression": "4*12 - (6 + 10 + 14)", "expected": 18 }
+      ]
+    }
+  ]
+}

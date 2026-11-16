@@ -345,13 +345,13 @@
     {
       "id": "WE10_3_2_3",
       "description": "Worked Example 10.3.2.3 positive root",
-      "expression": "max(solve(Eq(-5*t**2 + 10*t + 15, 0), t))",
+      "expression": "solve(Eq(-5*t**2 + 10*t + 15, 0), t)[1]",
       "expected": 3
     },
     {
       "id": "NYT10_3_2_3",
       "description": "Now You Try 10.3.2.3 positive root",
-      "expression": "max(solve(Eq(-5*t**2 + 5*t + 10, 0), t))",
+      "expression": "solve(Eq(-5*t**2 + 5*t + 10, 0), t)[1]",
       "expected": 2
     },
     {
@@ -381,31 +381,31 @@
     {
       "id": "EX10_3_2_Q4",
       "description": "Exercise 10.3.2 Q4 positive k",
-      "expression": "max(solve(Eq(k**2 - 4*1*16, 0), k))",
+      "expression": "solve(Eq(k**2 - 4*1*16, 0), k)[1]",
       "expected": 8
     },
     {
       "id": "EX10_3_2_Q5",
       "description": "Exercise 10.3.2 Q5 width",
-      "expression": "max(solve(Eq(w*(w + 3), 28), w))",
+      "expression": "solve(Eq(w*(w + 3), 28), w)[1]",
       "expected": 4
     },
     {
       "id": "EX10_3_2_Q6",
       "description": "Exercise 10.3.2 Q6 side x",
-      "expression": "max(solve(Eq(x**2 + (x + 7)**2, 13**2), x))",
+      "expression": "solve(Eq(x**2 + (x + 7)**2, 13**2), x)[1]",
       "expected": 5
     },
     {
       "id": "EX10_3_2_Q7",
       "description": "Exercise 10.3.2 Q7 border width x",
-      "expression": "max(solve(Eq((12 + 2*x)*(8 + 2*x), 140), x))",
+      "expression": "solve(Eq((12 + 2*x)*(8 + 2*x), 140), x)[1]",
       "expected": 1
     },
     {
       "id": "EX10_3_2_Q8",
       "description": "Exercise 10.3.2 Q8 smaller number",
-      "expression": "max(solve(Eq(x**2 + (x + 2)**2, 34), x))",
+      "expression": "solve(Eq(x**2 + (x + 2)**2, 34), x)[1]",
       "expected": 3
     },
     {

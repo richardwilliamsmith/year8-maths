@@ -1,0 +1,289 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Quadratic Equations and Non-Linear Graphs",
+  "tier": "Extension",
+  "worksheets": [
+    {
+      "section_id": "9_5_1",
+      "section_code": "5A",
+      "title": "Solving Quadratic Equations via the Null Factor Law",
+      "vcaa_code": "VC2M9A05",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each non-monic or disguised quadratic equation by factoring:",
+          "parts": [
+            { "label": "a", "question": "$2x^2 - 7x - 15 = 0$", "answer": "$x = 5$ or $x = -\\dfrac{3}{2}$" },
+            { "label": "b", "question": "$6x^2 + 11x - 10 = 0$", "answer": "$x = \\dfrac{2}{3}$ or $x = -\\dfrac{5}{2}$" },
+            { "label": "c", "question": "$(x - 3)^2 = 4(x - 3)$", "answer": "$x = 3$ or $x = 7$" },
+            { "label": "d", "question": "$x + \\dfrac{12}{x} = 7$", "answer": "$x = 3$ or $x = 4$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each equation by first clearing fractions or using a substitution $u = x^2$:",
+          "parts": [
+            { "label": "a", "question": "$x^4 - 13x^2 + 36 = 0$", "answer": "$x = \\pm 2$ or $x = \\pm 3$" },
+            { "label": "b", "question": "$\\dfrac{x}{x - 2} = \\dfrac{6}{x + 1}$", "answer": "$x = 4$ or $x = -3$" },
+            { "label": "c", "question": "$(2x + 1)^2 - 9 = 0$", "answer": "$x = 1$ or $x = -2$" },
+            { "label": "d", "question": "$3x^2 - 14x + 8 = 0$", "answer": "$x = 4$ or $x = \\dfrac{2}{3}$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Construct a monic quadratic equation $x^2 + bx + c = 0$ with the given roots:",
+          "parts": [
+            { "label": "a", "question": "Roots $x = 4$ and $x = -9$", "answer": "$x^2 + 5x - 36 = 0$" },
+            { "label": "b", "question": "Roots $x = \\dfrac{1}{2}$ and $x = -3$ (clear fractions for integer coefficients)", "answer": "$2x^2 + 5x - 3 = 0$" },
+            { "label": "c", "question": "Repeated root $x = -7$", "answer": "$x^2 + 14x + 49 = 0$" },
+            { "label": "d", "question": "Roots $x = 2 + \\sqrt{3}$ and $x = 2 - \\sqrt{3}$", "answer": "$x^2 - 4x + 1 = 0$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the value(s) of $k$ such that each quadratic has the stated property:",
+          "parts": [
+            { "label": "a", "question": "$x = 3$ is a solution of $x^2 - kx + 12 = 0$", "answer": "$k = 7$" },
+            { "label": "b", "question": "$x^2 + kx + 25 = 0$ has exactly one repeated solution", "answer": "$k = 10$ or $k = -10$" },
+            { "label": "c", "question": "$x^2 - 5x + k = 0$ has roots differing by $1$", "answer": "$k = 6$ (roots $2$ and $3$)" },
+            { "label": "d", "question": "$(x - 2)(x + k) = x^2 + 4x - 12$", "answer": "$k = 6$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular photograph measuring $12\\text{ cm}$ by $18\\text{ cm}$ is surrounded by a wooden frame of uniform width $w\\text{ cm}$. The total area of photograph plus frame is $391\\text{ cm}^2$. Solve $(12 + 2w)(18 + 2w) = 391$ to find $w$.",
+          "answer": "$w = 2.5\\text{ cm}$"
+        },
+        {
+          "number": 6,
+          "question": "Two cyclists leave a town at the same time, one heading north at $v\\text{ km/h}$ and the other heading east at $(v + 7)\\text{ km/h}$. After $2$ hours they are $34\\text{ km}$ apart. Solve $(2v)^2 + (2v + 14)^2 = 34^2$ to find $v$.",
+          "answer": "$v = 8\\text{ km/h}$"
+        },
+        {
+          "number": 7,
+          "question": "A stone is thrown upwards from a cliff $35\\text{ m}$ above the sea, with height $h = -5t^2 + 30t + 35$. Solve $h = 0$ to find when the stone hits the sea.",
+          "answer": "$t = 7\\text{ seconds}$"
+        },
+        {
+          "number": 8,
+          "question": "The sum of the squares of three consecutive positive integers is $194$. Solve $(n - 1)^2 + n^2 + (n + 1)^2 = 194$ to find the three integers.",
+          "answer": "$7, 8, 9$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "If $x^2 + bx + c = 0$ has roots $\\alpha$ and $\\beta$, prove using $(x - \\alpha)(x - \\beta) = 0$ that $\\alpha + \\beta = -b$ and $\\alpha\\beta = c$ (Vieta's formulas).",
+          "answer": "Expanding $(x - \\alpha)(x - \\beta) = x^2 - (\\alpha + \\beta)x + \\alpha\\beta = 0$ and equating coefficients with $x^2 + bx + c = 0$ yields $-(\\alpha + \\beta) = b \\implies \\alpha + \\beta = -b$ and $\\alpha\\beta = c$."
+        },
+        {
+          "number": 10,
+          "question": "When solving $\\dfrac{x}{x - 2} = \\dfrac{2}{x - 2} + 3$ by multiplying by $(x - 2)$, a student obtains $x = 2$. Explain why $x = 2$ is an extraneous solution and state the true solution set.",
+          "answer": "Substituting $x = 2$ into the original equation gives division by zero ($x - 2 = 0$), which is undefined. Hence $x = 2$ must be rejected and the equation has no solution."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_5_1_1a", "expression": "2*5**2 - 7*5 - 15", "expected": 0 },
+        { "id": "WSE9_5_1_1b", "expression": "6*Rational(2,3)**2 + 11*Rational(2,3) - 10", "expected": 0 },
+        { "id": "WSE9_5_1_1d", "expression": "3 + Rational(12, 3)", "expected": 7 },
+        { "id": "WSE9_5_1_2a", "expression": "3**4 - 13*3**2 + 36", "expected": 0 },
+        { "id": "WSE9_5_1_5", "expression": "(12 + 2*Rational(5, 2))*(18 + 2*Rational(5, 2))", "expected": 391 },
+        { "id": "WSE9_5_1_6", "expression": "(2*8)**2 + (2*8 + 14)**2", "expected": 1156 },
+        { "id": "WSE9_5_1_7", "expression": "-5*7**2 + 30*7 + 35", "expected": 0 },
+        { "id": "WSE9_5_1_8", "expression": "7**2 + 8**2 + 9**2", "expected": 194 }
+      ]
+    },
+    {
+      "section_id": "9_5_2",
+      "section_code": "5B",
+      "title": "Graphing Quadratic Relations and Key Features of Parabolas",
+      "vcaa_code": "VC2M9A05",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Convert each quadratic from general form $y = x^2 + bx + c$ to turning point form $y = (x - h)^2 + k$ by completing the square, and state the vertex:",
+          "parts": [
+            { "label": "a", "question": "$y = x^2 - 6x + 11$", "answer": "$y = (x - 3)^2 + 2$; vertex $(3, 2)$" },
+            { "label": "b", "question": "$y = x^2 + 8x + 10$", "answer": "$y = (x + 4)^2 - 6$; vertex $(-4, -6)$" },
+            { "label": "c", "question": "$y = x^2 - 5x + 4$", "answer": "$y = \\left(x - \\dfrac{5}{2}\\right)^2 - \\dfrac{9}{4}$; vertex $\\left(\\dfrac{5}{2}, -\\dfrac{9}{4}\\right)$" },
+            { "label": "d", "question": "$y = 2x^2 - 12x + 23$", "answer": "$y = 2(x - 3)^2 + 5$; vertex $(3, 5)$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the points of intersection between each parabola and line:",
+          "parts": [
+            { "label": "a", "question": "$y = x^2$ and $y = 2x + 8$", "answer": "$(4, 16)$ and $(-2, 4)$" },
+            { "label": "b", "question": "$y = x^2 - 4x + 5$ and $y = x + 1$", "answer": "$(1, 2)$ and $(4, 5)$" },
+            { "label": "c", "question": "$y = -x^2 + 6x$ and $y = 2x + 4$", "answer": "$(2, 8)$ (tangent point)" },
+            { "label": "d", "question": "$y = x^2 + 3$ and $y = x - 1$", "answer": "No intersection ($x^2 - x + 4 = 0$ has no real roots)" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Find the quadratic equation $y = ax^2 + bx + c$ satisfying each set of conditions:",
+          "parts": [
+            { "label": "a", "question": "Vertex $(2, -8)$ and $x$-intercepts $0$ and $4$", "answer": "$y = 2x^2 - 8x$" },
+            { "label": "b", "question": "Passes through $(0, 5)$, $(1, 2)$, and $(2, 3)$", "answer": "$y = 2x^2 - 5x + 5$" },
+            { "label": "c", "question": "Axis of symmetry $x = 3$, $y$-intercept $(0, 7)$, and minimum value $-2$", "answer": "$y = (x - 3)^2 - 2$" },
+            { "label": "d", "question": "$x$-intercepts $(-1, 0)$ and $(5, 0)$ with maximum value $18$", "answer": "$y = -2(x + 1)(x - 5)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Determine the number of $x$-intercepts ($0$, $1$, or $2$) using the discriminant $\\Delta = b^2 - 4ac$:",
+          "parts": [
+            { "label": "a", "question": "$y = 2x^2 - 5x + 2$", "answer": "$\\Delta = 9 > 0 \\implies 2$ $x$-intercepts" },
+            { "label": "b", "question": "$y = 4x^2 - 12x + 9$", "answer": "$\\Delta = 0 \\implies 1$ $x$-intercept" },
+            { "label": "c", "question": "$y = x^2 + 3x + 5$", "answer": "$\\Delta = -11 < 0 \\implies 0$ $x$-intercepts" },
+            { "label": "d", "question": "$y = -3x^2 + 6x - 3$", "answer": "$\\Delta = 0 \\implies 1$ $x$-intercept" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A farmer in Gippsland has $120\\text{ m}$ of fencing to enclose a rectangular paddock against a straight river (so only $3$ sides are fenced). Express the area $A$ in terms of the width $x$ perpendicular to the river, and find the maximum possible area.",
+          "answer": "$A = x(120 - 2x) = -2(x - 30)^2 + 1800$; maximum area $1800\\text{ m}^2$ (at $x = 30\\text{ m}$, length $60\\text{ m}$)"
+        },
+        {
+          "number": 6,
+          "question": "A parabolic tunnel arch has span $16\\text{ m}$ at ground level and maximum height $12\\text{ m}$ at the centre. Using origin $(0, 0)$ at the left edge, find the arch equation $y = ax(x - 16)$ and check if a truck $4\\text{ m}$ wide and $9.5\\text{ m}$ tall can pass centrally.",
+          "answer": "$y = -\\dfrac{3}{16}x(x - 16)$; at $x = 6$ (or $10$), $y = 11.25\\text{ m} > 9.5\\text{ m}$, so yes, it fits"
+        },
+        {
+          "number": 7,
+          "question": "Find the value of $c$ such that the line $y = 4x + c$ is tangent to the parabola $y = x^2 + 2x + 5$.",
+          "answer": "$c = 4$"
+        },
+        {
+          "number": 8,
+          "question": "A theatre sells $400$ tickets at $\\$30$ each. For every $\\$2$ price increase, $20$ fewer tickets are sold. Let $x$ be the number of $\\$2$ increases; find $x$ that maximises revenue $R = (30 + 2x)(400 - 20x)$ and the maximum revenue.",
+          "answer": "$x = 2.5$ (price $\\$35$, $350$ tickets); maximum revenue $\\$12\\,250$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Prove that the axis of symmetry of the general quadratic $y = ax^2 + bx + c$ ($a \\neq 0$) is $x = -\\dfrac{b}{2a}$ by completing the square.",
+          "answer": "$y = a\\left(x^2 + \\dfrac{b}{a}x\\right) + c = a\\left(x + \\dfrac{b}{2a}\\right)^2 + c - \\dfrac{b^2}{4a}$, so the vertex lies at $x = -\\dfrac{b}{2a}$."
+        },
+        {
+          "number": 10,
+          "question": "Explain geometrically why a line and a parabola can intersect at $0$, $1$, or $2$ points, and how this corresponds to the discriminant $\\Delta$ of the resulting quadratic.",
+          "answer": "Two intersections occur when the line cuts through the parabola ($\\Delta > 0$); one intersection occurs when the line is tangent to the parabola ($\\Delta = 0$); zero intersections occur when the line misses the parabola ($\\Delta < 0$)."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_5_2_1a", "expression": "simplify((x - 3)**2 + 2 - (x**2 - 6*x + 11))", "expected": 0 },
+        { "id": "WSE9_5_2_1d", "expression": "simplify(2*(x - 3)**2 + 5 - (2*x**2 - 12*x + 23))", "expected": 0 },
+        { "id": "WSE9_5_2_2a", "expression": "4**2 - (2*4 + 8)", "expected": 0 },
+        { "id": "WSE9_5_2_3b", "expression": "2*2**2 - 5*2 + 5", "expected": 3 },
+        { "id": "WSE9_5_2_4a", "expression": "(-5)**2 - 4*2*2", "expected": 9 },
+        { "id": "WSE9_5_2_5", "expression": "30*(120 - 2*30)", "expected": 1800 },
+        { "id": "WSE9_5_2_6", "expression": "-Rational(3, 16)*6*(6 - 16)", "expected": 11.25 },
+        { "id": "WSE9_5_2_8", "expression": "(30 + 2*Rational(5, 2))*(400 - 20*Rational(5, 2))", "expected": 12250 }
+      ]
+    },
+    {
+      "section_id": "9_5_3",
+      "section_code": "5C",
+      "title": "Non-Linear Relations and Algorithmic Root Approximation",
+      "vcaa_code": "VC2M9A06",
+      "tier": "Extension",
+      "estimated_minutes": 35,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Solve each exponential or reciprocal equation:",
+          "parts": [
+            { "label": "a", "question": "$3 \\cdot 2^{x - 1} = 48$", "answer": "$x = 5$" },
+            { "label": "b", "question": "$5^{2x} = 125$", "answer": "$x = \\dfrac{3}{2}$" },
+            { "label": "c", "question": "$\\dfrac{18}{x + 2} = 3$", "answer": "$x = 4$" },
+            { "label": "d", "question": "$\\dfrac{12}{x} = 3x$", "answer": "$x = 2$ or $x = -2$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "For each circle or shifted hyperbola, find the requested feature:",
+          "parts": [
+            { "label": "a", "question": "Find $k > 0$ so $(k, 6)$ lies on $x^2 + y^2 = 100$", "answer": "$k = 8$" },
+            { "label": "b", "question": "Find the intersections of $x^2 + y^2 = 25$ and $y = x + 1$", "answer": "$(3, 4)$ and $(-4, -3)$" },
+            { "label": "c", "question": "State the vertical and horizontal asymptotes of $y = \\dfrac{4}{x - 3} + 2$", "answer": "Vertical: $x = 3$; Horizontal: $y = 2$" },
+            { "label": "d", "question": "Find the $x$-intercept of $y = \\dfrac{6}{x + 1} - 2$", "answer": "$(2, 0)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Perform $3$ iterations of the bisection method to narrow the root interval:",
+          "parts": [
+            { "label": "a", "question": "$f(x) = x^3 - x - 5$ on $[1, 2]$", "answer": "$[1.75, 2]$ (check: $f(1.5)=-3.125$, $f(1.75)=-1.390625$, $f(1.875)=-0.283203125 \\implies [1.875, 2]$)" },
+            { "label": "b", "question": "$f(x) = x^2 - 3$ on $[1, 2]$", "answer": "$[1.625, 1.75]$ ($m_1=1.5\\to [1.5,2]$, $m_2=1.75\\to [1.5,1.75]$, $m_3=1.625\\to [1.625,1.75]$)" },
+            { "label": "c", "question": "$f(x) = 2^x - 5$ on $[2, 3]$", "answer": "$[2.25, 2.375]$ ($m_1=2.5\\to [2,2.5]$, $m_2=2.25\\to [2.25,2.5]$, $m_3=2.375\\to [2.25,2.375]$)" },
+            { "label": "d", "question": "$f(x) = x^2 + 2x - 10$ on $[2, 3]$", "answer": "$[2.25, 2.375]$ ($m_1=2.5\\to [2,2.5]$, $m_2=2.25\\to [2.25,2.5]$, $m_3=2.375\\to [2.25,2.375]$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Determine the minimum number of bisection steps $n$ needed to reduce an interval of width $W = 1$ to width $\\le \\varepsilon$ using $\\dfrac{1}{2^n} \\le \\varepsilon$:",
+          "parts": [
+            { "label": "a", "question": "$\\varepsilon = 0.1$", "answer": "$n = 4$ ($2^{-4} = 0.0625 \\le 0.1$)" },
+            { "label": "b", "question": "$\\varepsilon = 0.01$", "answer": "$n = 7$ ($2^{-7} \\approx 0.0078 \\le 0.01$)" },
+            { "label": "c", "question": "$\\varepsilon = 0.001$", "answer": "$n = 10$ ($2^{-10} \\approx 0.000977 \\le 0.001$)" },
+            { "label": "d", "question": "$\\varepsilon = 10^{-6}$", "answer": "$n = 20$ ($2^{-20} < 10^{-6}$)" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A radioactive isotope decays according to $M = 160 \\cdot (0.5)^{t/6}$, where $t$ is time in hours. How much mass remains after $18$ hours, and how long does it take to decay to $5\\text{ g}$?",
+          "answer": "$20\\text{ g}$ after $18$ hours; decays to $5\\text{ g}$ after $30$ hours"
+        },
+        {
+          "number": 6,
+          "question": "The intensity $I$ of light (lux) at distance $d$ metres from a lamp follows the inverse-square law $I = \\dfrac{k}{d^2}$. If $I = 100$ lux at $d = 2\\text{ m}$, find $k$ and the intensity at $d = 5\\text{ m}$.",
+          "answer": "$k = 400$; at $d = 5\\text{ m}$, $I = 16$ lux"
+        },
+        {
+          "number": 7,
+          "question": "Find the exact $x$-coordinates where the hyperbola $y = \\dfrac{6}{x}$ intersects the line $y = x + 1$.",
+          "answer": "$x = 2$ (point $(2, 3)$) and $x = -3$ (point $(-3, -2)$)"
+        },
+        {
+          "number": 8,
+          "question": "The golden ratio $\\phi$ satisfies $x^2 - x - 1 = 0$ on $[1, 2]$. Perform $2$ steps of bisection and state the resulting interval.",
+          "answer": "$m_1 = 1.5$ ($f(1.5) = -0.25 < 0 \\implies [1.5, 2]$); $m_2 = 1.75$ ($f(1.75) = 0.3125 > 0 \\implies [1.5, 1.75]$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain why the bisection algorithm is guaranteed to converge to a root whenever $f$ is continuous on $[a, b]$ and $f(a)f(b) < 0$, even if $f$ is very complicated.",
+          "answer": "At each step the interval width halves ($\\frac{b-a}{2^n} \\to 0$ as $n \\to \\infty$), while the sign-change condition $f(a_n)f(b_n) \\le 0$ is preserved, trapping a root inside an arbitrarily small interval."
+        },
+        {
+          "number": 10,
+          "question": "Why does $y = \\dfrac{4}{x - 3} + 2$ never take the value $y = 2$ for any real $x$?",
+          "answer": "Setting $\\dfrac{4}{x - 3} + 2 = 2$ gives $\\dfrac{4}{x - 3} = 0$, which has no solution because a fraction with non-zero numerator $4$ can never equal $0$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSE9_5_3_1a", "expression": "3 * 2**(5 - 1)", "expected": 48 },
+        { "id": "WSE9_5_3_1b", "expression": "5**(2*Rational(3, 2))", "expected": 125 },
+        { "id": "WSE9_5_3_2b", "expression": "3**2 + 4**2", "expected": 25 },
+        { "id": "WSE9_5_3_2d", "expression": "Rational(6, 2 + 1) - 2", "expected": 0 },
+        { "id": "WSE9_5_3_3b", "expression": "Rational(13, 8)**2 - 3", "expected": -0.359375 },
+        { "id": "WSE9_5_3_5", "expression": "160 * Rational(1, 2)**(30/6)", "expected": 5 },
+        { "id": "WSE9_5_3_6", "expression": "Rational(400, 5**2)", "expected": 16 },
+        { "id": "WSE9_5_3_8", "expression": "Rational(7, 4)**2 - Rational(7, 4) - 1", "expected": 0.3125 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,289 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Quadratic Equations and Non-Linear Graphs",
+  "tier": "Foundation",
+  "worksheets": [
+    {
+      "section_id": "9_5_1",
+      "section_code": "5A",
+      "title": "Solving Quadratic Equations via the Null Factor Law",
+      "vcaa_code": "VC2M9A05",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use the Null Factor Law ($a \\times b = 0 \\implies a = 0$ or $b = 0$) to solve each equation:",
+          "parts": [
+            { "label": "a", "question": "$(x - 3)(x - 5) = 0$", "answer": "$x = 3$ or $x = 5$" },
+            { "label": "b", "question": "$(x + 2)(x - 6) = 0$", "answer": "$x = -2$ or $x = 6$" },
+            { "label": "c", "question": "$(x + 4)(x + 9) = 0$", "answer": "$x = -4$ or $x = -9$" },
+            { "label": "d", "question": "$x(x - 7) = 0$", "answer": "$x = 0$ or $x = 7$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Solve each two-factor equation:",
+          "parts": [
+            { "label": "a", "question": "$x(x + 8) = 0$", "answer": "$x = 0$ or $x = -8$" },
+            { "label": "b", "question": "$(2x - 4)(x - 1) = 0$", "answer": "$x = 2$ or $x = 1$" },
+            { "label": "c", "question": "$(x - 10)(x + 10) = 0$", "answer": "$x = 10$ or $x = -10$" },
+            { "label": "d", "question": "$(x - 5)^2 = 0$", "answer": "$x = 5$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Factorise out $x$ (or use difference of two squares) and solve:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 5x = 0$", "answer": "$x = 0$ or $x = -5$" },
+            { "label": "b", "question": "$x^2 - 9x = 0$", "answer": "$x = 0$ or $x = 9$" },
+            { "label": "c", "question": "$x^2 - 16 = 0$", "answer": "$x = 4$ or $x = -4$" },
+            { "label": "d", "question": "$x^2 - 25 = 0$", "answer": "$x = 5$ or $x = -5$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise each trinomial and solve:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 5x + 6 = 0$", "answer": "$x = -2$ or $x = -3$" },
+            { "label": "b", "question": "$x^2 + 7x + 10 = 0$", "answer": "$x = -2$ or $x = -5$" },
+            { "label": "c", "question": "$x^2 - 6x + 8 = 0$", "answer": "$x = 2$ or $x = 4$" },
+            { "label": "d", "question": "$x^2 - x - 6 = 0$", "answer": "$x = 3$ or $x = -2$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A square garden bed has side length $x\\text{ m}$ and an area of $36\\text{ m}^2$ ($x^2 - 36 = 0$). Solve for $x$ and state the valid side length.",
+          "answer": "$x = 6\\text{ m}$ (since length cannot be negative)"
+        },
+        {
+          "number": 6,
+          "question": "A rectangular patio has area $x(x + 3) = 40\\text{ m}^2$. Check by substitution that $x = 5$ satisfies the equation, and state the patio's dimensions.",
+          "answer": "$5 \\times (5 + 3) = 40$; width $5\\text{ m}$, length $8\\text{ m}$"
+        },
+        {
+          "number": 7,
+          "question": "A ball's height in metres is $h = t(4 - t)$. At what two times $t$ is the ball on the ground ($h = 0$)?",
+          "answer": "$t = 0\\text{ s}$ and $t = 4\\text{ s}$"
+        },
+        {
+          "number": 8,
+          "question": "Two numbers multiply to $0$, and one of them is $x - 12$. What must the other factor be if $x \\neq 12$?",
+          "answer": "The other factor must equal $0$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why does $(x - 3)(x + 4) = 0$ give $x = 3$ and $x = -4$ instead of $x = -3$ and $x = 4$?",
+          "answer": "We set each bracket equal to $0$: $x - 3 = 0$ gives $x = 3$, and $x + 4 = 0$ gives $x = -4$."
+        },
+        {
+          "number": 10,
+          "question": "In a measurement problem where $x$ represents the width of a room, why do we reject a negative solution like $x = -8$?",
+          "answer": "Physical lengths and widths must be positive, so a negative value has no practical meaning."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_5_1_1a", "expression": "(3 - 3)*(3 - 5)", "expected": 0 },
+        { "id": "WSF9_5_1_2b", "expression": "(2*2 - 4)*(2 - 1)", "expected": 0 },
+        { "id": "WSF9_5_1_3a", "expression": "(-5)**2 + 5*(-5)", "expected": 0 },
+        { "id": "WSF9_5_1_3c", "expression": "4**2 - 16", "expected": 0 },
+        { "id": "WSF9_5_1_4a", "expression": "(-2)**2 + 5*(-2) + 6", "expected": 0 },
+        { "id": "WSF9_5_1_4c", "expression": "4**2 - 6*4 + 8", "expected": 0 },
+        { "id": "WSF9_5_1_4d", "expression": "3**2 - 3 - 6", "expected": 0 },
+        { "id": "WSF9_5_1_6", "expression": "5 * (5 + 3)", "expected": 40 }
+      ]
+    },
+    {
+      "section_id": "9_5_2",
+      "section_code": "5B",
+      "title": "Graphing Quadratic Relations and Key Features of Parabolas",
+      "vcaa_code": "VC2M9A05",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Complete the table value for $y = x^2$ at each given $x$:",
+          "parts": [
+            { "label": "a", "question": "$x = -3$", "answer": "$y = 9$" },
+            { "label": "b", "question": "$x = -1$", "answer": "$y = 1$" },
+            { "label": "c", "question": "$x = 0$", "answer": "$y = 0$" },
+            { "label": "d", "question": "$x = 4$", "answer": "$y = 16$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "State the turning point $(h, k)$ of each parabola $y = (x - h)^2 + k$:",
+          "parts": [
+            { "label": "a", "question": "$y = x^2 + 3$", "answer": "$(0, 3)$" },
+            { "label": "b", "question": "$y = (x - 2)^2$", "answer": "$(2, 0)$" },
+            { "label": "c", "question": "$y = (x - 4)^2 + 1$", "answer": "$(4, 1)$" },
+            { "label": "d", "question": "$y = (x + 3)^2 - 2$", "answer": "$(-3, -2)$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "State whether each parabola opens upwards (U-shape, minimum) or downwards (upside-down U, maximum):",
+          "parts": [
+            { "label": "a", "question": "$y = x^2 - 5$", "answer": "Upwards (minimum)" },
+            { "label": "b", "question": "$y = -x^2 + 4$", "answer": "Downwards (maximum)" },
+            { "label": "c", "question": "$y = 2(x - 1)^2$", "answer": "Upwards (minimum)" },
+            { "label": "d", "question": "$y = -(x + 2)^2 + 6$", "answer": "Downwards (maximum)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the $y$-intercept (by substituting $x = 0$) for each parabola:",
+          "parts": [
+            { "label": "a", "question": "$y = x^2 + 7$", "answer": "$(0, 7)$" },
+            { "label": "b", "question": "$y = x^2 - 4x + 5$", "answer": "$(0, 5)$" },
+            { "label": "c", "question": "$y = (x - 3)^2$", "answer": "$(0, 9)$" },
+            { "label": "d", "question": "$y = -(x + 1)^2 + 10$", "answer": "$(0, 9)$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A small arch over a garden path has shape $y = -x^2 + 4$, where $y$ is height in metres. What is the maximum height of the arch (at $x = 0$)?",
+          "answer": "$4\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "For the arch $y = -x^2 + 4$, find the two $x$-values where the arch meets the ground ($y = 0$).",
+          "answer": "$x = -2$ and $x = 2$"
+        },
+        {
+          "number": 7,
+          "question": "A parabola has $x$-intercepts at $(1, 0)$ and $(5, 0)$. What is the $x$-coordinate of its axis of symmetry (halfway between $1$ and $5$)?",
+          "answer": "$x = 3$"
+        },
+        {
+          "number": 8,
+          "question": "A skateboard ramp curve is modelled by $y = (x - 3)^2 + 1$. What is the lowest point on the ramp?",
+          "answer": "$(3, 1)$ (minimum height $1$ unit at $x = 3$)"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "How does the graph of $y = x^2 + 5$ differ from the graph of $y = x^2$?",
+          "answer": "It has the exact same shape as $y = x^2$, but shifted $5$ units upwards."
+        },
+        {
+          "number": 10,
+          "question": "Why does $y = x^2$ never go below the $x$-axis?",
+          "answer": "Because squaring any real number (positive, negative, or zero) always gives a result greater than or equal to $0$."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_5_2_1a", "expression": "(-3)**2", "expected": 9 },
+        { "id": "WSF9_5_2_1d", "expression": "4**2", "expected": 16 },
+        { "id": "WSF9_5_2_4c", "expression": "(0 - 3)**2", "expected": 9 },
+        { "id": "WSF9_5_2_4d", "expression": "-(0 + 1)**2 + 10", "expected": 9 },
+        { "id": "WSF9_5_2_5", "expression": "-0**2 + 4", "expected": 4 },
+        { "id": "WSF9_5_2_6", "expression": "-2**2 + 4", "expected": 0 },
+        { "id": "WSF9_5_2_7", "expression": "Rational(1 + 5, 2)", "expected": 3 },
+        { "id": "WSF9_5_2_8", "expression": "(3 - 3)**2 + 1", "expected": 1 }
+      ]
+    },
+    {
+      "section_id": "9_5_3",
+      "section_code": "5C",
+      "title": "Non-Linear Relations and Algorithmic Root Approximation",
+      "vcaa_code": "VC2M9A06",
+      "tier": "Foundation",
+      "estimated_minutes": 25,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Calculate $y = 2^x$ for each value of $x$:",
+          "parts": [
+            { "label": "a", "question": "$x = 1$", "answer": "$y = 2$" },
+            { "label": "b", "question": "$x = 3$", "answer": "$y = 8$" },
+            { "label": "c", "question": "$x = 5$", "answer": "$y = 32$" },
+            { "label": "d", "question": "$x = 0$", "answer": "$y = 1$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Calculate $y = \\dfrac{12}{x}$ for each value of $x$:",
+          "parts": [
+            { "label": "a", "question": "$x = 2$", "answer": "$y = 6$" },
+            { "label": "b", "question": "$x = 4$", "answer": "$y = 3$" },
+            { "label": "c", "question": "$x = 12$", "answer": "$y = 1$" },
+            { "label": "d", "question": "$x = -3$", "answer": "$y = -4$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "State the radius $r$ of each circle $x^2 + y^2 = r^2$ centred at $(0, 0)$:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + y^2 = 9$", "answer": "$r = 3$" },
+            { "label": "b", "question": "$x^2 + y^2 = 16$", "answer": "$r = 4$" },
+            { "label": "c", "question": "$x^2 + y^2 = 49$", "answer": "$r = 7$" },
+            { "label": "d", "question": "$x^2 + y^2 = 100$", "answer": "$r = 10$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Find the midpoint $m = \\dfrac{a + b}{2}$ and evaluate $f(m)$ for the first step of bisection:",
+          "parts": [
+            { "label": "a", "question": "$f(x) = x^2 - 5$ on $[2, 3]$", "answer": "$m = 2.5$, $f(2.5) = 1.25$" },
+            { "label": "b", "question": "$f(x) = x^2 - 10$ on $[3, 4]$", "answer": "$m = 3.5$, $f(3.5) = 2.25$" },
+            { "label": "c", "question": "$f(x) = x^2 - 2$ on $[1, 2]$", "answer": "$m = 1.5$, $f(1.5) = 0.25$" },
+            { "label": "d", "question": "$f(x) = x^3 - 9$ on $[2, 3]$", "answer": "$m = 2.5$, $f(2.5) = 6.625$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A video shared online doubles its views every hour: $V = 10 \\cdot 2^t$. How many views does it have after $4$ hours?",
+          "answer": "$160$ views"
+        },
+        {
+          "number": 6,
+          "question": "A pizza cost of $\\$24$ is shared equally among $n$ friends ($C = \\dfrac{24}{n}$). How much does each friend pay if $n = 6$?",
+          "answer": "$\\$4$ each"
+        },
+        {
+          "number": 7,
+          "question": "For $f(x) = x^2 - 5$, we know $f(2) = -1$ and $f(3) = 4$. Which interval—$[2, 2.5]$ or $[2.5, 3]$—contains the root after checking $f(2.5) = 1.25$?",
+          "answer": "$[2, 2.5]$, because $f(2) = -1 < 0$ and $f(2.5) = 1.25 > 0$ have opposite signs"
+        },
+        {
+          "number": 8,
+          "question": "Check whether the point $(4, 3)$ lies on the circle $x^2 + y^2 = 25$.",
+          "answer": "Yes, because $4^2 + 3^2 = 16 + 9 = 25$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "What is the main difference between linear growth ($y = 2x$) and exponential growth ($y = 2^x$)?",
+          "answer": "Linear growth adds a constant amount ($+2$) each step, whereas exponential growth multiplies by a constant factor ($\\times 2$) each step and grows much faster."
+        },
+        {
+          "number": 10,
+          "question": "In the reciprocal equation $y = \\dfrac{12}{x}$, why can $x$ never equal $0$?",
+          "answer": "Because dividing by $0$ is mathematically undefined."
+        }
+      ],
+      "assertions": [
+        { "id": "WSF9_5_3_1c", "expression": "2**5", "expected": 32 },
+        { "id": "WSF9_5_3_2a", "expression": "Rational(12, 2)", "expected": 6 },
+        { "id": "WSF9_5_3_2d", "expression": "Rational(12, -3)", "expected": -4 },
+        { "id": "WSF9_5_3_4a", "expression": "Rational(5, 2)**2 - 5", "expected": 1.25 },
+        { "id": "WSF9_5_3_4b", "expression": "Rational(7, 2)**2 - 10", "expected": 2.25 },
+        { "id": "WSF9_5_3_4c", "expression": "Rational(3, 2)**2 - 2", "expected": 0.25 },
+        { "id": "WSF9_5_3_5", "expression": "10 * 2**4", "expected": 160 },
+        { "id": "WSF9_5_3_8", "expression": "4**2 + 3**2", "expected": 25 }
+      ]
+    }
+  ]
+}

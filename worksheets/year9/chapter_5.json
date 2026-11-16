@@ -1,0 +1,289 @@
+{
+  "chapter_number": 5,
+  "chapter_title": "Quadratic Equations and Non-Linear Graphs",
+  "worksheets": [
+    {
+      "section_id": "9_5_1",
+      "section_code": "5A",
+      "title": "Solving Quadratic Equations via the Null Factor Law",
+      "vcaa_code": "VC2M9A05",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Use the Null Factor Law ($ab = 0 \\implies a = 0$ or $b = 0$) to solve each factorised quadratic equation:",
+          "parts": [
+            { "label": "a", "question": "$(x - 4)(x + 7) = 0$", "answer": "$x = 4$ or $x = -7$" },
+            { "label": "b", "question": "$x(x - 9) = 0$", "answer": "$x = 0$ or $x = 9$" },
+            { "label": "c", "question": "$(2x - 3)(x + 5) = 0$", "answer": "$x = \\dfrac{3}{2}$ or $x = -5$" },
+            { "label": "d", "question": "$(3x + 6)(4x - 1) = 0$", "answer": "$x = -2$ or $x = \\dfrac{1}{4}$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Factorise each monic quadratic and solve using the Null Factor Law:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 7x + 12 = 0$", "answer": "$x = -3$ or $x = -4$" },
+            { "label": "b", "question": "$x^2 - 5x - 14 = 0$", "answer": "$x = 7$ or $x = -2$" },
+            { "label": "c", "question": "$x^2 - 8x + 16 = 0$", "answer": "$x = 4$" },
+            { "label": "d", "question": "$x^2 - 49 = 0$", "answer": "$x = 7$ or $x = -7$" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Rearrange each equation into standard form $x^2 + bx + c = 0$, then factorise and solve:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + 3x = 10$", "answer": "$x = 2$ or $x = -5$" },
+            { "label": "b", "question": "$x^2 = 6x$", "answer": "$x = 0$ or $x = 6$" },
+            { "label": "c", "question": "$x^2 - 2x = 24$", "answer": "$x = 6$ or $x = -4$" },
+            { "label": "d", "question": "$x(x + 5) = 14$", "answer": "$x = 2$ or $x = -7$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Factorise and solve each quadratic equation (taking out a common factor first if needed):",
+          "parts": [
+            { "label": "a", "question": "$2x^2 + 10x + 12 = 0$", "answer": "$x = -2$ or $x = -3$" },
+            { "label": "b", "question": "$3x^2 - 27 = 0$", "answer": "$x = 3$ or $x = -3$" },
+            { "label": "c", "question": "$x^2 + 11x + 28 = 0$", "answer": "$x = -4$ or $x = -7$" },
+            { "label": "d", "question": "$x^2 - 9x + 20 = 0$", "answer": "$x = 4$ or $x = 5$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A rectangular vegetable garden in Adelaide has a length that is $5\\text{ m}$ greater than its width $w\\text{ m}$. If the area of the garden is $84\\text{ m}^2$, form and solve a quadratic equation $w(w + 5) = 84$ to find the width and length.",
+          "answer": "Width $w = 7\\text{ m}$, length $= 12\\text{ m}$ (discarding $w = -12$)"
+        },
+        {
+          "number": 6,
+          "question": "A flare is launched vertically from a boat. Its height $h$ (in metres) above the water after $t$ seconds is modelled by $h = -5t^2 + 30t$. Solve $-5t^2 + 30t = 0$ to find when the flare hits the water.",
+          "answer": "$t = 6\\text{ seconds}$ (after launch at $t = 0$)"
+        },
+        {
+          "number": 7,
+          "question": "The product of two consecutive positive integers is $132$. Let the smaller integer be $n$; solve $n(n + 1) = 132$ to find both integers.",
+          "answer": "$11$ and $12$"
+        },
+        {
+          "number": 8,
+          "question": "A right-angled triangle has legs of length $x\\text{ cm}$ and $(x + 7)\\text{ cm}$, and a hypotenuse of $13\\text{ cm}$. Use Pythagoras' theorem $x^2 + (x + 7)^2 = 13^2$ to find $x$.",
+          "answer": "$x = 5\\text{ cm}$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "A student solves $x^2 = 5x$ by dividing both sides by $x$ to get $x = 5$. Explain what solution was lost and why dividing by a variable is unsafe.",
+          "answer": "The solution $x = 0$ was lost. Dividing by $x$ is invalid when $x = 0$ because division by zero is undefined; instead, rearrange to $x^2 - 5x = 0 \\implies x(x - 5) = 0$ to obtain both $x = 0$ and $x = 5$."
+        },
+        {
+          "number": 10,
+          "question": "Why can the Null Factor Law NOT be applied directly to $(x - 2)(x + 3) = 6$ to conclude $x - 2 = 6$ or $x + 3 = 6$?",
+          "answer": "Because the Null Factor Law only holds when the product equals $0$. Infinitely many pairs of numbers multiply to $6$ (such as $2 \\times 3$ or $1.5 \\times 4$); you must expand and rearrange to $x^2 + x - 12 = 0$ first."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_5_1_2a", "expression": "(-3)**2 + 7*(-3) + 12", "expected": 0 },
+        { "id": "WS9_5_1_2b", "expression": "7**2 - 5*7 - 14", "expected": 0 },
+        { "id": "WS9_5_1_3a", "expression": "2**2 + 3*2 - 10", "expected": 0 },
+        { "id": "WS9_5_1_3c", "expression": "6**2 - 2*6 - 24", "expected": 0 },
+        { "id": "WS9_5_1_3d", "expression": "2*(2 + 5)", "expected": 14 },
+        { "id": "WS9_5_1_4a", "expression": "2*(-2)**2 + 10*(-2) + 12", "expected": 0 },
+        { "id": "WS9_5_1_5", "expression": "7 * (7 + 5)", "expected": 84 },
+        { "id": "WS9_5_1_7", "expression": "11 * 12", "expected": 132 },
+        { "id": "WS9_5_1_8", "expression": "5**2 + (5 + 7)**2", "expected": 169 }
+      ]
+    },
+    {
+      "section_id": "9_5_2",
+      "section_code": "5B",
+      "title": "Graphing Quadratic Relations and Key Features of Parabolas",
+      "vcaa_code": "VC2M9A05",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "For each parabola in turning point form $y = a(x - h)^2 + k$, state the turning point $(h, k)$, the axis of symmetry, and whether it opens upwards (minimum) or downwards (maximum):",
+          "parts": [
+            { "label": "a", "question": "$y = (x - 3)^2 + 4$", "answer": "TP $(3, 4)$, axis $x = 3$, opens upwards (min)" },
+            { "label": "b", "question": "$y = -(x + 2)^2 + 9$", "answer": "TP $(-2, 9)$, axis $x = -2$, opens downwards (max)" },
+            { "label": "c", "question": "$y = 2(x - 1)^2 - 5$", "answer": "TP $(1, -5)$, axis $x = 1$, opens upwards (min)" },
+            { "label": "d", "question": "$y = -3(x + 4)^2$", "answer": "TP $(-4, 0)$, axis $x = -4$, opens downwards (max)" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "Find the $y$-intercept and $x$-intercepts (if any) of each parabola:",
+          "parts": [
+            { "label": "a", "question": "$y = (x - 2)(x + 6)$", "answer": "$y$-int: $(0, -12)$; $x$-ints: $(2, 0)$ and $(-6, 0)$" },
+            { "label": "b", "question": "$y = x^2 - 9$", "answer": "$y$-int: $(0, -9)$; $x$-ints: $(3, 0)$ and $(-3, 0)$" },
+            { "label": "c", "question": "$y = (x - 4)^2 - 9$", "answer": "$y$-int: $(0, 7)$; $x$-ints: $(7, 0)$ and $(1, 0)$" },
+            { "label": "d", "question": "$y = x^2 + 5$", "answer": "$y$-int: $(0, 5)$; no $x$-intercepts" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Use the symmetry formula $x = \\dfrac{p + q}{2}$ to find the turning point of each parabola given in intercept form:",
+          "parts": [
+            { "label": "a", "question": "$y = (x - 1)(x - 5)$", "answer": "TP $(3, -4)$" },
+            { "label": "b", "question": "$y = (x + 4)(x - 2)$", "answer": "TP $(-1, -9)$" },
+            { "label": "c", "question": "$y = -(x + 3)(x - 7)$", "answer": "TP $(2, 25)$" },
+            { "label": "d", "question": "$y = 2x(x - 6)$", "answer": "TP $(3, -18)$" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Write the equation of a parabola in turning point form $y = a(x - h)^2 + k$ given:",
+          "parts": [
+            { "label": "a", "question": "Turning point $(2, 5)$ and $a = 1$", "answer": "$y = (x - 2)^2 + 5$" },
+            { "label": "b", "question": "Turning point $(-3, 7)$ and $a = -1$", "answer": "$y = -(x + 3)^2 + 7$" },
+            { "label": "c", "question": "Turning point $(1, -4)$ passing through $(3, 4)$", "answer": "$y = 2(x - 1)^2 - 4$" },
+            { "label": "d", "question": "Turning point $(0, 8)$ passing through $(2, 0)$", "answer": "$y = -2x^2 + 8$" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A suspension cable on a bridge in Hobart follows the parabolic curve $h = 0.25(x - 10)^2 + 3$, where $h$ is the height above the road in metres and $x$ is the horizontal distance from the left tower. What is the minimum height of the cable above the road, and at what $x$-value does it occur?",
+          "answer": "Minimum height $3\\text{ m}$ at $x = 10\\text{ m}$"
+        },
+        {
+          "number": 6,
+          "question": "A soccer ball is kicked from the ground and its trajectory is modelled by $y = -0.05x(x - 40)$, where $x$ is the horizontal distance in metres and $y$ is the height in metres. Find the horizontal range of the kick and the maximum height reached.",
+          "answer": "Range $= 40\\text{ m}$; maximum height $= 20\\text{ m}$ (at $x = 20\\text{ m}$)"
+        },
+        {
+          "number": 7,
+          "question": "The daily profit $P$ (in dollars) of a food truck is $P = -2(n - 50)^2 + 800$, where $n$ is the number of meals sold. Find the number of meals that maximises profit, the maximum profit, and the profit when $n = 40$ meals are sold.",
+          "answer": "$50$ meals gives maximum profit $\\$800$; at $n = 40$, profit is $\\$600$"
+        },
+        {
+          "number": 8,
+          "question": "A parabola has $x$-intercepts at $(-2, 0)$ and $(8, 0)$, and passes through $(0, -16)$. Find its equation in the form $y = a(x - p)(x - q)$.",
+          "answer": "$y = (x + 2)(x - 8)$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Explain how the graph of $y = -2(x + 3)^2 + 5$ is obtained from the basic parabola $y = x^2$ using transformations.",
+          "answer": "Reflect $y = x^2$ across the $x$-axis and dilate vertically by a factor of $2$ (from $-2$), then translate $3$ units left and $5$ units up."
+        },
+        {
+          "number": 10,
+          "question": "How can you tell immediately from $y = 3(x - 4)^2 + 2$ that the parabola has NO $x$-intercepts without solving an equation?",
+          "answer": "Since $3(x - 4)^2 \\ge 0$ for all real $x$, we always have $y \\ge 2 > 0$. The minimum turning point $(4, 2)$ lies above the $x$-axis and the parabola opens upwards, so it never crosses the $x$-axis."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_5_2_2c", "expression": "(7 - 4)**2 - 9", "expected": 0 },
+        { "id": "WS9_5_2_3a", "expression": "(3 - 1)*(3 - 5)", "expected": -4 },
+        { "id": "WS9_5_2_3b", "expression": "(-1 + 4)*(-1 - 2)", "expected": -9 },
+        { "id": "WS9_5_2_3c", "expression": "-(2 + 3)*(2 - 7)", "expected": 25 },
+        { "id": "WS9_5_2_3d", "expression": "2*3*(3 - 6)", "expected": -18 },
+        { "id": "WS9_5_2_4c", "expression": "2*(3 - 1)**2 - 4", "expected": 4 },
+        { "id": "WS9_5_2_6", "expression": "-Rational(1, 20)*20*(20 - 40)", "expected": 20 },
+        { "id": "WS9_5_2_7", "expression": "-2*(40 - 50)**2 + 800", "expected": 600 }
+      ]
+    },
+    {
+      "section_id": "9_5_3",
+      "section_code": "5C",
+      "title": "Non-Linear Relations and Algorithmic Root Approximation",
+      "vcaa_code": "VC2M9A06",
+      "tier": "Standard",
+      "estimated_minutes": 30,
+      "fluency_questions": [
+        {
+          "number": 1,
+          "prompt": "Evaluate $y$ for each non-linear relation at the given $x$-value:",
+          "parts": [
+            { "label": "a", "question": "$y = 3 \\cdot 2^x$ at $x = 4$", "answer": "$y = 48$" },
+            { "label": "b", "question": "$y = \\dfrac{24}{x}$ at $x = -6$", "answer": "$y = -4$" },
+            { "label": "c", "question": "$y = 100 \\cdot (0.5)^x$ at $x = 3$", "answer": "$y = 12.5$" },
+            { "label": "d", "question": "$y = x^3 - 2x$ at $x = 3$", "answer": "$y = 21$" }
+          ]
+        },
+        {
+          "number": 2,
+          "prompt": "For each circle equation $x^2 + y^2 = r^2$, state the centre, the radius $r$, and whether the point $(3, 4)$ lies inside, on, or outside the circle:",
+          "parts": [
+            { "label": "a", "question": "$x^2 + y^2 = 25$", "answer": "Centre $(0, 0)$, $r = 5$; $(3, 4)$ is ON the circle" },
+            { "label": "b", "question": "$x^2 + y^2 = 36$", "answer": "Centre $(0, 0)$, $r = 6$; $(3, 4)$ is INSIDE the circle ($25 < 36$)" },
+            { "label": "c", "question": "$x^2 + y^2 = 16$", "answer": "Centre $(0, 0)$, $r = 4$; $(3, 4)$ is OUTSIDE the circle ($25 > 16$)" },
+            { "label": "d", "question": "$x^2 + y^2 = 50$", "answer": "Centre $(0, 0)$, $r = \\sqrt{50} = 5\\sqrt{2}$; $(3, 4)$ is INSIDE the circle" }
+          ]
+        },
+        {
+          "number": 3,
+          "prompt": "Perform $2$ steps of the bisection method to narrow the interval containing a root of $f(x) = 0$, given $f(a)$ and $f(b)$ have opposite signs:",
+          "parts": [
+            { "label": "a", "question": "$f(x) = x^2 - 7$ on $[2, 3]$", "answer": "$m_1 = 2.5$ ($f(2.5) = -0.75 < 0 \\implies [2.5, 3]$); $m_2 = 2.75$ ($f(2.75) = 0.5625 > 0 \\implies [2.5, 2.75]$)" },
+            { "label": "b", "question": "$f(x) = x^2 - 12$ on $[3, 4]$", "answer": "$m_1 = 3.5$ ($f(3.5) = 0.25 > 0 \\implies [3, 3.5]$); $m_2 = 3.25$ ($f(3.25) = -1.4375 < 0 \\implies [3.25, 3.5]$)" },
+            { "label": "c", "question": "$f(x) = x^3 - 10$ on $[2, 3]$", "answer": "$m_1 = 2.5$ ($f(2.5) = 5.625 > 0 \\implies [2, 2.5]$); $m_2 = 2.25$ ($f(2.25) = 1.390625 > 0 \\implies [2, 2.25]$)" },
+            { "label": "d", "question": "$f(x) = x^2 + x - 5$ on $[1, 2]$", "answer": "$m_1 = 1.5$ ($f(1.5) = -1.25 < 0 \\implies [1.5, 2]$); $m_2 = 1.75$ ($f(1.75) = -0.1875 < 0 \\implies [1.75, 2]$)" }
+          ]
+        },
+        {
+          "number": 4,
+          "prompt": "Classify each relation as Linear, Quadratic, Exponential, or Reciprocal:",
+          "parts": [
+            { "label": "a", "question": "$y = 5 \\cdot (1.2)^x$", "answer": "Exponential" },
+            { "label": "b", "question": "$y = \\dfrac{12}{x}$", "answer": "Reciprocal" },
+            { "label": "c", "question": "$y = 4x^2 - 7x + 1$", "answer": "Quadratic" },
+            { "label": "d", "question": "$y = -3x + 11$", "answer": "Linear" }
+          ]
+        }
+      ],
+      "application_questions": [
+        {
+          "number": 5,
+          "question": "A bacterial culture in a Perth laboratory starts with $200$ cells and doubles every hour: $N = 200 \\cdot 2^t$. How many cells are present after $5$ hours, and after how many hours does the population reach $6400$?",
+          "answer": "$6400$ cells after $5$ hours (so $t = 5$ hours)"
+        },
+        {
+          "number": 6,
+          "question": "The time $t$ (hours) to drive $360\\text{ km}$ at speed $v\\text{ km/h}$ is $t = \\dfrac{360}{v}$. Compare the travel times at $60\\text{ km/h}$ and $90\\text{ km/h}$, and state why $v$ cannot be $0$.",
+          "answer": "$6\\text{ hours}$ at $60\\text{ km/h}$ and $4\\text{ hours}$ at $90\\text{ km/h}$; $v = 0$ causes division by zero (vertical asymptote)"
+        },
+        {
+          "number": 7,
+          "question": "A circular sprinkler waters a lawn within $x^2 + y^2 \\le 64$ (metres). What is the radius of the watered circle, and does a plant at $(6, 5)$ receive water?",
+          "answer": "Radius $r = 8\\text{ m}$; since $6^2 + 5^2 = 61 \\le 64$, yes, the plant receives water"
+        },
+        {
+          "number": 8,
+          "question": "Use $1$ step of bisection on $f(x) = 2^x - 10$ starting on $[3, 4]$ to find a narrower interval containing the solution to $2^x = 10$.",
+          "answer": "$f(3) = -2 < 0$, $f(4) = 6 > 0$; $m_1 = 3.5$, $f(3.5) = 2^{3.5} - 10 \\approx 1.31 > 0$, so the root lies in $[3, 3.5]$"
+        }
+      ],
+      "reasoning_questions": [
+        {
+          "number": 9,
+          "question": "Why does an exponential function $y = 2^x$ eventually overtake any quadratic function $y = x^2$ as $x$ grows large?",
+          "answer": "For $y = 2^x$, each unit increase in $x$ multiplies $y$ by a constant factor of $2$ (percentage growth of $100\\%$ per step), whereas for $y = x^2$, the ratio $\\frac{(x+1)^2}{x^2}$ approaches $1$ as $x$ grows large."
+        },
+        {
+          "number": 10,
+          "question": "Why must $f(a)$ and $f(b)$ have opposite signs before starting the bisection algorithm on a continuous function $f(x)$?",
+          "answer": "Opposite signs guarantee (by continuity) that the graph crosses the $x$-axis at least once between $a$ and $b$. Without opposite signs, there is no guarantee of a root in $[a, b]$."
+        }
+      ],
+      "assertions": [
+        { "id": "WS9_5_3_1a", "expression": "3 * 2**4", "expected": 48 },
+        { "id": "WS9_5_3_1b", "expression": "Rational(24, -6)", "expected": -4 },
+        { "id": "WS9_5_3_1c", "expression": "100 * Rational(1, 2)**3", "expected": 12.5 },
+        { "id": "WS9_5_3_1d", "expression": "3**3 - 2*3", "expected": 21 },
+        { "id": "WS9_5_3_3a", "expression": "Rational(11, 4)**2 - 7", "expected": 0.5625 },
+        { "id": "WS9_5_3_3b", "expression": "Rational(13, 4)**2 - 12", "expected": -1.4375 },
+        { "id": "WS9_5_3_5", "expression": "200 * 2**5", "expected": 6400 },
+        { "id": "WS9_5_3_7", "expression": "6**2 + 5**2", "expected": 61 }
+      ]
+    }
+  ]
+}

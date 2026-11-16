@@ -70,7 +70,7 @@
         },
         {
           "number": 8,
-          "question": "After income tax ($\\$4288 + 30\\%$ over $\\$45\\,000$) and the $2\\%$ Medicare levy are deducted, a Melbourne software developer takes home a net annual income of $\\$66\\,512$. Find her gross taxable income.",
+          "question": "After income tax ($\\$4288 + 30\\%$ over $\\$45\\,000$) and the $2\\%$ Medicare levy are deducted, a Melbourne software developer takes home a net annual income of $\\$70\\,412$. Find her gross taxable income.",
           "answer": "$\\$90\\,000$"
         }
       ],
@@ -96,7 +96,7 @@
         { "id": "WSE9_2_1_4c", "expression": "3000 * 0.30 + 2000 * 0.16 + 5000 * 0.02", "expected": 1320 },
         { "id": "WSE9_2_1_5", "expression": "800000 + (25400 - (0.03*400000 + 0.02*400000)) / 0.012", "expected": 1250000 },
         { "id": "WSE9_2_1_6", "expression": "38200 - (31288 + 0.37*(141000 - 135000) + 0.02*141000)", "expected": 1872 },
-        { "id": "WSE9_2_1_8", "expression": "90000 - (4288 + 0.30*(90000 - 45000) + 0.02*90000)", "expected": 66512 }
+        { "id": "WSE9_2_1_8", "expression": "90000 - (4288 + Rational(3, 10)*(90000 - 45000) + Rational(1, 50)*90000)", "expected": 70412 }
       ]
     },
     {
@@ -156,8 +156,8 @@
         },
         {
           "number": 6,
-          "question": "A solar battery system in Brisbane has a cash price of $\\$9000$. A homeowner pays a $10\\%$ deposit and repays the balance over $3$ years in equal monthly instalments of $\\$267.75$. Find (a) the flat annual simple interest rate $r_f$ and (b) the approximate effective interest rate $r_e = \\dfrac{2n}{n+1} r_f$ to $2$ decimal places.",
-          "answer": "(a) $r_f = 6.3\\%\\text{ p.a.}$, (b) $r_e = 12.26\\%\\text{ p.a.}$"
+          "question": "A solar battery system in Brisbane has a cash price of $\\$9000$. A homeowner pays a $10\\%$ deposit and repays the balance over $3$ years in equal monthly instalments of $\\$268.20$. Find (a) the flat annual simple interest rate $r_f$ and (b) the approximate effective interest rate $r_e = \\dfrac{2n}{n+1} r_f$ to $2$ decimal places.",
+          "answer": "(a) $r_f = 6.4\\%\\text{ p.a.}$, (b) $r_e = 12.45\\%\\text{ p.a.}$"
         },
         {
           "number": 7,
@@ -190,7 +190,7 @@
         { "id": "WSE9_2_2_2a", "expression": "((24*145 - 3000) / (3000 * 2) * 100) * (2*24)/(24 + 1)", "expected": 15.36 },
         { "id": "WSE9_2_2_2d", "expression": "11.5 * (23 + 1) / (2 * 23)", "expected": 6 },
         { "id": "WSE9_2_2_5", "expression": "20000 * 0.048 * 2.5 + 30000 * 0.06 * 2.5", "expected": 6900 },
-        { "id": "WSE9_2_2_6a", "expression": "(36*267.75 - 8100) / (8100 * 3) * 100", "expected": 6.3 },
+        { "id": "WSE9_2_2_6a", "expression": "(36*Rational(1341, 5) - 8100) / (8100 * 3) * 100", "expected": 6.4 },
         { "id": "WSE9_2_2_8", "expression": "19500 / ((1 + 0.05*4) * (1 + 0.06*5))", "expected": 12500 }
       ]
     }

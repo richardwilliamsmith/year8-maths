@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <title>Worksheet 10A (Standard) — Grouped Histograms, Back-to-Back Stem Plots, and Quartiles</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" />
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 10mm 13mm 10mm 13mm;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 184mm;
+      height: 276mm;
+      margin: 0 auto;
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+      color: #111111;
+      background: #ffffff;
+      font-size: 9.5pt;
+      line-height: 1.38;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .no-print-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #141413;
+      color: #ffffff;
+      padding: 8px 14px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    .print-btn {
+      background: #ffffff;
+      color: #141413;
+      border: none;
+      padding: 5px 12px;
+      border-radius: 3px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    @media print {
+      .no-print-bar {
+        display: none !important;
+      }
+    }
+    .page-frame {
+      width: 100%;
+      height: 275mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+    }
+    .top-content {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5mm;
+    }
+    .ws-header {
+      border-bottom: 1.5pt solid #111111;
+      padding-bottom: 2mm;
+    }
+    .ws-meta-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.4pt;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #4b4b4b;
+      margin-bottom: 1mm;
+    }
+    .ws-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 4mm;
+    }
+    .ws-main-title {
+      font-size: 13.5pt;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: #111111;
+    }
+    .ws-code-pill {
+      display: inline-block;
+      background: #111111;
+      color: #ffffff;
+      font-size: 9.8pt;
+      font-weight: 700;
+      padding: 0.4mm 2.1mm;
+      border-radius: 1mm;
+      margin-right: 2mm;
+      vertical-align: baseline;
+    }
+    .ws-tier-badge {
+      font-size: 7.8pt;
+      font-weight: 700;
+      color: #111111;
+      background: #f3f2ee;
+      border: 0.9pt solid #111111;
+      padding: 0.4mm 2.2mm;
+      border-radius: 0.8mm;
+      white-space: nowrap;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .student-info-row {
+      display: grid;
+      grid-template-columns: 1.8fr 1fr 1fr;
+      gap: 4mm;
+      margin-top: 2mm;
+      padding-top: 1.6mm;
+      border-top: 0.5pt solid #cccccc;
+      font-size: 8.4pt;
+      color: #333333;
+    }
+    .info-field {
+      display: flex;
+      align-items: baseline;
+      gap: 1.5mm;
+    }
+    .info-line {
+      flex: 1;
+      border-bottom: 0.6pt solid #666666;
+      height: 3.3mm;
+    }
+    .ws-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.8mm;
+    }
+    .ws-section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f3f2ee;
+      border-left: 2.5pt solid #111111;
+      padding: 0.9mm 2.5mm;
+      margin-top: 0.4mm;
+    }
+    .ws-section-title {
+      font-size: 8.6pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #111111;
+    }
+    .ws-section-note {
+      font-size: 7.4pt;
+      color: #555555;
+      font-style: italic;
+    }
+    .fluency-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2mm;
+      padding: 0 1mm;
+    }
+    .fluency-q {
+      border-bottom: 0.4pt dashed #dad8d0;
+      padding-bottom: 1.8mm;
+    }
+    .fluency-q:last-child {
+      border-bottom: none;
+      padding-bottom: 0.4mm;
+    }
+    .q-stem {
+      display: flex;
+      gap: 1.8mm;
+      margin-bottom: 1.2mm;
+      font-weight: 600;
+      font-size: 9.2pt;
+    }
+    .q-num {
+      font-weight: 700;
+      min-width: 6.5mm;
+      color: #111111;
+    }
+    .fluency-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.3mm 2.8mm;
+      padding-left: 6.5mm;
+    }
+    .fluency-part {
+      display: flex;
+      align-items: baseline;
+      gap: 1.2mm;
+      font-size: 9.1pt;
+    }
+    .part-label {
+      font-weight: 600;
+      color: #444444;
+      font-size: 8.4pt;
+    }
+    .word-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.1mm;
+      padding: 0 1mm;
+    }
+    .word-q {
+      display: grid;
+      grid-template-columns: 7.5mm 1fr;
+      align-items: baseline;
+      padding-bottom: 1.8mm;
+      border-bottom: 0.4pt dashed #dad8d0;
+    }
+    .word-q:last-child {
+      border-bottom: none;
+      padding-bottom: 0.4mm;
+    }
+    .q-num-col {
+      font-weight: 700;
+      font-size: 9.2pt;
+      color: #111111;
+    }
+    .q-text-col {
+      font-size: 9.2pt;
+      text-align: justify;
+    }
+    .ws-footer {
+      border-top: 0.8pt solid #111111;
+      padding-top: 1.4mm;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7.4pt;
+      color: #555555;
+    }
+    .katex {
+      font-size: 1.01em !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="no-print-bar">
+        <span><strong>Year 9 Mathematics · Section 10A: Grouped Histograms, Back-to-Back Stem Plots, and Quartiles</strong> (Standard Worksheet · Core)</span>
+        <button onclick="window.print()" class="print-btn">Print / Save as A4 PDF (Ctrl+P)</button>
+      </div>
+  <div class="page-frame">
+    <div class="top-content">
+      <header class="ws-header">
+        <div class="ws-meta-bar">
+          <span>Year 9 Mathematics · Victorian Curriculum v2.0 (VC2M9ST03)</span>
+          <span>Chapter 10: Statistics, Back-to-Back Displays, and Bivariate Data</span>
+        </div>
+        <div class="ws-title-row">
+          <h1 class="ws-main-title">
+            <span class="ws-code-pill">10A</span>Grouped Histograms, Back-to-Back Stem Plots, and Quartiles
+          </h1>
+          <span class="ws-tier-badge">Standard Worksheet · Core</span>
+        </div>
+        <div class="student-info-row">
+          <div class="info-field"><span>Name:</span><span class="info-line"></span></div>
+          <div class="info-field"><span>Class:</span><span class="info-line"></span></div>
+          <div class="info-field"><span>Date:</span><span class="info-line"></span></div>
+        </div>
+      </header>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part A · Fluency &amp; Skill Practice</span>
+          <span class="ws-section-note">Show complete step-by-step working in your workbook</span>
+        </div>
+        <div class="fluency-list">
+          
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q1.</span>
+            <span class="q-prompt">Find the five-number summary (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Min</mtext><mo separator="true">,</mo><msub><mi>Q</mi><mn>1</mn></msub><mo separator="true">,</mo><msub><mi>Q</mi><mn>2</mn></msub><mo separator="true">,</mo><msub><mi>Q</mi><mn>3</mn></msub><mo separator="true">,</mo><mtext>Max</mtext></mrow><annotation encoding="application/x-tex">\text{Min}, Q_1, Q_2, Q_3, \text{Max}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Min</span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord text"><span class="mord">Max</span></span></span></span></span>) and the Interquartile Range (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>IQR</mtext><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>−</mo><msub><mi>Q</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\text{IQR} = Q_3 - Q_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">IQR</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>) for each ordered dataset:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo separator="true">,</mo><mn>8</mn><mo separator="true">,</mo><mn>11</mn><mo separator="true">,</mo><mn>14</mn><mo separator="true">,</mo><mn>17</mn><mo separator="true">,</mo><mn>20</mn><mo separator="true">,</mo><mn>25</mn></mrow><annotation encoding="application/x-tex">5, 8, 11, 14, 17, 20, 25</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">11</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">14</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">17</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">20</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">25</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo separator="true">,</mo><mn>12</mn><mo separator="true">,</mo><mn>15</mn><mo separator="true">,</mo><mn>19</mn><mo separator="true">,</mo><mn>21</mn><mo separator="true">,</mo><mn>24</mn><mo separator="true">,</mo><mn>28</mn><mo separator="true">,</mo><mn>32</mn></mrow><annotation encoding="application/x-tex">10, 12, 15, 19, 21, 24, 28, 32</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">10</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">12</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">15</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">19</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">21</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">24</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">28</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">32</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo separator="true">,</mo><mn>7</mn><mo separator="true">,</mo><mn>9</mn><mo separator="true">,</mo><mn>12</mn><mo separator="true">,</mo><mn>16</mn><mo separator="true">,</mo><mn>18</mn><mo separator="true">,</mo><mn>22</mn><mo separator="true">,</mo><mn>27</mn><mo separator="true">,</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">3, 7, 9, 12, 16, 18, 22, 27, 30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">3</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">7</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">9</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">12</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">16</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">18</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">22</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">27</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">30</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>42</mn><mo separator="true">,</mo><mn>46</mn><mo separator="true">,</mo><mn>50</mn><mo separator="true">,</mo><mn>54</mn><mo separator="true">,</mo><mn>58</mn><mo separator="true">,</mo><mn>62</mn><mo separator="true">,</mo><mn>66</mn><mo separator="true">,</mo><mn>70</mn><mo separator="true">,</mo><mn>74</mn><mo separator="true">,</mo><mn>80</mn></mrow><annotation encoding="application/x-tex">42, 46, 50, 54, 58, 62, 66, 70, 74, 80</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">42</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">46</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">50</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">54</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">58</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">62</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">66</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">70</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">74</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">80</span></span></span></span></span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q2.</span>
+            <span class="q-prompt">Sort each dataset first, then find the median (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">Q_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>), range, and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>IQR</mtext></mrow><annotation encoding="application/x-tex">\text{IQR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">IQR</span></span></span></span></span>:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mo separator="true">,</mo><mn>6</mn><mo separator="true">,</mo><mn>14</mn><mo separator="true">,</mo><mn>22</mn><mo separator="true">,</mo><mn>10</mn><mo separator="true">,</mo><mn>26</mn><mo separator="true">,</mo><mn>8</mn></mrow><annotation encoding="application/x-tex">18, 6, 14, 22, 10, 26, 8</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">18</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">6</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">14</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">22</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">10</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">26</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">8</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>35</mn><mo separator="true">,</mo><mn>19</mn><mo separator="true">,</mo><mn>28</mn><mo separator="true">,</mo><mn>41</mn><mo separator="true">,</mo><mn>23</mn><mo separator="true">,</mo><mn>30</mn><mo separator="true">,</mo><mn>15</mn><mo separator="true">,</mo><mn>38</mn></mrow><annotation encoding="application/x-tex">35, 19, 28, 41, 23, 30, 15, 38</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">35</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">19</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">28</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">41</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">23</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">30</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">15</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">38</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo separator="true">,</mo><mn>15</mn><mo separator="true">,</mo><mn>4</mn><mo separator="true">,</mo><mn>19</mn><mo separator="true">,</mo><mn>11</mn><mo separator="true">,</mo><mn>8</mn><mo separator="true">,</mo><mn>23</mn><mo separator="true">,</mo><mn>13</mn><mo separator="true">,</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">7, 15, 4, 19, 11, 8, 23, 13, 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">7</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">15</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">4</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">19</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">11</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">8</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">23</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">13</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">2</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>90</mn><mo separator="true">,</mo><mn>64</mn><mo separator="true">,</mo><mn>72</mn><mo separator="true">,</mo><mn>85</mn><mo separator="true">,</mo><mn>58</mn><mo separator="true">,</mo><mn>76</mn><mo separator="true">,</mo><mn>81</mn><mo separator="true">,</mo><mn>68</mn><mo separator="true">,</mo><mn>94</mn><mo separator="true">,</mo><mn>70</mn></mrow><annotation encoding="application/x-tex">90, 64, 72, 85, 58, 76, 81, 68, 94, 70</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">90</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">64</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">72</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">85</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">58</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">76</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">81</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">68</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">94</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">70</span></span></span></span></span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q3.</span>
+            <span class="q-prompt">A grouped frequency table of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn></mrow><annotation encoding="application/x-tex">40</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">40</span></span></span></span> runner times (minutes) has intervals <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mtext>–</mtext><mo>&lt;</mo><mn>25</mn></mrow><annotation encoding="application/x-tex">20\text{--}&lt;25</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">20</span><span class="mord text"><span class="mord">–</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">25</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">f=5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5</span></span></span></span>), <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25</mn><mtext>–</mtext><mo>&lt;</mo><mn>30</mn></mrow><annotation encoding="application/x-tex">25\text{--}&lt;30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">25</span><span class="mord text"><span class="mord">–</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>11</mn></mrow><annotation encoding="application/x-tex">f=11</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">11</span></span></span></span>), <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn><mtext>–</mtext><mo>&lt;</mo><mn>35</mn></mrow><annotation encoding="application/x-tex">30\text{--}&lt;35</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">30</span><span class="mord text"><span class="mord">–</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">35</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">f=15</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">15</span></span></span></span>), <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>35</mn><mtext>–</mtext><mo>&lt;</mo><mn>40</mn></mrow><annotation encoding="application/x-tex">35\text{--}&lt;40</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">35</span><span class="mord text"><span class="mord">–</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">40</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>6</mn></mrow><annotation encoding="application/x-tex">f=6</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">6</span></span></span></span>), <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>40</mn><mtext>–</mtext><mo>&lt;</mo><mn>45</mn></mrow><annotation encoding="application/x-tex">40\text{--}&lt;45</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">40</span><span class="mord text"><span class="mord">–</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">45</span></span></span></span> (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>f</mi><mo>=</mo><mn>3</mn></mrow><annotation encoding="application/x-tex">f=3</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.1076em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3</span></span></span></span>). Find:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math">The modal class interval</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math">The percentage of runners finishing in under <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>30</mn></mrow><annotation encoding="application/x-tex">30</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">30</span></span></span></span> minutes</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math">The class interval containing the median (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mtext>th</mtext></mrow><annotation encoding="application/x-tex">20\text{th}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">20</span><span class="mord text"><span class="mord">th</span></span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>21</mn><mtext>st</mtext></mrow><annotation encoding="application/x-tex">21\text{st}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">21</span><span class="mord text"><span class="mord">st</span></span></span></span></span> runners)</span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math">The estimated mean time using class midpoints (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>22.5</mn><mo separator="true">,</mo><mn>27.5</mn><mo separator="true">,</mo><mn>32.5</mn><mo separator="true">,</mo><mn>37.5</mn><mo separator="true">,</mo><mn>42.5</mn></mrow><annotation encoding="application/x-tex">22.5, 27.5, 32.5, 37.5, 42.5</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">22.5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">27.5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">32.5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">37.5</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">42.5</span></span></span></span>)</span>
+          </div>
+          </div>
+        </div>
+        <div class="q-block fluency-q">
+          <div class="q-stem">
+            <span class="q-num">Q4.</span>
+            <span class="q-prompt">Using the outlier fence rule (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Lower</mtext><mo>=</mo><msub><mi>Q</mi><mn>1</mn></msub><mo>−</mo><mn>1.5</mn><mo>×</mo><mtext>IQR</mtext></mrow><annotation encoding="application/x-tex">\text{Lower} = Q_1 - 1.5 \times \text{IQR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Lower</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">IQR</span></span></span></span></span>, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Upper</mtext><mo>=</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>+</mo><mn>1.5</mn><mo>×</mo><mtext>IQR</mtext></mrow><annotation encoding="application/x-tex">\text{Upper} = Q_3 + 1.5 \times \text{IQR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">Upper</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">1.5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">IQR</span></span></span></span></span>), find both fences and test the given value:</span>
+          </div>
+          <div class="fluency-grid">
+            
+          <div class="fluency-part">
+            <span class="part-label">(a)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>20</mn><mo separator="true">,</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>32</mn></mrow><annotation encoding="application/x-tex">Q_1 = 20, Q_3 = 32</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">20</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">32</span></span></span></span>; test <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>52</mn></mrow><annotation encoding="application/x-tex">x = 52</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">52</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(b)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>50</mn><mo separator="true">,</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>70</mn></mrow><annotation encoding="application/x-tex">Q_1 = 50, Q_3 = 70</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">50</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">70</span></span></span></span>; test <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>25</mn></mrow><annotation encoding="application/x-tex">x = 25</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">25</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(c)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>12</mn><mo separator="true">,</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>18</mn></mrow><annotation encoding="application/x-tex">Q_1 = 12, Q_3 = 18</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">12</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">18</span></span></span></span>; test <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>2</mn></mrow><annotation encoding="application/x-tex">x = 2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span></span>
+          </div>
+          <div class="fluency-part">
+            <span class="part-label">(d)</span>
+            <span class="part-math"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Q</mi><mn>1</mn></msub><mo>=</mo><mn>100</mn><mo separator="true">,</mo><msub><mi>Q</mi><mn>3</mn></msub><mo>=</mo><mn>140</mn></mrow><annotation encoding="application/x-tex">Q_1 = 100, Q_3 = 140</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">100</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">Q</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">140</span></span></span></span>; test <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>x</mi><mo>=</mo><mn>195</mn></mrow><annotation encoding="application/x-tex">x = 195</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">x</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">195</span></span></span></span></span>
+          </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part B · Problem-Solving &amp; Applications</span>
+          <span class="ws-section-note">Write clear mathematical statements with units</span>
+        </div>
+        <div class="word-list">
+          
+      <div class="q-block word-q">
+        <div class="q-num-col">Q5.</div>
+        <div class="q-text-col">Two AFL teams record their points scored across <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span> matches: Team A: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>74</mn><mo separator="true">,</mo><mn>78</mn><mo separator="true">,</mo><mn>82</mn><mo separator="true">,</mo><mn>85</mn><mo separator="true">,</mo><mn>88</mn><mo separator="true">,</mo><mn>91</mn><mo separator="true">,</mo><mn>95</mn></mrow><annotation encoding="application/x-tex">74, 78, 82, 85, 88, 91, 95</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">74</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">78</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">82</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">85</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">88</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">91</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">95</span></span></span></span>; Team B: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>52</mn><mo separator="true">,</mo><mn>68</mn><mo separator="true">,</mo><mn>75</mn><mo separator="true">,</mo><mn>86</mn><mo separator="true">,</mo><mn>98</mn><mo separator="true">,</mo><mn>110</mn><mo separator="true">,</mo><mn>122</mn></mrow><annotation encoding="application/x-tex">52, 68, 75, 86, 98, 110, 122</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">52</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">68</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">75</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">86</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">98</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">110</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">122</span></span></span></span>. Find the median and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>IQR</mtext></mrow><annotation encoding="application/x-tex">\text{IQR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">IQR</span></span></span></span></span> for each team and state which team is more consistent.</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q6.</div>
+        <div class="q-text-col">The daily maximum temperatures (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mrow></mrow><mo>∘</mo></msup><mtext>C</mtext></mrow><annotation encoding="application/x-tex">^\circ\text{C}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6741em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∘</span></span></span></span></span></span></span></span><span class="mord text"><span class="mord">C</span></span></span></span></span>) in Melbourne over <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn></mrow><annotation encoding="application/x-tex">7</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">7</span></span></span></span> days were <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mo separator="true">,</mo><mn>19</mn><mo separator="true">,</mo><mn>20</mn><mo separator="true">,</mo><mn>21</mn><mo separator="true">,</mo><mn>22</mn><mo separator="true">,</mo><mn>23</mn><mo separator="true">,</mo><mn>38</mn></mrow><annotation encoding="application/x-tex">18, 19, 20, 21, 22, 23, 38</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">18</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">19</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">20</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">21</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">22</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">23</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">38</span></span></span></span>. Calculate the mean and median, and explain which better represents a typical day.</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q7.</div>
+        <div class="q-text-col">A back-to-back stem plot (key: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>∣</mo><mn>4</mn><mo>=</mo><mn>34</mn></mrow><annotation encoding="application/x-tex">3 \mid 4 = 34</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∣</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">4</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">34</span></span></span></span>) has left-side leaves <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>8</mn><mtext>  </mtext><mn>5</mn><mtext>  </mtext><mn>1</mn></mrow><annotation encoding="application/x-tex">8\; 5\; 1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">8</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord">1</span></span></span></span> on stem <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>2</mn></mrow><annotation encoding="application/x-tex">2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span></span></span></span> for Group X. List the three data values represented for Group X.</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q8.</div>
+        <div class="q-text-col">A television network runs a paid SMS poll during a late-night sports show and claims '<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>85</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">85\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8056em;vertical-align:-0.0556em;"></span><span class="mord">85%</span></span></span></span> of Australians want longer seasons'. Identify two sources of sampling bias in this claim.</div>
+      </div>
+        </div>
+      </section>
+
+      <section class="ws-section">
+        <div class="ws-section-header">
+          <span class="ws-section-title">Part C · Reasoning &amp; Challenge</span>
+          <span class="ws-section-note">Justify your conclusions using algebraic or geometric reasoning</span>
+        </div>
+        <div class="word-list">
+          
+      <div class="q-block word-q">
+        <div class="q-num-col">Q9.</div>
+        <div class="q-text-col">Why is the <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>IQR</mtext></mrow><annotation encoding="application/x-tex">\text{IQR}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord text"><span class="mord">IQR</span></span></span></span></span> preferred over the range when comparing the spread of skewed datasets such as house prices or personal incomes?</div>
+      </div>
+      <div class="q-block word-q">
+        <div class="q-num-col">Q10.</div>
+        <div class="q-text-col">A distribution of exam marks has <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Mean</mtext><mo>=</mo><mn>64</mn></mrow><annotation encoding="application/x-tex">\text{Mean} = 64</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Mean</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">64</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mtext>Median</mtext><mo>=</mo><mn>73</mn></mrow><annotation encoding="application/x-tex">\text{Median} = 73</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord">Median</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">73</span></span></span></span>. Is the distribution positively skewed or negatively skewed? Explain why.</div>
+      </div>
+        </div>
+      </section>
+    </div>
+
+    <footer class="ws-footer">
+      <span>Open-Source Year 9 Mathematics · Victorian Curriculum F–10 v2.0</span>
+      <span>Section 10A (VC2M9ST03) · Standard Printable Worksheet (Core Tier)</span>
+      <span>Page 1 of 1</span>
+    </footer>
+  </div>
+</body>
+</html>
