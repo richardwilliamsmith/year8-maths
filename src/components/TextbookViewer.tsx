@@ -11,12 +11,15 @@ import type {
 } from "@/lib/curriculum";
 import { MathText, FormulaBlock } from "./MathText";
 import { MathDiagram } from "./MathDiagram";
+import { SectionCopyEditor, WorksheetCopyEditor } from "./CopyEditor";
+import type { EditableWorksheetData } from "@/app/api/editor/worksheet/route";
 
 interface TextbookViewerProps {
   yearManifests: Record<string, CurriculumManifest>;
   generatedSections: Record<string, TextbookSectionData>;
   tieredAnswerKeys: TieredWorksheetAnswerKeys;
   vcaaStandards: VcaaStandardsRegistry;
+  isDevMode?: boolean;
 }
 
 type ActiveTab =
@@ -74,10 +77,24 @@ const TIER_META: Record<
 
 export function TextbookViewer({
   yearManifests,
-  generatedSections,
-  tieredAnswerKeys,
+  generatedSections: initialGeneratedSections,
+  tieredAnswerKeys: initialTieredAnswerKeys,
   vcaaStandards,
+  isDevMode = false,
 }: TextbookViewerProps) {
+  const [generatedSections, setGeneratedSections] = useState(
+    initialGeneratedSections
+  );
+  const [tieredAnswerKeys, setTieredAnswerKeys] = useState(
+    initialTieredAnswerKeys
+  );
+  const [editingSectionMode, setEditingSectionMode] = useState(false);
+  const [editingWorksheet, setEditingWorksheet] = useState<{
+    tier: WorksheetTierKey;
+    chapterNumber: number;
+    data: EditableWorksheetData;
+  } | null>(null);
+  const [loadingWsEditor, setLoadingWsEditor] = useState(false);
   const [selectedYear, setSelectedYear] = useState<"8" | "9" | "10">("8");
   const [selectedSectionId, setSelectedSectionId] = useState<string>("1_1");
   const [activeTab, setActiveTab] = useState<ActiveTab>("all");
@@ -176,6 +193,29 @@ export function TextbookViewer({
     setAppendixChapterFilter(chNum);
     setAppendixWorksheetTier(tier);
     setSelectedSectionId(APPENDIX_TEACHER_ID);
+  };
+
+  const openWorksheetEditor = async (
+    tier: WorksheetTierKey,
+    chapterNumber: number,
+    sectionId: string
+  ) => {
+    setLoadingWsEditor(true);
+    try {
+      const res = await fetch(
+        `/api/editor/worksheet?year=${selectedYear}&chapter=${chapterNumber}&tier=${tier}&section_id=${sectionId}`
+      );
+      if (res.ok) {
+        const json = await res.json();
+        setEditingWorksheet({
+          tier,
+          chapterNumber,
+          data: json.worksheet,
+        });
+      }
+    } finally {
+      setLoadingWsEditor(false);
+    }
   };
 
   const renderExerciseGroup = (
@@ -815,6 +855,57 @@ export function TextbookViewer({
                 })}
             </div>
           </div>
+        ) : editingWorksheet ? (
+          <WorksheetCopyEditor
+            year={selectedYear}
+            chapterNumber={editingWorksheet.chapterNumber}
+            tier={editingWorksheet.tier}
+            initialWorksheet={editingWorksheet.data}
+            onSaved={(updatedWs) => {
+              setTieredAnswerKeys((prev) => ({
+                ...prev,
+                [editingWorksheet.tier]: {
+                  ...prev[editingWorksheet.tier],
+                  [updatedWs.section_id]: {
+                    ...prev[editingWorksheet.tier][updatedWs.section_id],
+                    title: updatedWs.title,
+                    fluency_answers: updatedWs.fluency_questions.map((fq) => ({
+                      number: fq.number,
+                      parts: fq.parts.map((pt) => ({
+                        label: pt.label,
+                        answer: pt.answer,
+                      })),
+                    })),
+                    application_answers: updatedWs.application_questions.map(
+                      (aq) => ({
+                        number: aq.number,
+                        answer: aq.answer,
+                      })
+                    ),
+                    reasoning_answers: updatedWs.reasoning_questions.map(
+                      (rq) => ({
+                        number: rq.number,
+                        answer: rq.answer,
+                      })
+                    ),
+                  },
+                },
+              }));
+            }}
+            onClose={() => setEditingWorksheet(null)}
+          />
+        ) : editingSectionMode && activeSection ? (
+          <SectionCopyEditor
+            year={selectedYear}
+            initialSection={activeSection}
+            onSaved={(updatedSec) => {
+              setGeneratedSections((prev) => ({
+                ...prev,
+                [updatedSec.metadata.section_id]: updatedSec,
+              }));
+            }}
+            onClose={() => setEditingSectionMode(false)}
+          />
         ) : activeSection ? (
           <>
             <header className="section-hero">
@@ -829,6 +920,18 @@ export function TextbookViewer({
                 <span>
                   {activeSection.assertions.length} assertions verified
                 </span>
+                {isDevMode && (
+                  <>
+                    <span>·</span>
+                    <button
+                      type="button"
+                      onClick={() => setEditingSectionMode(true)}
+                      className="minimal-btn active"
+                    >
+                      Edit Section Copy
+                    </button>
+                  </>
+                )}
               </div>
 
               <h2 className="section-main-title">
@@ -886,16 +989,50 @@ export function TextbookViewer({
                         Foundation PDF (Support)
                       </a>
                     )}
+                    {isDevMode && foundationKey && (
+                      <button
+                        type="button"
+                        disabled={loadingWsEditor}
+                        onClick={() =>
+                          openWorksheetEditor(
+                            "foundation",
+                            activeSection.metadata.chapter_number,
+                            activeSection.metadata.section_id
+                          )
+                        }
+                        className="minimal-btn"
+                        title="Edit Foundation Worksheet Copy"
+                      >
+                        Edit
+                      </button>
+                    )}
                     {standardKey && (
                       <a
                         href={standardKey.pdf_url}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="pdf-download-btn primary"
-                        title="Core Year 8 standard worksheet"
+                        title="Core standard worksheet"
                       >
                         Standard PDF (Core)
                       </a>
+                    )}
+                    {isDevMode && standardKey && (
+                      <button
+                        type="button"
+                        disabled={loadingWsEditor}
+                        onClick={() =>
+                          openWorksheetEditor(
+                            "standard",
+                            activeSection.metadata.chapter_number,
+                            activeSection.metadata.section_id
+                          )
+                        }
+                        className="minimal-btn"
+                        title="Edit Standard Worksheet Copy"
+                      >
+                        Edit
+                      </button>
                     )}
                     {extensionKey && (
                       <a
@@ -907,6 +1044,23 @@ export function TextbookViewer({
                       >
                         Extension PDF (Challenge)
                       </a>
+                    )}
+                    {isDevMode && extensionKey && (
+                      <button
+                        type="button"
+                        disabled={loadingWsEditor}
+                        onClick={() =>
+                          openWorksheetEditor(
+                            "extension",
+                            activeSection.metadata.chapter_number,
+                            activeSection.metadata.section_id
+                          )
+                        }
+                        className="minimal-btn"
+                        title="Edit Extension Worksheet Copy"
+                      >
+                        Edit
+                      </button>
                     )}
                     <button
                       type="button"

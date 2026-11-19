@@ -12,12 +12,15 @@ export default function HomePage() {
   const tieredAnswerKeys = loadAllTierWorksheetAnswerKeys();
   const vcaaStandards = loadVcaaStandardsRegistry();
 
+  const isDevMode = process.env.NODE_ENV === "development";
+
   return (
     <TextbookViewer
       yearManifests={yearManifests}
       generatedSections={generatedSections}
       tieredAnswerKeys={tieredAnswerKeys}
       vcaaStandards={vcaaStandards}
+      isDevMode={isDevMode}
     />
   );
 }
