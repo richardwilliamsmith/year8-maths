@@ -194,6 +194,64 @@ export function SectionCopyEditor({
           <div className="editor-stack">
             <div className="editor-card">
               <h3 className="editor-card-heading">Section Metadata</h3>
+              <div className="editor-meta-grid">
+                <div className="editor-input-col">
+                  <label className="editor-label">Section Code</label>
+                  <input
+                    type="text"
+                    className="editor-input"
+                    value={draft.metadata.section_code}
+                    onChange={(e) =>
+                      setDraft((d) => ({
+                        ...d,
+                        metadata: { ...d.metadata, section_code: e.target.value },
+                      }))
+                    }
+                  />
+                </div>
+                <div className="editor-input-col">
+                  <label className="editor-label">Chapter Title</label>
+                  <input
+                    type="text"
+                    className="editor-input"
+                    value={draft.metadata.chapter_title}
+                    onChange={(e) =>
+                      setDraft((d) => ({
+                        ...d,
+                        metadata: { ...d.metadata, chapter_title: e.target.value },
+                      }))
+                    }
+                  />
+                </div>
+                <div className="editor-input-col">
+                  <label className="editor-label">VCAA Code</label>
+                  <input
+                    type="text"
+                    className="editor-input"
+                    value={draft.metadata.vcaa_code}
+                    onChange={(e) =>
+                      setDraft((d) => ({
+                        ...d,
+                        metadata: { ...d.metadata, vcaa_code: e.target.value },
+                      }))
+                    }
+                  />
+                </div>
+                <div className="editor-input-col">
+                  <label className="editor-label">Strand</label>
+                  <input
+                    type="text"
+                    className="editor-input"
+                    value={draft.metadata.strand}
+                    onChange={(e) =>
+                      setDraft((d) => ({
+                        ...d,
+                        metadata: { ...d.metadata, strand: e.target.value },
+                      }))
+                    }
+                  />
+                </div>
+              </div>
               <LiveMathField
                 label="Section Title"
                 value={draft.metadata.title}
@@ -201,6 +259,18 @@ export function SectionCopyEditor({
                   setDraft((d) => ({
                     ...d,
                     metadata: { ...d.metadata, title: val },
+                  }))
+                }
+              />
+              <LiveMathField
+                label="VCAA Official Description"
+                value={draft.metadata.vcaa_description}
+                multiline
+                rows={2}
+                onChange={(val) =>
+                  setDraft((d) => ({
+                    ...d,
+                    metadata: { ...d.metadata, vcaa_description: val },
                   }))
                 }
               />
@@ -216,6 +286,63 @@ export function SectionCopyEditor({
                   }))
                 }
               />
+              <LiveMathField
+                label="Prerequisites (1 per line)"
+                value={draft.metadata.prerequisites.join("\n")}
+                multiline
+                rows={3}
+                onChange={(val) =>
+                  setDraft((d) => ({
+                    ...d,
+                    metadata: {
+                      ...d.metadata,
+                      prerequisites: val
+                        .split("\n")
+                        .filter((s) => s.trim().length > 0),
+                    },
+                  }))
+                }
+              />
+              {draft.metadata.key_vocabulary &&
+                draft.metadata.key_vocabulary.length > 0 && (
+                  <div className="editor-subcard">
+                    <div className="editor-subcard-title">Key Vocabulary</div>
+                    {draft.metadata.key_vocabulary.map((kv, kIdx) => (
+                      <div key={kIdx} className="editor-ws-part-pair">
+                        <LiveMathField
+                          label={`Term ${kIdx + 1}`}
+                          value={kv.term}
+                          onChange={(val) =>
+                            setDraft((d) => {
+                              const next = [...(d.metadata.key_vocabulary || [])];
+                              next[kIdx] = { ...next[kIdx], term: val };
+                              return {
+                                ...d,
+                                metadata: { ...d.metadata, key_vocabulary: next },
+                              };
+                            })
+                          }
+                        />
+                        <LiveMathField
+                          label={`Definition ${kIdx + 1}`}
+                          value={kv.definition}
+                          multiline
+                          rows={2}
+                          onChange={(val) =>
+                            setDraft((d) => {
+                              const next = [...(d.metadata.key_vocabulary || [])];
+                              next[kIdx] = { ...next[kIdx], definition: val };
+                              return {
+                                ...d,
+                                metadata: { ...d.metadata, key_vocabulary: next },
+                              };
+                            })
+                          }
+                        />
+                      </div>
+                    ))}
+                  </div>
+                )}
             </div>
 
             {draft.theory.map((t, idx) => (
@@ -534,7 +661,59 @@ export function SectionCopyEditor({
                 {draft.exercises[tierKey].map((q, qIdx) => (
                   <div key={q.id} className="editor-subcard">
                     <div className="editor-subcard-title">
-                      {q.id} [{q.difficulty}]
+                      {q.id}
+                    </div>
+                    <div className="editor-meta-grid">
+                      <div className="editor-input-col">
+                        <label className="editor-label">Difficulty</label>
+                        <select
+                          className="editor-input"
+                          value={q.difficulty}
+                          onChange={(e) =>
+                            setDraft((d) => {
+                              const list = [...d.exercises[tierKey]];
+                              list[qIdx] = {
+                                ...list[qIdx],
+                                difficulty: e.target.value as
+                                  | "Easy"
+                                  | "Medium"
+                                  | "Challenging"
+                                  | "Extension",
+                              };
+                              return {
+                                ...d,
+                                exercises: { ...d.exercises, [tierKey]: list },
+                              };
+                            })
+                          }
+                        >
+                          <option value="Easy">Easy</option>
+                          <option value="Medium">Medium</option>
+                          <option value="Challenging">Challenging</option>
+                          <option value="Extension">Extension</option>
+                        </select>
+                      </div>
+                      <div className="editor-input-col">
+                        <label className="editor-label">Context Tag (optional)</label>
+                        <input
+                          type="text"
+                          className="editor-input"
+                          value={q.context || ""}
+                          onChange={(e) =>
+                            setDraft((d) => {
+                              const list = [...d.exercises[tierKey]];
+                              list[qIdx] = {
+                                ...list[qIdx],
+                                context: e.target.value || undefined,
+                              };
+                              return {
+                                ...d,
+                                exercises: { ...d.exercises, [tierKey]: list },
+                              };
+                            })
+                          }
+                        />
+                      </div>
                     </div>
                     <LiveMathField
                       label="Question"
@@ -606,8 +785,21 @@ export function SectionCopyEditor({
                 <code>verify_math.py</code> stays green.
               </p>
               {draft.assertions.map((a, idx) => (
-                <div key={a.id} className="editor-assertion-row">
+                <div key={a.id} className="editor-assertion-row-4">
                   <code>{a.id}</code>
+                  <input
+                    type="text"
+                    className="editor-input"
+                    placeholder="Description"
+                    value={a.description || ""}
+                    onChange={(e) =>
+                      setDraft((d) => {
+                        const next = [...d.assertions];
+                        next[idx] = { ...next[idx], description: e.target.value };
+                        return { ...d, assertions: next };
+                      })
+                    }
+                  />
                   <input
                     type="text"
                     className="editor-input"
@@ -773,6 +965,53 @@ export function WorksheetCopyEditor({
       <div className="editor-body">
         <div className="editor-stack">
           <div className="editor-card">
+            <h3 className="editor-card-heading">Worksheet Metadata</h3>
+            <div className="editor-meta-grid">
+              <div className="editor-input-col">
+                <label className="editor-label">Section Code</label>
+                <input
+                  type="text"
+                  className="editor-input"
+                  value={draft.section_code}
+                  onChange={(e) =>
+                    setDraft((d) => ({ ...d, section_code: e.target.value }))
+                  }
+                />
+              </div>
+              <div className="editor-input-col">
+                <label className="editor-label">VCAA Code</label>
+                <input
+                  type="text"
+                  className="editor-input"
+                  value={draft.vcaa_code}
+                  onChange={(e) =>
+                    setDraft((d) => ({ ...d, vcaa_code: e.target.value }))
+                  }
+                />
+              </div>
+              <div className="editor-input-col">
+                <label className="editor-label">Estimated Minutes</label>
+                <input
+                  type="number"
+                  className="editor-input"
+                  value={draft.estimated_minutes ?? 30}
+                  onChange={(e) =>
+                    setDraft((d) => ({
+                      ...d,
+                      estimated_minutes: Number(e.target.value) || 30,
+                    }))
+                  }
+                />
+              </div>
+            </div>
+            <LiveMathField
+              label="Worksheet Title"
+              value={draft.title}
+              onChange={(val) => setDraft((d) => ({ ...d, title: val }))}
+            />
+          </div>
+
+          <div className="editor-card">
             <h3 className="editor-card-heading">Part A · Fluency Questions</h3>
             {draft.fluency_questions.map((fq, fIdx) => (
               <div key={fq.number} className="editor-subcard">
@@ -889,6 +1128,50 @@ export function WorksheetCopyEditor({
                       return { ...d, reasoning_questions: next };
                     })
                   }
+                />
+              </div>
+            ))}
+          </div>
+
+          <div className="editor-card">
+            <h3 className="editor-card-heading">SymPy Verification Assertions</h3>
+            {draft.assertions.map((a, idx) => (
+              <div key={a.id} className="editor-assertion-row">
+                <code>{a.id}</code>
+                <input
+                  type="text"
+                  className="editor-input"
+                  value={a.expression}
+                  onChange={(e) =>
+                    setDraft((d) => {
+                      const next = [...d.assertions];
+                      next[idx] = { ...next[idx], expression: e.target.value };
+                      return { ...d, assertions: next };
+                    })
+                  }
+                />
+                <input
+                  type="text"
+                  className="editor-input"
+                  value={
+                    typeof a.expected === "string"
+                      ? a.expected
+                      : JSON.stringify(a.expected)
+                  }
+                  onChange={(e) => {
+                    const raw = e.target.value;
+                    let parsed: number | string | boolean = raw;
+                    try {
+                      parsed = JSON.parse(raw);
+                    } catch {
+                      parsed = raw;
+                    }
+                    setDraft((d) => {
+                      const next = [...d.assertions];
+                      next[idx] = { ...next[idx], expected: parsed };
+                      return { ...d, assertions: next };
+                    });
+                  }}
                 />
               </div>
             ))}

@@ -361,9 +361,23 @@ body {
   align-items: center;
 }
 
+.editor-assertion-row-4 {
+  display: grid;
+  grid-template-columns: 125px 1.2fr 1.4fr 0.8fr;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.editor-meta-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.75rem;
+}
+
 @media (max-width: 900px) {
   .editor-field-row,
-  .editor-assertion-row {
+  .editor-assertion-row,
+  .editor-assertion-row-4 {
     grid-template-columns: 1fr;
   }
 }
